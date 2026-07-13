@@ -7864,6 +7864,26 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
+            '"witness_residual_id": "<stable residual:<id> string present in the cited authority>"',
+            template_flat,
+        )
+        self.assertIn(
+            '"claim_residual_id": "<stable residual:<id> string present in the audited source>"',
+            template_flat,
+        )
+        self.assertIn(
+            '"claim_evidence_path": "<manifest source path containing claim_residual and claim_residual_id>"',
+            template_flat,
+        )
+        self.assertIn(
+            '"claim_evidence_locator": "<actual source locator>"',
+            template_flat,
+        )
+        self.assertIn(
+            "emit `witnesses: []` with a substantive `none_found_reason`",
+            template_flat,
+        )
+        self.assertIn(
             "from one and the same `full_phrase_groups[]` record",
             template_flat,
         )
@@ -9701,6 +9721,32 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         )
         self.assertNotIn("secret_path", n3_scan_prompt)
         self.assertNotIn("secret_id", n3_scan_prompt)
+        n4_errors = [
+            "N4 witness 1.witness_residual_id must be non-empty",
+            "N4 witness 1.claim_residual_id must be a stable residual:<id>",
+            "N4 witness 1 witness residual must cite an authority at secret/path",
+            "N4 witness 1 claim residual must cite the source secret_claim_id",
+            "N4 witness 1 requires non-empty evidence_path and evidence_locator",
+            "N4 witness 1 claim residual requires non-empty evidence_path and evidence_locator",
+        ]
+        for n4_error in n4_errors:
+            with self.subTest(n4_error=n4_error):
+                n4_code = m.fresh_schema_retry_code(n4_error)
+                self.assertEqual(n4_code, "N4_WITNESS_SCHEMA_MISMATCH")
+                n4_prompt = m.render_fresh_schema_retry_prompt(
+                    "ORIGINAL RESTRICTED PACKET", n4_code, 1,
+                )
+                self.assertIn("when no N1 route is RULED OUT BY PRIOR", n4_prompt)
+                self.assertIn("stable residual:<id> strings", n4_prompt)
+                self.assertIn("authority evidence_path and evidence_locator", n4_prompt)
+                self.assertIn(
+                    "source claim_evidence_path and claim_evidence_locator",
+                    n4_prompt,
+                )
+                self.assertIn("witness surface must have the authority role", n4_prompt)
+                self.assertNotIn("witness 1", n4_prompt)
+                self.assertNotIn("secret/path", n4_prompt)
+                self.assertNotIn("secret_claim_id", n4_prompt)
 
     def test_failed_locator_repair_preserves_fresh_schema_eligibility(self):
         m = _import_codex_audit_runner()

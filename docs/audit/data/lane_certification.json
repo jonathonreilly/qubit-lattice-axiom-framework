@@ -321,7 +321,7 @@
         },
         {
           "claim_id": "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
-          "effective_status": "audited_conditional"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "alpha_s_derived_note",
@@ -2955,6 +2955,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "3a87cf59714afded9f6aaff3b2dd996f9107e8f3",
+  "repo_head": "03f8973d44155e601cca9ea65d5bde02d4a8d776",
   "schema": "lane_certification_v2"
 }

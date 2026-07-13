@@ -19,6 +19,7 @@ import hashlib
 import io
 import json
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -8579,6 +8580,38 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         self.assertIn(
             '("compute_lane_certification.py",      "refresh rolling lane certification")',
             apply_script,
+        )
+
+
+class AuditDataFilesCoverPipelineSurfacesTest(unittest.TestCase):
+    """Every generated surface the pipeline announces must be covered by
+    AUDIT_DATA_FILES, or verdict applies fail the unexpected-generated-paths
+    gate the first time that surface actually changes (grain drain,
+    2026-07-12: AUDIT_DISPATCH_QUEUE.md)."""
+
+    def test_pipeline_announced_surfaces_are_allowlisted(self):
+        runner = _import_codex_audit_runner()
+        script = (
+            PROJECT_ROOT / "docs" / "audit" / "scripts" / "run_pipeline.sh"
+        ).read_text(encoding="utf-8")
+        announced = {
+            match
+            for match in re.findall(r"Read (docs/[^\s]+)", script)
+            if "<" not in match
+        }
+        self.assertIn("docs/audit/AUDIT_DISPATCH_QUEUE.md", announced)
+
+        def covered(path: str) -> bool:
+            return any(
+                path == allowed or path.startswith(allowed + "/")
+                for allowed in runner.AUDIT_DATA_FILES
+            )
+
+        uncovered = sorted(path for path in announced if not covered(path))
+        self.assertEqual(
+            uncovered, [],
+            "pipeline-generated surfaces missing from AUDIT_DATA_FILES "
+            f"(apply gate will reject verdicts when they change): {uncovered}",
         )
 
 

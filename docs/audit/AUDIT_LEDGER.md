@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 303 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2957 |
-| audit_in_progress | 1 |
+| unaudited | 2956 |
+| audit_in_progress | 2 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
@@ -40,14 +40,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 381 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3308 |
+| `unaudited` | 3307 |
 
 | claim_type | count |
 |---|---:|
@@ -60,19 +60,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 747 |
-| `high` | 401 |
-| `medium` | 960 |
-| `leaf` | 1645 |
+| `critical` | 799 |
+| `high` | 378 |
+| `medium` | 934 |
+| `leaf` | 1642 |
 
 - **Retained pending chain closure:** 1
-- **Citation cycles detected:** 10
+- **Citation cycles detected:** 63
 
 ### Runner classification (static heuristic)
 
 - runners classified: 3420
 - runners with (C) first-principles compute hits: 1799
-- runners with (D) external comparator hits: 1102
+- runners with (D) external comparator hits: 1103
 - decoration candidates (no C, no D): 729
 
 ## Top 25 by load-bearing score (topology only)
@@ -81,37 +81,38 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1989 | 231.96 | `unaudited` | meta |
-| 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1612 | 64.66 | `audited_clean` | **retained** |
-| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1194 | 62.22 | `unaudited` | unaudited |
+| 1 | `minimal_axioms` | meta | critical | 1992 | 231.96 | `unaudited` | meta |
+| 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1646 | 64.69 | `audited_clean` | **retained** |
+| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1253 | 62.29 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 197 | 61.63 | `unaudited` | unaudited |
-| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1054 | 61.54 | `unaudited` | unaudited |
-| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1180 | 50.21 | `unaudited` | unaudited |
-| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1080 | 45.08 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1202 | 44.23 | `unaudited` | meta |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 953 | 39.90 | `unaudited` | unaudited |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1319 | 39.87 | `unaudited` | unaudited |
-| 11 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 432 | 39.76 | `unaudited` | unaudited |
-| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1058 | 38.05 | `unaudited` | unaudited |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1064 | 37.56 | `unaudited` | unaudited |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1565 | 37.11 | `audited_clean` | **retained** |
-| 15 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 622 | 36.28 | `unaudited` | unaudited |
-| 16 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 124 | 35.97 | `unaudited` | unaudited |
-| 17 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 444 | 35.30 | `unaudited` | unaudited |
-| 18 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 628 | 33.80 | `unaudited` | unaudited |
-| 19 | `kinetic_isotropy_primitive` | meta | critical | 497 | 33.46 | `unaudited` | meta |
-| 20 | `yt_ew_color_projection_theorem` | no_go | critical | 895 | 32.81 | `unaudited` | unaudited |
-| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 874 | 32.27 | `unaudited` | unaudited |
-| 22 | `cpt_exact_note` | positive_theorem | critical | 736 | 31.53 | `unaudited` | unaudited |
-| 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 475 | 31.39 | `unaudited` | unaudited |
-| 24 | `three_generation_structure_note` | bounded_theorem | critical | 1051 | 31.04 | `unaudited` | unaudited |
-| 25 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 1027 | 31.01 | `unaudited` | unaudited |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1097 | 61.60 | `unaudited` | unaudited |
+| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1230 | 50.27 | `unaudited` | unaudited |
+| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1130 | 45.14 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1247 | 44.28 | `unaudited` | meta |
+| 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 706 | 40.47 | `unaudited` | unaudited |
+| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1019 | 39.99 | `unaudited` | unaudited |
+| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1354 | 39.90 | `unaudited` | unaudited |
+| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1109 | 38.12 | `unaudited` | unaudited |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1126 | 37.64 | `unaudited` | unaudited |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1599 | 37.14 | `audited_clean` | **retained** |
+| 15 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 842 | 36.72 | `unaudited` | unaudited |
+| 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 713 | 35.98 | `unaudited` | unaudited |
+| 17 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 124 | 35.97 | `unaudited` | unaudited |
+| 18 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 769 | 34.09 | `unaudited` | unaudited |
+| 19 | `kinetic_isotropy_primitive` | meta | critical | 767 | 34.09 | `unaudited` | meta |
+| 20 | `yt_ew_color_projection_theorem` | no_go | critical | 960 | 32.91 | `unaudited` | unaudited |
+| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 940 | 32.38 | `unaudited` | unaudited |
+| 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 716 | 31.99 | `unaudited` | unaudited |
+| 23 | `cpt_exact_note` | positive_theorem | critical | 875 | 31.77 | `unaudited` | unaudited |
+| 24 | `three_generation_structure_note` | bounded_theorem | critical | 1111 | 31.12 | `unaudited` | unaudited |
+| 25 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 1073 | 31.07 | `unaudited` | unaudited |
 
 
 ## Applied audits
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |

@@ -36133,24 +36133,24 @@
       "runner": "scripts/strong_cp_theta_bar_structured_admission_2026_06_04.py"
     },
     "strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10": {
-      "assert_count": 2,
+      "assert_count": 3,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 49,
-        "D": 0
+        "C": 56,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_strong_cp_theta_zero.py"
     },
     "strong_cp_theta_zero_note": {
-      "assert_count": 2,
+      "assert_count": 3,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 49,
-        "D": 0
+        "C": 56,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -78030,7 +78030,7 @@
       "exists": true
     },
     "scripts/frontier_strong_cp_theta_zero.py": {
-      "assert_count": 2,
+      "assert_count": 3,
       "claims": [
         "strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10",
         "strong_cp_theta_zero_note"
@@ -78038,8 +78038,8 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 49,
-        "D": 0
+        "C": 56,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -93837,6 +93837,6 @@
     },
     "runners_classified": 3420,
     "runners_with_C": 1799,
-    "runners_with_D": 1102
+    "runners_with_D": 1103
   }
 }

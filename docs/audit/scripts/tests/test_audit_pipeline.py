@@ -7874,6 +7874,18 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
+            "Copy `N7.argument` byte-for-byte as one contiguous line",
+            template_flat,
+        )
+        self.assertIn(
+            "must contain the route's complete `mechanism` and `attempt` verbatim",
+            template_flat,
+        )
+        self.assertIn(
+            "Copy `N7.resolution` byte-for-byte as one contiguous line",
+            template_flat,
+        )
+        self.assertIn(
             "Copy the complete authenticated tuple",
             template_flat,
         )
@@ -10060,6 +10072,23 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         )
         self.assertNotIn("secret_path", n3_scan_prompt)
         self.assertNotIn("secret_id", n3_scan_prompt)
+        for n7_error in (
+            "N7.argument is not evidenced at its N1 execution path",
+            "N7.resolution is not evidenced at resolution_evidence_path",
+            "N7.argument must name the steelmanned route mechanism",
+            "N7.argument must name the steelmanned route attempt",
+        ):
+            n7_code = m.fresh_schema_retry_code(n7_error)
+            self.assertEqual(
+                n7_code, "N7_EXECUTION_EVIDENCE_VERBATIM_MISMATCH"
+            )
+            n7_prompt = m.render_fresh_schema_retry_prompt(
+                "ORIGINAL RESTRICTED PACKET", n7_code, 1,
+            )
+            self.assertIn("one complete contiguous live-execution line", n7_prompt)
+            self.assertIn("route mechanism and attempt verbatim", n7_prompt)
+            self.assertIn("names an evidenced N2 wall", n7_prompt)
+            self.assertNotIn(n7_error, n7_prompt)
         n4_errors = [
             "N4 witness 1.witness_residual_id must be non-empty",
             "N4 witness 1.claim_residual_id must be a stable residual:<id>",

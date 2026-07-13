@@ -1,0 +1,315 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.892,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "114912ef1452767273d64598995d2272ece4ee8ece9c3904703c2215fd31d272",
+  "note_path": "docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-11T10:02:20.081818+00:00",
+      "archived_for_note_hash": "dbc39c09b46e6eab5d481ae1781fdc4f4a3cb202071a2d46db2ba22fa651816c",
+      "audit_date": "2026-06-10T21:11:21.762209+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "Audited the supplied/displayed carrier support and J/W budgets, the in-note finite-range LR lemma with v_LR=2eqWR, the unconditional framework hopping-H LR bound, and F5 only as a conditional implication under an explicit exact-H locality hypothesis."
+        },
+        "dep_claim_type": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 7.322,
+        "runner_hash": "afdeecb6a8e29ff212635348aeeeb249ac43f9e0e234734fccc1b78bc453e724",
+        "transitive_descendants": 79
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260610-210814-660ab1445c-light_cone_crank_nicolson_li",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Cayley unitarity and fixed-time O(a_tau^2) convergence close algebraically, and the runner genuinely computes finite matrix examples. The missing step is a derivation that a local density bound J yields a volume-uniform Crank-Nicolson resolvent tail and n-step LR bound with the stated denominator; the runner samples one random chain and hard-codes the velocity formula.",
+      "claim_scope": "Bounded Crank-Nicolson diagnostics for finite nearest-neighbor toy Hamiltonians: Cayley unitarity, Neumann-tail rationale, finite-volume n-step LR-shaped tests with diagnostic v_CN, and O(a_tau^2) convergence; no exact reconstructed-H theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T21:11:21.762209+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note uses the subcritical Neumann expansion of (I + i a_tau H/2)^(-1) to infer an exponential single-step tail and the n-step LR-shaped bound with v_CN = v_LR(H)/(1 - a_tau J/2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the Crank-Nicolson resolvent/quasilocal LR bound from the retained finite-range LR lemma with the correct subcritical norm and velocity constant, then update the runner to check that derived bound rather than hard-code v_CN.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The finite diagnostic computations support the runner examples, but they do not establish the stated bounded theorem for finite nearest-neighbor toy Hamiltonians from the cited inputs. The source phrases subcriticality using local J, while the Neumann-series convergence check in the runner uses ||H||, and CN3 inserts v_LR(H)=2erJ and v_CN rather than deriving the Crank-Nicolson LR constant. The retained-bounded upstream LR note supplies Hamiltonian-side finite-range LR machinery, not this Cayley-resolvent/n-step bridge."
+    },
+    {
+      "archived_at": "2026-06-11T21:38:39.690353+00:00",
+      "archived_for_note_hash": "b87bfaef502ac9dc010a4a58587727a0c644d731edf7b48354334a3231a43779",
+      "audit_date": "2026-06-11T13:59:40.801898+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "F1-F2c carrier support/J/W budgets, F3-L1/L2 finite-range LR lemma with derived constants, and F4 unconditional tensor-product nearest-neighbor hopping-H microcausality bound; F5 only as an explicit conditional/open exact-H context."
+        },
+        "dep_claim_type": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 7.358,
+        "runner_hash": "22d672c8285608426a12b7ecfc850eec6fbaab7209ce25572d1e1539a2be8f61",
+        "transitive_descendants": 81
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260611-135747-e9f6bdfbb4-light_cone_crank_nicolson_li",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The key weighted convolution step is not valid for powers of the global Hamiltonian: products of disjoint local terms create disconnected supports whose diameter includes arbitrary separation, so W_mu(H^n) is not bounded by W_mu(H)^n in the stated support-diameter norm. A commuting onsite Hamiltonian H=sum_x Z_x already makes H_CN=(2/a_tau) arctan(a_tau H/2) contain nonlocal multi-site terms, contradicting the claimed uniform quasilocal overlap bound.",
+      "claim_scope": "Audited the bounded finite-range-to-Crank-Nicolson bridge asserting that the global Cayley step of a finite-range Hamiltonian has a quasilocal effective generator with W_CN,mu <= (2/a_tau) artanh((a_tau/2) W exp(mu R)) and the stated LR envelope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T13:59:40.801898+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For x_mu := (a_tau/2) W_mu(H) < 1, the odd arctan series and weighted convolution inequality give W_mu(H_CN) <= (2/a_tau) sum_{n>=0} x_mu^(2n+1)/(2n+1) <= (2/a_tau) artanh(x_mu).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: repair would need a different Crank-Nicolson locality theorem, such as a connected-cluster expansion with a valid interaction norm or a localized/product CN scheme; the current global Cayley theorem is false as stated.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The proof's central algebraic closure fails before the cited LR theorem can be applied to H_CN. The runner confirms Cayley unitarity, small-step convergence, and loose finite-volume commutator inequalities on toy matrices, but it does not construct or verify a valid support-family decomposition of H_CN and effectively reuses the contested W_CN formula. The cited retained_bounded LR authority is not the blocker; the missing and in fact false step is the claimed submultiplicative weighted-overlap control for analytic functions of the extensive Hamiltonian."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.074759+00:00",
+      "audit_date": "2026-06-12T00:54:54.837059+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "F1-F2c carrier support/J/W budgets, F3-L1/L2 finite-range LR lemma with derived constants, and F4 unconditional tensor-product nearest-neighbor hopping-H microcausality bound; F5 only as an explicit conditional/open exact-H context."
+        },
+        "dep_claim_type": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 7.358,
+        "runner_hash": "5553e55942937d918787c9ba78308f02dafa934ef52ee252b98eee46152ed58c",
+        "transitive_descendants": 81
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-005204-68521e1eda-light_cone_crank_nicolson_li",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The defect bound follows algebraically from the norm-convergent arctan series, the Leibniz commutator telescope, and exact-flow invariance of ||[H,A]||. The cited retained_bounded LR authority is used only for the finite-range exact evolution, while the open reconstructed-H and volume-independent sharpening claims are explicitly outside scope.",
+      "claim_scope": "For finite-dimensional finite-range Hermitian H on a finite block with y=a_tau||H||/2<1, the CN step is unitary, has the stated spectral generator identity, does not support the withdrawn H_CN weighted-overlap quasilocality claim, and inherits the exact finite-range LR cone up to the explicit additive defect 2||B||n zeta.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T00:54:54.837059+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "The Duhamel interpolation plus the arctan defect series and Leibniz telescope give ||alpha_CN(A)-alpha_{a_tau}(A)|| <= a_tau ||[H,A]|| y^2/(1-y^2), which then telescopes to n zeta and transfers the exact LR cone with additive defect 2||B|| n zeta.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the generic-chain flat-tail runner witness remains non-load-bearing; the clean verdict rests on the analytic CN-W counterexample and CN-C' proof.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 7,
+        "C": 14,
+        "D": 2,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The independent math check reproduces the key constants: the D series contributes sum_{n>=1} y^{2n}=y^2/(1-y^2), giving zeta, and the n-step and cone-transfer inequalities follow by unitary telescoping and ||[X,B]||<=2||B||||X||. The commuting three-site withdrawal witness also checks, since c3=(f(3)-3f(1))/4=(1/(2a))[arctan(3a/2)-3 arctan(a/2)] is nonzero and distance-independent. The runner source performs real matrix computations rather than print-only assertions, and its 27 passes cover the spectral identity, withdrawal witnesses, defect inequalities, and small-step agreement."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.469505+00:00",
+      "audit_date": "2026-07-01T13:02:12.832594+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "Bounded carrier-surface support/J/W budgets, an in-note finite-range LR lemma with derived velocity, and an unconditional LR bound for the tensor-product nearest-neighbor hopping Hamiltonian; exact reconstructed-H carrier locality is audited only as a conditional implication."
+        },
+        "dep_claim_type": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 7.443,
+        "runner_hash": "5553e55942937d918787c9ba78308f02dafa934ef52ee252b98eee46152ed58c",
+        "transitive_descendants": 86
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T130212Z-d207450f-light_cone_crank_nicolso",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The spectral identity, Duhamel interpolation, Leibniz telescope, and geometric series close the per-step and n-step defect bounds on the stated finite-block subcritical domain. The cone term then follows from the cited retained_bounded finite-range LR lemma, and the note does not import the cited authority's open exact-log-H corollary.",
+      "claim_scope": "For finite-dimensional finite-range Hermitian H on a finite block with y=a_tau||H||/2<1, the Cayley/CN step has the stated spectral generator identity and inherits the exact finite-range Lieb-Robinson cone up to the additive defect 2||B|| n zeta(A); no locality of H_CN is claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T13:02:12.832594+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "The subcritical arctan-series defect bound: ||[D, alpha_s(A)]|| <= ||[H,A]|| sum_{n>=1}(a_tau||H||/2)^{2n} = ||[H,A]|| y^2/(1-y^2), hence ||alpha_CN(A)-alpha_{a_tau}(A)|| <= zeta(A).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 27,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The independent formula check confirms the factors: the (2n+1) from [H^{2n+1},B] cancels the arctan coefficient and leaves the geometric sum y^2/(1-y^2), with the extra a_tau giving zeta. The withdrawal coefficient also checks by Pauli projection: c3=(f(3)-3f(1))/4=(1/(2a_tau))[arctan(3a_tau/2)-3 arctan(a_tau/2)]. The runner source performs finite-matrix checks of these identities and inequalities rather than merely printing PASS, but the proof itself is algebraic over finite-dimensional operators plus the retained_bounded LR authority."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.259130+00:00",
+      "audit_date": "2026-07-02T02:01:30.844469+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "Bounded support/J/W budgets on the supplied/displayed carrier surface, the finite-range LR lemma with derived v_LR=2eqWR, the unconditional tensor-product NN hopping-H LR bound, and F5 only as a conditional exact-H implication."
+        },
+        "dep_claim_type": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 7.443,
+        "runner_hash": "5553e55942937d918787c9ba78308f02dafa934ef52ee252b98eee46152ed58c",
+        "transitive_descendants": 86
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T020130Z-a6f63617-light_cone_crank_nicolso",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The operator-algebra proof closes: the arctan series is norm-convergent under y<1, the Leibniz bound cancels the odd-power denominator, and exact-flow invariance supports the n-step telescoping. The cited retained_bounded LR authority supplies the exact finite-range cone; the open exact-H/quasilocal carrier problem is scoped out.",
+      "claim_scope": "Finite-dimensional finite-range Hermitian H on a finite block with y=a_tau||H||/2<1: Cayley unitarity, spectral generator identity, withdrawal of H_CN weighted-overlap quasilocality, and CN cone inheritance from the exact finite-range LR bound up to the stated additive step defect.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T02:01:30.844469+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "The Duhamel interpolation plus Leibniz telescope gives ||[D, alpha_s(A)]|| <= ||[H,A]|| y^2/(1-y^2), hence ||alpha_CN(A)-alpha_a_tau(A)|| <= zeta(A), and telescoping transfers the exact LR cone with additive defect 2||B|| n zeta.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream citations preserve the finite-block subcritical scope and do not promote this to volume-independent H_CN quasilocality.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 18,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The corrected theorem no longer relies on the false W_mu(H^n) submultiplicativity step and explicitly withdraws the fixed-step quasilocal H_CN claim. The load-bearing CN defect estimate is a valid finite-dimensional algebraic inequality under the stated subcritical finite-block premise, and the cone transfer uses only the retained finite-range LR theorem. The runner source performs actual finite-matrix checks and withdrawal witnesses rather than merely printing expected PASS lines."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/light_cone_crank_nicolson_lr_2026_05_09.py",
+  "title": "Bounded Crank-Nicolson Light-Cone Bridge: Cone Inheritance with Quantified Step Defect",
+  "transitive_descendants": 83,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,364 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+    "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.615,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a094a0961cf33216a8c055be4570f841c62c767e1be6445dffce5510d027d07d",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368462+00:00",
+      "archived_for_note_hash": "a36dc22633bfc1fc284b6dd426623e7cd3789b3afa1138a9464fc4b917a36093",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-27T02:00:03.378709+00:00",
+      "archived_for_note_hash": "297ae1d785c3b875d0b1809ccfba430a588764bc11189f32b8d794571e026999",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T14:15:43.411926+00:00",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner reproduces PASS=6, but it depends on a conditional truncated-packet input, a support character-measure input, an unknown completion input, and a boundary note now audited failed. The zero-extension algebra is current, but the retained theorem does not close through audit-retained dependencies.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "Extending rho_ret by zero outside the retained first-symmetric weights gives a nonnegative conjugation-symmetric full coefficient sequence whose factorized operator is self-adjoint, conjugation-symmetric, positive semidefinite, and still reconstructs the retained completed triple.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_RANK_ONE_FACTORIZED_CLASS_BOUNDARY_NOTE_2026-04-19.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the runner verifies the zero-extension construction, but the rho_ret packet is imported from an audited-conditional truncated-packet theorem, the canonical character-measure class is still support, the completion input is unknown, and the runner's final seam check cites a boundary note that is audited failed because its runner is missing. Why this blocks: the local matrix algebra can show a PSD zero-extension only after accepting those upstream objects, so it cannot be promoted as a retained Wilson factorized-class theorem. Repair target: audit-retain the completion, character-measure, truncated-packet, and factorized-class boundary inputs or make this runner construct them from retained authorities without relying on failed/support notes. Claim boundary until fixed: conditionally, given rho_ret and the canonical factorized-class definitions, the zero extension has symmetry errors below 1e-15, min eigenvalue -2.038e-16, and reconstructs Z_min with gap 1.777e-16; the actual beta=6 environment packet and retained class-existence claim remain unratified."
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.492326+00:00",
+      "archived_for_note_hash": "dc2b4fe33c6a81830a67761218bda91e30736ac5e1db4b204a34bd625a0a00a3",
+      "audit_date": "2026-05-03T18:00:04.666817+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-fresh-2026-05-03",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The zero-extension PSD/reconstruction step closes algebraically for the supplied vector, and the runner reports PASS=6 FAIL=0. The stronger retained-grade claim imports the retained first-sector packet and canonical Wilson factorized-class admissibility from upstream notes/scripts that are not declared as dependencies for this ledger row.",
+      "claim_scope": "The note claims that the supplied first-sector packet rho_ret admits a zero higher-weight extension inside the canonical Wilson factorized class, yielding a self-adjoint conjugation-symmetric PSD operator that reconstructs the retained three-sample sector.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T18:00:04.666817+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Extend it by zero to all higher weights on the dominant-weight box: keep the retained entries above, set rho_(p,q) = 0 for every other weight.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check whether the three runner-read upstream paths are now ledger dependencies with retained-grade effective statuses; if so, the remaining audit question is only the algebraic zero-extension/PSD/reconstruction step.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md",
+        "archive_unlanded/gauge-vacuum-plaquette-missing-runners-2026-04-30/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_RANK_ONE_FACTORIZED_CLASS_BOUNDARY_NOTE_2026-04-19.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: The theorem's algebraic zero-extension check is valid for the supplied rho_ret, but the note's retained-grade conclusion relies on upstream claims that the first-sector packet is retained and that nonnegative conjugation-symmetric normalized coefficient data are the canonical Wilson boundary-class description. Why this blocks: those premises are not closed inside the source note and the ledger metadata for this claim lists no dependency paths, while the runner's PASS lines explicitly perform cross-note substring/input checks for those premises. Repair target: add and audit the upstream dependency paths, or restate this as a conditional algebraic existence lemma for the supplied packet and make the runner separate algebraic checks from dependency-status checks. Claim boundary until fixed: it is safe to claim that the displayed rho_ret has a numerically verified zero higher-weight factorized extension on the truncated box with PSD/symmetry checks and three-sample reconstruction to runner tolerance, not that retained factorized-class existence is independently closed."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.601852+00:00",
+      "audit_date": "2026-06-09T11:46:27.635076+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19": "Algebraic normalization of the retained first-sector completion vector into a conjugation-symmetric nonnegative truncated coefficient packet, with reconstruction of the retained three-sample triple; no full beta=6 environment realization is audited.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19": "decoration",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19": "decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 7.144,
+        "runner_hash": "cd6ef7445d6b1fb7c473764c366db9e56c52edaec8a228c9545b25b256f077a2",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-114331-82f75149c0-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The construction closes algebraically from the retained-grade truncated packet and the retained_bounded finite factorized packet surface. The actual framework-point Wilson environment identification remains open, but the source note explicitly excludes that stronger target from the claim.",
+      "claim_scope": "Finite truncated dominant-weight-box claim: the retained first-sector packet admits the stated zero-extension inside the finite factorized diagonal-packet class, yielding a PSD symmetric factorized operator and exact retained three-sample reconstruction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T11:46:27.635076+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19:decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19->unaudited",
+      "load_bearing_step": "Extend the retained packet by zero outside the first-symmetric weights; then T_ext = exp(3J) D_6^loc diag(rho_ext) exp(3J) is a self-adjoint conjugation-symmetric positive semidefinite finite operator that still reconstructs the retained three-sample triple.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream rows preserve the finite truncated factorized-class scope and do not promote this to an actual framework-point Wilson environment identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 3,
+        "C": 1,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing step is finite linear algebra: a nonnegative conjugation-symmetric diagonal, sandwiched by the symmetric half-slice multiplier with positive local diagonal factor, gives a self-adjoint PSD operator. The retained packet and its reconstruction are supplied by a retained-grade decoration-under-retained authority, and the finite factorized character-packet surface is supplied by a retained_bounded authority. The verdict is clean only at the finite truncated factorized-class scope, not for the actual Wilson environment packet."
+    },
+    {
+      "archived_at": "2026-06-18T01:40:24.883926+00:00",
+      "audit_date": "2026-06-15T23:36:55.713123+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19": "Audited only the truncated retained first-symmetric-sector packet determined by the completed vector v_min: normalization, conjugation symmetry, coefficient nonnegativity on the retained sector, and exact reconstruction of the three retained samples; no full beta=6 environment extension was audited.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19": "positive_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19": "retained",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 10.672,
+        "runner_hash": "cd6ef7445d6b1fb7c473764c366db9e56c52edaec8a228c9545b25b256f077a2",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-233402-b876a45425-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained packet is supplied by the retained upstream first-sector packet theorem, and the zero-extension properties are algebraic: nonnegative diagonal data gives PSD MAM with M=exp(3J) and A=D_6^loc diag(rho_ext) diagonal nonnegative. Reconstruction follows because the retained entries are unchanged and all added coefficients are zero.",
+      "claim_scope": "Finite truncated dominant-weight-box existence: the retained packet rho_ret=(1,0.267139565315,0.267139565315,0) is zero-extended and used in the factorized operator exp(3J)D_6^loc diag(rho_ext)exp(3J), without claiming equality to the actual framework-point Wilson environment packet.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-15T23:36:55.713123+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19:retained->unaudited",
+      "load_bearing_step": "Extending rho_ret by zero outside the retained first-symmetric weights yields a nonnegative conjugation-symmetric coefficient sequence whose factorized operator T_ext = exp(3J) D_6^loc diag(rho_ext) exp(3J) is self-adjoint, conjugation-symmetric, positive semidefinite, and still reconstructs the retained triple.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only that downstream uses preserve the finite factorized-class scope and do not cite this row as actual framework-point Wilson environment equality.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing construction is not an actual Wilson-environment identification; it is a finite algebraic existence result inside the stated factorized form. Self-adjointness, swap symmetry, PSD, and retained-sector reconstruction follow from the retained packet plus nonnegative zero extension and the symmetric factorized matrix form. The cited open actual-environment bridge remains explicitly outside the audited scope."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.951768+00:00",
+      "audit_date": "2026-06-18T06:20:10.030651+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19": "Algebraic retained first-symmetric-sector normalization of the completed vector v_min into the packet (z00_min, rho_ret), with reconstruction of Z_min on the three named samples.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19": "decoration",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19": "decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 8.2,
+        "runner_hash": "cd6ef7445d6b1fb7c473764c366db9e56c52edaec8a228c9545b25b256f077a2",
+        "transitive_descendants": 51
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the finite truncated box, the zero-extension is nonnegative and conjugation-symmetric, and T_ext has the algebraic form M P M with P diagonal nonnegative, so the PSD/symmetry claims close. Reconstruction follows from rho_ret = v_min / z00_min and the retained evaluation matrix.",
+      "claim_scope": "Finite dominant-weight-box factorized-class existence: the retained first-sector packet is zero-extended on the truncated box and inserted into the fixed factorized form, with exact retained-sector reconstruction; actual Wilson environment identification and all-weight closure are out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T06:20:10.030651+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19:decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19->unaudited",
+      "load_bearing_step": "Extend the retained packet rho_ret by zero outside the first-symmetric weights, then form T_ext = exp(3 J) D_6^loc diag(rho_ext) exp(3 J).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that 'full extension' remains interpreted as finite dominant-weight-box extension, not all-weight or actual-environment closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The retained truncated-packet authority supplies rho_ret, and the retained_bounded character-measure authority supplies the finite factorized operator setting without importing the actual Wilson environment identification. The runner source constructs rho_ext, forms the finite operator, checks symmetry/swap/PSD numerically, and verifies retained reconstruction; the helper chain computes the retained packet rather than merely printing constants. The clean verdict is only for bounded finite factorized-class existence, not for the actual framework-point Wilson packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+  "title": "Gauge-Vacuum Plaquette First-Sector Zero-Extension Factorized-Class Theorem",
+  "transitive_descendants": 48,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

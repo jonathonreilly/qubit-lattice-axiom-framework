@@ -1,0 +1,284 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gravity_clean_derivation_note",
+    "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "389ca49db24ccd8949c919ac14481aeed9d255d80585d3f38629c034e6843b28",
+  "note_path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-28T20:41:15.603942+00:00",
+      "archived_for_note_hash": "73a992fb9359cfbc40c28f698db99ad02a1bee1113e8bc48df2afca793cbeb2c",
+      "audit_date": "2026-05-28T02:31:12.270620+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube.",
+          "gravity_clean_derivation_note": "Conditional weak-field lattice implication from stipulated Poisson/source/response inputs to leading 1/r potential and M1*M2/r^2 force in lattice units."
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gravity_clean_derivation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained",
+          "gravity_clean_derivation_note": "retained_bounded"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+          "gravity_clean_derivation_note"
+        ],
+        "load_bearing_score": 8.466,
+        "runner_hash": null,
+        "transitive_descendants": 249
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-newton-poisson-friedmann-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "For dust, multiplying a''=-(4 pi G/3)rho a with rho a^3=const gives H^2=(8 pi G/3)rho plus curvature. For radiation, using the same rho-only Newtonian acceleration with rho a^4=const gives half the needed coefficient; the correct flat radiation law needs the GR/pressure source term.",
+      "claim_scope": "Bounded textbook-import wrapper for the flat first Friedmann law H^2=(8 pi G/3)rho; the dust Newton-Poisson first-integral core closes, but the stated radiation-fluid/downstream H_rad use requires an explicit GR or active-gravitational-mass pressure premise not supplied by the Newton-Poisson derivation as written.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T02:31:12.270620+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The first Friedmann law H^2 = (8 pi G / 3) rho follows as a first integral of the Newtonian homogeneous-ball acceleration equation, with the integration constant set to zero by k=0 flatness.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: split the clean dust Newton-Poisson first-integral wrapper from the radiation/GR Friedmann import, or add a retained one-hop GR/pressure-source lemma for the radiation case.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note's displayed Newton-Poisson derivation uses a rho-only homogeneous-ball acceleration equation but also includes radiation-fluid scope and downstream H_rad use. Why this blocks: the dust first integral gives the stated flat first Friedmann coefficient, while the same rho-only acceleration with rho proportional to a^-4 gives H^2=(4 pi G/3)rho rather than (8 pi G/3)rho; recovering the radiation coefficient requires the GR G_00 equation or the active gravitational mass term rho+3p. Repair target: either narrow this wrapper to pressureless dust/Newton-Poisson only, or add a retained one-hop bounded GR/relativistic-fluid textbook lemma deriving flat F1 for arbitrary w and make the radiation H_rad route cite that lemma. Claim boundary until fixed: the k=0 dust first-integral algebra is correct, and the flat spatial-slice dependency is retained, but the radiation import is not closed by the current derivation."
+    },
+    {
+      "archived_at": "2026-06-09T22:02:18.076869+00:00",
+      "audit_date": "2026-05-29T06:27:30.422786+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube.",
+          "gravity_clean_derivation_note": "Conditional weak-field lattice implication from stipulated Poisson/source/response inputs to leading 1/r potential and M1*M2/r^2 force in lattice units."
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gravity_clean_derivation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained",
+          "gravity_clean_derivation_note": "retained_bounded"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+          "gravity_clean_derivation_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-xhigh-2026-05-28-newton-poisson-friedmann",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The independent check matches the note: with rho=C/a^3, multiplying a''=-(4*pi*G/3)*rho*a by a' integrates to (1/2)a'^2=(4*pi*G/3)C/a+const, hence H^2=(8*pi*G/3)rho+const/a^2; the flat k=0 premise removes the curvature term. The source correctly excludes radiation/general pressure, where rho-only Newtonian acceleration would not supply the GR pressure-source coefficient.",
+      "claim_scope": "Named bounded import of the dust-only Newton-Poisson/Milne-McCrea first integral on a flat homogeneous-isotropic slice: assuming Poisson source rho, pressureless continuity rho*a^3=const, and k=0, obtain H^2=(8*pi*G/3)*rho. Radiation/general-pressure, GR pressure source, framework Newton/G derivation, and downstream cosmology are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T06:27:30.422786+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gravity_clean_derivation_note:retained_bounded->unaudited",
+      "load_bearing_step": "For dust, integrating a''/a=-(4*pi*G/3)*rho with rho*a^3=const gives H^2=(8*pi*G/3)*rho plus a curvature integration constant, and k=0 sets that constant to zero.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should verify downstream rows do not cite this wrapper for radiation/general-pressure H_rad use.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "runner_status": "no_runner_textbook_import",
+        "total_fail": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The audited claim is only the dust first-integral wrapper, not a derivation of Newton-Poisson, G, GR, radiation, or downstream cosmology. Under the stated retained/accepted inputs, the dust continuity equation supplies the exact factor 8*pi*G/3 and the flatness premise removes the integration constant. Residual risk is confined to downstream consumers: any radiation/general-pressure use still needs a separate retained GR/active-gravitational-mass source lemma."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:33.969646+00:00",
+      "audit_date": "2026-06-12T02:05:50.077825+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube.",
+          "gravity_clean_derivation_note": "Bounded weak-field composition: given the Z^3 graph-Laplacian Poisson operator, the retained weak-field source/readout/test-response bridge, and the retained Z^3 Green-kernel asymptotic, the note derives a 1/r potential and bilinear inverse-square force in lattice units."
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gravity_clean_derivation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained",
+          "gravity_clean_derivation_note": "retained_bounded"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+          "gravity_clean_derivation_note"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": null,
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-020420-43666d298c-newton_poisson_flat_friedman",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Using M=(4 pi/3)rho R^3 and R=aR0 gives a''/a=-(4 pi G/3)rho. With dust continuity rho a^3=constant, direct first integration gives H^2=(8 pi G/3)rho+C/a^2, and the flat k=0 branch sets C=0.",
+      "claim_scope": "Newton-Poisson homogeneous pressureless-dust first integral to the flat k = 0 first Friedmann law, conditional on the stated dust continuity and flat-branch premises.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T02:05:50.077825+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gravity_clean_derivation_note:retained_bounded->unaudited",
+      "load_bearing_step": "The first Friedmann law follows from a first integral of a''/a = -(4 pi G/3) rho, with the integration constant fixed to zero by the flatness assumption k = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No runner was supplied, but the load-bearing dust first-integral math is independently checkable from the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is a hand-checkable algebraic first integral over the explicitly stated Newton-Poisson dust hypotheses, not a tuned numerical match or symbol renaming. The source correctly excludes radiation/general-pressure fluids, where the rho-only Newtonian acceleration would give half the GR radiation coefficient. The cited one-hop authorities are retained-grade in the restricted packet, and no runner artifact is needed to judge this algebraic closure."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.077183+00:00",
+      "audit_date": "2026-06-18T10:24:28.609146+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube.",
+          "gravity_clean_derivation_note": "Bounded weak-field composition: from retained-bounded source-response bridge inputs and the retained-bounded Z^3 graph-Laplacian Green asymptotic, derive a 1/r potential and bilinear inverse-square force in lattice units only."
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gravity_clean_derivation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained",
+          "gravity_clean_derivation_note": "retained_bounded"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+          "gravity_clean_derivation_note"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": null,
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-newton_poisson_flat_friedmann_textbook_import_note_2026-05-17-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Multiplying a'' = -(4 pi G/3) rho a by a' and using rho a^3 = constant gives H^2 = (8 pi G/3) rho + C/a^2. The stated k = 0 boundary sets C = 0, so the displayed dust flat first Friedmann law follows within the declared scope.",
+      "claim_scope": "Under Newton-Poisson gravity for homogeneous pressureless dust with rho a^3 constant and an explicitly assumed k = 0 FRW slice, the dust first integral gives H^2 = (8 pi G/3) rho; radiation and general-pressure Friedmann closure are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T10:24:28.609146+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gravity_clean_derivation_note:retained_bounded->unaudited",
+      "load_bearing_step": "The first Friedmann law follows by first-integrating a''/a = -(4 pi G/3) rho using rho a^3 = constant, then setting the curvature/integration constant to zero for k = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that downstream consumers do not use this dust-only wrapper for radiation/general-pressure H_rad.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The source explicitly narrows the claim to pressureless dust and does not use the Newtonian rho-only acceleration to claim radiation or general-pressure Friedmann closure. The load-bearing step is a straightforward algebraic first integral of the Newtonian dust acceleration plus continuity equation, with the curvature/integration constant removed by the stated k = 0 premise. The note does not overclaim a framework derivation of physical G, Newton-Poisson gravity, or full GR; those remain outside this bounded wrapper."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Newton-Poisson \u2192 Flat First Friedmann Law (Dust) \u2014 Named Non-Derivation Import",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

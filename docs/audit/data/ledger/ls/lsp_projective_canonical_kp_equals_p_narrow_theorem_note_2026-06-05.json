@@ -1,0 +1,391 @@
+{
+  "audit_date": "2026-07-11T22:29:04.561861+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "load_bearing_score": 10.807,
+    "runner_hash": "645cfe028fcc8a6370f03a3f8cb3c3b76c66aeaad020e0f0f39a934a9d4ef660",
+    "transitive_descendants": 447
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00350-lsp_projective_canonical_kp_",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The conclusions follow directly from projection orthogonality, completeness, and the stated apparatus contraction. The accepted finite-carrier premise supplies the setting, while no measurement-probability rule, fitted value, or open physical-selection bridge is used.",
+  "claim_id": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+  "claim_scope": "Finite-dimensional projective measurements with nonzero displayed outcome projectors and fixed canonical apparatus preparation/readout: K_r=P_r; outcome phases and permutations preserve the instrument up to phase or relabeling; label-mixing apparatus rows change the corresponding POVM element.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-07-11T22:29:04.561861+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-07-11T22:06:05.067412+00:00",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00340-lsp_projective_canonical_kp_",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Finite-dimensional projective measurements with nonzero displayed projectors and fixed canonical apparatus preparation/readout: K_r=P_r; phases and permutations preserve the instrument up to phase or relabeling; other label mixing changes the labeled nonzero-sector POVM elements.",
+      "claim_type": "bounded_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-07-11T22:29:04.561861+00:00",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00350-lsp_projective_canonical_kp_",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Finite-dimensional projective measurements with nonzero displayed outcome projectors and fixed canonical apparatus preparation/readout: K_r=P_r; outcome phases and permutations preserve the instrument up to phase or relabeling; label-mixing apparatus rows change the corresponding POVM element.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 11.5,
+  "load_bearing_step": "From K_r=\u03a3_s\u27e8r|V_A|s\u27e9P_s and P_sP_{s'}=\u03b4_{ss'}P_s, one obtains K_r\u2020K_r=\u03a3_s|\u27e8r|V_A|s\u27e9|\u00b2P_s, with the canonical case giving K_r=P_r.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ebafd931381243c847b6562669b3148cec4c3fa5cfff895bda9b3bdb93730478",
+  "note_path": "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": "",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T16:24:10.635688+00:00",
+      "archived_for_note_hash": "303a7a46d94fa6365c990825fd33d6c1a8fd49245332da7b874850b48a1b5473",
+      "audit_date": "2026-06-06T12:10:40.308655+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a48665b6e29f5bf95dadea2d7427d8f401a6834b6491e0b9ece3a4295d4c2b46",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-120759-e7a2043485-lsp_projective_canonical_kp_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The canonical K_r = P_r contraction, the P_r E P_r sandwich, and the mixture formula follow by finite-dimensional projection algebra. The universal inequality for any label-mixing V_A does not follow from the stated hypotheses because zero-projector outcome labels are not excluded; a unitary mixing only zero-projection labels is label-mixing but preserves K_r^\u2020 K_r = P_r.",
+      "claim_scope": "Finite-dimensional projective-measurement Kraus extraction in the canonical Naimark/Lueders frame, with phase/permutation apparatus twists; the label-mixing failure is audited only when the mixed labels carry nonzero projections.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T12:10:40.308655+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substituting the canonical isometry into Kraus extraction gives K_r = P_r, while after an apparatus twist orthogonality gives K_r^\u2020 K_r = \u03a3_s |\u27e8r|V_A|s\u27e9|^2 P_s, asserted to differ from P_r for label-mixing V_A.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: add an explicit nonzero-outcome projection hypothesis or weaken the necessity clause to rows mixing into labels s with P_s != 0 and s != r, then rerun with a zero-projector edge-case check.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 3,
+        "C": 9,
+        "D": 26,
+        "total_pass": 47
+      },
+      "verdict_rationale": "The runner source genuinely constructs the projectors, isometry, Kraus contractions, phase/permutation cases, and mixing formula rather than merely printing expected constants, and its 47 PASS output is consistent with the displayed algebra. An independent check confirms the canonical and sufficiency portions. The necessity clause is slightly over-broad as written: the note needs an explicit nonzero-outcome-projection convention, or it must weaken the claim to mixing into a distinct nonzero projector sector. Without that scope repair, the claimed universal break under label-mixing V_A is false in zero-effect-label edge cases."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.505354+00:00",
+      "audit_date": "2026-06-06T18:42:41.700710+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "645cfe028fcc8a6370f03a3f8cb3c3b76c66aeaad020e0f0f39a934a9d4ef660",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-184055-a21967e3a0-lsp_projective_canonical_kp_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The result follows by direct finite-dimensional projection algebra and orthonormal-basis contraction; the only cited framework authority is an accepted axiom premise used for the finite qubit-lattice carrier. The necessity clause follows from linear independence of mutually orthogonal nonzero projections.",
+      "claim_scope": "Finite-dimensional projective measurements on H_Lambda with nonzero displayed outcome projectors: canonical Naimark/Lueders readout gives K_r=P_r; outcome-label phases/permutations preserve this up to phase/relabeling; general label-mixing apparatus unitaries change the POVM element on nonzero sectors.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T18:42:41.700710+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Substituting the canonical isometry into Kraus extraction gives K_r = sum_s P_s <r|s> = P_r, while a twisted apparatus readout gives K_r^dag K_r = sum_s |<r|V_A|s>|^2 P_s, which differs from P_r when V_A mixes distinct nonzero outcome sectors.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 3,
+        "C": 9,
+        "D": 4,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The load-bearing identities are algebraic consequences of the stated projection relations, fixed apparatus preparation, and outcome-basis readout. An independent check confirms the twist formula and the failure condition for label-mixing V_A without relying on the runner implementation. The runner source computes the symbolic and numerical checks it reports, including phase/permutation sufficiency, generic mixing failure, zero-projector edge cases, and source-boundary strings, with 53 PASS / 0 FAIL. No non-accepted open dependency is imported."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.882660+00:00",
+      "audit_date": "2026-07-01T12:25:52.869446+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.055,
+        "runner_hash": "645cfe028fcc8a6370f03a3f8cb3c3b76c66aeaad020e0f0f39a934a9d4ef660",
+        "transitive_descendants": 93
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T122552Z-09ab09c5-lsp_projective_canonical",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by finite-dimensional projection algebra: orthogonality/completeness make the canonical dilation an isometry, the readout-basis contraction selects P_r, and linear independence of nonzero orthogonal projectors proves the label-mixing inequality. The minimal axiom authority is used only as the accepted finite qubit-lattice carrier premise, not as a measurement, Born-rule, or instrument-selection import.",
+      "claim_scope": "Finite-dimensional projective measurements on the supplied finite qubit-region carrier, with nonzero displayed outcome projectors and the canonical prepared-apparatus/readout frame; K_r=P_r, phase/permutation readout twists preserve up to phase/relabeling, and label-mixing apparatus unitaries do not preserve the same nonzero-sector POVM.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T12:25:52.869446+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Substituting the canonical isometry into Kraus extraction gives K_r = \u03a3_{r'} P_{r'}\u27e8r|r'\u27e9 = P_r, while a label-mixing V_A gives K_r\u2020K_r = \u03a3_s |\u27e8r|V_A|s\u27e9|\u00b2 P_s, which differs from P_r on distinct nonzero sectors.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over the stated projective-measurement hypotheses and accepted finite carrier premise, not a definition or tuned numerical match. The runner source actually constructs the projectors, isometry, Kraus contractions, phase/permutation cases, mixing counterexamples, and zero-label edge case; its 53 PASS checks are consistent with the note and are not merely hard-coded stdout. The negative boundary is explicitly narrowed to label-mixing on nonzero outcome sectors and does not claim instrument uniqueness or a physical measurement postulate."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.472841+00:00",
+      "audit_date": "2026-07-02T01:18:52.800041+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.055,
+        "runner_hash": "645cfe028fcc8a6370f03a3f8cb3c3b76c66aeaad020e0f0f39a934a9d4ef660",
+        "transitive_descendants": 93
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T011852Z-fa307b70-lsp_projective_canonical",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from the explicit projective-measurement hypotheses, the orthonormal apparatus basis contraction, and finite-dimensional isometry extension. The only upstream authority is the registered minimal_axioms accepted premise for the finite carrier, and no Born rule, instrument uniqueness, or measurement-selection axiom is imported.",
+      "claim_scope": "Finite-dimensional projective measurements on the finite qubit-lattice carrier, with nonzero displayed outcome projectors, fixed prepared apparatus state and outcome-basis readout; K_r=P_r is audited in the canonical frame and under phase/permutation readout relabeling, while label-mixing V_A is audited only as breaking the same projective POVM on nonzero sectors.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T01:18:52.800041+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "K_r = <r|_A U_int (I_sys tensor |0>_A) = sum_s P_s <r|s>_A = P_r, and after an apparatus twist K_r^dag K_r = sum_s |<r|V_A|s>|^2 P_s.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The proof is finite-dimensional linear algebra: projection completeness gives the canonical isometry, Kraus extraction returns P_r, and label-mixing apparatus unitaries produce a nontrivial mixture of orthogonal projector sectors. The runner source genuinely constructs the projector families, isometries, twists, Haar samples, and zero-label edge case rather than merely printing constants. Its checks are algebraic/symbolic/numerical confirmations with no external comparator or tuned input value. The negative boundary is narrow and explicitly scoped, so the no-go discipline gate does not expose an overbroad closure claim."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.336389+00:00",
+      "audit_date": "2026-07-10T17:09:01.935799+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 14.814,
+        "runner_hash": "645cfe028fcc8a6370f03a3f8cb3c3b76c66aeaad020e0f0f39a934a9d4ef660",
+        "transitive_descendants": 449
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00014-lsp_projective_canonical_kp_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The canonical identity and the label-mixing result follow directly from contraction, projector orthogonality, completeness, and finite-dimensional isometry extension. No measurement axiom, empirical input, or unresolved authority is needed for this explicitly conditional scope.",
+      "claim_scope": "For finite-dimensional H_sys with a complete family of nonzero orthogonal projectors and fixed canonical apparatus preparation/readout, K_r=P_r; pure outcome phases and permutations preserve the instrument up to phase or relabeling, while label-mixing rows change the corresponding POVM element to the stated unistochastic mixture.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T17:09:01.935799+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-10T00:00:11.170316+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-lsp_projective_canonical-063",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Canonical projective-measurement Kraus selection K_r=P_r, including phase/permutation equivalence and failure under genuine outcome-sector mixing, on a finite-dimensional qubit-lattice region carrier.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T17:09:01.935799+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00014-lsp_projective_canonical_kp_",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For finite-dimensional H_sys with a complete family of nonzero orthogonal projectors and fixed canonical apparatus preparation/readout, K_r=P_r; pure outcome phases and permutations preserve the instrument up to phase or relabeling, while label-mixing rows change the corresponding POVM element to the stated unistochastic mixture.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "Contracting the canonical isometry with the apparatus outcome bra gives K_r=P_r, while orthogonality reduces a twisted operator to K_r\u2020K_r=\u03a3_s|\u27e8r|V_A|s\u27e9|\u00b2P_s.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The load-bearing steps are genuine finite-dimensional algebraic closures rather than definitions, renamings, or imported numerical matches. The supplied runner source actually constructs the projectors, isometry, Kraus operators, twists, and zero-projector cases using exact symbolic and independent numerical calculations, with 53 checks passing and no hard-coded contested conclusion. The randomized tests are supplementary; the inline orthogonality argument proves the general scoped statement."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 53,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 53
+  },
+  "runner_path": "scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py",
+  "title": "LSP-Projective Canonical Kraus Selection `K_P = P` Under Restricted Step-3 Scope (Narrow)",
+  "transitive_descendants": 723,
+  "verdict_rationale": "The load-bearing identities are genuine finite-dimensional algebraic consequences of the stated hypotheses. The runner constructs the projectors, isometry, Kraus contractions, phase/permutation twists, mixing examples, and zero-projector cases rather than printing or importing the conclusions; all 53 checks pass. The necessity statement is correctly limited to nonzero displayed sectors, and the note does not claim instrument uniqueness or derive physical measurement semantics."
+}

@@ -1,0 +1,163 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0052f302c0df83dcf84ce2e026756f817645bf2217197f8200b2b8fdf0d24291",
+  "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXACT_ADDITIVITY_ZERO_OFFSET_REPAIR_NOTE_2026-06-13.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:05.079247+00:00",
+      "audit_date": "2026-06-14T03:50:40.011403+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": "Bounded external classification result: Cauchy/Shannon-Khinchin-Aczel-Daroczy classify additive functionals, and block determinant factorization gives the conditional log|Z| form only on the admitted additive class; P1 itself is not derived or retired."
+        },
+        "dep_claim_type": {
+          "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "2b5b2161264a0e5f9f1fb9bc169ea81798081dfc8b5a4211bae6ffa21fab8616",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-034919-656bfd5015-observable_principle_p1_exac",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by direct algebra from the stated functional form and exact-additivity hypothesis. This does not derive P1 or the physical exact-additivity premise, which the source note correctly leaves outside scope.",
+      "claim_scope": "Audited only the algebraic zero-offset repair: under the stated exact additive composition law on positive scalars, c log r+b is exact-additive only for b=0, while b != 0 belongs to a distinct shifted law.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T03:50:40.011403+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17:retained_bounded->unaudited",
+      "load_bearing_step": "For W_b(r)=c log r+b, W_b(r_1 r_2)-W_b(r_1)-W_b(r_2)=-b, so exact additivity for all positive r_1,r_2 forces b=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No primitive dependency is used; a second auditor should only re-check that the scoped theorem is not later cited as deriving P1.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity: expanding the exact-additivity defect gives -b, and the unit argument gives the same result. The runner source actually computes symbolic defects, a symbolic solve, shifted-law separation, rational witnesses, and source guardrails rather than merely printing expected status. The cited parent is retained_bounded and is used only as boundary context; the audited claim does not rely on closing P1."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.489848+00:00",
+      "audit_date": "2026-07-10T04:21:45.940574+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": "Conditional classification on |Z| > 0: continuous exact multiplicative-to-additive functionals have logarithmic form, while the Shannon/Khinchin scaffold presupposes additivity and therefore does not retire P1."
+        },
+        "dep_claim_type": {
+          "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "2b5b2161264a0e5f9f1fb9bc169ea81798081dfc8b5a4211bae6ffa21fab8616",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00080-observable_principle_p1_exac",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated conditional scope, the logarithm product identity reduces the exact-additivity defect to -b, and setting that defect to zero gives b=0. This does not derive the exact-additivity premise or P1.",
+      "claim_scope": "Given W_b(r)=c log r+b and exact multiplicative-to-additive composition on positive reals, the additive offset must vanish; the shifted family instead obeys a distinct shifted law.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T04:21:45.940574+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17:retained_bounded->unaudited",
+      "load_bearing_step": "Substituting W_b(r)=c log r+b into exact additivity gives W_b(r_1r_2)-W_b(r_1)-W_b(r_2)=-b, so exact additivity forces b=0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [
+        "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner genuinely checks the symbolic defect, its solution, the unit argument, and the distinction between exact and shifted additivity. The conclusion is solely a class-(A) algebraic consequence of the exact-additivity premise isolated by the single cited parent, with no external-comparator check or independent derivation of that premise. It therefore supplies decoration-grade normalization detail rather than new closure of P1."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_observable_principle_exact_additivity_zero_offset_repair_2026_06_13.py",
+  "title": "Observable Principle Exact-Additivity Zero-Offset Repair",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

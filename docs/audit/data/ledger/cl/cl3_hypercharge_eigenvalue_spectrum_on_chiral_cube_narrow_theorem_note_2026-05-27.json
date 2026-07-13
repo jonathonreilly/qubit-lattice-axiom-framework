@@ -1,0 +1,228 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_color_automorphism_theorem",
+    "cl3_taste_generation_theorem"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a76b5819ea53b220f3f02c1d598f90e14d3fb7588a370b2147f64f90aa5fe9bf",
+  "note_path": "docs/CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T21:30:53.126448+00:00",
+      "audit_date": "2026-06-13T00:08:21.405102+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the 8D taste carrier, its tensor-factor commutation with the defined weak-fiber and block-scalar Y operators, and the SU(3) channel-count fraction R_conn=8/9; no physical SM-color or EW-readout bridge is audited.",
+          "cl3_taste_generation_theorem": "Audited only the abstract finite representation-theory statement on C^8: S3 decomposition, hw=1 A1+E/Z3 orbit, and restricted Y/T3 spectra, with no carrier-realization or physical SM-generation identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "cl3_taste_generation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "cl3_taste_generation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "cl3_taste_generation_theorem"
+        ],
+        "load_bearing_score": 5.392,
+        "runner_hash": "eb2886b8804ceb8e771073a42f6a4b55c65159a85e97597c153183804c3076ad",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-000722-5bc703290b-cl3_hypercharge_eigenvalue_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The swap action decomposes the explicit 8D basis into a 6D +1 eigenspace and a 2D -1 eigenspace; the stated projector and Y identities then follow by standard finite-dimensional linear algebra. The deferred physical-carrier and physical-hypercharge bridges are explicitly outside the audited claim scope.",
+      "claim_scope": "Pure algebraic projector, rank, trace, spectrum, |111> placement, and antisymmetric-eigenspace facts for Y=(+1/3)P_symm+(-1)P_antisymm on C^8=(C^2)^{otimes 3} under the b1<->b2 swap; no physical SM hypercharge identification audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T00:08:21.405102+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Because Im(P_symm) and Im(P_antisymm) are complementary orthogonal projector images of ranks 6 and 2, Y acts as +1/3 on Im(P_symm) and -1 on Im(P_antisymm), so spec(Y) = {+1/3 with multiplicity 6, -1 with multiplicity 2}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that the cited authority status headers remain retained-grade and that the physical-hypercharge bridge remains out of scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "An independent check of the displayed algebra gives four fixed b1=b2 states plus two symmetric b1!=b2 combinations, hence rank(P_symm)=6 and rank(P_antisymm)=2; the two antisymmetric combinations give the full Y=-1 eigenspace, while |111> is fixed by the swap and carries Y=+1/3. The runner source constructs the explicit 8x8 matrices and computes exact rational projector, trace, eigenvalue, and vector-action checks; it does not merely print constants or import the contested spectrum. The one-hop cited authorities are supplied as retained_bounded, and the note does not use their deferred physical-identification language as a premise for the audited algebraic theorem."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.050895+00:00",
+      "audit_date": "2026-06-16T00:44:17.860004+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "cl3_taste_generation_theorem": "Abstract C^8 = (C^2)^{otimes 3} tensor-position S3 representation, its hw=1 Z3 orbit, and the restricted spectra of the explicitly defined Y and T3 operators, with no carrier or physical-family identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "cl3_taste_generation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "cl3_taste_generation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "cl3_taste_generation_theorem"
+        ],
+        "load_bearing_score": 8.392,
+        "runner_hash": "eb2886b8804ceb8e771073a42f6a4b55c65159a85e97597c153183804c3076ad",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-004249-245b7e7ac9-cl3_hypercharge_eigenvalue_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independently, P_swap is an involution with a six-dimensional +1 eigenspace and a two-dimensional -1 eigenspace, giving complementary projectors of ranks 6 and 2. The stated trace, full spectrum, |111> placement, and antisymmetric -1 eigenspace then follow by finite-dimensional linear algebra from the explicit operator definition.",
+      "claim_scope": "Pure algebraic spectrum of Y = (+1/3) P_symm + (-1) P_antisymm on C^8 = (C^2)^{otimes 3} for the b1<->b2 swap projectors, including S1-S6 and excluding any physical SM hypercharge identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T00:44:17.860004+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_taste_generation_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Since P_symm and P_antisymm are complementary orthogonal projectors of ranks 6 and 2, Y acts as +1/3 on Im(P_symm) and -1 on Im(P_antisymm), so no other eigenvalues occur.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor may re-check the stale in-note ledger/status wording against the packet headers, but it does not affect the algebraic closure audited here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic identity on explicitly defined 8x8 matrices, not a physical readout or numerical match. The supplied runner source constructs P_swap and Y exactly over rationals and computes the projector identities, traces, eigenvalues, and eigenspace checks; its expected constants are theorem predicates, not imported calibrated inputs. The provided upstream authorities are retained-grade for the abstract C^8/base/Burnside structures used here, and the open physical-identification bridge is explicitly outside the audited claim scope."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.228110+00:00",
+      "audit_date": "2026-07-02T05:27:42.717857+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "cl3_taste_generation_theorem": "Abstract representation-theory theorem for the admitted C^8=(C^2)^{otimes 3}: S3 decomposition, hw=1 Z3 orbit, and restricted Y/T3 spectra, with no carrier or physical-family identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "cl3_taste_generation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "cl3_taste_generation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "cl3_taste_generation_theorem"
+        ],
+        "load_bearing_score": 5.322,
+        "runner_hash": "eb2886b8804ceb8e771073a42f6a4b55c65159a85e97597c153183804c3076ad",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T052742Z-edd1ded1-cl3_hypercharge_eigenval",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The swap is an involution with four fixed basis states and two swapped pairs, so the symmetric and antisymmetric projector ranks are 6 and 2. The stated trace, spectrum, |111> placement, and antisymmetric eigenspace then follow by direct finite-dimensional linear algebra without importing a physical hypercharge identification.",
+      "claim_scope": "Algebraic spectrum and eigenspace facts for Y=(1/3)P_symm-P_antisymm built from the b1<->b2 swap on C^8=(C^2)^{otimes 3}.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T05:27:42.717857+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_taste_generation_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Since P_symm and P_antisymm are complementary orthogonal projectors of ranks 6 and 2, Y acts as +1/3 on Im(P_symm) and -1 on Im(P_antisymm), giving spectrum {+1/3 multiplicity 6, -1 multiplicity 2}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check if the claim scope is widened from this algebraic operator spectrum to a physical SM hypercharge identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The proof's hard step is a finite-dimensional algebraic projector decomposition, and an independent hand check gives the same ranks, signs, trace, and eigenspaces. The runner source constructs the explicit 8x8 swap and Y at exact rational precision and checks the relevant projector identities, eigenvalue multiplicities, |111> placement, and antisymmetric block. The cited authorities are retained-bounded for the abstract C^8/base-fiber/Burnside inputs, and the audited claim does not use them to identify Y with physical SM hypercharge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_exact_2026_05_27.py",
+  "title": "Cl(3) Hypercharge Eigenvalue Spectrum on the Chiral Cube Narrow Theorem",
+  "transitive_descendants": 5,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

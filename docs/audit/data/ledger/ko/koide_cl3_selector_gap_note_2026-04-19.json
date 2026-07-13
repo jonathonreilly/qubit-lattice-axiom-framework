@@ -1,0 +1,396 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_cl3_selector_gap_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.524,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "141d829d4a7fba9c6a13d26f953ccfb2ad20fc9d2027a4cb8662974f03a69f4d",
+  "note_path": "docs/KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T12:32:48.492598+00:00",
+      "archived_for_note_hash": "2d07a60263ffc0056f1997dd38babe7c3b2e4f0584bfddd42f288deedbc5784e",
+      "audit_date": "2026-05-01T01:25:01.861599+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:2026-05-01-koide_cl3_selector_gap_note_2026-04-19",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note honestly records the selector gap, but its exact/numerical route-exhaustion claims rely on undeclared Cl(3)-SM embedding, frozen H matrix, Koide selected point, and scan computations with no runner or dependency surface.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note claims that the Cl(3) doublet/Kramers, baryon Schur-complement, SU(3)-modified-coupling, and eigenvalue-degeneracy routes have been sharpened enough to show no Cl(3)-algebraic selector currently derives the physical m_* point.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+        "docs/CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md",
+        "docs/charged_lepton_koide_review_packet_2026-04-18.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note is useful bounded gap bookkeeping, but the claimed route exhaustion is not independently auditable from this row. It imports the Cl(3)->SM embedding, H_frozen entries, E1/SELECTOR cancellation, baryon coupling symmetry, SU(3) coupling variants, eigenvalue scans, and the physical m_* witness without declared dependencies or a runner; the open-routes section also says the full 4x4 microscopic block calculation is not yet formally proved. Why this blocks: the audit cannot distinguish an exhausted Cl(3)-algebraic no-go from an inventory of tried ansatz routes, and the file ends with an incomplete boundary sentence, so the scoped claim boundary is not fully recorded in-source. Repair target: add/register a runner that reconstructs the doublet structure, m_DA, GAMMA=1/2 cancellation, Schur-complement claim, coupling-variant scans, and eigenvalue-degeneracy check from explicit inputs, or declare the charged-lepton/Koide selector and Cl(3)-SM embedding authorities as dependencies. Claim boundary until fixed: bounded support that the listed candidate routes do not presently derive m_*; not a closed theorem that all Cl(3)-algebraic selector routes are exhausted."
+    },
+    {
+      "archived_at": "2026-05-10T07:52:51.886256+00:00",
+      "audit_date": "2026-05-08T02:42:54.857411+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "Given the displayed T_m and the stipulated V(m)=1/2 Tr(K_sel^2)+1/6 Tr(K_sel^3), the local Clifford-trace algebra fixes the m-dependent scalar-potential coefficients g_2=3/2 and g_3=1/6; no charged-lepton mass selector, K_frozen authority, c1/c2 value, H_* witness, PDG comparator, or transport-gap observation is audited."
+        },
+        "dep_claim_type": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "retained"
+        },
+        "deps": [
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
+        ],
+        "load_bearing_score": 8.268,
+        "runner_hash": null,
+        "transitive_descendants": 108
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt55-xhigh-019e0576-df8a-74c2-81b9-9f0b991702a9",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet supports an honest gap relative to the cited scalar-potential note, but the negative closeout imports uncited embedding machinery, H_sel/H_* witness data, baryon-coupling symmetry, and numerical route checks. The missing step is a retained theorem or runner showing these candidate routes are exactly exhausted from the stated Cl(3) primitives.",
+      "claim_scope": "Audited the bounded selector-gap claim that the displayed Cl(3) doublet, baryon-Schur, SU(3)-coupling, and eigenvalue-degeneracy routes do not derive the charged-lepton point m_* \u2248 -1.1605.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-08T02:42:54.857411+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "The physical m_* is selected by phenomenological H_* witness kappa_* \u2248 -0.608, and no Cl(3)-algebraic derivation of kappa_* has been found.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add retained dependency notes or a primary runner for the Cl(3)->SM doublet construction, baryon Schur complement, SU(3) modification checks, eigenvalue scan, and H_* witness/kappa_* input provenance.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The cited authority is retained, but it explicitly limits its in-scope result to the local V(m) coefficient assignment and treats m_* and H_* witness inputs as out of scope. This source note relies on those admitted-context quantities and additional Cl(3)\u2192SM embedding route checks without a runner or retained upstream authority in the restricted packet. The note is appropriately framed as a bounded gap/support note, but the stronger route-exhaustion claim does not close from the provided inputs alone."
+    },
+    {
+      "archived_at": "2026-05-11T11:16:54.380505+00:00",
+      "archived_for_note_hash": "84327f4d22c6908f10cab8735bf56675a45b6058450c48710dd9c7c84f25b3d7",
+      "audit_date": "2026-05-10T14:01:46.081642+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "Given the displayed T_m and the stipulated V(m)=1/2 Tr(K_sel^2)+1/6 Tr(K_sel^3), the local Clifford-trace algebra fixes the m-dependent scalar-potential coefficients g_2=3/2 and g_3=1/6; no charged-lepton mass selector, K_frozen authority, c1/c2 value, H_* witness, PDG comparator, or transport-gap observation is audited."
+        },
+        "dep_claim_type": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "retained"
+        },
+        "deps": [
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
+        ],
+        "load_bearing_score": 10.422,
+        "runner_hash": null,
+        "transitive_descendants": 342
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e1230-54d3-75d1-b90e-a8f2e659a5d3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note shows a bounded gap only if several imported structures are accepted, but the restricted packet does not close the Cl+(3) doublet/H-matrix construction, baryon coupling uniformity, SU(3) embedding constants, or the H_* physical m_* bridge. The source note also explicitly leaves the full 4x4 block and kappa_* derivation open, so the broad \u201cno Cl(3)-algebraic route\u201d conclusion is not established.",
+      "claim_scope": "Audited the bounded selector-gap claim that the displayed doublet-A, baryon Schur, SU(3)-modified coupling, and eigenvalue-degeneracy routes fail to derive m_* from the supplied one-hop inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T14:01:46.081642+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "\u201cNo Cl(3)-algebraic route closes the gap\u201d between the displayed candidate selector values and the physical selected point m_* \u2248 -1.1605.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad - split the claim into auditable listed-route failures with direct dependencies/runners, and leave the global Cl(3)-alone non-derivability statement as an open_gate until the full 4x4 and kappa_* selector issues are closed.",
+      "open_dependency_paths": [
+        "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the global selector-gap/no-Cl(3)-route conclusion relies on unsupported imported structures and on an m_* physical witness that the cited authority marks as out of scope/open. Why this blocks: the supplied one-hop authority only retains the local V(m) coefficient assignment and honest V_eff-vs-m_* gap, not the doublet, baryon, SU(3), degeneracy, or H_* bridge needed for exhaustion. Repair target: provide direct retained dependencies or runners for each listed route and a theorem excluding or resolving the stated full-4x4/kappa_* open routes. Claim boundary until fixed: the note may be cited as an open selector-gap inventory, not as a closed bounded theorem that Cl(3) alone cannot derive m_*."
+    },
+    {
+      "archived_at": "2026-05-16T11:52:16.317008+00:00",
+      "archived_for_note_hash": "022076262174eeaf1755bce600e20f04827ed2c9956ec6ec035c6ed4ebc11c08",
+      "audit_date": "2026-05-11T12:13:28.009066+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "Given the displayed T_m and the stipulated V(m)=1/2 Tr(K_sel^2)+1/6 Tr(K_sel^3), the local Clifford-trace algebra fixes the m-dependent scalar-potential coefficients g_2=3/2 and g_3=1/6; no charged-lepton mass selector, K_frozen authority, c1/c2 value, H_* witness, PDG comparator, or transport-gap observation is audited."
+        },
+        "dep_claim_type": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "retained"
+        },
+        "deps": [
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
+        ],
+        "load_bearing_score": 10.665,
+        "runner_hash": null,
+        "transitive_descendants": 405
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-20260511-koide-cl3-selector-gap",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The direct parent is retained for the local V(m) coefficient assignment only; it explicitly excludes the charged-lepton mass selector, H_* witness, PDG comparator, transport observation, and broader route-exhaustion claims. No runner or retained one-hop dependency closes the listed route failures or the global Cl(3)-alone non-derivability statement.",
+      "claim_scope": "Open selector-gap inventory for the charged-lepton m_* problem: the cited parent supports only the V_eff coefficient assignment and V_eff-vs-m_* gap, while the listed doublet, baryon, SU(3), degeneracy, H_* witness, full-4x4, transport, and kappa_* routes remain pending direct retained dependencies or runners.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-11T12:13:28.009066+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The global Cl(3)-alone selector-gap/no-route conclusion is treated as an open selector-gap inventory, with only the parent V_eff coefficient assignment supported by the one-hop authority.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad: split the listed route failures into direct retained dependencies/runners and keep the global Cl(3)-alone non-derivability statement as an open_gate until the full 4x4, transport, and kappa_* routes are closed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note still contains broad route-exhaustion and no-Cl(3)-route language, but the cited parent authority only supports the V_eff coefficient assignment and the V_eff-vs-m_* gap. Why this blocks: a reader cannot infer that the doublet, baryon, SU(3), degeneracy, H_* witness, full-4x4, transport, or kappa_* routes are exhausted from the one-hop dependency. Repair target: split each route into a direct retained dependency or runner-backed negative result, and leave the global Cl(3)-alone non-derivability statement as an open gate until those routes are closed. Claim boundary until fixed: this row may be cited as an open selector-gap inventory and as a pointer to the parent V_eff gap, not as a closed bounded no-go theorem."
+    },
+    {
+      "archived_at": "2026-05-27T19:14:02.766588+00:00",
+      "archived_for_note_hash": "671669fdca086e520c7c86791bedc7f0d48e6fbafa87d5c3a93855e1252f4981",
+      "audit_date": "2026-05-16T13:36:32.996077+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "Given the displayed T_m and the stipulated V(m)=1/2 Tr(K_sel^2)+1/6 Tr(K_sel^3), the local Clifford-trace algebra fixes the m-dependent scalar-potential coefficients g_2=3/2 and g_3=1/6; no charged-lepton mass selector, K_frozen authority, c1/c2 value, H_* witness, PDG comparator, or transport-gap observation is audited."
+        },
+        "dep_claim_type": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "retained"
+        },
+        "deps": [
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
+        ],
+        "load_bearing_score": 11.113,
+        "runner_hash": null,
+        "transitive_descendants": 782
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-133612-20260516T133612Z-f99a63ae-koide_cl3_selector_gap_n-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet closes the parent V_eff coefficient assignment, but it does not close the route-specific doublet, baryon-Schur, SU(3)-coupling, degeneracy, full-4x4, transport, or kappa_* derivations. The note correctly leaves the global Cl(3)-alone non-derivability statement open.",
+      "claim_scope": "Audited only the narrowed open-gate posture: this note may inventory conditional Cl(3) selector-gap routes while relying on the retained parent solely for the V_eff coefficient assignment and V_eff-vs-m_* gap.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-16T13:36:32.996077+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The global \"Cl(3) alone cannot derive m_*\" closure-statement is treated as an open selector-gap inventory, not as a closed bounded theorem, because the listed routes lack direct retained dependencies/runners and the only parent-supported item is the V_eff coefficient assignment.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct retained dependencies or runners for each listed route, especially the full 4x4 baryon block, SU(3)-coupling modifications, degeneracy scan, and first-principles kappa_* derivation.",
+      "open_dependency_paths": [
+        "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The source note explicitly narrows itself to an open selector-gap inventory and does not assert a retained exhaustion theorem. Its only retained one-hop support is the parent V_eff coefficient assignment; the physical m_* witness and route-exhaustion claims are either out of scope in the parent or marked conditional/open in this note. With no runner source or output for the listed route claims, the chain cannot be upgraded beyond conditional inventory status."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.815080+00:00",
+      "audit_date": "2026-05-30T23:26:48.901012+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "Given the displayed T_m and the stipulated V(m)=1/2 Tr(K_sel^2)+1/6 Tr(K_sel^3), the local Clifford-trace algebra fixes the m-dependent scalar-potential coefficients g_2=3/2 and g_3=1/6; no charged-lepton mass selector, K_frozen authority, c1/c2 value, H_* witness, PDG comparator, or transport-gap observation is audited."
+        },
+        "dep_claim_type": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "retained"
+        },
+        "deps": [
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
+        ],
+        "load_bearing_score": 9.494,
+        "runner_hash": null,
+        "transitive_descendants": 254
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260530-koide-selector-gap",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority was 5-0 for the first audit tuple. The audited row is an open-gate inventory, not a closed selector-gap theorem, route-exhaustion theorem, or global Cl(3)-alone no-go. Under that narrowed scope, the retained parent supplies the only load-bearing V_eff coefficient-assignment/gap context, and the source explicitly keeps every listed route closure open rather than importing it as a conclusion. The missing per-route authorities are therefore the boundary of the open gate, not a blocker to the current inventory-only claim.",
+      "claim_scope": "Open selector-gap inventory for candidate Cl(3)->SM embedding routes: only the retained parent V_eff coefficient-assignment/gap context is load-bearing, while route exhaustions and global Cl(3)-alone non-derivability remain open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-30T23:26:48.901012+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-28T02:41:49.429982+00:00",
+          "auditor": "codex-audit-loop-koide-selector-gap-20260528-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Open selector-gap inventory for the Koide Cl(3)->SM embedding routes: the retained parent supplies only the V_eff coefficient-assignment/gap context, while Kramers-doublet, baryon-Schur, SU(3)-coupling, degeneracy, full-4x4, transport, and kappa_* route closures remain unaudited open gates.",
+          "claim_type": "open_gate",
+          "independence": "cross_family",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-30T23:18:39.312365+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-231705-3e9479f1-koide_cl3_selector_gap_n",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Open-gate inventory of candidate Cl(3) selector-gap routes, with the retained parent supporting only the V_eff coefficient assignment/gap and not any route exhaustion or global Cl(3)-alone non-derivability theorem.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-30T23:26:48.901012+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260530-koide-selector-gap",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Open selector-gap inventory for candidate Cl(3)->SM embedding routes: only the retained parent V_eff coefficient-assignment/gap context is load-bearing, while route exhaustions and global Cl(3)-alone non-derivability remain open.",
+          "claim_type": "open_gate",
+          "first_auditor_error": "No material error.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority was 5-0 for the first audit tuple. The audited row is an open-gate inventory, not a closed selector-gap theorem, route-exhaustion theorem, or global Cl(3)-alone no-go. Under that narrowed scope, the retained parent supplies the only load-bearing V_eff coefficient-assignment/gap context, and the source explicitly keeps every listed route closure open rather than importing it as a conclusion. The missing per-route authorities are therefore the boundary of the open gate, not a blocker to the current inventory-only claim.",
+          "load_bearing_step_class": "B",
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "second_auditor_error": "The second audit treated missing per-route retained authorities as a blocker for the current row, but those authorities would only be required to promote route exhaustion or a global Cl(3)-alone no-go. The source packet explicitly disclaims those promotions and makes the route list inventory only.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The note is graph-visible only as inventory: the parent supports only the V_eff coefficient assignment, while all Kramers, doublet-A, baryon-Schur, SU(3), degeneracy, H_*, transport, and kappa_* route closures require separate retained authorities or runners.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck if a future source revision promotes any listed route or the global Cl(3)-alone non-derivability statement from open inventory to a retained theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority was 5-0 for the first audit tuple. The audited row is an open-gate inventory, not a closed selector-gap theorem, route-exhaustion theorem, or global Cl(3)-alone no-go. Under that narrowed scope, the retained parent supplies the only load-bearing V_eff coefficient-assignment/gap context, and the source explicitly keeps every listed route closure open rather than importing it as a conclusion. The missing per-route authorities are therefore the boundary of the open gate, not a blocker to the current inventory-only claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Koide Cl(3) \u2192 SM Embedding \u2014 Selector Gap Note",
+  "transitive_descendants": 45,
+  "verdict_rationale": null
+}

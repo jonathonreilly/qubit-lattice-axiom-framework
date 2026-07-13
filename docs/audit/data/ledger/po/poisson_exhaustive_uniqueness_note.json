@@ -1,0 +1,362 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "poisson_exhaustive_uniqueness_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (finite-grid candidate-enumeration diagnostic)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gate_b_poisson_self_gravity_note",
+    "poisson_self_gravity_loop_note",
+    "self_consistency_forces_poisson_note"
+  ],
+  "direct_in_degree": 11,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.066,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "45861d1be513673c9fb91fdee1c31eaaae03003bd0085a27287d1e37ecc55ddf",
+  "note_path": "docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106671+00:00",
+      "archived_for_note_hash": "223e6c0c0ed91542dbae4daf7487ba304c3305f35314f5811a1dab02d617cbdd",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-30T19:14:10.169344+00:00",
+      "archived_for_note_hash": "3f50b28aa1ab14f5aa5fab2e70716a3b27cfd954e59798e54c2153eb5d9d367d",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.813218+00:00",
+      "audit_date": "2026-04-30T22:26:22.391220+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.129,
+        "transitive_descendants": 34
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-high-ready-20260430-24",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner gives a reproducible finite-grid diagnostic and shows monotone beta(alpha) over the sampled family, anisotropic robustness, higher-order-stencil consistency, and non-local divergence. It does not by itself prove continuum alpha=1 uniqueness, exhaustive coverage of all local symmetric field operators, or that the non-local failures are physical rather than conditioning/regularization artifacts.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "Finite sampled tests of L_alpha = (-nabla^2)^alpha, anisotropic Laplacians, non-local operators, and higher-order stencils establish that the nearest-neighbor Poisson equation is the unique self-consistent gravity field equation on the 3D cubic framework surface.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "continuum_fractional_laplacian_green_scaling_theorem",
+        "operator_family_exhaustiveness_theorem",
+        "finite_size_crossing_extrapolation_runner",
+        "nonlocal_operator_regularization_stability_check"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: the source upgrades a finite N=16 sampled diagnostic into an exhaustive Poisson uniqueness theorem. Why this blocks: the live runner's own table has the beta=1 crossing closest to alpha=1.5 on the tested grid, so the Poisson alpha=1 conclusion relies on a continuum-limit finite-size-bias argument and an analytic Green-function/fractional-Laplacian theorem that are not proved or registered here; the non-local rejection also rests on observed divergence that could be numerical conditioning. Repair target: add/audit an analytic continuum theorem for beta(alpha) and the alpha=1 crossing, an explicit operator-family exhaustiveness theorem for local symmetric graph-compatible operators, and a finite-size/extrapolation runner showing the sampled crossing flows to alpha=1; separately regularize non-local alternatives or state their exclusion assumptions. Claim boundary until fixed: finite-grid support that beta(alpha) is monotone over the sampled fractional family, higher-order stencils agree, anisotropy is robust, and the tested non-local operators diverge in this implementation."
+    },
+    {
+      "archived_at": "2026-05-10T13:05:00.500976+00:00",
+      "archived_for_note_hash": "e184c4ee8f99cf6771d49ecacf06d054b53e254045d18e69f2b63ae30e404417",
+      "audit_date": "2026-05-05T05:10:16.385028+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.055,
+        "runner_hash": "a06aed82e8125abea72bb0d16c20d3c2f87dd53fb346485ba20389c905cc21d1",
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-poisson_exhaustive_uniqu-127",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner supports a finite sampled N=16 diagnostic, but it does not prove monotonicity on the continuous alpha family or the continuum-limit identification of the unique crossing with alpha=1. The missing step is a bridge theorem from sampled finite-grid beta(alpha) values to continuous-family and continuum uniqueness of Poisson.",
+      "claim_scope": "Audited the restricted claim that the Poisson operator is uniquely selected among the tested fractional, anisotropic, non-local, and higher-order lattice operators by the supplied N=16 self-consistency runner.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T05:10:16.385028+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The mass exponent beta decreases monotonically with alpha, which guarantees a unique beta=1 crossing and therefore makes Poisson unique in the fractional family, with the finite-grid crossing shifted from alpha=1 by finite-size bias.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or cite within the packet a theorem connecting the finite sampled N=16 monotonic beta table to continuous-alpha uniqueness and continuum alpha=1 Poisson selection.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The runner appears to perform genuine finite-lattice computation rather than merely printing constants, so the finite diagnostic has class C support. However, the note's conclusion is broader than the computation: only ten alpha values on N=16 are tested, the closest Newtonian crossing is alpha\u22481.5 rather than alpha=1, and the asserted finite-size/continuum bridge is not closed by the restricted packet. The non-local divergence claim is also conditioned on the chosen iteration, mixing, boundary conditions, and conditioning rather than a theorem ruling out the operator class."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.475839+00:00",
+      "audit_date": "2026-05-18T13:14:39.156012+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gate_b_poisson_self_gravity_note": "Bounded no-go for the supplied one-seed minimal one-loop Poisson-like backreaction probe on the drift=0.2, restore=0.7 grown row.",
+          "poisson_self_gravity_loop_note": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism.",
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "gate_b_poisson_self_gravity_note": "no_go",
+          "poisson_self_gravity_loop_note": "bounded_theorem",
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_poisson_self_gravity_note": "retained_no_go",
+          "poisson_self_gravity_loop_note": "retained_bounded",
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_poisson_self_gravity_note",
+          "poisson_self_gravity_loop_note",
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 14.798,
+        "runner_hash": "a06aed82e8125abea72bb0d16c20d3c2f87dd53fb346485ba20389c905cc21d1",
+        "transitive_descendants": 889
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-131316-974c65f4-poisson_exhaustive_uniqu-001",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed finite-grid scope, the provided runner source builds the relevant discrete operators and runs the self-consistent iteration rather than importing the contested result. The missing continuum and exhaustiveness bridge theorems are explicitly excluded from the audited claim.",
+      "claim_scope": "Finite N = 16 Dirichlet-grid candidate-enumeration diagnostic over the runner's enumerated operator tests, not a continuum Poisson uniqueness theorem or exhaustive theorem over all local symmetric operators.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T13:14:39.156012+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-18T13:11:21.333105+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-130932-bf75a80a-poisson_exhaustive_uniqu-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite N = 16 candidate-enumeration diagnostic over the runner's 21 evaluated operator instantiations/rows, with no continuum-limit, continuous-alpha, or all-local-operator uniqueness audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-18T13:14:39.156012+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-131316-974c65f4-poisson_exhaustive_uniqu-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite N = 16 Dirichlet-grid candidate-enumeration diagnostic over the runner's enumerated operator tests, not a continuum Poisson uniqueness theorem or exhaustive theorem over all local symmetric operators.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "runner_hash_changed:a06aed82->3a1ee51d",
+      "load_bearing_step": "On the N = 16 Dirichlet grid, the runner instantiates the enumerated finite candidate tests and computes the reported selection pattern: monotone sampled fractional beta values with a unique sampled |beta-1| minimum, attractive convergence for the anisotropic and higher-order Laplacian cases, and nonconvergence for the non-local variants.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Recheck that the ledger description says 21 runner tests rather than 21 distinct operators, and clean the runner SAFE CLAIMS text so it cannot be mistaken for a continuum alpha=1 uniqueness claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The bounded claim is supported by first-principles finite-grid computation from the runner: matrix construction, fractional spectral solves, fixed-point iteration, and fitted beta/readout checks. All cited authorities are retained-grade under the rubric, and the note no longer relies on their broader open uniqueness language. The runner stdout still contains stale overbroad wording about continuous-family/alpha=1 uniqueness, and the 21-count appears to include repeated Poisson-baseline tests, but the source note fences those as out of scope and the finite diagnostic itself closes."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.977231+00:00",
+      "audit_date": "2026-06-18T03:41:33.840219+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_poisson_self_gravity_note": "Bounded no-go for the supplied one-seed minimal one-loop Poisson-like backreaction probe on the drift=0.2, restore=0.7 grown row.",
+          "poisson_self_gravity_loop_note": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism.",
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "gate_b_poisson_self_gravity_note": "no_go",
+          "poisson_self_gravity_loop_note": "bounded_theorem",
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_poisson_self_gravity_note": "retained_no_go",
+          "poisson_self_gravity_loop_note": "retained_bounded",
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_poisson_self_gravity_note",
+          "poisson_self_gravity_loop_note",
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 14.195,
+        "runner_hash": "3a1ee51db84d5b8b39a42e2e4dd3b1a8e667f809f5c3b8c3178fe3906f9d2117",
+        "transitive_descendants": 292
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-poisson_exhaustive_uniqueness_note-second",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source genuinely constructs the listed operators, runs the fixed-point propagation/field solve, and computes convergence and beta values rather than hard-coding the contested outputs. The note narrows the conclusion to the finite sampled runner surface and explicitly excludes continuum-alpha, continuum-limit, and all-operator exhaustiveness claims.",
+      "claim_scope": "Finite N=16 candidate-enumeration diagnostic over the runner-instantiated fractional, anisotropic, non-local, and higher-order Poisson-operator rows with the stated parameters.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T03:41:33.840219+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-18T03:38:30.006637+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-poisson_exhaustive_uniqueness_note-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite N=16 candidate-row diagnostic for the runner's sampled fractional, anisotropic, non-local, and higher-order Laplacian rows under the stated iteration parameters.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-18T03:41:33.840219+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-poisson_exhaustive_uniqueness_note-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite N=16 candidate-enumeration diagnostic over the runner-instantiated fractional, anisotropic, non-local, and higher-order Poisson-operator rows with the stated parameters.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On the N=16 Dirichlet grid, the runner's explicitly enumerated finite candidate rows produce the stated convergence, attractiveness, monotonicity, and beta-selection pattern under the fixed self-consistent iteration.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the source wording that counts 21 runner rows as 21 operators, since the runner includes repeated Poisson baselines and three non-local variants.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Within the bounded finite-runner scope, the completed cache and runner source support the observed selection pattern. The cited authorities are retained-grade for audit purposes, and the current claim does not rely on promoting the parent Gate B chain. The result is clean only as a finite-grid diagnostic, not as continuum Poisson uniqueness or exhaustiveness over all local symmetric operators."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_poisson_exhaustive_uniqueness.py",
+  "title": "Poisson Exhaustive Uniqueness",
+  "transitive_descendants": 757,
+  "verdict_rationale": null
+}

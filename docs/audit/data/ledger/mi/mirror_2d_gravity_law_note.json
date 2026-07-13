@@ -1,0 +1,614 @@
+{
+  "audit_date": "2026-05-25T19:40:18.863053+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 3.822,
+    "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+    "transitive_descendants": 9
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T193958Z-fecbeaaf-mirror_2d_gravity_law_no-01",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The primary runner genuinely constructs the mirror/random graph families, calls the supplied linear propagator/helper generator, computes detector statistics and power-law fits, and its cached stdout matches the weak-fit rows quoted in the note. The conclusion is bounded to those runner windows and does not depend on the diagnostic cleanup sweep.",
+  "claim_id": "mirror_2d_gravity_law_note",
+  "claim_scope": "Audited the bounded null-result that the supplied exact 2D mirror primary runner and in-packet helper source compute weak gravity-side mass-window and distance-tail fits on the stated searched windows.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-05-25T19:40:18.863053+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/mirror_born_audit.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 3.822,
+  "load_bearing_step": "The primary-runner cache reports weak gravity-side fits on the exact 2D mirror family: gravity scaling R^2=0.015, fixed-anchor mass-window R^2=0.167, and distance-tail R^2=0.075, so no clean promoted mass or distance law is supported on the searched windows.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a043e02b415db149daafd1d8d517e4bfef21f0056dfded963b11f24997a9582e",
+  "note_path": "docs/MIRROR_2D_GRAVITY_LAW_NOTE.md",
+  "notes_for_re_audit_if_any": "A second auditor should re-check that the intended audit scope remains bounded to the default primary-runner windows and does not silently inherit any claim from the diagnostic cleanup table.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369131+00:00",
+      "archived_for_note_hash": "0c9c8b37177dd319cef38fae5361e530d4ff8d2888109177f9e49b5ddccf9976",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T03:48:09.222619+00:00",
+      "archived_for_note_hash": "f14a869983e9987213a3b1d949e56e36c8a184920c4d0153e527c3203804dffb",
+      "audit_date": "2026-04-26",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The named cleanup runner reproduces the weak best-fit rows for N=60,80,100 and its interpretation says to keep the result bounded unless the fit is visibly clean. The audit queue row is candidate promoted-grade only because the source status line contains the phrase 'no clean 2D mirror law candidate promoted-grade', which is an explicit non-promotion statement.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The cleanup sweep reports that exact 2D mirror gravity-side mass and distance fits remain weak and fit-dependent, with no clean 2D mirror mass or distance law proposed for promotion.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [
+        "source_status_explicitly_says_no_clean_2d_mirror_law_candidate promoted-grade",
+        "cleanup_runner_interpretation_keeps_result_bounded_not_promoted",
+        "mass_and_distance_fits_not_review_safe_for_promotion"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the target is classified as candidate promoted-grade, but the source note and runner both say the cleanup found no clean promoted 2D mirror gravity law. Why this blocks: the best mass exponents are weak or deteriorating and the distance-tail fits are absent or low quality, so promoting a law would invert the actual result of the source packet. Repair target: change the Status line so the audit queue reads this as a bounded cleanup/non-promotion note, or create a separate promotion packet with a registered runner that demonstrates a stable mass or distance law with hard fit-quality thresholds. Claim boundary until fixed: it is safe to claim that the exact 2D mirror family remains a bounded coexistence pocket and that the cleanup sweep found N=60 mass-window R^2=0.923, N=60 distance-tail R^2=0.872, N=80 no review-safe distance tail, and N=100 weak mass/distance fits; it is not safe to claim a promoted 2D mirror gravity law."
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.236491+00:00",
+      "audit_date": "2026-05-01T20:09:54.383444+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.822,
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-01-d522",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited cleanup script reproduces the note's bounded null-result table, but the audit ledger has no registered runner_path for this row and the script emits no classified PASS lines. The null result is supported, but the row is not mechanically auditable from its ledger registration.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "The exact 2D mirror cleanup found no clean promoted mass law and no clean promoted distance law: the best mass fits weaken with size and the distance-tail fits are absent or low quality.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "scripts/mirror_2d_gravity_law_cleanup.py"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the source note's narrowed bounded null result matches the cleanup script output, but the row has no registered primary runner and the script output is unclassified. Why this blocks: a fresh audit sweep cannot discover or classify the load-bearing cleanup checks from the ledger alone, so the supported no-law result remains tied to an unregistered script/log artifact. Repair target: register scripts/mirror_2d_gravity_law_cleanup.py as the runner and add classified PASS lines for no clean mass law, no clean distance law, retained bounded pocket, and non-promotion boundary. Claim boundary until fixed: a bounded null-result supported by a cited script, not a fully audit-clean mechanically reproducible row."
+    },
+    {
+      "archived_at": "2026-05-04T21:26:09.261627+00:00",
+      "archived_for_note_hash": "a69fe1134adf919ef597c2f1508b31a8096b9e9a451a0e0de60be389f6792d55",
+      "audit_date": "2026-05-03T19:52:08.171877+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.822,
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-orsted",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note's listed best mass and distance fits stay below the stated clean-law threshold, with weak or absent distance-tail support. The conclusion is bounded to the searched windows and does not assert a global no-law theorem.",
+      "claim_scope": "The exact 2D mirror cleanup, as summarized in the note, yields only weak bounded gravity-side fits and no promoted mass or distance law on the searched N=60,80,100 windows.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T19:52:08.171877+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The wider gravity-law cleanup confirmed that the best fitted windows are still bounded rather than law-like.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check a completed cleanup artifact if the claim is later expanded beyond the note's stated search-window summary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The note makes a bounded null-result claim rather than promoting a gravity law. Given the stated cleanup results, the R^2 values and missing/weak distance-tail fits support the limited conclusion that no clean mass or distance law was promoted on those windows. Residual risk is limited to independent reproduction of the cleanup sweep, not to the logical boundary of the note's claim."
+    },
+    {
+      "archived_at": "2026-05-08T11:38:47.374567+00:00",
+      "archived_for_note_hash": "2a2d938f380a205acbadcfa98af76083a6c689d1348b997fcc466fb95805321a",
+      "audit_date": "2026-05-05T06:40:13.901493+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.822,
+        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-mirror_2d_gravity_law_no-266",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The provided validation runner genuinely computes mirror-family Born, MI, decoherence, gravity, and narrow fit diagnostics, but the note's load-bearing wider cleanup table is not backed by the provided runner output or cleanup runner source. The missing step is the completed cleanup sweep or equivalent certificate for the N=60, N=80, and N=100 best-window rows.",
+      "claim_scope": "Audited the bounded null-result claim that the exact 2D mirror cleanup found no clean promoted mass law or distance law on the searched windows.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T06:40:13.901493+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The wider gravity-law cleanup confirmed that the best fitted windows are still bounded rather than law-like, with mass-window and distance-tail R^2 values below the proposed review-safe threshold and no promoted fit.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide the completed mirror_2d_gravity_law_cleanup.py output/cache and source, or narrow the note to the diagnostics actually emitted by scripts/mirror_2d_validation.py.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The primary runner source performs nontrivial computation rather than printing constants, so the available validation evidence is consistent with a class C computational check. However, the note's actual load-bearing null-result rests on wider cleanup sweep rows that are not present in the runner output packet, and the cleanup runner is only named as a companion. The bounded conclusion is plausible from the provided primary output, but the specific searched-window claim does not close from the restricted packet alone."
+    },
+    {
+      "archived_at": "2026-05-09T12:29:40.585758+00:00",
+      "archived_for_note_hash": "7b2a8ac81610436b69c1b07c0940c6c2c035c00644c2ba35d52b6d982d6e189b",
+      "audit_date": "2026-05-08T20:11:37.155048+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.822,
+        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0937-259b-7603-9859-c63d7c126181",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet does not include the cleanup runner source or cached cleanup stdout that allegedly reproduce the N=60/80/100 best-window rows. The included primary runner supports a narrow no-clean-fit follow-up, but it does not independently verify the wider cleanup table that is load-bearing for the note.",
+      "claim_scope": "Audited the bounded null-result that the searched exact 2D mirror gravity cleanup found no clean promoted mass law or distance law on the stated windows.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-08T20:11:37.155048+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The wider gravity-law cleanup confirmed that the best fitted mass-window and distance-tail rows are bounded rather than law-like, with weak or absent R^2 fits across N=60, 80, and 100.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide scripts/mirror_2d_gravity_law_cleanup.py and the cached completed stdout that reproduces every quoted N=60/80/100 cleanup fit row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the bounded null-result rests on quoted cleanup-sweep rows, but the restricted packet only provides the primary validation runner and its narrower follow-up output. Why this blocks: the auditor cannot verify from the supplied runner source/stdout that the wider N=60/80/100 best mass-window and distance-tail search was actually computed rather than transcribed. Repair target: include the cleanup runner source and completed cached cleanup log, or a sliced runner that reconstructs the quoted best-window table from the fixed 2D mirror family. Claim boundary until fixed: the packet supports only the narrower primary-runner statement that its fixed-anchor mass and distance fits are weak, not the full wider cleanup null-result."
+    },
+    {
+      "archived_at": "2026-05-09T18:08:13.015985+00:00",
+      "archived_for_note_hash": "777fb5b6cc1aa504c4dc0c578a81e2a9772bc6047d2de74e90c1d0a4e62a8af0",
+      "audit_date": "2026-05-09T14:32:40.101527+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.822,
+        "runner_hash": null,
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0d27-29c1-75f1-9ed3-5caa35eec176",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note's conclusion depends on quoted primary-runner/log values, but the restricted packet lists no primary runner, no stdout, no runner source, and no cited authority containing that log. The missing step is packet-level verification that the primary runner actually computed the quoted weak fits.",
+      "claim_scope": "Audited the narrowed bounded null-result that the exact 2D mirror primary-runner evidence does not support a clean promoted mass law or distance law on the searched windows.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-09T14:32:40.101527+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The primary-runner fit qualities R^2 = 0.168, 0.167, and 0.075 are the evidence that no clean promoted 2D mirror mass law or distance law is supported on the searched windows.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include the completed primary-runner stdout/cache and runner source in the audit packet, or add the primary runner path so the wrapper supplies them.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing weak-fit values are imported from a claimed primary runner/cache that is not included in the restricted packet. Why this blocks: without stdout or source, the audit cannot verify that the R^2 values were computed rather than copied or stale. Repair target: register/include scripts/mirror_2d_validation.py plus the completed cached stdout backing the three weak-fit rows. Claim boundary until fixed: the note is a bounded null-result conditional on the quoted primary-runner log being authentic and correctly computed."
+    },
+    {
+      "archived_at": "2026-05-11T08:51:19.624779+00:00",
+      "archived_for_note_hash": "4fe0bcd569530b92aecd966c22d63ed374165c94fc44a8fef478f83b0527627a",
+      "audit_date": "2026-05-10T16:58:02.508319+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.822,
+        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e12d1-19df-77b2-82f7-6edce8772398",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The supplied stdout supports the weak-fit conclusion, and the N=25..100 gravity row is reproducible from the printed table. However the runner delegates the exact mirror generator and linear propagator to scripts/mirror_born_audit.py, which is not supplied as a one-hop authority or runner source, so the exact-family/linear-propagator premise is not closed from the restricted packet.",
+      "claim_scope": "Primary-runner-backed bounded null result that the searched exact-2D-mirror mass-window and distance-tail fits are weak and do not justify a promoted mass or distance law.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T16:58:02.508319+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The bounded null-result holds from the primary runner's cached stdout alone: the fixed-anchor mass-window and distance-tail fits have low R^2 and therefore do not support a clean promoted 2D mirror mass or distance law on the searched windows.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: supply scripts/mirror_born_audit.py or vendor its generator/propagator into the primary runner, then re-audit the same cached weak-fit rows.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the primary runner imports gen_2d_mirror and propagate_LINEAR from an unsupplied helper, while the note's claim is explicitly about the exact 2D mirror linear propagator. Why this blocks: stdout can show weak fits for whatever code ran, but the restricted packet cannot verify that the load-bearing computation is the stated exact mirror family rather than an uninspected imported implementation. Repair target: include or cite the helper source as a direct audit dependency, or make the primary runner self-contained, then preserve the completed cache. Claim boundary until fixed: a weak-fit diagnostic of the supplied runner output, not a closed exact-2D-mirror bounded theorem."
+    },
+    {
+      "archived_at": "2026-05-12T08:18:40.751958+00:00",
+      "archived_for_note_hash": "b258a8401a89bf51fd970d332c489b85ff795cad1aba47c511ad53fe782eec80",
+      "audit_date": "2026-05-11T15:20:32.915303+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.822,
+        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-11",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The current primary runner cache supports the weak mass-window and distance-tail null result, but the note's quoted cross-N gravity scaling row is stale relative to the same cache and the imported generator/linear-propagator authority is not represented in the ledger dependencies.",
+      "claim_scope": "Primary-runner bounded null result for the exact 2D mirror gravity-law lane: searched mass-window and distance-tail fits in mirror_2d_validation.py do not support a clean promoted 2D mirror mass law or distance law; no conclusion from the diagnostic cleanup runner or broader beyond-window no-go is audited.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-11T15:20:32.915303+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "These primary-runner fit qualities are themselves the load-bearing evidence that no clean promoted 2D mirror mass law or distance law is supported on the searched windows.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue \u2014 refresh/pin the primary-runner gravity-scaling numbers and machine-track the imported mirror_born_audit.py authority/cache before re-auditing the bounded no-go.",
+      "open_dependency_paths": [
+        "scripts/mirror_born_audit.py",
+        "logs/runner-cache/mirror_born_audit.txt"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the note says the primary runner gives gravity = 6.48 * N^-0.210 with R^2 = 0.168, but the current SHA-pinned primary cache reports gravity = 2.19 * N^+0.049 with R^2 = 0.015; the note also relies on mirror_born_audit.py for the exact 2D mirror linear-propagator premise without a ledger dependency edge. Why this blocks: the qualitative null result remains supported, but a clean no-go must be current with its load-bearing runner artifact and machine-tracked imported authority. Repair target: refresh or explicitly pin the primary-runner scaling numbers, and make the imported authority/cache machine-tracked for this claim. Claim boundary until fixed: the current primary cache supports no promoted mass law or distance law on the searched windows, but the source note is not yet clean-retainable as written."
+    },
+    {
+      "archived_at": "2026-05-17T12:16:39.143258+00:00",
+      "archived_for_note_hash": "d2c82f137d50a54f93b8e5f9fb1a544c279ba3b0afe182011d79c7a890cacafa",
+      "audit_date": "2026-05-15T12:52:25.427462+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "mirror_program_synthesis": null
+        },
+        "dep_claim_type": {
+          "mirror_program_synthesis": "meta"
+        },
+        "dep_effective_status": {
+          "mirror_program_synthesis": "meta"
+        },
+        "deps": [
+          "mirror_program_synthesis"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260515-125057-64415b08-mirror_2d_gravity_law_no-004",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner source genuinely computes the weak-fit rows it reports, but it imports the exact 2D mirror generator and linear propagator from scripts/mirror_born_audit.py, whose source and registered cache are not included in the restricted packet. The exact-mirror linear-propagator premise therefore remains an unclosed imported authority.",
+      "claim_scope": "Audited the bounded null-result that the provided primary runner output supports weak gravity-side mass-window and distance-tail fits for the exact 2D mirror family on the searched windows, not a promoted mass or distance law.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-15T12:52:25.427462+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The primary-runner weak fit qualities, especially fixed-anchor mass-window R^2 = 0.167 and distance-tail R^2 = 0.075, are the evidence that no clean promoted 2D mirror mass or distance law is supported on the searched windows.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide scripts/mirror_born_audit.py and logs/runner-cache/mirror_born_audit.txt in the restricted packet, then re-audit whether the imported exact generator and linear propagator close the primary-runner premise.",
+      "open_dependency_paths": [
+        "docs/MIRROR_PROGRAM_SYNTHESIS.md",
+        "scripts/mirror_born_audit.py",
+        "logs/runner-cache/mirror_born_audit.txt"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The cached primary runner output matches the note's retained weak-fit rows closely enough for the bounded null-result: the current cache reports mass-window R^2=0.167 and distance-tail R^2=0.075, with no clean promoted gravity law. The runner source is not a trivial printout; it performs propagation, Born checks, gravity deltas, and power-law fits from generated graph data. However, the runner imports gen_2d_mirror and propagate_LINEAR from scripts/mirror_born_audit.py, and that load-bearing dependency is not present in the restricted packet despite being explicitly required by the note header. The cited synthesis note is meta/support only and does not close that dependency."
+    },
+    {
+      "archived_at": "2026-05-19T11:19:03.092986+00:00",
+      "archived_for_note_hash": "b001923a3a08adc5012ad223fe2d5ba25d9743232bea32a7feb006224913b373",
+      "audit_date": "2026-05-17T13:11:34.820160+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "mirror_program_synthesis": null
+        },
+        "dep_claim_type": {
+          "mirror_program_synthesis": "meta"
+        },
+        "dep_effective_status": {
+          "mirror_program_synthesis": "meta"
+        },
+        "deps": [
+          "mirror_program_synthesis"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-130943-20260517T130943Z-2e0699c2-mirror_2d_gravity_law_no-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner computes the weak fit rows, and the mass/distance rows match the supplied cache. The chain still imports `gen_2d_mirror` and `propagate_LINEAR` from `scripts/mirror_born_audit.py`, but that imported source and registered cache are not actually supplied in the restricted packet, so the exact-2D-mirror linear-propagator premise is not closed here.",
+      "claim_scope": "Bounded null result that the provided primary runner finds weak fixed-anchor mass-window and distance-tail fits for the exact 2D mirror lane on the searched windows.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T13:11:34.820160+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The primary-runner weak-fit rows report fixed-anchor mass fit `delta ~= 0.8720 * M^0.132, R^2=0.167` and distance-tail fit `delta ~= 0.3418 * b^0.320, R^2=0.075`, so no clean promoted 2D mirror mass or distance law is supported on the searched windows.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include `scripts/mirror_born_audit.py` and `logs/runner-cache/mirror_born_audit.txt` in the restricted packet, then re-audit the same primary-runner weak-fit rows; also synchronize the stale gravity-scaling/Born display numbers with the registered cache.",
+      "open_dependency_paths": [
+        "docs/MIRROR_PROGRAM_SYNTHESIS.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: the provided runner source imports the exact mirror generator and linear propagator from `scripts/mirror_born_audit.py`, but that imported authority source and cache are absent from the restricted packet; the only cited note supplied is a meta/support synthesis. Why this blocks: the weak mass and distance fits are computed, but the premise that they are produced by the audited exact-2D-mirror linear propagator remains an imported premise rather than closed evidence in this packet. Repair target: provide `scripts/mirror_born_audit.py` and `logs/runner-cache/mirror_born_audit.txt` in the restricted packet or vendor those functions into the primary runner. Claim boundary until fixed: the packet supports that the supplied primary run found weak mass/distance fits for its imported functions, not a fully closed bounded theorem about the exact 2D mirror family."
+    },
+    {
+      "archived_at": "2026-05-24T21:52:33.890865+00:00",
+      "archived_for_note_hash": "6881ac666a9c4db0608f193026e23b895b8e61accae9ab60bf27b2eacf68847f",
+      "audit_date": "2026-05-19T14:50:21.671926+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "mirror_program_synthesis": null
+        },
+        "dep_claim_type": {
+          "mirror_program_synthesis": "meta"
+        },
+        "dep_effective_status": {
+          "mirror_program_synthesis": "meta"
+        },
+        "deps": [
+          "mirror_program_synthesis"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": "ccbbc2f10c2187338017a1b7020815e452240f96245718fab15ea12d86a04270",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-mirror_2d_gravity_law_no-039",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet provides the imported Born helper runner and cache, but not the load-bearing primary runner source or full cached stdout for scripts/mirror_2d_validation.py. The weak-fit rows are therefore visible only as note assertions, not as verifiable runner-backed computation in this restricted packet.",
+      "claim_scope": "Audited the bounded null-result claim that the exact 2D mirror primary-runner evidence does not support a clean promoted mass law or distance law on the searched windows.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-19T14:50:21.671926+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The primary-runner weak fit qualities, gravity R^2 = 0.015, mass-window R^2 = 0.167, and distance-tail R^2 = 0.075, support the bounded null result that no clean 2D mirror mass law or distance law is promoted on the searched windows.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide scripts/mirror_2d_validation.py and logs/runner-cache/mirror_2d_validation.txt in the restricted packet, then re-audit the quoted weak-fit rows against the runner code and cached stdout.",
+      "open_dependency_paths": [
+        "docs/MIRROR_PROGRAM_SYNTHESIS.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The source note has a narrow bounded scope and the conclusion would follow if the primary-runner cache and source substantiate the quoted weak fits. However, the supplied runner source/output is for scripts/mirror_born_audit.py, which only closes the imported generator/linear-propagator premise and does not compute the gravity scaling, mass-window, or distance-tail fits. Because the load-bearing scripts/mirror_2d_validation.py artifact is not present for direct inspection, the restricted chain is packet-incomplete rather than clean."
+    },
+    {
+      "archived_at": "2026-05-25T16:06:46.344182+00:00",
+      "archived_for_note_hash": "81b066f09d0604239005d31648e20dccab294bfe62a0c05edc295a26bddcc7ce",
+      "audit_date": "2026-05-25T11:44:09.558033+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "mirror_program_synthesis": null
+        },
+        "dep_claim_type": {
+          "mirror_program_synthesis": "meta"
+        },
+        "dep_effective_status": {
+          "mirror_program_synthesis": "meta"
+        },
+        "deps": [
+          "mirror_program_synthesis"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T114348Z-f9b3d319-mirror_2d_gravity_law_no-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner source genuinely computes the exact 2D mirror family, linear propagation, Sorkin/Born checks, and the reported weak power-law fits, so the internal null-result evidence closes. However the packet includes docs/MIRROR_PROGRAM_SYNTHESIS.md as a cited authority with meta/support status, so retained-grade closure does not propagate under the rubric.",
+      "claim_scope": "Audited only the bounded null-result that the exact 2D mirror primary runner does not support a clean mass law or distance law on the searched windows.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T11:44:09.558033+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The primary-runner cache reports weak gravity-side fits, specifically gravity scaling R^2=0.015, fixed-anchor mass-window R^2=0.167, and distance-tail R^2=0.075, so no clean promoted 2D mirror mass or distance law is supported on the searched windows.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "dependency_not_retained: remove the non-load-bearing synthesis citation from the restricted cited-authority set or replace it with retained-grade per-claim dependencies, then re-audit the same runner-backed bounded null-result.",
+      "open_dependency_paths": [
+        "docs/MIRROR_PROGRAM_SYNTHESIS.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The primary runner and helper source are present, and the cached stdout matches the note's load-bearing weak-fit rows. The helper runner also provides the imported exact 2D mirror generator and strictly linear propagator, with a registered cache showing Born-clean behavior on the relevant mirror family. The scientific bounded null-result follows from the primary runner's computed weak R^2 values, but the cited synthesis authority is explicitly meta/support and not retained-grade, which forces a conditional verdict by the supplied rubric."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/mirror_2d_validation.py",
+  "title": "Exact 2D Mirror Gravity-Law Cleanup Note",
+  "transitive_descendants": 9,
+  "verdict_rationale": "The load-bearing evidence is a first-principles numerical computation within the supplied runner chain, not a copied value, renaming, external comparator, or hard-coded printout. The helper source needed to verify `gen_2d_mirror` and `propagate_LINEAR` is included, and the primary runner uses those functions directly in the load-bearing path. The cached output supports the bounded negative claim because all relevant gravity-side fits are far below a clean-law threshold and the note explicitly scopes the conclusion to the searched primary-runner windows."
+}

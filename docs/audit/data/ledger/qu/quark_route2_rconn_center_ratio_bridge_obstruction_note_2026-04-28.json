@@ -1,0 +1,253 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_derivation_note",
+    "staggered_dirac_realization_gate_note_2026-05-03"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/_frontier_loader.py",
+    "scripts/frontier_coarse_grained_exterior_law.py",
+    "scripts/frontier_discrete_dtn_shell_kernel.py",
+    "scripts/frontier_finite_rank_gravity_residual.py",
+    "scripts/frontier_flux_fixed_matching_theorem.py",
+    "scripts/frontier_microscopic_dirichlet_bridge_principle.py",
+    "scripts/frontier_oh_schur_boundary_action.py",
+    "scripts/frontier_one_parameter_reduced_shell_law.py",
+    "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py",
+    "scripts/frontier_quark_endpoint_readout_constraints.py",
+    "scripts/frontier_quark_route2_exact_readout_map.py",
+    "scripts/frontier_radial_shell_matching_law.py",
+    "scripts/frontier_same_source_metric_ansatz_scan.py",
+    "scripts/frontier_sewing_shell_source.py",
+    "scripts/frontier_star_shell_projector.py",
+    "scripts/frontier_tensor_boundary_drive_two_channel.py",
+    "scripts/frontier_tensor_support_center_excess_law.py",
+    "scripts/frontier_tensor_universal_kernel.py",
+    "scripts/frontier_tensorial_einstein_regge_completion.py",
+    "scripts/frontier_universal_shell_profile.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.522,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3e43688181cafd60738fd8f5dc65d9cdca0b6a852479d23babc8477025af6531",
+  "note_path": "docs/QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-29T03:54:03.092839+00:00",
+      "archived_for_note_hash": "270e7a72ccf995ebd2c54f76707bd50199f691e06c9d936b726fbcb360c6d856",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T13:40:45.893367+00:00",
+      "archived_for_note_hash": "b901cd657b0949e9fc02e1b7e9f6d21a2397d55c468254fd837b5b33c7182d74",
+      "audit_date": "2026-05-01T20:43:53.834334+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner verifies the exact rational bridge algebra, the live bounded comparator, and the import-boundary witness with PASS=26, FAIL=0. The note correctly withholds retained m_u/m_c closure and treats R_conn as a conditional bridge target.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The retained R_conn=8/9 conditionally implies rho_E=21/4 only if the additional source-domain bridge gamma_T(center)/gamma_E(center)=-R_conn is supplied; the existing Route-2 carrier does not supply that bridge.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 1,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The support no-go closes as stated: imposing c_TE=-R_conn gives q_E=15/8 and rho_E=21/4 exactly, but rho_E=0 and rho_E=21/4 differ only at the E-center lift, and no checked Route-2 or R_conn authority supplies that typed identification. The runner also verifies that the live endpoint numbers are only close bounded comparators, not exact theorem inputs. This clean audit is limited to the import-boundary result and does not ratify non-top quark masses."
+    },
+    {
+      "archived_at": "2026-05-24T08:14:14.269965+00:00",
+      "archived_for_note_hash": "8676f043b8a16897c8d9b8761986f62691dea685fe095dc368ebca8cfd4c1b63",
+      "audit_date": "2026-05-23T20:25:35.474021+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_derivation_note": "Audited only the bounded algebraic claim that canonical `Tr(T_a T_b)=delta_ab/2`, Wilson matching `beta=2 N_c/g_bare^2`, and the explicit local Wilson surface `N_c=3`, `beta=6` force `g_bare=1`, with rescalings routed into `beta`."
+        },
+        "dep_claim_type": {
+          "g_bare_derivation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_derivation_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_derivation_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3adfd5c604ab42870dddfad7908e4a7d9f2bdcea006f0d58c7a0ee59f6ae80cc",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T202417Z-10aa1076-quark_route2_rconn_cente-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conditional exact algebra and non-uniqueness witness close within the restricted carrier: imposing c_TE=-R_conn gives q_E=15/8 and rho_E=21/4, while rho_E=0 and rho_E=21/4 agree on all granted endpoints except E-center. The source-domain bridge itself remains missing, so the closure is only the bridge-obstruction claim.",
+      "claim_scope": "Audited the exact conditional algebra from c_TE=-R_conn to rho_E=21/4 and the restricted-carrier import-boundary obstruction; not a derivation of the missing source-domain bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T20:25:35.474021+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Changing rho_E leaves the E-shell and granted T-side readouts fixed and changes only the E-center lift, so rho_E=0 and rho_E=21/4 are both exact maps unless an additional E-center source/readout primitive supplies gamma_T(center)/gamma_E(center)=-R_conn.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive gamma_T(center)/gamma_E(center)=-R_conn from a typed SU(3) color-projection to Route-2 endpoint readout map, then re-audit with the open gate dependencies closed.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/G_BARE_DERIVATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 7,
+        "C": 2,
+        "D": 8,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The runner performs real rational algebra and a restricted-map witness, not merely a printout, and its 26 passing checks support the stated conditional bridge and import boundary. The note explicitly depends on granted T-side candidates and on the still-missing typed identification gamma_T(center)/gamma_E(center)=-R_conn, so retained status does not propagate to an E-channel law. The provided G_BARE authority also contains explicit open-gate language despite the packet header marking it retained_bounded, and the source note names the staggered-Dirac gate as open. Under the negative-claim gate, audited_clean is blocked because N1/N3 cannot rule out a future typed bridge outside the restricted packet; the claim remains bounded to current Route-2/R_conn surfaces."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.082788+00:00",
+      "audit_date": "2026-06-11T14:54:38.765443+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_derivation_note": "Assuming canonical Cl(3) connection normalization, scoped Wilson matching beta = 2 N_c / g_bare^2, N_c = 3, beta = 6, and the two retained_bounded 2026-05-03 repair rows, exact algebra gives g_bare^2 = 1 and hence g_bare = 1 on the positive-coupling branch.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "g_bare_derivation_note": "bounded_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_derivation_note": "retained_bounded",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "g_bare_derivation_note",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "3adfd5c604ab42870dddfad7908e4a7d9f2bdcea006f0d58c7a0ee59f6ae80cc",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-145232-ff54880ff4-quark_route2_rconn_center_ra",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conditional algebra checks independently: q_E=(-2)(5/6)/(-8/9)=15/8 and rho_E=6(15/8-1)=21/4. The reduced matrix family also verifies the obstruction: changing rho_E changes only the E-center lift, so a stronger derivation still needs the typed source-domain bridge gamma_T(center)/gamma_E(center)=-R_conn.",
+      "claim_scope": "Audited the exact restricted Route-2 algebra showing that c_TE=-R_conn conditionally gives rho_E=21/4, while the current carrier/readout class does not itself supply the typed R_conn-to-center-ratio bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T14:54:38.765443+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g_bare_derivation_note:retained_bounded->unaudited",
+      "load_bearing_step": "After the T-side values are granted, the reduced family P(rho_E) leaves E-shell and both T-side readouts fixed, so rho_E=0 and rho_E=21/4 are both exact maps unless an additional E-center source/readout bridge supplies gamma_T(center)/gamma_E(center)=-R_conn.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain the unaudited/open parent dependency surface, especially the staggered-Dirac parent, before upgrading status; a separate science upgrade would require a typed derivation of gamma_T(center)/gamma_E(center)=-R_conn.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/G_BARE_DERIVATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 7,
+        "C": 2,
+        "D": 8,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The scoped obstruction is algebraically sound and is not just a numerical live-data match; the live comparator checks are explicitly non-load-bearing. The runner source computes the conditional fractions and the reduced-family witness rather than merely printing PASS, and the manual algebra agrees. The verdict is nevertheless conditional because the packet includes an unaudited staggered-Dirac parent authority and the note itself names the R_conn center-ratio identification as open work rather than a retained bridge theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_quark_route2_rconn_center_ratio_bridge_obstruction.py",
+  "title": "Quark Route-2 R_conn Center-Ratio Bridge Obstruction",
+  "transitive_descendants": 64,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

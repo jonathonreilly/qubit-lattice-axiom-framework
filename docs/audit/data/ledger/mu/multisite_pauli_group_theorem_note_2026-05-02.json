@@ -1,0 +1,465 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "multisite_pauli_group_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+    "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0792702b9ffc03c937fdc77ae816b9700d4faa95a92c290f9351cbd68d5c7c82",
+  "note_path": "docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:08:24.495578+00:00",
+      "audit_date": "2026-05-22T03:51:25.134065+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 10.95,
+        "runner_hash": "bcecab4e6b98faff1c01cc53359ca88c66c43bb6936343786277f57ba0cc123d",
+        "transitive_descendants": 988
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-judicial-multisite-pauli-20260522-20260521-multisite_pauli_group_theorem_note_2026--majority",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The core order/center/quotient/extension statements follow once the Pauli matrices and tensor-product site action are admitted, and the runner corroborates N=1,2,3 plus the P_2 center. That makes the row algebraic decoration under the upstream Pauli/qubit setup, not an independent positive theorem with a new physical bridge or comparator. The original broad scope also contains an unratified M6 overclaim: the listed 3N involutory Pauli generators are convenient but not minimal for N>1. Therefore the clean positive C tuple overstates the result; the second audited_decoration/decoration/A tuple is the applyable safe record.\n\nFive-judge panel breakdown: 4x ('second', 'audited_decoration', 'decoration', 'A'); 1x ('hybrid', 'audited_conditional', 'bounded_theorem', 'A').",
+      "claim_scope": "Algebraic N-qubit Pauli-group decoration: given admitted H=\u2297_{x=1}^N C^2 and per-site \u03c3_{i,x} acting on disjoint tensor factors, P_N has normal form \u03b6\u220f_x Q_x with \u03b6\u2208{\u00b11,\u00b1i} and Q_x\u2208{I,\u03c31,x,\u03c32,x,\u03c33,x}; hence |P_N|=4^{N+1}, Z(P_N)={\u00b1I_N,\u00b1iI_N}, P_N/Z(P_N)\u2245(Z_2\u00d7Z_2)^N, 1\u2192Z_4\u2192P_N\u2192(Z_2\u00d7Z_2)^N\u21921, and element orders divide 4. The physical framework-Fock-space bridge and M6 minimal-3N-generator claim are not ratified.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T03:51:25.134065+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T03:13:48.866288+00:00",
+          "auditor": "claude-audit-loop-2026-05-19-multisite-pauli",
+          "auditor_family": "claude-opus",
+          "auditor_model": "claude-opus-4-7",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Multi-site Pauli group P_N = \u27e8\u03c3_{i,x}\u27e9 acting on the N-site Cl(3) Fock space H = \u2297_{x=1}^N C\u00b2 has order |P_N| = 4^{N+1}; center Z(P_N) = {\u00b1I_N, \u00b1i I_N} of order 4 (scalar phases); quotient P_N/Z(P_N) \u2245 (Z_2 \u00d7 Z_2)^N of order 4^N; central extension 1 \u2192 Z_4 \u2192 P_N \u2192 (Z_2 \u00d7 Z_2)^N \u2192 1; element orders divide 4; minimal generating set has 3N involutory elements.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-22T03:31:17.579730+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260522-032806-021e808f-multisite_pauli_group_th-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic tensor-product extension of the per-site Pauli/Cl(3) representation to P_N on H = \u2297 C\u00b2, giving |P_N| = 4^{N+1}, scalar center Z_4, quotient (Z_2 \u00d7 Z_2)^N, and the stated central extension.",
+          "claim_type": "decoration",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_decoration"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-22T03:51:25.134065+00:00",
+          "auditor": "codex-judicial-multisite-pauli-20260522-20260521-multisite_pauli_group_theorem_note_2026--majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic N-qubit Pauli-group decoration: given admitted H=\u2297_{x=1}^N C^2 and per-site \u03c3_{i,x} acting on disjoint tensor factors, P_N has normal form \u03b6\u220f_x Q_x with \u03b6\u2208{\u00b11,\u00b1i} and Q_x\u2208{I,\u03c31,x,\u03c32,x,\u03c33,x}; hence |P_N|=4^{N+1}, Z(P_N)={\u00b1I_N,\u00b1iI_N}, P_N/Z(P_N)\u2245(Z_2\u00d7Z_2)^N, 1\u2192Z_4\u2192P_N\u2192(Z_2\u00d7Z_2)^N\u21921, and element orders divide 4. The physical framework-Fock-space bridge and M6 minimal-3N-generator claim are not ratified.",
+          "claim_type": "decoration",
+          "decoration_parent_claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "first_auditor_error": "Treated an algebraic tensor-product extension as an independently clean positive theorem, relied on runner checks that hard-code the Pauli generators and only enumerate N\u22643, and failed to exclude the unsupported/false M6 minimal-3N-generator statement and the unaudited physical Hilbert-space bridge.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The core order/center/quotient/extension statements follow once the Pauli matrices and tensor-product site action are admitted, and the runner corroborates N=1,2,3 plus the P_2 center. That makes the row algebraic decoration under the upstream Pauli/qubit setup, not an independent positive theorem with a new physical bridge or comparator. The original broad scope also contains an unratified M6 overclaim: the listed 3N involutory Pauli generators are convenient but not minimal for N>1. Therefore the clean positive C tuple overstates the result; the second audited_decoration/decoration/A tuple is the applyable safe record.\n\nFive-judge panel breakdown: 4x ('second', 'audited_decoration', 'decoration', 'A'); 1x ('hybrid', 'audited_conditional', 'bounded_theorem', 'A').",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "T1_P1_order": "PASS",
+            "T2_P2_order": "PASS",
+            "T3_P3_order": "PASS",
+            "T4_formula_for_N_1_to_3": "PASS",
+            "T5_P2_center_scalar_phases": "PASS",
+            "T6_quotient_order_for_N_1_to_3": "PASS",
+            "limitation": "Runner does not test all-N proof, physical-H bridge, or minimal generator claim."
+          },
+          "second_auditor_error": "No tuple-level error; the second audit should have explicitly stated that M6 is excluded from the ratified scope and that H=\u2297C^2 is being treated as an admitted algebraic input rather than an audited physical bridge.",
+          "sided_with": "second",
+          "verdict": "audited_decoration"
+        }
+      },
+      "decoration_parent_claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Pauli tensor-product normal form plus the collapse of all per-site scalar phases to one global Z_4; disjoint-site commutation and single-site Pauli anticommutation then give order, center, quotient, and extension.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "For future positive-theorem promotion, cite a retained physical per-site Hilbert-space bridge if 'framework Fock space' is load-bearing, prove the all-N normal form directly, and correct/remove M6; for N>1, 3N is not minimal since X_x,Z_x for all sites plus one Y at a site already supplies the global i phase and generates the remaining Y_x.",
+      "open_dependency_paths": [
+        "Only if promoted beyond decoration: retained bridge from physical Cl(3) local algebra to framework per-site H_x\u2245C^2."
+      ],
+      "runner_check_breakdown": {
+        "T1_P1_order": "PASS",
+        "T2_P2_order": "PASS",
+        "T3_P3_order": "PASS",
+        "T4_formula_for_N_1_to_3": "PASS",
+        "T5_P2_center_scalar_phases": "PASS",
+        "T6_quotient_order_for_N_1_to_3": "PASS",
+        "limitation": "Runner does not test all-N proof, physical-H bridge, or minimal generator claim."
+      },
+      "verdict_rationale": "The core order/center/quotient/extension statements follow once the Pauli matrices and tensor-product site action are admitted, and the runner corroborates N=1,2,3 plus the P_2 center. That makes the row algebraic decoration under the upstream Pauli/qubit setup, not an independent positive theorem with a new physical bridge or comparator. The original broad scope also contains an unratified M6 overclaim: the listed 3N involutory Pauli generators are convenient but not minimal for N>1. Therefore the clean positive C tuple overstates the result; the second audited_decoration/decoration/A tuple is the applyable safe record.\n\nFive-judge panel breakdown: 4x ('second', 'audited_decoration', 'decoration', 'A'); 1x ('hybrid', 'audited_conditional', 'bounded_theorem', 'A')."
+    },
+    {
+      "archived_at": "2026-05-29T00:46:44.382401+00:00",
+      "audit_date": "2026-05-22T16:48:07.602724+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 11.042,
+        "runner_hash": "bcecab4e6b98faff1c01cc53359ca88c66c43bb6936343786277f57ba0cc123d",
+        "transitive_descendants": 1053
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T164301Z-c1bad9c0-multisite_pauli_group_th-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the admitted tensor-product Hilbert space and Pauli multiplication relations, disjoint-site generators commute and each site contributes four cosets modulo the single global Z_4 phase. The order, center, quotient, and central-extension statements then follow by finite group algebra from the retained_bounded Cl(3)/Pauli local representation input.",
+      "claim_scope": "Algebraic N-qubit Pauli group on the admitted tensor product H = (C^2)^{\u2297N}: order 4^{N+1}, scalar center Z_4, quotient (Z_2 \u00d7 Z_2)^N, and the associated central extension.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T16:48:07.602724+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:bounded_theorem->positive_theorem",
+      "load_bearing_step": "Total order = (Z_4 phases) \u00d7 (4 cosets per site)^N = 4 \u00b7 4^N = 4^{N+1}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the non-load-bearing M6 minimal-generator wording if promoted as a separate claim; the scoped order/center/quotient result does not depend on it.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The proof is an exact algebraic tensor-product extension of the upstream Pauli/Cl(3) local representation result, with no external comparator and no new physical readout. The runner genuinely enumerates finite Pauli groups for N = 1, 2, 3 and checks the center for N = 2, but the all-N claim is carried by the algebraic counting argument, not by an independent first-principles computation. Under the rubric, this is retained as decoration rather than an independent positive theorem because it reduces to one retained_bounded parent plus standard mathematics."
+    },
+    {
+      "archived_at": "2026-05-29T16:57:10.897770+00:00",
+      "archived_for_note_hash": "98531fac922f46470e9b33289a4eb77d0702590e88398791a59ce42868428bee",
+      "audit_date": "2026-05-29T05:25:49.805295+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.644,
+        "runner_hash": "bcecab4e6b98faff1c01cc53359ca88c66c43bb6936343786277f57ba0cc123d",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The order/center enumeration passes, but the stated minimal-generator theorem is false for N>1: once one site supplies the global phase, two generators suffice on each additional site.",
+      "claim_scope": "Multi-site Pauli group theorem as stated, including order, center, quotient, central extension, element orders, and the claimed 3N minimal generator count for P_N on the N-site tensor product Pauli space.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T05:25:49.805295+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The theorem states that the minimal generating set has 3N elements sigma_{i,x}, one for each Pauli direction at each site.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: repair the false generator-minimality clause or split it out, then re-audit the order/center theorem separately with an explicit per-site H_x=C^2 authority if needed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "missing_check": "No runner check for minimal generator count; independent enumeration refutes the stated 3N minimality for N=2,3.",
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: M6 claims the minimal generating set has 3N elements. Independent enumeration of the same matrix generators gives minimal sizes 3 for N=1, 5 for N=2, and 7 for N=3, i.e. 2N+1 for these cases, not 3N. Why this blocks: M6 is part of the stated theorem, and the runner does not test minimality; it only enumerates the full 3N-generator group and checks order/center/quotient. Repair target: split the clean order/center/quotient theorem from generator minimality, correct the minimal-generator statement to the appropriate convention, and add runner checks for omitted-generator generating sets. Also wire a retained or axiom-premise authority for the physical per-site H_x=C^2 identification if the repaired claim is framework-facing rather than a stipulated tensor-product algebra theorem. Claim boundary until fixed: the order formula |P_N|=4^{N+1}, scalar center, quotient order, and element-order facts appear algebraically supportable for the stipulated N-qubit Pauli group, but the full current theorem cannot be retained with M6 as written."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:56.478410+00:00",
+      "archived_for_note_hash": "9453c23c1588888816f3b1ccc71cdef1642c022b73e9dfba4a1f118bee61760e",
+      "audit_date": "2026-06-13T22:28:43.502795+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 15.308,
+        "runner_hash": "5b711a97b80d13eebc3455bba7e6717db6486d281703af3df39919e9397c3958",
+        "transitive_descendants": 1267
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260613T222843Z-multisite_pauli_group_theorem_no",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, positive_theorem, class A). Vote breakdown: J1: second / audited_conditional / positive_theorem / A; J2: second / audited_conditional / positive_theorem / A; J3: second / audited_conditional / positive_theorem / A; J4: second / audited_conditional / positive_theorem / A; J5: second / audited_conditional / positive_theorem / A. Majority rationale: J1: Independent algebra check confirms the Pauli-string normal form: one global phase in {+/-1,+/-i} times one of four local Pauli cosets per site, giving |P_N|=4^{N+1}, scalar center Z_4, quotient order 4^N, exponent dividing 4, and abelianization rank 2N+1. The runner is consistent with these class-A finite matrix checks, but the cited authority explicitly moves the physical per-site Hilbert/Fock-space bridge out of scope. No relevant registered... | J2: The displayed Pauli-group identities check algebraically: the global phase is one Z_4, each site contributes four center cosets, the center is scalar, the quotient has order 4^N, g^4=I, and [P_N,P_N]={+-I} gives abelianization rank 2N+1. But the source note claims the framework N-site Fock space H=tensor_x C^2 is supplied by the cited per-site uniqueness authority, while that authority explicitly moves the physical per-site Hilbert-dimension/F... | J3: The displayed Pauli-group formulas check algebraically under the stipulated tensor-product N-qubit model: the global phase is one Z_4, the quotient has 2N binary generators, commutators give {+-I}, and the abelianization lower bound gives 2N+1 generators. However, the source claim also identifies this stipulated tensor product with the framework's N-site Fock space via the cited per-site uniqueness note, and that cited note explicitly moves th... | J4: The displayed Pauli-group formulas check algebraically: a tensor Pauli string has one global Z_4 phase, 4^N noncentral cosets, scalar center, elementary-abelian quotient, exponent dividing 4, and abelianization rank 2N+1 because [P_N,P_N]={+-I}. The runner independently enumerates finite matrix groups and commutators for small N, but the load-bearing route is class A matrix/group algebra, not a first-principles framework compute. The stronger... | J5: The displayed Pauli-tensor formulas, phase count, quotient size, commutator subgroup {+-I}, exponent-four claim, and abelianization rank 2N+1 check out as class-A finite group algebra once H=(C^2)^{tensor N} and site-local Pauli matrices are stipulated. The stronger source-scope identification of this tensor product with the framework's N-site Fock space is not closed by the one-hop authority: that authority explicitly moved the per-site Hilbe...",
+      "claim_scope": "Algebraic structure of the group generated by sitewise Pauli matrices on a stipulated H=(C^2)^{tensor N}: order 4^{N+1}, scalar center Z_4, quotient (Z_2 x Z_2)^N, exponent dividing 4, and minimal generator count 2N+1.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-13T22:28:43.502795+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-29T21:13:40.124076+00:00",
+          "auditor": "codex-cli-audit-ready-20260529-multisite_pauli_group_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic audit of the N-qubit Pauli group generated by site-local Pauli operators on H = tensor_x C^2: order 4^{N+1}, scalar center Z_4, quotient (Z_2 x Z_2)^N, exponent dividing 4, and minimal generator count 2N+1.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-13T22:26:01.053384+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-222332-0281f68a28-multisite_pauli_group_theore",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic structure of the group generated by sitewise Pauli matrices on a stipulated H=(C^2)^{tensor N}: order 4^{N+1}, scalar center Z_4, quotient (Z_2 x Z_2)^N, exponent dividing 4, and minimal generator count 2N+1.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-13T22:28:43.502795+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260613T222843Z-multisite_pauli_group_theorem_no",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic structure of the group generated by sitewise Pauli matrices on a stipulated H=(C^2)^{tensor N}: order 4^{N+1}, scalar center Z_4, quotient (Z_2 x Z_2)^N, exponent dividing 4, and minimal generator count 2N+1.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "The first summary tuple marks audited_clean, but the restricted packet does not close the per-site Fock-space identification; its own full rationale supports audited_conditional. | The first summary tuple says audited_clean, but the restricted packet does not close the framework Fock-space identification; its own full reply actually gives the conditional rationale. | Its summary tuple records audited_clean even though the supplied full rationale identifies the missing Fock-space bridge and supports audited_conditional; clean is not justified for the full source claim. | The first summary tuple says audited_clean, but the restricted packet does not close the framework Fock-space identification; its own full reply actually gives the same conditional rationale. | The first summary tuple's audited_clean verdict is not supported and conflicts with the first full reply's own conditional rationale; it overlooks the missing framework Fock-space identification bridge.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, positive_theorem, class A). Vote breakdown: J1: second / audited_conditional / positive_theorem / A; J2: second / audited_conditional / positive_theorem / A; J3: second / audited_conditional / positive_theorem / A; J4: second / audited_conditional / positive_theorem / A; J5: second / audited_conditional / positive_theorem / A. Majority rationale: J1: Independent algebra check confirms the Pauli-string normal form: one global phase in {+/-1,+/-i} times one of four local Pauli cosets per site, giving |P_N|=4^{N+1}, scalar center Z_4, quotient order 4^N, exponent dividing 4, and abelianization rank 2N+1. The runner is consistent with these class-A finite matrix checks, but the cited authority explicitly moves the physical per-site Hilbert/Fock-space bridge out of scope. No relevant registered... | J2: The displayed Pauli-group identities check algebraically: the global phase is one Z_4, each site contributes four center cosets, the center is scalar, the quotient has order 4^N, g^4=I, and [P_N,P_N]={+-I} gives abelianization rank 2N+1. But the source note claims the framework N-site Fock space H=tensor_x C^2 is supplied by the cited per-site uniqueness authority, while that authority explicitly moves the physical per-site Hilbert-dimension/F... | J3: The displayed Pauli-group formulas check algebraically under the stipulated tensor-product N-qubit model: the global phase is one Z_4, the quotient has 2N binary generators, commutators give {+-I}, and the abelianization lower bound gives 2N+1 generators. However, the source claim also identifies this stipulated tensor product with the framework's N-site Fock space via the cited per-site uniqueness note, and that cited note explicitly moves th... | J4: The displayed Pauli-group formulas check algebraically: a tensor Pauli string has one global Z_4 phase, 4^N noncentral cosets, scalar center, elementary-abelian quotient, exponent dividing 4, and abelianization rank 2N+1 because [P_N,P_N]={+-I}. The runner independently enumerates finite matrix groups and commutators for small N, but the load-bearing route is class A matrix/group algebra, not a first-principles framework compute. The stronger... | J5: The displayed Pauli-tensor formulas, phase count, quotient size, commutator subgroup {+-I}, exponent-four claim, and abelianization rank 2N+1 check out as class-A finite group algebra once H=(C^2)^{tensor N} and site-local Pauli matrices are stipulated. The stronger source-scope identification of this tensor product with the framework's N-site Fock space is not closed by the one-hop authority: that authority explicitly moved the per-site Hilbe...",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none material | none material | none material | none material | none material",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "The full multi-site group has one global Z_4 of scalar phases and 4 Pauli cosets per site, so |P_N| = 4 \u00b7 4^N = 4^{N+1}; the same structure gives center, quotient, element orders, and the 2N+1 generator count via the abelianization.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite a retained authority closing H_x ~= C^2 for the framework Fock space, or narrow the claim to the stipulated H=(C^2)^{tensor N} Pauli-group theorem. | missing_bridge_theorem: cite a retained authority closing the framework per-site Fock-space identification H_x ~= C^2, or narrow the claim to the stipulated H=(C^2)^{tensor N} Pauli-group theorem. | missing_bridge_theorem: cite a retained authority closing H_x ~= C^2 for the framework per-site Fock space, or narrow the note to the stipulated H=(C^2)^{tensor N} Pauli-group theorem. | missing_bridge_theorem: cite a retained authority closing the framework per-site Fock-space identification H_x ~= C^2, or narrow the note to the stipulated N-qubit Pauli group on H=(C^2)^{tensor N}. | missing_bridge_theorem: cite a retained bridge proving H_x ~= C^2 for the framework per-site Fock space, or narrow the note to the stipulated N-qubit Pauli-group theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, positive_theorem, class A). Vote breakdown: J1: second / audited_conditional / positive_theorem / A; J2: second / audited_conditional / positive_theorem / A; J3: second / audited_conditional / positive_theorem / A; J4: second / audited_conditional / positive_theorem / A; J5: second / audited_conditional / positive_theorem / A. Majority rationale: J1: Independent algebra check confirms the Pauli-string normal form: one global phase in {+/-1,+/-i} times one of four local Pauli cosets per site, giving |P_N|=4^{N+1}, scalar center Z_4, quotient order 4^N, exponent dividing 4, and abelianization rank 2N+1. The runner is consistent with these class-A finite matrix checks, but the cited authority explicitly moves the physical per-site Hilbert/Fock-space bridge out of scope. No relevant registered... | J2: The displayed Pauli-group identities check algebraically: the global phase is one Z_4, each site contributes four center cosets, the center is scalar, the quotient has order 4^N, g^4=I, and [P_N,P_N]={+-I} gives abelianization rank 2N+1. But the source note claims the framework N-site Fock space H=tensor_x C^2 is supplied by the cited per-site uniqueness authority, while that authority explicitly moves the physical per-site Hilbert-dimension/F... | J3: The displayed Pauli-group formulas check algebraically under the stipulated tensor-product N-qubit model: the global phase is one Z_4, the quotient has 2N binary generators, commutators give {+-I}, and the abelianization lower bound gives 2N+1 generators. However, the source claim also identifies this stipulated tensor product with the framework's N-site Fock space via the cited per-site uniqueness note, and that cited note explicitly moves th... | J4: The displayed Pauli-group formulas check algebraically: a tensor Pauli string has one global Z_4 phase, 4^N noncentral cosets, scalar center, elementary-abelian quotient, exponent dividing 4, and abelianization rank 2N+1 because [P_N,P_N]={+-I}. The runner independently enumerates finite matrix groups and commutators for small N, but the load-bearing route is class A matrix/group algebra, not a first-principles framework compute. The stronger... | J5: The displayed Pauli-tensor formulas, phase count, quotient size, commutator subgroup {+-I}, exponent-four claim, and abelianization rank 2N+1 check out as class-A finite group algebra once H=(C^2)^{tensor N} and site-local Pauli matrices are stipulated. The stronger source-scope identification of this tensor product with the framework's N-site Fock space is not closed by the one-hop authority: that authority explicitly moved the per-site Hilbe..."
+    },
+    {
+      "archived_at": "2026-07-07T09:06:44.277970+00:00",
+      "archived_for_note_hash": "8a787963a68414c58bf19919e2d888c7805417fa2d37d5e7caa674dddf1ac638",
+      "audit_date": "2026-06-15T23:26:33.020734+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 10.2,
+        "runner_hash": "534cce783b7f19ac8d45d1be387f0ff1033149287654446605f8ff37f831f135",
+        "transitive_descendants": 51
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-232434-1fb3ad634f-multisite_pauli_group_theore",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The theorem closes by exact Pauli normal-form algebra on the stipulated tensor product. The cited Cl(3) note is retained-grade algebraic context only, and its excluded physical carrier bridge is not imported.",
+      "claim_scope": "On the stipulated finite tensor product H_N = (C^2)^{\u2297N}, the sitewise Pauli-generated group has order 4^{N+1}, scalar center Z_4, quotient (Z_2 x Z_2)^N, element orders dividing 4, and minimal generator count 2N+1; no physical Fock-carrier identification is audited or used.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T23:26:33.020734+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Every element has a unique global phase in {\u00b11, \u00b1i} times one of four Pauli-sector choices at each site, and [P_N,P_N] = {\u00b1I_N}, giving |P_N| = 4\u00b74^N and abelianization rank 2N+1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the all-N abelianization lower bound and that the physical carrier bridge remains outside the audited scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "Manual normal-form checking confirms the global Z_4 phase is shared across all sites, while the N tensor Pauli sectors contribute 4^N independent cosets. The center, quotient, central extension, and g^4 = I_N follow from the same normal form and local Pauli commutation signs. The minimal generator count closes because the commutator subgroup is exactly {\u00b1I_N}, so the abelianization is elementary abelian of order 2^{2N+1}; this gives a generator-type-independent lower bound matched by {X_x,Z_x} plus one global phase. The runner source performs genuine finite matrix/group enumeration for its checked cases and does not import an external comparator or tuned value."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.158652+00:00",
+      "audit_date": "2026-07-07T14:14:18.303020+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 6.644,
+        "runner_hash": "534cce783b7f19ac8d45d1be387f0ff1033149287654446605f8ff37f831f135",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-2026-07-07-multisite-pauli",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained cl3_per_site_hilbert_dim_two dependency supplies H_N = (C^2)^{tensor N} and the Pauli realization; the target note then uses only finite Pauli-group algebra. I independently checked the displayed order, center, quotient, phaseless subgroup, sufficiency, and abelianization lower bound in an abstract Pauli normal form separate from the runner's matrix BFS path.",
+      "claim_scope": "On the retained finite tensor product H_N = (C^2)^{tensor N}, the N-site Pauli group generated by sitewise Pauli matrices has order 4^{N+1}, center {+/-I,+/-iI}, quotient (Z_2 x Z_2)^N, and minimal generating rank 2N+1; no physical Fock-carrier bridge is asserted.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-07T14:14:18.303020+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The normal-form count that central scalar phases give one global Z_4 while each site contributes four Pauli cosets, together with the abelianization P_N/[P_N,P_N] of order 2^{2N+1} for the 2N+1 generator lower bound.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The source note's load-bearing formulae close from retained one-hop carrier inputs plus exact finite group algebra: |P_N| = 4^{N+1}, Z(P_N) = {+/-I,+/-iI}, P_N/Z(P_N) has order 4^N, and the abelianization rank gives the 2N+1 minimal-generator lower bound. The runner verifies these claims by explicit finite matrix generation for N <= 3, and a separate abstract normal-form recomputation verified the same sign, phase, quotient, and generator-count facts. Residual risk is limited to the retained dependency chain; the audited claim does not assert the separate physical Fock-carrier bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/multisite_pauli_group_check.py",
+  "title": "Multi-Site Pauli Group P_N Has Order 4^{N+1} on the Retained Cl(3) Per-Site N-Qubit Tensor Product",
+  "transitive_descendants": 47,
+  "verdict_rationale": null
+}

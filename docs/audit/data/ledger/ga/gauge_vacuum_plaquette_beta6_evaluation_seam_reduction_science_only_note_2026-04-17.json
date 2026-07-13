@@ -1,0 +1,494 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+    "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.383,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c175c6f83499797d47da422de855fb20ab125986623ba7544aef7eeac89a6f1c",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-05T07:51:30.017686+00:00",
+      "archived_for_note_hash": "55c957b38b27401c77a2c060a460bff5d25d83a1de24f7e8262a1e9b05a6a183",
+      "audit_date": "2026-05-05T06:37:06.170258+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 4.959,
+        "runner_hash": "12efb8d9811a8650411775a972521c25a942671762e4197e7bc319ba498b7a6b",
+        "transitive_descendants": 10
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-gauge_vacuum_plaquette_b-261",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The reduction is algebraic once the exact K_6^env, B_6(W), compression, and boundary-amplitude laws are accepted, but those are imported and no cited authorities are provided in the restricted packet. The missing step is retained one-hop authority for the exact integral objects and the boundary/compression law used by the reduction.",
+      "claim_scope": "Audited the claim that the beta=6 plaquette PF seam reduces exactly to evaluating class-sector matrix elements of the exact integral-defined K_6^env and B_6(W), with W-dependence then fixed by the Peter-Weyl evaluation vector.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T06:37:06.170258+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Since K_6^env and B_6(W) are already fixed as exact Wilson/Haar integrals, the remaining explicit beta=6 problem is exactly evaluation of their class-sector matrix elements entering S_6^env and eta_6.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct dependency edges and restricted packets for the exact kernel, rim-lift, transfer/compression, and Peter-Weyl evaluation authorities, then re-audit after those dependencies are retained.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_EXACT_RADICAL_RECONSTRUCTION_MAP_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_CURRENT_STACK_CONSTRAINT_BOUNDARY_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the note relies on upstream exact integral-boundary and compression theorems while section 2 supplies no cited authorities. Why this blocks: the central formula is an algebraic reduction over those imported objects, not a first-principles derivation from the axiom inside this packet. Repair target: wire and retain-audit the one-slab kernel, full-slice rim-lift, transfer/compression, and Peter-Weyl evaluation authorities needed for the reduction. Claim boundary until fixed: the note can be treated as a conditional roadmap from those objects to matrix-element evaluation, not as a closed positive theorem."
+    },
+    {
+      "archived_at": "2026-05-27T19:37:50.388796+00:00",
+      "archived_for_note_hash": "b77d3c531e3758b1dd4f1ef7959de7aa17a453b3247923c91817546bf01b15ed",
+      "audit_date": "2026-05-25T11:19:16.084402+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Finite structural-surface underdetermination for the listed positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization witness packet; not the full beta = 6 Wilson-parent/factorization admissibility stack."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.5,
+        "runner_hash": "12efb8d9811a8650411775a972521c25a942671762e4197e7bc319ba498b7a6b",
+        "transitive_descendants": 63
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T111854Z-6d2acdaa-gauge_vacuum_plaquette_b-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The reduction would be algebraic if the full Wilson/Haar kernel/rim integral boundary theorems and full boundary-amplitude identity were retained inputs. In this packet, the supplied transfer authority is only retained_bounded and explicitly does not claim the actual full Wilson-environment transfer identity, while the asserted exact integral objects and rim/compression authorities are not supplied as retained load-bearing inputs.",
+      "claim_scope": "Audited only the claimed reduction of the beta=6 plaquette PF seam to matrix-element evaluation of already-fixed integral objects K_6^env and B_6(W), using the two supplied upstream authorities and the included runner source/output.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-25T11:19:16.084402+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because K_6^env and B_6(W) are already fixed as explicit Wilson/Haar integrals, the remaining beta=6 seam is exactly evaluation of the class-sector matrix elements entering S_6^env and eta_6.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained full-scope authorities proving the actual Wilson/Haar one-slab kernel, full-slice rim lift, and untruncated boundary-amplitude identity used by the reduction.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The note's main step is an algebraic reduction, not a first-principles computation. However, it depends on open or missing bridges: the full untruncated Wilson environment transfer identity and the exact one-slab/rim integral boundary inputs are not closed by the restricted packet. The included runner mostly checks finite structural witnesses, string-presence support in other repo notes, and three-sample operator facts; it does not evaluate or prove the physical K_6^env and B_6(W) integral matrix-element setup claimed here."
+    },
+    {
+      "archived_at": "2026-05-29T12:22:43.887729+00:00",
+      "archived_for_note_hash": "049d83aa6a0fb7592c42d4e3734ea4ec0dc2fa0055fe93b23428e442bbe26580",
+      "audit_date": "2026-05-28T03:47:16.321543+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Narrow finite structural-surface no-go only: on the runner's listed class-sector witness surface, the enumerated positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique beta=6 spatial-environment pair (S_6^env, eta_6) or a unique induced normalized three-sample datum. This does not audit any claim that the full beta=6 Wilson-parent/factorization/current-stack admissibility constraints fail, nor does it close explicit S_6^env, eta_6, rho_(p,q)(6), canonical P(6), or a global plaquette selector."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.5,
+        "runner_hash": "331ebb0dc75ae7c63c0fc6ffba81d8e7c72881a2e407207993cfb85d220be55d",
+        "transitive_descendants": 63
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-beta6-evaluation-seam-reduction-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The retained one-hop deps cover only the finite transfer witness packet and the finite structural-surface underdetermination no-go. The four authorities that make this an actual beta=6 matrix-element reduction remain required-but-unsupplied retained inputs, so the row cannot be retained as closed theorem authority.",
+      "claim_scope": "Conditional beta=6 plaquette PF seam reduction: if the full Wilson/Haar one-slab kernel theorem, full-slice rim-lift theorem, exact kernel/rim compression theorem, and exact compressed rim-evaluation theorem are supplied as retained premises, then the remaining seam reduces algebraically to matrix-element evaluation of the class-sector integral objects. This audit does not ratify those four authorities, explicit K_6^env or B_6(W) matrix elements, rho_(p,q)(6), plaquette PF data, analytic P(6), or an unconditional beta=6 evaluator closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T03:47:16.321543+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The source's reduction is algebraic once the four full-scope Wilson/Haar kernel, rim-lift, compression, and compressed rim-evaluation premises are granted. The cached runner supports only the finite structural witness surface: rank(F)=3, restriction error 4.777e-15, two admissible beta-side witnesses with rho_gap=0.060847050322, and different normalized triples with max gap 0.121575423874. It does not derive the four full-scope premise authorities.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: Re-audit after retained one-hop authorities exist for the full Wilson/Haar one-slab kernel, full-slice rim-lift, exact kernel/rim compression, and exact compressed rim-evaluation laws, or after the note is narrowed further to a purely formal if-premises-then-algebra lemma that does not claim beta=6 seam closure authority. Do not cite this row as explicit rho_(p,q)(6), plaquette PF data, analytic P(6), or an unconditional evaluator.",
+      "open_dependency_paths": [
+        "full Wilson/Haar one-slab kernel theorem is not retained one-hop authority",
+        "full-slice rim-lift theorem is not retained one-hop authority",
+        "exact kernel/rim compression theorem is not retained one-hop authority",
+        "exact compressed rim-evaluation theorem is not retained one-hop authority"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 5,
+        "C": 5,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The narrowed source is honest, but the audit verdict remains conditional. The bounded-wall discipline gate passes only for the conditional reduction: N1/N2 identify the four missing full-scope authorities, N3 names them as the hidden wall set rather than treating them as retained facts, and N7 concedes that retained-bounded transfer support plus the runner only support the conditional version. The runner is relevant evidence that the current finite structural surface still leaves a beta-side vector open; it is not a proof of the full Wilson/Haar one-slab kernel, full rim lift, untruncated compression, or compressed rim-evaluation identities. Therefore the correct handoff is missing_bridge_theorem, not audited_clean."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.051964+00:00",
+      "audit_date": "2026-05-29T21:07:51.434461+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Narrow finite structural-surface no-go only: on the runner's listed class-sector witness surface, the enumerated positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique beta=6 spatial-environment pair (S_6^env, eta_6) or a unique induced normalized three-sample datum. This does not audit any claim that the full beta=6 Wilson-parent/factorization/current-stack admissibility constraints fail, nor does it close explicit S_6^env, eta_6, rho_(p,q)(6), canonical P(6), or a global plaquette selector."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.5,
+        "runner_hash": "331ebb0dc75ae7c63c0fc6ffba81d8e7c72881a2e407207993cfb85d220be55d",
+        "transitive_descendants": 63
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-audit-ready-20260529-gauge_vacuum_plaquette_b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed in-scope claim closes because the displayed relations are definitions and immediate linear-algebra consequences of the abstract hypotheses. The physical beta=6 identification remains explicitly out of scope and is not used to close the audited claim.",
+      "claim_scope": "Purely formal finite-dimensional linear-algebra lemma for abstract `(S, eta, K)` on the class-sector space; no Wilson/Haar, beta=6, plaquette, or physical-identification closure was audited as in scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T21:07:51.434461+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:331ebb0d->79d5da0d",
+      "load_bearing_step": "For arbitrary abstract finite-dimensional operators and data `(S, eta, K)`, defining `z_(p,q)=<chi_(p,q),S^(L_perp-1) eta>`, `rho=z/z_(0,0)`, `v=sum z chi`, and `Z(W)=<K(W),v>` makes the stated coefficient and evaluation relations follow by elementary linear algebra.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream ledger consumers inherit only the formal-lemma scope and do not treat this row as a retained beta=6 Wilson/Haar matrix-element reduction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "After the 2026-05-28 narrowing, the load-bearing claim is only a formal if-premises-then-algebra lemma over arbitrary finite-dimensional `(S, eta, K)`. That claim is class A and does not require the four Wilson/Haar bridge authorities, which the note explicitly excludes from scope. The runner contains five theorem-style algebraic/finite structural checks and five cross-note support-string checks; it does not derive the physical Wilson/Haar identities, but the narrowed formal claim does not depend on those identities."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.162643+00:00",
+      "audit_date": "2026-06-12T23:44:37.328959+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Finite structural-surface underdetermination only: on the runner's truncated class-sector witness surface, the listed positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique transfer/boundary pair or normalized rho sequence; the full beta=6 Wilson-parent/factorization stack is not audited closed or ruled out."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.931,
+        "runner_hash": "79d5da0ddce1619ea58ff2d1e54cb5b62010f29e7daeab41bd73fd62a956375b",
+        "transitive_descendants": 60
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-234225-925a97a04c-gauge_vacuum_plaquette_beta6",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The z, v, and Z relations are algebraic once the objects are well typed. The stated arbitrary-scope lemma does not close because rho_(p,q)=z_(p,q)/z_(0,0) requires z_(0,0) != 0, which is not assumed and fails for allowed inputs such as eta=0.",
+      "claim_scope": "Audited only the narrowed formal finite-dimensional algebra lemma for abstract S, eta, and K, not the out-of-scope beta=6 Wilson/Haar physical identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T23:44:37.328959+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:79d5da0d->ee7dba68",
+      "load_bearing_step": "For arbitrary finite-dimensional H with basis chi_(p,q), arbitrary S, eta, and K, define z_(p,q)=<chi_(p,q),S^(L_perp-1)eta>, rho_(p,q)=z_(p,q)/z_(0,0), v=sum z_(p,q)chi_(p,q), and Z(W)=<K(W),v>; then the stated relations follow by elementary linear algebra.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: add an explicit z_(0,0) != 0 hypothesis, or restrict the rho statements to cases where the denominator is defined; also type K(W) consistently as a vector/Riesz representative if the inner-product notation is retained.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The 2026-05-28 narrowing correctly excludes the four Wilson/Haar bridge authorities from the audited load-bearing scope. Within the formal scope, the matrix-coordinate and evaluation identities are elementary finite-dimensional algebra, but the normalization formula for rho silently imports a nonzero-denominator premise. The runner's finite checks do not repair that universal quantifier problem, because they only test positive witness instances where the denominator is nonzero."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:41.541929+00:00",
+      "archived_for_note_hash": "8ae9f221de987b642c0fc7ec2df8b50aa185200628ab6260b414e49e89cdf292",
+      "audit_date": "2026-06-14T00:08:17.065380+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Finite structural-surface underdetermination only: positivity, self-adjointness, swap symmetry, positive symmetric boundary, and normalization do not determine a unique beta-side rho or runner three-sample readout."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.407,
+        "runner_hash": "ee7dba68486df40fb17ab9754a21d9b4ff92f66edcc97271b503f585dd48d4c8",
+        "transitive_descendants": 59
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-000535-1492fcb55d-gauge_vacuum_plaquette_beta6",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The `z`, `v`, and `Z(W)` identities close by orthonormal-basis expansion. The normalized ratio `rho_(p,q) = z_(p,q)/z_(0,0)` does not close under the stated arbitrary-operator hypotheses because `z_(0,0)` may vanish.",
+      "claim_scope": "Pure formal finite-dimensional linear-algebra reduction for abstract `(S, eta, K)` on an orthonormal class-sector basis; no physical beta=6 Wilson/Haar identification is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T00:08:17.065380+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given arbitrary abstract operators `(S, eta, K)`, define `z_(p,q) = <chi_(p,q), S^(L_perp-1) eta>`, `rho_(p,q) = z_(p,q)/z_(0,0)`, `v = sum z_(p,q) chi_(p,q)`, and `Z(W) = <K(W), v>`, so the stated coefficient and evaluation relations follow by finite-dimensional linear algebra.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: add an explicit `z_(0,0) != 0` hypothesis for `rho` or remove normalized `rho` from the arbitrary-operator lemma, then re-audit the formal algebraic scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The 2026-05-28 narrowing successfully removes the physical beta=6 Wilson/Haar bridge from the audited load-bearing claim. The remaining formal algebra is class A, but the statement is still too broad as written because it defines normalized coefficients for arbitrary `S` and `eta` without assuming `z_(0,0) != 0`. The runner checks finite positive witness instances where the normalization exists, but that does not close the arbitrary formal lemma."
+    },
+    {
+      "archived_at": "2026-06-18T01:40:14.852499+00:00",
+      "archived_for_note_hash": "88c02008339e2649ae0bcf7b10daed30f2879b60a9a6823c7d9f03625ab88a9d",
+      "audit_date": "2026-06-15T22:51:10.431850+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Finite structural-surface no-go only: on the runner's finite class-sector witness surface, the listed positivity, self-adjointness, conjugation-swap symmetry, positive symmetric boundary, and normalization constraints do not force a unique normalized beta-side vector or induced three-sample triple."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 10.407,
+        "runner_hash": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+        "transitive_descendants": 59
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-224840-69dee0971d-gauge_vacuum_plaquette_beta6",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the audited formal scope, the result follows from orthonormal-basis expansion, finite matrix-vector propagation, and division by a stipulated nonzero denominator. The beta=6 physical bridge is expressly outside the load-bearing claim.",
+      "claim_scope": "Purely formal finite-dimensional linear-algebra lemma for arbitrary abstract (S, eta, K); no beta=6 Wilson/Haar physical identification is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T22:51:10.431850+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For finite-dimensional H with orthonormal class basis, the vector S^(L_perp-1) eta has coefficients z_(p,q)=<chi_(p,q),S^(L_perp-1)eta>, hence v=sum z_(p,q) chi_(p,q), Z(W)=<K(W),v>, and rho_(p,q)=z_(p,q)/z_(0,0) on the nonzero-denominator subcase.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit the physical beta=6 reduction separately only if that bridge is made in scope and the four Wilson/Haar authorities are supplied.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The 2026-05-28 narrowing makes the retained claim a formal algebraic lemma, not a physical Wilson/Haar reduction. In that scope the displayed coefficient, vector, evaluation, and normalization relations close by elementary finite-dimensional linear algebra, and an independent finite random-matrix check confirms the same identities without using the runner path. The cited plaquette notes and the named beta=6 physical authorities are context for a future application, not premises needed for this formal result."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.666385+00:00",
+      "audit_date": "2026-06-18T05:39:47.741503+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Finite structural-surface no-go only: on the runner's finite class-sector witness surface, the listed positivity, self-adjointness, conjugation-swap symmetry, positive symmetric boundary, and normalization constraints do not force a unique normalized beta-side vector or induced three-sample triple."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.954,
+        "runner_hash": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+        "transitive_descendants": 61
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the declared formal scope, the conclusion follows by elementary linear algebra: the z values are the coordinates of the propagated vector in the orthonormal class basis, ell_W is represented by k(W) by finite-dimensional Riesz representation, and rho is only a nonzero-denominator ratio. The four Wilson/Haar bridge identities remain explicitly out of scope and are not needed for this formal lemma.",
+      "claim_scope": "Purely formal finite-dimensional algebra lemma for arbitrary abstract operators (S, eta, ell_W), with beta=6 Wilson/Haar identification and closed-form matrix evaluation excluded from the audited scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T05:39:47.741503+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For arbitrary finite-dimensional H with abstract S, eta, and ell_W, define z_(p,q)=<chi_(p,q),S^(L_perp-1)eta>, v=sum z_(p,q) chi_(p,q), Z(W)=ell_W(v)=<k(W),v>, and rho_(p,q)=z_(p,q)/z_(0,0) only when z_(0,0) != 0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers do not cite this row as beta=6 Wilson/Haar closure unless the four excluded bridge authorities have been supplied and audited.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The 2026-05-28 narrowing makes the audited claim an abstract finite-dimensional algebra statement, not a beta=6 physical Wilson/Haar reduction. The load-bearing step is class A and closes from the stated abstract hypotheses without importing the unsupplied physical bridge authorities. The runner provides finite algebra/witness checks and cross-note support-string checks, but it does not and need not derive the excluded Wilson/Haar identities for the formal lemma to close."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+  "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction (Formal Algebraic Lemma)",
+  "transitive_descendants": 58,
+  "verdict_rationale": null
+}

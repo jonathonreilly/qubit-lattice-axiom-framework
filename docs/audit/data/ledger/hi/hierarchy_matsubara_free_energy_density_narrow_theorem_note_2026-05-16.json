@@ -1,0 +1,115 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem (proposed; audit-lane to ratify)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
+    "hierarchy_matsubara_decomposition_note"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.49,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "40b92dad8801b9fb05e9c84779e0d14d7530e5d367d954cb1154aa34f9188a0b",
+  "note_path": "docs/HIERARCHY_MATSUBARA_FREE_ENERGY_DENSITY_NARROW_THEOREM_NOTE_2026-05-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:29.339179+00:00",
+      "audit_date": "2026-05-16T13:05:01.178395+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "hierarchy_matsubara_decomposition_note": "Bounded exact temporal Matsubara decomposition of the determinant magnitude, free-energy density difference, and condensate density for the specified L_s=2 spatial APBC staggered Dirac operator.",
+          "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "Pure algebraic determinant identity for the mean-field staggered Dirac operator on the minimal L_s=2 APBC block, giving |det(D+m)|=prod_\u03c9 [m\u00b2+u_0\u00b2(3+sin\u00b2\u03c9)]\u2074, with no physical EWSB or Higgs-mass claim audited."
+        },
+        "dep_claim_type": {
+          "hierarchy_matsubara_decomposition_note": "bounded_theorem",
+          "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "hierarchy_matsubara_decomposition_note": "retained_bounded",
+          "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "decoration_under_hierarchy_matsubara_decomposition_note"
+        },
+        "deps": [
+          "hierarchy_matsubara_decomposition_note",
+          "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 10.117,
+        "runner_hash": "6fb0a3f546b8e2b72e1743612508d9aad08ee3dc5f9746a5112aec848a45d6a5",
+        "transitive_descendants": 784
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260516-130436-3eff71a3-hierarchy_matsubara_free-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the restricted packet, the formula follows by substituting m=0 in the cited determinant identity, subtracting real logarithms, and applying n_matrix=8 L_t. No additional physical identification or external input is needed for this scoped algebraic statement.",
+      "claim_scope": "Audited the algebraic derivation of the per-matrix-entry Matsubara free-energy density formula from the supplied determinant identity at L_s = 2 with mean-field factorization.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-16T13:05:01.178395+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:hierarchy_matsubara_decomposition_note:retained_bounded->unaudited",
+      "load_bearing_step": "Apply the per-matrix-entry normalization to the retained determinant log difference, so 4/(8 L_t) times the Matsubara log sum reduces to (1/(2 L_t)) Sum_omega ln(1 + m^2/[u_0^2(3+sin^2 omega)]).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the local policy treats decoration_under_hierarchy_matsubara_decomposition_note as inherited retained-grade support or always records this as a decoration under the retained_bounded parent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The load-bearing work is entirely class A algebra over the upstream Matsubara determinant formula plus the stated per-matrix-entry normalization. The runner source performs symbolic log and prefactor checks plus numerical matrix cross-checks; it does not use external comparators. Because the chain reduces to a single upstream parent determinant/decomposition claim and standard mathematics, the conservative rubric classifies it as audited_decoration rather than audited_clean."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hierarchy_matsubara_free_energy_density_narrow.py",
+  "title": "Hierarchy Matsubara Free-Energy Density - Narrow Algebraic Theorem",
+  "transitive_descendants": 718,
+  "verdict_rationale": null
+}

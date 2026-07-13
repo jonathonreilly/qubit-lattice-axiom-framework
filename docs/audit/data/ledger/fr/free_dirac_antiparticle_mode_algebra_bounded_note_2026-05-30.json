@@ -1,0 +1,265 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.97,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "31fe02c036b0851c45c0e8ac948fc8d5445b2434d54388e37e3e9a0b74017767",
+  "note_path": "docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T19:27:18.117000+00:00",
+      "audit_date": "2026-06-05T18:29:41.779843+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "Free U=1 staggered Euclidean 2-point function for the displayed canonical action/phases: continuum SO(4) bispinor covariance of the free propagator and O(a^2) ell=4 anisotropy of the taste-singlet scalar spectrum/D~ sector, excluding interacting theory, n-point/OS reconstruction, physical-unit readout, and full spin-taste leading finite-a correction."
+        },
+        "dep_claim_type": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded"
+        },
+        "deps": [
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+        ],
+        "load_bearing_score": 4.822,
+        "runner_hash": "3aeaab6804d21d255864a5572b2ea718875f7f4a583aefaf41c2e13808a500ba",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-182742-ac44e8e1fa-free_dirac_antiparticle_mode",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop retained_bounded authority supplies the continuum Euclidean Dirac kernel and scalar denominator. The remaining conclusions are finite-dimensional Clifford, spinor-completeness, pole-continuation, Hamiltonian-spectrum, and CAR occupation algebra identities, and no reconstruction or spin-statistics claim is imported.",
+      "claim_scope": "For the continuum free Dirac kernel S(p)=(m-i gamma.p)/(p^2+m^2), the audited scope is the finite Clifford/Dirac spinor algebra and the finite CAR antiparticle relabeling, not OS reconstruction, locality, or statistics selection.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T18:29:41.779843+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29:retained_bounded->unaudited",
+      "load_bearing_step": "Given CAR quantization, the negative-energy branch can be relabeled as a positive-energy antiparticle branch with H_CAR = sum_{p,s} E(p)(a^dag a + b^dag b), so the finite-mode Fock spectrum is bounded below by 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the implicit positive-mass and normal-ordered vacuum-energy convention, but these are consistent with the bounded claim and runner.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source performs actual finite matrix and finite Fock occupation checks rather than printing constants or importing a contested fitted value. Independent algebra confirms M(p)S(p)=I from the Euclidean Clifford relation, poles p4=+/-iE Wick-continue to p0=+/-E, H_D^2=E^2 with double degeneracy, the displayed u/v completeness and bilinear signs match the standard Dirac-basis construction for positive mass, and finite CAR occupations make the displayed normal-ordered H_CAR nonnegative. The source note explicitly excludes Wightman reconstruction, microcausality, CAR selection from covariance, and spin-statistics closure, so the audited chain closes only at the bounded free-mode algebra level."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.215036+00:00",
+      "audit_date": "2026-06-10T03:17:57.909598+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "Free U=1 staggered Euclidean two-point function with canonical phases: continuum momentum-space SO(4) Dirac/Kahler-Dirac covariance and O(a^2) ell=4 anisotropy in the taste-singlet scalar-spectrum/displayed D~ sector only."
+        },
+        "dep_claim_type": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded"
+        },
+        "deps": [
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+        ],
+        "load_bearing_score": 6.858,
+        "runner_hash": "3aeaab6804d21d255864a5572b2ea718875f7f4a583aefaf41c2e13808a500ba",
+        "transitive_descendants": 28
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-031532-f71d8bdd9c-free_dirac_antiparticle_mode",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained_bounded cited authority supplies the continuum Euclidean kernel, and the remaining facts close by Clifford algebra and finite CAR algebra. Independently, (m+i gamma.p)(m-i gamma.p)=(m^2+p^2)I, H_D^2=E^2I with the standard double degeneracy, and b=d^dag turns -E d^dag d into E b^dag b up to a finite vacuum constant that the displayed H_CAR has shifted to zero.",
+      "claim_scope": "Bounded free continuum Dirac mode algebra: Euclidean inverse and pole continuation, +/-E Dirac spectrum, u/v completeness and norm signs, and nonnegative finite CAR particle-antiparticle Fock spectrum; no OS/Wightman reconstruction or statistics-selection theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T03:17:57.909598+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Given the continuum free Dirac kernel and CAR quantization, the negative-energy modes can be particle-hole relabeled so that the normal-ordered finite-mode Hamiltonian is H_CAR = sum E(p)(a^dag a + b^dag b), bounded below by 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that downstream citations preserve the stated boundary and do not use this row as a statistics-selection or reconstruction theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source performs actual finite matrix and finite occupation checks, with no helper imports, external comparator, or tuned numerical input. The independent algebraic checks confirm the signs, normalizations, projector identities, and CAR occupancy bound claimed in the source note. The clean result is only for the stated bounded CAR-given free-mode algebra and does not propagate to CAR selection, microcausality, Wightman reconstruction, or spin-statistics."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.065018+00:00",
+      "audit_date": "2026-06-12T01:11:40.581847+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "Free U=1 staggered-Dirac Euclidean 2-point function: continuum SO(4) covariance of the displayed taste-spectator spin block, plus the O(a^2) ell=4 anisotropy of the taste-singlet scalar spectrum Delta(p), excluding interacting, n-point, OS-reconstruction, physical-unit, and full finite-a spin x taste leading-correction claims."
+        },
+        "dep_claim_type": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded"
+        },
+        "deps": [
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+        ],
+        "load_bearing_score": 6.858,
+        "runner_hash": "3aeaab6804d21d255864a5572b2ea718875f7f4a583aefaf41c2e13808a500ba",
+        "transitive_descendants": 28
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-011028-b1006347dc-free_dirac_antiparticle_mode",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained-bounded upstream supplies the continuum free Dirac kernel, and the claimed facts then follow by Clifford-algebra identities plus finite CAR occupancy algebra. No Wightman reconstruction, locality theorem, statistics-selection theorem, or interacting claim is needed for the audited scope.",
+      "claim_scope": "Bounded finite-mode free Dirac algebra: Euclidean inverse and poles, +/-E Hamiltonian spectrum, u/v completeness signs and norms, and finite CAR antiparticle relabeling bounded below.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T01:11:40.581847+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Given CAR quantization, the negative-energy branch can be relabeled as a positive-energy antiparticle branch with H_CAR = sum E(p)(a^\u2020a + b^\u2020b), so the finite-mode Fock spectrum is bounded below by 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that the bounded scope remains explicit: the row proves the CAR relabeling algebra after CAR is assumed, not selection of CAR from Euclidean covariance.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source performs substantive checks of the displayed algebra rather than merely printing constants: inverse/poles, Hamiltonian spectrum, spinor completeness and signs, finite CAR spectrum, and the raw negative-branch diagnostic. An independent algebra check gives the same factors and signs: (m+i gamma.p)(m-i gamma.p)=m^2+p^2, H_D^2=E^2 I with double +/-E degeneracy, ubar u=+2m and vbar v=-2m while Hilbert norms are 2E, and CAR occupancies are 0/1 so the relabeled finite spectrum is nonnegative. The only load-bearing upstream authority is retained_bounded and supplies exactly the bounded continuum kernel input used here; there is no external comparator or tuned numerical match."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.246344+00:00",
+      "audit_date": "2026-07-02T04:07:04.523512+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "For the specified free U=1 staggered/Kogut-Susskind operator on Z^3 x Z_tau with canonical phases, the continuum-limit 2-point Dirac/Kahler-Dirac propagator is SO(4)-covariant; the O(a^2) ell=4 anisotropy claim is scoped to the taste-singlet scalar spectrum/displayed D~ sector."
+        },
+        "dep_claim_type": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded"
+        },
+        "deps": [
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+        ],
+        "load_bearing_score": 6.807,
+        "runner_hash": "3aeaab6804d21d255864a5572b2ea718875f7f4a583aefaf41c2e13808a500ba",
+        "transitive_descendants": 27
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T040704Z-ea003fa1-free_dirac_antiparticle_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-bounded authority supplies the continuum free Dirac kernel and denominator. The remaining conclusions are finite Clifford/spinor/CAR algebra identities, with CAR quantization explicitly scoped as an assumption rather than derived statistics selection.",
+      "claim_scope": "Bounded algebraic audit of the continuum free Dirac kernel's inverse/poles, Minkowski +/-E mode spectrum, u/v completeness signs and norms, and finite CAR particle-antiparticle relabeling bounded below by zero.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T04:07:04.523512+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Given CAR quantization, the negative-energy branch can be relabeled as a positive-energy antiparticle branch, H_CAR = sum E(p)(a^dag a + b^dag b), so the finite-mode Fock spectrum is bounded below by 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the explicit CAR-given bounded scope and do not cite this row as statistics selection or Wightman reconstruction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source performs genuine finite matrix and finite-occupation checks: Euclidean inverse and pole continuation, Hermitian Dirac Hamiltonian spectrum, explicit u/v spinor completeness and bilinear signs, and CAR occupation-spectrum boundedness. Independent algebra confirms the key signs and normalizations: (m+i gamma.p)(m-i gamma.p)=p^2+m^2, H_D^2=E^2 with double degeneracy, the displayed v-spinor convention gives pslash-m, and CAR occupations are 0/1 with nonnegative energies after antiparticle relabeling. The note does not claim OS/Wightman reconstruction, microcausality, or CAR selection from Euclidean covariance, so those are not required for this bounded scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py",
+  "title": "Free Dirac Antiparticle Mode Algebra (Bounded Support)",
+  "transitive_descendants": 708,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,157 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "quark_up_amplitude_native_affine_no_go_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "quark_projector_parameter_audit_note_2026-04-19",
+    "quark_up_amplitude_candidate_scan_note_2026-04-19",
+    "quark_up_amplitude_native_expression_scan_note_2026-04-19"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_quark_mass_ratio_full_solve.py",
+    "scripts/frontier_quark_projector_parameter_audit.py",
+    "scripts/frontier_quark_projector_ray_phase_completion.py",
+    "scripts/frontier_quark_up_amplitude_candidate_scan.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.304,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "758a98811d2ffa5556cc00f70678f4db0c5d2802bdeef3c6db823722aeb3bd54",
+  "note_path": "docs/QUARK_UP_AMPLITUDE_NATIVE_AFFINE_NO_GO_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-29T23:17:15.568745+00:00",
+      "audit_date": "2026-04-29T12:33:37.549087+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "quark_projector_parameter_audit_note_2026-04-19": "unaudited",
+          "quark_up_amplitude_candidate_scan_note_2026-04-19": "unaudited",
+          "quark_up_amplitude_native_expression_scan_note_2026-04-19": "unaudited"
+        },
+        "deps": [
+          "quark_projector_parameter_audit_note_2026-04-19",
+          "quark_up_amplitude_candidate_scan_note_2026-04-19",
+          "quark_up_amplitude_native_expression_scan_note_2026-04-19"
+        ],
+        "load_bearing_score": 6.858,
+        "transitive_descendants": 40
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-gpt-5.5-backlog-sweep-2026-04-29",
+      "auditor_confidence": 0.91,
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner exhausts a chosen finite affine grammar and comparator scoring surface, but the no-go is bounded to those grammar and baseline choices and all one-hop deps remain bounded/numerical support.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:quark_projector_parameter_audit_note_2026-04-19:bounded->audited_numerical_match",
+      "load_bearing_step": "The widened affine family has laws that beat each external baseline separately, but zero laws beat both the 7/9 refit baseline and the sqrt(3/5) anchored baseline at once.",
+      "load_bearing_step_class": "G",
+      "open_dependency_paths": [
+        "quark_projector_parameter_audit_note_2026-04-19: audited_numerical_match dependency",
+        "quark_up_amplitude_candidate_scan_note_2026-04-19: audited_numerical_match dependency",
+        "quark_up_amplitude_native_expression_scan_note_2026-04-19: bounded/unaudited dependency",
+        "missing theorem: native affine grammar is exhaustive for a_u"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 7,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the negative result is an exhaustive numerical comparison within a hand-bounded affine grammar, not a proof that no framework-native a_u law exists. Why this blocks: changing the grammar, scoring metric, or baseline definitions would be a different claim, and the dependency chain is still bounded around fitted/candidate amplitudes. Repair target: formalize the native affine grammar as a retained search space or derive the scalar law directly. Claim boundary until fixed: bounded no-go for this finite widened affine support scan, not a retained theorem-forced exclusion."
+    },
+    {
+      "archived_at": "2026-04-30T11:45:06.772936+00:00",
+      "audit_date": "2026-04-30T00:52:10.021962+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "quark_projector_parameter_audit_note_2026-04-19": "audited_numerical_match",
+          "quark_up_amplitude_candidate_scan_note_2026-04-19": "audited_numerical_match",
+          "quark_up_amplitude_native_expression_scan_note_2026-04-19": "audited_numerical_match"
+        },
+        "deps": [
+          "quark_projector_parameter_audit_note_2026-04-19",
+          "quark_up_amplitude_candidate_scan_note_2026-04-19",
+          "quark_up_amplitude_native_expression_scan_note_2026-04-19"
+        ],
+        "load_bearing_score": 6.858,
+        "transitive_descendants": 40
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-audit-loop-fresh-context-d97a-20260430",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner exhaustively checks the stated finite affine grammar, but the conclusion is still a comparator/baseline dominance result on bounded numerical axes. It does not supply a retained physical selection rule for a_u.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:quark_projector_parameter_audit_note_2026-04-19:audited_numerical_match->audited_conditional",
+      "load_bearing_step": "The widened native affine scan finds laws that beat each external baseline separately but zero laws that beat both the 7/9 refit baseline and sqrt(3/5) anchored baseline at once.",
+      "load_bearing_step_class": "G",
+      "open_dependency_paths": [
+        "docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md",
+        "docs/QUARK_UP_AMPLITUDE_CANDIDATE_SCAN_NOTE_2026-04-19.md",
+        "docs/QUARK_UP_AMPLITUDE_NATIVE_EXPRESSION_SCAN_NOTE_2026-04-19.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 7,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the negative result is a bounded scan over a selected affine grammar with dominance measured against numerical baselines. Why this blocks: even an exhaustive no-go inside that grammar does not derive the amplitude or prove the grammar is physically complete, and its dependencies are bounded/numerical. Repair target: derive the affine family as the complete native support law or produce a retained theorem selecting one amplitude before target comparison. Claim boundary until fixed: this row is a bounded affine-support no-go, not a retained quark-amplitude closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_quark_up_amplitude_native_affine_no_go.py",
+  "title": "Quark Up-Amplitude Native Affine No-Go",
+  "transitive_descendants": 78,
+  "verdict_rationale": null
+}

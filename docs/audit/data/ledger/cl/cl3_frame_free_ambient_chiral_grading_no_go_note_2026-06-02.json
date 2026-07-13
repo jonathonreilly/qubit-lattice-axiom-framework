@@ -1,0 +1,426 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+    "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
+    "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.087,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c76c085c781277351fc0e076d48ec279e7a864a178340d0923bcbcc1c439948f",
+  "note_path": "docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T20:34:08.516487+00:00",
+      "audit_date": "2026-06-05T20:15:18.213985+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "Audited the narrow algebraic claim on V=R^3 that the L4 anticommuting family forces the singlet axis to (1,1,1), while C3-symmetric native cube structures do not force the required doublet vector h; the tested C3-breaking candidates are orbit choices or wrong operator class, and J_cs is a separate commuting-side route.",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "For the natural Bloch/Hopf/adjoint SU(2)->SO(3) map and SO(3)-equivariant vector-image route, the central spinor sign z=-1 is killed and is not identified with the Gamma_chi value-side sign; non-equivariant glues remain open.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "Algebraic carrier compatibility only: Cl(3,0) grade-1 is a real 3D Spin(3) carrier compatible with Gamma_chi and non-circulant anticommuting operators are outside the retained Z3-circulant no-go; physical generation identity, vector-spinor sign transport, and r=1/2 selection remain open.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "no_go",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "retained_no_go",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "2ad901ab32db61f5d28635903a6bb019fb2b908d57d752ec9e59e0e505cf52c2",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-cbd0ff1f2c-cl3_frame_free_ambient_chira",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The commutant calculation closes the frame-free equivariant case, and the named operations reduce to \u00b1I, the identity index map, Gamma_chi itself, or checked rotation-generator actions that do not provide the scoped Hermitian L4 source. The L4 family exists but requires an additional chosen doublet vector h, which is explicitly outside the audited frame-free class.",
+      "claim_scope": "The audited claim is only the narrow grade-1 Cl(3,0) statement: frame-free Spin(3)/Pin(3)-equivariant ambient Clifford operations, plus the named checked ambient operations, do not supply a nonzero grade-1 endomorphism anticommuting with Gamma_chi=(2/3)J-I; frame-broken L4/lattice/momentum/dynamics/sector routes remain open.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T20:15:18.213985+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Solving [M,L_k]=0 for the three so(3) grade-1 generators gives M=cI_3, so every frame-free Spin(3)-equivariant grade-1 endomorphism is scalar and {cI_3,Gamma_chi}=2c Gamma_chi vanishes only for c=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check wording around the bivector-commutator row: arbitrary chosen doublet-axis bivector combinations are frame-broken and outside this clean scope, so the row must be read as the named checked ambient-generator route rather than a global statement about every chosen bivector.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The source and runner perform exact finite-dimensional algebra over the provided Cl(3,0)/Pauli and R^3 inputs; there is no external comparator, tuned numerical match, or definition-substitution step. The cited non-axiom authorities are retained-grade, while the minimal axiom memo is flagged as an accepted premise. The N1-N8 no-go gate passes only at the stated narrow resolution: the result prunes the frame-free ambient Clifford source, not all possible frame-supplying constructions."
+    },
+    {
+      "archived_at": "2026-06-13T22:14:40.834732+00:00",
+      "audit_date": "2026-06-05T22:28:47.718093+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "Audited the narrow algebraic claim on V=R^3 that the L4 anticommuting family forces the singlet axis to (1,1,1), while C3-symmetric native cube structures do not force the required doublet vector h; the tested C3-breaking candidates are orbit choices or wrong operator class, and J_cs is a separate commuting-side route.",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "Route-local result: the natural adjoint/Bloch/Hopf SU(2)->SO(3) spinor-to-vector map, and rotation-equivariant vector-target candidates in this sense, kill the central spinor sign z and do not identify it with the Gamma_chi eigenvalue sign on R^3.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "Audited the bounded algebraic carrier-compatibility claim: the Cl(3,0) grade-1 Pauli vector space is a real three-dimensional Spin(3) carrier compatible with Gamma_chi, non-circulant anticommuting examples lie outside the Z_3-circulant no-go, and the r=1/2 pin remains open.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "no_go",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "retained_no_go",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "2ad901ab32db61f5d28635903a6bb019fb2b908d57d752ec9e59e0e505cf52c2",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-cba855775e-cl3_frame_free_ambient_chira",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independently of the runner, any map commuting with all rotations sends each axis to itself, so linearity forces a scalar map; a nonzero scalar cannot anticommute with the involution Gamma_chi. The exhibited L4 anticommuting family requires a chosen singlet axis plus free doublet vector and is therefore outside the frame-free ambient class.",
+      "claim_scope": "On the grade-1 R^3 subspace of the one-site Cl(3,0) carrier, no nonzero frame-free Spin(3)/Pin(3)-equivariant induced grade-1 endomorphism, nor any named ambient Clifford operation checked, supplies an operator anticommuting with Gamma_chi; frame-chosen L4, lattice, momentum, dynamics, and sector-factorization routes remain outside scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T22:28:47.718093+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04:retained_no_go->unaudited",
+      "load_bearing_step": "Solving the Spin(3) grade-1 commutant gives M = c I_3, and {c I_3, Gamma_chi} = 2 c Gamma_chi vanishes only for c = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream use preserves the nonzero frame-free scope and does not cite this as closure of lattice, momentum, dynamics, or sector-factorization frame-selection routes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The load-bearing step is a finite algebraic commutant calculation over the accepted one-site Cl(3,0) carrier and retained-grade upstream context. The runner source performs exact symbolic matrix checks rather than importing external comparators, tuned values, or hard-coded contested premises; an independent representation-theoretic check confirms the scalar commutant and the L4 escape. The no-go discipline gate passes only in the narrow scoped form: it closes the frame-free ambient Clifford route, not frame-broken or lattice/dynamical routes."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.437559+00:00",
+      "audit_date": "2026-06-16T00:42:08.766466+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "On V=R^3 with Gamma_chi=(2/3)J-I and the cited native cube operators, the cube body diagonal forces the L4 singlet axis, but C3-symmetric real self-adjoint native structures do not force the L4 doublet vector h; selecting h is a C3/S3 orbit choice or belongs to the wrong operator class.",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "Route-local result: the natural adjoint/Bloch/Hopf SU(2)->SO(3) spinor-to-vector map, and rotation-equivariant vector-target candidates in this sense, kill the central spinor sign z and do not identify it with the Gamma_chi eigenvalue sign on R^3.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "Audited the bounded algebraic carrier-compatibility claim: the Cl(3,0) grade-1 Pauli vector space is a real three-dimensional Spin(3) carrier compatible with Gamma_chi, non-circulant anticommuting examples lie outside the Z_3-circulant no-go, and the r=1/2 pin remains open.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "no_go",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "retained_no_go",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.892,
+        "runner_hash": "2ad901ab32db61f5d28635903a6bb019fb2b908d57d752ec9e59e0e505cf52c2",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-bb35781c56-cl3_frame_free_ambient_chira",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrow no-go follows from exact representation-theoretic scalarity of the real spin-1 commutant plus the explicit anticommutator with Gamma_chi. The cited retained/accepted inputs support the grade-1 test surface and L4 comparison without importing a physical species bridge.",
+      "claim_scope": "On the grade-1 R^3 subspace of the one-site Cl(3,0) carrier, no nonzero frame-free Spin(3)/Pin(3)-equivariant ambient Clifford grade-1 operation anticommutes with Gamma_chi=(2/3)J-I; frame-selected L4, lattice, momentum, dynamics, and sector-factorization routes are outside scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-16T00:42:08.766466+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The commutant calculation [M,L_k]=0 for the three so(3) generators gives M=cI_3, so every Spin(3)-equivariant grade-1 endomorphism is scalar and {cI_3,Gamma_chi}=2cGamma_chi vanishes only for c=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the bivector-commutator discussion scoped to named/frame-free operations; arbitrary frame-chosen doublet data remains outside this no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The runner performs exact Sympy matrix checks rather than importing external comparators or tuned values, and the load-bearing Schur-scalarity step can be independently checked from irreducibility of the real SO(3) vector representation. Named Clifford operations reduce on grade-1 to scalar, commuting, or explicitly frame-chosen actions, none of which supplies a nonzero frame-free anticommuting source. The no-go discipline gate passes for the scoped claim because the note explicitly leaves frame-broken L4, lattice, momentum, dynamics, and sector-factorization routes open."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.337666+00:00",
+      "audit_date": "2026-07-02T04:47:08.916502+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "On V=R^3 with Gamma_chi=(2/3)J-I and the cited native cube operators, the cube body diagonal forces the L4 singlet axis, but C3-symmetric real self-adjoint native structures do not force the L4 doublet vector h; selecting h is a C3/S3 orbit choice or belongs to the wrong operator class.",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "Audited the bounded algebraic claim that the natural SU(2)->SO(3) adjoint/Bloch/Hopf spinor-to-vector map, and SU(2)-equivariant maps into the vector representation, kill the central spinor sign z=-1; Gamma_chi is instead the image of a pi-rotation lift q_gc with q_gc^2=z.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "Finite algebraic carrier-compatibility: the Pauli/Cl(3,0) grade-1 real vector space is a three-dimensional Spin(3) vector carrier on which Gamma_chi is a proper pi-rotation; non-circulant anticommuting endomorphisms lie outside the cited Z3 no-go, and the r=1/2 pin remains unselected.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "no_go",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "retained_no_go",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.892,
+        "runner_hash": "2ad901ab32db61f5d28635903a6bb019fb2b908d57d752ec9e59e0e505cf52c2",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T044708Z-98920a7c-cl3_frame_free_ambient_c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The commutant of the real spin-1 so(3) representation is exactly the scalar matrices, while anticommutation with Gamma_chi requires singlet-doublet off-diagonal form, so their intersection is zero. The cited non-axiom dependencies are retained-grade and the minimal-axiom citation is an accepted premise; no physical generation identification is load-bearing.",
+      "claim_scope": "On the one-site Cl(3,0)/M_2(C) grade-1 vector block, frame-free Spin(3)/Pin(3)-equivariant ambient Clifford operations do not yield a nonzero endomorphism anticommuting with Gamma_chi; chosen-frame L4, lattice, momentum, dynamics, and sector-factorization routes remain outside scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T04:47:08.916502+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The runner solves [M,L_k]=0 for the three so(3) generators and obtains M = c I_3, so every Spin(3)-equivariant grade-1 endomorphism is scalar and {c I_3, Gamma_chi}=2c Gamma_chi vanishes only for c=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep downstream use scoped to frame-free/no-selected-doublet ambient operations; this row should not be cited as a global no-go on chosen-frame bivector, L4, lattice, momentum, dynamics, or sector-factorization constructions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The load-bearing step is exact finite-dimensional algebra over the accepted one-site Qubit/Cl(3,0) carrier and the stated Gamma_chi matrix, not a definition, fit, or external comparator. The runner source performs symbolic matrix checks and the independent block-form check confirms that scalar equivariant maps cannot anticommute with Gamma_chi. The no-go discipline passes for the narrow frame-free wall: alternatives are enumerated, the wall is collapsed to equivariance/frame-freeness, hidden physical bridges are excluded, and frame-supplying routes are explicitly left open."
+    },
+    {
+      "archived_at": "2026-07-10T16:58:59.806554+00:00",
+      "audit_date": "2026-07-10T01:55:57.263422+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "On V=R^3 with Gamma_chi=(2/3)J-I and the cited native cube operators, the cube body diagonal forces the L4 singlet axis, but C3-symmetric real self-adjoint native structures do not force the L4 doublet vector h; selecting h is a C3/S3 orbit choice or belongs to the wrong operator class.",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "For the SU(2) adjoint action on Im(H), the central spinor sign is quotiented and is distinct from the Gamma_chi involution; consequently this rotation-equivariant candidate does not close the spinor-to-value-sign bridge.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "The one-qubit Cl(3,0) grade-1 real vector subspace is an algebraically compatible 3D carrier candidate for the generation triplet, with Gamma_chi realized as a proper Spin(3)-lifted pi rotation, outside only the circulant anticommuting no-go scope; no physical generation identity, r=1/2 pin, Brannen value, signed-readout transport, or mass operator is audited as closed.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "no_go",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04": "retained_no_go",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
+          "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "2ad901ab32db61f5d28635903a6bb019fb2b908d57d752ec9e59e0e505cf52c2",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-cl3_frame_free_ambient_c-062",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The exact commutant calculation reduces every equivariant grade-1 endomorphism to a scalar, whose anticommutator with the invertible Gamma_chi vanishes only for the zero map. The displayed L4 family confirms that anticommuting operators exist after non-equivariant frame data are supplied, preserving the stated narrow boundary.",
+      "claim_scope": "On the real grade-1 vector representation of Cl(3,0), no nonzero Spin(3)- or Pin(3)-equivariant linear endomorphism anticommutes with Gamma_chi=(2/3)J-I; frame-selected L4 operators remain outside scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T01:55:57.263422+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "Solving [M,L_k]=0 for the three so(3) generators gives M=cI_3, and {cI_3,Gamma_chi}=0 then forces c=0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The load-bearing result is a genuine exact algebraic closure using the accepted one-site Clifford carrier and the explicitly supplied Gamma_chi. The runner implements the Pauli/Clifford matrices, solves the full so(3) commutant symbolically, and verifies the anticommutator rather than merely printing expected outcomes. No physical generation identification, external comparator, calibrated value, or unretained bridge is needed for the scoped grade-1 no-go."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/cl3_frame_free_ambient_chiral_grading_no_go_2026_06_02.py",
+  "title": "Frame-Free Ambient Clifford Operations Do Not Source the Chiral Grading - Narrow No-Go",
+  "transitive_descendants": 16,
+  "verdict_rationale": null
+}

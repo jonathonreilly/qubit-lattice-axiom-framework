@@ -1,0 +1,213 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_rigidity_theorem_note",
+    "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.78,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a1042ce35bad3c192306cab45f9075f6f73dd50c0db13128fbf66891e4402d14",
+  "note_path": "docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-02T21:17:55.557539+00:00",
+      "archived_for_note_hash": "9860a81ba1e01a862199ad696a6e1acb54083eab74bbf7522cba14eca77ba828",
+      "audit_date": "2026-06-21T07:31:35.116361+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "Inside the supplied standard Wilson plaquette action with canonical Tr(T_a T_b)=delta_ab/2, the small-a coefficient matching gives beta g_bare^2 = 2 N_c."
+        },
+        "dep_claim_type": {
+          "g_bare_rigidity_theorem_note": "bounded_theorem",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_rigidity_theorem_note": "retained_bounded",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_rigidity_theorem_note",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+        ],
+        "load_bearing_score": 13.011,
+        "runner_hash": "6da507701ceea7dc0d4076d9ffdb03f4c6be419cb2ac983cdf02f50bf4f40bb0",
+        "transitive_descendants": 515
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic to `beta = 6` closes once `g_bare^2 = 1` is supplied. The restricted packet does not derive the cross-surface identification of Wilson `g_bare` with the finite-link scalar slot; it asserts that identity.",
+      "claim_scope": "Bounded composition of the finite-link canonical normalization surface with the Wilson small-a identity `beta g_bare^2 = 2 N_c`, including the note's same-scalar-slot identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T07:31:35.116361+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Since the parent row uses that same finite-link SU(3) surface, `g_bare = s = 1` on the canonical coordinate branch.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should re-check whether the same-scalar-slot move is intentionally stipulated as a surface definition; if it is meant as a theorem, the runner needs to derive rather than assign `g_wilson_sq = g_link_sq`.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 29,
+        "C": 0,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "Issue: the load-bearing move is the assertion that the Wilson plaquette `g_bare` is the same scalar slot as the finite-link canonical scalar `s`. Why this blocks: both cited authorities are retained-bounded in scope, and the downstream arithmetic is exact, but neither authority independently derives this scalar-slot identity across the finite-link and Wilson plaquette surfaces. Repair target: add a theorem or runner path deriving the same-slot bridge from the supplied link/plaquette construction rather than assigning `g_wilson_sq = g_link_sq`. Claim boundary until fixed: the note verifies consistency of the same-slot convention and the resulting algebraic `beta = 6`, not an independent derivation of the identification."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.198054+00:00",
+      "audit_date": "2026-07-09T22:58:31.291186+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "Inside the supplied standard Wilson plaquette action with canonical Tr(T_a T_b)=delta_ab/2, the small-a coefficient matching gives beta g_bare^2 = 2 N_c."
+        },
+        "dep_claim_type": {
+          "g_bare_rigidity_theorem_note": "bounded_theorem",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_rigidity_theorem_note": "retained_bounded",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_rigidity_theorem_note",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+        ],
+        "load_bearing_score": 13.371,
+        "runner_hash": "ad8c080fb9b14c468601fbaf504ed7be590c377d2a77fcff547bd0696f965a1c",
+        "transitive_descendants": 661
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-gpt-5.6-sol-xhigh-gbare-panel-1783636777-16c21fff-judge-1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Theorem 2 and the mismatched-slot exhibit establish that link, plaquette, and action data cannot determine the same-slot identity. The runner likewise derives the matched family but obtains beta=6 only by substituting (SD) in its exact-composition section. Because that identification between existing scalar concepts performs the selection, the rubric classifies the load-bearing step as (F), notwithstanding the note's accurate disclosure that it is a definition.",
+      "claim_scope": "On the supplied finite-link SU(3) and Wilson plaquette surfaces, Theorems 1\u20133 establish split redundancy and the matched family gamma*(beta)^2 = 2N_c/beta; beta=6 for N_c=3 follows only under the declared same-slot identification (SD).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T22:58:31.291186+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-08T04:21:56.273776+00:00",
+          "auditor": "codex-audit-loop-019f3ff4-a2a1-7463-8aea-c77b3cd25334",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded same-scalar-slot composition on the declared finite-link canonical Wilson surface `(SD)`: retained rigidity supplies `s=1`, retained Wilson matching supplies `beta g_bare^2=2N_c`, and for `N_c=3` the declared same-slot surface gives `beta=6`.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-09T22:33:48.696400+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260709-223229-c9784b60-g_bare_parent_finite_lin-005",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the supplied canonical finite-link SU(3) and standard Wilson plaquette surfaces, the split redundancy and matched family gamma*(beta)^2 = 2 N_c/beta are established, while beta = 6 at N_c = 3 is conditional on the declared identification g_bare := s.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "F",
+          "verdict": "audited_renaming"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-09T22:58:31.291186+00:00",
+          "auditor": "codex-gpt-5.6-sol-xhigh-gbare-panel-1783636777-16c21fff-judge-1",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the supplied finite-link SU(3) and Wilson plaquette surfaces, Theorems 1\u20133 establish split redundancy and the matched family gamma*(beta)^2 = 2N_c/beta; beta=6 for N_c=3 follows only under the declared same-slot identification (SD).",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first auditor treated (SD) as though it were an independent retained-grade input permitting class-(A) closure; under the binding rubric, the declared identity doing the load-bearing work is itself class (F), and conditional phrasing does not convert it into a derivation.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Theorem 2 and the mismatched-slot exhibit establish that link, plaquette, and action data cannot determine the same-slot identity. The runner likewise derives the matched family but obtains beta=6 only by substituting (SD) in its exact-composition section. Because that identification between existing scalar concepts performs the selection, the rubric classifies the load-bearing step as (F), notwithstanding the note's accurate disclosure that it is a definition.",
+          "load_bearing_step_class": "F",
+          "second_auditor_error": "",
+          "sided_with": "second",
+          "verdict": "audited_renaming"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:g_bare_rigidity_theorem_note:retained_bounded->unaudited",
+      "load_bearing_step": "The declared surface definition (SD) identifies A^a := C^a, equivalently g_bare := s, thereby selecting beta=2N_c.",
+      "load_bearing_step_class": "F",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained authority deriving the same-slot identification from the operator/Hamiltonian surface, or separate the beta=6 definition-level contribution from the independently auditable Theorems 1\u20133.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Theorem 2 and the mismatched-slot exhibit establish that link, plaquette, and action data cannot determine the same-slot identity. The runner likewise derives the matched family but obtains beta=6 only by substituting (SD) in its exact-composition section. Because that identification between existing scalar concepts performs the selection, the rubric classifies the load-bearing step as (F), notwithstanding the note's accurate disclosure that it is a definition."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py",
+  "title": "G Bare Finite-Link/Wilson Split-Redundancy and Pin-Equivalence Theorem",
+  "transitive_descendants": 878,
+  "verdict_rationale": null
+}

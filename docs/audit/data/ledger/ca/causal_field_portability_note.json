@@ -1,0 +1,398 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "causal_field_portability_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "evolving_network_prototype_v6_note"
+  ],
+  "direct_in_degree": 8,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/evolving_network_prototype_v6.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.6,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d3ae04199736908704d80128d5a1513c3057228399a3aab64f294503c8275ed4",
+  "note_path": "docs/CAUSAL_FIELD_PORTABILITY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.104674+00:00",
+      "archived_for_note_hash": "f0e9cd3c083ef823b0143fd846c53941b500739da1cf60f5d6b3cac0d8b483ac",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.234532+00:00",
+      "audit_date": "2026-04-30T18:44:31.450406+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:medium-sweep-2026-04-30-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note is support-tier and its conclusion is the negative/boundary read of the current runner output. The runner recomputes the exact-null controls and the three-family instantaneous, forward, and dynamic ratios printed in the source note.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->high",
+      "load_bearing_step": "The runner-computed ratio spreads, forward-only spread 0.423 and dynamic(c=0.5)/instantaneous spread 0.352, diagnose a family boundary rather than cross-family portability.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The support claim closes as a finite diagnostic: exact-null controls remain zero, while the forward-only and finite-cone ratios split across the three grown families. The note does not promote a cross-family portability law; it records the opposite boundary, which follows from the current runner output. The archived causal-field context is not needed as a live upstream theorem for this bounded family-boundary observation."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.810777+00:00",
+      "audit_date": "2026-05-03T14:48:57.617581+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.281,
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-causal-portability-fresh-auditor-2026-05-03",
+      "auditor_confidence": 0.86,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner reproduces the stated numerical spreads for the configured families, seeds, source anchor, field definitions, and readout. It does not supply a retained theorem that these ratios, thresholds, family choices, and detector-centroid readout constitute the hard portability bridge.",
+      "claim_scope": "The note claims a diagnosed family boundary: exact-null controls survive across three configured grown families, but causal-field forward-only and finite-cone ratios split rather than yielding a cross-family portability law.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T14:48:57.617581+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "The boundary conclusion rests on treating the measured forward-only ratio spread of 0.423 and dynamic(c=0.5)/instantaneous ratio spread of 0.352 as sufficient to establish non-portability/family-boundary structure for the causal-field observable.",
+      "load_bearing_step_class": "configured_proxy_threshold_without_retained_bridge",
+      "notes_for_re_audit_if_any": "Re-audit should focus on whether a retained theorem now defines the portability metric and threshold independently of the configured probe, and whether the runner computes that bridge rather than comparing selected ratios.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The note converts configured ratio spreads into a positive theorem-level family-boundary claim without a retained derivation of the portability criterion, threshold, family parametrization, or readout map. The local runner reproduced the stated exact-null controls, forward-only ratio spread 0.423, and dynamic(c=0.5)/instantaneous ratio spread 0.352, and it explicitly frames the result as a bounded portability probe rather than a field-theory derivation. Why this blocks: A hostile reviewer can accept the script output and still reject the theorem claim, because the runner only measures a chosen proxy under chosen cases; it does not prove the hard bridge from retained CL3 inputs to a portability law or boundary theorem. Repair target: Provide a retained theorem defining the causal-field observable, admissible family class, portability metric, boundary threshold, and detector readout, plus a runner that tests that theorem rather than only replaying selected configurations. Claim boundary until fixed: The safe claim is a bounded computational diagnostic: this script, with its current parameters and seeds, finds exact-null stability and ratio splitting across the three configured families."
+    },
+    {
+      "archived_at": "2026-05-10T14:40:22.735932+00:00",
+      "archived_for_note_hash": "2a9fb30bdad52c5a72731bda3149ef3ebfa21a73c1de3f29c0e784f81e4d8263",
+      "audit_date": "2026-05-04T22:49:29.367818+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.743,
+        "runner_hash": "4135d1d7ad94de64f5d1e6c0d5525a02dc110e9dec70c298d4fc46eba6eb6d48",
+        "transitive_descendants": 302
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260504-224530-44c0e178-causal_field_portability-009",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes the reported ratios rather than printing constants, but the restricted packet does not include the implementation of build_structured_growth, propagate, or centroid_y from evolving_network_prototype_v6. Without that imported module, the derivation from the stated framework axiom cannot be independently closed inside the packet.",
+      "claim_scope": "Audited the bounded runner-backed claim that this specific three-family, six-seed causal-field portability probe has exact zero-source controls and family-splitting forward/dynamic ratios.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-04T22:49:29.367818+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The forward-only and dynamic(c=0.5) ratio spreads across the three families are large enough to diagnose a family boundary rather than a cross-family portability law.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide evolving_network_prototype_v6.py or a cached certificate proving build_structured_growth, propagate, and centroid_y implement the intended axiom-level operators.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The note's numerical table and boundary call match the provided runner output, and the runner source performs a real bounded computation over families, seeds, fields, and detector centroids. However, the computation imports the core growth and propagation machinery from an unprovided module, so the audit can verify only the probe wrapper and not the framework-level closure from axiom. The note is also explicitly a support/bounded probe rather than a field-theory derivation, which supports a conditional rather than clean verdict."
+    },
+    {
+      "archived_at": "2026-05-18T11:31:37.034036+00:00",
+      "archived_for_note_hash": "49c41235f0aebcc836e4d54691557d0285c695e85afeebc2365065f9fb5a4179",
+      "audit_date": "2026-05-10T14:58:26.452781+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.104,
+        "runner_hash": "4135d1d7ad94de64f5d1e6c0d5525a02dc110e9dec70c298d4fc46eba6eb6d48",
+        "transitive_descendants": 388
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e1264-60b0-7930-b961-6bb6d3fd1980",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the reported diagnostics from imported build_structured_growth, propagate, and centroid_y, but the restricted packet provides no cited retained authority or executable certificate for those operators. The stdout closes only as a black-box run over admitted-context imports, not as a closed bounded theorem from retained primitives.",
+      "claim_scope": "Bounded fixed-anchor three-family causal-field probe reporting exact-null control and forward-only/dynamic ratio split, conditional on imported growth, propagation, and centroid operators.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T14:58:26.452781+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "\"the configured forward-only and dynamic-cone ratios split across the three configured grown families rather than tracking a cross-family portability law\"",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a direct cited retained dependency or executable certificate for evolving_network_prototype_v6.py verifying build_structured_growth, propagate, and centroid_y against the named framework operators.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: the bounded diagnostic depends on imported framework operators whose implementation and axiom-level status are outside the supplied one-hop packet. Why this blocks: the ratio split may be a real runner output, but the audit cannot verify that the runner's carrier, propagation law, and detector centroid are the intended retained primitives. Repair target: add a direct retained operator-carrier dependency for evolving_network_prototype_v6.py or a theorem deriving the probe metric and thresholds from retained primitives. Claim boundary until fixed: this remains a bounded computational diagnostic, not a retained portability theorem."
+    },
+    {
+      "archived_at": "2026-05-26T12:00:24.525831+00:00",
+      "archived_for_note_hash": "2352b17971430f95df8104d745f190c85a2b83ae731a1b41a8e1a245797f8f13",
+      "audit_date": "2026-05-18T13:02:13.455206+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "evolving_network_prototype_v6_note": "Audited only the bounded frozen replay for h=0.5, layers=13, half-width=5, seeds (5,18,31,44), mass strengths (0.75,1.0,1.25), mass y targets (1.0,1.5,2.0), and the four listed drift/restore rows."
+        },
+        "dep_claim_type": {
+          "evolving_network_prototype_v6_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "evolving_network_prototype_v6_note": "retained_bounded"
+        },
+        "deps": [
+          "evolving_network_prototype_v6_note"
+        ],
+        "load_bearing_score": 13.309,
+        "runner_hash": "4135d1d7ad94de64f5d1e6c0d5525a02dc110e9dec70c298d4fc46eba6eb6d48",
+        "transitive_descendants": 896
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judicial-panel-gpt-5.5-20260518-causal_field_portability_note",
+      "auditor_confidence": "judicial-panel",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class B). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class B; J2: second / audited_conditional / bounded_theorem / class B; J3: second / audited_conditional / bounded_theorem / class B; J4: second / audited_conditional / bounded_theorem / class B; J5: second / audited_conditional / bounded_theorem / class B. The packet supports the bounded diagnostic numerically: the runner source computes the reported null controls, deltas, ratios, and spreads rather than merely printing constants. But the computation remains load-bearingly dependent on imported v6 growth, propagation, and centroid readout operators whose implementation is not included in the packet and whose note does not itself close the operator-carrier/readout identification for this diagnostic. The source note explicitly says these are admitted-context inputs and that the retained framework-operator-carrier audit or portability-criterion theorem remains open, so clean closure is not available.",
+      "claim_scope": "Bounded computational diagnostic on the configured fixed-anchor three-family replay with admitted v6 growth, propagation, and centroid operators.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T13:02:13.455206+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-18T12:05:26.010605+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-causal_field_portability-007",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded computational diagnostic for the declared three-family fixed-anchor probe with admitted build_structured_growth, propagate, and centroid_y carrier operators.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-18T12:40:28.222524+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-123911-c0b36f0f-causal_field_portability-003",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded computational diagnostic on the configured fixed-anchor three-family replay with admitted v6 growth, propagation, and centroid operators.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-18T13:02:13.455206+00:00",
+          "auditor": "codex-judicial-panel-gpt-5.5-20260518-causal_field_portability_note",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded computational diagnostic on the configured fixed-anchor three-family replay with admitted v6 growth, propagation, and centroid operators.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first side over-ratifies the packet as clean despite an explicit open operator/carrier/readout dependency on evolving_network_prototype_v6.py and proxy metric/threshold choices not derived from retained framework primitives.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class B). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class B; J2: second / audited_conditional / bounded_theorem / class B; J3: second / audited_conditional / bounded_theorem / class B; J4: second / audited_conditional / bounded_theorem / class B; J5: second / audited_conditional / bounded_theorem / class B. The packet supports the bounded diagnostic numerically: the runner source computes the reported null controls, deltas, ratios, and spreads rather than merely printing constants. But the computation remains load-bearingly dependent on imported v6 growth, propagation, and centroid readout operators whose implementation is not included in the packet and whose note does not itself close the operator-carrier/readout identification for this diagnostic. The source note explicitly says these are admitted-context inputs and that the retained framework-operator-carrier audit or portability-criterion theorem remains open, so clean closure is not available.",
+          "load_bearing_step_class": "B",
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0,
+            "total_pass": 1
+          },
+          "second_auditor_error": "No material error; second side is ratified.",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "The runner computes exact-null controls and family-split forward/dynamic ratios by applying imported build_structured_growth, propagate, and centroid_y operators to the configured three-family fixed-anchor replay.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: audit or supply a retained framework-operator carrier theorem for build_structured_growth, propagate, and centroid_y, or a retained portability-criterion theorem deriving the configured metric and threshold.",
+      "open_dependency_paths": [
+        "scripts/evolving_network_prototype_v6.py",
+        "docs/EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md",
+        "retained portability-criterion theorem deriving the configured probe metric and threshold"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class B). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class B; J2: second / audited_conditional / bounded_theorem / class B; J3: second / audited_conditional / bounded_theorem / class B; J4: second / audited_conditional / bounded_theorem / class B; J5: second / audited_conditional / bounded_theorem / class B. The packet supports the bounded diagnostic numerically: the runner source computes the reported null controls, deltas, ratios, and spreads rather than merely printing constants. But the computation remains load-bearingly dependent on imported v6 growth, propagation, and centroid readout operators whose implementation is not included in the packet and whose note does not itself close the operator-carrier/readout identification for this diagnostic. The source note explicitly says these are admitted-context inputs and that the retained framework-operator-carrier audit or portability-criterion theorem remains open, so clean closure is not available."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.295156+00:00",
+      "audit_date": "2026-05-27T00:25:52.870456+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "evolving_network_prototype_v6_note": "Audited only the bounded frozen replay for h=0.5, layers=13, half-width=5, seeds (5,18,31,44), mass strengths (0.75,1.0,1.25), mass y targets (1.0,1.5,2.0), and the four listed drift/restore rows."
+        },
+        "dep_claim_type": {
+          "evolving_network_prototype_v6_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "evolving_network_prototype_v6_note": "retained_bounded"
+        },
+        "deps": [
+          "evolving_network_prototype_v6_note"
+        ],
+        "load_bearing_score": 9.909,
+        "runner_hash": "4135d1d7ad94de64f5d1e6c0d5525a02dc110e9dec70c298d4fc46eba6eb6d48",
+        "transitive_descendants": 84
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-causal-field-portability-2026-05-26",
+      "auditor_confidence": null,
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cached runner output matches the note's null-control values, family rows, and ratio spreads, and the primary runner computes them from the helper implementation rather than hard-coding the reported values. The retained-bounded one-hop helper note is sufficient as an algorithm-source dependency for this bounded replay because the source note does not claim physical carrier, metric, threshold, or portability-theorem closure.",
+      "claim_scope": "Finite diagnostic on the configured fixed-anchor cross-family replay using the runner-defined growth, propagation, source-anchor, centroid, field, metric, and ratio-spread choices; not a cross-family portability theorem, physical field-theory derivation, or framework-selected carrier/metric/threshold theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T00:25:52.870456+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:evolving_network_prototype_v6_note:retained_bounded->unaudited",
+      "load_bearing_step": "On the declared finite replay, the exact-null control survives but the tested ratios split by family, with forward-only ratio spread 0.423 and dynamic c=0.5 ratio spread 0.352.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if the source note expands beyond the finite diagnostic into a physical carrier/metric/threshold derivation or a cross-family portability theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The bounded claim closes exactly as a finite diagnostic: the runner constructs the three configured grown families, selects source anchors, computes instantaneous/forward/dynamic fields, propagates amplitudes, and measures detector-centroid shifts against the free baseline. The note keeps the conclusion at the observed exact-null survival and family-split ratios, and explicitly excludes cross-family portability, field-theory derivation, and framework selection of the carrier/metric/threshold. Residual boundary: any future claim that the carrier, readout, metric, threshold, or portability law is physically derived would require a separate retained theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/causal_field_portability_probe.py",
+  "title": "Causal Field Portability Bounded Diagnostic",
+  "transitive_descendants": 96,
+  "verdict_rationale": null
+}

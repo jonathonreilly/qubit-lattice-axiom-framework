@@ -1,0 +1,135 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lattice_fanout_continuum_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lattice_nn_high_precision_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "63371e58d6f47e7984e0a8af885f307f2fa8a5319a0bda7dd92947106ba0516f",
+  "note_path": "docs/LATTICE_FANOUT_CONTINUUM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368959+00:00",
+      "archived_for_note_hash": "e50757a1b577d61b71ea7b1797163e03740fb76b2622b8a76d606da3f630c920",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.319372+00:00",
+      "audit_date": "2026-05-16T21:50:29.527070+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "lattice_nn_high_precision_note": "Audited only the narrow claim that the specified raw nearest-neighbor lattice kernel is numerically evaluable at h = 0.125 in arbitrary precision and yields a Born-clean row consistent with the cached deterministic-rescale observables."
+        },
+        "dep_claim_type": {
+          "lattice_nn_high_precision_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_nn_high_precision_note": "retained"
+        },
+        "deps": [
+          "lattice_nn_high_precision_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1b13435d4f8e9c1e30f2436cb936685e5d1725d0b8dcd7a843e3e2ef840a174a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260516-215007-20260516T215007Z-bd6a9ff1-lattice_fanout_continuum-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source genuinely constructs the lattice, applies the stated fan-out normalized propagation rule, and computes the reported observables rather than printing constants. The numerical failures support the narrower no-go claim for this kernel; the accompanying h-scaling argument explains why the normalization has the wrong power.",
+      "claim_scope": "The audited note rules out the specific fan-out normalized kernel exp(i\u00b7k\u00b7act)\u00b7w/(L\u00b7sqrt(fan_out)) as a continuum-limit recipe for the provided lattice runner family over the tested refinements h = 2, 1, 0.5, 0.25.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-16T21:50:29.527070+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The fan-out normalized kernel has per-edge scaling approximately 1/(L\u00b7sqrt(fan_out)) \u2248 1/(h\u00b7sqrt(1/h)) = 1/sqrt(h), so it diverges under refinement and the completed runner shows non-conserved detector probability and h=0.25 amplitude blowup.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the audited scope remains limited to this runner family and tested fan-out kernel, not a universal theorem about every possible branch-count normalization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The chain closes for the negative claim actually made: the runner implements the stated kernel and returns the reported probability collapse/blowup behavior, including h=0.25 max amplitude about 2.4e11 and P_total about 4.6e23. The algebraic scaling argument is consistent with the implementation: fan_out grows like 1/h, so sqrt(fan_out) only cancels half of the 1/L ~ 1/h factor. The note over-describes the h=0.5 failure mechanism as likely zero division or overflow, while the runner only establishes a failed measurement row, but that is not load-bearing for the broader no-go because the h=0.25 blowup and probability nonconservation already close it. The cited NN note is retained and is only background for the remaining candidate pool, not a necessary premise for the fan-out falsification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_fanout_continuum.py",
+  "title": "Fan-Out Normalized Kernel Continuum Limit \u2014 FALSIFIED",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

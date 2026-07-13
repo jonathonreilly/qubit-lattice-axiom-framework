@@ -1,0 +1,180 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lanes.generated-geometry.readme",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gate_b_grown_joint_package_note",
+    "source_resolved_generated_architecture_bridge_note",
+    "emergent_geometry_growth_note_2026-04-10"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "39ff461e3e4a0cb60de1c855b5cdad265d3242417c8a5a448d3739b8258cebfe",
+  "note_path": "docs/lanes/generated-geometry/README.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:30:40.888326+00:00",
+      "archived_for_note_hash": "1a669c7c6089a1caa74bb49455300193e4e513f097e306daf2e0b68ced5bf4f7",
+      "audit_date": "2026-05-28T05:55:37.742477+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "emergent_geometry_growth_note_2026-04-10": "Single-seed qualitative comparison from scripts/frontier_emergent_geometry.py between matter-coupled growth and the uniform-growth control, using the cached runner output and included source.",
+          "gate_b_grown_joint_package_note": "Bounded numerical certificate for the declared Gate-B grown-geometry joint comparison: on h=0.5, four seeds, exact grid versus drift=0.2/restore=0.7 plus drift=0.3/restore=0.5 stress row, the runner-computed Born, d_TV, MI, and decoherence values match the source/cache and support only the stated finite comparison, not Gate-B package transfer or physical-gravity closure.",
+          "source_resolved_generated_architecture_bridge_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "emergent_geometry_growth_note_2026-04-10": "bounded_theorem",
+          "gate_b_grown_joint_package_note": "bounded_theorem",
+          "source_resolved_generated_architecture_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "emergent_geometry_growth_note_2026-04-10": "retained_bounded",
+          "gate_b_grown_joint_package_note": "retained_bounded",
+          "source_resolved_generated_architecture_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "emergent_geometry_growth_note_2026-04-10",
+          "gate_b_grown_joint_package_note",
+          "source_resolved_generated_architecture_bridge_note"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-xhigh-2026-05-28-generated-geometry-lane-readme",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The README routes the reader to already-audited bounded rows; it does not derive any new finite table, physical bridge, or generated-geometry theorem itself.",
+      "claim_scope": "Lane navigation/status summary for generated-geometry work: the README groups the historical Gate-B/generated-geometry transfer side, the source-resolved generated-architecture bridge, and the current staggered emergent-geometry reopen, and warns not to conflate those cited rows. It is not an independent bounded theorem beyond the cited notes.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-05-28T05:55:37.742477+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Current Standing section labels the lane as old generated-geometry positives plus a current partial reopen and says not to conflate the two.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "other: keep as meta navigation unless a new standalone generated-geometry theorem is split into its own source note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the source note is a lane index/status label, not a standalone bounded theorem. Why this blocks: the only substantive scientific claims are delegated to cited rows such as gate_b_grown_joint_package_note, source_resolved_generated_architecture_bridge_note, and emergent_geometry_growth_note_2026-04-10; the README itself adds no load-bearing computation or proof beyond grouping and naming that surface. Repair target: if a separate theorem is intended, write a source note with a specific claim, dependencies, runner, and scoped conclusion rather than using the lane index. Claim boundary until fixed: safely cite this file only as navigation/meta framing; cite the underlying audited source notes for retained bounded scientific content."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.248599+00:00",
+      "audit_date": "2026-06-18T10:52:31.276759+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "emergent_geometry_growth_note_2026-04-10": "Single-seed qualitative comparison from scripts/frontier_emergent_geometry.py between matter-coupled growth and the uniform-growth control, using the cached runner output and included source.",
+          "gate_b_grown_joint_package_note": "Bounded numerical certificate for the declared Gate-B grown-geometry joint comparison: on h=0.5, four seeds, exact grid versus drift=0.2/restore=0.7 plus drift=0.3/restore=0.5 stress row, the runner-computed Born, d_TV, MI, and decoherence values match the source/cache and support only the stated finite comparison, not Gate-B package transfer or physical-gravity closure.",
+          "source_resolved_generated_architecture_bridge_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "emergent_geometry_growth_note_2026-04-10": "bounded_theorem",
+          "gate_b_grown_joint_package_note": "bounded_theorem",
+          "source_resolved_generated_architecture_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "emergent_geometry_growth_note_2026-04-10": "retained_bounded",
+          "gate_b_grown_joint_package_note": "retained_bounded",
+          "source_resolved_generated_architecture_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "emergent_geometry_growth_note_2026-04-10",
+          "gate_b_grown_joint_package_note",
+          "source_resolved_generated_architecture_bridge_note"
+        ],
+        "load_bearing_score": 5.0,
+        "runner_hash": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-lanes.generated-geometry.readme-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note's own conclusion is a boundary definition, not a physics derivation. The cited authorities are supplied as retained-bounded inputs for the underlying rows, and the README does not claim more than pointing to them.",
+      "claim_scope": "Audited only the README's metadata/navigation claim: it groups generated-geometry source rows and runner entry points and is not itself authority for the underlying science.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-06-18T10:52:31.276759+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gate_b_grown_joint_package_note:retained_bounded->unaudited",
+      "load_bearing_step": "The README defines its boundary as a lane index/navigation surface only and says it adds no standalone scientific theorem, proof, or bounded computation beyond the cited source notes.",
+      "load_bearing_step_class": "E",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should preserve the meta/navigation boundary and not promote this README to retained-bounded theorem status.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing step is definitional: it assigns lane/navigation scope and explicitly disclaims standalone theorem status. The provided primary runner appears to compute the Gate B bounded comparison rather than merely print constants, but that computation belongs to a cited source note, not to an independent README theorem. No registered primitive is relevant to this metadata boundary."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gate_b_grown_joint_package.py",
+  "title": "Generated-Geometry Lane",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

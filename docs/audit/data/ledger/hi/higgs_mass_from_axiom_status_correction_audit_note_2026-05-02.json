@@ -1,0 +1,422 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate.",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "higgs_mass_from_axiom_note",
+    "yt_ew_matching_rule_m_note_2026-05-02",
+    "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.553,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "42f78dbe0d7c8bfc374bc2e8b9062f202bfda1b24a307af38d8af66efcfca6c1",
+  "note_path": "docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T16:14:52.377322+00:00",
+      "archived_for_note_hash": "baf3a42e6c5b68e2fd533c2fd8c0a455f9a915a710cae669242274863a60e3c1",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-06-12T19:48:08.885844+00:00",
+      "archived_for_note_hash": "48235b9baabe2026247f81107971f666285186bd464429e6ce092ab9a482e1c4",
+      "audit_date": "2026-06-12T00:18:02.971293+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed."
+        },
+        "dep_claim_type": {
+          "higgs_mass_from_axiom_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_mass_from_axiom_note": "retained_bounded"
+        },
+        "deps": [
+          "higgs_mass_from_axiom_note"
+        ],
+        "load_bearing_score": 11.582,
+        "runner_hash": "ff89d5f71150203f3f2742dc3eaadd7b759fddf4664501b02e9a58ff46af5dc1",
+        "transitive_descendants": 270
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-001455-f03dc3fdb6-higgs_mass_from_axiom_status",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet supports that the parent currently treats v/(2u0) only as a bounded diagnostic definition, not a Higgs-pole prediction. It does not include the cycle 5/9 authorities or an independent theorem proving the stronger same-shape/non-derivability classification for the lattice-to-physical matching bridge.",
+      "claim_scope": "Status-correction classification for HIGGS_MASS_FROM_AXIOM_NOTE.md: whether the packet justifies demoting the earlier Higgs-mass-from-axiom readout and setting proposal_allowed=false on the stated missing matching bridge.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-06-12T00:18:02.971293+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The packet demotes the parent because the lattice-curvature-to-physical-(m_H/v)^2 bridge is not supplied and would require a non-perturbative lattice-to-continuum/physical matching theorem.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: include the one-hop cycle 5/9 obstruction authorities or a self-contained matching-obstruction proof, and use a runner or audit certificate that checks more than phrase presence.",
+      "open_dependency_paths": [
+        "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The primary runner is a structural grep runner: it verifies that required phrases and table rows are present, but it does not compute or substantiate the claimed lattice-to-continuum obstruction. The one-hop parent authority is retained_bounded and explicitly says the v/(2u0) quantity is m_curv_tree, a diagnostic definition rather than a Higgs pole, which is enough to support demotion of the old physical-mass claim. The stronger statement that the obstruction is the same as cycles 5 and 9 and cannot be analytically derived is imported from PR/cycle references not provided in the restricted packet. Therefore the status correction is directionally supported but the presented chain is not clean as an independent theorem/meta-claim."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:26.541286+00:00",
+      "archived_for_note_hash": "8045a9c3ce444b197a9abda11b2233dd966840af2a3de6a801f55697cccfef83",
+      "audit_date": "2026-06-12T22:55:40.395909+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "Audited the scoped claim that the exact observable bridge <P>_full = R_O(beta_eff) is not derivable from A_min plus the explicitly listed current Wilson primitives unless an exact beta-6 nonperturbative completion primitive is added.",
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "yt_ew_matching_rule_m_note_2026-05-02": "Audited only the current-packet boundary that F_adj = 8/9 is algebraic SU(3) channel support while exact physical R_conn = 8/9 for EW matching rule M is not derived by this packet."
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "no_go",
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "yt_ew_matching_rule_m_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "retained_no_go",
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "yt_ew_matching_rule_m_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+          "higgs_mass_from_axiom_note",
+          "yt_ew_matching_rule_m_note_2026-05-02"
+        ],
+        "load_bearing_score": 11.603,
+        "runner_hash": "b5baf9f4c5cea9cb35be8052d065a8f81b50f0fecaded7093652a73ab63e3391",
+        "transitive_descendants": 274
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260612-224717-28fd1e4c6b-higgs_mass_from_axiom_status",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The demotion/status correction is internally supported by the retained parent, cycle 5, and cycle 9 packets. The queued positive-theorem chain does not close because the scalar-normalization/nonperturbative lattice-to-physical Higgs-pole bridge is explicitly not supplied.",
+      "claim_scope": "Audited the 2026-06-12 source-side demotion: whether the packet narrows `v/(2u_0)` to the parent `m_curv_tree` diagnostic and wires the retained cycle 5 and cycle 9 obstruction authorities without claiming a Higgs-pole bridge.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-12T22:55:40.395909+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The parent expression `v/(2u_0)` is read as a bounded diagnostic definition on the parent packet's declared surface, not as a Higgs-pole prediction.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-audit after retagging the row as a status-correction/open-gate/no-go boundary if the lane wants this demotion audited on its natural scope; no listed primitive is load-bearing for the packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 50,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "Manual checks of the displayed arithmetic used by the packet are consistent: `F_adj=8/9`, the cycle-9 witness delta is `0.0046656`, and `246.22/(2*0.877681381)=140.3 GeV` at stated precision. The primary runner is a content, ledger, and scoped-authority guard with a few algebraic recomputations; it is not a first-principles Higgs-mass derivation. The source note explicitly says it adds no new theorem and only narrows the source-side classification, so under the queued `positive_theorem` guard this is a definition/status relabeling rather than `audited_clean`."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:49.417359+00:00",
+      "archived_for_note_hash": "c0903b7b114bdab9a339f9c1bd3fd833f66bf36ee1c6fddc308e499060104c9c",
+      "audit_date": "2026-06-13T23:47:13.507972+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "Audited the scoped claim that the exact observable bridge <P>_full = R_O(beta_eff) is not derivable from A_min plus the explicitly listed current Wilson primitives unless an exact beta-6 nonperturbative completion primitive is added.",
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "yt_ew_matching_rule_m_note_2026-05-02": "Audited only the current-packet boundary that F_adj = 8/9 is algebraic SU(3) channel support while exact physical R_conn = 8/9 for EW matching rule M is not derived by this packet."
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "no_go",
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "yt_ew_matching_rule_m_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "retained_no_go",
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "yt_ew_matching_rule_m_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+          "higgs_mass_from_axiom_note",
+          "yt_ew_matching_rule_m_note_2026-05-02"
+        ],
+        "load_bearing_score": 11.65,
+        "runner_hash": "1d841eae02d3eb2ebe214a8b619a258a5929bc162a38f4a2ccb1fbae9249ae1f",
+        "transitive_descendants": 283
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-234512-dd08b243b0-higgs_mass_from_axiom_status",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet supports the demotion/status-correction reading from the parent and retained one-hop boundary notes. It does not close the positive Higgs-pole bridge; the missing step is an exact scalar-normalization or nonperturbative lattice-to-physical matching theorem.",
+      "claim_scope": "Source-side demotion of the parent Higgs note: `v/(2u_0)` is only the bounded diagnostic `m_curv_tree`, not a Higgs-pole prediction, and the lattice-curvature-to-physical-Higgs-pole bridge remains open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-13T23:47:13.507972+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The bridge `lattice curvature \u2194 (m_H / v)^2` is not derived by the current packet unless an independent scalar-normalization / nonperturbative matching theorem is supplied.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: For promotion beyond this open-gate/status-correction row, supply an exact scalar-normalization or nonperturbative lattice-to-physical Higgs-pole matching theorem and wire it as a one-hop authority.",
+      "open_dependency_paths": [
+        "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 52,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The runner source performs content, ledger, link, cache, and simple arithmetic checks; it does not supply a first-principles computation of the missing scalar normalization bridge. Independent arithmetic checks of the displayed support quantities agree (`F_adj=8/9`, witness delta `0.0046656`, and `v/(2u_0)=140.3 GeV`), but those checks only support the scoped demotion. Because the load-bearing step is cross-note status verification and the physical Higgs-pole identification remains explicitly open, the queued open_gate is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-07-02T15:21:01.985854+00:00",
+      "archived_for_note_hash": "8a44e8a30742cf3823e90bd97a1819a953442c444c5c84fac6c686778985ed3f",
+      "audit_date": "2026-06-15T21:07:23.689103+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "Audited the scoped claim that the exact observable bridge <P>_full = R_O(beta_eff) is not derivable from A_min plus the explicitly listed current Wilson primitives unless an exact beta-6 nonperturbative completion primitive is added.",
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "yt_ew_matching_rule_m_note_2026-05-02": "Audited only the current-packet boundary that F_adj = 8/9 is algebraic SU(3) channel support while exact physical R_conn = 8/9 for EW matching rule M is not derived by this packet."
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "no_go",
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "yt_ew_matching_rule_m_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "retained_no_go",
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "yt_ew_matching_rule_m_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+          "higgs_mass_from_axiom_note",
+          "yt_ew_matching_rule_m_note_2026-05-02"
+        ],
+        "load_bearing_score": 15.66,
+        "runner_hash": "1d841eae02d3eb2ebe214a8b619a258a5929bc162a38f4a2ccb1fbae9249ae1f",
+        "transitive_descendants": 285
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260615-210510-518d080a92-higgs_mass_from_axiom_status",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet closes only the demotion/reclassification: the parent explicitly labels `v/(2u_0)` as diagnostic and the cited retained no-go authorities support the scoped same-shape boundary. It does not close, and does not purport to close, the positive scalar-normalization bridge.",
+      "claim_scope": "Source-side status correction: demote the parent Higgs expression to diagnostic `m_curv_tree` support and record that the physical Higgs-pole bridge remains open, without claiming a global no-go.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-15T21:07:23.689103+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The parent expression `v/(2u_0)` is read as a bounded diagnostic definition, not as a Higgs-pole prediction; the lattice-curvature to `(m_H/v)^2` bridge remains open unless an independent scalar-normalization or nonperturbative matching theorem is supplied.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-audit only if a new scalar-normalization or nonperturbative lattice-to-physical matching theorem is supplied; the current packet is only a scoped demotion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 52,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The load-bearing content is a definition/status relabeling of the parent quantity as diagnostic rather than a Higgs-pole derivation. Independent arithmetic checks of `F_adj = 8/9`, the cycle-9 witness delta `0.0046656`, and `246.22/(2*0.877681381) = 140.3 GeV` agree with the packet. The runner mainly verifies source wording, retained-authority routing, and absence of overbroad claims; it supplies no new scalar-normalization theorem. Under the queued open-gate guard, this is a non-clean source correction, not an audited theorem closure."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.420987+00:00",
+      "audit_date": "2026-07-10T16:14:01.163794+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "Audited the scoped claim that the exact observable bridge <P>_full = R_O(beta_eff) is not derivable from A_min plus the explicitly listed current Wilson primitives unless an exact beta-6 nonperturbative completion primitive is added.",
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "yt_ew_matching_rule_m_note_2026-05-02": "Audited only the current-packet boundary that F_adj = 8/9 is algebraic SU(3) channel support while exact physical R_conn = 8/9 for EW matching rule M is not derived by this packet."
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "no_go",
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "yt_ew_matching_rule_m_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "retained_no_go",
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "yt_ew_matching_rule_m_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+          "higgs_mass_from_axiom_note",
+          "yt_ew_matching_rule_m_note_2026-05-02"
+        ],
+        "load_bearing_score": 11.317,
+        "runner_hash": "1d841eae02d3eb2ebe214a8b619a258a5929bc162a38f4a2ccb1fbae9249ae1f",
+        "transitive_descendants": 318
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-higgs_mass_from_axio-judge-1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The decisive step verifies scope imported from the cited parent note, so it is class B cross-note verification, not an independent algebraic closure. The runner checks wiring, wording, arithmetic, and consistency but does not compute or prove the missing lattice-curvature-to-physical-pole normalization. Because that identification remains explicit open work, the restricted packet supports an audited conditional open gate.",
+      "claim_scope": "The source-side correction that v/(2u_0) is a bounded symmetric-point curvature diagnostic and that the restricted packet leaves the physical Higgs-pole bridge open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T16:14:01.163794+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-09T23:29:04.564780+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-higgs_mass_from_axiom_st-031",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The source-side correction that v/(2u_0) is only the bounded diagnostic m_curv_tree and that the current packet does not derive a physical Higgs-pole identification.",
+          "claim_type": "open_gate",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-10T01:35:19.531800+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-higgs_mass_from_axiom_st-027",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The restricted packet was audited only for the source-side correction that v/(2u_0) is a bounded symmetric-point curvature diagnostic and that the physical Higgs-pole bridge remains open.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-10T16:14:01.163794+00:00",
+          "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-higgs_mass_from_axio-judge-1",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The source-side correction that v/(2u_0) is a bounded symmetric-point curvature diagnostic and that the restricted packet leaves the physical Higgs-pole bridge open.",
+          "claim_type": "open_gate",
+          "first_auditor_error": "The first auditor misclassified semantic verification of the parent note\u2019s declared diagnostic boundary as class A and treated successful content checks as closure despite the expressly missing physical normalization bridge.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The decisive step verifies scope imported from the cited parent note, so it is class B cross-note verification, not an independent algebraic closure. The runner checks wiring, wording, arithmetic, and consistency but does not compute or prove the missing lattice-curvature-to-physical-pole normalization. Because that identification remains explicit open work, the restricted packet supports an audited conditional open gate.",
+          "load_bearing_step_class": "B",
+          "second_auditor_error": "",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03:retained_no_go->unaudited",
+      "load_bearing_step": "The retained-bounded parent explicitly identifies v/(2u_0) as the diagnostic m_curv_tree rather than a Higgs-pole prediction, while supplying no scalar-normalization bridge.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained exact scalar-normalization or nonperturbative lattice-to-physical matching theorem before seeking closure beyond the open-gate status.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The decisive step verifies scope imported from the cited parent note, so it is class B cross-note verification, not an independent algebraic closure. The runner checks wiring, wording, arithmetic, and consistency but does not compute or prove the missing lattice-curvature-to-physical-pole normalization. Because that identification remains explicit open work, the restricted packet supports an audited conditional open gate."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_higgs_mass_status_audit.py",
+  "title": "Higgs Mass From Axiom Note \u2014 Status Correction Audit",
+  "transitive_descendants": 750,
+  "verdict_rationale": null
+}

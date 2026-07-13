@@ -1,0 +1,1898 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem candidate (positive_theorem on the",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 9,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.988,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6a131ecfbaebfc288b9bdcb2ff202464a7b91651846641cb936786d468b688b1",
+  "note_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-23T12:01:21.827177+00:00",
+      "audit_date": "2026-05-21T22:06:45.063578+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "a1_qubit_interpretation_note_2026-05-20": null,
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "a1_qubit_interpretation_note_2026-05-20",
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-pre_record_reference_sta-021",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The operator-algebra uniqueness portion is presented as standard mathematics, but the physical identification of \u03c4 with the pre-record reference depends on an admitted no-extra-structure premise not closed by the restricted packet. The cited authorities are also meta-status rather than retained-grade scientific dependencies under the rubric.",
+      "claim_scope": "Audited the claim that A1+A2 determine the unique tracial state on the qubit-lattice UHF algebra and, with the admitted no-extra-structure principle, identify it as the pre-record reference state \u03c1_ref = \u2297_x I/2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-21T22:06:45.063578+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+      "load_bearing_step": "The no-extra-structure principle identifies the unique tracial state \u03c4 as the pre-record reference because any other pre-record state would introduce preferred basis/direction/eigenstate structure not present in A1+A2.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade theorem or accepted framework rule deriving the no-extra-structure identification of the unique tracial state with the pre-record reference, rather than admitting it as a premise.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The note itself correctly labels Step 5 as admitted: the transition from unique tracial state to pre-record reference is an identification principle rather than a derivation from A1+A2 alone. Under the audit rubric, retained status does not propagate through an open identification, and non-retained/meta cited authorities also force a conditional verdict. There is no runner evidence to upgrade the claim, but no compute is required to judge this packet because the blocker is conceptual, not numerical."
+    },
+    {
+      "archived_at": "2026-05-24T22:26:04.912782+00:00",
+      "archived_for_note_hash": "f32b79ddd3f06eaf5f596c6523f9ad4b85bd0aa5aaea6a771a003ea9a9b0f5a3",
+      "audit_date": "2026-05-23T12:38:34.132956+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "a1_qubit_interpretation_note_2026-05-20": null,
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "a1_qubit_interpretation_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": null,
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T123811Z-8c404a03-pre_record_reference_sta-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The standard tracial-state mathematics closes as quoted, but the physical identification of that state as the pre-record reference is an admitted no-extra-structure premise not derived in the restricted packet.",
+      "claim_scope": "Audited the claim that A1+A2 yield a unique tracial state on the qubit-lattice UHF algebra and that, under an admitted no-extra-structure principle, this state is the pre-record reference \u03c1_ref = \u2297_x I/2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T12:38:34.132956+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The no-extra-structure principle identifies the unique tracial state \u03c4 on the A1+A2 quasi-local algebra with the pre-record reference state.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply an independently audited bridge deriving the no-extra-structure/pre-record identification from A1+A2 or narrow the claim to the unique tracial-state theorem only.",
+      "open_dependency_paths": [
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The note itself separates Steps 1-4 as standard operator-algebra mathematics from Step 5, which is explicitly admitted as a physical identification premise. That premise is a symbol-identity/identification move rather than a derivation from A1+A2 alone, so retained status cannot propagate through it. N3 also flags the phrase 'no-extra-structure principle' as hidden-wall language: it is necessary for the pre-record interpretation and is not closed by any cited authority."
+    },
+    {
+      "archived_at": "2026-05-25T15:52:05.470588+00:00",
+      "archived_for_note_hash": "1cac345e0e888d788fb61cd39cbbe3019d8b1dd9da35444b78316a41b63b441f",
+      "audit_date": "2026-05-25T11:50:17.529669+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "a1_qubit_interpretation_note_2026-05-20": null,
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "a1_qubit_interpretation_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": null,
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T114919Z-6c6217bd-pre_record_reference_sta-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The unique-trace part follows from the stated UHF/matrix-algebra standard mathematics, but the full stated characterization does not close: vanishing one-point Pauli expectations alone do not characterize the tracial state on multi-site regions or the quasi-local algebra. A nontracial state can have zero one-site Bloch vector at every site while retaining correlations.",
+      "claim_scope": "Narrowed claim that the one-qubit-per-site Z^3 quasi-local algebra has a unique tracial state with finite-region density matrices \u2297_x I/2 and the stated equivalent characterizations, excluding the demoted pre-record identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T11:50:17.529669+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Step 4 asserts that traciality, inner-automorphism invariance, vanishing one-point Pauli expectations, and maximum finite-region entropy are equivalent characterizations of the unique tracial state on the qubit UHF algebra.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit after removing the one-point Pauli equivalence or replacing it with full finite-region Pauli-string vanishing / full local density-matrix maximal mixing.",
+      "open_dependency_paths": [
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The narrowed note successfully demotes the pre-record identification, so Step 5 is not load-bearing. The operator-algebra uniqueness claim is plausible from the restricted packet\u2019s standard-math imports, but the audited claim also asserts equivalence with one-point Pauli vanishing. That equivalence is too weak on a lattice algebra and is false as stated, so the claim does not close on its own terms."
+    },
+    {
+      "archived_at": "2026-05-26T10:41:59.638878+00:00",
+      "archived_for_note_hash": "f9450bfd90b6cf731bc71b7f2eba55c6224a9bb0a69b74cb2df216c123fe7b23",
+      "audit_date": "2026-05-25T19:42:43.852636+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "a1_qubit_interpretation_note_2026-05-20": null,
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "a1_qubit_interpretation_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": null,
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T194049Z-7d852ff0-pre_record_reference_sta-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The operator-algebra theorem itself closes from the one-qubit Z^3 substrate plus standard finite-dimensional and UHF trace uniqueness. Audit-level closure is blocked because the packet lists A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md as a load-bearing cited authority with effective_status meta, not retained-grade or axiom_premise.",
+      "claim_scope": "Unique tracial-state characterization on the one-qubit M_2(C) algebra over the Z^3 quasi-local UHF type 2^\u221e substrate; the pre-record reference-state identification is excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:42:43.852636+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The UHF C*-algebra of type 2^\u221e admits a unique tracial state, obtained as the inductive limit of the finite normalized traces, with finite-region density matrices \u2297_x I/2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: cheapest repair is to remove A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md as a load-bearing dependency or re-audit/flag it as an accepted premise, then re-run this narrowed tracial-state audit.",
+      "open_dependency_paths": [
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Steps 1-4 are standard operator-algebra mathematics and are not a definition substitution or numerical match. The demoted Step 5 pre-record identification was not credited as part of the scoped claim. However, one cited load-bearing authority is non-retained-grade and lacks the axiom_premise carve-out, so the restricted packet does not meet the rubric for audited_clean."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.082176+00:00",
+      "audit_date": "2026-05-27T02:57:41.090714+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-mcclintock-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the narrowed math-only scope, the chain closes: A1 supplies M_2(C) per site, the scoped operator algebra is the standard quasi-local tensor product over Z^3, finite matrix algebras have unique normalized traces, and Powers' UHF type 2^infinity uniqueness theorem gives the inductive-limit trace. The chain would not close for the demoted pre-record physical identification or without tensor composition as part of the scoped operator-algebra definition.",
+      "claim_scope": "Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-27T02:57:41.090714+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "The UHF C*-algebra of type 2^infinity admits a unique tracial state, obtained as the inductive limit of the finite normalized traces.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve this narrow scope: unique tracial state on the quasi-local UHF algebra only, excluding the pre-record identification and excluding standalone one-point Pauli vanishing as a uniqueness criterion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "assert_count": 1,
+        "runner_elapsed_sec": 0.19,
+        "runner_result": "PASS=12 FAIL=0; finite-region trace identities support the narrowed theorem surface; Powers UHF uniqueness remains a named standard-math import and pre-record identification remains open.",
+        "runner_sha256": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The clean content is a standard operator-algebra theorem, not a physical bridge: once the one-qubit Z^3 quasi-local algebra is fixed, there is a unique tracial state and its finite-region density matrices are tensor products of I/2. The runner reports PASS=12, FAIL=0 with dominant C-class finite-region trace checks; the infinite UHF uniqueness remains a named standard-math import, used only for mathematical closure. This verdict excludes Step 5's no-extra-structure/pre-record identification and does not certify one-point Pauli vanishing alone as a sufficient global characterization."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.544674+00:00",
+      "audit_date": "2026-06-05T17:28:23.478322+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.307,
+        "runner_hash": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8",
+        "transitive_descendants": 13
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-172648-f7b6e79cc0-pre_record_reference_state_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Each finite local algebra is a full matrix algebra and hence has the unique normalized trace; any tracial state on the quasi-local UHF algebra restricts to those finite traces and is therefore fixed on the dense local union. The maximum-entropy and inner-automorphism characterizations agree with that finite-region normalized trace, while Step 5 is explicitly non-load-bearing.",
+      "claim_scope": "Unique tracial-state characterization for the quasi-local one-qubit M_2(C) algebra on the Z^3 lattice with finite-region restrictions rho_Lambda = I/2^|Lambda|; the pre-record reference-state identification is excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:28:23.478322+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "The UHF C*-algebra of type 2^infty admits a unique tracial state, obtained as the inductive limit of the finite normalized traces.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses do not cite this row as closing the demoted pre-record reference-state identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The runner source performs genuine finite-region matrix, Pauli-basis, unitary-invariance, and entropy checks rather than merely printing constants, though it correctly leaves the infinite UHF uniqueness theorem as a named standard-math import. Independently of the runner, uniqueness follows by restriction of any tracial state to every finite full matrix subalgebra and density of the local union. The only cited framework authority is flagged as an accepted axiom premise, so the rubric carve-out prevents an automatic dependency downgrade. The demoted pre-record identification remains open but is outside the audited claim scope."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.512662+00:00",
+      "audit_date": "2026-06-05T21:21:36.263477+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.307,
+        "runner_hash": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8",
+        "transitive_descendants": 13
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-211833-9dd01d446a-pre_record_reference_state_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-region matrix algebra steps force the normalized trace, tensor products preserve that trace, and the named UHF type-2^infty theorem supplies uniqueness in the quasi-local limit. No part of the scoped conclusion uses the demoted pre-record identification.",
+      "claim_scope": "Unique tracial-state characterization for the stipulated one-qubit tensor-product quasi-local algebra over Z^3; the pre-record reference-state identification and downstream consequences are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:21:36.263477+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Powers' UHF type-2^infty theorem gives a unique tracial state on the quasi-local algebra A = closure of the finite tensor products of M_2(C), with finite-region restrictions rho_Lambda = tensor_{x in Lambda} I_2/2.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should keep reading the infinite product density-matrix notation as shorthand for the compatible finite-region marginals, not as a trace-class global density matrix.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The displayed finite-dimensional formulas check out independently: M_{2^|Lambda|}(C) has the unique normalized tracial state, rho_Lambda = I/2^|Lambda|, and S(rho_Lambda)=|Lambda| log 2. The runner genuinely computes finite-region trace, entropy, unitary-invariance, tensor-factorization, and Pauli-string sanity checks, but does not prove the infinite UHF theorem; that theorem is explicitly imported as standard mathematics and is correctly applied to the stipulated CAR/UHF algebra. The cited minimal-axiom authority is an accepted premise and does not trigger the non-retained dependency downgrade. Step 5 is explicitly non-load-bearing and remains outside the audited scope."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.889232+00:00",
+      "audit_date": "2026-07-01T07:55:52.599668+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.17,
+        "runner_hash": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8",
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T075552Z-a22d4772-pre_record_reference_sta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the algebra as stated, finite matrix-algebra trace uniqueness gives the normalized trace on each finite region, and the standard UHF type-2^infty uniqueness theorem gives the unique quasi-local tracial state. The pre-record physical identification is explicitly outside the audited scope.",
+      "claim_scope": "Unique tracial state on the quasi-local algebra generated by finite tensor products of M_2(C) over Z^3, with finite-region restrictions I/2^|Lambda| and finite-region maximum-entropy characterization.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:55:52.599668+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "The UHF C*-algebra of type 2^infty admits a unique tracial state, obtained as the inductive limit of the finite normalized traces.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only that downstream/publication wording keeps the pre-record identification and loose infinite-volume entropy-density shorthand outside this retained scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing mathematics is standard operator algebra applied to the accepted one-site M_2(C) and Z^3 lattice premise: M_{2^n}(C) has one normalized tracial state, the finite traces are compatible, and their UHF inductive limit has one tracial state. The only framework dependency is the registered minimal_axioms accepted premise, so it does not trigger a dependency downgrade. The runner correctly checks finite-region algebra and entropy identities while admitting that Powers' theorem and pre-record identification are outside executable scope. The clean verdict applies only to the narrowed tracial theorem, reading the infinite product notation through finite-region marginals."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.498904+00:00",
+      "audit_date": "2026-07-02T00:21:03.326160+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.17,
+        "runner_hash": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8",
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T002103Z-aa1c6ca1-pre_record_reference_sta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "From the accepted M2(C)-per-site and Z^3 substrate, the finite tensor algebras are full matrix algebras with unique normalized trace; any tracial state on the quasi-local UHF algebra restricts to those local traces and is determined on the dense local union. The pre-record identification is explicitly demoted outside the audited scope.",
+      "claim_scope": "Unique tracial state on the one-qubit-per-site Z^3 tensor-product quasi-local algebra, with finite-region density I/2^|\u039b| and equivalent finite-region entropy/unitary-invariance characterizations; no pre-record-reference identification audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T00:21:03.326160+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The UHF C*-algebra of type 2^\u221e admits a unique tracial state, obtained as the inductive limit of the finite tracial states above.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the scope remains limited to the qubit UHF algebra and does not inherit the demoted pre-record-reference identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The finite matrix-unit proof, tensor trace factorization, inner-unitary invariance, and finite-region maximum-entropy claims are correct under the stated tensor-product algebra. The runner checks only finite-region identities and explicitly does not prove Powers/UHF uniqueness, but the independent dense-local restriction argument closes the infinite uniqueness step for the narrowed claim. The open pre-record identification is not load-bearing because the audited scope excludes it."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.747235+00:00",
+      "audit_date": "2026-07-09T23:49:34.073612+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 10.333,
+        "runner_hash": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8",
+        "transitive_descendants": 56
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-pre_record_reference_sta-053",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Qubit and Lattice premises determine the type-2-infinity UHF algebra, and standard matrix-algebra and UHF trace-uniqueness results force the stated product trace. The explicitly demoted pre-record identification is outside the audited scope.",
+      "claim_scope": "The unique tracial-state characterization of the one-qubit quasi-local algebra over Z^3, excluding its identification with a pre-record reference state.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-09T23:49:34.073612+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "minimal_axioms",
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "Applying finite-dimensional trace uniqueness on every local matrix algebra and the standard UHF inductive-limit theorem yields a unique tracial state whose finite-region restrictions are tensor products of I/2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The runner genuinely performs twelve finite-region algebraic checks, including trace identities, entropy identities, unitary invariance, and the correlated-state counterexample. It does not prove the thermodynamic-limit result, but that result follows by the note's named standard UHF trace-uniqueness import. Because the chain contains only algebraic closure over the single minimal-axioms parent plus standard mathematics and no external comparison, the rubric classifies it as a decoration."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:16.719552+00:00",
+      "audit_date": "2026-07-12T14:55:20.655874+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 13.275,
+        "runner_hash": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8",
+        "transitive_descendants": 437
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00092-pre_record_reference_state_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The operator-algebra argument is mathematically sound, but it is an algebraic elaboration of the single minimal-axioms parent plus standard mathematics. Independent retained physical content beyond that parent is absent, so the campaign's decoration policy does not treat it as an independently closing retained theorem.",
+      "claim_scope": "Unique tracial state on the stipulated one-qubit-per-site Z^3 quasi-local tensor-product algebra, with finite-region density matrices I/2^|\u039b|; the pre-record identification and downstream physical consequences are excluded.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-12T14:55:20.655874+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "minimal_axioms",
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:49756ee75b3c",
+      "load_bearing_step": "Any tracial state restricts to the unique normalized trace on every finite full-matrix local algebra, and these compatible restrictions determine a unique state on the norm-dense quasi-local union.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note gives the off-diagonal-zero and equal-diagonal matrix-unit calculation, and the runner checks it for dimensions two and four.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Applying the Step 1 matrix-unit proof",
+            "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use matrix-unit commutators and normalization to force every finite-region tracial functional to be the normalized matrix trace.",
+            "outcome": "The proposed finite-dimensional nonuniqueness route is closed because the matrix-unit relations determine every coefficient of a normalized tracial functional.",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "finite_matrix_units"
+          },
+          {
+            "attempt": "The note states the inner-automorphism characterization, and the runner checks normalized-trace invariance under a nontrivial Hadamard-phase-CNOT unitary.",
+            "disposition": "CLOSED",
+            "evidence_locator": "(C2) **Inner-automorphism invariance:**",
+            "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether invariance under all finite-region inner automorphisms permits a density matrix other than a scalar multiple of the identity.",
+            "outcome": "The route is closed: full inner-unitary invariance forces the finite-region density matrix into the scalar commutant, with normalization fixing I/d.",
+            "prior_witness_id": null,
+            "route_class": "symmetry_or_representation",
+            "route_id": "inner_symmetry"
+          },
+          {
+            "attempt": "The note identifies each finite-region algebra with the full matrix algebra M_{2^|\u039b|}(C), and the runner checks the two-site M4 case and correlated-state counterexample.",
+            "disposition": "CLOSED",
+            "evidence_locator": "canonically isomorphic to the full matrix algebra",
+            "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace one-site restrictions by an arbitrary finite multi-site carrier and test whether correlations allow another tracial state.",
+            "outcome": "The route is closed: correlations with maximally mixed one-site marginals need not be tracial, while full finite-region traciality uniquely fixes I/2^|\u039b|.",
+            "prior_witness_id": null,
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "finite_region_carrier"
+          },
+          {
+            "attempt": "The source defines the quasi-local algebra as the uniform-norm closure of the local union; continuity of states then extends equality from the dense local algebra.",
+            "disposition": "CLOSED",
+            "evidence_locator": "uniform-norm closure of the local algebras.",
+            "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether two global tracial states could agree on every finite local algebra but differ after thermodynamic completion.",
+            "outcome": "The route is closed: equal finite-region restrictions imply equality on the dense union and hence on its norm completion.",
+            "prior_witness_id": null,
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "dense_local_limit"
+          },
+          {
+            "attempt": "The supplied runner source constructs the matrices and densities and evaluates finite one-, two-, and three-site trace, entropy, Pauli-string, and normalization checks rather than merely printing expected results.",
+            "disposition": "CLOSED",
+            "evidence_locator": "for n_sites in (1, 2, 3):",
+            "evidence_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Search finite one-, two-, and three-site cases for failed trace, entropy, Pauli-string, or normalization identities.",
+            "outcome": "The finite search closes its stated scope, including an explicit counterexample to the discarded one-point-Pauli criterion.",
+            "prior_witness_id": null,
+            "route_class": "numerical_or_finite_case",
+            "route_id": "finite_counterexample_search"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [],
+          "evidence_locator": "## Open admission (demoted; not part of the narrowed claim)",
+          "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": []
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Step 5's identification is the demoted open admission",
+          "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "## Open admission (demoted; not part of the narrowed claim)",
+              "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+              "phrase": "Open admission"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "**No-extra-structure principle.**",
+              "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+              "phrase": "No-extra-structure principle"
+            }
+          ],
+          "none_found_reason": null,
+          "scan_scope": "The source's admission, identification, downstream-enablement, standard-import, and narrowed-scope language was checked against the runner and supplied premise surfaces.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "No additional input needed for this step.",
+          "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+          "none_found_reason": "All N1 routes are marked ATTEMPTED, so no prior-witness residual match is required.",
+          "scan_scope": "No N1 route was ruled out solely by a prior witness; all five were tested from the current restricted source, runner, or accepted premise.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "What this derivation does not do",
+          "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+          "none_found_reason": null,
+          "scan_scope": "Negative and exclusionary wording was checked to ensure it applies only to the pre-record bridge and downstream claims, not to the tracial theorem.",
+          "statements": [
+            {
+              "evidence_locator": "Does not, within the narrowed claim, identify the unique tracial",
+              "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+              "phrase": "Does not, within the narrowed claim, identify the unique tracial state",
+              "tested_resolutions": [
+                "physical identification of the unique tracial state with a pre-record reference state"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic space-time normalization is irrelevant to uniqueness of a state on the stipulated spatial quasi-local C*-algebra.",
+              "evidence_locator": "The framework takes one structural graining fact",
+              "evidence_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "This accepted premise supplies the one-site M2(C) algebra and Z3 sites used by the theorem; it does not supply or close the excluded pre-record identification.",
+              "evidence_locator": "The full one-site possibility domain has algebraic presentation `M_2(C)`.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "The realized-state primitive explicitly supplies no selected, preferred, or default state and therefore cannot identify the trace as a pre-record state.",
+              "evidence_locator": "The laws do not pick the state; the world does",
+              "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units conversion has no bearing on normalized-trace uniqueness or the excluded physical state identification.",
+              "evidence_locator": "The framework takes exactly one dimensionful reference",
+              "evidence_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "Charged-lepton K/CPT occupancy counting is unrelated to the quasi-local trace theorem.",
+              "evidence_locator": "AC occupancy statistical grain",
+              "evidence_path": "docs/audit/data/derivation_obligations.json",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The charged-lepton eta readout identity neither supplies nor constrains a tracial state on the qubit algebra.",
+              "evidence_locator": "AC R-eta h-class/h-unit readout",
+              "evidence_path": "docs/audit/data/derivation_obligations.json",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The quark determinant readout bridge is in a separate sector and cannot close the excluded pre-record-state identification.",
+              "evidence_locator": "theta quark-determinant cross-sector readout",
+              "evidence_path": "docs/audit/data/derivation_obligations.json",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+          "none_found_reason": null,
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All approved premises and all open-gate candidates supplied by the partial-closure index were checked against the scoped algebraic theorem and excluded pre-record bridge.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The runner proves only small finite cases and does not prove Powers' theorem, so a second tracial state might conceivably appear only after completion of the infinite tensor product.",
+          "evidence_locator": "uniform-norm closure of the local algebras.",
+          "evidence_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+          "resolution": "The concern fails for uniqueness: any global tracial state restricts to the unique normalized trace on every finite local full-matrix algebra, and two continuous states agreeing on the norm-dense local union agree on the completion. Existence is supplied by the compatible finite traces.",
+          "resolved": true,
+          "route_id": "dense_local_limit"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:0",
+              "evidence_locator": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Earlier audit included the admitted pre-record identification.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:1",
+              "evidence_locator": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Earlier audit treated the no-extra-structure principle as load-bearing.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:2",
+              "evidence_locator": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Earlier audit found one-point Pauli vanishing insufficient.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:3",
+              "evidence_locator": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Earlier dependency treatment lacked the accepted-premise carve-out.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:4",
+              "evidence_locator": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Prior clean audit of the same narrowed mathematical theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:5",
+              "evidence_locator": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Prior clean audit using the dense-local restriction argument.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:6",
+              "evidence_locator": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:6",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Prior clean audit of finite identities plus standard UHF closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:7",
+              "evidence_locator": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:7",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Prior clean audit reading the infinite product through finite marginals.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:8",
+              "evidence_locator": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:8",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Prior clean audit excluding the pre-record identification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:9",
+              "evidence_locator": "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:9",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Prior audit applied the single-parent algebraic-decoration policy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated charged-lepton occupancy-counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated charged-lepton eta-readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated quark determinant cross-sector gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated inherited flavor and area-law no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated archived-packet and Newton-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Echo that finite mathematics does not itself close a physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated atomic-stability and reflection-axis restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated multi-lane inherited no-go catalogue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated coupling-identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated plaquette-coefficient computation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated lensing-observable and tuned-beta boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated carrier swap-invariance boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated charged-lepton selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated spatial-dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated Lorentz-emergence scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated metric-reconstruction boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated replay and basin-generalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated Wilson-environment closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Echo that formal tracial algebra does not identify a physical flavor sector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated analytic-vector and Wigner bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated Wilson-character environment boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated time-generator and staggered-sign boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated gravity dispersion bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated weak-field gravity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated absolute-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated hypercharge normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated campaign-level mass, coupling, and cosmology walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated atomic-scale and threshold walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated quark-mass selector and readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated lattice Green-function asymptotic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated lensing centroid observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated finite-path lensing surrogate failure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated static-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated temporal source and clock-rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Empty unrelated matter-cone ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated planning-priority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated emergent-time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated neutrino mass-construction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated neutrino-scale and cosmology boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated finite-lattice Newtonian-distance scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated recomputation-artifact boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated coupling-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated decoherence and gravity packet boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated finite-grid Picard-Fuchs boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated Clifford-carrier selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated rank-four projector-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated plaquette-bootstrap boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated post-record selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated strong-CP and eta-registrability walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated locality and temporal-axis walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated source-measure semantics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated kinetic-law-selection no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated SU3 cube-encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated documentation-source synchronization issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated theta mass-readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated theta gauge-action walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated positive theta-construction gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated theta phase-insertion gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated theta defect-closure gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated determinant-power horn-selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated K/CPT orbit-occupancy wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated record-formation and eta-rate wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated artifact-visibility clarification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated record-only mass-readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated hard-coded numerical table boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated continuum and distance-law scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "mechanism": "Unrelated Yukawa readout renaming boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+          "none_found_reason": null,
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20": {
+              "accepted_premise_type": null,
+              "content_sha256": "c42803cc3f0a2e96606fd1a4dda5efeb7c3a356311f02c896fa7429d1727f357",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:0",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:1",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:2",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:3",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:4",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:5",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:6",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:7",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:8",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:9"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:0",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:1",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:2",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:3",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:4",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:5",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:6",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:7",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:8",
+                "pre_record_reference_state_tracial_derivation_note_2026-05-20:previous_audit:9"
+              ]
+            },
+            "audit-packet://partial-closure-index/pre_record_reference_state_tracial_derivation_note_2026-05-20": {
+              "accepted_premise_type": null,
+              "content_sha256": "dca20ddd72681779321edead6e8f9641cc80dce29ca0addf65cfd80915182b47",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/pre_record_reference_state_tracial_derivation_note_2026-05-20",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\""
+              ]
+            },
+            "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+              "effective_status": null,
+              "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "The framework takes one structural graining fact"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "The full one-site possibility domain has algebraic presentation `M_2(C)`."
+              ]
+            },
+            "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "6a131ecfbaebfc288b9bdcb2ff202464a7b91651846641cb936786d468b688b1",
+              "effective_status": null,
+              "path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## Open admission (demoted; not part of the narrowed claim)",
+                "(C2) **Inner-automorphism invariance:**",
+                "**No-extra-structure principle.**",
+                "Applying the Step 1 matrix-unit proof",
+                "Does not, within the narrowed claim, identify the unique tracial",
+                "No additional input needed for this step.",
+                "Step 5's identification is the demoted open admission",
+                "What this derivation does not do",
+                "canonically isomorphic to the full matrix algebra",
+                "uniform-norm closure of the local algebras."
+              ]
+            },
+            "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+              "effective_status": null,
+              "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "The laws do not pick the state; the world does"
+              ]
+            },
+            "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+              "effective_status": null,
+              "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "The framework takes exactly one dimensionful reference"
+              ]
+            },
+            "docs/audit/data/derivation_obligations.json": {
+              "accepted_premise_type": null,
+              "content_sha256": "cf629c9efe5811defbaec029e9c9197a93959f454497e6a56dc7eceba1c23f6f",
+              "effective_status": null,
+              "path": "docs/audit/data/derivation_obligations.json",
+              "roles": [
+                "open_obligation_registry"
+              ],
+              "verified_locators": [
+                "AC R-eta h-class/h-unit readout",
+                "AC occupancy statistical grain",
+                "theta quark-determinant cross-sector readout"
+              ]
+            },
+            "scripts/frontier_pre_record_reference_state_tracial_derivation.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8",
+              "effective_status": null,
+              "path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "for n_sites in (1, 2, 3):"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "Re-audit only if the scope again includes identification of the tracial state with a pre-record reference state or claims physical consequences from that identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The runner genuinely evaluates twelve finite-dimensional trace, tensor, entropy, unitary-invariance, and Pauli checks, but all are class-A algebraic checks rather than a first-principles numerical computation. Infinite-volume uniqueness also follows directly from unique traces on the finite local full-matrix algebras and norm density; invoking Powers is stronger than necessary. Because the chain has one accepted framework parent, standard mathematics, and no external-comparator check, it meets the stated decoration rule; Step 5 remains explicitly outside scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
+  "title": "Pre-Record Reference State as the Unique Tracial State on the One-Qubit Z^3 Algebra",
+  "transitive_descendants": 717,
+  "verdict_rationale": null
+}

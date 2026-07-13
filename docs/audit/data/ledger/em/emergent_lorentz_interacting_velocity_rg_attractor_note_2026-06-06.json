@@ -1,0 +1,689 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate / conditional-support packet",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18",
+    "kinetic_isotropy_primitive",
+    "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+    "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+    "emergent_lorentz_invariance_note",
+    "minimal_axioms",
+    "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e443b5b7addfd80452517fce83d7cb9f689459c4432bd2cb4107717586c1a587",
+  "note_path": "docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-08T10:14:07.485923+00:00",
+      "archived_for_note_hash": "ff1df39628a7868487babda666604a07e6f8cc302145ced614dd138d104e1478",
+      "audit_date": "2026-06-07T17:14:14.329363+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h/cubic artifact checks on Z^3 x Z_tau do not by themselves force c_t=c_s or full SO(4) kinetic covariance; an explicit Euclidean normalization or 4D-hypercubic premise is needed for that stronger wording."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "179dcd6cd90c867f80c3f34b8286f0a014fc29d189adbd47a967b349effa8671",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-171142-156971c5a6-emergent_lorentz_interacting",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed RG subtraction, O_h invariant-tensor rank, and unitary CAR preservation checks are algebraically sound. The restricted packet does not close the supplied interacting one-loop RG dynamics, the spatial-only power-divergent mixing claim, or the Planck-scale hierarchy used for the hierarchy-suppressed label.",
+      "claim_scope": "Conditional algebraic audit of the displayed one-loop velocity RG, O_h scalar spatial reduction, and canonical-time normalization: given those inputs, the speed-difference mode is IR-attractive and the residual spatial anisotropy is a single scalar, while the Collins power-divergent coefficient remains open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T17:14:14.329363+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The one-loop coupled velocity RG gives d(v_F-v_b)/dl = -(C_F + C_B N_f) alpha (v_F-v_b), so after fixing c_t by canonical continuous time and using O_h to make the spatial split scalar, the remaining c_s is one IR-attractive number.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained one-hop bridges for the supplied one-loop velocity RG dynamics, the spatial-only power-divergent mixing, and the Planck-scale hierarchy, or narrow the claim to conditional algebra without the hierarchy-suppressed conclusion.",
+      "open_dependency_paths": [
+        "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "total_pass": 12
+      },
+      "verdict_rationale": "Independent checks confirm the runner's main algebra: subtracting the stated RG equations gives a negative difference-mode eigenvalue for positive alpha and coefficients, and the signed-permutation Reynolds projection leaves only multiples of delta_ij. However, the runner hard-codes the one-loop RG coefficients and alpha, and C2/C3 partly assert a canonical-normalization interpretation rather than deriving it from retained framework dynamics. The cited emergent-Lorentz authority also explicitly marks the Planck readout as conditional/non-load-bearing, so the hierarchy-suppressed conclusion is not closed by the one-hop packet."
+    },
+    {
+      "archived_at": "2026-06-08T18:21:35.972812+00:00",
+      "archived_for_note_hash": "a79025f9099049c124a5526394aac00d23178a404bc1c867b1d9c4bbaa45dd03",
+      "audit_date": "2026-06-08T11:07:07.790995+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h/cubic artifact checks on Z^3 x Z_tau do not by themselves force c_t=c_s or full SO(4) kinetic covariance; an explicit Euclidean normalization or 4D-hypercubic premise is needed for that stronger wording."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "932fc9bc0dd430a89282ffec8bc66d88b03c9f32f903a96f1c02627512a3e25f",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-110640-6eb616b882-emergent_lorentz_interacting",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic consequences of the supplied inputs close, but the broader stated one-number IR-attractive naturalness gate still imports open supplied premises: the one-loop interacting dynamics, canonical-time physical identification of c_t, the spatial-only power-divergent mixing context, and the physical fixed-point anomalous dimension/hierarchy sufficiency are not derived in the restricted packet.",
+      "claim_scope": "Conditional one-loop/structural algebra packet: from the supplied velocity-RG form, spatial O_h tensor symmetry, and canonical continuous-time normalization, the velocity difference is an attractive mode and the Collins c_t/c_s gate is reduced to one conditional scalar; physical power-divergent coefficient, fixed-point gamma, and hierarchy sufficiency remain out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T11:07:07.790995+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the supplied one-loop equations, d(v_F \u2212 v_b)/dl = \u2212(C_F + C_B N_f) \u03b1 (v_F \u2212 v_b), so the speed-difference mode is IR-attractive, while O_h and canonical time reduce the remaining gate to one scalar c_s.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is to supply retained one-hop derivations for the interacting one-loop velocity RG coefficients, the spatial-only power-divergent mixing theorem, and the physical fixed-point anomalous dimension/suppression sufficiency, or narrow the row title/scope to conditional algebra only.",
+      "open_dependency_paths": [
+        "docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md",
+        "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The runner genuinely checks the elementary algebra of the supplied RG equations, O_h Reynolds projection, unitarity/CAR preservation, and illustrative damping factor; it is not merely printing constants. However, the source note itself correctly scopes the central dynamics and naturalness ingredients as supplied or open, and the runner hard-codes representative coefficients and hierarchy scales rather than deriving the physical one-loop coefficients, power-divergent mixing coefficient, or fixed-point anomalous dimension. Therefore the packet is valid as conditional algebra but not clean as a retained interacting Lorentz naturalness theorem."
+    },
+    {
+      "archived_at": "2026-06-09T19:27:01.639555+00:00",
+      "archived_for_note_hash": "886033729250050a1abbf44397dea61a6e08735bda7f76ec27ca5651ebbc8dbb",
+      "audit_date": "2026-06-08T20:16:14.879523+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h/cubic artifact checks on Z^3 x Z_tau do not by themselves force c_t=c_s or full SO(4) kinetic covariance; an explicit Euclidean normalization or 4D-hypercubic premise is needed for that stronger wording."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "70e81aa352527362d866bc9e680e6ff19196655b4d8e4711a0bae76d2aa7b832",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-201150-8b0c0f3d42-emergent_lorentz_interacting",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated supplied-input scope, the algebra closes: the difference-mode sign, O_h fixed-subspace dimension, CAR/unitarity identity, and damping exponent all check independently. The packet does not close the physical one-loop dynamics, fixed-point anomalous dimension, power-divergent coefficient, or experimental sufficiency, but those are explicitly outside the audited conclusion.",
+      "claim_scope": "Conditional algebra over the supplied one-loop velocity RG, canonical continuous-time normalization, and O_h spatial symmetry: the speed difference is IR-attractive and the spatial gate reduces to one scalar, with physical gamma/coefficient and LV-bound sufficiency excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T20:16:14.879523+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "From the supplied RG equations, Delta = v_F - v_b obeys dDelta/dl = -(C_F + C_B N_f) alpha Delta, so for positive coefficients the speed-difference mode has a negative eigenvalue and eta flows to 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only if downstream use promotes this bounded conditional algebra packet into a physical fixed-point gamma, power-divergent coefficient, or LV-bound sufficiency theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing step is class A algebra over supplied equations, not a first-principles derivation of the interacting dynamics. Independent checks confirm the displayed sign/factor in dDelta/dl, the one-dimensional O_h-invariant symmetric-tensor subspace, the Stone-unitarity CAR preservation, and the (mu/M_Pl)^gamma form from exponential decay. The runner source performs real finite checks for the algebraic pieces, while its four Part E checks are scope checks rather than physics derivations. All load-bearing cited authorities are retained-grade or accepted premises, and the scale-reference primitive is used only as an approved units reference, not as dimensionless physics."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.205307+00:00",
+      "audit_date": "2026-06-10T04:16:20.462599+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "On the approved OS0/B4 kinetic-form surface, the diagonal marginal time-space velocity-anisotropy operator is forbidden; the checked B4-symmetric one-loop self-energy has Sigma_t = Sigma_s, with remaining lattice residue only at the cited dimension-6 structural-dispersion level.",
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h plus time parity alone permits a marginal time-vs-space kinetic anisotropy and therefore does not by itself justify full SO(4) continuum wording; adding c_t=c_s or 4D hypercubic symmetry is an extra premise that closes this specific obstruction."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "70e81aa352527362d866bc9e680e6ff19196655b4d8e4711a0bae76d2aa7b832",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260610-041424-3459c2dbbd-emergent_lorentz_interacting",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic consequences close conditional on the supplied equations and structural assumptions, but the full chain from retained inputs does not. Missing steps are retained derivations of the one-loop velocity RG/power-divergent mixing input and the physical fixed-point gamma/coefficient needed for naturalness sufficiency.",
+      "claim_scope": "Conditional one-loop/structural algebra: from the supplied velocity RG, O_h spatial symmetry, and canonical-time normalization, the difference mode is attractive and the spatial velocity anisotropy reduces to one scalar; physical naturalness closure is not audited as solved.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T04:16:20.462599+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08:retained->retained_pending_chain",
+      "load_bearing_step": "Given the supplied one-loop RG equations, d(v_F-v_b)/dl=-(C_F+C_B N_f) alpha (v_F-v_b), and with O_h plus canonical time, the remaining velocity gate is a single IR-attractive scalar c_s.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained one-hop bridge theorems for the supplied one-loop velocity RG and spatial power-divergent mixing, then derive the physical fixed-point gamma/coefficient if promoting beyond conditional algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Independent checks confirm the displayed sign/eigenvalue, invariant-dimension reductions, and illustrative alpha/4pi and (mu/M_Pl)^gamma factors as consequences of the supplied formulas. The runner computes these consequences rather than deriving the gauge/Yukawa RG dynamics, the spatial-only power-divergent mixing theorem, or the physical gamma/coefficient from retained inputs. The accepted kinetic-isotropy primitive and retained B4 note chain-satisfy only the OS0 surface, while this source explicitly leaves its non-isotropic naturalness residual open."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:22.796536+00:00",
+      "archived_for_note_hash": "7f6b47ddba74ac4c999946f988c9e107fe15f7ff88fd7b36d9dbfe57ebe55f50",
+      "audit_date": "2026-06-12T01:41:29.876991+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "On the approved OS0 kinetic-form surface, B4 signed-permutation symmetry forbids a diagonal marginal time/spatial velocity anisotropy and makes B4-symmetric one-loop temporal/spatial self-energy coefficients equal; the remaining cited lattice artifact is dimension-6 with only a scale-reference units estimate.",
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "70e81aa352527362d866bc9e680e6ff19196655b4d8e4711a0bae76d2aa7b832",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-013927-feb973b0fc-emergent_lorentz_interacting",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic manipulations in the restricted packet check out: the difference-mode sign, O_h invariant-tensor dimension, and damping exponent follow from the supplied equations. The full chain from retained one-hop authorities does not close because the one-loop velocity dynamics, spatial-only power-divergent mixing context, and physical fixed-point gamma are stipulated rather than derived or supplied by retained authority in the packet.",
+      "claim_scope": "Conditional algebraic packet: from the supplied one-loop velocity-RG equations plus the stated structural symmetry/normalization premises, the runner-supported consequences are difference-mode attraction, O_h one-scalar spatial reduction, and the illustrative RG damping form, without solving the Collins power-divergent naturalness residual.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T01:41:29.876991+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the supplied one-loop velocity RG, d(v_F - v_b)/dl = -(C_F + C_B N_f) alpha (v_F - v_b), so the velocity-difference mode is IR-attractive; with O_h reducing spatial renormalization to one scalar and canonical time fixing c_t, the remaining anisotropy is one conditional IR-attractive scalar.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained one-hop derivation or bounded authority for the supplied one-loop velocity RG and spatial-only power-divergent mixing inputs, with the hierarchy damping kept non-load-bearing unless its physical gamma/coefficient are also derived.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing math is class A algebra over supplied inputs, not a first-principles compute from the framework baseline. Independent checks confirm the displayed RG sign and factors, the one-dimensional O_h invariant symmetric-tensor space, and the numerical damping estimate for the runner's chosen alpha and hierarchy. However, the source note explicitly relies on supplied one-loop dynamics and supplied power-divergent mixing/power-counting context, while also leaving the physical gamma and coefficient open; those are not closed by the restricted one-hop packet."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:38.084986+00:00",
+      "archived_for_note_hash": "f1b78c5ef90fa817f77d65316c79ef14f12c0f6f910feede0e6f94bc20a50e14",
+      "audit_date": "2026-06-14T01:00:47.598041+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "On the approved OS0 kinetic-form surface, B4 signed-permutation symmetry forbids a diagonal marginal time/spatial velocity anisotropy and makes B4-symmetric one-loop temporal/spatial self-energy coefficients equal; the remaining cited lattice artifact is dimension-6 with only a scale-reference units estimate.",
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "9941df41890b1aace77ee95bd720504201245b8c647897b8dda31891ad8bcf38",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-005907-709e699007-emergent_lorentz_interacting",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic consequences close under the supplied equations, but the restricted packet does not derive the one-loop velocity RG, the spatial-only power-divergent mixing theorem, or the physical fixed-point gamma/coefficient needed for naturalness closure.",
+      "claim_scope": "Conditional algebra only: assuming the stated one-loop velocity RG and structural O_h/canonical-time premises, the packet verifies attractive speed-difference flow and one-scalar gate reduction, while leaving the physical RG derivation, power-divergent coefficient, anomalous dimension, and LV-bound sufficiency open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-14T01:00:47.598041+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the supplied one-loop velocity RG, d(v_F-v_b)/dl = -(C_F + C_B N_f) alpha (v_F-v_b), while O_h makes the spatial split one scalar and canonical time fixes c_t, so the Collins gate reduces to one conditional IR-attractive scalar.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained one-hop derivation or approved retained authority for the interacting one-loop velocity RG plus the spatial-only power-divergent mixing coefficient and physical fixed-point anomalous dimension.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The runner source performs real checks for the conditional algebra: the 2x2 RG matrix has eigenvalues 0 and -(C_F+C_B N_f)alpha, O_h invariance forces symmetric spatial tensors to multiples of delta_ij, and unitary Stone evolution preserves equal-time CAR. Independent inspection agrees with those algebraic checks. However the load-bearing RG form, the Collins power-divergent regeneration structure, and the physical gamma/coefficient are admitted supplied inputs or explicitly named open work, so the packet cannot be clean beyond conditional open-gate support."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:29.642407+00:00",
+      "archived_for_note_hash": "bbf21c23ddf6b06e4b442f521118bb280368451c4c43f17c0a6fb6688181277a",
+      "audit_date": "2026-06-16T00:59:21.902296+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "On the approved OS0 kinetic-form surface, B4 signed-permutation symmetry forbids a diagonal marginal time/spatial velocity anisotropy and makes B4-symmetric one-loop temporal/spatial self-energy coefficients equal; the remaining cited lattice artifact is dimension-6 with only a scale-reference units estimate.",
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 8.748,
+        "runner_hash": "9941df41890b1aace77ee95bd720504201245b8c647897b8dda31891ad8bcf38",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-005725-32acd0ae08-emergent_lorentz_interacting",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic consequences of the supplied RG packet close, but the restricted packet does not derive the one-loop velocity RG, the spatial-only power-divergent mixing theorem, or the physical anomalous dimension and sufficiency bound. Those missing bridge theorems are explicitly named by the source note as unresolved inputs.",
+      "claim_scope": "Conditional one-loop algebra: if the stated gauge/Yukawa velocity RG and structural inputs are supplied, the velocity-difference mode is IR-attractive and O_h plus canonical time reduce the marginal anisotropy bookkeeping to one scalar c_s; physical Lorentz-naturalness closure is not audited as solved.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-16T00:59:21.902296+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the supplied one-loop RG equations, the speed difference obeys d(v_F - v_b)/dl = -(C_F + C_B N_f) alpha (v_F - v_b), so the difference mode has a negative eigenvalue and flows to zero.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is to supply retained one-hop authorities deriving the framework-specific one-loop velocity RG, the spatial-only power-divergent mixing coefficient, and the physical anomalous dimension/sufficiency comparison against LV bounds.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The runner source performs real finite checks for the conditional algebra: it integrates the supplied ODE, independently verifies the negative difference-mode eigenvalue, enumerates O_h invariants by Reynolds projection, checks unitary CAR preservation, and confirms the note's narrowed scope. The load-bearing RG step is an algebraic consequence of an admitted one-loop model, not a first-principles framework derivation. The approved kinetic-isotropy primitive is an accepted premise and not a bounded-status source, but it does not supply the interacting dynamics, power-divergent mixing authority, or physical gamma/bounds comparison. Therefore the row remains conditional support/open gate rather than audited clean closure."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.464805+00:00",
+      "audit_date": "2026-06-21T13:48:26.334194+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "On the approved OS0 kinetic-form surface, B4 signed-permutation symmetry forbids a diagonal marginal time/spatial velocity anisotropy and makes B4-symmetric one-loop temporal/spatial self-energy coefficients equal; the remaining cited lattice artifact is dimension-6 with only a scale-reference units estimate.",
+          "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18": "On the continuous-time/spatial-Z^3 central-difference kinetic surface, the leading quartic spatial artifact has zero time Hessian components and projects under O_h to one spatial scalar marginal channel, with the coefficient left undetermined.",
+          "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18": "Exact algebraic exchange-matrix theorem for any positive two-sector mutual-drag velocity flow, including the fixed common-speed line, invariant weighted speed, and attractive speed-difference/ratio mode.",
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "positive_theorem",
+          "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18": "bounded_theorem",
+          "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "retained",
+          "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18": "retained_bounded",
+          "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18",
+          "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "9941df41890b1aace77ee95bd720504201245b8c647897b8dda31891ad8bcf38",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic subchain closes after the one-loop packet and structural channel are supplied, and the runner/source support that limited statement. The packet does not derive the framework-specific positive one-loop coefficients, spatial power-divergent coefficient, or physical gamma/LV-bound comparison.",
+      "claim_scope": "Conditional one-loop/structural algebra: supplied positive mutual-drag velocity RG plus retained structural channel support imply an attractive speed-difference mode and one O_h spatial scalar; physical loop coefficients, power-divergent coefficient, fixed-point gamma, and LV-bound sufficiency are not audited as closed.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T13:48:26.334194+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "For the supplied one-loop velocity RG, d(v_F - v_b)/dl = -(C_F + C_B N_f) alpha (v_F - v_b), so the speed-difference mode is IR-attractive while O_h and canonical time reduce the residual to one scalar c_s.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a one-hop framework-specific one-loop velocity-RG theorem proving positive mutual-drag coefficients, plus a theorem computing the spatial power-divergent coefficient and physical gamma/LV sufficiency.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The runner does real algebraic checks for the exchange flow, O_h Reynolds projection, and CAR normalization, and Part E verifies the source has narrowed itself to conditional support. It does not compute physical loop coefficients: D1 hard-codes the illustrative alpha/4pi scale, D2 uses supplied gamma/hierarchy values, and D3-D4 are scope assertions. The cited retained_bounded support notes close only the exchange-matrix and spatial-channel algebra while explicitly leaving the physical coefficients and sufficiency comparison open."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.378752+00:00",
+      "audit_date": "2026-07-02T05:18:34.074631+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "On the accepted OS0 kinetic-isotropy surface, B4 signed-permutation symmetry forbids a diagonal marginal time-space velocity anisotropy in the checked hypercubic kinetic/self-energy model; the remaining cited dispersion artifact is dimension-6 with scale-primitive unit conversion.",
+          "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18": "On the continuous-time/spatial-Z^3 central-difference kinetic surface, the leading quartic spatial artifact has zero time Hessian components and projects under O_h to one spatial scalar marginal channel, with the coefficient left undetermined.",
+          "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18": "Exact algebraic exchange-matrix theorem for any positive two-sector mutual-drag velocity flow, including the fixed common-speed line, invariant weighted speed, and attractive speed-difference/ratio mode.",
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "positive_theorem",
+          "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18": "bounded_theorem",
+          "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "retained",
+          "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18": "retained_bounded",
+          "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18",
+          "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "9941df41890b1aace77ee95bd720504201245b8c647897b8dda31891ad8bcf38",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T051834Z-c0bb1a38-emergent_lorentz_interac",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes once the one-loop RG form and positive coefficients are supplied. The restricted packet does not derive those physical coefficients, the power-divergent mixing coefficient, or the physical anomalous-dimension/LV-bound comparison.",
+      "claim_scope": "Conditional algebra over a supplied one-loop mutual-drag velocity RG: the speed-difference mode is algebraically IR-attractive and the spatial marginal anisotropy reduces to one O_h scalar, while physical loop coefficients, the power-divergent coefficient, gamma, and LV-bound sufficiency remain open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-02T05:18:34.074631+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Given the supplied one-loop RG `dv_F/dl = C_F \u03b1(v_b\u2212v_F)` and `dv_b/dl = C_B \u03b1 N_f(v_F\u2212v_b)`, the difference obeys `d(v_F\u2212v_b)/dl = \u2212(C_F+C_B N_f)\u03b1(v_F\u2212v_b)`, so the speed-difference mode is IR-attractive.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: next repair is a framework-specific one-loop velocity-RG theorem instantiating positive mutual-drag coefficients, followed by the spatial power-divergent coefficient and physical gamma/LV-bound sufficiency bridge.",
+      "open_dependency_paths": [
+        "docs/EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md",
+        "docs/EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: the runner hard-codes the supplied one-loop RG form and checks algebraic consequences, but does not derive the framework-specific physical one-loop coefficients or sufficiency data. Why this blocks: the retained cited authorities only close the exchange-matrix algebra and the spatial O_h channel, not the physical RG instantiation or LV-bound comparison. Repair target: provide retained bridge theorems for positive framework one-loop coefficients, the spatial power-divergent coefficient, and the physical gamma/sufficiency inequality. Claim boundary until fixed: conditional-support/open-gate algebra only."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py",
+  "title": "Interacting Emergent Lorentz Conditional Algebra: Supplied One-Loop Velocity Attractor and One-Scalar Gate Boundary",
+  "transitive_descendants": 4,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

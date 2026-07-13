@@ -1,0 +1,281 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "spectral_symmetry_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "higher_symmetry_joint_validation_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/generative_causal_dag_interference.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9c581edcabc7443d5705a71cb541e259d5d05e1bbdaaf56d73a19374de1d077a",
+  "note_path": "docs/SPECTRAL_SYMMETRY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.107133+00:00",
+      "archived_for_note_hash": "3e2ff76cc7af9139ff64005aab92b0922d73a137d69cbc9d80fb839351cfd7ce",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.237004+00:00",
+      "audit_date": "2026-05-02T00:38:06.084985+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note explicitly routes the current review-safe read through HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE, which is already audited_conditional, and the selected runner only checks the CLT/rank-one ceiling rather than the full symmetry and joint-coexistence claims.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:higher_symmetry_joint_validation_note",
+      "load_bearing_step": "The retained takeaway from this line is only that Z2 x Z2 is an exploratory decoherence-side lead, not a Born/gravity-validated successor.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: The historical support note's safe current takeaway depends on docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md, whose audit status is conditional, while scripts/ceiling_formal_proof.py only supports the rank-one/CLT ceiling part of the story. Why this blocks: the note cannot be certified as an independently clean symmetry-support claim when its current review-safe authority is conditional and the selected runner does not verify the Z2/Z2xZ2 joint Born/gravity/decoherence claims. Repair target: audit or repair the higher-symmetry joint validation chain and attach the relevant symmetry/joint runners as the row's load-bearing artifacts, with current outputs matching the note's quantitative tables. Claim boundary until fixed: it is safe to treat this as historical exploratory context for symmetry-protected decoherence and as a CLT-ceiling support computation, not as an audit-clean Born/gravity-validated successor."
+    },
+    {
+      "archived_at": "2026-05-27T14:52:04.982935+00:00",
+      "archived_for_note_hash": "47af9fcfd2eda33dea84dc791c60d197ba3203671c4a7aec0cef46474fd1b52d",
+      "audit_date": "2026-05-25T12:39:05.771611+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding."
+        },
+        "dep_claim_type": {
+          "higher_symmetry_joint_validation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higher_symmetry_joint_validation_note": "retained_bounded"
+        },
+        "deps": [
+          "higher_symmetry_joint_validation_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "51a2080cdec6f925b1b8bfc330a52efa2ee58062c34b40ed4b9d56504e8db42a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T123650Z-659d7015-spectral_symmetry_note-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet does not prove that exact graph symmetry gives nonmixing slit sectors with nonzero independent rank-1 limits, nor that the stated rank result holds asymptotically for connected causal DAGs. The primary runner only gives finite random-DAG ceiling evidence, and its Lyapunov rank-1 read is not a valid arbitrary-initial-condition proof because the padded product includes a singleton source layer that rank-limits the product by construction.",
+      "claim_scope": "Audited the broad spectral-symmetry theorem that generic linear DAG transfer products rank-collapse while exact Z2/Z2xZ2 graph symmetry prevents slit convergence by protected sector rank.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-25T12:39:05.771611+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Discrete symmetries of the graph force the transfer matrix product to maintain rank > 1: if the graph has Z2 symmetry, the transfer matrices commute with reflection, decompose into even/odd sectors, and the full product maintains rank-2 so opposite slits cannot converge.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the compute_lyapunov_spectrum padding/single-source rank artifact and require a runner or proof that directly tests the claimed symmetry-sector rank mechanism.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The source note's load-bearing symmetry-sector theorem is broader than the retained bounded Z2xZ2 evidence supplied upstream. The retained authority supports only a finite cached N=25,40,60,80 joint-validation window and explicitly narrows the old successor framing. The primary runner does not test the symmetry-sector rank claim and its apparent infinite Lyapunov gap is not valid evidence for convergence of arbitrary initial conditions, since the transfer-product construction is rank-limited by the one-node source layer and padding/cropping procedure."
+    },
+    {
+      "archived_at": "2026-05-29T12:13:14.536401+00:00",
+      "archived_for_note_hash": "825a3de15d376ca03162a5a689666627d0e3ed6bd87d621879cc179b7cf16c04",
+      "audit_date": "2026-05-28T08:50:50.001588+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding."
+        },
+        "dep_claim_type": {
+          "higher_symmetry_joint_validation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higher_symmetry_joint_validation_note": "retained_bounded"
+        },
+        "deps": [
+          "higher_symmetry_joint_validation_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b127203f0c148119fcd06c20e20cfcfaeae42571c637e8cdccf5d0f30ffbd1ee",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-spectral-symmetry-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite runner table and the monotone Lindeberg-ratio decrease close as measurements, but the convergence-with-power-law and CLT-mechanism reading is stronger than the cached evidence proves. The d_TV/overlap/purity residuals are noisy across N and their fitted power laws have only R^2 about 0.35-0.42.",
+      "claim_scope": "Finite cached run of scripts/ceiling_formal_proof.py on random causal DAGs with npl=25, connect_radius=2.5, k=5.0, 16 seeds, N=12-80, reporting d_TV, overlap, 1-pur_min, Lyapunov gap, and Lindeberg ratio.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T08:50:50.001588+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "The note claims that on the cached N=12-80 random-DAG configuration the detector distributions converge in d_TV with power-law decline and that the measurements support a CLT-style non-dominance mechanism rather than rank-1 spectral collapse.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the source claim to the exact cached measurements and monotone Lindeberg-ratio observation, or add a registered statistical/pass-fail criterion for the power-law convergence and CLT-style mechanism claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the runner computes the finite table, but the load-bearing claim promotes noisy finite measurements into a convergence/power-law and CLT-style mechanism statement. Why this blocks: d_TV is not monotone on the cached range, the overlap and purity residuals also have large finite-N excursions, and the reported power-law fits have low R^2, so the restricted packet does not establish the mechanism strength claimed. Repair target: narrow the theorem to the exact cached table plus monotone Lindeberg-ratio observation, or add an assertion runner/statistical criterion that proves the convergence and mechanism claim on the declared ensemble. Claim boundary until fixed: the cache supports the printed finite measurements and a plausible interpretation, not an audited bounded theorem of power-law convergence/mechanism closure."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:29.662494+00:00",
+      "audit_date": "2026-05-30T00:19:22.364078+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding."
+        },
+        "dep_claim_type": {
+          "higher_symmetry_joint_validation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higher_symmetry_joint_validation_note": "retained_bounded"
+        },
+        "deps": [
+          "higher_symmetry_joint_validation_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b127203f0c148119fcd06c20e20cfcfaeae42571c637e8cdccf5d0f30ffbd1ee",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-001743-939b9287-spectral_symmetry_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The inlined runner genuinely computes the random DAGs, transfer matrices, single-slit propagation observables, Lyapunov gaps, Lindeberg ratios, and log-log fits rather than printing imported constants. The cached stdout matches the source-note tables after rounding, and independent arithmetic checks reproduce the power-law fits and monotone Lindeberg trend.",
+      "claim_scope": "Finite cached measurements from scripts/ceiling_formal_proof.py for npl=25, connect_radius=2.5, k=5.0, 16 seeds, and N in {12,15,18,22,25,30,40,60,80}; no asymptotic CLT theorem or extrapolation beyond N=80 was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T00:19:22.364078+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:higher_symmetry_joint_validation_note:retained_bounded->unaudited",
+      "load_bearing_step": "On the cached configuration, the runner-printed finite table of d_TV, overlap, 1-pur_min, Lyapunov gap, and Lindeberg ratio is binding, together with the monotone Lindeberg-ratio decrease from 0.119 at N=12 to 0.017 at N=80.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream summaries preserve the finite cached scope and do not promote the non-binding CLT/asymptotic mechanism language.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The narrowed finite measurement claim closes from the primary runner and helper source included in the packet. The displayed fit coefficients match an independent log-log regression on the cached table, the Lyapunov gaps decrease, and the Lindeberg ratios are strictly monotone with N*ratio approximately constant on the cached range. The broader CLT-mechanism and power-law-asymptotic readings are explicitly non-binding, so they are not retained by this verdict."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/ceiling_formal_proof.py",
+  "title": "Spectral Symmetry Note \u2014 CLT-Style Decoherence Evidence on Random Causal DAGs",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

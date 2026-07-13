@@ -1,0 +1,217 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_production_interface_principle_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "13978d5263a1b91e660a2bfd9f2ba5c27d2030e73113da9ae1eea3a20c609e32",
+  "note_path": "docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:13.942465+00:00",
+      "archived_for_note_hash": "bfd355320473c84f32c6b0109d12a527a4b398755f19443de05d38fb5db56f3e",
+      "audit_date": "2026-06-06T20:17:11.047612+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "86e237a5c5b5636c2503a66097788eb2d63d753726646eead4c3936205e6bf59",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-201521-e17ff3767d-record_production_interface_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The type-set arithmetic in the runner and the toy one-hot/count examples check out independently. The restricted packet does not provide the full axiom authority or Record-stack notes as cited retained-grade inputs, while the runner relies on those external note files by substring checks, so the axiom-boundary derivation is not closed inside the packet.",
+      "claim_scope": "Audited the bounded typing/interface claim that pre-record predictive quantum surfaces, formation bridges, and post-record atom/count/readout dynamics are distinct layers and that post-record counts alone do not supply probabilities, instruments, rates, carrier choice, or dial selection.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T20:17:11.047612+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The interface follows from the three-axiom type split: Quantum supplies the pre-record qubit algebra, Record supplies durable realized-outcome registration and finite additive readout, and Record explicitly withholds record-production dynamics and probability.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full Minimal Axioms authority as an accepted axiom premise and either include or remove the Record-stack note dependencies used by the runner, then re-audit the same bounded typing claim.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-05.md",
+        "docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md",
+        "docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md",
+        "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
+        "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
+        "docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 40,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The runner is not a first-principles physics derivation; it combines text-presence checks across repo notes with finite set/Fraction consistency checks. The independent math inventory finds no error in the displayed toy identities: the Born vector is normalized, one-hot realized atoms are distinct from it, realized count updates are integral, and the expected update is fractional ensemble data. However, the load-bearing axiom boundary is imported through docs not supplied as one-hop authorities in the restricted packet, so the conclusion remains conditional on those missing dependency edges being properly cited and retained or explicitly flagged as accepted axiom premises."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.514387+00:00",
+      "audit_date": "2026-06-07T01:26:49.856587+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9885e559aea0286ad51de02baf64409b1d1b28261c4147429014c744da4d8a4d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-012514-f925e63fd2-record_production_interface_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For this bounded interface scope, the cited Minimal Axioms include the Quantum and Record surfaces used by the note and explicitly exclude probability and record-production dynamics from Record. No missing bridge is needed because the audited conclusion is only the type split, not a derivation of the bridge itself.",
+      "claim_scope": "A branch-local typing/interface principle separating pre-record qubit state/effect surfaces, separate record-production bridges, and post-record realized atoms/counts/readouts, without deriving probabilities, production dynamics, instruments, rates, or dials.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T01:26:49.856587+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The three axioms already provide the required type split: Quantum supplies the pre-record one-qubit local algebra, Record supplies post-record durable realized-outcome registration and additive scalar readout, and Record explicitly does not supply the production bridge between them.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses keep the claim restricted to the stated interface/type-split scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 13,
+        "C": 0,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The only cited authority is flagged as an accepted axiom premise, so its meta status does not trigger the not-retained dependency downgrade. The load-bearing move is an A-class logical/type-set consequence of what the Minimal Axioms include and exclude, not a first-principles numerical computation. The runner source is consistent with that narrow scope: it performs text/input checks plus finite set and Fraction arithmetic checks, with no external comparator and no hidden helper imports. This verdict does not audit any stronger claim that record-production dynamics, Born probabilities, a normalized isometry, or a dial selection has been derived."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.852532+00:00",
+      "audit_date": "2026-07-09T11:18:07.251410+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9885e559aea0286ad51de02baf64409b1d1b28261c4147429014c744da4d8a4d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-context-audit-subagent",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local type split passes against the runner-cited 2026-06-05 axiom memo, but the current ledger dependency resolves minimal_axioms to the 2026-06-29 memo, so the audited chain does not close against the dependency actually wired for this row.",
+      "claim_scope": "Bounded interface principle separating pre-record qubit/possibility surface, separate record-production bridge, and post-record durable record/count/readout dynamics.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T11:18:07.251410+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "The source claims the axioms already provide the required type split: Quantum supplies the pre-record one-qubit algebra, Record supplies durable realized records and finite scalar readout, and Record excludes the production bridge.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: update both the source citation and runner PATHS/string needles to docs/MINIMAL_AXIOMS_2026-06-29.md, or explicitly add and justify a dependency on the superseded 2026-06-05 memo if that wording is still intended to be load-bearing.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-05.md: source/runner-cited superseded authority not matching current ledger dependency docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 13,
+        "C": 0,
+        "D": 0,
+        "fail": 0,
+        "total_pass": 28
+      },
+      "verdict_rationale": "Issue: the proof packet and runner close against docs/MINIMAL_AXIOMS_2026-06-05.md, while the current ledger dependency minimal_axioms resolves to docs/MINIMAL_AXIOMS_2026-06-29.md. Why this blocks: the runner's B-class checks verify old three-axiom / Quantum / durable-realized-outcome wording, not the current Qubit/Admissibility/Record boundary, so the current row cannot receive clean closure as written. Repair target: update the note and runner to cite/read 2026-06-29 and restate the load-bearing split under Qubit, Admissibility, and Record; the repaired core likely can close because 2026-06-29 still excludes Born law, measurement/decoherence dynamics, formation rules, weighting, normalization, sector generation, and dial selection. Claim boundary until fixed: the old 2026-06-05-bound type split passes locally, but current-ledger closure remains conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_record_production_interface_principle_2026_06_06.py",
+  "title": "Record Production Interface Principle",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dm_neutrino_readout_det_uniqueness_inapplicable_no_go_note_2026-06-07",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go (negative-route-pruning)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
+    "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d0a5529aad1cf3c405b6ada7533fe608941d0db3bb4d66a980ea734a478aee41",
+  "note_path": "docs/DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:27.675516+00:00",
+      "audit_date": "2026-06-08T11:13:19.496168+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16": "Finite-dimensional C^16 matrix-algebra claim that Y=P_R \u0393_1 P_L has raw-to-Hermitian-completion Frobenius ratio sqrt(Tr(Y^\u2020Y)/Tr(\u0393_1^\u2020\u0393_1))=1/sqrt(2), with scalar-baseline determinant formulas only as diagnostics.",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": "Under X1-X3, every universal continuous determinant-ratio scalar generator on a direct-sum-closed invertible real-D block family with dense realized positive determinant ratios equals c*(log|det(D+J)|-log|det D|) on each block, with the derivative identities following up to the same scale c."
+        },
+        "dep_claim_type": {
+          "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "316172660b0588e702adf8bab2b8825748e4650b242abcd112a8e9e3040b642f",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-2c5f1e6cd9-dm_neutrino_readout_det_uniq",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited det-uniqueness authority applies only to invertible real anti-Hermitian D with real-symmetric source J, while an independent Fourier action check gives D_kin e_k proportional to sin(k_mu) terms that vanish at k_mu in {0, pi}. The bridge authority explicitly firewalles the mI determinant surfaces as scalar-baseline diagnostics, so they do not reopen the det-uniqueness route.",
+      "claim_scope": "Scoped route no-go: on the stipulated staggered Z^3 hw=1 generation-corner sector, the retained real-D det-uniqueness theorem cannot license the neutrino readout via D_kin; scalar-baseline determinant identities remain diagnostics only.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-08T11:13:19.496168+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The kinetic staggered operator D_kin vanishes on the hw=1 generation corners, so the projected generation-sector D block is zero/non-invertible and outside the det-uniqueness X1 domain requiring invertible real anti-Hermitian D.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the phrase 'only real anti-Hermitian Dirac structure' remains read as the stipulated kinetic det-uniqueness route, not an absolute ban on every conceivable anti-Hermitian host.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner source genuinely constructs the finite staggered kinetic operator and checks the corner projection, non-invertibility, off-corner control, and scalar-baseline diagnostics rather than merely printing expected values. The load-bearing corner-vanishing also checks independently from the finite-difference Fourier action using sin(0)=sin(pi)=0. Both cited authorities are retained-grade, and the no-go is properly scoped to the det-uniqueness route, not to all possible future readout derivations."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_neutrino_readout_det_uniqueness_inapplicable.py",
+  "title": "The det-Uniqueness Route Cannot Derive the Neutrino Readout: the Kinetic Dirac Operator Vanishes on the Generation Corners (No-Go)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

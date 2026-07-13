@@ -65,8 +65,8 @@ regardless of executor.
 
 1. **Recon + design (planner).** Read the load-bearing primary sources
    yourself; verify ledger statuses
-   (`git show origin/main:docs/audit/data/audit_ledger.json`) before citing
-   anything as retained. Derive the result (algebra-before-spec, above), then
+   (`git show origin/main:docs/audit/data/ledger/<claim-id-prefix>/<claim-id>.json`)
+   before citing anything as retained. Derive the result (algebra-before-spec, above), then
    decide the exact object, claim type, and boundary.
 2. **Worktree per PR.** `git worktree add /tmp/<name>-wt -b <branch>
    origin/main`. Never work in the shared main tree; concurrent sessions race

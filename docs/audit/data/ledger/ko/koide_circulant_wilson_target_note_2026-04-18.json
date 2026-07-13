@@ -1,0 +1,324 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_circulant_wilson_target_note_2026-04-18",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+    "koide_cyclic_wilson_descendant_law_note_2026-04-18",
+    "koide_dweh_cyclic_compression_note_2026-04-18"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.482,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "88a65e1e319e50815ebd58d62fca46d31650d67c8a177a28bcaf1cd94bb51aa7",
+  "note_path": "docs/KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106051+00:00",
+      "archived_for_note_hash": "9fc50966e76910ce58613bd58daa5c9d2df6d5dc52ff6d2f027e759b54d88981",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:51.254384+00:00",
+      "audit_date": "2026-05-03T03:19:10.514639+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18": "retained",
+          "koide_dweh_cyclic_compression_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18",
+          "koide_dweh_cyclic_compression_note_2026-04-18"
+        ],
+        "load_bearing_score": 6.322,
+        "transitive_descendants": 39
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-agent-helmholtz-3rd-019debd6-5b43-7db3-b4d6-d8d45a06717d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The C3 commutant dimension and adjacent-chain containment close as exact algebra. The Koide-to-circulant bridge a_0^2 = 2|z|^2 is imported from an unprovided authority, so the full 2-real Koide-target conclusion does not close from the restricted inputs alone.",
+      "claim_scope": "The C3-covariant Hermitian charged-lepton target is the 3-real family H = aI + bC + b*C^2 inside the adjacent-chain algebra, and Koide would restrict it to a 2-real cone via the imported bridge equation.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T03:19:10.514639+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->high",
+      "load_bearing_step": "By the exact Koide bridge note, the spectral Koide condition is a_0^2 = 2 |z|^2, which on the circulant coordinates becomes 3 a^2 = 6 |b|^2 = 6 (x^2 + y^2).",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-check whether the exact Koide bridge theorem is a retained one-hop dependency; if supplied, the algebraic target-size claim may become clean under the narrower scope.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 1,
+        "C": 0,
+        "D": 3,
+        "total_pass": 19
+      },
+      "verdict_rationale": "Issue: the decisive Koide cone reduction relies on the external bridge equation a_0^2 = 2|z|^2 rather than deriving that spectral/readout equivalence inside the supplied source note or retained one-hop authorities. Why this blocks: the runner verifies algebra after accepting that bridge, but it does not establish the physical/spectral identification needed for the full Koide target claim. Repair target: supply and cite the retained bridge theorem, or add a self-contained derivation from the charged-lepton amplitude readout to the Fourier/circulant coordinates. Claim boundary until fixed: the 3-real C3-covariant path-algebra target reduction is supported, but the 2-real Koide cone status remains conditional on the missing bridge."
+    },
+    {
+      "archived_at": "2026-05-09T14:37:41.962162+00:00",
+      "archived_for_note_hash": "895e6b5e916452369a41edeff68a7ed8c53884e8bd2652eb8e3263a1d7402dde",
+      "audit_date": "2026-05-05T11:12:39.702349+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18": "retained",
+          "koide_dweh_cyclic_compression_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18",
+          "koide_dweh_cyclic_compression_note_2026-04-18"
+        ],
+        "load_bearing_score": 9.66,
+        "runner_hash": "73a63cee0f0d6266fa73dcc013f007dae25b7945665e3120cc1339a177ac2706",
+        "transitive_descendants": 285
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-koide_circulant_wilson_target_note-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite linear-algebra checks for the C3 commutant, adjacent-chain containment, and codimension-one equation close locally. The identification of that equation as the spectral Koide target imports an exact Koide bridge note that is not present in the direct dependency packet, while the microscopic selector and final readout are explicitly left open.",
+      "claim_scope": "Audited the asserted reduction of the charged-lepton Koide constructive target to the 3-real C3-covariant circulant Hermitian family inside the adjacent-chain algebra, with Koide imposing one real equation and leaving a 2-real cone.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T11:12:39.702349+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "By the exact Koide bridge note, the spectral Koide condition is a_0^2 = 2 |z|^2, which on the circulant coordinates becomes 3 a^2 = 6 |b|^2 = 6 (x^2 + y^2).",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: Wire the exact Koide bridge note proving the spectral condition a_0^2 = 2|z|^2 as a direct dependency and audit/retain that bridge before re-auditing this target reduction.",
+      "open_dependency_paths": [
+        "docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md",
+        "docs/KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 3,
+        "total_pass": 19
+      },
+      "verdict_rationale": "Issue: the load-bearing Koide spectral bridge a_0^2 = 2|z|^2 is imported from a named bridge note outside the listed one-hop dependencies, and the note explicitly does not derive the selector mechanism or final charged-lepton readout. Why this blocks: the algebraic target-size reduction can be true without establishing that this is a retained physical Koide observable target from the restricted inputs. Repair target: add and retain the exact Koide bridge dependency, and keep the microscopic selector/readout claims scoped as future work unless separate retained bridge theorems exist. Claim boundary until fixed: the note supports a finite algebraic reduction of a stipulated cyclic Koide target, not a closed retained theorem deriving the physical Wilson-side Koide target."
+    },
+    {
+      "archived_at": "2026-05-09T18:50:57.580498+00:00",
+      "archived_for_note_hash": "95a75671aa232697df3b0ad464363639cb588012f99e4cbfffb3decfaa3468cf",
+      "audit_date": "2026-05-09T15:37:36.732758+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Standalone algebraic identities relating a C_3 circulant Hermitian H = aI + bC + bbar C^2 over R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18": "Algebraic cyclic-sector theorem: the adjacent-chain cyclic Hermitian sector has basis B0=I, B1=C+C^2, B2=i(C-C^2); three real trace responses reconstruct the unique cyclic Hermitian target, and the Koide cone is the scalar response equation 2 r0^2=r1^2+r2^2.",
+          "koide_dweh_cyclic_compression_note_2026-04-18": "Exact algebraic cyclic compression of a given Hermitian charged block H_e in Herm(3) to the C-invariant three-real subspace span_R{I, C+C^2, i(C-C^2)}, including the response reconstruction formula."
+        },
+        "dep_claim_type": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18": "positive_theorem",
+          "koide_dweh_cyclic_compression_note_2026-04-18": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18": "retained",
+          "koide_dweh_cyclic_compression_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18",
+          "koide_dweh_cyclic_compression_note_2026-04-18"
+        ],
+        "load_bearing_score": 8.609,
+        "runner_hash": "73a63cee0f0d6266fa73dcc013f007dae25b7945665e3120cc1339a177ac2706",
+        "transitive_descendants": 137
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e0d62-9638-7141-b7b8-0af39e98a45a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the bounded structural target-size claim, the chain closes by direct matrix algebra plus the retained narrow character/operator identity. It does not close a microscopic Wilson law, selector mechanism, or charged-lepton readout, but the note explicitly excludes those.",
+      "claim_scope": "Audited only the structural algebraic target reduction: the C_3-covariant Hermitian commutant is 3-real, lies in the adjacent-chain path algebra, and the stipulated Koide spectral equation is one real constraint on it.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-09T15:37:36.732758+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Using the retained circulant character bridge, the spectral Koide condition a_0^2 = 2|z|^2 becomes 3a^2 = 6|b|^2 = 6(x^2 + y^2) inside the 3-real C_3-covariant Hermitian family, so the target is 2-real.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should preserve the bounded scope and not upgrade the observed sqrt(m) witness into a first-principles prediction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 3,
+        "total_pass": 19
+      },
+      "verdict_rationale": "Issue: the note is not a first-principles Koide prediction; it is a structural reduction of the target, with an observed charged-lepton numerical witness in the runner. Why this does not block the audited scope: the note explicitly bounds out the microscopic Wilson law, selector, and readout, while the structural claims close by algebra over retained inputs. Repair target: a separate theorem must derive the cyclic responses, selector equation, and physical readout. Claim boundary until fixed: treat this as a clean bounded target-shape theorem, not as a derivation of lepton masses."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.810642+00:00",
+      "audit_date": "2026-05-11T22:56:12.510383+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18": "Algebraic cyclic-sector theorem: the adjacent-chain cyclic Hermitian sector has basis B0=I, B1=C+C^2, B2=i(C-C^2); three real trace responses reconstruct the unique cyclic Hermitian target, and the Koide cone is the scalar response equation 2 r0^2=r1^2+r2^2.",
+          "koide_dweh_cyclic_compression_note_2026-04-18": "Exact algebraic cyclic compression of a given Hermitian charged block H_e in Herm(3) to the C-invariant three-real subspace span_R{I, C+C^2, i(C-C^2)}, including the response reconstruction formula."
+        },
+        "dep_claim_type": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18": "positive_theorem",
+          "koide_dweh_cyclic_compression_note_2026-04-18": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18": "retained",
+          "koide_dweh_cyclic_compression_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_cyclic_wilson_descendant_law_note_2026-04-18",
+          "koide_dweh_cyclic_compression_note_2026-04-18"
+        ],
+        "load_bearing_score": 10.728,
+        "runner_hash": "73a63cee0f0d6266fa73dcc013f007dae25b7945665e3120cc1339a177ac2706",
+        "transitive_descendants": 423
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-koide_circulant_wilson_t-020",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the bounded structural claim, the chain closes from the retained cited algebraic bridge plus direct linear-algebra checks of the commutant and adjacent-chain containment. It does not close a microscopic Wilson law, selector mechanism, or charged-lepton readout, but those are explicitly excluded from the audited scope.",
+      "claim_scope": "The audited claim is the bounded algebraic target-size reduction: within the C_3-covariant Hermitian subfamily already contained in the adjacent-chain path algebra, the Koide spectral equation is one real constraint, reducing the 3-real cyclic family to a 2-real cone.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T22:56:12.510383+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T12:34:49.848690+00:00",
+          "auditor": "codex-audit-loop-20260511-koide-circulant-wilson-target",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded algebraic target-size reduction for the Koide Wilson lane: the C3-covariant Hermitian subfamily H=aI+bC+b*C^2 is 3 real dimensional, the adjacent-chain path algebra contains I, C+C^2, and i(C-C^2), and the retained character bridge rewrites the stipulated Koide spectral equation as the single real cone equation 3a^2=6|b|^2, leaving a 2-real scale-plus-phase target. This excludes deriving the microscopic Wilson law, the selector enforcing the cone, and the final charged-lepton readout primitive.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-11T22:56:12.510383+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-koide_circulant_wilson_t-020",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The audited claim is the bounded algebraic target-size reduction: within the C_3-covariant Hermitian subfamily already contained in the adjacent-chain path algebra, the Koide spectral equation is one real constraint, reducing the 3-real cyclic family to a 2-real cone.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "By the imported bridge identity, the spectral Koide condition a_0^2 = 2|z|^2 becomes 3a^2 = 6|b|^2 on the C_3-covariant Hermitian family H = aI + bC + b* C^2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should keep the audited scope bounded to target-size reduction only, since the note explicitly leaves the microscopic Wilson law, selector mechanism, and readout primitive open.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 3,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The load-bearing reduction is an algebraic identity applied to a directly verified 3-real cyclic Hermitian subspace, with retained one-hop authority for the character/operator bridge. The runner source performs symbolic commutant, basis, path-algebra, and bridge checks rather than merely printing constants. Its observed charged-lepton portion is an external numerical comparator, but it is not needed for the bounded target-size theorem and does not carry the claimed structural conclusion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.976915+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_circulant_wilson_target.py",
+  "title": "Koide Circulant Wilson-Target Note",
+  "transitive_descendants": 714,
+  "verdict_rationale": null
+}

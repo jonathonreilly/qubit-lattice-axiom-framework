@@ -1,0 +1,508 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
+    "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
+    "minimal_axioms",
+    "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+    "strong_cp_theta_zero_note",
+    "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
+    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+  ],
+  "direct_in_degree": 16,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.129,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "997e988b4e450149c23321b9bc6219df84bf117c9c346e12914e52403058d123",
+  "note_path": "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:51:10.746667+00:00",
+      "archived_for_note_hash": "0653d04aa819903dbb89b61ea6992957dea9fd0fd1ac7b97153d6da5d06eeb70",
+      "audit_date": "2026-06-13T00:06:41.497207+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Narrow A/B only: given the C_3 generator as cyclic axis relabelling and the trace-free C_3-singlet complement carrier, the fixed locus is the body diagonal with transverse weights (1,2), and the local Lefschetz density formula evaluates to 2/9. Local/global ABSS applicability, PL S^3 x R identification, and physical single-summand readout are not audited as claims here.",
+          "minimal_axioms": null,
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited.",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "The audited claim is the algebraic orientation invariance of the note-stipulated three-parameter Hermitian circulant class: conjugation flips delta while preserving the unordered spectrum."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "no_go",
+          "strong_cp_theta_zero_note": "bounded_theorem",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "retained_no_go",
+          "strong_cp_theta_zero_note": "retained_bounded",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
+          "strong_cp_theta_zero_note",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+        ],
+        "load_bearing_score": 6.392,
+        "runner_hash": "c2dcad0620509b90c3f15192510e6a5de121511c87f309ae5e12bc164a98c9f3",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-000346-e04d44726b-registrable_readout_additive",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic statement even \u2229 phase-additive = zero is correct, and the determinant-character k=0 subclaim closes under a determinant-character/group-homomorphism premise. But Record additivity is set-additivity over disjoint record collections, not additivity of an arbitrary phase function under multiplication; for example I(S)=sum_{j in S} cos(theta_j) is finite-additive over records and K-even while still phase-dependent.",
+      "claim_scope": "Whether Record finite additivity over disjoint records plus K/CPT orbit-evenness alone forces registrable determinant/readout phase content to vanish and closes the two named registrability bridges on that surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T00:06:41.497207+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "T3/T5: the note treats the determinant phase as a per-sector sum, hence a registrable readout's phase part as an additive R-valued functional g, and then uses K/CPT-evenness plus additivity to force g=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge that Record-registrable phase readouts are restricted to determinant-character/group-homomorphic phase functionals, or narrow the claim to that conditional class and drop the exclusion of non-multiplicative per-sector phase data.",
+      "open_dependency_paths": [
+        "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md",
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The runner verifies the algebra it actually encodes, including determinant phase additivity, even/odd cancellation, and the AC_phi_lambda symmetric-function identities. It does not verify the hidden bridge from Record finite additivity to the asserted phase-group additive functional, and several exhaustiveness checks are narrative True assertions. The hostile cos guard excludes cos(arg(z1 z2)) as a function of the total product, but it does not exclude a per-sector summed K-even phase readout such as sum cos(theta_j). A retained bridge restricting registrable phase readouts to determinant-character or log-character homomorphisms is still needed for the source note's broader phase-free conclusion."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:38.247535+00:00",
+      "archived_for_note_hash": "24792401a31b244c0c2a05c10eef7c9f6577fa9906d369a6f405d0e4155ab5fa",
+      "audit_date": "2026-06-15T22:24:34.524805+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Narrow A/B only: given the C_3 generator as cyclic axis relabelling and the trace-free C_3-singlet complement carrier, the fixed locus is the body diagonal with transverse weights (1,2), and the local Lefschetz density formula evaluates to 2/9. Local/global ABSS applicability, PL S^3 x R identification, and physical single-summand readout are not audited as claims here.",
+          "minimal_axioms": null,
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited.",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "The audited claim is the algebraic orientation invariance of the note-stipulated three-parameter Hermitian circulant class: conjugation flips delta while preserving the unordered spectrum."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "no_go",
+          "strong_cp_theta_zero_note": "bounded_theorem",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "retained_no_go",
+          "strong_cp_theta_zero_note": "retained_bounded",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
+          "strong_cp_theta_zero_note",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+        ],
+        "load_bearing_score": 11.644,
+        "runner_hash": "16dcb72ac92a684015e07516ae76fbb250f04041fb66795ebadf873548387e53",
+        "transitive_descendants": 24
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260615-222139-1d711f1d1c-registrable_readout_additive",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic core checks independently: additive implies odd, K/CPT-even plus odd implies zero, and the displayed circulant symmetric polynomials are even in delta. The full bridge-level claim does not close because the determinant-character/log-character readout surface and the exact physical mass/species readout identification are stipulated rather than derived from Record or the cited retained authorities.",
+      "claim_scope": "Conditional algebraic phase-erasure for a supplied Record readout context whose determinant phase component is restricted to the determinant-character/log-character homomorphism class; AC_phi_lambda sign-evenness is checked as orbit algebra only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T22:24:34.524805+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Once the determinant phase component is stipulated to be an R-valued group homomorphism, additivity makes it odd while K/CPT orbit invariance makes it even, so the phase functional is identically zero.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: audit a direct theorem that the physical strong-CP mass phase and AC_phi_lambda species readouts are exactly the supplied Record-registrable determinant-character/log-character and unordered-multiset surfaces, or narrow the source claim to the pure algebraic conditional theorem.",
+      "open_dependency_paths": [
+        "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md",
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "Issue: the central algebraic step is valid, but the source's bridge-level conclusions require a supplied determinant-character/log-character homomorphism surface and a physical readout identification that Record explicitly does not provide. Why this blocks: the runner checks algebra, determinant multiplicativity, and AC_phi_lambda symmetric-polynomial identities, but it does not derive that the strong-CP mass phase or AC_phi_lambda species readout is exhausted by those registrable surfaces. Repair target: supply or audit the missing readout-surface bridge, or narrow the row to the purely conditional algebraic theorem; until then the safe claim is phase erasure only inside the stipulated homomorphic Record readout class."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:31.558148+00:00",
+      "archived_for_note_hash": "87604df345b4f9f203a69fd3d9dd51f684af7c9838a638e860b1789444f35800",
+      "audit_date": "2026-06-18T05:10:27.501806+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Narrow A/B only: given the C_3 generator as cyclic axis relabelling and the trace-free C_3-singlet complement carrier, the fixed locus is the body diagonal with transverse weights (1,2), and the local Lefschetz density formula evaluates to 2/9. Local/global ABSS applicability, PL S^3 x R identification, and physical single-summand readout are not audited as claims here.",
+          "minimal_axioms": null,
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited.",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "The audited claim is the algebraic orientation invariance of the note-stipulated three-parameter Hermitian circulant class: conjugation flips delta while preserving the unordered spectrum."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "no_go",
+          "strong_cp_theta_zero_note": "bounded_theorem",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "retained_no_go",
+          "strong_cp_theta_zero_note": "retained_bounded",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
+          "strong_cp_theta_zero_note",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+        ],
+        "load_bearing_score": 10.807,
+        "runner_hash": "433efca767402f6282d01607a10c856d1612271f1cf0b086f43a30280524a9e2",
+        "transitive_descendants": 27
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic core closes once the determinant-character/log-character homomorphism and unordered-multiset readout surfaces are supplied. The restricted packet does not derive the physical mass/species readout identification or the homomorphism boundary from retained inputs.",
+      "claim_scope": "Conditional algebra on a supplied Record-registrable determinant-character/log-character readout surface: the homomorphic determinant phase is zero, and the AC_phi_lambda sign is erased only on the supplied unordered-multiset orbit surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T05:10:27.501806+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The determinant-character/log-character boundary makes the phase component an R-valued group homomorphism, hence odd, while K/CPT orbit invariance makes it even, so even \u2229 additive forces the phase functional to vanish.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: audit a separate physical-readout theorem identifying the strong-CP mass phase and AC_phi_lambda species data with the supplied determinant-character/log-character and unordered-multiset Record surfaces.",
+      "open_dependency_paths": [
+        "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md",
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 46,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 46
+      },
+      "verdict_rationale": "Issue: the load-bearing zero-phase step is valid algebra, but it depends on an explicit supplied determinant-character/log-character homomorphism readout surface and separate physical-readout identifications. Why this blocks: Record itself supplies finite additivity and K/CPT orbit invariance only; it does not supply phase-group homomorphism, determinant/log-character readout, unordered-multiset physical species readout, or the strong-CP/AC_phi_lambda bridge identifications. Repair target: add or audit a retained theorem identifying the relevant physical mass and species readouts with these supplied Record-registrable surfaces. Claim boundary until fixed: the note supports conditional algebra only, not bridge discharge or downstream admission retirement."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.514546+00:00",
+      "audit_date": "2026-06-21T12:13:32.021091+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "minimal_axioms": null,
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": "Algebraic zeroing of an R-valued determinant-phase homomorphism in a supplied finite determinant-character/log-character readout context with Record K/CPT orbit constancy.",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited.",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "The audited claim is the algebraic orientation invariance of the note-stipulated three-parameter Hermitian circulant class: conjugation flips delta while preserving the unordered spectrum."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": "bounded_theorem",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "no_go",
+          "strong_cp_theta_zero_note": "bounded_theorem",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": "retained_bounded",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "retained_no_go",
+          "strong_cp_theta_zero_note": "retained_bounded",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
+          "strong_cp_theta_zero_note",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+        ],
+        "load_bearing_score": 10.0,
+        "runner_hash": "433efca767402f6282d01607a10c856d1612271f1cf0b086f43a30280524a9e2",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic core closes in the supplied homomorphism/orbit context. The broader row remains conditional because the determinant-character/log-character physical mass readout and AC_phi_lambda unordered-multiset species readout identifications are explicit unclosed bridge premises.",
+      "claim_scope": "Supplied-context algebra: a determinant-phase R-valued homomorphism constant on K/CPT orbits vanishes, with AC_phi_lambda sign-erasure checked only as conditional unordered-multiset algebra and not as a physical-readout bridge discharge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T12:13:32.021091+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The determinant-character/log-character boundary makes the phase component an R-valued additive homomorphism, K/CPT orbit constancy makes it even, and additive oddness plus evenness forces g=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is to keep the algebraic core split as the clean row and add separate retained bridge theorem(s) for the physical determinant and unordered-multiset readout identifications before using this as a consumer bridge.",
+      "open_dependency_paths": [
+        "docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md",
+        "docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md",
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 13,
+        "C": 0,
+        "D": 0,
+        "total_pass": 46
+      },
+      "verdict_rationale": "Issue: the zero-phase determinant-character step is valid class-A algebra, but the downstream strong-CP and AC_phi_lambda uses still depend on supplied determinant-character/log-character, physical mass-readout, and unordered-multiset species-readout identifications not derived in the packet. Why this blocks: Record supplies finite additivity and K/CPT orbit constancy only; the runner checks the algebra and source firewall, not a theorem constructing those physical readout surfaces. Repair target: add retained bridge theorems identifying the relevant physical readouts with the supplied homomorphism/unordered-multiset surfaces, or split the row so only the algebraic core is audited. Claim boundary until fixed: the clean statement is the supplied-context additive-even phase-erasure and sign-evenness algebra, not a bridge discharge for strong-CP or AC_phi_lambda."
+    },
+    {
+      "archived_at": "2026-07-04T15:49:14.872718+00:00",
+      "archived_for_note_hash": "e70fdb483c7caf7b5d3c5c90e8b0f9f56873bf3cfb34c51d538d096da25deb86",
+      "audit_date": "2026-07-04T15:36:04.982817+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "0f59e220b10d98e4819de0a0e2f05defea3e7c10f34a8240c7fd4af0ca77bf97"
+        },
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "minimal_axioms": null,
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": "Bounded source-side algebraic split: in a supplied finite determinant-character/log-character readout context with Record finite additivity/content-determination, bridge-supplied K/CPT orbit constancy, and a supplied R-valued phase homomorphism boundary, the homomorphic determinant phase contribution vanishes while modulus/log-modulus data survives.",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited.",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "Bounded AC_phi_lambda orientation-invariance lemma on the supplied Hermitian circulant class: conjugation sends H(delta) to H(-delta), the unordered spectrum is invariant under k -> -k, and, given the retained unordered-multiset bridge plus relabel convention, sign(delta) is not extra registrable content."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": "bounded_theorem",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "no_go",
+          "strong_cp_theta_zero_note": "bounded_theorem",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": "retained_bounded",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "retained_no_go",
+          "strong_cp_theta_zero_note": "retained_bounded",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
+          "strong_cp_theta_zero_note",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+        ],
+        "load_bearing_score": 11.024,
+        "runner_hash": "433efca767402f6282d01607a10c856d1612271f1cf0b086f43a30280524a9e2",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-wave3-additive-even-20260704",
+      "auditor_confidence": null,
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": null,
+      "claim_scope": "Bounded determinant-character/log-character phase-erasure theorem for a supplied Record-registrable readout context, with strong-CP and AC_phi_lambda consequences only conditional/source-side.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-04T15:36:04.982817+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.359212+00:00",
+      "audit_date": "2026-07-04T16:27:13.677390+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "Within a supplied finite readout context with ORBIT-INDEXING, fixed K/CPT action, sector factorization, and a supplied determinant-character/log-character homomorphism boundary, Record content-determination gives K/CPT orbit constancy for registrable scalar readouts and the homomorphic phase contribution vanishes while log-modulus data survives.",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "minimal_axioms": null,
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": "Bounded algebraic theorem that, in a supplied finite determinant-character/log-character readout context with retained K/CPT orbit constancy and supplied homomorphism boundary, the R-valued phase homomorphism vanishes and only modulus/log-modulus determinant data survive.",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited.",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "Bounded orientation-invariance theorem for the stipulated AC_phi_lambda Hermitian circulant class: conjugation maps H(delta) to H(-delta), the unordered spectrum is invariant under delta -> -delta by the k -> -k relabel, and within the retained_bounded unordered-mass-multiset registrability bridge the sign of delta is not additional registrable content."
+        },
+        "dep_claim_type": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "bounded_theorem",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": "bounded_theorem",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "no_go",
+          "strong_cp_theta_zero_note": "bounded_theorem",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "retained_bounded",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": "retained_bounded",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "retained_no_go",
+          "strong_cp_theta_zero_note": "retained_bounded",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
+          "strong_cp_theta_zero_note",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+        ],
+        "load_bearing_score": 11.024,
+        "runner_hash": "400a855acc40e40310468abbca6dbf31047f471d992af73e2a519fc4166fea55",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-additive-even-round3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The repaired note sources finite Record additivity to the accepted minimal axiom/meta premise and sources both K/CPT orbit constancy and the determinant-character/log-character homomorphism boundary to the retained_bounded supplied-context bridge T1/T2. With those supplied inputs, the phase-free conclusion is exact algebra: homomorphism gives oddness, orbit constancy gives evenness, and an R-valued even-and-odd additive phase functional is zero.",
+      "claim_scope": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-04T16:27:13.677390+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Even (`g(-t) = g(t)`) together with odd (T4: `g(-t) = -g(t)`) gives `g(t) = -g(t)`, hence `g(t) = 0` for every `t`.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if the note is broadened to claim physical readout discharge, Record-derived phase-group additivity, or retirement of the named downstream residuals; no conditional repair is required for the scoped bounded theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 55,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The theorem is now correctly scoped as a bounded supplied-context result, not as a derivation of the supplied readout context or a discharge of the physical strong-CP/AC_phi_lambda bridges. All direct non-axiom dependencies inspected for this row are retained-grade, while `minimal_axioms` is the accepted axiom/meta premise for Record additivity. The current runner completes with SCORECARD PASS=55 FAIL=0 and checks the algebraic zero-phase chain, hostile K-even non-homomorphic counterexamples, AC_phi_lambda parity identities, and source-boundary guard phrases without using external comparators or fitted values. Residual physical readout identifications, strong-CP premise 1, |delta| magnitude, and R2/global topology are explicitly left outside the audited scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py",
+  "title": "Registrable Determinant-Character Readout Is Additive-Plus-Even Hence Phase-Free \u2014 Narrow Bounded Theorem",
+  "transitive_descendants": 34,
+  "verdict_rationale": null
+}

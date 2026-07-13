@@ -1,0 +1,312 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.333,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7eb0a05b8194813c0d7cc6163cb5e41f219f11f8947e2e15aec53fab437a4dd4",
+  "note_path": "docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.503580+00:00",
+      "audit_date": "2026-06-18T03:00:55.689199+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "Finite Cl(3)/O_h algebra lemma: all 48 signed-permutation matrices induce Clifford algebra automorphisms, the pseudoscalar line transforms by det(R), and its O_h average is zero; no strong-CP or lattice-action bridge is audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.39,
+        "runner_hash": "2e56ee915e8b50a6874d8e45a536957f22c8902549102daec8d5cf0855f598d6",
+        "transitive_descendants": 670
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs H directly from the Z^3 nearest-neighbor adjacency, solves the Green columns, forms Pi_R^ext and sigma_R = H Pi_R^ext phi, and checks the shell and reduced-map residuals without helper imports or hard-coded shell constants. The accepted Lattice axiom and retained O_h lift supply the symmetry setting; the finite-grid shell conclusions then follow by first-principles computation plus linearity within the stated scope.",
+      "claim_scope": "Finite-grid scalar lattice-Laplacian shell-localization identity and reduced-shell corollaries for the 15^3 Dirichlet Z^3 nearest-neighbor Laplacian at R = 4, excluding any GR/tensor activation claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T03:00:55.689199+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-18T02:58:05.807148+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite 15^3 zero-Dirichlet Z^3 negative-Laplacian shell-localization identity at R=4 for seven-site star-supported sources, including reduced radial/orbit shell corollaries and excluding nonlinear GR or tensor-valued completion.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-18T03:00:55.689199+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-grid scalar lattice-Laplacian shell-localization identity and reduced-shell corollaries for the 15^3 Dirichlet Z^3 nearest-neighbor Laplacian at R = 4, excluding any GR/tensor activation claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "On the explicit 15^3 zero-Dirichlet lattice with H = 6I - A and R = 4, the seven star-support Green columns induce the same shell-mean, normalized radial DtN, and normalized anisotropic reduced-shell data, so the reduced shell map factors only through total charge Q.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses preserve the finite-grid scalar scope and do not read this as a tensor/GR completion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 14,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing computation is class C: it instantiates the finite nearest-neighbor lattice Laplacian, computes the Green data, exterior truncation, shell source, radial DtN data, and anisotropic orbit mode from H itself. The source code imports only numpy and does not read helper-frontier numerics, fitted constants, external comparators, or the reported c_aniso as an input. The dependencies are acceptable for this bounded scope: the Minimal Axioms entry is an accepted premise, and the O_h lift authority is retained-grade under the rubric. The verdict covers only the finite scalar shell identity and reduced-shell corollaries stated here, not downstream tensor or GR matching."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.881087+00:00",
+      "audit_date": "2026-07-01T07:35:19.654735+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "Finite Cl(3)/O_h algebra lemma: all 48 signed-permutation matrices induce Clifford algebra automorphisms, the pseudoscalar line transforms by det(R), and its O_h average is zero; no strong-CP or lattice-action bridge is audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.781,
+        "runner_hash": "2e56ee915e8b50a6874d8e45a536957f22c8902549102daec8d5cf0855f598d6",
+        "transitive_descendants": 109
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T073519Z-db70e548-lattice_laplacian_shell_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs H directly from the accepted Z^3 nearest-neighbor adjacency, solves the finite Green problems, forms Pi_R^ext and sigma_R, and checks localization, charge, column-independence, and reduced zero-charge annihilation without helper imports or imported numerical surfaces. The audited closure is only for the explicit finite Dirichlet grid and reduced shell surface stated in the note.",
+      "claim_scope": "Finite 15^3 zero-Dirichlet Z^3 nearest-neighbor Laplacian with R=4: seven-star Green columns induce a localized sewing-band shell source and a reduced radial/anisotropic shell map depending only on total charge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:35:19.654735+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "On the explicit 15^3 zero-Dirichlet nearest-neighbor lattice Laplacian, the exterior projection is represented by sigma_R = H Pi_R^ext phi, localized to the sewing band, and the reduced shell response of seven-star-supported sources factors only through total charge Q.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should keep the audited scope fixed to the explicit 15^3 Dirichlet R=4 calculation and re-audit if the claim is broadened beyond that finite shell identity.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing computation is a first-principles finite-lattice calculation from the accepted Lattice premise plus retained-grade cubic symmetry input. The runner source genuinely builds the Laplacian and solves the relevant linear systems; it does not read helper outputs or hard-code the shell profile, DtN kernel, or c_aniso value. The result is clean only within the bounded finite-grid scope and does not audit any nonlinear GR, tensor-valued matching, continuum, or infinite-volume extension."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.464504+00:00",
+      "audit_date": "2026-07-02T00:01:10.156966+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "Finite Cl(3)/O_h algebra lemma: all 48 signed-permutation matrices induce Clifford algebra automorphisms, the pseudoscalar line transforms by det(R), and its O_h average is zero; no strong-CP or lattice-action bridge is audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.781,
+        "runner_hash": "2e56ee915e8b50a6874d8e45a536957f22c8902549102daec8d5cf0855f598d6",
+        "transitive_descendants": 109
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T000110Z-87b49d28-lattice_laplacian_shell_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the finite-grid bounded scope, the calculation closes from the accepted lattice adjacency plus the retained-grade cubic O_h lift. The runner source genuinely constructs H and solves the induced linear systems without helper imports, fitted shell data, or external comparators.",
+      "claim_scope": "Finite 15^3 zero-Dirichlet Z^3 nearest-neighbor Laplacian shell-localization and reduced-shell factorization at R=4 for the seven-site star, with O_h orbit organization; no nonlinear GR or tensor-valued matching law.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T00:01:10.156966+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The runner builds the finite Dirichlet lattice Laplacian H = 6I - A from the Z^3 nearest-neighbor adjacency, solves the seven star-support Green columns, and computes sigma_R = H Pi_R^ext phi to show the shell source localizes and the reduced shell map factors only through total charge.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check if the claim is later expanded beyond the explicit 15^3 zero-Dirichlet R=4 finite-grid identity or used to assert the excluded GR/tensor matching law.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing calculation is first-principles finite linear algebra from the Z^3 nearest-neighbor Laplacian, not a definition, renaming, external match, or tuned-value comparison. The source code constructs the grid, Green columns, exterior projection, shell source, radial/orbit reductions, and arbitrary-source checks directly with numpy, and the cached run reports PASS=14 FAIL=0. The minimal-axiom dependency is an accepted premise and the cited O_h lift is retained-grade, so there is no open one-hop dependency for the bounded finite-shell claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.351060+00:00",
+      "audit_date": "2026-07-09T23:41:02.075118+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "Finite Cl(3)/O_h algebra lemma: all 48 signed-permutation matrices induce Clifford algebra automorphisms, the pseudoscalar line transforms by det(R), and its O_h average is zero; no strong-CP or lattice-action bridge is audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.358,
+        "runner_hash": "2e56ee915e8b50a6874d8e45a536957f22c8902549102daec8d5cf0855f598d6",
+        "transitive_descendants": 115
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-lattice_laplacian_shell_-044",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner directly constructs the nearest-neighbor lattice Laplacian, solves the Green and exterior Dirichlet systems, and derives the shell profiles and anisotropy anchor without helper data or hard-coded expected values. Linearity plus equality of all seven column images establishes factorization through total charge within the audited finite-grid scope.",
+      "claim_scope": "The finite 15^3 zero-Dirichlet realization at R=4, restricted to seven-site-star sources and the stated shell-mean, radial-orbit, and reduced-shell observables.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T23:41:02.075118+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "Building H = 6I - A on the explicit 15^3 Dirichlet lattice and applying it to the exterior-truncated seven star Green columns yields sewing-band sources whose reduced radial and anisotropic shell data depend only on total charge Q.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should confirm that downstream uses preserve the explicit SIZE=15, R=4, seven-site-star, and reduced-shell-observable scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 8,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing computation is a first-principles class-C calculation from the accepted lattice premise, with the retained-bounded cubic-action authority supplying compatible symmetry structure. The source computes rather than imports the Green columns, shell source, radial kernel, and anisotropic coefficient, and all fourteen checks pass. The result is clean only within the note's explicit finite-grid and reduced-observable boundary; it does not establish a general-volume identity or the excluded tensor/GR completion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_laplacian_shell_localization_2026_06_16.py",
+  "title": "Lattice-Laplacian Shell-Localization Identity From Lattice/Cubic Inputs (Bounded)",
+  "transitive_descendants": 113,
+  "verdict_rationale": null
+}

@@ -1,0 +1,316 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "field_equation_derivation_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "self_consistency_forces_poisson_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "791cef4d5223f85df6d063db6c280c2ff35924f3c8df111145d4abb715cdadd3",
+  "note_path": "docs/FIELD_EQUATION_DERIVATION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.105457+00:00",
+      "archived_for_note_hash": "d335923f1a0c5a32d62998853060bd91546195a1873f5694a17032fcdcff6da6",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-09T17:23:36.078507+00:00",
+      "archived_for_note_hash": "00ee4a6d6225212eb7bc2a5cca58a62650247886921f11e770b28e3328d808e5",
+      "audit_date": "2026-04-30T19:32:18.480731+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The restricted packet has no registered primary runner or retained upstream proof artifact for the leaf claim.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Four alternatives (bare Laplacian, biharmonic, heat kernel) all pass the",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: register a runner/proof note for the load-bearing step or cite an audited retained dependency.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: no primary runner or retained one-hop proof artifact is registered for this leaf row. Why this blocks: the audit packet does not expose an independently checkable load-bearing computation. Repair target: register a runner/proof note for the load-bearing step or cite an audited retained dependency. Claim boundary until fixed: safe to cite as a support note without audit-ratified executable closure."
+    },
+    {
+      "archived_at": "2026-05-23T17:05:06.039189+00:00",
+      "archived_for_note_hash": "5e4309eb1da168a9122eaf1931faf89d9e31154e37ed7f61677f47cbfa1a28af",
+      "audit_date": "2026-05-10T20:00:44.320113+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c60e67865df72a5f7bfd178655d5c3dcd44f3463617d3456794bb729ea77cf25",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-019e1379-257f-78b2-8eec-ff1dd2f2843b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Euler-Lagrange algebra closes once the action is stipulated, but the note's stronger claim that screened Poisson is uniquely selected rather than conventionally chosen does not close. The missing step is a theorem deriving the allowed scalar local quadratic action and excluding other local quadratic positive-definite operators or parameter choices from retained inputs.",
+      "claim_scope": "Audited the variational derivation of screened Poisson from the explicitly chosen local quadratic graph field action, not a derivation of that action from upstream axioms.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T20:00:44.320113+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "\"The simplest local quadratic field action on a graph is\" the displayed graph-gradient plus scalar mass plus linear source action, whose variation gives (L + mu^2 I) Phi = G rho.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check only if a new cited theorem derives the field action and uniqueness restrictions rather than stipulating them.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the load-bearing move is the definition/selection of the field action, not a derivation of that action. Why this blocks: varying a chosen action only proves a chosen-action Euler-Lagrange identity and cannot establish non-conventional uniqueness of the field equation. Repair target: add a theorem deriving the action class, scalar mass term, source coupling, and uniqueness restrictions from retained primitives. Claim boundary until fixed: screened Poisson is the Euler-Lagrange equation of the stipulated quadratic graph action."
+    },
+    {
+      "archived_at": "2026-05-29T12:08:48.943828+00:00",
+      "archived_for_note_hash": "0898a51b3bb2e68f292aa458be9bd1f81db48d8e14cbbc59ce5f7f37f71b2c0e",
+      "audit_date": "2026-05-23T20:11:12.478760+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c60e67865df72a5f7bfd178655d5c3dcd44f3463617d3456794bb729ea77cf25",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T201051Z-9f8146ee-field_equation_derivatio-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The variation of the chosen action algebraically gives the screened Poisson equation, but the packet does not close the missing bridge that this chosen action is uniquely forced by the framework rather than assumed. The included runner also reports multiple passing field operators under the consistency battery, so it does not support uniqueness selection.",
+      "claim_scope": "Audited whether the note derives screened Poisson as the Euler-Lagrange equation and uniquely selects it within the stated local quadratic graph-field-action class from the cited packet.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T20:11:12.478760+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Extremizing the displayed local quadratic graph field action gives (L + mu^2 I) Phi = G rho.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a restricted-class uniqueness theorem deriving the local quadratic field action, including why the mass term and source coupling are selected rather than assumed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 4,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The displayed Euler-Lagrange calculation is a valid algebraic consequence of the displayed action, but the action itself supplies the screened-Poisson structure as an input. The cited authority is retained_bounded and explicitly says it is not a uniqueness theorem, while the primary runner finds screened Poisson, bare Laplacian, biharmonic, and heat-kernel variants all pass its stability/TOWARD/norm battery. Therefore the derivation supports a conditional variational representation, not a closed positive theorem that the field equation is uniquely selected."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:20.249704+00:00",
+      "archived_for_note_hash": "ba91135d989b41ae633c942f85de5a2121019df0840f39ebc2b2efd13ae8acf2",
+      "audit_date": "2026-05-29T22:51:44.811769+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c60e67865df72a5f7bfd178655d5c3dcd44f3463617d3456794bb729ea77cf25",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260529-224914-d50a890d-field_equation_derivatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The variational algebra itself closes, but the broader chain still depends on the admitted premise that the local quadratic action, mass term, and source coupling are selected rather than assumed. The missing step is a retained restricted-class action-uniqueness theorem.",
+      "claim_scope": "Whether the note derives the screened Poisson equation from the displayed local quadratic graph action and closes the asserted restricted-class selection of that field equation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T22:51:44.811769+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Extremizing the displayed graph action with respect to Phi_i gives sum_j w_ij(Phi_i - Phi_j) + mu^2 Phi_i = G rho_i, i.e. (L + mu^2 I) Phi = G rho.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained restricted-class theorem deriving the local quadratic field action, including the mass term and source coupling, or narrow the note to only the given-action Euler-Lagrange identity.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Differentiating the edge, mass, and linear source terms gives the stated screened Poisson equation under the usual positive graph-Laplacian convention. However, that only proves the Euler-Lagrange equation of the chosen action; it does not derive why this action, the mass term, or the source coupling are forced by the framework. The runner is a finite numerical battery over four candidate field operators, not a variational derivation, and its own output reports multiple passing field equations rather than unique selection of screened Poisson."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.030264+00:00",
+      "audit_date": "2026-05-31T15:49:09.631827+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "05c498150d8f18e46fc4829d21e015e6fe08a04133d9f16fbff8149e24af7176",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-154712-084e17d2-field_equation_derivatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The result is direct quadratic-form calculus on the displayed action: the graph-gradient, mass, and source derivatives have the stated signs and factors. The cited self-consistency note is not load-bearing for this variational identity and is not used to select the action.",
+      "claim_scope": "For the stipulated finite undirected weighted-graph quadratic action, the audited result is the Euler-Lagrange identity grad_Phi S=(L+mu^2 I)Phi-G_c rho, with the stated stationary screened Poisson equation and positive-mu^2 uniqueness under the standard graph-Laplacian convention.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T15:49:09.631827+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Because L is symmetric, d/dPhi[1/2 Phi^T L Phi]=L Phi, and adding the mass and source derivatives gives grad_Phi S=(L+mu^2 I)Phi-G_c rho.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that repository-wide graph notation continues to use the standard unordered-edge, nonnegative-weight Laplacian convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class A algebraic closure over a stipulated action, not a definition substitution or numerical match. The runner source performs exact rational checks of the Laplacian construction, action gradient, stationary-source witness, constant-mode behavior, positive-mu2 witnesses, and scope firewalls rather than merely printing PASS. Independently, with the standard unordered-edge, nonnegative-weight Laplacian convention, Phi^T L Phi=sum_E w_ij(Phi_i-Phi_j)^2, so the factor 1/2 differentiates to L Phi; the mass and source terms then give the displayed equation. The repaired note explicitly disclaims action selection and operator uniqueness, so no hidden selection theorem is being imported."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_field_equation_variational_scope_repair.py",
+  "title": "Field Equation Variational Identity For A Stipulated Quadratic Graph Action",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

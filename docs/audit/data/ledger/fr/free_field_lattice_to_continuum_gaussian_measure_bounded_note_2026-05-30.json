@@ -1,0 +1,215 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "748b88e4a304ef66c7f1e128bfe9cbf7db0c29569a0880601cee66159182cf1e",
+  "note_path": "docs/FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T19:27:18.117191+00:00",
+      "audit_date": "2026-06-05T23:11:21.211984+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "Free U=1 staggered Euclidean 2-point function for the displayed canonical action/phases: continuum SO(4) bispinor covariance of the free propagator and O(a^2) ell=4 anisotropy of the taste-singlet scalar spectrum/D~ sector, excluding interacting theory, n-point/OS reconstruction, physical-unit readout, and full spin-taste leading finite-a correction."
+        },
+        "dep_claim_type": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded"
+        },
+        "deps": [
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "e3e28736cbf9ff58b6b42323448e8980ef91989121ddb41449710138c5f868a3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-231000-6428c4ef9f-free_field_lattice_to_contin",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop cited authority is retained-grade and supplies the covariance formula, pointwise continuum limit, and taste multiplicity. The remaining steps are standard algebraic/analytic closure: S_a S_a^dagger = Delta_a^{-1} I_4 gives the Frobenius factor 4 and the m > 0 dominating function, while Pfaffian Wick expansion is polynomial in covariance entries.",
+      "claim_scope": "For fixed m > 0 and Schwartz spinor tests, the cited free staggered-Dirac covariance converges to the continuum free Dirac covariance in the smeared sense, and fixed finite fermionic quasi-free Schwinger functions converge as polynomial/Pfaffian functions of that covariance.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T23:11:21.211984+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29:retained_bounded->unaudited",
+      "load_bearing_step": "Since ||S_a(p)||_F^2 = 4/Delta_a(p) and Delta_a(p) >= m^2, the smeared integrand is dominated by (2/m)|f(p)||g(p)|, so dominated convergence upgrades pointwise covariance convergence to smeared covariance convergence, after which fixed quasi-free Schwinger functions converge by Pfaffian polynomial continuity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor may re-check the Brillouin-zone integration-domain convention/extension by zero, but no blocker was found for fixed Schwartz-test smeared convergence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing math closes from the retained_bounded covariance packet plus standard quasi-free Gaussian and dominated-convergence facts. Independent formula checks confirm the signs and normalizations in S_a S_a^dagger = Delta_a^{-1}I_4, ||S_a||_F^2 = 4/Delta_a, the 2/m envelope, and the central-zone Jordan refinement. The runner is not merely printing constants; its checks cover Pfaffian rigidity, smeared convergence, the envelope, a nonconverging control, and one first-principles Clifford/taste multiplicity computation. The note stays within its bounded scope and does not import the transfer-matrix bridge, OS reconstruction, spin-statistics, or interacting-theory claims."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.215911+00:00",
+      "audit_date": "2026-06-10T05:32:02.305162+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "Free U=1 staggered Euclidean two-point function with canonical phases: continuum momentum-space SO(4) Dirac/Kahler-Dirac covariance and O(a^2) ell=4 anisotropy in the taste-singlet scalar-spectrum/displayed D~ sector only."
+        },
+        "dep_claim_type": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded"
+        },
+        "deps": [
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "e3e28736cbf9ff58b6b42323448e8980ef91989121ddb41449710138c5f868a3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-053038-3efa18e1c0-free_field_lattice_to_contin",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop cited authority is retained_bounded and supplies the covariance formula, fixed-momentum continuum limit, and taste multiplicity input. The remaining steps are standard algebraic/analytic closure: Clifford/Frobenius norm identity, a uniform Schwartz-integrable envelope, dominated convergence, and finite Pfaffian polynomial continuity.",
+      "claim_scope": "For fixed m > 0 and Schwartz spinor tests, the cited free staggered-Dirac covariance converges to the continuum free Dirac covariance in smeared form; within a specified free fermionic Gaussian/quasi-free state this implies convergence of fixed finite Pfaffian Schwinger functions and the Grassmann generating functional.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:32:02.305162+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "With the cited pointwise covariance limit, the identity ||S_a(p)||_F^2 = 4/Delta_a(p) and Delta_a(p) >= m^2 give |fbar(p) S_a(p) g(p)| <= (2/m)|f(p)||g(p)|, so dominated convergence yields smeared covariance convergence, after which Pfaffian polynomial continuity yields fixed finite Schwinger convergence.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the convention for treating the lattice momentum domain versus an all-momentum extension; the stated domination works for the usual expanding-Brillouin-zone indicator or periodic extension against fixed Schwartz tests.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The displayed Frobenius identity checks independently from the Clifford relation: S_a S_a^dagger = I/Delta_a, hence ||S_a||_F^2 = 4/Delta_a for a 4-spin block. Since Delta_a >= m^2, the claimed (2/m)|f||g| domination is valid and integrable for Schwartz tests, so the pointwise limit from the retained_bounded covariance packet upgrades to smeared convergence. Pfaffian/Wick maps for fixed finite fermionic Gaussian moments are finite polynomials in covariance entries, so the finite Schwinger hierarchy convergence follows within the explicitly bounded Gaussian/quasi-free scope. The runner performs substantive algebraic and finite-grid checks, including an independent hypercube Clifford-spectrum multiplicity check, and uses no external comparator or tuned input value."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.065170+00:00",
+      "audit_date": "2026-06-12T02:25:40.285313+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "Free U=1 staggered-Dirac Euclidean 2-point function: continuum SO(4) covariance of the displayed taste-spectator spin block, plus the O(a^2) ell=4 anisotropy of the taste-singlet scalar spectrum Delta(p), excluding interacting, n-point, OS-reconstruction, physical-unit, and full finite-a spin x taste leading-correction claims."
+        },
+        "dep_claim_type": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded"
+        },
+        "deps": [
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "e3e28736cbf9ff58b6b42323448e8980ef91989121ddb41449710138c5f868a3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-022307-6d65244338-free_field_lattice_to_contin",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop authority is retained_bounded and supplies the covariance formula, pointwise continuum limit, and taste multiplicity used here. The source note then closes the bounded claim by standard dominated convergence plus finite Pfaffian polynomial continuity, without importing the transfer-matrix bridge or OS reconstruction.",
+      "claim_scope": "For fixed m > 0, the displayed free staggered-Dirac covariance converges against Schwartz spinor tests to the continuum free Dirac covariance, with taste only as four-fold spectral multiplicity; within a specified fermionic quasi-free state this implies convergence of fixed finite Pfaffian Schwinger functions and the Grassmann generating functional.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T02:25:40.285313+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The bound ||S_a(p)||_F^2 = 4/Delta_a(p) with Delta_a(p) >= m^2 gives |fbar(p) S_a(p) g(p)| <= (2/m)|f(p)||g(p)|, so dominated convergence upgrades pointwise S_a(p) -> S(p) to smeared covariance convergence, and Pfaffian/Wick polynomiality then gives fixed finite Schwinger convergence.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the convention boundary between the 4x4 spin-block Frobenius constant and any full 16x16 taste-included covariance; this would change the domination constant but not the convergence argument.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The independent formula check closes the load-bearing math: the Clifford identity gives S_a S_a^dagger = Delta_a^{-1} I_4, hence ||S_a||_F^2 = 4/Delta_a and the stated Schwartz-integrable envelope; Jordan's inequality gives the optional central-zone refinement. The Pfaffian and generating-functional claims are finite polynomial continuity statements inside the already specified quasi-free fermionic category, not a statistics-selection theorem. The runner source performs real finite checks rather than printing constants; its alpha-matrix taste check is first-principles, while the main convergence step remains standard algebraic/analytic closure over retained-grade input."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/free_field_lattice_to_continuum_gaussian_measure_2026-05-30.py",
+  "title": "Free Dirac Gaussian Measure From Smeared Covariance (Bounded Support)",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

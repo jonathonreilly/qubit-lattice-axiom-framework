@@ -1,0 +1,1548 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+    "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.674,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "50cd09dea1a24ac7ff2581c0c8a1f6082079fb2ca23166375c693d161e20a089",
+  "note_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-21T21:59:09.380906+00:00",
+      "audit_date": "2026-05-16T14:02:00.324084+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero locus and species count for the defined standard naive lattice Dirac operator on a hypercubic lattice: 2^d zeros/species, hence 16 at d=4, with no regulator-independent or framework-bridge claim."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "46a705a8dab78b873861e997a54cd1bd1cf6849017bbd8c1d38ba01e06014a6c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260516-140139-20260516T140139Z-ecb56578-staggered_dirac_substep3-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrow claim follows from the two retained cited authorities plus standard integer arithmetic and finite-dimensional linear algebra. The framework-specific 4-taste staggered realization remains open, but the note explicitly excludes that stronger claim from scope.",
+      "claim_scope": "Audited only the abstract d = 4 arithmetic factorization of the naive 16-corner count and its spinor-dimension match to the retained Cl(3,0) complexification split, including the explicit boundary that no framework-specific staggered/Kogut-Susskind reduction is derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T14:02:00.324084+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "At d = 4, the upstream naive-lattice count gives 2^4 = 16, and integer arithmetic factors this as 16 = 4 \u00b7 4, with the spinor factor matching the cited Cl(3,0) complexification chirality-pair dimension dim_C V_+ + dim_C V_- = 2 + 2 = 4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the scope remains limited to the arithmetic-factorization plus spinor-count match and is not later cited as closing the framework-specific Kogut-Susskind taste reduction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "The load-bearing work is a genuine class-A algebraic closure over independent retained-grade inputs: the retained naive theorem supplies the 16-corner count, and the retained Cl(3,0) split supplies the 2 + 2 chirality-pair dimension. The note does not assert the open staggered-realization bridge; it explicitly records that the taste reduction and regulator/substrate selection are not closed here. The runner source performs exact symbolic/enumerative checks consistent with the note rather than merely printing constants."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.176130+00:00",
+      "audit_date": "2026-05-22T16:30:59.723266+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 11.043,
+        "runner_hash": "46a705a8dab78b873861e997a54cd1bd1cf6849017bbd8c1d38ba01e06014a6c",
+        "transitive_descendants": 1054
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T162855Z-d266aadf-staggered_dirac_substep3-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For this narrow scope, retained upstream authorities supply the 16 naive-corner count and the Cl(3) chirality dimensions; the remaining work is exact integer arithmetic and finite-dimensional linear algebra. The framework-specific Kogut-Susskind taste reduction is explicitly outside the audited claim.",
+      "claim_scope": "The audited scope is the narrow algebraic bridge: d=4 naive corner cardinality 16, exact factorization 16=4*4, and the Cl(3) chirality-pair module dimension 2+2=4 matching the spinor-count factor, without claiming framework-specific staggered realization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T16:30:59.723266+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-21T22:16:03.383618+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260521-221407-ab828979-staggered_dirac_substep3-015",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the bounded algebraic bridge: naive d=4 corner cardinality 16, its arithmetic factorization 16 = 4 \u00b7 4, and the match between the spinor-count factor 4 and the retained Cl(3,0) complexification chirality-pair dimension 2 + 2 = 4, with no framework-specific staggered-realization closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-22T16:30:59.723266+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T162855Z-d266aadf-staggered_dirac_substep3-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The audited scope is the narrow algebraic bridge: d=4 naive corner cardinality 16, exact factorization 16=4*4, and the Cl(3) chirality-pair module dimension 2+2=4 matching the spinor-count factor, without claiming framework-specific staggered realization.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "At d=4, the upstream naive count gives 2^4=16, integer arithmetic factors this as 16=4*4, and the upstream Cl(3,0) complexification split gives dim_C V_+ + dim_C V_- = 2+2=4, matching the second 4 factor.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the N_taste/N_spinor labels remain treated as arithmetic labels and not as a framework-realization claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "The cited authorities are retained, and the load-bearing step is a genuine class-A algebraic closure over their outputs rather than a tuned numerical comparator or physical bridge. The runner source actually enumerates the corner set, checks the factorization, and verifies the Pauli/idempotent dimension statements at exact symbolic precision. The bounded negative language is narrowed to non-sufficiency of the restricted inputs, not a universal no-go, so the No-Go gate does not block the narrow clean verdict."
+    },
+    {
+      "archived_at": "2026-07-11T18:23:29.389874+00:00",
+      "archived_for_note_hash": "c54a55a7ebd6424671ebb1d385c0e5fedc22759d03741fc01d2a5dc87a1f909d",
+      "audit_date": "2026-07-11T15:41:09.751466+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central-idempotent split, and 2-dimensional irreducible complex modules; no physical Hilbert-space or lattice-realization bridge was audited.",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 13.593,
+        "runner_hash": "46a705a8dab78b873861e997a54cd1bd1cf6849017bbd8c1d38ba01e06014a6c",
+        "transitive_descendants": 1091
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260711-143506-1ca58681-staggered_dirac_substep3-003",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic and Cl(3) dimension match close, but the identification of one factor as the standard four-taste count and the account of its origin from Hamming grading plus spin-diagonal reduction require an uncited staggered-fermion theorem. The runner assigns those facts as constants and does not derive the missing blocking/projection bridge.",
+      "claim_scope": "Only the exact d=4 identities 2^4=16=4\u00b74 and dim_C V_+ + dim_C V_-=4 were checked; the asserted staggered-taste interpretation and framework-specific non-sufficiency boundary were not closed from the restricted authorities.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T15:41:09.751466+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At d = 4, 16 = 4\u00b74, and the Cl(3,0) chirality-pair module dimension 2+2=4 matches the factor labeled N_spinor.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Compared the arithmetic identity with the retained naive-operator authority's regulator boundary.",
+            "disposition": "CLOSED",
+            "evidence_locator": "that the framework realizes the naive regulator rather than Wilson, staggered, overlap, domain-wall, or another regulator",
+            "evidence_path": "docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Treat the factorization 16=4\u00b74 itself as selecting a four-spinor by four-taste decomposition.",
+            "outcome": "The identity fixes only integer factors and supplies no framework regulator or mode projection.",
+            "prior_witness_id": "naive_regulator_boundary",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "factorization_forces_reduction"
+          },
+          {
+            "attempt": "Checked the exact scope and physical-lattice boundary of the retained Cl(3) authority.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Does **not** identify the abstract Cl(3) site module with a physical per-site Hilbert space on any specific lattice realisation.",
+            "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Use the two Cl(3) chirality modules and their total dimension four to force the complementary taste factor.",
+            "outcome": "The authority supplies abstract modules only and explicitly withholds a physical lattice realization.",
+            "prior_witness_id": "cl3_physical_bridge_boundary",
+            "route_class": "symmetry_or_representation",
+            "route_id": "cl3_dimension_forces_tastes"
+          },
+          {
+            "attempt": "Inspected the source distribution (1,4,6,4,1) and the runner's exhaustive corner enumeration.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Hamming-weight distribution on {0, \u03c0}^4 equals binom(4, k)",
+            "evidence_path": "audit-packet://runner-stdout/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Group the 16 Brillouin-zone corners by Hamming weight and read four tastes directly from those blocks.",
+            "outcome": "The distribution sums to 16 but contains no operation that produces four projected taste sectors.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "hamming_blocks_force_four"
+          },
+          {
+            "attempt": "Compared the kinetic-isotropy primitive's exact geometry declaration with the source's substrate disclaimer.",
+            "disposition": "CLOSED",
+            "evidence_locator": "the Euclidean regulator block `Z^3 x Z_tau` on which loops are computed is hypercubic-symmetric",
+            "evidence_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the approved Z^3\u00d7Z_tau hypercubic OS0 regulator geometry to supply the d=4 substrate required by the comparison.",
+            "outcome": "The primitive partially supplies four-dimensional regulator geometry but does not select a matter Dirac operator, staggered regulator, or projection.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "os0_geometry_supplies_bridge"
+          },
+          {
+            "attempt": "Searched the restricted source, authorities, and runner for an explicit staggered operator, phase map, blocking transformation, or rank/count proof.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "taste_count_d4 = 2 ** (d // 2)",
+            "evidence_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Explicitly instantiate the Kawamoto-Smit spin diagonalization, block the naive modes, and prove that the resulting operator has four tastes.",
+            "outcome": "The source asserts the standard result and the runner assigns taste_count_d4=2**(d//2); no constructive projection is supplied.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "ks_constructive_projection"
+          },
+          {
+            "attempt": "Checked the exact owner-governed boundary in the supplied registry.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content",
+            "evidence_path": "docs/audit/data/owner_governed_premise_nodes.json",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Use the owner-governed AC_phi_lambda retirement as accepted framework authority for taste, Dirac, or chirality content.",
+            "outcome": "The boundary expressly excludes above-C3 taste, Dirac, and chirality content.",
+            "prior_witness_id": "owner_ac_boundary",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "owner_governance_supplies_taste"
+          },
+          {
+            "attempt": "Compared this framing with the note's own requirement of a regulator-specific spin-diagonal projection.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The arithmetic identity `16 = 4 \u00b7 4` does not derive the Kawamoto-Smit form.",
+            "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Reclassify the second factor four as a harmless taste-label convention.",
+            "outcome": "Naming an integer factor is conventional, but claiming four physical staggered tastes is structural and cannot be retired by relabeling.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "taste_as_convention"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "framework matter kinetic/regulator selection on the supplied OS0 carrier",
+            "explicit Kawamoto-Smit projection and resulting taste-count theorem"
+          ],
+          "evidence_locator": "Three structurally distinct ingredients enter such a reduction, none of which is forced by the arithmetic identity:",
+          "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "framework matter kinetic/regulator selection on the supplied OS0 carrier",
+              "left_closes_right": false,
+              "right": "explicit Kawamoto-Smit projection and resulting taste-count theorem",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "framework matter kinetic/regulator selection on the supplied OS0 carrier",
+            "explicit Kawamoto-Smit projection and resulting taste-count theorem"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "No physics conventions admitted beyond the abstract integer arithmetic.",
+          "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "The first factor \"`4`\" is the standard algebraic taste-count `N_taste = 2^{d/2} = 4`",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+              "phrase": "standard algebraic taste-count",
+              "promoted_wall": "explicit Kawamoto-Smit projection and resulting taste-count theorem"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "The Kogut-Susskind reduction at even `d` identifies pairs of opposite-chirality corner clusters via a spin-diagonal projection",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+              "phrase": "The Kogut-Susskind reduction at even d",
+              "promoted_wall": "explicit Kawamoto-Smit projection and resulting taste-count theorem"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor adjacency",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "framework baseline remains physical Cl(3) local algebra on the Z^3 spatial substrate"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "the second factor \"`4`\" is the standard algebraic spinor-count",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+              "phrase": "standard algebraic spinor-count"
+            }
+          ],
+          "scan_scope": "The admitted-context section, R2/R4 proof language, framework-baseline statements, and runner assignments were checked for standard, framework, forced, registered, and projection assumptions.",
+          "unresolved": [
+            "The staggered taste-count and projection are used as facts although the admitted-context section allows no such physics convention."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Load-bearing markdown-link upstream dependencies:",
+          "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+          "scan_scope": "The two retained authorities and the accepted owner-governed boundary used by prior-ruled N1 routes were compared with the exact regulator, physical-lattice, and taste-content residuals.",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "The factorization of the naive count does not select a staggered framework regulator.",
+              "evidence_locator": "regulator-independence of the `2^d` count",
+              "evidence_path": "docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "match": true,
+              "route_id": "factorization_forces_reduction",
+              "witness_id": "naive_regulator_boundary",
+              "witness_residual": "The naive 2^d theorem does not select the framework regulator."
+            },
+            {
+              "claim_residual": "The Cl(3) dimension match does not force lattice taste sectors.",
+              "evidence_locator": "That bridge chains through the one-Grassmann-pair-per-site carrier",
+              "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "match": true,
+              "route_id": "cl3_dimension_forces_tastes",
+              "witness_id": "cl3_physical_bridge_boundary",
+              "witness_residual": "Abstract Cl(3) module dimensions are not identified with a physical lattice Hilbert carrier."
+            },
+            {
+              "claim_residual": "No accepted owner-governed premise supplies the missing staggered taste bridge.",
+              "evidence_locator": "above-C3 taste/Dirac/chirality content",
+              "evidence_path": "docs/audit/data/owner_governed_premise_nodes.json",
+              "match": true,
+              "route_id": "owner_governance_supplies_taste",
+              "witness_id": "owner_ac_boundary",
+              "witness_residual": "The owner-governed AC premise excludes above-C3 taste, Dirac, and chirality content."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "The taste-count factor is therefore decoupled from the cited Cl(3) algebra",
+          "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+          "scan_scope": "The note's not-forced, decoupled, not-sufficient, and lattice-block assertions were checked at arithmetic, algebra-module, corner-set, blocked-hypercube, and framework-realization resolutions.",
+          "statements": [
+            {
+              "evidence_locator": "The arithmetic identity `16 = 4 \u00b7 4` is necessary but **not sufficient**",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+              "phrase": "The arithmetic identity 16 = 4\u00b74 is not sufficient to derive the framework realization.",
+              "tested_resolutions": [
+                "integer arithmetic",
+                "retained-authority dependency scope"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "taste-count factor is the lattice-block Hamming-weight count = 4",
+              "evidence_path": "audit-packet://runner-stdout/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "phrase": "The taste-count factor is a lattice-block Hamming-weight count equal to four.",
+              "tested_resolutions": [
+                "corner-set cardinality",
+                "Hamming-weight distribution"
+              ],
+              "untested_resolutions": [
+                "blocked-hypercube spin-taste decomposition",
+                "rank of the spin-diagonal projection",
+                "framework physical taste sectors"
+              ]
+            },
+            {
+              "evidence_locator": "The cited complexification split bounds only the spinor-count factor",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+              "phrase": "The cited Cl(3) split bounds only the spinor-count factor.",
+              "tested_resolutions": [
+                "complex-algebra dimension",
+                "irreducible-module dimension"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": [
+            "The lattice-block taste statement is broader than the corner enumeration actually tested."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": true,
+              "disposition": "It partially closes the generic d=4 geometry issue by supplying a hypercubic Z^3\u00d7Z_tau loop regulator, but it supplies no matter kinetic operator, staggered phases, or taste projection.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The axioms supply Z^3 locality and M_2(C) site possibilities but expressly do not select a kinetic branch, Dirac carrier, or dynamics.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies neither a regulator nor a mode projection.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units conversion cannot select dimensionless spin-taste structure.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The adopted AC boundary explicitly excludes above-C3 taste, Dirac, and chirality content.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The bare-coupling rescaling convention is unrelated to fermion blocking or taste counting and is not an accepted premise.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization has no bearing on the staggered regulator or taste projection and is not an accepted premise.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All candidates in the supplied partial-closure index were checked across approved primitives, owner-governed premises, conventions, and scope/reclassification possibilities.",
+          "unresolved": [
+            "The kinetic-isotropy primitive partially retires the note's generic substrate-selection language, but no source revision accounts for that narrower wall."
+          ]
+        },
+        "N7_steelman": {
+          "argument": "A hostile reviewer can accept the retained 16-corner theorem, explicitly perform the Kawamoto-Smit spin diagonalization on the supplied four-dimensional OS0 hypercubic regulator, block the fields into hypercubes, and count the residual taste index. If that construction yields four tastes and a four-component spin factor, it would supply exactly the missing bridge and would make the note's R2/R4 interpretation more than an arithmetic label.",
+          "evidence_locator": "The Kogut-Susskind reduction at even `d` identifies pairs of opposite-chirality corner clusters via a spin-diagonal projection",
+          "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+          "resolution": "The restricted packet contains no staggered operator, phase transformation, blocking map, or projected-rank calculation, so this strongest route remains unresolved rather than refuted.",
+          "resolved": false,
+          "route_id": "ks_constructive_projection"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16:previous_audit:0",
+              "evidence_locator": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Earlier clean audit accepted the narrow arithmetic and dimension-match scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16:previous_audit:1",
+              "evidence_locator": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Earlier audit treated the bounded negative language as restricted-input non-sufficiency.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_locator": "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Prior abstract-algebra audit supports only the Cl(3) split and module dimensions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "AC_phi_lambda was retired by owner governance with taste/Dirac/chirality content excluded.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Theta retirement concerns gauge and determinant readout rather than staggered tastes.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Owner governance retires only AC occupancy/readout atoms and excludes taste content.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Unrelated foundational and flavor no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Finite gravity sweep boundaries are unrelated to fermion tastes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Runner-boundary repair guidance is generic and supplies no staggered theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Atomic and reflection-positivity import rules are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Contains broad historical walls but no exact four-taste projection supplier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Coupling-identity boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Gauge coefficient provenance is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Lensing observable walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Carrier registry exhaustiveness caution is structurally similar but concerns a different finite carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Charged-lepton selector walls are outside the audited taste bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Spatial-dimension selection is distinct from the supplied OS0 comparison dimension.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Lorentz-title scope discipline does not supply a fermion projection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Metric reconstruction is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Finite radial-family scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Local Wilson gauge scorecard is unrelated to Wilson/staggered fermion regulator selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Flavor tracial pruning is outside scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Free-Dirac analytic-vector issue does not establish staggered taste blocking.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Gauge-environment contraction walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "A later staggered-phase calculation shows a specified eta product need not select the desired gauge orientation split.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Gravity dispersion boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Weak-field gravity signs are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Cl_4 carrier-selection walls are analogous but concern a different rank-four block and action surface.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Hypercharge normalization reframe is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Cross-lane selector and scale walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Atomic scale and coupling walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Quark source/readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Asymptotic-limit uniformity is unrelated to finite taste counting.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Lensing observable residual is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Finite-path lensing geometry is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Static-source readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Temporal source/readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Empty matter-cone ledger supplies no relevant witness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Planning-selector caution is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Physical-time interpretation is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Neutrino mass-construction walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Neutrino/cosmology scale walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Finite Newtonian replay scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Finite recompute scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Coupling authority boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Packet-memory and decoherence boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Finite-degree differential-equation scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Dimension matching without an intertwiner is structurally analogous and reinforces that 2+2=4 alone supplies no physical carrier map.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Earlier rank-four carrier selection illustrates dimension-match insufficiency but concerns another carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Gauge bootstrap imports and finite-block walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Plaquette diagnostic normalization is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Record selector authority is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "AC registrability and convention-retirement routes do not supply above-C3 taste structure.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Axis selection walls are adjacent to OS0 geometry but do not derive a staggered matter projection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Source-measure readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Statistics forcing remains withdrawn and therefore cannot silently supply the staggered fermion carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Later exact countermodel says the current four-axiom surface does not select a nonzero staggered kinetic law or eight-corner zero set.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "SU(3) cube encoding is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Documentation synchronization is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Family-card finite-scope boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Theta mass-side retirement is unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Theta gauge-side retirement is unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Theta positive-gate walls are unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Theta insertion-selection walls are unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Theta defect-closure walls are unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "AC determinant-power horn selection is below the taste/Dirac layer.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "AC record-orbit occupancy was retired by governance but does not supply taste structure.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "AC R-eta readout was retired by governance but does not supply taste structure.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Casimir block localization is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Record-only mass-readout countermodel is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Finite numerical packet/class-G boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Wide-lattice continuum scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "mechanism": "Physical-readout renaming caution is analogous, but it concerns Yukawa normalization rather than taste reduction.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "framework matter kinetic/regulator selection on the supplied OS0 carrier",
+          "explicit Kawamoto-Smit projection and resulting taste-count theorem"
+        ],
+        "demotion": "bounded-with-corrected-wall-count",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
+              "accepted_premise_type": null,
+              "content_sha256": "8370d488f53e76eae029d2f9925dd69819e2dcfcfb9ce2187f731694ca582144",
+              "cross_cycle_candidate_ids": [
+                "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16:previous_audit:0",
+                "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16:previous_audit:1",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16:previous_audit:0",
+                "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16:previous_audit:1",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
+              "accepted_premise_type": null,
+              "content_sha256": "e41e272e14b51f0a30479c5572720db087e41aa94f6f5a714e6cae3e5f57fd1d",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "audit-packet://runner-stdout/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
+              "accepted_premise_type": null,
+              "content_sha256": "c137d0855a96e06b4d3e43a8e2afcfd0f6b472ca3411fb62351b2d877530c389",
+              "effective_status": null,
+              "path": "audit-packet://runner-stdout/staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+              "roles": [
+                "runner_stdout"
+              ],
+              "verified_locators": [
+                "Hamming-weight distribution on {0, \u03c0}^4 equals binom(4, k)",
+                "taste-count factor is the lattice-block Hamming-weight count = 4"
+              ]
+            },
+            "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "4680139373bd50a87fa48bea3a00e14feb38fd91d3d75e423c67f8b4b5b19a89",
+              "effective_status": "retained",
+              "path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "Does **not** identify the abstract Cl(3) site module with a physical per-site Hilbert space on any specific lattice realisation.",
+                "That bridge chains through the one-Grassmann-pair-per-site carrier"
+              ]
+            },
+            "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "9186702f30a2faa7ce41afd398a0f1956f41f796b704dd34a04047352fd35d99",
+              "effective_status": null,
+              "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "the Euclidean regulator block `Z^3 x Z_tau` on which loops are computed is hypercubic-symmetric"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+              "effective_status": null,
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor adjacency"
+              ]
+            },
+            "docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "c6e5764f245539c5f1a1beb5689bdb4e714c052716491731d1f1f70e05b3c4b6",
+              "effective_status": "retained",
+              "path": "docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "regulator-independence of the `2^d` count",
+                "that the framework realizes the naive regulator rather than Wilson, staggered, overlap, domain-wall, or another regulator"
+              ]
+            },
+            "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "c54a55a7ebd6424671ebb1d385c0e5fedc22759d03741fc01d2a5dc87a1f909d",
+              "effective_status": null,
+              "path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Load-bearing markdown-link upstream dependencies:",
+                "No physics conventions admitted beyond the abstract integer arithmetic.",
+                "The Kogut-Susskind reduction at even `d` identifies pairs of opposite-chirality corner clusters via a spin-diagonal projection",
+                "The arithmetic identity `16 = 4 \u00b7 4` does not derive the Kawamoto-Smit form.",
+                "The arithmetic identity `16 = 4 \u00b7 4` is necessary but **not sufficient**",
+                "The cited complexification split bounds only the spinor-count factor",
+                "The first factor \"`4`\" is the standard algebraic taste-count `N_taste = 2^{d/2} = 4`",
+                "The taste-count factor is therefore decoupled from the cited Cl(3) algebra",
+                "Three structurally distinct ingredients enter such a reduction, none of which is forced by the arithmetic identity:",
+                "the second factor \"`4`\" is the standard algebraic spinor-count"
+              ]
+            },
+            "docs/audit/data/owner_governed_premise_nodes.json": {
+              "accepted_premise_type": "owner_governed_residual",
+              "content_sha256": "5acb432a7dce2e24ecbda4c7e2ca0c8c6e665913f7fc5b708cf900d37d341579",
+              "effective_status": null,
+              "path": "docs/audit/data/owner_governed_premise_nodes.json",
+              "roles": [
+                "premise_registry"
+              ],
+              "verified_locators": [
+                "It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content",
+                "above-C3 taste/Dirac/chirality content"
+              ]
+            },
+            "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "46a705a8dab78b873861e997a54cd1bd1cf6849017bbd8c1d38ba01e06014a6c",
+              "effective_status": null,
+              "path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "taste_count_d4 = 2 ** (d // 2)"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: the constructive Kawamoto-Smit projection route is untested.",
+          "N2: the source's three-wall presentation is not the current minimal wall set after accounting for OS0 geometry and collapsing projection with its taste-count consequence.",
+          "N3: standard staggered taste counting and projection are hidden admitted physics despite the stated arithmetic-only context.",
+          "N5: Hamming-weight enumeration is overextended into an untested lattice-block taste assertion.",
+          "N6: the kinetic-isotropy primitive partially retires the generic substrate wall but is not incorporated into the source boundary.",
+          "N7: the strongest constructive staggered-reduction steelman remains unresolved."
+        ],
+        "narrowed_claim_scope": "Only the exact d=4 identities 2^4=16=4\u00b74 and dim_C V_+ + dim_C V_-=4 were checked; the asserted staggered-taste interpretation and framework-specific non-sufficiency boundary were not closed from the restricted authorities.",
+        "next_route": {
+          "reason_untested": "No supplied authority or runner instantiates the staggered phases, blocking transformation, projected operator, or four-taste rank/count calculation.",
+          "route_id": "ks_constructive_projection"
+        },
+        "prior_claim_scope": "The audited scope is the narrow algebraic bridge: d=4 naive corner cardinality 16, exact factorization 16=4*4, and the Cl(3) chirality-pair module dimension 2+2=4 matching the spinor-count factor, without claiming framework-specific staggered realization.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem \u2014 add a retained one-hop theorem deriving the Kogut-Susskind spin-diagonal blocking and four-taste count on the supplied OS0 matter carrier, revise R4 so Hamming-weight enumeration is not itself presented as the taste derivation, and rerun this row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "The exact arithmetic and Cl(3) module-dimension match are genuine class-A consequences of the two retained authorities. However, R2 and R4 additionally import the standard staggered taste count and spin-diagonal reduction despite the note admitting no physics convention beyond arithmetic. The runner hard-codes the regulator counts and taste formula, while its Hamming enumeration establishes only 16 corners, not four projected tastes. The No-Go Discipline gate also fails because the constructive Kogut-Susskind route remains untested and the current kinetic-isotropy primitive partially changes the note's substrate-wall accounting."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
+  "title": "Staggered-Dirac Substep 3 \u2014 Species Reduction Bridge Narrow Theorem",
+  "transitive_descendants": 1154,
+  "verdict_rationale": null
+}

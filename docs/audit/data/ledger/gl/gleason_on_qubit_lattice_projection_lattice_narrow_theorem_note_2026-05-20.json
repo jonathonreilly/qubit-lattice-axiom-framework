@@ -1,0 +1,451 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09"
+  ],
+  "direct_in_degree": 8,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.49,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "036c82a6b474306529aa37014a1dec37e6f2ed37ebd181c5f29840967e765777",
+  "note_path": "docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-23T12:01:21.819489+00:00",
+      "audit_date": "2026-05-22T00:09:49.740644+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-gleason_on_qubit_lattice-003",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The mathematical application of Gleason closes internally, but the restricted packet cites MINIMAL_AXIOMS_2026-05-20.md with effective_status meta rather than a retained-grade authority. The packet also treats Gleason 1957 as an admitted standard theorem rather than a provided retained dependency, so the audit cannot mark full clean closure under the rubric.",
+      "claim_scope": "For finite \u039b \u2282 Z^3 with |\u039b| \u2265 2, any countably additive probability measure on P(\u2297_{x\u2208\u039b} C\u00b2) has unique Born form Tr(\u03c3P), assuming the stated standard Gleason theorem and the qubit-lattice Hilbert-space setup.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T00:09:49.740644+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+      "load_bearing_step": "Applying Gleason's theorem to the frame function on H_\u039b with dim H_\u039b = 2^|\u039b| \u2265 4 gives f_m(|\u03c8\u27e9)=\u27e8\u03c8|\u03c3|\u03c8\u27e9 and therefore m(P)=Tr(\u03c3P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide a retained-grade authority for the A1+A2 finite-region Hilbert-space construction, or retag the cited axioms authority as an accepted framework premise for audit purposes.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is a standard algebraic/theorem-application step: once H_\u039b is a complex Hilbert space of dimension at least 3 and m is a countably additive projection-lattice probability measure, Gleason gives the density-matrix representation and uniqueness follows by projection separation. No runner is needed for this finite-dimensional theorem application. However, the only supplied cited authority is marked effective_status meta, not retained, and the qubit-lattice Hilbert-space substrate is therefore not a retained-grade input in this restricted packet."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.071799+00:00",
+      "audit_date": "2026-05-23T12:44:33.038675+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T124409Z-efde682d-gleason_on_qubit_lattice-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The axiom-premise authority supplies the qubit lattice finite-region Hilbert space, and the note correctly checks dim H_\u039b=2^|\u039b|\u22654, so the cited Gleason theorem applies. The translation from rank-one frame values to arbitrary finite-rank projections is standard finite-dimensional spectral additivity.",
+      "claim_scope": "For finite \u039b \u2282 Z^3 with |\u039b| \u2265 2, any countably additive probability measure on the projection lattice P(H_\u039b), H_\u039b=\u2297_{x\u2208\u039b}C\u00b2, has a unique density-matrix representation m(P)=Tr(\u03c3P).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T12:44:33.038675+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "Applying Gleason's theorem to H_\u039b with |\u039b| \u2265 2 gives f_m(|\u03c8\u27e9)=\u27e8\u03c8|\u03c3|\u03c8\u27e9 and hence m(P)=Tr(\u03c3P) for every projection P.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the audit lane accepts Gleason's theorem as standard mathematical background rather than requiring it as a separately retained repository dependency.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "There is no runner, so the judgment rests on the note text. The load-bearing move is an algebraic/theorem-application closure: once H_\u039b is the finite complex Hilbert space of dimension at least 3 and m is a countably additive projection-lattice probability measure, Gleason gives the density operator and finite-dimensional additivity gives m(P)=Tr(\u03c3P). The only upstream repository authority is explicitly flagged as an accepted axiom premise, and the note does not overclaim the single-qubit dim-2 case or a full Born-rule derivation chain."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.533431+00:00",
+      "audit_date": "2026-06-05T19:24:12.604636+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": null,
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-192229-2a371f73d1-gleason_on_qubit_lattice_pro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted axiom packet supplies the lattice and one-qubit local algebra, and the note restricts to the finite tensor-product Hilbert spaces where dim H_Lambda >= 3. With the stated Gleason theorem as admitted standard mathematics, the frame-function construction, projection decomposition, and uniqueness argument close.",
+      "claim_scope": "For finite Lambda subset Z^3 with |Lambda| >= 2, a countably additive probability measure on P(H_Lambda) for H_Lambda = tensor_x C^2 has the Born form Tr(sigma P) for a unique density matrix, assuming the stated standard Gleason theorem.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T19:24:12.604636+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Applying Gleason's theorem to H_Lambda with dim H_Lambda = 2^|Lambda| >= 4 gives f_m(|psi>) = <psi|sigma|psi>, and finite additivity over a projection's rank-one decomposition gives m(P) = Tr(sigma P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that the audit lane continues to accept the named Gleason theorem as standard mathematical input for this narrow-theorem granularity.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The quantitative identities in the packet check out: dim H_Lambda = 2^|Lambda| >= 4 for |Lambda| >= 2, an orthonormal-basis sum of rank-one projections is the identity, and a finite-rank projection decomposes into orthogonal rank-one projections giving Tr(sigma P). The cited axiom authority is flagged as an accepted premise, so it does not force a conditional downgrade. No runner was provided, so the judgment is from the source-text math audit alone; no executable computation is needed for this theorem application."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.487750+00:00",
+      "audit_date": "2026-06-13T22:06:22.592115+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 17.309,
+        "runner_hash": null,
+        "transitive_descendants": 1268
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-220421-07aaefe0a7-gleason_on_qubit_lattice_pro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied axiom authority provides the qubit-on-Z^3 substrate as an accepted premise, and the note stipulates the finite tensor-product Hilbert space with dimension 2^|Lambda|>=4. Given the cited standard Gleason theorem, the frame-function and projection-decomposition steps correctly yield the trace form and uniqueness.",
+      "claim_scope": "For finite Lambda subset Z^3 with |Lambda|>=2, assuming the standard Gleason theorem, every countably additive probability measure on P(tensor_x C^2) has a unique density-matrix trace representation.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-13T22:06:22.592115+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-05T22:09:20.094392+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260605-220749-17d5a79c71-gleason_on_qubit_lattice_pro",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For finite regions Lambda subset Z^3 with |Lambda| >= 2 and H_Lambda = tensor_{x in Lambda} C^2, every countably additive probability measure on P(H_Lambda) has the unique density-matrix Born form.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-13T22:06:22.592115+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-220421-07aaefe0a7-gleason_on_qubit_lattice_pro",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For finite Lambda subset Z^3 with |Lambda|>=2, assuming the standard Gleason theorem, every countably additive probability measure on P(tensor_x C^2) has a unique density-matrix trace representation.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Applying Gleason's theorem to the frame function on H_Lambda gives f_m(|psi>)=<psi|sigma|psi>, and orthogonal additivity over a projection decomposition gives m(P)=Tr(sigma P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No runner was provided; a second auditor should only re-check that the audit lane continues to accept the quoted Gleason theorem as standard mathematical input.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "No runner output or source is available, so the audit is from the note text and cited authority. The displayed dimension, frame-function normalization, projection-decomposition trace identity, and uniqueness argument check out independently in finite dimension. The current minimal-axiom authority is flagged as an accepted axiom premise, so it does not create a retained-grade downgrade; no registered primitive is load-bearing for this claim."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.864620+00:00",
+      "audit_date": "2026-07-01T07:59:30.290793+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 10.65,
+        "runner_hash": null,
+        "transitive_descendants": 70
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T075930Z-faadc3ab-gleason_on_qubit_lattice",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-region Hilbert space has dimension 2^|Lambda| >= 4, so the stated Gleason dimension hypothesis is met. The measure axioms produce a bounded frame function on rank-one projections, and finite spectral decomposition of projections recovers m(P)=Tr(sigma P).",
+      "claim_scope": "For finite qubit-lattice regions Lambda with |Lambda| >= 2 and H_Lambda = tensor_{x in Lambda} C^2, any countably additive probability measure on P(H_Lambda) has the unique Born trace form by standard Gleason theory.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:59:30.290793+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Applying Gleason's theorem to the frame function induced by m on H_Lambda with |Lambda| >= 2 gives f_m(|psi>) = <psi|sigma|psi>, hence m(P)=Tr(sigma P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should confirm that the audit lane accepts the quoted Gleason theorem as standard mathematical input rather than requiring a separate retained standard-math dependency row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The framework-specific work is the dimension and projection-lattice/frame-function check, and those steps close from the accepted qubit-lattice premise plus standard finite-dimensional Hilbert-space algebra. The note explicitly admits Gleason's theorem rather than claiming to rederive it; under that stated standard-math import, the Born trace representation and uniqueness follow. The single-site dim-2 case and existence/selection of physical probability measures are correctly outside this theorem's scope."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.415997+00:00",
+      "audit_date": "2026-07-02T00:25:22.359769+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 10.65,
+        "runner_hash": null,
+        "transitive_descendants": 70
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T002522Z-3fd2d32f-gleason_on_qubit_lattice",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The dimension check gives d = 2^|Lambda| >= 4, so the stated Gleason theorem applies to the frame function induced by m. Finite-dimensional spectral decomposition and additivity then recover m(P)=Tr(sigma P), within the stated multi-site projection-lattice scope.",
+      "claim_scope": "For finite Lambda subset Z^3 with |Lambda| >= 2, any countably additive probability measure on P((C^2)^{tensor Lambda}) has the Born trace form with a unique density matrix.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T00:25:22.359769+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Applying Gleason's theorem to H_Lambda with |Lambda| >= 2 gives f_m(|psi>) = <psi|sigma|psi>, and additivity over an eigenbasis yields m(P) = Tr(sigma P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the retained scope conditional on a supplied countably additive projection-lattice probability measure and exclude the dim-2 single-site case.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The only repo dependency is minimal_axioms, explicitly flagged as an accepted axiom premise, and it supplies the Z^3 site substrate plus one-site M_2(C) qubit algebra. The mathematical closure is the standard Gleason hypothesis check, frame-function construction, and finite-dimensional projection decomposition; no additional physical probability, measurement-context, or dynamics bridge is claimed. No runner is present, and no compute artifact is needed because the proof can be judged from the restricted packet."
+    },
+    {
+      "archived_at": "2026-07-10T16:54:49.305998+00:00",
+      "archived_for_note_hash": "272c80c669e28414489c08d779f652fc3af9a5694148a2ae4af6bff9f9d4c191",
+      "audit_date": "2026-07-08T21:05:37.271760+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.658,
+        "runner_hash": null,
+        "transitive_descendants": 403
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-main-context-2026-07-08",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The standard Gleason step is mathematically recognizable, but the framework-specific substrate H_Lambda = tensor_x C^2_x is not supplied by the only direct dependency, minimal_axioms. The current axiom memo supplies per-site M_2(C) and the Z^3 substrate, but explicitly leaves additional physical structure to downstream derivations or bridges.",
+      "claim_scope": "Application of the standard Gleason projection-lattice theorem to finite multi-site qubit-lattice Hilbert spaces with |Lambda| >= 2, conditional on a retained framework authority supplying the finite-region tensor-product Hilbert/projection lattice H_Lambda = tensor_x C^2_x from the per-site qubit and Z^3 substrate.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-08T21:05:37.271760+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "By A1+A2, the per-site operator algebra is M_2(C) acting on C^2; by tensor composition, for finite Lambda subset Z^3, H_Lambda = tensor_{x in Lambda} C^2_x and A_Lambda = tensor_{x in Lambda} M_2(C)_x = B(H_Lambda).",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained finite-region tensor-product/projection-lattice bridge deriving H_Lambda = tensor_x C^2_x and P(H_Lambda) from the current minimal qubit-on-Z3 premises, or explicitly scope this as conditional on that supplied substrate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note's framework-specific move from per-site M_2(C) on Z^3 to the finite-region tensor-product Hilbert/projection lattice H_Lambda = tensor_x C^2_x is not closed by the direct dependency on minimal_axioms. Why this blocks: Gleason's theorem can classify measures after a Hilbert projection lattice is supplied, but the audited row has not supplied a retained authority that the framework's multi-site physical event algebra is exactly that tensor-product projection lattice. Repair target: cite or prove a retained finite-region tensor-product/projection-lattice bridge, or narrow the row to a purely conditional Gleason application whose substrate is supplied as an explicit premise. Claim boundary until fixed: standard Gleason applies to any supplied finite Hilbert space of dimension at least 3, but this row does not yet derive that Hilbert projection lattice from the current framework axioms."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.py",
+  "title": "Gleason's Theorem on the Qubit-Lattice Projection Lattice (Narrow)",
+  "transitive_descendants": 718,
+  "verdict_rationale": null
+}

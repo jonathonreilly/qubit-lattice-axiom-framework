@@ -1,0 +1,224 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "mirror_mutual_information_chokepoint_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "mirror_chokepoint_note",
+    "mirror_chokepoint_boundary_fit_note"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/mirror_chokepoint_joint.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.2,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f351d65fa3ba1a1b0a8c65363da31e0930185bfdca4b2d2c267eb86f3820f794",
+  "note_path": "docs/MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369152+00:00",
+      "archived_for_note_hash": "668c3ce6833570b28c8068468e9ece44f878166c759f82ac2c7873b91636c8b8",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T03:48:09.222638+00:00",
+      "archived_for_note_hash": "cc918e3f55f4b788dc4271e0084f2bf81248a937b5eecbf79463457fba5148fc",
+      "audit_date": "2026-04-26",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The named log exists and the live runner exactly reproduces the finite N=40/60/80/100 MI, d_TV, purity, and descriptive exponent table, including the N=100 MI reversal against mirror. The retained chain is still conditional because the claim is explicitly built on the candidate retained-grade dense mirror-chokepoint family, whose audit remains conditional, and the runner prints diagnostics rather than enforcing the retained/mid-N boundaries as hard gates.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note claims a canonical exact-mirror mutual-information artifact chain on the candidate retained-grade dense chokepoint family, with a bounded mid-N mirror MI advantage over matched random but no clean asymptotic law.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [
+        "docs/MIRROR_CHOKEPOINT_NOTE.md_audited_conditional_family_basis",
+        "scripts/mirror_chokepoint_joint.py_imported_generator_not_registered_as_clean_one_hop_dependency",
+        "runner_prints_diagnostics_without_hard_mid_N_or_non_asymptotic_assertions",
+        "canonical_dense_window_wording_overstates_N100_MI_advantage_boundary"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the finite MI table is live-reproducible, but the candidate retained-grade claim rests on the dense exact-mirror chokepoint family rather than an independently audited family theorem, and its canonical-line wording can be read as a whole-window mirror advantage even though the N=100 row has mirror MI 0.0408 below random MI 0.0574. Why this blocks: a hostile auditor can certify the printed mid-N diagnostic rows, but cannot promote the artifact chain to a clean retained claim while the underlying mirror-chokepoint family is conditional and the pass criteria for mid-N advantage, N=100 reversal, purity interpretation, and non-asymptotic exponent use are not assertion-gated. Repair target: make docs/MIRROR_CHOKEPOINT_NOTE.md or an equivalent family-definition packet clean, add runner assertions for N=40/60/80 mirror MI > random, N=100 non-advantage, seed counts, npl_half/connect_radius/k/layer2_prob, and descriptive-only fits, and revise the canonical retained sentence to say advantage on N=40/60/80 rather than the whole retained dense window. Claim boundary until fixed: it is safe to claim an exact finite diagnostic: for npl_half=60, connect_radius=5.0, k=5.0, 16 seeds, mirror MI exceeds matched random at N=40/60/80, loses at N=100, mirror purity is lower than random at N=60/80/100 but not N=40, and the power-law fits are descriptive only."
+    },
+    {
+      "archived_at": "2026-05-18T00:08:08.567664+00:00",
+      "archived_for_note_hash": "1ab930fc5c97243ad06bf6d28837db7768966f573949e27ef04cfd04aeaf9f38",
+      "audit_date": "2026-05-11T12:58:45.054934+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency."
+        },
+        "dep_claim_type": {
+          "mirror_chokepoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mirror_chokepoint_note": "retained_bounded"
+        },
+        "deps": [
+          "mirror_chokepoint_note"
+        ],
+        "load_bearing_score": 6.807,
+        "runner_hash": "17f119c7cb5cbc43214f39fbe3b402536b3bb8c1f63ef5ba7f44817514d359df",
+        "transitive_descendants": 13
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-20260511-mirror-mi-chokepoint",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner reproduces the finite table, but the cited upstream mirror_chokepoint_note is retained only for the strict NPL_HALF=25, connect_radius=4.0, N=15/25 pocket and explicitly excludes this dense card. The dense-card family support is therefore not wired as a direct retained dependency, and the runner has no assertion gates for the retained sentence.",
+      "claim_scope": "Finite dense-card mirror mutual-information diagnostic only: on npl_half=60, connect_radius=5.0, k=5.0, layer2_prob=0.0, 16 seeds, mirror MI exceeds matched random at N=40,60,80 and falls below matched random at N=100; descriptive fits are not asymptotic laws and no whole-window mirror advantage is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T12:58:45.054934+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On the single parameter card npl_half=60, connect_radius=5.0, k=5.0, layer2_prob=0.0, 16 seeds, mirror MI exceeds matched random MI at N=40,60,80 and falls below matched random at N=100.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge \u2014 wire the dense-card retained authority, most likely docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md if that is the intended parent, or remove the parent-family inheritance and provide an assertion-gated certificate/cache for the exact finite MI sentence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the finite MI table is live-reproducible, but the clean claim chain cites the strict-card mirror parent rather than a retained authority for the dense NPL_HALF=60/connect_radius=5.0 card, and the runner prints measurements without pass/fail assertions for the claimed N=40/60/80 advantage and N=100 reversal. Why this blocks: a retained_bounded audit would otherwise let the row inherit closure from a parent whose audited scope excludes the parameter card actually used here. Repair target: add the correct dense-card retained dependency or make the row explicitly self-contained, then add a certificate/cache with hard assertions for the card parameters, seed count, N=40/60/80 mirror>random checks, and N=100 reversal. Claim boundary until fixed: the printed finite MI table may be cited as a reproducible diagnostic from this runner, but not as a clean retained mirror-family theorem or whole-window/asymptotic advantage."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:53.153515+00:00",
+      "audit_date": "2026-05-18T01:59:51.360201+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows.",
+          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency."
+        },
+        "dep_claim_type": {
+          "mirror_chokepoint_boundary_fit_note": "bounded_theorem",
+          "mirror_chokepoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mirror_chokepoint_boundary_fit_note": "retained_bounded",
+          "mirror_chokepoint_note": "retained_bounded"
+        },
+        "deps": [
+          "mirror_chokepoint_boundary_fit_note",
+          "mirror_chokepoint_note"
+        ],
+        "load_bearing_score": 6.807,
+        "runner_hash": "17f119c7cb5cbc43214f39fbe3b402536b3bb8c1f63ef5ba7f44817514d359df",
+        "transitive_descendants": 13
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-015819-921435c6-mirror_mutual_informatio-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The provided runner source generates the mirror and matched random chokepoint DAGs, propagates amplitudes, computes MI and purity over the declared seeds, and the cached output matches the retained rows. The cited dense-card authority is retained_bounded, and the source claim is explicitly finite rather than an asymptotic family theorem.",
+      "claim_scope": "Finite mirror-vs-random mutual-information diagnostic on the named dense chokepoint card at N=40, 60, 80, 100, with no asymptotic or whole-window advantage claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T01:59:51.360201+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:mirror_chokepoint_boundary_fit_note:retained_bounded->unaudited",
+      "load_bearing_step": "On the single parameter card npl_half=60, connect_radius=5.0, k=5.0, layer2_prob=0.0, 16 seeds, mirror MI exceeds matched random MI at N=40, 60, 80 and falls below matched random MI at N=100; the power-law fits are descriptive only.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the source/cache SHA linkage and whether this lane wants assertion-gated PASS lines for retention bookkeeping, but no scientific blocker appears in the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing MI table is produced by an actual first-principles runner path using the supplied graph generators and propagator, not by hard-coded expected values or a cross-note copied table. Both cited one-hop authorities in the restricted packet are retained_bounded. Because the note narrows the conclusion to the finite N=40/60/80 advantage and explicit N=100 reversal, the bounded claim follows without importing an unclosed asymptotic law."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/mirror_mutual_information_chokepoint.py",
+  "title": "Mirror Mutual Information Chokepoint Note",
+  "transitive_descendants": 12,
+  "verdict_rationale": null
+}

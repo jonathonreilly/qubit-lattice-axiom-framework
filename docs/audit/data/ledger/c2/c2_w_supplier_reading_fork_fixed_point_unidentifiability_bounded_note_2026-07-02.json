@@ -1,0 +1,120 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c040e836d8b2436c6b50553eed6c9a302e8f21e7ab5704ee840131b7fbdb38b4",
+  "note_path": "docs/C2_W_SUPPLIER_READING_FORK_FIXED_POINT_UNIDENTIFIABILITY_BOUNDED_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:37.277132+00:00",
+      "audit_date": "2026-07-09T07:22:46.479838+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09": "The audited claim is only that the current approved Lattice + Quantum + Record baseline plus the registered scale-reference and kinetic-isotropy primitives do not supply a weighting/readout-bridge rule fixing kappa_EW; future derivation or owner-approved admission remains open.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09": "no_go",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09": "retained_no_go",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "e09c2f32f85a7e162a282d1acc8245a59fe7ce91c9a1dd819350b1af6b6c20a1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra checks pass, but the source lists docs/audit/AXIOM_MINIMALITY_POLICY.md as a load-bearing governance surface and the runner directly reads it for the possibility-relabeling/naturality premise. That policy file is not present in the row's ledger deps, so the restricted one-hop dependency packet is incomplete for the step that turns the algebra into the stated reading fork.",
+      "claim_scope": "Bounded two-cell rational-content reading-fork calculation: Record additivity/content-determination plus a policy-section-6 naturality premise yield the READING-X/READING-P fork, diagonal fixed-point unidentifiability, and conditional kappa_EW correspondence; no reading is adjudicated, no CTX-match/wall is closed, and no dictionary, axiom, primitive, or registry edit is claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T07:22:46.479838+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09:retained_no_go->unaudited",
+      "load_bearing_step": "Policy section 6 naturality turns the remaining one-parameter freedom on the supplied two-cell rational-content class into a reading fork: READING-X forces u=v and w=1, READING-P leaves w free, while diagonal fixed-point/readout ratios are independent of the free parameter.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add docs/audit/AXIOM_MINIMALITY_POLICY.md section 6, or a canonical meta/accepted-premise source for its naturality premise, as a direct dependency before re-auditing; alternatively narrow the source so the policy premise is not load-bearing and add a dated downstream-hygiene boundary line to re-enter this row.",
+      "open_dependency_paths": [
+        "docs/audit/AXIOM_MINIMALITY_POLICY.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "Issue: the reading-fork conclusion is load-bearing on AXIOM_MINIMALITY_POLICY.md section 6, but that file is not listed as a direct dependency in the audit ledger while the runner reads it directly. Why this blocks: without that dependency edge, the restricted audit packet cannot verify the naturality/promotion premise used to move from the two-cell linear algebra to the READING-X versus READING-P fork. Repair target: add a ledger dependency edge or accepted-premise/meta authority for the policy section, or rewrite the note so the policy premise is non-load-bearing and fully supplied in an audited source. Claim boundary until fixed: the exact two-cell algebra, diagonal fixed-point checks, and conditional kappa_EW arithmetic may be treated as runner-supported calculations, but not as a retained bounded theorem with complete dependency closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_c2_w_supplier_reading_fork_2026_07_02.py",
+  "title": "C2 W-Supplier Reading Fork and Fixed-Point Unidentifiability",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

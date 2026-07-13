@@ -36,6 +36,8 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 LOG_PATH = REPO_ROOT / "docs" / "audit" / "data" / "repair_class_backfill_log.json"
@@ -273,6 +275,7 @@ def main() -> int:
     )
     args = ap.parse_args()
 
+    ledger_io.ensure_cache()
     ledger = json.loads(LEDGER_PATH.read_text())
     rows = ledger["rows"]
 
@@ -340,7 +343,7 @@ def main() -> int:
             }
         )
 
-    LEDGER_PATH.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
+    ledger_io.save_ledger(ledger)
 
     if LOG_PATH.exists():
         prev = json.loads(LOG_PATH.read_text())

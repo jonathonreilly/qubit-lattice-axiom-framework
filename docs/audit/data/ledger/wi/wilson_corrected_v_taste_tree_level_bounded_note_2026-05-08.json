@@ -1,0 +1,226 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+    "higgs_mass_from_axiom_note"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.807,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "726b28a2bcb3a0d67ee87645639a71156382e32154d0bd3f76ed3e047d5f22ba",
+  "note_path": "docs/WILSON_CORRECTED_V_TASTE_TREE_LEVEL_BOUNDED_NOTE_2026-05-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-12T19:48:32.094388+00:00",
+      "audit_date": "2026-06-12T00:45:51.767408+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_mass_from_axiom_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 7.822,
+        "runner_hash": "28571de23b2b38276751f832ca69d397d5d4b5e2301bead8d6548f2280b75a8d",
+        "transitive_descendants": 39
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-004237-b74011c1f0-wilson_corrected_v_taste_tre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed source-note algebra closes from the retained-bounded staircase multiplicities/Wilson shifts and the parent staggered mean-field spectrum. Independent differentiation gives equations (2) and (3), the r=0 limit gives -8 log(m^2 + 4*u_0^2) and -4/u_0^2, and the Taylor expansion gives +60*r^2/u_0^4.",
+      "claim_scope": "Algebraic audit of the Wilson-corrected tree-level V_taste formula, its first two derivatives at m=0, the r=0 reduction to the parent V_taste, and the leading r^2 curvature coefficient 60 on the stated mean-field surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T00:45:51.767408+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:28571de2->61195101",
+      "load_bearing_step": "Assuming each Hamming-weight k taste corner has eigenvalue 2*r*k +/- 2*i*u_0 after the Wilson shift, the determinant contribution is log((2*r*k + m)^2 + 4*u_0^2), and summing with multiplicities binomial(4,k) gives formula (1).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: update the runner docstring and Part 8 comment/header that still state +40*r^2/u_0^4, then re-run the same restricted audit; no physics derivation change appears needed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 47,
+        "C": 0,
+        "D": 0,
+        "total_pass": 61
+      },
+      "verdict_rationale": "The scientific algebra in the source note is correct as written, including the nonzero first derivative for r != 0 and the leading curvature correction coefficient 60. However, the included runner source still contains stale displayed comments/docstring text claiming a +40*r^2/u_0^4 leading correction, while the executable assertions and source note use +60. Under the strict formula-inventory rule, that source-runner artifact drift prevents a clean verdict until the runner text is reconciled."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:43.023702+00:00",
+      "archived_for_note_hash": "d866c4c297687eae8149df6a081b33fd51d49f73291b11797febc2f1fd3c89ba",
+      "audit_date": "2026-06-12T23:26:55.972074+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_mass_from_axiom_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 7.822,
+        "runner_hash": "611951018bff447acca950f8b3bc38511ebea5a5d71df1697688f54271c8519c",
+        "transitive_descendants": 39
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-232401-b448653ea5-wilson_corrected_v_taste_tre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The calculus, binomial moments, signs, factors, and r->0/leading-r limits check out once the stated Wilson-corrected eigenvalue distribution is assumed. The restricted packet does not derive or verify that the Wilson Hamming-corner shifts and the APBC staggered \u00b12iu_0 spectrum are simultaneous eigenvalues of the combined canonical operator.",
+      "claim_scope": "Audited the closed-form V_taste^W(m), its first two m-derivatives at m=0, the r=0 reduction, and the leading r^2 curvature coefficient within the supplied one-hop packet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T23:26:55.972074+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note assumes that each Hamming-weight class k has Wilson-corrected eigenvalues with real part 2rk + m and imaginary part \u00b12u_0, so |\u03bb + mI|^2 = (2rk + m)^2 + 4u_0^2 and the classes can be summed with binomial(4,k).",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a bounded runner/note that constructs the combined Wilson-plus-staggered mean-field operator on the same APBC minimal block and derives the eigenvalue multiset 2rk \u00b1 2iu_0 with binomial multiplicities.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 61
+      },
+      "verdict_rationale": "The runner is stdlib and genuinely checks coefficient algebra, derivative formulas, binomial moments, and prose boundaries; it does not instantiate the Wilson-corrected staggered operator or compute its spectrum. The cited authorities separately retain the Wilson Hamming staircase and the r=0 staggered mean-field determinant, but the source note imports the combined per-corner eigenvalue as a premise. Because that combined-spectrum/eigenbasis bridge is the step that makes formula (1) true, the theorem is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.711642+00:00",
+      "audit_date": "2026-06-13T23:57:19.625675+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_mass_from_axiom_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 7.992,
+        "runner_hash": "e021dfbdb49a1b6bef25c9b59249e230d3bc27f076f7b06d5231d6d3ec9e8f28",
+        "transitive_descendants": 44
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-235500-cd61c2ec84-wilson_corrected_v_taste_tre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-bounded staircase note supplies the binomial multiplicities and Wilson shifts, while the retained-bounded Higgs parent supplies the uniform \u00b12iu_0 staggered spectrum. From those inputs the potential, derivatives, r=0 limit, and +60 r^2/u_0^4 coefficient follow by direct calculus and binomial moments.",
+      "claim_scope": "Bounded algebraic derivation of the Wilson-shifted tree-level mean-field V_taste formula, its first two m-derivatives at m=0, the r=0 reduction, and the leading small-r curvature correction on the declared retained-bounded Wilson/staggered mean-field surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T23:57:19.625675+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Given the Hamming-weight Wilson shift 2rk and uniform staggered imaginary part \u00b12iu_0, each class contributes log((2rk+m)^2+4u_0^2), so V_taste^W(m)=-(1/2)\u03a3_k binomial(4,k)log((2rk+m)^2+4u_0^2).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check only the simultaneous-use convention pairing the staircase Wilson shift with the parent uniform staggered \u00b12iu_0 spectrum; within the restricted packet that pairing is stated as the bounded surface input.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 47,
+        "C": 0,
+        "D": 0,
+        "total_pass": 61
+      },
+      "verdict_rationale": "The load-bearing mathematics is an algebraic closure over retained-bounded inputs, not a definition, comparator match, or tuned numerical readout. Independent differentiation of the displayed V_taste^W gives equations (2) and (3), and expanding f(x)=(x-u_0^2)/(x+u_0^2)^2 with \u03a3 binomial(4,k)k^2=80 gives the stated +60 r^2/u_0^4 leading correction. The note explicitly confines itself to the symmetric-point bounded formula and does not claim the Wilson-shifted extremum, physical Higgs mass, Wilson coefficient, u_0 value, or +12% gap closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_wilson_corrected_v_taste_tree_level.py",
+  "title": "Wilson-Corrected V_taste Tree-Level Mean-Field Formula Bounded Note",
+  "transitive_descendants": 27,
+  "verdict_rationale": null
+}

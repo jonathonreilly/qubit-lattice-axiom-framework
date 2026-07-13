@@ -1,0 +1,120 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "nn_lattice_rescaled_continuum_identification_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lattice_nn_high_precision_note",
+    "nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10",
+    "nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b8a9c61a8697f4e72e578eef31eb698da72c56cedb51333cfe7686cb3b48a809",
+  "note_path": "docs/NN_LATTICE_RESCALED_CONTINUUM_IDENTIFICATION_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:31.344711+00:00",
+      "audit_date": "2026-05-16T21:47:48.644265+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "lattice_nn_high_precision_note": "Audited only the narrow claim that the specified raw nearest-neighbor lattice kernel is numerically evaluable at h = 0.125 in arbitrary precision and yields a Born-clean row consistent with the cached deterministic-rescale observables.",
+          "nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10": "Bounded numerical audit of the specified 15-component response vector on the deterministic-rescale 3-edge NN lattice at fixed strength 5e-4 through h = 0.03125, including the stated fitted geometric decay and fitted tail estimate; no operator-norm or PDE continuum theorem was audited.",
+          "nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10": "Bounded finite-window audit of the canonical 3-edge NN lattice on the deterministic-rescale lane for h in {0.5, 0.25, 0.125, 0.0625} and strengths {1.25e-4, 2.5e-4, 5e-4, 1e-3, 2e-3}, including the fine-h response fit and critical-schedule threshold check."
+        },
+        "dep_claim_type": {
+          "lattice_nn_high_precision_note": "positive_theorem",
+          "nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10": "bounded_theorem",
+          "nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_nn_high_precision_note": "retained",
+          "nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10": "retained_bounded",
+          "nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "lattice_nn_high_precision_note",
+          "nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10",
+          "nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10"
+        ],
+        "load_bearing_score": 5.0,
+        "runner_hash": "524d6b30e2d34b00c29bee55eda0a91574e1588dcc268f502c89796539331205",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260516-214725-20260516T214725Z-0f9f5ce6-nn_lattice_rescaled_cont-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The provided runner source actually constructs the lattice, propagates the field-free arms, measures centroids, widths, MI, d_TV, and Born residuals, then performs the fitted scaling and Gaussian-bin prediction checks. The conclusion is bounded to that finite fitted window and does not require a full continuum-operator identification.",
+      "claim_scope": "Finite-window numerical diagnostic for the field-free slit-detector decoherence subblock of the deterministic-rescale NN harness with BETA = 0.8, K_PHYS = 5.0, SLIT_Y = 3, PHYS_L = 40, through h = 0.03125.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T21:47:48.644265+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner directly computes the field-free one-arm detector distributions across h values, fits sigma_arm(h) = C_arm * h^alpha on h <= 0.25 with alpha = 0.5256 and R^2 = 0.9996, then uses that fitted Gaussian-arm model to predict MI and d_TV within 0.0005 for h <= 0.125.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the Gaussian-arm tolerance stated in prose as 5e-4 is fully aligned with the runner guard of < 0.05; the cached maximum error is 0.0005, so this does not affect the bounded verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing evidence is a direct numerical computation from the stated NN harness rather than a definition, renaming, external comparator, or imported numerical match. The cited authorities are retained or retained_bounded, and the source note keeps the conclusion within the bounded finite-window diagnostic scope. The runner's guards pass for Born cleanliness, centroid drift, sqrt-h width scaling, and Gaussian-arm MI/d_TV prediction. The audit does not certify a full continuum operator, which the note explicitly excludes."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_nn_rescaled_continuum_identification.py",
+  "title": "NN Lattice Rescaled-Lane Geodesic Scaling Diagnostic",
+  "transitive_descendants": 7,
+  "verdict_rationale": null
+}

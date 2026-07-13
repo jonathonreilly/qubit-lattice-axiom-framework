@@ -1,0 +1,331 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
+    "universal_gr_supermetric_normal_form_note",
+    "universal_gr_polarization_frame_bundle_blocker_note",
+    "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+    "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+    "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.322,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "12ac28db94ede82e190ad9e48a1543a962e0067b6ad3411b781fd728295c3972",
+  "note_path": "docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T08:58:25.586557+00:00",
+      "archived_for_note_hash": "993b5926c7362e8c0a3ecf82ea48b2897b49f5cbf9fbf7ce80d1ac5bdc7f85ea",
+      "audit_date": "2026-06-08T21:26:17.306573+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "universal_gr_polarization_frame_bundle_blocker_note": "Bounded blocker claim that the current universal-GR stack determines a frame-orbit family of candidate localizations, not a canonical Pi_curv projector bundle.",
+          "universal_gr_supermetric_normal_form_note": "Given W[J]=log det(D+J)-log det D and positive invariant background D=diag(a,b,b,b), the local Hessian on symmetric 3+1 perturbations equals the inverse-metric contraction and has the stated canonical diagonal normal form."
+        },
+        "dep_claim_type": {
+          "universal_gr_polarization_frame_bundle_blocker_note": "bounded_theorem",
+          "universal_gr_supermetric_normal_form_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "universal_gr_polarization_frame_bundle_blocker_note": "retained_bounded",
+          "universal_gr_supermetric_normal_form_note": "retained"
+        },
+        "deps": [
+          "universal_gr_polarization_frame_bundle_blocker_note",
+          "universal_gr_supermetric_normal_form_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "e2d050546fe4a5e6baa104ab90954efacd65f06a6d7ebd02e8d942003a934019",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-7ef9f76bff-universal_gr_degenerate_supe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The sign theorem itself is a valid algebraic closure. The restricted packet does not close the imported Regge/Lichnerowicz channel potential or the dynamical gluing law, and the cited GR authorities explicitly leave Einstein/Regge identification open.",
+      "claim_scope": "Conditional bounded no-go: the retained lambda=0 trace=shear supermetric, when paired with the stated opposite-signed Regge/Lichnerowicz comparator potential and omega^2=V/G, forces opposite-signed trace and TT dispersions.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-08T21:26:17.306573+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For any degenerate supermetric with G_trace=G_shear, omega^2_trace * omega^2_TT = (V_trace V_TT)/G^2 < 0 because the stated Regge/Lichnerowicz comparator potentials have opposite sign.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained in-packet derivation of V_trace=-k^2/2, V_TT=+k^2/2 and omega^2=V/G in one consistent trace/TT normalization, then rerun the audit.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
+        "docs/UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner verifies the algebraic sign product and the trace/shear degeneracy checks, but it hard-codes the comparator potential signs rather than deriving them from retained inputs. The source note correctly flags the Regge/Lichnerowicz curvature as comparator method-context, not W-derived, and the cited authorities leave the Einstein/Regge gluing identification open. There is also a normalization drift between the b^-2 supermetric weights used in the note summary and the b^-4 GR-control coefficients in T1, which should be reconciled before a clean verdict."
+    },
+    {
+      "archived_at": "2026-06-09T21:18:35.558858+00:00",
+      "archived_for_note_hash": "bb563bd104b49a0ae658524811777d63c85b5ef127f19ff5b877cdf03d45709d",
+      "audit_date": "2026-06-09T14:54:24.929062+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube.",
+          "universal_gr_polarization_frame_bundle_blocker_note": "Bounded blocker claim that the current universal-GR stack determines a frame-orbit family of candidate localizations, not a canonical Pi_curv projector bundle.",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "Audited the bounded per-mode metric-source Hessian theorem for the scalar lattice-Laplacian and Cl(3)-Dirac determinant symbols, together with the finite tensor-algebra TT-projector frame-dependence and isotropic-average facts.",
+          "universal_gr_supermetric_normal_form_note": "Given W[J]=log det(D+J)-log det D and positive invariant background D=diag(a,b,b,b), the local Hessian on symmetric 3+1 perturbations equals the inverse-metric contraction and has the stated canonical diagonal normal form."
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "universal_gr_polarization_frame_bundle_blocker_note": "bounded_theorem",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_supermetric_normal_form_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained",
+          "universal_gr_polarization_frame_bundle_blocker_note": "retained_bounded",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_supermetric_normal_form_note": "retained"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+          "universal_gr_polarization_frame_bundle_blocker_note",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+          "universal_gr_supermetric_normal_form_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "fef47430ca79e0f7c5eb99989b233e8bd4a20a751966d90b18e8b44867247857",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-bdbe0538be-universal_gr_degenerate_supe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic sign product closes once the comparator signs and V/G gluing law are granted. The restricted packet does not derive those comparator signs or the framework-native dynamical gluing law.",
+      "claim_scope": "Conditional sign algebra: under supplied opposite-signed trace/TT comparator potentials and an assumed omega^2=V/G gluing law, a degenerate trace=shear supermetric forces opposite dispersion signs.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-09T14:54:24.929062+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given G_trace=G_TT=G and V_trace V_TT < 0, omega_trace^2 * omega_TT^2 = (V_trace V_TT) / G^2 < 0, so no overall normalization sign can make both channels healthy in the supplied V/G model.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite retained framework-native finite-k trace/TT curvature signs and the omega^2=V/G gluing law; otherwise keep the row explicitly comparator-conditional.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md",
+        "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
+        "docs/UNIVERSAL_GR_SCALAR_GENERATOR_TT_KERNEL_SHARPENING_BOUNDED_THEOREM_NOTE_2026-06-08.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The independent math check is immediate: the sign of the product is sign(V_trace V_TT) because G^2 is positive, and an overall sign normalization drops out. The runner source checks this algebra and related linear-algebra diagnostics, but it supplies the opposite comparator signs and the omega^2=V/G gluing model rather than deriving them. The cited GR notes explicitly leave the Einstein/Regge or spin-2 curvature-generator identification open, so this is a local supplied-comparator no-go, not framework-native closure."
+    },
+    {
+      "archived_at": "2026-06-11T10:02:32.294716+00:00",
+      "archived_for_note_hash": "5ba7612ce7469c66d9ff4c151d395031192df7352174f6ca9cc75dcdb4269ae7",
+      "audit_date": "2026-06-10T04:04:21.034226+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube.",
+          "universal_gr_polarization_frame_bundle_blocker_note": "Bounded blocker claim that the current universal-GR stack determines a frame-orbit family of candidate localizations, not a canonical Pi_curv projector bundle.",
+          "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09": "Audited only the finite diagonal quadratic-mode gluing law omega^2 = V/G from the stated quadratic Lagrangian with nonzero G; GR comparator signs, the Einstein-Hilbert action, continuum coefficients, and G_Newton are outside scope.",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "Audited the bounded per-mode metric-source Hessian theorem for the scalar lattice-Laplacian and Cl(3)-Dirac determinant symbols, together with the finite tensor-algebra TT-projector frame-dependence and isotropic-average facts.",
+          "universal_gr_supermetric_normal_form_note": "Given W[J]=log det(D+J)-log det D and positive invariant background D=diag(a,b,b,b), the local Hessian on symmetric 3+1 perturbations equals the inverse-metric contraction and has the stated canonical diagonal normal form."
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "universal_gr_polarization_frame_bundle_blocker_note": "bounded_theorem",
+          "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09": "bounded_theorem",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_supermetric_normal_form_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained",
+          "universal_gr_polarization_frame_bundle_blocker_note": "retained_bounded",
+          "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09": "retained_bounded",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_supermetric_normal_form_note": "retained"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+          "universal_gr_polarization_frame_bundle_blocker_note",
+          "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+          "universal_gr_supermetric_normal_form_note"
+        ],
+        "load_bearing_score": 6.322,
+        "runner_hash": "697ef48ea3e122e419197bcdf58f502f48a9f56223cf446e7f36916f14fe875b",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-cb98974d2d-universal_gr_degenerate_supe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic no-go closes once the opposite-signed comparator potentials and the quadratic gluing law are granted. The restricted packet does not derive the comparator signs from the framework, so the chain does not close as a framework-native GR sign theorem.",
+      "claim_scope": "Conditional sign algebra for a degenerate trace=shear supermetric paired with the supplied opposite-signed comparator pair V_trace=-k^2/2, V_TT=+k^2/2 through omega^2=V/G.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-10T04:04:21.034226+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given G_trace=G_TT=G != 0 and V_trace V_TT < 0, omega_trace^2 * omega_TT^2 = (V_trace V_TT) / G^2 < 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the opposite-signed Regge/Lichnerowicz comparator signs from retained framework inputs, or keep the row explicitly conditional on that supplied comparator packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing sign product is correct: if the two kinetic coefficients are equal and nonzero while the potential signs are opposite, an overall sign normalization cannot make both omega^2 signs match. The runner source performs finite algebraic checks and its helper implements the narrow V/G map, but the comparator pair is hard-coded as a supplied premise rather than derived. The no-go discipline gate passes only for the local comparator-gluing boundary; the packet explicitly leaves non-degenerate fiber metrics, framework-native comparator signs, and finite-k W/stress routes open."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:33.985513+00:00",
+      "audit_date": "2026-06-11T13:57:07.967923+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube.",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "The audited scope is the retained 3D cubic-Coxeter six-tetrahedra complex: second variation of S_R about flat, gauge and k=0 consistency, non-metric breathing mass, and leading O(k^2) proportionality to the in-runner-derived 3D Euclidean linearized EH pairing.",
+          "universal_gr_polarization_frame_bundle_blocker_note": "Bounded blocker claim that the current universal-GR stack determines a frame-orbit family of candidate localizations, not a canonical Pi_curv projector bundle.",
+          "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09": "Audited only the finite diagonal quadratic-mode gluing law omega^2 = V/G from the stated quadratic Lagrangian with nonzero G; GR comparator signs, the Einstein-Hilbert action, continuum coefficients, and G_Newton are outside scope.",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "Audited the bounded per-mode metric-source Hessian theorem for the scalar lattice-Laplacian and Cl(3)-Dirac determinant symbols, together with the finite tensor-algebra TT-projector frame-dependence and isotropic-average facts.",
+          "universal_gr_supermetric_normal_form_note": "Given W[J]=log det(D+J)-log det D and positive invariant background D=diag(a,b,b,b), the local Hessian on symmetric 3+1 perturbations equals the inverse-metric contraction and has the stated canonical diagonal normal form."
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "bounded_theorem",
+          "universal_gr_polarization_frame_bundle_blocker_note": "bounded_theorem",
+          "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09": "bounded_theorem",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_supermetric_normal_form_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "retained_bounded",
+          "universal_gr_polarization_frame_bundle_blocker_note": "retained_bounded",
+          "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09": "retained_bounded",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_supermetric_normal_form_note": "retained"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
+          "universal_gr_polarization_frame_bundle_blocker_note",
+          "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+          "universal_gr_supermetric_normal_form_note"
+        ],
+        "load_bearing_score": 7.085,
+        "runner_hash": "c82020b40951b21e06296ce044b371bde8de4bd3c0a45b22384c11ab2ea7b21e",
+        "transitive_descendants": 23
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-e0ffa77995-universal_gr_degenerate_supe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Substitution gives V_trace V_TT=-k^4/4, so for k != 0 and G != 0 the product is negative and an overall sign change of the degenerate G squares out. The result is only this local comparator-gluing obstruction, not a global GR or finite-k stress-route no-go.",
+      "claim_scope": "Local finite-nonzero-k no-go: in the degenerate trace=shear comparator-gluing model, no overall normalization sign can make both trace and TT omega^2 signs healthy when glued to the derived opposite-signed Regge/EH comparator potentials.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-11T13:57:07.967923+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:universal_gr_polarization_frame_bundle_blocker_note:retained_bounded->unaudited",
+      "load_bearing_step": "With G_trace=G_TT=G != 0 and omega^2=V/G, the derived opposite-signed pair V_trace=-k^2/2 and V_TT=+k^2/2 gives omega_trace^2 * omega_TT^2=(V_trace V_TT)/G^2<0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that future source wording keeps the finite nonzero-k qualifier and the local comparator-gluing scope explicit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing step is genuine class-A sign algebra over independent retained-grade inputs: retained degenerate trace=shear supermetric, retained finite quadratic gluing, and retained-bounded derived comparator signs. The primary runner performs real symbolic/algebraic checks for the local EH comparator and the gluing helper, with one cross-note guard for the retained cubic-Coxeter Regge/EH bridge; it does not use an external comparator or tuned scale. The no-go discipline gate passes because the conclusion is explicitly scoped to this degenerate-supermetric comparator-gluing model and leaves non-degenerate fiber metrics, 4D/timelike Regge dynamics, action orientation, and finite-k W/stress routes open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py",
+  "title": "Degenerate Supermetric Sign Algebra With Framework-Derived Opposite-Signed Comparator Signs",
+  "transitive_descendants": 9,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

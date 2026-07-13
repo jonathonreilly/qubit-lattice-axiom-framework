@@ -1,0 +1,616 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_records_objectivity_conditional_note_2026-05-31",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate / conditional-support certificate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+    "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+    "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+    "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f1113a94faff60f034e251fd433016f98401fe7add4f54752639e157f60d8f40",
+  "note_path": "docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.481340+00:00",
+      "audit_date": "2026-06-03T10:52:46.915989+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7605f3fc333c72dca65c8ef1d0e15b3fc1b277d987a162794dac0784c82cff3d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-104924-5993fa23-koide_records_objectivit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The optimizer algebra and Q conversion close on the stated assumptions. The packet does not derive the two assumptions, so the result closes only as a conditional bounded theorem, not as an unconditional Koide derivation.",
+      "claim_scope": "Conditional two-block algebra: assuming equal-block (1,1) weighting and a records/objectivity maximization principle, the capacity extremum is r=1/2 and Q=2/3; dephasing/trace comparison is separated as the dimension-weighted r=1 channel.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T10:52:46.915989+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:pre_record_reference_state_tracial_derivation_note_2026-05-20:retained->unaudited",
+      "load_bearing_step": "For general weights w_s log E_+ + w_p log E_perp, the maximum occurs at r*=w_p/(2 w_s), so equal weights give r=1/2 and Q=(1+2r)/3=2/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: land a retained derivation or explicit accepted admission for the equal-block (1,1) metric and the records/objectivity-maximization selector; also correct the cited kappa authority's non-load-bearing sign-count typo before any clean re-audit.",
+      "open_dependency_paths": [
+        "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md",
+        "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing calculation is class-A algebra: maximizing the weighted two-block log functional gives r*=w_p/(2 w_s), with equal weights yielding r=1/2 and Q=2/3. The same calculation distinguishes the dimension-weighted counterfactual at r=1, so the conditional is non-circular on its own terms. However, the source expressly imports the equal-block metric and objectivity maximization principle, and the cited Koide authorities identify equal-block/weight selection as open or bounded rather than retained as a physical selector. The runner's F5 unforced-premise check is a hard-coded citation/prose assertion rather than an independent computation, and a formula-inventory pass found a non-load-bearing parity typo in the kappa authority validation line: sign = d mod 2 should be 1 for even d and 0 for odd d."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:57.917248+00:00",
+      "archived_for_note_hash": "4a4dafd1b64b9801ab32d3cebbca9435b7fa45a8256255005b2734eac8eb5d0e",
+      "audit_date": "2026-06-06T18:36:29.853711+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique tracial-state characterization for the stipulated one-qubit tensor-product quasi-local algebra over Z^3; the pre-record reference-state identification and downstream consequences are excluded."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7605f3fc333c72dca65c8ef1d0e15b3fc1b277d987a162794dac0784c82cff3d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-183606-ad38b12f11-koide_records_objectivity_co",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic optimization closes on its own terms: with E_+=1/(1+2r) and E_perp=2r/(1+2r), differentiating w_s log E_+ + w_p log E_perp gives r=w_p/(2w_s), hence r=1/2 for (1,1). The missing work is not inside the conditional algebra but in deriving or admitting the two named premises.",
+      "claim_scope": "Given an equal-block (1,1) metric and a records/objectivity maximization input, the two-block Koide algebra selects r=1/2 and hence Q=2/3; the packet also shows that pointer/dephasing alone does not force that weighting.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T18:36:29.853711+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For general weights w_s log E_+ + w_p log E_perp the maximum occurs at r*=w_p/(2 w_s), so equal weights give r=1/2 and Q=(1+2r)/3=2/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly admit the equal-block metric and records/objectivity maximization selector, then re-audit whether the conditional can be promoted.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The displayed optimizer and Q(r) algebra are correct, and the runner source performs real symbolic/numeric checks rather than merely printing constants. However, the result explicitly depends on two unclosed inputs: equal-block weighting and records/objectivity maximization. The cited retained authorities support the surrounding algebra and the freedom/no-go boundaries, but they do not derive those premises."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:28.477661+00:00",
+      "archived_for_note_hash": "566ca63e4a717b7d5a88eedd1bca7234239be835aac010e995b3065b3102c48a",
+      "audit_date": "2026-06-07T17:30:10.443904+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique tracial-state characterization for the stipulated one-qubit tensor-product quasi-local algebra over Z^3; the pre-record reference-state identification and downstream consequences are excluded."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "f1c578ead289c848170c500ee3ee6cb1bc7c4c3ee97c5e2657ba7bf0a3d96c24",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-172824-997e2d1421-koide_records_objectivity_co",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conditional algebra closes: independently, maximizing w_s log E_+ + w_p log E_perp with E_++E_perp fixed gives E_perp/E_+=w_p/w_s, hence r=E_perp/(2E_+)=w_p/(2w_s). The result is not an unconditional derivation because equal-block weighting and the objectivity selector remain named inputs.",
+      "claim_scope": "Source-bounded conditional algebra: if the equal-block (1,1) sector metric and records/objectivity maximization selector are supplied, then the two-block extremum gives r=|b|^2/a^2=1/2 and Q=2/3; the premises themselves are not derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T17:30:10.443904+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the weighted two-block functional w_s log E_+ + w_p log E_perp at fixed total energy, the maximum occurs at r*=w_p/(2w_s); equal weights give r=1/2 and therefore Q=(1+2r)/3=2/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly admit the equal-block sector measure and the records/objectivity selector; otherwise keep this row as a bounded conditional certificate.",
+      "open_dependency_paths": [
+        "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md",
+        "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing step is a straightforward algebraic extremum and the runner source genuinely checks that calculation, with no external comparator or fitted value. The cited retained authorities support the block identities and the boundary that rank/dimension weighting would instead give Q=1. However, the note explicitly imports the equal-block metric and records/objectivity maximization selector as unforced premises, so the audited result is conditional rather than clean. The runner's hard-coded F5 boundary check is not load-bearing on the algebraic extremum."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:53.170805+00:00",
+      "archived_for_note_hash": "061ed242d3822876503900aaf43f66ed90bde952eaf8bb8b937368ee8453af1d",
+      "audit_date": "2026-06-14T01:49:48.828604+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique tracial-state characterization for the stipulated one-qubit tensor-product quasi-local algebra over Z^3; the pre-record reference-state identification and downstream consequences are excluded."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "e4910b8ebdbf20671ccf8aef9e37e37019951ed537cf2af27571c2cc5aed5539",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-014741-09651fe0d2-koide_records_objectivity_co",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional calculus closes, but the chain from retained inputs does not close unconditionally. The missing steps are derivations or approved admissions of the equal-block sector measure and the records/objectivity maximization readout criterion.",
+      "claim_scope": "Audited the source-bounded conditional algebra certificate: if equal-block (1,1) weighting and a records/objectivity maximization selector are supplied, then r=1/2 and Q=2/3 follow; neither premise is derived here.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-14T01:49:48.828604+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For general weights w_s log E_+ + w_p log E_perp, the maximum occurs at r*=w_p/(2 w_s); equal weights give r=1/2 and Q=2/3, while rank/dimension weights give r=1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a narrow retained derivation or explicit approved admission of the equal-block (1,1) sector measure and the records/objectivity maximization selector; otherwise keep this row as a conditional open-gate certificate.",
+      "open_dependency_paths": [
+        "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner source performs real algebraic checks rather than merely printing constants, and an independent normalized-energy calculation gives dS/dr=-(2 r w_s-w_p)/(r(2r+1)), hence r*=w_p/(2w_s), with equal weights giving Q=2/3 and dimension weights giving Q=1. That verifies the non-circular conditional implication. However, the note explicitly imports both the equal-block metric and the objectivity-maximization selector, and the cited authorities leave the weighting/selector issue open rather than deriving it. The Record/tracial comparison does not supply the missing selector; it points to the trace/dimension channel instead."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:37.908604+00:00",
+      "archived_for_note_hash": "7441b027b4a94f6f3b82508d66256eb36909184eb1c21c35557dece7d54b2e4e",
+      "audit_date": "2026-06-16T01:37:59.679833+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique tracial-state characterization for the stipulated one-qubit tensor-product quasi-local algebra over Z^3; the pre-record reference-state identification and downstream consequences are excluded."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 8.17,
+        "runner_hash": "e4910b8ebdbf20671ccf8aef9e37e37019951ed537cf2af27571c2cc5aed5539",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-013510-311a100756-koide_records_objectivity_co",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional algebra closes: weighted log maximization gives `r*=w_p/(2w_s)`, so `(1,1)` gives `r=1/2` and `Q=2/3`. The unrestricted chain does not close because no cited authority derives or approves the equal-block weighting or the records/objectivity selector.",
+      "claim_scope": "Conditional algebra certificate: if equal-block `(1,1)` weighting and records/objectivity maximization are supplied, the two-block extremum gives `r=1/2` and `Q=2/3`; those inputs are not derived.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-16T01:37:59.679833+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the equal-block `(1,1)` metric and records/objectivity maximization, the maximum of `log E_+ + log E_perp` occurs at `r=1/2`, hence `Q=(1+2r)/3=2/3`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly approve the equal-block `(1,1)` sector measure and the records/objectivity maximization selector as framework-native inputs.",
+      "open_dependency_paths": [
+        "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Issue: the note's algebraic extremum is correct, but it assumes the equal-block `(1,1)` measure and records/objectivity maximization rather than deriving them. Why this blocks: the cited authorities explicitly leave the equal-block/F1-vs-F3 selector open, and the Record/tracial comparison supplies the rank/trace channel rather than the objectivity selector. Repair target: provide a retained bridge theorem or approved premise selecting both inputs. Claim boundary until fixed: a non-circular conditional algebra certificate, not an unconditional Koide derivation."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:21.768416+00:00",
+      "archived_for_note_hash": "fe0cc3e3b4eab4de4c58a43751b9b15796d6dfe7a96d647b40f16b6bbb19efe7",
+      "audit_date": "2026-06-18T10:04:45.942923+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique tracial-state characterization for the stipulated one-qubit tensor-product quasi-local algebra over Z^3; the pre-record reference-state identification and downstream consequences are excluded."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "e11ed7daaeec049add53092b512500a30bd019168031fdf944546779bacecaac",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_records_objectivity_conditional_note_2026-05-31-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic extremum closes within the stated conditional scope: once the two selector inputs are supplied, the maximizer and Q value follow. The unrestricted derivation does not close because the equal-block measure and objectivity selector remain supplied premises.",
+      "claim_scope": "Conditional algebra certificate: supplied equal-block (1,1) sector measure plus supplied records/objectivity maximization imply r=1/2 and Q=2/3, without deriving either selector.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T10:04:45.942923+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For general weights w_s log E_+ + w_p log E_perp, the maximum occurs at r*=w_p/(2 w_s); equal weights give r=1/2 and hence Q=(1+2r)/3=2/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly admit the equal-block sector measure and the records/objectivity maximization selector, then re-audit the conditional row with that bridge wired as a dependency.",
+      "open_dependency_paths": [
+        "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "Issue: the equal-block (1,1) sector measure and records/objectivity maximization selector are supplied hypotheses, not derived or registered primitives in the restricted packet. Why this blocks: the algebraic maximization is valid, but it cannot be promoted to an unconditional Koide derivation from Record or dephasing. Repair target: derive or explicitly admit one or both selector inputs in a separate source theorem or primitive and wire it as a dependency. Claim boundary until fixed: cite only as a non-circular conditional algebra certificate under the two supplied premises."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.072892+00:00",
+      "audit_date": "2026-06-21T15:19:02.984374+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure linear algebra on Herm_circ(3): the projector decomposition, Frobenius block totals, equal-weight log extremum at kappa = 2, and d = 3 uniqueness of the clock-action real-irrep pattern among d in {2,3,4,5,6}.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique tracial-state characterization for the stipulated one-qubit tensor-product quasi-local algebra over Z^3; the pre-record reference-state identification and downstream consequences are excluded."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "e11ed7daaeec049add53092b512500a30bd019168031fdf944546779bacecaac",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_records_objectivity_conditional_note_2026-05-31-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes after the two selector inputs are assumed. It does not close from the cited retained authorities alone because the equal-block metric and the records/objectivity maximization principle remain supplied premises.",
+      "claim_scope": "Conditional algebra certificate: if the equal-block (1,1) sector metric and records/objectivity maximization selector are supplied, the two-block extremum gives r=1/2 and Q=2/3; neither selector input is derived here.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T15:19:02.984374+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:pre_record_reference_state_tracial_derivation_note_2026-05-20:retained_bounded->unaudited",
+      "load_bearing_step": "Under the supplied equal-block (1,1) log functional/objectivity selector, maximizing log E_+ + log E_perp at fixed E_+ + E_perp gives E_+ = E_perp, i.e. r=1/2 and Q=(1+2r)/3=2/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly admit the equal-block (1,1) sector measure and records/objectivity maximization selector, then re-audit the conditional certificate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "Issue: the load-bearing algebra is correct, but it depends on the explicitly supplied equal-block (1,1) metric and records/objectivity maximization selector. Why this blocks: the cited authorities establish the block algebra, weighting frontier, isotype-weight freedom, and trace comparison boundaries, but do not derive either selector input. Repair target: derive or explicitly admit the equal-block sector measure and the objectivity selector in separate retained authority. Claim boundary until fixed: this is a non-circular conditional certificate, not an unconditional Record-axiom or framework derivation of Koide."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.256678+00:00",
+      "audit_date": "2026-07-02T06:33:16.115298+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure linear algebra on Herm_circ(3): the projector decomposition, Frobenius block totals, equal-weight log extremum at kappa = 2, and d = 3 uniqueness of the clock-action real-irrep pattern among d in {2,3,4,5,6}.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique tracial state on the one-qubit-per-site Z^3 tensor-product quasi-local algebra, with finite-region density I/2^|\u039b| and equivalent finite-region entropy/unitary-invariance characterizations; no pre-record-reference identification audited."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "e11ed7daaeec049add53092b512500a30bd019168031fdf944546779bacecaac",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T063316Z-1f9578ff-koide_records_objectivit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The extremum algebra closes conditionally: differentiating the fixed-total equal-weight log functional gives the unique maximum at `r=1/2`, and `Q=(1+2r)/3=2/3`. The full chain from retained/framework inputs does not close because the equal-block sector measure and records/objectivity selector are supplied rather than derived.",
+      "claim_scope": "Audited the source-bounded conditional algebra: supplied equal-block `(1,1)` sector weighting plus supplied records/objectivity maximization selects `r=1/2` and `Q=2/3`; neither selector input is derived in the packet.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-02T06:33:16.115298+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:pre_record_reference_state_tracial_derivation_note_2026-05-20:retained_bounded->unaudited",
+      "load_bearing_step": "For the two-block functional `w_s log E_+ + w_p log E_perp` at fixed total energy, the maximum occurs at `r*=w_p/(2w_s)`, so supplied equal weights `(1,1)` give `r=1/2` and hence `Q=(1+2r)/3=2/3`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly admit the equal-block `(1,1)` sector measure and the records/objectivity maximization selector, then re-audit this conditional as a downstream theorem.",
+      "open_dependency_paths": [
+        "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "Issue: the optimizer algebra is correct, but the equal-block metric and records/objectivity maximization selector enter as supplied premises. Why this blocks: the cited authorities leave the weighting/selector choice open, and the Record/tracial comparison does not derive the objectivity selector. Repair target: derive or explicitly admit the equal-block sector measure and objectivity selector in separate retained-grade source work. Claim boundary until fixed: this is a non-circular conditional algebra certificate, not an unconditional Koide theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py",
+  "title": "Koide Records Objectivity Conditional: Equal-Block Metric Plus Objectivity Gives r=1/2",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

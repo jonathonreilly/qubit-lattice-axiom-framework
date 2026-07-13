@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2cd8d90f53fde1a14abf594ae1d57d44271b3d87e7361ea194aca798c8127bb3",
+  "note_path": "docs/TWO_BAND_ORBITAL_RESPONSE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-12T17:13:05.196793+00:00",
+      "audit_date": "2026-06-18T15:19:19.550598+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "Finite Q=24, Ly=2 staggered Harper one-particle cell at T=0.2, mu=1.7086, B=1e-3 finite-difference reference, masses m=0,0.2,0.3,0.5, and fixed 2e-2 tolerance; not a continuum, flux-quantized, strict B->0, or boundary-root theorem."
+        },
+        "dep_claim_type": {
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "bd03ff95e5638ffcac8ca7ce28d79de0d71f4f86ea64fd853e9025d3488eb9fc",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source actually performs the Pauli/star-product algebra and residue checks supporting the nonconstant ratio, and recomputes the finite-cell Peierls anchors before using them. The disclosed no-fudge residual is scoped as residual, not claimed as full closed-form completion.",
+      "claim_scope": "Audited the fixed-scope free d=2 staggered two-band model claim that the 47/120 scalar R Omega_z^2 interband ansatz is refuted, with the corrected star-product residue and disclosed finite-cell residual at mu=1.7086, T=0.2, m in {0,0.2,0.3,0.5}.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T15:19:19.550598+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The symbolic star-product residue gives the d2/dB2 core (f_- - f_+)(qx^2+qy^2)/(4 R^5), so its ratio to R Omega_z^2 is (qx^2+qy^2)/m^2 rather than a constant.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second audit should re-check the star-product convention and residue sign/factor-of-two choices; primitive registry files were absent from the restricted workspace but the inline primitive list is not relevant to this claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 12,
+        "C": 13,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The load-bearing scalar-prefactor refutation is a genuine algebraic closure over the displayed two-band Hamiltonian and star-product calculation, not a renaming or tuned numerical match. The one cited authority is marked retained_bounded, which is retained-grade under the rubric, and the runner has no missing helper imports. The note does not overclaim full lattice completion; it explicitly preserves the positive over-capture residual as follow-on work."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_two_band_orbital_closed_form_2026_06_12.py",
+  "title": "Two-Band Orbital Response: Refutation And Corrected Star-Product Result",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

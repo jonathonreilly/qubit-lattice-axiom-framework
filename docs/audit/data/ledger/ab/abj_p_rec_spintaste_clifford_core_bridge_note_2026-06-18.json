@@ -1,0 +1,1367 @@
+{
+  "audit_date": "2026-07-13T02:07:44.434211+00:00",
+  "audit_invocation_history": [
+    "6625b3bc993d4979b0cdc19c80025d46",
+    "6b0122bda3cd46e1a365fdca3a95fbcc"
+  ],
+  "audit_invocation_id": "6b0122bda3cd46e1a365fdca3a95fbcc",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 10.907,
+    "runner_hash": "7d96d9ecd7b1fec9fa862648e9569841d5d2952d96ace36c42837c77afc142db",
+    "transitive_descendants": 1357
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-B-20260713-c7e34044",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The explicitly defined finite matrices determine every claimed algebraic property, and the runner computes the Clifford relations, algebra and commutant dimensions, chirality projectors, and epsilon distinctions directly. The interacting physical-chirality identification is expressly outside the audited scope.",
+  "claim_id": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+  "claim_scope": "Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-07-13T02:07:44.434211+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
+    "first_audit": {
+      "audit_date": "2026-07-13T02:07:44.427807+00:00",
+      "audit_invocation_id": "6625b3bc993d4979b0cdc19c80025d46",
+      "auditor": "codex-audit-batch-A-20260713-a3aace78",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
+      "claim_type": "bounded_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-07-13T02:07:44.434211+00:00",
+      "audit_invocation_id": "6b0122bda3cd46e1a365fdca3a95fbcc",
+      "auditor": "codex-audit-batch-B-20260713-c7e34044",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 10.907,
+  "load_bearing_step": "The staggered alpha_mu matrices generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, while Gamma_5^spin is taste-singlet and epsilon lies outside the spin algebra and fails to commute with the full taste commutant.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
+  "note_hash": "d2b7e3a2d55eea824728e75668d2116c941d21a7d97e3f78b120d14786fa0938",
+  "note_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": "",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:25.677908+00:00",
+      "audit_date": "2026-06-21T06:06:05.294656+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.131,
+        "runner_hash": "7d96d9ecd7b1fec9fa862648e9569841d5d2952d96ace36c42837c77afc142db",
+        "transitive_descendants": 1120
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The alpha_mu matrices are fully specified by the finite eta_mu phase rule, so the Clifford identities, rank, commutant dimension, gamma5 properties, and epsilon distinction are direct matrix-algebra checks. The physical P-REC readout is explicitly outside this bounded theorem and is not used to close the audited algebraic core.",
+      "claim_scope": "Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a Cl4 spin algebra with a 16-dimensional taste commutant, a taste-singlet spin gamma5, and epsilon is distinct/taste-dressed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T06:06:05.294656+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T06:02:54.117641+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite algebraic audit of the canonical 2^4 blocked free staggered hypercube: Cl_4 alpha_mu relations, rank-16 spin algebra, 16-dimensional taste commutant, taste-singlet Gamma_5^spin, and epsilon's non-singlet status.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T06:06:05.294656+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a Cl4 spin algebra with a 16-dimensional taste commutant, a taste-singlet spin gamma5, and epsilon is distinct/taste-dressed.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The algebra generated by the alpha_mu has rank 16, its commutant has dimension 16, and Gamma_5^spin = alpha_0 alpha_1 alpha_2 alpha_3 commutes with that commutant while epsilon does not.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The finite definitions of eta_mu and alpha_mu determine the matrices, and the Clifford, rank/commutant, gamma5, projector, and epsilon-distinction claims follow by direct algebra. The runner source constructs the matrices and computes ranks/nullspaces rather than merely printing constants; an independent finite-matrix check reproduced Cl4 residual 0, rank 16, commutant nullity 16, gamma5 identities, and epsilon residual 4. The two textual guardrail checks are ancillary and do not supply the algebraic theorem."
+    },
+    {
+      "archived_at": "2026-07-12T17:09:27.910534+00:00",
+      "audit_date": null,
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": null,
+      "audit_status": "audit_in_progress",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": "Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T14:20:53.503874+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-11T14:20:53.503874+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00009-abj_p_rec_spintaste_clifford",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "The runner compares epsilon with both Gamma_5^spin and minus Gamma_5^spin entrywise.",
+                "disposition": "CLOSED",
+                "evidence_locator": "epsilon is not plus or minus the taste-singlet spin gamma5",
+                "evidence_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Identify site parity directly with either sign of the spin volume element.",
+                "outcome": "Both comparisons have unit maximum discrepancy, closing the direct-equality shortcut.",
+                "route_class": "algebraic_rearrangement",
+                "route_id": "eps_direct_equality"
+              },
+              {
+                "attempt": "The runner projects epsilon onto the complete sixteen-word Clifford basis by least squares.",
+                "disposition": "CLOSED",
+                "evidence_locator": "epsilon is not in the generated spin Clifford algebra",
+                "evidence_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Treat epsilon as another element of the generated spin Clifford factor despite its unequal matrix form.",
+                "outcome": "The computed norm residual is 4.000, so epsilon is outside the generated spin algebra.",
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "eps_spin_membership"
+              },
+              {
+                "attempt": "The runner constructs the full commutant nullspace and evaluates epsilon's commutators with its basis.",
+                "disposition": "CLOSED",
+                "evidence_locator": "epsilon is taste-dressed: it fails to commute with the full taste commutant",
+                "evidence_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Use epsilon as a taste-singlet chirality operator because it anticommutes with every alpha_mu.",
+                "outcome": "The nonzero commutator test closes the taste-singlet route.",
+                "route_class": "symmetry_or_representation",
+                "route_id": "eps_taste_singlet"
+              },
+              {
+                "attempt": "The packet compares the shared anticommutation property with independent spin-algebra-membership and full-commutant tests.",
+                "disposition": "CLOSED",
+                "evidence_locator": "also anticommutes with every `alpha_mu`",
+                "evidence_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Promote anticommutation with the kinetic generators alone into a physical chirality readout.",
+                "outcome": "Anticommutation is insufficient because epsilon passes it but fails both taste-singlet criteria.",
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "anticommutation_readout"
+              },
+              {
+                "attempt": "The supplied premise registries and partial-closure index were checked for taste, Dirac, chirality, or physical-readout content.",
+                "disposition": "CLOSED",
+                "evidence_locator": "above-C3 taste/Dirac/chirality content",
+                "evidence_path": "docs/audit/data/owner_governed_premise_nodes.json",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Treat an accepted premise or retired AC residual as already supplying the interacting physical-chirality bridge.",
+                "outcome": "The superficially adjacent owner-governed entry expressly excludes above-C3 taste/Dirac/chirality content.",
+                "route_class": "dependency_or_registry_reclassification",
+                "route_id": "registry_physical_bridge"
+              },
+              {
+                "attempt": "The runner computes singular-value rank of the sixteen Clifford words and nullity of the simultaneous commutator system.",
+                "disposition": "CLOSED",
+                "evidence_locator": "generated spin Clifford algebra has rank 16 and taste commutant has dimension 16",
+                "evidence_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Challenge the claimed spin/taste factorization by a rank-deficient Clifford span or incorrectly sized commutant.",
+                "outcome": "Both dimensions are checked as sixteen, closing the finite-representation degeneracy challenge.",
+                "route_class": "numerical_or_finite_case",
+                "route_id": "finite_rep_degeneracy"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "epsilon is not the taste-singlet spin gamma5",
+                "the interacting single-taste physical-chirality bridge is not supplied"
+              ],
+              "evidence_locator": "Remaining P-REC residual",
+              "evidence_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+              "pairwise_checks": [
+                {
+                  "independent": true,
+                  "left": "epsilon is not the taste-singlet spin gamma5",
+                  "left_closes_right": false,
+                  "right": "the interacting single-taste physical-chirality bridge is not supplied",
+                  "right_closes_left": false
+                }
+              ],
+              "unresolved": [],
+              "walls": [
+                "epsilon is not the taste-singlet spin gamma5",
+                "the interacting single-taste physical-chirality bridge is not supplied"
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "No interacting gauge-theory chirality",
+              "evidence_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+              "hits": [
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "canonical free staggered action",
+                  "evidence_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+                  "phrase": "canonical free staggered action"
+                },
+                {
+                  "classification": "hidden_admission",
+                  "evidence_locator": "anomaly-carrying physical chirality",
+                  "evidence_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+                  "phrase": "anomaly-carrying physical chirality",
+                  "promoted_wall": "the interacting single-taste physical-chirality bridge is not supplied"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "It does **not** close full `P-REC`.",
+                  "evidence_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+                  "phrase": "does not close full P-REC"
+                }
+              ],
+              "scan_scope": "The source setup, theorem, consequence, boundaries, runner imports, and supplied premise registries were checked for unstated carrier, chirality, taste, continuum, interaction, selector, and readout assumptions.",
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "No anomaly-to-inconsistency theorem is derived here.",
+              "evidence_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+              "none_found_reason": "All N1 dispositions are ATTEMPTED, so no prior-witness residual match is required.",
+              "scan_scope": "No N1 route was ruled out solely by a prior witness; every listed route was tested using the restricted source, runner, or supplied registries.",
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "The result is finite-algebraic source support for re-audit",
+              "evidence_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+              "scan_scope": "All negative and closure-boundary phrases were checked against the finite resolution actually computed.",
+              "statements": [
+                {
+                  "evidence_locator": "epsilon is not plus or minus the taste-singlet spin gamma5",
+                  "evidence_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+                  "phrase": "not plus or minus the taste-singlet spin gamma5",
+                  "tested_resolutions": [
+                    "entrywise equality on the stated 16-dimensional blocked hypercube"
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "epsilon is not in the generated spin Clifford algebra",
+                  "evidence_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+                  "phrase": "epsilon is not in the generated spin Clifford algebra",
+                  "tested_resolutions": [
+                    "membership in the full sixteen-word generated matrix span"
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "epsilon is taste-dressed: it fails to commute with the full taste commutant",
+                  "evidence_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+                  "phrase": "epsilon is taste-dressed",
+                  "tested_resolutions": [
+                    "commutation with the complete numerical commutant nullspace"
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "It does **not** close full `P-REC`.",
+                  "evidence_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+                  "phrase": "does not close full P-REC",
+                  "tested_resolutions": [
+                    "finite free blocked algebraic core only"
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+                  "could_close_wall": false,
+                  "disposition": "It supplies kinetic-form isotropy only, not spin/taste reconstruction or physical chirality readout.",
+                  "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:minimal_axioms",
+                  "could_close_wall": false,
+                  "disposition": "The minimal axioms supply no Dirac carrier, chiral gauge representation, continuum bridge, or physical readout identification.",
+                  "evidence_locator": "approved_primitive:minimal_axioms",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:realized_state_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Pointwise realized-state evaluation supplies neither the finite Clifford theorem nor the missing physical chirality bridge.",
+                  "evidence_locator": "approved_primitive:realized_state_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:scale_reference_primitive",
+                  "could_close_wall": false,
+                  "disposition": "A dimensionful units reference has no bearing on these dimensionless finite-matrix identities or their physical interpretation.",
+                  "evidence_locator": "approved_primitive:scale_reference_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+                  "could_close_wall": false,
+                  "disposition": "Its exact boundary expressly excludes above-C3 taste/Dirac/chirality content.",
+                  "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "kind": "owner_governed"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+                  "could_close_wall": false,
+                  "disposition": "Bare-coupling normalization is unrelated to spin/taste algebra and is not an accepted physical-chirality premise.",
+                  "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "kind": "convention_reframe"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "convention_reframe:hypercharge_identification_note",
+                  "could_close_wall": false,
+                  "disposition": "Hypercharge normalization convention does not identify staggered spin gamma5 with anomaly-carrying physical chirality.",
+                  "evidence_locator": "convention_reframe:hypercharge_identification_note",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "kind": "convention_reframe"
+                }
+              ],
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "owner_governed_residual",
+                "tier_a_derivation_target",
+                "tier_a_convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "The supplied partial-closure index was checked across approved primitives, owner-governed residuals, live Tier-A targets, conventions, definitions, and scope reframes.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "Epsilon is a Hermitian involution that anticommutes with every kinetic alpha_mu, so it appears to satisfy the defining algebraic behavior expected of gamma5 and might be used directly as chirality.",
+              "evidence_locator": "spin gamma5 and epsilon commute but are independent trace-orthogonal involutions",
+              "evidence_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+              "resolution": "The steelman fails because anticommutation alone does not select the spin factor: epsilon is outside the generated Clifford algebra and fails to commute with the full taste commutant, while Gamma_5^spin passes both tests.",
+              "resolved": true,
+              "route_id": "anticommutation_readout"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18:previous_audit:0",
+                  "evidence_locator": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18:previous_audit:0",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "A prior fresh audit found the same finite Clifford and epsilon-distinction closure; its invalidation was procedural packet incompleteness.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Owner-governed retirement of AC occupancy and R-eta residuals excludes the taste/Dirac/chirality bridge needed here.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+                  "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Theta retirement concerns gauge weighting and determinant phase, not finite spin/taste reconstruction.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "The owner-governed boundary explicitly withholds above-C3 taste/Dirac/chirality content.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Unrelated campaign no-go memory.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Finite gravity-sweep scope boundary unrelated to Clifford reconstruction.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Audit-source repair boundaries unrelated to the finite matrix theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Atomic-stability and RP-axis restrictions do not affect the blocked hypercube algebra.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "It concerns a different Cl4 carrier-selection wall on a rank-four block, not this defined sixteen-dimensional staggered representation.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Coupling-normalization boundary unrelated to spin/taste algebra.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Plaquette-coefficient evidence boundary unrelated to the present theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Lensing observable and finite-path walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Flavor-carrier orbit symmetry does not bear on this Clifford commutant.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Charged-lepton selector walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Spatial-dimension selection bounds are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Lorentz-restoration scope is consistent with, but not load-bearing for, this finite theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Causal-metric reconstruction boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Radial-family replay boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Wilson-environment closure boundary is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Flavor-sector tracial pruning is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "The Wigner-bridge analytic-vector wall is downstream and unrelated to the finite algebra.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Gauge-environment character contraction walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "A related eta-product shortcut fails to source a gauge-orientation split; it neither contradicts nor supplies the present spin volume element.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Gravity dispersion bridge is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Weak-field gravity sign boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "A Cl4-module selection obstruction on P_A concerns an unselected rank-four carrier, unlike the explicitly defined blocked staggered representation here.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Hypercharge normalization and species readout walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Campaign-level mass and scale obstructions are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Atomic scale and threshold walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Quark mass selector and readout walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "The uniform asymptotic-limit wall is unrelated to an exact finite calculation.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Detector-centroid multipole obstruction is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Finite-path lensing surrogate failure is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Physical static-source readout wall is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Temporal source/readout selection wall is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "The empty larger-cell no-go ledger contributes no conflicting wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Planning-priority boundary is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Physical-time emergence boundary is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Neutrino mass-construction walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Neutrino cosmology scale walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Newtonian finite-lattice replay scope is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Frozen-log and basin-language boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Coupling-authority boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Finite packet-memory inference boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Finite-window differential-equation bounds are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "A different carrier-selection problem shows dimension matching alone is insufficient; this note explicitly constructs the full staggered matrices and generated algebra.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "P_A carrier uniqueness failures concern a projected rank-four block, not this canonical blocked staggered surface.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Plaquette bootstrap and solver limitations are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Plaquette diagnostic-normalization errors are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Record-selector authority boundaries reinforce that physical readout is separate but do not affect finite algebra.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Registrability and determinant-readout routes concern different residuals.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Axis selection and transfer-generator locality walls are downstream of this defined four-direction algebra.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Source semantics and physical response-basis walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Statistics forcing is withdrawn, but the theorem assumes only the stated free staggered matrix surface.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "The minimal axioms do not select the staggered kinetic law; this does not contradict the finite theorem once that canonical law is specified.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "SU3 cube-encoder fidelity boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Documentation synchronization is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Three-family card scope is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Theta determinant-channel readout walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Theta gauge-sector readout and action walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Theta positive-gate walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Theta insertion-selection wall is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Theta defect-closure wall is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "AC determinant-power horn selection is distinct and does not supply chirality.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Record-orbit occupancy nonsupply is distinct from spin/taste reconstruction.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "R-eta formation/readout nonsupply is distinct from physical chirality.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "The artifact-visibility gap in a gravity Casimir derivation is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "The Record-only mass-readout countermodel is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Hard-coded finite-table matching is unrelated; the present runner constructs its matrices rather than importing a result table.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "Continuum and universal-distance scope boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "mechanism": "The Yukawa renaming wall is inapplicable because this note does not identify Gamma_5^spin with physical anomaly chirality; it leaves that bridge open.",
+                  "retired": false
+                }
+              ],
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "evidence_snapshot": {
+              "entries": {
+                "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "265c8eb333d3b0d989b34a70cd902543d4f2e8d410a1935317f2aa924ae4df82",
+                  "cross_cycle_candidate_ids": [
+                    "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18:previous_audit:0",
+                    "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "tier_a_retirement:strong_cp_theta_zero_note"
+                  ],
+                  "effective_status": null,
+                  "path": "audit-packet://cross-cycle-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "roles": [
+                    "cross_cycle_index"
+                  ],
+                  "verified_locators": [
+                    "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18:previous_audit:0",
+                    "no_go_cross_cycle_index_v1",
+                    "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "tier_a_retirement:strong_cp_theta_zero_note"
+                  ]
+                },
+                "audit-packet://partial-closure-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "1b41f3e73a9c6db958a99c9d9e6f3781d9b3f3cc38b51ccebf73210b9fa62809",
+                  "effective_status": null,
+                  "partial_closure_candidate_ids": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "convention_reframe:g_bare_rigidity_theorem_note",
+                    "convention_reframe:hypercharge_identification_note",
+                    "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+                  ],
+                  "path": "audit-packet://partial-closure-index/abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+                  "roles": [
+                    "partial_closure_index"
+                  ],
+                  "verified_locators": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "convention_reframe:g_bare_rigidity_theorem_note",
+                    "convention_reframe:hypercharge_identification_note",
+                    "no_go_partial_closure_index_v1",
+                    "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+                  ]
+                },
+                "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "d2b7e3a2d55eea824728e75668d2116c941d21a7d97e3f78b120d14786fa0938",
+                  "effective_status": null,
+                  "path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+                  "roles": [
+                    "source"
+                  ],
+                  "verified_locators": [
+                    "It does **not** close full `P-REC`.",
+                    "No anomaly-to-inconsistency theorem is derived here.",
+                    "No interacting gauge-theory chirality",
+                    "Remaining P-REC residual",
+                    "The result is finite-algebraic source support for re-audit",
+                    "also anticommutes with every `alpha_mu`",
+                    "anomaly-carrying physical chirality",
+                    "canonical free staggered action"
+                  ]
+                },
+                "docs/audit/data/owner_governed_premise_nodes.json": {
+                  "accepted_premise_type": "owner_governed_residual",
+                  "content_sha256": "5acb432a7dce2e24ecbda4c7e2ca0c8c6e665913f7fc5b708cf900d37d341579",
+                  "effective_status": null,
+                  "path": "docs/audit/data/owner_governed_premise_nodes.json",
+                  "roles": [
+                    "premise_registry"
+                  ],
+                  "verified_locators": [
+                    "above-C3 taste/Dirac/chirality content"
+                  ]
+                },
+                "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "7d96d9ecd7b1fec9fa862648e9569841d5d2952d96ace36c42837c77afc142db",
+                  "effective_status": null,
+                  "path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+                  "roles": [
+                    "runner"
+                  ],
+                  "verified_locators": [
+                    "epsilon is not in the generated spin Clifford algebra",
+                    "epsilon is not plus or minus the taste-singlet spin gamma5",
+                    "epsilon is taste-dressed: it fails to commute with the full taste commutant",
+                    "generated spin Clifford algebra has rank 16 and taste commutant has dimension 16",
+                    "spin gamma5 and epsilon commute but are independent trace-orthogonal involutions"
+                  ]
+                }
+              },
+              "schema": "no_go_evidence_snapshot_v1"
+            },
+            "failures": [],
+            "required": true,
+            "status": "PASS"
+          },
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "invalidation_reason": "cross_confirmation_first_audit_no_go_packet_invalid:0067578c5db0",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 10,
+    "B": 2,
+    "C": 0,
+    "D": 0,
+    "total_pass": 12
+  },
+  "runner_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+  "title": "ABJ P-REC Spin/Taste Clifford-Core Bridge",
+  "transitive_descendants": 1357,
+  "verdict_rationale": "The load-bearing result is an exact finite-dimensional algebraic closure over matrices fully specified in the note, not a renamed physical identification or tuned numerical comparison. The runner genuinely constructs those matrices and computes all load-bearing properties rather than printing expected constants. The theorem remains correctly bounded to the free blocked algebraic surface and does not claim the separate interacting, gauged, single-taste physical bridge."
+}

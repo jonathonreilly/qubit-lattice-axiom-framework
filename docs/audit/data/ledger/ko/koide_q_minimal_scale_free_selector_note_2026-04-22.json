@@ -1,0 +1,393 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_q_minimal_scale_free_selector_note_2026-04-22",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.409,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e279f63126df1b6b3ea1273a3dee3de9d880cf6d5160d7e78c67e547151f98e4",
+  "note_path": "docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T13:40:45.888934+00:00",
+      "archived_for_note_hash": "7b2433a71c61c9af683130d9b65bcc25c28931f6dabd0c9da451d23ae4e90815",
+      "audit_date": "2026-04-30T19:13:57.321009+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-ca82-local-fresh-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner solves the invariant linear and quadratic scalar spaces, verifies linear invariants are not scale-free, verifies the quadratic invariant sector is two-dimensional before quotienting, and verifies the unique nontrivial scale-free ratio relations with 8/8 passes. The source note scopes this to the admitted second-order carrier and leaves the physical value law open.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "On the admitted second-order returned carrier, C3 invariance leaves no nontrivial scale-free linear scalar and exactly one nontrivial scale-free quadratic selector ratio, equivalent to E_perp/E_+, 2/kappa, and Q.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The exact support claim closes: once the second-order carrier is admitted, the selector variable is unique up to reparametrization. This clean audit does not close native Koide Q, because the carrier admission and physical value law are explicitly outside this row."
+    },
+    {
+      "archived_at": "2026-05-12T08:18:40.750585+00:00",
+      "archived_for_note_hash": "2d2e50a54bef78cd12d09b75333336492dc0536c501a383ecdad77e5fe106103",
+      "audit_date": "2026-05-11T14:52:51.968043+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 4.748,
+        "runner_hash": "61ac75f73c64ef5c306242b5704fa13de356405237039b23294a309713902937",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The invariant-theory algebra closes and the runner reports PASS=8 FAIL=0. The note explicitly depends on accepting the second-order returned mass carrier and the staggered-Dirac realization context, neither of which is closed as a direct retained dependency in this audit packet.",
+      "claim_scope": "Uniqueness of the minimal scale-free C3-invariant quadratic selector on a stipulated second-order returned Koide-Q carrier, excluding derivation of that physical carrier or value law.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T14:52:51.968043+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On the second-order returned carrier, C3-invariant linear scalars are proportional to r0 and not scale-free, while quadratic invariants are A r0^2 + C(r1^2+r2^2), leaving exactly one nontrivial scale-free ratio E_perp/E_+ after quotienting by scale.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or directly wire the second-order returned Koide-Q carrier and the stated staggered-Dirac realization gate before re-auditing physical selector closure.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the selector variable is unique only after the second-order returned carrier is admitted. Why this blocks: the audit packet proves invariant uniqueness on a stipulated carrier, but it does not derive that carrier as the physical Koide-Q selector surface or derive the value law. Repair target: wire and close the second-order returned-carrier theorem and the staggered-Dirac realization gate, or split this row as pure invariant theory over a named formal carrier. Claim boundary until fixed: exact uniqueness of the scale-free quadratic C3 invariant on the stipulated carrier."
+    },
+    {
+      "archived_at": "2026-06-11T21:38:38.189319+00:00",
+      "archived_for_note_hash": "d4f80c30482462be975cc98df7cfbcca705caac0049f768194974fea361b76c5",
+      "audit_date": "2026-06-11T13:53:50.543171+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 8.426,
+        "runner_hash": "61ac75f73c64ef5c306242b5704fa13de356405237039b23294a309713902937",
+        "transitive_descendants": 85
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-135103-bb6f1bb08e-koide_q_minimal_scale_free_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local invariant-theory calculation closes: the real C3 representation splits into a fixed line plus a two-dimensional rotation plane, giving one linear invariant and two quadratic invariant coefficients. The full audited chain does not close because the exact second-order returned carrier and the cited staggered-Dirac realization authority are admitted/not retained-grade in the restricted packet.",
+      "claim_scope": "For an admitted real three-slot returned carrier with cyclic C3 action and r0 nonzero, the minimal scale-free invariant content through quadratic order is one-dimensional, represented by E_perp/E_+, Q, or the stated kappa reparametrization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T13:53:50.543171+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At quadratic order the C3-invariant quadratic scalar space is exactly two-dimensional, Q(x)=A r0^2+C(r1^2+r2^2), so removing overall scale leaves the single nontrivial ratio rho_Q=(r1^2+r2^2)/(2 r0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: re-audit after docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md and the admitted second-order carrier path have retained-grade closure, with the kappa normalization bridge either included or scoped as notation.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "An independent representation-theory check matches the runner: fixed covectors are multiples of (1,1,1), and invariant symmetric quadratic forms are the two-parameter family with equal diagonal and equal off-diagonal entries. The normalizations E_+=r0^2/3 and E_perp=(r1^2+r2^2)/6 give E_perp/E_+=(r1^2+r2^2)/(2r0^2), and Q=(1+rho_Q)/3 follows algebraically. However, the source explicitly rests on the admitted second-order carrier and a one-hop cited authority marked effective_status unaudited/bounded, so the result cannot be audited_clean from this packet."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:11.130770+00:00",
+      "archived_for_note_hash": "ec49ba779e4149f05e7700aebf7cc47d8dee9893f15ca96b62b8f459d7495cb6",
+      "audit_date": "2026-06-12T00:51:24.100724+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 8.426,
+        "runner_hash": "61ac75f73c64ef5c306242b5704fa13de356405237039b23294a309713902937",
+        "transitive_descendants": 85
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-004910-205c9e441a-koide_q_minimal_scale_free_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The invariant-theory count itself checks out algebraically: the linear invariant is only r0, and the quadratic invariant family is exactly two-dimensional, leaving one scale-free ratio. The full carrier identification remains conditional on the cited staggered-Dirac realization parent, which is marked unaudited in the restricted packet, and the kappa normalization bridge is asserted as convention rather than independently derived here.",
+      "claim_scope": "Algebraic uniqueness, up to reparametrization, of the minimal nontrivial scale-free C3-invariant quadratic selector on an admitted three-slot returned carrier.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T00:51:24.100724+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At quadratic order the C3-invariant quadratic scalar space is two-dimensional, spanned by r0^2 and r1^2+r2^2, so quotienting by overall scale leaves exactly one nontrivial ratio rho_Q=(r1^2+r2^2)/(2r0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: re-audit after the staggered-Dirac realization parent, or a verified registered Tier-A admission packet including the relevant admission registry and kappa-normalization bridge, is provided at retained-grade or accepted bounded-tier status.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner genuinely performs symbolic algebra for the C3 invariant count and the independent check confirms the key factors: r1^2+r2^2=4(S-P), rho_Q=(r1^2+r2^2)/(2r0^2), and Q=(1+rho_Q)/3=S/(u+v+w)^2. This supports the abstract selector-uniqueness claim on the three-slot carrier. However the source note explicitly depends on the staggered-Dirac second-order carrier admission, and the only cited authority for that carrier is marked effective_status unaudited. The displayed rho_Q=2/kappa equivalence also depends on a named circulant convention not derived from the restricted packet."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:33.384979+00:00",
+      "archived_for_note_hash": "f76779831754ea77ece6e7f2909e27b1e3aad6a11e133fc37ec20d51e52f1874",
+      "audit_date": "2026-06-12T23:20:37.269694+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 8.426,
+        "runner_hash": "f4a113b2f653250447ec04c62cf421983abb3c9cdceed7177bff5953a9b76f62",
+        "transitive_descendants": 85
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-231654-1b2cb3d1eb-koide_q_minimal_scale_free_s",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The invariant-theory calculation closes algebraically: C3 fixes only span(r0) at linear order and fixes the two-parameter equal-diagonal/equal-off-diagonal quadratic family, whose homogeneous scale quotient has one ratio. The kappa bridge also closes from the retained Frobenius authority via a=r0/3 and b=(r1+i r2)/6; the staggered-Dirac carrier is admitted at bounded scope rather than derived here.",
+      "claim_scope": "On the admitted three-slot second-order carrier with cyclic C3 action and the cited Frobenius normalization, the minimal nontrivial scale-free quadratic selector is unique up to reparametrization and satisfies E_perp/E_+ = 2/kappa and Q = (1+rho_Q)/3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T23:20:37.269694+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At quadratic order the C3-invariant scalar space is exactly two-dimensional, A r0^2 + C(r1^2+r2^2), so quotienting by overall scale leaves exactly one nontrivial invariant ratio rho_Q = E_perp/E_+.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the registered Tier-A admission metadata for the carrier in a full repo packet; the isolated workspace did not contain the primitive registry files, and no registered primitive is load-bearing for this selector algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 5,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing step is a direct algebraic identity check, not a definition or numerical match: independent C3 representation counting gives the stated one linear invariant and two quadratic invariant generators. The normalization factors check out: E_+=3(r0/3)^2=r0^2/3, E_perp=6((r1^2+r2^2)/36)=(r1^2+r2^2)/6, hence E_perp/E_+=(r1^2+r2^2)/(2r0^2)=2/kappa. The note does not use the kappa=2 value-law or claim to derive the carrier realization, so the theorem closes in its stated bounded admitted-carrier scope."
+    },
+    {
+      "archived_at": "2026-06-21T08:24:33.925287+00:00",
+      "audit_date": "2026-06-18T05:00:25.169974+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 8.926,
+        "runner_hash": "0719f9c33826d4871da704fd1f8910f6ff26f541e805420664d82c361bfdb3ff",
+        "transitive_descendants": 85
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_q_minimal_scale_free_selector_note_2026-04-22-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The invariant count follows directly from elementary `C_3` invariant theory on the explicit three-slot carrier, and the `2/kappa` bridge follows from the retained one-hop Frobenius authority using the stated coordinate normalization. The note explicitly excludes the staggered-Dirac carrier identification and physical value law from the load-bearing claim.",
+      "claim_scope": "Exact abstract invariant-count theorem on the explicit real three-slot `C_3` carrier, plus the retained Frobenius-normalization bridge identifying the unique ratio with `E_perp/E_+` and `2/kappa`; no physical carrier identification or value law is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-18T05:00:25.169974+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "At quadratic order, the `C_3`-invariant scalar space is exactly two-dimensional, `Q(x)=A r0^2 + C(r1^2+r2^2)`, so after quotienting by overall scale there is exactly one nontrivial scale-free ratio `rho_Q=E_perp/E_+`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor may re-check the domain convention at `E_+=0`; this affects the affine ratio chart, not the one-parameter projective invariant count.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 5,
+        "D": 3,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure: linear invariants reduce to the trace line, quadratic invariants reduce to the two basis scalars `r0^2` and `r1^2+r2^2`, and the scale quotient leaves one nontrivial ratio. The cited kappa authority is marked retained and supplies only the Frobenius block normalization used in Section 4. The runner source performs symbolic invariant solving and normalization checks rather than importing a fitted value or hard-coding the contested premise, though some non-load-bearing guard checks are textual or tautological. Within the stated abstract scope, no open physical bridge is consumed."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.055073+00:00",
+      "audit_date": "2026-06-21T10:59:05.262361+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure linear algebra on Herm_circ(3): the projector decomposition, Frobenius block totals, equal-weight log extremum at kappa = 2, and d = 3 uniqueness of the clock-action real-irrep pattern among d in {2,3,4,5,6}."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 8.926,
+        "runner_hash": "0719f9c33826d4871da704fd1f8910f6ff26f541e805420664d82c361bfdb3ff",
+        "transitive_descendants": 85
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_q_minimal_scale_free_selector_note_2026-04-22-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The invariant-count step closes by elementary C3 permutation-invariant quadratic-form algebra: invariant symmetric matrices have one diagonal and one off-diagonal parameter, equivalently the r0^2 and r1^2+r2^2 basis. The retained cited Frobenius theorem supplies E_+=3a^2 and E_perp=6|b|^2, and the stated coordinate substitution gives E_perp/E_+=2/kappa exactly.",
+      "claim_scope": "Audited the abstract real three-slot C3 invariant-count theorem and the algebraic normalization bridge E_perp/E_+=2/kappa; no physical carrier identification or value-law selection is included.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-21T10:59:05.262361+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "At quadratic order, the C3-invariant scalar space is exactly two-dimensional, Q(x)=A r0^2+C(r1^2+r2^2), so quotienting by overall scale leaves exactly one nontrivial ratio rho_Q=E_perp/E_+.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should recheck the ratio chart at r0=0/E_+=0 is understood as outside the displayed E_perp/E_+ coordinate, not as a physical value-law claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 5,
+        "D": 3,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over the explicit carrier, not a physical import or definition substitution. The runner source actually solves the linear and quadratic invariance equations and checks the normalization bridge; it does not import a fitted value or hard-code the physical carrier premise. The only cited upstream authority is marked retained, and the note explicitly excludes the open physical carrier-identification and value-law choices from the audited scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_q_minimal_scale_free_selector.py",
+  "title": "Koide Q Minimal Scale-Free Selector",
+  "transitive_descendants": 84,
+  "verdict_rationale": null
+}

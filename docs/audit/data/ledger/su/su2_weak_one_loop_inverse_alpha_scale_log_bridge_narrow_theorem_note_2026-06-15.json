@@ -1,0 +1,196 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+    "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+    "scale_reference_primitive",
+    "hierarchy_formula_honest_status_note_2026-05-10"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "550b589007a1d1cca3656cd07109b1e48a24c3d2470a0153f69daabdfaa92d2b",
+  "note_path": "docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:33:32.484168+00:00",
+      "audit_date": "2026-06-16T01:57:33.190816+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "Bounded T1 structural-support theorem: naive d=4 species count, matching u_0-degree 16 of the 2^4 APBC block determinant, exact (7/8)^(1/4) selector, K/sensitivity arithmetic over B1, with D1/C1 only as declared readout appendices and not formula or EW-VEV closure.",
+          "scale_reference_primitive": null,
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "Conditional algebraic anchor: given the Wilson beta convention, the fine-structure convention, the assumed SU(2)_L lattice coupling g_2^2 = 1/4 at d = 3, and SU(2) dimension N = 2, the note derives alpha_2|_lattice = 1/(16 pi), 1/alpha_2|_lattice = 16 pi, and beta_W|_lattice = 16.",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "The audited scope is the algebraic substitution from the five stated inputs X0-X4 to the SU(2)_L one-loop coefficient closed form, its 19/6 framework value, and the listed sector decomposition and corollaries."
+        },
+        "dep_claim_type": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "bounded_theorem",
+          "scale_reference_primitive": "meta",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "bounded_theorem",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "retained_bounded",
+          "scale_reference_primitive": "meta",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "retained_bounded",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_formula_honest_status_note_2026-05-10",
+          "scale_reference_primitive",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 8.17,
+        "runner_hash": "118ee47163b0d58ca7640496860060b1a17813cb65f62e4bf0b6eadc8af8b58d",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-015513-6fd43aede4-su2_weak_one_loop_inverse_al",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The inverse-alpha sign and factor follow by direct differentiation and integration from UV to IR. Independently recomputing the candidate-map arithmetic gives K=2.017223509625105e-17, L_cand=38.44222451516312, v_cand=246.282818290129 GeV, and round(L_cand,2)=38.44.",
+      "claim_scope": "Algebraic/calculus bridge proving the inverse-alpha one-loop propagation law and the rounded Planck-to-hierarchy-candidate scale log from the cited beta coefficient, alpha convention, scale primitive, and hierarchy candidate map.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T01:57:33.190816+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:hierarchy_formula_honest_status_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "The bridge's work is d(1/alpha)/d ln(mu)=b/(2 pi) from dg/d ln(mu)=-b g^3/(16 pi^2), alpha=g^2/(4 pi), together with ln(M_Pl/v_cand)=ln(M_Pl/(M_Pl K))=-ln K for K=(7/8)^(1/4) alpha_LM^16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers preserve this narrow scope and do not treat L_cand as closing the hierarchy formula or EW-VEV identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The load-bearing steps are exact algebra/calculus over cited retained-grade or accepted-primitive inputs, and the supplied runner source actually checks the relevant sign, factor, log, and rounded-surrogate numerics. The scale-reference primitive is used only as the single dimensionful ruler and cancels out of the dimensionless log. The hierarchy authority's B3/B4/B5 gates are not closed here, but this bridge does not claim formula closure or an EW-VEV prediction; it only uses the declared candidate-map/readout surface for scale-log bookkeeping."
+    },
+    {
+      "archived_at": "2026-06-19T20:43:28.788229+00:00",
+      "audit_date": "2026-06-18T10:41:41.148581+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "Bounded structural-support theorem T1 plus declared candidate-map/readout appendices: species count, determinant degree, eta/zeta selector, suppression arithmetic, and sensitivity over the stated inputs, explicitly not electroweak-VEV or formula-closure derivation.",
+          "scale_reference_primitive": null,
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "Conditional algebraic anchor: given the Wilson beta convention, the fine-structure convention, the assumed SU(2)_L lattice coupling g_2^2 = 1/4 at d = 3, and SU(2) dimension N = 2, the note derives alpha_2|_lattice = 1/(16 pi), 1/alpha_2|_lattice = 16 pi, and beta_W|_lattice = 16.",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "Algebraic substitution of retained/bounded count inputs and the named Peskin-Schroeder beta-formula admission to derive the SU(2)_L b_2 closed form, its 19/6 framework value, sector decomposition, and listed algebraic corollaries."
+        },
+        "dep_claim_type": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "bounded_theorem",
+          "scale_reference_primitive": "meta",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "bounded_theorem",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "retained_bounded",
+          "scale_reference_primitive": "meta",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "retained_bounded",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_formula_honest_status_note_2026-05-10",
+          "scale_reference_primitive",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "118ee47163b0d58ca7640496860060b1a17813cb65f62e4bf0b6eadc8af8b58d",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The inverse-alpha law follows by direct differentiation and integration with the stated sign convention. The scale log follows because M_Pl cancels in M_Pl/(M_Pl K), and the cited candidate-map arithmetic gives L_cand=38.442224515..., making 38.44 a two-decimal surrogate.",
+      "claim_scope": "Algebraic bridge deriving the one-loop inverse-alpha propagation formula and the rounded Planck-to-hierarchy-candidate scale log from cited retained-grade inputs and the approved scale-reference primitive.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T10:41:41.148581+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "From dg/dln(mu) = -b g^3/(16 pi^2) and alpha = g^2/(4 pi), d(1/alpha)/dln(mu)=b/(2pi), and from v_cand=M_Pl K with K=(7/8)^(1/4) alpha_LM^16, ln(M_Pl/v_cand)=-ln(K)=38.442224515...",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers preserve the declared-candidate-map scope and do not treat this bridge as hierarchy formula closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The load-bearing work is exact algebra over the cited beta-coefficient convention, fine-structure convention, hierarchy candidate-map arithmetic, and the approved scale-reference primitive. The runner source actually recomputes the derivative identities, the log arithmetic, and the rounded-log displacement rather than merely printing PASS lines. The claim remains correctly scoped: it does not derive the hierarchy candidate map, the SU(2) u0 interval, or an EW VEV identification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py",
+  "title": "SU(2)_L One-Loop Inverse-Alpha And Scale-Log Bridge Narrow Theorem",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

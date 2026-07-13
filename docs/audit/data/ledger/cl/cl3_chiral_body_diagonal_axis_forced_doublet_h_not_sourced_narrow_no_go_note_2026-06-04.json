@@ -1,0 +1,643 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
+    "flavor_native_double_shift_corner_coupling_note_2026-05-30",
+    "flavor_block_count_native_via_jcs_note_2026-05-30"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.67,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "27e3d706620f1584f8ca801ca420f1b66caa92f9047c144e09998f36e344f615",
+  "note_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T22:14:40.833570+00:00",
+      "audit_date": "2026-06-05T19:29:19.782924+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "Audited the bounded correction that the K0-real / real-Wedderburn-block Q=2/3 reading is algebraically native via J_cs and not excluded by C^3=I; uniqueness or forced selection over the trace/dimension Q=1 reading was not audited as closed.",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "Finite (Z_2)^3 corner-cube projection identities on the Hamming-weight-1 triplet, plus the symmetric aI+b(J-I) spectrum and Koide-ratio formula, without deriving the coefficient ratio b/a.",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "Subgroup-lattice characterization of G-invariant Hermitian operators on V=C^3 under the natural S3 permutation action: only full S3 forces degeneracy; proper subgroups generically permit three distinct eigenvalues.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "bounded_theorem",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "bounded_theorem",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "retained_bounded",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "retained_bounded",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "flavor_block_count_native_via_jcs_note_2026-05-30",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "69a47b83ddd079a4f18dd18a01321f015732181674a58d786764eaf548bb008d",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-f493357e93-cl3_chiral_body_diagonal_axi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The block decomposition of Gamma_chi gives the anticommuting family directly, and Schur/circulant algebra gives doublet isotropy for C3-equivariant symmetric content. The no-go is scoped narrowly to this axis-versus-h sourcing question and does not claim closure of the separate block-count or future chirality-sourcing routes.",
+      "claim_scope": "Audited the narrow algebraic claim on V=R^3 that the L4 anticommuting family forces the singlet axis to (1,1,1), while C3-symmetric native cube structures do not force the required doublet vector h; the tested C3-breaking candidates are orbit choices or wrong operator class, and J_cs is a separate commuting-side route.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T19:29:19.782924+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:flavor_native_double_shift_corner_coupling_note_2026-05-30",
+      "load_bearing_step": "Against the singlet plus doublet split of Gamma_chi, symmetric anticommuting H has only singlet-doublet off-diagonal blocks, while every C3-equivariant symmetric native operator has scalar doublet block and therefore cannot select a doublet h.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should recheck the KS staggered-hop sign convention; the distinguished-axis printed h normalization appears non-load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 37,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade inputs: Gamma_chi = diag(+1,-1,-1) forces symmetric anticommuting H to be purely singlet-doublet mixing, and C3-equivariant symmetric operators remain scalar on the doublet plane. The runner source materially computes the relevant matrices rather than merely printing constants, and its outputs match the restricted proof. The no-go discipline boundary is respected: the result is not an absolute Koide no-go and explicitly leaves the J_cs block-count route and possible upstream C3-breaking mechanisms out of scope."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:35.084359+00:00",
+      "archived_for_note_hash": "ce4f36df83f2c7e5bfd4aa69c0a6028c1dc7423bcb2a446310a1b03b39b38942",
+      "audit_date": "2026-06-14T00:54:41.223844+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "Audited the bounded correction that the K0-real / real-Wedderburn-block Q=2/3 reading is algebraically native via J_cs and not excluded by C^3=I; uniqueness or forced selection over the trace/dimension Q=1 reading was not audited as closed.",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "Finite (Z_2)^3 corner-cube projection identities on the Hamming-weight-1 triplet and the resulting Koide-ratio formula for Y=aI+b(J-I); no derivation of b/a or mass spectrum is audited.",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "Subgroup-lattice characterization of G-invariant Hermitian operators on V=C^3 under the natural S3 permutation action: only full S3 forces degeneracy; proper subgroups generically permit three distinct eigenvalues.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "bounded_theorem",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "bounded_theorem",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "retained_bounded",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "retained_bounded",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "flavor_block_count_native_via_jcs_note_2026-05-30",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 5.459,
+        "runner_hash": "69a47b83ddd079a4f18dd18a01321f015732181674a58d786764eaf548bb008d",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-a982d1e7c7-cl3_chiral_body_diagonal_axi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The anticommuting block calculation and the real-symmetric circulant/Reynolds calculation close the narrower axis-vs-h statement. As written, however, the Schur step is too broad: the real C3 commutant on the doublet is C, not just scalars, and J_cs is a non-scalar native C3-equivariant complex structure.",
+      "claim_scope": "Narrow algebraic axis-vs-h no-go on V=R^3: real-symmetric anticommuting H forces the singlet axis (1,1,1), while C3-symmetric real-symmetric cube operators do not select the free doublet h.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-14T00:54:41.223844+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Every C3-equivariant native operator on V is circulant and has scalar doublet content, so C3-symmetric cube data cannot prefer a doublet direction h; selecting h is a C3-orbit-breaking import.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: revise N2 to say C3-equivariant real-symmetric/Hermitian mass operators have scalar doublet block, and state separately that J_cs is the non-scalar antisymmetric complex structure that commutes with Gamma_chi and selects no real h.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "Independent block decomposition confirms that {H,Gamma_chi}=0 over real symmetric H leaves only singlet-doublet blocks, so the axis is forced and h is the free two-real-dimensional datum. The off-body-diagonal orbit, diagonal-anisotropy obstruction, and staggered/J_cs commuting-side checks also support the narrow conclusion. But the note states that every C3-equivariant native operator has a scalar doublet block and includes J_cs in that sentence; this is mathematically false unless narrowed to real-symmetric/Hermitian mass operators."
+    },
+    {
+      "archived_at": "2026-07-10T16:59:10.079998+00:00",
+      "audit_date": "2026-06-16T00:29:08.769861+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "Audited the bounded correction that the K0-real / real-Wedderburn-block Q=2/3 reading is algebraically native via J_cs and not excluded by C^3=I; uniqueness or forced selection over the trace/dimension Q=1 reading was not audited as closed.",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "Finite (Z_2)^3 corner-cube projection identities on the Hamming-weight-1 triplet and the resulting Koide-ratio formula for Y=aI+b(J-I); no derivation of b/a or mass spectrum is audited.",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "Subgroup-lattice characterization of G-invariant Hermitian operators on V=C^3 under the natural S3 permutation action: only full S3 forces degeneracy; proper subgroups generically permit three distinct eigenvalues.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "bounded_theorem",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "bounded_theorem",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "retained_bounded",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "retained_bounded",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "flavor_block_count_native_via_jcs_note_2026-05-30",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 8.459,
+        "runner_hash": "8ce9e331b9ab07a3b0be913414da59b84e47d37679802e24226cd8ccb26410b0",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-6f11ca35e5-cl3_chiral_body_diagonal_axi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The L4 anticommuting family is exactly the two-dimensional singlet-doublet mixing space H=(1/3)(1 h^T+h 1^T), so the axis is the Gamma_chi singlet. Schur/circulant algebra gives scalar self-adjoint doublet blocks for C3-equivariant native operators, and the candidate C3-breaking structures either choose an orbit representative or commute/are diagonal rather than anticommuting.",
+      "claim_scope": "On V=R^3 with Gamma_chi=(2/3)J-I and the cited native cube operators, the cube body diagonal forces the L4 singlet axis, but C3-symmetric real self-adjoint native structures do not force the L4 doublet vector h; selecting h is a C3/S3 orbit choice or belongs to the wrong operator class.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-16T00:29:08.769861+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+      "load_bearing_step": "The anticommuting condition forces symmetric H to be purely singlet-doublet off-diagonal, while every C3-equivariant real self-adjoint native operator has a scalar doublet block and therefore cannot select a real doublet line h.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor may re-check the diagonal-axis lambda diagnostic/projection wording; the generic diagonal anticommutation calculation itself is not load-bearing against the clean scoped no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "All load-bearing cited authorities are retained-grade under the rubric, and the core step is finite linear algebra over the provided R, J, Gamma_chi, and native cube operators. Independent symbolic checks confirm the anticommuting-space dimension, the forced singlet axis, the scalar self-adjoint C3 doublet block, the off-diagonal C3 orbit, the staggered antisymmetric circulant/J_cs route, and the impossibility of a nonzero diagonal anticommuting operator. The no-go is properly narrow: it does not close the separate J_cs block-count route or any future mechanism that supplies the C3-breaking h from outside the scoped native C3-symmetric structures."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.427415+00:00",
+      "audit_date": "2026-07-10T17:57:10.370037+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "Audited the bounded correction that the K0-real / real-Wedderburn-block Q=2/3 reading is algebraically native via J_cs and not excluded by C^3=I; uniqueness or forced selection over the trace/dimension Q=1 reading was not audited as closed.",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "Finite (Z_2)^3 corner-cube projection identities on the Hamming-weight-1 triplet and the resulting Koide-ratio formula for Y=aI+b(J-I); no derivation of b/a or mass spectrum is audited.",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "Subgroup-lattice characterization of G-invariant Hermitian operators on V=C^3 under the natural S3 permutation action: only full S3 forces degeneracy; proper subgroups generically permit three distinct eigenvalues.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "For real symmetric H on R^3 satisfying {H, \u0393_\u03c7} = 0, every nonzero-eigenvalue eigenvector obeys \u27e8v|\u0393_\u03c7|v\u27e9 = 0 and hence Q(v) = 2/3 and the stated Fourier norm split.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "bounded_theorem",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "bounded_theorem",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_block_count_native_via_jcs_note_2026-05-30": "retained_bounded",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30": "retained_bounded",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "flavor_block_count_native_via_jcs_note_2026-05-30",
+          "flavor_native_double_shift_corner_coupling_note_2026-05-30",
+          "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 4.67,
+        "runner_hash": "8ce9e331b9ab07a3b0be913414da59b84e47d37679802e24226cd8ccb26410b0",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T174516Z-d2660b50-00006-cl3_chiral_body_diagonal_axi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted linear-algebra no-go closes, but the packet does not derive the hw=1 generation carrier, the selected C3 embedding, or its [111] axis from the full cubic minimal baseline. The cited generation-degeneracy theorem also addresses S3-to-proper-subgroup mass splitting, not the stricter selection of a real h under C3.",
+      "claim_scope": "Conditional on the stipulated V=R3 cyclic representation, Gamma_chi, and real self-adjoint operator class, anticommuting H has singlet-doublet form and no C3-equivariant operator selects a real doublet line; the claimed minimal-baseline forcing of the chosen [111] axis was not established.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T17:57:10.370037+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_block_count_native_via_jcs_note_2026-05-30:retained_bounded->unaudited",
+      "load_bearing_step": "In the singlet-plus-doublet basis, anticommutation forces a real symmetric H to be purely singlet-doublet off-diagonal, while the real self-adjoint C3 commutant is scalar on the doublet and therefore selects no line h.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The commutant and Reynolds average were evaluated on the singlet-plus-doublet decomposition.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The Reynolds average over C\u2083 of ANY symmetric seed has a scalar doublet block.",
+            "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use a C3-equivariant real self-adjoint native operator to select a doublet eigenline.",
+            "outcome": "The self-adjoint doublet block is scalar, so this route cannot select h.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "c3_self_adjoint_commutant"
+          },
+          {
+            "attempt": "All three off-diagonal sign patterns were projected and their C3 orbit was computed.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The three off-diagonals form a single C\u2083 orbit (R permutes them transitively)",
+            "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Project one off-body-diagonal sign pattern to obtain a nonzero doublet h.",
+            "outcome": "Each supplies a valid h, but the three form one transitive C3 orbit, so choosing one is precisely an additional symmetry-breaking selection.",
+            "route_class": "topology_or_global_structure",
+            "route_id": "off_body_diagonal"
+          },
+          {
+            "attempt": "The full cube construction was projected for all six axis orderings.",
+            "disposition": "CLOSED",
+            "evidence_locator": "genuine KS staggered double-shift = antisymmetric circulant (R^T - R) = (R^2 - R)",
+            "evidence_path": "scripts/cl3_chiral_body_diagonal_source.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use Kogut-Susskind phases on double shifts to generate a chiral mass operator.",
+            "outcome": "The nonzero full operator is the antisymmetric circulant R^T-R, while its real symmetric mass-operator part vanishes; it commutes with Gamma_chi.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "ks_staggered_hop"
+          },
+          {
+            "attempt": "Every permutation of the three axes was tested through the staggered double-shift construction.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The 3! orderings break S\u2083, but the resulting operator is the wrong class.",
+            "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use a chosen Jordan-Wigner or staggered axis order as the source of h.",
+            "outcome": "The ordering breaks S3 conventionally but produces only the wrong antisymmetric circulant class.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "jw_axis_ordering"
+          },
+          {
+            "attempt": "All three diagonal single-axis anisotropies were evaluated against Gamma_chi.",
+            "disposition": "CLOSED",
+            "evidence_locator": "A real diagonal operator is structurally barred from the chiral class.",
+            "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use an emergent-arrow or distinguished-axis anisotropy to induce a doublet direction.",
+            "outcome": "They induce doublet components but are diagonal, fail anticommutation, and require choosing one member of a C3 orbit.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "distinguished_spatial_axis"
+          },
+          {
+            "attempt": "J_cs was compared with the staggered hop and tested for C3 equivariance and commutation with Gamma_chi.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Genuinely OPEN and OUTSIDE this no-go (commuting-side measure route); left untouched.",
+            "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Reach Q=2/3 through the J_cs reality-structure block-count measure instead of an anticommuting H.",
+            "outcome": "This route remains viable for a different observable mechanism but does not source the chiral doublet h, so it does not evade the scoped algebraic wall.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "jcs_block_count"
+          },
+          {
+            "attempt": "The packet was checked for a retained carrier and subgroup-selection bridge.",
+            "disposition": "OPEN",
+            "evidence_locator": "cl3_taste_generation is UNAUDITED, so we treat the *identification* as context",
+            "evidence_path": "scripts/cl3_chiral_body_diagonal_source.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive the hw=1 generation carrier, one body-diagonal C3 subgroup, and its [111] fixed axis from the full cubic minimal baseline.",
+            "outcome": "The runner explicitly treats the generation identification as context because its named source is unaudited; no supplied theorem selects one of the four body-diagonal axes.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "baseline_generation_c3_embedding"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "Real self-adjoint C3 equivariance makes the doublet block isotropic and supplies no h.",
+            "The minimal baseline does not derive the chosen hw=1 generation carrier, body-diagonal C3 embedding, or [111] axis selection."
+          ],
+          "evidence_locator": "The collapsed wall has one load-bearing element: **the doublet plane carries the irreducible 2-dim C\u2083 representation, so its C\u2083-invariant self-adjoint content is isotropic** (Schur).",
+          "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "Real self-adjoint C3 equivariance makes the doublet block isotropic and supplies no h.",
+              "left_closes_right": false,
+              "right": "The minimal baseline does not derive the chosen hw=1 generation carrier, body-diagonal C3 embedding, or [111] axis selection.",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [
+            "No retained bridge selects the hw=1 generation carrier and one [111]-axis C3 subgroup from the full cubic baseline."
+          ],
+          "walls": [
+            "Real self-adjoint C3 equivariance makes the doublet block isotropic and supplies no h.",
+            "The minimal baseline does not derive the chosen hw=1 generation carrier, body-diagonal C3 embedding, or [111] axis selection."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The phrases \"native\", \"forced\", \"chiral\" are used with the explicit meanings fixed above, not as hidden inputs.",
+          "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "cl3_taste_generation is UNAUDITED, so we treat the *identification* as context",
+              "evidence_path": "scripts/cl3_chiral_body_diagonal_source.py",
+              "phrase": "hw=1 generation factor",
+              "promoted_wall": "The minimal baseline does not derive the chosen hw=1 generation carrier, body-diagonal C3 embedding, or [111] axis selection."
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "The cube has 4 body-diagonals; the (+,+,+) one is the singlet",
+              "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+              "phrase": "native cube body-diagonal",
+              "promoted_wall": "The minimal baseline does not derive the chosen hw=1 generation carrier, body-diagonal C3 embedding, or [111] axis selection."
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "H \u2208 R^{3\u00d73}` be Hermitian (real symmetric)",
+              "evidence_path": "docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "real self-adjoint source class"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The separate block-count / `J_cs` reality-structure **measure** route to `Q=2/3` (commuting side) is outside this no-go and remains a live path.",
+              "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+              "phrase": "J_cs reaches Q=2/3"
+            }
+          ],
+          "unresolved": [
+            "The physical generation-carrier and selected-body-diagonal identification remains contextual rather than retained."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Non-matching witnesses are not used as load-bearing proof of this no-go.",
+          "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "unresolved": [
+            "The generation-degeneracy authority does not establish the asserted equivalence between S3-to-proper-subgroup mass splitting and the stricter C3-breaking real-h selection."
+          ],
+          "witnesses": [
+            {
+              "claim_residual": "A C3-equivariant real self-adjoint native operator cannot supply the required singlet-doublet mixing h.",
+              "evidence_locator": "comm(R) \u2229 anticomm(\u0393_\u03c7) = {0}",
+              "evidence_path": "docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md",
+              "match": true,
+              "witness_residual": "A real symmetric operator commuting with R cannot nontrivially anticommute with Gamma_chi."
+            },
+            {
+              "claim_residual": "The singlet direction is fixed once Gamma_chi is stipulated, while h remains the two-real-dimensional datum.",
+              "evidence_locator": "Hermitian anti-commuting H is parametrized by a single 3-vector h with `\u03a3 h = 0`",
+              "evidence_path": "docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md",
+              "match": true,
+              "witness_residual": "Hermitian anticommuting H is parametrized by a zero-sum three-vector h."
+            },
+            {
+              "claim_residual": "Selecting a real doublet line h requires breaking the already-preserved C3 to a proper subgroup.",
+              "evidence_locator": "Three distinct masses require breaking `S_3` to a proper subgroup; `S_3 \u2192 C_3[111]` is one sufficient proper-subgroup route.",
+              "evidence_path": "docs/GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md",
+              "match": false,
+              "witness_residual": "Three distinct masses require S3 to break to any proper subgroup, with C3 itself sufficient."
+            },
+            {
+              "claim_residual": "The native symmetric double-shift has a scalar doublet block and supplies no h.",
+              "evidence_locator": "The symmetric sum of double bit flips projects exactly to `J-I`.",
+              "evidence_path": "docs/FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md",
+              "match": true,
+              "witness_residual": "The symmetric double bit-flip sum projects to J-I."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "Broad phrases (\"forced\", \"not sourced\") are scoped to the L4 axis-vs-`h` split on the single generation factor `R\u00b3`.",
+          "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "statements": [
+            {
+              "evidence_locator": "The L4 singlet axis is forced to `(1,1,1)` = the native cube body-diagonal.",
+              "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+              "phrase": "The L4 singlet axis is forced to (1,1,1) = the native cube body-diagonal.",
+              "tested_resolutions": [
+                "The stipulated Gamma_chi has a unique singlet line and every symmetric anticommuting H is off-diagonal relative to that line."
+              ],
+              "untested_resolutions": [
+                "A retained derivation selecting this hw=1 carrier and one [111]-axis C3 embedding from the full proper-cubic baseline."
+              ]
+            },
+            {
+              "evidence_locator": "No C\u2083-symmetric native cube structure forces the L4 doublet `h`.",
+              "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+              "phrase": "No C3-symmetric native cube structure forces the L4 doublet h.",
+              "tested_resolutions": [
+                "The complete real self-adjoint C3 commutant.",
+                "Reynolds averaging of an arbitrary symmetric seed.",
+                "The native J, J-I, identity, double-shift, and J_cs candidates."
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "The claim being closed is NOT \"Q=2/3 is unreachable\" and NOT \"no native structure sources the chiral operator ever.\"",
+              "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+              "phrase": "The no-go does not claim Q=2/3 is unreachable or that no native structure can ever source chirality.",
+              "tested_resolutions": [
+                "The J_cs block-count route was kept outside the chiral operator claim.",
+                "Future enlarged-carrier and upstream chirality suppliers were expressly excluded."
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": [
+            "The word native overstates the positive axis-sourcing half beyond the stipulated representation."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The minimal axioms supply the cubic lattice and proper cubic rotations but no selected generation carrier, C3 subgroup, or body diagonal.",
+              "evidence_locator": "Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor adjacency, standard translations, and proper cubic rotations about each site.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The realized-state primitive supplies no state content or selector and therefore cannot provide a chosen h or body diagonal.",
+              "evidence_locator": "It carries zero state-contingent content: no state, averaging over alternatives, measure, weighting, probability rule, typicality claim, genericity claim, preferred state, default state, boundary condition, normalization rule, or value is supplied by it.",
+              "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The owner-governed AC residual explicitly excludes above-C3 taste, Dirac, and chirality content.",
+              "evidence_locator": "It supplies no value of `r`, `delta`, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.",
+              "evidence_path": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "There is no live Tier-A derivation target that can be invoked to supply the missing selection.",
+              "evidence_locator": "\"genuine_admitted_input_count\": 0",
+              "evidence_path": "docs/audit/data/tier_a_admissions.json",
+              "kind": "tier_a"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The J_cs block-count reading is a non-forced measure choice and changes mechanisms rather than providing an anticommuting h.",
+              "evidence_locator": "Both agree: both readings are native; neither is uniquely forced.",
+              "evidence_path": "docs/FLAVOR_BLOCK_COUNT_NATIVE_VIA_JCS_NOTE_2026-05-30.md",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"genuine_admitted_input_count\": 0",
+          "evidence_path": "docs/audit/data/tier_a_admissions.json",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Once the cyclic permutation R is recognized as a geometric 120-degree rotation, its fixed [111] body diagonal appears to be supplied directly by the cube, so the axis could be called baseline-native.",
+          "evidence_locator": "The cube has 4 body-diagonals; the (+,+,+) one is the singlet",
+          "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "resolution": "This establishes the fixed axis only after a particular C3 subgroup and hw=1 carrier are stipulated. The supplied minimal baseline has the full proper-cubic structure, while the cube has four body diagonals; the packet contains no retained theorem selecting this subgroup and carrier.",
+          "resolved": false
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "evidence_locator": "Prior negative claims in this lane sometimes tested `\u03b5=(\u22121)^{hw}` (the volume chirality) and declared the cube route closed",
+              "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+              "mechanism": "Earlier volume-chirality tests used epsilon=(-1)^hw, which is scalar on hw=1 and cannot test the geometric-axis question.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "evidence_locator": "It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.",
+              "evidence_path": "docs/audit/data/owner_governed_premise_nodes.json",
+              "mechanism": "The live owner-governed AC residual could be overread as supplying the missing chirality carrier.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "This note avoids that echo by testing the **geometric body-diagonal axis** and the **genuine KS-staggered hop**",
+          "evidence_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "Within a stipulated real C3 representation, self-adjoint C3 equivariance leaves the doublet isotropic and supplies no h.",
+          "A retained baseline-to-generation-carrier and selected-body-diagonal bridge is still required before the axis can be called minimal-baseline forced."
+        ],
+        "demotion": "partial_narrowing",
+        "failures": [
+          "N1: The baseline generation/C3/[111] embedding route remains open.",
+          "N2-N3: The advertised native-axis conclusion contains an unresolved carrier and subgroup-selection wall.",
+          "N4: The generation-degeneracy authority does not match the stricter C3-breaking h-selection residual.",
+          "N5: Baseline-forced axis rhetoric exceeds the tested conditional algebra.",
+          "N7: The strongest full-cubic-symmetry steelman is unresolved."
+        ],
+        "narrowed_claim_scope": "Conditional on the stipulated V=R3 cyclic representation, Gamma_chi, and real self-adjoint operator class, anticommuting H has singlet-doublet form and no C3-equivariant operator selects a real doublet line; the claimed minimal-baseline forcing of the chosen [111] axis was not established.",
+        "next_route": "Construct the full proper-cubic action on the proposed hw=1 carrier and test whether any baseline-invariant construction selects one body-diagonal C3 subgroup and its [111] fixed line.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: Add a retained theorem deriving the hw=1 generation carrier, the selected C3 subgroup, and its [111] fixed axis from the full proper-cubic baseline, and separately reconcile real-h selection with the cited S3 mass-degeneracy theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "The runner correctly verifies the finite-dimensional commutant, anticommutant, orbit, staggered-hop, and J_cs identities, although several concluding PASS entries use unconditional True values and cannot establish framework sourcing. The advertised baseline-native conclusion additionally assumes the hw=1 generation/C3 embedding and treats one of the cube's four body diagonals as the selected singlet axis without a retained bridge from the minimal axioms. The safe result is the conditional algebraic no-go on a stipulated C3 representation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/cl3_chiral_body_diagonal_source.py",
+  "title": "Cl(3) Chiral Body-Diagonal: Singlet Axis (1,1,1) Is Baseline-Forced, the Doublet-h Is C\u2083-Orbit-Valued and Not Natively Sourced - Narrow No-Go",
+  "transitive_descendants": 17,
+  "verdict_rationale": null
+}

@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "staggered_dirac_realization_gate_note_2026-05-03",
+    "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c0d589ca92eafb103204fcaf705b12b944b9bd340add90f4bec7eaa607a1bac0",
+  "note_path": "docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:39.998771+00:00",
+      "audit_date": "2026-07-10T02:41:08.849554+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": "Bounded synthesis of the staggered-Dirac realization gate on Quantum plus Lattice and the declared premise set, with AC_phi_lambda generation labeling carried only by the no-go plus accepted labeling convention.",
+          "staggered_dirac_substep4_labeling_no_go_note_2026-05-17": "No canonical bijection from the hw=1 corner triplet to any labelled 3-set is derivable from A_min; closure requires an external labeling convention, C3-breaking premise, or empirical input."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem",
+          "staggered_dirac_substep4_labeling_no_go_note_2026-05-17": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "retained_bounded",
+          "staggered_dirac_substep4_labeling_no_go_note_2026-05-17": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_realization_gate_note_2026-05-03",
+          "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "7ffde6457a1fcf0cfe6383ff0e1e6e6c5cf8291e395f12b46683b3dc6335165c",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-species_bridge_minimum_d-093",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The computation establishes the stated carrier equivalence and one orbit-averaged diagonal-weight example, but it does not prove the universal absence of C3-invariant selectors, orderings, weights, or other structural-selection data. The note itself acknowledges that the required invariant-functional analysis is missing.",
+      "claim_scope": "The finite 4^3 periodic staggered surface supports the derived M3(C) carrier, within-triplet equipartition, and C3-unitary equivalence of the two Hamming triplets; the broader zero-content conclusion was also audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:41:08.849554+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_realization_gate_note_2026-05-03:retained_bounded->unaudited",
+      "load_bearing_step": "The single C3 orbit and the unitary epsilon-intertwiner between the hw=1 and hw=2 carriers are asserted to imply that the residual bridge supplies no C3-grade number, selector, ordering, or weight.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow the theorem, scorecard, and verdict to the explicitly computed single-orbit equipartition and C3-unitary carrier equivalence; re-audit the categorical contentlessness claim only after supplying a complete invariant-functional or equivalent no-selector theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 3,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner genuinely constructs the staggered operators and computes the new hw=1/hw=2 intertwining result rather than merely printing it. Checks 4, 7, and 8 support two specific vacuity witnesses, but check 9 promotes those witnesses into an exhaustive no-number/no-selector/no-ordering/no-weight conclusion without the full invariant-functional argument the source explicitly identifies as absent. The universal-color comparison is likewise asserted rather than independently established by the runner."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_species_bridge_minimum_decomposition_2026_06_13.py",
+  "title": "The Species Bridge Decomposes into Derived Support + Two Vacuities + One C\u2083-Grade Contentless Identification: AC_\u03c6\u03bb(iii) in Minimum Form (Bounded Theorem)",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+    "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "732d945bcd46aeb84f8bba8937cba495329d802f44a3d004980d1601fbcddc8e",
+  "note_path": "docs/THETA_TORUS_DUAL_ABELIANIZATION_SHIFTED_WEIGHT_LATTICE_GAUSSIAN_GLUING_STABLE_WEYL_SHIFT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.985659+00:00",
+      "audit_date": "2026-07-10T02:27:10.806553+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "minimal_axioms": null,
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "minimal_axioms",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 3.0,
+        "runner_hash": "75afc8a06cdf3404ef7812a9d01c4d34ce0a3496354b39318c351b33e8b87689",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-theta_torus_dual_abelian-085",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely evaluates the stated finite Fourier, Weyl, Poisson, gluing, and quadrature checks. It does not establish the note's unrestricted SU(N) formulation or the inference that excluding constant label translations forces theta to enter through the uncited cross-plane pairing.",
+      "claim_scope": "Finite algebraic checks for the SU(2) and 841-mode SU(3) heat-kernel torus duals, the SU(2) Poisson image sum, coefficientwise gluing, three-irrep Wilson non-form-stability at beta=6, and the absence of constant Weyl-invariant Cartan shifts for SU(2) and SU(3).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:27:10.806553+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:retained->unaudited",
+      "load_bearing_step": "Multiplying the heat-kernel character sum by the Weyl denominator turns each character into its signed Weyl-orbit alternant, yielding signed dimension-polynomial Gaussian coefficients on regular rho-shifted weights.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the source claim to SU(2), the stated SU(3) finite window, and constant Weyl-commuting translations, while treating cross-plane theta placement as motivation unless its retained authority is added directly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 6,
+        "D": 3,
+        "total_pass": 25
+      },
+      "verdict_rationale": "Issue: the finite SU(2)/SU(3) evidence is extended to all SU(N), and a constant-translation obstruction is promoted to a required cross-plane theta placement. Why this blocks: the zero fixed subspace excludes Weyl-commuting constant Cartan translations, but it neither proves the general-N statement presented nor exhausts other theta mechanisms; the asserted block-3 pairing authority is absent from the restricted dependency packet. Repair target: narrow the theorem to the computed groups and constant-shift class, or supply a general-N proof and a retained direct dependency establishing the cross-plane conclusion. Claim boundary until fixed: the finite heat-kernel alternant identities, stated gluing algebra, tested Wilson witness, and SU(2)/SU(3) constant-shift obstruction remain supported."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.py",
+  "title": "Torus-Dual Abelianization of SU(N) Class Weights: the Heat-Kernel Member Is an Exact Signed Gaussian on the Regular Rho-Shifted Weight Lattice, the Structure Is Gluing-Stable, the Block-1 Center Grading Is Its Coset Shadow \u2014 and a Continuous Weyl-Consistent Theta Shift-Slot on the Nonabelian Torus Dual Is Obstructed (Bounded Theorem)",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

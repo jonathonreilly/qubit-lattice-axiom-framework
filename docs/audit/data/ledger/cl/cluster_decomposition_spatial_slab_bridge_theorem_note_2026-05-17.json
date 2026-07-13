@@ -1,0 +1,1747 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "89db4817abed8282a0b4a69fbd41f5602c2eeead242ce1f0e9ca1ca22481b1ac",
+  "note_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T12:08:46.875051+00:00",
+      "archived_for_note_hash": "fa0582483cd13222dba2bdcf86b0d28f16067f64cf8243b3729029535f44be35",
+      "audit_date": "2026-05-17T21:17:34.750748+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-211508-78dc5814-cluster_decomposition_sp-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic implication from H1+H2 to the stated finite-block bounds closes by spectral decomposition, Cauchy-Schwarz, and trace-distance control. The packet does not derive H1 or H2, so no unconditional spatial clustering claim closes.",
+      "claim_scope": "Finite-dimensional conditional bridge: assuming a positive Hermitian slab transfer operator T_x with a nondegenerate top eigenvalue and gap \u0394_x>0, the ground-state and finite-temperature slab correlator bounds (S.7) and (S.8) follow.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T21:17:34.750748+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The connected term expands as \u03a3_{k\u22651}(\u03bb_k/M_x)^d\u27e80_x|A_p|k\u27e9\u27e8k|B_q|0_x\u27e9 and Cauchy-Schwarz bounds it by \u2016A_p\u2016\u2016B_q\u2016exp(-d\u0394_x).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained one-hop authorities constructing the positive Hermitian spatial slab transfer operator for the canonical Hamiltonian and proving \u0394_x>0, then re-audit any unconditional promotion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner performs real finite-dimensional algebraic checks and a no-gap counterexample, but it does not construct T_x or derive \u0394_x>0 from Cl(3) on Z^3. The note is honest that H1 and H2 are open inputs, and the only provided cited authority supplies the minimal framework rather than the missing slab-transfer construction or gap theorem. The retained safe claim is the conditional spectral bridge, not the parent row's unconditional spatial L2 clustering."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:05.894079+00:00",
+      "archived_for_note_hash": "c8215682e4a4c9d9d1e2f2f848f1e5bdf0df99305ca85d77784fb7531d2ff2b5",
+      "audit_date": "2026-05-29T21:47:11.797408+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-cluster_decomposition_sp",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given H1 and H2, the spectral decomposition, Cauchy-Schwarz step, and trace-distance estimate close the stated finite-block bounds. The packet does not construct T_x from the canonical Hamiltonian or prove Delta_x > 0, so no unconditional spatial clustering claim closes.",
+      "claim_scope": "Conditional finite-dimensional bridge: H1 positive Hermitian slab transfer operator T_x plus H2 Delta_x > 0 imply the ground-state and finite-temperature spatial slab bounds (S.7) and (S.8).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T21:47:11.797408+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The estimate (S.14) bounds the excited-eigenstate sum by (lambda_1/M_x)^d ||A_p|| ||B_q|| = exp(-d Delta_x) ||A_p|| ||B_q||, with the finite-temperature bound then following by trace-distance control.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained one-hop authorities constructing the positive Hermitian spatial slab transfer operator T_x and proving Delta_x > 0 for the canonical Hamiltonian; then re-audit any unconditional promotion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing derivation is class A finite-dimensional algebra over an assumed positive Hermitian transfer operator with a nonzero spectral gap. The runner source genuinely samples finite positive Hermitian matrices and checks the stated identities, inequalities, thermal error term, and no-gap counterexample; it does not hard-code a contested physical gap. However, H1 and H2 are explicit open inputs not supplied by a retained one-hop authority, so the canonical-Hamiltonian spatial clustering bridge remains conditional."
+    },
+    {
+      "archived_at": "2026-06-06T22:40:04.117842+00:00",
+      "archived_for_note_hash": "0f23c1733e3ff005a5a448bc59eedb01df5bdf3a342d9e0e8f9dd4e5f5d18087",
+      "audit_date": "2026-06-06T17:24:03.746818+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "Finite-Lambda pure-Wilson spatial-axis transfer-operator gap, audited only as an axis-permutation decoration under the retained finite-Lambda temporal-axis T_W gap theorem; no thermodynamic-limit, Yang-Mills mass-gap, fermion-factor, or downstream bridge-lift claim.",
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-172154-b8582398dd-cluster_decomposition_spatia",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional final inequality is standard, but the displayed proof is not correct as written: S.14 bounds the first Cauchy-Schwarz factor by ||A_p|0_x>|| instead of the required ||A_p^dagger|0_x>|| for arbitrary bounded A_p. The finite-Lambda pure-Wilson corollary also imports an L2(SU(3)^{E_perp}) compact transfer operator, not the finite-dimensional H_slab assumed by the bridge and by the D-dependent thermal estimate S.9.",
+      "claim_scope": "Finite-dimensional H1/H2 spatial transfer-matrix bridge and the claimed finite-Lambda pure-Wilson corollary via the 2026-06-02 axis-permutation note.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T17:24:03.746818+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given a positive Hermitian slab transfer operator T_x with unique top eigenvector and Delta_x = -log(lambda_1/M_x) > 0, the spectral expansion plus Cauchy-Schwarz gives the exponential connected-correlator bound, with finite-temperature control by trace distance.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: correct the S.14 adjoint factor and either restrict the claim to the finite-dimensional conditional H1/H2 bridge or add a separate infinite-dimensional compact-operator and thermal trace argument for the L2(SU(3)^E) pure-Wilson surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner genuinely checks finite-matrix algebraic identities and inequalities, so it supports the conditional finite-dimensional bridge at class A, but it does not exercise the pure-Wilson L2(SU(3)^E) surface. The proof text contains an invalid adjoint placement in the load-bearing Cauchy-Schwarz line for arbitrary bounded observables. More importantly, the one-hop pure-Wilson authority supplies a compact trace-class operator on an infinite-dimensional Hilbert space, while the bridge is stated and thermally bounded on a finite-dimensional slab Hilbert space with D = dim H_slab. A separate compact-operator/thermal trace bridge or a narrower finite-dimensional scope is needed before the corollary closes as written."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.440046+00:00",
+      "audit_date": "2026-06-06T23:42:06.949907+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "Finite-Lambda pure-Wilson spatial-axis transfer-operator gap, audited only as an axis-permutation decoration under the retained finite-Lambda temporal-axis T_W gap theorem; no thermodynamic-limit, Yang-Mills mass-gap, fermion-factor, or downstream bridge-lift claim.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-234012-56e164d500-cluster_decomposition_spatia",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-dimensional bridge closes by the spectral theorem, Cauchy-Schwarz, and trace-distance estimates. The restricted finite-Lambda pure-Wilson H1/H2 inputs are supplied by the one-hop axis-permutation authority, whose decoration_under status is retained-grade under the rubric.",
+      "claim_scope": "The audited scope is the finite-block spatial slab bridge H1+H2 => (S.7) and (S.8), plus the finite-Lambda pure-Wilson compact zero-temperature corollary and the finite-temperature form only under the stated thermal trace-class condition; no full canonical staggered+Wilson, thermodynamic-limit, continuum, or parent-row promotion is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T23:42:06.949907+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "After inserting the spectral resolution of Ttilde_x, the off-ground sum is bounded by Cauchy-Schwarz as <= (lambda_1/M_x)^d ||A_p|| ||B_q|| = exp(-d Delta_x)||A_p|| ||B_q||, with the finite-temperature term added by ||rho_beta,x-P_0||_1 = 2 q_beta,x.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check in any second audit that the axis-permutation authority's positive self-adjoint/Hermitian transfer-operator supply and additive-to-log gap conversion are accepted exactly as H1/H2 for the compact pure-Wilson surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing derivation is a genuine algebraic closure over the stated transfer-operator hypotheses: the ground-state bound follows from the spectral expansion and Cauchy-Schwarz, and the thermal correction follows from trace-distance control. The runner source performs finite-dimensional randomized identity and inequality checks, including a no-gap counterexample, and does not hard-code the contested conclusion. The result remains clean only at the note's bounded scope; the note itself correctly excludes full canonical H1/H2, thermodynamic, continuum, and parent-row promotion claims."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.340644+00:00",
+      "audit_date": "2026-07-02T05:14:45.803772+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "Finite-Lambda pure-Wilson spatial-axis transfer-operator gap, audited only as an axis-permutation decoration under the retained finite-Lambda temporal-axis T_W gap theorem; no thermodynamic-limit, Yang-Mills mass-gap, fermion-factor, or downstream bridge-lift claim.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T051445Z-c9d124a8-cluster_decomposition_sp",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed bounds follow from the spectral theorem, Cauchy-Schwarz, and trace-norm estimates; the constants in S.7, S.8, and S.9 check out independently. The cited axis-permutation authority is retained-grade as a decoration under a retained parent and supplies H1/H2 only for the restricted finite-Lambda pure-Wilson surface, while broader canonical claims are explicitly excluded.",
+      "claim_scope": "Finite-block and compact trace-class spatial-slab transfer-operator bridge: H1+H2 imply the stated ground-state and finite-temperature bounds, with the finite-Lambda pure-Wilson zero-temperature corollary supplied by the axis-permutation authority; no full canonical, thermodynamic-limit, or continuum claim was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T05:14:45.803772+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Expanding T\u0303_x^d in the eigenbasis and applying Cauchy-Schwarz gives |<A_p T\u0303_x^d B_q>_0-<A_p>_0<B_q>_0| <= (lambda_1/M_x)^d ||A_p|| ||B_q|| = exp(-d Delta_x)||A_p||||B_q||, with the finite-temperature form obtained by trace-distance control.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the axis-permutation authority's positive self-adjoint trace-class hypotheses against the compact bridge notation, especially for finite-temperature use.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is exact algebra over the stated positive Hermitian/trace-class transfer-operator hypotheses, not a definition, tuned numerical match, or external comparator. The runner genuinely tests finite-dimensional random-matrix instances of the spectral identity, clustering bound, thermal trace-distance bound, no-gap counterexample, and temporal/spatial formula parallelism. The compact extension is mathematically consistent under the explicitly stated trace-class assumptions, and the finite-Lambda pure-Wilson composition stays within the retained-grade one-hop authority's restricted scope."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:30.984108+00:00",
+      "audit_date": "2026-07-10T02:33:51.714686+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "Finite-Lambda pure-Wilson spatial-axis transfer-operator gap, audited only as an axis-permutation decoration under the retained finite-Lambda temporal-axis T_W gap theorem; no thermodynamic-limit, Yang-Mills mass-gap, fermion-factor, or downstream bridge-lift claim.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-cluster_decomposition_sp-089",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The abstract bridge under H1 and H2 closes. The pure-Wilson composition does not: the cited axis-permutation authority states that T_W^(\u03bc) is trace-class, positivity-improving, and compact with a simple Perron eigenvalue, but does not establish the positive self-adjoint/Hermitian operator property and nonnegative orthonormal spectral resolution required by this bridge.",
+      "claim_scope": "The finite-dimensional and compact positive-self-adjoint implications H1+H2 \u21d2 (S.7), and the finite-temperature trace-distance bound (S.8) when the thermal operator is trace-class, including the claimed finite-\u039b pure-Wilson composition but excluding the full staggered+Wilson and thermodynamic/continuum surfaces.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:33:51.714686+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "After removing the top-eigenvector term, spectral ordering and Cauchy\u2013Schwarz bound the remaining sum by \u2016A_p\u2016\u2016B_q\u2016(\u03bb_1/M_x)^d = \u2016A_p\u2016\u2016B_q\u2016e^{-d\u0394_x}.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop proof or explicit theorem that the axis-permuted Wilson operator T_W^(\u03bc) is positive self-adjoint (Hermitian positive) trace-class with the ordered nonnegative spectrum required by H1/H2, then re-audit the pure-Wilson composition.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The spectral-decomposition, Cauchy\u2013Schwarz, and trace-distance arguments are correct on their stated positive-self-adjoint surfaces. The runner performs five genuine class-(A) checks on synthetically constructed Hermitian matrices, but it assumes rather than derives the missing Wilson-operator property. Consequently it verifies the conditional algebraic bridge but cannot close the asserted finite-\u039b pure-Wilson corollary from the supplied authority."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:08.181360+00:00",
+      "audit_date": "2026-07-12T10:12:35.450196+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "Finite-Lambda pure-Wilson spatial-axis transfer-operator gap, audited only as an axis-permutation decoration under the retained finite-Lambda temporal-axis T_W gap theorem; no thermodynamic-limit, Yang-Mills mass-gap, fermion-factor, or downstream bridge-lift claim.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00281-cluster_decomposition_spatia",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic implication closes under the stated positive-self-adjoint hypotheses. The claimed pure-Wilson composition does not: its one-hop authority establishes a trace-class positivity-improving compact operator but does not establish the positive self-adjoint/Hermitian property required by the bridge.",
+      "claim_scope": "Conditional finite-dimensional and compact positive-self-adjoint bridge H1+H2 \u21d2 (S.7), and (S.8) when the thermal operator is trace-class; the finite-\u039b pure-Wilson composition is not closed by the supplied one-hop authority.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T10:12:35.450196+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:49756ee75b3c",
+      "load_bearing_step": "The spectral expansion is bounded by Cauchy\u2013Schwarz as |\u03a3_{k\u22651}(\u03bb_k/M_x)^d\u27e80_x|A_p|k\u27e9\u27e8k|B_q|0_x\u27e9| \u2264 exp(-d\u0394_x)\u2016A_p\u2016\u2016B_q\u2016.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note gives the complete spectral expansion, norm estimate, and thermal trace-distance comparison, and the runner checks random finite matrices.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The conditional theorem (S) follows from H1 + H2 by the closed-form spectral argument above.",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive decay directly from the spectral resolution and Cauchy\u2013Schwarz under H1 and H2.",
+            "outcome": "CLOSED for the explicitly conditional abstract bridge.",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "abstract_spectral_bridge"
+          },
+          {
+            "attempt": "The one-hop authority was checked for the operator properties required by the compact bridge.",
+            "disposition": "OPEN",
+            "evidence_locator": "is a trace-class positivity-improving compact operator with a",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Instantiate H1/H2 with the finite-\u039b pure-Wilson spatial transfer operator supplied by axis permutation.",
+            "outcome": "OPEN because its theorem states trace-class positivity-improving compactness but does not prove positive self-adjointness/Hermiticity.",
+            "prior_witness_id": null,
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "pw_selfadjoint"
+          },
+          {
+            "attempt": "The registered minimal-axiom boundary was checked for Hamiltonian or transfer-operator content.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It does not choose a Hamiltonian or transfer operator",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Derive the spatial transfer operator directly from the minimal framework axioms.",
+            "outcome": "CLOSED negatively: the accepted premise explicitly supplies no Hamiltonian or transfer operator.",
+            "prior_witness_id": "w_minimal_no_transfer",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "minimal_axiom_dynamics"
+          },
+          {
+            "attempt": "The runner source was inspected to determine whether it constructs the Wilson operator or instead generates matrices with prescribed gaps.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The runner verifies the BRIDGE (the algebraic implication), not the gap.",
+            "evidence_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the randomized runner as a construction or derivation of the physical Wilson transfer gap.",
+            "outcome": "CLOSED negatively: it verifies only the bridge and supplies the gap as synthetic input.",
+            "prior_witness_id": null,
+            "route_class": "numerical_or_finite_case",
+            "route_id": "runner_physical_gap"
+          },
+          {
+            "attempt": "The source scope and runner domain were checked for uniform-in-volume or continuum estimates.",
+            "disposition": "CLOSED",
+            "evidence_locator": "No infinite-volume limit. No continuum limit.",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Extrapolate the finite-block estimate to infinite volume or the continuum.",
+            "outcome": "CLOSED as outside the audited result; no such extrapolation is established.",
+            "prior_witness_id": null,
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "limit_extrapolation"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "full-canonical H1 construction",
+            "full-canonical H2 spatial gap",
+            "pure-Wilson positive self-adjointness",
+            "compact finite-temperature trace-class condition",
+            "thermodynamic/continuum extension"
+          ],
+          "evidence_locator": "This corollary is not a statement about the full staggered+Wilson fermion-factor surface or any thermodynamic/continuum limit.",
+          "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "full-canonical H1 construction",
+              "left_closes_right": false,
+              "right": "full-canonical H2 spatial gap",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "full-canonical H1 construction",
+              "left_closes_right": false,
+              "right": "pure-Wilson positive self-adjointness",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "full-canonical H1 construction",
+              "left_closes_right": false,
+              "right": "compact finite-temperature trace-class condition",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "full-canonical H1 construction",
+              "left_closes_right": false,
+              "right": "thermodynamic/continuum extension",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "full-canonical H2 spatial gap",
+              "left_closes_right": false,
+              "right": "pure-Wilson positive self-adjointness",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "full-canonical H2 spatial gap",
+              "left_closes_right": false,
+              "right": "compact finite-temperature trace-class condition",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "full-canonical H2 spatial gap",
+              "left_closes_right": false,
+              "right": "thermodynamic/continuum extension",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "pure-Wilson positive self-adjointness",
+              "left_closes_right": false,
+              "right": "compact finite-temperature trace-class condition",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "pure-Wilson positive self-adjointness",
+              "left_closes_right": false,
+              "right": "thermodynamic/continuum extension",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "compact finite-temperature trace-class condition",
+              "left_closes_right": false,
+              "right": "thermodynamic/continuum extension",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [
+            "The supplied axis-permutation authority does not establish positive self-adjointness of T_W^(mu)."
+          ],
+          "walls": [
+            "full-canonical H1 construction",
+            "full-canonical H2 spatial gap",
+            "pure-Wilson positive self-adjointness",
+            "compact finite-temperature trace-class condition",
+            "thermodynamic/continuum extension"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Compact trace-class extension.",
+          "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "a positive Hermitian spatial-axis Wilson transfer operator",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "positive Hermitian spatial-axis Wilson transfer operator",
+              "promoted_wall": "pure-Wilson positive self-adjointness"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "slab-projection conventions standard in lattice OS reconstruction",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "slab-projection conventions standard in lattice OS reconstruction"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Canonical normalization surface",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "g_bare = 1"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source's Hermiticity, slab-localization, normalization, compactness, and thermal assumptions were compared with the supplied authorities and runner.",
+          "unresolved": [
+            "The pure-Wilson Hermitian/self-adjoint identification is asserted downstream but is absent from the supplied authority's theorem."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Relation To Dynamics And Kinetic Branch Selection",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "none_found_reason": "",
+          "scan_scope": "Prior-route witnesses were compared with the precise missing-transfer-operator residual.",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "The full-canonical H1 construction is not supplied by the minimal framework premises.",
+              "evidence_locator": "It does not choose a Hamiltonian or transfer operator",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "match": true,
+              "route_id": "minimal_axiom_dynamics",
+              "witness_id": "w_minimal_no_transfer",
+              "witness_residual": "The minimal axioms do not choose a Hamiltonian or transfer operator."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "What this note does NOT do.",
+          "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+          "none_found_reason": "",
+          "scan_scope": "All scope-exclusion and unresolved-bridge language in the source was checked against the resolutions actually treated.",
+          "statements": [
+            {
+              "evidence_locator": "it does not construct `T_x` from the full canonical Hamiltonian",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "does not construct T_x from the full canonical Hamiltonian",
+              "tested_resolutions": [
+                "finite-dimensional assumed operator",
+                "compact assumed operator",
+                "finite-\u039b pure-Wilson authority"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "This does not prove the staggered+Wilson fermion-factor extension",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "does not prove the staggered+Wilson fermion-factor extension",
+              "tested_resolutions": [
+                "pure-Wilson operator surface only"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "No infinite-volume limit. No continuum limit.",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "No infinite-volume limit. No continuum limit.",
+              "tested_resolutions": [
+                "finite-block matrices and finite-\u039b compact operator"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy does not construct a positive self-adjoint Wilson slab operator or prove its gap.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms explicitly do not select a Hamiltonian or transfer operator.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "A realized-state reference supplies neither transfer dynamics nor operator-theoretic properties.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A units conversion cannot prove Hermiticity, positivity, a spectral gap, or trace class.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton counting obligation is unrelated to slab transfer operators.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This readout obligation is unrelated to the Wilson transfer-kernel properties.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This determinant-readout obligation does not supply H1, H2, or compact thermal trace class.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied axiom, approved-primitive, open-obligation, convention, definition, and scope-reframe index was dispositioned completely.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The axis-permutation authority says it imports every load-bearing temporal-axis property and explicitly claims to supply H1 and H2, so Hermiticity might be intended to follow automatically by relabeling.",
+          "evidence_locator": "The four load-bearing properties used in the parent's proof",
+          "evidence_path": "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md",
+          "resolution": "That steelman fails within the restricted packet: the imported four-property list contains heat-kernel positivity, pointwise kernel positivity, trace class, and Perron\u2013Jentzsch, while the actual theorem omits self-adjointness/Hermiticity. Pointwise positivity and positivity improvement do not by themselves establish the positive self-adjoint operator hypothesis used by the bridge.",
+          "resolved": true,
+          "route_id": "pw_selfadjoint"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:0",
+              "evidence_locator": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Earlier conditional audit recognized that the runner does not construct T_x or derive the physical gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:1",
+              "evidence_locator": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Earlier conditional audit treated H1/H2 as unsupplied open inputs.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:2",
+              "evidence_locator": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Earlier audit identified the finite-dimensional versus compact pure-Wilson bridge defect.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:3",
+              "evidence_locator": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Earlier clean audit accepted the repaired compact extension at bounded scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:4",
+              "evidence_locator": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Earlier clean audit treated the pure-Wilson authority as supplying the compact operator hypotheses.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:5",
+              "evidence_locator": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Most recent conditional audit found that the supplied authority does not close the pure-Wilson corollary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Unrelated charged-lepton counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Unrelated charged-lepton readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Unrelated theta/readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Ledger contains unrelated pre-existing flavor and entropy no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Finite-sweep versus Newton-closure boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Packet-memory and coupling-boundary rules are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "RP-axis uniqueness warning is adjacent but does not prove Wilson self-adjointness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Broad historical no-go inventory has no matching slab-operator theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Coupling-hypothesis firewall is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Plaquette coefficient/comparator firewall is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Lensing observable-route ledger is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Carrier symmetry registry boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Charged-lepton selector no-gos are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Dimension-selection boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Lorentz-scope firewall is unrelated to compact transfer-operator Hermiticity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Causal metric/source packet boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Replay-only radial-family boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Local Wilson normalization cannot close the full environment operator and does not supply this bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Flavor tracial-route pruning is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Analytic-vector and Wigner bridge boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Wilson environment-character routes do not establish the slab operator's self-adjointness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Staggered-orientation isotropy no-gos do not prove the pure-Wilson operator properties.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Gravity dispersion boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Weak-field gravity scope boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Absolute-scale and Clifford-carrier no-gos are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Hypercharge normalization boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Cross-lane campaign residuals contain no matching transfer-operator theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Atomic-scale gates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Quark-mass selector gates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Uniform asymptotic-limit warning is adjacent only to excluded limits, not finite-block closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Lensing observable no-go is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Finite-path lensing boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Static-source readout boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Clock-rate/source packet warning is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Empty matter-cone no-go ledger supplies no closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Planning-priority boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Physical-time boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Neutrino construction no-gos are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Neutrino/cosmology scale gates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Finite-lattice Newtonian replay boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Live-recompute evidence boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Coupling authority firewall is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Finite-memory extrapolation warning is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Finite-grid to all-degree warning is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Clifford carrier-selection no-go is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "P_A carrier-selection history is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Plaquette bootstrap limitations do not establish the spatial transfer operator.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Perron diagnostic warnings concern a different plaquette calculation and do not supply self-adjointness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Record-selector boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Strong-CP and registrability routes are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "The nonlocality of -log(T) and RP axis-selection walls do not prove or refute this bounded spectral implication.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Source-measure semantics are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Spin-statistics withdrawal is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Minimal-surface kinetic nonselection supports only the broader lack of canonical dynamics, not pure-Wilson self-adjointness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "SU(3) quotient-encoder boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Documentation synchronization issue is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Family-card scope boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Theta mass-readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Theta gauge-action walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Theta positive-gate walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Theta insertion walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Theta branch-closedness walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Determinant-power selection walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Record-orbit occupancy walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Record-formation readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Finite-dimensional artifact-visibility issue is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Record-only mass dependence no-go is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Hard-coded finite-table warning is unrelated except as a general runner-scope caution already addressed.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Continuum and universal-exponent scope boundary is consistent with, but does not close, this finite-block theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "mechanism": "Yukawa renaming boundary is unrelated.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "full-canonical H1 construction",
+          "full-canonical H2 spatial gap",
+          "pure-Wilson positive self-adjointness",
+          "compact finite-temperature trace-class condition",
+          "thermodynamic/continuum extension"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17": {
+              "accepted_premise_type": null,
+              "content_sha256": "4a2153fbde1b6861a4aad50b841277fed1e8e7e34a79d7d711b0491b5ebd902a",
+              "cross_cycle_candidate_ids": [
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:0",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:1",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:2",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:3",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:4",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:5",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "audit-unlock-20260612/NO_GO_LEDGER.md",
+                "axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:0",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:1",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:2",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:3",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:4",
+                "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17:previous_audit:5",
+                "dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "impact-campaign-20260429/NO_GO_LEDGER.md",
+                "lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17": {
+              "accepted_premise_type": null,
+              "content_sha256": "9c89d2ef5f7f33ffaffc094c7a71c1bdaa445f903e6ebd79174fb10868474487",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "4f21abcf286f66b77112465996269957aa25ca986a9e533f99aa4408b89e0b92",
+              "effective_status": "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+              "path": "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "The four load-bearing properties used in the parent's proof",
+                "is a trace-class positivity-improving compact operator with a"
+              ]
+            },
+            "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "89db4817abed8282a0b4a69fbd41f5602c2eeead242ce1f0e9ca1ca22481b1ac",
+              "effective_status": null,
+              "path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Canonical normalization surface",
+                "Compact trace-class extension.",
+                "No infinite-volume limit. No continuum limit.",
+                "The conditional theorem (S) follows from H1 + H2 by the closed-form spectral argument above.",
+                "This corollary is not a statement about the full staggered+Wilson fermion-factor surface or any thermodynamic/continuum limit.",
+                "This does not prove the staggered+Wilson fermion-factor extension",
+                "What this note does NOT do.",
+                "a positive Hermitian spatial-axis Wilson transfer operator",
+                "it does not construct `T_x` from the full canonical Hamiltonian",
+                "slab-projection conventions standard in lattice OS reconstruction"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "It does not choose a Hamiltonian or transfer operator",
+                "Relation To Dynamics And Kinetic Branch Selection"
+              ]
+            },
+            "scripts/cluster_decomposition_spatial_slab_bridge_check.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+              "effective_status": null,
+              "path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "The runner verifies the BRIDGE (the algebraic implication), not the gap."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains the open pure-Wilson positive-self-adjointness route.",
+          "N2 retains an unresolved pure-Wilson operator-property wall.",
+          "N3 identifies an unsupported Hermitian/self-adjoint identification."
+        ],
+        "narrowed_claim_scope": "Conditional finite-dimensional and compact positive-self-adjoint bridge H1+H2 \u21d2 (S.7), and (S.8) when the thermal operator is trace-class; the finite-\u039b pure-Wilson composition is not closed by the supplied one-hop authority.",
+        "next_route": {
+          "reason_untested": "The restricted packet lacks a proof that the displayed axis-permuted Wilson kernel defines a positive self-adjoint/Hermitian operator satisfying the compact bridge hypothesis.",
+          "route_id": "pw_selfadjoint"
+        },
+        "prior_claim_scope": "The finite-dimensional and compact positive-self-adjoint implications H1+H2 \u21d2 (S.7), and the finite-temperature trace-distance bound (S.8) when the thermal operator is trace-class, including the claimed finite-\u039b pure-Wilson composition but excluding the full staggered+Wilson and thermodynamic/continuum surfaces.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop theorem proving that T_W^(mu) is positive self-adjoint/Hermitian, with the bridge's logarithmic gap definition, then re-audit the pure-Wilson composition.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The spectral, Cauchy\u2013Schwarz, and trace-distance arguments are correct on their stated finite-dimensional and compact positive-self-adjoint surfaces, and the runner performs genuine finite-matrix checks rather than hard-coding a physical gap. However, the runner assumes H1/H2, and the cited axis-permutation authority's theorem states only trace-class positivity-improving compactness, not positive self-adjointness or Hermiticity. Consequently the abstract conditional bridge is supported, but the asserted finite-\u039b pure-Wilson corollary is not closed by the restricted packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
+  "title": "Spatial-Slab Cluster-Decomposition Bridge on physical Cl(3) over Z^3",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

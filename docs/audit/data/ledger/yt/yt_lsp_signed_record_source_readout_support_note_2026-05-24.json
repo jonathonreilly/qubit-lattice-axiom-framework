@@ -1,0 +1,681 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+    "yt_source_action_support_packet_note_2026-05-22"
+  ],
+  "direct_in_degree": 13,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.959,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6f1cb6e9e1271a153870a7ce68960a17149e70305732b776da41b6c04c5c6a3b",
+  "note_path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-27T11:53:38.648984+00:00",
+      "audit_date": "2026-05-25T12:48:36.833508+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "For a finite qubit-lattice region and an explicitly chosen canonical projective-measurement Naimark/L\u00fcders dilation, the outcome-r Kraus operator is P_r and sequential composition with a later effect is P_r E P_r; no uniqueness of all instruments implementing the same POVM is audited.",
+          "minimal_axioms": null,
+          "yt_pr230_consolidated_status_note_2026-05-22": "Exact finite-support algebraic equivalence between a product RN source family on signed one-site records and a site-diagonal source-coupled local action, with no physical Y_T closure claimed."
+        },
+        "dep_claim_type": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_pr230_consolidated_status_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_pr230_consolidated_status_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms",
+          "yt_pr230_consolidated_status_note_2026-05-22"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "725f822a31606b3a4345488e4438253133d4a412997714142292b92a9e4c6f12",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T124703Z-b1dc7602-yt_pr230_lsp_signed_reco-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated readout-carrier scope, the chain closes from the supplied retained-grade LSP projective rule, the qubit axiom premise, and the retained_bounded PR230 source packet. It does not close or rely on source/action authority, Higgs-operator identification, LSZ normalization, pole rows, or Yukawa matching.",
+      "claim_scope": "Narrow algebraic support that the PR230 primitive signed RN source record has a native one-site Pauli sharp-projective signed readout carrier, with the exponential RN family fixed by smooth normalized source composition and origin score.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T12:48:36.833508+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:725f822a->a796ff28",
+      "load_bearing_step": "At h = 0, d log R_h / d h_x = epsilon_x, and under the sigma_z sharp-projective readout this is the signed spectral outcome in {-1,+1}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the accepted scope is only readout-carrier support and not physical source/action or Higgs-operator authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 34,
+        "C": 0,
+        "D": 0,
+        "total_pass": 50
+      },
+      "verdict_rationale": "The load-bearing work is algebraic: Pauli spectral projections give the signed observable sigma_z with spectrum {-1,+1}, and the product RN source score at the origin is epsilon_x. The uniqueness corollary follows from normalized multiplication giving additive smooth log-odds with coefficients fixed by the origin score. The non-axiom cited authorities are retained_bounded, the axiom node is explicitly flagged as an axiom premise, and the runner performs actual matrix, RN, composition, and boundary checks without external comparators or tuned numerical inputs."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.091333+00:00",
+      "audit_date": "2026-05-28T06:02:23.778930+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "For a finite qubit-lattice region and an explicitly chosen canonical projective-measurement Naimark/L\u00fcders dilation, the outcome-r Kraus operator is P_r and sequential composition with a later effect is P_r E P_r; no uniqueness of all instruments implementing the same POVM is audited.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between a product Radon-Nikodym source family on signed one-site records and an equivalent source-coupled site-diagonal local action; no neutral EW/Higgs authority, physical Y_T closure, matching/running, or retained-proposal status is audited."
+        },
+        "dep_claim_type": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "a796ff28b71099137ffcc59118f2b240cabdfad5f6b54b5730b3963ce026ad01",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "meitner-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-yt-lsp-signed-record-source-readout",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite Pauli projector algebra, the retained bounded LSP projective measurement rule, and the retained bounded product-RN source-action support packet are sufficient to identify the signed source record with a native projective readout and to prove the stated RN-family uniqueness under the given source semantics.",
+      "claim_scope": "Finite signed-record support only: the Y_T product-RN primitive epsilon_x is realized as a local sharp Pauli-z projective signed readout, and the exponential RN family is unique under the stated smooth normalized-composition and origin-score semantics. This does not close a preferred physical Pauli axis, same-surface source/action authority, Higgs operator, scalar LSZ normalization, kappa_Y=0, y_t, or matching/running.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T06:02:23.778930+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:retained_bounded->unaudited",
+      "load_bearing_step": "E_x = (+1)P_+(x) + (-1)P_-(x) = sigma_z(x), and d log R_h / d h_x |_{h=0} = epsilon_x, so the source score is the signed local projective readout.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only if downstream users broaden this beyond finite signed-readout carrier and RN-family uniqueness under source semantics; it does not close preferred physical Pauli axis, Higgs operator, scalar LSZ normalization, kappa_Y=0, y_t, or same-surface source/action authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 34,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 50
+      },
+      "verdict_rationale": "The bounded support identity closes without importing physical Y_T closure. Independent check: P_+ and P_- are orthogonal idempotents summing to I, P_+ - P_- = sigma_z, and sigma_z has spectrum {-1,+1}; tensor-product site readouts commute and have outcome set {-1,+1}^Lambda. For R_h(epsilon)=exp(sum h_x epsilon_x)/Z(h), the h=0 uniform signed-record reference has zero mean, so d log R_h / d h_x at h=0 equals epsilon_x. The source-family uniqueness corollary is valid under the stated assumptions because normalized multiplication makes log-odds additive, smooth additive log-odds are linear, and the origin-score condition fixes the coefficients. The runner checks these algebraic/RN facts and the boundary firewalls with PASS=50 FAIL=0. Residual risk is downstream scope creep: this result does not select a physical Pauli axis or close Higgs/Yukawa/source-action authority."
+    },
+    {
+      "archived_at": "2026-06-17T10:32:51.431422+00:00",
+      "archived_for_note_hash": "88e90e0792fa2ef82cda75733e3eb017552198496b23451745b313b40be1cd03",
+      "audit_date": "2026-06-05T21:17:55.646329+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "Audited the narrow finite-dimensional canonical Naimark/Luders construction for a projective measurement and its conclusion that the canonical outcome Kraus operator is K_P = P.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between a product Radon-Nikodym source family on signed one-site records and an equivalent source-coupled site-diagonal local action; no neutral EW/Higgs authority, physical Y_T closure, matching/running, or retained-proposal status is audited."
+        },
+        "dep_claim_type": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 10.892,
+        "runner_hash": "a796ff28b71099137ffcc59118f2b240cabdfad5f6b54b5730b3963ce026ad01",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260605-211501-cd6c02d552-yt_lsp_signed_record_source_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite Pauli projection identities, RN score identity, normalized multiplication law, and log-odds uniqueness argument check out. The missing step is a retained bridge that makes the already-defined Y_T primitive source record the outcome of the specified sigma_z projective readout rather than a label-identical carrier.",
+      "claim_scope": "Algebraic compatibility between the Y_T primitive signed source record/product RN score and a chosen local Pauli sharp-projective signed readout, excluding source/action EW-Higgs authority, O_H, LSZ, pole rows, kappa_Y, y_t, and matching.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:17:55.646329+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the qubit/LSP readout above, the RN score epsilon_x is identified with the signed spectral readout of the local projective measurement of sigma_z(x).",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "A clean re-audit would need a retained bridge theorem showing that the Y_T primitive signed source record is generated by the specified Pauli projective readout, not merely represented by an isomorphic +/-1 carrier.",
+      "open_dependency_paths": [
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 34,
+        "C": 0,
+        "D": 0,
+        "total_pass": 50
+      },
+      "verdict_rationale": "The displayed formulas independently check: P_+ and P_- are complementary projections, P_+ - P_- = sigma_z, d log R_h / d h_x at h=0 equals epsilon_x, and the smooth log-odds composition condition reconstructs the exponential RN family. The runner genuinely computes those finite algebraic checks and performs dependency/boundary string checks, with no external comparator or tuned numerical input. However, the headline equality between the Y_T source record and the Pauli readout is the load-bearing move, and the restricted packet does not derive that bridge from the cited authorities; it assigns the same signed label to two compatible concepts."
+    },
+    {
+      "archived_at": "2026-06-19T21:02:01.178459+00:00",
+      "audit_date": "2026-06-18T04:50:49.387449+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "Audited the narrow finite-dimensional canonical Naimark/Luders construction for a projective measurement and its conclusion that the canonical outcome Kraus operator is K_P = P.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between a product Radon-Nikodym source family on signed one-site records and an equivalent source-coupled site-diagonal local action; no neutral EW/Higgs authority, physical Y_T closure, matching/running, or retained-proposal status is audited."
+        },
+        "dep_claim_type": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 12.17,
+        "runner_hash": "48b4485dfab5045bd34bf5761cd89fff6a5cf13b63e5a011fe4733deecbc5c9f",
+        "transitive_descendants": 35
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-yt_lsp_signed_record_source_readout_support_note_2026-05-24-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the declared compatibility-only scope: the cited qubit axiom, LSP projective rule, and Y_T source-action packet support the shared {-1,+1} carrier and finite RN score algebra. It does not close a derivation that the primitive Y_T source record is physically generated by that projective measurement.",
+      "claim_scope": "Algebraic carrier compatibility: the local Pauli sharp-projective readout has outcomes {-1,+1}, and the finite product RN source score over signed records is epsilon_x; no source-action authority, Higgs/O_H, LSZ, kappa_Y, or y_t closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T04:50:49.387449+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:yt_source_action_support_packet_note_2026-05-22",
+      "load_bearing_step": "Under the qubit/LSP readout, the RN score epsilon_x is represented by the same signed carrier as the local projective measurement of sigma_z(x), stated as the Y_T primitive signed source record epsilon_x = the LSP sharp-projective signed Pauli readout at site x.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations use this only as signed-carrier compatibility, not as a record-generation theorem.",
+      "open_dependency_paths": [
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 37,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The runner verifies Pauli projector identities, finite RN score algebra, source-family composition algebra, and boundary/firewall text. The load-bearing equality identifies two already-provided signed carriers rather than deriving the Y_T primitive source record from the projective measurement. The source note itself preserves that boundary and forbids using the result as EW/Higgs, O_H, LSZ, kappa_Y, or y_t closure."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:30.376958+00:00",
+      "archived_for_note_hash": "d37cb7837e17827ce1fdc9573ecf64972162ffa6c0f9bbc18950fca59a9cdc1b",
+      "audit_date": "2026-06-19T21:24:16.780115+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "Audited the narrow finite-dimensional canonical Naimark/Luders construction for a projective measurement and its conclusion that the canonical outcome Kraus operator is K_P = P.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 12.17,
+        "runner_hash": "48b4485dfab5045bd34bf5761cd89fff6a5cf13b63e5a011fe4733deecbc5c9f",
+        "transitive_descendants": 35
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-yt_lsp_signed_record_source_readout_support_note_2026-05-24-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite algebra closes at the carrier-compatibility level: P_plus - P_minus = sigma_z has outcomes {-1,+1}, and the RN score at h=0 is epsilon_x. It does not derive generation of the Y_T source record by the projective measurement; it only matches the signed carrier representation.",
+      "claim_scope": "Compatibility/renaming support between the Y_T primitive signed record carrier and the {-1,+1} sigma_z projective readout, plus finite RN score/composition algebra.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T21:24:16.780115+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Y_T primitive signed source record epsilon_x is identified with the LSP sharp-projective signed Pauli readout at site x.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the compatibility/renaming boundary and do not use this row as a derived measurement-generation bridge.",
+      "open_dependency_paths": [
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 37,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The Pauli projector identities and finite RN source algebra are correctly checked, and the cited retained-bounded inputs supply the local qubit carrier, canonical Luders readout, and primitive signed RN source record. The decisive move is an asserted identity between two existing signed carriers, not a derivation that the primitive Y_T record is produced by the Pauli measurement. The runner verifies isomorphic {-1,+1} algebra and boundary prose, so the row is valid as narrow compatibility/renaming support rather than an independent derivation."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.525890+00:00",
+      "audit_date": "2026-06-21T11:08:02.068099+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on H_Lambda with nonzero displayed outcome projectors: canonical Naimark/Lueders readout gives K_r=P_r; outcome-label phases/permutations preserve this up to phase/relabeling; general label-mixing apparatus unitaries change the POVM element on nonzero sectors.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 12.17,
+        "runner_hash": "d225eb644de9947f7a724842b1e99ef173d2da5924d6e15b4a02fde4b9e1ff3e",
+        "transitive_descendants": 35
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-yt_lsp_signed_record_source_readout_support_note_2026-05-24-first",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Pauli projector algebra, joint-coordinate recovery, RN score, and source-family composition checks close after the carrier is chosen. The missing derivational step is a retained theorem forcing the Y_T packet's primitive signed-record carrier to be the LSP Pauli readout carrier rather than identifying it by definition.",
+      "claim_scope": "Finite-block carrier identification of the Y_T product-RN signed record with the coordinate function on the Pauli joint spectral readout outcome set, plus the associated RN score/composition algebra; no Higgs or Yukawa closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T11:08:02.068099+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "The finite source-record space is defined to be the Pauli joint spectral outcome set, so the Y_T source-action signed source record epsilon_x is identified with the coordinate function of the LSP sharp-projective Pauli readout at site x.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-check whether a future revision derives the source-record/readout carrier map rather than defining the identification.",
+      "open_dependency_paths": [
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 45,
+        "C": 0,
+        "D": 0,
+        "total_pass": 66
+      },
+      "verdict_rationale": "Issue: the load-bearing equality between the Y_T signed source record and the LSP Pauli spectral coordinate is obtained by defining/identifying the source-record carrier with the joint spectral outcome set. Why this blocks clean: the runner verifies the downstream Pauli and RN algebra, but it does not derive the carrier map from the cited authorities. Repair target: a retained source/readout bridge theorem constructing the Y_T packet's primitive signed record as the Pauli readout coordinate without definitional identification. Claim boundary until fixed: exact carrier-compatible RN/source-readout bookkeeping, not an independent source/readout derivation or Y_T closure."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.900420+00:00",
+      "audit_date": "2026-07-01T12:36:39.065538+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on the supplied finite qubit-region carrier, with nonzero displayed outcome projectors and the canonical prepared-apparatus/readout frame; K_r=P_r, phase/permutation readout twists preserve up to phase/relabeling, and label-mixing apparatus unitaries do not preserve the same nonzero-sector POVM.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 12.17,
+        "runner_hash": "d225eb644de9947f7a724842b1e99ef173d2da5924d6e15b4a02fde4b9e1ff3e",
+        "transitive_descendants": 35
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T123639Z-f4e70992-yt_lsp_signed_record_sou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli projector algebra, joint spectral coordinate identity, RN score identity, and source-family uniqueness close as finite algebra. The step that makes this the Y_T source record closes only because the note constructs/identifies the carrier, not because an upstream authority independently forces that bridge.",
+      "claim_scope": "Finite-block support identification of the Y_T signed RN source record with the coordinate on the local Pauli joint spectral outcome set, plus algebraic uniqueness of the exponential RN source family; no EW/Higgs/source-action physical authority.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T12:36:39.065538+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Because epsilon_x is now the coordinate function on the LSP joint spectral outcome set, the source-action packet's signed source record is not introduced through an extra carrier isomorphism.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-check only if a future note supplies an independent source-record carrier bridge instead of defining the Y_T signed record as the Pauli spectral coordinate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 45,
+        "C": 0,
+        "D": 0,
+        "total_pass": 66
+      },
+      "verdict_rationale": "Issue: the load-bearing bridge is the assertion that the Y_T packet's primitive signed record is the same object as the Pauli joint-spectrum coordinate. Why this blocks clean derivation status: the cited Y_T packet supplies a signed {-1,+1} record and the LSP theorem supplies projective readout algebra, but neither independently forces their equality; the current note enforces it by constructing/identifying the carrier. Repair target: a separate bridge theorem would need to derive the source-record carrier from retained LSP/source semantics rather than stipulate it. Claim boundary until fixed: the finite algebra and RN uniqueness are valid support, but the source-readout link is a renaming/construction."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.514514+00:00",
+      "audit_date": "2026-07-02T01:26:47.496645+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on the finite qubit-lattice carrier, with nonzero displayed outcome projectors, fixed prepared apparatus state and outcome-basis readout; K_r=P_r is audited in the canonical frame and under phase/permutation readout relabeling, while label-mixing V_A is audited only as breaking the same projective POVM on nonzero sectors.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 12.17,
+        "runner_hash": "d225eb644de9947f7a724842b1e99ef173d2da5924d6e15b4a02fde4b9e1ff3e",
+        "transitive_descendants": 35
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T012647Z-f6f6f04f-yt_lsp_signed_record_sou",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli projector identities, joint spectral decomposition, RN score, and RN uniqueness algebra close. The headline source-readout equality closes only because the note defines/identifies the source-record carrier with the spectral outcome set, not because that identification is independently derived from the cited authorities.",
+      "claim_scope": "Finite-block support identifying the Y_T signed RN source record with the coordinate label of a chosen local Pauli sharp-projective readout, without closing source/action EW-Higgs authority or downstream Yukawa gates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T01:26:47.496645+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Because `epsilon_x` is now the coordinate function on the LSP joint spectral outcome set, the source-action packet's signed source record is not introduced through an extra carrier isomorphism.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second audit should re-check whether the intended claim is only a definition-level carrier realization; if so this renaming verdict is the stable boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 45,
+        "C": 0,
+        "D": 0,
+        "total_pass": 66
+      },
+      "verdict_rationale": "Issue: the runner verifies the Pauli and RN algebra, but the load-bearing bridge is the carrier identification `Y_T` source record equals Pauli spectral coordinate. Why this blocks: the cited inputs supply a primitive signed source record and a projective Pauli readout theorem, but the equality between those two records is introduced by the audited note's construction. Repair target: add a retained bridge theorem deriving or authorizing that source-record carrier identification without definitional reuse. Claim boundary until fixed: exact algebraic compatibility of the product RN signed record with a Pauli spectral-coordinate realization."
+    },
+    {
+      "archived_at": "2026-07-10T17:09:03.147794+00:00",
+      "audit_date": "2026-07-10T01:46:00.596896+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Canonical projective-measurement Kraus selection K_r=P_r, including phase/permutation equivalence and failure under genuine outcome-sector mixing, on a finite-dimensional qubit-lattice region carrier.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 10.959,
+        "runner_hash": "d225eb644de9947f7a724842b1e99ef173d2da5924d6e15b4a02fde4b9e1ff3e",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-yt_lsp_signed_record_sou-048",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited inputs separately provide a signed-record carrier and a canonical Pauli projective readout, but none independently establishes that the pre-existing packet record is generated by that readout. The note obtains the equality by defining the two carriers to be the same and reusing epsilon_x.",
+      "claim_scope": "Finite-block Pauli joint-projector algebra, its signed coordinate readout, and the compositional exponential RN family, restricted to source-side support with no Higgs or Yukawa identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T01:46:00.596896+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+      "load_bearing_step": "The packet-level signed record epsilon_x is identified with the coordinate function on the LSP joint Pauli spectral outcome set because the record sample space is defined to be that outcome set.",
+      "load_bearing_step_class": "F",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a retained authority that independently establishes that the Y_T packet's pre-existing signed record is produced by the selected Pauli projective readout, rather than defining the record carrier to be its spectral outcome set.",
+      "open_dependency_paths": [
+        "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 45,
+        "C": 0,
+        "D": 0,
+        "total_pass": 66
+      },
+      "verdict_rationale": "The projector, joint-spectrum, RN-score, and source-composition calculations are valid algebraic checks once the shared carrier is stipulated. The load-bearing source-to-readout edge, however, is introduced by declaring the source-record space to be the Pauli spectral outcome set rather than derived from an independent authority. The runner verifies this declaration through strings and fixed finite algebra but does not establish the provenance of the packet-level record."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:40.914424+00:00",
+      "audit_date": "2026-07-10T17:17:59.644176+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "For finite-dimensional H_sys with a complete family of nonzero orthogonal projectors and fixed canonical apparatus preparation/readout, K_r=P_r; pure outcome phases and permutations preserve the instrument up to phase or relabeling, while label-mixing rows change the corresponding POVM element to the stated unistochastic mixture.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 10.959,
+        "runner_hash": "d225eb644de9947f7a724842b1e99ef173d2da5924d6e15b4a02fde4b9e1ff3e",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00024-yt_lsp_signed_record_source_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Pauli spectral identities and RN uniqueness corollary close algebraically, but the cited inputs do not derive that the source packet's pre-existing signed record inhabits this particular spectral outcome carrier. The note establishes that step by definition.",
+      "claim_scope": "Finite-block Pauli joint-spectrum and RN-family algebra, including the stipulated identification of the Y_T signed record with the spectral coordinate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T17:17:59.644176+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_source_action_support_packet_note_2026-05-22:retained_bounded->unaudited",
+      "load_bearing_step": "The Y_T source-action signed source record epsilon_x is identified with the coordinate function of the LSP sharp-projective Pauli readout at site x.",
+      "load_bearing_step_class": "F",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained theorem deriving the source packet's carrier/readout identification and update the runner to construct that map rather than string-check the asserted identity; otherwise retag the result explicitly as a definitional renaming.",
+      "open_dependency_paths": [
+        "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 45,
+        "C": 0,
+        "D": 0,
+        "total_pass": 66
+      },
+      "verdict_rationale": "Issue: the source-record/readout equality is stipulated by defining the signed-record sample space as the Pauli joint spectrum, while the runner separately checks Pauli and RN algebra plus boundary strings. Why this blocks: the source-action authority supplies an abstract signed record and the LSP authority supplies a canonical projective instrument, but neither selects an identity between their carriers. Repair target: derive an explicit carrier/readout map from retained inputs and make the runner construct that map. Claim boundary until fixed: the Pauli coordinate and exponential-family calculations are exact, but their identification with the Y_T packet record is a renaming."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
+  "title": "Y_T LSP Signed-Record Source-Readout Support Theorem",
+  "transitive_descendants": 21,
+  "verdict_rationale": null
+}

@@ -1,0 +1,173 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_oriented_cycle_reduced_channel_nonselection_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "pmns_oriented_cycle_selection_structure_note",
+    "pmns_oriented_cycle_channel_value_law_note",
+    "pmns_active_four_real_source_from_transport_note"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
+    "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
+    "scripts/pmns_lower_level_utils.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.062,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9ab5a05cfce00689c21c63cb994b65aa8812bb89c56cda5e44f3f4b033dbedc9",
+  "note_path": "docs/PMNS_ORIENTED_CYCLE_REDUCED_CHANNEL_NONSELECTION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106584+00:00",
+      "archived_for_note_hash": "b8abbe6237df41ee4193d026728e28ff4b04fa2c9e6eeda14adf1bd8b952ca22",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.493283+00:00",
+      "archived_for_note_hash": "8a14c3a274b3aec500344096d9f28dbe7bcfc40657e1f3e2f890afea86053ab4",
+      "audit_date": "2026-05-01T03:10:57.933494+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:2026-05-01-pmns_oriented_cycle_reduced_channel_nonselection_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The counterexample algebra passes, but the statement is conditional on imported oriented-cycle and selection-structure machinery that is not registered as ledger dependencies and is not independently closed in this row.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "There exist two distinct reduced-channel points satisfying the same residual antiunitary symmetry, the same canonical support, the same native readout law, and the same lower-level active response realization; therefore the current exact bank does not select a unique reduced-channel value.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md",
+        "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
+        "scripts/pmns_lower_level_utils.py",
+        "scripts/frontier_pmns_oriented_cycle_reduced_channel_nonselection.py"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the runner constructs distinct reduced-channel points and verifies the nonselection pattern, but the row has deps=[] while importing the oriented-cycle value-law, selection-structure, and lower-level response utilities as the current exact bank. Why this blocks: the no-go is only as strong as that imported bank specification, and one of those imported readout laws is itself a coefficient-definition/renaming rather than an independently retained physical observable. Repair target: register the oriented-cycle value-law, residual selection-structure, and lower-level active-response authorities as dependencies, then state the no-go as conditional on their exact constraint set or derive that constraint set in this note. Claim boundary until fixed: algebraic nonselection counterexample for the encoded reduced-channel constraints; not a standalone proof that the full current PMNS bank lacks every value-selection law."
+    },
+    {
+      "archived_at": "2026-05-09T18:53:37.100842+00:00",
+      "archived_for_note_hash": "5737edd414853f896efca29d3f02ce267510ad975f21b2104b9d600274412bf3",
+      "audit_date": "2026-05-05T09:53:22.070291+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "pmns_oriented_cycle_channel_value_law_note": "retained"
+        },
+        "deps": [
+          "pmns_oriented_cycle_channel_value_law_note"
+        ],
+        "load_bearing_score": 10.68,
+        "runner_hash": "4ea3e8ef72c4bc114276467d43c39b530bc6c6572ae6aadfa862375ab82cc8ee",
+        "transitive_descendants": 289
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-first-pmns_oriented_cycle_reduced_channel_nonselection_note-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic witness argument is locally coherent and the cached runner passes 8 checks, but the restricted packet supplies only the native oriented-cycle value-law dependency. The no-selection conclusion also relies on the graph-first residual reduction and the lower-level active-response realization theorem as closed inputs, and those dependency authorities are not provided as direct one-hop retained-grade dependencies.",
+      "claim_scope": "Within the stated graph-first reduced oriented-cycle channel, the current exact constraints permit distinct realized reduced-channel values, so they do not select a unique value.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-05T09:53:22.070291+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "There exist distinct reduced-channel points satisfying the residual antiunitary symmetry, the retained diagonal-plus-forward-cycle support, the native observable law, and exact lower-level active-response realization; therefore the current exact bank does not select a unique reduced-channel value.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct audited dependency paths for the graph-first selected-axis residual reduction and the lower-level active-response realization theorem, then re-audit dependency status and closure.",
+      "open_dependency_paths": [
+        "docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the note's negative closeout depends on two load-bearing upstream facts beyond the provided value-law note: that the graph-first residual channel is exactly the stated three-real family and that every such reduced block is exactly realized on the lower-level active-response chain. Why this blocks: two explicit examples prove nonselection only after those constraints are known to be the complete current exact bank constraints; otherwise the argument is conditional on unratified carrier/realization closure. Repair target: add direct dependency edges to the notes proving the graph-first residual reduction and lower-level active-response realization, then re-audit once those dependencies are retained-grade. Claim boundary until fixed: the runner gives strong algebraic support that the listed constraints alone do not collapse the reduced channel to a unique value."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.976955+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_pmns_oriented_cycle_reduced_channel_nonselection.py",
+  "title": "PMNS Oriented Cycle Reduced-Channel Nonselection",
+  "transitive_descendants": 755,
+  "verdict_rationale": null
+}

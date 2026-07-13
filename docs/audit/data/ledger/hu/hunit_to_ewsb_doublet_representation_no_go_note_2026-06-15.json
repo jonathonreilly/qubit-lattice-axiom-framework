@@ -1,0 +1,299 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_ward_identity_derivation_theorem",
+    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+    "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "04b4aac21435dcaee351a9d407de52327f27fe41c33f5fa224f9b8be66723ab3",
+  "note_path": "docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:33:32.462027+00:00",
+      "audit_date": "2026-06-16T01:31:18.797637+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Exact bounded support that the signed one-qubit source in the sigma_z readout basis is affinely equivalent to a P_- occupation source, and that P_- is the neutral carrier ray of the retained one-Higgs electroweak doublet.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 8.17,
+        "runner_hash": "b714b80e78601909bc83eb63ea041da93e86f230fa8332e197996734c6bd0bf8",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-49016d0a73-hunit_to_ewsb_doublet_repres",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Ward authority supplies H_unit as an isospin scalar, while the EW authority supplies the target fundamental doublet bookkeeping. For an equivariant T:C_triv->C^2, T is determined by v=T(1), and SU(2) invariance forces v=0, so the direct bridge is impossible on the stated scope.",
+      "claim_scope": "The audited claim is only the direct-route obstruction: H_unit as an SU(2)_L scalar singlet cannot itself equivariantly derive the full one-complex SU(2)_L EWSB doublet; neutral-ray use remains inside an already supplied doublet surface.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-16T01:31:18.797637+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26:retained->unaudited",
+      "load_bearing_step": "There is no nonzero SU(2)-equivariant linear map from the trivial representation carried by H_unit to the fundamental doublet: Hom_SU(2)(1,2)=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check downstream reuse preserves the scoped direct-bridge boundary and does not promote this into an absolute no-Higgs or no-EWSB claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 21,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The load-bearing step is exact representation algebra over the cited inputs, not a definition, renaming, fitted comparator, or tuned numerical match. An independent check gives the same obstruction: invariance under the Pauli generators, equivalently under diagonal SU(2) rotations plus off-diagonal generators, leaves no nonzero vector in the fundamental. The N1-N8 no-go discipline passes for the scoped direct-route no-go because the note explicitly leaves the supplied-doublet route, separate field-content authority, and conditional g_* bookkeeping open."
+    },
+    {
+      "archived_at": "2026-06-20T08:43:08.404649+00:00",
+      "audit_date": "2026-06-19T22:24:04.418987+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling relation, rho_tree identity, and scalar Hessian companion for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev.",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Bounded algebraic support: signed-record source equivalence to lower-projector occupation in the one-site qubit algebra plus neutrality of the lower one-Higgs EW ray, excluding any physical same-surface qubit/Higgs carrier identification or Y_T closure.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "b714b80e78601909bc83eb63ea041da93e86f230fa8332e197996734c6bd0bf8",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Ward authority supplies H_unit as an SU(2)_L scalar on the Q_L block, while the EW authority supplies the target one-complex-fundamental-doublet bookkeeping. The standard finite-dimensional SU(2) representation calculation forces any equivariant map from the trivial representation to the fundamental to be zero, so the direct bridge is closed negatively.",
+      "claim_scope": "Narrow representation-theoretic no-go that H_unit's SU(2)_L scalar-singlet structure alone cannot derive a full complex SU(2)_L EWSB doublet or its four-real-component thermal census.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-19T22:24:04.418987+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25:retained_bounded->unaudited",
+      "load_bearing_step": "There is no nonzero SU(2)-equivariant linear map from the trivial representation carried by H_unit to the fundamental doublet: Hom_SU(2)(1,2)=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use preserves the narrow direct-bridge scope and does not convert this into a broader no-Higgs or no-EWSB claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 21,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The load-bearing step is exact representation algebra over retained-grade cited inputs, not a definition, renaming, tuned numerical match, or external comparator check. The runner source performs actual Sympy matrix/rank/nullspace/projector computations and text-surface checks rather than merely printing the contested conclusion. The no-go discipline gate is present with five routes and a narrow residual, and the conclusion is explicitly limited to the direct H_unit-singlet-to-full-doublet derivation."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.070278+00:00",
+      "audit_date": "2026-06-21T13:27:47.294172+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Bounded source-side support: signed-record epsilon source is affinely equivalent to lower-projector occupation, and the lower projector is the neutral charge-spectral projector on the retained one-Higgs carrier; no positive Y_T, top-response, scalar-normalization, or physical-scale g_2 closure is audited.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "b714b80e78601909bc83eb63ea041da93e86f230fa8332e197996734c6bd0bf8",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Ward authority supplies H_unit as an isospin scalar, and the EW authority supplies the target fundamental doublet surface. The Pauli-generator invariant-vector calculation closes the direct representation mismatch without importing an observed Higgs count, fitted value, or new premise.",
+      "claim_scope": "Audited the narrow direct-route no-go: H_unit as an SU(2)_L scalar singlet on Q_L cannot by itself equivariantly derive a full complex SU(2)_L EWSB doublet; supplied-doublet and neutral-ray uses remain outside this direct derivation.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-21T13:27:47.294172+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25:retained_bounded->unaudited",
+      "load_bearing_step": "There is no nonzero SU(2)-equivariant linear map from the trivial representation carried by H_unit to the fundamental doublet, i.e. Hom_SU(2)(1,2)=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream uses preserve the narrow scope: this does not supply positive one-doublet thermal field-content authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 21,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The load-bearing step is exact representation algebra over the cited retained-grade surfaces, not a definition, renaming, or tuned numerical match. The runner source computes the relevant commutators, invariant-vector nullspace, projector non-invariance, and real-component boundary rather than merely printing PASS lines. The no-go discipline gate is present and scoped to the direct singlet-to-full-doublet route, while explicitly leaving the supplied-one-doublet positive route open. No open physical readout, observed census, or unclosed bridge is used to prove the negative claim."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.253652+00:00",
+      "audit_date": "2026-07-02T05:21:07.323595+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Bounded source-side support that the signed-record epsilon source is affinely equivalent to P_- occupation, the one-Higgs lower ray is neutral, and the cited same-surface spectral-projector theorem identifies that ray as 1_0(Q_H), without positive Y_T closure.",
+          "yt_ward_identity_derivation_theorem": "Exact point-split U(1)_B and U(2)_iso vector Ward identities for the stated finite staggered Q_L action at fixed color links, plus the bounded H_unit matrix-element corollary y_t_bare=1/sqrt(6) on the canonical g_bare=1 surface, with no SM Yukawa, tadpole-transport, or precision readout."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "b714b80e78601909bc83eb63ea041da93e86f230fa8332e197996734c6bd0bf8",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T052107Z-4c313c3d-hunit_to_ewsb_doublet_re",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from the cited H_unit scalar-singlet identification and the cited one-doublet EW bookkeeping: the SU(2) fundamental has no nonzero invariant vector, while H_unit is invariant. The note correctly leaves supplied-doublet neutral-ray and conditional g_* routes outside this no-go.",
+      "claim_scope": "Audited only the direct-route no-go that H_unit, as an SU(2)_L scalar singlet on Q_L, cannot by itself equivariantly derive a full one-complex SU(2)_L EWSB doublet.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T05:21:07.323595+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25:retained_bounded->unaudited",
+      "load_bearing_step": "There is no nonzero SU(2)-equivariant linear map from the trivial representation to the fundamental doublet, i.e. Hom_SU(2)(1,2)=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only that downstream uses preserve the narrow direct-bridge scope and do not cite this as a no-Higgs or no-EWSB result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 21,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The load-bearing step is standard finite-dimensional SU(2) representation algebra over retained-bounded inputs, not a definition, renaming, or numerical match. The runner independently checks the commutator, invariant-vector, neutral-projector, and degree-count boundary claims, while its text-surface checks only verify cited input wiring. The no-go discipline gate is present and narrow: it closes only the direct H_unit-singlet-to-full-doublet derivation route and explicitly preserves the supplied-doublet path."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py",
+  "title": "H_unit to EWSB Doublet Representation No-Go",
+  "transitive_descendants": 3,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

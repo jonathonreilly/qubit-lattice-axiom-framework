@@ -1,0 +1,372 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "poisson_self_gravity_born_audit_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "poisson_self_gravity_loop_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/minimal_source_driven_field_probe.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.972,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "635e72544f59534d79efc05ece6b1b2113a561a1fe7b59170659485549a6f670",
+  "note_path": "docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106676+00:00",
+      "archived_for_note_hash": "b905225b26359c765bc23ccebe120d916b45883824ae4d2532eb8e0ea51fd691",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.236707+00:00",
+      "audit_date": "2026-05-01T11:13:10.984159+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered runner reproduces the exact zero-coupling reduction and the representative nonzero row: step-local Born 8.834e-16 versus end-to-end Born 6.830e-05, with both nonzero loop convergence flags false as reported.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "The Poisson-like self-gravity loop preserves Born at the frozen propagation-step level but not end-to-end through the full nonlinear iterated loop at the tested nonzero coupling.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Clean within the note's bounded audit scope. The note does not claim a universal theorem; it separates frozen-step Born behavior from full nonlinear-loop end-to-end behavior on one exact lattice family and one representative nonzero coupling. Current runner output matches the frozen row exactly, including exact epsilon=0 recovery, machine-clean step-local Born, and nonzero end-to-end Born drift. Residual risk is the stated narrowness: one lattice family, one coupling/source row, and no universal self-gravity Born-safety theorem."
+    },
+    {
+      "archived_at": "2026-05-09T10:55:06.461563+00:00",
+      "audit_date": "2026-05-05T06:43:17.901618+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.5,
+        "runner_hash": "478123a0f908acd5291a1d22c339e0f07a4d324c6b96ab66c927da58287e8381",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-poisson_self_gravity_bor-274",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the restricted packet, the runner implements the frozen-field propagation and the separate subset loop computations and reports the claimed separation between step-local and end-to-end Born behavior. The conclusion is bounded to the single tested lattice/coupling/source-strength row and does not claim a universal theorem.",
+      "claim_scope": "One h = 0.25 3D lattice family, one three-slit source set, one screened Poisson-like backreaction loop, epsilon = 0 reduction, frozen-step Born check, and full-loop end-to-end Born check at epsilon = 0.05 and s = 0.0040.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T06:43:17.901618+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->high",
+      "load_bearing_step": "For epsilon = 0.05 and source strength s = 0.0040, the frozen step-local Born ratio is machine-clean while the separately iterated end-to-end Born ratio is 6.830e-05.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the imported minimal_source_driven_field_probe lattice/operator implementation if that file is included in a future restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The load-bearing result is produced by a concrete numerical runner rather than a definition, renaming, external comparator, or tuned imported scale. The runner separately computes the frozen abc snapshot Born ratio and the end-to-end subset-loop Sorkin combination, which directly supports the note's narrow conclusion. The source note appropriately caveats nonconvergence at the iteration cap and frames the claim as a bounded audit rather than a universal closure theorem."
+    },
+    {
+      "archived_at": "2026-05-10T07:52:51.890385+00:00",
+      "audit_date": "2026-05-09T11:19:54.412581+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.011,
+        "runner_hash": "478123a0f908acd5291a1d22c339e0f07a4d324c6b96ab66c927da58287e8381",
+        "transitive_descendants": 128
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e0c76-aabf-70d2-8647-223a5ea416ae",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner implements the frozen-field and end-to-end tests separately and the stdout matches the note's stated values. No cited upstream authority is required for the bounded claim as stated.",
+      "claim_scope": "Narrow computational audit of one h=0.25 3D lattice, one three-slit source set, one screened Poisson-like backreaction loop, epsilon=0.05, source strength 0.004, distinguishing frozen-step Born from end-to-end Born.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-09T11:19:54.412581+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "The full nonlinear loop is run separately for a, b, c, ab, ac, bc, and abc, giving end-to-end Born I3/P = 6.830e-05 while the frozen snapshot check stays at 8.834e-16.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the imported lattice helper module's Lattice3D and phase constant implement the intended exact h=0.25 lattice, since its source is not included in the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The issue tested is narrow: whether this explicit loop preserves Born locally and end-to-end. The runner computes the field iteration, frozen Sorkin I3/P, separate slit-subset loop outputs, and zero-coupling reduction rather than hard-coding the target numbers. The claim boundary is limited to the specified lattice, coupling, source strength, and nonconverged max-iteration snapshot; within that boundary the conclusion follows from the provided computation."
+    },
+    {
+      "archived_at": "2026-05-11T13:06:18.365059+00:00",
+      "archived_for_note_hash": "78ca92c50e9ee0df6c9844683a8f864879b073540bcd91ad84a2b95be6b64821",
+      "audit_date": "2026-05-10T14:22:51.457331+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.435,
+        "runner_hash": "478123a0f908acd5291a1d22c339e0f07a4d324c6b96ab66c927da58287e8381",
+        "transitive_descendants": 345
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e1243-4346-7be1-9340-5b3c77d72f7d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The nonzero-coupling row does not establish the stated converged-loop claim because both stepConv and endConv are False at max_iters=6. In the unconverged branch, the runner returns a relaxed field while detector probabilities use amplitudes propagated before the last relaxation, so the reported drift is a capped-iteration diagnostic rather than a converged full-loop result.",
+      "claim_scope": "Bounded numerical audit of frozen-step versus end-to-end Born behavior for one h=0.25 three-slit screened Poisson-like loop at epsilon=0.05 and source strength 0.004.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T14:22:51.457331+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The full iterated loop does not stay machine-clean end-to-end on the tested nonzero coupling, so Born is preserved only at the per-step / frozen-snapshot level.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: cheapest repair is to make the runner enforce convergence for all seven slit subsets and recompute final amplitudes from the returned field, or split out a separate finite-six-iteration diagnostic claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note's full-loop Born-drift conclusion rests on the only nonzero row, where the runner reports nonconvergence for both the frozen snapshot and the end-to-end subset loops. Why this blocks: the note defines the target observable using converged loop outputs, but the supplied runner provides a six-iteration capped diagnostic with no PASS assertion and stale final amplitudes in the unconverged return path. Repair target: run or slice the loop until every slit subset converges and recompute final detector probabilities on the returned field, or explicitly re-scope the note to finite six-iteration outputs. Claim boundary until fixed: the zero-coupling reduction and printed frozen-step versus capped-loop numbers may be cited only as diagnostics, not as a converged full nonlinear-loop theorem."
+    },
+    {
+      "archived_at": "2026-05-19T11:19:03.094145+00:00",
+      "archived_for_note_hash": "40b5535fa710c1b22fa1242056f05e699b3d6d9887e887a3fd8fe2113a41225a",
+      "audit_date": "2026-05-18T13:11:47.267721+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "poisson_self_gravity_loop_note": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism."
+        },
+        "dep_claim_type": {
+          "poisson_self_gravity_loop_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "poisson_self_gravity_loop_note": "retained_bounded"
+        },
+        "deps": [
+          "poisson_self_gravity_loop_note"
+        ],
+        "load_bearing_score": 11.791,
+        "runner_hash": "478123a0f908acd5291a1d22c339e0f07a4d324c6b96ab66c927da58287e8381",
+        "transitive_descendants": 885
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-130932-bf75a80a-poisson_self_gravity_bor-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes the lattice propagation and Born diagnostics, but the nonzero-coupling end-to-end row does not converge and reads amplitudes from the pre-last-relaxation code path. A converged seven-subset loop run with final amplitudes recomputed from the returned fields is missing for any converged-loop theorem.",
+      "claim_scope": "Narrow h=0.25 three-slit screened Poisson-like loop audit distinguishing frozen step-local Born cancellation from the finite-six-iteration end-to-end nonlinear-loop diagnostic at epsilon=0.05 and source strength 0.004.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T13:11:47.267721+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The frozen field snapshot remains Born-clean to machine precision, while the nonzero-coupling end-to-end I3/P row is a finite-six-iteration capped diagnostic rather than a converged nonlinear-loop theorem.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: make the runner enforce convergence for all seven slit subsets and recompute final detector amplitudes from each returned field, or explicitly split this into a finite-six-iteration diagnostic-only claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The zero-coupling reduction and frozen-snapshot Born check are computed from the supplied lattice runner and helper rather than hard-coded constants. However, the note itself and runner output report stepConv=False and endConv=False at max_iters=6 for the only nonzero-coupling row, so the end-to-end Born drift is only a capped diagnostic. The cited loop note is provided as retained_bounded in this packet, so the conditional verdict is driven by the runner artifact and convergence perimeter rather than an upstream dependency."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:39.633618+00:00",
+      "audit_date": "2026-05-19T15:25:20.173792+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "poisson_self_gravity_loop_note": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism."
+        },
+        "dep_claim_type": {
+          "poisson_self_gravity_loop_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "poisson_self_gravity_loop_note": "retained_bounded"
+        },
+        "deps": [
+          "poisson_self_gravity_loop_note"
+        ],
+        "load_bearing_score": 11.95,
+        "runner_hash": "478123a0f908acd5291a1d22c339e0f07a4d324c6b96ab66c927da58287e8381",
+        "transitive_descendants": 988
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-poisson_self_gravity_bor-006",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the lattice, fields, propagation, and Sorkin I3/P values directly rather than printing or importing the contested result. The unconverged end-to-end loop value is explicitly demoted, so it is not needed for the retained bounded claim.",
+      "claim_scope": "Narrow numerical audit on the provided h = 0.25 three-slit lattice runner: exact zero-coupling reduction and step-local frozen-snapshot Born cancellation; nonzero-coupling end-to-end Born is excluded from retained scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-19T15:25:20.173792+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-19T14:32:47.113398+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-poisson_self_gravity_bor-015",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "One exact h=0.25 three-slit lattice family with screened Poisson-like backreaction: exact zero-coupling reduction and frozen-snapshot step-local Born only; nonzero-coupling end-to-end Born is capped-iteration diagnostic.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-19T15:25:20.173792+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-poisson_self_gravity_bor-006",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Narrow numerical audit on the provided h = 0.25 three-slit lattice runner: exact zero-coupling reduction and step-local frozen-snapshot Born cancellation; nonzero-coupling end-to-end Born is excluded from retained scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:poisson_self_gravity_loop_note:retained_bounded->unaudited",
+      "load_bearing_step": "The bounded retained conclusion is that the frozen field snapshot remains Born-clean to machine precision and the exact epsilon = 0 reduction survives exactly, while the nonzero-coupling end-to-end row is diagnostic only.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the displayed step-local numeric value in the note: the cached runner reports 1.028e-15 while the note quotes 8.834e-16, though both support the machine-clean retained scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Within the restricted packet, the retained claim closes: the zero-epsilon reduction and frozen-snapshot Born check are computed from the included runner and helper source. The code does not hard-code the target Born value or rely on an external comparator. The runner also shows the nonzero-coupling end-to-end row is not converged, but the note no longer uses that row as a theorem. The cited authority is supplied as retained_bounded, and no open dependency is load-bearing for the narrowed claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/poisson_self_gravity_born_audit.py",
+  "title": "Poisson Self-Gravity Born Audit Note",
+  "transitive_descendants": 709,
+  "verdict_rationale": null
+}

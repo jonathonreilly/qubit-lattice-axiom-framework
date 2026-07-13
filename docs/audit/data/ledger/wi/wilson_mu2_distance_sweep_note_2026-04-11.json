@@ -1,0 +1,1487 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wilson_mu2_distance_sweep_note_2026-04-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wilson_two_body_open_note_2026-04-11"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_wilson_two_body_open.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "73bc79ddfaab8f348a9ba67835fa18f410bc4b9c65a2918d7755f2bd33051d4c",
+  "note_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-01T18:28:34.984317+00:00",
+      "archived_for_note_hash": "59aa7b3edda2f633a7c1931f6f5ceec5a4b4938057d14151f1b256fe5d1ce022",
+      "audit_date": "2026-04-30T19:08:30.738667+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-ca82-second-slice-b-fresh-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The registered runner's sweep surface does not match the note's numerical table: the runner uses mu^2 values 0.22, 0.05, 0.01, 0.005, and 0.001, while the note reports 0.10 and 0.0 and omits 0.005. There is no PASS/assertion surface tying the note's headline exponents to current registered output.",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The steep open-lattice exponent at mu^2 = 0.22 is screening-controlled, and as screening is reduced the law approaches Newton-compatible d^-2 while the mutual-attraction channel remains present.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing exponent table is stale relative to the registered runner surface and current output was not available from the long sweep during this restricted audit. Why this blocks: the conclusion that the exponent monotonically softens through the reported mu^2=0.10 and mu^2=0.0 points cannot be claimed from the current runner. Repair target: sync the note and runner sweep values, add assertions or stored current output for the fitted exponents, and rerun the registered script. Claim boundary until fixed: it may be cited only as an attempted Wilson distance-law calibration with unsynchronized numerics, not as an audited screening-control result."
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.494486+00:00",
+      "archived_for_note_hash": "fc8252df49a4a7a5c69d6b3e54b500887915fa56b108da8923584ca69831f1a5",
+      "audit_date": "2026-05-01T19:39:56.437428+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-01-d522",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The current runner supports the qualitative monotone softening trend on its five executed mu^2 values, but it does not execute the note's full table (mu^2=0.10 and mu^2=0.0 are absent), emits no classified PASS lines, and the source note explicitly anchors to Wilson notes whose audit state is not clean. The calibration is therefore supported as a current-run trend but not fully audited as the tabled distance-law claim.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "As screening is reduced, the open-lattice Wilson mutual-channel distance exponent softens monotonically toward Newton-compatible d^-2 behavior, so the steep mu^2=0.22 exponent is screening-controlled rather than a fixed universality class.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md",
+        "docs/WILSON_TWO_BODY_OPEN_REFINED_NOTE_2026-04-11.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the registered runner exits successfully and reproduces the monotone softening trend, but its sweep grid is stale relative to the note's table and emits no classified PASS lines; two table rows in the note are not currently rerun. Why this blocks: the exact calibration surface and the claimed clean-row table cannot be audited from the current runner output, and the note's anchor Wilson rows are not clean audit inputs. Repair target: align the note and runner on the same mu^2 grid, add classified PASS lines for attraction cleanliness, monotone exponent softening, near-d^-2 approach, and table reproduction, then re-audit with the anchor Wilson rows clean or with the calibration made self-contained. Claim boundary until fixed: the current runner supports a five-point bounded trend that screening softens the exponent, not a fully audited Wilson distance-law calibration table or Newton closure."
+    },
+    {
+      "archived_at": "2026-05-25T16:06:47.533398+00:00",
+      "archived_for_note_hash": "9435a6f423055edba1e5a5937cbbd5ed046e8e5a0057e52c99d076fbcd840f71",
+      "audit_date": "2026-05-24T17:30:24.838139+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wilson_two_body_open_note_2026-04-11": "Finite open-boundary Wilson two-orbital Hartree simulations at side=11,13, G=5, mu^2=0.22, d=3..6, plus the in-packet post-selected distance/partner-source law fits and side=13 screening-mass alpha sweep; periodic and both-masses Newton-closure rows are excluded."
+        },
+        "dep_claim_type": {
+          "wilson_two_body_open_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wilson_two_body_open_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "wilson_two_body_open_note_2026-04-11"
+        ],
+        "load_bearing_score": 4.085,
+        "runner_hash": "cac50444e3d13a6e5e0a34bfc890f5f8288b20eb57dff8228a37327d6548d85b",
+        "transitive_descendants": 11
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T173002Z-75f4fa29-wilson_mu2_distance_swee-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner and helper source genuinely compute the Wilson open-lattice rows and the cached output supports the monotone softening claim on the runner's five-value mu^2 grid. The full source-note table does not close because it claims mu^2=0.10 and mu^2=0.0 results, but the supplied primary runner source and cache omit those values and instead include mu^2=0.005.",
+      "claim_scope": "Open-boundary Wilson lattice sweep on sides 11, 13, 15 with G=5 and d=3..6, verifying clean attractive rows and monotone exponent softening for the completed runner's mu^2 values 0.22, 0.05, 0.01, 0.005, and 0.001.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T17:30:24.838139+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "As screening is reduced, the clean open-boundary Wilson distance-law exponent softens monotonically toward Newton-compatible d^-2 behavior while the mutual-attraction channel remains present.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide a completed runner/cache whose MU2_VALUES match the source note table, including mu^2=0.10 and mu^2=0.0, or narrow the note text to the five-value grid actually computed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing computation is class C: the primary runner calls the included open Wilson lattice implementation, solves the screened Poisson problem, evolves the Wilson Hamiltonian, computes shared-minus-self mutual acceleration, and fits log |a_mut| versus log d. The completed cache supports clean attractive rows and monotone exponent softening for the runner's actual sampled grid. However, the source note's stated sweep includes mu^2=0.10 and mu^2=0.0, neither of which is present in the supplied runner source or cache, so the note's full table and exact stated scope are not closed by the restricted packet."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.754121+00:00",
+      "audit_date": "2026-05-25T19:38:36.255048+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wilson_two_body_open_note_2026-04-11": "Finite open-boundary Wilson two-orbital Hartree simulations at side=11,13, G=5, mu^2=0.22, d=3..6, plus the in-packet post-selected distance/partner-source law fits and side=13 screening-mass alpha sweep; periodic and both-masses Newton-closure rows are excluded."
+        },
+        "dep_claim_type": {
+          "wilson_two_body_open_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wilson_two_body_open_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "wilson_two_body_open_note_2026-04-11"
+        ],
+        "load_bearing_score": 4.085,
+        "runner_hash": "cac50444e3d13a6e5e0a34bfc890f5f8288b20eb57dff8228a37327d6548d85b",
+        "transitive_descendants": 11
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T193814Z-8a8b89c5-wilson_mu2_distance_swee-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied primary runner and helper source instantiate the open Wilson lattice, Poisson solve, Wilson Hamiltonian evolution, mutual acceleration observable, clean/attract labeling, and log-log power-law fits rather than merely printing constants. The completed cache reports 12/12 clean attractive rows at each mu^2 and the quoted monotone exponent softening.",
+      "claim_scope": "Audited the cache-backed open-boundary Wilson mu^2 distance sweep on sides 11, 13, 15 with G=5, d=3..6, mu^2 in {0.22, 0.05, 0.01, 0.005, 0.001}, using clean attractive rows only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:38:36.255048+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "As screening is reduced across the five-value mu^2 grid, the fitted clean-attractive distance exponent softens monotonically from about -3.315 to -1.871, approaching Newton-compatible d^-2 behavior while the mutual-attraction channel remains present.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the primary runner's imported base.run_config path, not the helper's hard-coded addendum check, is the load-bearing computation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing claim is bounded to a finite computed lattice surface and is directly supported by the supplied runner cache. The helper path used by the primary runner calls genuine computational routines; the hard-coded comparison table in the helper's own main is not on the primary runner's load-bearing path. The cited upstream authority is retained_bounded and consistent with the scoped companion calibration, while the note explicitly avoids promoting the result to full Newton closure."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:19.063115+00:00",
+      "audit_date": "2026-07-12T08:23:41.281682+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wilson_two_body_open_note_2026-04-11": "Finite open-boundary Wilson two-orbital Hartree simulations at side=11,13, G=5, mu^2=0.22, d=3..6, plus the in-packet post-selected distance/partner-source law fits and side=13 screening-mass alpha sweep; periodic and both-masses Newton-closure rows are excluded."
+        },
+        "dep_claim_type": {
+          "wilson_two_body_open_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wilson_two_body_open_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "wilson_two_body_open_note_2026-04-11"
+        ],
+        "load_bearing_score": 4.085,
+        "runner_hash": "cac50444e3d13a6e5e0a34bfc890f5f8288b20eb57dff8228a37327d6548d85b",
+        "transitive_descendants": 11
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00221-wilson_mu2_distance_sweep_no",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary and helper sources genuinely compute the finite lattice rows and power-law fits supporting the distance calibration. The full note also advances a no-go-style Newton-closure boundary whose strongest alternative readouts remain untested and whose both-masses computation is not included as a runner artifact.",
+      "claim_scope": "The cache-backed open-boundary Wilson sweep on sides 11, 13, 15 with G=5, d=3..6, and mu^2 in {0.22, 0.05, 0.01, 0.005, 0.001}, plus only the current shared-minus-self centroid observable's failure to establish full Newton closure; no universal no-go or Newton derivation was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T08:23:41.281682+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "As screening is reduced across the five-value mu^2 grid, the fitted exponent softens monotonically while every sampled row remains clean and attractive.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note reports anchor-slice linearity, normalized-impulse drift, and action-reaction balance for the current observable.",
+            "disposition": "CLOSED",
+            "evidence_locator": "action-reaction fails on every grid row",
+            "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the shared-minus-self centroid momentum residual on the sampled both-masses grid.",
+            "outcome": "The current observable fails on the stated grid, but this closes only that finite observable, not every mutual-channel readout.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "centroid_residual"
+          },
+          {
+            "attempt": "The primary runner computes five screening values across three sides and four separations.",
+            "disposition": "CLOSED",
+            "evidence_locator": "the law approaches Newton-compatible `d^-2`",
+            "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Reduce the screening mass and test whether the finite-distance exponent crosses the Newton-compatible value.",
+            "outcome": "The route succeeds as a bounded distance calibration near mu^2=0.01 but supplies neither mass scaling nor action-reaction closure.",
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "distance_crossover"
+          },
+          {
+            "attempt": "The note reports full-grid normalized-impulse coefficients of variation.",
+            "disposition": "CLOSED",
+            "evidence_locator": "full-grid normalized impulses drift by `35-38%`",
+            "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Normalize each mutual impulse by the partner mass to test bilinear mass scaling.",
+            "outcome": "The reported 35-38% drift closes this normalization on the sampled grid as insufficient for Newton closure.",
+            "route_class": "normalization_or_units",
+            "route_id": "mass_normalization"
+          },
+          {
+            "attempt": "The cited authority identifies this as a candidate but supplies no calculation.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "local momentum flux through the mid-plane",
+            "evidence_path": "docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Measure local momentum flux through the mid-plane to suppress common centroid slowdown.",
+            "outcome": "This remains a concrete untested route that could distinguish exchanged momentum from common slowing.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "midplane_flux"
+          },
+          {
+            "attempt": "The cited authority names the window but provides no completed sweep.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "weaker-coupling / lighter-mass windows where the shared-minus-self residual",
+            "evidence_path": "docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Move to weaker coupling or lighter masses so the shared-minus-self response stays perturbative.",
+            "outcome": "The route remains untested and could alter the relative size of common slowing and exchanged momentum.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "perturbative_window"
+          },
+          {
+            "attempt": "The cited authority proposes the observable but supplies no implementation or output.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "a directly antisymmetrized impulse observable instead of centroid-only",
+            "evidence_path": "docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Project directly onto an exchange-antisymmetric impulse channel instead of subtracting centroid trajectories.",
+            "outcome": "This remains untested and directly targets the equal-and-opposite component absent from the current readout.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "antisymmetric_impulse"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "The current shared-minus-self centroid residual does not isolate an equal-and-opposite exchanged-momentum channel from common propagation slowing."
+          ],
+          "evidence_locator": "dominated by common propagation slowing once both inertial",
+          "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "The current shared-minus-self centroid residual does not isolate an equal-and-opposite exchanged-momentum channel from common propagation slowing."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "This note only calibrates the **distance-law side** of the Wilson lane.",
+          "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Only clean attractive rows were used in the distance-law fit",
+              "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+              "phrase": "Only clean attractive rows were used in the distance-law fit"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "This is a calibration result, not a separate Newton-law derivation.",
+              "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+              "phrase": "This is a calibration result, not a separate Newton-law derivation."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source note, primary and helper runners, cited authority, fixed-parameter surface, post-selection wording, and Newton-closure boundary were checked for unstated premises.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "This is a calibration result, not a separate Newton-law derivation.",
+          "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+          "none_found_reason": "No N1 route was marked RULED OUT BY PRIOR; the finite failures were reported as current attempts and the remaining routes as untested.",
+          "scan_scope": "The restricted source, authority, runner, helper, and cross-cycle records were checked for prior witnesses used to rule out an N1 route.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "shows that the steep `mu^2 = 0.22` exponent should not be treated as a fixed",
+          "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative and resolution language concerning Newton closure, observable failure, and universality was checked against the finite resolutions actually tested.",
+          "statements": [
+            {
+              "evidence_locator": "full Newton closure is still open.",
+              "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+              "phrase": "full Newton closure is still open.",
+              "tested_resolutions": [
+                "The finite shared-minus-self both-masses centroid observable described in the note."
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "That observable has now been attempted and it fails because",
+              "evidence_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+              "phrase": "That observable has now been attempted and it fails because",
+              "tested_resolutions": [
+                "The current shared-minus-self residual after both inertial masses vary."
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic graining isotropy supplies no two-body momentum-flux observable or mass-law bridge.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms do not select the Wilson Hamiltonian, source law, or exchanged-momentum readout.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation does not select or validate the mutual-channel observable.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful ruler cannot repair action-reaction failure or normalized-impulse drift.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton counting obligation is unrelated to the Wilson two-body observable.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton readout obligation does not provide a Wilson momentum-transfer readout.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The theta determinant-readout obligation has no bearing on the finite Wilson force observable.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/wilson_mu2_distance_sweep_note_2026-04-11",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All approved primitives and open gates returned by the orchestrator's partial-closure index were checked against the current-observable Newton-closure wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "A local mid-plane momentum-flux observable could cancel the common centroid slowdown and reveal an equal-and-opposite exchanged-momentum channel even though the current residual fails.",
+          "evidence_locator": "local momentum flux through the mid-plane",
+          "evidence_path": "docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md",
+          "resolution": "The restricted packet contains no implementation or completed output for this observable, so the steelman remains scientifically live.",
+          "resolved": false,
+          "route_id": "midplane_flux"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:0",
+              "evidence_locator": "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Earlier stale-grid and missing-compute objection.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:1",
+              "evidence_locator": "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Earlier grid mismatch and missing classified output.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:2",
+              "evidence_locator": "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Earlier source scope included unsampled screening values.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:3",
+              "evidence_locator": "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Prior clean result was invalidated because the required no-go discipline packet was missing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "wilson_two_body_open_note_2026-04-11:previous_audit:0",
+              "evidence_locator": "wilson_two_body_open_note_2026-04-11:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "No substantive prior authority verdict.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wilson_two_body_open_note_2026-04-11:previous_audit:1",
+              "evidence_locator": "wilson_two_body_open_note_2026-04-11:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Earlier missing Wilson runner registrations.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wilson_two_body_open_note_2026-04-11:previous_audit:2",
+              "evidence_locator": "wilson_two_body_open_note_2026-04-11:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Earlier law-sweep artifact omission.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wilson_two_body_open_note_2026-04-11:previous_audit:3",
+              "evidence_locator": "wilson_two_body_open_note_2026-04-11:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Earlier screening and both-masses artifact omission.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wilson_two_body_open_note_2026-04-11:previous_audit:4",
+              "evidence_locator": "wilson_two_body_open_note_2026-04-11:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Earlier packet supported only the primary attraction surface.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wilson_two_body_open_note_2026-04-11:previous_audit:5",
+              "evidence_locator": "wilson_two_body_open_note_2026-04-11:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Earlier helper hash change and absent screening computation.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Charged-lepton occupancy counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Charged-lepton eta readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Theta determinant cross-sector gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated foundational and flavor no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Finite attraction and source scaling do not supply full Newton closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Finite positive evidence does not supply a physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated atomic and axis-selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated multi-lane inherited no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated coupling-normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated plaquette coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Different detector-centroid observable and lensing walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated carrier antisymmetry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated charged-lepton no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated Lorentz-restoration boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated emergent-metric bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated finite-family scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Different local Wilson plaquette normalization scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated flavor-trace pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated gauge-environment contraction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Different Wilson gauge-isotropy mechanism.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated Fermat and dispersion bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Separate warning against full Einstein or physical Newton-constant closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated absolute-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated hypercharge normalization degeneracy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated campaign-level mass, scale, and cosmology walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated atomic scale and coupling walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated quark mass and selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Finite lattice checks do not prove an asymptotic continuum law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Different signed-adjoint centroid observable wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Different finite-path lensing surrogate failure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated static-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated temporal source/readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Empty unrelated matter-cone ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated planning-versus-theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated time-step interpretation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated neutrino construction walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated neutrino and cosmology gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Historical Newtonian headline is restricted to finite-lattice replay.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated live-recompute artifact boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated coupling authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Different finite packet-memory and imposed-field boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated finite-degree versus all-degree boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated Clifford carrier selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated rank-four carrier and Hodge-duality walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated plaquette bootstrap walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated supplied-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated strong-CP and registrability walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated temporal-axis and transfer-range walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated source-measure readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated staggered kinetic-selector no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated SU(3) cube encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated documentation mismatch repair.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Different finite family-distance scope warning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated theta mass-orientation walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated theta gauge-sector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated positive theta gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated theta phase-insertion walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated theta defect-closure walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated determinant-power selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated Record occupancy walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated Record formation/readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated artifact-visibility statement.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated Record-only mass readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Different finite hard-coded wave packet boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Finite raw rows cannot establish a universal exponent or continuum theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "mechanism": "Unrelated Yukawa renaming boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "The current shared-minus-self centroid residual does not isolate an equal-and-opposite exchanged-momentum channel from common propagation slowing."
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11": {
+              "accepted_premise_type": null,
+              "content_sha256": "cc7864fa9f5ea7747d71c049244739df5af12bb0e12bba63b57f3afb0d9a9121",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:0",
+                "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:1",
+                "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:2",
+                "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:3",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:0",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:1",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:2",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:3",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:4",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:5"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:0",
+                "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:1",
+                "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:2",
+                "wilson_mu2_distance_sweep_note_2026-04-11:previous_audit:3",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:0",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:1",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:2",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:3",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:4",
+                "wilson_two_body_open_note_2026-04-11:previous_audit:5"
+              ]
+            },
+            "audit-packet://partial-closure-index/wilson_mu2_distance_sweep_note_2026-04-11": {
+              "accepted_premise_type": null,
+              "content_sha256": "6a160022b301383ff772feb2b224bc3cfbfe1b39f44e4bf9fae5824a71c4881f",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/wilson_mu2_distance_sweep_note_2026-04-11",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "73bc79ddfaab8f348a9ba67835fa18f410bc4b9c65a2918d7755f2bd33051d4c",
+              "effective_status": null,
+              "path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Only clean attractive rows were used in the distance-law fit",
+                "That observable has now been attempted and it fails because",
+                "This is a calibration result, not a separate Newton-law derivation.",
+                "This note only calibrates the **distance-law side** of the Wilson lane.",
+                "action-reaction fails on every grid row",
+                "dominated by common propagation slowing once both inertial",
+                "full Newton closure is still open.",
+                "full-grid normalized impulses drift by `35-38%`",
+                "shows that the steep `mu^2 = 0.22` exponent should not be treated as a fixed",
+                "the law approaches Newton-compatible `d^-2`"
+              ]
+            },
+            "docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "a19a1b50f18798c3a51bddaf3fc9ad7962a84dbccb528e7a40702050f8e37d7e",
+              "effective_status": "retained_bounded",
+              "path": "docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "a directly antisymmetrized impulse observable instead of centroid-only",
+                "local momentum flux through the mid-plane",
+                "weaker-coupling / lighter-mass windows where the shared-minus-self residual"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: the mid-plane flux, perturbative-window, and antisymmetrized-impulse routes remain untested.",
+          "N7: the strongest local momentum-flux steelman remains unresolved."
+        ],
+        "narrowed_claim_scope": "The cache-backed open-boundary Wilson sweep on sides 11, 13, 15 with G=5, d=3..6, and mu^2 in {0.22, 0.05, 0.01, 0.005, 0.001}, plus only the current shared-minus-self centroid observable's failure to establish full Newton closure; no universal no-go or Newton derivation was audited.",
+        "next_route": {
+          "reason_untested": "The packet names local mid-plane momentum flux as the most direct discriminator of exchanged momentum versus common propagation slowing but provides no runner or completed result.",
+          "route_id": "midplane_flux"
+        },
+        "prior_claim_scope": "Audited the cache-backed open-boundary Wilson mu^2 distance sweep on sides 11, 13, 15 with G=5, d=3..6, mu^2 in {0.22, 0.05, 0.01, 0.005, 0.001}, using clean attractive rows only.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: split the both-masses/no-go discussion into a separately runner-backed claim, and add a dated downstream-hygiene line to this note's own boundary limiting this row to the five-value distance sweep until that audit lands.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the five-point distance sweep is computed and internally consistent, but the note also treats the failed shared-minus-self both-masses observable as the boundary of full Newton closure without supplying that runner and while naming untested alternative observables. Why this blocks: the distance calibration closes, whereas the broader negative boundary does not satisfy the required no-go discipline. Repair target: split the cache-backed distance theorem from the both-masses failure claim and audit the latter with its runner plus the named alternative-readout tests. Claim boundary until fixed: cite only the finite screened distance-law crossover and the failure of the presently tested centroid residual, not a general obstruction to Newton closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_wilson_mu2_distance_sweep.py",
+  "title": "Wilson `mu^2` Distance Sweep Note",
+  "transitive_descendants": 11,
+  "verdict_rationale": null
+}

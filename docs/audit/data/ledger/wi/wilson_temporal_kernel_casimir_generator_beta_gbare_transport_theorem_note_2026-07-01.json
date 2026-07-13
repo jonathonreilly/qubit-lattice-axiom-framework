@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wilson_temporal_kernel_casimir_generator_beta_gbare_transport_theorem_note_2026-07-01",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_rigidity_theorem_note",
+    "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+    "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e6140d6d9e27c5f94b48970058846f26b2e7070a09a043e33281b0cb41ae42cf",
+  "note_path": "docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:34.767841+00:00",
+      "audit_date": "2026-07-10T04:48:09.471414+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.",
+          "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "Inside the supplied standard Wilson plaquette action with canonical Tr(T_a T_b)=delta_ab/2, the small-a coefficient matching gives beta g_bare^2 = 2 N_c."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "g_bare_rigidity_theorem_note": "bounded_theorem",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "g_bare_rigidity_theorem_note": "retained_bounded",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "g_bare_rigidity_theorem_note",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "341f2a783666f4d0dcb44e139f8306add54909fa85c535e40fb95d35a2baa2f8",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00113-wilson_temporal_kernel_casim",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "K1-K3 close at leading asymptotic order from the supplied Wilson kernel and retained magnetic matching. The three-slot K4 conclusion does not close because s and the identification g_bare = s come only from G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md, which the source explicitly excludes as a dependency and which is absent from the restricted authorities.",
+      "claim_scope": "Large-beta Casimir asymptotics and leading beta-dial transport for the supplied Wilson temporal-gauge per-link kernel, including the asserted three-slot normalization coincidence.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:48:09.471414+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Matching the Gaussian widths gives tau_eff = N_c / beta, hence eps_R = (N_c / beta) C_2(R) (1 + O(1/beta)).",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md as a direct dependency, include its retained-grade authority in the restricted packet, and re-audit the three-slot K4 conclusion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 22,
+        "C": 34,
+        "D": 0,
+        "total_pass": 73
+      },
+      "verdict_rationale": "Issue: the runner genuinely computes the kernel character integrals and supports the Casimir asymptotic, but K4 introduces s and relies on an excluded same-scalar-slot bridge. Why this blocks: the retained rigidity authority fixes the generator trace form but neither defines s nor identifies it with g_bare. Repair target: add the named beta-6 bridge note as a direct dependency and establish that it is retained-grade. Claim boundary until fixed: the isotypic diagonalization, leading Casimir coefficient, and beta g_E^2 -> 2 N_c transport are supported, but the coordinate-slot three-normalization coincidence is conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py",
+  "title": "Wilson Temporal-Kernel Casimir Generator and Beta/G-Bare Dial Transport",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

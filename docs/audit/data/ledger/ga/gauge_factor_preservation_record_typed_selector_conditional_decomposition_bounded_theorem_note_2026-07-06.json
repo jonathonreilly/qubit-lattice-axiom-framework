@@ -1,0 +1,1387 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "13564ff261772166d5555a223d5b7d3a3c9aaf99605ca87e1647b0764ca2f0a0",
+  "note_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:28.571632+00:00",
+      "audit_date": "2026-07-09T06:47:18.928465+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "ea6c653994ef19ff7d5afbefdbc68b4ea3d70ace90059dbbf66eb51428c881f4",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded supplied-surface scope, the note explicitly assumes the tensor split and factor-preservation condition, and the exact rational runner verifies the stabilizer, containments, center overlap, bracket closure, and Killing-form decomposition. The chain does not claim to derive REGISTERED-FACTOR, the physical carrier, gauging, chirality, hypercharge, or physical color/weak identifications.",
+      "claim_scope": "Bounded finite-dimensional algebra theorem: on supplied C^3 tensor C^2 with named factor subalgebras and ordered infinitesimal factor preservation, the stabilizer in u(6) is exactly the 12-dimensional factorwise u(3)+u(2) image with semisimple su(3)+su(2) and one central u(1); REGISTERED-FACTOR/T2 are conditional bookkeeping only, not a derived gauging, carrier, chirality, hypercharge, or physical color/weak bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T06:47:18.928465+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "GIVEN the supplied split and factor preservation in the stated ordered sense, the stabilizer inside u(6) is exactly the factorwise algebra of dimension 12, whose semisimple part is the verified direct sum su(3) + su(2), with the one central abelian direction stated above.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if a downstream row cites this as deriving REGISTERED-FACTOR, gauging, chirality, hypercharge, color/weak physical meaning, or the physical C^6 carrier rather than only the bounded supplied-surface stabilizer algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing theorem is exact finite-dimensional matrix algebra over a supplied C^3 tensor C^2 surface and named preservation condition, not a hidden physical selection. The runner constructs the u(6) basis, factorwise image, stabilizer equations, Lie brackets, central direction, and Killing form over exact rationals, and the two quote/self-scan passes only support packet integrity. Residual risks are explicitly outside the audited scope: REGISTERED-FACTOR itself, physical gauging, chirality, hypercharge, color/weak identification, and a physical C^6 carrier remain unproved."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:10.276345+00:00",
+      "audit_date": "2026-07-12T10:22:30.784175+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "ea6c653994ef19ff7d5afbefdbc68b4ea3d70ace90059dbbf66eb51428c881f4",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00287-gauge_factor_preservation_re",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner independently constructs the antihermitian basis, exact rational stabilizer equations, factorwise span, Lie brackets, center, and Killing form, establishing T1 on the supplied finite-dimensional surface. T2 contributes only the explicitly conditional convention that compatibility with a registered split means preserving it.",
+      "claim_scope": "On the supplied C^3 tensor C^2 carrier, the ordered infinitesimal stabilizer of M_3 tensor I_2 and I_3 tensor M_2 inside u(6) is the 12-dimensional factorwise image, with semisimple su(3) direct-sum su(2) and one central u(1); REGISTERED-FACTOR and all physical identifications remain explicit conditions or outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T10:22:30.784175+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid",
+      "load_bearing_step": "Given the supplied C^6=C^3 tensor C^2 split and ordered preservation of M_3 tensor I_2 and I_3 tensor M_2, the stabilizer inside u(6) equals the 12-dimensional factorwise algebra.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Compared the Record clauses with the qualification governing choices not fixed by supplied structure.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Only records are readable. A readout value is determined by record content alone.",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Infer a registered factor split directly from content-only Record readout.",
+            "outcome": "Record specifies locking, readability, and additive scalar readout but supplies no factor-subalgebra type or selector; the route is closed on the restricted premise surface.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "record_content_typing"
+          },
+          {
+            "attempt": "Compared the axiom's full one-site algebraic presentation with the six-dimensional supplied model surface.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The full one-site possibility domain has algebraic presentation `M_2(C)`.",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the one-site Qubit algebra to force the C^6=C^3 tensor C^2 carrier.",
+            "outcome": "The accepted one-site presentation is M_2(C), and no construction of a C^6 carrier or 3-by-2 split is provided; the route is closed.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "qubit_forces_c6"
+          },
+          {
+            "attempt": "Checked the axiom memo's explicit dynamics and kinetic-branch boundary.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Admissibility is not a dynamics axiom.",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Promote nearest-neighbor Admissibility into a transformation group, gauge action, or factor-preservation law.",
+            "outcome": "Admissibility determines availability only and supplies no dynamics, transformation group, or gauging selector; the route is closed.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "admissibility_gauging"
+          },
+          {
+            "attempt": "Checked the primitive's declared content and explicit exclusions for selectors and readout bridges.",
+            "disposition": "CLOSED",
+            "evidence_locator": "No mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.",
+            "evidence_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the approved kinetic-isotropy symmetry to select the factor embedding.",
+            "outcome": "The primitive supplies only c_t=c_s kinetic-form isotropy and expressly supplies no selector or readout bridge; the route is closed.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "kinetic_isotropy_selector"
+          },
+          {
+            "attempt": "Checked whether the realized-state primitive supplies state content or only permits pointwise evaluation.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This is pointwise evaluation, not a state-selection rule.",
+            "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat the realized-state reference as supplying which factor split is physically registered.",
+            "outcome": "The primitive supplies a reference slot but explicitly no state or state-contingent content, so it cannot select the split; the route is closed.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "realized_state_factor"
+          },
+          {
+            "attempt": "Checked whether the primitive contains dimensionless selector, coupling, or readout information.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This is a units conversion, not a physics axiom.",
+            "evidence_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the Planck scale-reference primitive to determine the factor carrier or central generator physically.",
+            "outcome": "It is only a units conversion and carries no selector or readout content; the route is closed.",
+            "route_class": "normalization_or_units",
+            "route_id": "scale_reference_factor"
+          },
+          {
+            "attempt": "Separated T2's definitional compatibility convention from T1's independently computed stabilizer theorem.",
+            "disposition": "CLOSED",
+            "evidence_locator": "compatibility with a registered split just means preserving it",
+            "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat the definition of record-compatible transformations as a derivation of REGISTERED-FACTOR or physical gauge selection.",
+            "outcome": "The source explicitly states that compatibility means preservation and that T2 is not a selection theorem; the route is closed.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "compatibility_definition"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "REGISTERED-FACTOR is not supplied by the accepted premise surface",
+            "the physical C^6=C^3 tensor C^2 carrier is not supplied",
+            "a transformation group, gauging principle, or gauge action is not supplied",
+            "chirality, physical color/weak identification, and hypercharge identification are not supplied"
+          ],
+          "evidence_locator": "The four axioms do not supply REGISTERED-FACTOR.",
+          "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "REGISTERED-FACTOR is not supplied by the accepted premise surface",
+              "left_closes_right": false,
+              "right": "the physical C^6=C^3 tensor C^2 carrier is not supplied",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "REGISTERED-FACTOR is not supplied by the accepted premise surface",
+              "left_closes_right": false,
+              "right": "a transformation group, gauging principle, or gauge action is not supplied",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "REGISTERED-FACTOR is not supplied by the accepted premise surface",
+              "left_closes_right": false,
+              "right": "chirality, physical color/weak identification, and hypercharge identification are not supplied",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "the physical C^6=C^3 tensor C^2 carrier is not supplied",
+              "left_closes_right": false,
+              "right": "a transformation group, gauging principle, or gauge action is not supplied",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "the physical C^6=C^3 tensor C^2 carrier is not supplied",
+              "left_closes_right": false,
+              "right": "chirality, physical color/weak identification, and hypercharge identification are not supplied",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "a transformation group, gauging principle, or gauge action is not supplied",
+              "left_closes_right": false,
+              "right": "chirality, physical color/weak identification, and hypercharge identification are not supplied",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "REGISTERED-FACTOR is not supplied by the accepted premise surface",
+            "the physical C^6=C^3 tensor C^2 carrier is not supplied",
+            "a transformation group, gauging principle, or gauge action is not supplied",
+            "chirality, physical color/weak identification, and hypercharge identification are not supplied"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Forbidden imports: no new axiom, primitive, Tier-A admission, physical carrier",
+          "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "REGISTERED-FACTOR is not axiom content.",
+              "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "phrase": "REGISTERED-FACTOR",
+              "promoted_wall": "REGISTERED-FACTOR is not supplied by the accepted premise surface"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "supplied C^3 tensor C^2 model surface",
+              "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "phrase": "supplied C^3 tensor C^2 model surface",
+              "promoted_wall": "the physical C^6=C^3 tensor C^2 carrier is not supplied"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "compatibility with a registered split just means preserving it",
+              "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "phrase": "compatibility with a registered split just means preserving it"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "Only records are readable. A readout value is determined by record content alone.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "Only records are readable"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "REGISTERED-FACTOR, supplied carrier, record-compatible transformation, gauging, chirality, hypercharge, and physical color/weak language in the source, runner, accepted premises, and premise registry.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Residuals and scope boundary (not a T-claim)",
+          "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+          "none_found_reason": "All N1 routes are ATTEMPTED restricted-packet tests, so no RULED OUT BY PRIOR witness is required.",
+          "scan_scope": "The source residuals and all N1 routes were checked; no N1 route relies on a prior witness because every route was directly tested against the restricted packet.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "Honest boundary",
+          "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative and exclusionary language concerning premise supply, physical gauge selection, and chiral or hypercharge interpretation was checked at the exact finite-model and accepted-premise resolutions stated by the note.",
+          "statements": [
+            {
+              "evidence_locator": "The four axioms do not supply REGISTERED-FACTOR.",
+              "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "phrase": "The four axioms do not supply REGISTERED-FACTOR.",
+              "tested_resolutions": [
+                "the four accepted framework axioms and complete approved-primitive registry supplied in the packet"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "This is exact stabilizer bookkeeping on a supplied model surface, not a physical gauge selection.",
+              "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "phrase": "This is exact stabilizer bookkeeping on a supplied model surface, not a physical gauge selection.",
+              "tested_resolutions": [
+                "ordered infinitesimal stabilizer inside u(6) on the supplied C^3 tensor C^2 carrier"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "R-chiral: chiral `su(2)_L` is outside scope.",
+              "evidence_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "phrase": "R-chiral: chiral `su(2)_L` is outside scope.",
+              "tested_resolutions": [
+                "the finite normalizer and central decomposition computed by the runner"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Supplies kinetic-form isotropy only and explicitly no selector, carrier, readout bridge, or gauging principle.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "Supplies Lattice, Qubit, Admissibility, and Record content but leaves unfixed downstream choices conditional or open.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Supplies a pointwise realized-state reference but no state content, factor split, or selector.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "Supplies units only and no dimensionless selector, factor structure, or physical identification.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "Concerns charged-lepton K/CPT occupancy counting, not gauge-factor registration or the C^6 stabilizer.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "Concerns a charged-lepton eta readout identity and supplies no factor split or gauge-selection bridge.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "Concerns determinant cross-sector readout and does not derive REGISTERED-FACTOR, the carrier, or gauging.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The complete partial-closure index was checked across approved axioms/primitives and open obligations, together with convention and scope-refactor possibilities.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Because Record makes readout depend on record content alone, a factor-subalgebra type carried by record content might appear to make REGISTERED-FACTOR an implicit consequence rather than an added premise.",
+          "evidence_locator": "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "resolution": "The premise fixes only content dependence and additive scalar readout; it never types content by M_3 tensor I_2 or I_3 tensor M_2, and the axiom qualification explicitly leaves choices not fixed by supplied structure conditional or open.",
+          "resolved": true,
+          "route_id": "record_content_typing"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06:previous_audit:0",
+              "evidence_locator": "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Prior audit found the exact bounded algebra clean but was invalidated because the no-go-discipline packet was missing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Unrelated charged-lepton occupancy-counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Unrelated charged-lepton eta-readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Unrelated determinant cross-sector readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Lists unrelated charged-lepton, area-law, neutrino, and CP no-go memories.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite gravity-sweep scope boundary unrelated to factor preservation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Warns that runner-boundary repair does not derive gauge couplings or EW normalization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Atomic and temporal-axis audit boundaries unrelated to the factorwise stabilizer.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Broad inherited no-go catalog with no REGISTERED-FACTOR closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Coupling-hypothesis and EW-normalization boundary unrelated to the algebra theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Plaquette-coefficient evidence boundary unrelated to factor selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Lensing observable and tuned-beta walls unrelated to this claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "A carrier symmetry scan cannot prove registry exhaustiveness; new asymmetric structure could break the reduction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Charged-lepton selector no-go cluster unrelated to the supplied factor stabilizer.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Spatial-dimension selection boundary unrelated to gauge-factor preservation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Lorentz-closure scope boundary unrelated to the finite normalizer.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Metric reconstruction and global-theorem boundary unrelated to this carrier algebra.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Radial-family replay boundary unrelated to factor registration.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Local Wilson scorecard cannot close the full environment; unrelated to T1.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Distinguishes finite carrier algebra from physical flavor identification, analogous only to the note's explicit physical-identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Analytic-vector and audit-retag boundaries unrelated to factor preservation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Gauge-environment computation walls do not supply the factor split or gauging principle.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Temporal-generator and staggered-orientation walls unrelated to the factorwise normalizer.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Fermat and gravity-retention boundaries unrelated to T1.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Weak-field gravity scope exclusions unrelated to the gauge-factor theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Clifford carrier and action-unit walls unrelated to the C^3 tensor C^2 stabilizer.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "A central U(1) line does not by itself select physical hypercharge normalization or species interpretation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Cross-lane mass, scale, and readout walls unrelated to exact T1.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Atomic scale and coupling underdetermination unrelated to the finite gauge algebra.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Quark mass and readout selector walls unrelated to the supplied factor stabilizer.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Uniform asymptotic-limit wall unrelated to this finite-dimensional exact computation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Lensing observable-sign wall unrelated to factor registration.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite-path lensing geometry wall unrelated to T1.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Physical source/readout selection boundary analogous in form but unrelated in content.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Temporal source and readout selector boundary unrelated to factor preservation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Empty no-go ledger with no relevant mechanism.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Planning-selector boundary unrelated to the algebraic factor split.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Physical-time interpretation boundary unrelated to gauge-factor preservation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Neutrino mass-construction and selector walls unrelated to T1.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Neutrino and cosmological scale walls unrelated to factor preservation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite-lattice Newtonian scope boundary unrelated to T1.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite replay and cache-evidence boundary unrelated to the exact stabilizer.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Coupling/readout selection boundary consistent with, but not closing, the note's physical-gauging residual.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite packet-to-physical-bridge warnings unrelated to the algebra theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite-degree and wrong-observable boundaries unrelated to T1.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Carrier dimension and symmetry do not select a physical representation, analogous to the supplied-versus-derived carrier boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Symmetry and dimension matching do not select a physical carrier block, analogous to the note's carrier boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Plaquette bootstrap and minimal-block walls unrelated to this finite normalizer.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Character-integral diagnostic boundary unrelated to factor preservation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Record does not turn supplied packet arithmetic into selector authority, directly echoing the REGISTERED-FACTOR boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Record registrability does not automatically close unrelated physical readout or topology bridges.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Registration-axis data remains a named escape for temporal selection, analogous but not identical to REGISTERED-FACTOR.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite basis arithmetic does not select a physical response basis, analogous to the note's physical-identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Statistics-forcing boundary unrelated to gauge-factor preservation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Current minimal axioms do not select a physical kinetic law; this independently supports the discipline of keeping transformation/gauging selection outside axiom content.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Wilson-cube encoder limitations unrelated to the supplied factorwise algebra.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Documentation synchronization issue unrelated to the theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Partial family-card computation boundary unrelated to factor preservation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Record does not supply determinant-channel physical readout, analogous to the missing registered-factor bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Record and Admissibility do not supply gauge-sector action or readout selection, directly consistent with this note's gauging boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Gauge-sector physical assembly gates remain open and do not close REGISTERED-FACTOR.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Action and weighting selection remain absent; no factor-registration closure is supplied.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Record and Admissibility do not manufacture a gauge action or selection rule, echoing the gauging wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Exact algebra leaves physical horn selection open, analogous to exact T1 leaving physical factor selection open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Current Record axioms do not supply K/CPT occupancy selection, directly analogous to not supplying factor typing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Record formation existence does not supply a specific readout law, analogous to not supplying REGISTERED-FACTOR.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "No no-go mechanism; prior issue was artifact visibility.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Record-only readout permits additional unregistered context data, directly echoing the insufficiency of Record alone to force factor typing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite numerical-packet scope boundary unrelated to exact T1.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Continuum and distance-law scope exclusions unrelated to the finite algebra theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "mechanism": "Definition or renaming cannot establish a physical readout map; applicable to T2 but avoided because T2 is explicitly labeled definitional.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06": {
+              "accepted_premise_type": null,
+              "content_sha256": "0f0a35d623bd838f0a0186233bb99b69114e7d943846551c889dc9ef7fd7dafa",
+              "cross_cycle_candidate_ids": [
+                "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06:previous_audit:0",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06": {
+              "accepted_premise_type": null,
+              "content_sha256": "4d5c700af4e21723f1a292bfa1740dbcbd0780655f9922a9871fcb69e7f1a803",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "13564ff261772166d5555a223d5b7d3a3c9aaf99605ca87e1647b0764ca2f0a0",
+              "effective_status": null,
+              "path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Forbidden imports: no new axiom, primitive, Tier-A admission, physical carrier",
+                "Honest boundary",
+                "R-chiral: chiral `su(2)_L` is outside scope.",
+                "REGISTERED-FACTOR is not axiom content.",
+                "Residuals and scope boundary (not a T-claim)",
+                "The four axioms do not supply REGISTERED-FACTOR.",
+                "This is exact stabilizer bookkeeping on a supplied model surface, not a physical gauge selection.",
+                "compatibility with a registered split just means preserving it",
+                "supplied C^3 tensor C^2 model surface"
+              ]
+            },
+            "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+              "effective_status": null,
+              "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "No mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it."
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
+                "Admissibility is not a dynamics axiom.",
+                "Only records are readable. A readout value is determined by record content alone.",
+                "The full one-site possibility domain has algebraic presentation `M_2(C)`."
+              ]
+            },
+            "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+              "effective_status": null,
+              "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "This is pointwise evaluation, not a state-selection rule."
+              ]
+            },
+            "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+              "effective_status": null,
+              "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "This is a units conversion, not a physics axiom."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "Re-check that the obsolete quoted premise-discipline sentence is synchronized with the current minimal-axiom wording; this text-integrity defect does not affect the exact T1 computation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing result is genuine exact matrix-algebra closure, not a physical gauge-selection or carrier derivation, and the six substantive algebra checks pass over exact rationals. The failed quotation audit identifies a non-load-bearing wording mismatch with the current axiom memo; the current memo still directly supports the narrower premise boundary that REGISTERED-FACTOR is not axiom content. The claim consistently excludes gauging, chirality, hypercharge, physical color/weak identification, and derivation of the C^6 carrier."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_factor_preservation_record_typed_selector_2026_07_06.py",
+  "title": "Gauge Factor Preservation From Record-Typed Selector: Conditional Decomposition Bounded Theorem",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

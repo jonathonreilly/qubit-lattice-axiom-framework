@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8859924cae88cb292d7762c5ed861c95a622b710fe0b62a2747b8019c4c97089",
+  "note_path": "docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:40.876617+00:00",
+      "audit_date": "2026-06-18T15:22:02.807617+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "Inside the supplied standard Wilson plaquette action with canonical Tr(T_a T_b)=delta_ab/2, the small-a coefficient matching gives beta g_bare^2 = 2 N_c."
+        },
+        "dep_claim_type": {
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "retained_bounded"
+        },
+        "deps": [
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "c1cc8aac3c7e3a2ea6355af86292bc3527660857b9a1e453e826edd537c21f78",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained_bounded Wilson matching authority beta = 2 N_c / g^2 and the compensating relation g'^2 = g^2/c^2, the stated beta' = c^2 beta and beta' g'^2 = beta g^2 = 2 N_c follow by direct algebra. No Wilson action-surface selection, beta=6, or g_bare=1 claim is needed or audited.",
+      "claim_scope": "Algebraic beta-rescaling under nonzero T'_a = c T_a with compensating g' T'_a = g T_a, inside the supplied standard Wilson plaquette action and canonical trace-normalization surface.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-18T15:22:02.807617+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07:retained_bounded->unaudited",
+      "load_bearing_step": "Applying the same Wilson small-a matching theorem to the primed surface gives beta' = 2 N_c / g'^2 = 2 N_c / (g^2/c^2) = c^2 beta.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "If formalized further, state the nonzero-c domain explicitly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 59,
+        "B": 24,
+        "C": 0,
+        "D": 0,
+        "total_pass": 83
+      },
+      "verdict_rationale": "The chain uses a single retained_bounded parent, the Wilson small-a matching theorem, and substitutes the compensating coupling rescaling into that formula. The independent algebra check gives beta' g'^2 = c^2 beta * g^2/c^2 = beta g^2 = 2 N_c. The runner performs finite rational algebra plus source-boundary checks; it does not compute new framework physics, so this is an algebraic decoration of the upstream Wilson matching result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py",
+  "title": "Wilson Generator-Rescaling Beta Transformation",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

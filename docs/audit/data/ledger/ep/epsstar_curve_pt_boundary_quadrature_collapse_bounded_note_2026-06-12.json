@@ -1,0 +1,118 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12",
+    "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "73c3c06b922c6a413b466f318524b380b24ef579b799e72dccf6b24d26ee717b",
+  "note_path": "docs/EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-12T17:13:28.561294+00:00",
+      "audit_date": "2026-06-18T12:04:53.674247+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12": "Sampled finite-lattice d=2 staggered square-lattice sign-boundary collapse at q=24, GL=160 for T=0.2 and m in {0.2,0.35,0.5,0.8}, with m=0, T-direction, quadrature, endpoint-recompute, and q=32 spot controls; no continuum or interpretive epsilon-curve claim.",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "Finite Q=24, Ly=2 staggered Harper one-particle cell at T=0.2, mu=1.7086, B=1e-3 finite-difference reference, masses m=0,0.2,0.3,0.5, and fixed 2e-2 tolerance; not a continuum, flux-quantized, strict B->0, or boundary-root theorem."
+        },
+        "dep_claim_type": {
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "d2a306114c1aaff0250fba20e172eb6d21ac964ca636ccf8cd9f0f8cc68c1cc1",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source directly constructs the finite Harper/PT matrices, evaluates the full PT response, bisects roots, and derives the eps*(T) table from those computed roots. The cited authorities are retained_bounded and no external comparator, empirical value, or hidden bridge is needed for the stated finite-grid scope.",
+      "claim_scope": "Finite-cell sampled PT-boundary result on Q=24, Ly=2, N=48, GL=20 for m={0,0.2,0.3,0.5} and T={0.15,0.2,0.3,0.4}, with bounded mean collapse, monotone sampled eps*(T), disclosed m-trend, and regression characterizations only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T12:04:53.674247+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lp_two_band_exact_completion_bounded_theorem_note_2026-06-12:retained_bounded->unaudited",
+      "load_bearing_step": "The finite two-band Harper/PT runner computes mu*_PT(m,T) on the stated mass-temperature grid and shows that mu*_PT(m,T)^2 - m^2 has a per-temperature mean eps*(T)^2 with maximum relative spread below 2%.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the PT h1/h2 normalization and GL=20 fixed-grid convention if the claim is ever broadened beyond this bounded sampled computation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 18,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The load-bearing result is a first-principles finite-dimensional computation on the declared Harper/PT surface, not a renaming or imported curve. The only imported numerical anchor is used as a provenance sanity check, while the eps*(T) values and spreads are computed from the PT roots in the runner. The printed root table also supports the disclosed residual pattern: per-temperature collapse values decrease with m and have residual signs (+,+,+,-). The claim is clean only within its bounded sampled-grid scope and does not establish continuum behavior or exact m-independence."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_epsstar_curve_pt_boundary_2026_06_12.py",
+  "title": "PT Boundary eps*(T) Curve: Mean Quadrature Collapse Persists on the Fixed Grid",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

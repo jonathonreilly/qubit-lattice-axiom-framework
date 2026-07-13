@@ -1,0 +1,460 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "ew_current_matching_rule_open_gate_note_2026-05-03",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ew_current_fierz_channel_decomposition_note_2026-05-01",
+    "yt_ew_m_residual_note_2026-05-02"
+  ],
+  "direct_in_degree": 17,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 18.236,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "78fbeea496ea7c0096a6ca4fff2798b53dd946a0f350d8f3684392e609f7ca04",
+  "note_path": "docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T16:29:14.271280+00:00",
+      "archived_for_note_hash": "b087b169f0b2506ee30cf2000ec1ef1a14864b7f3f3c3d2052b51dd50ffaa37d",
+      "audit_date": "2026-05-03T14:09:15.365579+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-cleanroom-ew-current-matching-rule-2026-05-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note is not claiming the 9/8 matching rule as retained; it claims the opposite boundary. The one-hop dependency explicitly derives only the exact Fierz/channel-count ratio and separately labels matching rule (M) as not derived. Therefore the open-gate claim closes from the restricted packet.",
+      "claim_scope": "The electroweak package-level 9/8 correction has an exact group-theory channel ratio input, (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3, but the physical matching rule selecting the connected color trace as the EW readout remains unclosed and must block downstream retained propagation.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-03T14:09:15.365579+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The exact Fierz-channel theorem supplies the channel-count arithmetic, but it does not by itself prove that the physical electroweak vacuum polarization reads only the connected color trace after CMT factorization.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit if a new retained theorem claims to derive matching rule (M), if the Fierz dependency is edited to promote the physical 9/8 coefficient, or if a runner is added to the source note that computes the connected-trace readout rather than merely checking status language.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Clean as an open gate. Issue identified by the note: the exact Fierz ratio supplies only the adjoint-channel fraction, while the physical EW readout selection remains a separate structural input. Why this blocks downstream theorem status: downstream uses of the exact 9/8 coefficient require the unmatched premise that the physical EW vacuum polarization projects onto the connected/adjoint channel after CMT factorization. Repair target: a retained theorem deriving the connected-trace EW readout from the lattice current construction, or an exact derivation of the disconnected-current coefficient, or a bounded restatement that keeps the normalization conditional. Claim boundary until fixed: the 8/9 group-theory channel ratio may be cited as exact support, but the package-level EW 9/8 matching rule remains conditioned on this open gate."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.811922+00:00",
+      "audit_date": "2026-05-03T16:40:50.848502+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "retained_bounded"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        ],
+        "load_bearing_score": 12.555,
+        "transitive_descendants": 132
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-ew-current-no-go-fresh-2026-05-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The two-completion witness closes: kappa_EW = 0 and kappa_EW = 1 share F_adj = 8/9, S = 1/9, the same CMT u0^2 scaling, and bounded OZI-class disconnected size, but yield K_EW = 9/8 and K_EW = 1. The retained-bounded Fierz dependency fixes only the channel fraction and explicitly does not fix the physical readout selector.",
+      "claim_scope": "No-go that the connected-trace EW selector kappa_EW = 0, and hence unconditional K_EW = 9/8, is underdetermined by N_c = 3, the retained Fierz channel fraction, color-blind CMT scaling, and bounded OZI-class suppression.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-03T16:40:50.848502+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "Since they agree on all retained premises but disagree on the package-level EW matching factor, the matching rule is underdetermined by those premises.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A future re-audit should check whether any separately retained current-construction theorem fixes kappa_EW; within this supplied packet, the two-completion witness closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 25,
+        "C": 0,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "The no-go is a genuine underdetermination argument rather than a positive derivation of a new EW coefficient. The runner verifies the exact rational arithmetic, CMT cancellation, OZI boundedness for multiple kappa values, and the decisive fact that two completions agree on the supplied primitive data while disagreeing on K_EW. No supplied retained primitive excludes the full-trace completion or derives kappa_EW = 0, so the connected-trace selector remains an extra matching premise."
+    },
+    {
+      "archived_at": "2026-05-22T15:30:26.208614+00:00",
+      "audit_date": "2026-05-04T22:47:09.926012+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "retained_bounded"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        ],
+        "load_bearing_score": 13.853,
+        "runner_hash": "7aa82a9c39113b30d84d2bb7d1c4d20f96d32801f140a10880723839727d241c",
+        "transitive_descendants": 326
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260504-224530-44c0e178-ew_current_matching_rule-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The independence witness is sufficient: the retained primitives fix F_adj and uniform CMT scaling but do not fix the readout coefficient kappa_EW. Therefore different admissible completions produce different EW matching factors.",
+      "claim_scope": "Given the stated retained packet, the EW matching factor is underdetermined and the connected-trace selector kappa_EW = 0 is an extra matching premise.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-04T22:47:09.926012+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-04T22:01:54.001299+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260504-215947-6c64ef12-ew_current_matching_rule-002",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "No-go over the restricted Fierz/CMT/OZI packet: K_EW remains a function of unconstrained kappa_EW, so the 9/8 factor requires the extra connected-trace selector kappa_EW = 0.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-04T22:47:09.926012+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260504-224530-44c0e178-ew_current_matching_rule-002",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Given the stated retained packet, the EW matching factor is underdetermined and the connected-trace selector kappa_EW = 0 is an extra matching premise.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:ew_current_fierz_channel_decomposition_note_2026-05-01:retained_bounded->unaudited",
+      "load_bearing_step": "The two completions kappa_EW = 0 and kappa_EW = 1 satisfy the same Fierz ratio, CMT scaling, and OZI boundedness premises but give different K_EW values, 9/8 and 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the audit scope remains the restricted no-go statement and is not later used as a positive derivation of kappa_EW = 0.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 25,
+        "C": 0,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "The claim is a no-go, not a positive derivation of 9/8. Its load-bearing step is an algebraic independence witness showing that the cited Fierz/channel arithmetic plus the stated CMT and OZI constraints leave kappa_EW free. The runner source verifies the rational arithmetic and does not substitute an external comparator or tuned numerical input."
+    },
+    {
+      "archived_at": "2026-05-23T13:19:00.401552+00:00",
+      "audit_date": "2026-05-22T15:49:13.959771+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Exact SU(N_c) group-theory derivation of the q-qbar adjoint channel-count fraction, with N_c = 3 imported from retained gauge-structure authorities; the EW matching rule (M) is not audited as derived."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "retained"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        ],
+        "load_bearing_score": 17.212,
+        "runner_hash": "7aa82a9c39113b30d84d2bb7d1c4d20f96d32801f140a10880723839727d241c",
+        "transitive_descendants": 1185
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T154721Z-b00eddec-ew_current_matching_rule-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The two-completion witness is an algebraic independence argument over the stated premises. A positive 9/8 theorem would need an additional lattice-current selector fixing kappa_EW=0, and that selector is explicitly absent from the restricted packet.",
+      "claim_scope": "Scoped no-go that the supplied retained packet fixes F_adj=8/9 but does not determine the disconnected-current readout coefficient kappa_EW or the package-level 9/8 EW matching factor.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-22T15:49:13.959771+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T15:46:58.636815+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T154539Z-b00eddec-ew_current_matching_rule-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The audited claim is that the listed Fierz/CMT/OZI retained packet determines only K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 factor requires the extra connected-trace selector kappa_EW=0.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-22T15:49:13.959771+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T154721Z-b00eddec-ew_current_matching_rule-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Scoped no-go that the supplied retained packet fixes F_adj=8/9 but does not determine the disconnected-current readout coefficient kappa_EW or the package-level 9/8 EW matching factor.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:ew_current_fierz_channel_decomposition_note_2026-05-01:retained->unaudited",
+      "load_bearing_step": "The independence witness constructs two admissible completions, kappa_EW=0 and kappa_EW=1, that share the same Fierz ratio, CMT scaling, and OZI boundedness but give different EW matching factors, 9/8 and 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only whether broader-repo authorities outside this restricted packet later add a retained lattice-current selector fixing kappa_EW=0; that would be a new dependency, not a flaw in this scoped no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 25,
+        "C": 0,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "The cited Fierz authority is retained for the exact channel fraction and explicitly does not derive the matching rule; this no-go uses that omission as the residual under audit rather than importing it as a closed bridge. The runner source genuinely checks the rational parameterization, CMT cancellation, OZI boundedness class, and two-completion witness, plus downstream wording guards; it does not hard-code kappa_EW=0 as a premise. The no-go discipline gate passes on the restricted packet: attacks through Fierz arithmetic, CMT scaling, OZI suppression, convention/readout ratification, empirical agreement, and a future selector route all reduce to the same missing selector and do not close it."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.927052+00:00",
+      "audit_date": "2026-05-23T14:29:39.084015+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        ],
+        "load_bearing_score": 16.531,
+        "runner_hash": "7aa82a9c39113b30d84d2bb7d1c4d20f96d32801f140a10880723839727d241c",
+        "transitive_descendants": 1045
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T142739Z-aa6c8411-ew_current_matching_rule-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes as an algebraic independence witness over the stated restricted packet: the two completions agree on all listed retained primitive data while disagreeing on K_EW. The cited Fierz authority supplies the exact 8/9 channel fraction and explicitly does not derive the matching selector.",
+      "claim_scope": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-23T14:29:39.084015+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-23T14:27:12.248091+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T142554Z-aa6c8411-ew_current_matching_rule-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The audited claim is that the four listed retained primitives determine F_adj = 8/9 but do not determine the EW readout coefficient kappa_EW or the package-level 9/8 specialization.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-23T14:29:39.084015+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T142739Z-aa6c8411-ew_current_matching_rule-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "runner_hash_changed:7aa82a9c->7bdac914",
+      "load_bearing_step": "Completion A with kappa_EW=0 and Completion B with kappa_EW=1 share the retained Fierz ratio, color-blind CMT scaling, and O(1/N_c^2) disconnected size, but give different EW matching factors 9/8 and 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream uses preserve the scoped wording: this is a no-go for derivability from the listed packet, not a claim that no future selector theorem can exist.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 25,
+        "C": 0,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "The load-bearing step is class A rather than a numerical match: the runner recomputes rational channel fractions, CMT cancellation, OZI boundedness, and the two-completion witness. The cited authority is retained-grade for the Fierz/channel ratio, and the source does not import the open matching rule as a premise; it shows that the listed premises do not select it. The no-go gate passes on the restricted packet: attack routes through Fierz arithmetic, CMT scaling, bounded OZI, excluding full-trace readout, and convention or structural-input ratification all require adding a selector not present in the packet."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:27.066525+00:00",
+      "archived_for_note_hash": "177b44c2cfc8d3c90c98e09cd5a17192a158b88e7ee369c0e24ad384b809ce77",
+      "audit_date": "2026-07-08T03:32:05.557513+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        ],
+        "load_bearing_score": 17.598,
+        "runner_hash": "7bdac91493b35d7f352dce9450910f7c7d446b1f16a67725f3587c321a7de985",
+        "transitive_descendants": 547
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-audit-lane-2026-07-08-row1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed rational algebra closes under the note's assumptions, but the no-go claim is broader than the restricted packet: it does not exhaust five independent attack routes and the CMT/OZI/readout-selector boundaries are not closed as direct retained inputs.",
+      "claim_scope": "Underdetermination of the EW matching factor K_EW(kappa_EW) from the Fierz channel fraction plus stated CMT/OZI assumptions.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-08T03:32:05.557513+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The two completions kappa_EW = 0 and kappa_EW = 1 share the retained Fierz/CMT/OZI data but give K_EW = 9/8 and K_EW = 1, so the connected-trace selector is not determined.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad - add a visible N1-N8 no-go checklist with at least five distinct attack routes and wire retained/bounded dependencies for the CMT/OZI/readout premises, or split the clean kappa_EW algebraic parametrization from the broader no-go.",
+      "open_dependency_paths": [
+        "docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md",
+        "docs/RCONN_DERIVED_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 25,
+        "C": 0,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "Issue: the N1 no-go discipline gate is not satisfied, because the note checks Fierz arithmetic, color-blind CMT scaling, OZI boundedness, and a two-completion witness, but does not enumerate at least five distinct retained-authority attack routes against a future EW readout selector. Why this blocks: a retained no-go would foreclose selector derivations that the source packet has not independently ruled out, and the CMT/OZI/readout-boundary context is not closed by the single one-hop dependency. Repair target: add direct retained dependencies or bounded admissions for the CMT/OZI/readout premises and a visible N1-N8 no-go checklist, or narrow the note to the algebraic kappa_EW parametrization. Claim boundary until fixed: the exact formula K_EW(kappa_EW)=1/(8/9+kappa_EW/9) and the kappa_EW=0 versus kappa_EW=1 independence witness are valid under the stated assumptions."
+    },
+    {
+      "archived_at": "2026-07-10T13:03:58.434386+00:00",
+      "audit_date": "2026-07-10T12:49:21.653828+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "yt_ew_m_residual_note_2026-05-02": "CMT scalar factorization scales the singlet and adjoint Fierz channels uniformly by u_0^2, so CMT alone cannot select the adjoint channel over the singlet channel."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "yt_ew_m_residual_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "yt_ew_m_residual_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "yt_ew_m_residual_note_2026-05-02"
+        ],
+        "load_bearing_score": 17.606,
+        "runner_hash": "64fdaf73a24c8e03f529ecf48bf4ac22cc8d7efe8250e470d2e37a818a9ae048",
+        "transitive_descendants": 550
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-124556-b32a85dc-ew_current_matching_rule-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes after assuming the channel-weight map and kappa_EW readout. The restricted packet does not derive either physical identification from the cited authorities.",
+      "claim_scope": "Under the supplied channel-weight map and supplied kappa_EW readout, the rational K_EW family, excluded pole, common-scaling cancellation, bounded-kappa OZI scaling, and two exhibits were audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T12:49:21.653828+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_ew_m_residual_note_2026-05-02:retained_no_go->audit_in_progress",
+      "load_bearing_step": "Substituting the supplied channel weights into K_EW=T/(C+kappa_EW S) gives K_EW(kappa_EW)=1/(F_adj+kappa_EW(1-F_adj))=N_c^2/(N_c^2-1+kappa_EW).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the physical count-to-contribution weighting and kappa_EW readout from a retained EW-current/correlator primitive, then rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 34,
+        "B": 47,
+        "C": 0,
+        "D": 0,
+        "total_pass": 81
+      },
+      "verdict_rationale": "Issue: C/T=F_adj and the physical kappa_EW readout are explicit unregistered premises rather than conclusions of the cited authorities. Why this blocks: the runner verifies their algebraic consequences but sets, rather than derives, the physical contribution weights and readout. Repair target: derive both from a retained EW-current/correlator construction. Claim boundary until fixed: the stated rational family, pole, scaling cancellation, bounded-kappa asymptotic, and exhibits are correct only on the supplied surface; no selector or no-go follows."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_ew_current_matching_rule_no_go.py",
+  "title": "EW Current Matching Rule Kappa_EW Parametrization Note",
+  "transitive_descendants": 852,
+  "verdict_rationale": null
+}

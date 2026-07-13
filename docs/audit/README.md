@@ -36,12 +36,14 @@ docs/audit/
   ALGEBRAIC_DECORATION_POLICY.md     # how to identify and prune decoration
   STALE_NARRATIVE_POLICY.md          # how to archive failed wrapper frames
   AUDIT_AGENT_PROMPT_TEMPLATE.md     # the prompt template for cold auditors
-  AUDIT_LEDGER.md                    # human-readable ledger
+  AUDIT_LEDGER.md                    # ignored, materialized human-readable cache
   data/
-    citation_graph.json              # generated: doc -> cited authorities
-    audit_ledger.json                # generated/edited: per-claim audit rows
+    ledger/<id[:2]>/<id>.json        # tracked source of truth: one claim row per shard
+    ledger_meta.json                 # tracked source of truth: top-level ledger metadata
+    audit_ledger.json                # ignored materialized monolith cache
+    citation_graph.json              # ignored generated doc -> cited-authorities cache
     source_path_aliases.json         # controlled: source-note renames preserving audit rows
-    runner_classification.json       # generated: A/B/C/D per runner PASS line
+    runner_classification.json       # ignored generated A/B/C/D cache
     audit_dispatch_queue.json        # generated: targeted re-audits normal queue will not surface
   scripts/
     build_citation_graph.py          # parse all .md docs into the graph
@@ -51,6 +53,10 @@ docs/audit/
     compute_audit_dispatch_queue.py  # render dispatcher sidecars into audit_dispatch_queue.json
     audit_lint.py                    # validate ledger consistency
 ```
+
+Run `python3 docs/audit/scripts/ledger_io.py --materialize` before directly
+using a legacy monolith reader. All ledger writers must call
+`ledger_io.save_ledger()`; direct edits to the ignored monolith are refused.
 
 ## Scope-aware fields
 

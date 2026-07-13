@@ -1,0 +1,412 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (finite algebraic localization + correction).",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+    "minimal_axioms",
+    "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d0e470cc0ac99d997ae26782a76300e26b08999a356c9dc6aa379dfb65160e00",
+  "note_path": "docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T21:30:27.970428+00:00",
+      "archived_for_note_hash": "bee57a6e40d3205429a90246e722c670d79363ac133fd2505e5d65a0f453ec13",
+      "audit_date": "2026-06-12T02:38:53.093774+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "Finite matrix support only: the C3 circulant index map, native circulant eigenvector rigidity and zero Berry curvature away from band-crossing loci, a Pauli two-band anticommuting Berry comparator, the native circulant commutation obstruction, and the two algebraic Q(r) identities; no physical r-weighting or Q-branch selection is audited as derived.",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": null,
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "bounded_theorem",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": "meta",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "retained_bounded",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": "meta",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "a0a1a5471e1767af6d891632ebce80db57b391c884353d23250d9d63f030c3c1",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-023550-61b52a267e-koide_first_order_selector_i",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebraic identities close under the narrow C3-equivariant/circulant scope. The full selector claim does not close because the AC_phi_lambda L-R coupling and the bridge from that coupling to the physical first-order determinant/r weighting remain open or unaudited in the restricted packet.",
+      "claim_scope": "Finite C3/circulant algebra localization: Q is phase-independent, the Z3 character index gives a multiplicity readout, same-factor C3-equivariant Gamma_chi anticommutation is zero, and a separate chirality-factor anticommuter exists; no derivation of r=1/2 is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T02:38:53.093774+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Within the C3-equivariant R^3 generation algebra the only Gamma_chi-anticommuting operator is zero, while on R^3 tensor C^2 an off-diagonal chirality operator commutes with C tensor I and anticommutes with I tensor sigma_z, so the first-order escape is a factor-crossing L-R coupling.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained bridge that AC_phi_lambda actually provides the M(b) tensor sigma_+ coupling and maps that first-order chiral coupling to the physical r-weighting; also narrow or remove the false converse in the C3-equivariance/Gamma_chi shorthand.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md",
+        "docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Independent checks confirm the runner's algebraic core: the trigonometric sums are delta-independent, the regular C3 character has multiplicities (1,1,1), the circulant same-factor anticommuting intersection is zero, and the tensor-factor sigma_x escape exists. However, the cited staggered-Dirac gate is unaudited and explicitly carries open residuals, while the Berry authority does not supply a retained Berry/chirality-to-r branch-selection theorem. The source also overstates the shorthand C3-equivariance iff commutes-with-Gamma_chi: the forward implication holds for circulants, but the converse is false for general operators preserving the singlet/doublet split. Thus the packet supports a narrowed algebraic localization, not a clean closure of the framework selector."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:27.765933+00:00",
+      "archived_for_note_hash": "d64cf65549bea616212cbabb2397c84dbfb8daa0f8887625194797f0b415fe67",
+      "audit_date": "2026-06-14T03:24:40.529196+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "Finite matrix support only: the C3 circulant index map, native circulant eigenvector rigidity and zero Berry curvature away from band-crossing loci, a Pauli two-band anticommuting Berry comparator, the native circulant commutation obstruction, and the two algebraic Q(r) identities; no physical r-weighting or Q-branch selection is audited as derived.",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": null,
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "bounded_theorem",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": "meta",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "retained_bounded",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": "meta",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "45a5683cb24187baba815960f430dd0e578739882f701e2323078b6f8e4aa32e",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-032218-33aef33d01-koide_first_order_selector_i",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite matrix identities close, but the queued positive theorem does not: the packet lacks a retained bridge showing AC_phi_lambda supplies the physical M(b)\u2297\u03c3+ coupling and lacks a retained readout rule mapping first-order/chiral coupling to the physical r weighting. The cited authorities explicitly leave those gates open.",
+      "claim_scope": "Finite C3 algebraic localization: Q is phase-independent, the clock character gives multiplicity (1,1,1), native circulant R^3 has no nonzero C3-equivariant \u0393\u03c7-anticommuting operator, and a separate chirality factor admits the algebraic L-R escape; no physical r=1/2 derivation was audited as closed.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-14T03:24:40.529196+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The selector between the first-order/holomorphic r=1/2 reading and the second-order/modulus r=1 reading is a chiral L-R coupling M(b)\u2297\u03c3+ across a separate chirality factor: within R^3 the C3-equivariant \u0393\u03c7-anticommuting intersection is zero, while on R^3\u2297C^2 such a factor-crossing anticommuting operator exists.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained bridge from AC_phi_lambda/staggered-corner dynamics to the physical M(b)\u2297\u03c3+ coupling and to the first-order versus second-order r-weighting/readout rule, then re-audit the queued positive theorem.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md",
+        "docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner source genuinely checks the displayed finite C3 identities, and an independent algebra check confirms the sums, character multiplicities, \u0393\u03c7 intersection, tensor-factor anticommutation, and Fourier eigenvector rigidity. However, the physical selector claim depends on an unaudited staggered-Dirac realization authority and on a missing bridge from the algebraic L-R coupling to the physical branch/r-weighting rule. The Berry authority is retained only as bounded finite support and expressly does not derive branch selection, so the positive theorem cannot be marked clean."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:57.519153+00:00",
+      "archived_for_note_hash": "cbe41e46bcbb7cd09ace57f951ddf44413bff46d83e43f18f29c51cb2b28dbfc",
+      "audit_date": "2026-06-18T13:22:19.672923+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "Finite matrix support only: the C3 circulant index map, native circulant eigenvector rigidity and zero Berry curvature away from band-crossing loci, a Pauli two-band anticommuting Berry comparator, the native circulant commutation obstruction, and the two algebraic Q(r) identities; no physical r-weighting or Q-branch selection is audited as derived.",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": null,
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "bounded_theorem",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": "meta",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "retained_bounded",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": "meta",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "5c745c12eb98919f470ab818a109369b60cd86fe7c0b12eeef4eca35db1d3b98",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic chain closes for the stated finite localization: all load-bearing C3/circulant and tensor-factor identities are computed by the runner or supported by retained_bounded algebraic authorities. It does not close a physical selector; the physical AC_phi_lambda-to-L-R coupling and r-weighting readout are explicitly outside scope.",
+      "claim_scope": "Bounded finite algebraic localization: Q delta-independence, discrete Z3 clock multiplicity block balance, native R^3 circulant anticommuting no-go, and separate-factor algebraic escape; not a physical r=1/2 derivation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T13:22:19.672923+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Within native R^3, every C3-equivariant/circulant mass commutes with Gamma_chi and comm(C) cap anticomm(Gamma_chi) = {0}, while a nonzero Gamma_chi-anticommuting operator appears only after placing chirality on a separate C^2 factor.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: retain a bridge from AC_phi_lambda/staggered corner data to the physical M(b) tensor sigma_+ L-R coupling plus the physical r-weighting/readout rule, or keep downstream use strictly bounded to the finite algebraic localization.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner source genuinely computes the finite identities rather than printing constants: Q is delta-independent, the clock character multiplicities are (1,1,1), comm(C) cap anticomm(Gamma_chi) is zero in the native circulant algebra, and the R^3 x C^2 anticommuting example is nonzero. That supports class A bounded algebraic localization. The source also correctly quarantines the physical selector: the cited staggered-Dirac gate is unaudited and the AC_phi_lambda -> M(b) tensor sigma_+ action/readout bridge is not supplied, so the packet cannot be used as a retained physical r=1/2 derivation."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.500467+00:00",
+      "audit_date": "2026-06-21T17:27:51.278671+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "Finite matrix support only: the C3 circulant index map, native circulant eigenvector rigidity and zero Berry curvature away from band-crossing loci, a Pauli two-band anticommuting Berry comparator, the native circulant commutation obstruction, and the two algebraic Q(r) identities; no physical r-weighting or Q-branch selection is audited as derived.",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": null,
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "bounded_theorem",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": "meta",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "retained_bounded",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": "meta",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "8de13bec7f9bcb288f84bf219ed396bd49665c8553ffbd7abf8ab4e7c4351ea5",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite matrix algebra in the runner closes exactly, and the runner source actually computes the relevant identities. The full row still cites a non-retained meta route-boundary dependency and explicitly leaves the physical AC_phi_lambda-to-M(b) tensor sigma_+ coupling and r-weighting/readout bridge open.",
+      "claim_scope": "Finite C3 algebraic localization only: Q is delta-independent, the clock character can encode the conditional (1,1) block balance, the native circulant R^3 route has no nonzero Gamma_chi-anticommuting C3-equivariant operator, and a separate chirality factor admits the algebraic escape shape; no physical M(b) tensor sigma_+ action/readout bridge or r=1/2 derivation is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T17:27:51.278671+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Inside the native R^3 circulant family, comm(C) cap anticomm(Gamma_chi) = {0}, while on a separate R^3 tensor C^2 chirality factor a nonzero factor-crossing operator commutes with C tensor I and anticommutes with I tensor sigma_z.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: cheapest repair is to audit or remove the non-retained meta route-boundary dependency; if the physical selector wording is retained, add a separate retained bridge theorem for AC_phi_lambda -> M(b) tensor sigma_+ and the physical r-readout rule.",
+      "open_dependency_paths": [
+        "docs/KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md",
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the bounded algebraic checks close, but the row lists a non-retained meta dependency and its physical L-R coupling/readout interpretation remains explicitly unsupplied. Why this blocks: retained status cannot propagate through an open physical identification, so the packet supports only finite C3/R^3/R^3 tensor C^2 route-pruning, not a retained physical selector theorem. Repair target: either remove or audit the non-retained meta dependency while keeping the row strictly algebraic, or supply a retained bridge theorem deriving the physical L-R coupling and r-weighting rule. Claim boundary until fixed: bounded algebraic localization only."
+    },
+    {
+      "archived_at": "2026-07-10T16:59:10.094624+00:00",
+      "audit_date": "2026-07-10T04:13:48.248987+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "Finite-matrix algebra for the explicitly defined C3 circulant family, the explicit two-band anticommuting comparator, the native commutation obstruction, and the identities Q(1/2)=2/3 and Q(1)=1; no physical branch-selection rule was audited.",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": null,
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "bounded_theorem",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": "meta",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "retained_bounded",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": "meta",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+          "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "8de13bec7f9bcb288f84bf219ed396bd49665c8553ffbd7abf8ab4e7c4351ea5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00071-koide_first_order_selector_i",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied runner genuinely computes the finite matrix and character identities, and those identities support the explicitly bounded localization. The physical AC_phi_lambda-to-M(b)\u2297\u03c3\u208a bridge and r-weighting remain outside the claim scope.",
+      "claim_scope": "The five finite algebraic localization statements were audited: \u03b4-independence of Q, clock-character multiplicities, the native-family intersection no-go, the separate-factor escape, and Fourier-eigenvector Berry flatness; no physical coupling, readout rule, or r=1/2 derivation was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:13:48.248987+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_berry_monopole_bridge_reduction_note_2026-05-31:retained_bounded->unaudited",
+      "load_bearing_step": "Within the native circulant R\u00b3 family, comm(C) \u2229 anticomm(\u0393\u03c7) = {0}, whereas on a separate R\u00b3\u2297C\u00b2 chirality factor a nonzero C\u2083-equivariant anticommuting operator exists.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "dependency_not_retained: move the non-SUSY staggered-Dirac meta note from load-bearing dependencies to context-only if it is unnecessary for the finite algebra, or replace it with a retained-grade authority; add a dated dependency-hygiene line to this note's boundary and re-audit.",
+      "open_dependency_paths": [
+        "docs/KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "All ten runner checks are substantive class-A algebraic checks, and the source repairs consistently prevent consuming them as a physical selector theorem. However, the graph-visible load-bearing dependencies include a meta-status authority that explicitly leaves the staggered-Dirac realization and readout selection open. Under the rubric, that non-retained authority requires a conditional verdict even though the narrowed finite algebra closes."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py",
+  "title": "Koide First-Order Selector Localization: the Native R^3/C3 Circulant Route Fails; Any Physical r=1/2 Selector Must Enter Through a Chiral L-R Coupling Gate",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

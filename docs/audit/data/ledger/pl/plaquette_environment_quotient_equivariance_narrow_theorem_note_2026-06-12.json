@@ -1,0 +1,120 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
+    "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+    "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "703660350950e0ea437e3e6a38ef4e41acc78cbaab3bd58775650538ba5f6f00",
+  "note_path": "docs/PLAQUETTE_ENVIRONMENT_QUOTIENT_EQUIVARIANCE_NARROW_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.979698+00:00",
+      "audit_date": "2026-06-18T13:59:28.749526+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J).",
+          "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12": "Bounded cost verification for the marked L_s=3 periodic spatial Wilson environment at NMAX in {2,3,4}: raw dense original-graph contraction and support-only sparse estimates exceed 4 GiB, while the orbit quotient is not an exact original-graph contraction.",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": "Finite L_s=3 PBC 3D cube geometry and induced tensor-network incidence/index bookkeeping: site/link/plaquette counts, four-plaquette link incidence, link-labeled plaquette adjacency count/degree, and 324 tensor slots, with retained Block 2 rank-8 projector used only as an upstream primitive."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem",
+          "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12": "bounded_theorem",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded",
+          "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12": "retained_bounded",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+          "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "a2f7eb956f1a853e541e8fd0306b4e711a95308352b91accb12b6fb7fa9222db",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from finite group action on the L_s=3 link-label set plus the exact orbit-sum identity; the runner reconstructs the stabilizer and computes the toy falsifier and Burnside counts in exact or deterministic arithmetic. The note stays narrow: it rejects the tied diagnostic carrier as exact-by-equivariance and leaves rank-aware exact contractors open.",
+      "claim_scope": "Bounded finite L_s=3 marked-plaquette quotient statement: stabilizer/orbit data, dual-label orientation bookkeeping, exact rational falsifier of link-orbit tying, Burnside dense label-orbit cost at NMAX 2 and 3, and no rho computation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T13:59:28.749526+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note:retained_bounded->unaudited",
+      "load_bearing_step": "Because scalar summands are constant only on complete G_stab orbits of label-plus-internal cells, the exact quotient is the finite orbit sum with weight |G_stab|/|Stab_G_stab(x)|, not the one-label-per-link-orbit tied diagnostic quotient.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the SU(3) orientation-reversal-to-dual-label convention, but no dependency or compute gap is apparent in the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing step is a genuine finite-orbit algebraic closure over retained-bounded geometry and cost inputs, supported by deterministic stabilizer reconstruction and exact rational counterexample. The runner source is not a print-only artifact: it enumerates affine signed-permutation stabilizers, records orientation reversals, verifies group law, computes Burnside label-orbit counts, and checks the toy quotient in Fraction arithmetic. The no-go/wall language is scoped to the diagnostic tied carrier and passes the included N1-N8 narrowing: it does not assert global contraction infeasibility or rule out rank-aware stabilizer-block contractors."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/plaquette_environment_quotient_equivariance_narrow_theorem_2026_06_12.py",
+  "title": "Plaquette Environment Quotient Equivariance Narrow Theorem Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,325 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
+    "dimensional_gravity_table"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e12e04f8371a29fa903100bf48c720d3c79e7810e6452b658ea306221cb2b9db",
+  "note_path": "docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T12:08:47.345852+00:00",
+      "archived_for_note_hash": "8950a525c7762229752256d9555a159ed85a7af546517d302d575efdea66a302",
+      "audit_date": "2026-05-22T01:00:24.032652+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260522-005919-b49b9bae-dimension_selection_lowe-003",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The derivative sign calculation closes algebraically once the eikonal bending rule is admitted. The restricted packet does not derive or independently certify the needed bridge from the finite-k discrete propagator and normalized centroid observable to the WKB/Fermat sign rule.",
+      "claim_scope": "Audited only the bounded analytic sign bridge for scripts/frontier_dimension_selection.py's stated action S=L(1-phi), analytic potential family, and centroid-shift observable at d in the runner's stated family.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T01:00:24.032652+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner's centroid-shift sign is governed by bending toward larger n_eff = 1 - phi, hence toward larger f_d(r), so raw_delta > 0 exactly when df_d/dr < 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a discrete-to-eikonal bridge theorem, or an independent finite-k sign proof, showing the runner's normalized centroid shift has the claimed sign for the stated potential family.",
+      "open_dependency_paths": [
+        "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The runner source and stdout support that the code uses the stated analytic potential family and reports the claimed signs for d=1..5. But the note's load-bearing scientific step is not a first-principles computation; it imports standard WKB/eikonal bending as an admitted premise and assumes it faithfully controls the runner's finite-k centroid shift. The cited retained_bounded authority is also narrower than the full d=1..5 analytic family, with d=2 explicitly diagnostic-only in that authority, though the runner source itself supplies the analytic d=2 form."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:18.139853+00:00",
+      "archived_for_note_hash": "908f504baff04df061b7d01ab12a687d3664a2729c67216647165e39aeb6e589",
+      "audit_date": "2026-05-29T22:34:44.407694+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260529-223159-c0ee3010-dimension_selection_lowe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The derivative sign calculation closes algebraically once the eikonal bending rule is assumed, and the supplied runner output matches the sign criterion at d=1..5. The full chain to the runner's finite-k normalized centroid shift does not close because the discrete-to-eikonal/WKB sign-preservation bridge is admitted rather than derived or supplied as retained authority.",
+      "claim_scope": "Bounded audit of the eikonal derivative-sign bridge for scripts/frontier_dimension_selection.py's analytic potential family, with finite runner sign checks at d in {1,2,3,4,5}; beta/alpha, upper-bound, and wider D=3 claims are out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T22:34:44.407694+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the admitted eikonal rule that the packet bends toward larger f_d(r), the runner sign is attractive iff df_d/dr < 0, which holds exactly for d >= 3 and not for d <= 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a discrete-to-eikonal sign-preservation theorem or an independent finite-k sign proof for the runner's normalized centroid-shift observable, and correct the non-load-bearing phi-sign/alpha-match prose before seeking clean re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The displayed derivative identities for f_1, f_2, and f_d for d >= 3 are correct, and the supplied runner code/output contains actual finite centroid computations whose signs match the criterion for d=1..5. But the conclusion that this algebraic/eikonal sign governs the runner's normalized finite-k centroid observable still rests on an admitted WKB/discrete-to-eikonal bridge not closed inside the packet. The formula inventory also finds non-load-bearing source drift: the blanket statement that phi < 0 for M > 0 is false for d=2 when 0 < r < 1, including the runner's r=0.5 regularization, and the prose claiming the d>=3 alpha values match the Green-function falloff overstates the supplied table. Therefore the row is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-05T09:05:12.576004+00:00",
+      "audit_date": "2026-05-31T15:34:11.751623+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "Runner-specific finite-k centroid-sign bridge for k=6.0, L_x=40, L_y=60, source at y_mid, mass offset +7, dimensions d=1..5, including the M=0 derivative and parent M=0.005 probe replay.",
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "bounded_theorem",
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "retained_bounded",
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260531-153148-e5108670-dimension_selection_lowe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The included retained_bounded finite-k bridge is exactly the upstream sign result needed for the stated fixed-geometry runner claim, and the remaining df_d/dr statements are elementary monotonicity checks. The closure is only the bounded runner-sign wrapper, not the beta/alpha exponents, upper-bound side, or full D=3 chain.",
+      "claim_scope": "Bounded wrapper check that the retained finite-k centroid-sign bridge supplies the fixed-runner sign split d<=2 negative and d>=3 positive for scripts/frontier_dimension_selection.py; no uniform-in-M or full dimension-selection theorem is audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-31T15:34:11.751623+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25:retained_bounded->unaudited",
+      "load_bearing_step": "The retained finite-k bridge's derivative and M=0.005 finite-probe sign table is negative for d=1,2 and positive for d=3,4,5, so the runner's centroid shift is attractive exactly for the audited d>=3 cases.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that no downstream process treats this wrapper as proving any uniform positive-M interval or the full dimension-selection theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The note does not add an independent first-principles computation; it imports the retained finite-k centroid-sign bridge and restates its sign partition in the lower-bound context. The displayed action/sign formulas and monotonicity derivatives are consistent with the runner conventions in the packet. Since the chain reduces to one upstream retained parent plus standard algebra, decoration is the conservative verdict rather than audited_clean."
+    },
+    {
+      "archived_at": "2026-06-09T22:08:17.210963+00:00",
+      "archived_for_note_hash": "03d89885766fa79a11d55cf0234b5916f1d354e3e857869ce024a5fe03874e8a",
+      "audit_date": "2026-06-05T20:19:53.596135+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "For the specified finite-k runner geometry k=6.0, L_x=40, L_y=60, source at y_mid, and mass offset +7, the exact normalized centroid derivative at M=0 has signs negative for d=1,2 and positive for d=3,4,5, with the M=0.005 probe showing the same sign pattern.",
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "bounded_theorem",
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "retained_bounded",
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-201932-32facfbc33-dimension_selection_lower_bo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The stated lower-bound sign conclusion follows from the retained finite-k centroid-sign bridge's sign table and the note's explicit convention that positive raw_delta is toward the mass. The derivative-sign calculus on df_d/dr is correctly kept explanatory rather than load-bearing.",
+      "claim_scope": "Bounded finite-k sign claim for scripts/frontier_dimension_selection.py at k=6.0, Lx=40, Ly=60, mass offset +7, M=0 derivative plus parent M=0.005 probe, for d in {1,2,3,4,5}.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T20:19:53.596135+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The retained finite-k bridge computes the exact normalized centroid derivative and finite probe, with negative signs for d=1,2 and positive signs for d=3,4,5.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the finite-k bridge runner source and output artifact directly, since this packet includes the bridge note but not the full bridge runner source.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Both cited authorities are retained-grade, and the only load-bearing imported sign authority is the retained_bounded finite-k bridge. The source note does not overclaim full dimension selection, beta/alpha derivation, upper-bound closure, or uniform control in M; it limits itself to the current runner geometry and the displayed finite probe. The included runner stdout is consistent with the sign table, while the primary scientific closure comes from the upstream exact tangent-recursion certificate rather than the broader frontier runner's printed narrative."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.329348+00:00",
+      "audit_date": "2026-06-10T05:14:40.739160+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "For the specified finite-k runner geometry k=6.0, L_x=40, L_y=60, source at y_mid, and mass offset +7, the exact normalized centroid derivative at M=0 has signs negative for d=1,2 and positive for d=3,4,5, with the M=0.005 probe showing the same sign pattern.",
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "bounded_theorem",
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "retained_bounded",
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-051227-d476414cd9-dimension_selection_lower_bo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained_bounded finite-k bridge supplies the exact normalized tangent recursion and finite-probe sign table for the same geometry, constants, potential family, and observable. The supplied primary runner source matches the phase convention S=L(1-phi), the analytic potential definitions, and the layer-normalized centroid observable used by the bridge.",
+      "claim_scope": "Finite-k sign bridge for scripts/frontier_dimension_selection.py at k=6.0, L_x=40, L_y=60, source y_mid, mass offset +7, analytic f_d family, d in {1,2,3,4,5}, covering dC/dM at M=0 and the parent finite probe M=0.005.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:14:40.739160+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "From the retained finite-k bridge table, the normalized centroid derivative and the M=0.005 replay are negative for d=1,2 and positive for d=3,4,5, so the parent runner has raw_delta > 0 iff d >= 3 on the audited finite surface.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that future uses preserve the finite-runner/M=0.005 scope and do not promote this row into a uniform-in-M or full dimension-selection theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The note's load-bearing inference is a sign extraction from a retained_bounded upstream finite-runner bridge, not a new WKB or classical-force argument. Independent formula checks in the restricted packet confirm the radial profile identities, derivative signs, A'_x(0), normalized tangent recursion, and centroid derivative formula. The clean result is bounded: it does not prove a uniform sign interval for all M>0, the beta/alpha exponents, the upper-bound side, or full D=3 dimension selection."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_dimension_selection.py",
+  "title": "Dimension-Selection Lower-Bound Bridge V2 (Runner-Faithful)",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

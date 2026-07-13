@@ -1,0 +1,83 @@
+{
+  "audit_date": "2026-05-05T09:07:06.655756+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 14.248,
+    "runner_hash": "519c1d8d830ea43f8cdcd866565184a4d2d1c8d4c9b0318557fe22df5f35c59b",
+    "transitive_descendants": 303
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-fresh-second-taste_scalar_isotropy_theorem_note-20260505",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The simultaneous eigenvalue formula lambda_s(phi)=sum_i phi_i (-1)^{s_i} gives, by the chain rule, a common coefficient 2 f'(v^2)+4 v^2 f''(v^2) multiplying (-1)^{s_i}(-1)^{s_j} at phi=(v,0,0). Summing over the eight binary signs gives a Hessian proportional to delta_ij with no dependency or bounded companion estimate needed.",
+  "claim_id": "taste_scalar_isotropy_theorem_note",
+  "claim_scope": "For H(phi)=sum_i phi_i S_i on C^8 with three commuting sigma_x taste-shift involutions and V_f(phi)=sum_s f(lambda_s(phi)^2) for a common smooth f, the fermion Coleman-Weinberg Hessian at phi=(v,0,0) is proportional to delta_ij; bounded gauge-split and thermal-cubic estimates are excluded.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-05T09:07:06.655756+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-05T09:02:45.262543+00:00",
+      "auditor": "codex-fresh-reaudit-taste_scalar_isotropy_theorem_note-20260505",
+      "auditor_family": "codex-gpt-5",
+      "claim_scope": "For H(phi)=sum_i phi_i S_i on C^8 with the three commuting sigma_x taste-shift involutions and V_f(phi)=sum_s f(lambda_s(phi)^2) for a common smooth f, the fermion Coleman-Weinberg Hessian at the axis-aligned point phi=(v,0,0) is proportional to delta_ij; bounded gauge-split and thermal-cubic companion estimates are outside this audited scope.",
+      "claim_type": "positive_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-05-05T09:07:06.655221+00:00",
+      "auditor": "codex-fresh-second-taste_scalar_isotropy_theorem_note-20260505",
+      "auditor_family": "codex-gpt-5",
+      "claim_scope": "For H(phi)=sum_i phi_i S_i on C^8 with three commuting sigma_x taste-shift involutions and V_f(phi)=sum_s f(lambda_s(phi)^2) for a common smooth f, the fermion Coleman-Weinberg Hessian at phi=(v,0,0) is proportional to delta_ij; bounded gauge-split and thermal-cubic estimates are excluded.",
+      "claim_type": "positive_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 12,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 15.7,
+  "load_bearing_step": "The Hessian therefore reduces to the binary orthogonality sum sum_s (-1)^{s_i} (-1)^{s_j}, which is 8 for i=j and 0 for i!=j.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "40ee2b4315d597ea412e376d4bf3ebdb660255a65eeb5a13d84d2e828ba28790",
+  "note_path": "docs/TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md",
+  "notes_for_re_audit_if_any": "Second-pass residual risk is only expository compression: re-check that the proof's common-factor sentence is read as the chain-rule coefficient 2 f'(v^2)+4 v^2 f''(v^2), not merely the potential value f(v^2).",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 30,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 30
+  },
+  "runner_path": "scripts/frontier_taste_scalar_isotropy.py",
+  "title": "Taste-Scalar Coleman-Weinberg Isotropy Theorem",
+  "transitive_descendants": 831,
+  "verdict_rationale": "The proposed positive_theorem type is correct for the scoped exact Hessian-isotropy statement. The source note's proof sketch compresses the derivative step, but the displayed eigenvalue formula plus standard chain rule make the Hessian coefficient common across all sign sectors at the axis, leaving exactly the binary orthogonality identity. The cached runner output for SHA 519c1d8d830ea43f8cdcd866565184a4d2d1c8d4c9b0318557fe22df5f35c59b reports THEOREM PASS=30 and FAIL=0, checking the shift algebra, eigenvalue sign sum, binary orthogonality, and finite-difference Hessian isotropy for representative smooth functions. The six bounded gauge/thermal passes are outside this audited scope and are not used for closure."
+}

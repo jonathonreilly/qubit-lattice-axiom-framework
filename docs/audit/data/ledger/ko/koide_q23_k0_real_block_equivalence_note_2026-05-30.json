@@ -1,0 +1,474 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+    "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+    "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.064,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e37aa3dd38204ecf8cbc447ac523c5b18167e2552f3a808545a4becdff5c0445",
+  "note_path": "docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T20:05:13.553394+00:00",
+      "audit_date": "2026-06-03T10:41:59.121131+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "C1 only: under the qubit-per-site/R1 k=1 axiom reading, a single faithful Cl(3) module per site has dim_C H_x = 2; full staggered-Dirac/U4 realization and chirality forcing are outside scope."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c8bee519f7886d91ab8f551c7089ef3b89032975d4359292c5e2b5056f8affb0",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-103836-555b7f17-koide_q23_k0_real_block_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the Wedderburn/FS block count and Koide-ratio algebra close from the provided inputs. The note does not claim to force the physical charged-lepton measure convention.",
+      "claim_scope": "Bounded algebraic comparison of K0-real equal-block versus K0-complex/trace weighting on the Z3 generation carrier, including the claim that the Cl(3) qubit pseudoscalar acts as a generation scalar and does not choose the measure convention.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T10:41:59.121131+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "Z3 has R[Z3]=R+C with two real Wedderburn blocks, so equal real-block energy gives 3a^2=6|b|^2 -> r=1/2 -> Q=2/3, while dimension/trace weighting gives r=1 -> Q=1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: repair or remove the non-load-bearing CPT R2 spectral-conjugation sign statement, then rerun the restricted audit packet.",
+      "open_dependency_paths": [
+        "docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md",
+        "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+        "docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The primary runner source performs actual FS, Pauli/Jcs, coherent-state, circulant, and C3 checks; it is not a print-only PASS stub. The targeted Koide equivalence is a genuine class-A bounded algebraic characterization. Under the strict formula-inventory pass, however, the packet contains a sign error in the cited CPT authority's spectrum corollary: for real D with TDT=D, T v has eigenvalue lambda^*, not -lambda^*. That upstream formula is not load-bearing for the Koide block algebra, so this is a packet/authority repair issue rather than a failure of the targeted equivalence."
+    },
+    {
+      "archived_at": "2026-06-10T20:16:17.333568+00:00",
+      "audit_date": "2026-06-05T19:47:16.542056+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "C1 only: under the qubit-per-site/R1 k=1 axiom reading, a single faithful Cl(3) module per site has dim_C H_x = 2; full staggered-Dirac/U4 realization and chirality forcing are outside scope."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "c8bee519f7886d91ab8f551c7089ef3b89032975d4359292c5e2b5056f8affb0",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-194502-64d5ca3b91-koide_q23_k0_real_block_equi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The FS/Wedderburn decomposition R[Z3]=R+C versus C[Z3]=C^3, together with the stated Q and block-energy formulas, algebraically yields the two claimed values. The Pauli pseudoscalar and scalar-on-generation comparison also closes as a finite-dimensional matrix identity.",
+      "claim_scope": "Bounded algebraic comparison of two measure conventions on the Z_3 generation carrier, plus the check that the qubit pseudoscalar does not select between them.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T19:47:16.542056+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:retained_bounded->audit_in_progress",
+      "load_bearing_step": "With Q=(1+2r)/3, E_+=3a^2 and E_perp=6|b|^2, equal real-block weighting gives E_+=E_perp so r=1/2 and Q=2/3, while dimension weighting gives r=1 and Q=1; the Cl(3) pseudoscalar acts as iI_3 on generations rather than as the doublet Schur complex structure.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the bounded no-selection boundary and do not treat the equal-block convention as physically forced.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Independent formula checks confirm the FS indicators, K0 ranks, r=1/2 versus r=1, Q values, Jcs^2=-P_doublet, and the e^{3i alpha}=1 symmetry restriction. The runner source performs direct symbolic and finite-matrix checks and imports no external comparator or fitted value. It encodes the two measure conventions, but the source claim is only an equivalence comparison and explicitly leaves physical measure selection open."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.970383+00:00",
+      "audit_date": "2026-06-10T21:07:36.909150+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "C1 only: conditional on a single faithful Cl(3) module per site, the retained Cl(3) split and standard semisimple representation theory give dim_C H_x = 2; unconditional U4 closure and chirality/unitary-conjugacy claims are outside this ratified scope."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 8.392,
+        "runner_hash": "c8bee519f7886d91ab8f551c7089ef3b89032975d4359292c5e2b5056f8affb0",
+        "transitive_descendants": 83
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-210508-2ad9a3f9be-koide_q23_k0_real_block_equi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conclusion follows from finite Z_3 representation theory, the cited Koide block-weight algebra, and direct matrix identities. The physical selection of either measure is explicitly outside the audited claim.",
+      "claim_scope": "Bounded equivalence/localization: on the real Z_3 generation carrier, real-Wedderburn equal-block weighting corresponds to Q=2/3, complex-dimension/trace weighting corresponds to Q=1, and the Cl(3) qubit pseudoscalar acts as a generation scalar rather than selecting the doublet measure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T21:07:36.909150+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:retained_bounded->unaudited",
+      "load_bearing_step": "Z_3 has FS indicators (+1,0,0), so R[Z_3]=R\u2295C has two real blocks while C[Z_3]=C^3 has three complex blocks; with Q=(1+2r)/3, E_+=3a^2, and E_perp=6|b|^2, equal real-block energy gives r=1/2 and Q=2/3, while dimension/trace weighting gives r=1 and Q=1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that future wording preserves the bounded scope and does not promote the real-block convention into a forced physical measure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic identity over the Z_3 real/complex block decomposition plus the quadratic Koide parametrization, not a numerical comparator or a definition substitution. Independent checks confirm the FS indicators, R[Z_3]=R\u2295C versus C[Z_3]=C^3 block counts, r=1/2 -> Q=2/3, r=1 -> Q=1, and iI_3 != Jcs. The runner source performs actual finite matrix and symbolic checks and does not import PDG values, fitted scales, or the contested physical measure selection."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.072444+00:00",
+      "audit_date": "2026-06-21T10:43:48.911565+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "On the current minimal-Quantum one-qubit surface, the one-site Cl(3) physical carrier has multiplicity k=1 and complex dimension 2; on the abstract Cl(3) representation surface only the conditional k=1 => dim_C=2 statement holds, with k>=2 counterexamples preserved."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 11.82,
+        "runner_hash": "c8bee519f7886d91ab8f551c7089ef3b89032975d4359292c5e2b5056f8affb0",
+        "transitive_descendants": 112
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_q23_k0_real_block_equivalence_note_2026-05-30-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade inputs and the runner support the finite Z_3 real/complex Wedderburn count, the Q(r) algebra, the circulant check, and the scalar-versus-doublet distinction for the qubit pseudoscalar. The claim explicitly does not derive the physical measure selection, so no missing selection theorem is needed for the audited bounded scope.",
+      "claim_scope": "Audited the bounded algebraic characterization that the Z_3 generation carrier admits a K0-real equal-real-block weighting yielding Q=2/3 and a K0-complex/dimension weighting yielding Q=1, with the qubit Cl(3) central i not selecting between those conventions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T10:43:48.911565+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:retained->unaudited",
+      "load_bearing_step": "For Z_3, R[Z_3] = R (+) C has two real Wedderburn blocks while C[Z_3] = C^3 has three complex blocks; counting each real block once gives r=1/2 and Q=2/3, while dimension/trace weighting gives r=1 and Q=1, and the Cl(3) pseudoscalar acts as scalar iI_3 on generations rather than as the doublet Schur complex structure.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers preserve the bounded scope and do not read this as selecting the physical generation measure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing content is finite-dimensional algebra over the supplied Z_3 and Cl(3) inputs, not an external comparator, tuned numerical match, or definition-only substitution. The runner source performs substantive checks of the Frobenius-Schur fork, the scalar action of qubit i on generations, the coherent-state identity, the Q=2/3 versus Q=1 weighting algebra, and the C^3=I symmetry-versus-measure distinction. The result is clean only as a bounded equivalence/localization: it leaves the physical convention slot open as the note states."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.467200+00:00",
+      "audit_date": "2026-07-01T07:27:54.039168+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "On the registered minimal-Qubit surface plus the retained Cl(3) complexification split, the physical one-site carrier is the single two-dimensional Pauli module; on the abstract Cl(3) representation surface, k>=2 faithful modules remain admissible."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 8.82,
+        "runner_hash": "c8bee519f7886d91ab8f551c7089ef3b89032975d4359292c5e2b5056f8affb0",
+        "transitive_descendants": 112
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T072754Z-106b6ca7-koide_q23_k0_real_block_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated two-convention comparison, the result follows from the Z_3 real/complex Wedderburn decomposition, the given Koide block-energy formula, and elementary matrix checks. The note does not derive or choose the physical generation measure, and that non-selection is part of the audited scope.",
+      "claim_scope": "Bounded algebraic equivalence for the assumed Z_3 generation carrier: real-Wedderburn equal-block weighting yields Q=2/3, complex-dimension/trace weighting yields Q=1, and the qubit pseudoscalar i does not select between them.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:27:54.039168+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:retained->unaudited",
+      "load_bearing_step": "Counting the Z_3 singlet and complex-type doublet as two real Wedderburn blocks gives E_+ = E_perp, hence r = 1/2 and Q = 2/3, while weighting the doublet by dimension gives r = 1 and Q = 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the bounded two-convention scope and do not read this as a physical measure-selection theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing content is algebraic: FS indicators give R[Z3] = R (+) C versus C[Z3] = C^3, and the Q formula then gives the stated Q=2/3 versus Q=1 split. The runner source actually computes the FS indicators, Pauli pseudoscalar, generation-scalar comparison, coherent-state identity, circulant Q values, and C^3 versus Schur-complex-structure distinction; it does not merely print constants or import an external comparator. The claim is explicitly bounded and does not promote the per-block measure to a physical derivation."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.256127+00:00",
+      "audit_date": "2026-07-01T23:53:39.863082+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "Single-site carrier/multiplicity only: on the current registered Qubit axiom surface the primitive one-site carrier is the k=1 two-dimensional Pauli module; on the abstract Cl(3) representation surface only the conditional k=1 => dim_C H_x=2 statement holds and k>=2 counterexamples remain."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 8.82,
+        "runner_hash": "c8bee519f7886d91ab8f551c7089ef3b89032975d4359292c5e2b5056f8affb0",
+        "transitive_descendants": 112
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T235339Z-cb8db254-koide_q23_k0_real_block_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The FS/Wedderburn count R[Z_3]=R\u2295C versus C[Z_3]=C^3 and the Koide block-energy formulas algebraically give the two stated Q values. The note explicitly does not claim that the physical measure is selected, so no further measure-selection bridge is required for this bounded result.",
+      "claim_scope": "Bounded algebraic characterization of the Z_3 generation carrier: real-Wedderburn block weighting gives Q=2/3, dimension/trace weighting gives Q=1, and the forced qubit i does not choose the physical measure convention.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T23:53:39.863082+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:retained->unaudited",
+      "load_bearing_step": "With Q=(1+2r)/3, r=|b|^2/a^2, and block energies E_+=3a^2 and E_perp=6|b|^2, counting each real Wedderburn block once gives r=1/2 and Q=2/3, while dimension/trace weighting gives r=1 and Q=1; the Cl(3) pseudoscalar acts as a generation scalar and does not select between these conventions.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the bounded scope and do not treat the per-block convention as physically forced.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing content is class A algebra over retained-grade inputs, not a first-principles physical prediction. Independent checks confirm the FS indicators, R[Z_3]=R\u2295C block count, Q=(1+2r)/3 factor normalization, r=1/2 and r=1 consequences, and the scalar iI_3 versus doublet Jcs distinction. The open convention slot is scoped honestly: the note characterizes two admissible readings and does not derive the physical choice."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py",
+  "title": "Koide Q=2/3 as Real-Wedderburn Block Count; Trace/Dimension Gives Q=1",
+  "transitive_descendants": 756,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

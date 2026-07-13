@@ -1,0 +1,139 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.094,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "eec29a2cca6fbe571ce1bcbd2564d957b1232834bb82919c766e76905ba37671",
+  "note_path": "docs/SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.614904+00:00",
+      "audit_date": "2026-07-10T15:54:39.697073+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 9.707,
+        "runner_hash": "0e3aa2119e4ae4be5fc7bf07e69f262f754fc8d511e25df78409f2eece04e2c7",
+        "transitive_descendants": 590
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00016-su3_wilson_plane_kernel_char",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Absolute convergence justifies the character-series rearrangement, and tensor-product multiplicities are nonnegative integers. The matrix-coefficient factorization, Schur orthogonality, and product-kernel argument then establish the kernel criterion and integrated Gram positivity.",
+      "claim_scope": "For beta >= 0, the pure-gauge fundamental SU(3) Wilson plane kernel has nonnegative character coefficients, and its two-slice temporal-gauge form is a positive-semidefinite normalized Gram form for bounded plus-slice observables at every finite L_s, without fermions or continuum or thermodynamic limits.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:54:39.697073+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-10T12:55:44.283687+00:00",
+          "auditor": "codex-audit-loop-su3-20260710",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For beta >= 0, the pure-gauge fundamental SU(3) Wilson plane kernel has tensor-multiplicity character coefficients that are nonnegative; the corresponding absolutely convergent convolution kernel and bounded two-slice temporal-gauge composed form are positive semidefinite for every finite L_s.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T15:54:39.697073+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00016-su3_wilson_plane_kernel_char",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For beta >= 0, the pure-gauge fundamental SU(3) Wilson plane kernel has nonnegative character coefficients, and its two-slice temporal-gauge form is a positive-semidefinite normalized Gram form for bounded plus-slice observables at every finite L_s, without fermions or continuum or thermodynamic limits.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Expanding exp(beta chi_(rho oplus rhobar)/2) into tensor-power characters expresses every character coefficient as a convergent sum of nonnegative integer multiplicities.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 13,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The load-bearing multiplicity expansion is a genuine algebraic closure using standard compact-group representation theory, not a definition, tuned match, or imported coefficient sign. The sole cited authority is retained_bounded, and the note also supplies a direct bounded-observable product-kernel proof within its stated two-slice scope. The primary and helper sources perform substantive exact and numerical checks, including discriminating negative controls, and the cached primary run reports 31 PASS and 0 FAIL."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py",
+  "title": "SU(3) Wilson plane-kernel character positivity and composed two-slice Gram \u2014 narrow theorem note",
+  "transitive_descendants": 772,
+  "verdict_rationale": null
+}

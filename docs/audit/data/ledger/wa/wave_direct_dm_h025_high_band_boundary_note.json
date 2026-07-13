@@ -1,0 +1,107 @@
+{
+  "audit_date": "2026-05-29T05:48:19.463391+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "wave_direct_dm_h025_low_band_retention_note": "Bounded seed-1 Fam1 H=0.25 direct-dM controlled replay: exact S=0 null, negative delta_hist for S=0.002/0.004/0.008, R_hist near -29% to -30%, and low scaled-spread in the pinned control-ladder runner. Coarse H=0.5/0.35 continuity rows, cross-seed ordering, downstream synthesis, and portability claims are excluded.",
+      "wave_direct_dm_h025_two_point_synthesis_note": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited."
+    },
+    "dep_claim_type": {
+      "wave_direct_dm_h025_low_band_retention_note": "bounded_theorem",
+      "wave_direct_dm_h025_two_point_synthesis_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "wave_direct_dm_h025_low_band_retention_note": "retained_bounded",
+      "wave_direct_dm_h025_two_point_synthesis_note": "retained_bounded"
+    },
+    "deps": [
+      "wave_direct_dm_h025_low_band_retention_note",
+      "wave_direct_dm_h025_two_point_synthesis_note"
+    ],
+    "load_bearing_score": 5.307,
+    "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+    "transitive_descendants": 13
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-wave-direct-dm-h025-high-band-2026-05-28",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The primary runner pins Fam1, seed 0, H=0.25, S=0.004 and computes the single fine-H point through the included wave/direct-dM helper path. Independent arithmetic from the printed values gives delta_hist=-0.001257, R_hist=-20.12%, and late gain +0.001257, and the retained two-point synthesis supplies the same seed0/seed1 fine-pair comparison without retaining coarse-band provenance.",
+  "claim_id": "wave_direct_dm_h025_high_band_boundary_note",
+  "claim_scope": "Bounded Fam1 seed0 H=0.25, S=0.004 direct-dM point: dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, R_hist=-20.12%, with the retained fine-pair synthesis establishing that seed 1 has the larger-magnitude negative R_hist at the same H and strength. Coarse H=0.5/0.35 provenance, coarse-to-fine reversal framing, mechanism claims, and portability claims are excluded.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-29T05:48:19.463391+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wave_direct_dm_h025_low_band_retention_note",
+    "wave_direct_dm_h025_two_point_synthesis_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/wave_direct_dm_matched_history_probe.py",
+    "scripts/wave_retardation_continuum_limit.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 7.7,
+  "load_bearing_step": "At H=0.25 for Fam1 seed0, the runner reports dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, and R_hist=-20.12%, while the retained fine-pair synthesis says seed1 has the larger-magnitude negative R_hist at the same H and strength.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "retained_bounded",
+  "max_descendant_status_rank": 95,
+  "note_hash": "546d7da2a9bd7cfb3ab11818055e300e283983cc5b374ce107b5188cf64f613b",
+  "note_path": "docs/WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should preserve the narrowed fine-pair scope and not re-promote the coarse-band reversal or portability framing without retained one-hop coarse-band provenance.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T01:01:47.231675+00:00",
+      "archived_for_note_hash": "3af0037c350ace634373e4cc2e26b6537147a7f9b35463526d8d484530ef8a3f",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
+  "title": "Wave Direct-dM H=0.25 High-Band Boundary Note",
+  "transitive_descendants": 12,
+  "verdict_rationale": "Clean only under the narrowed bounded fine-H scope. The runner cache completes and matches the source's seed0 H=0.25 row, and the one-hop retained_bounded synthesis supports the limited statement that seed1 is larger magnitude than seed0 in the controlled H=0.25 fine pair. The older H=0.5/H=0.35 high-band history, coarse-to-fine reversal language, and mechanism/portability interpretations are excluded because the retained synthesis explicitly removes those broader claims from scope."
+}

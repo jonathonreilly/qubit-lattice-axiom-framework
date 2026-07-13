@@ -1,0 +1,268 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "causal_distance_tail_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "causal_propagating_field_live_packet_note_2026-06-05",
+    "causal_field_portability_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/evolving_network_prototype_v6.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "25a23dc42679be657f700d88a94c05d2815522b8fefcdfa00321a7d11099e7e1",
+  "note_path": "docs/CAUSAL_DISTANCE_TAIL_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:38:46.036647+00:00",
+      "audit_date": "2026-05-03T03:04:53.749139+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "causal_field_portability_note": "retained"
+        },
+        "deps": [
+          "causal_field_portability_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-newton-3rd-019debcb-10e1-7960-b379-8c3da4be0171",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop causal-field portability dependency is now retained, and the provided runner output reproduces the finite table used by the source note. The audited claim is limited to this generated bounded diagnostic, not a universal causal-field theorem or Newtonian distance law.",
+      "claim_scope": "Finite bounded diagnostic that, on the three listed grown families, exact zero-source controls stay zero, broad instantaneous/forward-only/dynamic c=1 field variants retain steep recognizable fitted tails, and dynamic c=0.5 is the diagnosed finite-cone boundary.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T03:04:53.749139+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:causal_field_portability_note:retained->unaudited",
+      "load_bearing_step": "The runner recomputes the finite distance-tail table over the three retained grown families and field variants, showing exact zero controls, broad-variant tail exponents near -1.85 to -1.96 with high R2, and dynamic c=0.5 collapse near -8.6 to -8.7 with toward=3/5.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Confidence is limited by the fresh packet summary of runner source; local audit-loop context read the runner separately, but future re-audit should pass full source if this row becomes load-bearing.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 1,
+        "C": 12,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The dependency block is resolved, and the scoped bounded computation closes from the retained one-hop context plus the provided runner output. The load-bearing step is numerical computation over the stated finite protocol, not a renaming, tuned match, or external comparator. Clean status applies only to the narrow table-level diagnostic and boundary call, not to any broader portability law or physical distance-law identification."
+    },
+    {
+      "archived_at": "2026-06-17T10:29:44.994780+00:00",
+      "archived_for_note_hash": "1b0983e90603349a5e1f4a3f0242af6287df902d7686aedd85acf585df37e0f6",
+      "audit_date": "2026-05-27T03:21:11.640077+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "causal_field_portability_note": "Finite diagnostic on the configured fixed-anchor cross-family replay using the runner-defined growth, propagation, source-anchor, centroid, field, metric, and ratio-spread choices; not a cross-family portability theorem, physical field-theory derivation, or framework-selected carrier/metric/threshold theorem."
+        },
+        "dep_claim_type": {
+          "causal_field_portability_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "causal_field_portability_note": "retained_bounded"
+        },
+        "deps": [
+          "causal_field_portability_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "bb18a53b49a020a602872855a6cd978184d214ec687c112aa4578a0e38158c77",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The completed runner constructs the declared grown-family cases from the helper implementation, builds the configured instantaneous, forward-only, and dynamic finite-cone fields, propagates amplitudes, and recomputes the table printed in the source note. The retained one-hop portability note supplies the bounded configured-replay context and explicitly excludes carrier, threshold, portability-law, and field-theory promotion, matching this claim's safe boundary.",
+      "claim_scope": "Bounded finite distance-tail diagnostic on the configured causal-field replay over the three declared grown-family parameter rows, with exact zero-source controls, broad instantaneous/forward/dynamic c=1 power-law-like tails, and dynamic c=0.5 collapse; not a universal causal-field theorem, Newtonian rescue, physical carrier derivation, or portability law.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T03:21:11.640077+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The exact zero-source control stays exact on every family, the broad field cases keep a clear distance-law tail but with exponents steeply below Newtonian, and the finite-cone dynamic c=0.5 case collapses the tail further and acts as the boundary diagnostic.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit if the note is expanded beyond the configured finite replay into a universal causal-field theorem, a physical carrier/readout derivation, or a portable Newtonian distance-law claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "runner_result": "causal_distance_tail_probe.py cache exit_code=0, status=ok, sha256=bb18a53b49a020a602872855a6cd978184d214ec687c112aa4578a0e38158c77; zero controls are +0.000e+00, broad variants have high-R2 positive-tail rows, and dynamic c=0.5 gives alpha about -8.6 with toward=3/5 on all three families.",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The bounded claim closes as a finite configured replay: the runner computes the zero controls, field variants, power-law exponents, R^2 values, and TOWARD counts from the declared helper algorithm and parameters, and the cache output matches the source table. The source does not promote a universal theorem, a physical carrier derivation, or a portable Newtonian law; its conclusion is the bounded diagnostic that broad variants remain power-law-like but non-Newtonian while dynamic c=0.5 marks the configured boundary. Residual risk: future citations must not treat this as an axiom-derived causal field, a framework-selected readout/metric, or an asymptotic distance law."
+    },
+    {
+      "archived_at": "2026-06-21T05:47:30.797780+00:00",
+      "audit_date": "2026-06-18T09:27:04.129102+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "causal_field_portability_note": "Finite diagnostic on the configured fixed-anchor cross-family replay using the runner-defined growth, propagation, source-anchor, centroid, field, metric, and ratio-spread choices; not a cross-family portability theorem, physical field-theory derivation, or framework-selected carrier/metric/threshold theorem.",
+          "causal_propagating_field_live_packet_note_2026-06-05": "Finite replay of scripts/causal_propagating_field.py for drift=0.20, restore=0.70, seeds 0-5, source_layer=8, strengths 1e-5/5e-5/1e-4, and zero/instantaneous/forward/dynamic c=1.0/c=0.5 field cases."
+        },
+        "dep_claim_type": {
+          "causal_field_portability_note": "bounded_theorem",
+          "causal_propagating_field_live_packet_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "causal_field_portability_note": "retained_bounded",
+          "causal_propagating_field_live_packet_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "causal_field_portability_note",
+          "causal_propagating_field_live_packet_note_2026-06-05"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "28fbe2383679622bc2d051a6420ea077a9433503d620cf52941e02eab17c86da",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-causal_distance_tail_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner constructs the declared families, fields, propagations, centroid shifts, and log-log fits directly, and the supplied output matches the source note. The helper source used for growth and propagation is included; no external comparator or imported fitted exponent is used.",
+      "claim_scope": "Finite configured runner result on three structured-growth families: zero-source controls vanish, broad causal-field variants fit steep high-R2 distance tails, and dynamic c=0.5 gives a much steeper mixed-toward tail on the declared b-grid.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T09:27:04.129102+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:causal_propagating_field_live_packet_note_2026-06-05",
+      "load_bearing_step": "The broad field cases keep a clear but non-Newtonian distance-law tail on the tested families, while dynamic c=0.5 collapses the tail further and marks the configured boundary diagnostic.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only that 'recognizable tail' remains scoped to high log-log R^2 and directionality on the configured b-grid, not to a Newtonian exponent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 12,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The code does not hard-code the reported alpha, R^2, or TOWARD counts; it computes them from the configured field rules over seeds, b-values, and families. Both cited authorities are retained_bounded, which is retained-grade for this bounded diagnostic, and the source note explicitly disclaims universal causal-field and physical wave-speed claims. The clean result is therefore only the finite replay statement, not a physical derivation of the causal carrier or a universal Newtonian-distance theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.424403+00:00",
+      "audit_date": "2026-06-21T14:43:46.050707+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "causal_field_portability_note": "Finite diagnostic on the configured fixed-anchor cross-family replay using the runner-defined growth, propagation, source-anchor, centroid, field, metric, and ratio-spread choices; not a cross-family portability theorem, physical field-theory derivation, or framework-selected carrier/metric/threshold theorem.",
+          "causal_propagating_field_live_packet_note_2026-06-05": "Finite configured replay for drift=0.20, restore=0.70, seeds 0-5, source layer 8, strengths 1e-5/5e-5/1e-4, and zero/instantaneous/forward-only/dynamic c=1.0/c=0.5 field cases."
+        },
+        "dep_claim_type": {
+          "causal_field_portability_note": "bounded_theorem",
+          "causal_propagating_field_live_packet_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "causal_field_portability_note": "retained_bounded",
+          "causal_propagating_field_live_packet_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "causal_field_portability_note",
+          "causal_propagating_field_live_packet_note_2026-06-05"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "28fbe2383679622bc2d051a6420ea077a9433503d620cf52941e02eab17c86da",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-causal_distance_tail_note-first",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner computes the families, fields, propagation, centroid-z deltas, zero control, and log-log power-law fits directly from the included helper source; the reported table matches the runner output and is not hard-coded. Closure is only for this bounded configured replay, not for a universal causal-field or physical field-speed theorem.",
+      "claim_scope": "Configured finite replay in scripts/causal_distance_tail_probe.py over the three declared structured-growth families, seeds 0-5, fixed source-placement rule, distance anchors, and the four declared field cases.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T14:43:46.050707+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The exact zero-source control stays exact on every family, while instantaneous/forward-only/dynamic c=1 retain high-R^2 distance-tail fits and dynamic c=0.5 collapses to a much steeper, partly non-toward tail.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check only the qualitative wording of 'recognizable tail' against the displayed alpha/R^2/TOWARD metrics; the bounded numeric replay itself is computed rather than asserted.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing finite diagnostic is computed by the runner from explicit configured inputs and the included helper implementation, with no external comparator or imported target value. The cited authorities are retained_bounded and explicitly limit the claim to bounded causal-field diagnostics, which matches the source note's stated boundary. The runner does not derive a physical carrier or universal portability law, but the note does not claim those stronger results."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/causal_distance_tail_probe.py",
+  "title": "Causal Distance Tail Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

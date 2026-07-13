@@ -1,0 +1,1553 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "s3_boundary_link_theorem_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 8,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.22,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b2b7abcbea872ba162821364de48eb8728ffa7d3fc150f09fccd0662872c89ea",
+  "note_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106904+00:00",
+      "archived_for_note_hash": "7839b4341b76a191d4af1497bff14afd37b4437f4cafb0bdfb13bb383158e884",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.813389+00:00",
+      "audit_date": "2026-05-01T05:03:54.151918+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.087,
+        "transitive_descendants": 33
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note proves the all-R step directly from the cubical-ball membership condition: farthest-corner distance separates by coordinate, giving downset/upset structure in the eight incident cubes, and connected present/complement regions in the octahedral S^2 give one disk region. No repo dependency or external physical identification is imported.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The cube C_s is in B_R iff Phi(s) <= R^2; because Phi decomposes as a sum of per-coordinate functions, the present set is a nonempty downset and the absent set a nonempty upset in Q_3, and the meet/join path arguments make both connected, forcing the boundary link to be a PL disk.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 36,
+        "D": 0,
+        "total_pass": 81
+      },
+      "verdict_rationale": "The load-bearing theorem is an internal combinatorial-topology argument over the Z^3 cubical ball, not a tuned numerical or cross-note bridge. The runner exits cleanly with 81 classified exact PASS checks over R=2..10, including both finite topological checks and finite tests of the coordinate-separability mechanism. The runner is bounded evidence only, but the source note supplies the all-R proof, so the support row can be audited clean while retaining effective support status."
+    },
+    {
+      "archived_at": "2026-05-09T17:12:06.523517+00:00",
+      "archived_for_note_hash": "aa151ffb2631cc4bed74cc7f9479c19e7afdd21b93a1b8edb57aeb9c72694e50",
+      "audit_date": "2026-05-05T12:00:15.247308+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.16,
+        "runner_hash": "9b6af8afaef7662f64a3cc6c48b354512c6df0905f76f7f6452b61283939dc0f",
+        "transitive_descendants": 285
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-adjudicator-s3-boundary-link-current-main-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Phi separability and downset/upset connectivity mechanism closes, and the cached runner verifies the finite R=2..10 cases. The all-R proof does not close the topological bridge from connected present/absent triangle sets to H_1=0, single boundary component, vertex-link/local 2-manifoldness, and PL disk classification.",
+      "claim_scope": "For every R >= 2 and every boundary vertex v of the cubical ball B_R in Z^3, the cubical vertex link link(v,B_R) is a PL 2-disk.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T12:00:15.247308+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-05T11:18:34.933247+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-s3_boundary_link_theorem-017",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "For every R >= 2 and every boundary vertex v of the cubical ball B_R in Z^3, the cubical vertex link link(v,B_R) is a PL 2-disk.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "current_main_conflict_judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-05T11:45:00+00:00",
+          "auditor": "codex-fresh-s3-boundary-link-theorem-20260505",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "For every integer R >= 2 and every boundary vertex v of the cubical ball B_R in Z^3, link(v,B_R) is a PL 2-disk.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "superseded_clean_confirmation": {
+          "first_audit": {
+            "audit_date": "2026-05-05T05:59:50.098920+00:00",
+            "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-s3_boundary_link_theorem-196",
+            "auditor_family": "codex-gpt-5.5",
+            "claim_scope": "For every R >= 2 and every boundary vertex v of the cubical ball B_R in Z^3, link(v, B_R) is a PL 2-disk.",
+            "claim_type": "positive_theorem",
+            "independence": "cross_family",
+            "load_bearing_step_class": "A",
+            "verdict": "audited_clean"
+          },
+          "second_audit": {
+            "audit_date": "2026-05-05T11:18:34.933247+00:00",
+            "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-s3_boundary_link_theorem-017",
+            "auditor_family": "codex-gpt-5.5",
+            "claim_scope": "For every R >= 2 and every boundary vertex v of the cubical ball B_R in Z^3, the cubical vertex link link(v,B_R) is a PL 2-disk.",
+            "claim_type": "positive_theorem",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "A",
+            "verdict": "audited_clean"
+          },
+          "status": "confirmed"
+        },
+        "third_audit": {
+          "audit_date": "2026-05-05T12:00:15.247308+00:00",
+          "auditor": "codex-fresh-adjudicator-s3-boundary-link-current-main-20260505",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "For every R >= 2 and every boundary vertex v of the cubical ball B_R in Z^3, the cubical vertex link link(v,B_R) is a PL 2-disk.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "The current-main clean argument acknowledged the topology step as a re-check target but did not require the finite octahedral downset-to-PL-disk bridge needed for the all-R proof.",
+          "independence": "fresh_context",
+          "judgment_rationale": "Issue: Properties 3-4 treat an arbitrary simplicial 1-cycle as a Jordan curve and infer compact 2-manifold-with-boundary status from edge incidence, without proving the required vertex-link/local-surface condition. Why this blocks: under hostile review, connected present and absent triangle sets in the octahedral dual graph plus finite R=2..10 checks do not by themselves constitute the written all-R PL-disk proof. Repair target: prove a finite octahedral downset/upset-to-PL-disk lemma, including integral H_1, single boundary component, and vertex-link checks, then cite it in the note and/or runner. Claim boundary until fixed: the separable Phi downset/upset mechanism and finite R=2..10 PL-disk verification remain supported, but the stated all-R PL-disk theorem is conditional.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "No material error; the fresh conditional audit and adjudicator both identified the missing topological bridge from connected present/absent triangle sets to PL disk classification.",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Connectedness of both the present and absent triangle sets in the octahedral S^2 is used to conclude H_1(link(v,B_R); Z)=0, one boundary component, local 2-manifoldness, and hence PL 2-disk.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a finite octahedral downset/upset-to-PL-disk lemma proving H_1=0, one boundary component, and local vertex-link manifoldness for every nonempty proper downset arising from Phi.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 81,
+        "D": 0,
+        "total_pass": 81
+      },
+      "verdict_rationale": "Issue: Properties 3-4 treat an arbitrary simplicial 1-cycle as a Jordan curve and infer compact 2-manifold-with-boundary status from edge incidence, without proving the required vertex-link/local-surface condition. Why this blocks: under hostile review, connected present and absent triangle sets in the octahedral dual graph plus finite R=2..10 checks do not by themselves constitute the written all-R PL-disk proof. Repair target: prove a finite octahedral downset/upset-to-PL-disk lemma, including integral H_1, single boundary component, and vertex-link checks, then cite it in the note and/or runner. Claim boundary until fixed: the separable Phi downset/upset mechanism and finite R=2..10 PL-disk verification remain supported, but the stated all-R PL-disk theorem is conditional."
+    },
+    {
+      "archived_at": "2026-05-16T11:52:16.320222+00:00",
+      "archived_for_note_hash": "e6df00aecce43be85ce9c02c8ea8b28f00003638bea5e70ac7f1b61a411134e8",
+      "audit_date": "2026-05-09T17:22:21.926461+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.133,
+        "runner_hash": "bb621c8cf62accb4ce15e555ccba0205c06cf888e19970ead08334a05ce52e6b",
+        "transitive_descendants": 396
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0dc2-75f0-74e3-a5ff-7b1242960f2f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The coordinate-separability/downset connectivity step closes, but the restricted packet does not actually provide an all-R proof or exhaustive finite certificate that every nonempty proper downset/upset local type has H_1=0 and PL disk structure. The runner verifies only R=2..10 and explicitly marks the finite-type enumeration as bounded support rather than an all-R certificate.",
+      "claim_scope": "Audited the claimed all-R theorem that every boundary vertex link link(v,B_R) is a PL 2-disk for R >= 2, using the note proof and the finite R=2..10 runner.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-09T17:22:21.926461+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note asserts that the downset/upset structure of present and absent triangles in Q_3 implies the all-R finite combinatorial disk conditions, including H_1(link(v,B_R); Z)=0, single boundary component, and vertex-link manifoldness, for every boundary vertex.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide an exhaustive all-type certificate or explicit finite combinatorial theorem covering all nonempty proper downset/upset configurations, not just observed R=2..10 types.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 117,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 118
+      },
+      "verdict_rationale": "Issue: the note promotes bounded finite-radius checks plus asserted finite downset/upset facts into an all-R PL disk theorem. Why this blocks: the runner covers 5,778 vertices for R=2..10 and 102 observed types, while the claimed theorem requires every larger-R boundary type or an explicit analytic enumeration proof. Repair target: add a retained all-256-type certificate or a written finite combinatorial proof deriving H_1=0, one boundary cycle, and vertex-link manifoldness for every allowable downset/upset type. Claim boundary until fixed: retained support for R=2..10 and for the coordinate-separability/connectivity mechanism, not a closed all-R theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.510786+00:00",
+      "audit_date": "2026-05-16T13:17:39.967892+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.115,
+        "runner_hash": "0b3adc684b6221e288ca797322e588c4068262f01128f18459c82d6bdd2c77fe",
+        "transitive_descendants": 783
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-gpt-5.5-20260516-s3-boundary-link",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note explicitly scopes the cubical-ball disk theorem as bounded for R=2..10 and separately closes the 256-subset local K_simp(P) certificate. The runner source actually constructs the cubical balls, actual vertex links, integer and mod-2 homology checks, boundary-component checks, vertex-link manifoldness checks, and exhaustive subset enumeration rather than merely printing constants. The open large-coordinate bridge lemma affects the unrestricted all-R theorem, not the scoped bounded theorem under review.",
+      "claim_scope": "Bounded R=2..10 verification that every actual boundary vertex link of B_R is a PL 2-disk, plus the finite Proposition Z octahedral K_simp(P) subset certificate; unrestricted all-R cubical-ball closure is out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T13:17:39.967892+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-16T13:12:22.151890+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260516-131143-ff7385a4-s3_boundary_link_theorem-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded R=2..10 boundary-link disk verification plus the finite 256-subset K_simp(P) combinatorial certificate; the all-R cubical-ball theorem remains conditional on the bridge lemma.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-16T13:14:33.447787+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260516-131413-ac03f40e-s3_boundary_link_theorem-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded R=2..10 boundary-link disk certificate and the finite Proposition Z octahedral subset enumeration; the unrestricted all-R cubical-ball disk theorem remains conditional on the large-coordinate bridge lemma.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-16T13:17:39.967892+00:00",
+          "auditor": "codex-judicial-gpt-5.5-20260516-s3-boundary-link",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded R=2..10 verification that every actual boundary vertex link of B_R is a PL 2-disk, plus the finite Proposition Z octahedral K_simp(P) subset certificate; unrestricted all-R cubical-ball closure is out of scope.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "The note explicitly scopes the cubical-ball disk theorem as bounded for R=2..10 and separately closes the 256-subset local K_simp(P) certificate. The runner source actually constructs the cubical balls, actual vertex links, integer and mod-2 homology checks, boundary-component checks, vertex-link manifoldness checks, and exhaustive subset enumeration rather than merely printing constants. The open large-coordinate bridge lemma affects the unrestricted all-R theorem, not the scoped bounded theorem under review.",
+          "load_bearing_step_class": "C",
+          "second_auditor_error": "It treated the explicitly open all-R bridge lemma as a dependency of the bounded theorem verdict, over-scoping the audited claim.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The note explicitly scopes the cubical-ball disk theorem as bounded for R=2..10 and separately closes the 256-subset local K_simp(P) certificate. The runner source actually constructs the cubical balls, actual vertex links, integer and mod-2 homology checks, boundary-component checks, vertex-link manifoldness checks, and exhaustive subset enumeration rather than merely printing constants. The open large-coordinate bridge lemma affects the unrestricted all-R theorem, not the scoped bounded theorem under review."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:32.313025+00:00",
+      "audit_date": "2026-07-11T14:17:13.944950+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.238,
+        "runner_hash": "0b3adc684b6221e288ca797322e588c4068262f01128f18459c82d6bdd2c77fe",
+        "transitive_descendants": 1207
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00012-s3_boundary_link_theorem_not",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner's vertex_link_BR receives only the vertex-site set and infers link simplices from site membership, rather than constructing the link from cells of the cube set. Its comparison with K_simp(P) covers only R=2..6, so the asserted verification of actual cubical links for R=7..10 is not established.",
+      "claim_scope": "The R=2..6 cubical-link result supported by the bridge cross-check, together with Proposition Z for every octahedral K_simp(P) whose two Q_3 sides are connected.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T14:17:13.944950+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:b13871558d0c",
+      "load_bearing_step": "The R=2..10 runner verifies Properties 1-5 on the actual link K(v,B_R) at every boundary vertex, regardless of whether K equals K_simp(P).",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Inspected the runner interface and observed that cubes are constructed but vertex_link_BR is called with sites only.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "verts, edges, tris = vertex_link_BR(v, sites)",
+            "evidence_path": "scripts/frontier_s3_boundary_link_theorem.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct the standard cubical link from faces of cubes incident to v.",
+            "outcome": "This decisive computation is not implemented in the supplied runner.",
+            "prior_witness_id": null,
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "cube_cell_link_recompute"
+          },
+          {
+            "attempt": "The runner constructs link vertices, edges, and triangles from the site set and verifies that proxy for R=2..10.",
+            "disposition": "OPEN",
+            "evidence_locator": "A link vertex d (axis-neighbor v+d) is in link(v, B_R) iff v+d is in B_R.",
+            "evidence_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use neighboring-site membership and face-diagonal witnesses as a proxy for the cubical link.",
+            "outcome": "The proxy passes, but its identification with the standard cubical link is the contested bridge.",
+            "prior_witness_id": null,
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "site_proxy_direct"
+          },
+          {
+            "attempt": "The note analyzes coordinate monotonicity and explicitly isolates the V-shaped large-coordinate case.",
+            "disposition": "OPEN",
+            "evidence_locator": "For the remaining v_1 <= -2 regime (and symmetric cases)",
+            "evidence_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Prove analytically that nonincident-cube site support forces an incident present cube in the large-coordinate regimes.",
+            "outcome": "The source leaves the v_i <= -2 and symmetric cases open.",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "large_coordinate_algebra"
+          },
+          {
+            "attempt": "The supplied bridge cross-check performs the comparison for R=2..6.",
+            "disposition": "CLOSED",
+            "evidence_locator": "bridge = verify_link_equals_simplicial_closure(R_max=6)",
+            "evidence_path": "scripts/frontier_s3_boundary_link_theorem.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Compare the site-induced complex with K_simp(P) at every checked boundary vertex.",
+            "outcome": "It closes the finite R=2..6 slice but does not cover R=7..10.",
+            "prior_witness_id": null,
+            "route_class": "numerical_or_finite_case",
+            "route_id": "finite_bridge_crosscheck"
+          },
+          {
+            "attempt": "The runner enumerates 256 subsets and checks the 126 qualifying closures by homology, boundary, and vertex-link tests.",
+            "disposition": "CLOSED",
+            "evidence_locator": "cert = enumerate_combinatorial_disk_certificate()",
+            "evidence_path": "scripts/frontier_s3_boundary_link_theorem.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Exhaust all octahedral triangle subsets with connected present and absent Q_3 sides.",
+            "outcome": "This closes Proposition Z, conditional on identifying the cubical link with K_simp(P).",
+            "prior_witness_id": null,
+            "route_class": "topology_or_global_structure",
+            "route_id": "octahedral_subset_certificate"
+          },
+          {
+            "attempt": "Compared the declaration with the note's union-of-cubes definition and its own acknowledgment that extra vertices or edges may arise.",
+            "disposition": "CLOSED",
+            "evidence_locator": "B_R is a full cubical subcomplex of Z^3.",
+            "evidence_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Declare the union of cubes to be a full cubical subcomplex on its vertex set, making site membership define link cells.",
+            "outcome": "A relabeling cannot establish equality of the standard cell link with the site-induced proxy.",
+            "prior_witness_id": null,
+            "route_class": "convention_or_relabeling",
+            "route_id": "full_subcomplex_relabel"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "The runner does not establish that its site-induced proxy is the standard cell-incidence cubical link throughout R=2..10."
+          ],
+          "evidence_locator": "its large-coordinate analytic closure remains open.",
+          "evidence_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "The runner does not establish that its site-induced proxy is the standard cell-incidence cubical link throughout R=2..10."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "def vertex_link_BR(v: tuple, sites: set)",
+          "evidence_path": "scripts/frontier_s3_boundary_link_theorem.py",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "B_R is a full cubical subcomplex of Z^3.",
+              "evidence_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+              "phrase": "B_R is a full cubical subcomplex of Z^3.",
+              "promoted_wall": "The runner does not establish that its site-induced proxy is the standard cell-incidence cubical link throughout R=2..10."
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "The R = 2..10 runner verifies Properties 1-5 on the actual link K(v, B_R)",
+              "evidence_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+              "phrase": "The R = 2..10 runner verifies Properties 1-5 on the actual link K(v, B_R)",
+              "promoted_wall": "The runner does not establish that its site-induced proxy is the standard cell-incidence cubical link throughout R=2..10."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source's uses of full subcomplex, actual link, site membership, supporting cubes, bridge equality, and unconditional finite-radius verification were checked against the runner interface.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Bridge Lemma: link(v, B_R) = simplicial closure K_simp(P)",
+          "evidence_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+          "none_found_reason": "Every N1 route is marked ATTEMPTED, so no prior-witness residual match is required.",
+          "scan_scope": "No N1 route was ruled out solely by a prior retained witness; all routes were assessed directly from the source and runner.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "Bridge Lemma: link(v, B_R) = simplicial closure K_simp(P)",
+          "evidence_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "Claims of actual-link verification, unconditional bounded closure, exactness, and the stated open bridge boundary were checked at each advertised radius.",
+          "statements": [
+            {
+              "evidence_locator": "The R = 2..10 runner verifies Properties 1-5 on the actual link K(v, B_R)",
+              "evidence_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+              "phrase": "The R = 2..10 runner verifies Properties 1-5 on the actual link K(v, B_R)",
+              "tested_resolutions": [
+                "R=2..6 equality with K_simp(P)",
+                "R=2..10 site-induced proxy analysis"
+              ],
+              "untested_resolutions": [
+                "R=7..10 equality of the proxy with the cell-incidence cubical link"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The actual-link wording remains unverified at R=7..10."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no cubical cell-incidence or link-identification theorem.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/s3_boundary_link_theorem_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The lattice axiom supplies Z^3 adjacency but not the disputed site-proxy-to-cell-link identification.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/s3_boundary_link_theorem_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Realized-state evaluation is unrelated to cubical link construction.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/s3_boundary_link_theorem_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A units reference cannot supply the missing combinatorial bridge.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/s3_boundary_link_theorem_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The AC_phi_lambda occupancy/readout boundary is unrelated to cubical topology.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/s3_boundary_link_theorem_note",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "A coupling rescaling convention cannot repair a link-observable mismatch.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/s3_boundary_link_theorem_note",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization is unrelated to the cubical cell structure.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/s3_boundary_link_theorem_note",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/s3_boundary_link_theorem_note",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All candidates in the supplied primitive, owner-governed, Tier-A, convention, definition, and scope partial-closure index were dispositioned.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "For a cubical complex defined as the union of included cubes, the standard link at v is generated by the faces of cubes incident to v and therefore is K_simp(P) by construction; the alleged bridge may be unnecessary once the correct cell-incidence definition is used.",
+          "evidence_locator": "Returns (vertex_set, cube_set_by_min_corner).",
+          "evidence_path": "scripts/frontier_s3_boundary_link_theorem.py",
+          "resolution": "This steelman identifies a cheap repair and may even remove the mathematical bridge, but it does not validate the supplied runner because vertex_link_BR constructs its object from sites rather than the cube set.",
+          "resolved": true,
+          "route_id": "cube_cell_link_recompute"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "s3_boundary_link_theorem_note:previous_audit:0",
+              "evidence_locator": "s3_boundary_link_theorem_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Prior unaudited cycle contains no substantive closure evidence.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "s3_boundary_link_theorem_note:previous_audit:1",
+              "evidence_locator": "s3_boundary_link_theorem_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Earlier clean all-R assessment relied on bounded mechanism checks and was invalidated when criticality increased.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "s3_boundary_link_theorem_note:previous_audit:2",
+              "evidence_locator": "s3_boundary_link_theorem_note:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Earlier conditional audit identified missing homology and vertex-link closure; Proposition Z and P5 address that residual.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "s3_boundary_link_theorem_note:previous_audit:3",
+              "evidence_locator": "s3_boundary_link_theorem_note:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Earlier conditional audit identified incomplete all-type enumeration; Proposition Z repairs that issue but not the cubical-link identification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "s3_boundary_link_theorem_note:previous_audit:4",
+              "evidence_locator": "s3_boundary_link_theorem_note:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Earlier bounded clean audit accepted the runner's actual-link characterization; the current source-level inspection exposes the sites-versus-cells gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Flavor occupancy/readout retirement is unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Strong-CP premise retirement is unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Owner-governed flavor retirement supplies no topology bridge.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Unrelated foundational and flavor no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Finite gravity sweep scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Gauge-coupling runner-boundary repair is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Atomic and time-axis audit boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Cross-lane physics no-go inventory has no cubical-link witness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Coupling normalization boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Plaquette coefficient source boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Lensing observable walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Carrier-orbit registry wall is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Charged-lepton selector walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Dimension-selection finite-set boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Emergent-Lorentz scope boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Metric reconstruction and global-theorem boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Radial-family replay boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Local Wilson scorecard scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Flavor carrier pruning is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Analytic-vector and audit-retag boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Gauge-environment contraction walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Gauge-isotropy generator walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Gravity dispersion bridge is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Weak-field gravity scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Planck-scale carrier walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Hypercharge rescaling wall is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Broad phenomenology campaign walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Atomic scale and threshold walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Quark mass/readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Finite-to-asymptotic caution is analogous but supplies no cubical-link bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Lensing observable mismatch is analogous but unrelated in substance.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Finite-path surrogate mismatch is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Magnitude/readout source boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Temporal source/readout boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Empty matter-cone no-go ledger is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Planning-priority boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Time-step interpretation boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Neutrino mass-construction walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Neutrino/cosmology dependency walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Finite-lattice scope caution is analogous but does not resolve the link definition.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Live-recompute artifact requirement is analogous but supplies no missing computation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Coupling authority boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Finite-window extrapolation caution is analogous but not a topology proof.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Finite-grid-to-unbounded caution is analogous but does not close R=7..10 cell incidence.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Carrier representation mismatch is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Planck carrier selection walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Plaquette bootstrap limitations are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Plaquette diagnostic semantics are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Record-selector authority is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Its finite-R cone-cap versus global PL bridge is adjacent context but does not prove this local cubical-link identification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Single-clock range and axis walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Source-measure semantics are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Statistics-selection walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Kinetic-law selection no-go is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "SU(3) quotient encoder boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Documentation synchronization boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Partial-card scope boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Theta mass-readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Theta gauge-readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Theta positive-route gates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Theta insertion-selection walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Theta defect-closure walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "AC determinant-power walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "AC record-orbit walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "AC R-eta formation walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Artifact-visibility gap is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Record-readout countermodel is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Hard-coded finite-table boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Finite-lattice versus universal-theorem scope caution is analogous but supplies no bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "mechanism": "Definition-versus-derivation caution is analogous to the full-subcomplex relabel but supplies no positive link proof.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "The runner does not establish that its site-induced proxy is the standard cell-incidence cubical link throughout R=2..10."
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "194807f93d7bb10b6348a73e950748972d85e5b1f1844e7fbb6ff869baf7b999",
+              "cross_cycle_candidate_ids": [
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "s3_boundary_link_theorem_note:previous_audit:0",
+                "s3_boundary_link_theorem_note:previous_audit:1",
+                "s3_boundary_link_theorem_note:previous_audit:2",
+                "s3_boundary_link_theorem_note:previous_audit:3",
+                "s3_boundary_link_theorem_note:previous_audit:4",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/s3_boundary_link_theorem_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "s3_boundary_link_theorem_note:previous_audit:0",
+                "s3_boundary_link_theorem_note:previous_audit:1",
+                "s3_boundary_link_theorem_note:previous_audit:2",
+                "s3_boundary_link_theorem_note:previous_audit:3",
+                "s3_boundary_link_theorem_note:previous_audit:4",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/s3_boundary_link_theorem_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "0fca53b5c065a07136a6d8304afdd240a450e63b2314efad1971c0bb266d4758",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/s3_boundary_link_theorem_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "b2b7abcbea872ba162821364de48eb8728ffa7d3fc150f09fccd0662872c89ea",
+              "effective_status": null,
+              "path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "A link vertex d (axis-neighbor v+d) is in link(v, B_R) iff v+d is in B_R.",
+                "B_R is a full cubical subcomplex of Z^3.",
+                "Bridge Lemma: link(v, B_R) = simplicial closure K_simp(P)",
+                "For the remaining v_1 <= -2 regime (and symmetric cases)",
+                "The R = 2..10 runner verifies Properties 1-5 on the actual link K(v, B_R)",
+                "its large-coordinate analytic closure remains open."
+              ]
+            },
+            "scripts/frontier_s3_boundary_link_theorem.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "0b3adc684b6221e288ca797322e588c4068262f01128f18459c82d6bdd2c77fe",
+              "effective_status": null,
+              "path": "scripts/frontier_s3_boundary_link_theorem.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "Returns (vertex_set, cube_set_by_min_corner).",
+                "bridge = verify_link_equals_simplicial_closure(R_max=6)",
+                "cert = enumerate_combinatorial_disk_certificate()",
+                "def vertex_link_BR(v: tuple, sites: set)",
+                "verts, edges, tris = vertex_link_BR(v, sites)"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: the direct cube-cell link computation remains untested and the large-coordinate/site-proxy identification remains open.",
+          "N3: the claim relies on the unsupported full-subcomplex/site-membership identification.",
+          "N5: actual-link verification at R=7..10 is asserted without the corresponding bridge check."
+        ],
+        "narrowed_claim_scope": "The R=2..6 cubical-link result supported by the bridge cross-check, together with Proposition Z for every octahedral K_simp(P) whose two Q_3 sides are connected.",
+        "next_route": {
+          "reason_untested": "The supplied implementation builds cubical balls with both sites and cubes but discards the cube set when constructing boundary links.",
+          "route_id": "cube_cell_link_recompute"
+        },
+        "prior_claim_scope": "Bounded R=2..10 verification that every actual boundary vertex link of B_R is a PL 2-disk, plus the finite Proposition Z octahedral K_simp(P) subset certificate; unrestricted all-R cubical-ball closure is out of scope.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "runner_artifact_issue: pass the cube set into vertex_link_BR and construct each link simplex from incident cubical cells, then rerun R=2..10 and update the note's concrete link definition.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 121,
+        "D": 0,
+        "total_pass": 121
+      },
+      "verdict_rationale": "Issue: vertex_link_BR(v, sites) computes a site-induced proxy, while the claimed cubical link is determined by cells contributed by the cube set; the runner checks equality with K_simp(P) only through R=6. Why this blocks: the claimed R=7..10 actual-link verification relies on an unverified observable identification despite all printed checks passing. Repair target: compute links directly from cube incidence for R=2..10, or extend the bridge comparison through R=10 and reconcile the source's concrete link definition with the standard cubical link. Claim boundary until fixed: R=2..6 plus the independent Proposition Z certificate."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_s3_boundary_link_theorem.py",
+  "title": "S^3 Boundary-Link Disk Bounded Certificate",
+  "transitive_descendants": 1192,
+  "verdict_rationale": null
+}

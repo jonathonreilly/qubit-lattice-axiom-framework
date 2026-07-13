@@ -1,0 +1,492 @@
+{
+  "audit_date": "2026-05-23T14:13:39.056923+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+    },
+    "dep_claim_type": {
+      "graph_first_selector_derivation_note": "positive_theorem",
+      "graph_first_su3_integration_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "graph_first_selector_derivation_note": "retained",
+      "graph_first_su3_integration_note": "retained"
+    },
+    "deps": [
+      "graph_first_selector_derivation_note",
+      "graph_first_su3_integration_note"
+    ],
+    "load_bearing_score": 29.55,
+    "runner_hash": "224341d3f6a5e5e7f089c669fa109515db86469efad64506adca971cf2c2cb6b",
+    "transitive_descendants": 1059
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T141319Z-8376c0c3-native_gauge_closure_not-02",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The native pieces are finite matrix and finite graph algebra checked directly by the runner, and the graph-first selector and SU(3) integration are provided as retained positive-theorem authorities. The note does not rely on the abelian eigenvalue surface that remains bounded elsewhere.",
+  "claim_id": "native_gauge_closure_note",
+  "claim_scope": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": "2026-05-23T14:13:39.056923+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-23T14:12:52.503292+00:00",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T141233Z-8376c0c3-native_gauge_closure_not-01",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Exact native cubic Cl(3), Clifford-bivector su(2), finite-block nearest-neighbor parity anticommutation, plus retained graph-first structural su(3), excluding all abelian/electroweak/matter/Wilson/phenomenology claims.",
+      "claim_type": "positive_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-05-23T14:13:39.056923+00:00",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T141319Z-8376c0c3-native_gauge_closure_not-02",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+      "claim_type": "positive_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graph_first_selector_derivation_note",
+    "graph_first_su3_integration_note"
+  ],
+  "direct_in_degree": 53,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 37.144,
+  "load_bearing_step": "Combining the directly checked native Cl(3), Clifford-bivector su(2), and cubic parity anticommutation with the two retained graph-first selector/SU(3) inputs gives the claimed nonabelian gauge-structure surface, excluding the abelian and phenomenological surfaces.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "unknown",
+  "max_descendant_status_rank": 70,
+  "note_hash": "116893c0a7fc5fd6e4351a1aa1f61d7befc488a9cef9847d775df122033705b8",
+  "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
+  "notes_for_re_audit_if_any": "A second auditor should re-check that the ledger-retained dependency statuses remain current when applying the audit row.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369189+00:00",
+      "archived_for_note_hash": "de3eb711c35f17ad5b73cb4e7a64655aae3f6dae6c8e330476d789d72a02edb0",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-27T21:44:17.244965+00:00",
+      "archived_for_note_hash": "8e079e359cbc4c6f6aea39a5f98a0fdffabc5a2e06278b32609b6528e65ec1f7",
+      "audit_date": "2026-04-27T02:34:36.438706+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note aggregates SU(2), graph-first selector, and SU(3) integration results, but the audit row has no one-hop dependencies and no registered primary runner, so the claimed publication boundary does not close from the allowed audit packet.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Use this note as the publication-facing claim boundary for the CI(3) / Z^3 gauge lane on main: exact native Cl(3) / SU(2) algebra, derived graph-first weak-axis selector, and structural graph-first su(3) closure.",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "scripts/frontier_non_abelian_gauge.py",
+        "scripts/frontier_graph_first_selector_derivation.py",
+        "scripts/frontier_graph_first_su3_integration.py"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The failed step is treating this boundary note as retained authority for exact native SU(2), the derived graph-first selector, and structural SU(3) closure while the row supplies no one-hop dependency notes and no primary runner; the note only names scripts/results rather than making them auditable inputs. Why this blocks: A retained publication-facing gauge-lane boundary cannot be ratified from a summary note whose load-bearing algebra and computations are outside the allowed packet, especially when the SU(3) integration result is itself awaiting critical cross-confirmation. Repair target: Register the SU(2), selector, and SU(3) integration notes as explicit dependencies with clean effective statuses, attach a primary runner or split this boundary into separate auditable claims, and rerun the audit after the dependency graph exposes the proof chain. Claim boundary until fixed: It is safe to use this note as a bounded map of intended gauge-lane claims and to say the listed components have supporting scripts, but not to treat the combined gauge-structure backbone as audit-retained."
+    },
+    {
+      "archived_at": "2026-04-28T03:29:51.983891+00:00",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "unaudited",
+          "graph_first_su3_integration_note": "unaudited"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 19.624,
+        "transitive_descendants": 278
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": 0.95,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner attached to this note does not verify the graph-first SU(3) closure claimed by the source; its grand summary says SU(3) does not emerge from the cubic lattice alone and requires extra structure. The graph-first dependencies have first clean Codex-family audits only and are awaiting independent cross-confirmation.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:graph_first_selector_derivation_note:candidate retained-grade->audited_conditional",
+      "load_bearing_step": "Aggregate exact native SU(2) from the primary non-Abelian runner with graph-first selector/SU(3) integration dependencies, then claim the gauge-structure backbone is closed with structural graph-first SU(3).",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
+        "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
+        "scripts/frontier_graph_first_selector_derivation.py",
+        "scripts/frontier_graph_first_su3_integration.py",
+        "scripts/frontier_non_abelian_gauge.py"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "class_A_exact_arithmetic_or_identity": 0,
+        "class_B_dependency_or_assumption_checks": 2,
+        "class_C_first_principles_or_numeric_compute": 0,
+        "class_D_unchecked_load_bearing_steps": 1,
+        "notes": "Primary runner has no formal PASS summary; live output supports native SU(2) but states SU(3) does not emerge from the cubic lattice alone. One-hop graph-first runners separately reported selector PASS=63 FAIL=0 and integration PASS=111 FAIL=0, but both dependency audit rows await cross-confirmation.",
+        "total_fail": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the publication-facing aggregator claims retained graph-first SU(3) closure, but its primary runner frontier_non_abelian_gauge.py is an older/native-gauge runner whose live output concludes that SU(3) does not emerge from the cubic lattice alone and must be put in via triangulated/internal structure. Why this blocks: a retained gauge-structure closure note cannot cite a primary runner that contradicts the claimed SU(3) closure, and the alternative graph-first selector/integration route is still audit_in_progress awaiting independent cross-confirmation. Repair target: either change the claim boundary to native SU(2) plus conditional graph-first SU(3) support, or replace/extend the primary runner so it directly executes and verifies the graph-first selector and SU(3) integration chain; then complete non-Codex cross-confirmation for both graph-first dependencies. Claim boundary until fixed: safe to claim exact native cubic Cl(3)/SU(2) algebra from the primary runner and conditional graph-first selector/integration evidence; not safe to claim the gauge backbone is retained/closed with structural SU(3)."
+    },
+    {
+      "archived_at": "2026-05-01T02:32:19.296934+00:00",
+      "archived_for_note_hash": "f8ec18a4bf64410e9fe9d5e0c6c794f82a7c9f4ed3a83e109aef8cc11add1bab",
+      "audit_date": "2026-04-30T11:41:00.257302+00:00",
+      "audit_status": "audit_in_progress",
+      "auditor": "codex-audit-loop-critical-sweep-20260430",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": false,
+      "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md.",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "This aggregator inherits its effective_status from the graph-first selector, SU(3) integration, and the SU(2) result computed by the primary runner.",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
+    },
+    {
+      "archived_at": "2026-05-02T14:40:53.194072+00:00",
+      "audit_date": "2026-05-01T10:41:40.915355+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 17.7,
+        "transitive_descendants": 293
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:2026-05-01-native_gauge_closure_note-fresh-context",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note's bounded claim is a graph-structure aggregator: native cubic `Cl(3)`/`SU(2)` is computed directly by the primary runner, while selector and structural `su(3)` closure are imported as retained one-hop dependencies. The note does not claim anomaly-complete `U(1)_Y` or downstream phenomenology.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-01T02:06:18.022765+00:00",
+          "auditor": "codex-audit-loop:2026-05-01-native_gauge_closure_note-reraudit-after-graph_first_selector_derivation_note",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-01T10:41:40.915066+00:00",
+          "auditor": "codex-audit-loop:2026-05-01-native_gauge_closure_note-fresh-context",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:graph_first_su3_integration_note:retained->retained_bounded",
+      "load_bearing_step": "Each sub-claim has its own status, runner, and audit row. In the current ledger, both dependencies are audit-ratified with `effective_status = retained`. This aggregator asks the fresh audit to combine those retained dependencies with the native `SU(2)` result computed by the primary runner above.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 9,
+        "C": 43,
+        "D": 0,
+        "total_pass": 52
+      },
+      "verdict_rationale": "The claimed observable is the bounded algebraic gauge-structure surface: exact native cubic `Cl(3)`/`SU(2)`, graph-first selector, structural graph-first `su(3)`, and the left-handed `+1/3`/`-1` abelian eigenvalue surface. The primary runner computes the native Clifford/SU(2), chiral-parity, and bounded abelian eigenvalue checks directly; it imports the contested selector and `su(3)` bridge only by verifying that the declared one-hop dependencies are currently audit-clean and retained. Because both upstream dependencies are currently retained, the composite claim closes as a cross-note aggregation rather than a hidden definition or physical bridge. The clean verdict is bounded to this structural algebraic surface and does not ratify full gauge dynamics, anomaly-complete hypercharge, or phenomenology."
+    },
+    {
+      "archived_at": "2026-05-02T14:55:22.018977+00:00",
+      "archived_for_note_hash": "0e0648a278ff8ee782b0941ff97ca256d428c065f307eb413454994f4dcc955f",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-22T15:30:25.855023+00:00",
+      "audit_date": "2026-05-02T14:55:48.717744+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 18.909,
+        "transitive_descendants": 339
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:fresh-2026-05-02-native-gauge-peirce",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The native SU(2) chain is checked by exact finite algebra, and the graph-first SU(3)/abelian pieces are limited to retained-bounded cited authorities. The stated exclusions prevent an unratified jump to anomaly-complete U(1)_Y or downstream phenomenology.",
+      "claim_scope": "Bounded native gauge-closure note: exact cubic Cl(3)/SU(2), retained graph-first SU(3) structural closure, and a selected-axis traceless abelian eigenvalue pattern only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T14:55:48.717744+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-02T14:55:48.717225+00:00",
+          "auditor": "codex-audit-loop:fresh-2026-05-02-native-gauge-zeno",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "On the Z^3 taste-cube graph surface, native cubic Cl(3) yields exact SU(2), retained graph-first selector/SU(3) dependencies supply structural SU(3), and the abelian statement is bounded to the left-handed +1/3/-1 traceless eigenvalue pattern.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-02T14:55:48.717730+00:00",
+          "auditor": "codex-audit-loop:fresh-2026-05-02-native-gauge-peirce",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Bounded native gauge-closure note: exact cubic Cl(3)/SU(2), retained graph-first SU(3) structural closure, and a selected-axis traceless abelian eigenvalue pattern only.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:graph_first_selector_derivation_note:retained_bounded->unaudited",
+      "load_bearing_step": "Exact native Cl(3)/SU(2) closure is established algebraically, while SU(3) and the bounded hypercharge-like abelian surface are inherited only through retained graph-first dependencies and explicitly not promoted to anomaly-complete U(1)_Y or phenomenology.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if the note promotes the abelian surface to anomaly-complete U(1)_Y or adds phenomenological claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 0,
+        "total_pass": 52
+      },
+      "verdict_rationale": "Issue checked: whether the native gauge aggregator closes without importing a full Standard Model identification. Within the restricted scope, the claim closes as exact algebra plus retained dependency composition: the runner checks Clifford/SU(2), parity/hopping, dependency retained-grade status, and the selected-axis abelian eigenvalue surface. No hidden anomaly-complete U(1)_Y or phenomenology claim is asserted."
+    },
+    {
+      "archived_at": "2026-05-23T13:18:54.287745+00:00",
+      "archived_for_note_hash": "de4cccd69be247db954883861b76a291034e92b4895ddbbfaa9d359b0b313204",
+      "audit_date": "2026-05-22T15:39:07.116345+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 29.725,
+        "runner_hash": "b1572c803625519face9fd84bc62f7cc1177cb2331f8e60dfeca4d20e6970064",
+        "transitive_descendants": 1196
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-per-site-k1-20260522T153907Z-native_gauge_closure_note-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The applyable tuple is clean, bounded, and class A: the aggregate claim is an exact algebraic/dependency closure over retained-grade cited inputs plus direct matrix-algebra checks, not a new first-principles numerical computation. The runner source constructs the relevant Pauli/tensor-product, parity, swap, and projector operators and verifies identities and multiplicities rather than merely printing constants. The broader anomaly-complete U(1)_Y and downstream phenomenology claims are explicitly outside scope, so no open dependency is imported into the audited claim. | The restricted packet supplies retained-grade authorities for the graph-first selector and SU(3) integration, and the primary runner performs explicit matrix algebra checks for the native SU(2), parity, dependency status, and bounded abelian eigenvalue surface. This closes the stated bounded theorem without importing anomaly-complete U(1)_Y or downstream phenomenology. The better class is A because the aggregate load-bearing step is algebraic closure over explicit operators and retained inputs, not a first-principles computation of a new number absent from the inputs. | The restricted packet closes the stated bounded claim: the native algebra and bounded abelian surface are verified by explicit matrix checks, and the selector/SU(3) inputs are supplied as retained-grade cited authorities. The aggregate load-bearing step is best classified as algebraic closure over retained inputs, not as a new first-principles numerical computation. The note explicitly excludes anomaly-complete U(1)_Y and downstream phenomenology, so no broader open identification is imported. | The chain closes within the restricted packet because both cited graph-first authorities are retained-grade, and the primary runner performs concrete matrix-algebra checks for the native Clifford/SU(2), parity, dependency status, and bounded abelian surface. The aggregate load-bearing move is best classified as algebraic closure over explicit operators and retained upstream inputs, not as a fresh first-principles numerical computation. The stated scope excludes anomaly-complete U(1)_Y and downstream phenomenology, so no open broader identification is imported. | The claim is an aggregate bounded theorem whose closure is algebraic over explicit matrix checks plus retained-grade cited authorities. The primary runner does real operator algebra and projector/eigenvalue checks, but the load-bearing aggregate step is not a new first-principles numerical derivation; it is a genuine algebraic closure and dependency composition within the stated boundary. The packet supplies both cited authorities as retained-grade and does not import anomaly-complete U(1)_Y or downstream phenomenology.",
+      "claim_scope": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T15:39:07.116345+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T15:35:19.471504+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T153458Z-4e31acc0-native_gauge_closure_not-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, imported retained graph-first selector and structural SU(3) closure, and only the bounded left-handed hypercharge-like +1/3/-1 abelian eigenvalue surface.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-22T15:36:04.555474+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T153542Z-4e31acc0-native_gauge_closure_not-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, plus retained graph-first selector and structural SU(3) dependencies, with only the bounded left-handed hypercharge-like abelian eigenvalue surface.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-22T15:39:07.116345+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260522T153907Z-native_gauge_closure_note-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "Minor detail: dependency-ledger checks are better separated as cross-note status verification than counted as pure algebraic checks, but the applyable tuple is correct.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The applyable tuple is clean, bounded, and class A: the aggregate claim is an exact algebraic/dependency closure over retained-grade cited inputs plus direct matrix-algebra checks, not a new first-principles numerical computation. The runner source constructs the relevant Pauli/tensor-product, parity, swap, and projector operators and verifies identities and multiplicities rather than merely printing constants. The broader anomaly-complete U(1)_Y and downstream phenomenology claims are explicitly outside scope, so no open dependency is imported into the audited claim. | The restricted packet supplies retained-grade authorities for the graph-first selector and SU(3) integration, and the primary runner performs explicit matrix algebra checks for the native SU(2), parity, dependency status, and bounded abelian eigenvalue surface. This closes the stated bounded theorem without importing anomaly-complete U(1)_Y or downstream phenomenology. The better class is A because the aggregate load-bearing step is algebraic closure over explicit operators and retained inputs, not a first-principles computation of a new number absent from the inputs. | The restricted packet closes the stated bounded claim: the native algebra and bounded abelian surface are verified by explicit matrix checks, and the selector/SU(3) inputs are supplied as retained-grade cited authorities. The aggregate load-bearing step is best classified as algebraic closure over retained inputs, not as a new first-principles numerical computation. The note explicitly excludes anomaly-complete U(1)_Y and downstream phenomenology, so no broader open identification is imported. | The chain closes within the restricted packet because both cited graph-first authorities are retained-grade, and the primary runner performs concrete matrix-algebra checks for the native Clifford/SU(2), parity, dependency status, and bounded abelian surface. The aggregate load-bearing move is best classified as algebraic closure over explicit operators and retained upstream inputs, not as a fresh first-principles numerical computation. The stated scope excludes anomaly-complete U(1)_Y and downstream phenomenology, so no open broader identification is imported. | The claim is an aggregate bounded theorem whose closure is algebraic over explicit matrix checks plus retained-grade cited authorities. The primary runner does real operator algebra and projector/eigenvalue checks, but the load-bearing aggregate step is not a new first-principles numerical derivation; it is a genuine algebraic closure and dependency composition within the stated boundary. The packet supplies both cited authorities as retained-grade and does not import anomaly-complete U(1)_Y or downstream phenomenology.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second auditor misclassified the load-bearing step as C; the aggregate closure is algebraic over retained inputs and direct identity checks, not a first-principles computation producing a new number absent from the inputs.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "The note combines the directly checked native cubic Cl(3)/SU(2) algebra with retained graph-first selector and SU(3) integration dependencies, while bounding the abelian statement to the left-handed +1/3/-1 eigenvalue surface.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check retained dependency status if the ledger snapshot changes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The applyable tuple is clean, bounded, and class A: the aggregate claim is an exact algebraic/dependency closure over retained-grade cited inputs plus direct matrix-algebra checks, not a new first-principles numerical computation. The runner source constructs the relevant Pauli/tensor-product, parity, swap, and projector operators and verifies identities and multiplicities rather than merely printing constants. The broader anomaly-complete U(1)_Y and downstream phenomenology claims are explicitly outside scope, so no open dependency is imported into the audited claim. | The restricted packet supplies retained-grade authorities for the graph-first selector and SU(3) integration, and the primary runner performs explicit matrix algebra checks for the native SU(2), parity, dependency status, and bounded abelian eigenvalue surface. This closes the stated bounded theorem without importing anomaly-complete U(1)_Y or downstream phenomenology. The better class is A because the aggregate load-bearing step is algebraic closure over explicit operators and retained inputs, not a first-principles computation of a new number absent from the inputs. | The restricted packet closes the stated bounded claim: the native algebra and bounded abelian surface are verified by explicit matrix checks, and the selector/SU(3) inputs are supplied as retained-grade cited authorities. The aggregate load-bearing step is best classified as algebraic closure over retained inputs, not as a new first-principles numerical computation. The note explicitly excludes anomaly-complete U(1)_Y and downstream phenomenology, so no broader open identification is imported. | The chain closes within the restricted packet because both cited graph-first authorities are retained-grade, and the primary runner performs concrete matrix-algebra checks for the native Clifford/SU(2), parity, dependency status, and bounded abelian surface. The aggregate load-bearing move is best classified as algebraic closure over explicit operators and retained upstream inputs, not as a fresh first-principles numerical computation. The stated scope excludes anomaly-complete U(1)_Y and downstream phenomenology, so no open broader identification is imported. | The claim is an aggregate bounded theorem whose closure is algebraic over explicit matrix checks plus retained-grade cited authorities. The primary runner does real operator algebra and projector/eigenvalue checks, but the load-bearing aggregate step is not a new first-principles numerical derivation; it is a genuine algebraic closure and dependency composition within the stated boundary. The packet supplies both cited authorities as retained-grade and does not import anomaly-complete U(1)_Y or downstream phenomenology."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 21,
+    "B": 10,
+    "C": 0,
+    "D": 0,
+    "total_pass": 31
+  },
+  "runner_path": "scripts/frontier_non_abelian_gauge.py",
+  "title": "Native Gauge Closure Note: Nonabelian Graph-First Gauge Closure on Z^3",
+  "transitive_descendants": 1599,
+  "verdict_rationale": "The runner source genuinely constructs the displayed Clifford generators, bivectors, finite-block hopping operator, and parity matrix, then checks the stated identities rather than printing constants. The remaining nonabelian SU(3) component is imported only through two cited authorities that are explicitly marked retained positive-theorem inputs in the packet. No external comparator, tuned numerical value, or symbol-renaming step is load-bearing, and the abelian surface is expressly outside scope."
+}

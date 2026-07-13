@@ -1,0 +1,260 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+    "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+    "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+    "staggered_only_det_positivity_case_a_note_2026-05-17"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c3d7952f5ce51cc33624edb08982ad334ca6bc42ba52caa8e0f037f15af6f7ce",
+  "note_path": "docs/INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:23.839491+00:00",
+      "audit_date": "2026-06-06T18:27:37.716512+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d, finite periodic L_s, m>0: the single-step transfer object is non-positive, while the two-step blocked Fock transfer matrix built from the decaying action-derived channel is positive Hermitian.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional spectrum-condition statement for the staggered-only two-step blocked transfer matrix T := T_hat^2 on the free/fixed-background retained sector: SC1-SC2 from positive Hermitian T, SC3 conditional on a non-degenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4502530db3e98298871c1a2d0ee7b1df51a9cd9da74d967f1fd57b2afe058299",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-182534-bebc66fae6-interacting_transfer_matter_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied retained/retained_bounded authorities provide the needed anti-Hermitian fixed-background hop and dispersion formula, and the lower bound follows by elementary monotonicity. The note does not infer full Delta_T > 0; it leaves the pure-gauge and coupled spectral gap as an open gate.",
+      "claim_scope": "Conditional on the supplied fixed-background staggered two-step dispersion, the matter-sector single-fermion transfer gap is at least arcsinh(m)/a_tau uniformly in U and spatial volume; the full beta=6 gauge/coupled transfer gap is only recorded as open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T18:27:37.716512+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "For real lambda_j, sqrt(m^2 + lambda_j^2) >= m and arcsinh is strictly increasing, hence E_j[U] = arcsinh(sqrt(m^2 + lambda_j(U)^2)) >= arcsinh(m) for every j and U.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the stale dependency-status table and the non-load-bearing H normalization wording against the current blocked-time convention if this note is edited.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic inequality over the cited dispersion and real lambda_j spectrum, not a renaming or tuned numerical match. The runner checks finite anti-Hermitian staggered-hop carriers and the symbolic floor/eigenvalue bounds without external comparator values or hard-coded pass constants. The beta=6 plaquette/Fisher-zero discussion is support-only for the open-gate wording and is not used to prove the audited matter-sector bound."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.935306+00:00",
+      "audit_date": "2026-06-07T00:42:40.659324+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4502530db3e98298871c1a2d0ee7b1df51a9cd9da74d967f1fd57b2afe058299",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-004008-5c94db4bb4-interacting_transfer_matter_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The per-background dispersion and anti-Hermitian-hop spectrum are supplied by the cited authorities; the inequality follows from real lambda_j, sqrt(m^2+lambda_j^2)>=m, and monotonicity of arcsinh. No cited input proves the full pure-gauge/coupled gap, and the note does not claim it.",
+      "claim_scope": "Given the provided retained-bounded transfer-representation inputs, the audited result is the fixed-background/fiberwise matter-sector two-step transfer gap floor Delta_T^matter >= arcsinh(m)/a_tau for m>0, uniform over SU(3) backgrounds and spatial volume; the full gauge/coupled Delta_T at beta=6 is only recorded as open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T00:42:40.659324+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "Since H_hop[U] is anti-Hermitian, lambda_j(U) is real and E_j[U]=arcsinh(sqrt(m^2+lambda_j(U)^2)) >= arcsinh(m)>0, hence Delta_T^matter >= arcsinh(m)/a_tau uniformly in U and volume.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that the ledger uses the provided retained-bounded effective_status values rather than the stale dependency-status table embedded in the source note, and keep the audited scope limited to the matter-sector/fiberwise bound.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade inputs in the restricted packet, not a definition or tuned numerical match. The runner source constructs random staggered SU(3) spatial hops, checks anti-Hermiticity, the arcsinh(m) floor, the transfer-eigenvalue cap, and a non-anti-Hermitian control; it does not hard-code the contested bound. The beta=6 pure-gauge/coupling issue remains an open gate by the note's own scope, so it is not part of the closed theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.623065+00:00",
+      "audit_date": "2026-07-10T16:33:39.302126+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 1+1d staggered-only finite periodic L_s, real m>0: single-step transfer is non-positive, while the two-step blocked Fock transfer built from the decaying channel e^{-2E(p)} is positive Hermitian. Gauge, U-integrated RP, continuum OS reconstruction, and Wilson-sector claims are out of scope.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "On finite free or time-independent fixed-background staggered-only two-step carriers, a strictly positive Hermitian transfer matrix yields a self-adjoint vacuum-subtracted Hamiltonian H >= 0; a positive gap and temporal decay follow under the stated non-degeneracy and gap hypotheses.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "4502530db3e98298871c1a2d0ee7b1df51a9cd9da74d967f1fd57b2afe058299",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00004-interacting_transfer_matter_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic floor closes for each fixed gauge background. The cited authorities do not supply an operator-level bridge from those fixed-U fibers to the spectrum of the dynamical U-integrated, matter\u2013gauge-coupled transfer matrix.",
+      "claim_scope": "The fixed-background one-fermion energy floor E_j[U]\u2265arcsinh(m), together with its attempted identification as a matter-sector gap of the U-integrated interacting transfer theory.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:33:39.302126+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_spectrum_condition_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "For every real \u03bb_j(U) and m>0, sqrt(m\u00b2+\u03bb_j(U)\u00b2)\u2265m and monotonicity of arcsinh gives E_j[U]\u2265arcsinh(m), uniformly in U and volume.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: Narrow T1 throughout this note to the fixed-background fiberwise one-fermion energy floor, or supply a retained operator-level bridge showing that this floor survives the dynamical U-integrated transfer kernel and matter\u2013gauge spectral coupling.",
+      "open_dependency_paths": [
+        "docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
+        "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The fixed-background inequality is a valid class-(A) corollary of the retained-bounded per-configuration dispersion input, and the runner checks the constructed staggered hop and bound without an external comparator. However, the gauge-extension authority expressly stops at fixed U, while determinant positivity supplies only a positive measure rather than a coupled spectral inequality. Thus inf_{j,U} E_j[U] is not established as the matter-sector gap of the interacting U-integrated theory, although the note correctly leaves the full gap open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/interacting_transfer_matter_gap_2026-05-30.py",
+  "title": "Interacting Transfer-Matrix Gap: Conditional Matter-Sector Bound and Pure-Gauge Open Gate",
+  "transitive_descendants": 2,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

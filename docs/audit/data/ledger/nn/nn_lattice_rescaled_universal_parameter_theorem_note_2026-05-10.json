@@ -1,0 +1,117 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "nn_lattice_rescaled_universal_parameter_theorem_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (harness-parameterized universal closed",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
+    "nn_lattice_rescaled_c2_derivation_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "cc3dff6f4a9be21acef4974f0312acac38a6371ac512dc0a1fe446f7d398de5a",
+  "note_path": "docs/NN_LATTICE_RESCALED_UNIVERSAL_PARAMETER_THEOREM_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:31.408086+00:00",
+      "audit_date": "2026-05-27T05:14:48.452598+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "nn_lattice_rescaled_c2_derivation_note_2026-05-10": "Bounded closed-form phase-saddle support for c2_inf = k(2 - sqrt(2))/(4 c L_total) in the deterministic-rescale NN no-slit, single-source, field-free harness at BETA=0.8, K_PHYS=5.0, L_total=40, FANOUT=3, with checked h in {0.5, 0.25, 0.125, 0.0625}; no positive PDE/Schrodinger or general-parameter theorem.",
+          "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10": "Finite checked-grid result for the exact primary runner/helper, rescaled NN blocked-slit geometry, BETA=0.8, K_PHYS=5.0, L=40, FANOUT=3, and h in {0.25,0.125,0.0625,0.03125}: phase-corrected L2 coherent saddle predicts directly measured blocked-slit arm widths within 1.96%, with Born residual <=2.06e-15; the h->0 C_arm=2.4855 comparison to the historical diagnostic fit is comparator-only."
+        },
+        "dep_claim_type": {
+          "nn_lattice_rescaled_c2_derivation_note_2026-05-10": "bounded_theorem",
+          "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "nn_lattice_rescaled_c2_derivation_note_2026-05-10": "retained_bounded",
+          "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "nn_lattice_rescaled_c2_derivation_note_2026-05-10",
+          "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "43bf300c4c708e0959c5dce04605742116625b027631e12439d939da5c74ca1f",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-2026-05-27-universal-parameter",
+      "auditor_confidence": "medium_high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Both direct dependencies are retained_bounded. The runner re-derives the closed forms from explicit harness parameters, builds and propagates the lattice at the three alternate parameter points, measures sigma_arm and c2 directly, and compares those measurements against the parameterized formulas without importing publication framing or fitted target constants as hidden premises.",
+      "claim_scope": "Bounded parameter-sweep verification only: at fixed rescaled-NN three-edge geometry with FANOUT=3, SLIT_Y=3, and PHYS_W=20, the closed-form C_arm(h) and c2(h)/c2_inf formulas are checked at three alternate harness points perturbing BETA, K_PHYS, and PHYS_L. The primary per-h C_arm coherent-vs-measured sigma test stays within 2.44%, and c2_inf stays within 0.279%; no FANOUT-varying topology, SLIT_Y/PHYS_W variation, exact log-linear C_arm fit closure, or general outside-harness theorem is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T05:14:48.452598+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:nn_lattice_rescaled_c2_derivation_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "At Points A/B/C, the primary C_arm per-h coherent formula has max residuals 2.439%, 2.283%, and 2.198%, and the c2_inf comparison has residuals -0.120%, -0.130%, and -0.279%, all inside the stated bounded acceptance bands.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check future citations for scope drift: this row must not be used as a FANOUT-varying topology theorem, a SLIT_Y/PHYS_W variation result, exact log-linear C_arm fit closure, or a general theorem outside the deterministic-rescale NN harness.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_fail": 3,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Clean only under the narrowed bounded scope. The source and runner support a harness-parameterized check over BETA, K_PHYS, and PHYS_L while holding the NN three-edge geometry fixed. The runner's secondary h->0 geodesic-limit C_arm fit comparison fails for Points A and C by just over 10%, but the note marks that comparison as tracked-only and not part of the primary acceptance; the load-bearing primary per-h coherent comparison closes at <=2.44%, and c2_inf closes at <=0.279%. The FANOUT language is acceptable only as the fixed FANOUT=3 normalization inside the current geometry, because no fanout-varying topology is tested."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_nn_rescaled_universal_parameter_verification.py",
+  "title": "Rescaled NN Lattice Universal-Parameter Bounded Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

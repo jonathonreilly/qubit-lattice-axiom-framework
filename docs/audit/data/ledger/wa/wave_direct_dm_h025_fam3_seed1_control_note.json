@@ -1,0 +1,141 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wave_direct_dm_h025_fam3_seed1_control_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wave_direct_dm_transfer_diagnostic_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/wave_direct_dm_matched_history_probe.py",
+    "scripts/wave_retardation_continuum_limit.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b4dbe7d54c73651d54746cebb544ad632fab50628e97cdab1271e7100ce477ea",
+  "note_path": "docs/WAVE_DIRECT_DM_H025_FAM3_SEED1_CONTROL_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370091+00:00",
+      "archived_for_note_hash": "ba32819c7760c0af7f5bfac197d03936c294625df9889ddec2660fcc32ce242e",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-12T17:13:29.960538+00:00",
+      "audit_date": "2026-07-12T10:08:20.169154+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_transfer_diagnostic_note": "For the four controlled Fam1/Fam2, seed-0/1 rows at s=0.004, the defined coarse-to-fine late-gain ratio separates seed-0 compression from seed-1 retention."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_transfer_diagnostic_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_transfer_diagnostic_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_transfer_diagnostic_note"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "9a6a7fecdc82245e6939b1184607553b3390f178e6ca5bf3b5369f9b3b688255",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00277-wave_direct_dm_h025_fam3_see",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The supplied execution ran Fam2, seed 1, H = 0.25 rather than Fam3. Consequently it does not establish the source note's Fam3 table or its approximately -27% normalized result.",
+      "claim_scope": "The finite computational control-ladder claim for Fam3, seed 1, H = 0.25 at strengths 0, 0.002, 0.004, and 0.008.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-12T10:08:20.169154+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:wave_direct_dm_transfer_diagnostic_note:retained_bounded->unaudited",
+      "load_bearing_step": "Fam3, seed 1, H = 0.25 has an exact null, a common negative weak-field sign, approximately linear scaling, and R_hist near -27%.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-run scripts/wave_direct_dm_h025_control_batch.py with --family Fam3 --seed 1 --h 0.25 and attach the SHA-pinned completed stdout matching the source note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The runner and helper sources implement a genuine framework simulation rather than printing target constants, so the intended load-bearing step is class C. However, the completed cached run explicitly reports family=Fam2 and produces R_hist values near -35%, while the audited claim concerns Fam3 and values near -27%. This completed parameter mismatch leaves the claim unsupported on its own artifact chain."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wave_direct_dm_h025_control_batch.py",
+  "title": "Wave Direct-dM H=0.25 Fam3 Seed1 Control Note",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "neutrino_majorana_current_atlas_nonrealization_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "observable_principle_from_axiom_note",
+    "one_generation_matter_closure_note"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.745,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6e730724e75f33684d2b10ecd7180f3ba299d6be2bd8bed1ffd4f49677848e3a",
+  "note_path": "docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-08T08:08:58.357853+00:00",
+      "archived_for_note_hash": "6956635ed2cbb2d3f5bbc3e5fce512c27b376921f0a0ac1da5e0d082b21938fe",
+      "audit_date": "2026-07-08T04:13:45.617610+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "observable_principle_from_axiom_note": "Finite real-positive staggered source-surface theorem: given Record finite additivity, determinant positivity, and the explicit T1-d readout-identification Boundary, the log-det generator family, local derivative formulas, Matsubara kernel identity, and Klein-four Lt=4 selector close on the runner block."
+        },
+        "dep_claim_type": {
+          "observable_principle_from_axiom_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "observable_principle_from_axiom_note": "retained_bounded"
+        },
+        "deps": [
+          "observable_principle_from_axiom_note"
+        ],
+        "load_bearing_score": 15.068,
+        "runner_hash": "61b59b567b40d12ecacc77998a1d460025fc7cbc5286449b3bd2df1751ebe699",
+        "transitive_descendants": 758
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019f3fec-465b-75d1-a04f-8353a6c37bcc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The observable-principle dependency closes only the scalar determinant backbone. The missing step is dependency-closed authority for the atlas completeness, right-handed composite miss, matter closure, and Majorana-row classifications consumed by the non-realization claim.",
+      "claim_scope": "Bounded current-stack claim that the present main-derived atlas/toolkit, as scanned by the runner, does not already list a fully realized charge-2 nu_R Majorana primitive.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-08T04:13:45.617610+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "None of the currently retained or atlas-listed objects is itself a fully realized fermionic charge-2 microscopic primitive with fixed physical background data on the nu_R channel.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge Add direct dependency edges for every atlas/toolkit/Majorana authority consumed by the non-realization scan, or split/narrow the row to a runner-artifact claim about the finite string scan only.",
+      "open_dependency_paths": [
+        "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
+        "docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md",
+        "scripts/frontier_right_handed_sector.py",
+        "docs/NEUTRINO_MAJORANA_CHARGE_TWO_PRIMITIVE_REDUCTION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Issue: The note's conclusion depends on the current derivation atlas, retained matter closure, right-handed-sector composite audit, and Majorana reduction/current-stack rows, but the restricted dependency packet wires only the observable-principle note and the primary runner scans those extra files rather than making them retained one-hop authorities. Why this blocks: a runner string scan of un-wired publication/table sources is useful bookkeeping evidence, but it cannot by itself establish a dependency-closed Nature-grade non-realization over all currently retained or atlas-listed objects. Repair target: add explicit direct dependency edges/statuses for the atlas source or canonical retained atlas snapshot, one-generation matter closure, right-handed-sector composite result, Majorana primitive reduction, and any Majorana row notes used to classify support/boundary rows, or narrow the claim to the runner's finite string scan. Claim boundary until fixed: the source may say the current runner found no listed row/title matching a fully realized charge-2 nu_R primitive, not that the retained current atlas/toolkit dependency chain closes."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py",
+  "title": "Current Atlas Charge-Two Primitive Non-Realization",
+  "transitive_descendants": 857,
+  "verdict_rationale": null
+}

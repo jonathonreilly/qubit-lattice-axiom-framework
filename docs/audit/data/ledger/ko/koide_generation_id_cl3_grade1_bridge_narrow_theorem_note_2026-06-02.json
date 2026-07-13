@@ -1,0 +1,487 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+    "per_site_su2_spin_half_theorem_note_2026-05-02",
+    "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.087,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "26fd89a923dae7b589012aba85baed2b99b87b94cfb06befe6a4a91e2da92415",
+  "note_path": "docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.074813+00:00",
+      "audit_date": "2026-06-03T01:52:57.423088+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Operator-level identification, in the retained positive-chirality Pauli realization of the one-qubit Cl(3,0) local algebra, of the per-site Pauli su(2) generators S_i = sigma_i/2 with the Hermitian infinitesimal Spin(3) lift generator data.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "Audited the finite 8-corner support claim that the retained epsilon/parity operations do not supply a within-hw=1 generation-triplet S3-breaking operator.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On a single Axiom 1 qubit site with an oriented Pauli triple satisfying relation (1), S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module; no physical spin-statistics, matter-sector, or multi-site claim is audited."
+        },
+        "dep_claim_type": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "a0886dba05b9fd4513db06a9700bfec61feeedf0b14d85c22927bdcc66aeb1fe",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-015056-d2e6207b-koide_generation_id_cl3_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The required matrix identities, spectrum/determinant checks, circulant decomposition, non-circulant anticommuting example, and Q=(1+2r)/3 specialization at r=1/2 close as direct algebra over the cited retained-grade inputs. The physical generation identification and value-selection steps are explicitly excluded from the audited scope rather than used.",
+      "claim_scope": "Algebraic carrier compatibility only: the Pauli/Cl(3,0) grade-1 real vector subspace is a three-dimensional candidate carrier, Gamma_chi is a native proper rotation with SU(2) lift, non-circulant anticommuting operators are outside the Z3-circulant no-go, and the r=1/2 pin plus vector-vs-spinor sign identification remain open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T01:52:57.423088+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Gamma_chi equals the body-diagonal proper rotation 2vv^T-I in the Cl(3,0) grade-1 vector representation, while explicit non-circulant Hermitian operators H=|v><w|+|w><v| with w perpendicular to v anticommute with Gamma_chi and therefore lie outside the cited circulant no-go scope.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses preserve the narrow scope: carrier compatibility only, not physical generation identification, r-pin discharge, or vector-spinor sign transport.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 4,
+        "C": 2,
+        "D": 3,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing content is class-A algebraic closure, not a definition, tuned numerical match, or external-comparator check. Independent formula inventory finds the displayed coefficients and signs consistent: Gamma_chi=(2/3)J-I=2vv^T-I=(-1/3)I+(2/3)R+(2/3)R^2, U^2=-I, det Gamma_chi=+1, and the Brannen-ratio identity gives Q=2/3 exactly at r=1/2. The runner contains some narrative true-by-assertion disposition checks, but the actual bounded theorem does not rely on those as computation and is supported by the provided algebra. No cited dependency used for the scoped result is below retained-grade."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.536644+00:00",
+      "audit_date": "2026-06-05T18:07:41.203931+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "In the retained one-qubit Pauli realization H_x = C^2, the per-site Pauli su(2) generators S_i = sigma_i/2 and the Clifford/Spin(3) infinitesimal generators, after the standard anti-Hermitian-to-Hermitian convention B_i = i S_i, are the same operator triple.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "Audited the finite 8-corner support claim that the retained epsilon/parity operations do not supply a within-hw=1 generation-triplet S3-breaking operator.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum-axiom qubit site A_x ~= M_2(C), the Pauli action S_i = \u03c3_i/2 realizes the irreducible two-dimensional complex su(2) module with Casimir 3/4 and j = 1/2, without identifying it with all physical spin sectors."
+        },
+        "dep_claim_type": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 6.322,
+        "runner_hash": "a0886dba05b9fd4513db06a9700bfec61feeedf0b14d85c22927bdcc66aeb1fe",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-180554-fbe1b01ca6-koide_generation_id_cl3_grad",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed matrix identities close directly from the provided Pauli/Cl(3,0), no-go, and Koide algebra authorities. Independently, Gamma_chi = (2/3)J - I = 2vv^T - I has spectrum {1,-1,-1}, U^2 = -I, Gamma_chi is circulant, and for w perpendicular to v the symmetric rank-two H anticommutes with Gamma_chi but is non-circulant.",
+      "claim_scope": "Algebraic carrier compatibility only: Cl(3,0) grade-1 is a real 3D Spin(3) carrier compatible with Gamma_chi and non-circulant anticommuting operators are outside the retained Z3-circulant no-go; physical generation identity, vector-spinor sign transport, and r=1/2 selection remain open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T18:07:41.203931+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Gamma_chi = 2vv^T - I is a proper body-diagonal pi-rotation on the real grade-1 vector carrier, and the explicit H = |v><w| + |w><v| with w perpendicular to v anticommutes with Gamma_chi while failing to commute with R, so it lies outside the circulant no-go scope.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations do not upgrade this bounded carrier-compatibility result into physical generation identification, r=1/2 selection, or vector-spinor sign closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 4,
+        "C": 2,
+        "D": 3,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity check over retained-grade inputs, not a definition, renaming, or calibrated numerical match. The runner computes the central matrix checks, although several disposition checks are hard-coded; an independent algebraic pass verifies the load-bearing identities without relying on stdout. The source explicitly preserves the physical-identification, r-pin, and vector-spinor-sign gaps, so the clean verdict applies only to the bounded compatibility and no-go-scope claim."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.500713+00:00",
+      "audit_date": "2026-06-05T21:44:16.400708+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Operator-level identification on the retained one-qubit Pauli Cl(3,0) realization: the per-site Pauli su(2) generators S_i = sigma_i/2 and the infinitesimal Spin(3) generators from the Clifford action are the same Hermitian operator triple on C^2.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "Audited the finite 8-corner support claim that the retained epsilon/parity operations do not supply a within-hw=1 generation-triplet S3-breaking operator.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum/Axiom-1 qubit site with an oriented Pauli triple satisfying the stated relations, the local action S_i = \u03c3_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module."
+        },
+        "dep_claim_type": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 6.585,
+        "runner_hash": "a0886dba05b9fd4513db06a9700bfec61feeedf0b14d85c22927bdcc66aeb1fe",
+        "transitive_descendants": 23
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-214225-a95b0c6923-koide_generation_id_cl3_grad",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade inputs supply the Pauli/Spin(3) carrier, the generation-triplet separation, the circulant no-go scope, and the Q=2/3 algebraic identity. Independent matrix checks confirm Gamma_chi is the proper body-diagonal pi rotation, the displayed non-circulant anticommuting family exists, and the Q=2/3 condition remains exactly the r=1/2 amplitude condition rather than being discharged.",
+      "claim_scope": "Audited the bounded algebraic carrier-compatibility claim: the Cl(3,0) grade-1 Pauli vector space is a real three-dimensional Spin(3) carrier compatible with Gamma_chi, non-circulant anticommuting examples lie outside the Z_3-circulant no-go, and the r=1/2 pin remains open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:44:16.400708+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Gamma_chi = 2vv^T - I is the body-diagonal pi rotation on the grade-1 vector carrier, and for w perpendicular to v, H = |v><w| + |w><v| anticommutes with Gamma_chi while generically [H,R] != 0, so it lies outside the cited comm(R) no-go.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check scope discipline: this ratifies only the bounded algebraic compatibility result, not physical generation identification or r=1/2 selection.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 4,
+        "C": 2,
+        "D": 3,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade inputs, not a fitted numerical match or a definition-only substitution. The runner source checks the core matrices directly, and an independent calculation verifies the key signs, coefficients, spectra, commutators, and Q-ratio normalization. The claim is correctly scoped as carrier compatibility only; it does not inherit closure of the physical generation identification, vector-vs-spinor sign bridge, or r-pin."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.878781+00:00",
+      "audit_date": "2026-07-01T07:16:53.451766+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "On the repo one-qubit Pauli/Cl(3,0) realization, the per-site Pauli su(2) generators S_i = sigma_i/2 and the infinitesimal Clifford Spin(3) generators are the same operator triple, up to the standard anti-Hermitian i convention.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "Audited the finite 8-corner support claim that the retained epsilon/parity operations do not supply a within-hw=1 generation-triplet S3-breaking operator.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "For a single accepted Qubit/Axiom-1 site with local algebra M_2(C) and an oriented Pauli triple used as S_i=\u03c3_i/2, the local action is the irreducible two-dimensional complex j=1/2 su(2) module."
+        },
+        "dep_claim_type": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 9.533,
+        "runner_hash": "a0886dba05b9fd4513db06a9700bfec61feeedf0b14d85c22927bdcc66aeb1fe",
+        "transitive_descendants": 130
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T071653Z-05d47f79-koide_generation_id_cl3_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The core statements reduce to direct 3x3 and Pauli algebra, and the cited no-go has exactly the restricted comm(R) and anticomm(Gamma_chi) scope the note uses. The physical generation identification, r-selection, and vector-vs-spinor sign transport are explicitly excluded from the closed claim.",
+      "claim_scope": "Finite matrix audit of the Cl(3,0) grade-1 Pauli span as an algebraically compatible 3-dimensional carrier candidate: Gamma_chi is a native proper rotation, non-circulant anticommuting examples evade only the literal circulant no-go, and the r=1/2 pin plus physical sign bridge remain open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:16:53.451766+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Gamma_chi = 2vv^T - I is a proper body-diagonal pi-rotation with Pauli SU(2) lift, and explicit non-circulant Hermitian H = |v><w| + |w><v| with w perpendicular to v anticommute with Gamma_chi while lying outside the cited comm(R) no-go scope.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the bounded scope and do not cite this as a physical generation identification or an r=1/2 derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade cited inputs, not a numerical match or definition substitution. Independent recomputation verifies the Gamma_chi rotation form, SU(2) lift square, circulant identity, non-circulant anticommuting family, and Q=2/3 at r=1/2 for the 120-degree ansatz. Four runner PASS lines are narrative True records rather than executable checks, so they were not treated as independent support; the bounded conclusion still closes by direct algebra."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.442427+00:00",
+      "audit_date": "2026-07-01T23:41:30.497133+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "In the canonical one-qubit Pauli/Cl(3,0) realization on C^2, the per-site Pauli spin generators S_i = sigma_i/2 coincide operator-level with the Clifford bivector/Spin(3) infinitesimal generator data, with proper cubic rotations checked by SU(2) conjugation.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "Audited the finite 8-corner support claim that the retained epsilon/parity operations do not supply a within-hw=1 generation-triplet S3-breaking operator.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one Axiom-Qubit site with an oriented Pauli triple satisfying the displayed Pauli relations, the local action S_i = sigma_i/2 is the irreducible two-dimensional j=1/2 complex su(2) module; no physical spin-statistics or multi-site sector identification is audited."
+        },
+        "dep_claim_type": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 9.533,
+        "runner_hash": "a0886dba05b9fd4513db06a9700bfec61feeedf0b14d85c22927bdcc66aeb1fe",
+        "transitive_descendants": 130
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T234130Z-e45a6231-koide_generation_id_cl3_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The matrix identities close directly from the supplied Pauli/R/Gamma objects and the retained-grade one-hop authorities. Physical generation identification, the vector-vs-spinor sign bridge, and the r-pin are explicitly deferred and are not part of the audited closure.",
+      "claim_scope": "Finite algebraic carrier-compatibility: the Pauli/Cl(3,0) grade-1 real vector space is a three-dimensional Spin(3) vector carrier on which Gamma_chi is a proper pi-rotation; non-circulant anticommuting endomorphisms lie outside the cited Z3 no-go, and the r=1/2 pin remains unselected.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T23:41:30.497133+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Gamma_chi = 2vv^T - I is a proper body-diagonal pi-rotation on the grade-1 vector carrier, while the cited no-go assumes [H,R]=0 and explicit non-circulant H=|v><w|+|w><v| satisfies {H,Gamma_chi}=0 with [H,R] != 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check downstream uses do not cite this as physical generation identification, r-pin closure, or vector-spinor sign closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing content is finite linear algebra over the supplied objects: the Gamma_chi rotation identity, circulant no-go scope, explicit non-circulant anticommuting family, and Q(r=1/2) relation all recompute correctly. Four runner PASS lines are narrative disposition assertions rather than executable checks, so the runner alone is not authoritative, but the restricted packet independently closes the bounded algebraic scope. No-Go Discipline does not block the verdict because the note uses the prior no-go only in its exact comm(R) intersection scope and leaves the physical carrier identification, r-pin, sign bridge, and O_h route open."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.092139+00:00",
+      "audit_date": "2026-07-05T00:00:00-04:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Canonical Pauli realization gamma_i=sigma_i on C^2: internal S_i=sigma_i/2 and the self-adjoint infinitesimal Spin(3) unitary generators are the same 2x2 operators, with Clifford bivectors B_i=i*S_i.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "Audited the finite 8-corner support claim that the retained epsilon/parity operations do not supply a within-hw=1 generation-triplet S3-breaking operator.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On the Axiom/Qubit one-site algebra M_2(C), the local Pauli action S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module, without identifying physical spin for all matter sectors."
+        },
+        "dep_claim_type": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 9.598,
+        "runner_hash": "a0886dba05b9fd4513db06a9700bfec61feeedf0b14d85c22927bdcc66aeb1fe",
+        "transitive_descendants": 136
+      },
+      "audit_status": "audit_in_progress",
+      "auditor": "codex-gpt-5.5-audit-wave-20260705-row4-archimedes-019f32fd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": "cross_confirmation_disagreement",
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the bounded compatibility theorem because each load-bearing step is finite matrix algebra plus the narrow retained dependency content: Spin(3)/Pauli compatibility, circulant no-go scope, parity triplet separation, and the algebraic Q=2/3 note's open r-pin boundary. No downstream physical readout or mass-spectrum bridge is consumed.",
+      "claim_scope": "The one-qubit Cl(3,0) grade-1 real vector subspace is an algebraically compatible 3D carrier candidate for the generation triplet, with Gamma_chi realized as a proper Spin(3)-lifted pi rotation, outside only the circulant anticommuting no-go scope; no physical generation identity, r=1/2 pin, Brannen value, signed-readout transport, or mass operator is audited as closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:53:47.429616+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-05T00:00:00-04:00",
+          "auditor": "codex-gpt-5.5-audit-wave-20260705-row4-archimedes-019f32fd",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The one-qubit Cl(3,0) grade-1 real vector subspace is an algebraically compatible 3D carrier candidate for the generation triplet, with Gamma_chi realized as a proper Spin(3)-lifted pi rotation, outside only the circulant anticommuting no-go scope; no physical generation identity, r=1/2 pin, Brannen value, signed-readout transport, or mass operator is audited as closed.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T17:01:12.523312+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00004-koide_generation_id_cl3_grad",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The exact matrix compatibility of Gamma_chi and non-circulant anticommuting endomorphisms with a three-dimensional Cl(3,0) vector carrier, including the asserted Hodge/CPT and r=1/2 relocation readings.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "disagreement"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Gamma_chi=(2/3)J-I equals the proper body-diagonal pi rotation 2vv^T-I with the standard SU(2) lift U=-i(sigma_1+sigma_2+sigma_3)/sqrt(3), and explicit non-circulant Hermitian anticommuting operators sit outside only the circulant anticommuting no-go scope.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:high->critical: first-pass audit (auditor=codex-gpt-5.5-audit-wave-20260705-row4-archimedes-019f32fd, family=codex-gpt-5.5, independence=fresh_context) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The bounded algebra closes: Gamma_chi=(2/3)J-I equals 2vv^T-I, has eigenvalues {+1,-1,-1} and det +1, and the stated U=-i(sigma_1+sigma_2+sigma_3)/sqrt(3) is the standard SU(2) pi-rotation lift with U^2=-I. The cited Z3 no-go is used only at its literal boundary, comm(R) intersect anticomm(Gamma_chi)={0}, and the note exhibits non-circulant Hermitian anticommuting H outside that boundary without claiming a global no-go defeat. The relocation language is honest: the r=1/2/Brannen/Q=2/3 selection, physical carrier identification, vector-vs-spinor sign bridge, CPT/reality physical content, and O_h mass-operator program are explicitly left open. Residual risk is downstream citation drift: this row must be cited only as carrier compatibility, not as generation identification or Koide closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_generation_id_cl3_grade1_bridge.py",
+  "title": "Qubit Grade-1 Carrier Compatibility for the Generation Triplet: a Reality-Respecting Bridge Candidate Outside the Circulant No-Go Scope",
+  "transitive_descendants": 768,
+  "verdict_rationale": null
+}

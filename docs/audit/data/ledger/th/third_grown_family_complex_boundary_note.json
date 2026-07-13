@@ -1,0 +1,1522 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "third_grown_family_complex_boundary_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "third_grown_family_sign_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py",
+    "scripts/gate_b_no_restore_farfield.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.959,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "69a94639e79bd65967b9bdebc96fe4dae68d908b23eb300ce7a739f396b20716",
+  "note_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.107374+00:00",
+      "archived_for_note_hash": "ce2acea1f72b42d05734375545e68684b2bb4ca2bfe8da73a9edcccc3aac7de2",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.237099+00:00",
+      "audit_date": "2026-05-02T01:18:27.430770+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered runner exits successfully and its safe read matches the note's boundary conclusion: the anchor gamma=0/Born/F~M controls pass, the anchor TOWARD@0.1 -> AWAY@0.5 crossover is false, and the candidate does not retain the complex-action companion cleanly.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:third_grown_family_sign_note",
+      "load_bearing_step": "The third-family sign basin is real, but the complex-action branch is seed-selective and drift-sensitive; the exact gamma=0 baseline is fine, but the TOWARD -> AWAY crossover is not robust.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The load-bearing negative boundary survives the current runner: the exact-control anchor is valid, weak-field scaling remains linear, and the complex-action companion fails the robust crossover test. The representative table in the note is stale relative to the current aggregate runner output, but the stale values do not change the boundary verdict."
+    },
+    {
+      "archived_at": "2026-05-06T00:05:12.462321+00:00",
+      "audit_date": "2026-05-05T11:33:13.055126+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "third_grown_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "third_grown_family_sign_note"
+        ],
+        "load_bearing_score": 4.822,
+        "runner_hash": "64c969944f2b2d7147421f84583535c675711eb46f0ad4c8c9a089a810bf86ce",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-third_grown_family_compl-038",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited signed-family authority is retained_bounded, and the runner performs a fresh propagation computation over the stated slice rather than printing hard-coded expected values. Its completed output preserves the anchor controls but reports anchor TOWARD@0.1 -> AWAY@0.5 as false, so the bounded boundary conclusion follows within the tested scope.",
+      "claim_scope": "Finite runner-backed audit of the third-family no-restore cross-quadrant slice over drifts [0.0, 0.1, 0.2, 0.3, 0.5] and seeds [0, 1, 2], checking for a clean complex-action TOWARD@gamma=0.1 -> AWAY@gamma=0.5 companion on the retained signed basin.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-05T11:33:13.055126+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The complex branch does not retain a seed-consistent TOWARD -> AWAY crossover across the retained interior drift window.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check omitted dependency implementations for grow and third-family connectivity, and verify the per-seed representative-row table against the current cached runner if promoting this beyond the finite-sweep boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing step is a first-principles finite computation from the provided runner, using generated geometry, field construction, complex propagation, detector centroid shifts, escape ratios, Born proxy, and weak-field scaling checks. No external comparator or definition substitution is doing the work. The runner output directly supports the note's negative/boundary conclusion: the retained anchor has clean controls but fails the required crossover. The audit should not be read as proving a global analytic no-go beyond the finite drifts and seeds actually swept."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.998037+00:00",
+      "audit_date": "2026-05-06T02:51:00.669146+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "third_grown_family_sign_note": "Finite bounded computational claim that the third no-restore grown-family slice has five signed-source passing rows over drifts [0.0, 0.1, 0.2, 0.3, 0.5] and seeds [0, 1, 2], with exact zero/neutral controls and near-linear charge scaling on the passing rows."
+        },
+        "dep_claim_type": {
+          "third_grown_family_sign_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "third_grown_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "third_grown_family_sign_note"
+        ],
+        "load_bearing_score": 9.304,
+        "runner_hash": "64c969944f2b2d7147421f84583535c675711eb46f0ad4c8c9a089a810bf86ce",
+        "transitive_descendants": 446
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260506-024729-44a0cde4-third_grown_family_compl-008",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited upstream sign basin is retained_bounded, and the provided runner independently computes the complex-action propagation, controls, and crossover counters. The reported anchor crossover fails on the runner's own criterion, supporting the no-go boundary claim.",
+      "claim_scope": "Audited the restricted claim that the third grown-family signed basin has a diagnosed boundary: gamma=0 and weak-field controls survive, but the complex-action TOWARD -> AWAY crossover is not robust across the tested retained drift/seed window.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-06T02:51:00.669146+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-06T01:48:34.211350+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260506-014608-b9095ce7-third_grown_family_compl-009",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Audited the restricted claim that the retained third grown-family signed basin fails to support a robust narrow complex-action companion under the stated gamma=0 baseline, Born proxy, weak-field, and gamma 0.1 versus 0.5 crossover tests.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-06T02:51:00.669146+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260506-024729-44a0cde4-third_grown_family_compl-008",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Audited the restricted claim that the third grown-family signed basin has a diagnosed boundary: gamma=0 and weak-field controls survive, but the complex-action TOWARD -> AWAY crossover is not robust across the tested retained drift/seed window.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The complex branch does not retain a clean narrow companion because it lacks a seed-consistent TOWARD -> AWAY crossover across the retained interior drift window.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the discrepancy between the note's per-seed representative rows and the provided runner stdout averages if exact table reproducibility is required; it does not change the audited boundary verdict here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The load-bearing step is a first-principles numerical probe over the provided grown-family geometry and connectivity, not a definition, renaming, or external comparator match. The runner source constructs fields, propagates complex amplitudes, computes detector centroids/probabilities, Born proxy, weak-field exponents, and TOWARD counters rather than printing constants. The upstream sign-basin authority is retained_bounded, which is retained-grade under the rubric. Although the note's representative table is more granular than the runner stdout and not numerically identical in presentation, both support the same boundary conclusion: the complex companion does not cleanly retain the required crossover."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:05.164013+00:00",
+      "audit_date": "2026-07-12T08:31:47.380367+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "third_grown_family_sign_note": "Finite bounded computational claim that the third no-restore grown-family slice has five signed-source passing rows over drifts [0.0, 0.1, 0.2, 0.3, 0.5] and seeds [0, 1, 2], with exact zero/neutral controls and near-linear charge scaling on the passing rows."
+        },
+        "dep_claim_type": {
+          "third_grown_family_sign_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "third_grown_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "third_grown_family_sign_note"
+        ],
+        "load_bearing_score": 3.959,
+        "runner_hash": "64c969944f2b2d7147421f84583535c675711eb46f0ad4c8c9a089a810bf86ce",
+        "transitive_descendants": 10
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00228-third_grown_family_complex_b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes a genuine finite complex-propagation probe and establishes the aggregate anchor failure, but it does not join the sign-passing seed rows to seed-resolved complex outcomes or close extrapolation beyond the sampled grid.",
+      "claim_scope": "Finite runner-backed observation that, for drifts [0.0, 0.1, 0.2, 0.3, 0.5] and seeds [0, 1, 2], the drift-0.20 aggregate anchor fails the runner's TOWARD@gamma=0.1 -> AWAY@gamma=0.5 criterion; no family-wide or basin-wide nonexistence claim was audited.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-12T08:31:47.380367+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "Across the retained interior drift window, no seed-consistent TOWARD -> AWAY crossover survives, so no basin-wide complex-action companion is retained.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The primary runner generated each configured geometry, propagated at gamma 0.1 and 0.5, and evaluated the aggregate drift-0.20 crossover predicate.",
+            "disposition": "CLOSED",
+            "evidence_locator": "return self.toward_01 > 0 and self.toward_05 == 0",
+            "evidence_path": "scripts/THIRD_GROWN_FAMILY_COMPLEX.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Direct finite propagation on the configured drift and seed grid tests the stated gamma crossover.",
+            "outcome": "The configured aggregate anchor fails because toward_01 is nonzero while toward_05 is also nonzero.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "finite_anchor_probe"
+          },
+          {
+            "attempt": "The helper cache identifies sign-passing seeds, but the primary stdout reports only per-drift TOWARD counts and never emits the required joined seed identities.",
+            "disposition": "OPEN",
+            "evidence_locator": "a seed-consistent `TOWARD -> AWAY` crossover across the retained interior",
+            "evidence_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Join the sign-passing drift/seed rows to the complex outcomes for the same individual seeds.",
+            "outcome": "The seed-consistent retained-basin statement remains open because the restricted packet does not expose or gate on the joined rows.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "seed_resolved_join"
+          },
+          {
+            "attempt": "The packet was checked for gamma values beyond the fixed 0.1 and 0.5 comparison; none were used for the decisive crossover predicate.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "crossover test: `gamma = 0.1` versus `gamma = 0.5`",
+            "evidence_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Vary the damping/action parameter pair used to define the crossover.",
+            "outcome": "Whether a nearby gamma pair produces a clean crossover remains untested.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "alternate_gamma_pair"
+          },
+          {
+            "attempt": "The primary computation was inspected and found to instantiate only the imported third-family connectivity rule.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "connectivity: the cross-quadrant load-balanced rule from the signed basin",
+            "evidence_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Retain the geometry while changing the cross-quadrant load-balanced connectivity carrier.",
+            "outcome": "No alternative connectivity was tested, so the result cannot exclude other complex companions on the same geometry.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "alternate_connectivity"
+          },
+          {
+            "attempt": "The source was checked for a refinement or limiting study, but only H=0.5 and NL=25 are instantiated.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "H = 0.5\nK = 5.0\nNL = 25",
+            "evidence_path": "scripts/THIRD_GROWN_FAMILY_COMPLEX.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Change lattice spacing, layer count, or propagation length to test finite-resolution stability.",
+            "outcome": "Scale and volume stability remain untested.",
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "lattice_refinement"
+          },
+          {
+            "attempt": "The primary source was inspected and found to use detector probability and centroid_z as its decisive response observables.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "def _centroid_z(",
+            "evidence_path": "scripts/THIRD_GROWN_FAMILY_COMPLEX.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace detector-centroid sign with another independently motivated complex-action readout.",
+            "outcome": "No alternate observable bridge was tested, so the negative result is readout-specific.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "alternate_readout"
+          },
+          {
+            "attempt": "The supplied source was checked and contains only five drifts and three seeds.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "DRIFTS = [0.0, 0.1, 0.2, 0.3, 0.5]\nSEEDS = [0, 1, 2]",
+            "evidence_path": "scripts/THIRD_GROWN_FAMILY_COMPLEX.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Extend the drift and seed sample beyond the five-by-three configured grid.",
+            "outcome": "Behavior outside the finite configured window remains untested.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "expanded_drift_seed_window"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "The configured drift-0.20 aggregate anchor fails the runner-defined gamma crossover.",
+            "The finite sweep does not establish family-wide or basin-wide nonexistence outside the joined retained seeds and tested parameter grid."
+          ],
+          "evidence_locator": "a family-wide or even basin-wide complex-action companion",
+          "evidence_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "The configured drift-0.20 aggregate anchor fails the runner-defined gamma crossover.",
+              "left_closes_right": false,
+              "right": "The finite sweep does not establish family-wide or basin-wide nonexistence outside the joined retained seeds and tested parameter grid.",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "The configured drift-0.20 aggregate anchor fails the runner-defined gamma crossover.",
+            "The finite sweep does not establish family-wide or basin-wide nonexistence outside the joined retained seeds and tested parameter grid."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "the complex-action branch is seed-selective and drift-sensitive",
+          "evidence_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+          "hits": [
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "geometry: no-restore grown slice",
+              "evidence_path": "docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md",
+              "phrase": "the retained no-restore third-family grown slice"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "exact `gamma = 0` baseline",
+              "evidence_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+              "phrase": "exact `gamma = 0` baseline"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "a family-wide or even basin-wide complex-action companion",
+              "evidence_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+              "phrase": "family-wide or even basin-wide",
+              "promoted_wall": "The finite sweep does not establish family-wide or basin-wide nonexistence outside the joined retained seeds and tested parameter grid."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source's retained-slice, exact-baseline, seed-consistency, robustness, basin-wide, and family-wide language was checked against the primary source, helper source, helper cache, and stdout.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "if anchor.anchor_ok and anchor.crossover_ok:",
+          "evidence_path": "scripts/THIRD_GROWN_FAMILY_COMPLEX.py",
+          "none_found_reason": "All N1 dispositions are based on calculations or packet inspection performed here; no prior witness is used to close an alternative route.",
+          "scan_scope": "The restricted packet was checked for prior retained-grade witnesses used to rule out an N1 route; no N1 route was marked RULED OUT BY PRIOR.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "the crossover is not robust",
+          "evidence_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative language was checked for the resolutions in drift, seed, gamma, connectivity, lattice scale, and observable actually covered by the runner.",
+          "statements": [
+            {
+              "evidence_locator": "The complex branch does **not** retain a clean narrow companion.",
+              "evidence_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+              "phrase": "does **not** retain a clean narrow companion",
+              "tested_resolutions": [
+                "drifts [0.0, 0.1, 0.2, 0.3, 0.5]",
+                "seeds [0, 1, 2]",
+                "gamma 0.1 versus gamma 0.5",
+                "H=0.5 and NL=25",
+                "cross-quadrant load-balanced connectivity",
+                "detector-centroid sign readout"
+              ],
+              "untested_resolutions": [
+                "other gamma pairs",
+                "other seeds and drifts",
+                "lattice refinement or volume scaling",
+                "alternate connectivity carriers",
+                "alternate complex-action observables"
+              ]
+            },
+            {
+              "evidence_locator": "a family-wide or even basin-wide complex-action companion",
+              "evidence_path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+              "phrase": "family-wide or even basin-wide complex-action companion",
+              "tested_resolutions": [
+                "the configured five-drift, three-seed finite grid"
+              ],
+              "untested_resolutions": [
+                "continuous drift intervals",
+                "a seed-family theorem",
+                "other lattice scales",
+                "other admissible complex-action carriers"
+              ]
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no seed join, crossover theorem, connectivity selector, or finite-sweep extrapolation.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/third_grown_family_complex_boundary_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms do not supply the selected propagation law, complex damping parameter, detector readout, or statistical generalization.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/third_grown_family_complex_boundary_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation cannot turn three selected seeds into a generic seed-family or basin theorem.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/third_grown_family_complex_boundary_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A units reference supplies neither lattice-refinement control nor crossover robustness.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/third_grown_family_complex_boundary_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton occupancy obligation is unrelated to the third-family gravity propagation and crossover test.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/third_grown_family_complex_boundary_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton readout obligation does not define or validate the detector-centroid complex-action readout.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/third_grown_family_complex_boundary_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The theta cross-sector readout obligation is unrelated to seed-resolved third-family crossover robustness.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/third_grown_family_complex_boundary_note",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/third_grown_family_complex_boundary_note",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All approved primitives and open-gate candidates returned by the supplied partial-closure index were checked for content capable of closing the finite-to-basin and seed-join walls.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The strongest objection is that aggregate TOWARD counts do not identify which sign-retained seeds cross over; a joined seed-level table could therefore contain a narrow retained companion even when the aggregate anchor predicate fails.",
+          "evidence_locator": "toward_01=toward_01,",
+          "evidence_path": "scripts/THIRD_GROWN_FAMILY_COMPLEX.py",
+          "resolution": "The objection succeeds against the seed-consistent and basin-wide rhetoric because the primary runner does not gate its complex rows on the helper's sign-passing seeds. It does not overturn the narrower fact that the configured drift-0.20 aggregate predicate is false, so the audit resolves the objection by narrowing and demoting the claim.",
+          "resolved": true,
+          "route_id": "seed_resolved_join"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "third_grown_family_complex_boundary_note:previous_audit:0",
+              "evidence_locator": "third_grown_family_complex_boundary_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Earlier unaudited state supplies no substantive closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "third_grown_family_complex_boundary_note:previous_audit:1",
+              "evidence_locator": "third_grown_family_complex_boundary_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Prior clean treatment accepted the boundary despite stale representative values.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "third_grown_family_complex_boundary_note:previous_audit:2",
+              "evidence_locator": "third_grown_family_complex_boundary_note:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Prior clean treatment explicitly limited the result to the finite drift and seed sweep.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "third_grown_family_complex_boundary_note:previous_audit:3",
+              "evidence_locator": "third_grown_family_complex_boundary_note:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Prior clean treatment lacked the now-required no-go discipline packet.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "third_grown_family_sign_note:previous_audit:0",
+              "evidence_locator": "third_grown_family_sign_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Earlier unaudited dependency state supplies no additional seed-level bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "third_grown_family_sign_note:previous_audit:1",
+              "evidence_locator": "third_grown_family_sign_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "The prior sign audit warned that five sampled rows do not prove a stable family-level basin.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated charged-lepton occupancy gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated charged-lepton readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated theta cross-sector readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated foundational and flavor no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "A finite gravity sweep does not imply full physical or family-wide closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Generic warning that finite positives do not supply physical bridge closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated atomic, time-axis, and audit-governance boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated multi-lane no-go registry.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated coupling-identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated plaquette coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Finite detector-centroid evidence does not by itself establish a general observable bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated carrier representation and registry-exhaustion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated charged-lepton selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated Lorentz-restoration scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Generic finite-runner versus global-theorem boundary for a different observable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "A single boundary row must not be generalized to a wider family basin.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated local Wilson versus full-environment boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated flavor readout route pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated analytic-vector and audit-governance boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated gauge environment and estimator boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated gauge isotropy mechanism-specific no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Related gravity scope warning but no seed or crossover closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Weak-field sign evidence does not imply nonlinear or universal gravity closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated Planck-scale and carrier no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated U(1) normalization and species-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated campaign-level closure boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated atomic scale and threshold no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated quark mass and selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Finite lattice checks do not prove an asymptotic or continuum statement.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Detector-centroid responses are readout-specific and need not equal alternate path observables.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "A finite configured geometry can falsify one surrogate without proving a global no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated static-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated temporal source and readout-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Empty no-go ledger supplies no echo.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated planning-priority versus theorem-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated physical-time identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated neutrino construction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated neutrino and cosmology dependency boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "A finite-lattice replay must not be presented as a universal theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Finite seed and drift packets do not justify unbounded basin language.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated coupling and register/read selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "An imposed-field centroid shift and finite checked window do not imply derived physical gravity or an infinite-family theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "A finite parameter scan does not imply arbitrary-degree or global exclusion.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated Clifford-carrier selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated rank-four carrier and projection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated plaquette bootstrap and solver boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated plaquette diagnostic misidentification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated record-selector and metric boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated registrability, strong-CP, and Koide boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated transfer-locality and temporal-axis boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated source semantics and physical-basis boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated kinetic-law selection countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated SU(3) quotient-encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "A single third-family slot does not establish a full family card or geometry independence.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated theta mass-side readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated theta gauge-side action boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated positive theta-gate boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated theta phase-insertion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated theta defect-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated determinant-power selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated Record and orbit-occupancy boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated Record-formation and rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "No no-go was attempted in that loop.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated Record-only scalar-readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "A two-row or fixed-seed packet cannot establish a continuous family law or structural selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Finite raw rows do not prove a continuum theorem or universal exponent.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "mechanism": "Unrelated Yukawa definition-versus-derivation boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "The configured drift-0.20 aggregate anchor fails the runner-defined gamma crossover.",
+          "The finite sweep does not establish family-wide or basin-wide nonexistence outside the joined retained seeds and tested parameter grid."
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "1ef72a30f776a158016b04b50cd03b732275abcbf25aabdad79584dd9de3ac45",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "third_grown_family_complex_boundary_note:previous_audit:0",
+                "third_grown_family_complex_boundary_note:previous_audit:1",
+                "third_grown_family_complex_boundary_note:previous_audit:2",
+                "third_grown_family_complex_boundary_note:previous_audit:3",
+                "third_grown_family_sign_note:previous_audit:0",
+                "third_grown_family_sign_note:previous_audit:1"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/third_grown_family_complex_boundary_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "third_grown_family_complex_boundary_note:previous_audit:0",
+                "third_grown_family_complex_boundary_note:previous_audit:1",
+                "third_grown_family_complex_boundary_note:previous_audit:2",
+                "third_grown_family_complex_boundary_note:previous_audit:3",
+                "third_grown_family_sign_note:previous_audit:0",
+                "third_grown_family_sign_note:previous_audit:1"
+              ]
+            },
+            "audit-packet://partial-closure-index/third_grown_family_complex_boundary_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "d98b9c051279d56c06ccfb5fad176d4d8a011782fec226146e996714a5a1218f",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/third_grown_family_complex_boundary_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "69a94639e79bd65967b9bdebc96fe4dae68d908b23eb300ce7a739f396b20716",
+              "effective_status": null,
+              "path": "docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "The complex branch does **not** retain a clean narrow companion.",
+                "a family-wide or even basin-wide complex-action companion",
+                "a seed-consistent `TOWARD -> AWAY` crossover across the retained interior",
+                "connectivity: the cross-quadrant load-balanced rule from the signed basin",
+                "crossover test: `gamma = 0.1` versus `gamma = 0.5`",
+                "exact `gamma = 0` baseline",
+                "the complex-action branch is seed-selective and drift-sensitive",
+                "the crossover is not robust"
+              ]
+            },
+            "docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "76508c7d99853cc8c8c636ebfc4ec5fc3aa0d60cc78b121b7cd1e5fa890a4a33",
+              "effective_status": "retained_bounded",
+              "path": "docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "geometry: no-restore grown slice"
+              ]
+            },
+            "scripts/THIRD_GROWN_FAMILY_COMPLEX.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "64c969944f2b2d7147421f84583535c675711eb46f0ad4c8c9a089a810bf86ce",
+              "effective_status": null,
+              "path": "scripts/THIRD_GROWN_FAMILY_COMPLEX.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "DRIFTS = [0.0, 0.1, 0.2, 0.3, 0.5]\nSEEDS = [0, 1, 2]",
+                "H = 0.5\nK = 5.0\nNL = 25",
+                "def _centroid_z(",
+                "if anchor.anchor_ok and anchor.crossover_ok:",
+                "return self.toward_01 > 0 and self.toward_05 == 0",
+                "toward_01=toward_01,"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains OPEN and UNTESTED seed-join, gamma, connectivity, lattice-scale, readout, and expanded-window routes.",
+          "N5 identifies untested resolutions behind the basin-wide and family-wide rhetoric.",
+          "The current runner output is aggregate and does not join complex outcomes to the sign-retained seeds."
+        ],
+        "narrowed_claim_scope": "Finite runner-backed observation that, for drifts [0.0, 0.1, 0.2, 0.3, 0.5] and seeds [0, 1, 2], the drift-0.20 aggregate anchor fails the runner's TOWARD@gamma=0.1 -> AWAY@gamma=0.5 criterion; no family-wide or basin-wide nonexistence claim was audited.",
+        "next_route": {
+          "reason_untested": "The primary runner does not emit or gate on the intersection of sign-passing seeds and complex-crossover outcomes, so this is the cheapest decisive route for the stated retained-basin claim.",
+          "route_id": "seed_resolved_join"
+        },
+        "prior_claim_scope": "Audited the restricted claim that the third grown-family signed basin has a diagnosed boundary: gamma=0 and weak-field controls survive, but the complex-action TOWARD -> AWAY crossover is not robust across the tested retained drift/seed window.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the note to the finite aggregate anchor, emit a joined seed-resolved sign/complex table, synchronize the stale representative values, and add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the audit queue.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the computed aggregate anchor failure is extended to a seed-consistent retained-basin and family-wide boundary without a seed-level join to the sign-gate passes, while the representative table is partly stale relative to current stdout. Why this blocks: the finite class-C computation supports a narrow sampled failure but does not establish the stated basin-wide no-go or dispose of untested gamma choices, lattice scales, carriers, and readouts. Repair target: emit joined per-seed sign-pass and complex-crossover rows, synchronize the table, and either test the remaining mechanism classes or explicitly restrict the conclusion to the finite aggregate anchor. Claim boundary until fixed: the drift-0.20 aggregate row has clean Born and weak-field diagnostics but fails the runner-defined crossover."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/THIRD_GROWN_FAMILY_COMPLEX.py",
+  "title": "Third Grown Family Complex Boundary Note",
+  "transitive_descendants": 10,
+  "verdict_rationale": null
+}

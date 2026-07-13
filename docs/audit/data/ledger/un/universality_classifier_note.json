@@ -1,0 +1,207 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universality_classifier_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "global_coherence_off_scaffold_note",
+    "independent_generators_heldout_note",
+    "local_zsym_predictor_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.748,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2e2b5ce85a0666f124880a479dffb8a12f5043f7975ce513002203f9f82ac9ba",
+  "note_path": "docs/UNIVERSALITY_CLASSIFIER_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370009+00:00",
+      "archived_for_note_hash": "a46d5685a5064267d4f3e87751487812dc3537e0b081721bd28c0a3f70b630e5",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-17T12:16:39.146459+00:00",
+      "archived_for_note_hash": "0bd26f69f9f87f5cae485010aa83405e5bc5800a3c550b3cc5091fe40bc819f0",
+      "audit_date": "2026-05-11T18:31:54.850830+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "global_coherence_off_scaffold_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "independent_generators_heldout_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "local_zsym_predictor_note": "Bounded archived finite search result: adding local_z_asym to the fixed 3-property AND classifier search on the 26 swept families is rejected, and no-refit cross-generator accuracy remains 6/9, matching the old two-property rule."
+        },
+        "dep_claim_type": {
+          "global_coherence_off_scaffold_note": "bounded_theorem",
+          "independent_generators_heldout_note": "positive_theorem",
+          "local_zsym_predictor_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "global_coherence_off_scaffold_note": "retained_bounded",
+          "independent_generators_heldout_note": "retained",
+          "local_zsym_predictor_note": "retained_bounded"
+        },
+        "deps": [
+          "global_coherence_off_scaffold_note",
+          "independent_generators_heldout_note",
+          "local_zsym_predictor_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the finite within-family sweep and held-out readout, but the source also says the simple-classifier line is exhausted; the one-hop authorities only test specific frozen rules/metrics and do not enumerate or exclude the classifier universe.",
+      "claim_scope": "Finite empirical within-grown-DAG classifier readout for the registered 26-family sweep plus 8 in-family held-out families, with explicit cross-generator and local_z_asym negative caveats; not a derived universality theorem or exhaustive simple-classifier no-go.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T18:31:54.850830+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator tests show the rule does not generalize.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: Re-audit after narrowing this row to the finite within-family classifier readout plus explicit negative generalization caveats, or after adding a retained theorem/register that enumerates and excludes the relevant simple-classifier universe.",
+      "open_dependency_paths": [
+        "docs/GLOBAL_COHERENCE_OFF_SCAFFOLD_NOTE.md: finite frozen free_coh/off-scaffold negative only, not exhaustive classifier no-go",
+        "docs/LOCAL_ZSYM_PREDICTOR_NOTE.md: finite local_z_asym 3-property search only, not all node-level metrics"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the completed runner supports the finite 26-family grown-DAG sweep, LOO statistic, and 8-family in-family held-out table, but the note's broader exhaustion/universality framing is not derived from the restricted inputs. Why this blocks: the cited negative lanes show failures for one frozen cross-generator rule, one free_coh off-scaffold rule, and one local_z_asym extension; they do not enumerate all simple/node-level/global scalar classifiers or prove a no-go. Repair target: a retained theorem or registered exhaustive search specifying the classifier universe and excluding it, or a split note that keeps only the finite within-family classifier readout. Claim boundary until fixed: cite the finite within-family empirical classifier and the explicit negative generalization caveats, not a universal predictor or exhaustive simple-classifier closure theorem."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:14.136857+00:00",
+      "audit_date": "2026-05-17T15:52:59.148328+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "global_coherence_off_scaffold_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "independent_generators_heldout_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "local_zsym_predictor_note": "Bounded archived finite search result: adding local_z_asym to the fixed 3-property AND classifier search on the 26 swept families is rejected, and no-refit cross-generator accuracy remains 6/9, matching the old two-property rule."
+        },
+        "dep_claim_type": {
+          "global_coherence_off_scaffold_note": "bounded_theorem",
+          "independent_generators_heldout_note": "positive_theorem",
+          "local_zsym_predictor_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "global_coherence_off_scaffold_note": "retained_bounded",
+          "independent_generators_heldout_note": "retained",
+          "local_zsym_predictor_note": "retained_bounded"
+        },
+        "deps": [
+          "global_coherence_off_scaffold_note",
+          "independent_generators_heldout_note",
+          "local_zsym_predictor_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-155238-a5e2dcef-universality_classifier_-029",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner actually constructs the declared grown-DAG families, computes the five battery conditions, fits the two-property rule, runs LOO, and evaluates the hard-coded held-out predictions; its stdout matches the note's load-bearing in-family numbers. The broader universal/simple-classifier-exhaustion theorem is not audited as part of this narrowed scope and is explicitly disclaimed or bounded by the cited authorities.",
+      "claim_scope": "Finite empirical within-family classifier readout for the 26-family grown-DAG sweep plus 8 in-family held-out families, with retained negative caveats from the independent-generator, local_z_asym, and off-scaffold lanes.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T15:52:59.148328+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator results are explicitly negative.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream ledgers preserve the narrowed bounded scope and do not promote the interpretive 'simple-classifier line exhausted' language into a no-go theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 3,
+        "C": 1,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/universality_classifier.py",
+  "title": "Universality Classifier \u2014 Finite Within-Family Classifier Readout (Binding)",
+  "transitive_descendants": 18,
+  "verdict_rationale": null
+}

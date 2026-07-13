@@ -1,0 +1,205 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_native_action_predicts_q1_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d3dfe5ce1c2cc87045421c2b1fa4021ade3378ca051417b0077d116b0ac58185",
+  "note_path": "docs/FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T16:24:07.649891+00:00",
+      "archived_for_note_hash": "89c263622865edc6e932a2261113cba33a97dd39833a4ed863cd9f32b0185397",
+      "audit_date": "2026-06-05T22:44:32.832329+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4e8f3164839f946447d660cbad6f197e5883bab1e2c044733650e3a7a4ca1dac",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-224127-22bf52c22d-flavor_native_action_predict",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite matrix algebra and five displayed cutoff scans close for the restricted ansatz. The full source claim does not close because it needs a proof or retained authority for the all-monotone/native-action extension, the Casimir/HK range, the Wilson/HK/Manton quadratic-degeneracy premise, and the implicit Lambda/a normalization.",
+      "claim_scope": "Audited the C3 ansatz H=aI+b(C+C^2), the displayed HS block and equal-block identities, the five cutoff scans at the runner's implicit scale, and the HS orthogonality check.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-05T22:44:32.832329+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For H=aI+b(C+C^2), the C3 spectrum is {a+2b,a-b,a-b}; the tested spectral-action cutoffs have extrema near |b|/a=1 rather than 1/sqrt2, and HS orthogonality of I and C+C^2 prevents a single quadratic norm from fixing the a:|b| ratio.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: restrict the claim to the five displayed cutoff functions at the runner's implicit normalization, or add a retained theorem covering arbitrary monotone cutoffs, Casimir/HK time, and the Wilson/HK/Manton quadratic-degeneracy premise.",
+      "open_dependency_paths": [
+        "docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner genuinely instantiates the C3 cycle matrix and computes traces, eigenvalues, and five cutoff scans; independent diagonalization confirms the HS identities and that the listed maximizers are near b/a=1 rather than 1/sqrt2. That supports the narrow finite-scan statement but not the broader claim that every monotone-decreasing cutoff or native action gives exact r=1/Q=1, since the cutoff scale is implicit and b/a=1 is generally a collapse landmark rather than an exact stationary point for finite smooth cutoffs. The packet also does not derive the Casimir/HK r in [0,1/4] assertion or include the upstream action-form degeneracy theorem referenced in the note."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:31.053405+00:00",
+      "archived_for_note_hash": "2e16d632d277bce41d7b55af8349e3b41afece914c6f0c5b5968aa7053e4acdb",
+      "audit_date": "2026-06-06T17:19:02.891347+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.085,
+        "runner_hash": "77d9ced8289a9f5b00098293c2cab9bc097fd24b26a103ccb8b8a89853c7157d",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-171751-5f20aa7c21-flavor_native_action_predict",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independently diagonalizing C+C^2 gives eigenvalues 2,-1,-1, so S(t)=f((1+2t)^2)+2f((1-t)^2); this reproduces the near-t=1 maxima and the [0,0,3] spectrum at t=1. The HS traces also give 3a^2, 6b^2, and zero cross term, closing only the stated finite-scan scope.",
+      "claim_scope": "For the C3 ansatz H=aI+b(C+C^2), a=1, b/a in [0,2], and the five named cutoff functions, the finite scans peak near r=1 and the HS mass/hopping grades are orthogonal, so this tested action axis does not select r=1/2.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-06T17:19:02.891347+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For H = aI + b(C+C^2), the five displayed finite spectral-action scans S(b)=\u03a3f(\u03bb_i^2) over a=1 and b/a in [0,2] peak near |b|/a\u22481, never near 1/\u221a2.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should recheck that later uses preserve the finite five-cutoff scope and do not upgrade this to an arbitrary monotone-cutoff or action-form theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source actually constructs the C3 operator, diagonalizes H, scans the five stated cutoff objectives, and checks the HS identities; it is not merely printing the contested conclusion. The quantitative identities in the packet match an independent algebraic reduction from C+C^2 to spectrum {2,-1,-1}. There are no cited non-retained dependencies, and the repaired note explicitly limits itself to the five finite scans rather than an arbitrary native-action theorem."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:57.073021+00:00",
+      "audit_date": "2026-07-09T06:05:03.924129+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "Bounded relative independence claim only: the current checked Record/Koide bookkeeping surface admits both sector-slot and orbit-slot occupancy models with exact doublet-weight ratio 2, so it does not fix the occupancy rule; the orbit-occupancy paragraph is audited only as a proposed premise with non-input support, not as adopted or derived content.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "d1e4af22a80eee584afc12590e3d9f3b004c3802a34fd3ff22bc7ed0992daea7",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite action-axis scan itself is reproduced, but the primary runner exits with SCORECARD PASS=9 FAIL=1 because the downstream occupancy-boundary helper uses a stale or brittle prose needle. A clean audit needs the declared runner certificate for the full source-scope boundary to pass live.",
+      "claim_scope": "Narrow action-axis gate: for H=aI+b(C+C^2), the five displayed finite spectral-action cutoffs on a=1, b/a in [0,2] peak near |b|/a=1 (Q=1), not at |b|/a=1/sqrt(2), and HS mass/hopping orthogonality means this two-grade scan does not supply the r=1/2 Koide weighting.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-09T06:05:03.924129+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "For the five displayed cutoffs, the finite scan of S(b)=sum_i f(lambda_i^2) over a=1 and b/a in [0,2] has its maximum at |b|/a approximately 1, never near 1/sqrt(2), while the mass and hopping grades are Hilbert-Schmidt orthogonal.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: Repair scripts/flavor_occupancy_boundary_checks_2026_06_13.py to use the current occupancy-note/minimal-axiom boundary instead of brittle exact prose, add a dated downstream-hygiene line to this note's own boundary if the repair is only downstream wording, rerun scripts/flavor_native_action_predicts_q1_2026_06_02.py, and re-audit once the scorecard is fully passing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: scripts/flavor_native_action_predicts_q1_2026_06_02.py currently returns SCORECARD PASS=9 FAIL=1, with the failing check in scripts/flavor_occupancy_boundary_checks_2026_06_13.py's occupancy-note prose boundary. Why this blocks: the core five-cutoff finite scan and HS-orthogonality checks pass, but the source-scope certificate includes the downstream occupancy boundary and the declared primary runner is nonzero. Repair target: update the boundary helper/cache to the current occupancy-note and minimal-axiom wording, or otherwise slice the runner so the action-axis certificate passes without brittle stale prose checks. Claim boundary until fixed: the safe statement is the finite five-cutoff action-axis result and HS orthogonality only; no universal native-action theorem or action-sector selector is supplied."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_native_action_predicts_q1_2026_06_02.py",
+  "title": "Flavor \u2014 five finite spectral-action cutoffs do not select r=1/2",
+  "transitive_descendants": 7,
+  "verdict_rationale": null
+}

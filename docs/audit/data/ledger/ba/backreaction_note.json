@@ -1,0 +1,145 @@
+{
+  "audit_date": "2026-06-09T12:30:36.637134+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "poisson_backreaction_live_threshold_packet_note_2026-05-29": "Finite live assertion for scripts/backreaction_poisson_live_threshold_check.py on the declared G grid only: positive final deflection for every listed G and first listed escape < 1 at G=0.050."
+    },
+    "dep_claim_type": {
+      "poisson_backreaction_live_threshold_packet_note_2026-05-29": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "poisson_backreaction_live_threshold_packet_note_2026-05-29": "retained_bounded"
+    },
+    "deps": [
+      "poisson_backreaction_live_threshold_packet_note_2026-05-29"
+    ],
+    "load_bearing_score": 4.587,
+    "runner_hash": "b56df20cdc1cd7ebc0ad58d2a7799b2cc5ce10efc39153ec29e7af944988517c",
+    "transitive_descendants": 16
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260609-122907-2e5b87e159-backreaction_note",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The primary runner and helper source instantiate the finite lattice, external field, self-field iteration, propagation, escape ratio, and centroid delta rather than printing the contested output constants. An independent read of the displayed table confirms the bounded conclusions: escape remains above one through G=0.020, falls below one at G=0.050, and all listed deltas are positive.",
+  "claim_id": "backreaction_note",
+  "claim_scope": "The audited scope is only the current finite Poisson harness grid: all listed deltas are TOWARD and the first listed escape value below one is at G=0.050, with no continuum threshold, monotone law, or physical Schrodinger-Newton closure.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-06-09T12:30:36.637134+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "poisson_backreaction_live_threshold_packet_note_2026-05-29"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/backreaction_poisson.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "On the declared finite Poisson self-gravity G grid, the live runner certifies a positive baseline delta, first sub-unit escape at G=0.050, and TOWARD deflection through G=0.100.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "dce78dc0154de3d34fcaf140243d6f19adff69991519771a7d6dccf315f20e0f",
+  "note_path": "docs/BACKREACTION_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check source-packet verifier freshness if auditing artifact provenance beyond the finite-grid physics claim.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.367645+00:00",
+      "archived_for_note_hash": "10cb7f39a3e5619c37b9ab8a9662a91fec6dc1c775dc0ee2c801bc2f9d4ddd19",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-06-09T08:57:38.632530+00:00",
+      "archived_for_note_hash": "8d33351bff1b3e84fbf1dfb4ccfc86cfd988665dbdf84ba154f40bd547eec904",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The current Poisson runner does not reproduce the source-note threshold table: at G=0.010 the live escape is 1.0502, not 1.002, the first listed sub-unity escape is at G=0.050 with 0.9631, and the runner no longer samples the note's G=0.011/0.012/0.020 rows or field-strength-dependence check.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_from_archived_failed",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note's load-bearing claim is that Poisson self-gravity produces a gravitational absorption threshold at G_crit ~ 0.011, with TOWARD deflection preserved and escape decreasing smoothly from above one to below one.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "source_note_threshold_table_stale_against_scripts/backreaction_poisson.py",
+        "Gcrit_0.011_not_sampled_or_reproduced_by_live_runner",
+        "field_strength_dependence_rows_s_0.001_and_s_0.016_not_present_in_current_runner",
+        "high_G_live_runner_shows_unstable_away_behavior_not_smooth_threshold_table"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the source note's quantitative absorption-threshold claim is stale against the live Poisson/self-consistency runners; the current Poisson output gives escape 1.0498 at G=0.005, 1.0502 at G=0.010, 0.9631 at G=0.050, and 0.7547 at G=0.100, not the note's 1.025, 1.002, 0.751, and 0.486 trend with G_crit ~ 0.011. Why this blocks: a hostile physicist cannot retain a claimed horizon-like threshold at G_crit ~ 0.011 or a smooth table-driven collapse transition when the current computation places the first listed sub-unity escape much later and shows unstable/away behavior at larger G. Repair target: restore the exact runner/version and sweep grid that generated the note, or update the note with a live asserted sweep including G=0.011, 0.012, 0.020, the field-strength-dependence rows, convergence gates, escape monotonicity checks, and Born checks on the same converged field. Claim boundary until fixed: it is safe to claim only that the current Poisson runner shows TOWARD deflection for G <= 0.1, escape below one by G=0.050 at s_ext=0.004, and a linear fixed-field Born check of 2.45e-16 in the separate self-consistency script; it is not safe to retain the note's G_crit ~ 0.011 gravitational-collapse threshold or its exact table."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/backreaction_poisson_live_threshold_check.py",
+  "title": "Backreaction Live Threshold Wrapper",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The one-hop cited authority is marked retained_bounded, which is retained-grade for this bounded dependency check. The runner does not import or hard-code the stale G_crit ~= 0.011 premise; it computes the finite grid from the exposed Poisson helper and asserts only the live bounded facts. The source note\u2019s displayed summary matches the supplied cache and stays within the stated boundary exclusions, so the chain closes for the bounded finite-grid claim only."
+}

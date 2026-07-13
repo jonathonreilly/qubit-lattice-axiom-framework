@@ -1,0 +1,1637 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_mru_demotion_note_2026-04-20",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.468,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "63401ce8696adf488c3180fd4625070ad06985053c7450183aa7e359255776ab",
+  "note_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106097+00:00",
+      "archived_for_note_hash": "4f37dfabcb25ab672ba89491595f9f2beed2fd3abf5fd9f1d665d5cae652258e",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-09T10:55:06.461334+00:00",
+      "audit_date": "2026-04-30T19:34:45.835270+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Yes. The registered runner exits cleanly and exposes 7 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->high",
+      "load_bearing_step": "\"SO(2)-quotient\" closure route to supplementary / alternative-framing",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 7,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified D-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing."
+    },
+    {
+      "archived_at": "2026-05-09T14:37:41.962264+00:00",
+      "archived_for_note_hash": "cf997e80f4400e47df3f1c23b56e9f42cae91286dd188f395e1179431546f1ef",
+      "audit_date": "2026-05-09T11:26:48.786534+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.489,
+        "runner_hash": "25c5f07181b1d9900d11dd50fce674f9eabfb6cadb245088952381d7fb455b12",
+        "transitive_descendants": 126
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0c7c-ed2d-7123-a5be-2508e5a57a3c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet provides no cited authority bodies or retained statuses for the bridge theorem, block-total Frobenius theorem, observable principle, or spectrum-side Berry + Brannen route. The included runner verifies only the spectrum-operator bridge identity and PDG numerical realization, not the full demotion/provenance claim or the independent second route.",
+      "claim_scope": "Audited the demotion note's status change: MRU is no longer primary, and operator-side kappa = 2 is instead assigned to the spectrum-operator bridge and block-total Frobenius routes.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-05-09T11:26:48.786534+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The kappa = 2 gate is carried by two retained independent routes, bridge plus block-total Frobenius, neither of which requires the SO(2)-quotient postulate, so MRU is demoted from the closure stack.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add one-hop dependencies for the spectrum-operator bridge theorem, block-total Frobenius theorem, and spectrum-side Koide closure, with retained statuses and runner artifacts.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the note's status change depends on unprovided upstream theorem notes and retained-status assertions, especially the block-total Frobenius route and the spectrum-side closure inherited by the bridge. Why this blocks: the audit packet cannot verify that the promoted routes are retained, independent, or sufficient to replace MRU; the runner only establishes an algebraic bridge plus external PDG checks. Repair target: include the one-hop authority packets and runner output/source for both promoted routes and the spectrum-side closure dependency. Claim boundary until fixed: the note can stand only as a conditional reclassification proposal given those retained routes, not as an audited closed theorem."
+    },
+    {
+      "archived_at": "2026-06-19T10:12:00.602126+00:00",
+      "archived_for_note_hash": "b32304d3bb8cf148dc2f42ba7f08a44633e42ab75eeaac7862783f7d125a8b71",
+      "audit_date": "2026-06-18T04:18:22.949283+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19": "Bounded finite-algebra claim on Herm_circ(d): the stipulated block-total Frobenius carrier gives one scalar slot per real isotype, yields kappa = 2 at d = 3 under the equal-weight log law, and d = 3 is unique for one trivial plus one doublet real-isotype pattern.",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "Audited the algebraic equivalence between spectrum-side a_0^2 = 2|z|^2 and operator-side a^2 = 2|b|^2 on the stated Herm_circ(3) cyclic-compression Fourier dictionary.",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "The audited claim is only the formal positive two-slot constrained log-volume theorem: with rho_plus^2 + rho_perp^2 = E_tot, L = log(rho_plus) + log(rho_perp) has its unique interior constrained maximum at equal squared radii, so the explicitly defined kappa = 2 rho_plus^2/rho_perp^2 equals 2 there."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19": "bounded_theorem",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "positive_theorem",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19": "retained_bounded",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "retained",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 10.383,
+        "runner_hash": "25c5f07181b1d9900d11dd50fce674f9eabfb6cadb245088952381d7fb455b12",
+        "transitive_descendants": 235
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_mru_demotion_note_2026-04-20-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The spectrum-operator bridge identity closes as exact algebra over Herm_circ(3), but it only transfers spectrum-side Q = 2/3 to operator-side kappa = 2. The broader claim that a second block-total Frobenius route independently carries closure does not close from the cited bounded authority, which explicitly leaves the canonical scalar-lane measure bridge open.",
+      "claim_scope": "Audited the note's reclassification of the MRU/SO(2)-quotient route as supplementary and its claim that operator-side kappa = 2 is carried by the spectrum-operator bridge with block-total Frobenius as an independent second route.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-06-18T04:18:22.949283+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Path B observes that the MRU route is not needed for operator-side kappa = 2 closure because two retained theorems already give kappa = 2 without any SO(2)-quotient assumption.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad: split the clean bounded demotion/bridge-corollary claim from the unclosed independent block-total closure claim; also fix the displayed tr(H^3) phase term, which should be proportional to b^3 + bbar^3 rather than a(b^3 + bbar^3).",
+      "open_dependency_paths": [
+        "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md",
+        "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the MRU demotion is supported, and the primary bridge runner genuinely checks the algebraic identity, but the note overstates the block-total Frobenius theorem as an independent retained closure route. Why this blocks: that cited theorem is bounded and explicitly says the canonical physical scalar-lane measure/SO(2)-quotient bridge remains open, so it cannot carry unbounded operator-side kappa closure. Repair target: narrow this note to the MRU demotion plus the bridge corollary, or supply a retained theorem deriving the block-total scalar carrier and wire the missing spectrum-side closure dependencies if full Koide closure is claimed. Claim boundary until fixed: the bridge gives a zero-residual equivalence conditional on spectrum-side Q = 2/3, and MRU remains a valid reduced-carrier conditional algebra, not a load-bearing closure route."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:59.872735+00:00",
+      "archived_for_note_hash": "43397c77b7059c86f0a3e6e6da7d81dc1eb19759c410117bc61dad3906a78fb4",
+      "audit_date": "2026-06-19T21:16:38.253438+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19": "Bounded finite-algebra claim on Herm_circ(d): the stipulated block-total Frobenius carrier gives one scalar slot per real isotype, yields kappa = 2 at d = 3 under the equal-weight log law, and d = 3 is unique for one trivial plus one doublet real-isotype pattern.",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "Exact algebraic equivalence on Herm_circ(3) between the spectrum condition a_0^2=2|z|^2 and the operator condition a^2=2|b|^2, with the kappa ratio understood on the nonzero-|b| domain; not a derivation of spectrum-side Koide Q=2/3.",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "The audited claim is only the formal positive two-slot constrained log-volume theorem: with rho_plus^2 + rho_perp^2 = E_tot, L = log(rho_plus) + log(rho_perp) has its unique interior constrained maximum at equal squared radii, so the explicitly defined kappa = 2 rho_plus^2/rho_perp^2 equals 2 there."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19": "bounded_theorem",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "positive_theorem",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19": "retained_bounded",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "retained",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 10.389,
+        "runner_hash": "e6cdcf0375a4a0bd634474aaff4c9013e2d697230e26ec9cb67e1855fb573c51",
+        "transitive_descendants": 236
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-koide_mru_demotion_note_2026-04-20-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebraic checks close for the Path A failure and the bridge identity. The broader negative statement that no retained framework theorem derives the SO(2)-quotient is not fully certified by the restricted packet because alternative retained routes are not exhaustively audited.",
+      "claim_scope": "Bounded audit of the MRU demotion/source-boundary claim: the displayed spectral-observable route does not derive the SO(2) quotient; the spectrum-operator bridge gives the exact kappa=2 corollary from spectrum-side Koide; block-total Frobenius remains bounded support, not standalone physical scalar-measure closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T21:16:38.253438+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under b -> e^{i theta} b the spectrum is not invariant for generic theta, as tr(H^3) and det(H) retain a cos(3 arg b) phase channel, so the retained observable principle does not force the SO(2)-quotient.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: alternative attack routes against the SO(2)-quotient no-go were not exhausted; cheapest repair is to narrow the claim to the explicit Path A failure plus bridge-corollary algebra, or add a no-go checklist with five retained-authority route closures.",
+      "open_dependency_paths": [
+        "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md",
+        "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
+        "docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 5,
+        "C": 0,
+        "D": 2,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Issue: the algebraic Path A failure and bridge identity are correctly supported, but the note also makes a broad wall-naming demotion claim that no retained framework theorem derives the SO(2)-quotient. Why this blocks: the packet shows one failed route and conditional MRU status, but does not provide a complete no-go discipline route enumeration or exhaustive retained-authority scan. Repair target: either narrow the claim to the explicit Path A algebra plus bridge-corollary bookkeeping, or add an N1-N8 no-go checklist with enough retained-authority route closures. Claim boundary until fixed: the MRU route is conditionally demoted relative to the provided routes, while global non-derivability of the quotient remains conditional."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.016153+00:00",
+      "audit_date": "2026-07-07T19:57:19.199558+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "Exact algebraic bridge identity on Herm_circ(3), and equivalence of a_0^2 = 2|z|^2 with a^2 = 2|b|^2 under the stated eigenvalue/sqrt-mass identification; no derivation of Q = 2/3 itself is audited."
+        },
+        "dep_claim_type": {
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 10.022,
+        "runner_hash": "2ef034368d7874164add7d76c4c78cc39d2b839c5ee2ab1bea9de7a3e63ce7c3",
+        "transitive_descendants": 259
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-koide_mru_demotion_note_2026-04--11",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Path A obstruction is an algebraic spectral-invariance check on Herm_circ(3), and the replacement bridge is exactly the one-hop retained_bounded authority supplied in the packet. The note does not claim to close spectrum-side Q = 2/3 or the physical scalar-measure bridge.",
+      "claim_scope": "Audited the bounded demotion claim that the MRU/SO(2)-quotient route is not load-bearing here and that operator-side kappa = 2 is carried only as the spectrum-operator bridge corollary of spectrum-side Q = 2/3.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-07T19:57:19.199558+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "koide_kappa_spectrum_operator_bridge_theorem_2026-04-19",
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:retained_bounded->unaudited",
+      "load_bearing_step": "The displayed spectral-observable Path A does not derive the scalar-lane SO(2) quotient because generic SO(2) phase rotation changes spectral scalar observables such as tr(H^3) and det(H), while the retained spectrum-operator bridge supplies only the conditional Q = 2/3 => kappa = 2 corollary.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner source performs substantive symbolic and numerical algebraic checks: source-boundary checks, the corrected tr(H^3) phase obstruction, generic non-invariance under SO(2) phase rotation, and the exact spectrum-operator residual identity. There are no external comparator checks in this demotion runner, and the scoped conclusion reduces to standard algebra plus the single retained_bounded spectrum-operator bridge parent. The cited bridge authority is retained-grade for this rubric, and its open limits are respected rather than promoted."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:38.751775+00:00",
+      "audit_date": "2026-07-12T16:08:12.859171+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "Exact polynomial bridge identity on Herm_circ(3) and equivalence of the zero sets a_0^2=2|z|^2 and a^2=2|b|^2; the kappa=2 ratio formulation is restricted to |b| nonzero, and no derivation of Q=2/3 itself is audited."
+        },
+        "dep_claim_type": {
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 10.735,
+        "runner_hash": "2ef034368d7874164add7d76c4c78cc39d2b839c5ee2ab1bea9de7a3e63ce7c3",
+        "transitive_descendants": 425
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00126-koide_mru_demotion_note_2026",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The scoped algebra is correct, but no independent physical theorem closes: the bridge corollary is inherited from one retained-bounded parent and the remaining contribution is standard Hermitian-circulant algebra supporting a route-local status demotion.",
+      "claim_scope": "Route-local algebraic demotion: generic SO(2) phase rotations on Herm_circ(3) are not spectral symmetries; the exact kappa bridge is only a corollary of the retained-bounded spectrum-operator parent, while MRU and block-total framing are not independent closure routes here.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-12T16:08:12.859171+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "Because tr(H^3) and det(H) retain cos(3 arg b), a generic continuous phase rotation b -> e^{i theta}b changes spectrum-native scalar observables, so the displayed spectral-observable Path A does not derive the SO(2) quotient.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note substitutes b -> e^{i theta}b into all three circulant eigenvalues and checks whether the resulting multiset is merely permuted.",
+            "disposition": "CLOSED",
+            "evidence_locator": "For a generic continuous `theta`, this is **not** a permutation of the eigenvalue multi-set",
+            "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat the continuous doublet-frame rotation as a unitary conjugation preserving the eigenvalue multiset.",
+            "outcome": "For generic continuous theta the multiset changes, so the proposed continuous unitary/spectral symmetry route is closed within Path A.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "continuous_unitary_symmetry"
+          },
+          {
+            "attempt": "The note and runner expand tr(H^3) symbolically and isolate the cubic phase term.",
+            "disposition": "CLOSED",
+            "evidence_locator": "tr(H^3) = 3 a^3 + 18 a |b|^2 + 3 (b^3 + bbar^3)",
+            "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Attempt to express all spectral trace data using only the SO(2)-invariant radius |b|.",
+            "outcome": "The surviving 3(b^3+bbar^3) term varies under a generic continuous rotation, closing the radius-only trace-algebra route.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "cubic_trace_invariant"
+          },
+          {
+            "attempt": "The determinant is expanded on Herm_circ(3) and its b^3+bbar^3 dependence is inspected.",
+            "disposition": "CLOSED",
+            "evidence_locator": "det(H) = a^3 + b^3 + bbar^3 - 3 a |b|^2",
+            "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the retained log-determinant scalar observable as a possible phase-blind readout.",
+            "outcome": "The determinant and hence log|det| retain cos(3 arg b), so this alternate observable does not factor through the SO(2) radius.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "logdet_observable"
+          },
+          {
+            "attempt": "The note determines the subgroup for which the transformed eigenvalue multiset is unchanged.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The multiset is invariant only under the discrete subgroup `theta in {0, 2 pi / 3, 4 pi / 3}`",
+            "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace the continuous quotient by the actual discrete phase rotations that cycle the Fourier eigenvalue labels.",
+            "outcome": "Only theta in {0, 2 pi/3, 4 pi/3} is obtained; this discrete carrier symmetry cannot supply the claimed continuous SO(2) quotient.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "discrete_c3_sector"
+          },
+          {
+            "attempt": "The note compares that restricted observable class with the quotient it was meant to derive.",
+            "disposition": "CLOSED",
+            "evidence_locator": "use only `arg(b)`-independent invariants",
+            "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Declare only arg(b)-independent functions such as tr(H^2), |b|^2, or E_perp to be the scalar observables.",
+            "outcome": "The restriction is exactly the SO(2) postulate in new coordinates and therefore cannot independently derive it.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "phase_blind_relabeling"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "Path A spectral non-invariance: generic Herm_circ(3) scalar spectral data retain cos(3 arg b), so spectrum-nativeness alone does not imply the continuous SO(2) quotient.",
+            "Physical scalar-measure selection: block-total Frobenius algebra does not by itself supply the canonical physical scalar-lane measure bridge needed for independent closure."
+          ],
+          "evidence_locator": "The SO(2)-quotient is a genuinely additional postulate, strictly stronger than \"scalar observables are spectrum-native\".",
+          "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "Path A spectral non-invariance: generic Herm_circ(3) scalar spectral data retain cos(3 arg b), so spectrum-nativeness alone does not imply the continuous SO(2) quotient.",
+              "left_closes_right": false,
+              "right": "Physical scalar-measure selection: block-total Frobenius algebra does not by itself supply the canonical physical scalar-lane measure bridge needed for independent closure.",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "Path A spectral non-invariance: generic Herm_circ(3) scalar spectral data retain cos(3 arg b), so spectrum-nativeness alone does not imply the continuous SO(2) quotient.",
+            "Physical scalar-measure selection: block-total Frobenius algebra does not by itself supply the canonical physical scalar-lane measure bridge needed for independent closure."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "What is not claimed here",
+          "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "the scalar charged-lepton lane does not retain the Cartesian basis",
+              "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+              "phrase": "the scalar charged-lepton lane does not retain the Cartesian basis",
+              "promoted_wall": "Path A spectral non-invariance: generic Herm_circ(3) scalar spectral data retain cos(3 arg b), so spectrum-nativeness alone does not imply the continuous SO(2) quotient."
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "canonical physical scalar-lane measure bridge remains open",
+              "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+              "phrase": "canonical physical scalar-lane measure bridge remains open",
+              "promoted_wall": "Physical scalar-measure selection: block-total Frobenius algebra does not by itself supply the canonical physical scalar-lane measure bridge needed for independent closure."
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "This is a bounded bridge-corollary packet.",
+              "evidence_path": "docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md",
+              "phrase": "The spectrum-operator bridge theorem is the primary graph-visible retained authority"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "This note does not audit, alter, or strengthen that spectrum-side route",
+              "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+              "phrase": "This note does not audit, alter, or strengthen that spectrum-side route"
+            }
+          ],
+          "scan_scope": "The source status block, Path A assumptions, bridge dictionary, block-total boundary, runner source-boundary checks, and supplied premise registry were checked for undeclared observable, quotient, carrier, measure, and spectrum-side inputs.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "This note checks Path A only",
+          "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+          "none_found_reason": "No N1 route is marked RULED OUT BY PRIOR; all five route dispositions are supported by calculations or logical scope checks performed in the current source packet.",
+          "scan_scope": "The restricted source, runner, retained-bounded bridge authority, and indexed prior-route records were checked for witnesses used to rule out an N1 route by prior authority.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "2026-06-20 scope-boundary repair",
+          "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+          "none_found_reason": "",
+          "scan_scope": "All obstruction, failure, demotion, not-derived, and open-route language was checked against the resolution actually tested.",
+          "statements": [
+            {
+              "evidence_locator": "Path A cannot close at the Nature bar",
+              "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+              "phrase": "Path A cannot close at the Nature bar",
+              "tested_resolutions": [
+                "The displayed Herm_circ(3) spectral-observable route under generic continuous b-phase rotations."
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "it does not claim to exhaust every alternative attack route against that quotient",
+              "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+              "phrase": "it does not claim to exhaust every alternative attack route against that quotient",
+              "tested_resolutions": [
+                "The statement is explicitly route-local and excludes other dynamical, physical-measure, and phase-decoupling mechanisms from its negative conclusion."
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "Other attack routes, such as a future result that decouples the `cos(3 arg b)` channel, remain open, not closed.",
+              "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+              "phrase": "Other attack routes, such as a future result that decouples the `cos(3 arg b)` channel, remain open, not closed.",
+              "tested_resolutions": [
+                "The rhetoric preserves these mechanisms as outside the scoped Path A no-go rather than claiming their failure."
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Space-time kinetic-form isotropy supplies no flavor-phase selector, scalar readout bridge, or charged-lepton SO(2) quotient.",
+              "evidence_locator": "carries no dimensionless DYNAMICAL content (no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or fit)",
+              "evidence_path": "audit-packet://partial-closure-index/koide_mru_demotion_note_2026-04-20",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms explicitly withhold context selection and physical-observable bridges, so they cannot select the phase-blind scalar lane.",
+              "evidence_locator": "It still supplies no context-selection rule",
+              "evidence_path": "audit-packet://partial-closure-index/koide_mru_demotion_note_2026-04-20",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise reference to a realized state supplies neither a measure nor a weighting/readout rule that factors through |b|.",
+              "evidence_locator": "no state, state-selection rule, measure, typicality/genericity assumption, weighting, probability rule",
+              "evidence_path": "audit-packet://partial-closure-index/koide_mru_demotion_note_2026-04-20",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A units conversion carries no dimensionless phase, selector, or scalar-measure content.",
+              "evidence_locator": "Units conversion only: carries no dimensionless content",
+              "evidence_path": "audit-packet://partial-closure-index/koide_mru_demotion_note_2026-04-20",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This open action-counting obligation concerns K/CPT orbit versus channel occupancy, not derivation of the continuous doublet-frame quotient or the present Fourier identity.",
+              "evidence_locator": "Derive from the retained framework chain whether the physical charged-lepton matter action counts the K/CPT orbit",
+              "evidence_path": "audit-packet://partial-closure-index/koide_mru_demotion_note_2026-04-20",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The R-eta fixed-locus angle-readout obligation does not supply the Koide doublet SO(2) quotient or a block-total scalar measure.",
+              "evidence_locator": "Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class",
+              "evidence_path": "audit-packet://partial-closure-index/koide_mru_demotion_note_2026-04-20",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The quark determinant cross-sector readout is a separate theta-lane bridge and does not remove either scoped Koide wall.",
+              "evidence_locator": "Derive whether the charged-lepton K/CPT occupancy carrier is the same physical channel that controls the quark determinant readout",
+              "evidence_path": "audit-packet://partial-closure-index/koide_mru_demotion_note_2026-04-20",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/koide_mru_demotion_note_2026-04-20",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied partial-closure index covering axioms, approved primitives, open obligations, conventions, definitions, and repository-visible reframes was dispositioned candidate by candidate.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The retained scalar lane could be restricted to tr(H^2), |b|^2, E_perp, and similar phase-independent quantities, apparently making all relevant observables factor through the Frobenius radius.",
+          "evidence_locator": "But that selection is a non-trivial choice \u2014 it is exactly the same SO(2) postulate written in a different coordinate system",
+          "evidence_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+          "resolution": "The source correctly identifies this as the strongest Path A repair and shows that selecting precisely the arg(b)-independent observables assumes the desired SO(2) quotient instead of deriving it; the steelman therefore fails within the displayed route.",
+          "resolved": true,
+          "route_id": "phase_blind_relabeling"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_mru_demotion_note_2026-04-20:previous_audit:0",
+              "evidence_locator": "koide_mru_demotion_note_2026-04-20:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Earlier unaudited state contains no substantive scientific disposition.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_mru_demotion_note_2026-04-20:previous_audit:1",
+              "evidence_locator": "koide_mru_demotion_note_2026-04-20:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Earlier bounded-support clean reading of the demotion leaf.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_mru_demotion_note_2026-04-20:previous_audit:2",
+              "evidence_locator": "koide_mru_demotion_note_2026-04-20:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Earlier packet incompleteness and two-route promotion concern.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_mru_demotion_note_2026-04-20:previous_audit:3",
+              "evidence_locator": "koide_mru_demotion_note_2026-04-20:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Earlier overstatement of block-total Frobenius as an independent retained closure route.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_mru_demotion_note_2026-04-20:previous_audit:4",
+              "evidence_locator": "koide_mru_demotion_note_2026-04-20:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Earlier concern that route-local failure was phrased as global non-derivability.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_mru_demotion_note_2026-04-20:previous_audit:5",
+              "evidence_locator": "koide_mru_demotion_note_2026-04-20:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Earlier decoration classification invalidated when the parent temporarily lost retained status.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:0",
+              "evidence_locator": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Earlier unaudited parent state contains no substantive disposition.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:1",
+              "evidence_locator": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Physical operator closure was previously distinguished from the exact conditional Fourier identity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:2",
+              "evidence_locator": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Physical carrier/readout imports were previously separated from conditional bridge algebra.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:3",
+              "evidence_locator": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Prior clean audit of the exact Herm_circ(3) algebraic equivalence.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:4",
+              "evidence_locator": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Prior clean audit preserving the nonzero-|b| qualification for ratio language.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:5",
+              "evidence_locator": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Prior bounded clean identity audit later invalidated for missing no-go-discipline packet.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Charged-lepton K/CPT orbit-counting grain remains an open action/readout problem distinct from this route-local quotient audit.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "R-eta h-unit readout remains a separate charged-lepton bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Quark determinant cross-sector readout is outside the scoped MRU/SO(2) mechanism.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Lists older charged-lepton selector no-gos but no MRU doublet-frame mechanism.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Newton/source-mass sweep boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Gauge-coupling packet-memory boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Atomic and temporal-axis audit boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Older Koide selector and radian-bridge routes are distinct from the present MRU spectral-observable route and are not reopened.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Electroweak normalization identities are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Plaquette beta=6 coefficient boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Lensing/Born-scattering observable walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Antisymmetric carrier-registry exhaustion is a different representation problem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "The charged-lepton ledger preserves numerous older Koide selector no-gos while leaving distinct flagship routes in flight; none supplies the SO(2) quotient used by MRU.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Spatial-dimension selection is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Lorentz-hierarchy scope boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Causal metric reconstruction is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Finite-family orientation certificates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Wilson-environment closure is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "A separate flavor-tracial pruning result explicitly leaves Q=2/3 and nontracial or block-measure selector routes open, consistent with this note's route-local rhetoric.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Analytic-vector and Wigner bridge issues are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Gauge plaquette environment computation is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Gauge-action isotropy and temporal-generator walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Gravity/Fermat bridge scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Weak-field gravity sign boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Planck carrier and action-unit walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Hypercharge normalization/readout ambiguity is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Campaign-level charged-lepton Ward and absolute-scale walls do not supply or refute the present SO(2) quotient.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Atomic-scale transport and unit-map walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Quark mass/readout and C3 carrier walls are outside the charged-lepton MRU quotient claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Lattice Green-function asymptotics are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Detector-centroid multipole obstruction is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Finite-path lensing geometry is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Static-source magnitude/readout selection is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Temporal source magnitude closure is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Empty larger-cell no-go ledger supplies no echo.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Planning-priority boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Physical-time emergence is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Neutrino mass-matrix no-go routes are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Neutrino absolute-scale and cosmology gates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Finite-lattice Newtonian-distance scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Finite recompute artifact boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Gauge-coupling authority boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Packet-memory and decoherence boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Picard-Fuchs finite-grid boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Planck Clifford carrier selection is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Planck P1/P3 carrier forcing is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Plaquette bootstrap/mean-field walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Plaquette diagnostic bookkeeping is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "General supplied-selector arithmetic warns that finite invariants do not create physical selector authority; this is consistent but not a direct MRU witness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "A prior broad Koide negative was demoted for inadequate route enumeration; the current note avoids that error by limiting its negative claim to Path A and supplying the full discipline packet.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Temporal-axis and finite-range locality walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "General source-measure/readout boundaries are analogous but concern a different finite tangent-space observable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Spin-statistics forcing is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Minimal-surface kinetic selection is unrelated to the Koide scalar quotient.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "SU(3) cube quotient encoding is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Teleportation documentation synchronization is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Third-family distance-card scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Theta determinant-channel readout is unrelated to the MRU quotient.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Theta gauge-sector readout/action walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Positive theta assembly gates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Theta phase-insertion gate G3 is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Theta defect-closure gate G1 is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "AC determinant-power horn selection is a separate charged-lepton action/readout question.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Record non-supply of orbit occupancy is separate from the doublet-frame quotient.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Record formation non-supply of R-eta is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "No no-go was attempted in the GR Casimir block; no echo applies.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Record-only scalar readout underdetermination is analogous but does not directly establish the Herm_circ(3) SO(2) result.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Finite dark-matter cross-family matching is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Wide-lattice distance-law scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "mechanism": "Top-Yukawa definition/renaming wall is unrelated to the exact Koide bridge identity.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20": {
+              "accepted_premise_type": null,
+              "content_sha256": "7a31fb6707e1ea0832c5ad396d636809ccc6836eae94c52e4f28f21bef5acf14",
+              "cross_cycle_candidate_ids": [
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:0",
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:1",
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:2",
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:3",
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:4",
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:5",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:0",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:1",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:2",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:3",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:4",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:5",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/koide_mru_demotion_note_2026-04-20",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:0",
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:1",
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:2",
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:3",
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:4",
+                "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19:previous_audit:5",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:0",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:1",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:2",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:3",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:4",
+                "koide_mru_demotion_note_2026-04-20:previous_audit:5",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/koide_mru_demotion_note_2026-04-20": {
+              "accepted_premise_type": null,
+              "content_sha256": "0fab25b533a967b7be1cc5bf4d9ef9d4a81d46cfef163f6980051105c04d0c5b",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/koide_mru_demotion_note_2026-04-20",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class",
+                "Derive from the retained framework chain whether the physical charged-lepton matter action counts the K/CPT orbit",
+                "Derive whether the charged-lepton K/CPT occupancy carrier is the same physical channel that controls the quark determinant readout",
+                "It still supplies no context-selection rule",
+                "Units conversion only: carries no dimensionless content",
+                "carries no dimensionless DYNAMICAL content (no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or fit)",
+                "no state, state-selection rule, measure, typicality/genericity assumption, weighting, probability rule",
+                "no_go_partial_closure_index_v1"
+              ]
+            },
+            "docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "9ba06361424f8c27c42752686bc5b61171390473680a4342dea9b00d90ff36d4",
+              "effective_status": "retained_bounded",
+              "path": "docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "This is a bounded bridge-corollary packet."
+              ]
+            },
+            "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "63401ce8696adf488c3180fd4625070ad06985053c7450183aa7e359255776ab",
+              "effective_status": null,
+              "path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "2026-06-20 scope-boundary repair",
+                "But that selection is a non-trivial choice \u2014 it is exactly the same SO(2) postulate written in a different coordinate system",
+                "For a generic continuous `theta`, this is **not** a permutation of the eigenvalue multi-set",
+                "Other attack routes, such as a future result that decouples the `cos(3 arg b)` channel, remain open, not closed.",
+                "Path A cannot close at the Nature bar",
+                "The SO(2)-quotient is a genuinely additional postulate, strictly stronger than \"scalar observables are spectrum-native\".",
+                "The multiset is invariant only under the discrete subgroup `theta in {0, 2 pi / 3, 4 pi / 3}`",
+                "This note checks Path A only",
+                "This note does not audit, alter, or strengthen that spectrum-side route",
+                "What is not claimed here",
+                "canonical physical scalar-lane measure bridge remains open",
+                "det(H) = a^3 + b^3 + bbar^3 - 3 a |b|^2",
+                "it does not claim to exhaust every alternative attack route against that quotient",
+                "the scalar charged-lepton lane does not retain the Cartesian basis",
+                "tr(H^3) = 3 a^3 + 18 a |b|^2 + 3 (b^3 + bbar^3)",
+                "use only `arg(b)`-independent invariants"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "Recheck the nonzero-|b| domain whenever the polynomial operator equation is restated as the ratio kappa = a^2/|b|^2.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner genuinely computes the corrected cubic trace, determinant-sensitive SO(2) obstruction, and exact Fourier residual identity; it does not hard-code the contested formulas, and it contains no external-comparator checks. The source carefully limits the obstruction to the displayed spectral-observable route and does not promote block-total Frobenius support or derive spectrum-side Q = 2/3. The resulting packet is algebraically sound but reduces to one retained-bounded bridge parent plus standard mathematics and status bookkeeping, so it is decoration-grade rather than an independent theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py",
+  "title": "Koide MRU Formal Demotion Note",
+  "transitive_descendants": 707,
+  "verdict_rationale": null
+}

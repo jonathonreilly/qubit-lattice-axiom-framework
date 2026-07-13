@@ -1,0 +1,327 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go (**bounded**, computable-side). On the current A_min algebra, the Dirac block",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+    "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "578b9f9a6e9ec569509b740799412ca90a802867046f1886f544017f0e349bf5",
+  "note_path": "docs/KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T21:30:27.519719+00:00",
+      "archived_for_note_hash": "13b68aaae8802908db0890778277477207a2540a226226d275c336c515e9edf4",
+      "audit_date": "2026-06-12T01:19:04.059212+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "Finite matrix support only: the C3 circulant index map, native circulant eigenvector rigidity and zero Berry curvature away from band-crossing loci, a Pauli two-band anticommuting Berry comparator, the native circulant commutation obstruction, and the two algebraic Q(r) identities; no physical r-weighting or Q-branch selection is audited as derived.",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "Pure algebraic comparison of signed-eigenvalue and singular-value Koide readouts for the C3-circulant Hermitian H=aI+bC+b\u0304C\u00b2, especially at r=|b|\u00b2/a\u00b2=1/2.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "bounded_theorem",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "retained_bounded",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.524,
+        "runner_hash": "5571593ad9a32c916822a44621df8920e46bc54ad4c8d93a012c4c3de220d27e",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-10b47417d1-koide_dirac_mass_forces_r_on",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The determinant, D^2, Fourier-eigenvector flatness, and signed-vs-absolute Koide identities are algebraic checks, but they do not supply the missing branch-selection theorem from Berry-flat/sign-blind Dirac readout to forced r=1. The cited Berry authority explicitly leaves the Berry/chirality-to-r weighting rule open and says zero Berry may not be used as a derivation of the Q=1/r=1 branch.",
+      "claim_scope": "Bounded current-A_min claim: the Dirac block mass has singular-value readout, the allowed C3-circulant L-R coupling is generation-Berry-flat, and the within-R3 Gamma_chi-anticommuting curving route is obstructed; not a universal no-go or a closure of the open staggered-corner realization.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-12T01:19:04.059212+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The physical Dirac mass is read by sign-blind singular values, and the allowed L-R coupling M(b)\u2297\u03c3+ has b-independent C3 Fourier generation eigenvectors, so the generation bundle is Berry-flat and cannot supply the r=1/2 signed-readout route.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained theorem deriving the Berry-flat/sign-blind Dirac current-A_min readout -> r=1 branch selection, or narrow the claim to the algebraic flatness and signed-vs-singular residual; also repair the determinant sign and avoid relying on the unaudited staggered-gate dependency for closure.",
+      "open_dependency_paths": [
+        "docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md",
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner performs real symbolic/numeric algebra checks, but it verifies flatness and sign-blindness rather than the claimed selection rule r=1. The packet's own Berry authority is retained only as a bounded finite-matrix support result and explicitly does not derive a rule assigning zero Berry to r=1 or nonzero Berry to r=1/2. The staggered-Dirac gate dependency is unaudited, and an independent sign check finds det([[0,M],[M\u2020,0]]) = -|det M|^2 for three generations, not +|det M|^2 as written, although the second-order modulus point survives."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.500240+00:00",
+      "audit_date": "2026-06-14T00:47:09.143705+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "Finite matrix support only: the C3 circulant index map, native circulant eigenvector rigidity and zero Berry curvature away from band-crossing loci, a Pauli two-band anticommuting Berry comparator, the native circulant commutation obstruction, and the two algebraic Q(r) identities; no physical r-weighting or Q-branch selection is audited as derived.",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "Pure algebraic comparison of signed-eigenvalue and singular-value Koide readouts for the C3-circulant Hermitian H=aI+bC+b\u0304C\u00b2, especially at r=|b|\u00b2/a\u00b2=1/2.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "bounded_theorem",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "retained_bounded",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.524,
+        "runner_hash": "cfe4a3fe4ada556e85913f79b9fe2448c5cca1f27afc865c101ade2e08213d7b",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-4d9818d50a-koide_dirac_mass_forces_r_on",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant sign, D^2 block identity, fixed Fourier eigenbasis, and signed-vs-singular Koide contrast follow from the supplied matrix algebra and retained one-hop authorities. The chain closes only for the narrowed algebraic wall, not for any physical branch-selection theorem.",
+      "claim_scope": "Bounded algebraic route-pruning on the current A_min C3-circulant matrix surface: the tested Dirac/L-R coupling class is sign-blind and Berry-flat and therefore does not derive the signed-root r=1/2 branch; physical readout-to-branch selection remains open.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-14T00:47:09.143705+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "In the current A_min C3-circulant matrix surface, D^2 = diag(MM\u2020, M\u2020M) makes the Dirac readout singular-value/sign-blind, while M(b)\u2297\u03c3_+ has b-independent Fourier generation modes and hence a flat generation bundle.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should preserve the bounded scope and not upgrade this to physical r=1 selection or r=1/2 exclusion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Independent algebra checks confirm det([[0,M],[M\u2020,0]]) = -|det M|^2 for three generations, D^2 is the singular-value block square, and M as a polynomial in the cyclic shift has b-independent Fourier generation eigenvectors. The no-go discipline gate passes only because the note is explicitly bounded: Weyl readout, signed Hermitian readout, off-generation/corner realizations, and READOUT_TO_BRANCH_SELECTION_BRIDGE remain open. No external comparator, tuned value, or physical mass bridge is used as a proof input."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.441014+00:00",
+      "audit_date": "2026-07-02T04:32:16.464264+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "Finite matrix support only: native C3 index projection, Fourier-rigid zero Berry curvature for the circulant mass, nonzero Berry in a separate anticommuting two-band comparator, the native circulant commutation obstruction, and standalone Q(r=1/2)=2/3 and Q(r=1)=1 identities; no physical r-weighting or Q-branch selection is audited.",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "Pure algebraic comparison of signed-eigenvalue and singular-value Koide readouts for the C3-circulant Hermitian H=aI+bC+b\u0304C\u00b2, especially at r=|b|\u00b2/a\u00b2=1/2.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "bounded_theorem",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "retained_bounded",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.459,
+        "runner_hash": "cfe4a3fe4ada556e85913f79b9fe2448c5cca1f27afc865c101ade2e08213d7b",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T043216Z-ae0fc10a-koide_dirac_mass_forces_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant sign, D^2 block identity, fixed Fourier eigenvectors, and signed/singular Koide readout contrast close by finite matrix algebra plus retained-grade one-hop authorities. The missing READOUT_TO_BRANCH_SELECTION_BRIDGE is explicitly excluded from the claim rather than used as a premise.",
+      "claim_scope": "Bounded algebraic route-pruning on the current A_min matrix surface: Dirac block sign-erasure, Berry-flat Fourier-rigid L-R coupling, and the signed-vs-singular readout residual only; no physical branch-selection theorem audited.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T04:32:16.464264+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "In the current A_min C3-circulant matrix surface, the factor-crossing L-R coupling M(b)\u2297\u03c3+ is Berry-flat and the singular-value Dirac readout is sign-blind, so this coupling class cannot distinguish the signed sqrt(m) orientation by generation-bundle curvature.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that later ledger dependency status still treats the three cited theorem notes as retained-grade and minimal_axioms as an accepted premise node.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing result is a genuine algebraic closure over the stated C3-circulant Dirac surface: det D = -|det M|^2, D^2 gives singular values, and circulants have b-independent Fourier generation eigenvectors. Independent checking confirms the signs and factors; the runner's finite Q samples are not the sole basis because the cited retained theorem supplies the symbolic signed/singular readout contrast. The no-go discipline passes for the narrowed claim because broader physical branch selection and r=1/2 exclusion are explicitly left open."
+    },
+    {
+      "archived_at": "2026-07-10T16:59:10.094457+00:00",
+      "audit_date": "2026-07-10T02:03:00.061164+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "Finite-matrix algebra for the explicitly defined C3 circulant family, the explicit two-band anticommuting comparator, the native commutation obstruction, and the identities Q(1/2)=2/3 and Q(1)=1; no physical branch-selection rule was audited.",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "Pure algebraic comparison of signed-eigenvalue and singular-value Koide readouts for the C3-circulant Hermitian H=aI+bC+b\u0304C\u00b2, especially at r=|b|\u00b2/a\u00b2=1/2.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "bounded_theorem",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31": "retained_bounded",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.959,
+        "runner_hash": "cfe4a3fe4ada556e85913f79b9fe2448c5cca1f27afc865c101ade2e08213d7b",
+        "transitive_descendants": 10
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-koide_dirac_mass_forces_-069",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant identity, block-square identity, and fixed Fourier eigenvectors follow directly from the displayed matrices, while the retained signed-versus-singular authority supplies the general readout distinction. These facts support the narrowly stated route-pruning conclusion without requiring the open physical branch-selection bridge.",
+      "claim_scope": "The audit covers only the algebraic sign erasure and generation-bundle Berry flatness of the specified Dirac/L-R coupling on the current A_min matrix surface; it does not establish physical readout or r-branch selection.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T02:03:00.061164+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_berry_monopole_bridge_reduction_note_2026-05-31:retained_bounded->unaudited",
+      "load_bearing_step": "On the current A_min C3-circulant surface, D\u00b2 yields a sign-blind singular-value readout while M(b)\u2297\u03c3\u208a has b-independent Fourier generation eigenvectors and therefore zero generation-bundle Berry curvature.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing result is a genuine algebraic closure over retained-grade inputs, not a definition, renaming, tuned match, or external comparison. The runner actually performs symbolic determinant, block-square, and Fourier-eigenvector computations; its sampled readout checks are supplemented by the retained authority's general algebraic theorem. The note explicitly leaves READOUT_TO_BRANCH_SELECTION_BRIDGE open and does not overextend its bounded conclusion into physical selection of r=1 or exclusion of r=1/2."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py",
+  "title": "Dirac Singular-Value Readout Is Sign-Blind and the Chiral L-R Coupling Is Berry-Flat on the Current A_min Surface (Bounded Algebraic No-Go Support; Readout Bridge Open)",
+  "transitive_descendants": 19,
+  "verdict_rationale": null
+}

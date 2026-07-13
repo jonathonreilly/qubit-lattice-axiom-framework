@@ -1,0 +1,604 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+    "fermion_parity_z2_grading_theorem_note_2026-05-02"
+  ],
+  "direct_in_degree": 17,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 18.691,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6e44afb0b2438744551fbf9ca30e13d8abad4d3798ba6b1d630ee75ddcc2788e",
+  "note_path": "docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.518242+00:00",
+      "audit_date": "2026-06-21T06:15:37.149055+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.573,
+        "runner_hash": "03d4352fb6f85d592185a4a007bbad03a714b6319541738ab9dff9eb6b34e090",
+        "transitive_descendants": 1076
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited axiom premise supplies the Z^3 nearest-neighbor lattice and one-qubit C^2 carrier, while retained Cl(3), tensor-product translation, and parity authorities supply the algebraic surfaces used. The runner and proof compute the flux classification, CAR(2) no-spectator obstruction, Pauli absorbing-frame identities, and K0 countermodel without importing an external selector.",
+      "claim_scope": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over the one-qubit C^2 site carrier, translation and proper-cubic covariance up to site-local U(1) frame collapse the kinetic family to the two flux classes {+1,-1}; the site-local absorbing frame exists and is unique up to gauge times global frame on the flux(-1) branch; the final flux(-1) selector is not forced by the stated constraints.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T06:15:37.149055+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T06:13:01.359587+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the scoped theorem that the declared NN Q-conserving bilinear surface over per-site C^2 collapses under translation+cubic covariance up to frame to the two flux classes K0/K1; that P-SD is derived on the K1 branch by a unique site-local absorbing frame up to gauge x global frame; and that the final K1 selector is not forced by the specified constraints because K0 is a countermodel.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T06:15:37.149055+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over the one-qubit C^2 site carrier, translation and proper-cubic covariance up to site-local U(1) frame collapse the kinetic family to the two flux classes {+1,-1}; the site-local absorbing frame exists and is unique up to gauge times global frame on the flux(-1) branch; the final flux(-1) selector is not forced by the stated constraints.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Covariance forces a uniform real plaquette flux and, on simply connected regions, flux classifies site-local U(1) frame orbits, leaving exactly K0 and K1; Pauli anticommutation then forces every site-local absorbing frame into K1 while K0 remains a valid countermodel.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the standard cohomology lift from the finite box certificates to arbitrary simply connected regions, since that is the main mathematical generalization beyond the executable finite witnesses.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 6,
+        "C": 5,
+        "D": 7,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The load-bearing step is a framework-internal computation over the lattice, U(1) edge phases, Pauli/Cl(3) matrices, and finite Fock operators, not a definition substitution or tuned numerical comparison. The runner source constructs the group action, gauge/flux invariants, cohomology certificates, CAR(2) algebra, absorbing frame, countermodel, and falsification legs rather than merely printing expected PASS lines. The negative component is narrowly stated: K0 proves only that the specified constraint set does not force the flux(-1) selector, while future selector principles remain explicitly outside the claim."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.894137+00:00",
+      "audit_date": "2026-06-30T15:39:37.065161+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic blocks of the Z^3 site lattice with one C^2 factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^\u2020, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.573,
+        "runner_hash": "03d4352fb6f85d592185a4a007bbad03a714b6319541738ab9dff9eb6b34e090",
+        "transitive_descendants": 1076
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T153937Z-9601493a-staggered_dirac_kinetic_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supplies the accepted minimal axiom premise plus retained Cl(3), tensor-product operator, and parity authorities; the remaining covariance, nearest-neighbor, Q-conserving, simply connected, and site-local restrictions are explicit scope walls. The runner source genuinely constructs the lattice cochains, Clifford/CAR matrices, gauge orbits, and countermodel checks rather than merely printing the claimed outcome.",
+      "claim_scope": "On the declared Q-conserving nearest-neighbor bilinear surface over the per-site M2(C)/C^2 qubit carrier, with translation/proper-cubic covariance up to site-local U(1) frame and site-local absorption scope, the kinetic classes collapse to flux \u00b11; P-SD is derived on the flux(-1) branch; the flux(-1) selector is not forced because K0 satisfies the imposed constraints.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T15:39:37.065161+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T15:35:58.693718+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T153558Z-4982f8b1-staggered_dirac_kinetic_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the imposed Q-conserving nearest-neighbor bilinear surface over per-site C^2, with translation and proper-cubic covariance up to site-local U(1) frame on simply connected regions, the kinetic family has exactly two flux classes; the site-local absorbing frame exists and is unique up to gauge x global frame on flux(-1); K0 leaves the flux(-1) selector as an open bit.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T15:39:37.065161+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T153937Z-9601493a-staggered_dirac_kinetic_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the declared Q-conserving nearest-neighbor bilinear surface over the per-site M2(C)/C^2 qubit carrier, with translation/proper-cubic covariance up to site-local U(1) frame and site-local absorption scope, the kinetic classes collapse to flux \u00b11; P-SD is derived on the flux(-1) branch; the flux(-1) selector is not forced because K0 satisfies the imposed constraints.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Imposing translation and proper-cubic covariance up to site-local U(1) frame forces the normalized NN phase system to have uniform real plaquette flux \u03c6\u2208{+1,-1}, with flux classifying frame orbits on simply connected regions; the Pauli absorbing frame lands exactly in \u03c6=-1 while \u03c6=+1 remains a countermodel.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the active/passive U(1) gauge convention equivalence and the site-local-only interpretation of the no-spectator step.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 6,
+        "C": 5,
+        "D": 7,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The positive bounded core closes: the two-flux classification follows from explicit lattice/gauge cohomology plus the proper-rotation reality constraint, and the absorbing-frame result follows from Pauli/Cl(3) algebra and the CAR(2) dimension obstruction within the site-local scope. The scoped negative residual also passes the no-go discipline gate because it only says the specified constraint set does not select \u03c6=-1, and K0 is an explicit satisfying countermodel; future selectors are left open. The accepted-premise carve-out covers minimal_axioms, and the other load-bearing cited authorities are retained-grade in the packet."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.505359+00:00",
+      "audit_date": "2026-07-01T19:48:39.499628+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "On a finite periodic tensor-product space H_\u039b = \u2297_{x\u2208\u039b} C\u00b2_x with per-site Pauli ladder operators and T_a defined as the cyclic tensor-factor permutation, T_a is unitary, obeys the translation group law, translates a_x and a_x^\u2020 by conjugation, and commutes with Q_total."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.573,
+        "runner_hash": "03d4352fb6f85d592185a4a007bbad03a714b6319541738ab9dff9eb6b34e090",
+        "transitive_descendants": 1076
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T194839Z-9b5d0ad6-staggered_dirac_kinetic_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal-axiom premise supplies the Z^3 nearest-neighbor lattice, proper rotations, and one-site M_2(C), while the retained Cl(3), tensor-operator, and parity authorities supply the needed algebraic carrier and operator facts. The provided runner source genuinely computes the rotation/flux/cohomology, CAR(2), absorption, uniqueness, spectral, and countermodel checks; closure is bounded to the declared kinetic surface and leaves the B-BIT selector open.",
+      "claim_scope": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over one-site M_2(C), with translation/proper-cubic covariance up to local U(1) frame and simply connected topology imposed, the kinetic systems collapse to flux +/-1 classes; the P-SD absorbing frame exists and is unique on flux(-1); the flux(-1) selector is not forced because K0 also satisfies the constraints.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T19:48:39.499628+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T19:45:00.845667+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T194500Z-87de042e-staggered_dirac_kinetic_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the declared Q-conserving nearest-neighbor bilinear surface over the accepted per-site C^2 lattice carrier, translation and proper-cubic covariance up to site-local U(1) frame give exactly two simply-connected frame classes K0(phi=+1) and K1(phi=-1); the P-SD absorbing frame exists and is unique up to gauge times global frame on K1; the K1 selector remains an explicit one-bit residual.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T19:48:39.499628+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T194839Z-9b5d0ad6-staggered_dirac_kinetic_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over one-site M_2(C), with translation/proper-cubic covariance up to local U(1) frame and simply connected topology imposed, the kinetic systems collapse to flux +/-1 classes; the P-SD absorbing frame exists and is unique on flux(-1); the flux(-1) selector is not forced because K0 also satisfies the constraints.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Translation and proper-cubic covariance up to site-local U(1) frame force a uniform real plaquette flux phi in {+1,-1}, flux classifies the simply connected phase systems up to frame, and gamma anticommutation makes every site-local absorbing frame land uniquely in the phi=-1 class.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that L-EQ/covariance is read as an imposed bounded-surface constraint, not as an unbounded derivation of a kinetic selector from the axioms.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 6,
+        "C": 5,
+        "D": 7,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The load-bearing result is a first-principles finite/algebraic computation from the accepted lattice/qubit baseline plus retained one-hop algebraic inputs, not a definition, tuned numerical match, or external comparator. The runner does not merely print constants: it constructs the cubic group, phase systems, cohomology matrices, Pauli/CAR algebras, gauges, Fock operators, and spectra and checks the asserted invariants. The negative component passes the scoped no-go discipline because K0 is an explicit countermodel to selection by the specified constraints, while future selectors are explicitly left open."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.503844+00:00",
+      "audit_date": "2026-07-02T07:35:38.021756+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic tensor-product qubit blocks over Z^3, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates the defined per-site ladder operators and their adjoints, and commutes with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.573,
+        "runner_hash": "03d4352fb6f85d592185a4a007bbad03a714b6319541738ab9dff9eb6b34e090",
+        "transitive_descendants": 1076
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T073538Z-e386ca27-staggered_dirac_kinetic_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded theorem closes from the accepted minimal-axiom premise plus retained Cl(3), tensor-product translation/Fock, and parity authorities, with covariance/NN/Q-conservation/site-locality treated as explicit scope constraints. The selector residual is not a missing proof step in the audited claim because the claim explicitly includes the K0 countermodel and names \u03c6=-1 as open residual content.",
+      "claim_scope": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over per-site C^2, imposing translation and proper-cubic covariance up to local U(1) frame gives exactly two gauge/scale classes K0 and K1; the K1 branch has the stated site-local absorbing frame uniqueness, and K0 shows the flux(-1) selector is not forced.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T07:35:38.021756+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T07:32:53.089837+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T073253Z-24e3d635-staggered_dirac_kinetic_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the declared Q-conserving nearest-neighbor bilinear surface over the per-site M2(C)/C2 carrier, with translation and proper cubic rotation covariance up to site-local U(1) frame on simply connected regions, the kinetic phase systems collapse to the two flux classes +/-1; the site-local absorbing frame exists uniquely up to gauge x global frame on flux -1; the flux -1 selector is not forced because K0 passes the same constraints.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T07:35:38.021756+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T073538Z-e386ca27-staggered_dirac_kinetic_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over per-site C^2, imposing translation and proper-cubic covariance up to local U(1) frame gives exactly two gauge/scale classes K0 and K1; the K1 branch has the stated site-local absorbing frame uniqueness, and K0 shows the flux(-1) selector is not forced.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "Translation and proper-cubic covariance up to site-local U(1) frame force normalized NN hopping phases to have a uniform real plaquette flux \u03c6\u2208{+1,-1}, flux classifies systems up to frame on simply connected regions, and the Pauli absorbing frame lands exactly in the \u03c6=-1 class while K0 is a countermodel to forcing that selector.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the finite-box cohomology-to-simply-connected lift and the exact site-local scope of the CAR(2) no-spectator step.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 6,
+        "C": 5,
+        "D": 7,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The runner source genuinely constructs the cubic rotation group, phase systems, gauge/flux invariants, finite cohomology certificates, Pauli/CAR algebra, Fock bilinears, and countermodels rather than only printing expected constants. The key signs and normalizations are consistent: the C2 stabilizer conjugates axis-containing plaquette flux, Pauli anticommutation gives absorbed holonomy -1, and K0 has invariant flux +1. The only non-retained authority is the registered minimal-axiom premise, which is covered by the accepted-premise carve-out; the remaining cited authorities are retained-grade. The negative part is narrowly scoped to 'not forced by this specified constraint set' and is certified by an explicit satisfying K0 countermodel, leaving future selectors open."
+    },
+    {
+      "archived_at": "2026-07-04T10:59:07.867040+00:00",
+      "audit_date": "2026-07-03T21:00:47.877664+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "7b581f9f475c7bf16a02e664ef48a271d20d0404d8b2b1f7e58bc41ab3d50a24"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "On a finite periodic tensor-product block H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x/a_x^dagger and tensor-permutation translations T_a, T_a is unitary, obeys the translation group law, covaries a_x/a_x^dagger by site relabeling, and commutes with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 20.222,
+        "runner_hash": "03d4352fb6f85d592185a4a007bbad03a714b6319541738ab9dff9eb6b34e090",
+        "transitive_descendants": 1193
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-staggered-kinetic-auditor-20260703b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the declared bounded surface, the dependencies supply Z^3 adjacency/rotations, one-site M2(C)/C^2 qubit carrier, Pauli/Cl(3) module facts, translation/Q_total identities, and parity grading. The note treats NN, Q-conserving, site-local, and simply connected restrictions as scope boundaries, not derived exclusions, and leaves the K1-vs-K0 selector open.",
+      "claim_scope": "On the adjacency-licensed Q-conserving NN bilinear surface over the current Lattice/Qubit one-site C^2/M2(C) baseline, with translation and proper cubic covariance up to site-local U(1) frame on simply connected regions, kinetic phases reduce to K0/K1; on K1 the absorbing frame exists, lands in K1, and is unique up to site-local gauge x global frame; K0 shows the K1 selector bit is not forced.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-03T21:00:47.877664+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-03T19:25:18.145019+00:00",
+          "auditor": "codex-fresh-staggered-kinetic-auditor-20260703a",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over the Lattice/Qubit per-site C^2, with translation and proper cubic covariance up to site-local U(1) frame on simply connected regions, kinetic phases reduce to K0/K1 flux classes; on K1 the site-local absorbing frame exists, lands in K1, and is unique up to gauge x global frame; K0 witnesses that K1-vs-K0 is not forced.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-03T21:00:47.877517+00:00",
+          "auditor": "codex-fresh-staggered-kinetic-auditor-20260703b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the adjacency-licensed Q-conserving NN bilinear surface over the current Lattice/Qubit one-site C^2/M2(C) baseline, with translation and proper cubic covariance up to site-local U(1) frame on simply connected regions, kinetic phases reduce to K0/K1; on K1 the absorbing frame exists, lands in K1, and is unique up to site-local gauge x global frame; K0 shows the K1 selector bit is not forced.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:7b581f9f->0f59e220",
+      "load_bearing_step": "On D-kin with translation/proper-cubic covariance up to site-local frame, uniform plaquette flux is forced real so the simply connected frame classes are exactly K0/K1; K1 admits the Pauli absorbing frame, while K0 satisfies the imposed constraints as the countermodel to forcing the K1 selector.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Hygiene to re-check only: update legacy MINIMAL_AXIOMS_2026-06-05 and 'minimal Quantum axiom' wording to current minimal_axioms / Lattice-Qubit-Admissibility-Record naming; this audit treats it as non-load-bearing vocabulary/citation drift because the consumed lattice and one-site M2(C)/Cl(3,0) content is preserved.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 6,
+        "C": 5,
+        "D": 7,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The claim is a bounded compression/countermodel result, not an imported kinetic selector: it proves the K0/K1 collapse inside the licensed surface and explicitly preserves B-BIT as open. The 2026-06-29 minimal-axiom wording renames the older Quantum axiom to Qubit but preserves the consumed Lattice Z^3 adjacency/rotations and one-site M2(C)/Cl(3,0) content, while also confirming that no Hamiltonian or kinetic branch is axiomatically selected. The runner constructs the rotations, cochain ranks, sign-system enumeration, Pauli/CAR algebra, gauge tests, K0/K1 witnesses, and falsification legs rather than printing a hard-coded verdict; current run was PASS=28 FAIL=0. Residual risk is limited to the standard cochain-exactness generalization from finite certificates to simply connected regions, with finite-torus wrap holonomy excluded by scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.084594+00:00",
+      "audit_date": "2026-07-07T23:58:42.750117+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "Finite periodic tensor-product space H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x and tensor-permutation translations T_a: unitarity, group law, T_a a_x T_a^dagger = a_{x+a} and adjoint covariance, and [T_a,Q_total]=0."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 21.601,
+        "runner_hash": "64a82743ceb0df1ec5119d2ceabcdf38237c86b2c9ef7fc276c8cfebd1c22736",
+        "transitive_descendants": 1097
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-019f3f00-a595-7b51-b963-df967f9233e8",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The allowed inputs supply the lattice/qubit carrier, retained Cl(3) module classification, tensor-product ladder/translation surface, and parity grading. Within the declared surface and covariance constraints, the proof and runner compute the two flux classes, K1-branch absorbing frame, and K0 countermodel without promoting the residual K1 selector to a theorem.",
+      "claim_scope": "On the adjacency-licensed Q-conserving NN bilinear surface over per-site C^2, translation+cubic covariance up to site-local U(1) frame collapses the kinetic family to two simply connected flux classes K0=+1 and K1=-1; the site-local absorbing frame exists and is unique up to gauge x global frame on K1; the K1 selector remains unforced.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T23:58:42.750117+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-07T23:57:45.201513+00:00",
+          "auditor": "codex-cli-019f3f00-a595-76b0-91f1-bb83729fa63c",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over per-site C^2 with translations and proper cubic rotations up to site-local U(1) frame, there are exactly two simply connected frame classes K0/K1; P-SD absorption exists and is unique on K1; K1 vs K0 remains an unforced selector bit.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-07T23:58:42.749966+00:00",
+          "auditor": "codex-cli-019f3f00-a595-7b51-b963-df967f9233e8",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the adjacency-licensed Q-conserving NN bilinear surface over per-site C^2, translation+cubic covariance up to site-local U(1) frame collapses the kinetic family to two simply connected flux classes K0=+1 and K1=-1; the site-local absorbing frame exists and is unique up to gauge x global frame on K1; the K1 selector remains unforced.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On D-kin with hermiticity, translation covariance, cubic O-covariance up to frame, and nonzero hopping, there are exactly two simply connected frame classes K0/K1; K0 is a countermodel to forcing K1 and P-SD is derived only on K1.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should confirm the same boundary: P-SD is conditional on K1, while non-site-local/taste-basis realizations and the final K1-vs-K0 selector remain outside the clean scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 7,
+        "C": 5,
+        "D": 7,
+        "total_pass": 28
+      },
+      "verdict_rationale": "Clean only for the bounded theorem: two-flux collapse on the licensed surface plus K1-branch absorbing-frame existence/uniqueness, with K0 retained as the sharp countermodel. The note explicitly leaves B-BIT open and reduces P-KIN to the flux(-1) selector rather than deriving that selector. The no-spectator step is limited to the minimal C^2 carrier plus retained Cl(3) classification and the runner's CAR(2) dimension computation; the runner computes rotations, cohomology, enumeration, Pauli/CAR algebra, spectra, and falsification legs rather than hard-coding K1."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py",
+  "title": "Staggered-Dirac Kinetic-Class Forcing \u2014 Two-Flux-Class Collapse and Absorbing-Frame Theorem",
+  "transitive_descendants": 1168,
+  "verdict_rationale": null
+}

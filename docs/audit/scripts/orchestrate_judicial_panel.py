@@ -1124,6 +1124,12 @@ def main() -> int:
             )
             return 2
 
+    if not args.dry_run and not (batch.DATA / "citation_graph.json").exists():
+        print("derived audit caches missing (fresh clone); running the pipeline once")
+        bootstrap = batch.sh(["bash", str(SCRIPTS / "run_pipeline.sh")], timeout=1800)
+        if bootstrap.returncode != 0:
+            print(f"pipeline bootstrap failed: {(bootstrap.stderr or bootstrap.stdout)[-300:]}")
+            return 2
     rows = batch.load_rows()
     if args.claims:
         scope = [cid.strip() for cid in args.claims.split(",") if cid.strip()]

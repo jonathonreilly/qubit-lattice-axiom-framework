@@ -1,0 +1,303 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "yt_source_action_support_packet_note_2026-05-22",
+    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.67,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a55b5485e7c63bf1d54c51603cffc8407a2fe61d890ec4bda7ad73df4d1968cf",
+  "note_path": "docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.994713+00:00",
+      "audit_date": "2026-06-19T21:35:50.571419+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling relation, rho_tree identity, and scalar Hessian companion for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 5.954,
+        "runner_hash": "ee1f93ecda02965e2d865d90ab2ecf01778219b1767dabb01ecab51aed2bf144",
+        "transitive_descendants": 30
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The projector identities follow from P_+ = (I + sigma_z)/2 and P_- = (I - sigma_z)/2, and the EW neutrality follows from Q = diag(1,0) acting on H_0 = (0,v/sqrt(2))^T. No same-surface qubit/Higgs physical carrier bridge is used by the bounded claim.",
+      "claim_scope": "Bounded two-dimensional algebra showing the signed-record source is affinely equivalent to lower-projector occupation and that the EW lower Higgs doublet ray is neutral, without identifying the qubit and EW carrier surfaces.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T21:35:50.571419+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26:retained->unaudited",
+      "load_bearing_step": "epsilon = sigma_z = P_+ - P_- = I - 2P_- and, in the one-Higgs doublet bookkeeping, P_- H_0 = H_0 with Q H_0 = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that downstream citations preserve the no same-surface carrier boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The load-bearing content is exact finite 2x2 algebra over the cited signed-record and one-Higgs bookkeeping inputs. The runner's mathematical checks instantiate the projectors, charge operator, and Higgs ray symbolically rather than merely printing the expected result. The source note preserves the boundary that this is bounded support only and does not promote the open same-surface carrier theorem."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.526024+00:00",
+      "audit_date": "2026-06-21T12:19:43.417565+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 6.0,
+        "runner_hash": "ee1f93ecda02965e2d865d90ab2ecf01778219b1767dabb01ecab51aed2bf144",
+        "transitive_descendants": 31
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed projector, exponential-weight, and neutral-ray identities follow by direct 2x2 matrix algebra from the supplied signed-record and one-Higgs EW inputs. The note explicitly stops before the open same-surface qubit/Higgs physical carrier identification, so that bridge is not part of the audited claim.",
+      "claim_scope": "Exact bounded algebra showing the signed two-point source is affinely equivalent to lower-projector occupation and that the lower one-Higgs doublet ray is neutral, without identifying the qubit and EW carrier surfaces.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T12:19:43.417565+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Inside the signed-record qubit algebra, epsilon = sigma_z = P_+ - P_- = I - 2P_-, while in the one-Higgs EW bookkeeping P_- H_0 = H_0 and Q H_0 = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that future citations preserve the same bounded scope and do not use this algebra-core note as a same-surface qubit/Higgs carrier theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The load-bearing mathematics is class A algebra over declared two-dimensional inputs: sigma_z projectors give epsilon = I - 2P_- and exp(h epsilon) = exp(h) exp(-2hP_-) on eigenweights, while the EW matrices give P_-H_0 = H_0 and QH_0 = 0. The runner computes these identities with SymPy and separately checks boundary/firewall text; no numerical comparator, tuned scale, or physical same-surface bridge is used. The residual open work is correctly excluded from the claim scope rather than imported as a premise."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.514748+00:00",
+      "audit_date": "2026-07-02T03:56:57.679431+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 6.0,
+        "runner_hash": "ee1f93ecda02965e2d865d90ab2ecf01778219b1767dabb01ecab51aed2bf144",
+        "transitive_descendants": 31
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T035657Z-86edf7a4-yt_signed_record_lower_p",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The projector identities and normalized source reparameterization follow directly from the one-site M_2(C) algebra, and the neutral-ray identities follow from the supplied EW T_3, Y_H, Q, and H_0 definitions. The same-surface qubit/Higgs physical carrier bridge is explicitly outside the audited scope.",
+      "claim_scope": "Bounded algebraic support that the signed-record source coordinate is affinely equivalent to lower-projector occupation and that the declared EW lower Higgs doublet ray is neutral, without identifying the two carrier surfaces.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T03:56:57.679431+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "With P_+ = (I + sigma_z)/2 and P_- = (I - sigma_z)/2, epsilon = sigma_z = P_+ - P_- = I - 2P_-, and in the declared one-Higgs EW bookkeeping P_- H_0 = H_0 and Q H_0 = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The load-bearing work is finite algebra over cited retained-grade bounded inputs and the accepted minimal-axiom premise. The runner source actually constructs the projectors, source weights, EW charge operator, neutral nullspace, and tangent identities rather than merely printing constants. No empirical comparator, tuned input scale, or physical same-surface identification is used for the scoped conclusion."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.916301+00:00",
+      "audit_date": "2026-07-09T05:16:24.447203+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 4.67,
+        "runner_hash": "ee1f93ecda02965e2d865d90ab2ecf01778219b1767dabb01ecab51aed2bf144",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-fresh-yt-signed-lower-20260709",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The mathematical identities are direct algebra over the qubit and EW bookkeeping inputs, but the audit chain is not clean because the primary runner's current output is failing and imports an unprovided parent-note boundary.",
+      "claim_scope": "Bounded algebraic support only: in the signed-record qubit algebra epsilon = sigma_z = P_+ - P_- = I - 2P_-, and in the declared one-Higgs EW bookkeeping the lower doublet ray satisfies P_- H_0 = H_0 and Q H_0 = 0, with no same-surface physical carrier identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T05:16:24.447203+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26:retained_bounded->unaudited",
+      "load_bearing_step": "epsilon = sigma_z = P_+ - P_- = I - 2P_-; P_- H_0 = H_0, P_+ H_0 = 0, Q H_0 = 0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: repair/slice scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py to avoid reading the non-one-hop parent note, update the stale minimal-axiom filename/reference if needed, and rerun to a current FAIL=0 artifact before clean re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 17,
+        "C": 0,
+        "D": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "Issue: the bounded algebra itself closes over the provided one-hop inputs, but the current primary runner is stale/out-of-packet: it reads docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md, which is not an allowed one-hop dependency here, and the current run returns TOTAL: PASS=34 FAIL=1. Why this blocks: the source note advertises a FAIL=0 verifier, but the verifier now fails a parent-boundary check and depends on an unprovided parent note. Repair target: slice or repair the runner so it verifies only this note plus the declared one-hop dependencies, or explicitly add and audit the parent dependency if that parent boundary is load-bearing. Claim boundary until fixed: the finite algebraic identities may be cited as local bounded support, but not as a clean audited row with the current runner artifact."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py",
+  "title": "Y_T Signed-Record Lower-Projector Neutral-Ray Algebra Core",
+  "transitive_descendants": 17,
+  "verdict_rationale": null
+}

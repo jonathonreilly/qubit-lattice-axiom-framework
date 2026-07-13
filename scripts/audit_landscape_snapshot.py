@@ -36,6 +36,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -43,6 +44,8 @@ from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 AUDIT_DATA = REPO_ROOT / "docs" / "audit" / "data"
+sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
+import ledger_io  # noqa: E402
 
 
 def load_json(name: str) -> Any:
@@ -399,6 +402,13 @@ def section_6_recommendation(
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
+    if not (AUDIT_DATA / "audit_queue.json").exists():
+        subprocess.run(
+            ["bash", "docs/audit/scripts/run_pipeline.sh"],
+            cwd=REPO_ROOT,
+            check=True,
+        )
     banner("AUDIT LANDSCAPE SNAPSHOT")
     print()
     print("Read-only diagnostic. Date snapshot taken from audit data files.")

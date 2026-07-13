@@ -1,0 +1,361 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hierarchy_effective_potential_endpoint_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem \u2014 class-A algebraic",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16"
+  ],
+  "direct_in_degree": 9,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.986,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7202d5a14638d601da928121b085827bf0b5fc4e5646bcf49910e5d5d9a44b90",
+  "note_path": "docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.105944+00:00",
+      "archived_for_note_hash": "9e8a3e561c539eca7960caf4b78880e9a9cfde1d242ae8ae7cee5fd60945beb4",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-01T18:28:34.981503+00:00",
+      "archived_for_note_hash": "f7ef5090c6d62116c1ce5d8d63b2dd0112effe11314d3ff5aba5bbcfc02980b2",
+      "audit_date": "2026-05-01T03:22:17.317227+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop:2026-05-01-hierarchy_effective_potential_endpoint_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The registered runner exits nonzero before verifying the observed-prefactor endpoint-band check because CANONICAL_ALPHA_BARE is undefined.",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note claims the exact dimension-4 endpoint factor C_inf^(4D)=(3/4)^(1/8) places the observed hierarchy prefactor inside the exact temporal endpoint band.",
+      "load_bearing_step_class": "D",
+      "open_dependency_paths": [
+        "scripts/frontier_hierarchy_effective_potential_endpoint.py"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: scripts/frontier_hierarchy_effective_potential_endpoint.py currently crashes in PART 4 with NameError: CANONICAL_ALPHA_BARE is not defined, after the small-m and endpoint coefficient checks pass. Why this blocks: the note's comparison between the exact dimension-4 temporal endpoint factor and the observed hierarchy prefactor is load-bearing, but the registered runner does not execute that check on current main. Repair target: import or define the canonical alpha/plaquette/u0/alpha_LM constants used by the endpoint-band comparison, rerun the script to PASS=all, and classify the PASS lines; if the repaired constants change C_obs, update the claim accordingly. Claim boundary until fixed: exact small-m/APBC endpoint algebra appears supported by the earlier runner sections, but the hierarchy-prefactor endpoint-band claim is not audited."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.812374+00:00",
+      "audit_date": "2026-05-01T18:37:07.817152+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 7.209,
+        "transitive_descendants": 36
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered runner derives the small-m coefficient from the stated free-energy density, verifies the exact APBC endpoint formulas, checks the condensate endpoint ratio, and confirms that the observed prefactor lies within the exact endpoint band. The source does not claim the full hierarchy theorem or physical selection of the endpoint, so the clean result is bounded to the exact endpoint-normalization algebra and comparator-band statement.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The APBC endpoint coefficients are A_2 = 1/(8 u_0^2), A_inf = 1/(4 sqrt(3) u_0^2), so the full dimension-4 temporal endpoint factor is C_inf^(4D) = (A_2/A_inf)^(1/4) = (3/4)^(1/8).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 2,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The bounded endpoint claim closes: the current runner verifies the small-m effective-potential coefficient, A_2, A_4, A_inf, the Lt->infinity condensate ratio, and the dimension-4 endpoint factor C_inf=(3/4)^(1/8), with SCORECARD 7/0. The observed prefactor check is correctly presented as lying inside the endpoint band, not as a derivation of the electroweak scale. Residual risk remains exactly where the note says it remains: the physical selection/insertion of this temporal normalization into the det-to-v map is not derived here."
+    },
+    {
+      "archived_at": "2026-05-11T10:57:05.060843+00:00",
+      "archived_for_note_hash": "01cc8cbe0ad93a0e071b2bc94263f305453e549d81c121cdbd8a5c958294b434",
+      "audit_date": "2026-05-05T05:22:37.456433+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.055,
+        "runner_hash": "8d62ba73358a0cba1d39be7dfee1562e078da470e1de6f97b822bdb58fab1228",
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-hierarchy_effective_pote-139",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from the stated free-energy formula to A_2, A_4, A_inf, and C_inf^(4D) closes. The restricted packet does not derive the exact Matsubara free-energy density formula itself from the axiom, so the full claimed endpoint theorem is conditional on that imported starting formula.",
+      "claim_scope": "Audited the algebraic extraction of the small-m effective-potential coefficient and endpoint ratio from the stated Matsubara free-energy density formula.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T05:22:37.456433+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Starting from Delta f(L_t,m) = (1/(2 L_t)) sum_omega ln(1 + m^2/[u_0^2(3+sin^2 omega)]), the small-m coefficient is A(L_t) = (1/(2 L_t u_0^2)) sum_omega 1/(3+sin^2 omega), giving A_2=1/(8u_0^2) and A_inf=1/(4 sqrt(3)u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained derivation of the exact Matsubara free-energy density formula from the stated axiom and a separate bridge theorem for inserting the dimension-4 temporal normalization into the electroweak scale map.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner genuinely checks the small-m expansion and endpoint sums from the encoded Matsubara formula, but it does not derive that formula from first principles; it takes the temporal modes and free-energy density ansatz as inputs. Part 4 also imports canonical plaquette/alpha constants and compares to the observed electroweak prefactor, which is comparator evidence rather than closure of the physical insertion map. The note itself explicitly states that the physical selection/insertion of the dimension-4 normalization remains open."
+    },
+    {
+      "archived_at": "2026-05-16T12:04:05.755453+00:00",
+      "archived_for_note_hash": "32188208178055c0d4ea5f2a6b9a943ad80d2ac484bb4e9cbbee8cf92abbbce0",
+      "audit_date": "2026-05-11T12:08:40.804243+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.676,
+        "runner_hash": "8d62ba73358a0cba1d39be7dfee1562e078da470e1de6f97b822bdb58fab1228",
+        "transitive_descendants": 408
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-20260511-hierarchy-effective-potential-endpoint",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the endpoint algebra and comparator arithmetic from the encoded Matsubara formula, but the restricted packet does not derive that formula from retained primitives or derive the physical dimension-4 insertion into the electroweak scale map.",
+      "claim_scope": "Class-A endpoint algebra from the imported Matsubara free-energy density formula: small-m coefficient, A_2, A_4, A_inf, A_inf/A_2, and the dimension-4 endpoint-band comparator calculation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T12:08:40.804243+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the imported Matsubara free-energy density formula, the runner extracts A_2, A_4, A_inf, A_inf/A_2, and C_inf^(4D) as endpoint algebraic identities and checks the observed prefactor lies in the endpoint band.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained Bridge 1 deriving the Matsubara free-energy density formula and retained Bridge 2 deriving the dimension-4 endpoint insertion into the electroweak scale map.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the load-bearing endpoint algebra starts from an imported Matsubara free-energy density formula, and the endpoint-band comparison also relies on an unproved dimension-4 insertion into the physical electroweak scale map. Why this blocks: the runner's 7/0 checks show the algebra and arithmetic are internally correct, but they do not derive either bridge from retained inputs. Repair target: provide a retained derivation of the Matsubara free-energy density formula and a separate retained dimension-4 insertion theorem for the det -> v map. Claim boundary until fixed: this row may safely report the conditional class-A endpoint algebra and endpoint-band comparator arithmetic, not a closed hierarchy theorem."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.460981+00:00",
+      "audit_date": "2026-05-23T15:17:46.774276+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16": "Audited the algebraic derivation of the per-matrix-entry Matsubara free-energy density formula from the supplied determinant identity at L_s = 2 with mean-field factorization."
+        },
+        "dep_claim_type": {
+          "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16": "decoration"
+        },
+        "dep_effective_status": {
+          "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16": "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
+        },
+        "deps": [
+          "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 12.267,
+        "runner_hash": "8d62ba73358a0cba1d39be7dfee1562e078da470e1de6f97b822bdb58fab1228",
+        "transitive_descendants": 153
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T151724Z-b91d5ef8-hierarchy_effective_pote-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed scope, the chain closes: the cited free-energy formula supplies the only load-bearing input, and the endpoint formulas follow by Taylor expansion and elementary APBC sums. The dimension-4 physical insertion theorem remains open but is explicitly outside the audited algebraic scope.",
+      "claim_scope": "Class-A algebraic extraction of the small-m coefficient, endpoint sums A_2/A_4/A_inf, endpoint ratio, and dimension-4 endpoint factor from the cited Matsubara free-energy density formula; no audit of the physical electroweak insertion map.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T15:17:46.774276+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:8d62ba73->8faf455e",
+      "load_bearing_step": "Conditional on the Matsubara free-energy density formula, expand Delta f(L_t,m) at small m and evaluate the APBC sums to obtain A_2=1/(8u_0^2), A_4=1/(7u_0^2), A_inf=1/(4 sqrt(3)u_0^2), and C_inf^(4D)=(3/4)^(1/8).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that the upstream decoration status for docs/HIERARCHY_MATSUBARA_FREE_ENERGY_DENSITY_NARROW_THEOREM_NOTE_2026-05-16.md remains retained-grade under its parent; Bridge 2 is still outside this row's closed scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic consequence of the cited Matsubara free-energy density formula, whose provided authority is marked as retained-grade decoration under a retained parent. The runner source actually computes the small-m coefficient and endpoint expressions rather than merely printing constants, though the Part 4 checks are external comparator checks against C_obs and are not used to close the in-scope algebra. Because the note explicitly excludes Bridge 2 from the theorem scope and does not claim physical insertion closure, that open bridge does not prevent the bounded algebraic claim from closing."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.284903+00:00",
+      "audit_date": "2026-06-18T04:01:54.453442+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16": "Audited the algebraic derivation of the per-matrix-entry Matsubara free-energy density formula from the supplied determinant identity at L_s = 2 with mean-field factorization."
+        },
+        "dep_claim_type": {
+          "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16": "decoration"
+        },
+        "dep_effective_status": {
+          "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16": "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
+        },
+        "deps": [
+          "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 13.477,
+        "runner_hash": "8faf455e096a8d4c57f8fcf7933f6674449a92c89248d34e41c6110d0e432a09",
+        "transitive_descendants": 251
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_effective_potential_endpoint_note-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The endpoint identities follow by Taylor expanding log(1+x) at small m and evaluating the finite APBC sums at L_t=2 and L_t=4 plus the standard continuum average integral for L_t -> infinity. The open dimension-4 insertion bridge is explicitly outside the scoped algebraic claim.",
+      "claim_scope": "Audited the bounded algebraic extraction of the small-m coefficient, APBC endpoint sums, ratio A_inf/A_2, and formal dimension-4 endpoint factor from the provided Matsubara free-energy density formula; no physical electroweak insertion theorem was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T04:01:54.453442+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-18T03:59:56.395057+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_effective_potential_endpoint_note-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the scoped algebraic extraction of the small-m coefficient and the L_t=2, L_t=4, and L_t->infinity endpoint sums from the retained Matsubara free-energy density formula, excluding the downstream electroweak insertion bridge.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-18T04:01:54.453442+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_effective_potential_endpoint_note-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded algebraic extraction of the small-m coefficient, APBC endpoint sums, ratio A_inf/A_2, and formal dimension-4 endpoint factor from the provided Matsubara free-energy density formula; no physical electroweak insertion theorem was audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Conditional on the Matsubara free-energy density formula, A(L_t) = (1/(2 L_t u_0^2)) sum_omega 1/(3 + sin^2 omega), with endpoints A_2 = 1/(8 u_0^2), A_4 = 1/(7 u_0^2), and A_inf = 1/(4 sqrt(3) u_0^2).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the comparator-only Part 4 language remains excluded from the retained theorem scope and is not later promoted into a physical insertion claim without Bridge 2.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing algebra closes from the retained-grade Matsubara free-energy density authority, whose effective status is decoration_under a retained parent, plus standard finite-sum and integral identities. The runner genuinely computes the coefficient, endpoint formulas, and ratio checks, while its two observed-prefactor checks are external comparator evidence and are not needed for the scoped algebraic theorem. The note correctly leaves the physical det -> v insertion theorem open, so the clean verdict applies only to the bounded endpoint algebra and formal C_inf^(4D) factor, not to hierarchy closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hierarchy_effective_potential_endpoint.py",
+  "title": "Hierarchy Effective-Potential Endpoint Note",
+  "transitive_descendants": 716,
+  "verdict_rationale": null
+}

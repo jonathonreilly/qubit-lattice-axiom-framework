@@ -1,0 +1,314 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_zdet_fermionic_statistics_admission_2026-06-04",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "fermion_parity_z2_grading_theorem_note_2026-05-02",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "165b885f75c4b42481fcf006c9fc7b75f47671abb6c2b490ae931cc8ccefc564",
+  "note_path": "docs/FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:06.545379+00:00",
+      "archived_for_note_hash": "d5f92f350644441f375027f70c7f5f58e932af959a2b10ed372a774fdc1fc1c5",
+      "audit_date": "2026-06-05T23:06:27.252471+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b213a39fa933f566f443def77ae72faea60f1e2f2d3234bce0df75d8804e8fd7",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-230402-9a3ee02a44-flavor_zdet_fermionic_statis",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic checks close the conditional realization once Grassmann/CAR variables are supplied. The missing step is a retained derivation or owner-approved admission selecting FS from Lattice + Quantum + Record rather than ordinary hard-core-boson cross-site carriers.",
+      "claim_scope": "Finite algebra audit of the determinant-amplitude statistics fork: Grassmann/CAR realizes the determinant, ordinary tensor-product hard-core ladders commute cross-site, Jordan-Wigner is a generator choice, and Gamma_chi is an internal-generation residual.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-05T23:06:27.252471+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given Grassmann/CAR matter variables, the finite Berezin Gaussian is the determinant, but this does not derive the choice of Grassmann/CAR variables.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained bridge deriving FS from the baseline premises or register FS as an owner-approved Tier-A admission for bounded downstream use.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner source performs real finite algebra checks rather than merely printing pass lines: determinant by signed permutation sum, tensor-product commutation, Jordan-Wigner anticommutation, nilpotent two-state carrier comparison, determinant/permanent distinction, and Gamma_chi commutation. Independent formula checks agree with the displayed determinant 4.971, permanent 5.947, and Gamma_chi eigenvalues -1,-1,1. These checks support the narrow locator but do not derive FS from the baseline axioms, and the packet explicitly leaves continuum spin-statistics adoption or derivation as a future route."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:53.196956+00:00",
+      "archived_for_note_hash": "90458cf44c8fb5c3035dfa11bbad3d3cbf78510d8b97beb5e2fbeecc38029de0",
+      "audit_date": "2026-06-07T00:23:48.044520+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "20f18314d1f0ef7592b3e1b6ce423f98db8c118ebd9afa288c69828f81f07d1a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-002150-085ae7ae29-flavor_zdet_fermionic_statis",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite determinant/permanent and operator-algebra checks close as scoped algebra, including det=4.971 and permanent=5.947 by independent expansion. The chain does not close to baseline selection of Grassmann/CAR statistics because no axiom, cited authority, or admission supplies that matter premise.",
+      "claim_scope": "Finite algebra checks that supplied Grassmann/CAR variables realize Z=det(D+J), and that the tested local-dimension, ordinary-ladder, Jordan-Wigner, determinant/permanent, and internal-chirality routes do not by themselves derive the statistics choice.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-07T00:23:48.044520+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "If Grassmann/CAR matter variables are supplied, the finite Berezin Gaussian gives the determinant, while the tested finite hard-core/tensor-product routes do not themselves select cross-site CAR/Grassmann statistics.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or formally admit a cross-site CAR/Grassmann matter-selection premise from the accepted baseline before promoting downstream determinant-amplitude dependencies.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner performs real finite matrix and permutation-sum checks rather than merely printing constants, and the displayed numerical values and matrix identities are consistent with an independent hand expansion. However, the source note explicitly leaves the cross-site CAR/Grassmann selection open and treats it as a supplied premise rather than deriving it from baseline axioms. The packet therefore supports the finite locator and route-pruning scope, but not promotion of the determinant-amplitude input as a closed framework consequence."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.214262+00:00",
+      "audit_date": "2026-06-07T18:13:29.779851+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+        },
+        "dep_claim_type": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a134eabf2984b61f00c1d813f0b9cd562b978953c5489de0e26f0738603751bd",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-181152-d533fa9bd8-flavor_zdet_fermionic_statis",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated abstract two-candidate scope, the conclusion follows from the retained parity-grading authority, the retained_bounded Grassmann-forcing bridge, and elementary finite operator/determinant checks. The physical-lattice fermion-statistics selector is explicitly left out of scope rather than used as a hidden premise.",
+      "claim_scope": "Audited only the bounded abstract finite-algebra support for the determinant-amplitude side and the finite checks that ordinary tensor-product, local-dimension-two, and Jordan-Wigner-realizability routes do not by themselves select physical cross-site CAR/Grassmann statistics.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-07T18:13:29.779851+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16:retained_bounded->unaudited",
+      "load_bearing_step": "In the retained-bounded abstract two-candidate matter-generator scope, the Grassmann candidate carries the finite det(M) readout while ordinary hard-core/tensor and bosonic comparator routes do not supply that same readout.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the clean verdict is read only at the bounded abstract determinant-support scope, not as closure of the physical-lattice FS selector.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The load-bearing step is algebraic composition over retained-grade inputs, not a tuned numerical match, renaming, or external comparator check. Independent checks of the determinant/permanent arithmetic, tensor-ladder commutation, Jordan-Wigner CAR realization, parity odd/even grading, and Gamma_chi commutation match the packet's finite claims. The source repeatedly preserves the boundary that this is bounded abstract support, not a physical spin-statistics theorem."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.064770+00:00",
+      "audit_date": "2026-06-12T02:18:26.051597+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited."
+        },
+        "dep_claim_type": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained"
+        },
+        "deps": [
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "a134eabf2984b61f00c1d813f0b9cd562b978953c5489de0e26f0738603751bd",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-021557-fcdeb865aa-flavor_zdet_fermionic_statis",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conclusion follows from finite determinant/CAR algebra plus the provided retained-grade parity and Grassmann-bridge authorities. It closes only the abstract determinant-side support and does not close the physical spin-statistics selector.",
+      "claim_scope": "Bounded open-gate locator: abstract two-candidate determinant support is audited, while physical lattice Grassmann/CAR statistics selection remains open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-12T02:18:26.051597+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16:retained->unaudited",
+      "load_bearing_step": "Composed with the finite checks and the two one-hop authorities, the retained-bounded abstract two-candidate scope supports the determinant side: the Grassmann candidate gives det(M), while ordinary hard-core/tensor/bosonic comparator routes do not supply the same readout or select physical cross-site CAR.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the retained vs retained_bounded label drift for the Grassmann bridge and the absent primitive-registry file in this isolated workspace; neither changes the scoped closure here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The runner source performs finite algebra checks rather than merely printing constants, and the determinant/permanent, tensor-ladder, Jordan-Wigner, parity, and Gamma_chi checks are independently consistent. The dependency checks are status/text guards, not first-principles physics, but both cited authorities are retained-grade under the rubric. The source note keeps the physical FS selector outside scope, so the clean verdict applies only to the bounded open-gate claim."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:57.073581+00:00",
+      "audit_date": "2026-07-10T04:04:24.069250+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "Bounded relative independence claim only: the current checked Record/Koide bookkeeping surface admits both sector-slot and orbit-slot occupancy models with exact doublet-weight ratio 2, so it does not fix the occupancy rule; the orbit-occupancy paragraph is audited only as a proposed premise with non-input support, not as adopted or derived content.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate canonical-pair surface {single-pair Grassmann, free bosonic CCR}, the physical per-site dim-two space excludes the free bosonic candidate and leaves the single-pair Berezin/Grassmann candidate with determinant readout; full statistics selection is not audited or claimed."
+        },
+        "dep_claim_type": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained"
+        },
+        "deps": [
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "54811d712f535307c9d1da6389031d704563c832b2797d78ef3971da5a45fc31",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00060-flavor_zdet_fermionic_statis",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated abstract finite scope, retained-grade authorities and exact algebraic checks establish determinant compatibility and show that ordinary local/tensor data do not select CAR. The unproved physical spin-statistics selector is expressly outside the audited conclusion.",
+      "claim_scope": "Bounded algebraic support for the determinant readout in the explicit finite Grassmann-versus-bosonic scope, together with non-selection of cross-site CAR by local dimension or ordinary tensor-product ladders and non-selection of Koide occupancy; physical spin-statistics remains open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T04:04:24.069250+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "Composed with the finite checks, the retained dependencies establish that within the audited abstract two-candidate scope the Grassmann candidate carries the finite det(M) readout, while ordinary hard-core/tensor and bosonic comparator routes do not supply that readout by themselves.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should note that the runner's U4 boundary guard matches historical wording stating that the bridge was open, although the current authority says U4 is discharged; the authority still explicitly leaves statistics selection open, so this textual guard defect is non-load-bearing for the audited abstract scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The retained Grassmann bridge supplies the determinant identity within the explicit two-candidate surface, the retained parity theorem supplies the finite Z2-graded carrier, and the runner computes the relevant determinant, commutation, CAR, and parity identities. The retained-bounded Koide authority is used only to delimit the downstream occupancy residual and does not select either occupancy model. All direct dependencies are retained-grade, and the open physical statistics selector is excluded from the claim scope rather than imported as a premise."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py",
+  "title": "Flavor Z=det Fermionic-Statistics Locator",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

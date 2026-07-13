@@ -1,0 +1,396 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "three_generation_observable_theorem_note",
+    "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2d69c288eaf03df5e42c8fd004accc8af465cb41c62c9ec2f1e48871a8ec9f3b",
+  "note_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T16:59:10.094000+00:00",
+      "audit_date": "2026-05-30T13:22:39.199515+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "65895b8bcd7bbfbb3114c9a4090a38c8a539684b95bb4073d0859a17344f65d5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-132002-6080b0c0-koide_c3_generator_repha",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from the stated `3 x 3` cyclic-shift algebra and the retained order-three generation surface by direct matrix identities. The negative scope is properly narrow: it closes only the scalar generator-rephasing route and explicitly leaves non-circulant or tensor-factor routes open.",
+      "claim_scope": "Finite-dimensional algebraic obstruction to realizing a continuous `b`-phase symmetry by scalar rephasing of the order-three cyclic generator `C`; only cube-root phases preserve `C^3 = I`, while centralizer and gauge actions leave `b` unchanged and diagonal corner phases either exit the circulant class or reduce to the same discrete case.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-30T13:22:39.199515+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+      "load_bearing_step": "For the scalar-rephased generator, `(exp(i alpha) C)^3 = exp(3 i alpha) I`, so preserving `C^3 = I` requires `exp(3 i alpha) = 1`.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should only re-check the active/passive sign convention for the `(B1,B2)` rotation; it matches the displayed formulas as written.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 4,
+        "C": 1,
+        "D": 3,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity, not a definition, numerical fit, or external comparator check. The displayed rotation formulas for `B1,B2`, the cube-root quantization, the commuting-centralizer claim, and the diagonal phase proportionality criterion all check under the note's conventions. The runner source performs the relevant finite-dimensional matrix computations rather than merely printing constants, and its extra Koide-context checks are not needed for the audited obstruction. The no-go discipline gate is satisfied at the narrow route level because the note does not claim a global absence of continuous doublet actions."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.712582+00:00",
+      "audit_date": "2026-07-10T17:29:45.729289+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "For real symmetric H on R^3 satisfying {H, \u0393_\u03c7} = 0, every nonzero-eigenvalue eigenvector obeys \u27e8v|\u0393_\u03c7|v\u27e9 = 0 and hence Q(v) = 2/3 and the stated Fourier norm split.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 6.822,
+        "runner_hash": "65895b8bcd7bbfbb3114c9a4090a38c8a539684b95bb4073d0859a17344f65d5",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00028-koide_c3_generator_rephasing",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional scalar-rephasing obstruction itself follows exactly. The mandatory no-go chain does not close because the source explicitly leaves tensor-factor chirality and non-circulant routes untested.",
+      "claim_scope": "For the 3x3 order-three cyclic shift, scalar generator rephasing preserves `C^3 = I` only at cube-root phases; commuting centralizers and generation-blind scalar phases leave `b` unchanged, while diagonal corner phases either exit the circulant class or reduce to a cube-root character.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T17:29:45.729289+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:three_generation_observable_theorem_note:retained->unaudited",
+      "load_bearing_step": "Since `(exp(i alpha) C)^3 = exp(3 i alpha) I`, the rephased generator preserves `C^3 = I` exactly when `exp(3 i alpha) = 1`.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Cube the proposed generator `exp(i alpha) C` and impose equality with the identity.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Scalar generator rephasing `C -> exp(i alpha) C`: **ruled out here** except at cube roots by `(exp(i alpha) C)^3 = exp(3 i alpha) I`.",
+            "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Multiply the cyclic generator by a continuous scalar phase while retaining the order-three relation.",
+            "outcome": "The result is `exp(3 i alpha) I`, so only the three cube-root phases survive.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "scalar_generator_rephase"
+          },
+          {
+            "attempt": "Diagonalize the regular carrier and conjugate the Fourier-coordinate centralizer back to generation coordinates.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Continuous state-space centralizer on the real doublet: **accounted for here**; it exists, commutes with `C`, and does not rotate `b`.",
+            "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the continuous real-doublet centralizer as the proposed continuous action.",
+            "outcome": "The action exists but commutes with `C`, fixes every tested circulant Hermitian operator, and cannot rotate `b`.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "continuous_doublet_centralizer"
+          },
+          {
+            "attempt": "Conjugate the circulant Hermitian operator by a scalar multiple of the identity.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Generation-blind gauge scalar phases: **accounted for here**; they multiply all generations equally and do not rotate `b`.",
+            "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Apply a generation-blind gauge scalar phase to the triplet.",
+            "outcome": "Scalar conjugation leaves the operator and its coefficient `b` unchanged.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "generation_blind_gauge_phase"
+          },
+          {
+            "attempt": "Require `P C P^dag` to remain proportional to `C` and impose consistency around the closed cycle.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Diagonal corner-phase profiles: **accounted for here**; they either leave the `C_3`-circulant class or reduce to the discrete cube-root case.",
+            "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Conjugate by a diagonal corner-phase profile whose edge-phase differences run around the three-cycle.",
+            "outcome": "Generic profiles leave the circulant class; constant compatible differences give only a discrete cube-root character.",
+            "route_class": "topology_or_global_structure",
+            "route_id": "diagonal_corner_profile"
+          },
+          {
+            "attempt": "The restricted packet was scanned for a calculation testing this mechanism; the source expressly excludes it.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "Separate tensor-factor chirality / non-circulant routes: **left open**; this note does not test them.",
+            "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use an additional tensor-factor chirality action or a non-circulant carrier action that does not scalar-rephase `C`.",
+            "outcome": "No closure is supplied, and the source explicitly leaves this route open.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "tensor_chirality_noncirculant"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "order-three relation `C^3 = I`",
+            "same-`C_3`-circulant-class requirement for interpreting the action as a `b`-phase generator rephasing"
+          ],
+          "evidence_locator": "The only walls are the order-three relation `C^3 = I` and the `C_3`-circulant presentation of the tested route.",
+          "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "order-three relation `C^3 = I`",
+              "left_closes_right": false,
+              "right": "same-`C_3`-circulant-class requirement for interpreting the action as a `b`-phase generator rephasing",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "order-three relation `C^3 = I`",
+            "same-`C_3`-circulant-class requirement for interpreting the action as a `b`-phase generator rephasing"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "\"Physical or algebraic rotation of `b`\" means generator rephasing inside the same `C_3`-circulant class.",
+          "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "\"Physical or algebraic rotation of `b`\" means generator rephasing inside the same `C_3`-circulant class.",
+              "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "phrase": "physical or algebraic rotation of `b`"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Continuous centralizer actions and tensor-factor routes are not silently folded into that phrase.",
+              "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "phrase": "continuous centralizer actions and tensor-factor routes"
+            }
+          ],
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "It is not the residual \"derive Koide\" and not the residual \"classify all continuous doublet actions.\"",
+          "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "the missing `b`-phase route through scalar generator rephasing",
+              "evidence_locator": "The residual matched here is exactly the missing `b`-phase route through generator rephasing.",
+              "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "match": true,
+              "witness_residual": "the missing `b`-phase route through scalar generator rephasing"
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "The negative statement is per-generator and per-circulant-class.",
+          "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+          "statements": [
+            {
+              "evidence_locator": "the **generator-rephasing route** to a continuous `b`-phase symmetry is obstructed by `C^3 = I`",
+              "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "phrase": "the generator-rephasing route to a continuous `b`-phase symmetry is obstructed by `C^3 = I`",
+              "tested_resolutions": [
+                "scalar rephasing of the order-three generator within the same `C_3`-circulant presentation"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "This is a partial route closure: it removes one proposed mechanism and leaves the broader Koide lane open.",
+              "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "phrase": "This is a partial route closure",
+              "tested_resolutions": [
+                "scalar generator rephasing",
+                "continuous centralizer",
+                "generation-blind scalar gauge phase",
+                "diagonal corner-phase profile"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The approved kinetic-isotropy primitive supplies no phase, selector, or dynamical datum and cannot alter the finite-order group relation.",
+              "evidence_locator": "It carries no dimensionless dynamical content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.",
+              "evidence_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The owner-governed AC boundary expressly supplies neither above-C3 chirality content nor a sector-weight law, so it does not close the open alternate-carrier route.",
+              "evidence_locator": "It supplies no value of `r`, `delta`, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.",
+              "evidence_path": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "There are no live Tier-A derivation targets available to supply the missing alternate-carrier mechanism.",
+              "evidence_locator": "\"genuine_admitted_input_count\": 0",
+              "evidence_path": "docs/audit/data/tier_a_admissions.json",
+              "kind": "tier_a"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The registered normalization conventions are not accepted phase mechanisms and cannot change `C^3 = I`.",
+              "evidence_locator": "\"class\": \"vacuous normalization convention\"",
+              "evidence_path": "docs/audit/data/tier_a_admissions.json",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "Renaming a broader continuous action as a `b` rotation would violate the source's explicit same-circulant generator-rephasing definition and would not evade the algebra.",
+              "evidence_locator": "The result only forecloses the specific generator-rephasing route as a source of the missing `b`-phase symmetry.",
+              "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "kind": "definition_refactor"
+            }
+          ],
+          "evidence_locator": "\"genuine_admitted_input_count\": 0",
+          "evidence_path": "docs/audit/data/tier_a_admissions.json",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The real nontrivial `C_3` doublet does possess a continuous U(1)-type centralizer, apparently contradicting the claimed obstruction to continuous action.",
+          "evidence_locator": "A hostile reviewer would point to the continuous real centralizer `diag(1, exp(i phi), exp(-i phi))` in Fourier coordinates and say the doublet has a continuous action after all.",
+          "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+          "resolution": "The exhibited centralizer commutes with `C` and fixes the circulant Hermitian operator, so it is a continuous state-space redundancy but not the claimed scalar generator rephasing or rotation of `b`.",
+          "resolved": true
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "evidence_locator": "Prior overbroad Koide U(1)-style route claims failed when a continuous action was conflated with a rotation of the load-bearing coefficient.",
+              "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "mechanism": "Conflating an existing continuous state-space action with rotation of the load-bearing circulant coefficient",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "This note is written to avoid that echo: only the scalar generator-rephasing route is closed.",
+          "evidence_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "order-three relation `C^3 = I`",
+          "same-`C_3`-circulant-class requirement for interpreting the action as a `b`-phase generator rephasing"
+        ],
+        "demotion": "partial_narrowing",
+        "failures": [
+          "N1: the separate tensor-factor chirality/non-circulant route is explicitly untested and open, so the alternative-route set is incomplete."
+        ],
+        "narrowed_claim_scope": "For the 3x3 order-three cyclic shift, scalar generator rephasing preserves `C^3 = I` only at cube-root phases; commuting centralizers and generation-blind scalar phases leave `b` unchanged, while diagonal corner phases either exit the circulant class or reduce to a cube-root character.",
+        "next_route": "Construct or specify the tensor-factor chirality/non-circulant action and test whether it produces a continuous `b`-phase without scalar-rephasing the order-three generator.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: Retag and dispatch the row solely as a bounded scalar-generator-rephasing lemma with no complete alternative-route claim, or supply a separate restricted-packet test of the tensor-factor chirality/non-circulant route.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing equation and the centralizer, gauge-phase, and diagonal-phase distinctions are valid class-A matrix algebra over the retained order-three carrier. The runner materially computes all 13 reported checks, although some continuum statements are sampled rather than exhaustively established by the code; the note's symbolic proof supplies the exact argument. Under the required no-go discipline, however, the explicitly open tensor-factor chirality/non-circulant route prevents a terminal no-go verdict."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_c3_generator_rephasing_obstruction.py",
+  "title": "Koide C3 Generator-Rephasing Obstruction Narrow Theorem",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

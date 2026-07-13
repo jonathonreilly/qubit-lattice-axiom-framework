@@ -1,0 +1,317 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "199f65a3c719a9c457ae82a7e91908663b206bfec0e68572df1113f5ea39cfaa",
+  "note_path": "docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T19:27:18.117044+00:00",
+      "audit_date": "2026-06-09T13:09:12.370520+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "For the continuum free Dirac kernel S(p)=(m-i gamma.p)/(p^2+m^2), the audited scope is the finite Clifford/Dirac spinor algebra and the finite CAR antiparticle relabeling, not OS reconstruction, locality, or statistics selection."
+        },
+        "dep_claim_type": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "076003f0d26db7b53afaab8f0fb9ad3458f05ea9db7b7f43cbadf504984d7ee5",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260609-130643-92f10dd5ac-free_dirac_car_positive_ener",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The CAR and Bose reordering signs follow directly from the stated one-mode algebra, and the equal-time identity follows from completeness of the positive- and negative-energy eigenspaces. No CAR-selection, spacelike microcausality, partner-chirality, or OS/Wightman field-construction claim is needed for this scoped result.",
+      "claim_scope": "Algebraic support that, for the supplied free massive Dirac one-mode algebra and chosen CAR quantization, the finite Hamiltonian is bounded below and the equal-time u/v projector completeness gives the canonical CAR matrix; the Bose sign choice is unbounded below.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-09T13:09:12.370520+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30:retained_bounded->unaudited",
+      "load_bearing_step": "Given H_hat = E a^dag a - E b b^dag, the CAR identity b b^dag = 1 - b^dag b gives H_hat = E a^dag a + E b^dag b up to the vacuum constant, while the u/v projectors sum to I_4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the equal-time projector normalization convention if a later row tries to promote this support result to a full field anticommutator theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner performs finite matrix and Fock-space algebra checks, not a first-principles framework computation or an external comparator match. Independent sign checking gives CAR energies {0,E,E,2E} after dropping the vacuum constant and a Bose sector unbounded below as antiparticle occupation grows. The spinor completeness check is an orthonormal projector identity over the supplied free Dirac positive- and negative-energy mode split. Because the chain is class-A algebra over one retained-bounded parent plus standard mathematics, it is a decoration rather than a new standalone theorem."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.215158+00:00",
+      "audit_date": "2026-06-10T05:30:03.012873+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "Bounded free continuum Dirac mode algebra: Euclidean inverse and pole continuation, +/-E Dirac spectrum, u/v completeness and norm signs, and nonnegative finite CAR particle-antiparticle Fock spectrum; no OS/Wightman reconstruction or statistics-selection theorem."
+        },
+        "dep_claim_type": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "076003f0d26db7b53afaab8f0fb9ad3458f05ea9db7b7f43cbadf504984d7ee5",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-052837-6538f45dde-free_dirac_car_positive_ener",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited authority is retained_bounded for the free Dirac mode split and u/v structure, and the current note only performs finite CAR/Bose reordering plus projector-completeness algebra over that input. The note explicitly leaves CAR selection, OS/Wightman field construction, and spacelike microcausality outside scope.",
+      "claim_scope": "Given the supplied free massive Dirac mode algebra, CAR gives a bounded-below one-mode Hamiltonian and the normalized u/v mode projectors give the equal-time CAR identity; the Bose sign choice is an unbounded antiparticle-occupation diagnostic.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:30:03.012873+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30:retained_bounded->unaudited",
+      "load_bearing_step": "CAR reordering of H_hat = E a^dag a - E b b^dag using b b^dag = 1 - b^dag b gives, up to the vacuum constant, H_hat = E a^dag a + E b^dag b, while the normalized u/v mode projectors sum to I_4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the normalization convention behind sum_s(u_s u_s^dag + v_s v_s^dag)=I_4 versus textbook 2E-normalized spinors, but within the runner's orthonormal mode convention it closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing CAR calculation is an algebraic closure: H = E n_a - E(1 - n_b) differs from E n_a + E n_b only by the discarded vacuum constant, giving finite fermionic eigenvalues {0,E,E,2E}. The Bose alternative H = E n_a - E n_b is unbounded below as n_b grows, and the equal-time matrix identity follows from the positive- and negative-energy orthonormal eigenspaces resolving the identity. The runner is a finite algebra/sample verification, not a first-principles framework compute, but the scoped bounded support conclusion follows from the retained_bounded upstream mode algebra without external comparator or hidden bridge."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:04.922157+00:00",
+      "archived_for_note_hash": "8cb953dcae51d10434b1bdfa286a09cdecf6b1022d658d9ec2330f83f9d4cd2f",
+      "audit_date": "2026-06-12T02:22:30.688383+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "Bounded finite-mode free Dirac algebra: Euclidean inverse and poles, +/-E Hamiltonian spectrum, u/v completeness signs and norms, and finite CAR antiparticle relabeling bounded below."
+        },
+        "dep_claim_type": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "076003f0d26db7b53afaab8f0fb9ad3458f05ea9db7b7f43cbadf504984d7ee5",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-021904-f5920ed213-free_dirac_car_positive_ener",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The CAR boundedness and Bose unboundedness close as finite algebraic reorderings. The equal-time I_4 identity does not close from the cited upstream u/v normalization without an explicit rescaling or field-normalization bridge, because the runner uses unit-norm eigenspinors while the cited authority states u^dag u = v^dag v = 2E.",
+      "claim_scope": "Finite one-mode CAR/Bose Hamiltonian reordering plus the claimed equal-time spinor projector identity for the supplied free massive Dirac mode algebra.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T02:22:30.688383+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "With H_hat = E a^dag a - E b b^dag, CAR gives b b^dag = 1 - b^dag b and hence a bounded H_hat = E a^dag a + E b^dag b up to the vacuum constant, while the equal-time claim uses sum_s(u_s u_s^dag + v_s v_s^dag) = I_4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add and check the explicit bridge from the cited 2E-normalized Dirac spinors to the orthonormal eigenspinor projector identity, or include the required 1/(2E) field-expansion factor before claiming the I_4 equal-time matrix.",
+      "open_dependency_paths": [
+        "docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner is not a print-only artifact: it constructs the finite Dirac Hamiltonian, number operators, projectors, and source-note guardrail checks. However, the load-bearing equal-time matrix identity is convention-sensitive. Under the cited authority's 2E-normalized spinor convention, the unweighted projector sum is not I_4; obtaining I_4 requires orthonormalized spinors or the corresponding 1/(2E) field-expansion normalization. The source note leaves CAR selection, spacelike microcausality, and OS/Wightman delivery open, but the displayed equal-time normalization bridge is still missing as written."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:23.558631+00:00",
+      "archived_for_note_hash": "859509a25e3406942df8eb8a86365e3e399263a4ec846f5fe26fab098a68b8c0",
+      "audit_date": "2026-06-13T02:05:02.091474+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "Bounded finite-mode free Dirac algebra: Euclidean inverse and poles, +/-E Hamiltonian spectrum, u/v completeness signs and norms, and finite CAR antiparticle relabeling bounded below."
+        },
+        "dep_claim_type": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "a95b363eeadd9c1b504ca6490f8da33571230d14d69a393a72435734cfaf609a",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-020254-103f39d592-free_dirac_car_positive_ener",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop authority is retained_bounded and supplies the free Dirac particle/antiparticle mode algebra and u/v mode structure. The remaining Hamiltonian reordering, occupancy spectra, projector completeness, 2E normalization weight, and Bose-sign nonidentity are finite algebraic consequences with no additional physical bridge imported.",
+      "claim_scope": "Finite support only: CAR gives a bounded-below one-mode free Dirac Hamiltonian and the normalized positive/negative energy spinor projectors give the canonical equal-time CAR matrix; CAR selection, field reconstruction, and spacelike microcausality remain outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T02:05:02.091474+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the supplied free massive Dirac mode algebra, CAR reorders H_hat = E a^dag a - E b b^dag to a bounded-below E(a^dag a + b^dag b) Hamiltonian up to the vacuum constant, while the normalized u/v projector sum gives the equal-time identity matrix.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream citations preserve the finite-support scope and do not promote this row to CAR selection or spacelike microcausality.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner source performs actual finite linear-algebra and occupancy checks rather than merely printing the expected verdict. Independent algebra confirms the CAR sign removes the negative antiparticle occupation after the vacuum constant shift, while Bose occupation E(n_a-n_b) is unbounded below as n_b grows. The equal-time matrix statements also close: orthonormal spectral projectors sum to I_4, and 2E-normalized spinors need the stated 1/(2E) field weight. The note explicitly preserves the bounded support scope and does not claim CAR selection, OS/Wightman field construction, or spacelike microcausality."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.065052+00:00",
+      "audit_date": "2026-06-14T02:57:03.158656+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "Bounded finite-mode free Dirac algebra: Euclidean inverse and poles, +/-E Hamiltonian spectrum, u/v completeness signs and norms, and finite CAR antiparticle relabeling bounded below."
+        },
+        "dep_claim_type": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "93041816407031da7c0da5ecbe1352f30121795c44c158f0efb3851c9f8e09fa",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-025438-f0c77e2f36-free_dirac_car_positive_ener",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained_bounded cited authority supplies the free Dirac +/-E mode algebra and u/v spinor structure. The CAR/Bose reorderings, projector completeness, and 2E normalization bridge are finite algebraic consequences within the note's stated support-only scope.",
+      "claim_scope": "For the supplied free massive Dirac one-mode algebra, CAR reordering gives a bounded-below particle/antiparticle Hamiltonian and the orthonormal/2E spinor normalizations give the canonical equal-time CAR identity; no CAR-selection, Wightman construction, or spacelike microcausality theorem is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T02:57:03.158656+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30:retained_bounded->unaudited",
+      "load_bearing_step": "Given H_hat = E a^dag a - E b b^dag, CAR gives b b^dag = 1 - b^dag b and hence H_hat = E a^dag a + E b^dag b up to the vacuum constant, while the complete orthonormal u/v eigenspinor projectors sum to I_4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream citations preserve the support-only scope and do not cite this row as CAR selection or spacelike microcausality.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The independent formula inventory checks out: CAR changes -E b b^dag to +E b^dag b after dropping the vacuum constant, Bose leaves -E n_b and is unbounded below, and spectral completeness gives I_4 with the stated 1/(2E) weight in the 2E-normalized convention. The cited parent is retained_bounded and supplies exactly the free Dirac mode algebra and spinor structure used here. The runner performs finite matrix and Fock-space checks rather than only printing constants, and it uses no external comparator or tuned empirical value. The conclusion remains bounded support only and does not promote the open CAR-selection, Wightman-field, or spacelike-microcausality gates."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py",
+  "title": "Free Dirac CAR Positive-Energy and Equal-Time Anticommutator Support (Bounded)",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

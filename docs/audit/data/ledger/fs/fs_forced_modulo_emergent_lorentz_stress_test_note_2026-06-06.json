@@ -1,0 +1,371 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate / conditional-support stress-test",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
+    "axiom_first_spin_statistics_theorem_note_2026-04-29",
+    "fermion_parity_z2_grading_theorem_note_2026-05-02",
+    "minimal_axioms",
+    "scale_reference_primitive",
+    "staggered_dirac_realization_gate_note_2026-05-03"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0523e634f06b37912e6a97de14de004f9ce4d5a6f77db9b349953b9179f1eb95",
+  "note_path": "docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:51:38.929792+00:00",
+      "audit_date": "2026-06-14T01:41:24.232405+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "scale_reference_primitive": null,
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "Narrow location certificate: Cl(3) does not provide an inner Z2 CAR grading, an order-two exchange route admits both +1 and -1 phases, and Record does not supply a within-sector exchange-sign datum once the central parity label is in place; no CAR or global spin-statistics closure is audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "scale_reference_primitive",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "dfcdc170e92f3793468aef7c75d9d81e4d0eb2ebe3cee0cbbc51978c71df63c3",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-013923-3b87df6a2a-fs_forced_modulo_emergent_lo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet explicitly leaves Link B's external spatial identification, emergent Lorentz, and the OS->Wightman reconstruction R open/conditional or unaudited. The runner uses hard-coded toy matrices and True status checks for the spin-statistics route rather than deriving the required bridge.",
+      "claim_scope": "Audited the source-side reclassification of FS as forced modulo the realization-gate/spatial-identification residual, emergent Lorentz, and reconstruction R, plus the limited multi-loop sign-blindness check; not a closure of FS from the three axioms.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T01:41:24.232405+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:dfcdc170->fc1bcfaa",
+      "load_bearing_step": "Conditional on the Link-B realization-gate/spatial identification, emergent Lorentz, and a non-circular OS->Wightman reconstruction R, the standard spin-statistics engine would force the spin-1/2 sector to use the fermionic exchange sign.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained one-hop theorem(s) for the staggered/Kahler-Dirac spatial identification, emergent-Lorentz/positivity bridge, and non-circular OS->Wightman R, then update the runner so Link B matches the 2026-06-08 correction.",
+      "open_dependency_paths": [
+        "docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md",
+        "docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 9,
+        "C": 0,
+        "D": 1,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The algebraic checks for the +/-1 sign dichotomy and double-swap sign are consistent, but they do not establish the full multi-loop graph-braid no-go as written. The load-bearing FS route depends on external spin-statistics comparator content plus missing retained bridges for the realization gate, Lorentz/positivity, and non-circular reconstruction R. The scale-reference primitive is an accepted units premise only and supplies no selector or Lorentz closure. There is also source-runner drift: the runner still treats Link B as retained at the discrete level, while the corrected source note moves the external algebra-3 = spatial-3 identification into the residual."
+    },
+    {
+      "archived_at": "2026-06-16T10:52:08.182508+00:00",
+      "archived_for_note_hash": "2f70826b4763f17decdec5df807177be1bbc80110e6cb82ad5eb8d5f5c4e33d0",
+      "audit_date": "2026-06-16T01:25:37.679020+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "scale_reference_primitive": null,
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "Narrow location certificate: Cl(3) does not provide an inner Z2 CAR grading, an order-two exchange route admits both +1 and -1 phases, and Record does not supply a within-sector exchange-sign datum once the central parity label is in place; no CAR or global spin-statistics closure is audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "scale_reference_primitive",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06"
+        ],
+        "load_bearing_score": 8.17,
+        "runner_hash": "fc1bcfaa69d8ef9d5cdae6bf9e54c41edf7ee44c369b366fdcb6fa5dfc098bd3",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-012240-9f4b7466ce-fs_forced_modulo_emergent_lo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet does not close Link B, emergent Lorentz/positivity/microcausality, or R; the source itself describes R as unaudited/currently circular. The runner's toy Hamiltonian and cocycle checks do not derive those bridges from the baseline.",
+      "claim_scope": "Audited the conditional reclassification that FS is forced only modulo the realization-gate identification, emergent Lorentz/positivity, and reconstruction R, plus the runner's toy CCR/CAR and multi-loop cocycle checks.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T01:25:37.679020+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Spin-1/2 plus Lorentz plus positivity forces the fermionic branch, with the remaining residual being the Link-B realization-gate identification, emergent Lorentz/continuum upgrade, and non-circular OS->Wightman reconstruction R.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove and audit the Link-B realization gate, emergent Lorentz/positivity/microcausality bridge, and non-circular OS->Wightman reconstruction R before re-auditing this route.",
+      "open_dependency_paths": [
+        "docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md",
+        "docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md",
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_NOTE.md",
+        "docs/FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 9,
+        "C": 0,
+        "D": 1,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Issue: the load-bearing implication requires the external Clifford-to-spacetime identification, emergent Lorentz/positivity, and non-circular R, none of which is closed in the packet. Why this blocks: the runner mostly hard-codes route/status assertions and checks finite toy matrices, so it does not establish the QFT spin-statistics bridge from the framework baseline. Repair target: provide retained direct dependencies or theorems for Link B, emergent Lorentz/positivity/microcausality, and R, with runner checks that fail if those bridges are removed. Claim boundary until fixed: this is a conditional route map and limited cocycle statistics-blindness witness, not a closed FS-forcing theorem."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:36.092162+00:00",
+      "archived_for_note_hash": "b97c804bbc8e9213f63631ae9e3df29307baa2062c4a74ce9f5335ba9646d937",
+      "audit_date": "2026-06-18T09:46:15.373758+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "scale_reference_primitive": null,
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "Narrow location certificate: Cl(3) does not provide an inner Z2 CAR grading, an order-two exchange route admits both +1 and -1 phases, and Record does not supply a within-sector exchange-sign datum once the central parity label is in place; no CAR or global spin-statistics closure is audited.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "bounded_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "retained_bounded",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "scale_reference_primitive",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "fcfce48c3eb68b9c6b3b0daf6e29c96347104cc872dded1b231112e11fcc91e1",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet explicitly does not derive Link B, Lorentz/positivity/microcausality, or R from the framework baseline. The runner hard-codes or text-checks those boundaries and computes only finite stress-test witnesses.",
+      "claim_scope": "Conditional FS route map: given the realization-gate/external-spacetime identification, emergent Lorentz/positivity/microcausality, and a non-circular OS-to-Wightman reconstruction R, the standard spin-statistics comparator would select the fermionic sign; the finite runner checks only toy CCR/CAR and multi-loop sign-blindness witnesses.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T09:46:15.373758+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "spin-1/2 support + abstract O_h/Cl(3) support + supplied realization gate + supplied/emergent Lorentz/positivity + supplied reconstruction R => fermionic sign forced by the comparator spin-statistics engine.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "dependency_not_retained \u2014 audit or retain the realization-gate and R/reconstruction dependencies, with explicit dependency edges for the Lorentz/positivity bridge, then re-audit the conditional route.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "free_field_os_wightman_reconstruction (path not provided in packet)",
+        "flavor_spin_statistics_forces_modulo_reconstruction (path not provided in packet)"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 12,
+        "C": 0,
+        "D": 1,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: The load-bearing implication requires supplied realization-gate/external spacetime identification, emergent Lorentz/positivity/microcausality, and OS-to-Wightman reconstruction R, while the runner explicitly says it does not derive them. Why this blocks: the finite runner verifies scope text and toy comparator/cocycle checks, not a framework derivation of the physical bridges needed to force FS. Repair target: audit or derive the realization identification, emergent Lorentz/positivity/microcausality, and a non-circular R reconstruction. Claim boundary until fixed: conditional support and finite stress-test, not bounded theorem closure of FS."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.476745+00:00",
+      "audit_date": "2026-06-21T15:03:02.278161+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson/CCR realization is excluded on the finite dim-2 substep-1 per-site carrier; hard-core bosons and CAR-vs-hard-core selection are out of scope, and Grassmann determinant/exchange consequences are conditional on the declared Grassmann frame.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "scale_reference_primitive": null,
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "Bounded location certificate only: the Pauli/Cl(3) obstruction, the order-two sign dichotomy without sign selection, and the Record no-within-sector-data boundary once a central parity label is supplied; no CAR derivation, global spin-statistics closure, multi-loop no-go, continuum bridge, or 3x3x2 H1 verification is audited.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "bounded_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06": "retained_bounded",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "scale_reference_primitive",
+          "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "0ec146e9fd08e673c4d663135ae51c7900ca17a83791d6a1e91ae0e3fc6d2549",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The chain does not close to FS selection from the provided retained inputs because the source explicitly leaves the realization-gate/external-spacetime identification, Lorentz/positivity/microcausality, and reconstruction R unsupplied. The runner verifies the conditional route-map posture and finite witnesses, not the missing bridges.",
+      "claim_scope": "Open-gate conditional-support stress-test: the finite packet checks source-scope guards, a toy CCR/CAR spin-statistics witness, and statistics-blindness of the multi-loop graph-braid cocycle, while leaving FS closure conditional on Link-B external-spacetime identification, emergent Lorentz/positivity/microcausality, and non-circular R.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T15:03:02.278161+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_spin_statistics_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "If Link-B realization-gate/external-spacetime identification, emergent Lorentz/positivity/microcausality, and non-circular reconstruction R are supplied, then the comparator spin-statistics engine selects the fermionic sign; meanwhile the finite graph-braid opening is statistics-blind.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem - prove and cite retained-grade Link-B external-spacetime identification, emergent Lorentz/positivity/microcausality, and non-circular R; also audit or replace the unaudited realization-gate dependency before seeking a clean result.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "emergent_lorentz_invariance (path not provided in restricted packet)",
+        "free_field_os_wightman_reconstruction (path not provided in restricted packet)"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 17,
+        "C": 0,
+        "D": 1,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Issue: the decisive FS selection is conditional on unsupplied Link-B external-spacetime identification, emergent Lorentz/positivity/microcausality, and a non-circular OS-to-Wightman R, while the direct realization-gate authority is unaudited. Why this blocks: the runner mostly verifies source-scope wording and toy comparator witnesses; it does not construct those bridges or turn the standard spin-statistics theorem into a repo-local retained derivation. Repair target: land retained-grade bridge theorems for Link B, Lorentz/positivity/microcausality, and R, then re-audit the conditional implication. Claim boundary until fixed: this is an open route map/stress-test; the finite multi-loop cocycle is statistics-blind, and no FS closure or new axiom is established."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py",
+  "title": "FS Stress-Test: the Fermion Sign is Forced-Modulo Realization Gate + Emergent-Lorentz + R",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

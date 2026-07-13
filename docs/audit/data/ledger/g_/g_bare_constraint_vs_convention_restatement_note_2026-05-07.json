@@ -1,0 +1,132 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+    "g_bare_structural_normalization_theorem_note_2026-04-18"
+  ],
+  "direct_in_degree": 14,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 16.486,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d7fa98005aa8980727913ffa2f75175099b719fd2ea368f40d2d7ff2e87b58c4",
+  "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T22:04:31.592826+00:00",
+      "audit_date": "2026-05-28T02:44:44.600751+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07": "R1-R3 only: fixed Hilbert-Schmidt form on the canonical su(3) triplet block, invariant-form uniqueness up to scalar, and scalar-dilation trace/Casimir rigidity c=+/-1.",
+          "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection."
+        },
+        "dep_claim_type": {
+          "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07": "bounded_theorem",
+          "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07": "retained_bounded",
+          "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+          "g_bare_structural_normalization_theorem_note_2026-04-18"
+        ],
+        "load_bearing_score": 14.7,
+        "runner_hash": "5b82fa4436749f0be366622db1fe08682dce5061745b71e9486821588361c6e7",
+        "transitive_descendants": 207
+      },
+      "audit_status": "audit_in_progress",
+      "auditor": "codex-audit-loop-g-bare-convention-restatement-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the bounded inputs, the algebra is direct: Schur/trace gives C_F=(8/3)N_F, canonical N_F=1/2 gives the usual C_F=4/3 surface, Wilson matching gives beta=2N_c/g_bare^2, and beta=2N_c=6 at N_c=3 forces g_bare^2=1. The retained-bounded dependencies bound the result; they do not make it an unbounded positive theorem.",
+      "claim_scope": "Bounded convention-layer stratification for the g_bare chain: on the admitted Wilson plaquette/kinetic-matching surface and with the explicit L3 convention N_F=1/2, the retained-bounded HS rigidity and structural-normalization inputs locate the scalar convention at N_F and derive g_bare=1 at L4; no derivation of N_F=1/2, Wilson action form, running/fixed-point selection, or absolute g_bare from A1+A2 is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T09:41:41.237762+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-28T02:44:44.600751+00:00",
+          "auditor": "codex-audit-loop-g-bare-convention-restatement-20260528-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded convention-layer stratification for the g_bare chain: on the admitted Wilson plaquette/kinetic-matching surface and with the explicit L3 convention N_F=1/2, the retained-bounded HS rigidity and structural-normalization inputs locate the scalar convention at N_F and derive g_bare=1 at L4; no derivation of N_F=1/2, Wilson action form, running/fixed-point selection, or absolute g_bare from A1+A2 is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07:retained_bounded->unaudited",
+      "load_bearing_step": "Relative to the retained-bounded Wilson/canonical-normalization surface and the admitted N_F=1/2 Hilbert-Schmidt scalar, beta=2N_c=6 and beta=2N_c/g_bare^2 force g_bare^2=1, so g_bare is an L4 constraint rather than a second convention layer.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:high->critical: first-pass audit (auditor=codex-audit-loop-g-bare-convention-restatement-20260528-r1, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 62,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 66
+      },
+      "verdict_rationale": "The scoped bounded theorem closes: it correctly localizes the explicit scalar convention at L3 (N_F=1/2) and treats g_bare=1 as the L4 algebraic consequence on the admitted canonical Wilson matching surface. The runner verifies the Clifford representation, trace Gram, Casimir scaling, joint trace/Casimir rigidity, Wilson beta algebra, no-circularity checks, and the L1-L4 stratification. This is not an unbounded positive theorem because the Wilson surface and N_F scalar remain admitted/bounded premises, and the source itself excludes deriving N_F=1/2 or absolute g_bare from A1+A2."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
+  "title": "g_bare Constraint vs Convention \u2014 Convention-Layer Restatement",
+  "transitive_descendants": 716,
+  "verdict_rationale": null
+}

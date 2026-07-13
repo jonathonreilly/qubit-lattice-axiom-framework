@@ -1,0 +1,126 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_qg_canonical_textbook_geometric_action_equivalence_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_qg_optional_textbook_comparison_note",
+    "universal_qg_canonical_smooth_gravitational_weak_measure_note",
+    "universal_qg_canonical_textbook_weak_measure_equivalence_note",
+    "universal_qg_smooth_gravitational_local_identification_note",
+    "universal_qg_smooth_gravitational_global_atlas_note",
+    "universal_qg_canonical_smooth_geometric_action_note",
+    "universal_gr_lorentzian_signature_extension_note",
+    "universal_gr_constraint_action_stationarity_note"
+  ],
+  "direct_in_degree": 13,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.489,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1a5ff83d7bc64bd5094dd4f2afe71eeeaa978dcfa38848ede7b346a1d4f7c4ea",
+  "note_path": "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_GEOMETRIC_ACTION_EQUIVALENCE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-07T08:10:02.495968+00:00",
+      "archived_for_note_hash": "20a8163b5d3a9d51914992b2d7615ba57eb69ee4e08a3102e97cc737a3a9133b",
+      "audit_date": "2026-05-06T13:05:51.785658+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "universal_qg_optional_textbook_comparison_note": null
+        },
+        "dep_claim_type": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "dep_effective_status": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "deps": [
+          "universal_qg_optional_textbook_comparison_note"
+        ],
+        "load_bearing_score": 14.514,
+        "runner_hash": null,
+        "transitive_descendants": 516
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-06-universal-qg-textbook-action",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The only ledger dependency is a meta packaging hub that explicitly carries no theorem authority. The source text relies on several substantive universal-QG smooth/textbook/GR closure theorem rows, but those rows are not wired as direct dependencies and are currently unaudited.",
+      "claim_scope": "Claim that the project-native smooth geometric/action family is canonically equivalent to a standard textbook Einstein-Hilbert-style weak/stationary action family on the chosen smooth realization of PL S^3 x R.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-06T13:05:51.785658+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note identifies the project-native bilinear family B_D(h,k) = -Tr(D^-1 h D^-1 k), with K_GR(D) = H_D tensor Lambda_R, as exactly the textbook Einstein-Hilbert-style quadratic weak/stationary action kernel on the chosen realization.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: replace the metadata-only optional textbook comparison dependency with the actual theorem dependencies carrying the smooth/textbook weak-measure, local/global identification, geometric-action, and Lorentzian stationarity steps; then audit this row after those dependencies are retained-grade.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md",
+        "docs/UNIVERSAL_QG_CANONICAL_SMOOTH_GRAVITATIONAL_WEAK_MEASURE_NOTE.md",
+        "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md",
+        "docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_LOCAL_IDENTIFICATION_NOTE.md",
+        "docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_ATLAS_NOTE.md",
+        "docs/UNIVERSAL_QG_CANONICAL_SMOOTH_GEOMETRIC_ACTION_NOTE.md",
+        "docs/UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md",
+        "docs/UNIVERSAL_GR_CONSTRAINT_ACTION_STATIONARITY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the textbook Einstein-Hilbert-style action equivalence is asserted from an 'already-closed' theorem chain, but the ledger wires only universal_qg_optional_textbook_comparison_note, whose own text says it is metadata only and must not act as theorem authority. Why this blocks: a positive theorem cannot be retained from a packaging hub or from source prose that cites unwired and unaudited smooth/textbook/GR closure rows. Repair target: add the actual load-bearing theorem dependencies, including the canonical textbook continuum/weak-measure/geometric-action/local-global smooth identification and Lorentzian stationarity rows as appropriate, then audit or retain those dependencies before re-auditing this equivalence. Claim boundary until fixed: this row is a roadmap/identification proposal for the chosen textbook target, not retained evidence that the project-native K_GR(D) family is exactly a textbook Einstein-Hilbert-style action kernel."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.977054+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_qg_canonical_textbook_geometric_action_equivalence.py",
+  "title": "Universal QG Canonical Textbook Einstein-Hilbert-Style Geometric/Action Equivalence",
+  "transitive_descendants": 126,
+  "verdict_rationale": null
+}

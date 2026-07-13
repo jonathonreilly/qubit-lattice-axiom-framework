@@ -1,0 +1,177 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "ordered_lattice_quasi_persistent_relaunch_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ordered_lattice_quasi_persistent_relaunch_2d_note"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/lattice_3d_valley_linear_card.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.426,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8cca657ff79b572a68180f1926b85b530b56f18e89da75e9b705b859fc51b803",
+  "note_path": "docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.236615+00:00",
+      "audit_date": "2026-05-01T07:38:48.286904+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered runner reproduces the frozen point and compact5 rows, including free spread, support, capture, stage-1 carry, field-induced shift, relaunch carry, and relaunch field shift. The source note explicitly keeps the result at bounded quasi-persistent surrogate scope.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:ordered_lattice_packet_reidentification_note,ordered_lattice_quasi_persistent_relaunch_2d_note",
+      "load_bearing_step": "The compact top-5 relaunch surrogate preserves downstream profile identity on the retained 3D ordered-lattice family, with relaunch carry overlap 0.9516 for point and 0.9839 for compact5, while not claiming persistent inertial mass.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The load-bearing relaunch-control numbers are current with the runner and support the stated bounded conclusion that the compressed packet can be relaunched without downstream profile collapse. The note does not claim self-maintenance, measurable inertial mass, or a closed inertial-response theorem. Residual risk is that the stage-1 top-5 capture/carry remains a surrogate compression rather than a persistent object, which is exactly the stated boundary."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.565643+00:00",
+      "audit_date": "2026-05-19T14:19:52.039914+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "A bounded numerical replay of the six-row metric table for one fixed 2D ordered-lattice harness and one fixed Gaussian/top-k packet recipe."
+        },
+        "dep_claim_type": {
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "retained_bounded"
+        },
+        "deps": [
+          "ordered_lattice_quasi_persistent_relaunch_2d_note"
+        ],
+        "load_bearing_score": 12.973,
+        "runner_hash": "3925b6785fb1c53d319a12d0b45e5159bb81bbf84b521fb05c79d88106d7d6ab",
+        "transitive_descendants": 1004
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-ordered_lattice_quasi_pe-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner instantiates the ordered-lattice propagation, constructs the packets, reidentifies top-k detector support, relaunches the surrogate, and computes the reported overlaps and centroid shifts. The note does not claim persistent mass, family-genericity, or a closed inertial-response theorem.",
+      "claim_scope": "A bounded numerical control on the fixed 3D ordered-lattice harness h=0.5, W=8, L=12 for the point and compact5 seeds using top-5 reidentification and relaunch.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-19T14:19:52.039914+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T12:47:20.012533+00:00",
+          "auditor": "codex-audit-loop-20260511-ordered-lattice-quasi-persistent-relaunch-3d",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded numerical replay on the fixed 3D ordered-lattice harness h=0.5, W=8, L=12, z_mass=3.0, strength=5e-5, top-5 reidentification, and the two seed packets point and compact5. The audited result is the frozen metric table: free spread, 90% support bins, top-5 capture, stage-1 carry, field-induced shift, relaunch carry, and relaunch field shift for both seeds. This excludes self-maintaining persistent objects, independently measurable inertial mass, and closed inertial-response theorems.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-19T14:19:52.039914+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-ordered_lattice_quasi_pe-002",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "A bounded numerical control on the fixed 3D ordered-lattice harness h=0.5, W=8, L=12 for the point and compact5 seeds using top-5 reidentification and relaunch.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For each seed, the free-stage packet was compressed to its top-5 support bins and relaunched on the same ordered-lattice family, producing high relaunch carry overlaps on the fixed h=0.5, W=8, L=12 harness.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing result is a first-principles numerical computation on the fixed retained ordered-lattice harness, not a definition, renaming, external comparator, or hard-coded numerical replay. The primary runner and helper source compute the lattice propagation and reported metrics directly from the stated parameters. The conclusion is appropriately bounded to support/compression control and explicitly denies persistent-mass or family-generic claims."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/ordered_lattice_quasi_persistent_relaunch.py",
+  "title": "Ordered-Lattice Quasi-Persistent Relaunch Note",
+  "transitive_descendants": 42,
+  "verdict_rationale": null
+}

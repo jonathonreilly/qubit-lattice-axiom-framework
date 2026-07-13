@@ -1,0 +1,260 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 9,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.522,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7dcb1adf774b3f25d1019ca2e0faa9c92c7abbcb59a435bb43615b96bc46bd45",
+  "note_path": "docs/OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-23T18:28:45.889995+00:00",
+      "archived_for_note_hash": "02c4a58f8599b359ffdee2ce03fcd4e8a91fd11ef5c0756a16105ec53b2c7a84",
+      "audit_date": "2026-05-17T12:57:36.996149+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded."
+        },
+        "dep_claim_type": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 11.66,
+        "runner_hash": "24a7693fd786e14e6b495ea0c02429be3cfaae09144bde6e46354ed2b95e2b33",
+        "transitive_descendants": 808
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260517-125722-20260517T125000Z-576affc4-observable_principle_rea-judicial",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The determinant algebra and the log candidate checks are valid, but the universal uniqueness conclusion does not follow from the written admissibility class. Criteria (A) and (C) constrain actual no-bond decompositions of the given block; for an indecomposable block, such as a single 2x2 invertible real skew block, (A) is vacuous, so continuous normalized determinant-ratio functions like F=(log r)^2 satisfy the written criteria but are not cW. Step 6 also incorrectly promotes a local/image-level direct-sum equation to a global equation on all of R_+ by continuity alone. The runner verifies W and some non-log counterexamples against the functional equation, but it does not establish that every admissible F must satisfy that equation.",
+      "claim_scope": "Finite-dimensional invertible real anti-Hermitian block with real-symmetric sources; claimed uniqueness up to scale of determinant-ratio scalar generators under the written admissibility criteria (X2).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T12:57:36.996149+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T17:38:52.361653+00:00",
+          "auditor": "codex-audit-loop",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded block-local algebra theorem: assuming an invertible real anti-Hermitian D block supplied by the retained-bounded CPT real-D theorem, the explicitly admitted scalar-generator admissibility class (X2), and the standard continuous multiplicative-to-additive Cauchy-Erdos closure, every admissible generator has the same local source-derivative content as c*(log|det(D+J)|-log|det D|). No derivation of X2, no zero-mode/non-real-D extension, and no physical Hamiltonian or QFT observable identification is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-17T12:49:58.798717+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-124716-20260517T124716Z-2207adae-observable_principle_rea-targeted",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional invertible real anti-Hermitian block with real-symmetric sources; uniqueness up to scale of admissible determinant-ratio scalar generators.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_failed"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-17T12:57:36.996149+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-125722-20260517T125000Z-576affc4-observable_principle_rea-judicial",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional invertible real anti-Hermitian block with real-symmetric sources; claimed uniqueness up to scale of determinant-ratio scalar generators under the written admissibility criteria (X2).",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "Accepted the direct-sum/Cauchy closure as established by X2, without checking that the written X2 actually forces a global multiplicative functional equation for arbitrary admissible F on the audited block.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The determinant algebra and the log candidate checks are valid, but the universal uniqueness conclusion does not follow from the written admissibility class. Criteria (A) and (C) constrain actual no-bond decompositions of the given block; for an indecomposable block, such as a single 2x2 invertible real skew block, (A) is vacuous, so continuous normalized determinant-ratio functions like F=(log r)^2 satisfy the written criteria but are not cW. Step 6 also incorrectly promotes a local/image-level direct-sum equation to a global equation on all of R_+ by continuity alone. The runner verifies W and some non-log counterexamples against the functional equation, but it does not establish that every admissible F must satisfy that equation.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 30,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 30
+          },
+          "second_auditor_error": "none/materially correct",
+          "sided_with": "second",
+          "verdict": "audited_failed"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "Step 6, where block additivity is used to infer f(r_A r_B)=f(r_A)+f(r_B) for all positive determinant ratios and then Cauchy-Erdos is applied to force f(r)=c log r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Repair by strengthening X2 to require a universal continuous response function over a direct-sum-closed block family satisfying the multiplicative equation on all realized positive ratios, or restrict and prove the local Cauchy conclusion actually needed on U_0.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The determinant algebra and the log candidate checks are valid, but the universal uniqueness conclusion does not follow from the written admissibility class. Criteria (A) and (C) constrain actual no-bond decompositions of the given block; for an indecomposable block, such as a single 2x2 invertible real skew block, (A) is vacuous, so continuous normalized determinant-ratio functions like F=(log r)^2 satisfy the written criteria but are not cW. Step 6 also incorrectly promotes a local/image-level direct-sum equation to a global equation on all of R_+ by continuity alone. The runner verifies W and some non-log counterexamples against the functional equation, but it does not establish that every admissible F must satisfy that equation."
+    },
+    {
+      "archived_at": "2026-06-04T20:05:13.557866+00:00",
+      "audit_date": "2026-05-23T19:34:10.063087+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded."
+        },
+        "dep_claim_type": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 9.539,
+        "runner_hash": "ee687ab66eacdb8a45dc71387aeddb845f2ec1cba895c3d7c4726a32c9e44768",
+        "transitive_descendants": 92
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T193202Z-86e5d4cd-observable_principle_rea-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the scoped X2 admissibility hypothesis and the retained-bounded real-D input, the determinant factorization and dense-image continuity argument do yield the global multiplicative Cauchy equation. The standard continuous multiplicative-to-additive theorem then gives the claimed c log r form on every block because f is universal across B.",
+      "claim_scope": "Block-family local uniqueness on a direct-sum-closed family B of invertible real anti-Hermitian blocks satisfying the strengthened universal continuous determinant-ratio admissibility class with dense realized ratios: every admissible F_D equals c W_D on U_0(D), with one shared real scale c.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T19:34:10.063087+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "Step 6: strengthened additivity plus a universal determinant-ratio response gives f(r_A r_B)=f(r_A)+f(r_B) on a dense realized subset of R_+ x R_+, continuity extends it globally, and Cauchy-Erdos forces f(r)=c log r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that X2 remains treated strictly as a scoped admissibility hypothesis, not as a derived physical-selection theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "The repaired claim is explicitly scoped to a strengthened block-family admissibility class, so the prior indecomposable-block vacuity and continuity-only objections are no longer part of the asserted theorem. The proof is algebraic/functional-equation closure over the stated hypotheses, with the only cited authority retained_bounded and no numerical comparator or tuned scale. The runner source performs symbolic checks of the determinant, additivity, counterexample exclusion, and dense-ratio probes rather than merely printing constants."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.515419+00:00",
+      "audit_date": "2026-06-05T16:59:43.485519+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited."
+        },
+        "dep_claim_type": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 9.966,
+        "runner_hash": "ee687ab66eacdb8a45dc71387aeddb845f2ec1cba895c3d7c4726a32c9e44768",
+        "transitive_descendants": 124
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-165727-ed3f750b2b-observable_principle_real_d_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant factorization gives r_AB=r_A r_B on no-bond sums, so the strengthened admissibility hypotheses reduce the problem to the standard continuous multiplicative-to-additive Cauchy equation. The cited real-D authority is retained-grade, and X2/X3 are explicit bounded-theorem hypotheses rather than hidden imports.",
+      "claim_scope": "Under X1-X3, every universal continuous determinant-ratio scalar generator on a direct-sum-closed invertible real-D block family with dense realized positive determinant ratios equals c*(log|det(D+J)|-log|det D|) on each block, with the derivative identities following up to the same scale c.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T16:59:43.485519+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Step 6: strengthened block-additivity and universality give f(r_A r_B)=f(r_A)+f(r_B) on a dense realized subset of R_+ x R_+, continuity extends this to all of R_+ x R_+, and Cauchy-Erdos forces f(r)=c log r.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the up-to-scale c conclusion and do not silently replace it by c=1 without an added normalization convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "The load-bearing argument is a genuine algebraic and real-analysis closure over the stated bounded hypotheses: real determinants, block determinant multiplication, dense realized ratios, continuity, and the standard Cauchy classifier. Independent checking of the displayed determinant-ratio branches confirms that the 2x2 real-skew block realizes (0,1), 1, and (1,infty), so two factors realize a dense, in fact full, R_+ x R_+ image in the stated strengthened class. The runner output is consistent with class-A symbolic checks and does not import numerical comparators or tuned values. The conclusion is clean only in the stated up-to-scale bounded scope; X2 itself is not derived."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_observable_principle_real_d_block_uniqueness_exact_2026_05_10.py",
+  "title": "Observable Principle \u2014 Real-D-Block Generator Uniqueness Narrow Theorem",
+  "transitive_descendants": 129,
+  "verdict_rationale": null
+}

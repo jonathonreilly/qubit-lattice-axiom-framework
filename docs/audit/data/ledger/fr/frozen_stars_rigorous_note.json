@@ -1,0 +1,102 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "frozen_stars_rigorous_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gw_echo_null_result_note",
+    "work_history.gw_echo_timing_route_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "18c414526b12f71c273d250d321318d121983e1fe32facdaa5274ed4ff007705",
+  "note_path": "docs/FROZEN_STARS_RIGOROUS_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-01T06:56:27.870617+00:00",
+      "audit_date": "2026-04-30T19:26:30.430468+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "gw_echo_null_result_note": "unaudited",
+          "work_history.gw_echo_timing_route_note": "unaudited"
+        },
+        "deps": [
+          "gw_echo_null_result_note",
+          "work_history.gw_echo_timing_route_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. One-hop dependencies are not all retained (gw_echo_null_result_note=bounded, work_history.gw_echo_timing_route_note=support), so the chain does not close under the leaf audit rule.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:work_history.gw_echo_timing_route_note:support->audited_conditional",
+      "load_bearing_step": "**Bounded claim:** Lattice Fermi pressure resists gravitational collapse on all",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "docs/GW_ECHO_NULL_RESULT_NOTE.md",
+        "docs/work_history/GW_ECHO_TIMING_ROUTE_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the load-bearing chain depends on non-retained one-hop authorities (gw_echo_null_result_note=bounded, work_history.gw_echo_timing_route_note=support). Why this blocks: the leaf row can only audit clean if its cited inputs are already retained or if it has no open upstream premise. Repair target: audit or repair the listed dependency rows to retained/equivalent closure, then re-audit this claim. Claim boundary until fixed: safe to cite only at its declared bounded tier with the upstream dependency condition attached."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_frozen_stars_rigorous.py",
+  "title": "Frozen Stars Rigorous: Bounded Hartree Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

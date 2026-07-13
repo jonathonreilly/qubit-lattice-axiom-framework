@@ -1,0 +1,241 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gate_b_nonlabel_connectivity_v1_distance_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gate_b_nonlabel_connectivity_v1_note",
+    "gate_b_farfield_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "293be1481996cf92546b82a6af7dec71fbfdd65237c642463d47a32af9279dad",
+  "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_DISTANCE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-01T18:28:37.824331+00:00",
+      "audit_date": "2026-04-30T19:27:24.618237+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Yes. The registered runner exits cleanly and exposes 1 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "- this is a companion read, not a universal non-label connectivity theorem",
+      "load_bearing_step_class": "D",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified D-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing."
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.235125+00:00",
+      "audit_date": "2026-05-01T20:04:02.610230+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-01-d522",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Mac mini rerun reproduces the note's exact-grid and geometry-sector distance-law rows, but the runner emits no classified PASS lines and the companion interpretation depends on the Gate B non-label/far-field context, including rows that are conditional. The bounded distance-law observation is current; the broader closure does not close.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "deps_changed:dep_added:gate_b_farfield_note,gate_b_nonlabel_connectivity_v1_note",
+      "load_bearing_step": "On the retained h=0.5 no-restore grown family, the geometry-sector stencil keeps a positive declining far-field distance-law tail, with 12/12 TOWARD and tail b^(-0.53), R^2=0.992, while remaining a bounded companion rather than full Gate B closure.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md",
+        "docs/GATE_B_FARFIELD_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the current runner reproduces the frozen distance-law companion table, but it has no classified PASS lines and relies on the surrounding Gate B non-label/far-field package. Why this blocks: the audit lane cannot classify the TOWARD fraction, declining-tail fit, and bounded-companion boundary from the runner output, and the related Gate B carrier rows are not clean. Repair target: add classified PASS lines for exact-grid control, geometry-sector TOWARD count, declining tail, R^2 comparison, and non-closure boundary; then re-audit after the companion Gate B rows are clean. Claim boundary until fixed: a bounded current-run distance-law companion on the tested no-restore family, not a universal non-label connectivity theorem."
+    },
+    {
+      "archived_at": "2026-05-10T14:00:52.321620+00:00",
+      "archived_for_note_hash": "b7deca75af5e43716ceff3e6d8710382c019a3fc514cc34fc91df077cf93ea3c",
+      "audit_date": "2026-05-05T23:27:24.900056+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "gate_b_farfield_note": "audited_conditional",
+          "gate_b_nonlabel_connectivity_v1_note": "audited_conditional"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_nonlabel_connectivity_v1_note"
+        ],
+        "load_bearing_score": 9.362,
+        "runner_hash": "716a7e3cdc42958b672e2b68c11034b2a6b69a64f61b2091939b8fe2ecb814ac",
+        "transitive_descendants": 328
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-gate_b_nonlabel_connecti-055",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner source genuinely computes the stated TOWARD counts and power-law fit for the bounded replay. The audit chain is still conditional because cited upstream authorities include an unaudited non-label connectivity note and an audited_conditional far-field note rather than retained-grade dependencies.",
+      "claim_scope": "Audited the bounded h=0.5 no-restore grown-family distance-law companion comparing exact-grid control with geometry-sector stencil connectivity over seeds 0..3 and z=3,4,5.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:27:24.900056+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The frozen replay reports that the geometry-sector stencil gives 12/12 TOWARD with a declining tail b^(-0.53), R^2=0.992, peak z=3 on the retained h=0.5 no-restore family.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or independently re-audit docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md and resolve the conditional dependencies in docs/GATE_B_FARFIELD_NOTE.md, then rerun this bounded replay audit.",
+      "open_dependency_paths": [
+        "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md",
+        "docs/GATE_B_FARFIELD_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The provided runner is not a print-only artifact: it builds the exact grid and grown no-restore family, constructs geometry-sector connectivity, propagates amplitudes, measures centroid shifts, and fits the positive mean deltas. Its stdout matches the source note's frozen readout. However, the source explicitly depends on cited Gate B context whose provided statuses are unaudited and audited_conditional, so the conclusion cannot be promoted to audited_clean under the restricted packet."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.508123+00:00",
+      "audit_date": "2026-05-28T03:24:35.041888+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_farfield_note": "SHA-pinned bounded runner certificate for scripts/gate_b_farfield_harness.py at h=0.5, W=8, NL=25, 12 seeds, z_masses=[3,4,5], reporting 36/36 TOWARD and F~M=1.00 on each declared far-field row under the runner-defined geometry, source, propagation, and readout ingredients only.",
+          "gate_b_nonlabel_connectivity_v1_note": "Bounded non-label connectivity V1 numerical comparison on the declared Gate-B h=0.5, W=10, NL=25, four-seed, z={3,4,5}, drift=0.2 scenario: the geometry-sector forward stencil preserves the far-field signature where naive KNN+floor fails; no universal non-label connectivity theorem, generated-geometry family theorem, or physical Gate-B closure is audited."
+        },
+        "dep_claim_type": {
+          "gate_b_farfield_note": "bounded_theorem",
+          "gate_b_nonlabel_connectivity_v1_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_farfield_note": "retained_bounded",
+          "gate_b_nonlabel_connectivity_v1_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_nonlabel_connectivity_v1_note"
+        ],
+        "load_bearing_score": 7.524,
+        "runner_hash": "716a7e3cdc42958b672e2b68c11034b2a6b69a64f61b2091939b8fe2ecb814ac",
+        "transitive_descendants": 91
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gate-b-nonlabel-v1-distance-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The current one-hop dependencies are retained-bounded, the cached output matches the frozen log, and independent log-log regression on the printed mean deltas reproduces the reported negative slopes and R^2 values. Stale source prose saying the deps were conditional is historical, not audit authority.",
+      "claim_scope": "Bounded h=0.5, W=10, NL=25, four-seed, z={3,4,5} distance-law companion comparing exact grid against no-restore geometry-sector stencil connectivity on the declared Gate-B V1 family; no universal non-label transfer, physical Gate-B closure, or gravity-readout theorem is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T03:24:35.041888+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gate_b_farfield_note:retained_bounded->unaudited",
+      "load_bearing_step": "The runner reports that both exact grid and geometry-sector stencil rows are 12/12 TOWARD and have positive declining post-peak distance-law tails, with exact grid tail b^(-0.56), R^2=0.720, and geometry-sector stencil tail b^(-0.53), R^2=0.992.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if the source broadens beyond the declared V1 distance-law companion, if runner/cache/log values change, or if downstream work cites this as physical Gate-B closure or a universal non-label distance-law theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The row closes as a bounded finite-harness companion. The runner constructs the exact and no-restore geometry-sector families, propagates amplitudes, reports positive TOWARD counts for all 12 tested geometry-sector cases, and fits the post-peak distance-law tails rather than merely printing constants. Independent arithmetic on the frozen mean deltas gives slope -0.559/R^2 0.720 for exact grid and slope -0.531/R^2 0.992 for the geometry-sector stencil, matching the rounded source values. The clean scope is only this declared replay; full Gate B closure, physical-gravity readout, and universal non-label transfer remain unaudited."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
+  "title": "Gate B Non-Label Connectivity V1 Distance-Law Note",
+  "transitive_descendants": 15,
+  "verdict_rationale": null
+}

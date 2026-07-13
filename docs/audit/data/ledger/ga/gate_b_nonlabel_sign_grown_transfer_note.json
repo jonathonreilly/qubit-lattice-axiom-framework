@@ -1,0 +1,179 @@
+{
+  "audit_date": "2026-05-25T11:31:42.705039+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "gate_b_grown_distance_law_note": "Bounded replay of the exact-grid versus moderate-drift grown-geometry distance-law tail on the runner-defined h=0.5, W=10, L=12, four-seed, z=3..7 family."
+    },
+    "dep_claim_type": {
+      "gate_b_grown_distance_law_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "gate_b_grown_distance_law_note": "retained_bounded"
+    },
+    "deps": [
+      "gate_b_grown_distance_law_note"
+    ],
+    "load_bearing_score": 6.144,
+    "runner_hash": "3b9111df0ce6dc81dfd1002cfb5097e84f7c3bb68e593d21530b68a08c9d44ab",
+    "transitive_descendants": 24
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T113119Z-61456fef-gate_b_nonlabel_sign_gro-01",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited grown-distance-law authority is retained_bounded and supplies the bounded grown row. The primary runner and included helper source instantiate the grown geometry, source field, propagation, detector centroid, and transfer checks directly rather than replaying hard-coded expected values.",
+  "claim_id": "gate_b_nonlabel_sign_grown_transfer_note",
+  "claim_scope": "Seed-0 finite-runner transfer test for label-grown control and position-based geometry-sector candidate on the retained-bounded grown row with drift=0.2, restore=0.7, h=0.5.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-25T11:31:42.705039+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gate_b_grown_distance_law_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/gate_b_grown_joint_package.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 10.358,
+  "load_bearing_step": "Both the label-grown control family and the geometry-sector candidate family satisfy the zero/neutral, antisymmetry, nonzero signal, sign-orientation, and charge-linearity PASS/FAIL checks on the retained-bounded grown row.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "retained_no_go",
+  "max_descendant_status_rank": 100,
+  "note_hash": "50da03c406a1b8ad18b275843751fcab0703f92b7cfd3816908f252ac9cfc857",
+  "note_path": "docs/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check that the intended meaning of old architecture is fully captured by the runner's position-based geometry-sector candidate.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.105526+00:00",
+      "archived_for_note_hash": "4d8dd9b07a04c1fd91735deb9e31c390094f993a3ac1a3c42e45c268205df2ca",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.235582+00:00",
+      "audit_date": "2026-04-30T19:28:03.192700+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The registered runner did not complete inside the 30-second leaf audit budget, so current executable closure is not established.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "- small charge-linearity sanity pass",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the primary runner timed out during the restricted leaf audit. Why this blocks: the audit cannot verify the load-bearing computation or replay surface from the current registered runner. Repair target: provide a frozen log or a faster/sliced runner that completes under the audit budget and checks the load-bearing step. Claim boundary until fixed: safe to cite as a bounded note whose executable closure is pending."
+    },
+    {
+      "archived_at": "2026-05-24T21:52:33.269919+00:00",
+      "archived_for_note_hash": "d3d7d66dd9b039e700e98d71c2902e209c5aca329b9476cd94aaaeb23ec65031",
+      "audit_date": "2026-05-03T18:38:11.431910+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.2,
+        "transitive_descendants": 25
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-current-fresh-context",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner encodes and evaluates the narrowed numerical experiment, but the note does not close the bridge from those checks to the stronger interpretation that the old architecture genuinely transfers; the retained grown-row authority and transfer success criterion are implicit rather than derived in the provided source packet.",
+      "claim_scope": "Seed-0 retained grown-row replay at drift=0.2 and restore=0.7 for the position-based geometry-sector candidate versus label-grown control under the fixed-field signed-source response checks.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T18:38:11.431910+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The old architecture genuinely applies to the current grown-row fixed-field lane in a narrowed form because the geometry-sector candidate preserves zero/neutral controls, sign orientation, and charge linearity.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "other: cite or derive the retained grown-row construction and an explicit transfer theorem whose runner checks pass/fail criteria rather than only printing replay values.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing step turns a seed-0 numerical sanity replay into an architecture-transfer positive without a retained theorem defining the transfer criterion or deriving the grown-row/source/readout bridge from the provided inputs. Why this blocks: the frozen outputs may show nonzero sign-linear response under the script's selected construction, but they do not by themselves prove that the old non-label architecture genuinely applies rather than passing a chosen bounded diagnostic. Repair target: cite or derive the retained grown-row construction and an explicit transfer theorem whose runner checks pass/fail criteria rather than only printing replay values. Claim boundary until fixed: the note may safely report a bounded seed-0 computational sanity check for the specified geometry-sector candidate and fixed source law."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 14,
+    "D": 0,
+    "total_pass": 14
+  },
+  "runner_path": "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
+  "title": "Gate B Non-Label Sign Grown Transfer Note",
+  "transitive_descendants": 28,
+  "verdict_rationale": "The load-bearing evidence is the completed runner output with PASS=14 FAIL=0, supported by source code that actually computes the quantities under test. The only one-hop cited authority is retained_bounded and is used narrowly to identify the grown-row construction and parameters. The claim remains bounded to this seed-0 finite-runner row and does not establish a family-wide replacement or general geometry-sector theory."
+}

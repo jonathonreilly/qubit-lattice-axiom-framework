@@ -1,0 +1,181 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graph_first_su3_integration_note",
+    "record_classical_semigroup_boundary_2026-06-06",
+    "record_markov_generator_embeddability_boundary_2026-06-06"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.748,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "62a3fe95a38ea266eddaf24b45c20ce48b975338c108b218f17c3eaa0eb4ec9c",
+  "note_path": "docs/MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-09T23:37:31.143591+00:00",
+      "audit_date": "2026-06-10T04:10:15.677495+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "record_classical_semigroup_boundary_2026-06-06": "Finite post-record classical algebras C^O have only discrete permutation automorphisms and zero derivations; append/count updates are irreversible translations, while continuous Markov rates and stable points require supplied ensemble dynamics.",
+          "record_markov_generator_embeddability_boundary_2026-06-06": "Exact finite-dimensional finite-time embeddability boundary for the displayed column-stochastic kernels: swap and reset are valid discrete kernels but not exp(Q t) for a finite real Markov generator, while the lazy two-state kernel is embeddable only after rate-clock data are supplied."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "record_classical_semigroup_boundary_2026-06-06": "positive_theorem",
+          "record_markov_generator_embeddability_boundary_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "record_classical_semigroup_boundary_2026-06-06": "retained",
+          "record_markov_generator_embeddability_boundary_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "record_classical_semigroup_boundary_2026-06-06",
+          "record_markov_generator_embeddability_boundary_2026-06-06"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": "1cd37fe221e6317de1b8c1c8137ad09e7443e27f1d4c79c730d64c60a7511c6f",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-040748-9ca6b439f3-matter_color_depolarization_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The claim follows from standard SU(3) representation algebra: Herm(3)=1+8, Hom_SU(3)(1+8,8) is one-dimensional, the adjoint has no invariant vector, and E[traceless(phi phi^\u2020)] = traceless(rho). The note does not claim to derive the drift channel, a relaxation law, or full gauge-link dynamics.",
+      "claim_scope": "Given the supplied C^3 color carrier and a nonzero SU(3)-equivariant linear matter-current drift into su(3), Ad-invariance of the Lie-algebra increment first moment forces rho_color = I_3/3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T04:10:15.677495+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_classical_semigroup_boundary_2026-06-06:retained->audit_in_progress",
+      "load_bearing_step": "An Ad-invariant increment distribution has an Ad-invariant mean; since su(3) has no nonzero Ad-invariant vector and any nonzero equivariant linear drift has mean proportional to traceless(rho_color), centrality forces traceless(rho_color)=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the narrow Lie-algebra first-moment scope and do not upgrade this into a derived depolarization dynamics or full heat-kernel centrality theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing step is algebraic closure, not a numerical fit or renaming. Independent checks confirm the projection identity, the zero invariant vector condition, the order parameter identity ||traceless(rho)||_F^2 = Tr(rho^2)-1/3, and the stated Gaussian covariance anisotropy table. All cited authorities in the restricted packet are retained-grade or retained no-go boundaries, and the source note keeps the dynamics and zero-drift exceptions outside the theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:39.155998+00:00",
+      "audit_date": "2026-07-10T16:30:22.289576+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "record_classical_semigroup_boundary_2026-06-06": "Conditional on representing a supplied finite post-record alphabet by C^O, the audit establishes discrete permutation automorphisms, zero derivations, irreversible nonzero append/count translations, and the need to supply Markov generators to select continuous rates or stationary points.",
+          "record_markov_generator_embeddability_boundary_2026-06-06": "Exact finite-dimensional finite-time embeddability boundary for the displayed column-stochastic kernels: swap and reset are valid discrete kernels but not exp(Q t) for a finite real Markov generator, while the lazy two-state kernel is embeddable only after rate-clock data are supplied."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "record_classical_semigroup_boundary_2026-06-06": "no_go",
+          "record_markov_generator_embeddability_boundary_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "record_classical_semigroup_boundary_2026-06-06": "retained_no_go",
+          "record_markov_generator_embeddability_boundary_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "record_classical_semigroup_boundary_2026-06-06",
+          "record_markov_generator_embeddability_boundary_2026-06-06"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "1cd37fe221e6317de1b8c1c8137ad09e7443e27f1d4c79c730d64c60a7511c6f",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00002-matter_color_depolarization_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Centrality of the group-valued pushforward exp(i epsilon H) does not imply Ad-invariance of E[H] without an injective, Ad-equivariant logarithm or a suitable support bound. The runner verifies the representation and moment identities but never establishes this bridge.",
+      "claim_scope": "The claimed necessity of rho_color=I3/3 for centrality of the group-valued link step under a supplied nonzero SU(3)-equivariant linear matter-current drift.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:30:22.289576+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_classical_semigroup_boundary_2026-06-06:retained_no_go->unaudited",
+      "load_bearing_step": "An Ad-invariant link-increment distribution has an Ad-invariant mean generator, hence its mean in su(3) vanishes and traceless(rho_color)=0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after adding and proving a principal-log or support hypothesis that lifts centrality of the group-valued step measure to Ad-invariance of the generator distribution, and extending the runner to test that load-bearing implication.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The finite-dimensional facts Hom_SU(3)(Herm(3),su(3))=1, the absence of adjoint invariant vectors, and E[H]=traceless(rho_color) are sound within the stated conventions. However, the theorem concerns centrality of the group step exp(i epsilon H), while the proof silently treats centrality as invariance of the algebra-valued H distribution. Exponential aliases give counterexamples: for pure rho=diag(1,0,0) and drift scale 6pi/epsilon, H is nonzero but exp(i epsilon H)=I, yielding a central step measure with polarized rho."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_matter_color_depolarization_adm2_necessary_2026_06_09.py",
+  "title": "Matter Color Depolarization Is Necessary for Nonzero Matter-Current First-Moment Centrality",
+  "transitive_descendants": 18,
+  "verdict_rationale": null
+}

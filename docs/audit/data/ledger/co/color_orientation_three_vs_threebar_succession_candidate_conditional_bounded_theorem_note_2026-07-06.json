@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8f9c90bff6ddef6d22ecd5ccd2d3f86b8b8811c48fd2b4dd7ffc2f75ee3c925b",
+  "note_path": "docs/COLOR_ORIENTATION_THREE_VS_THREEBAR_SUCCESSION_CANDIDATE_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:26.915032+00:00",
+      "audit_date": "2026-07-09T07:26:06.285119+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "9ffe41ac41b1a3937758821524622256dbe2a0ea87f6e6081490541a2b78716e",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained packet only needs minimal axioms as context because the audited mathematical claim is explicitly conditional on SUPPLIED-C3, comparability/ARROW/SUCCESSION-ORIENT for T2, and ANOMALY-CANCEL for T3. The runner computes the su(3)/su(2) intertwiner nullities and cubic anomaly signs exactly over rational complex matrices and reports PASS=6 FAIL=0; quoted external snippets are used as context checks, not as closure for the bounded algebraic claim.",
+      "claim_scope": "Bounded conditional color-orientation algebra: for a supplied complex C^3 carrier, the fundamental and conjugate su(3) modules are complex-linearly inequivalent, the su(2) epsilon control is one-dimensional, and the exact cubic-anomaly signs are opposite; T2 is only a named candidate premise conditional on comparability, ARROW, and SUCCESSION-ORIENT, and no C^3 carrier, orientation supplier, T-oddness, anomaly-cancellation law, physical color/quark identification, gauge dynamics, chirality, or hypercharge bridge is derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T07:26:06.285119+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Assuming SUPPLIED-C3, Hom_su3(3,3bar)=0 while the su(2) control has a one-dimensional epsilon intertwiner, and the cubic anomaly tensor satisfies A(3)=+1, A(3bar)=-1, so a supplied 3 plus ANOMALY-CANCEL requires a 3bar consistency partner; SUCCESSION-ORIENT remains only a named conditional premise.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Clean within the bounded conditional scope: the exact representation-theory checks close for a supplied C^3 carrier, and the anomaly-sign bookkeeping closes for a supplied anomaly-cancellation condition. The note repeatedly fences the open premises: C^3, comparability, ARROW, SUCCESSION-ORIENT, record-statistical influence, anomaly cancellation, and physical color/quark identification are not derived. Residual risk is only misuse downstream; citation must not promote the candidate succession supplier or any physical color bridge beyond the audited algebraic scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/color_orientation_three_vs_threebar_succession_candidate_2026_07_06.py",
+  "title": "Color Orientation Three Vs Threebar From Succession: Candidate Conditional Bounded Theorem",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

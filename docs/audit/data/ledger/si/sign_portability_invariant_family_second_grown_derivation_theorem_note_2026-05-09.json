@@ -1,0 +1,264 @@
+{
+  "audit_date": "2026-05-27T01:16:00.929136+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 6.804,
+    "runner_hash": "02e3c0ec275db8a548ce4f78120f2e8271dcbced48fea46ccf3dd0708cf885e0",
+    "transitive_descendants": 78
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-gpt-5.5-fresh-sign-portability-gate-certificate-2026-05-26",
+  "auditor_confidence": null,
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The narrowed claim follows from the SHA-pinned cached runner output and the inspected runner source: the runner recomputes a two-row second-grown subset and then checks the same thresholds against registered family logs. This closes only the bounded diagnostic/cache certificate, not a unit-slope theorem, row-wise lower-bound theorem, physical sign-law derivation, or cross-family proof.",
+  "claim_id": "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
+  "claim_scope": "Finite cached-output certificate that SIGN_PORTABILITY_INVARIANT_COMPARE reports runner-defined G1/G2/G3/G4 gate passes for the recorded derivation subset, five core family logs, and one holdout family under the stated tolerances.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-05-27T01:16:00.929136+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
+    "scripts/gate_b_nonlabel_connectivity_v1.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 7.008,
+  "load_bearing_step": "In logs/runner-cache/SIGN_PORTABILITY_INVARIANT_COMPARE.txt, the runner reports the second-grown gate block PASS, all listed core and holdout families as G1G2G3G4=PPPP, configured thresholds, and OVERALL PASS.",
+  "load_bearing_step_class": "B",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "880b226ddb10aa94c47a0c7803ad4ebe3c4a15c461a661b8e150184de9455f82",
+  "note_path": "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md",
+  "notes_for_re_audit_if_any": "Re-audit only if the claim is broadened beyond the cached runner-defined gate certificate, the registered family logs change, or the runner/cache hash changes.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-10T07:52:43.411326+00:00",
+      "archived_for_note_hash": "ce3823eac47f28f1fd16c39ae3f9fe7565dc67fe3d2545f2b66c891080d2b5e0",
+      "audit_date": "2026-05-09T14:18:24.701849+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.67,
+        "runner_hash": "4a1d645c3c821e7fd4f18f5bc86711eb280defe206af014d28ce9e5b08f11635",
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0d19-f0ab-74d3-8db2-22748df61a24",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The formal algebra for G1-G4 closes only conditional on the structural source map, propagation kernel, centroid readout, family slice, retained-family status, and log provenance. Those dependencies are named in the note but no one-hop cited authorities are provided in the restricted packet, and the runner imports external family code and reads logs whose contents/provenance are not included.",
+      "claim_scope": "Audited the note's bounded derivation of gates G1-G4 for the second grown family and its stated cross-family corollary, using only the provided note, stdout, and runner source.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-09T14:18:24.701849+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "From the Jacobi expansion, field sign reversal sends J to -J, so R(plus)=eps*dz_+ + O(eps^2), R(minus)=-eps*dz_+ + O(eps^2), and R(double)/R(plus)=2+O(eps).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the named one-hop dependencies and source/log certificates needed to verify the structural inputs and retained-family status inside the restricted packet.",
+      "open_dependency_paths": [
+        "docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md",
+        "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 6,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the note's algebraic/Taylor proof depends on structural inputs and retained sign-law family facts that are not supplied as cited authorities in the packet. Why this blocks: the auditor cannot verify that the second grown family, other retained families, imported source code, or registered logs actually instantiate the stated source-to-field map, propagation/readout, anchor rule, and retained-family status. Repair target: add retained one-hop authorities or embedded source certificates for the family construction, propagation/readout implementation, and log provenance, plus a runner that exposes the checked structural equivalence. Claim boundary until fixed: the packet supports only a conditional algebraic statement that if those maps and retained-family facts hold, then the four gates follow to the stated exact or weak-field order."
+    },
+    {
+      "archived_at": "2026-05-18T11:39:54.845725+00:00",
+      "archived_for_note_hash": "b829dd982daf66984f3bfaba5e62a0b4af8ebb5d12c2b227389e8c2c8a23da1e",
+      "audit_date": "2026-05-11T11:34:15.679026+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "second_grown_family_sign_note": "The audited packet supports that the signed-source fixed-field diagnostics pass on the tested no-restore geometry-sector grown-family slice for the listed drifts and seeds."
+        },
+        "dep_claim_type": {
+          "second_grown_family_sign_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "second_grown_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "second_grown_family_sign_note"
+        ],
+        "load_bearing_score": 9.262,
+        "runner_hash": "4a1d645c3c821e7fd4f18f5bc86711eb280defe206af014d28ce9e5b08f11635",
+        "transitive_descendants": 433
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e16ce-daa5-77e1-92e5-a8055f1082bb",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "G1 and G2 close, and G3 closes as a leading-order smoothness consequence where the centroid readout is regular. G4 does not close from the stated structural inputs because the ratio/log step requires a nonzero first-order plus response and a nonzero detector-intensity denominator, neither of which is proved or stated as an assumption.",
+      "claim_scope": "Within the second no-restore grown-family source/propagation/readout maps, G1-G2 are finite-strength cancellation identities and G3-G4 are weak-field sign/slope identities, with a conditional cross-family corollary for families sharing those maps.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T11:34:15.679026+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "From R(double)=2 eps dz_+ + O(eps^2) and R(plus)=eps dz_+ + O(eps^2), the note concludes R(double)/R(plus)=2+O(eps) and log_2(R(double)/R(plus))=1+O(eps).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or certify row-wise lower bounds on detector-layer intensity and on the first-order plus-source response dz_+ for the second grown family, and state the same hypothesis for cross-family inheritance.",
+      "open_dependency_paths": [
+        "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md",
+        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
+        "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 24,
+        "C": 0,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict_rationale": "Issue: The G4 unit-slope derivation divides by R(plus) and expands the logarithm without proving that dz_+ is nonzero or bounded away from zero, and the centroid quotient also needs a detector-intensity lower bound. Why this blocks: Linearity and Taylor expansion imply the displayed numerator forms only under regular readout; they do not force a unit response slope if the first-order response vanishes. Repair target: Add a retained row-wise theorem or certified computation giving lower bounds for the detector denominator and plus-source linear response on the second grown-family slice, then rerun G4 against those bounds. Claim boundary until fixed: G1/G2 exact cancellation and G3 leading antisymmetry remain supported, while G4 and the cross-family unit-slope corollary are conditional on nonzero linear response."
+    },
+    {
+      "archived_at": "2026-05-22T01:27:47.739550+00:00",
+      "archived_for_note_hash": "0d6ec9fcf5aab6b91dc8426ed96ea05d0ff6f6bb4a355daa8469e34d485df985",
+      "audit_date": "2026-05-18T12:10:49.304936+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "second_grown_family_sign_note": "The audited packet supports that the signed-source fixed-field diagnostics pass on the tested no-restore geometry-sector grown-family slice for the listed drifts and seeds."
+        },
+        "dep_claim_type": {
+          "second_grown_family_sign_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "second_grown_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "second_grown_family_sign_note"
+        ],
+        "load_bearing_score": 10.299,
+        "runner_hash": "4a1d645c3c821e7fd4f18f5bc86711eb280defe206af014d28ce9e5b08f11635",
+        "transitive_descendants": 890
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-sign_portability_invaria-010",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic source-cancellation claims close, and the sign-flip Taylor argument supports the stated leading antisymmetry once centroid regularity is available. The packet does not prove row-wise lower bounds on detector-layer intensity or nonzero dz_+, so the unit-slope and unconditional four-gate/cross-family form do not close.",
+      "claim_scope": "G1 and G2 exact finite-strength cancellation identities and G3 leading-order weak-field antisymmetry on the second grown-family slice; G4 and cross-family unit slope remain conditional on nonzero linear response.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T12:10:49.304936+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the sign flip f_unit -> -f_unit, the Jacobi term flips sign, giving R(plus) = eps * dz_+ + O(eps^2) and R(minus) = -eps * dz_+ + O(eps^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or certify row-wise lower bounds on detector-layer intensity and dz_+ for the second grown family before promoting G4 or the cross-family unit-slope corollary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 24,
+        "C": 4,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The runner source does real computation for the second grown-family subset and separately parses registered family logs; it is not merely printing constants. G1 and G2 are genuine algebraic identities over the provided source map. The G3/G4 Taylor expansion assumes regular centroid denominators, and G4 further assumes nonzero first-order response; those lower bounds are explicitly marked as open work in the note and are not supplied in the restricted packet."
+    },
+    {
+      "archived_at": "2026-05-26T11:32:52.939805+00:00",
+      "archived_for_note_hash": "a94c72395e88766ac1d352db99f1b25c8cc915fd25565bdfdedb9cc07c0e9e11",
+      "audit_date": "2026-05-22T02:35:47.291086+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "second_grown_family_sign_note": "The audited packet supports that the signed-source fixed-field diagnostics pass on the tested no-restore geometry-sector grown-family slice for the listed drifts and seeds."
+        },
+        "dep_claim_type": {
+          "second_grown_family_sign_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "second_grown_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "second_grown_family_sign_note"
+        ],
+        "load_bearing_score": 10.46,
+        "runner_hash": "4a1d645c3c821e7fd4f18f5bc86711eb280defe206af014d28ce9e5b08f11635",
+        "transitive_descendants": 995
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260522-023108-49f0228b-sign_portability_invaria-006",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact G1/G2 algebraic cancellations close from the provided source map and deterministic anchor rule. The weak-field centroid expansion and unit-slope ratio remain conditional because the packet does not certify row-wise detector-denominator lower bounds or nonzero first-order plus-source response dz_+.",
+      "claim_scope": "Audited the narrowed second-grown-family claim: G1 and G2 exact finite-strength algebraic cancellations, plus G3/G4 leading-order weak-field gate claims only to the extent supported by the provided source, cited note, and runner packet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T02:35:47.291086+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "G1/G2 follow because the source-to-field map gives exactly zero field for empty or same-anchor +1/-1 sources; G3/G4 follow by Taylor expanding the propagation and detector centroid in eps so the Jacobi term flips sign and doubles under doubled charge.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: certify row-wise lower bounds on detector-layer intensity/centroid denominator and on first-order plus-source response dz_+ for the second grown family before promoting G3/G4 or the unit-slope corollary.",
+      "open_dependency_paths": [
+        "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The runner genuinely computes the second-grown-family rows for a subset and parses registered family logs, and it supports the finite-strength algebraic G1/G2 checks. However, the note itself explicitly records that G3/G4 require regular-denominator and nonzero-linear-response bounds, and those bounds are not supplied in the restricted packet. The cross-family unit-slope corollary also inherits that open regularity premise, so the full bounded-theorem surface does not close unconditionally."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 1,
+    "C": 0,
+    "D": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
+  "title": "Sign Portability Invariant Cached Gate Certificate",
+  "transitive_descendants": 90,
+  "verdict_rationale": "The cross-log dependence is load-bearing, so the step is class B rather than a first-principles derivation; however the source note has been narrowed to exactly that finite cached gate-certificate claim. The runner source and cache output support the stated PASS lines and thresholds, and the note explicitly excludes the broader theorem and physical-derivation readings. The decoration heuristic is not controlling here because the note is not an algebraic corollary of a single parent claim; it is a bounded runner diagnostic over recorded artifacts."
+}

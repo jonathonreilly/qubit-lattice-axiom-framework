@@ -1,0 +1,360 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "three_generation_observable_dep_chain_audit_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "meta",
+  "claim_type_author_hint": "meta",
+  "claim_type_author_hint_raw": "`meta` \u2014 retired dep-chain bookkeeping snapshot",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "three_generation_observable_theorem_note",
+    "generation_axiom_boundary_note",
+    "site_phase_cube_shift_intertwiner_note",
+    "s3_taste_cube_decomposition_note",
+    "s3_mass_matrix_no_go_note",
+    "z2_hw1_mass_matrix_parametrization_note",
+    "physical_lattice_necessity_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "meta",
+  "effective_status_reason": "metadata",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "meta",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0d96a1c3ea694c4d62bd6199108bb8cccf3bf3a8d2422c22bb8a56fb8b58c01c",
+  "note_path": "docs/THREE_GENERATION_OBSERVABLE_DEP_CHAIN_AUDIT_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T16:14:52.378749+00:00",
+      "archived_for_note_hash": "c8c61a041c822f4aa09c9bbe2d4dbd68e0e8768b4ece03c343b78e78c0bbbf02",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-02T16:15:40.860081+00:00",
+      "archived_for_note_hash": "1065ce7d3ea0b1816ec0aa0617c2232d35d4a3a16be9263385870d74b2d7c4cf",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T13:40:53.233960+00:00",
+      "audit_date": "2026-05-03T02:20:07.903245+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "fresh-agent-euclid-2nd-019deba1-836a-7c12-bbb6-303a7c5009d6",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet's load-bearing dependency/status statement is stale against the current operational parent row: the parent is retained with four declared deps, and generation_axiom_boundary_note is not a current declared dependency. The runner proves the parent algebra theorem but does not validate this dep-chain packet.",
+      "claim_scope": "Dep-chain/status audit packet asserting that three_generation_observable_theorem_note remains blocked by generation_axiom_boundary_note and recommending dependency/status cleanup for generation_axiom_boundary_note and physical_lattice_necessity_note.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-05-03T02:20:07.903245+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:three_generation_observable_theorem_note:retained->unaudited",
+      "load_bearing_step": "Parent note has 5 deps; only generation_axiom_boundary_note is conditional, blocking the parent's effective retention.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit only after the source note is scoped to the current operational dependency graph, or after the ledger explicitly restores generation_axiom_boundary_note as a declared parent dependency.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 24,
+        "D": 0,
+        "total_pass": 47
+      },
+      "verdict_rationale": "Issue: the source note's central dep-chain claim says the parent has five deps and is blocked by generation_axiom_boundary_note, while the current operational parent row is retained with four deps and excludes generation_axiom_boundary_note. Why this blocks: the packet's recommended cleanup and retention-path conclusion depend on a non-current dependency graph, so the claimed blocker and repair path cannot be recorded as closing the scoped current claim. Repair target: replace this packet with a current metadata repair note, or update the operational ledger dependency declaration first and then re-audit the revised scoped claim from current rows. Claim boundary until fixed: the parent theorem runner may still support the retained algebra theorem, but this dep-chain audit packet itself should not be treated as a valid current theorem or status certificate."
+    },
+    {
+      "archived_at": "2026-05-25T09:45:04.027256+00:00",
+      "archived_for_note_hash": "f5edf24c73e6dfb26de3d0c21c81fe705feb877f131f4d98f975b865c07bbe3e",
+      "audit_date": "2026-05-24T21:04:51.564247+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+        },
+        "dep_claim_type": {
+          "three_generation_observable_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "three_generation_observable_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "62ebd44bdaf2638a9682e67fb32031013123dca283ff4bf5d81d828dd870f7d2",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T210430Z-d8e51045-three_generation_observa-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet does not provide the claimed audit records, the `GENERATION_AXIOM_BOUNDARY_NOTE.md` source, or the cycle 7 authority needed to verify the dep-chain status. The provided parent authority also states that `GENERATION_AXIOM_BOUNDARY_NOTE.md` is no longer load-bearing for the narrowed theorem, so the source note's retention-path claim is not closed by the packet.",
+      "claim_scope": "Audited only the dep-chain/status assertion that the observable theorem was blocked by `GENERATION_AXIOM_BOUNDARY_NOTE.md` and could lift once that dependency was repaired.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-05-24T21:04:51.564247+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Only `generation_axiom_boundary_note` is conditional, blocking the parent's effective retention; if it lifts, `three_generation_observable_theorem_note` becomes eligible for retained certification.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the audit-ledger rows and source/audit packet for `GENERATION_AXIOM_BOUNDARY_NOTE.md` plus the cycle 7 `physical_lattice_necessity_note` repair record, or retire this historical dep-chain note after the parent note's 2026-05-24 dependency-boundary cleanup.",
+      "open_dependency_paths": [
+        "docs/GENERATION_AXIOM_BOUNDARY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 47,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 47
+      },
+      "verdict_rationale": "The runner verifies the finite-dimensional `C^3` operator-algebra theorem, but that is not the source note's load-bearing dep-chain/status claim. The audited note relies on external audit-ledger status facts and undeclared authorities about `generation_axiom_boundary_note` and cycle 7 that are not included in the packet. Because the one provided parent authority is retained-grade but has since narrowed away the allegedly blocking dependency, the dep-chain audit note cannot be certified clean from these inputs."
+    },
+    {
+      "archived_at": "2026-05-25T22:48:54.805179+00:00",
+      "archived_for_note_hash": "a7aed87a00e940c9a438ea6f45ff4aed4feaf5050417f7da6910c74d3ec425cb",
+      "audit_date": "2026-05-25T12:40:09.022042+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "generation_axiom_boundary_note": "Finite-dimensional algebra check that the supplied H_hw=1 translation-character projectors and C3 cycle generator generate M_3(C) with scalar commutant; physical-species, substrate, and historical-memo claims are excluded.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+        },
+        "dep_claim_type": {
+          "generation_axiom_boundary_note": "bounded_theorem",
+          "three_generation_observable_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "generation_axiom_boundary_note": "retained_bounded",
+          "three_generation_observable_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "generation_axiom_boundary_note",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "62ebd44bdaf2638a9682e67fb32031013123dca283ff4bf5d81d828dd870f7d2",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T123947Z-ef1ae8e3-three_generation_observa-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet does not provide the audit records/statuses for the four other named dependencies or the cycle-7 physical_lattice_necessity repair, so the asserted 4/5-clean dep-chain verification cannot be independently checked from the cited inputs. The provided current one-hop authorities also show updated retained_bounded statuses, making the older conditional-blocker statement stale rather than closed as presented.",
+      "claim_scope": "Dep-chain bookkeeping claim that the three-generation observable theorem's retention path is blocked only by generation_axiom_boundary_note and should clear once that dependency is repaired.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-05-25T12:40:09.022042+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Only generation_axiom_boundary_note is conditional, blocking the parent's effective retention; if it lifts, three_generation_observable_theorem_note becomes eligible for candidate retained-grade certification with all deps clean.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the audit-ledger records/effective statuses for all five named dependencies and the cycle-7 physical_lattice_necessity repair, or narrow this note to the current retained_bounded post-repair bookkeeping state.",
+      "open_dependency_paths": [
+        "docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md",
+        "docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md",
+        "docs/S3_MASS_MATRIX_NO_GO_NOTE.md",
+        "docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md",
+        "docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 47,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 47
+      },
+      "verdict_rationale": "The runner source genuinely checks the local M_3(C) observable-algebra theorem, but that is the parent theorem's algebraic content, not the dep-chain bookkeeping asserted by this audit note. The source note's load-bearing claim depends on audit-ledger statuses and dependency declarations for several authorities that are not included in the restricted packet. Because the claim is a status/dependency-chain assertion rather than a mathematical theorem, the chain cannot close from only the two cited authorities supplied here."
+    },
+    {
+      "archived_at": "2026-05-27T14:03:01.197964+00:00",
+      "archived_for_note_hash": "68e659b7bab0f16154fae11e6afd3646a65d205065f446ff398481be3d6a316c",
+      "audit_date": "2026-05-25T23:54:30.330542+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "generation_axiom_boundary_note": "Finite-dimensional algebra check that the supplied H_hw=1 translation-character projectors and C3 cycle generator generate M_3(C) with scalar commutant; physical-species, substrate, and historical-memo claims are excluded.",
+          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can.",
+          "s3_mass_matrix_no_go_note": "Exact unbroken S_3-invariant Hermitian operators on the stated hw=1 triplet V = span(X_1, X_2, X_3) have at most two distinct eigenvalues; the residual axis-fixing Z_2 invariant space has real dimension 5.",
+          "s3_taste_cube_decomposition_note": "Abstract finite-group representation theorem for the tensor-position permutation action of S_3 on C^8 = (C^2)^{\\otimes 3}; no framework taste-cube carrier or physical flavor interpretation is audited.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists.",
+          "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
+        },
+        "dep_claim_type": {
+          "generation_axiom_boundary_note": "bounded_theorem",
+          "physical_lattice_necessity_note": "no_go",
+          "s3_mass_matrix_no_go_note": "no_go",
+          "s3_taste_cube_decomposition_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "three_generation_observable_theorem_note": "bounded_theorem",
+          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "generation_axiom_boundary_note": "retained_bounded",
+          "physical_lattice_necessity_note": "retained_no_go",
+          "s3_mass_matrix_no_go_note": "retained_no_go",
+          "s3_taste_cube_decomposition_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "three_generation_observable_theorem_note": "retained_bounded",
+          "z2_hw1_mass_matrix_parametrization_note": "retained"
+        },
+        "deps": [
+          "generation_axiom_boundary_note",
+          "physical_lattice_necessity_note",
+          "s3_mass_matrix_no_go_note",
+          "s3_taste_cube_decomposition_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "three_generation_observable_theorem_note",
+          "z2_hw1_mass_matrix_parametrization_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "62ebd44bdaf2638a9682e67fb32031013123dca283ff4bf5d81d828dd870f7d2",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T235410Z-d88b7cd2-three_generation_observa-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet contradicts the note's load-bearing status premise: `GENERATION_AXIOM_BOUNDARY_NOTE.md` is supplied as `retained_bounded`, not conditional, and the parent authority says that boundary note is no longer a load-bearing input for the narrowed algebra theorem. The dep-chain repair described in the source note is therefore stale as an audit claim.",
+      "claim_scope": "Dep-chain bookkeeping claim about whether `three_generation_observable_theorem_note` is blocked by the audit status of `generation_axiom_boundary_note`.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-05-25T23:54:30.330542+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Only `generation_axiom_boundary_note` is conditional, blocking the parent's effective retention; if it lifts, the parent becomes eligible for candidate retained-grade certification with all deps clean.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "other: refresh or retire this stale dep-chain audit note against the current dependency boundary and effective-status table.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 47,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 47
+      },
+      "verdict_rationale": "The runner verifies the finite `M_3(C)` observable theorem, but the source note under audit is a dep-chain/status note, not the theorem itself. Its core claim that the parent is blocked by a conditional `generation_axiom_boundary_note` does not close against the cited authorities provided in this packet. The packet instead shows the boundary note as retained-bounded and the parent as narrowed away from depending on it load-bearingly."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Three-Generation Observable Theorem \u2014 Dep-Chain Audit (Retired)",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

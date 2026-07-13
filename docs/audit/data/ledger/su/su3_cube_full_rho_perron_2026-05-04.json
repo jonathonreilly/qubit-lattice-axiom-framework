@@ -1,0 +1,115 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su3_cube_full_rho_perron_2026-05-04",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
+    "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
+    "gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.549,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a9e7200a02eca488b758f5050b0e89a6a8a3e3ec32ca031cebc126e9b28251b7",
+  "note_path": "docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-24T08:14:17.776350+00:00",
+      "archived_for_note_hash": "6cd1e774c40a8b0dd968b3e4452b81a4165f93dd4a1824f401c9de5e3652935e",
+      "audit_date": "2026-05-23T19:31:24.774225+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "Block 4 L_s=3 PBC cube partition-function staging only: Bessel-determinant coefficients, trivial-sector partition identity, rank-8 four-fold Haar singlet basis, stated plaquette-tensor encoding, and storage/intermediate-size scope arithmetic; no L_s=2 orientation diagnostics, bridge-gap claim, or full 81-link contraction."
+        },
+        "dep_claim_type": {
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "retained_bounded"
+        },
+        "deps": [
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 9.18,
+        "runner_hash": "16707dcd81f0d8421e5d160ab0e583f8deca589c85fe1f9d71b281626be2185f",
+        "transitive_descendants": 144
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T192936Z-957ee17b-su3_cube_full_rho_perron-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes the displayed finite Perron value from the encoded candidate ansatz, but the restricted packet does not retain the L_s=2 index-graph/candidate-rho ansatz or the APBC boundary-condition convention. The sole cited authority is retained only for Block 4 and explicitly removes the Block 5/P_candidate/bridge limb from its load-bearing scope.",
+      "claim_scope": "Audited the restricted packet's L_s=2 all-forward/no-phase full candidate-rho Perron computation, its NMAX_rho stability, and its comparison to the hard-coded Block 5 and bridge constants.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T19:31:24.774225+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the existing-runner all-forward/no-APBC-phase convention, the full candidate ansatz rho_(p,q)(6)=((d_(p,q)c_(p,q)(6)/c_(0,0)(6))^12)d_(p,q)^(-16) gives P_cube(L_s=2,beta=6)=0.4291049969, stable across NMAX_rho.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained authority for the L_s=2 all-forward index-graph/candidate-rho ansatz and a retained APBC boundary-condition/phase-factor specification, or narrow the row to a conditional finite-matrix computation under the displayed ansatz.",
+      "open_dependency_paths": [
+        "docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md",
+        "docs/GAUGE_SCALAR_BRIDGE_3PLUS1_NATIVE_TUBE_STAGING_GATE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The runner source computes Wilson character coefficients, builds the candidate rho diagonal, constructs the finite Perron transfer matrix, and reproduces the reported stable value; stdout alone is not the issue. The load-bearing exponents and the APBC-equals-PBC/no-phase interpretation are imported from the former Block 5/open-gate surface, while the provided retained authority now disclaims exactly those L_s=2 and bridge constants. The source also admits a possible Z_3 center-twist APBC phase implementation gap. No-Go gate N1/N6 blocks a clean negative boundary for the 'cannot close' claim because the packet does not enumerate five attack routes and itself leaves a convention/implementation route open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py",
+  "title": "SU(3) L_s=2 APBC Cube Full-\u03c1 Perron Solve: APBC \u2261 PBC Under Existing Implementation",
+  "transitive_descendants": 748,
+  "verdict_rationale": null
+}

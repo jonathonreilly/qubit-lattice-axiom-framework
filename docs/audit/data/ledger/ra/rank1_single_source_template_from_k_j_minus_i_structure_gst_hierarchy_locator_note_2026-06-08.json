@@ -1,0 +1,261 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (structural locator: derived `K=|K|(J\u2212I)` supplies the rank-1 singlet-plus-doublet template; GST magnitudes still require the mass hierarchy)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "961b36e18116a9cb620182540e3f9d26e4a267adba6b0e6bdea626758609f987",
+  "note_path": "docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-11T21:38:54.170494+00:00",
+      "audit_date": "2026-06-08T16:15:53.252417+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "Algebraic structure of delta in the minimal Hamming single-hop model: the factorized free sector has zero occupation curvature, a uniform pair interaction gives delta=U, the Schur off-diagonal has the stated no-resonance sign law, and a one-body lattice realization would require forbidden face-diagonal hops."
+        },
+        "dep_claim_type": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "retained"
+        },
+        "deps": [
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3f1747106e9898986c11e88534d8c023bbb55408409c51d1ca670eff52cfa820",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-161410-096b210a0a-rank1_single_source_template",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The structural claims follow from the retained upstream K form plus standard finite-dimensional matrix algebra: J has eigenvalues (3,0,0), J\u2212I has (2,\u22121,\u22121), and [[m,b],[b,m]] has 45\u00b0 eigenvector mixing. The note explicitly leaves the physical mass/readout identification and the origin of the hierarchy outside scope.",
+      "claim_scope": "Audited only the structural locator: the retained C3 coupling form K=|K|(J\u2212I) contains a rank-1 singlet/democratic J piece, yields a singlet plus degenerate doublet spectrum, and the stated reduced 2x2 toy blocks distinguish degenerate maximal mixing from split-doublet small mixing; no physical mass/readout or hierarchy derivation was audited as closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T16:15:53.252417+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06:retained->unaudited",
+      "load_bearing_step": "Given the retained derived coupling K = |K|(J\u2212I), J = 3\u00b7P_singlet is rank-1 and K = 3|K|\u00b7P_singlet \u2212 |K|\u00b7I has spectrum (2|K|, \u2212|K|, \u2212|K|).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream rows preserve the locator-only scope and do not treat this audit as closing the physical mass/readout bridge or hierarchy magnitude.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner source performs the relevant rank, eigenvalue, and 2x2 mixing calculations rather than merely printing the expected result, and an independent algebra check agrees with the displayed factors and spectra. The numerical 12.6\u00b0 toy value follows from the stated split block with m1=0.05, m2=1, b=sqrt(0.05), while the PDG angles are comparator-only and not asserted as derived. The clean verdict is only for the bounded locator theorem, not for identifying K with the physical mass operator or deriving the doublet hierarchy."
+    },
+    {
+      "archived_at": "2026-06-13T23:49:04.619858+00:00",
+      "audit_date": "2026-06-12T02:58:35.448376+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "For the stated Hamming-weight single-hop model and uniform native pair coupling, delta=E2-2E1+E0 vanishes for axis-separable one-body dynamics, equals the pair coefficient, and gives the regime-scoped off-diagonal K formula with the stated forbidden-diagonal one-body realization."
+        },
+        "dep_claim_type": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "retained"
+        },
+        "deps": [
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "3f1747106e9898986c11e88534d8c023bbb55408409c51d1ca670eff52cfa820",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260612-025552-bb1381c7dc-rank1_single_source_template",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped claim follows by standard linear algebra from the retained upstream `J-I` C3 form: `J^2=3J`, `P_singlet=J/3`, and `spec(J-I)={2,-1,-1}`. The physical mass/readout identification and derivation of the hierarchy are explicitly outside this audited scope.",
+      "claim_scope": "Algebraic locator: given the retained C3 coupling form `K = |K|(J-I)`, `J` is the rank-1 singlet projector up to factor 3, `K` has a singlet-plus-degenerate-doublet spectrum, and the stated reduced 2x2 toy blocks give maximal versus small mixing.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-12T02:58:35.448376+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06:retained->unaudited",
+      "load_bearing_step": "`K = 3|K| P_singlet - |K| I` and `(J-I)` has eigenvalues `(2,-1,-1)`, giving a distinct singlet plus a 2-fold degenerate doublet.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that the scope remains algebraic; the `|K|` sign convention does not affect the rank or degeneracy result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing content is algebra over one retained parent claim, not a new first-principles computation. Independent formula checks confirm the projector normalization, rank, spectrum, the 45 degree degenerate 2x2 block, and the split toy-block value `theta = 0.5 atan(2 sqrt(0.05)/0.95) ~= 12.6 deg`. The runner performs the same finite linear algebra; its chosen `Kmag=0.4` is illustrative and non-load-bearing. This adds a structural locator/template consequence while leaving mass/readout and hierarchy closure open."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.982567+00:00",
+      "audit_date": "2026-06-14T04:00:40.946215+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "Audited the finite Hamming-cube structure theorem that delta is the occupation-number second difference, vanishes for the axis-separable free single-hop sector, is the symmetric pair-count coefficient for a native two-body term, and gives K_off=t^2*U/[eps*(eps+U)] with sign lock only for eps>0 and eps+U>0; no mediator-derived value of delta is audited."
+        },
+        "dep_claim_type": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "retained"
+        },
+        "deps": [
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "3f1747106e9898986c11e88534d8c023bbb55408409c51d1ca670eff52cfa820",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-035803-0c99604416-rank1_single_source_template",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained cited authority supplies the C3 coupling form, and the source note's structural claims follow by standard finite-dimensional linear algebra. The note explicitly leaves physical mass/readout identification and the mass-hierarchy derivation outside the closed scope.",
+      "claim_scope": "The audited scope is the structural locator: the derived C3 coupling has a rank-1 singlet source plus degenerate doublet template, and elementary reduced-block algebra shows degenerate-doublet maximal mixing while small GST-like mixing is not supplied by K alone.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T04:00:40.946215+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06:retained->unaudited",
+      "load_bearing_step": "Given the retained upstream C3 coupling form K = |K|(J-I), the all-ones matrix J = 3 P_singlet is rank 1, so J-I has a distinct singlet eigenvalue and a two-fold degenerate doublet.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that future downstream uses do not treat this row as a physical mass/readout or hierarchy derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Independent algebra confirms J/3 is the singlet projector, J-I has eigenvalues 2,-1,-1, and K therefore has one distinguished singlet plus a degenerate doublet up to the overall coupling sign convention. The 2x2 blocks also check: exact doublet degeneracy with symmetric off-diagonal breaking gives 45 degrees, while the stated split GST toy example gives about 12.6 degrees. The runner source performs these matrix/eigenvalue checks rather than merely printing constants, and the observational angles are comparator-only, not load-bearing inputs."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.226986+00:00",
+      "audit_date": "2026-06-21T18:35:17.884292+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "Exact algebraic structure of delta in the Hamming single-hop model: free axis-separable dynamics has zero occupation curvature, a symmetric pair coupling gives delta=U and the stated regime-scoped Schur sign law, and realizing that curvature as a one-body lattice term would require forbidden face-diagonal hopping."
+        },
+        "dep_claim_type": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": "retained"
+        },
+        "deps": [
+          "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "3f1747106e9898986c11e88534d8c023bbb55408409c51d1ca670eff52cfa820",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The audited structural claim follows from the retained upstream K=|K|(J-I) input plus finite-dimensional linear algebra. The physical mass/readout identification and the doublet hierarchy are explicitly residual and are not closed by this note.",
+      "claim_scope": "Given the retained upstream C3 coupling K=|K|(J-I), the note verifies the rank-1 J template, singlet-plus-doublet spectrum, and elementary reduced 2x2 mixing consequences while leaving physical mass/readout and hierarchy closure outside scope.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-21T18:35:17.884292+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06:retained->unaudited",
+      "load_bearing_step": "Since J=3*P_singlet is rank-1, K=|K|(J-I)=3|K|*P_singlet-|K|*I has eigenvalues (2|K|,-|K|,-|K|), giving a distinct singlet plus a degenerate doublet.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the GST and mass/readout language remains scoped as residual and is not promoted beyond the algebraic K-template locator.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner genuinely computes the rank, eigenvalues, and reduced 2x2 mixing angles, and these checks match the note. However, the load-bearing content is algebra over one retained parent claim rather than an independent physical derivation. The note is careful not to assert that K is the physical mass operator or that the hierarchy is derived here, so the safe result is an algebraic locator decoration of the upstream K=|K|(J-I) theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/rank1_single_source_from_K_J_minus_I_structure_runner.py",
+  "title": "The Derived C\u2083 Coupling K = |K|(J\u2212I) Supplies a Rank-1 / Single-Source Template; GST Magnitudes Still Reduce to the Hierarchy \u2014 Locator Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

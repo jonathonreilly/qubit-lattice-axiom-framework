@@ -1,0 +1,223 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "source_resolved_wavefield_green_pocket_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_source_driven_field_probe_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/minimal_source_driven_field_probe.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.129,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2981f9a759f3e64673d847e74fd48546caf9b225c3b3e59b9710da18f4e4d521",
+  "note_path": "docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369701+00:00",
+      "archived_for_note_hash": "71bfd6753d6bb3f3aa1e1fc34b0f4c6410f892f7e9021c60c05b6be81190dc4b",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.494048+00:00",
+      "archived_for_note_hash": "1b5d415966f17afd1f146d83746664cb29e35fb3b8f18b79a8fd27f0c95f4572",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The current runner reproduces the main table, but the finite-speed wavefield update and parameter set are selected rather than derived, and the wave/same column is actually wave/instantaneous.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The compact exact-lattice wavefield runner preserves zero-source reduction, 4/4 TOWARD sign, near-linear scaling, and a measurable detector phase/overlap difference relative to same-site memory.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md",
+        "docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md",
+        "docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The executable supports a specific compact exact-lattice wavefield pocket, but the candidate retained-grade physical reading depends on hand-selected wavefield parameters and calibrated normalization; the table also labels wave_delta / inst_delta as wave/same, while true wave/same from the printed rows is about 33-34. Why this blocks: a retained finite-speed wavefield mechanism requires an audited derivation of the local update rule, carrier, parameter choices, and normalization, not just one calibrated runner pocket with a mislabeled comparator column. Repair target: derive or independently justify WAVE_LAG_BLEND, WAVE_SPEED2, WAVE_DAMP, WAVE_SOURCE_BLEND, and FIELD_TARGET_MAX from retained field dynamics, fix the runner/note to report wave/inst and wave/same separately, and add assertion gates for zero-source reduction, sign, exponent, phase lag, overlap, and comparator ratios. Claim boundary until fixed: it is safe to claim that the current runner gives zero-source shifts 0, 4/4 TOWARD rows, wavefield F~M exponent 0.99, mean phase lag -0.249 rad, mean overlap 0.827, and true wave/same ratios about 33-34; it is not safe to claim a retained finite-speed wavefield mechanism beyond this conditional exact-lattice pocket."
+    },
+    {
+      "archived_at": "2026-05-10T14:40:27.628592+00:00",
+      "audit_date": "2026-05-05T12:19:05.587719+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "minimal_source_driven_field_probe_note": "retained_bounded",
+          "source_resolved_exact_green_pocket_note": "retained_bounded",
+          "source_resolved_propagating_green_pocket_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_source_driven_field_probe_note",
+          "source_resolved_exact_green_pocket_note",
+          "source_resolved_propagating_green_pocket_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "81798909ed542de4d45f0415d252747b602fa62a8c988ba98c15ba7d78b5ec98",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop dependencies are retained_bounded finite-pocket controls, and the current runner constructs the lattice, source-resolved Green field, same-site baseline, wavefield update, propagation, centroid shifts, exponents, phase lags, and overlaps directly. The result closes only as a bounded finite numerical experiment, not as a full self-consistent field theory or continuum retarded-gravity theorem.",
+      "claim_scope": "On the fixed h=0.25, W=3, L=6 exact-lattice source ladder with the stated Green kernel and wavefield-update parameters, the runner computes exact zero-source reduction, 4/4 TOWARD wavefield rows, near-linear wavefield scaling, nonzero phase lag, reduced same-site overlap, and a much larger detector response than the same-site memory control.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T12:19:05.587719+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:minimal_source_driven_field_probe_note:retained_bounded->unaudited",
+      "load_bearing_step": "The strongest bounded statement is that zero-source reduction survives, the wavefield keeps the weak-field TOWARD sign, the mass-scaling class stays essentially linear, and the wavefield produces a measurable phase lag relative to the same-site memory control.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit if this finite-pocket result is later broadened into a full propagating field theory, continuum retarded-gravity claim, or exact exponent-1 theorem rather than the current near-linear bounded replay.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The completed cached run matches the source table for zero-source shifts, the four source-strength rows, TOWARD sign, mean phase lag, overlap, and wave/same separation. The source note's headline should be read at bounded finite-pocket scope: the current runner prints wavefield F~M exponent 0.99, so the clean claim is near-linear or essentially linear scaling rather than an exact exponent-1 theorem. No hidden external comparator or unretained dependency is needed for that scoped finite replay."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.877587+00:00",
+      "audit_date": "2026-05-30T23:36:23.906747+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_source_driven_field_probe_note": "Audited only the declared-run computation at h = 0.5, W = 6, L = 30, source z = 3, s in {0.001, 0.002, 0.004, 0.008}, with the telegraph rule and calibration parameters treated as declared modeling inputs."
+        },
+        "dep_claim_type": {
+          "minimal_source_driven_field_probe_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_source_driven_field_probe_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_source_driven_field_probe_note"
+        ],
+        "load_bearing_score": 7.687,
+        "runner_hash": "996b775edd1bf03bbac4d6eef9521a6a125766769127a428ec9458b1d40fcf78",
+        "transitive_descendants": 102
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-233454-f76946ef-source_resolved_wavefiel",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner and included helper source instantiate the lattice propagation, Green fields, same-site memory, wavefield update, detector metrics, and fitted exponents directly; the printed table and aggregate quantities are not imported from another note or hard-coded as expected values. The conclusion closes only as a declared finite runner computation, not as a continuum retarded-gravity theory or a derivation of the chosen wavefield parameters.",
+      "claim_scope": "Bounded replay of scripts/source_resolved_wavefield_green_pocket.py at h=0.25, W=3, L=6, source_z=2.0, the stated source cluster/kernel/memory/wavefield parameters, and target max |f|=0.02, auditing only the finite-pocket zero-source reduction, sign, fitted exponents, phase-lag/overlap, and wave/same response readouts.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T23:36:23.906747+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:minimal_source_driven_field_probe_note:retained_bounded->unaudited",
+      "load_bearing_step": "On the declared h=0.25 runner pocket, the finite-speed wavefield preserves zero-source reduction, TOWARD sign, and near-linear F~M scaling while producing finite detector phase lag and a much larger response than the same-site memory control.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should keep the scope bounded to the runner-defined packet and re-check that the target max |f|=0.02 normalization remains treated as a declared input, not a derived calibration.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The cited authority is retained_bounded, and the current claim is scoped to a bounded declared-run computation rather than an unbounded field-theory derivation. The runner source contains real computation over the helper lattice machinery and asserts the qualitative packet conditions; the helper source needed for the load-bearing path is present. Independent consistency checks of the displayed aggregate formulas match the table, including mean absolute phase lag 1.457, mean overlap 0.827, mean |wave-same| centroid delta 2.939448e-01, and mean wave/same ratio 33.732. No external comparator, renaming step, missing helper, or non-retained dependency is needed for this scoped result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "relabel_date": "2026-05-06T17:45:26.977001+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/source_resolved_wavefield_green_pocket.py",
+  "title": "Source-Resolved Wavefield Green Pocket",
+  "transitive_descendants": 69,
+  "verdict_rationale": null
+}

@@ -1,0 +1,683 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.488,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ff2d16e98d27f3c07b80d72b92d28d1baff65024548ca276a52365a587c817a2",
+  "note_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T09:04:39.584640+00:00",
+      "archived_for_note_hash": "d44fa9ed3ead54c6a343544125f313c9e4ebf7dda1272a8b10fedd33338bccfe",
+      "audit_date": "2026-05-11T16:24:35.574353+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Clifford-basis parity argument proves the commutation and simultaneous-anticommutation dichotomy over the stated algebraic hypotheses. The only framework input is the meta axiom A2 value d_s=3, so the specialization to d_t odd follows by parity and remains conditional on the stated Cl(d_s,d_t) setup.",
+      "claim_scope": "Standalone complex Clifford-algebra parity theorem: for generators satisfying gamma_mu^2=+/-I and pairwise anticommutation, the volume element obeys omega*gamma_mu=(-1)^(n-1)*gamma_mu*omega; an internal chirality involution in Cl(n) exists iff n is even; with the meta axiom A2 fixing d_s=3, the conditional framework specialization is that chirality on Cl(d_s,d_t) requires d_t odd. No d_t=1 selection, anomaly arithmetic, Standard Model gauge content, staggered-Dirac realization, PDG comparator, or continuum multi-time result is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-11T16:24:35.574353+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "A degree-r product gamma_S satisfies gamma_S gamma_mu = (-1)^(r - 1_{mu in S}) gamma_mu gamma_S, so a monomial can anticommute with every generator only when S is the full set and n is even; hence no nonzero Clifford-algebra element has the required anticommutation property for odd n.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the scope boundary around the conditional Cl(d_s,d_t) specialization and not read this row as selecting d_t=1.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The load-bearing step is ordinary Clifford-basis algebra: the volume element sign follows from moving one generator through the other n-1 generators, and the monomial parity conditions rule out any odd-n internal element that anticommutes with every generator. The runner corroborates this with explicit finite Clifford representations for n=1 through n=6 and checks only algebraic class-A statements. Residual risk is only scope creep: the audited result forces d_t odd under the stated total-Clifford setup and A2, but it does not derive d_t=1 or any anomaly/gauge/fermion-content conclusion."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.517699+00:00",
+      "audit_date": "2026-06-05T18:36:26.121462+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.67,
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-183431-d926bc163c-clifford_chirality_dimension",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The sign identities follow directly from pairwise Clifford anticommutation, and an independent monomial-parity check gives A_n={0} for odd n and A_n=span(omega) for even n. The cited minimal axiom packet is an accepted premise supplying d_s=3, after which T3 is the parity implication 3+d_t even iff d_t is odd.",
+      "claim_scope": "For complex internal Clifford algebras Cl(p,q), the volume element has parity commutation with generators, an internal chirality involution exists iff p+q is even, and with d_s=3 this forces d_t odd.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T18:36:26.121462+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "The Clifford-basis parity rule gamma_S gamma_mu = (-1)^(|S|-1_{mu in S}) gamma_mu gamma_S implies that a monomial anticommutes with every generator only for the full volume element in even n, and for no monomial in odd n.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the internal-Cl(n) scope versus possible external grading operators; the clean verdict does not cover external End(S) chirality in odd dimensions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The load-bearing formulae close as pure Clifford algebra: the volume-element sign, monomial anticommutation parity, phase normalization for gamma_5^2=+I, and d_t parity specialization are all checked without importing external data. The runner source performs finite explicit Clifford linear-algebra smoke tests and does not hard-code a contested numerical target, though the general proof rests on the symbolic parity argument. The only cited authority is flagged as an accepted axiom premise and is used only for d_s=3, so no dependency downgrade applies."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.438840+00:00",
+      "audit_date": "2026-06-15T21:20:31.615107+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 13.517,
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "transitive_descendants": 258
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-211814-ead54ffeeb-clifford_chirality_dimension",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The sign identity follows directly by moving one generator past the other n-1 generators, and the independent Clifford-basis parity check rules out cancellation for odd n while leaving only the volume element in even n. The only framework input is the accepted axiom-premise content giving a three-dimensional spatial substrate, so the d_s=3 specialization to odd d_t closes.",
+      "claim_scope": "Internal complex Clifford-algebra chirality parity: the volume element has commutation sign (-1)^(n-1), an internal gamma_5 exists iff p+q is even, and with d_s=3 this forces d_t odd.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-15T21:20:31.615107+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-05T21:49:23.059944+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260605-214806-1ed0239c1a-clifford_chirality_dimension",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Standalone complex Clifford-algebra result that the volume element has parity-dependent commutation, an internal gamma_5 in Cl(p,q) exists iff p+q is even, and with the accepted Z^3 spatial axiom this forces d_t odd conditional on a total Cl(d_s,d_t) carrier.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-15T21:20:31.615107+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-211814-ead54ffeeb-clifford_chirality_dimension",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Internal complex Clifford-algebra chirality parity: the volume element has commutation sign (-1)^(n-1), an internal gamma_5 exists iff p+q is even, and with d_s=3 this forces d_t odd.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "A Clifford basis monomial gamma_S anticommutes with every generator only when S is the full generator set and n is even, so A_n is zero for odd n and span(omega) for even n.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the intended internal-to-Clifford-algebra scope; external representation extensions in odd dimension are explicitly outside the audited claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The proof is a genuine algebraic closure over the Clifford relations, not a definition substitution or numerical match. I independently checked the displayed sign, phase normalization, omega-square factor, basis parity condition, and d_s+d_t parity implication without relying on the runner path. The runner source performs actual finite matrix and Clifford-basis linear-algebra checks for n=1 through 6 and does not import an external comparator or hard-code the contested theorem as its only computation. The historical A1/A2 wording is supplied in the packet by the current accepted minimal-axiom authority, so it does not create an open dependency."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.824361+00:00",
+      "audit_date": "2026-06-30T20:06:01.353584+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.55,
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "transitive_descendants": 264
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T200601Z-8cc8fbf6-clifford_chirality_dimen",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Clifford-basis parity argument proves the chirality dichotomy from the stated generator relations. The only upstream framework input is the registered minimal-axiom premise that the spatial substrate is Z^3, used only to set d_s=3 in the conditional Cl(d_s,d_t) specialization.",
+      "claim_scope": "Audited the complex Clifford-algebra identity omega gamma_mu = (-1)^(n-1) gamma_mu omega, the internal chirality involution iff p+q is even, and the conditional specialization d_s=3 implies d_t odd.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-30T20:06:01.353584+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T20:03:42.867866+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T200342Z-48c69ba5-clifford_chirality_dimen",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Internal complex Clifford-algebra parity theorem: omega gamma_mu = (-1)^(n-1) gamma_mu omega, an internal chirality involution exists iff n=p+q is even, and with an assumed total Cl(d_s,d_t) plus d_s=3 this implies d_t odd.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T20:06:01.353584+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T200601Z-8cc8fbf6-clifford_chirality_dimen",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the complex Clifford-algebra identity omega gamma_mu = (-1)^(n-1) gamma_mu omega, the internal chirality involution iff p+q is even, and the conditional specialization d_s=3 implies d_t odd.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "A Clifford-basis monomial can anticommute with every generator only when it is the full volume element with even degree; hence no nonzero internal element anticommutes with all generators for odd n, while omega gives gamma_5 for even n after phase normalization.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the scoped assumption that T3 is conditional on a total Clifford algebra Cl(d_s,d_t), not derived from the minimal axioms alone.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity and basis-parity closure, not a definition, renaming, external comparator, or tuned numerical match. The runner source actually constructs Clifford generators, checks the volume identity, and solves the finite anticommutator subspace tests for n=1 through 6; this supports the general proof but is not the sole basis for closure. The cited minimal axioms are explicitly registered as an accepted axiom premise, so their meta status does not downgrade the chain."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.339610+00:00",
+      "audit_date": "2026-07-01T23:18:50.989364+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.55,
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "transitive_descendants": 264
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T231850Z-157e00f1-clifford_chirality_dimen",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The parity proof closes inside the Clifford basis using only the defining anticommutation relations and scalar normalization of omega^2. The only framework input is the registered minimal-axiom premise that the spatial substrate is Z^3, giving d_s=3 for the stated conditional specialization.",
+      "claim_scope": "Pure Clifford-algebra parity theorem: the volume element commutes for odd n and anticommutes for even n, so an internal Clifford-algebra chirality involution exists iff p+q is even; with accepted Z^3 spatial count this implies d_t is odd.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T23:18:50.989364+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T23:16:09.378041+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T231609Z-339ea67b-clifford_chirality_dimen",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Standalone Clifford-algebra parity theorem: omega gamma_mu = (-1)^(n-1) gamma_mu omega, an internal chirality involution exists iff p+q is even, and with spatial d_s=3 this implies d_t is odd.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T23:18:50.989364+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T231850Z-157e00f1-clifford_chirality_dimen",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure Clifford-algebra parity theorem: the volume element commutes for odd n and anticommutes for even n, so an internal Clifford-algebra chirality involution exists iff p+q is even; with accepted Z^3 spatial count this implies d_t is odd.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "A degree-r Clifford basis monomial gamma_S satisfies gamma_S gamma_mu = (-1)^(r - 1_{mu in S}) gamma_mu gamma_S, so simultaneous anticommutation with every generator occurs only for the full volume monomial when n is even and never when n is odd.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only the intended scope boundary: this proves d_t odd from chirality plus d_s=3, not d_t=1 or any anomaly/evolution claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The load-bearing step is a standard algebraic sign-count in the Clifford basis, and an independent parity check confirms the stated dichotomy: monomials anticommute with every generator only for S={1,...,n} with n even. The runner performs finite explicit Clifford-matrix smoke tests for CAR, volume-element commutation, the anticommuting subspace dimension, gamma_5 normalization, and the d_s=3 parity specialization; it does not import fitted values or external comparators. The accepted-premise carve-out applies to the minimal axioms, and no additional physical bridge is needed for the narrow conditional claim."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:30.933320+00:00",
+      "audit_date": "2026-07-10T01:37:46.762922+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.155,
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "transitive_descendants": 284
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-clifford_chirality_dimen-029",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Clifford-basis parity argument proves necessity for odd n, while the phase-normalized volume element proves sufficiency for even n. The accepted Lattice premise supplies d_s=3, making even d_s+d_t equivalent to odd d_t under the explicitly stated total-Clifford-algebra hypothesis.",
+      "claim_scope": "For an internal element of the complex Clifford algebra Cl(p,q), a chirality involution exists exactly when n=p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise then forces d_t to be odd.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-10T01:37:46.762922+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-09T23:30:41.167258+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-clifford_chirality_dimen-033",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The internal complex-Clifford-algebra volume-element identity, the existence of an internal chirality involution exactly in even total dimension, and the consequent requirement that d_t be odd when the accepted Z^3 lattice premise fixes d_s=3.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T01:37:46.762922+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-clifford_chirality_dimen-029",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For an internal element of the complex Clifford algebra Cl(p,q), a chirality involution exists exactly when n=p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise then forces d_t to be odd.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "The monomial parity condition implies that an element can anticommute with every Clifford generator only when it is proportional to the full volume element and the total generator count n is even.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The source gives a general symbolic Clifford-algebra proof rather than relying on the finite runner enumeration or an imported numerical value. The supplied runner genuinely constructs generators and checks the asserted relations for n=1 through 6, although its floating-point checks are only a smoke test of the general proof. The sole cited authority is explicitly flagged as an accepted axiom premise and correctly supplies the Z^3 spatial dimension used in the conditional framework specialization."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:03.997921+00:00",
+      "audit_date": "2026-07-11T22:28:59.892367+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.765,
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "transitive_descendants": 434
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00352-clifford_chirality_dimension",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The volume-element sign and the classification of the simultaneous anticommutant follow directly from the Clifford basis and pairwise anticommutation relations. The accepted Lattice premise supplies only d_s=3, after which the d_t parity conclusion is immediate under the explicitly stated total-Clifford hypothesis.",
+      "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-11T22:28:59.892367+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-11T22:05:55.058200+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00343-clifford_chirality_dimension",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the internal complex Clifford algebra Cl(p,q), the volume element obeys omega gamma_mu = (-1)^(n-1) gamma_mu omega, and an internal chirality involution exists exactly when n=p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted d_s=3 premise then implies d_t is odd.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-11T22:28:59.892367+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00352-clifford_chirality_dimension",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_cross_confirmation_packet_invalid",
+      "load_bearing_step": "Moving gamma_mu through the other n-1 generators gives omega gamma_mu = (-1)^(n-1) gamma_mu omega, while the Clifford-basis parity condition shows that an element anticommuting with every generator exists only for the full volume monomial when n is even.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The general result closes through symbolic Clifford-algebra sign and basis-parity arguments, independently of the finite runner enumeration. The runner genuinely constructs matrix generators and computes the asserted relations for n=1 through 6; it neither prints unsupported constants nor imports fitted or external comparison values. Its finite floating-point checks are corroborative smoke tests, while the source proof supplies the all-n closure. The sole cited authority is an accepted axiom premise and is correctly used only to fix the spatial count d_s=3."
+    },
+    {
+      "archived_at": "2026-07-13T02:40:10.965362+00:00",
+      "audit_date": "2026-07-13T02:33:54.074661+00:00",
+      "audit_invocation_history": [
+        "d9b4c7478b82400998eeeb73e798186f"
+      ],
+      "audit_invocation_id": "d9b4c7478b82400998eeeb73e798186f",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 10.488,
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "transitive_descendants": 717
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260713-45263aff",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The abstract Clifford-algebra conclusions T1-T2 close. The framework specialization T3 lacks a supplied bridge identifying the framework's total internal algebra with Cl(d_s,d_t); the accepted authority supplies Z^3 and a one-site M_2(C)/Cl(3,0)-compatible presentation only.",
+      "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-13T02:33:54.074661+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The Clifford-basis parity conditions imply that only the full volume element can anticommute with every generator, and only when n is even.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add and directly cite a retained bridge identifying the framework's total internal algebra as Cl(d_s,d_t), and add a dated downstream-hygiene line to this note's own boundary before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The volume-element identity and the even/odd internal-chirality dichotomy are valid class-A algebra, and the runner performs 25 supporting finite-dimensional checks. The accepted Lattice premise establishes d_s=3 but does not establish the total Cl(d_s,d_t) carrier, leaving T3 conditional. For N1-N4, algebraic-basis, representation, phase/signature, finite-case, and enlarged-carrier attacks do not defeat the stated internal-Cl boundary; it has one wall, no hidden premise beyond the missing carrier identification, and no cited prior residual. For N5-N8, the negative language is confined to the per-element internal-algebra result, the supplied primitives do not close the carrier gap, the doubled-carrier steelman lies outside Cl(n), and the indexed cross-cycle mechanisms are inapplicable."
+    },
+    {
+      "archived_at": "2026-07-13T02:41:52.721121+00:00",
+      "audit_date": "2026-07-13T02:33:54.077355+00:00",
+      "audit_invocation_history": [
+        "29488f260237471b8c23b8cd1475faa6"
+      ],
+      "audit_invocation_id": "29488f260237471b8c23b8cd1475faa6",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 10.488,
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "transitive_descendants": 717
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260713-3007bbfb",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic proof and all 25 runner checks support the stated parity theorem. Clean audit closure is nevertheless unavailable because the artifact asserts an odd-dimensional no-go and derived exclusion boundary without the current-cycle multi-route and resolution evidence required by the N1-N8 discipline gate.",
+      "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-13T02:33:54.077355+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The parity condition implies A_n={0} for odd n and A_n=span(omega) for even n, hence an internal chirality involution exists iff n is even.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add a current-cycle no-go-discipline runner artifact with five distinct N1 mechanism classes and byte-addressable N3/N5 resolution evidence, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "Issue: the internal odd-dimensional nonexistence result is mathematically supported, but the supplied runner does not provide five distinct N1 mechanism classes or byte-addressable five-resolution N5 evidence required to certify that negative assertion cleanly. Why this blocks: an audited_clean verdict would cement a no-go result without the mandatory N1-N8 stress packet. Repair target: add a current-cycle no-go-discipline runner artifact exercising distinct alternative mechanisms and all required rhetoric-resolution classes. Claim boundary until fixed: the volume-element identity and even-dimensional construction are supported, while the full iff and resulting odd-d_t boundary remain audit-conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
+  "title": "Clifford Chirality-Dimension Narrow Theorem",
+  "transitive_descendants": 717,
+  "verdict_rationale": null
+}

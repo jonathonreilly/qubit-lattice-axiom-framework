@@ -1,0 +1,248 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_realization_gate_note_2026-05-03",
+    "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+    "g_bare_rigidity_theorem_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.996,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3d6fa1ca7aada3ac9be8c373eaecf112906b8523737dd72e62cba0fb1217e25a",
+  "note_path": "docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-11T21:38:45.900713+00:00",
+      "archived_for_note_hash": "fa476e99fa10eaa5602d7b3ba9a116c1c62c19c7b1c0d5e4596b1203c7a9a4b4",
+      "audit_date": "2026-06-11T13:07:15.993663+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "The standalone rational-function algebra identity \u03b2(g,N)=2N/g^2 under g\u21a6g/c, the invariant product \u03b2g^2=2N, and the associated positive-rational orbit/injectivity statements for \u03b2-values in the image.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 11.1,
+        "runner_hash": "732b731f615d3ac5f857a68fc33b0647f2ad310ac80f1564de198032100b88d6",
+        "transitive_descendants": 775
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260611-yt_ward_identity_dependencies_registered-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The load-bearing move is registry and cited-authority routing, so class B is the correct classification. Dep 1 may be used only as a registered Tier-A target at bounded tier, but Dep 2 as written includes the physical/canonical g_bare=1 convention. The only included retained Dep 2 authority proves an abstract beta-g rescaling identity and explicitly disclaims the physical Wilson/g_bare convention, while the runner's g_bare convention ledger check names a source not included as a one-hop cited authority. The listed approved primitives do not supply this missing convention bridge.",
+      "claim_scope": "A dependency-routing bridge for the parent YT Ward identity T1, not a re-proof of the parent theorem or a retirement of AC_phi_lambda.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T13:07:15.993663+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T12:47:26.394863+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-124446-8246cb3d07-yt_ward_identity_dependencie",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded dependency-routing bridge for the parent YT Ward identity: Dep 1 routes to a registered Tier-A staggered-Dirac/canonical Q_L target, Dep 2 routes to retained beta-g_bare rescaling algebra, and the normalized form factor is g_bare-flat.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-11T12:50:34.570898+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-124803-76f16361d9-yt_ward_identity_dependencie",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "A dependency-routing bridge for the parent YT Ward identity T1, not a re-proof of the parent theorem or a retirement of AC_phi_lambda.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-11T13:07:15.993663+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260611-yt_ward_identity_dependencies_registered-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "A dependency-routing bridge for the parent YT Ward identity T1, not a re-proof of the parent theorem or a retirement of AC_phi_lambda.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "It treated the routing/status step as class A and accepted the abstract beta-gbare identity as sufficient for the physical g_bare=1 convention despite the cited authority's explicit disclaimers and the missing one-hop convention note.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The load-bearing move is registry and cited-authority routing, so class B is the correct classification. Dep 1 may be used only as a registered Tier-A target at bounded tier, but Dep 2 as written includes the physical/canonical g_bare=1 convention. The only included retained Dep 2 authority proves an abstract beta-g rescaling identity and explicitly disclaims the physical Wilson/g_bare convention, while the runner's g_bare convention ledger check names a source not included as a one-hop cited authority. The listed approved primitives do not supply this missing convention bridge.",
+          "load_bearing_step_class": "B",
+          "second_auditor_error": "None material; the Tier-A staggered-Dirac target should be understood as an allowed bounded dependency rather than the blocker.",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "With both parent dependencies routed to registered sources, a clean bounded row with deps {registered Tier-A AC_phi_lambda target, retained beta-gbare rescaling note} would resolve to the Tier-A-bounded class.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the retained g_bare canonical-convention or rigidity note as an explicit one-hop load-bearing dependency, or narrow Dep 2 to the abstract F-flat rescaling identity only, then rerun the restricted audit.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing move is registry and cited-authority routing, so class B is the correct classification. Dep 1 may be used only as a registered Tier-A target at bounded tier, but Dep 2 as written includes the physical/canonical g_bare=1 convention. The only included retained Dep 2 authority proves an abstract beta-g rescaling identity and explicitly disclaims the physical Wilson/g_bare convention, while the runner's g_bare convention ledger check names a source not included as a one-hop cited authority. The listed approved primitives do not supply this missing convention bridge."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.977708+00:00",
+      "audit_date": "2026-06-11T22:46:43.131039+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "The standalone rational-function algebra identity \u03b2(g,N)=2N/g^2 under g\u21a6g/c, the invariant product \u03b2g^2=2N, and the associated positive-rational orbit/injectivity statements for \u03b2-values in the image.",
+          "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_rigidity_theorem_note": "bounded_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_rigidity_theorem_note": "retained_bounded",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+          "g_bare_rigidity_theorem_note",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 11.135,
+        "runner_hash": "bfd0574e9ca84447286434a0151bd1393de011c9dc8800bcbf01d01fbc5794b7",
+        "transitive_descendants": 794
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-224342-ba47644682-yt_ward_identity_dependencie",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bridge closes at the bounded Tier-A-admission level: the runner and packet support the algebraic F-flatness and the dependency-status arithmetic, while explicitly not retiring AC_\u03c6\u03bb or promoting the parent to unbounded retained status. No extra empirical comparator or fitted coupling is load-bearing.",
+      "claim_scope": "Audited the narrow dependency-routing bridge for the parent Ward identity: Dep 1 is treated only as a registered Tier-A admitted target, Dep 2 is supported by retained beta-g_bare rescaling algebra and retained_bounded finite-link normalization rigidity, and the normalized form factor F=y_t_bare/g_bare is algebraically g_bare-flat.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T22:46:43.131039+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T22:43:05.267425+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-223856-406fa48f3f-yt_ward_identity_dependencie",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Dependency-routing bridge for the parent Ward identity T1: verifies that the two stated non-axiom dependencies route to a registered Tier-A derivation target and retained rescaling/convention authorities, without closing AC_phi_lambda or re-proving the full parent theorem.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-11T22:46:43.131039+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-224342-ba47644682-yt_ward_identity_dependencie",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the narrow dependency-routing bridge for the parent Ward identity: Dep 1 is treated only as a registered Tier-A admitted target, Dep 2 is supported by retained beta-g_bare rescaling algebra and retained_bounded finite-link normalization rigidity, and the normalized form factor F=y_t_bare/g_bare is algebraically g_bare-flat.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "With Dep 1 routed to the registered Tier-A target AC_\u03c6\u03bb and Dep 2 routed to retained rescaling algebra plus retained finite-link g_bare convention authority, the published chain rule classifies the clean bounded row as a registered Tier-A-bounded candidate rather than an unregistered conditional blocker.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the live tier_a_admissions.json registry entries for the Dep 1 target and g_bare convention metadata; the restricted packet exposes them through the cached runner output rather than including the registry files themselves.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing step is algebraic/status-rule closure over the restricted inputs, not a new physical derivation of the staggered-Dirac target. The beta-g_bare identities, F-flatness, SU(3)/Clifford normalization checks, and chain-rule arithmetic are internally consistent, and the runner source does more than print constants. The unaudited staggered-Dirac authority is handled as a registered Tier-A admitted derivation target, so it bounds the effective status rather than creating an unregistered conditional blocker."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py",
+  "title": "YT Ward-Identity Dependencies Route to Registered Sources (Bounded Bridge)",
+  "transitive_descendants": 1020,
+  "verdict_rationale": null
+}

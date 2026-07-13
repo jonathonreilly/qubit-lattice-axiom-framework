@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "d2_soft_band_truncation_also_closes_bounded_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12",
+    "d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12",
+    "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "fa73e0b86bc3ae96431018e115bd393fe4920d5ad3d5234a46bf7037349a35ad",
+  "note_path": "docs/D2_SOFT_BAND_TRUNCATION_ALSO_CLOSES_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:27.179272+00:00",
+      "audit_date": "2026-06-14T02:32:00.416361+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12": "Audited the bounded finite-torus claim: exact square-lattice checkerboard Schur decimation at T = 0.6, MU = 2.75, E shift 0.3 for step-1 closure/resolvent preservation and finite-box step-2 range growth/decay on the reported L = 8, 12, 14 boxes.",
+          "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12": "Finite d=2, E=0, free quadratic checkerboard Schur trajectory on L=16 with d2={4,8} truncation for four steps, plus the stated L=12/L=16 retained-block resolvent-budget stability probe.",
+          "d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12": "Finite periodic free d=2 checkerboard lattices with L in {12,16} at E=0, comparing step-3 retained projected resolvents after step-2 shell truncations keep d\u00b2={4,8}, keep d\u00b2=4, and no truncation."
+        },
+        "dep_claim_type": {
+          "d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12",
+          "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12",
+          "d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "f680acc4405a70f269aee44799a3fd3f3ffb131cc4115eb1d8daf4606d9c97dc",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-022943-b589c661e4-d2_soft_band_truncation_also",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The mod-2 parity lemma is a direct algebraic identity: n^2 == n mod 2, so even d2 displacements preserve checkerboard color and cannot appear in the kept-to-decimated block. The runner source also performs actual dense finite-lattice Schur complements and resolvent-error computations, not constant printing, and the reported step-error sums give soft budgets below hard at both audited L values.",
+      "claim_scope": "Finite-L, E=0, free d=2 checkerboard Schur pipeline at L=16 and L=32, comparing hard {4,8} and soft {4,8,16,20} even-d2 truncations for post-truncation H_kd closure and measured three-step resolvent budgets.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T02:32:00.416361+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:d2_checkerboard_decimation_step1_closed_form_step2_range_growth_bounded_theorem_note_2026-06-12:retained_bounded->unaudited",
+      "load_bearing_step": "The parity identity dx^2 + dy^2 == dx + dy mod 2 implies every kept even-d2 shell connects only same-checkerboard-color sites, so hard {4,8} and soft {4,8,16,20} truncations force H_kd = 0; the measured finite-L budgets then satisfy soft < hard at L=16 and L=32.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor may re-check the non-load-bearing larger-L tie disclaimer; it is not used for the finite-L verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "All cited authorities in the restricted packet are retained_bounded, which is retained-grade for this bounded theorem. Independent parity checking closes the H_kd=0 statement for any even-d2 kept band in the stated finite synthetic checkerboard charts, and the runner's wraparound and balance gates cover the L=16/32 cases. The budget comparison is a finite first-principles matrix computation from the free operator; the stdout arithmetic confirms hard=0.6298691173532 vs soft=0.5240050200688 at L=16 and hard=0.7195551544226 vs soft=0.6298619963486 at L=32. No external comparator, tuned empirical input, or unsupported open dependency is used for the scoped claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_d2_soft_band_closure_2026_06_12.py",
+  "title": "Truncation Design in d=2: Even-d\u00b2 Kept Bands Preserve the Checkerboard Color by Parity (a Lemma \u2014 dx\u00b2+dy\u00b2 \u2261 dx+dy mod 2), So Both Designs Give H_kd = 0 by Algebra; the Soft Budget Is Smaller at the Measured L = 16/32 (Bounded)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

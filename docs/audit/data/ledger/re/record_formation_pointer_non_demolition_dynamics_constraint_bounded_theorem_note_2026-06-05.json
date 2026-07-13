@@ -1,0 +1,449 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "key_terminology",
+    "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 11,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.072,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f049e9a1174764b63cb2c24a2eea36d62e29a365dcbf135866edcabe33fc4a1f",
+  "note_path": "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:31:32.291854+00:00",
+      "archived_for_note_hash": "b156dda8c81a7c2a6684ca8ef463334c9550c0c870cbdc7b5a8a54f1273a72ee",
+      "audit_date": "2026-06-15T21:52:18.232781+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "Finite four-qubit endpoint Gauss-law model with explicit U(1)/SU(2) endpoint generators and bounded link-dressing conventions."
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "key_terminology",
+          "minimal_axioms",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 10.992,
+        "runner_hash": "575e77d3686b27da592684fd77915d1335f5922f22b85fa019c0919f94deb231",
+        "transitive_descendants": 89
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260615-214807-2a7cd01560-record_formation_pointer_non",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Heisenberg equation closes the necessity of commutation for all-state pointer-population conservation, and the runner supports one controlled non-demolition recording construction. It does not close the stated iff, because [H_int,Pi_S]=0 alone does not imply redundant fragment record formation or persistence of completed fragments under the same coupling.",
+      "claim_scope": "Finite S+E qubit claim that redundant objective persistent pointer records are equivalent to pointer-nondemolition, with conserved-pointer/locality transfer-class consequences.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T21:52:18.232781+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Additive + redundant + persistent + objective record formation by a local evolution is equivalent to pointer-non-demolition [H_int, Pi_S] = 0.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Split the clean finite controlled-coupling example from the over-broad equivalence, then re-audit a narrowed theorem with explicit record-forming coupling and persistence hypotheses.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 40,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "Issue: the sufficiency half of the stated equivalence is broader than the math and runner: [H_int,Pi_S]=0 freezes pointer populations, but by itself does not make any fragment carry a record, as H_int=0 or a commuting interaction with the environment in an eigenstate has no redundant imprint. Why this blocks: the runner verifies one controlled sigma_z tensor sum sigma_x construction at a chosen recording time and a Heisenberg persistence lemma, not the claimed iff for arbitrary local non-demolition H_int; the persistence demonstration also uses an idle fresh-fragment chain rather than repeated action of the same coupling on completed fragments. Repair target: state and prove the additional coupling, nonzero strength, recording-time, and fresh-fragment or decoupling hypotheses, and separately cite or prove the actual framework OS transfer membership. Claim boundary until fixed: the finite controlled-coupling example and the necessity of commutation for all-state pointer-population conservation remain supported."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.514163+00:00",
+      "audit_date": "2026-06-18T04:29:54.840690+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "Finite four-qubit endpoint Gauss-law model with explicit U(1)/SU(2) endpoint generators and bounded link-dressing conventions."
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "key_terminology",
+          "minimal_axioms",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 11.7,
+        "runner_hash": "2b93f9bcff092228d5989d52ee5ab72858a8f7b4a6127742d92c82f52aae8c74",
+        "transitive_descendants": 103
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the explicitly bounded finite model, the Heisenberg commutator criterion and the controlled-copy record calculation close. The runner constructs the Hilbert-space operators, unitaries, partial traces, pointer Holevo information, redundancy, counterexamples, and transfer commutators rather than hard-coding a target result.",
+      "claim_scope": "Finite qubit S+E model: pointer-population persistence iff [H_int, Pi_S] = 0, plus sufficient redundant record formation for the stated local controlled-copy interaction with fresh/idle fragments under the explicit Darwinism record bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T04:29:54.840690+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Under the stated finite S+E model and quantum-Darwinism record convention, persistent pointer records require pointer non-demolition [H_int, Pi_S] = 0, and the nonzero local controlled-copy Hamiltonian g sigma_z(S) tensor sum_k sigma_x(E_k) at t = pi/(4g) suffices to form redundant objective records.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the additivity/readout interpretation: the Darwinism pointer-information functional is an explicit bounded bridge, not derived from the Record axiom.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 31,
+        "D": 0,
+        "total_pass": 46
+      },
+      "verdict_rationale": "The note does not claim to derive the Darwinism record bridge, physical dynamics, beta value, or OS record channel; those are either explicit bounded inputs or excluded. The load-bearing finite-model claims are directly checked by dense matrix computation and elementary commutator algebra, with QND-alone counterexamples preventing the main overclaim. The retained-bounded companion and accepted minimal-axiom premise introduce no open dependency downgrade for this scoped bounded theorem."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.890531+00:00",
+      "audit_date": "2026-07-01T07:39:10.886986+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "Finite four-qubit endpoint model with stipulated U(1)/SU(2) endpoint generators: U(1) endpoint profiles 0/1/2, U(1) commutant dimension 36, and SU(2) bare versus double-singlet endpoint invariance."
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "key_terminology",
+          "minimal_axioms",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 12.268,
+        "runner_hash": "2b93f9bcff092228d5989d52ee5ab72858a8f7b4a6127742d92c82f52aae8c74",
+        "transitive_descendants": 108
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T073910Z-eee98d3d-record_formation_pointer",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The spectral-projector Heisenberg argument gives the commutator iff condition, and the controlled rotation at t=pi/(4g) sends the two pointer branches to orthogonal single-fragment states carrying H(Pi_S). The quantum-Darwinism record bridge, finite carrier, and fresh/idle persistence condition are explicit bounded assumptions, so closure is bounded to that model rather than an unbounded dynamics theorem.",
+      "claim_scope": "Audited the explicit finite qubit model claim: pointer-population persistence iff [H_int, Pi_S]=0; the displayed controlled-copy coupling forms redundant objective pointer records under the stated Darwinism and fresh/idle-fragment hypotheses; QND alone and OS-transfer membership are not record-formation proofs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:39:10.886986+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "In the stated finite S+E qubit model, persistent objective pointer-record formation requires pointer non-demolition [H_int, Pi_S]=0, while the nonzero local controlled-copy Hamiltonian g sigma_z(S) tensor sum_k sigma_x(E_k) at t=pi/(4g), with fresh/idle fragments, is sufficient to form redundant pointer records.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the Record-additivity/readout-mass convention and the six source-firewall runner checks, but these are scope/convention checks rather than blockers to the finite-model theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 6,
+        "C": 30,
+        "D": 0,
+        "total_pass": 46
+      },
+      "verdict_rationale": "The runner source genuinely instantiates finite dense qubit operators, unitary evolution, partial traces, Holevo pointer information, redundancy, counterexamples, and commutator/transfer checks; it is not a print-only or tuned-constant runner. The source note correctly separates pointer conservation from record formation and includes QND-alone counterexamples, so the main overclaim risk is scoped away. The retained-bounded companion and registered minimal axioms are acceptable upstream inputs, and the remaining bridge/carrier hypotheses are stated as the bounds of this bounded theorem. No external comparator or numerical-fit step is load-bearing."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.500682+00:00",
+      "audit_date": "2026-07-02T00:05:27.142914+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "Bounded four-qubit endpoint-Gauss model: for the runner-defined Pauli raising/lowering link transports and SU(2) double-singlet observable, the endpoint invariance profiles and U(1) commutant dimension are as stated."
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "key_terminology",
+          "minimal_axioms",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 12.268,
+        "runner_hash": "2b93f9bcff092228d5989d52ee5ab72858a8f7b4a6127742d92c82f52aae8c74",
+        "transitive_descendants": 108
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T000527Z-ba4c2a70-record_formation_pointer",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The claim is correctly scoped to the explicit finite model and named record bridge rather than deriving record dynamics from the axioms. Within that bounded scope, the Heisenberg commutator argument and the dense-operator mutual-information computations support the necessity, sufficiency, counterexample, locality, and transfer-class statements.",
+      "claim_scope": "Bounded finite S + E_1..E_n qubit-model theorem: given the quantum-Darwinism record convention and the explicit controlled-copy/fresh-fragment hypotheses, pointer conservation is necessary for all-state pointer persistence and the displayed local coupling forms redundant objective pointer records.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T00:05:27.142914+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Under the stated quantum-Darwinism record convention, persistent objective pointer record formation requires pointer-non-demolition [H_int, Pi_S] = 0, while the explicit nonzero controlled-copy Hamiltonian at t = pi/(4g) with fresh/idle fragments is a sufficient finite construction.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 6,
+        "C": 30,
+        "D": 0,
+        "total_pass": 46
+      },
+      "verdict_rationale": "The runner source actually constructs the finite qubit operators, unitaries, partial traces, pointer-dephased mutual information, redundancy counts, random-Hamiltonian witnesses, and counterexamples; it is not merely printing the claimed PASS total. The source note keeps the quantum-Darwinism record bridge, carrier choice, controlled-copy form, and fresh/idle persistence assumptions inside the bounded claim scope, and explicitly excludes dynamics, coupling magnitude, beta, continuum, and OS-record-formation overclaims. The cited minimal axioms are accepted premises, and the retained_bounded companion is contextual rather than an unclosed load-bearing bridge."
+    },
+    {
+      "archived_at": "2026-07-10T03:56:35.164072+00:00",
+      "audit_date": "2026-07-09T23:43:38.500194+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "Finite four-qubit endpoint model with matter qubits A,B and link-end qubits a,b under the note's stipulated U(1)/SU(2) endpoint generators: the U(1) link-transport endpoint profiles are 0,1,2, the U(1) commutant dimension is 36, and the SU(2) bare link-end transport is variant while the double-singlet Wilson-type observable is endpoint invariant. Derivation of the carrier, Gauss generators, physical observable identification, gauge dynamics, coupling values, electroweak breaking, and color SU(3) are out of scope."
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "key_terminology",
+          "minimal_axioms",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 11.728,
+        "runner_hash": "2b93f9bcff092228d5989d52ee5ab72858a8f7b4a6127742d92c82f52aae8c74",
+        "transitive_descendants": 105
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-record_formation_pointer-045",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner establishes the all-state, all-time pointer-conservation iff theorem and the particular sufficient construction, but it does not establish that persistent record formation under the stated fixed initial state and further discrete U steps generally implies [H_int, Pi_S] = 0. Its additivity check also defines a separate record-mass by summing singleton information rather than proving that the stated Holevo information is additive over fragment unions.",
+      "claim_scope": "The explicit finite S plus E_1..E_n model: all-state, all-continuous-time pointer-population conservation and the displayed controlled-copy record construction with fresh or idle fragments.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T23:43:38.500194+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:2b93f9bc->ce2d4ef4",
+      "load_bearing_step": "Under the stated quantum-Darwinism convention, persistent objective pointer-record formation requires [H_int, Pi_S] = 0, while H_int = g sigma_z(S) tensor sum_k sigma_x(E_k) at t = pi/(4g), with fresh or idle fragments, is a sufficient finite construction.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow the necessity statement to all-state, all-continuous-time pointer-population persistence iff [H_int, Pi_S] = 0, retain the controlled-copy result only as a sufficient finite construction, and explicitly distinguish the separately defined additive record-mass from the non-additive union-fragment Holevo information before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 6,
+        "C": 30,
+        "D": 0,
+        "total_pass": 46
+      },
+      "verdict_rationale": "The dense-operator runner genuinely computes the finite controlled-copy construction and correctly verifies the Heisenberg pointer-conservation equivalence. However, the note promotes that equivalence into a broader necessity claim for persistent objective record formation without supplying the required quantifier and dynamics argument. The runner\u2019s tautologically additive record-mass is also not the same functional as the union-fragment Holevo information specified in the claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.311361+00:00",
+      "audit_date": "2026-07-10T17:04:22.342863+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "Exact endpoint-commutation profiles and joint-commutant dimension in the explicitly specified four-qubit U(1)/SU(2) model, excluding physical-observable and dynamical interpretations."
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "retained_pending_chain"
+        },
+        "deps": [
+          "key_terminology",
+          "minimal_axioms",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 17.925,
+        "runner_hash": "ce2d4ef40ce82ef74c05308e14d0b5bf73e90930bd24c7bbfc94a8a5ea2af614",
+        "transitive_descendants": 485
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00009-record_formation_pointer_non",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner directly constructs the finite operators and states and computes the commutators, entropies, fragment information, redundancy, persistence witnesses, and transfer-sector weights, closing with 56 passes and no failures. The Darwinism interpretation, singleton normalization, carrier, pointer, and allowed persistence steps are explicitly scoped model hypotheses rather than claimed consequences of the framework axioms.",
+      "claim_scope": "The explicit finite S-plus-environment qubit model: exact flow- and step-level all-state pointer-population commutator criteria, the stated sufficient controlled-copy record construction, and its bounded demolition, locality, persistence, and nonunitary-transfer controls.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T17:04:22.342863+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-10",
+          "auditor": "codex-audit-loop-row5-b-20260710",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact all-state flow and unitary-step pointer-persistence commutator criteria, the explicit finite controlled-copy record construction, and its stated counterexample and transfer-sector boundaries, conditional on the supplied carrier, pointer, Darwinism, singleton-readout, and fresh-or-idle-fragment hypotheses.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T17:04:22.342863+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00009-record_formation_pointer_non",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The explicit finite S-plus-environment qubit model: exact flow- and step-level all-state pointer-population commutator criteria, the stated sufficient controlled-copy record construction, and its bounded demolition, locality, persistence, and nonunitary-transfer controls.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On the supplied finite qubit model, the Heisenberg and finite-step operator identities give the all-state pointer-persistence commutator criteria, while the specified controlled-copy Hamiltonian at t = pi/(4g) produces full redundant records under the stated Darwinism, singleton-readout, and fresh-or-idle-fragment hypotheses.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 49,
+        "D": 0,
+        "total_pass": 56
+      },
+      "verdict_rationale": "The runner performs substantive dense-operator and information-theoretic calculations rather than merely printing expected constants. Its results support both commutator iff criteria, the controlled-copy construction, the noncommuting-logarithm and fresh-subspace witnesses, and the stated counterexamples. The note consistently limits the result to the supplied finite model and does not promote its model bridges into derived dynamics or a universal record-formation law."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py",
+  "title": "Record-Formation Pointer-Conservation and Controlled-Copy Constraint (Bounded Theorem)",
+  "transitive_descendants": 760,
+  "verdict_rationale": null
+}

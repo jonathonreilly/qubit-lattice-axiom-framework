@@ -1,0 +1,106 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su3_anomaly_forced_3bar_completion_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "left_handed_charge_matching_note",
+    "anomaly_forces_time_theorem"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.976,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0dc2c97e3a22d0ae4843ac0ccd9fe73d3c700e4998ff1549bb915c50a96bd20b",
+  "note_path": "docs/SU3_ANOMALY_FORCED_3BAR_COMPLETION_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:33:25.056964+00:00",
+      "audit_date": "2026-05-03T00:24:07.753661+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "anomaly_forces_time_theorem": "retained_bounded",
+          "left_handed_charge_matching_note": "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        },
+        "deps": [
+          "anomaly_forces_time_theorem",
+          "left_handed_charge_matching_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the algebraic enumeration once the inputs are admitted, but one direct cited authority for P1 is currently audited as decoration, not retained-grade. The note also treats the SU(2)_L-singlet completion premise and SU(3) anomaly catalogue as admitted inputs rather than independently retained authorities.",
+      "claim_scope": "Derivation that, given a retained-grade Q_L : (3,2) input, SU(3)^3 anomaly cancellation, the SU(2)_L-singlet LH-Weyl completion premise, and the admitted SU(3) cubic-anomaly catalogue, the unique minimal two-field SU(3) completion is two 3bar singlets; hypercharge and u/d labelling remain out of scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T00:24:07.753661+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:anomaly_forces_time_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Under P1+P2+P3, the SU(3) representation content of the RH (anti-)quark sector is forced to be exactly 2 LH-Weyl fermions in the 3bar representation.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit after the Q_L : (3,2) premise is supplied by a retained-grade non-decoration authority or derived directly in this row.",
+      "open_dependency_paths": [
+        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the load-bearing P1 input is cited through docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md, whose ledger status is audited_decoration/effective decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02 rather than retained-grade. Why this blocks: a positive theorem cannot inherit retained status through a decoration row, and the runner only enumerates the SU(3) completion after the P1/P2/P3 inputs and anomaly catalogue are supplied. Repair target: cite a retained-grade standalone authority for the Q_L : (3,2) representation, or include an audited derivation of that representation in this row; separately keep P3 and the anomaly-coefficient catalogue explicit as admitted premises or retained authorities. Claim boundary until fixed: the note is a valid conditional algebraic completion check showing two 3bar singlets follow from the admitted inputs, but not an independently retained positive theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_su3_anomaly_forced_3bar_completion.py",
+  "title": "SU(3) Anomaly-Forced 3\u0304 Singlet Completion Theorem",
+  "transitive_descendants": 711,
+  "verdict_rationale": null
+}

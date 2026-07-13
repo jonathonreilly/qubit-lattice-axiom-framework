@@ -1,0 +1,184 @@
+{
+  "audit_date": "2026-05-12T00:36:53.941331+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_claim_scope": {
+      "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16": "Finite exact-lattice inward-source floor-width diagnosis with h=0.25, blend=0.25, three updates per segment, three chained segments, inward rows source0p75/source1p00/source1p25/source1p50, and top_keep in {4,5,6,8}; the ratified claim is the reported 2/4 admissible split at every width, with source0p75/source1p00 closed and source1p25/source1p50 open, excluding full local-pocket universality, beyond-pocket transfer, inertial-mass closure, and matter closure.",
+      "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16": "Finite exact-lattice top4 multistage transfer sweep with h=0.25, blend=0.25, top_keep=4, three updates per segment, three chained segments, and exactly the 13 listed widened-pocket cases; support is the reported 11/13 admissible cases with failures at source0p75 and source1p00, excluding full local-pocket universality, persistent inertial-mass closure, and matter closure."
+    },
+    "dep_claim_type": {
+      "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16": "bounded_theorem",
+      "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16": "retained_bounded",
+      "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16": "retained_bounded"
+    },
+    "deps": [
+      "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16",
+      "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16"
+    ],
+    "load_bearing_score": 10.231,
+    "runner_hash": "e5705edeb4a1d40ddc0c1ec971da517bff9bb09acc67e129971b410d83fd3050",
+    "transitive_descendants": 424
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260512-003453-653c9554-persistent_object_top4_m-002",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited upstream authorities are retained_bounded and the provided runner cache completed successfully with stdout matching the note's 4/5 split. The primary runner defines the five outer cases and calls the shared `_run_case` computation rather than printing the contested result as a constant.",
+  "claim_id": "persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16",
+  "claim_scope": "Audited the bounded claim that the retained exact-lattice `top4` multistage floor transfers on 4 of 5 specified one-ring-farther cases and preserves an inward-source boundary.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-12T00:36:53.941331+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-12T00:29:46.315948+00:00",
+      "auditor": "codex-cli-gpt-5.5-20260512-002551-332e8573-persistent_object_top4_m-005",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Audited only the bounded exact-lattice top4 multistage outer-transfer sweep over source0.50, source2.85, width6, length3, and length9 under the stated h=0.25, blend=0.25, three-segment protocol.",
+      "claim_type": "bounded_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-05-12T00:36:53.941331+00:00",
+      "auditor": "codex-cli-gpt-5.5-20260512-003453-653c9554-persistent_object_top4_m-002",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Audited the bounded claim that the retained exact-lattice `top4` multistage floor transfers on 4 of 5 specified one-ring-farther cases and preserves an inward-source boundary.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16",
+    "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/minimal_source_driven_field_probe.py",
+    "scripts/persistent_object_adaptive_readout_probe.py",
+    "scripts/persistent_object_blended_readout_boundary_probe.py",
+    "scripts/persistent_object_blended_readout_transfer_sweep.py",
+    "scripts/persistent_object_compact_inertial_probe.py",
+    "scripts/persistent_object_compact_shared.py",
+    "scripts/persistent_object_top3_multistage_probe.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 10.085,
+  "load_bearing_step": "The exact-lattice `top4` floor leaves the widened pocket because the completed one-ring-farther sweep is admissible on 4/5 cases, with only `source0.50` closed.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "retained_bounded",
+  "max_descendant_status_rank": 95,
+  "note_hash": "8a45448eb7de9f29ca8384bb090bd7c8c26594b2a0d7e7e05445dde06d6b0e9c",
+  "note_path": "docs/PERSISTENT_OBJECT_TOP4_MULTISTAGE_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md",
+  "notes_for_re_audit_if_any": "Re-check that the imported shared `_run_case` implementation in `scripts/persistent_object_top3_multistage_probe.py` is the retained first-principles lattice computation, since its source is not included in this restricted packet.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369320+00:00",
+      "archived_for_note_hash": "6bfc15b983f1de1025dae27ba21e214cd58a4dd6a3ba44609f299eaf7c60ea3f",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.236661+00:00",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 7.883,
+        "transitive_descendants": 117
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source-note runner reproduced the stated 4/5 bounded sweep result after a long live run. The chain does not close as a retained law because the queue has no primary runner registered, the archived log is absent in this worktree, the prior sweep/diagnosis authorities are not registered as one-hop dependencies, and the result remains a finite fixed-protocol transfer sweep with a persistent inward-source boundary.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16,persistent_object_top4_multistage_transfer_sweep_note_2026-04-16",
+      "load_bearing_step": "With h=0.25, top4, blend=0.25, three updates per segment, and three chained segments fixed, the one-ring-farther sweep is multistage-admissible on 4/5 cases, with only source0.50 closed.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "scripts/persistent_object_top4_multistage_outer_transfer_sweep.py_runner_not_registered_in_audit_queue",
+        "logs/2026-04-16-persistent-object-top4-multistage-outer-transfer-sweep.txt_missing_from_worktree",
+        "docs/PERSISTENT_OBJECT_TOP4_MULTISTAGE_TRANSFER_SWEEP_NOTE_2026-04-16.md_not_registered_one_hop_dependency",
+        "docs/PERSISTENT_OBJECT_INWARD_BOUNDARY_FLOOR_DIAGNOSIS_NOTE_2026-04-16.md_not_registered_one_hop_dependency",
+        "inward_source_directional_law_open",
+        "direction_independent_transfer_law_open",
+        "self_maintaining_inertial_mass_or_matter_closure_open"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the note establishes a bounded finite sweep, not a direction-independent transfer theorem or matter closure. Why this blocks: the live source-note runner took about 700 seconds and reproduced the case table, but it tests only five frozen one-ring-farther cases under a fixed exact-lattice architecture, top4 floor, blended readout, update protocol, and admissibility gates; one inward-source case remains closed, and the audit row has no registered runner or one-hop dependencies for the prior widened-pocket and inward-boundary notes. Repair target: register the runner and reproducible log, register the prior sweep/diagnosis notes as dependencies, add PASS-style assertions for the 4/5 expected result, and derive an inward-source directional law or broader transfer envelope before claiming anything beyond bounded support. Claim boundary until fixed: it is safe to claim that this frozen exact-lattice top4 protocol has a bounded beyond-pocket 4/5 transfer region with a persistent inward-source directional boundary; it is not safe to claim a retained transfer law, self-maintaining inertial mass, or matter closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/persistent_object_top4_multistage_outer_transfer_sweep.py",
+  "title": "Persistent Object Top4 Multistage Outer Transfer Sweep",
+  "transitive_descendants": 47,
+  "verdict_rationale": "The load-bearing result is a bounded first-principles compute over specified exact-lattice cases, not a definition, renaming, external comparator, or tuned numerical match. The completed cache reports exit code 0 and reproduces the exact case-level pattern claimed in the note. The conclusion is properly scoped as bounded beyond-pocket transfer with a persistent inward-source boundary, and the note explicitly disclaims direction-independent transfer, inertial-mass closure, and matter closure."
+}

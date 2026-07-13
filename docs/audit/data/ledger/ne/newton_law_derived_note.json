@@ -1,0 +1,444 @@
+{
+  "audit_date": "2026-07-12T18:58:38.545638+00:00",
+  "audit_invocation_history": [
+    "1655bd7a6e2f860b50763bdf5b8b5779"
+  ],
+  "audit_invocation_id": "1655bd7a6e2f860b50763bdf5b8b5779",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|)."
+    },
+    "dep_claim_type": {
+      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded"
+    },
+    "deps": [
+      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+    ],
+    "load_bearing_score": 13.609,
+    "runner_hash": "c2c0e91c92af5e7ddea9b09cbe665524786b359b88d4c7a87fe8fb13b4698e8a",
+    "transitive_descendants": 68
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00221-newton_law_derived_note",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The calculus is correct over the retained-bounded parent input, but the row adds only standard differentiation and source scaling to that single upstream claim. Under the decoration policy it is not an independent theorem closure.",
+  "claim_id": "newton_law_derived_note",
+  "claim_scope": "Algebraic differentiation of the continuum-leading radial kernel supplied by the retained-bounded Z^3 lattice Green-kernel parent, with no physical force-law conclusion.",
+  "claim_type": "decoration",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem.",
+  "claim_type_last_reviewed": "2026-07-12T18:58:38.545638+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+  "deps": [
+    "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+  ],
+  "direct_in_degree": 15,
+  "effective_status": "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+  "effective_status_reason": "decoration_parent_retained",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+  "load_bearing_score": 13.609,
+  "load_bearing_step": "Differentiating phi(r) = M/(4 pi r) gives d phi/dr = -M/(4 pi r^2), hence |grad phi| = M/(4 pi r^2).",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0c6fe54a3dcbc18d3cc7b3cc001868257b744fd93554ecf356b12b1cd03bdada",
+  "note_path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
+  "notes_for_re_audit_if_any": "",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106458+00:00",
+      "archived_for_note_hash": "3f1746dde9a594d2963400c214e0e18fa500c91f37481dafad34b57beab2896a",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.493096+00:00",
+      "archived_for_note_hash": "1a0da5ad55937f01e5c302bc8193eb40db68ca76eaa8eb38663de6174b32baf0",
+      "audit_date": "2026-04-30T22:24:27.887227+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-high-ready-20260430-23",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner supports a finite-lattice/valley-linear inverse-square distance exponent, but the full Newton-law theorem also needs the framework derivation of the Poisson equation, the force/readout bridge from potential gradient to test-mass force, and the product-law cross-coupling closure. Those inputs are cited or assumed rather than closed inside this row.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The lattice Poisson equation on Z^3 plus the Green-function asymptotic and cross-coupling product law yields F = M M_test/(4 pi r^2) as a closed Newton-law derivation from the Cl(3) framework with no remaining gap.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
+        "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+        "scripts/frontier_product_law_no_ansatz.py",
+        "force_readout_gradient_bridge",
+        "lattice_green_asymptotic_authority"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the runner confirms finite-lattice/valley-linear distance-exponent behavior, but the note claims full retained Newton-law closure from Cl(3), including the Poisson equation as equation of motion, cross-coupling product law, and force readout. Why this blocks: distance-exponent evidence alone is not a standalone derivation of F = G M1 M2/r^2 from framework primitives; the source imports the Poisson/self-consistency law, lattice Green asymptotic authority, product-law closure, and potential-gradient-to-force identification. Repair target: audit/register the Poisson self-consistency theorem, product-law runner/authority, lattice Green asymptotic authority, and force-readout bridge as explicit clean dependencies, then run a combined verifier that exercises the full theorem chain. Claim boundary until fixed: support for an inverse-square distance exponent and mass-independent scaling under the supplied Poisson/valley-linear model, not standalone retained Newton-law closure."
+    },
+    {
+      "archived_at": "2026-05-11T04:19:30.316917+00:00",
+      "archived_for_note_hash": "03339005a461c1854ee4092120b36cdee03c579c2b5017e1465529670bfab918",
+      "audit_date": "2026-05-10T15:05:34.826421+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`."
+        },
+        "dep_claim_type": {
+          "gravity_full_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_full_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_full_self_consistency_note"
+        ],
+        "load_bearing_score": 13.959,
+        "runner_hash": "f8f86ac9104aac9acfd1d446d48a8c96dcb88ad461f5bd684da1a4631ed1e554",
+        "transitive_descendants": 351
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e126b-c2c4-74c0-bae0-a58eb1472589",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Poisson-to-inverse-square algebra closes once (-Delta_lat) phi = rho is assumed. The supplied one-hop authority explicitly says the identification making (-Delta_lat) the field operator rests on a stipulated closure identity L^{-1}=G_0, not a derivation from Cl(3) on Z^3.",
+      "claim_scope": "Conditional derivation of a 1/r^2 force from a stipulated lattice Poisson equation on Z^3 plus the stated Green-function asymptotic.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T15:05:34.826421+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The staggered scalar field obeys the lattice Poisson equation (-Delta_lat) phi = rho, so the Z^3 Green's function asymptotic gives phi ~ M/(4 pi r) and F ~ M M_test/(4 pi r^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem \u2014 derive the closure identity L^{-1}=G_0 from the Cl(3) on Z^3 axiom, or revise the claim scope to explicitly remain conditional on the Poisson equation.",
+      "open_dependency_paths": [
+        "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note claims Newton's law follows without additional assumptions, but its load-bearing Poisson equation is only supported by a cited authority that is conditional on a stipulated closure identity. Why this blocks: retained propagation cannot treat an open/stipulated operator identification as an unconditional theorem from Cl(3). Repair target: supply a retained bridge theorem deriving L^{-1}=G_0, or narrow this note to a bounded theorem conditional on the Poisson equation. Claim boundary until fixed: from stipulated Poisson on Z^3, Green asymptotics and linearity give the stated inverse-square/product form."
+    },
+    {
+      "archived_at": "2026-05-18T11:37:01.068389+00:00",
+      "archived_for_note_hash": "5e0781d773a9b3d0472977bed4cfb71d6b5c30d5a7c60f68b13cef446c72b16e",
+      "audit_date": "2026-05-11T12:11:28.022440+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`."
+        },
+        "dep_claim_type": {
+          "gravity_full_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_full_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_full_self_consistency_note"
+        ],
+        "load_bearing_score": 14.665,
+        "runner_hash": "f8f86ac9104aac9acfd1d446d48a8c96dcb88ad461f5bd684da1a4631ed1e554",
+        "transitive_descendants": 405
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-20260511-newton-law-derived",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from BA-1 and BA-2 to the inverse-square product law closes, but BA-1 is admitted rather than derived; the direct dependency only gives a conditional implication under the stipulated L^{-1}=G_0 closure identity. BA-2 is also admitted as an external textbook asymptotic rather than retained inside this audit packet.",
+      "claim_scope": "Bounded derivation of the inverse-square force law from admitted BA-1 lattice Poisson equation plus admitted BA-2 Z^3 lattice Green's-function asymptotic, with finite-lattice distance-law runner support.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T12:11:28.022440+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given BA-1 and BA-2, a point source gives phi(r)=M G(r) -> M/(4 pi r), and F=-M_test grad(phi)=M M_test/(4 pi r^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the lattice Poisson equation BA-1 from the Cl(3)-on-Z^3 framework instead of importing the stipulated L^{-1}=G_0 closure identity, and pin BA-2 as an accepted lattice-potential-theory authority.",
+      "open_dependency_paths": [
+        "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the Newton-law derivation rests on two bounded admissions, especially BA-1, the lattice Poisson equation as the equation of motion. Why this blocks: the cited gravity self-consistency dependency is retained only as a conditional algebraic implication under a stipulated closure identity, so it does not derive BA-1 from the framework axiom. Repair target: provide a retained bridge theorem deriving BA-1 from Cl(3) on Z^3, and pin the BA-2 lattice Green's-function asymptotic as an accepted/retained mathematical input. Claim boundary until fixed: given BA-1 and BA-2, the class-A inverse-square/product-law derivation and finite-lattice runner support may be cited, but not an unconditional Newton-law derivation from the framework baseline."
+    },
+    {
+      "archived_at": "2026-05-28T20:21:09.896340+00:00",
+      "archived_for_note_hash": "5380c2ddd1d0870ad9b997b2f72fd46d29ca7bf60a70ca4e0640cc2b04cd3cfd",
+      "audit_date": "2026-05-28T03:43:15.478009+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "Framework-local nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization for the explicitly stated stencil (-Delta_lat f)(x)=6f(x)-sum_{|y-x|=1}f(y): the singular Fourier mode has continuum-leading coefficient 1/(4*pi*|r|) with unit lattice spacing, and the included certificate checks the small-k symbol normalization, unit-flux convention, and axis residual scaling. No downstream Newton-law, gravity theorem, scalar-field equation of motion, or physical Poisson dynamics is audited."
+        },
+        "dep_claim_type": {
+          "gravity_full_self_consistency_note": "bounded_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_full_self_consistency_note": "retained_bounded",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded"
+        },
+        "deps": [
+          "gravity_full_self_consistency_note",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+        ],
+        "load_bearing_score": 12.022,
+        "runner_hash": "f8f86ac9104aac9acfd1d446d48a8c96dcb88ad461f5bd684da1a4631ed1e554",
+        "transitive_descendants": 64
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-newton-law-derived-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The BA-2 Green normalization dependency is now retained-bounded, but BA-1 remains a stipulated closure/equation-of-motion input via gravity_full_self_consistency_note rather than a retained derivation from the framework axiom. The no-go/admission discipline hidden-wall scan also exposes an unregistered force/test-mass coupling step, F=-M_test grad(phi), plus cross-coupling/product-law language that is not supplied by a one-hop retained authority in this packet.",
+      "claim_scope": "Conditional inverse-square worked example: given a lattice Poisson equation/equation-of-motion input for the intended scalar field surface, the retained-bounded Z^3 lattice Green normalization, and a source-test force/coupling rule F=-M_test grad(phi), the class-A algebra gives phi=M/(4*pi*r) and force magnitude M*M_test/(4*pi*r^2). The audit does not ratify an unconditional Newton-law derivation from the framework, physical gravity closure, derivation of BA-1, or an independently retained test-mass force law.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T03:43:15.478009+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The source's algebraic step phi=M*G -> M/(4*pi*r) is correct once BA-1 and BA-2 are granted, and differentiating with the extra force rule F=-M_test grad(phi) gives M*M_test/(4*pi*r^2). The cached runner supports a bounded finite-lattice deflection exponent check with weighted scaled-fit alpha=-1.00104 +/- 0.00416 and force exponent -2.0010 +/- 0.0042, but it does not derive BA-1 or the source-test force/cross-coupling rule.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: To clean this row, supply retained authority for BA-1 as an equation of motion from the framework, or explicitly keep it as an admitted premise in an approved admission registry. Also supply or cite retained authority for the test-mass force/source-coupling rule F=-M_test grad(phi) and the product-law cross-coupling, or narrow the note to pure Poisson-potential algebra without claiming a Newton force law. Re-audit if the product-law runner is registered as load-bearing evidence or if the claim is narrowed to a purely conditional algebra lemma.",
+      "open_dependency_paths": [
+        "BA-1 lattice Poisson equation/equation-of-motion derivation remains stipulated via gravity_full_self_consistency_note",
+        "test-mass force law/source-test coupling F=-M_test grad(phi) is not a retained one-hop dependency",
+        "product-law cross-coupling evidence is mentioned but not registered as a load-bearing runner/dependency in this packet"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Non-clean is required. The conditional algebra is sound: from G(r)=1/(4*pi*r), Poisson linearity gives phi=M*G, and with a stipulated test-mass force law one obtains M*M_test/(4*pi*r^2). However the source says BA-1 and BA-2 are the only admissions. Under the no-go/admission gate, BA-2 is closed by the retained-bounded lattice Green row, while BA-1 is still only a stipulated closure identity in gravity_full_self_consistency_note. N3 hidden-wall scan also finds the force/cross-coupling rule: the line F=-M_test*grad(phi) is not a consequence of Poisson linearity alone and is not a registered retained dependency here. N5 rhetoric check therefore rejects the source's statement that no additional physics is imported beyond BA-1 and BA-2. The runner is useful numerical support for a deflection exponent in a valley-linear setup, but it is not authority for the missing equation-of-motion or source-test coupling derivations."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:25.653109+00:00",
+      "archived_for_note_hash": "fae94c8edc985c93899c55a59631cb405bcb642a42ac00e91894d1127887f355",
+      "audit_date": "2026-05-29T04:38:54.757824+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "Framework-local nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization for the explicitly stated stencil (-Delta_lat f)(x)=6f(x)-sum_{|y-x|=1}f(y): the singular Fourier mode has continuum-leading coefficient 1/(4*pi*|r|) with unit lattice spacing, and the included certificate checks the small-k symbol normalization, unit-flux convention, and axis residual scaling. No downstream Newton-law, gravity theorem, scalar-field equation of motion, or physical Poisson dynamics is audited."
+        },
+        "dep_claim_type": {
+          "gravity_full_self_consistency_note": "bounded_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_full_self_consistency_note": "retained_bounded",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded"
+        },
+        "deps": [
+          "gravity_full_self_consistency_note",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+        ],
+        "load_bearing_score": 12.022,
+        "runner_hash": "f8f86ac9104aac9acfd1d446d48a8c96dcb88ad461f5bd684da1a4631ed1e554",
+        "transitive_descendants": 64
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-fresh-newton-law-derived-a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The independent algebra check closes the factor and sign for the force magnitude once BA-1, BA-2, and BA-3 are granted: d(M/(4*pi*r))/dr=-M/(4*pi*r^2), so -M_test*dphi/dr=M*M_test/(4*pi*r^2). BA-1 and BA-2 are wired to retained_bounded dependencies, but BA-3 is not present in tier_a_admissions.json and has no retained-grade dependency in the restricted packet, so the audit chain still appeals to an unretained test-mass response premise.",
+      "claim_scope": "Conditional algebraic inverse-square force derivation on Z^3 from three named admissions: BA-1 lattice Poisson equation of motion, BA-2 Z^3 Green-kernel normalization, and BA-3 test-mass force/source coupling; no derivation of those admissions is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T04:38:54.757824+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Given G(r)=1/(4*pi*r), Poisson linearity gives phi(r)=M/(4*pi*r), and the admitted BA-3 coupling F=-M_test*grad(phi) gives |F|=M*M_test/(4*pi*r^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade BA-3 test-mass force/source coupling theorem, or a reviewed admission-registry entry plus dependency wiring, then refresh the note/runner support language against the completed cached runner output.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: BA-3, the test-mass force/source coupling F=-M_test*grad(phi), is named locally but is neither registered in tier_a_admissions.json nor backed by a retained-grade dependency in the restricted packet. Why this blocks: the inverse-square force law, as opposed to the 1/r potential, requires exactly that physical response/readout bridge; without it the retained chain proves only the conditional potential algebra. Repair target: supply a retained-grade theorem deriving the test-mass response rule from retained primitives, or obtain an explicit reviewed admitted-premise registration and wire it as a dependency. Claim boundary until fixed: the source supports only the algebraic implication given BA-1/BA-2/BA-3; the runner is finite numerical support after assuming the Poisson/ray-deflection surface, not a derivation of the admissions, and it does not by itself support the note's broader Green-ratio, product-law, dimensionality, or 128^3 numerical-support language."
+    },
+    {
+      "archived_at": "2026-07-12T18:34:05.694646+00:00",
+      "archived_for_note_hash": "2dd00603a4db9e54970f4df52be19923a35a959af47bd4fbc283846df69f11b1",
+      "audit_date": "2026-07-10T16:15:06.513569+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.629,
+        "runner_hash": "7ee59c9cc2a282fd4523243e6203d03bb90a78af4307b30ec3fbca0c85989638",
+        "transitive_descendants": 69
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-newton_law_derived_n-judge-1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The differentiation is genuine class-A calculus and the narrowed inverse-square-gradient conclusion follows once the stated kernel and source-linearity are granted. However, the restricted packet supplies no retained-grade or explicitly accepted authority for either premise; under the rubric, importing such an unclosed kernel and source-linearity premise requires audited_conditional even though the physical force-law overclaim has been removed.",
+      "claim_scope": "Algebraic differentiation of the supplied radial kernel G(r)=1/(4 pi r) and source-linear potential phi(r)=M G(r), without any physical force-law claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:15:06.513569+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-30T23:41:31.878989+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-234109-85550c9b-newton_law_derived_note",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the supplied scalar kernel G(r)=1/(4 pi r) and formal source-linearity phi=M G, the note proves the inverse-square scalar gradient magnitude |grad phi|=M/(4 pi r^2), while making no physical force-law claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-10T12:49:59.728940+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260710-124556-b32a85dc-newton_law_derived_note-003",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic differentiation of the supplied radial kernel G(r) = 1/(4 pi r) and the source-linear potential phi(r) = M G(r), without any physical force-law claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-10T16:15:06.513569+00:00",
+          "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-newton_law_derived_n-judge-1",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic differentiation of the supplied radial kernel G(r)=1/(4 pi r) and source-linear potential phi(r)=M G(r), without any physical force-law claim.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first auditor treated the supplied 1/r kernel and source-linearity as independent retained-grade inputs, although the packet provides no cited authority and does not flag either as an accepted premise.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The differentiation is genuine class-A calculus and the narrowed inverse-square-gradient conclusion follows once the stated kernel and source-linearity are granted. However, the restricted packet supplies no retained-grade or explicitly accepted authority for either premise; under the rubric, importing such an unclosed kernel and source-linearity premise requires audited_conditional even though the physical force-law overclaim has been removed.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "Differentiating phi(r)=M/(4 pi r) gives d phi/dr=-M/(4 pi r^2), hence |grad phi|=M/(4 pi r^2).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite a retained-grade or explicitly accepted premise establishing the supplied kernel and source-linearity, then re-audit the updated note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The differentiation is genuine class-A calculus and the narrowed inverse-square-gradient conclusion follows once the stated kernel and source-linearity are granted. However, the restricted packet supplies no retained-grade or explicitly accepted authority for either premise; under the rubric, importing such an unclosed kernel and source-linearity premise requires audited_conditional even though the physical force-law overclaim has been removed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 12,
+    "B": 4,
+    "C": 0,
+    "D": 0,
+    "total_pass": 16
+  },
+  "runner_path": "scripts/newton_law_potential_kernel_scope_check.py",
+  "title": "Newton Potential-Kernel Algebra Packet on Z^3",
+  "transitive_descendants": 68,
+  "verdict_rationale": "The runner genuinely verifies the symbolic derivative, scope restrictions, and live retained-grade dependency edge. The result contains no first-principles computation or external comparison and reduces to one retained-bounded Green-kernel parent plus elementary calculus. It therefore qualifies as an algebraic decoration rather than a separate bounded theorem or Newton force-law derivation."
+}

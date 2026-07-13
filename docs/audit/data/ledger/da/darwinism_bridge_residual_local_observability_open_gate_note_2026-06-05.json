@@ -1,0 +1,263 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "key_terminology",
+    "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+    "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.307,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2e6adb40edbf68ebdbbf78e3aed2c7da23d819f4b40ad0ecf3a72bd1c10fdb66",
+  "note_path": "docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.446521+00:00",
+      "audit_date": "2026-06-18T06:39:29.420836+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02": "Audited only the narrow claim that QD objectivity, understood as redundant broadcast of distinguishable pointer labels, does not force uniform sector weights over the rank-1/rank-2 K-real alphabet.",
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "Finite qubit S+E model: pointer-population persistence iff [H_int, Pi_S] = 0, plus sufficient redundant record formation for the stated local controlled-copy interaction with fresh/idle fragments under the explicit Darwinism record bridge."
+        },
+        "dep_claim_type": {
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02": "no_go",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02": "retained_no_go",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02",
+          "key_terminology",
+          "minimal_axioms",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 7.392,
+        "runner_hash": "48c0f304ab801612b3884e0919a9621c654baf5963089b2fd5f6d14a14978deb",
+        "transitive_descendants": 41
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The open-gate classification closes from the provided Minimal Axioms plus the finite computed countermodels: additivity/locality/current weak determinacy do not supply per-fragment broadcast accessibility. The missing premise is named by the claim itself as the downstream open gate, not as an unclosed step in this audit.",
+      "claim_scope": "Audited whether the Quantum, Lattice, and Record axioms force the quantum-Darwinism record bridge, and whether the minimal open premise is local observability of a determined outcome.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T06:39:29.420836+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Additivity and weak determinacy do not entail redundant broadcast; the needed extra premise is local observability of the determined outcome by each spatially-disjoint fragment observer.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that no omitted contextual citation is being treated as load-bearing; the provided packet supports the open-gate claim from the Minimal Axioms and runner alone.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 5,
+        "C": 5,
+        "D": 4,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The runner source constructs explicit finite qubit states and computes partial traces, entropies, and mutual informations rather than merely printing pass lines. Its independent-record and global-parity witnesses support the non-entailment claim, while the broadcast case verifies that adding local observability gives the Darwinism redundancy property. The cited retained-grade and accepted axiom inputs do not contain a per-fragment local-readability clause, so the note correctly records this as an open_gate rather than deriving the bridge."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.349752+00:00",
+      "audit_date": "2026-07-02T03:15:00.511954+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02": "Audited only the narrow claim that QD objectivity, understood as redundant broadcast of distinguishable pointer labels, does not force uniform sector weights over the rank-1/rank-2 K-real alphabet.",
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "Bounded finite S + E_1..E_n qubit-model theorem: given the quantum-Darwinism record convention and the explicit controlled-copy/fresh-fragment hypotheses, pointer conservation is necessary for all-state pointer persistence and the displayed local coupling forms redundant objective pointer records."
+        },
+        "dep_claim_type": {
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02": "no_go",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02": "retained_no_go",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02",
+          "key_terminology",
+          "minimal_axioms",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 7.426,
+        "runner_hash": "48c0f304ab801612b3884e0919a9621c654baf5963089b2fd5f6d14a14978deb",
+        "transitive_descendants": 42
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T031500Z-ac7d71ab-darwinism_bridge_residua",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet includes the current registered minimal axioms, which explicitly omit local observability, and the runner supplies concrete finite-qubit counterexamples separating additivity/determinacy from redundant local broadcast. The missing step for downstream Darwinism use is exactly the added local-observability premise, not an unstated derivation inside this open-gate note.",
+      "claim_scope": "Audited whether the current minimal axioms force the quantum-Darwinism bridge from record additivity and lattice locality, and whether the residual premise is precisely local observability of a determined outcome.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-02T03:15:00.511954+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The decisive step is the explicit additive, determined, non-redundant witness: a global-parity or independent-record construction satisfies Record additivity and locality-compatible finite qubit algebra while no spatially disjoint local fragment can recover the same determined outcome, so local observability is not entailed by the axioms.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the runner-check category breakdown if using an automated classifier; the scientific conclusion does not depend on the exact A/B/C/D allocation of individual PASS lines.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 5,
+        "C": 5,
+        "D": 4,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The source note is scoped as an open-gate classification, not as a derivation of the Darwinism bridge. The cited minimal-axiom authority is a registered axiom premise and expressly states that local observability remains outside the axiom content. The runner source performs actual finite-dimensional density-matrix and mutual-information computations rather than merely printing expected constants, and its witnesses support the separation claimed in the note. The one-hop retained authorities are consistent with this classification: they treat QD objectivity/redundancy as supplied or bounded input rather than closed axiom content."
+    },
+    {
+      "archived_at": "2026-07-10T17:04:23.300372+00:00",
+      "audit_date": "2026-07-10T15:36:54.980188+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02": "Audited only the narrow claim that QD objectivity, understood as redundant broadcast of distinguishable pointer labels, does not force uniform sector weights over the rank-1/rank-2 K-real alphabet.",
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "Exact all-state flow and unitary-step pointer-persistence commutator criteria, the explicit finite controlled-copy record construction, and its stated counterexample and transfer-sector boundaries, conditional on the supplied carrier, pointer, Darwinism, singleton-readout, and fresh-or-idle-fragment hypotheses."
+        },
+        "dep_claim_type": {
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02": "no_go",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02": "retained_no_go",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02",
+          "key_terminology",
+          "minimal_axioms",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 6.307,
+        "runner_hash": "48c0f304ab801612b3884e0919a9621c654baf5963089b2fd5f6d14a14978deb",
+        "transitive_descendants": 27
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00005-darwinism_bridge_residual_lo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted axiom authority explicitly leaves local observability outside the framework axioms, and the computed parity countermodel demonstrates that global determinacy and joint readability do not imply singleton-fragment readability. Adding per-fragment local recoverability supplies precisely the missing redundancy condition.",
+      "claim_scope": "Whether the current Lattice, Qubit, Admissibility, and Record axioms entail many-fragment local readability, and whether local observability of a determined outcome is the missing Darwinism bridge.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T15:36:54.980188+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "A globally encoded parity record can be determined and jointly readable while every local fragment is blind, so the framework axioms do not entail redundant local broadcast.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should note that the runner numerically checks singleton fragments and the complete environment; the stronger statement about every two- and three-fragment proper subset follows from the parity construction but is not separately enumerated.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 5,
+        "C": 5,
+        "D": 4,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The accepted minimal-axiom authority explicitly excludes local observability, while the retained cited authorities do not supply it. The runner constructs density matrices, performs pointer dephasing and partial traces, and computes both an independent-record counterexample and a parity encoding with zero singleton recoverable information but full joint information; it does not merely print or define the conclusion. These constructions suffice for the narrow open-gate classification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_darwinism_bridge_residual_2026_06_05.py",
+  "title": "The Quantum-Darwinism Record Bridge Remains An Open Local-Observability Gate",
+  "transitive_descendants": 27,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,78 @@
+{
+  "audit_date": "2026-05-23T15:46:24.593087+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+    },
+    "dep_claim_type": {
+      "graph_first_selector_derivation_note": "positive_theorem",
+      "graph_first_su3_integration_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "graph_first_selector_derivation_note": "retained",
+      "graph_first_su3_integration_note": "retained"
+    },
+    "deps": [
+      "graph_first_selector_derivation_note",
+      "graph_first_su3_integration_note"
+    ],
+    "load_bearing_score": 0.0,
+    "runner_hash": "f1f00c0c3806370934cb7087e322aa17b44d62539ecde1d58415f5421261b399",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T154602Z-3c9084c9-native_gauge_left_handed-01",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited graph-first SU3 integration note already supplies the selected-axis residual swap, the 3 plus 1 base split, and the doubled 6 plus 2 abelian eigenvalue surface. The present note only isolates that finite-dimensional algebraic consequence with the stated phenomenological exclusions.",
+  "claim_id": "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+  "claim_scope": "For each selected axis of the graph-first C^8 taste cube, the complementary-axis swap defines projectors with ranks 6 and 2 and a traceless hypercharge-like left-handed abelian eigenvalue surface with spectrum +1/3^6 and -1^2.",
+  "claim_type": "decoration",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-05-23T15:46:24.593087+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": "graph_first_su3_integration_note",
+  "deps": [
+    "graph_first_selector_derivation_note",
+    "graph_first_su3_integration_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "decoration_under_graph_first_su3_integration_note",
+  "effective_status_reason": "decoration_parent_retained",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
+  "load_bearing_score": 11.909,
+  "load_bearing_step": "The residual swap tau is an involution, so Pi_+ and Pi_- are complementary projectors with doubled symmetric/antisymmetric ranks 6 and 2, making Y_like traceless with eigenvalues +1/3 and -1 on those blocks.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "unknown",
+  "max_descendant_status_rank": 70,
+  "note_hash": "dd6eb6b11f7e27a664b7455d8f30c34afdc35374af02bbd43e8d6cec27a17ed2",
+  "note_path": "docs/NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23.md",
+  "notes_for_re_audit_if_any": "A second auditor should re-check whether the lane wants this split-out bounded surface recorded as retained_bounded instead of decoration, but the restricted packet makes it a one-parent algebraic extraction.",
+  "open_dependency_paths": [],
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 30,
+    "B": 10,
+    "C": 0,
+    "D": 0,
+    "total_pass": 40
+  },
+  "runner_path": "scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py",
+  "title": "Native Gauge Left-Handed Abelian Surface Bounded Note",
+  "transitive_descendants": 1359,
+  "verdict_rationale": "The runner genuinely constructs the residual swap on the eight cube vertices for all three selected axes, forms the projectors, and checks ranks, trace, Hermiticity, and eigenvalue multiplicities. The dependency checks are ledger/status checks rather than physics derivations, while the load-bearing eigenvalue calculation is algebraic over the retained graph-first SU3 integration parent. Because the same abelian eigenvalue surface is already explicitly contained in that parent and this note deliberately narrows scope rather than adding a new theorem, the appropriate conservative verdict is decoration, not a new bounded theorem."
+}

@@ -1,0 +1,564 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.055,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "63def01c06e37f5fecad20750aa43a93cee68d75bf9366f43d875fd9a58d1113",
+  "note_path": "docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:08:24.498177+00:00",
+      "audit_date": "2026-05-22T12:59:58.055044+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 11.04,
+        "runner_hash": "9042cf2aed3bb0c2bdd1d6d56595c0adab190cb424e5c09d246afda1d2846f77",
+        "transitive_descendants": 1052
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T125812Z-34ddc3b9-q_integer_spectrum_theor-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic spectrum result closes once the per-site C^2 single-mode Fock space is admitted. The restricted packet does not close the framework-level identification of the physical per-site Hilbert space with that C^2 Fock space, because the only cited authority explicitly moves that U4/Grassmann bridge out of scope.",
+      "claim_scope": "Given an N-site tensor product of per-site C^2 single-mode fermion Fock spaces with n_x=a_x^\u2020 a_x, Q_total has spectrum {0,1,...,N} and charge-k multiplicity C(N,k).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T12:59:58.055044+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T03:19:53.482153+00:00",
+          "auditor": "claude-audit-loop-2026-05-19-q-integer-spectrum",
+          "auditor_family": "claude-opus",
+          "auditor_model": "claude-opus-4.7-1m",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the framework Fock space H = \u2297_x H_x with per-site H_x \u2245 C\u00b2 (cited per-site uniqueness, Pauli rep), the per-site number operator n\u0302_x = a^\u2020_x a_x defined by the canonical single-mode fermion construction a = \u03c3_+, a^\u2020 = \u03c3_- has spectrum exactly {0, 1}; the total operator Q\u0302_total = \u03a3_x n\u0302_x has integer spectrum {0, 1, ..., N} with multiplicity C(N, k) at eigenvalue k, equivalently Q\u0302_total = (N/2)\u00b7I - (1/2) \u03a3_x \u03c3_{3,x}.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "elementary_operator_algebra",
+          "verdict": "audited_clean"
+        },
+        "mode": "terminal_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-22T03:31:48.374756+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260522-032806-021e808f-q_integer_spectrum_theor-002",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given an N-site tensor-product Fock space \u2297_x C\u00b2 with canonical one-mode fermion number operators n_x = a_x\u2020a_x, Q_total = \u03a3_x n_x has spectrum {0,...,N} with binomial multiplicities.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-22T03:41:45.508655+00:00",
+          "auditor": "claude-audit-loop-2026-05-19-q-integer-xconf",
+          "auditor_family": "claude-opus",
+          "auditor_model": "claude-opus-4.7-1m",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the framework N-site tensor-product Fock space H = \u2297_x H_x with per-site H_x \u2245 C\u00b2 (identified via Pauli rep), the canonical one-mode fermion construction a = \u03c3_+, a^\u2020 = \u03c3_- yields per-site number operator n\u0302_x = a^\u2020_x a_x with Spec(n\u0302_x) = {0, 1}; the total operator Q\u0302_total = \u03a3_x n\u0302_x has integer spectrum {0, 1, \u2026, N} with multiplicity C(N, k) at eigenvalue k, equivalently Q\u0302_total = (N/2)\u00b7I - (1/2) \u03a3_x \u03c3_{3,x}.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Since the mutually commuting n_x have eigenvalues {0,1}, their joint eigenbasis is labeled by binary strings \u03bd and Q_total|\u03bd>=(\u03a3_x \u03bd_x)|\u03bd>, giving spectrum {0,...,N} with binomial multiplicities.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide and cite the retained/audited staggered-Dirac/Grassmann forcing substep, or an equivalent retained one-hop theorem identifying the framework per-site Hilbert with the C^2 single-mode Fock space.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner genuinely constructs the single-site and tensor-product operators and verifies only algebraic identities: CAR, n spectrum, commutativity, total spectrum, binomial multiplicities, and the sigma_3 formula. There is no external comparator or tuned numerical input. However, the cited Cl(3) authority is retained_bounded only for the physical-Cl(3) U1-U3 representation content and explicitly says the per-site Hilbert/Grassmann realization bridge is not supplied by that note. Therefore the framework-level charge-quantization claim is conditional on a missing one-hop bridge authority."
+    },
+    {
+      "archived_at": "2026-05-29T00:46:44.404073+00:00",
+      "audit_date": "2026-05-22T22:40:46.574341+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.585,
+        "runner_hash": "9042cf2aed3bb0c2bdd1d6d56595c0adab190cb424e5c09d246afda1d2846f77",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T223910Z-9657ce20-q_integer_spectrum_theor-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "With the allowed k=1 qubit-per-site reading, H_x is exactly C^2, so the single-mode number operator and tensor-product spectrum are ordinary finite-dimensional algebra. The staggered-Dirac/Grassmann bridge is not load-bearing for this bounded spectral claim.",
+      "claim_scope": "On the k=1 qubit-per-site finite Fock space H = tensor_x C^2 with n_x = a_x^dagger a_x, Q_total = sum_x n_x has spectrum {0,...,N} and multiplicity C(N,k).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T22:40:46.574341+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_type_changed:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:bounded_theorem->positive_theorem",
+      "load_bearing_step": "Since the commuting n_x have eigenvalues {0,1}, the tensor-product basis is labelled by binary strings nu and Q_total|nu> = (sum_x nu_x)|nu>, giving spectrum {0,...,N} with binomial multiplicities.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should preserve the spectral reading: arbitrary superpositions can have fractional expectation values unless a separate charge-sector or superselection premise is added; also re-check the harmless sigma_+/sigma_- convention wording.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The original cited Cl(3) uniqueness note alone no longer carries U4, but the targeted packet supplies the k=1 qubit-per-site framework rule as the needed per-site C^2 input. Once scoped that way, the proof is a direct algebraic closure: n is a rank-one projection, the n_x commute on distinct tensor factors, and Q_total has Hamming-weight spectrum. The runner source verifies those operator identities for N=4 without empirical inputs or tuned constants. This is clean only at the operator-spectrum and multiplicity level, not as an additional derivation of the staggered-Dirac realization."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:30.186919+00:00",
+      "archived_for_note_hash": "8cdee38cec613f2e240ba086899ddd6df8c5231639d790cdd2c5a5437d405e9e",
+      "audit_date": "2026-05-29T05:35:25.473768+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.585,
+        "runner_hash": "9042cf2aed3bb0c2bdd1d6d56595c0adab190cb424e5c09d246afda1d2846f77",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite tensor-product algebra closes after H_x=C^2 and the occupation-basis a/a^dagger construction are supplied, but the cited per-site uniqueness row's audited scope excludes physical per-site Hilbert-space identification and chirality/realization selection.",
+      "claim_scope": "Framework-facing total charge spectrum theorem: per-site n_x=a_x^dagger a_x has eigenvalues {0,1} and Q_total=sum_x n_x has spectrum {0,...,N} with binomial multiplicities on the N-site Fock space.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T05:35:25.473768+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By per-site uniqueness, H_x ~= C^2 with canonical fermion raising/lowering operators, so n_x=a_x^dagger a_x has spectrum {0,1} and Q_total has spectrum {0,...,N} on the tensor-product Fock space.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained per-site Fock-space/charge-operator realization authority, or narrow the row to a stipulated N-qubit algebra theorem and re-audit.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the source uses axiom_first_cl3_per_site_uniqueness as authority for a framework per-site Hilbert H_x~=C^2 and one-mode Fock construction, but that dependency is retained only as a pure Cl(3,0) representation-classification theorem and explicitly excludes physical per-site Hilbert-space identification. Why this blocks: the runner correctly checks the algebra of n=a^dagger a on a stipulated C^2 tensor product, including spectrum {0,...,N}, binomial multiplicities, commutativity, and Q=N/2 I - (1/2)sum sigma_3,x; it does not supply the missing bridge from abstract Cl(3) chirality modules to the framework Fock space or charge operator. Repair target: cite/audit a retained per-site Fock-space realization theorem, or narrow this row to a purely stipulated N-qubit algebra theorem with H=(C^2)^N and a/a^dagger defined by convention. Claim boundary until fixed: the integer-spectrum algebra is valid for a supplied N-site qubit/Fock tensor product, but framework charge quantization is not retained from the current one-hop dependency."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.082335+00:00",
+      "audit_date": "2026-05-31T00:29:21.807650+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.585,
+        "runner_hash": "92f46b04b8308cb92dcc54c831b0a48df977dea1f97581842e1785756702ebf6",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-002552-259cd0b1-q_integer_spectrum_theor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Axiom 1 supplies A_x ~= M_2(C), rank-one projections have eigenvalues 0 and 1, and tensor embeddings on distinct sites commute. The joint binary eigenbasis gives Hamming-weight eigenvalues and binomial multiplicities without importing physical charge, gauge, or open-gate structure.",
+      "claim_scope": "For any finite Axiom 1 qubit block and any chosen rank-one local readout projections n_x, Q_total = sum_x n_x has spectrum {0,1,...,N} with multiplicity C(N,k), with the stated Pauli-coordinate formula.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-31T00:29:21.807650+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "Since the embedded rank-one projections n_x are commuting Hermitian projections, their joint tensor-product eigenbasis is labelled by binary strings nu in {0,1}^N and Q_total has eigenvalue sum_x nu_x.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check only the class-C versus purely algebraic-A labeling; the closure and formulas are otherwise direct.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 1,
+        "C": 3,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The restricted packet closes the theorem from the accepted Axiom 1 premise plus finite-dimensional spectral algebra and binomial counting. The runner source actually constructs the representative local projection, tensor-embedded operators, Q_total, and the Pauli-coordinate expression for N=4; it is not merely printing PASS constants, though the generality over arbitrary rank-one projections is supplied by the note's unitary-equivalence argument rather than by exhaustive runner coverage. The displayed identities and coefficients, including n = (I - sigma_3)/2, Q_total = (N/2)I - (1/2)sum_x sigma_{3,x}, parity dimensions, and the half-filling multiplicity statement, check out under the note's conventions."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.544909+00:00",
+      "audit_date": "2026-06-05T17:59:12.804918+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.144,
+        "runner_hash": "92f46b04b8308cb92dcc54c831b0a48df977dea1f97581842e1785756702ebf6",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-175715-60cd80e510-q_integer_spectrum_theorem_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Quantum axiom supplies the one-site algebra M_2(C), and the packet admits finite tensor products, rank-one projection spectral facts, and binomial counting. Diagonalizing each local projection and tensoring the local eigenvectors gives a complete joint eigenbasis, so the integer spectrum and multiplicities follow.",
+      "claim_scope": "For a finite tensor-product block of N qubit sites, any chosen local rank-one projection readout n_x gives Q_total = sum_x n_x with spectrum {0,1,...,N} and multiplicity C(N,k), without identifying it as physical charge.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:59:12.804918+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Since the n_x are commuting Hermitian projections, they have a joint eigenbasis labelled by binary strings nu in {0,1}^N, on which Q_total has eigenvalue sum_x nu_x.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Runner checks only a finite N=4 representative; second audit should re-check the general tensor-product diagonalization argument rather than treating the runner alone as the theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The cited axiom memo is explicitly flagged as an accepted framework premise and supplies exactly the needed one-site qubit algebra. Independent formula checks close: a rank-one projection in M_2(C) has eigenvalues 0 and 1, tensor-factor embeddings commute, Hamming-weight enumeration gives C(N,k), and n = (I - sigma_3)/2 gives the stated Pauli sign and factor. The runner source actually constructs the representative matrices and verifies the N=4 spectrum, multiplicities, commutators, and Pauli-coordinate formula rather than merely printing constants, though the general closure rests on the note's tensor-product argument."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.512914+00:00",
+      "audit_date": "2026-06-05T21:35:17.738855+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.144,
+        "runner_hash": "92f46b04b8308cb92dcc54c831b0a48df977dea1f97581842e1785756702ebf6",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-213456-be1c5312f8-q_integer_spectrum_theorem_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Quantum axiom supplies A_x ~= M_2(C), and the remaining argument is finite-dimensional spectral algebra on the stipulated finite tensor product. Rank-one projections have eigenvalues 0 and 1, tensor embeddings commute, and binary-string counting gives the stated spectrum and multiplicities.",
+      "claim_scope": "For any finite tensor product of N one-qubit local algebras with one chosen rank-one projection per site, Q_total = sum_x n_x has spectrum {0,...,N} with multiplicity C(N,k).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:35:17.738855+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Since the embedded rank-one projections n_x commute on distinct tensor factors, they admit a joint binary eigenbasis and Q_total has eigenvalue sum_x nu_x on each binary string.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the finite tensor-product construction remains treated as standard local-block algebra rather than an extra physical composition axiom.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The proof does not identify the occupation count with physical charge or import a fitted numerical target. The only upstream authority is an accepted axiom premise supplying the one-site qubit algebra, and the audited conclusion follows by standard finite-dimensional linear algebra plus binomial counting. The runner source genuinely constructs representative matrices and tensor embeddings for N=4, but the theorem itself is established analytically rather than by relying on that finite sample."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.889341+00:00",
+      "audit_date": "2026-07-01T13:33:56.361526+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.644,
+        "runner_hash": "92f46b04b8308cb92dcc54c831b0a48df977dea1f97581842e1785756702ebf6",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T133356Z-fc7af954-q_integer_spectrum_theor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered minimal_axioms premise supplies the one-site M_2(C) algebra, and the remaining inputs are finite-dimensional spectral theory, finite tensor products, and binomial counting. Diagonalizing each local rank-one projection gives one 0-eigenvector and one 1-eigenvector per site, so tensor basis Hamming weights give exactly the claimed spectrum and multiplicities.",
+      "claim_scope": "For any finite block of sites with one chosen rank-one projection in each local M_2(C) qubit algebra, Q_total = \u03a3_x n_x has spectrum {0,...,N} with eigenspace dimensions C(N,k), plus the stated Pauli-coordinate form in a readout basis.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T13:33:56.361526+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Since the n_x are commuting Hermitian projections, they have a joint eigenbasis labelled by binary strings \u03bd \u2208 {0,1}^N, with Q_total|\u03bd\u27e9 = (\u03a3_x \u03bd_x)|\u03bd\u27e9.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Future re-audit should re-check that the old MINIMAL_AXIOMS_2026-05-20 citation remains aliased to the registered minimal_axioms premise and that the physical-charge firewall remains in scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The proof does not identify the count with physical charge or any downstream observable bridge; it proves only a finite qubit occupation-count theorem for an explicitly chosen local rank-one readout projection. The load-bearing joint-spectrum argument closes from the accepted Qubit axiom content plus standard finite-dimensional linear algebra, and an independent check of the local eigenspaces and Hamming-weight decomposition verifies the signs, factors, and multiplicities. The runner source actually constructs representative tensor-product operators for N=4 and checks commutativity, spectrum, binomial multiplicities, and the Pauli formula; the note's proof supplies the general-N theorem beyond that finite executable witness."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.499176+00:00",
+      "audit_date": "2026-07-02T02:31:35.830797+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.644,
+        "runner_hash": "92f46b04b8308cb92dcc54c831b0a48df977dea1f97581842e1785756702ebf6",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T023135Z-f93ebebe-q_integer_spectrum_theor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered minimal-axioms premise supplies the one-site M_2(C) algebra, and the remaining steps are finite-dimensional projection/tensor-product algebra plus binomial counting. No physical charge, record-readout, dynamics, or observable bridge is used.",
+      "claim_scope": "For a finite N-site block of one-site M_2(C) qubit algebras and arbitrary local rank-one projections n_x, Q_total = sum_x n_x has spectrum {0,...,N} with binomial multiplicities, plus the stated Pauli-coordinate form in a diagonal readout basis.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T02:31:35.830797+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Since the embedded rank-one projections are commuting Hermitian projections, a tensor-product joint eigenbasis labelled by binary strings has Q_total eigenvalue sum_x nu_x, and strings of weight k occur with multiplicity C(N,k).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that 'readout projection' remains scoped only as an arbitrary algebraic projection, not as a physical record or charge readout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The theorem follows by diagonalizing each rank-one projection locally and taking the tensor product basis; Q_total is then exactly the Hamming-weight operator. The Pauli formula has the correct sign under sigma_3 = diag(1,-1), since diag(0,1) = (I - sigma_3)/2. The runner source constructs the representative matrices, commutators, spectrum, multiplicities, and Pauli identity for N=4 rather than merely printing constants; the all-N closure comes from the proof's standard finite-dimensional algebra."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.112966+00:00",
+      "audit_date": "2026-07-09T04:36:00.782129+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.115,
+        "runner_hash": "92f46b04b8308cb92dcc54c831b0a48df977dea1f97581842e1785756702ebf6",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-20260709",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The current minimal axioms supply the per-site M_2(C) qubit algebra, and finite tensor-product linear algebra gives commuting rank-one projections with a binary joint eigenbasis. The runner verifies the source firewall, local projection spectrum, tensor-factor commutativity, integer spectrum, binomial multiplicities, and Pauli-coordinate formula.",
+      "claim_scope": "For a finite block of qubit sites and a chosen rank-one local readout projection at each site, Q_total=sum_x n_x has spectrum {0,...,N} with binomial multiplicities; no physical electric charge, hypercharge, or Noether charge identification is included.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-09T04:36:00.782129+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Since the embedded rank-one projections n_x commute on distinct tensor factors, their joint binary eigenbasis gives Q_total|nu> = (sum_x nu_x)|nu>, with multiplicity C(N,k) at eigenvalue k.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The theorem is a finite-dimensional occupation-count statement over explicitly chosen rank-one projections in the qubit tensor product. It does not derive or identify physical electric charge, hypercharge, or a dynamical conserved charge, and the note states those exclusions. Residual risk is limited to downstream misuse of the integer spectrum as physical charge, not to the audited algebraic spectrum claim itself."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/q_integer_spectrum_check.py",
+  "title": "Per-Site Qubit Occupation Count Has Integer Spectrum",
+  "transitive_descendants": 46,
+  "verdict_rationale": null
+}

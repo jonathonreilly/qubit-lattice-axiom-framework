@@ -1,0 +1,120 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "114ba59e682972f290df470de2aafe350d0b71b0825028c71aef762a6d9fab57",
+  "note_path": "docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T22:04:33.569362+00:00",
+      "audit_date": "2026-07-10T12:45:44.468225+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09": "unaudited"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "ea0c80b43e4cad0f91c5608f0adf1cefc99602df8c5b079cb0d498f6c39f578e",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-fresh-tick-cell-20260710",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "codex-current",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The five-stratum algebraic classification, local-gauge covariance construction, winding signs, and cell-to-site speed factor close exactly. The physical interpretation does not close because the tick--Admissibility realization bridge is supplied rather than derived, and the direct staggered dichotomy dependency is currently unaudited.",
+      "claim_scope": "On the supplied site-licensed, period-2, one-axis unitary-tick surface, and conditional on a tick--Admissibility realization bridge, one-site covariance modulo local U(1) frames plus off-site support selects exactly the p/s and q/r mover strata, giving windings +1 and -1 and |v|=1 edge/tick without selecting a winding sign.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T12:45:44.468225+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "On the licensed period-2 unitary family, the necessary one-site modulus conditions together with off-site support leave exactly the p/s and q/r mover strata; interpreting those predicates as the Admissibility clauses requires the supplied tick--Admissibility realization bridge.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and register a theorem mapping the two Admissibility clauses to full tick covariance modulo local U(1) frames and off-site tick support, then audit the cited staggered dichotomy dependency before re-running this exact selector audit; the N1--N8 gate supports only this narrow conditional boundary and no broader no-go.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 37,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "Issue: the exact matrix selector is conditioned on an unratified bridge identifying rule-level translation covariance with tick covariance modulo local U(1) frames and rule-level variation with off-site tick support; its direct staggered dichotomy dependency is also unaudited. Why this blocks: the restricted authorities explicitly say Admissibility supplies no transfer operator or kinetic-branch selector, so the algebra cannot by itself establish a realized physical tick or compose to an unconditional speed theorem. Repair target: derive and retain a tick--Admissibility realization theorem for both predicate identifications, and bring the cited staggered dichotomy row to retained grade. Claim boundary until fixed: the exact period-2 algebraic selector and conditional |v|=1 consequence are valid only on the stated supplied-bridge, site-strict, unitary, one-axis surface, with neither winding sign selected."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/tick_cell_selection_by_translation_and_variation_clauses_2026_07_09.py",
+  "title": "Conditional Tick-Cell Selection Under the Translation and Variation Predicates",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

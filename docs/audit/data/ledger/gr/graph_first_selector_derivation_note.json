@@ -1,0 +1,314 @@
+{
+  "audit_date": "2026-05-22T15:33:35.673777+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_claim_scope": {
+      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+    },
+    "dep_claim_type": {
+      "graph_first_su3_integration_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "graph_first_su3_integration_note": "retained"
+    },
+    "deps": [
+      "graph_first_su3_integration_note"
+    ],
+    "load_bearing_score": 17.742,
+    "runner_hash": "81437e80194eecc2aedac1cf541a29c464dc0edfc4c2452fda5b86cad313fc98",
+    "transitive_descendants": 1210
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T153215Z-b31fe630-graph_first_selector_der-02",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The selector identity follows algebraically from the explicitly defined commuting involutive cube shifts, and the simplex minima follow from nonnegativity of the pairwise-overlap potential. No SU(3) bridge, abelian identification, or downstream phenomenology is needed for this scoped selector claim.",
+  "claim_id": "graph_first_selector_derivation_note",
+  "claim_scope": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-22T15:33:35.673777+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-22T15:31:52.267306+00:00",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T153131Z-b31fe630-graph_first_selector_der-01",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "The audit checked the graph-native cube-shift derivation of the weak-axis selector and its axis-minimum/Z2-stabilizer structure on the stated canonical 2^3 taste-cube surface.",
+      "claim_type": "positive_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-05-22T15:33:35.673777+00:00",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T153215Z-b31fe630-graph_first_selector_der-02",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+      "claim_type": "positive_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graph_first_su3_integration_note"
+  ],
+  "direct_in_degree": 22,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 25.672,
+  "load_bearing_step": "For H(phi) = sum_i phi_i S_i, V_sel(phi) = Tr H(phi)^4 - (1/8)(Tr H(phi)^2)^2 = 32 sum_{i<j} phi_i^2 phi_j^2, which normalizes to the pairwise-overlap potential with axis minima.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "retained_no_go",
+  "max_descendant_status_rank": 100,
+  "note_hash": "224a8e8b854936de92a714f4badccd111f986653c3c9fdd41b8b8be34b228cb4",
+  "note_path": "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-check that the phrase \"first nontrivial even invariant\" remains scoped to trace invariants of H(phi) on this graph-shift surface, not to every possible S3-even quartic polynomial.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368499+00:00",
+      "archived_for_note_hash": "67df57dc7feb53629947db66abd4f1a0dbaf8eef3a04641ff5df4d85fcc1afa0",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-27T02:00:03.378726+00:00",
+      "archived_for_note_hash": "d738c7ecbed2a97c4bd1d27336b1f792d043cfd6a69e9ba8bfd2b6cccff5b8dd",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-02T14:40:53.193904+00:00",
+      "audit_date": "2026-04-30T17:50:00.550839+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 10.195,
+        "transitive_descendants": 292
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-20260430-phase-a-graph-selector",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The dispute is class C versus A, not the clean verdict. The note and runner perform exact finite graph algebra on the canonical cube shifts; the selector-minima claim closes as an algebraic invariant calculation, so the second auditor's A classification holds over the first's C classification.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-04-27T02:39:33.479872+00:00",
+          "auditor": "codex-audit-loop",
+          "auditor_family": "codex-current",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-04-30T14:59:49.237769+00:00",
+          "auditor": "codex-audit-loop-second-20260430-graph-first-selector-drain2",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-04-30T17:50:00.550839+00:00",
+          "auditor": "codex-judge-20260430-phase-a-graph-selector",
+          "auditor_family": "codex-current",
+          "first_auditor_error": "The first auditor overclassified exact finite graph algebra as first-principles compute.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The dispute is class C versus A, not the clean verdict. The note and runner perform exact finite graph algebra on the canonical cube shifts; the selector-minima claim closes as an algebraic invariant calculation, so the second auditor's A classification holds over the first's C classification.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": null,
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:graph_first_su3_integration_note:retained->retained_bounded",
+      "load_bearing_step": "The quartic trace invariant V_sel=Tr H^4-(Tr H^2)^2/8 equals 32 sum_{i<j} phi_i^2 phi_j^2 and has exactly the three axis minima after normalization.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 63,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "The dispute is class C versus A, not the clean verdict. The note and runner perform exact finite graph algebra on the canonical cube shifts; the selector-minima claim closes as an algebraic invariant calculation, so the second auditor's A classification holds over the first's C classification."
+    },
+    {
+      "archived_at": "2026-05-22T15:30:25.850224+00:00",
+      "audit_date": "2026-05-22T15:26:10.535121+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 21.742,
+        "runner_hash": "81437e80194eecc2aedac1cf541a29c464dc0edfc4c2452fda5b86cad313fc98",
+        "transitive_descendants": 1210
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-per-site-k1-20260522T152610Z-graph_first_selector_derivation_note-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 4/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / bounded_theorem / class A; J4: hybrid / audited_clean / positive_theorem / class A; J5: hybrid / audited_clean / positive_theorem / class A. Majority rationale: The exact selector claim closes from the supplied cube-shift matrices by standard trace and simplex algebra, and the runner source performs those matrix checks without importing external comparators or downstream identifications. The open abelian interpretation in the SU3 integration authority is outside the scoped selector theorem and does not block this narrower result. The load-bearing step is best classified as A, not C, because it is an algebraic identity over explicitly given operators rather than a first-principles computation of a new physical number. | The exact selector result closes as finite-dimensional matrix and simplex algebra on the stated graph-shift surface, with no imported fitted value, external comparator, or downstream abelian identification. The runner constructs the cube shifts and verifies the trace identities, covariance, minima, and Z2 stabilizers; its checks are best classified as algebraic identity checks rather than first-principles numerical production from the full axiom stack. The second audit is right that the scoped selector theorem can be positive_theorem while downstream SU3/abelian interpretation remains outside scope, but it overclassified the load-bearing step as C. | The clean verdict is correct: the restricted packet supplies the canonical shift matrices, the runner actually computes their trace identities and simplex minima, and no external comparator, tuned value, or downstream abelian identification is imported. The result should be scoped as a positive theorem about the selector identity on the canonical graph-shift surface, not as a claim about SU3 integration or hypercharge. However, the load-bearing step is best classified as A because it is an algebraic matrix/trace identity over explicitly given operators, not a new first-principles physical computation producing an external number. | The exact selector result closes as a finite graph/matrix algebra theorem on the stated canonical cube-shift surface. The runner constructs the shifts and verifies trace, covariance, simplex-minimum, and stabilizer identities without importing fitted values, external comparators, or downstream abelian interpretation. The correct load-bearing class is A rather than C because the operative step is an algebraic trace/simplex identity over explicitly given matrices, matching the runner's own A-only PASS breakdown. The downstream SU3 integration note is retained_bounded but is not load-bearing for the selector theorem itself.",
+      "claim_scope": "On the canonical 2^3 taste-cube graph-shift surface, the one-step axis shifts yield the quartic purity-deficit selector with exactly three axis minima and residual Z2 stabilizers; downstream SU3 and abelian interpretation are out of scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T15:26:10.535121+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-02T14:45:24.244992+00:00",
+          "auditor": "codex-audit-loop:fresh-2026-05-02-selector-sagan",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "On the canonical taste-cube graph-shift surface, the quartic even invariant derives a three-vacuum S3 -> Z2 axis selector.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-22T15:22:44.299842+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T152221Z-9905bd3a-graph_first_selector_der-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the canonical 2^3 taste-cube graph-shift surface, the one-step axis shifts derive an S3-symmetric quartic selector whose normalized minima are exactly the three coordinate axes with residual Z2 stabilizer; no downstream abelian or phenomenological identification is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_hybrid",
+        "third_audit": {
+          "audit_date": "2026-05-22T15:26:10.535121+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260522T152610Z-graph_first_selector_derivation_note-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the canonical 2^3 taste-cube graph-shift surface, the one-step axis shifts yield the quartic purity-deficit selector with exactly three axis minima and residual Z2 stabilizers; downstream SU3 and abelian interpretation are out of scope.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "The verdict and A-class judgment were acceptable, but the bounded_theorem type was too conservative for the exact standalone selector result once downstream SU3 and abelian claims are excluded.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 4/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / bounded_theorem / class A; J4: hybrid / audited_clean / positive_theorem / class A; J5: hybrid / audited_clean / positive_theorem / class A. Majority rationale: The exact selector claim closes from the supplied cube-shift matrices by standard trace and simplex algebra, and the runner source performs those matrix checks without importing external comparators or downstream identifications. The open abelian interpretation in the SU3 integration authority is outside the scoped selector theorem and does not block this narrower result. The load-bearing step is best classified as A, not C, because it is an algebraic identity over explicitly given operators rather than a first-principles computation of a new physical number. | The exact selector result closes as finite-dimensional matrix and simplex algebra on the stated graph-shift surface, with no imported fitted value, external comparator, or downstream abelian identification. The runner constructs the cube shifts and verifies the trace identities, covariance, minima, and Z2 stabilizers; its checks are best classified as algebraic identity checks rather than first-principles numerical production from the full axiom stack. The second audit is right that the scoped selector theorem can be positive_theorem while downstream SU3/abelian interpretation remains outside scope, but it overclassified the load-bearing step as C. | The clean verdict is correct: the restricted packet supplies the canonical shift matrices, the runner actually computes their trace identities and simplex minima, and no external comparator, tuned value, or downstream abelian identification is imported. The result should be scoped as a positive theorem about the selector identity on the canonical graph-shift surface, not as a claim about SU3 integration or hypercharge. However, the load-bearing step is best classified as A because it is an algebraic matrix/trace identity over explicitly given operators, not a new first-principles physical computation producing an external number. | The exact selector result closes as a finite graph/matrix algebra theorem on the stated canonical cube-shift surface. The runner constructs the shifts and verifies trace, covariance, simplex-minimum, and stabilizer identities without importing fitted values, external comparators, or downstream abelian interpretation. The correct load-bearing class is A rather than C because the operative step is an algebraic trace/simplex identity over explicitly given matrices, matching the runner's own A-only PASS breakdown. The downstream SU3 integration note is retained_bounded but is not load-bearing for the selector theorem itself.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The load_bearing_step_class should be A rather than C; the trace formula and minima are algebraic closure over supplied cube-shift inputs.",
+          "sided_with": "hybrid",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_claim_type_changed:graph_first_su3_integration_note:bounded_theorem->positive_theorem",
+      "load_bearing_step": "For H(phi)=sum_i phi_i S_i, V_sel(phi)=Tr H(phi)^4-(1/8)(Tr H(phi)^2)^2=32 sum_{i<j} phi_i^2 phi_j^2, which normalizes to F(p)=sum_{i<j}p_i p_j with exactly the three axis minima.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 63,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "Five-judge panel majority 4/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / bounded_theorem / class A; J4: hybrid / audited_clean / positive_theorem / class A; J5: hybrid / audited_clean / positive_theorem / class A. Majority rationale: The exact selector claim closes from the supplied cube-shift matrices by standard trace and simplex algebra, and the runner source performs those matrix checks without importing external comparators or downstream identifications. The open abelian interpretation in the SU3 integration authority is outside the scoped selector theorem and does not block this narrower result. The load-bearing step is best classified as A, not C, because it is an algebraic identity over explicitly given operators rather than a first-principles computation of a new physical number. | The exact selector result closes as finite-dimensional matrix and simplex algebra on the stated graph-shift surface, with no imported fitted value, external comparator, or downstream abelian identification. The runner constructs the cube shifts and verifies the trace identities, covariance, minima, and Z2 stabilizers; its checks are best classified as algebraic identity checks rather than first-principles numerical production from the full axiom stack. The second audit is right that the scoped selector theorem can be positive_theorem while downstream SU3/abelian interpretation remains outside scope, but it overclassified the load-bearing step as C. | The clean verdict is correct: the restricted packet supplies the canonical shift matrices, the runner actually computes their trace identities and simplex minima, and no external comparator, tuned value, or downstream abelian identification is imported. The result should be scoped as a positive theorem about the selector identity on the canonical graph-shift surface, not as a claim about SU3 integration or hypercharge. However, the load-bearing step is best classified as A because it is an algebraic matrix/trace identity over explicitly given operators, not a new first-principles physical computation producing an external number. | The exact selector result closes as a finite graph/matrix algebra theorem on the stated canonical cube-shift surface. The runner constructs the shifts and verifies trace, covariance, simplex-minimum, and stabilizer identities without importing fitted values, external comparators, or downstream abelian interpretation. The correct load-bearing class is A rather than C because the operative step is an algebraic trace/simplex identity over explicitly given matrices, matching the runner's own A-only PASS breakdown. The downstream SU3 integration note is retained_bounded but is not load-bearing for the selector theorem itself."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 63,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 63
+  },
+  "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
+  "title": "Graph-First Weak-Axis Selector Derivation",
+  "transitive_descendants": 1630,
+  "verdict_rationale": "The runner constructs the canonical Pauli-x cube shifts directly and verifies their algebraic properties, trace identities, normalized overlap form, axis minima, and residual stabilizers. Its checks are internal algebra over the stated graph-shift surface, with no external comparator, tuned numerical scale, or imported physical bridge. The cited SU(3) integration note is not load-bearing for this selector derivation, and the source note explicitly bounds away downstream abelian or phenomenological claims."
+}

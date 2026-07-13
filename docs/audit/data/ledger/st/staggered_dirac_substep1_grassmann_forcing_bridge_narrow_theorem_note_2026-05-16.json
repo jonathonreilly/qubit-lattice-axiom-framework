@@ -1,0 +1,863 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+    "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 36,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 28.237,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1a14bc0699eb56534b32cdcc968370bf6ca53e67150d3883ae3d822e13badf49",
+  "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-21T22:13:47.419633+00:00",
+      "audit_date": "2026-05-16T14:01:24.764309+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite-dimensional abstract Grassmann algebra: Berezin determinant identity for a quadratic chi-bar M chi action and odd-odd exchange antisymmetry, conditional only on the stated anticommutation and Berezin integration rules."
+        },
+        "dep_claim_type": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "187444382c824455196466275d1e8c36098d63f81cfc96f57d9576d8fb26699d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260516-140024-20260516T140024Z-b8451320-staggered_dirac_substep1-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded scope, D1-D4 follow from retained or retained_bounded cited inputs plus standard finite algebra and harmonic-oscillator/Fock facts. The physical U4 lattice-Hilbert-space bridge is explicitly out of scope and is not consumed by the audited claim.",
+      "claim_scope": "Audited only the abstract algebraic two-candidate comparison: Grassmann per-site dim 2 matches the retained Cl(3) dim-two readout, bosonic Fock is infinite-dimensional, and the Grassmann quadratic partition gives det(M).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T14:01:24.764309+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress",
+      "load_bearing_step": "Within the explicitly two-candidate framing, if a candidate must match dim_C V = 2, then the bosonic Fock candidate is ruled out by infinite per-site dimension while the Grassmann candidate remains and has the Berezin det(M) readout.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream users do not read this as closing the physical U4 lattice-Hilbert-space bridge; this audit covers only the explicitly abstract two-candidate theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over independent retained-grade inputs: Cl(3) faithful complex irreps have dimension 2, Grassmann nilpotency gives a two-state per-site module, and bosonic canonical Fock space is infinite-dimensional. The Berezin determinant part is directly supplied by the retained_bounded Berezin authority and rechecked by the runner via exact symbolic determinant computations. The runner source performs finite symbolic checks rather than merely printing pass constants, though it correctly treats the two-candidate framing as a scoped premise rather than a universal classification."
+    },
+    {
+      "archived_at": "2026-05-22T16:19:11.308699+00:00",
+      "audit_date": "2026-05-22T12:47:06.356617+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite-dimensional abstract Grassmann algebra: Berezin determinant identity for a quadratic chi-bar M chi action and odd-odd exchange antisymmetry, conditional only on the stated anticommutation and Berezin integration rules."
+        },
+        "dep_claim_type": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 15.043,
+        "runner_hash": "187444382c824455196466275d1e8c36098d63f81cfc96f57d9576d8fb26699d",
+        "transitive_descendants": 1054
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T124644Z-34ddc3b9-staggered_dirac_substep1-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic comparison itself closes over the quoted inputs, and the runner performs real symbolic checks rather than only printing constants. However, one load-bearing cited authority is marked as decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 rather than a retained-grade status, so retained status cannot propagate through this packet.",
+      "claim_scope": "Audited the abstract two-candidate Grassmann-vs-bosonic per-site dimensional comparison against a Cl(3) faithful complex-irrep dim-2 readout, plus Berezin determinant compatibility for the Grassmann candidate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T12:47:06.356617+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_scope_changed:spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "By the cited Cl(3) faithful complex-irrep theorem dim_C V = 2, while the bosonic per-site Fock space is countably infinite and the Grassmann per-site Fock module has dim_C = 2, so within the two-candidate framing only the Grassmann candidate matches the dimensional readout.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: cheapest repair is to provide a retained-grade Cl(3) faithful-irrep dim-two authority or include the retained upstream complexification-split closure needed to make that dependency retained-grade in this restricted packet.",
+      "open_dependency_paths": [
+        "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The note's substantive work is class-A algebra: finite Grassmann nilpotency gives a two-state per-site module, bosonic oscillator quantization gives an infinite tower, and the Berezin determinant identity gives det(M). The runner source genuinely checks these algebraic facts symbolically and reports PASS=24 FAIL=0. The conditional blocker is not a mathematical failure of the presented bridge, but the restricted packet's cited Cl(3) dim-two authority is not retained-grade under the rubric."
+    },
+    {
+      "archived_at": "2026-05-22T18:13:12.705982+00:00",
+      "archived_for_note_hash": "136ddf67f84afbfcfca350523367614b69d4b03a3bceab2b837cd9444dd49ff5",
+      "audit_date": "2026-05-22T16:20:38.616355+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 15.044,
+        "runner_hash": "187444382c824455196466275d1e8c36098d63f81cfc96f57d9576d8fb26699d",
+        "transitive_descendants": 1055
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T162016Z-8341b859-staggered_dirac_substep1-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic comparison closes conditionally if the cited Cl(3) dim-two and Berezin determinant authorities are accepted. However, the Cl(3) dim-two authority in the restricted packet is marked decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10, not retained-grade.",
+      "claim_scope": "Abstract finite-site algebraic comparison of a one-pair Grassmann candidate versus a one-pair bosonic candidate, using the Cl(3) dim-2 readout and Berezin determinant identity as cited inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T16:20:38.616355+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Among the two explicitly framed candidates, the bosonic Fock space has per-site dimension infinity while the Grassmann Fock module has per-site dimension 2, matching the cited Cl(3) faithful-irrep readout.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: first retain or replace the Cl(3) faithful-irrep dim-two dependency with a retained-grade authority, then rerun this bounded audit.",
+      "open_dependency_paths": [
+        "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The runner genuinely performs exact symbolic algebra checks for the stated finite-dimensional and Grassmann/Berezin claims, and its 24 class-A passes support the note's narrow algebraic content. The note does not attempt the out-of-scope physical U4 bridge, so that broader physical forcing claim is not imported. The terminal status is nevertheless conditional because one load-bearing cited authority, docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md, is not retained-grade in the packet."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:11.297771+00:00",
+      "archived_for_note_hash": "74065ccbd993058da9e7b595a4e7346d3187ec618300309a57fb926e87d86504",
+      "audit_date": "2026-05-23T01:49:53.064076+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 18.018,
+        "runner_hash": "187444382c824455196466275d1e8c36098d63f81cfc96f57d9576d8fb26699d",
+        "transitive_descendants": 1036
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T014929Z-2eed4c01-staggered_dirac_substep1-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the stated bounded scope, the conclusion follows from the two retained-grade upstream inputs plus standard Grassmann and bosonic Fock-space algebra. The open U4 physical per-site Hilbert-space bridge is explicitly excluded from the claim scope.",
+      "claim_scope": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T01:49:53.064076+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T22:22:35.068162+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T222148Z-1f21ca5d-staggered_dirac_substep1-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded algebraic G-vs-B bridge: under the explicit one-pair-per-site candidate framing, retained Cl(3) dim-2 and retained Berezin calculus make Grassmann dimension/determinant compatible and canonical bosonic Fock dimension incompatible.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-23T01:49:53.064076+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T014929Z-2eed4c01-staggered_dirac_substep1-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Within the explicit two-candidate framing, bosonic per-site Fock dimension is infinite while Grassmann per-site Fock dimension is 2, so only the Grassmann candidate matches the retained Cl(3) faithful-irrep dim_C V = 2 readout, and its Berezin partition gives det(M).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that D3 is kept restricted to the explicit two-candidate framing and not read as a classification of all possible matter-generator measures.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The cited authorities are retained-grade: one retained and one retained_bounded. The runner source performs concrete symbolic checks of Pauli carrier dimension, Grassmann nilpotency, determinant-by-permutation equality, finite bosonic truncation growth, and a bosonic-vs-Grassmann trace distinction; it does not merely print constants or import an external comparator. The theorem is clean only in its narrow abstract two-candidate scope, not as a closure of the physical staggered-Dirac substep."
+    },
+    {
+      "archived_at": "2026-06-11T21:38:43.592821+00:00",
+      "archived_for_note_hash": "b5fe40759380450fa7fa582363fd1abf912a490399b0efd8cfa3f5bfa2de651e",
+      "audit_date": "2026-06-11T11:38:10.799342+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 24.337,
+        "runner_hash": "bd0d45e3be31bf7eede5e302254dd99182a326d25e2aae227d3708fcd54d8e98",
+        "transitive_descendants": 1292
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260611-staggered_dirac_substep1_grassmann_forci-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The accepted Quantum axiom and retained dim-two row close the physical dim_C H_x = 2 input, and the free CCR bosonic mismatch is algebraic. The packet does not close the step identifying the Berezin Grassmann generators satisfying {chi,chibar}=0 with a two-state Fock raising/lowering module where chi(chibar|0>)=|0>; that requires a CAR/Fock or coherent-state bridge not present in the cited authorities. Because D2 is load-bearing for the collapse, the correct landing is conditional rather than clean.",
+      "claim_scope": "Two-candidate collapse only: compare the declared single-pair Grassmann candidate and free CCR bosonic candidate against the accepted physical per-site dim_C H_x = 2, with Berezin determinant readout recorded for the Grassmann candidate and no statistics-forcing claim.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-11T11:38:10.799342+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T11:28:24.056777+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-112533-86725cafd0-staggered_dirac_substep1_gra",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Two-candidate collapse only: on the framework physical one-qubit per-site Hilbert space, free bosonic CCR is dimensionally incompatible, single-pair Grassmann matches, and the Grassmann candidate carries the retained Berezin determinant readout; no statistics-forcing or exhaustiveness claim is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-11T11:31:24.916662+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-112902-3619829572-staggered_dirac_substep1_gra",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Two-candidate collapse only: compare the declared single-pair Grassmann candidate and free CCR bosonic candidate against the accepted physical per-site dim_C H_x = 2, with Berezin determinant readout recorded for the Grassmann candidate and no statistics-forcing claim.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-11T11:38:10.799342+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260611-staggered_dirac_substep1_grassmann_forci-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Two-candidate collapse only: compare the declared single-pair Grassmann candidate and free CCR bosonic candidate against the accepted physical per-site dim_C H_x = 2, with Berezin determinant readout recorded for the Grassmann candidate and no statistics-forcing claim.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "It treated the Grassmann per-site Fock dimension as already closed by nilpotency/Berezin calculus and missed the missing bridge between exterior Grassmann variables and fermionic Fock/CAR operators.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The accepted Quantum axiom and retained dim-two row close the physical dim_C H_x = 2 input, and the free CCR bosonic mismatch is algebraic. The packet does not close the step identifying the Berezin Grassmann generators satisfying {chi,chibar}=0 with a two-state Fock raising/lowering module where chi(chibar|0>)=|0>; that requires a CAR/Fock or coherent-state bridge not present in the cited authorities. Because D2 is load-bearing for the collapse, the correct landing is conditional rather than clean.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "Substituting the physical readout dim_C H_x = 2 into (D1)-(D3) excludes the free bosonic candidate with per-site dimension aleph_0 and leaves the single-pair Grassmann candidate with per-site dimension 2 as the unique survivor within the declared two-candidate surface.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained bridge from Berezin/exterior Grassmann variables to the two-state fermionic Fock/CAR module, or revise D2 to avoid the incompatible chi_x|1>_x = |0>_x action and rerun the checks.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The accepted Quantum axiom and retained dim-two row close the physical dim_C H_x = 2 input, and the free CCR bosonic mismatch is algebraic. The packet does not close the step identifying the Berezin Grassmann generators satisfying {chi,chibar}=0 with a two-state Fock raising/lowering module where chi(chibar|0>)=|0>; that requires a CAR/Fock or coherent-state bridge not present in the cited authorities. Because D2 is load-bearing for the collapse, the correct landing is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.518340+00:00",
+      "audit_date": "2026-06-11T21:48:07.316802+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 24.87,
+        "runner_hash": "65c97f804d4c3335d08467f08a0baf7e6730bd1ac819ef613a8cf94d6afbcac9",
+        "transitive_descendants": 1322
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-214300-2bd4a60a82-staggered_dirac_substep1_gra",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Quantum axiom plus retained dim-two row supply dim_C H_x = 2, and the finite exterior-algebra/CCR dimension comparison is algebraic. The Berezin determinant readout is supplied within the retained_bounded Grassmann-calculus authority, and the hard-core-boson statistics residual is explicitly out of scope.",
+      "claim_scope": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-11T21:48:07.316802+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T21:42:16.532751+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-213941-9dc4d6b781-staggered_dirac_substep1_gra",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the explicit two-candidate surface {single Grassmann canonical pair, free bosonic CCR pair}, the physical per-site dimension 2 excludes the free-bosonic candidate, matches the single-pair Berezin function space, and the surviving Grassmann candidate carries the retained Berezin determinant readout; no statistics-forcing claim is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-11T21:48:07.316802+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-214300-2bd4a60a82-staggered_dirac_substep1_gra",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Substituting the Quantum/dim-two physical readout dim_C H_x = 2 into (D1)-(D3): candidate (B) is excluded because aleph_0 != 2, while the single-pair Grassmann candidate (G) matches because dim_C F_x = 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers preserve the two-candidate-surface qualifier and do not cite this as statistics forcing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The load-bearing collapse is a genuine algebraic closure over an accepted axiom premise and retained-grade inputs, not a definition substitution or tuned numerical match. Independent checking of the exterior-algebra module, CCR Fock tower, Pauli/Cl(3) dimension readout, and hard-core-boson boundary supports the stated narrow scope. The runner source performs actual symbolic matrix and finite-algebra checks and does not hard-code the contested collapse as a bare printout."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.894180+00:00",
+      "audit_date": "2026-06-30T15:46:40.136665+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 30.476,
+        "runner_hash": "65c97f804d4c3335d08467f08a0baf7e6730bd1ac819ef613a8cf94d6afbcac9",
+        "transitive_descendants": 1006
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T154640Z-608594d9-staggered_dirac_substep1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal-axiom node and retained dim-two authority supply the physical per-site dim_C H_x = 2, while standard algebra gives dim H_x^B = infinity and dim Lambda[chibar_x] = 2. The retained_bounded Berezin authority supplies Z_F[M] = det(M) for the defined Grassmann candidate, and the note keeps the hard-core-boson/statistics-selection residual outside the audited scope.",
+      "claim_scope": "Within the explicitly declared two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic B}, the physical per-site dimension 2 excludes B, admits G, and G carries the Berezin determinant readout; statistics forcing is not audited or claimed.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-30T15:46:40.136665+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T15:43:12.440426+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T154312Z-a55394bd-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Two-candidate collapse only: on the accepted/retained per-site dim_C H_x = 2 surface, the declared {single-pair Grassmann, free CCR boson} comparison excludes the free boson and leaves the single-pair Grassmann candidate, with Berezin determinant readout; no statistics-forcing or hard-core-boson exclusion is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T15:46:40.136665+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T154640Z-608594d9-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the explicitly declared two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic B}, the physical per-site dimension 2 excludes B, admits G, and G carries the Berezin determinant readout; statistics forcing is not audited or claimed.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Substituting the physical readout dim_C H_x = 2 into (D1)-(D3), candidate (B) is excluded by infinite per-site Fock dimension while the single-pair Grassmann candidate (G) matches with dimension 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that downstream uses preserve the two-candidate-only scope and do not cite this as statistics forcing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "All load-bearing dependencies are retained-grade or accepted premises: minimal_axioms is registered as an axiom premise, the Cl(3) dimension/split inputs are retained, and the Berezin identity is retained_bounded but consumed only within its stated algebraic scope. The proof is an algebraic closure over those inputs, not a definition substitution, tuned numerical match, or external comparator check. The runner source performs exact finite matrix and exterior-algebra checks, with no missing helper artifact and no hard-coded contested empirical value."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.505405+00:00",
+      "audit_date": "2026-07-01T19:55:01.929339+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 30.476,
+        "runner_hash": "65c97f804d4c3335d08467f08a0baf7e6730bd1ac819ef613a8cf94d6afbcac9",
+        "transitive_descendants": 1006
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T195501Z-06c7e049-staggered_dirac_substep1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by algebraic dimension comparison from the accepted minimal-axiom Qubit premise, the retained per-site dim-two theorem, and the retained/bounded Berezin calculus row consumed only inside its stated hypotheses. The note explicitly narrows the claim to the two-candidate surface, so the hard-core-boson/statistics-selection issue is outside the audited conclusion rather than a missing premise for it.",
+      "claim_scope": "Within the explicitly declared two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic CCR B}, the accepted qubit/M_2(C) per-site premise plus retained dim_C H_x = 2 row exclude B by dimension and leave G, with the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T19:55:01.929339+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T19:52:06.658132+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T195206Z-50d2a48b-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the explicitly scoped two-candidate surface {single-pair Grassmann, free bosonic CCR}, the accepted Qubit axiom plus retained dim_C H_x = 2 row exclude the free-bosonic per-site Fock candidate and leave the single-pair Grassmann/Berezin candidate with det(M) readout; no statistics-forcing claim is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T19:55:01.929339+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T195501Z-06c7e049-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the explicitly declared two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic CCR B}, the accepted qubit/M_2(C) per-site premise plus retained dim_C H_x = 2 row exclude B by dimension and leave G, with the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Substituting the physical readout dim_C H_x = 2 into (D1)-(D3): candidate (B) is excluded (aleph_0 != 2), candidate (G) matches (2 = 2), so within the two-candidate surface (G) is the unique surviving matter-generator measure.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should preserve the narrow scope: clean only for the two-candidate dimensional collapse and Berezin algebraic readout, not for statistics-frame selection.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The load-bearing work is algebraic closure over retained-grade or accepted-premise inputs: dim_C H_x = 2, dim H_x^B = countably infinite, dim F_x = 2, and the finite Grassmann determinant identity. The runner source performs exact symbolic matrix, exterior-algebra, determinant, and counterexample checks rather than merely printing constants, though several checks are supporting certificates rather than independent new derivations. The source avoids overclaiming statistics forcing by restricting the result to the stated two-candidate surface."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.503885+00:00",
+      "audit_date": "2026-07-02T07:41:42.872632+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 30.476,
+        "runner_hash": "65c97f804d4c3335d08467f08a0baf7e6730bd1ac819ef613a8cf94d6afbcac9",
+        "transitive_descendants": 1006
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T074142Z-d048a87e-staggered_dirac_substep1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal-axiom/Qubit premise and retained dim-two row supply dim_C H_x = 2, while standard algebra gives dim F_x = 2 and bosonic Fock dimension aleph_0. The Berezin determinant readout is supplied by the retained_bounded Berezin authority under the candidate-G definitions, and the hard-core-boson statistics boundary is explicitly outside the claim.",
+      "claim_scope": "Within the explicitly restricted two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic oscillator B}, the physical per-site dimension 2 excludes B, admits G, and G carries the cited Berezin determinant readout; no statistics forcing or hard-core-boson exclusion is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T07:41:42.872632+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T07:38:36.679613+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T073836Z-2c30a96c-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the declared two-candidate surface {single-pair Grassmann, free bosonic CCR Fock}, the accepted per-site dim_C H_x = 2 input excludes the free bosonic Fock candidate and leaves the single-pair Grassmann candidate with its Berezin determinant readout; no statistics-forcing or exhaustive statistics-selection claim was audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T07:41:42.872632+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T074142Z-d048a87e-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the explicitly restricted two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic oscillator B}, the physical per-site dimension 2 excludes B, admits G, and G carries the cited Berezin determinant readout; no statistics forcing or hard-core-boson exclusion is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "Substituting the physical readout dim_C H_x = 2 into (D1)-(D3), candidate (B) is excluded (aleph_0 != 2) and the single-pair Grassmann candidate (G) matches (2 = 2), so within the two-candidate surface (G) is the unique survivor.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations preserve the two-candidate-surface limitation and do not cite this as statistics forcing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The proof is an algebraic dimension comparison over retained-grade and accepted-premise inputs, not a definition substitution or tuned numerical match. The runner source performs exact symbolic checks of the Pauli/Clifford carrier, Berezin function-space module, determinant permutation formula, bosonic tower distinction, falsification leg, and scope-boundary witness, and the cached output reports PASS=45, FAIL=0. Independent inspection of the displayed dimension, CAR, nilpotency, and determinant-readout steps found no missing bridge within the stated two-candidate scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.097799+00:00",
+      "audit_date": "2026-07-05T14:36:55.534820+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 30.614,
+        "runner_hash": "65c97f804d4c3335d08467f08a0baf7e6730bd1ac819ef613a8cf94d6afbcac9",
+        "transitive_descendants": 1107
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-postw4-row3-seat2",
+      "auditor_confidence": null,
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Qubit axiom plus retained per-site dim-two row supply the physical dim_C H_x = 2 input, while the retained Cl(3) split and retained_bounded Berezin note supply the algebraic dim-two and determinant readouts used inside the declared candidate definition. The note repeatedly and explicitly limits the result to the two-candidate surface and leaves hard-core-boson/statistics selection outside scope.",
+      "claim_scope": "Within the declared two-candidate canonical-pair surface {single-pair Grassmann, free bosonic CCR}, the physical per-site dim-two space excludes the free bosonic candidate and leaves the single-pair Berezin/Grassmann candidate with determinant readout; full statistics selection is not audited or claimed.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-05T14:36:55.534820+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-05T14:34:18.889004+00:00",
+          "auditor": "codex-postw4-row3-seat1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the declared two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic B}, the Qubit/per-site dim-two input excludes B by per-site dimension and leaves G as the unique survivor with the Berezin determinant readout; no full statistics-frame selection is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-05T14:36:55.534696+00:00",
+          "auditor": "codex-postw4-row3-seat2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the declared two-candidate canonical-pair surface {single-pair Grassmann, free bosonic CCR}, the physical per-site dim-two space excludes the free bosonic candidate and leaves the single-pair Berezin/Grassmann candidate with determinant readout; full statistics selection is not audited or claimed.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting the Step-1 physical readout into (D1)-(D3): candidate (B) is excluded (aleph_0 != 2), candidate (G) matches (2 = 2) in its single-pair form.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "No re-audit blocker; preserve the explicit boundary that this is only a two-candidate collapse and not a full statistics-forcing theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The scoped theorem closes as exact algebra over the restricted one-hop packet: free bosonic Fock dimension is incompatible with dim_C H_x = 2, the single-pair Berezin function space has dimension 2 and determinant readout, and the runner currently terminates with PASS=45, FAIL=0 while exposing the statistics boundary. The runner does not prove full statistics selection or exhaust all possible frames, but the source note does not claim that; it states the hard-core-boson tie and open S2/FS residual explicitly. Residual risk is downstream citation hygiene, not a defect in this scoped claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
+  "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem",
+  "transitive_descendants": 1206,
+  "verdict_rationale": null
+}

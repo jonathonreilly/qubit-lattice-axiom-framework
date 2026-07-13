@@ -1,0 +1,93 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "teleportation_retention_theorem_attack_note",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "teleportation_native_record_apparatus_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_teleportation_native_record_apparatus.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ff140a4f87e892356845e1367fe95bbac11ec495daeadfe5bac27c7a10117de2",
+  "note_path": "docs/TELEPORTATION_RETENTION_THEOREM_ATTACK_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T12:32:48.494192+00:00",
+      "archived_for_note_hash": "ef763157213936c3597fd04bea43018ff182a79049b83599cd2b5da9c7ba46ae",
+      "audit_date": "2026-05-03T02:07:46.900601+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-agent-tesla-2nd-019deb95-811d-7300-960b-dac021b146bc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The open-gate boundary is stated honestly, but the artifact is not cleanly citeable as a closed bounded gate because the selector-equivalence result, minimal completion sufficiency, and side-12 sparse certificate are asserted or hard-coded rather than derived from retained inputs. The runner also imports the record-apparatus code from an audited_conditional operational dependency.",
+      "claim_scope": "Open-gate planning artifact for ordinary quantum state teleportation: explicit selector-retention decision, finite side-12 sparse-resource table, and dimensionless controller/detector threshold envelopes, with no matter, object, energy, or faster-than-light transport claim.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-03T02:07:46.900601+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The remaining blockers are now: selector derivation from the bare axiom is closed negatively on audited invariants; signed sparse scaling is supported through side 12 but still needs an all-even-side induction or analytic operator inequality; controller/detector thresholds have local implementation envelopes but still lack fabricated hardware, named material parameters, and measured spectra.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "Re-check whether a future runner actually constructs the signed sparse side-12 certificate and selector obstruction rather than embedding the decisive rows and flags.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_NATIVE_RECORD_APPARATUS_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the note's side-12 certificate and selector-retention metrics are load-bearing, but the runner stores the decisive rows and Boolean closure flags directly; it does not construct the signed sparse operator, recompute the spectrum/Bell floors, or prove minimal completion sufficiency. Why this blocks: a hostile reviewer can reject the bounded open-gate artifact without error because the finite certificate and selector negative result are not independently generated from retained premises, and the controller/detector envelopes rely on a conditional record-apparatus import. Repair target: provide a runner that builds the side-12 signed sparse certificate from the declared operator data, derives the 32-equivalence selector obstruction and the three-clause sufficiency theorem, and either removes or cleanly closes the record-apparatus dependency. Claim boundary until fixed: the note may be cited only as a planning checklist with explicit open obligations and embedded numerical rows, not as a clean audited open gate."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_teleportation_retention_theorem_attack.py",
+  "title": "Teleportation Retention-Theorem Attack Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

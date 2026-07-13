@@ -1,0 +1,1673 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.047,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b7be614b9c66f5faef726fea56f7f4377fe3948c235a2747446c3f33166d200f",
+  "note_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T21:18:33.087994+00:00",
+      "archived_for_note_hash": "a38c01c50fe69bd5dd101a59e10e80673174a50d2474bbfefb3fc9cf97270164",
+      "audit_date": "2026-05-28T05:38:40.343660+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "Framework-local nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization for the explicitly stated stencil (-Delta_lat f)(x)=6f(x)-sum_{|y-x|=1}f(y): the singular Fourier mode has continuum-leading coefficient 1/(4*pi*|r|) with unit lattice spacing, and the included certificate checks the small-k symbol normalization, unit-flux convention, and axis residual scaling. No downstream Newton-law, gravity theorem, scalar-field equation of motion, or physical Poisson dynamics is audited."
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "36ca7e249c56cbecdf77a183fe0fa4e2e9635094c2706abc5deb444dcd22fe07",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "euler-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-lattice-greens-maradudin-bridge",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The arithmetic closes, but only as an algebraic restatement of the retained parent Green-kernel normalization; it adds no independent comparator, compression, or new physical content.",
+      "claim_scope": "Duplicative accepted-premise registration/restatement of the retained parent nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization G(r) ~ 1/(4*pi*|r|), with no downstream Newton-law, gravity, or physical-Poisson closure.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-28T05:38:40.343660+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "independence": "fresh_context",
+      "load_bearing_step": "Under P1, G(r) -> c / |r| with c = 1 / (4 pi); the constant is pinned by B1 + B2 + B3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Box under the parent row unless a future revision supplies explicit reviewed registry/premise-node approval for the Maradudin/Lawler/Spitzer P1 as a standalone accepted premise or adds independent non-duplicative physical/comparator content.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 33,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "The Tier-A registry does not approve this Maradudin asymptotic as a standalone premise, and the registry treats standard textbook theorems as needing retained-grade inline handling. The direct parent already has retained_bounded status for the same nearest-neighbor Z^3 stencil, small-k normalization, unit-flux convention, and 1/(4*pi*|r|) coefficient. Fresh-context independent checks agree with the arithmetic: lambda(k)=|k|^2-(kx^4+ky^4+kz^4)/12+..., the flux of 1/(4*pi*r) is 1, and n^5|(-Delta_lat)phi(n,0,0)| stabilizes near 0.27852 with doubling ratios near 32. This row should be boxed as decoration under the parent, not retained as a separate bounded theorem."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.503491+00:00",
+      "audit_date": "2026-06-10T02:38:08.711831+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.124,
+        "runner_hash": "3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0",
+        "transitive_descendants": 278
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-023630-7379689507-lattice_greens_maradudin_asy",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note does not try to reprove the full Green-kernel theorem; it consumes the cited retained_bounded parent theorem and checks that the bridge uses the same lattice symbol, sign, flux, and residual normalization. The Lattice axiom is an accepted premise and no external fitted or observational input is used.",
+      "claim_scope": "Bridge reroute only: verifies the Z^3 nearest-neighbor graph-Laplacian normalization, unit-flux convention, O(r^-5) lattice-harmonic residual at axis points, and dependence on the retained_bounded parent Green-kernel theorem rather than a load-bearing textbook import.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T02:38:08.711831+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-10T02:35:56.228170+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260610-023251-62e74a62f4-lattice_greens_maradudin_asy",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the legacy Maradudin lattice-Green bridge reroute onto the retained framework-local Z^3 nearest-neighbor Green-kernel asymptotic and its coefficient normalization c = 1/(4 pi).",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-10T02:38:08.711831+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260610-023630-7379689507-lattice_greens_maradudin_asy",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bridge reroute only: verifies the Z^3 nearest-neighbor graph-Laplacian normalization, unit-flux convention, O(r^-5) lattice-harmonic residual at axis points, and dependence on the retained_bounded parent Green-kernel theorem rather than a load-bearing textbook import.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "B4: the leading Green-kernel coefficient is c = 1/(4 pi) for the exact nearest-neighbor Z^3 graph-Laplacian convention, using the retained parent framework-local theorem plus B1-B3 normalization checks.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the parent theorem's Fourier-remainder closure if this row is ever promoted beyond bounded bridge scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 46,
+        "C": 0,
+        "D": 0,
+        "total_pass": 76
+      },
+      "verdict_rationale": "The displayed symbol normalization follows from the Fourier symbol of the stated stencil and the cosine Taylor expansion, and the continuum flux of 1/(4 pi r) is correctly normalized to one. An independent axis expansion gives (-Delta_lat)(1/(4 pi r)) at (n,0,0) = -7/(8 pi)n^-5 + O(n^-7), matching the runner's stable scaled residual near 0.2785. The only theorem-level asymptotic existence input is the cited retained_bounded parent note, so the bridge closes within its bounded scope without a textbook import or comparator value."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.880991+00:00",
+      "audit_date": "2026-06-30T19:40:54.381240+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.185,
+        "runner_hash": "3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0",
+        "transitive_descendants": 290
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T194054Z-f874bedb-lattice_greens_maradudin",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed arithmetic checks close: lambda(k)=|k|^2+O(|k|^4), 1/(4 pi r) has unit outward flux for -grad, and the lattice residual on axis is O(r^-5) with coefficient consistent with the stencil. The actual asymptotic coefficient is inherited from the retained-bounded parent theorem, so this row closes only as a bridge/decorative restatement, not as an independent theorem.",
+      "claim_scope": "Audited the legacy bridge reroute onto the parent framework-local Z^3 nearest-neighbor Green-kernel normalization, including the symbol, unit-flux, and lattice-residual arithmetic checks.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-30T19:40:54.381240+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "The leading Green-kernel coefficient is c = 1/(4 pi) for the framework operator, from the parent framework-local theorem plus the stencil, flux, and residual checks (B1)-(B3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Box under the parent framework-local Green-kernel theorem; re-audit only if this bridge is revised to claim an independent asymptotic proof.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 46,
+        "C": 0,
+        "D": 0,
+        "total_pass": 76
+      },
+      "verdict_rationale": "Independent math checks confirm the stated signs and factors for B1-B3, including the axis residual scale |(-Delta_lat phi)| r^5 -> 7/(8 pi). B4 is not a fresh derivation of the full lattice Green asymptotic; it consumes the parent framework-local theorem that already states G(r) -> 1/(4 pi |r|). With zero external-comparator checks and no independent content beyond a single parent plus standard arithmetic, the correct audit status is decoration under the parent claim."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.463984+00:00",
+      "audit_date": "2026-07-01T22:47:03.781140+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.185,
+        "runner_hash": "3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0",
+        "transitive_descendants": 290
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T224703Z-6c06989f-lattice_greens_maradudin",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited parent authority already supplies the framework-local Green-kernel asymptotic for the exact stencil, and the source note's B1-B3 arithmetic checks are consistent with that normalization. No additional open bridge, external comparator, or unregistered premise is needed for the reroute itself.",
+      "claim_scope": "Audited that the legacy Maradudin bridge is only a framework-native reroute to the retained-bounded Z^3 Green-kernel parent theorem, with local symbol, flux, and lattice-residual arithmetic checks and no textbook or empirical load-bearing import.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-01T22:47:03.781140+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The row consumes the parent framework-local theorem that the exact nearest-neighbor Z^3 graph-Laplacian Green kernel has leading coefficient c = 1/(4 pi), with B1-B3 replaying the normalization checks.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the decoration-vs-bounded-wrapper classification; the local coefficient arithmetic itself closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 71,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 76
+      },
+      "verdict_rationale": "The independent math check confirms the displayed local arithmetic: lambda(k)=|k|^2-sum k_i^4/12+O(|k|^6), 1/(4 pi r) has unit flux, and the axis stencil residual scales as -(7/(8 pi)) r^-5. However the row adds no independent theorem beyond the one-hop parent Green-kernel theorem; it is a dependency-wrapper/reroute plus standard arithmetic, with zero external comparator checks. Under the decoration tie-break rule, this should roll up under the parent rather than stand as a separate retained theorem."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.492492+00:00",
+      "audit_date": "2026-07-02T11:35:37.067754+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.185,
+        "runner_hash": "3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0",
+        "transitive_descendants": 290
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T113537Z-6adb8d09-lattice_greens_maradudin",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited parent authority is retained_bounded and supplies the full Green-kernel asymptotic; the minimal axioms are an accepted premise node. The local B1-B3 checks correctly match the stated stencil and normalization, so no external textbook or fitted value is needed for this row.",
+      "claim_scope": "Single-parent reroute/restatement of the retained-bounded Z^3 nearest-neighbor graph-Laplacian Green-kernel asymptotic, with local checks of symbol normalization, continuum flux normalization, and lattice-harmonic residual decay.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-02T11:35:37.067754+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "(B4) The leading Green-kernel coefficient is c = 1/(4 pi) for the framework operator, using the parent framework-local theorem plus the local symbol, flux, and residual checks (B1)-(B3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should confirm the canonical parent claim_id mapping for the supplied parent path; the scientific closure itself rests on the parent retained_bounded theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 46,
+        "C": 0,
+        "D": 0,
+        "total_pass": 76
+      },
+      "verdict_rationale": "The math checks in the runner support the stated stencil expansion, unit-flux convention, and O(r^-5) residual, and the packet contains no external comparator or fitted input. However, the row does not independently establish a new Green-kernel asymptotic; it consumes the single retained-bounded parent theorem and replays standard local normalization arithmetic. Under the zero-D, single-parent decoration rule, this should be boxed under the parent rather than treated as a separate retained bounded theorem."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.176229+00:00",
+      "audit_date": "2026-07-10T03:15:49.728438+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.781,
+        "runner_hash": "3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0",
+        "transitive_descendants": 310
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00005-lattice_greens_maradudin_asy",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The sole theorem-level conclusion is already supplied by the retained-bounded parent, while B1-B3 are standard mathematical checks consistent with its normalization. The accepted Lattice axiom supplies the stated Z^3 nearest-neighbor substrate without causing a downgrade.",
+      "claim_scope": "The legacy bridge's dependency reroute to the retained-bounded Z^3 nearest-neighbor Green-kernel asymptotic, including normalization checks B1-B4.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T03:15:49.728438+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "Given the parent framework-local Green-kernel theorem, the symbol, flux, and residual checks identify the same leading coefficient c = 1/(4 pi) for the stated stencil.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that B4 remains explicitly non-independent: its runner check is tautological and the asymptotic theorem continues to come entirely from the retained-bounded parent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 46,
+        "C": 8,
+        "D": 0,
+        "total_pass": 76
+      },
+      "verdict_rationale": "The row adds no independent Green-kernel theorem beyond its single retained-bounded parent; it reroutes a legacy dependency and replays standard symbol, flux, and residual checks. The runner genuinely evaluates the lattice residual, but its B4 coefficient check is not an independent derivation\u2014it inserts 1/(4 pi), checks its decimal representation, and relies on the parent theorem. With no external comparator and no open upstream authority, the appropriate result is decoration under that parent."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:48.807408+00:00",
+      "audit_date": "2026-07-12T13:37:12.080945+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.364,
+        "runner_hash": "3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0",
+        "transitive_descendants": 465
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00055-lattice_greens_maradudin_asy",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local arithmetic checks close, but the bridge does not independently prove the lattice Green-kernel asymptotic; B4 consumes the retained-bounded parent theorem. The row is therefore decoration under that parent rather than a separate theorem.",
+      "claim_scope": "Single-parent dependency reroute for the retained-bounded nearest-neighbor Z3 Green-kernel asymptotic, with standard checks of symbol normalization, continuum flux, and axis residual decay.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-12T13:37:12.080945+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "Given the parent framework-local Green-kernel theorem, the symbol, unit-flux, and lattice-residual checks fix the same leading coefficient c = 1/(4 pi) for the stated stencil.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The packet was checked for a complete cutoff and remainder-decay argument independent of the parent.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The load-bearing route is the exact Fourier proof applied to the framework",
+            "evidence_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Prove the large-distance asymptotic directly from the Brillouin-zone Fourier integral inside this row.",
+            "outcome": "The bridge does not reproduce a standalone proof, but its scoped dependency route closes through the retained-bounded parent theorem; this route therefore cannot upgrade the wrapper into an independent theorem.",
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "full_fourier_in_row"
+          },
+          {
+            "attempt": "The parent status and the source's dependency language were checked against the restricted packet.",
+            "disposition": "CLOSED",
+            "evidence_locator": "this row now depends on the parent framework-local theorem",
+            "evidence_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Consume the retained-bounded parent theorem and verify that the legacy bridge no longer imports textbook authority.",
+            "outcome": "The route closes the dependency reroute within the wrapper's narrow scope.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "parent_reroute"
+          },
+          {
+            "attempt": "The runner evaluated radii 16, 32, 64, and 128 and tested scaled-coefficient stability and doubling ratios.",
+            "disposition": "CLOSED",
+            "evidence_locator": "(B3) scaled coefficient stable across r=16..128",
+            "evidence_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use axis-point stencil evaluations to test the predicted O(r^-5) residual.",
+            "outcome": "The finite calculations close the stated residual certificate while remaining non-probative of an independent Green-kernel asymptotic theorem.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "finite_residual"
+          },
+          {
+            "attempt": "The source and runner were scanned for use of Maradudin, Lawler, or Spitzer as a premise.",
+            "disposition": "CLOSED",
+            "evidence_locator": "They are not load-bearing authority for this row.",
+            "evidence_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat the cited textbook theorem as the load-bearing asymptotic authority.",
+            "outcome": "The packet explicitly excludes textbook authority from the load-bearing route and instead uses the retained-bounded framework-local parent.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "textbook_import"
+          },
+          {
+            "attempt": "The current axiom text was compared with the mathematical ingredients needed for a full asymptotic proof.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Physical sites are the points of the cubic lattice `Z^3`",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive the full Green-kernel asymptotic directly from the Lattice axiom's Z3 nearest-neighbor structure.",
+            "outcome": "The axiom supplies the lattice and adjacency but not the analytic limit theorem, so this route is closed against an independent-theorem upgrade and does not disturb the scoped parent-wrapper result.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "axiom_direct"
+          },
+          {
+            "attempt": "The parent proof sketch was inspected for the singularity split and lower-order remainder statement.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The remainder `R(k)` is less singular than `|k|^-2`",
+            "evidence_path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Control the Fourier remainder after subtracting the continuum singularity.",
+            "outcome": "The retained-bounded parent supplies this mechanism for the wrapper, while the bridge itself adds no independent theorem-grade remainder estimate.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "remainder_decay"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "standalone asymptotic proof absent from this bridge row"
+          ],
+          "evidence_locator": "Parent framework-local theorem + (B1)-(B3)",
+          "evidence_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "standalone asymptotic proof absent from this bridge row"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "No PDG / fitted / observed value is consumed.",
+          "evidence_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
+          "hits": [
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "The framework-local statement",
+              "evidence_path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+              "phrase": "parent framework-local theorem"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "usual zero-mode regularization on finite tori",
+              "evidence_path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+              "phrase": "usual zero-mode regularization"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source, runner, retained parent, current axiom authority, and supplied premise registry were scanned for textbook imports, empirical constants, fitted normalizations, hidden boundary conditions, and unregistered premises.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Step (B4) is the constant identification using the parent framework-local Green-kernel theorem.",
+          "evidence_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
+          "none_found_reason": "No N1 route uses RULED OUT BY PRIOR; all routes were assessed directly from the restricted packet.",
+          "scan_scope": "The runner's B4 implementation and the parent-dependent residual were compared; no N1 route was ruled out by prior retained evidence.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "What this note does close source-side is narrower",
+          "evidence_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+          "none_found_reason": "",
+          "scan_scope": "The note's negative and boundary language was checked against the mathematical resolutions actually tested.",
+          "statements": [
+            {
+              "evidence_locator": "This note does not close:",
+              "evidence_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+              "phrase": "This note does not close:",
+              "tested_resolutions": [
+                "the local Z3 symbol normalization",
+                "the unit-flux normalization",
+                "the axis-point O(r^-5) residual",
+                "the dependency reroute to the retained-bounded parent"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Temporal kinetic-form isotropy is unrelated to the spatial Green-kernel asymptotic and cannot supply a standalone Fourier limit proof.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The Lattice axiom supplies Z3 nearest-neighbor structure but does not itself contain the analytic asymptotic proof.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation has no bearing on the translation-invariant lattice Green-kernel asymptotic.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "The scale primitive converts units and contributes no dimensionless Fourier-asymptotic content.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton occupancy obligation is unrelated to lattice-potential asymptotics.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton readout obligation supplies no Green-kernel limit theorem.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The theta cross-sector readout obligation is scientifically disjoint from the spatial lattice Green function.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The complete supplied partial-closure index was checked across approved axioms, approved primitives, and open obligations.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The source labels itself a bounded theorem and sketches enough Fourier structure that B1-B3 might be read as an independent proof of the full Green-kernel asymptotic.",
+          "evidence_locator": "The row consumes a local theorem about the exact `Z^3` graph Laplacian",
+          "evidence_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+          "resolution": "That reading fails because the decisive remainder-decay and asymptotic-existence step is delegated to the retained-bounded parent, while the runner computes only normalization and finite residual checks. The row remains valid as decoration under that parent.",
+          "resolved": true,
+          "route_id": "full_fourier_in_row"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:0",
+              "evidence_locator": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Prior decoration classification of the same single-parent reroute.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:1",
+              "evidence_locator": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Prior clean classification later invalidated by axiom-premise drift.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:2",
+              "evidence_locator": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Prior decoration classification based on parent dependence.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:3",
+              "evidence_locator": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Prior decoration classification based on standard local arithmetic.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:4",
+              "evidence_locator": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Prior zero-comparator single-parent decoration classification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:5",
+              "evidence_locator": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Prior finding that B4 inserts the target and relies on the parent.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18:previous_audit:0",
+              "evidence_locator": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Historical concern that the parent was only a named textbook import.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18:previous_audit:1",
+              "evidence_locator": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Historical parent-packet incompleteness concerning asymptotic existence.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated charged-lepton occupancy gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated charged-lepton readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated theta-sector readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated foundational campaign no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Adjacent warning against overclaiming full Newton closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated runner-boundary repair.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Framework policy against importing textbook mathematics as proof.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated multi-lane no-go registry.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated coupling-identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated gauge comparator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated lensing-observable route ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated carrier-representation obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated charged-lepton no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated dimensional-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated emergent-metric authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated finite-replay boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated Wilson-locality scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated flavor-trace pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated gauge-environment contraction boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated gauge-isotropy obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Adjacent gravity scope boundary without impact on the Green-kernel normalization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Adjacent prohibition on physical Newton-constant overclaiming.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated absolute-scale gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated hypercharge normalization ambiguity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated cross-lane campaign boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated atomic-scale and coupling gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated quark-mass retention routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Direct warning that finite residual or heat-kernel samples do not prove the asymptotic limit.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated lensing-observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated finite-path lensing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Adjacent warning that 4pi normalization does not derive a physical static-source readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated temporal-source boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Empty unrelated no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated planning-priority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated time-step boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated neutrino route memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated cosmology and neutrino gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Adjacent boundary against universal Newtonian-distance overclaiming.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated live-recompute artifact boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated coupling authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated finite-memory bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Analogous warning against extrapolating finite checks to an all-scale theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated Clifford-carrier obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated Planck-carrier selection history.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated plaquette-bootstrap boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated plaquette diagnostic correction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated record-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated registrability and topology gate memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated temporal-axis and locality boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated source-measure semantics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated spin-statistics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated kinetic-law selection no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated SU3 quotient-encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated theta-mass readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated theta-gauge action boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated theta positive-gate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated theta insertion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated theta branch-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated determinant-power selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated record-orbit occupancy boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated record-formation readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated artifact-visibility gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Unrelated record-readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Analogous warning that hard-coded table matching does not establish a structural law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Adjacent boundary keeping an exact continuum theorem outside finite lattice checks.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "mechanism": "Analogous warning that coefficient checks after an identification do not derive the identification.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27": {
+              "accepted_premise_type": null,
+              "content_sha256": "144c583d3b0a183b45d4ec4eb65095b66e4698ca2bc1b154a003fe00f00d6ff0",
+              "cross_cycle_candidate_ids": [
+                "lattice_greens_function_maradudin_textbook_import_note_2026-05-18:previous_audit:0",
+                "lattice_greens_function_maradudin_textbook_import_note_2026-05-18:previous_audit:1",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:0",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:1",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:2",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:3",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:4",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:5",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "lattice_greens_function_maradudin_textbook_import_note_2026-05-18:previous_audit:0",
+                "lattice_greens_function_maradudin_textbook_import_note_2026-05-18:previous_audit:1",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:0",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:1",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:2",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:3",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:4",
+                "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27:previous_audit:5",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27": {
+              "accepted_premise_type": null,
+              "content_sha256": "ddb61335f873e22bcad6248bc65e8e841c17b1439176c65ff93d202f753aee08",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "508acb99608c6094aaa0c69f2265018e2cec1bbffd1a9b79812eacd014fac4bf",
+              "effective_status": "retained_bounded",
+              "path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "The framework-local statement",
+                "The remainder `R(k)` is less singular than `|k|^-2`",
+                "usual zero-mode regularization on finite tori"
+              ]
+            },
+            "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "b7be614b9c66f5faef726fea56f7f4377fe3948c235a2747446c3f33166d200f",
+              "effective_status": null,
+              "path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Parent framework-local theorem + (B1)-(B3)",
+                "The load-bearing route is the exact Fourier proof applied to the framework",
+                "The row consumes a local theorem about the exact `Z^3` graph Laplacian",
+                "They are not load-bearing authority for this row.",
+                "This note does not close:",
+                "What this note does close source-side is narrower",
+                "this row now depends on the parent framework-local theorem"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Physical sites are the points of the cubic lattice `Z^3`"
+              ]
+            },
+            "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0",
+              "effective_status": null,
+              "path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "(B3) scaled coefficient stable across r=16..128",
+                "No PDG / fitted / observed value is consumed.",
+                "Step (B4) is the constant identification using the parent framework-local Green-kernel theorem."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 44,
+        "B": 5,
+        "C": 27,
+        "D": 0,
+        "total_pass": 76
+      },
+      "verdict_rationale": "The runner genuinely evaluates the small-k symbol, unit flux, and finite-axis lattice residual, and those checks support B1-B3. Its B4 section does not independently derive the asymptotic: it inserts 1/(4 pi), checks hard-coded decimal representations, and explicitly relies on the retained-bounded parent theorem. With zero external-comparator checks and only one substantive parent, the row is a dependency wrapper with algebraic decoration."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
+  "title": "Cubic-Lattice Green's Function Asymptotic Native Reroute",
+  "transitive_descendants": 747,
+  "verdict_rationale": null
+}

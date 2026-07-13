@@ -1,0 +1,241 @@
+{
+  "audit_date": "2026-07-07T19:42:21.354970+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17": null
+    },
+    "dep_claim_type": {
+      "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17": "unaudited"
+    },
+    "deps": [
+      "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17"
+    ],
+    "load_bearing_score": 15.07,
+    "runner_hash": "eac39ec69d20d3524b642b6145a9d0d3c31ef92a3c218b914fef033494ade9b7",
+    "transitive_descendants": 379
+  },
+  "audit_status": "audited_numerical_match",
+  "auditor": "codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-quark_cp_carrier_completion_note-02",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The restricted packet supports the bounded numerical-fit statement: the runner builds Hermitian mass matrices, optimizes xi_u and xi_d plus mass ratios, computes CKM observables and determinant phase, and passes the stated checks. It does not derive xi_u, xi_d, or the comparator targets from retained primitives.",
+  "claim_id": "quark_cp_carrier_completion_note_2026-04-18",
+  "claim_scope": "Audited the bounded existence-of-fit claim that one complex determinant-neutral 1-3 carrier per quark sector can numerically fit the imported quark/CKM comparator surface while preserving determinant phase closure.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-07-07T19:42:21.354970+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17"
+  ],
+  "direct_in_degree": 13,
+  "effective_status": "audited_numerical_match",
+  "effective_status_reason": "terminal_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_quark_mass_ratio_full_solve.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "audited_numerical_match",
+  "load_bearing_score": 16.07,
+  "load_bearing_step": "Given imported comparator targets, two complex carrier coefficients xi_u and xi_d are solved numerically to reproduce the quark mass-ratio and CKM/J surface to about 1% or better while keeping arg det(M_u M_d)=0 mod 2pi.",
+  "load_bearing_step_class": "G",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8c2a12d7831857909afc773c21d3130222d6d01d32e9deb9e3b4aa172209ace3",
+  "note_path": "docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md",
+  "notes_for_re_audit_if_any": "",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-29T11:40:10.272169+00:00",
+      "archived_for_note_hash": "7ff245de7e79f9a8b958ac81986e39c8e486e02c03319c31f4ec9c9f7b7165b5",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.813265+00:00",
+      "audit_date": "2026-04-30T11:45:00.753966+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.524,
+        "transitive_descendants": 45
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-fresh-context-20260430-08-quark-cp",
+      "auditor_confidence": 0.91,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The allowed inputs verify a numerical optimizer found free complex carriers matching the target surface, but do not derive xi_u or xi_d or justify them as physical carriers.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-04-29T12:30:42.977308+00:00",
+          "auditor": "codex-gpt-5.5-backlog-sweep-2026-04-29",
+          "auditor_family": "codex-gpt-5.5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "G",
+          "verdict": "audited_numerical_match"
+        },
+        "mode": "terminal_second_pass",
+        "second_audit": {
+          "audit_date": "2026-04-30T11:45:00.753965+00:00",
+          "auditor": "codex-fresh-context-20260430-08-quark-cp",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "G",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_numerical_match"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "On the bounded extended surface there is numerical full quark closure for mass ratios, CKM magnitudes, J, and arg det(M_u M_d)=0 after solving large complex carriers xi_u and xi_d.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 4,
+        "D": 2,
+        "total_pass": 11
+      },
+      "verdict_rationale": "Issue: The claimed completion is produced by solving large free complex carriers xi_u and xi_d against the CKM/mass-ratio target surface. Why this blocks: The runner verifies a tuned numerical match on an expanded ansatz, but the carriers are solved rather than derived and are not perturbative; the chain does not establish retained physical closure. Repair target: Provide an independent derivation or retained upstream theorem fixing xi_u and xi_d, including carrier normalization/readout and determinant-neutral constraint, then have the runner test that derived point rather than fit it. Claim boundary until fixed: Bounded numerical support that such an extended carrier surface can fit the listed targets."
+    },
+    {
+      "archived_at": "2026-05-16T12:56:46.111776+00:00",
+      "archived_for_note_hash": "97604232f9e9b66b94b2ccd8e5b19a197080e2345a60ef5ae77d45ec02d62bce",
+      "audit_date": "2026-05-05T01:04:25.401012+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.17,
+        "runner_hash": "eac39ec69d20d3524b642b6145a9d0d3c31ef92a3c218b914fef033494ade9b7",
+        "transitive_descendants": 287
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260505-005357-f2a031da-quark_cp_carrier_complet-020",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The provided runner genuinely optimizes xi_u, xi_d and mass-ratio variables and then recomputes the CKM observables and determinant phase. The closure is only a fitted bounded numerical match to imported observation/atlas comparators, not a derivation of the carriers from retained first principles.",
+      "claim_scope": "Audited the bounded numerical existence claim that sector-specific complex 1-3 carriers can fit m_u/m_c, m_c/m_t, |V_us|, |V_cb|, |V_ub|, and J while keeping arg det(M_u M_d) numerically zero.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T01:04:25.401012+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Adding one independent complex determinant-neutral 1-3 carrier in each sector, with xi_u and xi_d solved numerically, closes the full quark mass-ratio plus CKM CP target surface.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the upstream imported constants and solve_magnitude_surface implementation if the audit scope is expanded beyond this restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 10,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The load-bearing step is an optimized numerical completion using explicit solved carrier coefficients and imported comparator targets. The runner is not a trivial printout: it builds Hermitian mass matrices, diagonalizes them, computes CKM observables, and checks the determinant phase. However, the parameters xi_u and xi_d are tuned degrees of freedom rather than derived from the stated axiom, and the success criteria are external observation/atlas matches, so this is class G rather than first-principles class C."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:39.081030+00:00",
+      "archived_for_note_hash": "e195545da0e692b6a293465025d48628e8e5bf326b8f4e8f17c0e82a6688079f",
+      "audit_date": "2026-05-16T13:03:24.330221+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 15.628,
+        "runner_hash": "eac39ec69d20d3524b642b6145a9d0d3c31ef92a3c218b914fef033494ade9b7",
+        "transitive_descendants": 790
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260516-130301-818d9f16-quark_cp_carrier_complet-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner performs a real numerical optimization, builds Hermitian mass matrices, diagonalizes them, computes CKM observables, and checks the determinant phase. The chain closes only as a tuned bounded numerical match, not as a first-principles derivation of xi_u, xi_d, the carrier slot, or the comparator targets.",
+      "claim_scope": "Audited only the bounded numerical existence-of-fit for one complex determinant-neutral 1-3 carrier per quark sector against imported mass-ratio and CKM/J comparator targets.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T13:03:24.330221+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given imported comparator targets, two complex carrier coefficients xi_u and xi_d are solved numerically to reproduce the target surface to about 1% or better while keeping arg det(M_u M_d)=0 mod 2pi.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the A/D runner-check split if the pipeline depends on that bookkeeping; it does not affect the class-G verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 7,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The note honestly frames the result as a numerical existence-of-fit using imported observation/atlas comparator targets and solved carrier coefficients. The runner is not a trivial printout: it computes matrices, diagonalizes them, evaluates CKM quantities, and verifies the reported tolerances. However, the load-bearing parameters xi_u and xi_d are tuned degrees of freedom, and the targets are external comparators rather than derived framework outputs. This is therefore class G and supports audited_numerical_match, not audited_clean."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 1,
+    "B": 0,
+    "C": 0,
+    "D": 10,
+    "total_pass": 11
+  },
+  "runner_path": "scripts/frontier_quark_cp_carrier_completion.py",
+  "title": "Quark CP-Carrier Completion on the Live Mass-Ratio Lane",
+  "transitive_descendants": 759,
+  "verdict_rationale": "The load-bearing step is explicitly a tuned numerical completion against imported observation/atlas comparator targets, so it is class G. The primary runner is substantive rather than a trivial printout: it computes the matrices, diagonalizes them, forms CKM observables, and checks determinant phase closure. The co-cycle citation to docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md is non-load-bearing/informational for this bounded fit verdict; source-graph repair is still needed to remove or rewrite that markdown link before effective_status can leave retained_pending_chain. The result closes only as a bounded numerical match, not as a first-principles retained derivation."
+}

@@ -1,0 +1,120 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_real_holonomy_locus_identity_2026-07-01",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+    "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04",
+    "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "68342107402852c39670efac2b13303dabf671521654289e9b57583d227b58c5",
+  "note_path": "docs/ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.279554+00:00",
+      "audit_date": "2026-07-10T03:50:53.771524+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited.",
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": "Bounded custody theorem for charged-lepton Q=2/3: the structural chain and exact Koide-line algebra close from the named authorities modulo the Tier-A AC_phi_lambda admitted selector; no unconditional derivation of AC_phi_lambda, physical lane assignment, or mass values is claimed.",
+          "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04": "Conditional on the stated C3-circulant lepton Yukawa and modulus-only objective V_mod = log|det M|, the clean determinant-modulus route does not select the non-degenerate physical phase \u03b4\u22482/9; its stationary candidates are \u03b4=k\u03c0/3 and are degenerate."
+        },
+        "dep_claim_type": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "bounded_theorem",
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": "bounded_theorem",
+          "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04": "no_go"
+        },
+        "dep_effective_status": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "retained_bounded",
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": "retained_bounded",
+          "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04": "retained_no_go"
+        },
+        "deps": [
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+          "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f7aaa8b39dd32f847f9a1062bde14cb23d87f1af89a98f56f96160c4402ec01e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00043-acphilambda_real_holonomy_lo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes for |b| > 0, but that domain restriction is absent from the claim. At b = 0, the spectrum does not determine cos(3 delta), arg(b^3) is undefined, and K-reality does not select the claimed phase subset.",
+      "claim_scope": "The asserted equality of the K-real G-orbit, real-holonomy locus, and retained modulus-stationary set on the charged-lepton circulant surface, together with the off-locus status of delta = 2/9.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:50:53.771524+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:charged_lepton_koide_value_full_chain_of_custody_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "With real b giving delta in {0, pi}, the G-orbit of those phases is exactly {k pi/3}, which is also equivalent to cos(3 delta) = \u00b11 and to the retained modulus-stationary set.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: add an explicit |b| > 0 hypothesis throughout the claim and a runner boundary check, or split out b = 0 as a separate stratum, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 47,
+        "C": 0,
+        "D": 0,
+        "total_pass": 85
+      },
+      "verdict_rationale": "Issue: Lemma R and Phi = arg(b^3) are stated over the circulant surface without requiring |b| > 0, while the runner silently imposes rho > 0. Why this blocks: at b = 0 the spectrum is {a, a, a}, so it cannot determine cos(3 delta), and the holonomy phase is undefined. Repair target: propagate an explicit nonzero-coupling hypothesis through the claim, lemma, theorem, and runner contract, or separately define the zero-coupling stratum. Claim boundary until fixed: for |b| > 0, the exact G-orbit/locus identity and off-locus arithmetic follow from the retained inputs."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py",
+  "title": "AC_phi_lambda Real-Holonomy Locus Identity",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

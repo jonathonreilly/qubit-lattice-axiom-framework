@@ -93,10 +93,10 @@ jobs:
       - name: Commit refreshed ledger if changed
         if: github.event_name == 'schedule' || github.ref == 'refs/heads/main'
         run: |
-          if [[ -n "$(git status --porcelain docs/audit/data docs/audit/AUDIT_LEDGER.md docs/audit/AUDIT_QUEUE.md)" ]]; then
+          if [[ -n "$(git status --porcelain docs/audit/data docs/audit/AUDIT_QUEUE.md)" ]]; then
             git config user.name  "audit-bot"
             git config user.email "audit-bot@local"
-            git add docs/audit/data docs/audit/AUDIT_LEDGER.md docs/audit/AUDIT_QUEUE.md
+            git add docs/audit/data docs/audit/AUDIT_QUEUE.md
             git commit -m "audit: refresh ledger + queue (automated)"
             git push
           fi
@@ -170,15 +170,17 @@ unless `--no-propagate` is used.
 
 ## Reading the artifacts
 
-After a pipeline run, four files are the canonical output:
+After a pipeline run, the tracked shards are authoritative and the other
+surfaces are derived views:
 
 | File | Purpose |
 |---|---|
-| `docs/audit/AUDIT_LEDGER.md` | Human-readable rendered ledger; effective_status table; per-claim audit findings. |
+| `docs/audit/data/ledger/<id[:2]>/<id>.json` + `ledger_meta.json` | Tracked source of truth (machine-readable). |
+| `docs/audit/AUDIT_LEDGER.md` | Ignored, materialized human-readable ledger cache. |
 | `docs/audit/AUDIT_QUEUE.md` | Top-50 next-to-audit claims, sorted by criticality. |
-| `docs/audit/data/audit_ledger.json` | Source of truth (machine-readable). |
-| `docs/audit/data/audit_queue.json` | Full pending queue. |
+| `docs/audit/data/audit_ledger.json` | Ignored monolithic read cache. |
+| `docs/audit/data/audit_queue.json` | Ignored full pending-queue cache. |
 
 Publication-facing tables (`CLAIMS_TABLE.md`, `PUBLICATION_MATRIX.md`,
 `ARXIV_DRAFT.md`) should read `effective_status` from
-`audit_ledger.json` (or an artifact derived from it).
+the sharded ledger (or a materialized artifact derived from it).

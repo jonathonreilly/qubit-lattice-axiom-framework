@@ -1,0 +1,528 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "axiom_first_spin_statistics_theorem_note_2026-04-29",
+    "fermion_parity_z2_grading_theorem_note_2026-05-02",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.502,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "535ff8214eb1ce01d527031e4c62561f6819562e4e70233e422378b2f546715d",
+  "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-12T09:54:44.644876+00:00",
+      "archived_for_note_hash": "effa148bee8396a65b31db3cd30e61012fc52e317199f7f384fda1cfb31dedc4",
+      "audit_date": "2026-06-11T22:35:55.324810+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame."
+        },
+        "dep_claim_type": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 12.457,
+        "runner_hash": "7657bc58bd387ae0787c2cbaa8d3d07ec2e98c78106de16543cdee1a0ea27727",
+        "transitive_descendants": 993
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-223232-f7bf8139fb-staggered_dirac_substep1_sta",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The T1-T3 finite-algebra discriminator closes conditionally: an independent exact two-site check already gives nonzero bare cross-site anticommutator, zero JW cross-site anticommutators, and F-oddness of both frames. The full source-note scope does not close unconditionally because GL(F) is explicitly unsupplied and the T4 supplier-boundary leg relies on not-provided/unaudited nearby-row claims, especially the 04-29 spin-statistics note.",
+      "claim_scope": "Bounded conditional discriminator on the finite qubit tensor-product surface: assuming GL(F), the explicit {free boson, hard-core boson, Grassmann/CAR} list selects Grassmann/CAR; dropping GL(F) restores the tested hard-core/JW tie, so no unconditional statistics selection is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T22:35:55.324810+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "GL(F) is non-constant across the explicit candidates: the JW/Grassmann realization satisfies the cross-site anticommutators while the hard-core realization does not, and with the dim-2 exclusion of the free boson exactly Grassmann/CAR survives.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the 04-29 spin-statistics note and any \u00a74 supplier rows as restricted one-hop authorities, or split them out so this row audits only the T1-T3 GL(F)-conditional discriminator; the isolated packet also lacked docs/audit/data/axiom_premise_nodes.json, but no listed primitive is load-bearing here.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 6,
+        "C": 2,
+        "D": 4,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The runner source substantively constructs Pauli/JW operators and computes anticommutators, algebra dimensions, F-oddness, hopping equality, and the hard-core CCR defect; it is not a print-only certificate. An independent exact two-site calculation confirms the load-bearing exchange-sign claims and the hard-core on-site CCR defect. However, the note also asserts a supplier audit saying GL(F) is currently supplied by nothing, including an unaudited 04-29 row and other nearby rows not provided in the restricted packet. Thus the conditional selection is sound, but the row remains conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.986839+00:00",
+      "audit_date": "2026-06-12T20:23:07.900798+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame."
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.883,
+        "runner_hash": "074624d9d587cad730972355ea14d4370f88f0330f60187f23d893f33fcd1f15",
+        "transitive_descendants": 943
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260612-staggered_dirac_substep1_statistics_gl_f-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The correct landing is clean at the bounded conditional scope: GL(F) is an explicit added predicate, not a supplied statistics principle, and the note does not claim unconditional selection. The decisive work is finite Pauli/Jordan-Wigner algebra and predicate application over retained-grade inputs, so class A is the better classification than class C; it does not produce a new independent framework number beyond the existing algebraic identities and retained dim-2/CCR exclusions. The non-load-bearing supplier diagnostics do not create an open dependency because the audited theorem payload is T1-T3 and the packet includes the relevant retained_bounded 04-29 authority for the scoped CCR/free-boson exclusion.",
+      "claim_scope": "Finite tensor-product audit of the conditional discriminator: retained dimension, ungraded-algebra, parity-grading, and hopping-surface predicates are frame-blind; the defined GL(F) predicate selects Grassmann/CAR within the explicit three-candidate list; removing GL(F) restores the retained no-go tie.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T20:23:07.900798+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-12T20:11:42.242119+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260612-200900-80083040ae-staggered_dirac_substep1_sta",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional substep-1 statistics discriminator on the explicit {free boson, hard-core boson, Grassmann/CAR} candidate list: GL(F) selects Grassmann/CAR when imposed, and removing GL(F) restores the retained hard-core/CAR tie; no unconditional GL(F) supplier or statistics selection is claimed.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-12T20:15:50.363070+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260612-201220-881e5cc8c2-staggered_dirac_substep1_sta",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite tensor-product audit of the conditional discriminator: retained dimension, ungraded-algebra, parity-grading, and hopping-surface predicates are frame-blind; the defined GL(F) predicate selects Grassmann/CAR within the explicit three-candidate list; removing GL(F) restores the retained no-go tie.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-12T20:23:07.900798+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260612-staggered_dirac_substep1_statistics_gl_f-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite tensor-product audit of the conditional discriminator: retained dimension, ungraded-algebra, parity-grading, and hopping-surface predicates are frame-blind; the defined GL(F) predicate selects Grassmann/CAR within the explicit three-candidate list; removing GL(F) restores the retained no-go tie.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first audit's verdict and scope were correct, but its class C label was too strong for an algebraic identity/predicate-application closure over retained finite-operator facts.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The correct landing is clean at the bounded conditional scope: GL(F) is an explicit added predicate, not a supplied statistics principle, and the note does not claim unconditional selection. The decisive work is finite Pauli/Jordan-Wigner algebra and predicate application over retained-grade inputs, so class A is the better classification than class C; it does not produce a new independent framework number beyond the existing algebraic identities and retained dim-2/CCR exclusions. The non-load-bearing supplier diagnostics do not create an open dependency because the audited theorem payload is T1-T3 and the packet includes the relevant retained_bounded 04-29 authority for the scoped CCR/free-boson exclusion.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:axiom_first_spin_statistics_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "GL(F) is non-constant across the tied frames: the JW/Grassmann realization satisfies the cross-site anticommutators while the hard-core ladders commute cross-site and have nonzero anticommutators; with the dim-2 free-boson exclusion, exactly Grassmann/CAR survives.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The correct landing is clean at the bounded conditional scope: GL(F) is an explicit added predicate, not a supplied statistics principle, and the note does not claim unconditional selection. The decisive work is finite Pauli/Jordan-Wigner algebra and predicate application over retained-grade inputs, so class A is the better classification than class C; it does not produce a new independent framework number beyond the existing algebraic identities and retained dim-2/CCR exclusions. The non-load-bearing supplier diagnostics do not create an open dependency because the audited theorem payload is T1-T3 and the packet includes the relevant retained_bounded 04-29 authority for the scoped CCR/free-boson exclusion."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.518438+00:00",
+      "audit_date": "2026-06-21T06:58:57.520124+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson/CCR realization is excluded on the finite dim-2 substep-1 per-site carrier; hard-core bosons and CAR-vs-hard-core selection are out of scope, and Grassmann determinant/exchange consequences are conditional on the declared Grassmann frame.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame."
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.339,
+        "runner_hash": "074624d9d587cad730972355ea14d4370f88f0330f60187f23d893f33fcd1f15",
+        "transitive_descendants": 915
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited authorities provide the one-qubit carrier, retained parity grading, free-CCR exclusion, and hard-core-vs-CAR no-go boundary. The runner/source then compute the hard-core and JW matrix families directly, showing GL(F) is the only tested non-constant predicate and that the conditional selection and falsification leg follow on the stated surface.",
+      "claim_scope": "On the explicit {free boson, hard-core boson, Grassmann/CAR} substep-1 candidate list, retained dim/algebra/grading/hopping predicates are frame-blind, while the explicitly assumed cross-site GL(F) predicate selects Grassmann/CAR conditionally; removing GL(F) restores the retained no-go tie.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T06:58:57.520124+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T06:55:45.322114+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional substep-1 statistics discriminator on the explicit {free boson, hard-core boson, Grassmann/CAR} list: retained tested data are frame-blind, GL(F) selects Grassmann/CAR when added, and removing GL(F) restores the hard-core/CAR tie; no unconditional statistics selection or GL(F) supplier is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T06:58:57.520124+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the explicit {free boson, hard-core boson, Grassmann/CAR} substep-1 candidate list, retained dim/algebra/grading/hopping predicates are frame-blind, while the explicitly assumed cross-site GL(F) predicate selects Grassmann/CAR conditionally; removing GL(F) restores the retained no-go tie.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_spin_statistics_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "GL(F) is non-constant across the explicit candidates: the JW/Grassmann realization passes, the hard-core realization fails, and with the retained dim-2 free-boson exclusion exactly one candidate passes {dim = 2} AND GL(F), namely Grassmann/CAR.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the finite-N/L runner witness versus the note's general finite-block prose, but the algebraic pattern is explicit in the packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 6,
+        "C": 2,
+        "D": 4,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The runner constructs the Pauli tensor-product hard-core fields, JW/CAR fields, parity operator, generated algebras, and hopping matrices, then checks the anticommutators and tie-restoration leg rather than merely printing constants. All load-bearing cited authorities are retained-grade or the accepted minimal axiom premise, and the theorem is explicitly bounded to conditional selection under GL(F), not an unconditional statistics derivation. The boundary diagnostics do not overreach into a global supplier survey, so the stated bounded theorem closes."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.894273+00:00",
+      "audit_date": "2026-06-30T18:47:58.393695+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical CCR hypothesis, the free-boson realization is excluded on the finite one-qubit/Cl(3) substep-1 surface; Grassmann calculus consequences are conditional on the declared Grassmann frame, and hard-core-vs-CAR selection is not audited as decided.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the explicitly declared two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic B}, the physical per-site dimension 2 excludes B, admits G, and G carries the Berezin determinant readout; statistics forcing is not audited or claimed.",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited the scoped no-go that the accepted qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and stated finite ordering/locality checks make Grassmann/CAR statistics compatible via JW but do not force them over the hard-core-boson qubit frame."
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.339,
+        "runner_hash": "074624d9d587cad730972355ea14d4370f88f0330f60187f23d893f33fcd1f15",
+        "transitive_descendants": 915
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T184758Z-137b9f7e-staggered_dirac_substep1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source genuinely instantiates the finite qubit tensor-product operators, JW strings, parity operator, algebra spans, hopping Hamiltonians, and CCR defect checks rather than merely printing expected constants. The result closes as a bounded conditional theorem because GL(F) is used only as the declared hypothesis and is explicitly not claimed to be supplied.",
+      "claim_scope": "Conditional substep-1 statistics discriminator on the explicit {free boson, hard-core boson, Grassmann/CAR} surface: GL(F) relative to retained parity F selects Grassmann/CAR, while all tested retained baseline predicates without GL(F) remain frame-blind and restore the no-go tie.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T18:47:58.393695+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T18:45:16.324041+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T184516Z-05dc54e1-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the finite tested substep-1 qubit tensor-product surface, GL(F) conditionally selects the Grassmann/CAR class from the explicit {free boson, hard-core boson, Grassmann/CAR} list; without GL(F), the retained hard-core/CAR tie is reproduced, and no unconditional statistics selection is claimed.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T18:47:58.393695+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T184758Z-137b9f7e-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional substep-1 statistics discriminator on the explicit {free boson, hard-core boson, Grassmann/CAR} surface: GL(F) relative to retained parity F selects Grassmann/CAR, while all tested retained baseline predicates without GL(F) remain frame-blind and restore the no-go tie.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_spin_statistics_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "GL(F) is non-constant across the candidates: the JW/Grassmann realization passes cross-site graded locality while the hard-core realization fails, and with the dim-2 free-boson exclusion exactly one explicit candidate survives, Grassmann/CAR.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the runner_check_breakdown convention: the stdout has an additional [E] freshness section not represented in the A-D schema, although total_pass includes it.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 6,
+        "C": 2,
+        "D": 4,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing discriminator is a first-principles finite matrix computation on the qubit tensor-product surface: cross-site CAR holds for JW fields and fails for bare hard-core ladders. The cited authorities are retained-grade or the registered minimal-axioms premise, and the note preserves the retained no-go by making the selection conditional on GL(F). The named wall is narrowly scoped: the note does not claim a global GL(F) supplier survey or unconditional statistics selection."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.503988+00:00",
+      "audit_date": "2026-07-02T10:31:50.221954+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson realization is excluded on the finite one-qubit/Cl(3) per-site surface; Grassmann CAR, Berezin determinant, and exchange-sign consequences are audited only conditional on the declared Grassmann frame, with hard-core-vs-CAR selection out of scope.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the explicitly restricted two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic oscillator B}, the physical per-site dimension 2 excludes B, admits G, and G carries the cited Berezin determinant readout; no statistics forcing or hard-core-boson exclusion is audited.",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Finite-block audit of whether the accepted Lattice+Qubit baseline plus standard tensor-product algebra, per-site dimension, and checked total-order locality facts force Grassmann/CAR statistics rather than merely admit a JW fermion frame alongside a hard-core-boson frame."
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.339,
+        "runner_hash": "074624d9d587cad730972355ea14d4370f88f0330f60187f23d893f33fcd1f15",
+        "transitive_descendants": 915
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T103150Z-45d43862-staggered_dirac_substep1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite matrix construction verifies the CAR/JW and hard-core cross-site relations directly, and the cited retained bounded/free-CCR exclusion removes the free-boson branch. The note does not claim `GL(F)` is supplied or that the unconditional statistics-selection problem is closed.",
+      "claim_scope": "Within the explicit `{free boson, hard-core boson, Grassmann/CAR}` candidate list on finite qubit tensor-product blocks, the added predicate `GL(F)` conditionally selects the Grassmann/CAR statistics class; without `GL(F)`, the retained tested inputs remain frame-blind and the no-go tie is restored.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T10:31:50.221954+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T10:28:06.853718+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T102806Z-2a9cb8bc-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional discriminator on the explicit {free boson, hard-core boson, Grassmann/CAR} substep-1 candidate list: GL(F), if supplied, selects the Grassmann/CAR statistics class, while removing GL(F) restores the retained hard-core/CAR tie.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T10:31:50.221954+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T103150Z-45d43862-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the explicit `{free boson, hard-core boson, Grassmann/CAR}` candidate list on finite qubit tensor-product blocks, the added predicate `GL(F)` conditionally selects the Grassmann/CAR statistics class; without `GL(F)`, the retained tested inputs remain frame-blind and the no-go tie is restored.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_spin_statistics_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "`GL(F)` is non-constant across the explicit candidates: JW/Grassmann satisfies the cross-site anticommutators, hard-core boson has nonzero cross-site anticommutators, and with the dim-2/free-CCR exclusion exactly one candidate passes `{dim = 2} AND GL(F)`.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 4,
+        "C": 20,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The runner source genuinely constructs the finite tensor-product Pauli/JW operators, computes ranks, commutators, anticommutators, parity action, and hopping equality, and does not merely print expected constants. The upstream dependencies are retained-grade or accepted axiom premises, and the open `GL(F)` input is correctly scoped as the theorem's explicit condition rather than smuggled in as derived. The no-go boundary is narrow: it reproduces the tie when `GL(F)` is removed and does not assert a global supplier survey."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py",
+  "title": "Staggered-Dirac Substep 1 \u2014 Statistics Selection: GL(F) Conditional Discriminator, No Unconditional Closure",
+  "transitive_descendants": 724,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

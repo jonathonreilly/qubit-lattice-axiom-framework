@@ -1,0 +1,209 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+    "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+    "kinetic_isotropy_primitive",
+    "minimal_axioms",
+    "scale_reference_primitive"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "693adb1c30ca570531aea9bccc43365e8df4df63a2c0663601a374e7f8cda9ca",
+  "note_path": "docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.417335+00:00",
+      "audit_date": "2026-06-18T10:59:10.173150+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "On the approved OS0 kinetic-form surface, B4 signed-permutation symmetry forbids a diagonal marginal time/spatial velocity anisotropy and makes B4-symmetric one-loop temporal/spatial self-energy coefficients equal; the remaining cited lattice artifact is dimension-6 with only a scale-reference units estimate.",
+          "kinetic_isotropy_primitive": null,
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "Free U=1 staggered-Dirac Euclidean 2-point function: continuum SO(4) covariance of the displayed taste-spectator spin block, plus the O(a^2) ell=4 anisotropy of the taste-singlet scalar spectrum Delta(p), excluding interacting, n-point, OS-reconstruction, physical-unit, and full finite-a spin x taste leading-correction claims.",
+          "minimal_axioms": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "kinetic_isotropy_primitive",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+          "minimal_axioms",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "e66ffc944cd96e53e77eec651602e8e827dc0a96dd02a919b7089739d9ac056f",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14-first",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-regulator symmetry/change-of-variables argument closes the Ward-style step: B4 invariance of action plus measure transfers to Z[J] and Gamma order by order, and the Reynolds-rank result leaves only c_t = c_s at marginal diagonal order. The runner source performs nontrivial finite group, one-loop, two-loop, nonfactorization, and B4-breaking falsifier checks rather than printing constants.",
+      "claim_scope": "Bounded perturbative all-orders marginal-velocity protection inside the supplied exact B4-symmetric Wilson/staggered regulator, with one-loop and representative genuine two-loop checks; nonperturbative effects, continuum-limit claims, per-taste/taste-breaking effects, and broken-B4 continuous-time cases are outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T10:59:10.173150+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Because the regulated action and measure are exactly B4-invariant, the perturbative effective action Gamma is B4-invariant order by order; since the B4-invariant diagonal marginal kinetic subspace is one-dimensional, the coefficient of the B4-non-invariant marginal velocity operator vanishes at every perturbative order.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the explicit finite-a staggered field transformation realizing the stated B4 covariance of the full interacting staggered action, since the theorem rests on that supplied regulator symmetry.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 3,
+        "D": 10,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The audited claim is correctly scoped as a bounded theorem inside a supplied B4-covariant regulator, not as a derivation of that regulator from the framework axioms. The cited retained/retained_bounded authorities and flagged accepted primitives do not force a dependency downgrade, and the all-orders conclusion follows by standard finite-regulator symmetry plus the explicit rank-one B4 kinetic-form calculation. The two-loop calculation is confirmatory rather than load-bearing, but the source verifies it with an analytic integrand curvature, a genuine q+r two-loop coupling, and a B4-breaking control."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.305169+00:00",
+      "audit_date": "2026-07-02T06:13:48.965374+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "On the accepted OS0 kinetic-isotropy surface, B4 signed-permutation symmetry forbids a diagonal marginal time-space velocity anisotropy in the checked hypercubic kinetic/self-energy model; the remaining cited dispersion artifact is dimension-6 with scale-primitive unit conversion.",
+          "kinetic_isotropy_primitive": null,
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "For the specified free U=1 staggered/Kogut-Susskind operator on Z^3 x Z_tau with canonical phases, the continuum-limit 2-point Dirac/Kahler-Dirac propagator is SO(4)-covariant; the O(a^2) ell=4 anisotropy claim is scoped to the taste-singlet scalar spectrum/displayed D~ sector.",
+          "minimal_axioms": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "kinetic_isotropy_primitive",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+          "minimal_axioms",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "e66ffc944cd96e53e77eec651602e8e827dc0a96dd02a919b7089739d9ac056f",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T061348Z-7b4d82db-allorders_b4_marginal_pr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by finite-group change of variables in the regularized path integral plus the Reynolds-rank fact that B4 leaves one quadratic coefficient. The accepted kinetic-isotropy and scale primitives are used only within their declared scope, and no external comparator or tuned value is load-bearing.",
+      "claim_scope": "Within the supplied B4-symmetric Wilson/staggered Euclidean regulator on the OS0 kinetic surface, perturbative 1PI terms cannot generate a diagonal marginal temporal-spatial velocity anisotropy; the runner additionally checks one-loop channels, a representative genuine 8D two-loop channel, and B4-breaking falsifiers.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T06:13:48.965374+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Because the regulated action and integration measure are exactly B4-invariant, the perturbative effective action is B4-invariant order by order, and the only B4-invariant diagonal marginal kinetic form has c_t = c_s.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the full staggered hypercubic covariance convention if later scope expands beyond the supplied B4-covariant regulator.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The proof is an algebraic finite-symmetry closure over the supplied B4-covariant regulator: action and measure invariance imply Gamma invariance, which forbids the non-invariant marginal velocity operator. The runner source performs real finite group, loop-sum, nonfactorization, and B4-breaking checks rather than only printing constants; the two-loop numerics support but do not replace the all-orders symmetry argument. The claim is properly bounded to perturbation theory in the supplied regulator and does not assert nonperturbative, continuum-limit, or per-single-taste restoration results."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_allorders_b4_marginal_protection_twoloop_2026_06_14.py",
+  "title": "All-Orders B4 Marginal-Velocity Protection: a Symmetry Theorem with First Two-Loop Confirmation",
+  "transitive_descendants": 4,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

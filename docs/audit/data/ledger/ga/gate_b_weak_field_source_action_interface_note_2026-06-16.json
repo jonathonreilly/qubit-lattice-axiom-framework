@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gate_b_weak_field_source_action_interface_note_2026-06-16",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+    "valley_linear_continuum_synthesis_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116",
+  "note_path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:38.244027+00:00",
+      "audit_date": "2026-06-18T09:49:03.731738+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "Finite-dimensional weak-field Z^3 graph-Laplacian source-response bridge on the zero-mode-removed sector, including scalar Born-density readout uniqueness under the stated local diagonal assumptions and first-order test-source response; the 1/(4 pi r) asymptotic is supplied by the retained Green-kernel authority.",
+          "valley_linear_continuum_synthesis_note": "Bounded straight-ray continuum algebraic bridge for S=L(1-f), f=s/r, plus retained-bounded synthesis of the cited finite 3D ordered-lattice evidence; no universal finite-lattice, convergence, or architecture-independent theorem."
+        },
+        "dep_claim_type": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "bounded_theorem",
+          "valley_linear_continuum_synthesis_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "retained_bounded",
+          "valley_linear_continuum_synthesis_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+          "valley_linear_continuum_synthesis_note"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "ac9ea8b6b7556ce8679d734e98a152bf3af7a9988d9f72f5722ad4c8f7ec9453",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gate_b_weak_field_source_action_interface_note_2026-06-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped GB-S1a claim closes by direct algebraic instantiation of the cited weak-field response theorem with phi specialized to phi_GB. The broader Gate B source packet remains outside this audited scope.",
+      "claim_scope": "GB-S1a only: the Gate B linear test-action form S=L(1-phi_GB) is an algebraic instance of the retained-bounded weak-field response form S_test=L_test(1-phi(x)); no Gate B scalar normalization, propagation/readout, generated connectivity, or parent Gate B closure is audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-18T09:49:03.731738+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11:retained_bounded->unaudited",
+      "load_bearing_step": "The Gate B runners use the same linear test-action form after specializing phi to the runner-local regularized scalar phi_GB(x)=strength/(r(x,mass)+0.1), so GB-S1a is an interface instance of S_test(phi;x)=L_test(1-phi(x)).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only the decoration classification against the ledger's parent-claim id mapping; no compute gap is present.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The cited weak-field authority already provides S_test(phi;x)=L_test(1-phi(x)); the source note's load-bearing move is to substitute the runner-local phi_GB and observe the identical linear action shape. The runner source confirms this is not a first-principles Gate B source derivation: it performs textual dependency checks plus exact algebraic identity, additivity, and normalization-degeneracy checks. Because the scoped result adds no independent physical bridge beyond the retained-bounded parent theorem and explicitly excludes the rest of the Gate B packet, the correct classification is algebraic decoration rather than a new bounded theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py",
+  "title": "Gate B Weak-Field Source/Action Interface Boundary Note",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

@@ -1,0 +1,180 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "one_generation_matter_closure_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (audit-pipeline retag from earlier",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "left_handed_charge_matching_note",
+    "anomaly_forces_time_theorem"
+  ],
+  "direct_in_degree": 35,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 27.548,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "68b94e700d1b8eebb66ed37e704e36507ec955d3f254da68c9dba6608d088dca",
+  "note_path": "docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369287+00:00",
+      "archived_for_note_hash": "27aa9449801327d401577dbda804f5a5cf9c92347f93ce1ef8352210569cacf7",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:33:25.056714+00:00",
+      "audit_date": "2026-05-02T20:24:16.509765+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "anomaly_forces_time_theorem": "retained_bounded",
+          "left_handed_charge_matching_note": "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        },
+        "deps": [
+          "anomaly_forces_time_theorem",
+          "left_handed_charge_matching_note"
+        ],
+        "load_bearing_score": 21.022,
+        "transitive_descendants": 259
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-agent-sagan-2026-05-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The anomaly arithmetic and 4D chirality checks close only after importing the bounded anomaly-forced-time admissions and imposing the neutral-singlet branch convention. The one-hop LH authority explicitly leaves SM hypercharge and electric-charge identification out of scope, so the full Standard Model matter-closure claim is not clean from the provided authorities alone.",
+      "claim_scope": "Conditional one-generation right-handed matter completion using the retained LH eigenvalue ratio, the bounded anomaly-forced 3+1 theorem inputs, and the neutral-singlet branch convention to select u_R=(1,3)_{+4/3}, d_R=(1,3)_{-2/3}, e_R=(1,1)_{-2}, nu_R=(1,1)_0; independent SM hypercharge/electric-charge identification is not audited here.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T20:24:16.509765+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:anomaly_forces_time_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Anomaly-forced time supplies the chirality structure and single-clock 3+1 closure, and anomaly cancellation then fixes the right-handed singlet completion on the Standard Model branch.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-check whether a later retained theorem supplies the neutral-singlet branch rule and the physical SM hypercharge/electric-charge bridge.",
+      "open_dependency_paths": [
+        "docs/ANOMALY_FORCES_TIME_THEOREM.md",
+        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 24,
+        "D": 0,
+        "total_pass": 61
+      },
+      "verdict_rationale": "Issue: the source claims full one-generation Standard Model closure, but the right-handed charge table is selected by a neutral-singlet branch convention and the physical SM hypercharge/electric-charge bridge is not supplied by the LH authority. Why this blocks: anomaly equations plus chirality constraints give a consistent branch, but do not by themselves prove that the chosen neutral singlet and SM charge readout are forced. Repair target: add or cite a retained theorem deriving the neutral-singlet branch selection and the SM hypercharge/electric-charge identification from retained framework inputs, with a runner that fails without those bridges. Claim boundary until fixed: the safe result is a bounded conditional completion on the stated anomaly-forced-time admissions and branch convention."
+    },
+    {
+      "archived_at": "2026-05-07T13:07:09.063594+00:00",
+      "archived_for_note_hash": "e1fc5ac663fcb33118881c0e58accdba8c660c7b18b17266c8f0e590bae58f77",
+      "audit_date": "2026-05-05T23:20:22.874201+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "anomaly_forces_time_theorem": "unaudited",
+          "left_handed_charge_matching_note": "audited_conditional"
+        },
+        "deps": [
+          "anomaly_forces_time_theorem",
+          "left_handed_charge_matching_note"
+        ],
+        "load_bearing_score": 22.516,
+        "runner_hash": "9a848a6197d3867d7f15593607de55b1e405eaf48b19fcaa780ed4c237bb76b9",
+        "transitive_descendants": 365
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-one_generation_matter_cl-043",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local anomaly arithmetic closes only after importing the left-handed hypercharge-labelled content, the temporal/chirality bridge, and the neutral-singlet branch convention. The two cited authorities are unaudited, and ANOMALY_FORCES_TIME_THEOREM.md is explicitly conditional on companion notes not present in the restricted packet.",
+      "claim_scope": "Full-framework one-generation closure to u_R:(1,3)_{+4/3}, d_R:(1,3)_{-2/3}, e_R:(1,1)_{-2}, nu_R:(1,1)_0, conditional on the cited left-handed charge surface and anomaly-forced-time/chirality authority.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:20:22.874201+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Anomaly cancellation then fixes the right-handed singlet completion on the Standard Model branch.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or provide audited retained-grade packets for the left-handed charge matching and anomaly-forced-time dependencies, including the missing companion bridge notes and the neutral-singlet branch selection.",
+      "open_dependency_paths": [
+        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
+        "docs/ANOMALY_FORCES_TIME_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 57,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 61
+      },
+      "verdict_rationale": "The runner performs real matrix and anomaly-arithmetic checks, but the decisive right-handed completion is not a first-principles derivation from the restricted packet. It imports the left-handed sector, temporal/chirality completion, SU(2)-singlet interpretation, and neutral-singlet branch convention. Both cited authorities are marked unaudited, and the anomaly-forced-time note is explicitly bounded/conditional on pending companion notes."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_right_handed_sector.py",
+  "title": "One-Generation Matter Closure Note",
+  "transitive_descendants": 1058,
+  "verdict_rationale": null
+}

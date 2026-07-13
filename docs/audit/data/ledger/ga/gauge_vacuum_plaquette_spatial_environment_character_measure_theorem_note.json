@@ -1,0 +1,374 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+    "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 15,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 17.214,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4a75cd1dc686aa5c6093e467e2f0fe61f8f66f776040a52697ceceef06fb606c",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-09T17:32:01.009425+00:00",
+      "archived_for_note_hash": "ff0016776547627249ad0ebb49ef7264834eca17f201cf27771c71e4b44bd696",
+      "audit_date": "2026-05-02T17:04:25.976728+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.219,
+        "transitive_descendants": 297
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop:fresh-2026-05-02-spatial-environment-character-measure-bernoulli",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Centrality and formal character expansion of the constructed boundary function are plausible, but equality between the pre-existing residual operator and that convolution is asserted by coefficient identification. The runner injects a generic positive conjugation-symmetric rho_env witness and verifies packaging, not actual Wilson environment data.",
+      "claim_scope": "The residual source-sector environment operator is identified with convolution by a normalized unmarked spatial Wilson boundary class function; explicit rho_(p,q)(6) data remain open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-02T17:04:25.976728+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-04-29T11:46:07.129988+00:00",
+          "auditor": "codex-gpt-5.5-backlog-sweep-2026-04-29",
+          "auditor_family": "codex-gpt-5.5",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-04-30T14:53:54.997407+00:00",
+          "auditor": "codex-audit-loop-second-20260430-gauge-spatial-env-character",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "F",
+          "verdict": "audited_renaming"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-04-30T17:50:00.550431+00:00",
+          "auditor": "codex-judge-20260430-phase-a-spatial-env-character",
+          "auditor_family": "codex-gpt-5",
+          "first_auditor_error": null,
+          "independence": "judicial_review",
+          "judgment_rationale": "The second auditor's F reading misses that the source constructs a boundary class function and applies Peter-Weyl/central convolution, rather than merely relabeling symbols. The explicit beta=6 coefficients remain open, but the character-measure realization itself closes algebraically, matching the first clean/A reading.",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-current",
+          "second_auditor_error": "The second auditor collapsed an exact central-character representation theorem into symbol renaming.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The residual environment operator is asserted to have the same normalized coefficients rho_(p,q)(beta) as the boundary class function, so R_beta^env=C_(Z_beta^env).",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-audit would need first-principles computation or independent verification of the actual beta=6 boundary character coefficients from the unmarked spatial Wilson environment.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the load-bearing closure is an asserted identity between the residual operator and the newly constructed convolution operator. Why this blocks: the runner confirms algebraic consistency once a rho_env sequence is supplied, but it does not compute rho_(p,q)(6) from the unmarked spatial Wilson integral or independently verify that the residual operator spectrum equals those coefficients. Repair target: compute or independently verify the beta=6 boundary character coefficients from the unmarked spatial Wilson environment. Claim boundary until fixed: safe to cite this as an open-gate reformulation of the residual environment datum, not as a retained positive theorem."
+    },
+    {
+      "archived_at": "2026-05-16T12:56:46.108549+00:00",
+      "archived_for_note_hash": "651edabfa203e89d55e98d654723627cf42731c7cc00c4da31088f8767785c1b",
+      "audit_date": "2026-05-10T12:31:16.637723+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        ],
+        "load_bearing_score": 14.66,
+        "runner_hash": "8e0afad9e7ac5e548edb6d935fd6667e55dd6cb57d72e05402d3b1ceb7cb339a",
+        "transitive_descendants": 571
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e11de-5a91-7230-bddc-096ea9db9dea",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet does not include the parent residual-environment identification theorem or a derivation that the coefficients of the true unmarked spatial Wilson environment equal the residual operator eigenvalues. The runner packages a chosen positive symmetric rho_env sequence rather than constructing the unmarked spatial environment.",
+      "claim_scope": "Audited the claimed identification of the residual plaquette environment operator with normalized convolution by the boundary character measure of the unmarked spatial Wilson environment.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-10T12:31:16.637723+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "But the residual environment operator already closed on main satisfies R_beta^env chi_(p,q) = rho_(p,q)(beta) chi_(p,q); therefore R_beta^env = C_(Z_beta^env).",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add the retained residual-environment identification theorem and a non-witness runner that constructs Z_beta^env or rho_(p,q)(6) from the actual unmarked spatial Wilson environment.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the load-bearing equality R_beta^env = C_(Z_beta^env) imports an already-closed residual-environment identification and equates the residual diagonal data with boundary character coefficients without that bridge in the packet. Why this blocks: the runner uses a generic hard-coded positive conjugation-symmetric rho_env, so it verifies packaging, not the physical unmarked spatial Wilson environment. Repair target: provide the retained parent theorem constructing R_beta^env from the unmarked spatial Wilson boundary integral, or a runner that computes those coefficients from the actual environment. Claim boundary until fixed: this is an open-gate reformulation of the remaining datum as boundary character data, not a closed derivation of the environment operator."
+    },
+    {
+      "archived_at": "2026-05-17T08:06:23.426434+00:00",
+      "archived_for_note_hash": "0c0e388b10d1f9ed15335845eecf4bd9a8b812650ad2378fceb73727f5781839",
+      "audit_date": "2026-05-16T13:00:01.102865+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        ],
+        "load_bearing_score": 15.847,
+        "runner_hash": "bbef1d4cbe15c1f3c6a8855da7ca059613f40649dadc2dd0a3360b2bad02d384",
+        "transitive_descendants": 920
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-125941-efdfa367-gauge_vacuum_plaquette_s-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The chain does not close because the equality R_beta^env = C_(Z_beta^env) is explicitly conditional on the parent residual-environment identification theorem. The provided runner computes and packages a bounded single-link Wilson witness, not the full unmarked spatial Wilson environment compression.",
+      "claim_scope": "Audited the note's reformulation of the residual plaquette environment as normalized convolution by boundary character coefficients, with the runner only checking finite NMAX=5 packaging using single-link SU(3) Wilson coefficients at beta=6.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-16T13:00:01.102865+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The residual source-sector environment operator is exactly convolution by the normalized boundary class function, i.e. R_beta^env = C_(Z_beta^env).",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: supply a retained-grade derivation or runner-backed certificate identifying the full unmarked spatial Wilson residual compression R_beta^env with normalized convolution by Z_beta^env, not only the single-link bounded witness.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The note honestly labels itself open_gate and repeatedly states that the operator-realization step depends on an unresolved parent residual-environment identification theorem. The runner improves the prior witness by computing canonical single-link Wilson coefficients, but its source sets rho_env from that same single-link calculation and then verifies packaging and symmetry on a finite box. That is useful bounded support, not a derivation of the full multi-link unmarked spatial environment operator."
+    },
+    {
+      "archived_at": "2026-05-24T16:22:54.254989+00:00",
+      "archived_for_note_hash": "b4b203b0dd73cdb2dd28fdba36df8b266c93d2f71371eccc2c239a3f5ac346f5",
+      "audit_date": "2026-05-23T19:00:01.035480+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "Finite source-sector coefficient packet on the runner's bounded box 0 <= p,q <= 5 at beta = 6 and MODE_MAX = 80, including computed Wilson coefficients and finite package matrix checks.",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        ],
+        "load_bearing_score": 16.469,
+        "runner_hash": "bbef1d4cbe15c1f3c6a8855da7ca059613f40649dadc2dd0a3360b2bad02d384",
+        "transitive_descendants": 1001
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T185940Z-b7ce7b70-gauge_vacuum_plaquette_s-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite runner verifies coefficient packaging and replacement of the prior generic witness by computed single-link Wilson coefficients. It does not close the missing bridge identifying the actual stripped residual source-sector operator with the compressed unmarked spatial Wilson environment.",
+      "claim_scope": "Audited the open-gate claim that the residual source-sector environment can be packaged as normalized convolution by boundary character coefficients, with finite beta=6 single-link Wilson coefficients used as the bounded runner witness on NMAX=5.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-23T19:00:01.035480+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The residual source-sector environment operator is exactly convolution by this normalized boundary class function: R_beta^env chi_(p,q) = rho_(p,q)(beta) chi_(p,q), so R_beta^env = C_(Z_beta^env).",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or runner-certify that the stripped residual source-sector operator equals the actual compressed unmarked spatial Wilson environment, beyond insertion of the finite single-link coefficient packet.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The note openly makes the operator-realization step conditional: R_beta^env = C_(Z_beta^env) depends on a parent residual-environment identification that is not proved in this packet. The cited parent has retained_bounded status only for a finite coefficient packet and explicitly disclaims equality with the actual compressed unmarked spatial Wilson environment. The runner genuinely computes single-link Wilson coefficients and checks finite packaging, but its load-bearing operator identity remains a symbol identification at the full residual-environment scope."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:08.270014+00:00",
+      "archived_for_note_hash": "93294bdd9730bbffea350451e17bd9fecfcd761733a0a5507d2902b4b1c79015",
+      "audit_date": "2026-05-24T17:18:12.146488+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks.",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        ],
+        "load_bearing_score": 16.511,
+        "runner_hash": "9a77d6469d5024bff86184c63d148911243fdf2998ba1317f1523d641ba8392b",
+        "transitive_descendants": 1031
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T171751Z-e33c5b07-gauge_vacuum_plaquette_s-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the explicitly bounded finite scope, the runner source computes rho_(p,q)(6) by the Bessel-determinant mode sum, normalizes by d_(p,q)c_(0,0), and uses the resulting coefficients directly in the packet. The note expressly does not claim the open actual spatial-environment character-measure identification.",
+      "claim_scope": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T17:18:12.146488+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-24T17:17:23.307977+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T171513Z-e33c5b07-gauge_vacuum_plaquette_s-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite beta=6, MODE_MAX=80, NMAX=5 packet on 0 <= p,q <= NMAX: computed normalized single-link Wilson coefficients are packaged as a positive conjugation-symmetric diagonal central character packet inside exp(3J) D_6^loc C_(Z_6^packet) exp(3J).",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-24T17:18:12.146488+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T171751Z-e33c5b07-gauge_vacuum_plaquette_s-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J).",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The runner computes the finite normalized single-link Wilson coefficients rho_(p,q)(6) and packages them as the finite diagonal central character-measure packet C_(Z_6^packet).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the C classification of the Bessel-determinant coefficient computation versus treating the final packet insertion as algebraic class A.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The cited upstream authorities are retained_bounded, and the source note narrows the claim to a finite packet rather than importing the open residual-environment theorem. The runner is not a print-only or hard-coded-value check: it computes the Wilson coefficients from the Schur-Weyl Bessel-determinant formula, checks normalization, positivity, conjugation symmetry, and verifies the finite factorized packet symmetries. The conclusion follows for the bounded packet only, with the actual full spatial-environment identification explicitly left open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py",
+  "title": "Gauge-Vacuum Plaquette Actual Spatial-Environment Character Measure",
+  "transitive_descendants": 839,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

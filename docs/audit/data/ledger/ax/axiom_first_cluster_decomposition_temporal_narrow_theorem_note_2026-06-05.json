@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_cluster_decomposition_temporal_narrow_theorem_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "253d3bddfb168d1609c52f597ff706841ce1f1f51e8a346122b4037ff5849c75",
+  "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_TEMPORAL_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:26.017903+00:00",
+      "audit_date": "2026-06-06T11:43:17.533991+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f1057d1d7f22e2f7ede0b83c653493f46eb0b6c0c57733831aa9273fe1165af1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-114122-a95f07bd06-axiom_first_cluster_decompos",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the scoped L1/L3/L4 statement, the chain closes from finite-dimensional local Cl(3) operator norms, finite-range Hermitian lattice interactions, Duhamel/path-count LR estimates, and the triangle inequality. The spatial connected-correlator clustering bridge is not used as a load-bearing step.",
+      "claim_scope": "The narrowed finite-block theorem proving L1 Lieb-Robinson control, L3 lattice light-cone suppression, and L4 finite Cl(3) local-term constants; spatial L2 cluster decomposition is explicitly out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T11:43:17.533991+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Combining the Duhamel expansion with the finite interaction-path bound gives the Lieb-Robinson estimate with finite velocity v_LR = 2 e J_* R_int D_int; L3 is its outside-light-cone corollary and L4 supplies finiteness of J_* via the repaired triangle norm bound.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the exact LR constant convention v_LR = 2 e J_* R_int D_int against the intended interaction-graph definition, but this does not affect the scoped finite-velocity closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The source note correctly removes the parent spatial L2 claim and limits the theorem to L1/L3/L4. The repaired Cl(3) bound uses the valid l1 triangle inequality, fixes the explicit I + sigma_z counterexample to the prior Euclidean bound, and gives finite J_* and v_LR under the finite-range local-rule hypothesis. The LR/light-cone part is a standard finite-lattice Duhamel/path-count derivation with no external numerical comparator or tuned input; the temporal transfer-matrix material is presented only as a conditional exhibit and not as closure of spatial clustering."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_cluster_decomposition_temporal_narrow_2026_06_05.py",
+  "title": "Axiom-First Cluster Decomposition, Narrowed to L1/L3/L4 (Lieb\u2013Robinson + Light Cone + Repaired Cl(3) Constant)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

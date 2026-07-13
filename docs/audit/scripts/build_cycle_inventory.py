@@ -13,6 +13,8 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 GRAPH_PATH = DATA_DIR / "citation_graph.json"
@@ -77,6 +79,7 @@ def cycle_edges(cycle: list[str]) -> list[dict[str, str]]:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     graph = load_json(GRAPH_PATH)
     ledger = load_json(LEDGER_PATH)
     graph_nodes = graph.get("nodes", {})

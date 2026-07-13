@@ -1,0 +1,137 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.051,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f34f5ef23a0a0eb812ed1771317baf49ac929c5afafcea6ad6de90b375a638f0",
+  "note_path": "docs/KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:29.980020+00:00",
+      "audit_date": "2026-06-21T08:24:33.215725+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple."
+        },
+        "dep_claim_type": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained"
+        },
+        "deps": [
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 13.18,
+        "runner_hash": "2d0ee93d16b72876b651dea3cb7852d5207e3bf72dc605197be6ebfec246a75f",
+        "transitive_descendants": 289
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-075307-895da9c9-koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusions follow directly from the explicit matrices C and Omega plus root-of-unity algebra; the retained cited authority is contextual for the d=3 carrier and not needed for the C1-C5 representation-theory proof. No physical readout, selector, numerical comparator, or unretained bridge is imported.",
+      "claim_scope": "The explicit clock-conjugation Z_d action on Herm_circ(d) gives character-k complex lines, real doublets for conjugate pairs, trivial/sign one-dimensional pieces, and the stated real multiplicity count.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-21T08:24:33.215725+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-06T12:03:20.091249+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-120217-40c458006e-koide_kappa_zd_action_circul",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the self-contained linear-algebra theorem defining rho(M)=Omega^{-1}MOmega on Herm_circ(d), proving the character-k decomposition, real doublet/sign/trivial decomposition, and the d=3 uniqueness of the (1,(1,),0) pattern among d=2..6.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T08:24:33.215725+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-075307-895da9c9-koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The explicit clock-conjugation Z_d action on Herm_circ(d) gives character-k complex lines, real doublets for conjugate pairs, trivial/sign one-dimensional pieces, and the stated real multiplicity count.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For each k, rho(C^k)=Omega^{-1} C^k Omega=omega^k C^k, so the C^k line carries character k and Hermiticity pairs k with d-k into real doublets.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the C[i,(i+1)] convention against the omega^k sign and the rotation-matrix column convention; no open dependency found.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 112,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 112
+      },
+      "verdict_rationale": "The load-bearing bridge is a direct algebraic matrix identity, not a definition substitution or symbol renaming. The runner source constructs C, Omega, rho, the Hermitian basis pieces, and the multiplicity table, then checks the actual matrix identities rather than printing constants or importing a contested premise. The proof and runner also correctly distinguish the nontrivial clock-conjugation action from trivial shift-conjugation. Residual risk is only convention-level, such as rechecking the chosen shift orientation and corresponding rotation-matrix sign."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py",
+  "title": "Koide kappa Z_d-Action Circulant Character Decomposition Narrow Theorem",
+  "transitive_descendants": 749,
+  "verdict_rationale": null
+}

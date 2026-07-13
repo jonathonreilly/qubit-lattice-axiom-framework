@@ -399,11 +399,17 @@ def _import(module_name: str):
     """Force a fresh import each test."""
     if module_name in sys.modules:
         del sys.modules[module_name]
+    if module_name != "ledger_io":
+        # Writer modules bind ledger_io at import time. Give each fresh
+        # module its own binding so fixture DATA redirects cannot leak into a
+        # later test (or, worse, leave a later writer pointed at real shards).
+        sys.modules.pop("ledger_io", None)
     return importlib.import_module(module_name)
 
 
 def _import_codex_audit_runner():
     """Import the repo-root codex audit runner without changing sys.path."""
+    sys.modules.pop("ledger_io", None)
     module_name = "codex_audit_runner_under_test"
     if module_name in sys.modules:
         del sys.modules[module_name]
@@ -559,6 +565,7 @@ class PublicationEffectiveStatusRenderTest(unittest.TestCase):
         m = _import("render_publication_effective_status")
         with tempfile.TemporaryDirectory() as tmp:
             pub = Path(tmp)
+            m.ledger_io.DATA = pub / "data"
             with mock.patch.object(m, "PUB_DIR", pub), mock.patch.object(
                 m, "TABLES", [("MISSING.md", "OUT.md", "scope")]
             ):
@@ -668,6 +675,14 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
     module.REPO_ROOT = tmp_root
     module.DATA_DIR = tmp_root / "docs" / "audit" / "data"
     module.LEDGER_PATH = module.DATA_DIR / "audit_ledger.json"
+    # Writers persist through the sharded ledger; point the module's OWN
+    # bound ledger_io instance at the fixture data dir so tests never touch
+    # the real repository shards. (_import force-fresh-imports, so a fresh
+    # ledger_io here would be a different instance than the one the module
+    # under test bound at its import.) Without shards present, ledger_io
+    # falls back to the fixture monolith.
+    if hasattr(module, "ledger_io"):
+        module.ledger_io.DATA = module.DATA_DIR
     if hasattr(module, "GRAPH_PATH"):
         module.GRAPH_PATH = module.DATA_DIR / "citation_graph.json"
     # audit_lint reads these at main() time; without redirecting them the lint
@@ -2714,12 +2729,18 @@ class SeedLedgerTest(unittest.TestCase):
             "audit_invocation_id": "b" * 32,
             "audit_invocation_history": ["a" * 32],
             "previous_audits": [],
+            "claim_type": "positive_theorem",
+            "claim_type_provenance": "author_hint_after_invalidation",
         }
 
         m.reset_unaudited_audit_fields(row)
 
         self.assertIsNone(row["audit_invocation_id"])
         self.assertEqual(row["audit_invocation_history"], ["a" * 32, "b" * 32])
+        self.assertEqual(row["claim_type"], "positive_theorem")
+        self.assertEqual(
+            row["claim_type_provenance"], "author_hint_after_invalidation"
+        )
 
     def test_unaudited_ambiguous_history_retains_unattributed_exact_provenance(self):
         m = _import("seed_audit_ledger")
@@ -4317,6 +4338,7 @@ class CheckStagedClaimTypingTest(unittest.TestCase):
     def _patch_paths(self, m) -> None:
         m.REPO_ROOT = self.tmp_root
         m.LEDGER_PATH = self.tmp_root / "docs" / "audit" / "data" / "audit_ledger.json"
+        m.ledger_io.DATA = m.LEDGER_PATH.parent
 
     def test_staged_defaulted_note_blocks(self):
         m = _import("check_staged_claim_typing")
@@ -8550,6 +8572,7 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         config.write_text(json.dumps({"lanes": lanes}), encoding="utf-8")
         ledger.write_text(json.dumps({"rows": rows}), encoding="utf-8")
         completed = mock.Mock(stdout=head + "\n")
+        m.ledger_io.DATA = self.data
         with mock.patch.object(m, "CONFIG", config), \
              mock.patch.object(m, "LEDGER", ledger), \
              mock.patch.object(m, "OUT", out), \
@@ -8726,7 +8749,10 @@ class AuditDataFilesCoverPipelineSurfacesTest(unittest.TestCase):
         def covered(path: str) -> bool:
             return any(
                 path == allowed or path.startswith(allowed + "/")
-                for allowed in runner.AUDIT_DATA_FILES
+                for allowed in (
+                    *runner.AUDIT_DATA_FILES,
+                    *runner.GENERATED_UNTRACKED_FILES,
+                )
             )
 
         uncovered = sorted(path for path in announced if not covered(path))
@@ -8735,6 +8761,21 @@ class AuditDataFilesCoverPipelineSurfacesTest(unittest.TestCase):
             "pipeline-generated surfaces missing from AUDIT_DATA_FILES "
             f"(apply gate will reject verdicts when they change): {uncovered}",
         )
+        for path in runner.GENERATED_UNTRACKED_FILES:
+            tracked = runner.git(
+                "ls-files", "--error-unmatch", path, check=False
+            )
+            ignored = runner.git("check-ignore", "-q", path, check=False)
+            self.assertNotEqual(
+                tracked.returncode,
+                0,
+                f"generated-untracked surface is still tracked: {path}",
+            )
+            self.assertEqual(
+                ignored.returncode,
+                0,
+                f"generated-untracked surface is not gitignored: {path}",
+            )
 
 
 class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
@@ -10410,6 +10451,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         m.REPO_ROOT = self.tmp_root
         m.DATA_DIR = self.tmp_root / "docs" / "audit" / "data"
         m.LEDGER_PATH = m.DATA_DIR / "audit_ledger.json"
+        m.ledger_io.DATA = m.DATA_DIR
         return m
 
     def test_restore_refuses_stale_axiom_premise_hash(self):
@@ -13565,6 +13607,188 @@ class BatchOrchestratorRetargetFlagTest(unittest.TestCase):
                 retarget=frozenset({"other_row"}),
             )
             self.assertEqual(targets, [])
+
+
+class LedgerIoTest(unittest.TestCase):
+    """Sharded-ledger IO invariants (2026-07-13 repo-size forward fix)."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.data = Path(self._tmp.name) / "docs" / "audit" / "data"
+        self.data.mkdir(parents=True)
+        self.m = _import("ledger_io")
+        self.m.DATA = self.data
+
+    def _ledger(self):
+        return {
+            "schema_version": 1,
+            "stats": {"n": 2},
+            "rows": {
+                "row_a": {"claim_id": "row_a", "audit_status": "unaudited"},
+                "row_b.with.dots": {"claim_id": "row_b.with.dots",
+                                    "audit_status": "audited_clean"},
+            },
+        }
+
+    def test_save_load_round_trip_and_minimal_change(self):
+        ledger = self._ledger()
+        summary = self.m.save_ledger(ledger)
+        self.assertEqual(sorted(summary["changed"]),
+                         ["row_a", "row_b.with.dots"])
+        self.assertTrue(summary["meta_changed"])
+        (self.data / "ledger" / "README.md").write_text("not a shard\n")
+        self.assertEqual(self.m.load_ledger(), ledger)
+        # Idempotent second save touches nothing.
+        summary = self.m.save_ledger(ledger)
+        self.assertEqual(summary, {"changed": [], "removed": [],
+                                   "meta_changed": False})
+        # One-row change touches exactly one shard.
+        ledger["rows"]["row_a"]["audit_status"] = "audited_conditional"
+        summary = self.m.save_ledger(ledger)
+        self.assertEqual(summary["changed"], ["row_a"])
+        # Row removal deletes its shard.
+        del ledger["rows"]["row_b.with.dots"]
+        summary = self.m.save_ledger(ledger)
+        self.assertEqual(summary["removed"], ["row_b.with.dots"])
+        self.assertFalse(
+            (self.data / "ledger" / "ro" / "row_b.with.dots.json").exists()
+        )
+        # Removing the last row in a fanout removes the empty directory.
+        del ledger["rows"]["row_a"]
+        self.m.save_ledger(ledger)
+        self.assertFalse((self.data / "ledger" / "ro").exists())
+        # Cache matches the canonical monolith serialization byte-for-byte.
+        cache = (self.data / "audit_ledger.json").read_text(encoding="utf-8")
+        self.assertEqual(cache, json.dumps(self.m.load_ledger(), indent=2,
+                                           sort_keys=True) + "\n")
+        # A failed atomic replacement leaves the previous shard complete.
+        ledger["rows"]["row_a"] = {
+            "claim_id": "row_a", "audit_status": "unaudited"
+        }
+        self.m.save_ledger(ledger)
+        shard = self.data / "ledger" / "ro" / "row_a.json"
+        before = shard.read_bytes()
+        ledger["rows"]["row_a"]["audit_status"] = "audited_failed"
+        with mock.patch.object(self.m.os, "replace", side_effect=OSError):
+            with self.assertRaises(OSError):
+                self.m.save_ledger(ledger)
+        self.assertEqual(shard.read_bytes(), before)
+        self.assertEqual(list(shard.parent.glob(".*.tmp")), [])
+
+    def test_ensure_cache_refuses_foreign_write_and_refreshes_stale(self):
+        ledger = self._ledger()
+        self.m.save_ledger(ledger)
+        cache = self.data / "audit_ledger.json"
+        # Foreign direct write to the cache is refused loudly.
+        blob = json.loads(cache.read_text())
+        blob["rows"]["row_a"]["audit_status"] = "audited_clean"
+        cache.write_text(json.dumps(blob, indent=2, sort_keys=True) + "\n")
+        with self.assertRaises(SystemExit):
+            self.m.ensure_cache()
+        self.assertIn("generated cache", self.m.verify() or "")
+        # Discarding the foreign cache lets materialization proceed from
+        # shards (the authoritative state).
+        cache.unlink()
+        self.assertTrue(self.m.ensure_cache())
+        self.assertIsNone(self.m.verify())
+        self.assertEqual(
+            self.m.load_ledger()["rows"]["row_a"]["audit_status"],
+            "unaudited",
+        )
+        # Direct shard edits (e.g. git pull) refresh the cache silently: the
+        # old cache still matches the old ownership manifest.
+        shard = self.data / "ledger" / "ro" / "row_a.json"
+        row = json.loads(shard.read_text())
+        row["audit_status"] = "audited_failed"
+        shard.write_text(json.dumps(row, indent=2, sort_keys=True) + "\n")
+        self.assertTrue(self.m.ensure_cache())
+        self.assertIn('"audited_failed"', cache.read_text())
+        # A divergent cache without a valid ownership manifest is untrusted,
+        # including before a missed writer's first materialization.
+        (self.data / "ledger_cache_manifest.json").unlink()
+        blob = json.loads(cache.read_text())
+        blob["rows"]["row_a"]["audit_status"] = "audited_clean"
+        cache.write_text(json.dumps(blob, indent=2, sort_keys=True) + "\n")
+        with self.assertRaises(SystemExit):
+            self.m.ensure_cache()
+        cache.unlink()
+        (self.data / "ledger_cache_manifest.json").unlink(missing_ok=True)
+        self.assertTrue(self.m.ensure_cache())
+        # Raw bytes are part of the cache contract: CRLF conversion is not
+        # allowed to compare equal to canonical LF serialization.
+        cache.write_bytes(cache.read_bytes().replace(b"\n", b"\r\n"))
+        with self.assertRaises(SystemExit):
+            self.m.ensure_cache()
+        cache.unlink()
+        (self.data / "ledger_cache_manifest.json").unlink(missing_ok=True)
+        self.m.ensure_cache()
+        stale = self.m.load_ledger()
+        other = _import("ledger_io")
+        other.DATA = self.data
+        other.ensure_cache()
+        concurrent = other.load_ledger()
+        concurrent["rows"]["row_b.with.dots"]["audit_status"] = "unaudited"
+        other.save_ledger(concurrent)
+        stale["rows"]["row_a"]["audit_status"] = "audited_conditional"
+        with self.assertRaisesRegex(SystemExit, "concurrent update"):
+            self.m.save_ledger(stale)
+        # A fresh module that read without first priming its cache version
+        # must fail closed rather than laundering a stale full-ledger view.
+        fresh = _import("ledger_io")
+        fresh.DATA = self.data
+        unprimed_stale = fresh.load_ledger()
+        concurrent = other.load_ledger()
+        concurrent["rows"]["row_b.with.dots"]["audit_status"] = "audited_clean"
+        other.save_ledger(concurrent)
+        unprimed_stale["rows"]["row_a"]["audit_status"] = "audited_failed"
+        with self.assertRaisesRegex(SystemExit, "requires ensure_cache"):
+            fresh.save_ledger(unprimed_stale)
+        self.assertEqual(
+            other.load_ledger()["rows"]["row_b.with.dots"]["audit_status"],
+            "audited_clean",
+        )
+
+    def test_shard_path_rejects_unsafe_ids(self):
+        for bad in ("", ".", "..", ".hidden", "..evil", "a/b", "a\\b"):
+            with self.assertRaises(ValueError):
+                self.m.shard_path(bad)
+        self.assertEqual(self.m.shard_path("A").parts[-2:], ("A", "A.json"))
+        self.assertEqual(
+            self.m.shard_path("Ab.C").parts[-2:], ("Ab", "Ab.C.json")
+        )
+        collision = {
+            "rows": {
+                "A": {"claim_id": "A"},
+                "a": {"claim_id": "a"},
+            }
+        }
+        with self.assertRaises(ValueError):
+            self.m.save_ledger(collision)
+        wrong = self.data / "ledger" / "zz" / "A.json"
+        wrong.parent.mkdir(parents=True)
+        wrong.write_text('{"claim_id": "A"}\n')
+        with self.assertRaises(ValueError):
+            self.m.load_ledger()
+        wrong.unlink()
+        mismatched = self.m.shard_path("A")
+        mismatched.parent.mkdir(parents=True, exist_ok=True)
+        mismatched.write_text('{"claim_id": "B"}\n')
+        with self.assertRaises(ValueError):
+            self.m.load_ledger()
+
+    def test_migrate_refuses_when_shards_exist(self):
+        self.m.save_ledger(self._ledger())
+        with self.assertRaises(SystemExit):
+            self.m.migrate()
+
+    def test_unsharded_fallback_reads_monolith(self):
+        (self.data / "audit_ledger.json").write_text(
+            json.dumps(self._ledger(), indent=2, sort_keys=True) + "\n"
+        )
+        self.assertFalse(self.m.sharded())
+        self.assertEqual(self.m.load_ledger()["rows"]["row_a"]["claim_id"],
+                         "row_a")
 
 
 if __name__ == "__main__":

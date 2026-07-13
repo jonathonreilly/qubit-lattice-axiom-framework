@@ -1,0 +1,217 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "957c798c46924664c953c02079e48d0e3e2a99a258f5670e1d94b7481e58f177",
+  "note_path": "docs/FLAVOR_OPERATOR_SPECTRAL_FUNCTIONALS_DO_NOT_FORCE_R_HALF_NO_GO_NOTE_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.474038+00:00",
+      "audit_date": "2026-06-05T22:48:15.419574+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "8d5cd0c89ceab8ec61f0c2f4ac11a048443c8a4a3cea2891d3f5b16142d3fb96",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-d4190ee4b6-flavor_operator_spectral_fun",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The eigenvalues are a+2b,a-b,a-b, giving Tr(H^2)=3a^2+6b^2 and Q=1/3+(2/3)r; the HS norms of I and J-I are 3 and 6, so two-channel equipartition gives r=1/2 only after choosing that folded channel split. Independent checks of the listed entropy, purity, relative-entropy, HS-metric, and positivity probes confirm they select the uniform three-eigenvalue endpoint, the three-mode HS point, or no interior point, not r=1/2.",
+      "claim_scope": "Within H=aI+b(J-I) on the symmetric C3-circulant family and the enumerated spectral/HS variational probes, r=1/2 is not selected without the extra two-sector {C,C^2} block fold.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T22:48:15.419574+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "On the specified C3-circulant family, the tested choice-free spectral/HS functionals extremize at r=0 or r=1, while r=1/2 appears only after folding {C,C^2} into one two-sector channel.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the tested-functional scope and do not promote this into an absolute no-go over all conceivable spectral functionals.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The runner source performs finite symbolic and matrix checks rather than importing the target value from another note or external comparator. The restricted packet's accepted axiom authority is used only as framework background and does not supply the block fold, which is exactly the residual isolated by the no-go. The clean verdict is scoped: it audits the enumerated operator-spectral/HS route only and does not rule out the chiral, non-tracial, dynamical, or owner-admitted block-count routes named as still open."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.393201+00:00",
+      "audit_date": "2026-07-02T05:33:54.636363+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.248,
+        "runner_hash": "8d5cd0c89ceab8ec61f0c2f4ac11a048443c8a4a3cea2891d3f5b16142d3fb96",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T053354Z-39b48d70-flavor_operator_spectral",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed identities and extrema follow by finite matrix algebra on the stated C3-circulant family: Tr H^2=3a^2+6b^2, Q=1/3+(2/3)r, the unfurled spectral objectives are extremized at the uniform endpoint, and the two-sector maximum at r=1/2 uses the explicit fold. Minimal axioms are only an accepted background premise and are not used to smuggle the block-fold choice.",
+      "claim_scope": "Audited the narrow no-go that the listed operator-spectral, Hilbert-Schmidt, entropy, purity, relative-entropy, metric, and transfer-positivity tests on H=aI+b(J-I) do not force r=1/2 without an inserted two-sector block fold.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T05:33:54.636363+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "In the tested C3-circulant family, the listed choice-free spectral/HS functionals select r=0 or r=1, while r=1/2 appears only after folding {C,C^2} into one two-sector channel.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck that downstream citations preserve the tested-functionals scope and do not cite this as excluding arbitrary engineered spectral objectives.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The runner source performs actual symbolic and finite-matrix checks rather than merely printing expected constants, and the independent algebra agrees with the source note's load-bearing formulas. The no-go discipline gate is adequately scoped: the note enumerates more than five attack routes, collapses the residual to the block-fold choice, names partial closure paths, and includes a steelman without broadening the conclusion beyond the tested variational route. The clean verdict applies only to the listed choice-free spectral/HS route, not to arbitrary engineered spectral objectives or future chiral/dynamical selectors."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.241809+00:00",
+      "audit_date": "2026-07-09T07:02:35.181471+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.5,
+        "runner_hash": "8d5cd0c89ceab8ec61f0c2f4ac11a048443c8a4a3cea2891d3f5b16142d3fb96",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal axiom surface supplies only the generic finite algebra/readout boundary; the no-go itself is a finite supplied-family calculation. The runner symbolically derives Q(r), exhausts the listed spectral/HS/positivity probes in the note's scope, and separately shows that the probes reaching r=1/2 require an inserted two-sector fold.",
+      "claim_scope": "No-go for forcing r=1/2 from the enumerated choice-free operator-spectral, Hilbert-Schmidt, Ad-invariant metric, and transfer-positivity functionals on the supplied C3-circulant generation-weight family; r=1/2 is only recovered after adding the two-sector block fold. Does not rule out chiral-sector, non-tracial-reference, finite-gap-dynamics, or explicit block-count/admission routes.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-09T07:02:35.181471+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "In the tested C3-circulant family, choice-free spectral functionals land at r=0 or r=1, while r=1/2 appears only after folding the two complex-conjugate off-identity modes into one real doublet channel.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if cited as a no-go against all possible r=1/2 selectors, or against chiral-sector, non-tracial-reference, finite-gap-dynamics, or explicit block-count/admission routes rather than only the enumerated choice-free spectral/HS/positivity route.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The load-bearing negative result is bounded and explicit: the listed choice-free spectral entropies, relative entropy, purity, canonical HS metric, Ad-invariant metric family, and transfer-positivity probe do not select r=1/2 on the supplied C3-circulant family. The runner computes the algebraic Q(r) relation and the extrema/metric facts directly, then shows r=1/2 appears only when the two off-identity modes are folded into a separate real doublet channel. The residual is not hidden: other routes such as a chiral-sector theorem, non-tracial reference state, dynamics, or an explicit block-count admission remain open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_operator_spectral_functionals_do_not_force_r_half_no_go_2026_06_02.py",
+  "title": "Flavor Operator-Spectral Functionals Do Not Force r=1/2 No-Go",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

@@ -1,0 +1,317 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_ward_identity_derivation_theorem",
+    "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
+    "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+    "native_gauge_closure_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e666bb1022cf47599bb773acc3b32d1e34c2a0e77bcc9717717f55693a7c138d",
+  "note_path": "docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:30:25.864306+00:00",
+      "audit_date": "2026-05-11T18:47:51.076132+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "native_gauge_closure_note": "Bounded native gauge-closure note: exact cubic Cl(3)/SU(2), retained graph-first SU(3) structural closure, and a selected-axis traceless abelian eigenvalue pattern only.",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "For positive integers N_iso and N_c, with H_unit explicitly defined as (1/sqrt(N_iso*N_c))*I on an orthonormal pair basis, the basis-state tree-level matrix element is 1/sqrt(N_iso*N_c) and contains no gauge-coupling parameter.",
+          "yt_ew_color_projection_theorem": "Audited only the bounded EW normalization family K_EW(kappa_EW)=1/(8/9+kappa_EW/9) at N_c=3, using retained F_adj=8/9 and an explicit free readout coefficient kappa_EW; kappa_EW=0 was not audited as derived."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "native_gauge_closure_note": "bounded_theorem",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "positive_theorem",
+          "yt_ew_color_projection_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "retained",
+          "yt_ew_color_projection_theorem": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "native_gauge_closure_note",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "87df628045a8e4b714816938b68f2f0b539af21256a21fabe36d02535f68c9ef",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner verifies the source-scope text, symbolic coefficient residual, canonical gate, off-surface counterexample, D12 Fierz input, and H_unit normalization checks. The note correctly stops at the open gate and does not claim to derive g_bare=1 or prove same-1PI equivalence.",
+      "claim_scope": "Open-gate coefficient-bookkeeping diagnostic for YT_WARD Step 3: retained inputs reduce the proposed same-1PI equality to C_A=C_B iff c_S*g_bare^2=2/N_iso, with canonical residual (g_bare^2-1)/6 at Q_L=(2,3), while the same-amputated-1PI Green's-function bridge remains unproved.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-11T18:47:51.076132+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:native_gauge_closure_note:retained_bounded->unaudited",
+      "load_bearing_step": "The OGE-projected coefficient C_A(g_bare)=c_S*g_bare^2/(2 N_c) and H_unit-projected coefficient C_B=1/(N_c N_iso) are not identical as symbolic functions; equating them gives the remaining gate c_S*g_bare^2=2/N_iso, which is g_bare^2=1 at Q_L=(2,3), c_S=+1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only if this row is cited as deriving g_bare=1, proving the Standard Model top-Yukawa observable, or closing same-1PI equivalence rather than identifying the remaining open gate.",
+      "open_dependency_paths": [
+        "same-1PI bridge between OGE contraction and H_unit decomposition remains unproved"
+      ],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The open-gate claim closes because the live runner returns 23 PASS and 0 FAIL for the algebra, scope guards, retained coefficient inputs, and H_unit normalization. The result is not a positive same-1PI theorem: it proves only that the two projected coefficients are unequal until the gate equation is imposed, so a Wick-level same-1PI bridge remains required. This is exactly the source boundary, so the appropriate retained status is open_gate."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:15.170308+00:00",
+      "archived_for_note_hash": "11698cd5f31242adf5ab65d7abe7ee88cb670d48d5c93e59757135f34dcdb6e7",
+      "audit_date": "2026-05-27T04:15:50.195139+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "For positive integers N_iso and N_c, with H_unit explicitly defined as (1/sqrt(N_iso*N_c))*I on an orthonormal pair basis, the basis-state tree-level matrix element is 1/sqrt(N_iso*N_c) and contains no gauge-coupling parameter.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "positive_theorem",
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "native_gauge_closure_note": "retained",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "retained",
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "native_gauge_closure_note",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "87df628045a8e4b714816938b68f2f0b539af21256a21fabe36d02535f68c9ef",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-locke-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic gate closes as an open-gate diagnostic: the retained inputs and runner support the residual, the gate equation, and the off-surface failure. The chain does not close, and does not claim to close, the same-1PI bridge or any downstream retained theorem.",
+      "claim_scope": "Coefficient-bookkeeping diagnostic only: from C_A=c_S*g_bare^2/(2N_c) and C_B=1/(N_c*N_iso), equality reduces to c_S*g_bare^2=2/N_iso; at N_iso=2,c_S=1 this is g_bare^2=1, but same-1PI equivalence, g_bare=1 selection, and top-Yukawa readout remain unproved.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-27T04:15:50.195139+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "C_A - C_B = (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso), so C_A=C_B iff c_S*g_bare^2=2/N_iso, while C_A=C_B is itself the missing same-1PI bridge.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if a later row tries to use this gate equation as a retained same-1PI theorem or as a derivation of g_bare=1/top-Yukawa without adding the missing Wick-level bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "runner_result": "runner_sha256=87df628045a8e4b714816938b68f2f0b539af21256a21fabe36d02535f68c9ef; PASS=23, FAIL=0",
+        "runner_status": "ok",
+        "scope_hygiene": 8,
+        "total_fail": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Clean only as open_gate. The note correctly blocks propagation by stating that equating Rep A and Rep B would assume the same-1PI equivalence under review. It avoids deriving g_bare=1, the Standard Model top-Yukawa observable, or same-1PI identity."
+    },
+    {
+      "archived_at": "2026-07-07T20:03:24.355578+00:00",
+      "archived_for_note_hash": "6c9a3e7331a444404814e112721d76c0e33009c0d244860eb6ae46c920777875",
+      "audit_date": "2026-06-18T08:09:01.966937+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "For positive integers N_iso and N_c, with H_unit explicitly defined as (1/sqrt(N_iso*N_c))*I on an orthonormal pair basis, the basis-state tree-level matrix element is 1/sqrt(N_iso*N_c) and contains no gauge-coupling parameter.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "positive_theorem",
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "native_gauge_closure_note": "retained",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "retained",
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "native_gauge_closure_note",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 6.322,
+        "runner_hash": "d61cf097cd3d149b192f6b5167fbae83c6daeb1a66e80bbbee0ad7c17922fdbf",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the scoped open-gate diagnostic, the algebra from the stated coefficients to the residual and canonical g_bare^2 = 1 surface closes. The Wick-level proof that Rep A and Rep B are the same amputated 1PI Green's function is correctly identified as missing and is not claimed.",
+      "claim_scope": "Coefficient-bookkeeping diagnostic showing that the retained Rep A and Rep B scalar-singlet coefficients reduce to the gate equation, with the same-1PI bridge explicitly left open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T08:09:01.966937+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The residual C_A - C_B = (N_iso * c_S * g_bare^2 - 2) / (2 N_c N_iso), so C_A = C_B iff c_S * g_bare^2 = 2 / N_iso.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if a downstream row cites this gate equation as a retained same-1PI theorem, g_bare = 1 derivation, or top-Yukawa derivation without adding the Wick-level bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 34,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "The load-bearing step is an exact symbolic simplification over the stated coefficient inputs, not a numerical fit or comparator check. The runner verifies the residual, canonical reduction, off-surface counterexample, SU(3) Fierz identity, and H_unit normalization, while not asserting the contested same-1PI equality. Because the note is scoped as an open-gate diagnostic and forbids downstream promotion to a same-1PI or top-Yukawa theorem, the audited conclusion follows within its boundary."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:35.004024+00:00",
+      "audit_date": "2026-07-07T21:30:00.972705+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "For positive integers N_iso and N_c, with H_unit explicitly defined as (1/sqrt(N_iso*N_c))*I on an orthonormal pair basis, the basis-state tree-level matrix element is 1/sqrt(N_iso*N_c) and contains no gauge-coupling parameter.",
+          "yt_ward_identity_derivation_theorem": "Exact point-split U(1)_B and U(2)_iso Ward identities for the declared staggered Q_L action surface, plus the local H_unit scalar-singlet matrix element y_t_bare = g_bare/sqrt(6); no SM Yukawa readout, tadpole transport, RG, precision, or physical matching claim."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "positive_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "native_gauge_closure_note": "retained",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "retained",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "native_gauge_closure_note",
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": "1c66613ba963fbaf095cf368aa25dc01c77694c4b02b856f056fc2c7c251f517",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt5.5-xhigh-2026-07-07-reaudit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The direct dependencies are now retained-grade or retained-bounded, and the target note does not ask the audit lane to derive SAME-1PI. At the stated bounded conditional scope, the displayed coefficient formulas reduce exactly to the gate equation under the antecedent and to the nonzero residual off it.",
+      "claim_scope": "Bounded coefficient-bookkeeping theorem: if SAME-1PI is supplied as an antecedent, C_A=C_B gives c_S*g_bare^2=2/N_iso and hence g_bare^2=1 on the N_iso=2, c_S=+1 surface; without that antecedent, the exact residual and g_bare=2 counterexample show no symbolic equality.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T21:30:00.972705+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Under SAME-1PI, equating C_A = c_S*g_bare^2/(2*N_c) and C_B = 1/(N_c*N_iso) gives c_S*g_bare^2 = 2/N_iso; without SAME-1PI the residual remains (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if downstream rows cite SAME-1PI, the gate equation, or g_bare^2=1 as established without a new Wick-level same-1PI bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 70,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 74
+      },
+      "verdict_rationale": "The source note is clean at its narrowed bounded scope: it treats SAME-1PI as a named supplied antecedent, not a derived bridge or accepted premise, and it explicitly preserves the no-equality residual branch without that antecedent. The runner checks the note boundary, coefficient formulas, displayed residuals, SU(3) Fierz coefficient, and H_unit normalization; an independent exact projection check reproduced the -1/6 singlet coefficient, residual (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso), canonical residual (g_bare^2 - 1)/6, and g_bare=2 residual 1/2. Residual risk is downstream citation widening: the gate equation and g_bare^2=1 surface must remain cited only under SAME-1PI."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/yt_ward_step3_same_1pi_construction_2026_05_10.py",
+  "title": "YT_WARD Step 3 Same-1PI Conditional Coefficient Theorem",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

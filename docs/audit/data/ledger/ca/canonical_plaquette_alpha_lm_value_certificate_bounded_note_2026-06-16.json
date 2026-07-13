@@ -1,0 +1,115 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "plaquette_self_consistency_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.273,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a6515b1309ea6a3dd26dd5c07638945708ae538053e510daafbf40cd1adb642c",
+  "note_path": "docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-12T17:13:28.163976+00:00",
+      "audit_date": "2026-06-18T02:42:04.612899+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 10.97,
+        "runner_hash": "ea0dfda2dbff8cb672f6da5afb147a8640c3b00cc463d8e64c6c37ee703371da",
+        "transitive_descendants": 708
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated arithmetic scope, the chain closes by direct substitution and numerical identity checks from P = 0.5934 and 1/(4 pi). The derivation or physical certification of P is outside this row and remains owned by the parent plaquette surface.",
+      "claim_scope": "Bounded arithmetic certificate for the canonical plaquette-derived alpha_LM and alpha_s(v) constants, conditional only on using the parent plaquette value P = 0.5934 as scoped input; no derivation of P or physical coupling closure is audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-18T02:42:04.612899+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "plaquette_self_consistency_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:plaquette_self_consistency_note:retained_bounded->unaudited",
+      "load_bearing_step": "Taking P = 0.5934 as the parent input, define u_0 = P^(1/4), alpha_bare = 1/(4 pi), alpha_LM = alpha_bare/u_0, and alpha_s(v) = alpha_bare/u_0^2, then check the displayed identities.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that the inferred parent claim id for docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md matches the ledger row; the arithmetic verdict itself is local.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 17,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The runner and helper import or hard-code the parent input P = 0.5934, then compute the displayed quantities by elementary arithmetic. The independent check confirms the formulas and printed values within the stated tolerances. There are no external comparator checks and no first-principles beta=6 plaquette derivation here, so the result is an algebraic decoration of a single retained-bounded parent rather than an independent physical closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_canonical_plaquette_alpha_lm_value_certificate_2026_06_16.py",
+  "title": "Canonical Plaquette Alpha_LM Value Certificate: Bounded Arithmetic Note",
+  "transitive_descendants": 874,
+  "verdict_rationale": null
+}

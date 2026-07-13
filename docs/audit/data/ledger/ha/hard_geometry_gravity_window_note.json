@@ -1,0 +1,247 @@
+{
+  "audit_date": "2026-05-27T03:33:22.641799+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 1.5,
+    "runner_hash": "7022d984772d5a1b4b0ced61728d809bce978877145b2864c4367efe596bc2dc",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The registered runner constructs the central-band and generated-asymmetry graph windows, computes linear and layer-normalized propagation, Born controls, purity, and gravity metrics, filters Born-safe rows, and selects the row with maximal layer-normalized gravity mean. The source note has narrowed the claim to exactly that finite primary-runner maximum and explicitly excludes mass-response ranking, carrier theorem, universal law, and asymptotic promotion.",
+  "claim_id": "hard_geometry_gravity_window_note",
+  "claim_scope": "Bounded primary-runner direct-gravity window only: in the cached hard_geometry_gravity_window.py sweep over N=60/80/100, central y-cuts, asymmetry thresholds, field scales, and six seeds, the largest Born-safe layer-normalized gravity mean is the generated-asymmetry row family=asym, threshold=0.05, scale=1.0, N=100, with the printed finite-window metrics; not a mass-response theorem, universal hard-geometry law, or asymptotic claim.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-05-27T03:33:22.641799+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/asymmetry_persistence_joint_card.py",
+    "scripts/asymmetry_persistence_pilot.py",
+    "scripts/central_band_dense_joint_card.py",
+    "scripts/central_band_layernorm_combo.py",
+    "scripts/combined_gravity_scaling.py",
+    "scripts/gap_topological_asymmetry.py",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py",
+    "scripts/generative_causal_dag_interference.py",
+    "scripts/stochastic_collapse_born_calibration.py",
+    "scripts/topology_families.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": "In the cached primary-runner sweep, the strongest Born-safe layer-normalized direct gravity pocket is family=asym, threshold=0.05, scale=1.0, N=100, with grav_ln=+2.297 +/- 0.486, grav_lin=+2.480, pur_min=0.937, born_max=6.66e-16, and ok=6.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "meta",
+  "max_descendant_status_rank": 25,
+  "note_hash": "d9ebe10929687e3d7ed6b157d33dcc9834f0da8b2d5feac53ec4de8976de5595",
+  "note_path": "docs/HARD_GEOMETRY_GRAVITY_WINDOW_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-audit if the row is expanded beyond the primary-runner finite maximum into mass-response comparisons, physical carrier closure, or an asymptotic hard-geometry law.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.235845+00:00",
+      "audit_date": "2026-04-30T19:30:59.431639+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The registered runner did not complete inside the 30-second leaf audit budget, so current executable closure is not established.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:asymmetry_persistence_mass_window_note,asymmetry_persistence_pilot_note,central_band_dense_joint_note",
+      "load_bearing_step": "This note compares the two retained hard-geometry families under the same",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the primary runner timed out during the restricted leaf audit. Why this blocks: the audit cannot verify the load-bearing computation or replay surface from the current registered runner. Repair target: provide a frozen log or a faster/sliced runner that completes under the audit budget and checks the load-bearing step. Claim boundary until fixed: safe to cite as a bounded note whose executable closure is pending."
+    },
+    {
+      "archived_at": "2026-05-25T15:52:04.256778+00:00",
+      "archived_for_note_hash": "ad72a0e6069d0ef9fc4111ce10c037d4a8e65fc1b7a7ee48fb3f87f18d4b86be",
+      "audit_date": "2026-05-24T17:42:16.592877+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "asymmetry_persistence_mass_window_note": "Audited the bounded N=100 dense generated-family mass-response window for thresholds 0.10 and 0.20 under the layer-normalized propagator, with M in {1,2,3,5,8,12} and fits over {2,3,5,8}.",
+          "asymmetry_persistence_pilot_note": "Audited only the sparse npl=30, xyz_range=12.0, connect_radius=4.0, 16-seed primary-runner results for N=40, N=60, and sparse N=80 failure using the included gap_topological_asymmetry readout source.",
+          "central_band_dense_joint_note": "Audited the fixed-parameter runner-backed claim for N=40 and N=60 dense central-band graphs with 4 seeds, npl=60, yz_range=12.0, connect_radius=3.0, y_cut=2.0, and 8 collapse realizations, limited to the printed mean\u00b1SE rows.",
+          "central_band_mass_window_note": "Bounded runner-backed comparison of plain versus central-band-pruned gravity delta mass-window power-law fits at N = 60, 80, 100 with 16 matched seeds and fit window M in {2,3,5,8}."
+        },
+        "dep_claim_type": {
+          "asymmetry_persistence_mass_window_note": "bounded_theorem",
+          "asymmetry_persistence_pilot_note": "bounded_theorem",
+          "central_band_dense_joint_note": "bounded_theorem",
+          "central_band_mass_window_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "asymmetry_persistence_mass_window_note": "retained_bounded",
+          "asymmetry_persistence_pilot_note": "retained_bounded",
+          "central_band_dense_joint_note": "retained_bounded",
+          "central_band_mass_window_note": "retained_bounded"
+        },
+        "deps": [
+          "asymmetry_persistence_mass_window_note",
+          "asymmetry_persistence_pilot_note",
+          "central_band_dense_joint_note",
+          "central_band_mass_window_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "7022d984772d5a1b4b0ced61728d809bce978877145b2864c4367efe596bc2dc",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T174030Z-1450a5d0-hard_geometry_gravity_wi-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The direct Born-safe gravity-window part is supported by the supplied runner, but the mass-response comparison does not close. The source note's central-band mass fit quote is contradicted by its cited central-band mass authority, which reports the N=100 pruned LN row as R^2 = 0.994 rather than R^2 = 0.828.",
+      "claim_scope": "Audited the bounded comparison between dense central-band and generated asymmetry-persistence hard-geometry lanes using the supplied cited notes, runner output, and runner/helper source.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T17:42:16.592877+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The strongest gravity pocket worth carrying forward is the generated-asymmetry family at dense N = 100 because it is Born-clean, has the stronger direct gravity signal, and gives the cleaner mass-response fit.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit after syncing the central-band mass-window quote and either narrowing the conclusion to direct gravity only or closing the generated mass-scaling dependencies in-packet.",
+      "open_dependency_paths": [
+        "docs/ASYMMETRY_PERSISTENCE_PILOT_NOTE.md",
+        "docs/ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 3,
+        "C": 1,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The primary runner genuinely computes a Born-safe generated-asymmetry LN gravity pocket at dense N=100, so the direct gravity portion has in-packet support. However, the conclusion also relies on the generated side having the cleaner mass-response fit, and that is not supported by the cited central-band mass note. The cited authority reports central-band pruned LN at N=100 with delta ~= 0.2207 * M^0.638 and R^2 = 0.994, which is cleaner by R^2 than the generated threshold-0.10 LN fit at R^2 = 0.970. The chain therefore fails on its own cited inputs."
+    },
+    {
+      "archived_at": "2026-05-26T10:41:58.895483+00:00",
+      "archived_for_note_hash": "ece5264d847d7614f924a0bf6d102bf3e91a07df9c03c0fa848fbfd8d6c13fdf",
+      "audit_date": "2026-05-25T19:54:25.096899+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "asymmetry_persistence_mass_window_note": "Audited the bounded N=100 dense generated-family mass-response window for thresholds 0.10 and 0.20 under the layer-normalized propagator, with M in {1,2,3,5,8,12} and fits over {2,3,5,8}.",
+          "asymmetry_persistence_pilot_note": "Audited only the sparse npl=30, xyz_range=12.0, connect_radius=4.0, 16-seed primary-runner results for N=40, N=60, and sparse N=80 failure using the included gap_topological_asymmetry readout source.",
+          "central_band_dense_joint_note": "Audited the fixed-parameter runner-backed claim for N=40 and N=60 dense central-band graphs with 4 seeds, npl=60, yz_range=12.0, connect_radius=3.0, y_cut=2.0, and 8 collapse realizations, limited to the printed mean\u00b1SE rows.",
+          "central_band_mass_window_note": "Bounded runner-backed comparison of plain versus central-band-pruned gravity delta mass-window power-law fits at N = 60, 80, 100 with 16 matched seeds and fit window M in {2,3,5,8}."
+        },
+        "dep_claim_type": {
+          "asymmetry_persistence_mass_window_note": "bounded_theorem",
+          "asymmetry_persistence_pilot_note": "bounded_theorem",
+          "central_band_dense_joint_note": "bounded_theorem",
+          "central_band_mass_window_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "asymmetry_persistence_mass_window_note": "retained_bounded",
+          "asymmetry_persistence_pilot_note": "retained_bounded",
+          "central_band_dense_joint_note": "retained_bounded",
+          "central_band_mass_window_note": "retained_bounded"
+        },
+        "deps": [
+          "asymmetry_persistence_mass_window_note",
+          "asymmetry_persistence_pilot_note",
+          "central_band_dense_joint_note",
+          "central_band_mass_window_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "7022d984772d5a1b4b0ced61728d809bce978877145b2864c4367efe596bc2dc",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T195106Z-91f6df40-hard_geometry_gravity_wi-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner and included helpers do compute a Born-safe direct-gravity sweep and support a generated-asymmetry N=100 maximum. The full note also leans on generated dense/pur_cl and mass-window summaries whose cited notes explicitly describe class-B admitted-context or sibling-runner dependencies not closed inside this restricted packet.",
+      "claim_scope": "Bounded comparison of the supplied central-band and generated-asymmetry hard-geometry gravity windows under the stated Born-safe LN sweep, plus cited retained-bounded mass-window context.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:54:25.096899+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The strongest gravity pocket worth carrying forward is the generated-asymmetry family at dense N = 100.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite/register the asymmetry dense joint-card and mass-scaling runner/cache evidence directly for this note, or narrow the claim to the primary hard_geometry_gravity_window.py direct-gravity maximum only.",
+      "open_dependency_paths": [
+        "docs/ASYMMETRY_PERSISTENCE_PILOT_NOTE.md",
+        "docs/ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The supplied primary runner is not print-only: it builds the graph families, propagates amplitudes, computes gravity, purity, and corrected Born metrics, and its stdout supports the bounded direct-gravity comparison. However, the source note's broader rationale cites asymmetry-persistence dense and mass-window claims whose own authority text still names admitted-context imports, sibling runner registration, or out-of-row artifacts. Since those bridges are part of the presented support for the full comparison, the restricted chain is conditional rather than clean."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "runner_result": "hard_geometry_gravity_window.py cache exit_code=0, status=ok, sha256=7022d984772d5a1b4b0ced61728d809bce978877145b2864c4367efe596bc2dc; best Born-safe LN pocket is family=asym, param=0.05, scale=1.0, grav_ln=+2.297\u00b10.486, grav_lin=+2.480, pur_min=0.937, born_max=6.66e-16, ok=6.",
+    "runner_status": "ok",
+    "total_fail": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/hard_geometry_gravity_window.py",
+  "title": "Hard-Geometry Direct Gravity Window Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The bounded claim closes because the source note's load-bearing best-pocket sentence matches the current SHA-pinned runner cache and stays within the primary-runner finite-window scope. The runner and helper sources compute the graph families, propagation, Born metric, purity, and gravity values from declared inputs rather than printing the target row or importing it from the note. Residual boundary: downstream use must not cite this as a physical hard-geometry carrier theorem, mass-response ranking, or asymptotic gravity law."
+}

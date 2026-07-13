@@ -1,0 +1,258 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+    "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
+    "free_dirac_poincare_representation_bounded_note_2026-05-30",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4f9525311a3adbb220c0cf63d585b5511af912e7c3ad450f649b13e40a9fd94d",
+  "note_path": "docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T08:57:49.486326+00:00",
+      "archived_for_note_hash": "eb971e9be3cbca17d508c5e06b38d8ee5818544139f9666e74a540da9aaff588",
+      "audit_date": "2026-06-08T20:35:06.693888+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance.",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "Bounded free one-particle Wigner action on the supplied continuum positive-energy mass-shell carrier is a strongly continuous unitary Poincare representation, with Stone generators for one-parameter subgroups.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "bounded_theorem",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "retained_bounded",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "41cfb4e7fa5620c9596ab9de27f783ea7a628fa44aac43a2025d56ac9bc51dbe",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-203341-8b08c25c28-free_dirac_poincare_stone_di",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet verifies the orbital boost derivative but does not derive the derivative of the Wigner SU(2) cocycle for boosts, i.e. the claimed bounded momentum-dependent spin term with correct sign and factor. Boundedness plus Kato-Rellich establishes essential self-adjointness once the differential operator is identified, but it does not identify the Stone boost generator's spin part.",
+      "claim_scope": "Free massive spin-1/2 one-particle Wigner representation on the supplied continuum positive-mass shell, with D = C_c^infty(H_m^+; C^2), auditing Stone-generator/differential-generator coincidence on that core.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T20:35:06.693888+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Dense U(t)-invariant D with d/dt U(t)psi|0 = -i A_diff psi implies D is a common core for the Stone generator and A_Stone = closure(A_diff|D).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a self-contained derivation that d/dt D(W(Lambda_x(t), Lambda_x(-t)p))|0 equals the claimed bounded Wigner boost spin term, with sign/factor conventions, and wire it into the common-core proof.",
+      "open_dependency_paths": [
+        "docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The runner contains genuine algebraic and symbolic checks for mass-shell measure invariance, the rotation z-generator, the orbital boost derivative, selected commutators, the Casimir, and rapidity/full-line self-adjointness proxies. However, several core-lemma premises are asserted as True, and the load-bearing full boost coincidence omits the Wigner cocycle derivative that would produce the claimed bounded spin multiplication term. The cited strong-continuity bridge supplies existence of Stone generators, while the representation note explicitly does not close the full momentum-dependent spin-tensored boost domain theorem. The restricted packet therefore supports a conditional bridge, not the stated full ten-generator coincidence theorem."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.476184+00:00",
+      "audit_date": "2026-06-09T13:12:49.646677+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance.",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "Bounded free one-particle Wigner action on the supplied continuum positive-energy mass-shell carrier is a strongly continuous unitary Poincare representation, with Stone generators for one-parameter subgroups.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "bounded_theorem",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "retained_bounded",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "9972fab35d76d93640ecaf176fc783eec0e9b0723f4a8c4258c22a739d8f9bb4",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-130945-a3b2bfef55-free_dirac_poincare_stone_di",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained-bounded upstream packets supply the explicit Wigner action, strong continuity, and differential representation data. Independent checks of the measure invariance, derivative signs for rotations/boosts, compact-support invariance, rapidity full-line boost reduction, and bounded spin multiplier leave the Reed-Simon core lemma and Kato-Rellich step applicable on the stated bounded scope.",
+      "claim_scope": "Free massive spin-1/2 one-particle Wigner representation on the supplied continuum positive-mass mass-shell carrier; Stone generators coincide with the displayed differential Poincare generators on C_c^inf(H_m^+;C^2).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T13:12:49.646677+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "A dense U(t)-invariant subspace contained in the Stone-generator domain is a core, so agreement of the Stone and differential generators on D=C_c^inf(H_m^+;C^2) implies equality of the self-adjoint closures.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only convention bookkeeping for the translation phase versus the stated Stone sign convention; no open dependency found in the bounded carrier scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The load-bearing step is standard functional-analytic closure over retained-grade bounded inputs, not a definition, renaming, tuned numerical match, or external comparator. The runner mostly checks algebraic identities and finite numerical sanity tests; several final theorem-premise lines are asserted rather than computed, so stdout alone is not the basis for the verdict. The restricted note plus cited retained-bounded authorities nevertheless close the common-core coincidence theorem within the explicitly supplied free one-particle carrier scope."
+    },
+    {
+      "archived_at": "2026-07-10T17:16:30.405300+00:00",
+      "audit_date": "2026-07-10T04:09:08.494826+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance.",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "Bounded free one-particle Wigner action on the supplied continuum positive-energy mass-shell carrier is a strongly continuous unitary Poincare representation, with Stone generators for one-parameter subgroups.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "bounded_theorem",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "retained_bounded",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9972fab35d76d93640ecaf176fc783eec0e9b0723f4a8c4258c22a739d8f9bb4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00061-free_dirac_poincare_stone_di",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained-bounded authorities supply the strongly continuous unitary representation and the differential-generator formulas. The explicit infinitesimal agreement, density, smooth compact-support invariance, and invariant-domain core theorem then identify every Stone generator with the closure of its differential restriction.",
+      "claim_scope": "The supplied m>0, spin-1/2 continuum one-particle Wigner representation on L2(H_m^+,d3p/(2E);C2), with C_c^infinity(H_m^+;C2) as a common core for its ten Stone and differential Poincare generators.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:09:08.494826+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30:retained_bounded->unaudited",
+      "load_bearing_step": "Because D is dense, U(t)-invariant, contained in each Stone-generator domain, and the Stone and differential generators agree on D, the invariant-domain core theorem makes D a common core and yields A_Stone = closure(A_diff restricted to D).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the all-ten extension, the exact Wigner-spin derivative, and the Stone-sign convention because the runner samples the spin identity numerically and hard-codes B3 and F1-F5.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "All load-bearing upstream authorities are retained-grade, and the result is a bounded algebraic and functional-analytic closure on the explicitly supplied continuum carrier. The exact action formulas support the derivative and invariance premises, after which the cited core theorem gives essential self-adjointness and coincidence. Several runner lines, including B3 and F1-F5, are hard-coded assertions rather than executable tests, but the source note independently states the corresponding standard arguments, so this runner weakness does not leave an open scientific premise."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py",
+  "title": "Free Dirac Poincar\u00e9: Stone Generators Coincide with the Differential Generators on a Common Core",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

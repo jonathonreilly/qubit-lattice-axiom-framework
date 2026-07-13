@@ -1,0 +1,107 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "area_law_primitive_parity_gate_carrier_theorem_note_2026-04-25",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "area_law_primitive_car_edge_identification_theorem_note_2026-04-25",
+    "area_law_quarter_broader_no_go_note_2026-04-25",
+    "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25",
+    "planck_boundary_density_extension_theorem_note_2026-04-24",
+    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
+  ],
+  "direct_in_degree": 11,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.709,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8c44de1a29624d3e62e3b19bcbb1fea7c3542781c2987cc93e0e47547bc3f75f",
+  "note_path": "docs/AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-10T13:05:00.492932+00:00",
+      "archived_for_note_hash": "24e078ee6130cbe7d1030d6af91e818d0913e7f188a5caff10dcfebe3b21bf82",
+      "audit_date": "2026-05-05T23:08:20.539214+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "area_law_primitive_car_edge_identification_theorem_note_2026-04-25": "audited_conditional"
+        },
+        "deps": [
+          "area_law_primitive_car_edge_identification_theorem_note_2026-04-25"
+        ],
+        "load_bearing_score": 12.778,
+        "runner_hash": "e15939581f2ba67de0db9f8feaa8e13210d2260338c77fd01b23f53e56e65a24",
+        "transitive_descendants": 438
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-area_law_primitive_parit-021",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The crossing-count arithmetic closes after the carrier and gate are assumed. The restricted packet does not close the missing identification of P_A H_cell with the two-orbital CAR edge carrier and self-dual tangent gate from retained primitive semantics.",
+      "claim_scope": "Audited the conditional parity-gated two-orbital Widom carrier calculation giving c_Widom = 3/12 = 1/4, not an unconditional derivation of the carrier from primitive Cl(3)/Z^3 semantics.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:08:20.539214+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The rank-four primitive boundary block must be accepted as the two-orbital Gaussian edge carrier whose second orbital is activated by the primitive low-transverse-Laplacian sheet.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "dependency_not_retained: obtain a retained-grade derivation that primitive Cl(3)/Z^3 boundary semantics force the rank-four block to be the two-mode CAR carrier with the self-dual transverse Laplacian gate.",
+      "open_dependency_paths": [
+        "docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 34,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "The source note explicitly states the load-bearing carrier identification as a premise, and the cited authority is marked unaudited and support/conditional. The runner verifies the algebra, finite-grid half-zone counts, and finite-cylinder consistency for the assumed model, but it also hard-codes the carrier premise and does not derive it from primitive Cl(3)/Z^3 data. Therefore the coefficient is a valid conditional carrier calculation, not a closed retained-grade theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_area_law_primitive_parity_gate_carrier.py",
+  "title": "Area-Law Primitive Parity-Gate Carrier Theorem Note",
+  "transitive_descendants": 73,
+  "verdict_rationale": null
+}

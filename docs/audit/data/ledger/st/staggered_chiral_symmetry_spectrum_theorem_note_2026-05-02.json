@@ -1,0 +1,153 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cpt_exact_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.974,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e4ed69aa8307d5177b4c641c4cca1f8be94d5ed118d61ebbb832a320800e7392",
+  "note_path": "docs/STAGGERED_CHIRAL_SYMMETRY_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:35:38.962839+00:00",
+      "audit_date": "2026-05-03T00:11:46.732657+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "cpt_exact_note": "retained"
+        },
+        "deps": [
+          "cpt_exact_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-Faraday-019deb2c-b562-7650-ae6a-e3eabf505239",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained authority supplies the exact anticommutation relation and finite even-periodic lattice setting; finite-dimensional spectral theory then gives the stated pairing, multiplicity equality, trace cancellation, and zero-mode invariance.",
+      "claim_scope": "For the finite even-periodic staggered Cl(3) free Hamiltonian H_phys = iD with retained chiral anticommutation {C,H_phys}=0, the spectrum is symmetric as a multiset, trace vanishes, sublattices balance, and zero modes are C-invariant.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T00:11:46.732657+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->retained_pending_chain",
+      "load_bearing_step": "Given the retained identity C H_phys C = -H_phys with C unitary involutive, applying C to any H_phys eigenstate maps eigenvalue E to -E and preserves eigenspace multiplicity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The theorem is an exact finite-dimensional algebraic consequence of the retained chiral anticommutation identity and does not require hidden physical assumptions. The proof correctly handles nonzero eigenspaces, zero modes, trace cancellation, and even-L sublattice balance. The runner independently verifies the construction, anticommutation, spectral symmetry, multiplicities, eigenstate pairing, trace, and sublattice counts on L=4 as a sanity check, while the proof itself is general over the stated finite lattice."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.029890+00:00",
+      "audit_date": "2026-05-22T03:11:37.696660+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained"
+        },
+        "deps": [
+          "cpt_exact_note"
+        ],
+        "load_bearing_score": 11.45,
+        "runner_hash": "309c29f8dcd2f2d8df75c5c9daad2f69c2ea70c7ffbe6f659e634d051860ea93",
+        "transitive_descendants": 988
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260522-030935-7e12d739-staggered_chiral_symmetr-003",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows algebraically from the retained cited identity C H_phys C = -H_phys plus finite-dimensional Hermitian spectral theory. No additional physics bridge or external input is needed for the audited finite-lattice spectral statement.",
+      "claim_scope": "Finite even periodic staggered Cl(3) Hamiltonian with retained {C,H_phys}=0 has \u00b1 spectral pairing, multiset symmetry \u03c3(H_phys)=-\u03c3(H_phys), vanishing trace, balanced sublattice split, and C-invariant zero eigenspace.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T03:11:37.696660+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cpt_exact_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->unaudited",
+      "load_bearing_step": "Using C H_phys C = -H_phys, H_phys(C|E\u27e9) = -C H_phys|E\u27e9 = -E(C|E\u27e9), so C maps each E-eigenstate to a -E-eigenstate.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that docs/CPT_EXACT_NOTE.md remains retained for the finite-lattice identity C H C = -H on even periodic lattices.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The proof is a standard algebraic corollary of the single upstream retained CPT/chiral anticommutation claim. The runner reconstructs the finite lattice operator and checks Hermiticity, anticommutation, spectral pairing, trace cancellation, and sublattice balance, but it performs no external comparator check and does not supply an independent first-principles result beyond the upstream identity. Under the decoration tie-breaker, a zero-D algebraic closure reducing to one parent claim is audited_decoration rather than audited_clean."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/staggered_chiral_symmetry_check.py",
+  "title": "Staggered Cl(3) Hamiltonian Has Chiral-Symmetric Spectrum: \u03c3(H_phys) = \u2212\u03c3(H_phys)",
+  "transitive_descendants": 710,
+  "verdict_rationale": null
+}

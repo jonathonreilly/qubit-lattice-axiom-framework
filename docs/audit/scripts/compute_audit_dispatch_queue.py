@@ -51,6 +51,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 DATA_DIR = AUDIT_DIR / "data"
@@ -445,6 +447,7 @@ def build_output(rows: dict[str, dict]) -> dict:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         raise SystemExit("audit_ledger.json missing")
     rows = load_json(LEDGER_PATH).get("rows", {})

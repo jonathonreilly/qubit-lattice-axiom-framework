@@ -1,0 +1,179 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "schur_covariance_inheritance_narrow_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem (proposed; audit-lane to ratify)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "site_phase_cube_shift_intertwiner_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.544,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1e15c15134f946624158e1c76e4142fd3c9e47e8482a0388f20af7651dd9feed",
+  "note_path": "docs/SCHUR_COVARIANCE_INHERITANCE_NARROW_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-10T14:40:27.627101+00:00",
+      "audit_date": "2026-05-02T23:47:24.939716+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "site_phase_cube_shift_intertwiner_note": "retained"
+        },
+        "deps": [
+          "site_phase_cube_shift_intertwiner_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-Popper-019deb16-4f33-7a70-8cb3-3d96e5f0ae89",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof is an algebraic consequence of the stated block covariance relations, unitarity, and invertibility of D. The only cited authority is retained-grade and functions as framework anchoring rather than a needed mathematical premise for the general lemma.",
+      "claim_scope": "Pure finite-dimensional linear-algebra theorem: for a block-diagonal unitary action and covariant Hermitian block operator with invertible D block, the Schur complement onto V_1 inherits U_1-covariance; no physical applicability claim is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T23:47:24.939716+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:leaf->critical",
+      "load_bearing_step": "Expanding the block-diagonal covariance equation U M U\u2020 = M gives U_1 A U_1\u2020 = A, U_1 B U_W\u2020 = B, and U_W D U_W\u2020 = D, so D^{-1} commutes with U_W and the Schur complement S = A - B D^{-1} B\u2020 is U_1-covariant.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "The load-bearing step is exact block-matrix algebra and closes under the theorem's explicit hypotheses. The note clearly excludes physical charged-lepton applicability, physical invertibility of D, and identification of Schur reduction with a physical reduction map. The runner output reports exact PASS(A) checks for the stated examples, negative controls, scope discipline, and retained dependency status."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.589551+00:00",
+      "audit_date": "2026-05-10T15:00:55.052904+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem."
+        },
+        "dep_claim_type": {
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "site_phase_cube_shift_intertwiner_note": "retained"
+        },
+        "deps": [
+          "site_phase_cube_shift_intertwiner_note"
+        ],
+        "load_bearing_score": 9.07,
+        "runner_hash": "3204258bb7b9d8f55cc03b5dc49ef8dcdec01885ddc593d99ecfe54462d2cfba",
+        "transitive_descendants": 379
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e1266-b3d5-7250-9be6-ac117fbc2683",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows directly from the block covariance equations, unitarity, and invertibility of D. The cited retained authority is contextual rather than load-bearing for the algebraic lemma.",
+      "claim_scope": "Schur complement covariance inheritance for a finite-dimensional block decomposition V=V_1\u2295W under a block-diagonal unitary action, assuming UMU\u2020=M and invertible D.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-10T15:00:55.052904+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-10T14:59:22.224309+00:00",
+          "auditor": "codex-audit-loop-019e1265-cf24-7aa0-9d37-d5e1457106c3",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure finite-dimensional Schur-complement covariance inheritance for a block-diagonal unitary action and invertible lower-right block, with no physical-applicability claim.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-10T15:00:55.052666+00:00",
+          "auditor": "codex-audit-loop-019e1266-b3d5-7250-9be6-ac117fbc2683",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Schur complement covariance inheritance for a finite-dimensional block decomposition V=V_1\u2295W under a block-diagonal unitary action, assuming UMU\u2020=M and invertible D.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Block expansion of U M U\u2020 = M gives U_1 A U_1\u2020 = A, U_1 B U_W\u2020 = B, and U_W D U_W\u2020 = D; since D^{-1} commutes with U_W, U_1(A-BD^{-1}B\u2020)U_1\u2020 = A-BD^{-1}B\u2020.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the runner/note mismatch on advertised random tests; it is non-load-bearing for the algebraic theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "The theorem is a direct Schur-complement equivariance identity under the stated premises, with no physical bridge, tuned numerical input, or definition-as-derivation. The runner checks exact finite examples, premise-failure controls, and dependency retained-grade status; these support but do not replace the proof-level algebra. The note advertises random C3-covariant tests that are not present in the supplied runner source, but that mismatch is non-load-bearing for the scoped theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_schur_covariance_inheritance_narrow.py",
+  "title": "Schur Complement Covariance Inheritance \u2014 Narrow Theorem",
+  "transitive_descendants": 65,
+  "verdict_rationale": null
+}

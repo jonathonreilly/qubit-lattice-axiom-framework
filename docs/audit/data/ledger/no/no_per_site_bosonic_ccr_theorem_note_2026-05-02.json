@@ -1,0 +1,1799 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.7,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0cec50cf8003b8de17eb4413c0d6126245e27b897e3c2ed1235c78b2026b4251",
+  "note_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:08:24.495970+00:00",
+      "audit_date": "2026-05-22T12:53:06.928317+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 10.54,
+        "runner_hash": "83d2b22df1cd5450e6b4c9e9145e0121879283a5df9d25c948adee4802181699",
+        "transitive_descendants": 1052
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T125009Z-34ddc3b9-no_per_site_bosonic_ccr_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The trace contradiction is valid once a finite nonzero per-site Hilbert dimension is established. The restricted packet does not establish dim_C H_x = 2, because the sole cited authority explicitly moved that physical per-site dimension bridge out of its audited scope.",
+      "claim_scope": "No exact bounded per-site bosonic CCR [a,a^dagger] = I_Hx on the physical Cl(3) lattice-site Hilbert space H_x; collective or effective bosonic limits are out of scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-22T12:53:06.928317+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "The note argues that tr([a,a^dagger]) = 0 for finite-dimensional H_x, while [a,a^dagger] = I_Hx would give tr(I_Hx) = dim_C H_x = 2 != 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a one-hop retained authority for dim_C H_x = 2 on the physical lattice site, then re-audit the trace obstruction.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
+        "docs/STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The finite-dimensional trace obstruction is standard algebra, and the runner checks only that obstruction with the dim-2 premise effectively hard-coded. The cited authority is retained_bounded only for the physical-Cl(3)-only U1-U3 representation classification, while U4, the physical per-site Hilbert dimension conclusion, is explicitly out of scope. No-Go Discipline N3/N7 blocks a clean no-go: the strongest same-packet steelman is that H_x is not established as exactly the cited 2-dim module in this restricted packet. A retained one-hop bridge from the abstract Cl(3) irrep dimension to physical dim_C H_x = 2 is missing."
+    },
+    {
+      "archived_at": "2026-05-29T00:46:44.386165+00:00",
+      "audit_date": "2026-05-22T22:29:45.610841+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "83d2b22df1cd5450e6b4c9e9145e0121879283a5df9d25c948adee4802181699",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T222802Z-fd29bfbe-no_per_site_bosonic_ccr_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The allowed k=1 qubit-per-site ratification supplies H_x = C^2, and the retained Cl(3) per-site uniqueness material supplies the two-dimensional irreducible local module context. The finite-dimensional trace identity then directly rules out the exact CCR with no further bridge needed.",
+      "claim_scope": "Under the k=1 qubit-per-site reading H_x = C^2, no bounded per-site operators can satisfy the exact bosonic CCR [a,a\u2020] = I_Hx.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-22T22:29:45.610841+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_type_changed:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:bounded_theorem->positive_theorem",
+      "load_bearing_step": "For finite-dimensional H_x with dim_C H_x = 2, tr([a,a\u2020]) = 0 by trace cyclicity, but [a,a\u2020] = I_Hx would imply tr(I_Hx) = 2, a contradiction.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should confirm that the targeted packet's k=1 qubit-per-site ratification is treated as in-scope authority; the trace obstruction itself is straightforward.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing obstruction is pure finite-dimensional linear algebra once H_x = C^2 is in scope. The runner checks the trace obstruction and illustrative finite/infinite examples, with no external comparator, tuned numerical input, or definition-as-derivation step. The older cited per-site-uniqueness note alone no longer carries U4, but this targeted packet's k=1 qubit ratification supplies the missing multiplicity selection, so the scoped chain closes."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:26.009053+00:00",
+      "archived_for_note_hash": "54b0a371479eee86563104268b8135cda3dbd4255294a4a6611a84ee94478257",
+      "audit_date": "2026-05-29T05:40:10.151836+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "83d2b22df1cd5450e6b4c9e9145e0121879283a5df9d25c948adee4802181699",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-no-per-site-bosonic-ccr-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The trace obstruction closes once finite-dimensional H_x is supplied, but the only cited dependency retains only abstract Cl(3) representation classification and excludes the physical per-site Hilbert-space identification. The source therefore has not closed the framework-specific dim_C H_x = 2 premise from its one-hop packet.",
+      "claim_scope": "Finite-dimensional trace obstruction for an exact bosonic CCR on a supplied finite-dimensional per-site Hilbert space; the framework-specific identification dim_C H_x = 2 is not closed by the cited per-site Cl(3) uniqueness dependency.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T05:40:10.151836+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29, dim_C H_x = 2 for every site x; then tr([a,a\u2020])=0 but tr(I_Hx)=2.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained direct authority that identifies the physical per-site Hilbert/Fock space and its finite dimension, or split the source to a pure finite-dimensional trace obstruction theorem.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: Step 1 cites the per-site uniqueness note as providing physical dim_C H_x = 2, but that retained dependency explicitly excludes physical per-site Hilbert-space identification and realization. Why this blocks: the runner proves the trace obstruction only after a finite-dimensional H_x is supplied; it does not construct the framework-site Hilbert space from retained inputs. Repair target: cite and audit a retained per-site Hilbert/Fock realization bridge, or narrow this note to the pure finite-dimensional trace theorem. Claim boundary until fixed: no bounded operators on any supplied finite-dimensional Hilbert space can satisfy [a,a\u2020]=I, but the framework-site H_x premise is not retained here."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.079474+00:00",
+      "audit_date": "2026-05-31T12:15:05.314564+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "47139d75890099441d67851e29ff46c62213b66c168ca52dac036862562caecb",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-tuple-guard-20260531-no_per_site_bosonic_ccr_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Axiom 1 authority is explicitly flagged as an accepted axiom premise and supplies A_x \u2245 M_2(C). The finite-dimensional trace identity then gives an immediate contradiction with [a,a\u2020] = I_2, so the narrowed per-site no-go closes.",
+      "claim_scope": "No exact bosonic CCR [a,a\u2020] = I_2 is realizable by bounded operators inside the Axiom 1 per-site algebra A_x \u2245 M_2(C).",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-31T12:15:05.314564+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "For any a,a\u2020 in A_x \u2245 M_2(C), tr([a,a\u2020]) = 0 by trace cyclicity, while [a,a\u2020] = I_2 would imply tr([a,a\u2020]) = tr(I_2) = 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure: trace cyclicity in a finite-dimensional matrix algebra contradicts the identity trace required by the exact CCR. The one-hop upstream note is an accepted axiom premise, so its meta status does not trigger a dependency downgrade under the rubric. The source is scoped narrowly to exact single-site operators in M_2(C) and explicitly leaves collective, approximate, truncated, and infinite-dimensional bosonic constructions out of scope. The runner source includes a text firewall plus illustrative finite-matrix checks; it is not the proof by itself, but it is consistent with the note's algebraic argument."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.541737+00:00",
+      "audit_date": "2026-06-05T17:55:51.890050+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.781,
+        "runner_hash": "47139d75890099441d67851e29ff46c62213b66c168ca52dac036862562caecb",
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-5cd844cb44-no_per_site_bosonic_ccr_theo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited axiom-premise authority supplies the one-site algebra A_x ~= M_2(C). The finite-dimensional trace identity then directly contradicts the asserted CCR because tr([A,B])=0 for all 2x2 matrices but tr(I_2)=2.",
+      "claim_scope": "No exact single-site bosonic CCR [a, a\u2020] = I_2 can be realized by bounded operators inside the Axiom Quantum one-site qubit algebra A_x ~= M_2(C).",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T17:55:51.890050+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "For any a,a\u2020 in A_x ~= M_2(C), trace cyclicity gives tr([a,a\u2020]) = 0, while [a,a\u2020] = I_2 would give tr([a,a\u2020]) = tr(I_2) = 2, a contradiction.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the source-note citation drift from MINIMAL_AXIOMS_2026-05-20 to the supplied superseding 2026-06-04 axiom memo; the local-algebra content used here is the same.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over the accepted Quantum axiom premise and the admitted finite-dimensional trace identity. An independent manual check confirms trace cyclicity: tr(ab)-tr(ba)=0 for all finite matrices, so equality to I_2 is impossible. The runner source performs real finite-matrix checks and illustrative ladder/truncation computations rather than merely printing constants, though the clean verdict does not depend on runner PASS alone. The no-go is scoped narrowly to exact single-site CCR in M_2(C), leaving collective, approximate, and infinite-dimensional bosonic constructions outside scope."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.508145+00:00",
+      "audit_date": "2026-06-05T21:34:21.943720+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.781,
+        "runner_hash": "47139d75890099441d67851e29ff46c62213b66c168ca52dac036862562caecb",
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-f076243457-no_per_site_bosonic_ccr_theo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied axiom-premise authority gives the one-site algebra A_x ~= M_2(C), and finite-dimensional trace cyclicity gives the contradiction directly. No extra physics convention, effective boson limit, or external theorem is needed.",
+      "claim_scope": "No exact single-site bosonic CCR [a,a\u2020] = I_2 exists inside the Axiom/Quantum one-site qubit algebra A_x ~= M_2(C).",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T21:34:21.943720+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "For any a,a\u2020 in A_x ~= M_2(C), trace cyclicity gives tr([a,a\u2020]) = 0, while [a,a\u2020] = I_2 would require tr([a,a\u2020]) = tr(I_2) = 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the historical citation mismatch between the source note's May 20 axiom path and the packet's current June 5 axiom memo, though the supplied Quantum axiom contains the same load-bearing M_2(C) premise.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The no-go is exactly scoped to bounded operators in the single-site M_2(C) algebra and follows from the finite-dimensional trace identity. The provided Minimal Axioms authority is flagged as an axiom premise and supplies the needed local algebra, so the accepted-premise carve-out applies. The runner is partly demonstrative, but the independent load-bearing trace argument closes without relying on the runner's random tests or truncated oscillator illustration. The N1-N8 stress test leaves open only collective, approximate, or infinite-dimensional bosonic realizations, all outside the audited scope."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.885353+00:00",
+      "audit_date": "2026-07-01T13:26:03.198404+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.281,
+        "runner_hash": "47139d75890099441d67851e29ff46c62213b66c168ca52dac036862562caecb",
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T132603Z-7713227a-no_per_site_bosonic_ccr_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered minimal_axioms premise supplies the one-site algebra M_2(C). Finite-dimensional trace cyclicity then directly contradicts [a, a\u2020] = I_2.",
+      "claim_scope": "No exact bosonic CCR [a, a\u2020] = I_2 is realizable by operators inside one Axiom/Qubit per-site algebra M_2(C).",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-01T13:26:03.198404+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "For any a, a\u2020 in A_x \u2245 M_2(C), trace cyclicity gives tr([a, a\u2020]) = 0, but [a, a\u2020] = I_2 would give tr(I_2) = 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that the dated minimal_axioms citation is canonicalized to the registered minimal_axioms axiom premise.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is a pure finite-dimensional trace identity over the accepted Qubit axiom, not a definition, renaming, external comparator, or tuned match. The runner is partly illustrative rather than a universal proof, but the note's exact algebra supplies the universal closure independently. The no-go is correctly narrowed to exact single-site CCR inside M_2(C), with collective, approximate, block, and infinite-dimensional bosonic limits left outside scope."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.492982+00:00",
+      "audit_date": "2026-07-02T02:27:40.410407+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.281,
+        "runner_hash": "47139d75890099441d67851e29ff46c62213b66c168ca52dac036862562caecb",
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T022740Z-483a8e8a-no_per_site_bosonic_ccr_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal-axioms premise supplies the one-site algebra M_2(C), and finite-dimensional trace cyclicity supplies tr([A,B]) = 0. Applying trace to the proposed CCR gives the contradiction 0 = 2, so no further bridge or physical convention is needed.",
+      "claim_scope": "No exact bosonic CCR [a,a\u2020] = I_2 is realized by bounded operators inside the one-site qubit algebra M_2(C).",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T02:27:40.410407+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "For any a,a\u2020 in A_x \u2245 M_2(C), trace cyclicity gives tr([a,a\u2020]) = 0, while [a,a\u2020] = I_2 would give tr([a,a\u2020]) = tr(I_2) = 2 \u2260 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No re-audit needed unless the claim scope expands beyond exact single-site M_2(C); keep the Stone-von Neumann paragraph non-load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The proof is a direct algebraic obstruction over the accepted one-site M_2(C) premise, not a definition, renaming, tuned numerical match, or external comparator. The runner's firewall verifies the intended dependency/scope, and its algebraic checks are consistent with the trace argument, though the random trace test is illustrative rather than needed. The no-go is narrowly scoped to exact single-site bounded operators; collective, approximate, truncated, or infinite-dimensional bosonic constructions are explicitly outside scope and do not weaken the claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.408146+00:00",
+      "audit_date": "2026-07-08T23:36:32.926634+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.755,
+        "runner_hash": "47139d75890099441d67851e29ff46c62213b66c168ca52dac036862562caecb",
+        "transitive_descendants": 53
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-20260708",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The minimal axiom memo supplies the per-site M_2(C) qubit algebra, and finite-dimensional trace cyclicity gives an immediate contradiction with [a,a\u2020]=I_2. The runner verifies the source firewall, trace obstruction, Pauli-ladder non-example, and the intended infinite-dimensional escape route.",
+      "claim_scope": "No exact bosonic canonical commutation relation [a,a\u2020]=I can be realized by bounded operators inside one per-site qubit algebra M_2(C); collective, approximate, or infinite-dimensional bosonic limits are excluded from scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-08T23:36:32.926634+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For any bounded finite-dimensional operators a and a\u2020 in M_2(C), tr([a,a\u2020])=0, while [a,a\u2020]=I_2 would force tr([a,a\u2020])=tr(I_2)=2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The no-go is exactly the standard finite-dimensional trace obstruction applied to the axiom-supplied one-site M_2(C) algebra. No physical convention, fitted parameter, or broader boson exclusion is imported; the note explicitly leaves collective/effective and infinite-dimensional oscillator realizations out of scope. Residual risk is limited to the old Axiom 1 wording in the prose, which the current minimal-axioms row still resolves to the same per-site M_2(C) algebra used by the proof."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.477968+00:00",
+      "audit_date": "2026-07-11T21:06:04.367835+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.755,
+        "runner_hash": "47139d75890099441d67851e29ff46c62213b66c168ca52dac036862562caecb",
+        "transitive_descendants": 53
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00228-no_per_site_bosonic_ccr_theo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Qubit axiom supplies the one-site algebra M_2(C), and the finite-dimensional trace identity directly contradicts the exact CCR. No additional carrier, normalization, or observable bridge is required.",
+      "claim_scope": "No exact bosonic CCR [a,a\u2020]=I_2 is realizable by bounded operators inside one Qubit-axiom per-site algebra M_2(C).",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-11T21:06:04.367835+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "Trace cyclicity gives tr([a,a\u2020])=0 for all a,a\u2020 in M_2(C), whereas [a,a\u2020]=I_2 would give tr([a,a\u2020])=tr(I_2)=2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note evaluates both sides using trace cyclicity and tr(I_2)=2.",
+            "disposition": "CLOSED",
+            "evidence_locator": "tr([A, B]) = tr(AB - BA) = 0",
+            "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Apply the matrix trace directly to the proposed commutator equation.",
+            "outcome": "Every finite matrix commutator is traceless, so equality to I_2 is impossible.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "trace_identity"
+          },
+          {
+            "attempt": "The runner constructs sigma-minus and sigma-plus and evaluates their commutator and anticommutator.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Try standard fermionic creation (a\u2020 = sigma+, a = sigma-):",
+            "evidence_path": "scripts/no_per_site_bosonic_ccr_check.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test the natural one-qubit raising and lowering matrices as candidate bosonic operators.",
+            "outcome": "Their commutator is sigma-z rather than the identity, so this candidate does not evade the universal trace obstruction.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "pauli_ladder"
+          },
+          {
+            "attempt": "The runner constructs a 31-dimensional cutoff oscillator and evaluates the commutator on bulk and boundary states.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Truncated bosonic Fock space at occupation N_max",
+            "evidence_path": "scripts/no_per_site_bosonic_ccr_check.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Truncate an oscillator Fock representation to finite dimension and test the CCR away from and at the cutoff.",
+            "outcome": "The bulk mimics the identity, but the boundary term differs from one, preserving the finite-dimensional trace obstruction.",
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "finite_cutoff"
+          },
+          {
+            "attempt": "The note checks whether enlarging the Hilbert space permits an exact bosonic representation.",
+            "disposition": "CLOSED",
+            "evidence_locator": "moving to a larger/infinite-dimensional effective Hilbert space can realize bosonic CCR",
+            "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Move from the one-site matrix algebra to an infinite-dimensional oscillator carrier.",
+            "outcome": "An infinite-dimensional carrier can realize the CCR, but it is not an operator representation inside the audited one-site M_2(C) algebra.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "infinite_fock"
+          },
+          {
+            "attempt": "The source distinguishes collective and multi-site effective bosons from exact operators at one site.",
+            "disposition": "CLOSED",
+            "evidence_locator": "collective/multi-site effective bosons",
+            "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct an effective bosonic mode from multiple sites or a collective limit.",
+            "outcome": "Collective modes may be bosonic, but they do not satisfy the contested equation as elements of one M_2(C) site algebra.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "collective_mode"
+          },
+          {
+            "attempt": "The restricted cross-cycle evidence checks whether hard-core bosons contradict the trace no-go.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Hard-core bosons are not excluded by the CCR trace obstruction because they",
+            "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use hard-core bosonic terminology for finite local operators that do not obey the canonical CCR.",
+            "outcome": "They do not, because they violate the exact canonical-CCR hypothesis rather than furnishing a representation of it.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "hard_core_boson"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "Exact [a,a\u2020]=I_2 conflicts with tracelessness of every commutator in M_2(C)."
+          ],
+          "evidence_locator": "one wall only: exact `[a,a\u2020]=I` conflicts with",
+          "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "Exact [a,a\u2020]=I_2 conflicts with tracelessness of every commutator in M_2(C)."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "N3 hidden-wall scan",
+          "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+          "hits": [
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "The full one-site possibility domain has algebraic presentation `M_2(C)`.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "The full one-site possibility domain has algebraic presentation `M_2(C)`."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Stone-von Neumann theorem (background only; non-load-bearing).",
+              "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+              "phrase": "Stone-von Neumann theorem (background only; non-load-bearing)."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "No fitted parameters. No observed values. No physics conventions admitted.",
+              "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+              "phrase": "No fitted parameters. No observed values. No physics conventions admitted."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source assumptions, one-hop Qubit authority, runner constants, background theorem, boundedness wording, and effective-limit exclusions were checked for concealed carrier, normalization, dynamics, and readout premises.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "N4 residual matching",
+          "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+          "none_found_reason": "No N1 route relies on a RULED OUT BY PRIOR witness; every listed route is directly attempted or dispositioned in the restricted packet.",
+          "scan_scope": "The source's stated residual, runner demonstrations, and all N1 routes were compared at the exact single-site CCR resolution.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "N5 rhetoric audit",
+          "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+          "none_found_reason": "",
+          "scan_scope": "All negative statements were checked for site, algebra, exactness, boundedness, collective-limit, and effective-limit resolution.",
+          "statements": [
+            {
+              "evidence_locator": "No per-site bosonic CCR.",
+              "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+              "phrase": "No per-site bosonic CCR.",
+              "tested_resolutions": [
+                "exact canonical commutator inside one M_2(C) site algebra"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "It only rules out an exact single-site bosonic CCR representation",
+              "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+              "phrase": "It only rules out an exact single-site bosonic CCR representation",
+              "tested_resolutions": [
+                "exact single-site finite-dimensional representation"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "no statement is made about collective or approximate bosonic behavior.",
+              "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+              "phrase": "no statement is made about collective or approximate bosonic behavior.",
+              "tested_resolutions": [
+                "scope exclusion for collective and approximate behavior"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no enlargement of the one-site operator algebra and cannot alter commutator tracelessness.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The Qubit premise fixes the audited one-site algebra as M_2(C); it supports the wall rather than supplying an exact-CCR escape.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation does not change the algebraic trace identity.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A unit conversion cannot change the dimension or trace of the identity.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The occupancy and R-eta readout boundary is unrelated to exact one-site canonical commutators.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "A coupling rescaling convention cannot change a finite matrix commutator's trace.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization has no bearing on the one-site matrix algebra or CCR.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All indexed approved primitives, owner-governed residuals, live Tier-A state, convention reframes, and the source's exact-versus-effective scope boundary were checked.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Large blocks, collective excitations, or controlled cutoffs can produce excellent effective bosonic modes even though each microscopic site is a qubit.",
+          "evidence_locator": "a reviewer can construct excellent finite cutoffs or collective bosonic modes",
+          "evidence_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+          "resolution": "This succeeds as an effective or enlarged-carrier construction but fails as a counterexample to the audited proposition, which requires exact [a,a\u2020]=I_2 for operators belonging to one M_2(C) site algebra.",
+          "resolved": true,
+          "route_id": "collective_mode"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:0",
+              "evidence_locator": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Earlier missing physical two-dimensional-site bridge.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:1",
+              "evidence_locator": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Qubit-per-site trace closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:2",
+              "evidence_locator": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Earlier dependency failed to identify the physical site with C^2.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:3",
+              "evidence_locator": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Direct M_2(C) trace obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:4",
+              "evidence_locator": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Accepted one-site qubit premise plus trace identity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:5",
+              "evidence_locator": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Exact single-site versus collective/effective scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:6",
+              "evidence_locator": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:6",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Finite-dimensional trace obstruction over the Qubit axiom.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:7",
+              "evidence_locator": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:7",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Exact bounded one-site CCR obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:8",
+              "evidence_locator": "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:8",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Exact one-site no-go with effective limits excluded.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Flavor occupancy and readout retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Strong-CP premise retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Owner-governed flavor residual.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated foundational-campaign no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated architecture-portability boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated coupling-runner boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated authority-import restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated multi-lane inherited no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated coupling-identity scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated beta coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated scattering-observable walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated carrier antisymmetry registry wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated charged-lepton selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated spatial-dimension bound.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Lorentz-emergence scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated emergent-metric bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated replay and basin scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Wilson-environment scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated flavor-tracial pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated analytic-vector route.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated gauge-character computation walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated gauge-isotropy routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated gravity dispersion bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated weak-gravity scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated absolute-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated hypercharge normalization wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated campaign-level boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated atomic-scale gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated quark-mass selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated asymptotic-limit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated lensing-observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated finite-path lensing wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated source-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated temporal-source boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated matter-cone ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated planning-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated time-step bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated neutrino construction walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated neutrino-cosmology gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated distance-law scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated finite-recompute scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated coupling-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated packet-memory claims.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated finite-grid theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated rank-four Clifford-carrier selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated rank-four projector selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated plaquette-bootstrap walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated plaquette diagnostic errors.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Record selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated registrability and flavor/CP walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated locality and clock-axis walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated finite tangent-space boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Hard-core bosons evade canonical CCR but do not contradict the exact-CCR no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "One-site M_2(C) does not select CAR versus hard-core tensor-product statistics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated SU(3) quotient approximation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated documentation synchronization issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated family-card scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated theta mass-side bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated theta gauge-side bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated theta positive gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated theta insertion gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated theta defect-closure gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated determinant occupancy selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Record occupancy nonsupply.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated R-eta formation/readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated artifact-visibility gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Record readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated hard-coded numerical matcher.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated continuum and distance-law scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "mechanism": "Unrelated definition-as-physical-readout wall.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02": {
+              "accepted_premise_type": null,
+              "content_sha256": "4f838d51da057d59d3e570d8af00f69c89081bfc8dc364b272af9521063bf9d9",
+              "cross_cycle_candidate_ids": [
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:0",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:1",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:2",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:3",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:4",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:5",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:6",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:7",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:8",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "Hard-core bosons are not excluded by the CCR trace obstruction because they",
+                "no_go_cross_cycle_index_v1",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:0",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:1",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:2",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:3",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:4",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:5",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:6",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:7",
+                "no_per_site_bosonic_ccr_theorem_note_2026-05-02:previous_audit:8",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02": {
+              "accepted_premise_type": null,
+              "content_sha256": "2df5211b8e371b24bfa7db327901c96a8bd7bc363029710e88f5c2240746aaf0",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "no_go_partial_closure_index_v1",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "The full one-site possibility domain has algebraic presentation `M_2(C)`."
+              ]
+            },
+            "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "0cec50cf8003b8de17eb4413c0d6126245e27b897e3c2ed1235c78b2026b4251",
+              "effective_status": null,
+              "path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "It only rules out an exact single-site bosonic CCR representation",
+                "N3 hidden-wall scan",
+                "N4 residual matching",
+                "N5 rhetoric audit",
+                "No fitted parameters. No observed values. No physics conventions admitted.",
+                "No per-site bosonic CCR.",
+                "Stone-von Neumann theorem (background only; non-load-bearing).",
+                "a reviewer can construct excellent finite cutoffs or collective bosonic modes",
+                "collective/multi-site effective bosons",
+                "moving to a larger/infinite-dimensional effective Hilbert space can realize bosonic CCR",
+                "no statement is made about collective or approximate bosonic behavior.",
+                "one wall only: exact `[a,a\u2020]=I` conflicts with",
+                "tr([A, B]) = tr(AB - BA) = 0"
+              ]
+            },
+            "scripts/no_per_site_bosonic_ccr_check.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "47139d75890099441d67851e29ff46c62213b66c168ca52dac036862562caecb",
+              "effective_status": null,
+              "path": "scripts/no_per_site_bosonic_ccr_check.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "Truncated bosonic Fock space at occupation N_max",
+                "Try standard fermionic creation (a\u2020 = sigma+, a = sigma-):"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is an exact finite-dimensional algebraic obstruction over the accepted one-site M_2(C) premise. The runner's random matrices are illustrative rather than a universal proof, but the source note independently supplies the universal trace argument; the Pauli and truncated-Fock computations correctly test common counterroutes. The result excludes only exact single-site CCR, not hard-core, collective, approximate, or infinite-dimensional bosonic realizations."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/no_per_site_bosonic_ccr_check.py",
+  "title": "No Per-Site Bosonic CCR in the One-Qubit Operator Algebra",
+  "transitive_descendants": 51,
+  "verdict_rationale": null
+}

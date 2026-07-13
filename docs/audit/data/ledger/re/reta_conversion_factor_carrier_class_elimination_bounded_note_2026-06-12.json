@@ -1,0 +1,125 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+    "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "af4bfd0bc53a403852cec3eae98dfa88f037669c341512dc00b7c7abed14fe7c",
+  "note_path": "docs/RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:32.385803+00:00",
+      "audit_date": "2026-07-10T04:30:56.801287+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context."
+        },
+        "dep_claim_type": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "8f5591a888718d0c60e29b37fb722d13d3d14f1abe1d735794a1e26bfb63727a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00093-reta_conversion_factor_carri",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact R1/R2 calculations close, but they do not prove the universal elimination of every c\u22601. The runner tests only c=\u03c0, hard-codes the assembled set {1} and the R4 carrier identification, and supplies no exhaustive carrier-class or primitive-carrier theorem.",
+      "claim_scope": "The audit checked the stipulated circulant\u2019s determinant-character erasure, symmetric-polynomial formulas, fundamental-domain inversion, the c=\u03c0 equal-data counterexample, the c=2 Chebyshev guard, and the cited periodic-source boundary.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:30:56.801287+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24:retained_no_go->unaudited",
+      "load_bearing_step": "R1 and R4 are asserted to carry no angle datum, R2 only the derived cos(3\u03b4) datum without a primitive multiplier, and R3 is excluded, so the primitive carrier-compatible set is {1}.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the theorem to the verified k=0, symmetric-polynomial/inversion, c=\u03c0, and c=2 statements; remove the universal c_set={1} and unsupported R4 elimination, and add a dated source-boundary hygiene line so the note\u2019s hash drift re-enters it into the audit queue.",
+      "open_dependency_paths": [
+        "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
+        "docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 14,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "Issue: the universal {1} carrier set is not derived; R2d tests only c=\u03c0, R4 is asserted through a Boolean constant, and no cited authority establishes that R1\u2013R4 exhaust the relevant carriers or formally distinguishes primitive from post-readout functions. Why this blocks: the valid determinant and symmetric-data algebra cannot exclude every c\u22601, while the radian authority expressly leaves the Type-B-to-radian law primitive. Repair target: supply an exhaustive carrier-classification and R4 bridge theorem with an all-c argument, or narrow the claim to the identities and examples actually checked. Claim boundary until fixed: k=0 and the circulant symmetric-data/inversion results hold on the stipulated surface, but c_set={1} remains conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_reta_conversion_carrier_class_elimination_2026_06_12.py",
+  "title": "R-eta Conversion-Factor Carrier-Class Elimination -- Bounded Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

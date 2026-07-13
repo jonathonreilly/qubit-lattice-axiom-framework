@@ -1,0 +1,661 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+    "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 19,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 20.232,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "49ffa714c8d8ecc8575864ccba7b8a755ccabe24d7aa221c2c4c58bfbde256a0",
+  "note_path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T20:44:09.876323+00:00",
+      "audit_date": "2026-04-30T15:13:02.642927+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Yes. The note gives a self-contained structural proof on the stated A_min objects, and the registered runner completed successfully on the load-bearing algebraic checks.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module: the stated finite-lattice/Cl(3) theorem is proved on the listed A_min objects and checked by the registered runner.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing theorem is structural rather than a tuned numerical match: support \u2014 branch-local theorem note on A_min; runner passing; audit-pending.. The registered runner completed successfully and its classified PASS surface is {'A': 0, 'B': 0, 'C': 5, 'D': 0, 'total_pass': 5}. Residual risk is limited to the support/branch-local scope stated by the note; this does not promote the row beyond its author-declared tier."
+    },
+    {
+      "archived_at": "2026-05-03T11:17:38.915979+00:00",
+      "audit_date": "2026-05-02T22:33:05.268327+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 4.322,
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The load-bearing algebra statement is wrong: real Cl(3) has real dimension 8, so its complexification has complex dimension 8, and the odd complex Clifford algebra has two 2-dimensional irreducible sectors rather than the single simple M_2(C) algebra asserted here. The runner only checks Pauli-generated examples and does not test the missing second sector or the false dimension/isomorphism step.",
+      "claim_scope": "Attempted per-site uniqueness theorem asserting every faithful irreducible finite-dimensional complex Cl(3) representation is exactly the Pauli 2-dimensional representation and that all finite-dimensional representations decompose into Pauli copies.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T22:33:05.268327+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->high",
+      "load_bearing_step": "Working over the complexification of Cl(3), the relations generate dimension 4 over C and the Pauli map gives an isomorphism Cl(3) tensor_R C ~= M_2(C).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit after the note corrects the Cl(3) complexification/representation-category statement and the runner covers the missing sector/orientation cases.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: Step 1 misidentifies the complexified Clifford algebra as M_2(C) by claiming the complex dimension is 4; this is the theorem's load-bearing uniqueness step. Why this blocks: U2's uniqueness up to unitary equivalence to Pauli, and U3's decomposition into only Pauli copies, do not follow from the stated algebra and omit the odd-Clifford sector/orientation distinction. Repair target: restate the theorem with the correct real-versus-complex Clifford algebra, central volume-element sector/orientation choice, and prove the exact representation category needed for the per-site dimension claim; update the runner to test non-Pauli orientation/conjugate sectors rather than only unitary conjugates of Pauli. Claim boundary until fixed: Pauli matrices satisfy the defining relations and Pauli direct sums provide even-dimensional examples, but the advertised uniqueness theorem is not retained."
+    },
+    {
+      "archived_at": "2026-05-03T19:49:42.760263+00:00",
+      "archived_for_note_hash": "c0ede1499e224cdc7db5ba20c005122d1023fd6a04c5903f394d9decb0e71c27",
+      "audit_date": "2026-05-03T11:39:35.295703+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "fresh-agent-herschel-019ded9f-0cbc-7d71-b27e-1ce7957cbd6e",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The chain does not close because the central algebraic identification is wrong: a real 8-dimensional algebra tensored with C remains 8-dimensional over C, and odd complex Clifford algebra splits into two M_2(C) summands rather than M_2(C). U4 also imports the staggered-fermion one-mode Fock-space bridge while claiming A1 only.",
+      "claim_scope": "Finite-dimensional complex representations of the real Cl(3) site algebra, including uniqueness of faithful irreducible representation, decomposition, odd-dimensional exclusion, and per-site Hilbert dimension exactly 2 on A_min.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T11:39:35.295703+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Step 1 asserts Cl(3) \u2297_R C has complex dimension 4 and is isomorphic to M_2(C), then uses that asserted simple complex algebra to derive unique irreducible Pauli representation and U2-U4.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit should focus on corrected handling of real Cl(3) versus its complexification, the central pseudoscalar/chirality choice, whether the opposite central-character representation is excluded or included, and whether U4 is downgraded or supplied with an explicit A_min Grassmann/Fock dependency.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: Step 1 misidentifies Cl(3) \u2297_R C as M_2(C) by halving the tensor-product dimension and ignoring the odd-complex-Clifford split. Why this blocks: U2 and U3 rely on simplicity and unique irreducibility of M_2(C); with two simple summands, the claimed unique Pauli irrep and universal decomposition into that single irrep are not established. The runner exhibits Pauli relations, no scalar model, random failed 3x3 searches, constructed unitary conjugates, and Pauli direct sums, but it does not verify the Artin-Wedderburn identification or rule out the second central-character irrep. Repair target: replace Step 1 with the correct representation category for real Cl_{3,0} ~= M_2(C) as a real algebra, state any fixed central-character convention explicitly, prove classification under that convention, and separately prove or cite the Grassmann one-mode Fock-space bridge needed for U4. Claim boundary until fixed: Pauli matrices give a 2-dimensional faithful irreducible model and no 1-dimensional faithful complex model; this packet does not prove uniqueness of all faithful irreducible complex Cl(3) representations, the full decomposition theorem, or per-site Hilbert dimension exactly 2 from A1 alone."
+    },
+    {
+      "archived_at": "2026-05-03T23:08:07.921673+00:00",
+      "archived_for_note_hash": "c0db814be170195c5345f058c26611fedc1a6b79d0512ebe982b5e48518acc05",
+      "audit_date": "2026-05-03T19:57:49.263995+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-agent-riemann",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Cl(3) representation-theory classification closes algebraically and the runner completed with 6/6 PASS. The U4 per-site Hilbert-space conclusion does not close from the cited dependency because docs/MINIMAL_AXIOMS_2026-04-11.md is marked superseded and says the staggered/Grassmann realization/A3 is no longer a current primitive but an open-gate item.",
+      "claim_scope": "Finite-dimensional complex Cl(3) irreps split into rho_+ and rho_- 2-dimensional chiralities; the per-site Hilbert dimension 2 conclusion additionally uses the A3 one-Grassmann-pair normalization.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T19:57:49.263995+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Combining (U2) with A3's staggered-fermion canonical normalisation (one Grassmann pair per site), the per-site Hilbert space has dimension exactly 2.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-check after the claim is either narrowed to U1-U3 or supplied with an audited current dependency for the A3/staggered Grassmann bridge; source scope text also still overstates canonical-Pauli uniqueness relative to the repaired two-chirality statement.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: U4 imports A3's one-Grassmann-pair staggered-fermion normalization to identify the abstract 2-dimensional Cl(3) chirality module with the physical per-site Hilbert space. Why this blocks: the sole permitted dependency, docs/MINIMAL_AXIOMS_2026-04-11.md, is explicitly superseded and states that the staggered/Grassmann realization is recategorized out of the current primitive axiom set, so the physical bridge is not retained-grade in the restricted packet. Repair target: cite and audit a retained theorem/open-gate closure deriving the one-Grassmann-pair per-site Hilbert-space bridge from current A_min inputs, or narrow the claim to the algebraic Cl(3) irrep classification only. Claim boundary until fixed: U1-U3 may be treated as an algebraic Cl(3) classification with two 2-dimensional chiral irreps, but U4 remains conditional on the A3/staggered realization bridge."
+    },
+    {
+      "archived_at": "2026-05-09T19:18:20.028655+00:00",
+      "archived_for_note_hash": "df7a9de639452522894e0c5257cf96c82b44b744776034ef033b479dbd336a5e",
+      "audit_date": "2026-05-05T22:53:56.293109+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 13.311,
+        "runner_hash": "48efa77239a7213c6b8da214784bf28b3facf1cca7f7578c5bd1e28eaa70c4c1",
+        "transitive_descendants": 448
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-axiom_first_cl3_per_site-004",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "U1-U3 close as standard finite-dimensional Clifford-algebra representation theory over A1. U4 does not close from the retained restricted packet because the physical one-Grassmann-pair Hilbert-space bridge is explicitly an open staggered-Dirac realization gate.",
+      "claim_scope": "A1-only algebraic classification of finite-dimensional complex Cl(3) representations, with U4 bounded by the open staggered-Dirac/Grassmann realization gate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T22:53:56.293109+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The abstract Cl(3) representation classification gives two 2-dimensional chirality irreps, and the physical per-site Hilbert-space conclusion follows only if the one-Grassmann-pair staggered-fermion realization is admitted.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: close or retain-grade the staggered-Dirac/Grassmann one-pair-per-site bridge, then re-audit U4 separately from the already-clean A1-only Cl(3) representation classification.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The algebraic chirality-aware repair is coherent: Cl(3,0) as a real algebra, the central pseudoscalar split, and the two 2-dimensional complex irreps support U1-U3. The runner checks are algebraic exhibits and sanity checks, not first-principles physical closure, and they do not establish the staggered/Grassmann realization. Because U4 imports the open staggered-Dirac realization gate and cites an open_gate authority, the full per-site physical Hilbert-dimension conclusion is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-05-17T12:03:13.011210+00:00",
+      "archived_for_note_hash": "2dfb674c9f8755cede1bd7c4411c5fd1c2ddbb35cbbde683da5306e1b719fbd0",
+      "audit_date": "2026-05-16T03:06:59.553008+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": "Canonical open-gate parent identity for the unresolved staggered-Dirac realization derivation from A1 (Cl(3)) plus A2 (Z^3), including Grassmann realization, staggered kinetic structure, BZ-corner doublers, and the three-generation physical-species bridge."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 19.118,
+        "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
+        "transitive_descendants": 785
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-030634-3e88c9ef-axiom_first_cl3_per_site-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The in-scope algebraic U1-U3 argument closes on A1 and standard finite-dimensional representation theory. The restricted packet nevertheless includes an open-gate cited authority for the out-of-scope U4 physical Hilbert-space bridge, so the full cited-authority chain is not retained-grade under the rubric.",
+      "claim_scope": "A1-only classification of complex finite-dimensional representations of real Cl(3,0): two non-isomorphic faithful 2-dimensional chirality irreps and direct-sum decomposition into them.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T03:06:59.553008+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The central pseudoscalar splits the complexification as Cl(3) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands indexed by \u03c9 = \u00b1i, so finite-dimensional complex representations decompose into copies of the two 2-dimensional chirality irreps.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: remove the out-of-scope staggered-Dirac gate citation from this A1-only audit packet or mark it as non-load-bearing metadata outside the one-hop cited-authority set, then re-audit U1-U3 alone.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing mathematics is a genuine algebraic closure: Cl(3,0) is identified as M_2(C) over R, its complexification splits by the central pseudoscalar, and Wedderburn/Schur give exactly the two 2-dimensional chirality irreps and semisimple decomposition. The runner source performs algebraic matrix checks and illustrative sanity checks consistent with the note, though it does not itself prove the full classification. Under the audit rubric, however, the packet cites the staggered-Dirac realization gate, which is explicitly open, so retained-grade closure cannot propagate through the full cited packet even though U4 is declared out of scope."
+    },
+    {
+      "archived_at": "2026-05-21T21:21:32.748794+00:00",
+      "archived_for_note_hash": "bd11d1c5fb9cc6900b811ffdd7e94b22de3768fc7f2c0ec45ba0cdf15e9c3e6d",
+      "audit_date": "2026-05-17T12:36:24.166093+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 19.204,
+        "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
+        "transitive_descendants": 833
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-123603-20260517T123603Z-a9187f18-axiom_first_cl3_per_site-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The in-scope representation-theoretic claim follows from the provided A1 local-algebra input plus standard finite-dimensional Clifford/semisimple algebra facts. The out-of-scope U4 Hilbert-space bridge is explicitly excluded and is not needed for U1-U3.",
+      "claim_scope": "Physical-Cl(3)-only classification: U1-U3 for the real algebra Cl(3,0), its two 2-dimensional complex chirality irreps, and finite-dimensional decomposition into their direct sums.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T12:36:24.166093+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The complexification splits as Cl(3) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands indexed by the central character \u03c9 = \u00b1i.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: mark the current minimal-axiom authority as retained-grade or exempt framework meta authorities from the retained-grade dependency rule, then re-audit the same narrowed U1-U3 packet.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The mathematical load-bearing step is a genuine algebraic closure: the note correctly repairs the odd-complex-Clifford split and derives the two chirality irreps distinguished by \u03c9 = \u00b1i. The runner source mostly provides algebraic/numerical exhibits for those facts and does not import an external comparator or tuned numerical premise. However, the restricted packet's cited framework authorities are marked meta rather than retained-grade under the supplied rubric, so the verdict cannot be audited_clean despite the U1-U3 algebra closing on its own terms."
+    },
+    {
+      "archived_at": "2026-05-22T01:10:02.207491+00:00",
+      "archived_for_note_hash": "6bfaf371efb733366c0fa95b4e1f7d70d8ce5894cf4f516d46847455aefe2cd8",
+      "audit_date": "2026-05-21T22:40:58.939551+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Finite-dimensional complex representations of the real algebra Cl(3,0) generated by gamma_i^2 = I and gamma_i gamma_j = -gamma_j gamma_i for i != j, proving the Pauli 2D irreps, central omega^2 = -I, and the two chirality classes; physical Hilbert-space identification is not audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 19.956,
+        "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
+        "transitive_descendants": 992
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-20260521-axiom_first_cl3_per_site_uniqueness_-j2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed U1-U3 claim is pure finite-dimensional Clifford-algebra representation theory. The source note explicitly removes U4 and the physical per-site Hilbert-space bridge from scope, and the one-hop narrow dependencies in the packet supply the complexification split, faithful-irrep dimension-two readout, and Pauli/chirality uniqueness. The runner checks are supporting A-class algebraic exhibits. No missing physical bridge remains inside the audited scope, so the conditional verdict is too conservative for this packet.\n\nFive-judge panel breakdown: ('first_audit', 'audited_clean', 'bounded_theorem', 'A'):1; ('first', 'audited_clean', 'bounded_theorem', 'A'):4.",
+      "claim_scope": "Physical-Cl(3)-only U1-U3: the abstract Cl(3,0) complex representation classification into the two 2-dimensional chirality irreps and their finite-dimensional direct sums, excluding the U4 physical per-site Hilbert-space bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-21T22:40:58.939551+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-21T22:03:21.359048+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-axiom_first_cl3_per_site-005",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Physical-Cl(3)-only U1-U3: the abstract Cl(3,0) complex representation classification into the two 2-dimensional chirality irreps and their finite-dimensional direct sums, excluding the U4 physical per-site Hilbert-space bridge.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-21T22:30:37.836032+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260521-222935-4c1da52b-axiom_first_cl3_per_site-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Physical-Cl(3)-only U1-U3: the abstract real algebra Cl(3,0) has two non-isomorphic faithful complex 2-dimensional irreps, \u03c1_\u00b1, distinguished by central pseudoscalar eigenvalue \u03c9 \u21a6 \u00b1i, and every finite-dimensional complex representation decomposes into copies of these irreps; U4 physical per-site Hilbert-space identification is out of scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-21T22:40:58.939551+00:00",
+          "auditor": "codex-judicial-panel-20260521-axiom_first_cl3_per_site_uniqueness_-j2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Physical-Cl(3)-only U1-U3: the abstract Cl(3,0) complex representation classification into the two 2-dimensional chirality irreps and their finite-dimensional direct sums, excluding the U4 physical per-site Hilbert-space bridge.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": null,
+          "independence": "judicial_review",
+          "judgment_rationale": "The narrowed U1-U3 claim is pure finite-dimensional Clifford-algebra representation theory. The source note explicitly removes U4 and the physical per-site Hilbert-space bridge from scope, and the one-hop narrow dependencies in the packet supply the complexification split, faithful-irrep dimension-two readout, and Pauli/chirality uniqueness. The runner checks are supporting A-class algebraic exhibits. No missing physical bridge remains inside the audited scope, so the conditional verdict is too conservative for this packet.\n\nFive-judge panel breakdown: ('first_audit', 'audited_clean', 'bounded_theorem', 'A'):1; ('first', 'audited_clean', 'bounded_theorem', 'A'):4.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 6
+          },
+          "second_auditor_error": "Second audit returned audited_conditional without identifying a packet-supported blocker inside the narrowed U1-U3 scope. The likely missing-bridge concern applies only to U4, which the note explicitly excludes.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "The complexification splits as Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with central pseudoscalar omega acting by +/- i; hence Artin-Wedderburn/Schur gives exactly two faithful complex irreducible 2-dimensional representations and finite-dimensional direct-sum decomposition into those chiralities.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The narrowed U1-U3 claim is pure finite-dimensional Clifford-algebra representation theory. The source note explicitly removes U4 and the physical per-site Hilbert-space bridge from scope, and the one-hop narrow dependencies in the packet supply the complexification split, faithful-irrep dimension-two readout, and Pauli/chirality uniqueness. The runner checks are supporting A-class algebraic exhibits. No missing physical bridge remains inside the audited scope, so the conditional verdict is too conservative for this packet.\n\nFive-judge panel breakdown: ('first_audit', 'audited_clean', 'bounded_theorem', 'A'):1; ('first', 'audited_clean', 'bounded_theorem', 'A'):4."
+    },
+    {
+      "archived_at": "2026-05-22T15:08:24.480835+00:00",
+      "audit_date": "2026-05-22T03:01:01.876182+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Finite-dimensional complex representations of the real algebra Cl(3,0) generated by gamma_i^2 = I and gamma_i gamma_j = -gamma_j gamma_i for i != j, proving the Pauli 2D irreps, central omega^2 = -I, and the two chirality classes; physical Hilbert-space identification is not audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 19.98,
+        "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
+        "transitive_descendants": 1009
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260522-030039-6656c1a8-axiom_first_cl3_per_site-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The in-scope U1-U3 claim follows from the retained `Cl(3)` complexification split theorem and the retained_bounded Pauli irrep uniqueness theorem, plus standard finite-dimensional representation theory. The former U4 physical Hilbert-space identification is explicitly out of scope and is not needed for this audited claim.",
+      "claim_scope": "Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T03:01:01.876182+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T02:32:56.698475+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260522-023108-49f0228b-axiom_first_cl3_per_site-004",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Physical-Cl(3)-only U1-U3: abstract real Clifford algebra Cl(3,0), its complexification split, the two chirality 2-dim faithful complex irreps, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge or staggered-Dirac/Grassmann realization audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-22T03:01:01.876182+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260522-030039-6656c1a8-axiom_first_cl3_per_site-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_type_changed:cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10:bounded_theorem->positive_theorem",
+      "load_bearing_step": "The central idempotent decomposition `Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C)` gives exactly two chirality summands, each with the unique 2-dimensional irreducible module of `M_2(C)`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Minor editorial re-check: the dependency-scoping prose says \"three retained narrow theorems\" while the load-bearing list supplies two retained-grade authorities plus one non-load-bearing decoration sibling.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing step is a finite-dimensional algebraic classification/decomposition, not a numerical fit, external comparator, or definition substitution. The cited one-hop authorities are retained-grade (`retained` and `retained_bounded`) and directly cover the complexification split, chirality distinction, and Pauli uniqueness needed for U1-U3. The runner source performs concrete matrix identity checks and sanity probes for the stated algebraic facts; it is supportive rather than a hidden import of a contested premise. The note cleanly excludes the staggered-Dirac/Grassmann U4 bridge from the audited scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:25.998606+00:00",
+      "audit_date": "2026-05-29T00:46:43.886318+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 23.869,
+        "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
+        "transitive_descendants": 934
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260529-axiom_first_cl3_per_site",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted packet closes the narrowed claim as exact finite-dimensional Clifford/Wedderburn algebra: omega^2 = -1 and centrality give the idempotent split, the Pauli realization supplies the real-algebra identification Cl(3,0) ~= M_2(C), and semisimplicity of M_2(C) plus M_2(C) gives the two 2-dimensional chirality irreps and finite direct-sum decomposition. The runner corroborates the algebraic identities, but random probes are not load-bearing proof. No physical Hilbert-space carrier identification, Grassmann/staggered realization, chirality-selection rule, or spin-statistics interpretation is in the ratified scope.",
+      "claim_scope": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T00:46:43.886318+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T16:10:49.672119+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T160941Z-3dbea034-axiom_first_cl3_per_site-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) complex representation classification into two 2-dimensional chiral irreps and direct-sum decomposition; U4 physical Hilbert-space bridge excluded.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-29T00:41:52.412992+00:00",
+          "auditor": "codex-gpt-5.5-fresh-context-kuhn-019e712a-186e-7771-b34d-c3d702cb7af3",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure finite-dimensional algebra theorem: Cl(3,0) as a real algebra, its complexification Cl(3,0) tensor_R C is M_2(C) plus M_2(C), omega maps to +/- i chirality summands, and finite-dimensional complex representations decompose by Wedderburn/Schur; physical per-site Hilbert-space identification, chirality-selection physics, and downstream spin-statistics interpretation are excluded.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-29T00:46:43.886318+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260529-axiom_first_cl3_per_site",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "The bounded side correctly excluded U4 and physical Hilbert-space interpretation, but kept the legacy physical-Cl(3)-only bounded framing as claim-type controlling. For this exact retag question, once the ratified scope is only the pure complexification and Wedderburn/Schur classification, no named physical admission or open bridge forces bounded_theorem status.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted packet closes the narrowed claim as exact finite-dimensional Clifford/Wedderburn algebra: omega^2 = -1 and centrality give the idempotent split, the Pauli realization supplies the real-algebra identification Cl(3,0) ~= M_2(C), and semisimplicity of M_2(C) plus M_2(C) gives the two 2-dimensional chirality irreps and finite direct-sum decomposition. The runner corroborates the algebraic identities, but random probes are not load-bearing proof. No physical Hilbert-space carrier identification, Grassmann/staggered realization, chirality-selection rule, or spin-statistics interpretation is in the ratified scope.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "note": "Runner checks are algebraic corroboration; the proof-level closure is the exact Clifford/Wedderburn argument.",
+            "total_pass": 6
+          },
+          "second_auditor_error": "No material error. The majority caveat is that the applied scope must remain algebraic only and must not retain U4, physical per-site Hilbert-space identification, chirality-selection physics, or downstream spin-statistics corollaries under this verdict.",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The central idempotents e_+ = (1 - i omega)/2 and e_- = (1 + i omega)/2 split Cl(3,0) tensor_R C into two M_2(C) summands labelled by omega = +i and omega = -i, and Artin-Wedderburn/Schur gives the unique 2-dimensional simple module in each summand plus finite direct-sum decomposition.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Do not broaden this positive_theorem beyond U1-U3 exact algebra. U4, physical per-site Hilbert-space identification, chirality-selection physics, and downstream spin-statistics use remain outside this verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "note": "Runner checks are algebraic corroboration; the proof-level closure is the exact Clifford/Wedderburn argument.",
+        "total_pass": 6
+      },
+      "verdict_rationale": "Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted packet closes the narrowed claim as exact finite-dimensional Clifford/Wedderburn algebra: omega^2 = -1 and centrality give the idempotent split, the Pauli realization supplies the real-algebra identification Cl(3,0) ~= M_2(C), and semisimplicity of M_2(C) plus M_2(C) gives the two 2-dimensional chirality irreps and finite direct-sum decomposition. The runner corroborates the algebraic identities, but random probes are not load-bearing proof. No physical Hilbert-space carrier identification, Grassmann/staggered realization, chirality-selection rule, or spin-statistics interpretation is in the ratified scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
+  "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
+  "transitive_descendants": 1700,
+  "verdict_rationale": null
+}

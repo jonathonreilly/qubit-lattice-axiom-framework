@@ -1,0 +1,356 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "architecture_note_directional_measure",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "angular_kernel_underdetermination_no_go_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/three_d_angle_weight.py",
+    "scripts/three_d_gravity.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "90e13a63247b9dfeca28a4f8b5d00471a637d66e8342bcf6886c398dea77afeb",
+  "note_path": "docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.104430+00:00",
+      "archived_for_note_hash": "ec175818b4ac7c1996112ed2e01808ed0f7451fbd153daabf409451bc51d27e7",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:33:25.056040+00:00",
+      "audit_date": "2026-05-02T18:30:00+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.959,
+        "transitive_descendants": 43
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "claude-opus-4.7-1m:cluster2-narrow-2026-05-02-architecture",
+      "auditor_confidence": "high",
+      "auditor_family": "claude-opus",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical match holds at beta=0.8 by construction; beta is not derived from Cl(3) on Z^3 or graph geometry, and no registered runner supplies one-hop dependencies. Numerical-match verdict ratifies the bounded empirical record; promotion to retained requires deriving beta and registering reproduction artifacts.",
+      "claim_scope": "Bounded empirical path-measure architecture record: under the directional propagator factor exp(-beta theta^2) with empirically chosen beta=0.8, the listed unitary-layer smoke tests (interference, Born rule, k=0 checks) and the gravity-CLT-saturation prevention pass. Excludes any retained unitary-layer claim or axiom-derived directional law from Cl(3) on Z^3 or graph geometry; beta=0.8 is calibrated, not derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T18:30:00+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The propagator is modified by a directional factor exp(-beta theta^2) with beta=0.8, which is claimed to prevent gravity CLT saturation while preserving interference, Born-rule, and k=0 checks.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-audit if beta=0.8 is later derived from graph geometry or if the runner is registered as an audit dependency.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Re-audit confirms the original numerical-match verdict: the directional weight beta=0.8 is a tuned architectural input, the smoke-test passes are reproducible at that point, and the chain does not derive beta from retained premises. Scope narrowed from the migration backfill to the bounded empirical path-measure architecture record."
+    },
+    {
+      "archived_at": "2026-05-03T23:08:07.921253+00:00",
+      "archived_for_note_hash": "8c0467090453c2790d90f9ae0c558df9e48f22080a984d2f44d7b7afee84f0a9",
+      "audit_date": "2026-05-03T12:10:06.676362+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-fresh-auditor-2026-05-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet defines the propagator and reports outcomes, but does not supply the computation or derivation that connects the definition to the claimed preservation and gravity behavior. The load-bearing evidence is therefore a numerical/tuned assertion rather than class A or class C closure.",
+      "claim_scope": "Audited the bounded claim that the directional path weight exp(-beta theta^2), with beta = 0.8, prevents flat-measure CLT gravity saturation while preserving interference, Born-rule behavior, and k=0->0, and can serve as the retained unitary core.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T12:10:06.676362+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Empirical pass/fail table and narrative assertion that the beta = 0.8 directional continuation weight preserves quantum tests while improving gravity saturation behavior.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-audit should use only a retained proof/runner artifact that recomputes the table from the stated propagator and fixed DAG fixtures, with beta handling made explicit.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The claim rests on listed empirical test outcomes and an empirically chosen beta = 0.8, but the packet provides no runner, no reproduced computation, no independent derivation, and no cited retained dependency that verifies the table. Why this blocks: Under the rubric, a clean bounded theorem needs algebraic closure or first-principles computation from accepted inputs; here the decisive support is numerical/tuned and uncheckable inside the restricted packet. The note also explicitly leaves decoherence, full 3D theorem status, raw b-dependence, R_c edge cases, and beta derivation unresolved, so the stated retained-core role is conditional on open empirical premises. Repair target: Provide a retained runner or proof artifact that independently recomputes the Born/I_3, interference/V, k=0, gravity saturation/scaling, R_c compatibility, and 3D smoke claims from fixed definitions, plus either a derivation of beta or a declared parameter-sweep robustness bound showing the conclusion is not tuned to beta = 0.8. Claim boundary until fixed: This can be cited only as an unaudited/tuned architecture hypothesis with reported numerical support, not as a closed bounded theorem that the directional measure preserves the quantum sector while fixing gravity saturation."
+    },
+    {
+      "archived_at": "2026-05-10T13:05:00.491943+00:00",
+      "archived_for_note_hash": "9dc5835dc24dd83e18d1a772e66615ad6676668483fa50ebd63aee5eaed6717d",
+      "audit_date": "2026-05-05T23:10:48.789279+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "angular_kernel_underdetermination_no_go_note": "audited_conditional",
+          "born_scattering_comparison_note": "audited_numerical_match"
+        },
+        "deps": [
+          "angular_kernel_underdetermination_no_go_note",
+          "born_scattering_comparison_note"
+        ],
+        "load_bearing_score": 10.778,
+        "runner_hash": "4f45869c60fd07fd1b2b927e8ec9c8d6b33bccaaf9f511489361d113bdfb2cae",
+        "transitive_descendants": 438
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-architecture_note_direct-024",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The fixed-fixture runner computes smoke quantities, but beta provenance depends on the unaudited angular-kernel no-go and unaudited Born/eikonal comparison. The missing step is retained-grade closure of the beta observable-matching and no-go authorities.",
+      "claim_scope": "Audited the bounded claim that the directional path measure with beta = 0.8 passes six fixed-fixture smoke/table checks while beta remains empirical, not first-principles derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:10:48.789279+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At beta = 0.8, the directional weight exp(-beta theta^2) is empirically observable-matched against the eikonal slope and the fixed-DAG runner reproduces the pass/fail table.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "dependency_not_retained: Audit and retain the angular-kernel no-go and Born/eikonal comparison notes, then re-audit this bounded table claim with special attention to the weak T1/T2 runner checks.",
+      "open_dependency_paths": [
+        "docs/ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md",
+        "docs/BORN_SCATTERING_COMPARISON_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing choice beta = 0.8 is a tuned observable match, explicitly not a derivation. The runner does compute six fixed-fixture checks, but several are weak smoke checks: T1 is partition additivity, T3 is the k=0 real-amplitude identity, and T6 is monotonicity of an exponential angular weighting rather than the cited eikonal slope match. Because both upstream authorities used to justify beta handling are marked unaudited, the claim cannot be audited clean on this packet."
+    },
+    {
+      "archived_at": "2026-06-17T10:29:41.802050+00:00",
+      "archived_for_note_hash": "2d1845e7d86a774b132bbd4eda9fb70bc44aa1c93645458d4cd939ffe4c704ba",
+      "audit_date": "2026-05-29T21:26:01.006239+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "angular_kernel_underdetermination_no_go_note": "Bounded no-go for the directional-measure angular kernel under the stated Cl(3)-trace, action-extremization, forward-cone, and leading-isotropy primitives, plus routing decoupling from the staggered/Laplacian boost-covariance surface."
+        },
+        "dep_claim_type": {
+          "angular_kernel_underdetermination_no_go_note": "no_go"
+        },
+        "dep_effective_status": {
+          "angular_kernel_underdetermination_no_go_note": "retained_no_go"
+        },
+        "deps": [
+          "angular_kernel_underdetermination_no_go_note"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "4f45869c60fd07fd1b2b927e8ec9c8d6b33bccaaf9f511489361d113bdfb2cae",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-audit-ready-20260529-architecture_note_direct",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet closes the bounded claim that the listed smoke/table checks pass at the fixed tuned value beta = 0.8. It does not close, and does not claim to close, a first-principles derivation of beta.",
+      "claim_scope": "Bounded tuned-support audit of the directional path-measure table at beta = 0.8, including runner-backed Born/additivity, interference, k=0 real-amplitude, gravity-sign, gravity-scaling, and beta-sweep monotonicity checks; beta derivation is explicitly excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T21:26:01.006239+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The directional path measure with propagator exp(i k S_spent)/L^p * exp(-beta theta^2), evaluated at the tuned input beta = 0.8, reproduces the bounded smoke/table tests while beta itself remains empirically chosen rather than derived.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-check that the intended ledger category for tuned support is audited_numerical_match rather than audited_conditional; the scientific boundary is clear either way because beta = 0.8 is not derived.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 3,
+        "D": 1,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The primary runner performs actual computations on deterministic 2D and 3D fixtures and reports PASS=6/6, with helper sources present for the transitive imports. However, the load-bearing setting beta = 0.8 is hard-coded as an empirical gravity-card value, and the note repeatedly scopes the result to that tuned point rather than deriving beta from the retained primitives. The retained no-go authority supports that demotion by showing the angular kernel is underdetermined without an additional premise."
+    },
+    {
+      "archived_at": "2026-07-07T20:25:15.312908+00:00",
+      "archived_for_note_hash": "ca975256c3e7e8e80214bad5e2bbdd5427453bb14d8a2f35e9f105c410d1f970",
+      "audit_date": "2026-06-18T07:23:07.706016+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "angular_kernel_underdetermination_no_go_note": "Bounded no-go for the directional-measure angular kernel under the stated Cl(3)-trace, action-extremization, forward-cone, and leading-isotropy primitives, plus routing decoupling from the staggered/Laplacian boost-covariance surface."
+        },
+        "dep_claim_type": {
+          "angular_kernel_underdetermination_no_go_note": "no_go"
+        },
+        "dep_effective_status": {
+          "angular_kernel_underdetermination_no_go_note": "retained_no_go"
+        },
+        "deps": [
+          "angular_kernel_underdetermination_no_go_note"
+        ],
+        "load_bearing_score": 7.085,
+        "runner_hash": "4f45869c60fd07fd1b2b927e8ec9c8d6b33bccaaf9f511489361d113bdfb2cae",
+        "transitive_descendants": 23
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-architecture_note_directional_measure-first",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source performs finite fixture computations through the directional path-measure helpers and reports PASS=6/6 at beta = 0.8. This closes only the fixed-beta numerical support claim, not a derivation of beta or a general theorem beyond the tested fixtures.",
+      "claim_scope": "Six deterministic directional-measure smoke/table checks at fixed tuned beta = 0.8; beta derivation and broader gravity/decoherence claims are outside the audited closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T07:23:07.706016+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The tested smoke/table results hold at the fixed tuned point beta = 0.8, while beta itself is an empirical input rather than a derived constant.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations use the narrowed six-check fixed-beta scope, not the broader prose table or any beta-derivation claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the load-bearing result uses beta = 0.8 as a hard-coded tuned setting. Why this blocks clean status: the cited retained no-go supports the not-derived boundary, and the runner verifies only fixture behavior at that supplied value. Repair target: derive beta within a retained framework route and rerun the table without treating beta as calibrated input. Claim boundary until fixed: bounded numerical support at beta = 0.8 only."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:25.886906+00:00",
+      "audit_date": "2026-07-07T20:35:24.021238+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "angular_kernel_underdetermination_no_go_note": "Bounded no-go for the directional-measure angular kernel under the stated Cl(3)-trace, action-extremization, forward-cone, and leading-isotropy primitives, plus routing decoupling from the staggered/Laplacian boost-covariance surface."
+        },
+        "dep_claim_type": {
+          "angular_kernel_underdetermination_no_go_note": "no_go"
+        },
+        "dep_effective_status": {
+          "angular_kernel_underdetermination_no_go_note": "retained_no_go"
+        },
+        "deps": [
+          "angular_kernel_underdetermination_no_go_note"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "15cfbcccc8e95966edb4156f65de3fdf9cf43e48437330177f6b2bbe8b956606",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt5.5-2026-07-07",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The fixture algebra and computations close under supplied beta: an independent implementation reproduces T2 visibility 0.975648, T4 attract 6/8, T5 R values, and T6 monotonic weighted theta^2, while T1 and T3 are direct finite-sum/real-factor identities. The audit chain does not close to retained-grade derivation because beta=0.8 is a supplied premise, not a retained derivation, approved primitive, or admitted premise.",
+      "claim_scope": "Conditional fixed-fixture theorem for the directional path measure: under supplied BETA-DIRECTIONAL with beta=0.8, T1-T6 hold on the stated deterministic fixtures; no derivation of beta, uniqueness of the angular kernel, gravity law, full 3D Sorkin theorem, decoherence solution, or observable match is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T20:35:24.021238+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:angular_kernel_underdetermination_no_go_note:retained_no_go->unaudited",
+      "load_bearing_step": "Conditional on BETA-DIRECTIONAL supplying beta = 0.8, the deterministic runner recomputes T1-T6: partition additivity, phase-free visibility, k=0 real amplitudes, gravity sign count, gravity scaling, and beta-sweep monotonicity.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly admit BETA-DIRECTIONAL, including beta selection for the Gaussian angular kernel, before promoting this beyond a supplied-beta fixed-fixture theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "Issue: the live fixture checks are reproducible only under BETA-DIRECTIONAL, which supplies beta=0.8; this row does not derive beta, select the angular kernel uniquely, or close the gravity/decoherence interpretation. Why this blocks: the retained angular-kernel no-go may be used as boundary context, but this audit does not ratify a new no-go or all-route wall; without a retained beta-selection route, the row remains a supplied-value fixture theorem. Repair target: derive or explicitly admit BETA-DIRECTIONAL through a retained route such as higher-order isotropy, an action/Lagrangian principle, or a structural observable-selection theorem, then rerun the T1-T6 checks. Claim boundary until fixed: cite only the deterministic T1-T6 fixture replay at supplied beta=0.8, not a beta derivation, unique angular kernel, framework gravity law, decoherence solution, or observable match."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/architecture_directional_measure_table_runner_2026_05_03.py",
+  "title": "Architecture Note: Directional Path Measure",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

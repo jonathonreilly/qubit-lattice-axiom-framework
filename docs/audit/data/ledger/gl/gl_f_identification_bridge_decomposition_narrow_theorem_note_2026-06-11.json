@@ -1,0 +1,286 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate / conditional-support certificate (the declared",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+    "fermion_parity_z2_grading_theorem_note_2026-05-02",
+    "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10",
+    "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+    "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8aea88d2deb21a3e196b4829b592ef7bff0b1e4007c4203208211b2d27b01a26",
+  "note_path": "docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:30:17.369429+00:00",
+      "archived_for_note_hash": "582c8d7aa7a7ead742f7f6754d7bad5ba09572eeca98c321ed5641099d6d26fd",
+      "audit_date": "2026-06-16T01:28:23.005041+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "The finite positive-N Pauli tensor-product identity that F=\u2297_x \u03c3_3^{(x)} is Hermitian unitary, involutive, has \u00b11 parity eigenspaces of dimension 2^{N-1}, anticommutes with one-site ladder operators, and commutes with number operators and \u03c3_+^{(x)}\u03c3_-^{(y)} bilinears.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "Finite tensor-product audit of the conditional discriminator: retained dimension, ungraded-algebra, parity-grading, and hopping-surface predicates are frame-blind; the defined GL(F) predicate selects Grassmann/CAR within the explicit three-candidate list; removing GL(F) restores the retained no-go tie.",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "bounded_theorem",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "retained_bounded",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 8.17,
+        "runner_hash": "d3e5500cc2a76429e50fba25c8ad4e4ce25677cc061748869d83010c8a31f2b2",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-012618-4352c21cb0-gl_f_identification_bridge_d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite kinematic discharge of I-1 through I-3 is supported by exact rank, kernel, anticommutator-insertion, and parity-transport certificates. The full physical identification bridge does not close because I-4, the assertion that the framework's physical matter correlations are the declared Berezin/RP OS functional, is explicitly not proved by any cited retained authority.",
+      "claim_scope": "Conditional N=2,3 two-slice Berezin/RP bridge decomposition: exact finite certificates support functional-level GL(F), full field-word cyclicity/irreducibility, unique unitary intertwiner to the qubit Jordan-Wigner net, and parity auto-alignment, leaving the matter-functional clause I-4 as the named residual.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T01:28:23.005041+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The OS functional's word values vanish on every anticommutator insertion and its vacuum is cyclic, so the exchange relations hold as operator identities in every cyclic realization; combined with irreducibility, the identification is forced up to one unitary scalar and transports parity automatically.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: audit or create the matter-functional identification theorem establishing I-4, or explicitly limit the row to the kinematic conditional bridge decomposition.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 8,
+        "C": 14,
+        "D": 8,
+        "total_pass": 36
+      },
+      "verdict_rationale": "Issue: the runner and source give a substantive exact finite computation for the kinematic reconstruction-identification clauses, but the theorem still depends on the matter-functional clause I-4. Why this blocks: no cited authority states that the framework physical matter sector's vacuum correlation functional is the declared Berezin/RP OS functional. Repair target: add or audit a retained matter-functional identification theorem, or scope the row strictly as a kinematic conditional decomposition. Claim boundary until fixed: I-1 through I-3 are supported conditionally on I-4 at the certified N=2,3 surface; the physical matter-functional identification remains unaudited."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:45.010756+00:00",
+      "archived_for_note_hash": "1c85e6d7ac54adf8ce5f24c73f8fe017f75264654759c8d7056f3918934305c3",
+      "audit_date": "2026-06-18T09:57:55.484180+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "The finite positive-N Pauli tensor-product identity that F=\u2297_x \u03c3_3^{(x)} is Hermitian unitary, involutive, has \u00b11 parity eigenspaces of dimension 2^{N-1}, anticommutes with one-site ladder operators, and commutes with number operators and \u03c3_+^{(x)}\u03c3_-^{(y)} bilinears.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "Finite tensor-product audit of the conditional discriminator: retained dimension, ungraded-algebra, parity-grading, and hopping-surface predicates are frame-blind; the defined GL(F) predicate selects Grassmann/CAR within the explicit three-candidate list; removing GL(F) restores the retained no-go tie.",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "bounded_theorem",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "retained_bounded",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "db63cb339c74b2b5a3df46824b04f70b5fee4b205973cee3d039304dc5958e8d",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite kinematic certificates for I-1 through I-3 close on the stated N=2,3 surface, but the physical identification still requires I-4. No cited retained authority supplies the matter-functional clause that the framework's physical matter correlations are the declared Berezin/RP OS functional.",
+      "claim_scope": "Open-gate conditional decomposition: on the recomputed two-slice Berezin/RP finite surfaces N=2,3, exact cyclicity, anticommutator-insertion, irreducibility, Schur-nullity, functional-transport, and parity-transport checks support carrier, parity, and dictionary clauses given I-4; the matter-functional clause I-4 remains unsupplied.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T09:57:55.484180+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The OS functional's word values vanish on every anticommutator insertion and its vacuum is cyclic, so the exchange relations hold as operator identities in every cyclic realization; combined with irreducibility, the identification is forced up to one unitary scalar that transports parity automatically.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: audit or add the I-4 matter-functional bridge before using this as bridge closure; also update the source validation count from PASS=36 to the actual PASS=39.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 8,
+        "C": 14,
+        "D": 8,
+        "total_pass": 39
+      },
+      "verdict_rationale": "Issue: The class-C runner genuinely constructs the Berezin/RP OS model and checks cyclicity, anticommutator insertions, Schur nullity-1, parity transport, and falsification legs, but the source explicitly leaves I-4 unsupplied. Why this blocks: without a retained matter-functional theorem, the result cannot identify the framework's physical matter sector with the declared Berezin/RP OS functional; the hard-core escape shows that premise is load-bearing. Repair target: add or audit a theorem or approved premise that the physical matter correlation functional is the declared OS functional, and reconcile the validation text's expected PASS=36 with the provided runner/cache PASS=39. Claim boundary until fixed: conditional/open-gate decomposition of the bridge with exact finite support for I-1 through I-3 at N=2,3."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.487550+00:00",
+      "audit_date": "2026-06-21T15:10:03.996355+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "The finite positive-N Pauli tensor-product identity that F=\u2297_x \u03c3_3^{(x)} is Hermitian unitary, involutive, has \u00b11 parity eigenspaces of dimension 2^{N-1}, anticommutes with one-site ladder operators, and commutes with number operators and \u03c3_+^{(x)}\u03c3_-^{(y)} bilinears.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "On the explicit {free boson, hard-core boson, Grassmann/CAR} substep-1 candidate list, retained dim/algebra/grading/hopping predicates are frame-blind, while the explicitly assumed cross-site GL(F) predicate selects Grassmann/CAR conditionally; removing GL(F) restores the retained no-go tie.",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "bounded_theorem",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "retained_bounded",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "db63cb339c74b2b5a3df46824b04f70b5fee4b205973cee3d039304dc5958e8d",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The kinematic subchain closes conditionally: the runner verifies cyclicity, functional-level GL(F), full matrix-algebra span, unique Schur intertwiner, and parity transport on the certified N=2,3 surfaces. The full bridge does not close because I-4, identifying the framework's physical matter correlation functional with the declared Berezin/RP OS functional, is explicitly unsupplied.",
+      "claim_scope": "Conditional/open-gate decomposition of the GL(F) reconstruction-identification bridge on the exact N=2,3 two-slice Berezin/RP surface: carrier, parity, and dictionary clauses have finite support once I-4 is supplied, while the matter-functional clause I-4 remains the open residual.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T15:10:03.996355+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The OS functional's word values vanish on every anticommutator insertion and its vacuum is cyclic, so the exchange relations hold as operator identities in every cyclic realization; combined with irreducibility, the identification is forced up to one unitary scalar that transports parity automatically.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained matter-functional theorem identifying the framework's physical matter correlation functional with the declared Berezin/RP OS functional, or preserve the row as an open-gate conditional certificate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 8,
+        "C": 14,
+        "D": 8,
+        "total_pass": 39
+      },
+      "verdict_rationale": "Issue: the finite reconstruction-identification certificates support I-1 through I-3 only after the matter-functional clause I-4 is granted. Why this blocks: retained bridge closure would still require a theorem or retained authority identifying the physical matter vacuum correlations with the declared Berezin/RP OS functional. Repair target: prove or retain the matter-functional bridge theorem, or keep this row scoped as an open-gate conditional decomposition. Claim boundary until fixed: the bridge is reduced to one named residual pin, not closed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gl_f_identification_bridge_check_2026_06_11.py",
+  "title": "GL(F) Reconstruction-Identification Bridge \u2014 Kinematic Decomposition With One Open Matter-Functional Clause (Conditional Support)",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

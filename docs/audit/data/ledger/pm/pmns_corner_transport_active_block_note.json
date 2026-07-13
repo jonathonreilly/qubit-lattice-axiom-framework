@@ -1,0 +1,255 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_corner_transport_active_block_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+    "site_phase_cube_shift_intertwiner_note",
+    "neutrino_dirac_two_higgs_canonical_reduction_note"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.598,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "154dde475167a552882aa6905bfef651545893de9121b83bd3873d593e6be811",
+  "note_path": "docs/PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106546+00:00",
+      "archived_for_note_hash": "3070fdd15d74e5fdd1e19fdbd32779f0771a2a294b406053eba13a3be27afe8c",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-01T15:26:01.958819+00:00",
+      "archived_for_note_hash": "a1edafb89779f91986d7f894dd5a75cabc772022069deabfcaf8d2f8fee9f3e7",
+      "audit_date": "2026-05-01T03:05:05.544822+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop:2026-05-01-pmns_corner_transport_active_block_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The branch-bit formula in the note does not match the registered runner: the runner uses the imaginary C3-odd asymmetry, not the real-part comparison written in the source note.",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note states that the direct corner transport fixes the branch bit, with branch bit = 0 if Re(t_fwd) >= Re(t_bwd), else 1.",
+      "load_bearing_step_class": "A",
+      "open_dependency_paths": [
+        "scripts/frontier_pmns_corner_transport_active_block.py"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the source note's explicit branch-bit rule uses Re(t_fwd) >= Re(t_bwd), but scripts/frontier_pmns_corner_transport_active_block.py implements transport_branch_bit by comparing Im(odd_fwd) against Im(odd_bwd) and verifies phase reversal using that imaginary asymmetry. Why this blocks: the branch selector is one of the note's positive native outputs, so the written theorem is stale or wrong relative to the runner that is supposed to verify it. Repair target: decide whether the intended branch law is real-part or imaginary-part transport asymmetry, update the note and runner so they state and test the same observable, and emit classified PASS lines for the seed-pair, branch-bit, and kernel checks. Claim boundary until fixed: the runner gives examples for seed-pair recovery and a non-injective five-real breaking kernel, but the published branch-bit law cannot be audited as stated."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.813139+00:00",
+      "audit_date": "2026-05-01T16:28:17.541288+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.248,
+        "transitive_descendants": 37
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the explicitly defined active-block transport matrix and orbit moments, the recovered seed pair, branch-bit flip under phase reversal, and kernel on the five real corner-breaking source follow by direct matrix arithmetic. The runner verifies both the positive transport-law statements and the stated non-closure boundary.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The native outputs are xbar = Re(t_even), ybar = Re(t_fwd) on the aligned weak-axis patch, and the branch bit read from the C3-odd CP-odd imaginary asymmetry of forward versus backward cycle amplitude.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The bounded claim closes as stated: for the defined hw=1 active transport matrix, the orbit moments recover the weak-axis seed pair on the aligned patch, the imaginary C3-odd asymmetry supplies a branch bit, and distinct breaking sources can share the same averaged moments. The runner verifies the positive law and the explicit kernel, so the note does not overclaim full PMNS microscopic closure. Residual risk is limited to downstream use: this row should not be cited as a value law for the five-real corner-breaking source."
+    },
+    {
+      "archived_at": "2026-05-16T18:54:42.649302+00:00",
+      "archived_for_note_hash": "6b82fb4a1788310560135fd5a10cc6131be8799d253ba8be9ba9a77160759863",
+      "audit_date": "2026-05-05T05:53:28.135562+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.055,
+        "runner_hash": "b285f189225028a46848a80aa078856d8426f3659ecee572dc83bd267ff2018c",
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-pmns_corner_transport_ac-195",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra after T_act is specified is straightforward, but the restricted packet does not derive the active corner-transport operator itself from the stated axiom. The missing step is the native construction of this T_act form from Cl(3) on Z^3 rather than taking it as the defining input.",
+      "claim_scope": "Audited the bounded claim that orbit-averaged direct hw=1 corner transport recovers the active seed pair on the aligned patch, reads a branch bit from the imaginary C3-odd asymmetry, and remains blind to the five-real corner-breaking source.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T05:53:28.135562+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the active hw=1 triplet, the direct corner-to-corner transport matrix is T_act = diag(x_1, x_2, x_3) + diag(y_1, y_2, y_3 e^{i delta}) C.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether an allowed restricted packet can derive the displayed T_act operator from Cl(3) on Z^3; the present packet only verifies algebra downstream of that definition.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner performs real algebraic checks on the provided transport matrix and its orbit averages, including the branch-bit sign flip and the nontrivial kernel example. However, it does not derive the direct corner-to-corner transport matrix from the axiom; it defines that operator form in code and verifies consequences. With no cited upstream authority closing the operator construction, the load-bearing step is a definition rather than a first-principles native theorem."
+    },
+    {
+      "archived_at": "2026-05-17T08:06:23.432165+00:00",
+      "archived_for_note_hash": "36b62ff2c5af4522a12cb439e8d6632b4b35d0fe756c085b1219c66ad36694d4",
+      "audit_date": "2026-05-16T21:28:05.992843+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "Exact linear-algebra verification that the three specified diagonal involutions on C^3 have three distinct joint sign characters and yield the stated rank-1 sector projectors."
+        },
+        "dep_claim_type": {
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "site_phase_cube_shift_intertwiner_note",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 11.638,
+        "runner_hash": "fae2bb85913dda3d6deffc3abe20274bd5168258189b5352eeea60ac5bc47edd",
+        "transitive_descendants": 796
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-212640-20260516T212640Z-e4d7d373-pmns_corner_transport_ac-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional orbit-moment algebra closes once T_act in S_act is assumed. The restricted packet does not derive from the cited retained authorities that the actual direct corner-to-corner transport operator must satisfy the diagonal-plus-forward-cycle support, diagonal reality, phase-reduction hypotheses, or the seven value-law inputs.",
+      "claim_scope": "Conditional algebraic readout for 3x3 active hw=1 transport operators in the declared support class S_act: orbit moments recover the seed pair on the aligned patch and the branch bit, while not determining the five-real breaking source.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T21:28:05.992843+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given an active transport matrix in the normal form T_act = diag(x_0,x_1,x_2) + diag(y_0,y_1,|y_2|e^{i\u03b4}) C, the trace and forward-cycle orbit averages recover xbar and ybar on the aligned patch, the imaginary forward/backward asymmetry gives the branch bit, and the five-real breaking source is in the orbit-average kernel.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained narrow theorem deriving the diagonal-plus-forward-cycle support and phase-reduced S_act normal form for the actual direct hw=1 corner transport operator from the retained carrier/cycle inputs.",
+      "open_dependency_paths": [
+        "docs/NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md",
+        "docs/PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md",
+        "docs/PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "Issue: the runner defines active_corner_transport in the claimed S_act form and verifies algebraic consequences of that form. Why this blocks: the cited retained authorities supply the hw=1 sector basis and a broad corner/taste bridge, but not a closed derivation that direct corner transport has this support class or values. Repair target: add or cite a retained bridge theorem deriving the direct transport support/reality/phase-reduction conditions, and separately the seven value-law inputs if full closure is claimed. Claim boundary until fixed: the conditional S_act orbit-moment theorem is valid algebra, but not a first-principles native closure theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_pmns_corner_transport_active_block.py",
+  "title": "PMNS Corner Transport Active Block",
+  "transitive_descendants": 774,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -80,7 +80,7 @@ codex exec -s workspace-write -C "<repo-abs-path>" \
   closure note + the ledger" dumps the multi-thousand-row `audit_ledger.json` into
   its context, exhausts it, and ends mid-reasoning having written nothing.
 - NEVER instruct it to "read the ledger / read everything." For audit status, grep
-  specific rows only: `git show origin/main:docs/audit/data/audit_ledger.json | grep <claim_id>`.
+  specific rows only: `git show "origin/main:docs/audit/data/ledger/<first-2-chars>/<claim_id>.json"` (the ledger is sharded per claim; the monolithic audit_ledger.json is an untracked local cache materialized by the pipeline).
 - Tell it to WRITE THE DELIVERABLE INCREMENTALLY (write the output file as it goes,
   not held for a single final message) and to produce ONE focused deliverable plus
   a short stdout summary. Keep the task small and specific.

@@ -580,15 +580,25 @@ def target_settled_on_main(claim_id: str) -> tuple[bool, str]:
     problem never silently drops real work.
     """
     git("fetch", "origin", "main", check=False)
-    res = git("show", "origin/main:docs/audit/data/audit_ledger.json", check=False)
-    if res.returncode != 0 or not (res.stdout or "").strip():
-        return False, "ledger_unavailable"
+    shard = f"docs/audit/data/ledger/{claim_id[:2]}/{claim_id}.json"
+    res = git("show", f"origin/main:{shard}", check=False)
     try:
-        led = json.loads(res.stdout)
+        if res.returncode == 0 and (res.stdout or "").strip():
+            row = json.loads(res.stdout)
+        else:
+            # Transitional fallback for a pre-sharding origin/main.
+            legacy = git(
+                "show",
+                "origin/main:docs/audit/data/audit_ledger.json",
+                check=False,
+            )
+            if legacy.returncode != 0 or not (legacy.stdout or "").strip():
+                return False, "ledger_unavailable"
+            led = json.loads(legacy.stdout)
+            rows = led.get("rows", led)
+            row = rows.get(claim_id) if isinstance(rows, dict) else None
     except (json.JSONDecodeError, ValueError):
         return False, "ledger_unparseable"
-    rows = led.get("rows", led)
-    row = rows.get(claim_id) if isinstance(rows, dict) else None
     if not isinstance(row, dict):
         return False, "row_absent"
     status = row.get("audit_status", "") or ""
@@ -605,7 +615,6 @@ def commit_and_push(claim_id: str, worktree: Path, branch: str,
     # origin/main before staging.
     audit_lane_paths = [
         "docs/audit/data/",
-        "docs/audit/AUDIT_LEDGER.md",
         "docs/audit/AUDIT_QUEUE.md",
         "docs/audit/MISSING_DERIVATION_PROMPTS.md",
         "docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md",

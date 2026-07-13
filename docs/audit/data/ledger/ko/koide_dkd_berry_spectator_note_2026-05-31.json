@@ -1,0 +1,295 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_dkd_berry_spectator_note_2026-05-31",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7fa6ed13050d7a9688325f7fede8651e64c84a683e204a2a1b6a1f0caab5c264",
+  "note_path": "docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-10T20:11:19.224124+00:00",
+      "audit_date": "2026-06-03T04:38:00.867960+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9e837b94219798da8d2b86c04dff62e08bdf0e59076bb276e9771819a1848f19",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-043652-0741ae84-koide_dkd_berry_spectato",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet closes the scoped open-gate repair: the runner source actually constructs the 3-mode JW/Kahler-Dirac matrices, corrects the Lambda^1 lift from the vacuum, and computes the stated Wilson-loop sweep. It does not close a positive Berry-spectator theorem, but the source note explicitly disclaims that stronger conclusion.",
+      "claim_scope": "Audited the finite Fock-space repair: corrected Lambda^1 embedding, KD form-parity facts, commuting circulant b-derivatives, scalar Gamma_F on Lambda^1, and the sampled nonzero Wilson-loop boundary blocking reuse of the stale zero-Berry spectator claim.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-03T04:38:00.867960+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "With the corrected Lambda^1 embedding from the unique N=0 vacuum, the Wilson-loop check for the tested iD_KD plus circulant mass coupling is not identically zero across sampled kappa and band choices, so the zero-Berry spectator theorem is not certified.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check band isolation and Berry observable definitions only if a future positive zero-Berry spectator theorem is claimed; they are not needed for this open-gate repair verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "All one-hop cited authorities are retained-grade, and the target claim uses them only for bounded algebraic context rather than for an open physical staggered-Dirac identification. The primary runner is not a print-only certificate: it constructs the finite operators, verifies CAR/Hermiticity/parity/lift identities, computes the commuting b-derivatives, and performs the Wilson-loop sweep plus a positive-control curvature check. The source note is scoped as an open gate and bug repair, so the unresolved form-degree Berry theorem and band-isolation regime are preserved as boundaries rather than hidden premises."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:26.672510+00:00",
+      "archived_for_note_hash": "bd2ae2e011f040eddc66a760f74881448a514923fcb3de7edb68c5438f037523",
+      "audit_date": "2026-06-12T02:34:56.666267+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Abstract finite-dimensional component-space theorem: V_Hn = C^(2^d) is graded-linearly equivalent to Lambda^*(C^d); D_KD = d - delta has the stated parity, square, adjoint, and Hermiticity properties; the d=4 spinor-count arithmetic matches the cited Cl(3) chirality-pair dimension, with physical staggered-operator and JW/Fock identifications out of scope."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "9e837b94219798da8d2b86c04dff62e08bdf0e59076bb276e9771819a1848f19",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-023159-98129b2b6b-koide_dkd_berry_spectator_no",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated open-gate scope, the included runner constructs the finite operators and verifies the corrected lift, form-parity facts, commuting b-derivatives, scalar Gamma_F on Lambda^1, and a nonzero sampled Wilson loop. The universal form-degree Berry theorem remains open by design, not as a missing dependency for this boundary claim.",
+      "claim_scope": "Audited only the corrected finite Fock-space/Lambda^1 embedding facts and the sampled Berry-boundary repair; no Q=2/3 derivation, zero-Berry theorem, or universal no-go is claimed.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-12T02:34:56.666267+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The corrected Wilson-loop check for the tested finite K\u00e4hler-Dirac plus circulant-mass coupling is not identically zero across the sampled kappa and band choices, so the submitted zero-Berry spectator theorem is not certified.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should not cite the runner's F3 zero-curvature wording as a theorem; band-isolation and Berry-observable details need fresh audit only if a later note upgrades this open gate into a positive or negative Berry theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner source performs actual finite operator construction rather than printing constants, and the load-bearing nonzero-Wilson-loop sign is independently reproducible by a bit-mask exterior-algebra construction. The cited authorities are retained-grade for the limited algebraic inputs used here, and the source note does not import PDG values, fitted selectors, or an open physical K\u00e4hler-Dirac identification. The claim is clean only as an open-gate bug repair that blocks reuse of the stale zero-Berry spectator claim; it does not certify any positive Berry theorem."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.071458+00:00",
+      "audit_date": "2026-06-18T13:19:25.935606+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Abstract finite-dimensional component-space theorem: V_Hn = C^(2^d) is graded-linearly equivalent to Lambda^*(C^d); D_KD = d - delta has the stated parity, square, adjoint, and Hermiticity properties; the d=4 spinor-count arithmetic matches the cited Cl(3) chirality-pair dimension, with physical staggered-operator and JW/Fock identifications out of scope."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "3374d842963d8a1dd9e342eb80f103d987a4e6ea593c185c985da3a7871a481d",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-koide_dkd_berry_spectator_note_2026-05-31-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped open-gate claim closes: the runner constructs the finite Fock/K\u00e4hler-Dirac operators and lifted circulant mass, verifies the algebraic parity facts, and computes nonzero sampled Wilson-loop outputs without hard-coding them. It does not close, and does not claim, a universal Berry spectator theorem.",
+      "claim_scope": "Finite K\u00e4hler-Dirac form-parity and corrected Lambda^1 embedding checks, plus a sampled Wilson-loop boundary showing the stale zero-Berry spectator claim is not certified.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T13:19:25.935606+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17:retained_bounded->unaudited",
+      "load_bearing_step": "With the corrected Lambda^1 embedding, the tested Wilson-loop sweep is not identically zero across sampled kappa and band choices, so the submitted zero-Berry spectator theorem is not certified.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check band isolation and Wilson-loop convention only if a future note upgrades this sampled boundary into a positive or negative Berry theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The direct cited authorities are retained-grade for the algebraic background consumed here, and the target note stays inside a narrow bug-repair/open-gate boundary. The runner source performs actual finite matrix construction and Wilson-loop computation rather than importing a fitted value or printing constants. The conclusion is clean only as a boundary result: it blocks reuse of the stale zero-Berry claim and records unresolved Berry-theorem data requirements."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.862229+00:00",
+      "audit_date": "2026-07-10T04:12:38.806552+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Bounded finite-dimensional algebraic theorem: the Z2^d-indexed per-hypercube component space C^{2^d} is graded-isomorphic to Lambda*(C^d), D_KD=d-delta has the stated nilpotency, parity-reversal, Hodge-Laplacian, and Hermiticity identities, and at even d the 2^d count factors into spinor/taste with the d=4 spinor factor matching the retained Cl(3) chirality-pair count. This does not audit any physical staggered-Dirac dynamical equivalence, continuum/species reduction, or statistics-forcing claim."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3374d842963d8a1dd9e342eb80f103d987a4e6ea593c185c985da3a7871a481d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00068-koide_dkd_berry_spectator_no",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the corrected Fock-space embedding and directly computes nonzero sampled Wilson phases rather than importing or printing them. This closes the stated open-gate repair while leaving any general Berry theorem unresolved.",
+      "claim_scope": "The corrected finite Lambda^1 embedding preserves lift(C)^3=lift(I), form parity is scalar on Lambda^1, and the sampled Wilson-loop calculation does not certify an identically zero Berry spectator claim.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T04:12:38.806552+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The corrected Wilson-loop sweep is not identically zero across the tested kappa and band choices, so this branch does not certify a K\u00e4hler-Dirac zero-Berry spectator theorem.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 4,
+        "C": 2,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The runner genuinely instantiates the eight-dimensional Jordan-Wigner algebra, constructs one-particle states from the unique vacuum, and evaluates the Wilson loops. Its completed results support the narrowly scoped conclusion that the corrected test does not certify the stale zero-Berry claim. The note appropriately avoids promoting the commuting-derivative diagnostic or sampled sweep into a general curvature theorem and explicitly preserves the missing band-isolation, coupling, observable, domain, and gauge data as open work."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_dkd_berry_spectator_2026_05_31.py",
+  "title": "Koide Kahler-Dirac Form-Parity Berry Boundary",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

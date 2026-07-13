@@ -1,0 +1,125 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19",
+    "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
+    "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "32de6fd306501146abaafebd616215bc1418eca47a351e0fead71c1e03ada8ca",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PACKET_THEOREM_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.951017+00:00",
+      "audit_date": "2026-06-18T09:51:29.417890+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19": "Witness-family-restricted minimal-bulk statement for rho_0, tails A and B, four sampled positive tail functionals, and a randomized coefficientwise nonnegative-tail sweep; no universal Loewner monotonicity is audited.",
+          "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19": "Finite dominant-weight-box factorized-class existence: the retained first-sector packet is zero-extended on the truncated box and inserted into the fixed factorized form, with exact retained-sector reconstruction; actual Wilson environment identification and all-weight closure are out of scope."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19": "retained_bounded",
+          "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19",
+          "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "9af6d48aad3dd89a8f3d51168d04d86bd1c857c1bae7c84f3d95aa59fcce9f2d",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited authorities are retained-grade bounded inputs for the narrowed zero-extension surface and the factorized-class local diagonal. The primary runner then computes the transfer matrix, Perron vector, Jacobi coefficients, and Hankel moments directly from those inputs; the open universal-minimality and physical-selection bridges are explicitly outside scope.",
+      "claim_scope": "The audited claim is the finite zero-extension/witness-branch computation of one explicit Perron/Jacobi first-layer packet for the retained first-sector data, not physical selection of the framework-point Wilson environment packet or universal Loewner minimality.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T09:51:29.417890+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The runner constructs T_sel, extracts its Perron state, and verifies alpha0=m1, beta1^2=m2-m1^2, beta1>0 for the displayed packet.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the helper-chain computations for rho_ret and local_factor_diagonal if those runner sources or hashes drift.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 3,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Within the bounded branch stated by the note, the load-bearing step is an actual finite matrix/Perron/Jacobi computation, not a hard-coded numerical comparison. The primary runner does include one prose-status check against the sibling note, but the packet values and identities are computed through the helper chain from retained bounded inputs. The note does not import the still-open universal Loewner or framework-point selection claims."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py",
+  "title": "Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion Packet Theorem",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

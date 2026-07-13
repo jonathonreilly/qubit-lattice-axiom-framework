@@ -1,0 +1,615 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hierarchy_formula_honest_status_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
+    "kinetic_isotropy_primitive",
+    "plaquette_self_consistency_note",
+    "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+    "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+    "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 19,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 18.998,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9fcbc3b7b15fcbccb534f1392ef75d1897e17628e4f59856ac7fd01dc9281cb0",
+  "note_path": "docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:50:48.194864+00:00",
+      "archived_for_note_hash": "a55ff05924259c7f9b1aee170de3a8d5cc3b62bbc77872579808cfdc95096ec9",
+      "audit_date": "2026-06-15T11:41:41.516252+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "Abstract finite-algebra no-go for the substitution bridge F(R)=C * alpha^(N_species(R)) with fixed C and alpha: unequal species-count readouts force unequal bridge outputs, so regulator independence requires O1/O2/O3 or fails.",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "Audited the narrow integer-s theorem that g(s)=(eta(s)/zeta(s))^(1/s)=(1-2^(1-s))^(1/s) is strictly increasing to 1 on integers s >= 2 and equals (7/8)^(1/4) only at s=4, with the outer exponent matched to the simple 1/d dimensional-analysis power at d=4.",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "no_go",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "retained_no_go",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "retained",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 17.022,
+        "runner_hash": "7c0aa446464bf126f69c134d1678b15d2df0819aa72f9cadb84f0161a5612554",
+        "transitive_descendants": 259
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260615-113728-5fcea1dd77-hierarchy_formula_honest_sta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local species-count, determinant-degree, selector, sensitivity, and numeric arithmetic close over the declared inputs. The full hierarchy/VEV interpretation still requires the declared B3 regulator/substrate selection, B4 alpha_LM^16 coupling-power transport, and B5 observable-identification bridge, none of which is closed by this restricted packet.",
+      "claim_scope": "Audited the T1 structural algebra and C1 numeric readout over the declared plaquette, scale-reference, regulator-selection, and coupling-power inputs; no EW VEV prediction or B5 observable-identification closure was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T11:41:41.516252+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Over declared B1/B3 with B4 declared, the local algebra computes the naive d=4 species count N=16, the 2^4 all-APBC determinant u0-degree 16, the exact selector (7/8)^(1/4), and hence the bounded K and v_cand readout algebra.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained bridge deriving the B4 alpha_LM^16 coupling-power transport and a retained B3 regulator/substrate selection; B5 is only required if upgrading C1 into an EW VEV claim.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md",
+        "docs/HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+        "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 9,
+        "C": 7,
+        "D": 2,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The runner source performs substantive exact finite algebra for the zero set, 2^4 eta-phase operator, characteristic polynomial, determinant scaling, and eta/zeta selector, and an independent arithmetic check confirms the displayed constants and sensitivity factors. The scale-reference primitive should not be treated as a bounded Planck import, and the retained plaquette reuse note is a retained-grade bounded input. However, the formula/readout still depends on explicit declared open selections: B3 fixes the regulator surface and B4 supplies the alpha_LM^16 coupling-power choice beyond the determinant's u0^16 degree; B5 remains needed for any EW observable identification. Therefore the row is conditionally valid as a bounded structural/readout statement, not clean closure of the hierarchy or VEV."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:22.308559+00:00",
+      "archived_for_note_hash": "93e5f8dfbe940d21031ff2465d706b4b63b9acd3aff3f51658a9c230744b7fd5",
+      "audit_date": "2026-06-15T21:14:43.485858+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "Abstract finite-algebra no-go for the substitution bridge F(R)=C * alpha^(N_species(R)) with fixed C and alpha: unequal species-count readouts force unequal bridge outputs, so regulator independence requires O1/O2/O3 or fails.",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "Audited the narrow integer-s theorem that g(s)=(eta(s)/zeta(s))^(1/s)=(1-2^(1-s))^(1/s) is strictly increasing to 1 on integers s >= 2 and equals (7/8)^(1/4) only at s=4, with the outer exponent matched to the simple 1/d dimensional-analysis power at d=4.",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "no_go",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "retained_no_go",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "retained",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 22.039,
+        "runner_hash": "74aa368435f792a891f30e7a8cb63a89cd46dba3bfc686f5a3d0922d4799154e",
+        "transitive_descendants": 262
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-211137-303c8ce6ab-hierarchy_formula_honest_sta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the narrowed T1/D1/C1 scope, the species count, determinant degree, selector, and sensitivity claims close from local algebra and the retained one-hop authorities; C1 is arithmetic over B1 plus the scale-reference ruler. This does not close the physical hierarchy formula, B3/B4 transport, or B5 observable identification.",
+      "claim_scope": "Bounded T1 structural-support theorem: naive d=4 species count, matching u_0-degree 16 of the 2^4 APBC block determinant, exact (7/8)^(1/4) selector, K/sensitivity arithmetic over B1, with D1/C1 only as declared readout appendices and not formula or EW-VEV closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T21:14:43.485858+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T21:10:56.195309+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-210804-71593452cc-hierarchy_formula_honest_sta",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "T1 structural-support theorem: naive 2^d species count, 2^4 APBC determinant u_0-degree 16, exact (7/8)^(1/4) selector, K and sensitivity arithmetic over B1; D1/C1 only as declared-input candidate/readout appendices, not EW VEV prediction or formula closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-15T21:14:43.485858+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-211137-303c8ce6ab-hierarchy_formula_honest_sta",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded T1 structural-support theorem: naive d=4 species count, matching u_0-degree 16 of the 2^4 APBC block determinant, exact (7/8)^(1/4) selector, K/sensitivity arithmetic over B1, with D1/C1 only as declared readout appendices and not formula or EW-VEV closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "On the minimal 2^4 all-antiperiodic eta-phase block, det(u_0 D + m) = (m^2 + 4 u_0^2)^8, so at m = 0 the determinant u_0-degree is exactly 16, matching the naive d=4 species count.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only if a future consumer cites D1/C1 as B3, B4, or B5 closure rather than as the bounded declared-input readout audited here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 9,
+        "C": 7,
+        "D": 2,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The restricted packet and runner source support the narrowed claim: an independent shift-operator check gives D^2 = -4I on the 2^4 all-APBC block, hence the determinant formula and u_0-degree 16, while the naive zero set and eta/zeta selector are exact algebra. The K value, C1 readout, elasticities, resolution window, and falsification factors also check by direct logarithmic/arithmetic calculation, and PDG appears only in quarantined comparator/anti-tuning roles. The plaquette value is retained_bounded and used only as the B1 reuse input, and the scale-reference primitive contributes only the dimensionful ruler. The clean verdict applies only to bounded structural support plus declared-input readout; B3/B4/B5 remain open outside the clean scope."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:11.637760+00:00",
+      "archived_for_note_hash": "44b3284308b0645690f3cefa9056a283c4e50b8ce17180f9eeeaad7a55c377cd",
+      "audit_date": "2026-06-18T03:57:23.958439+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "Abstract finite-algebra no-go for the substitution bridge F(R)=C * alpha^(N_species(R)) with fixed C and alpha: unequal species-count readouts force unequal bridge outputs, so regulator independence requires O1/O2/O3 or fails.",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "Audited the narrow integer-s theorem that g(s)=(eta(s)/zeta(s))^(1/s)=(1-2^(1-s))^(1/s) is strictly increasing to 1 on integers s >= 2 and equals (7/8)^(1/4) only at s=4, with the outer exponent matched to the simple 1/d dimensional-analysis power at d=4.",
+          "kinetic_isotropy_primitive": null,
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "no_go",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "retained_no_go",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
+          "kinetic_isotropy_primitive",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 17.533,
+        "runner_hash": "9bcacb75a5c9d8ead19099f28503e145c73cffcf49293173684e2bd5d40ac992",
+        "transitive_descendants": 261
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_formula_honest_status_note_2026-05-10-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed bounded scope, the chain closes: the class-C local operator computations and class-A arithmetic are supported by retained-grade inputs and the registered kinetic-isotropy primitive. The open B3b/B4/B5 formula-closure and observable-identification issues are explicitly fenced out of the load-bearing claim.",
+      "claim_scope": "Bounded structural-support theorem T1 plus declared candidate-map/readout appendices: species count, determinant degree, eta/zeta selector, suppression arithmetic, and sensitivity over the stated inputs, explicitly not electroweak-VEV or formula-closure derivation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T03:57:23.958439+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-18T03:55:00.607017+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_formula_honest_status_note_2026-05-10-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded structural support theorem T1 for species count, determinant degree, selector, suppression constant, and sensitivities, with D1/C1 treated only as declared candidate-map/readout appendices and not as EW-VEV or formula closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-18T03:57:23.958439+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_formula_honest_status_note_2026-05-10-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded structural-support theorem T1 plus declared candidate-map/readout appendices: species count, determinant degree, eta/zeta selector, suppression arithmetic, and sensitivity over the stated inputs, explicitly not electroweak-VEV or formula-closure derivation.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The runner recomputes T1 from local algebra: the naive d=4 zero set gives 16 species, the all-APBC 2^4 staggered block has determinant degree u_0^16, the selector is exactly (7/8)^(1/4), and the K/sensitivity arithmetic follows over the declared B1 input.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers do not promote C1 into EW-VEV formula closure without separately closing B3b/B4/B5.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 11,
+        "C": 7,
+        "D": 2,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The primary runner source performs substantive exact computations rather than merely printing expected values: it enumerates the zero set, constructs the 2^4 staggered operator in Fraction arithmetic, verifies D^2 and the characteristic polynomial, checks the determinant identity, and recomputes the selector and arithmetic. The plaquette value is correctly treated as a retained-bounded reuse input, and the kinetic-isotropy primitive is used only within its declared OS0 hypercubic-form scope. PDG comparison checks are quarantined as class D and do not support the pass condition; the note\u2019s conclusion is therefore clean only at the bounded structural-support/readout scope it actually claims."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.069524+00:00",
+      "audit_date": "2026-06-21T09:20:26.308218+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "Abstract finite-algebra no-go for the substitution bridge F(R)=C * alpha^(N_species(R)) with fixed C and alpha: unequal species-count readouts force unequal bridge outputs, so regulator independence requires O1/O2/O3 or fails.",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17": "Bounded source-side B3 dependency repair: the hierarchy exponent carrier N = 16 is sourced by the kinetic-isotropy primitive, retained 2^d species-count theorem, retained regulator-dependence boundary no-go, and retained-bounded P-FLUX within-surface branch selection, without claiming hierarchy formula closure or using labeled-generation residuals.",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "Audited the narrow integer-s theorem that g(s)=(eta(s)/zeta(s))^(1/s)=(1-2^(1-s))^(1/s) is strictly increasing to 1 on integers s >= 2 and equals (7/8)^(1/4) only at s=4, with the outer exponent matched to the simple 1/d dimensional-analysis power at d=4.",
+          "kinetic_isotropy_primitive": null,
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "no_go",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17": "bounded_theorem",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "retained_no_go",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17": "retained_bounded",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
+          "kinetic_isotropy_primitive",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 18.071,
+        "runner_hash": "d7fa5053b02e093a18ac3b0948805ba7f8c59f21e509a84cab47017e32341ddd",
+        "transitive_descendants": 268
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-075307-895da9c9-hierarchy_formula_honest_status_note_2026-05-10-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The local species-count, determinant-degree, selector, K, and sensitivity claims close from the provided algebra, retained-grade authorities, and the registered kinetic-isotropy primitive. The formula-closure and observable-identification gates are explicitly fenced outside the audited load-bearing claim.",
+      "claim_scope": "Bounded structural-support theorem T1 plus D1/C1 as declared candidate-map and numeric-readout appendices; not a closure of B3b, B4, B5, and not an EW VEV prediction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T09:20:26.308218+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T09:17:44.689439+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-075307-895da9c9-hierarchy_formula_honest_status_note_2026-05-10-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded structural-support theorem T1: local algebra computes the species count, determinant degree, eta/zeta selector, suppression constant bookkeeping, and sensitivity algebra; D1/C1 are only declared-input/readout appendices and not EW-VEV or formula closure claims.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T09:20:26.308218+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-075307-895da9c9-hierarchy_formula_honest_status_note_2026-05-10-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded structural-support theorem T1 plus D1/C1 as declared candidate-map and numeric-readout appendices; not a closure of B3b, B4, B5, and not an EW VEV prediction.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:hierarchy_b3_staggered_supplier_cascade_note_2026-06-17:retained_bounded->unaudited",
+      "load_bearing_step": "T1 recomputes from local algebra that the four-direction naive surface has species count 16, the minimal all-APBC block determinant has matching u_0-degree 16, the selector is exactly (7/8)^(1/4), and the resulting K and sensitivities follow over the declared B1 input.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers preserve the D1/C1 fence and do not promote the bounded readout to an EW VEV prediction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 11,
+        "C": 7,
+        "D": 2,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The runner source performs substantive local computations: exact corner enumeration, Fraction-matrix staggered-operator algebra, determinant/characteristic-polynomial checks, exact eta/zeta algebra, and finite-difference sensitivity checks. The helper only hard-codes the licensed plaquette surface for B1 verification, which is a retained_bounded input under the rubric, and the kinetic-isotropy dependency is an accepted primitive used within its declared scope. PDG comparison and the open B3b/B4/B5 formula-closure surfaces are quarantined from the load-bearing T1 result, so the bounded claim closes at its stated scope."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.464590+00:00",
+      "audit_date": "2026-06-30T20:00:03.383848+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "Abstract finite-algebra no-go for the substitution bridge F(R)=C * alpha^(N_species(R)) with fixed C and alpha: unequal species-count readouts force unequal bridge outputs, so regulator independence requires O1/O2/O3 or fails.",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17": "B3 source-side dependency repair for the hierarchy exponent carrier: accepted kinetic-isotropy graining, retained 2^4 count, determinant-degree recomputation, retained regulator-dependence boundary, and retained-bounded P-FLUX branch selection within its licensed surface; no B4/B5 or full hierarchy closure.",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "Audited the narrow integer-s theorem that g(s)=(eta(s)/zeta(s))^(1/s)=(1-2^(1-s))^(1/s) is strictly increasing to 1 on integers s >= 2 and equals (7/8)^(1/4) only at s=4, with the outer exponent matched to the simple 1/d dimensional-analysis power at d=4.",
+          "kinetic_isotropy_primitive": null,
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "no_go",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17": "bounded_theorem",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "retained_no_go",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17": "retained_bounded",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
+          "kinetic_isotropy_primitive",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 18.071,
+        "runner_hash": "d7fa5053b02e093a18ac3b0948805ba7f8c59f21e509a84cab47017e32341ddd",
+        "transitive_descendants": 268
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T200003Z-f0c44f83-hierarchy_formula_honest",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The structural theorem closes within its stated bounded scope: the species count and determinant identity are local exact computations, while the selector and readout algebra are exact arithmetic over retained-grade or accepted-premise inputs. The B3b/B4/B5 formula-closure and observable-identification issues are explicitly excluded from the audited conclusion.",
+      "claim_scope": "Bounded structural-support theorem T1: local recomputation of the naive d=4 species count, matching minimal-block determinant u_0-degree, exact eta/zeta selector, suppression constant, and sensitivities, with D1/C1 only as declared-input readout appendices and not as EW-VEV or formula closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T20:00:03.383848+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T19:57:09.810363+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T195709Z-7d2d538a-hierarchy_formula_honest",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded structural-support theorem T1 plus declared candidate-map D1 and bounded numeric readout C1 over stated inputs; not hierarchy-formula closure and not an EW VEV prediction.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T20:00:03.383848+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T200003Z-f0c44f83-hierarchy_formula_honest",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded structural-support theorem T1: local recomputation of the naive d=4 species count, matching minimal-block determinant u_0-degree, exact eta/zeta selector, suppression constant, and sensitivities, with D1/C1 only as declared-input readout appendices and not as EW-VEV or formula closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:hierarchy_b3_staggered_supplier_cascade_note_2026-06-17:retained_bounded->unaudited",
+      "load_bearing_step": "On the minimal 2^4 all-antiperiodic mean-field block, det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color, so at m = 0 |det| = (2 u_0)^16 = 4^8 u_0^16, with u_0-degree exactly equal to the naive-surface species count 16.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should recheck that B3b/B4/B5 remain fenced as non-load-bearing for this bounded scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 11,
+        "C": 7,
+        "D": 2,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The runner source does more than print expected constants: it constructs the staggered operator, checks D^2 = -4I, computes the characteristic polynomial and determinant identity with exact Fraction arithmetic, and independently recomputes the selector and sensitivity/readout algebra. Independent recomputation of u_0, alpha_LM, K, v_cand, the B1 window, and the anti-tuning numbers matches the note. The PDG comparison is quarantined as class D and is not used to pass the structural theorem. The clean verdict applies only to the bounded T1/D1/C1 scope, not to hierarchy formula closure or EW-VEV prediction."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.251909+00:00",
+      "audit_date": "2026-07-01T23:11:02.795930+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "Abstract finite-algebra no-go for the substitution bridge F(R)=C * alpha^(N_species(R)) with fixed C and alpha: unequal species-count readouts force unequal bridge outputs, so regulator independence requires O1/O2/O3 or fails.",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17": "Bounded B3 dependency repair: source the hierarchy-row exponent carrier N=16 from the accepted kinetic-isotropy primitive, retained 2^d count, retained regulator-dependence no-go, and retained-bounded P-FLUX within-surface branch selection, without claiming B4/B5 closure or labeled-generation realization.",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "Audited the narrow integer-s theorem that g(s)=(eta(s)/zeta(s))^(1/s)=(1-2^(1-s))^(1/s) is strictly increasing to 1 on integers s >= 2 and equals (7/8)^(1/4) only at s=4, with the outer exponent matched to the simple 1/d dimensional-analysis power at d=4.",
+          "kinetic_isotropy_primitive": null,
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "no_go",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17": "bounded_theorem",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "retained_no_go",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17": "retained_bounded",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+          "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
+          "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
+          "kinetic_isotropy_primitive",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 18.071,
+        "runner_hash": "d7fa5053b02e093a18ac3b0948805ba7f8c59f21e509a84cab47017e32341ddd",
+        "transitive_descendants": 268
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T231102Z-43eee3c5-hierarchy_formula_honest",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded T1 conclusion follows from local computation plus retained-grade cited authorities and the registered kinetic-isotropy primitive. D1 is explicitly a definition over declared inputs and C1 is arithmetic over those inputs, while B3b/B4/B5 remain non-load-bearing open gates.",
+      "claim_scope": "Bounded structural-support theorem T1: local algebra verifies the d=4 naive species count, matching minimal-block determinant degree, exact eta/zeta selector, K identity, and sensitivity algebra; D1/C1 are audited only as declared-input map/readout appendices, not EW-VEV or formula closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T23:11:02.795930+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T23:07:20.681133+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T230720Z-f276146b-hierarchy_formula_honest",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded structural-support theorem for the hierarchy candidate: finite local algebra establishes the 16-count, determinant degree 16, exact selector, K arithmetic, and sensitivities over declared B1/B2 inputs, with D1/C1 fenced from formula closure or EW-VEV prediction.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T23:11:02.795930+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T231102Z-43eee3c5-hierarchy_formula_honest",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded structural-support theorem T1: local algebra verifies the d=4 naive species count, matching minimal-block determinant degree, exact eta/zeta selector, K identity, and sensitivity algebra; D1/C1 are audited only as declared-input map/readout appendices, not EW-VEV or formula closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:hierarchy_b3_staggered_supplier_cascade_note_2026-06-17:retained_bounded->unaudited",
+      "load_bearing_step": "With B3/B4 fenced as open formula-closure gates, T1 computes that the naive four-direction surface has 16 species, the minimal 2^4 APBC staggered block has determinant u_0-degree 16, the selector is exactly (7/8)^(1/4), and K plus the sensitivity algebra follow over B1.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit if the row is later used as EW-VEV formula closure, or if B1/B2/B3/B4/B5 inputs or scopes change.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 11,
+        "C": 7,
+        "D": 2,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The runner source does real computation for the load-bearing pieces: zero-set enumeration, exact Fraction construction of the staggered operator, exact characteristic polynomial/determinant checks, eta/zeta bracketing, and independent sensitivity/falsification checks. The helper hard-codes only the licensed plaquette boundary input, which the source note correctly treats as B1 rather than deriving. The direct dependencies are retained-grade or an accepted primitive, and the PDG comparison is quarantined as class D rather than used to pass the theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hierarchy_formula_honest_status.py",
+  "title": "Hierarchy Formula `v_cand = M_Pl x (7/8)^(1/4) x alpha_LM^16` \u2014 Structural Support Theorem with Open B3/B4 Formula-Closure Gates",
+  "transitive_descendants": 722,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

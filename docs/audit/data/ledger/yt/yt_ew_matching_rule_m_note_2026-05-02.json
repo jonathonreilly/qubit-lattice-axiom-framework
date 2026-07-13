@@ -1,0 +1,196 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_ew_matching_rule_m_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_ew_color_projection_theorem",
+    "yukawa_color_projection_theorem"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.555,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b005fb89e36996f10f3d14df5c255ee36a120da5c2e076cf91d5d042a736fff6",
+  "note_path": "docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-27T12:38:30.075059+00:00",
+      "archived_for_note_hash": "f5491df9c10bfc629a4562d5f888700d297684dbe47def49971eac48d80063f7",
+      "audit_date": "2026-05-26T00:00:00+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
+          "yukawa_color_projection_theorem": "Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim."
+        },
+        "dep_claim_type": {
+          "yt_ew_color_projection_theorem": "no_go",
+          "yukawa_color_projection_theorem": "decoration"
+        },
+        "dep_effective_status": {
+          "yt_ew_color_projection_theorem": "retained_no_go",
+          "yukawa_color_projection_theorem": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "yt_ew_color_projection_theorem",
+          "yukawa_color_projection_theorem"
+        ],
+        "load_bearing_score": 8.738,
+        "runner_hash": "7798dbb2fb09f50c2ea633d21f002f164eead1a449bc7d55d9aeb57c46eebf55",
+        "transitive_descendants": 150
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-yt-ew-matching-rule-m-2026-05-26-fresh",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The supplied dependencies close the algebraic channel fraction and the kappa-family no-selector boundary, but they do not prove the source note's stronger finite-Nc non-exactness claim. The note's obstruction list and standard-QFT premises are not enough, under no-go discipline, to turn absence of a retained selector into an exhaustive no-go.",
+      "claim_scope": "Stretch-attempt/no-go surface for exact EW matching rule M: the restricted packet supports F_adj = 8/9 and a kappa/selector residual, but does not close an exact physical R_conn = 8/9 or prove matching rule M non-exact at every finite N_c.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The exact matching coefficient (N_c^2 - 1)/N_c^2 for the physical EW current renormalization requires fixing the disconnected coefficient at non-perturbative level.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad -- narrow the source to the current-packet no-selector boundary already supported by the kappa-family dependency, or add a retained selector/no-go proof with a full N1-N8 checklist, at least five distinct route closures, collapsed wall independence, and explicit authority for the non-perturbative disconnected-current/OZI claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 34,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "Issue: The queue hint positive_theorem is incorrect; this is a no-go/obstruction attempt, but the note's obstruction list does not exhaust the exact matching-rule routes under N1-N8. Why this blocks: N1 names only three routes, N2 does not establish independence of O1/O3, N3 leaves standard-QFT/OZI/glueball premises as unsupplied hidden walls, N5/N7 show that 'NOT exact at finite N_c' is broader than 'not derived by this packet', and N8 cannot be completed from the restricted inputs. Repair target: Narrow the source to the current-packet no-selector boundary already supported by the kappa-family dependency, or add a retained selector/no-go proof with a full N1-N8 checklist, at least five distinct route closures, collapsed wall independence, and explicit authority for the non-perturbative disconnected-current/OZI claims. Claim boundary until fixed: downstream rows may cite only the algebraic F_adj = 8/9 support and the current-packet kappa/selector residual; they may not cite an exact physical R_conn = 8/9 derivation or an exhaustive finite-Nc no-go."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.908141+00:00",
+      "audit_date": "2026-06-10T02:44:42.355725+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
+          "yukawa_color_projection_theorem": "Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim."
+        },
+        "dep_claim_type": {
+          "yt_ew_color_projection_theorem": "no_go",
+          "yukawa_color_projection_theorem": "decoration"
+        },
+        "dep_effective_status": {
+          "yt_ew_color_projection_theorem": "retained_no_go",
+          "yukawa_color_projection_theorem": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "yt_ew_color_projection_theorem",
+          "yukawa_color_projection_theorem"
+        ],
+        "load_bearing_score": 10.033,
+        "runner_hash": "a325d349a1ca2f3b4c934cbcb332ef414950138f07bed0544a5aa09357dafd57",
+        "transitive_descendants": 261
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-574f82d268-yt_ew_matching_rule_m_note_2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained no-go parent supplies the open selector boundary, and the cited decoration authority supplies only the finite-dimensional SU(3) channel fraction. The source note does not claim an absolute finite-N_c impossibility or an exhaustive no-go over future selectors.",
+      "claim_scope": "Audited only the current-packet boundary that F_adj = 8/9 is algebraic SU(3) channel support while exact physical R_conn = 8/9 for EW matching rule M is not derived by this packet.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-10T02:44:42.355725+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-28T03:01:49.208173+00:00",
+          "auditor": "codex-audit-loop-yt-ew-rule-m-current-packet-20260528-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Current-packet no-go boundary for EW matching rule M: the packet supplies exact F_adj=8/9 algebraic support at N_c=3 but does not supply a retained disconnected-current/OZI/selector theorem deriving exact physical R_conn=8/9 for EW matching rule M; no global finite-N_c or future-route no-go is audited.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-10T02:44:42.355725+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-574f82d268-yt_ew_matching_rule_m_note_2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the current-packet boundary that F_adj = 8/9 is algebraic SU(3) channel support while exact physical R_conn = 8/9 for EW matching rule M is not derived by this packet.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The packet supplies the algebraic fraction F_adj = 8/9 but does not contain a retained selector promoting it to exact physical EW matching rule M, so exact physical R_conn = 8/9 is not derived by this packet.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the ledger continues to mark docs/YT_EW_COLOR_PROJECTION_THEOREM.md as retained_no_go and docs/YUKAWA_COLOR_PROJECTION_THEOREM.md as decoration under a retained parent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 24,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The restricted packet cleanly supports the narrowed no-go boundary: F_adj = (N_c^2 - 1) / N_c^2 gives 8/9 at N_c = 3, and no selector deriving physical R_conn = 8/9 is supplied. Independent formula checks of the kappa-family, Fierz normalization, channel dimensions, and listed specializations found no coefficient or normalization defect. The no-go discipline gate passes because the note explicitly limits itself to current-packet absence, leaves future non-perturbative selector routes open, and avoids absolute no-go rhetoric."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py",
+  "title": "YT EW Matching Rule M Current-Packet Boundary",
+  "transitive_descendants": 751,
+  "verdict_rationale": null
+}

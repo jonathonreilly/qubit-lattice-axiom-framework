@@ -1,0 +1,185 @@
+{
+  "audit_date": "2026-07-11T23:10:48.241705+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "realized_state_primitive": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    "dep_claim_scope": {
+      "realized_state_primitive": null
+    },
+    "dep_claim_type": {
+      "realized_state_primitive": "meta"
+    },
+    "dep_effective_status": {
+      "realized_state_primitive": "meta"
+    },
+    "deps": [
+      "realized_state_primitive"
+    ],
+    "load_bearing_score": 2.5,
+    "runner_hash": "af6e659a3afb229e8a515d16ab4c31a445bd7e0c75736d6def562bf40c75023b",
+    "transitive_descendants": 3
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00380-det_phase_harmonic_depth_sta",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The runner constructs the finite free-sector trajectories and exact-tone bases, then computes the capture fractions without importing or hard-coding the resulting values. Its table directly establishes the mixed threshold-crossing pattern within the stated finite scope.",
+  "claim_id": "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
+  "claim_scope": "The five explicitly seeded free-sector L=3 trajectories with tau=0.35 and T=256, projected onto nested signed-gap exact-tone spans through order 8.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-07-11T23:10:48.241705+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "realized_state_primitive"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 2.5,
+  "load_bearing_step": "The K=6 state reaches the 0.99 capture threshold at order 4 with capture 0.995, whereas the other supplied states do not reach 0.99 through order 8.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "44351526aeb8a338143a6e37255e3e28da0af78c37c678d8a56b57a73a774051",
+  "note_path": "docs/DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": "",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.316149+00:00",
+      "audit_date": "2026-06-14T02:44:11.297994+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "realized_state_primitive": "5ae28ea86dbb0f29cbb5974923f9e9750077c9f46f4bed790e361dff389e91ef"
+        },
+        "dep_claim_scope": {
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "af6e659a3afb229e8a515d16ab4c31a445bd7e0c75736d6def562bf40c75023b",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-024220-b445f376ed-det_phase_harmonic_depth_sta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the finite L=3 unitary route, seeded rank projectors, exact tone sets, det-phase increments, and least-squares projections rather than importing the contested result. An independent direct raw-tone least-squares recomputation matches the W_o sizes, capture table, ceilings, and o*=4 saturation for K=6.",
+      "claim_scope": "Free-sector L=3 supplied state family for det-phase increment capture by exact-tone least-squares projection over orders o=1..8, with tau=0.35, T=256, K in {3,4,5,6}, and K=5 seeds 4242 and 99.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T02:44:11.297994+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:realized_state_primitive:5ae28ea8->0515188f",
+      "load_bearing_step": "With the predicted exact-tone sets W_o, the K=6 state reaches capture >=0.99 at o*=4 while the K=3 and K=4 states do not reach 0.99 through o=8, so the tested family has mixed state-dependent harmonic depth and no state-independent 0.99 capture depth <=8.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that the seeded supplied state family is the intended bounded audit scope; the capture math itself independently matches.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The cited realized-state primitive is an approved premise in the packet and is used only for pointwise evaluation of supplied state data, not as a selector, weighting rule, or genericity claim. The load-bearing numeric pattern is computed from the scoped finite state family and exact-tone projection, with no external comparator or tuned empirical import. The source claim is bounded to the tested family, and the independent math check confirms the displayed capture entries and stated saturation/non-saturation conclusions."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:31.110592+00:00",
+      "audit_date": "2026-07-10T15:42:48.702308+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "realized_state_primitive": "0515188f2f4ca91b4c75a5f2ec35f42c9d3f2efec86b20f8d22b1bc991a9e44b"
+        },
+        "dep_claim_scope": {
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 2.5,
+        "runner_hash": "af6e659a3afb229e8a515d16ab4c31a445bd7e0c75736d6def562bf40c75023b",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00006-det_phase_harmonic_depth_sta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the Hamiltonian, unitary evolution, seeded rank projectors, determinant-phase increments, and exact-tone projection bases, then computes the reported capture fractions rather than printing or importing them. The accepted realized-state primitive supports classifying the demonstrated state-dependent values as registered data.",
+      "claim_scope": "The five explicitly seeded free-sector L=3 trajectories with tau=0.35 and T=256, evaluated against nested signed-gap tone spans through order 8.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:42:48.702308+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:realized_state_primitive:0515188f->755cfd44",
+      "load_bearing_step": "Exact-tone least-squares projection gives the K=6 state its first 0.99 crossing at order 4 with capture 0.995010014, while the tested K=3 and K=4 states remain below 0.99 through order 8, establishing mixed per-state harmonic depths on the tested family.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing numerical result is a genuine first-principles computation for the explicitly defined finite family; the claimed capture values are neither hard-coded outputs nor imported measurements. Exact-tone basis coverage, rank floors, nonzero signals, threshold crossings, and monotonicity are all checked successfully. The conclusion is valid only for the tested family and orders through 8, matching the note's bounded scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 3,
+    "B": 0,
+    "C": 9,
+    "D": 0,
+    "total_pass": 12
+  },
+  "runner_path": "scripts/frontier_det_phase_capture_vs_order_2026_06_12.py",
+  "title": "The Det-Phase's Harmonic Depth Is Realized-State Data: One State Saturates at Order 4 (Capture 0.995) While Others Do Not Reach 0.99 Through Order 8 (Ceilings 0.957\u20130.984) \u2014 Exact-Tone, Leakage-Free (Bounded)",
+  "transitive_descendants": 3,
+  "verdict_rationale": "The load-bearing result is a genuine finite first-principles computation: the capture values and saturation orders arise from constructed projectors, unitary evolution, determinant-phase increments, and exact-tone least-squares projections. Rank, nonzero-signal, basis-span, threshold, and monotonicity gates all pass, and no external comparator or tuned target value is used. The accepted realized-state primitive is used correctly to classify the differing pointwise results as supplied-state data, without asserting selection, weighting, typicality, or behavior beyond the tested family."
+}

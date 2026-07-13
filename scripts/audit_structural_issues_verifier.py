@@ -43,6 +43,8 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 AUDIT_DATA = REPO_ROOT / "docs" / "audit" / "data"
+sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
+import ledger_io  # noqa: E402
 
 # Pipeline-fix landing time (helper_runner_paths first appeared on main).
 # Sourced from `git log --format=%aI 860436c2e` = 2026-05-17T13:14:44Z.
@@ -109,6 +111,7 @@ def section(title: str) -> None:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     banner("AUDIT-PROCESS STRUCTURAL-ISSUE VERIFIER")
     print()
     print(f"Repo root: {REPO_ROOT}")

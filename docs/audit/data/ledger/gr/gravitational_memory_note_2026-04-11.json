@@ -1,0 +1,147 @@
+{
+  "audit_date": "2026-05-24T17:58:40.011911+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "memory_decay_diagnosis_2026-04-11": "At the current parameters of scripts/frontier_memory_mu2_size_sweep.py, the toy runner's measured memory varies by more than 10x across N in both relative and fixed geometry slices, with fixed-vs-relative disagreement for N=81, 101, and 121.",
+      "memory_mu2_geometry_sweep_note_2026-04-11": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+    },
+    "dep_claim_type": {
+      "memory_decay_diagnosis_2026-04-11": "bounded_theorem",
+      "memory_mu2_geometry_sweep_note_2026-04-11": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "memory_decay_diagnosis_2026-04-11": "retained_bounded",
+      "memory_mu2_geometry_sweep_note_2026-04-11": "retained_bounded"
+    },
+    "deps": [
+      "memory_decay_diagnosis_2026-04-11",
+      "memory_mu2_geometry_sweep_note_2026-04-11"
+    ],
+    "load_bearing_score": 0.0,
+    "runner_hash": "1f777a0221136b7a5277b768dbd8d6f1eff7b8f69e8adf82798ed3fb79b4611c",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T175818Z-d760945f-gravitational_memory_not-01",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The included runner source actually evolves the field and marker wavepackets and computes the reported separations rather than printing hard-coded constants. The broader Yukawa-screening interpretation is not load-bearing for the narrowed bounded claim and is explicitly caveated by the cited robustness notes.",
+  "claim_id": "gravitational_memory_note_2026-04-11",
+  "claim_scope": "Audited only the narrow N=61 ring runner claim: the specified toy protocol produces the reported small permanent marker-separation shift and amplitude-response pattern, while not establishing a stable graph-family or GR memory observable.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-24T17:58:40.011911+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "memory_decay_diagnosis_2026-04-11",
+    "memory_mu2_geometry_sweep_note_2026-04-11"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "On this 1D ring protocol, a transient retarded field pulse produces a small but repeatable permanent shift in marker separation after the pulse has passed, with weak-pulse approximate linearity and strong-pulse nonlinearity.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "dfc048b63ea3df54558d96006c2a36b58a689be5ecf79fd3cf0fb78db126755a",
+  "note_path": "docs/GRAVITATIONAL_MEMORY_NOTE_2026-04-11.md",
+  "notes_for_re_audit_if_any": "A second auditor should re-check whether the non-load-bearing phrase 'points directly to Yukawa screening as the likely cause' should be further narrowed to match the later mu2/geometry sweep.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.105859+00:00",
+      "archived_for_note_hash": "407248d243ac17c3099dd23318e8b7129884486bad8236ad6e23daeccdfe7e1f",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-01T06:37:55.811758+00:00",
+      "audit_date": "2026-04-30T19:29:39.993269+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "memory_decay_diagnosis_2026-04-11": "unaudited",
+          "memory_mu2_geometry_sweep_note_2026-04-11": "unaudited"
+        },
+        "deps": [
+          "memory_decay_diagnosis_2026-04-11",
+          "memory_mu2_geometry_sweep_note_2026-04-11"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. One-hop dependencies are not all retained (memory_decay_diagnosis_2026-04-11=support, memory_mu2_geometry_sweep_note_2026-04-11=bounded), so the chain does not close under the leaf audit rule.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:memory_decay_diagnosis_2026-04-11:support->audited_conditional",
+      "load_bearing_step": "- post-pulse offset appears late and accumulates after the field pulse has passed",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "docs/MEMORY_DECAY_DIAGNOSIS_2026-04-11.md",
+        "docs/MEMORY_MU2_GEOMETRY_SWEEP_NOTE_2026-04-11.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the load-bearing chain depends on non-retained one-hop authorities (memory_decay_diagnosis_2026-04-11=support, memory_mu2_geometry_sweep_note_2026-04-11=bounded). Why this blocks: the leaf row can only audit clean if its cited inputs are already retained or if it has no open upstream premise. Repair target: audit or repair the listed dependency rows to retained/equivalent closure, then re-audit this claim. Claim boundary until fixed: safe to cite only at its declared bounded tier with the upstream dependency condition attached."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/frontier_gravitational_memory.py",
+  "title": "Gravitational Memory Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The runner output matches the source note's narrow numerical table and summary for the N=61 protocol, and the source code performs a genuine simulation from the stated toy equations. The cited retained_bounded authorities support restricting the claim away from a graph-family or publication-grade positive memory result. The note's wording about Yukawa screening as the likely cause is weaker than the current cited authorities allow, but the audited claim is bounded to the reproduced narrow-ring signal and the instability under robustness checks."
+}

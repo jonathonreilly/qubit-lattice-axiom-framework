@@ -1,0 +1,161 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.7,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a508dbde507ad1f4621df32e382ab6ba8308d48b2eaf3d4cc4cdca4379ed429e",
+  "note_path": "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:26.750910+00:00",
+      "audit_date": "2026-05-21T22:23:22.982298+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 13.967,
+        "runner_hash": "e29a875de781cdbbb2111c80ee211ed76eafda85ecd73eee01a4f43bc62d2b17",
+        "transitive_descendants": 1000
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-judicial-panel-20260521-cl3-faithful-j2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The mathematics closes, but under ALGEBRAIC_DECORATION_POLICY it is boxed as decoration: it has a single parent, follows by ordinary semisimple algebra from that parent, has no external comparator or new physical bridge, and does not compress the parent because the parent already contains the same two-dimensional irrep readout in K4. The winning tuple is therefore audited_decoration / decoration / A: the ratified step is ordinary algebra on the retained split input, not an independent theorem row.\n\nFive-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=2; ('second', 'audited_decoration', 'decoration', 'A')=3.",
+      "claim_scope": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-21T22:23:22.982298+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T01:40:42.572719+00:00",
+          "auditor": "codex-audit-loop-019e14b1-3217-7182-9319-9a7006e838f1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-21T21:59:34.724252+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-cl3_faithful_irrep_dim_t-003",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Abstract finite-dimensional complex representation theory of real Cl(3,0): irreducibles are the two 2-dimensional chirality modules and finite-dimensional modules decompose into their direct sums.",
+          "claim_type": "decoration",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_decoration"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-21T22:23:22.982298+00:00",
+          "auditor": "codex-judicial-panel-20260521-cl3-faithful-j2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+          "claim_type": "decoration",
+          "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "first_auditor_error": "It correctly found closure, but treated a single-parent algebraic corollary as a separate positive_theorem and classified the row by dependency lookup rather than the algebraic corollary step itself.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The mathematics closes, but under ALGEBRAIC_DECORATION_POLICY it is boxed as decoration: it has a single parent, follows by ordinary semisimple algebra from that parent, has no external comparator or new physical bridge, and does not compress the parent because the parent already contains the same two-dimensional irrep readout in K4. The winning tuple is therefore audited_decoration / decoration / A: the ratified step is ordinary algebra on the retained split input, not an independent theorem row.\n\nFive-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=2; ('second', 'audited_decoration', 'decoration', 'A')=3.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 37,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 37
+          },
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_decoration"
+        }
+      },
+      "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:cl3_complexification_split_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "From the sibling split theorem Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), Artin-Wedderburn gives the two irreducible complex modules, each the natural 2-dimensional M_2(C)-module, and semisimplicity gives direct-sum decomposition.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "box_under_parent: record as algebraic decoration under cl3_complexification_split_narrow_theorem_note_2026-05-10 unless later shown load-bearing for a non-decoration claim or given an independent comparator surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 37,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "The mathematics closes, but under ALGEBRAIC_DECORATION_POLICY it is boxed as decoration: it has a single parent, follows by ordinary semisimple algebra from that parent, has no external comparator or new physical bridge, and does not compress the parent because the parent already contains the same two-dimensional irrep readout in K4. The winning tuple is therefore audited_decoration / decoration / A: the ratified step is ordinary algebra on the retained split input, not an independent theorem row.\n\nFive-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=2; ('second', 'audited_decoration', 'decoration', 'A')=3."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py",
+  "title": "Cl(3) Faithful Irrep Complex Dimension Two Narrow Theorem",
+  "transitive_descendants": 12,
+  "verdict_rationale": null
+}

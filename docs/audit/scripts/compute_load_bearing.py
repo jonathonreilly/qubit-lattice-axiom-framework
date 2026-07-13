@@ -43,6 +43,8 @@ from datetime import datetime, timezone
 from math import log2
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 GRAPH_PATH = DATA_DIR / "citation_graph.json"
@@ -130,6 +132,7 @@ def compute_score(direct_in: int, transitive: int, max_desc_rank: int) -> float:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     if not GRAPH_PATH.exists():
         raise SystemExit("citation_graph.json missing; run build_citation_graph.py first")
     if not LEDGER_PATH.exists():
@@ -191,7 +194,7 @@ def main() -> int:
     # Do not write a timestamp here. The audit PR gate compares generated
     # files byte-for-byte, so ornamental timestamps make every run look stale.
 
-    LEDGER_PATH.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
+    ledger_io.save_ledger(ledger)
 
     crit_counts: dict[str, int] = {}
     for m in metrics.values():

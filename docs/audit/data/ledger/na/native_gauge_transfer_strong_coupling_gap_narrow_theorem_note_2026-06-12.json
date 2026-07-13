@@ -1,0 +1,181 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+    "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "501bf2f47e5813bac27a98eb9c005e302dd93fb299df1aa5356c927600a31664",
+  "note_path": "docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T07:43:49.468026+00:00",
+      "audit_date": "2026-06-19T22:27:04.437527+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Gauge-only SU(3) Wilson one-link weight/kernel: non-negative character coefficients for all irreps and beta>=0, hence PSD convolution/Gram kernel; no fermion, mixed OS, or full interacting RP closure."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "cc2289013c54f297e5b0255c75f2251fbee0cfde5c7962df2bb4e7a64809d0a3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited character recurrence and Wilson coefficient-positivity inputs give the nonnegative SU(3) multiplicity expansion, and evaluation at the identity gives the dimension majorant used in the displayed inequality. The conclusion does not use beta=6 environment data, a continuum limit, or an external comparator.",
+      "claim_scope": "Audited the bounded strong-coupling coefficient-transfer gap for the repo-native SU(3) Wilson character packet w_beta=exp((beta/6)(chi_(1,0)+chi_(0,1))) on 0 <= beta <= 1; the 25-state half-slice packet is only a finite consistency check.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T22:27:04.437527+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+      "load_bearing_step": "For each nontrivial lambda, m_lambda^(n) <= 6^n/d_lambda with d_lambda >= 3 and c_(0,0)(beta) >= 1, hence c_lambda(beta)/c_(0,0)(beta) <= (1/3) sum_{n>=1} beta^n/n! <= (2/3) beta on 0 <= beta <= 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the beta/6 coefficient normalization against the helper Bessel argument beta/3 and confirm the finite half-slice packet remains treated as support, not theorem scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing proof is a genuine algebraic bound over retained-grade one-hop inputs: nonnegative character multiplicities, SU(3) dimensions, and an elementary exponential tail majorant. The primary runner implements the recurrence and rational tail checks, and its finite Bessel/matrix checks are supportive rather than load-bearing. The helper functions used by the parent for Wilson coefficients, J, and matrix exponentials are computational; hard-coded helper diagnostics are not on the parent load-bearing path. The source note\u2019s scope fences correctly exclude the physical beta=6 Perron solve, continuum Yang-Mills, and infinite-volume mass-gap claims."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.220651+00:00",
+      "audit_date": "2026-06-21T15:29:43.781607+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Audited only the gauge-sector SU(3) Wilson one-link weight w(U)=exp((beta/3) Re Tr U): its character coefficients are non-negative for beta >= 0, equivalently the single-link gauge convolution kernel is PSD."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "cc2289013c54f297e5b0255c75f2251fbee0cfde5c7962df2bb4e7a64809d0a3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited recurrence supplies nonnegative SU(3) character multiplicities, and evaluating Y^n at the identity gives the dimension bound m_lambda^(n) d_lambda <= 6^n. Together with d_lambda >= 3, c_(0,0) >= 1, and the elementary exponential majorant, the claimed ratio bound follows within the stated strong-coupling scope.",
+      "claim_scope": "Bounded strong-coupling SU(3) Wilson character coefficient-transfer gap lambda_1/lambda_0 <= (2/3) beta for 0 <= beta <= 1, with the 25-state half-slice packet treated only as a finite numerical consistency check.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T15:29:43.781607+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note:retained_bounded->unaudited",
+      "load_bearing_step": "For nontrivial lambda, m_lambda^(n) <= 6^n/d_lambda, so c_lambda(beta)/c_(0,0)(beta) <= (1/d_lambda) sum_{n>=1} beta^n/n! <= (2/3) beta on 0 <= beta <= 1.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the coefficient convention w_beta=exp((beta/6)Y) against the helper call arg=beta/3.0 via Re Tr U = Y/2; this appears consistent and non-load-bearing for the analytic bound.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The proof is a bounded algebraic majorant on Wilson character coefficients, not a physical beta=6 environment solve or continuum claim. The retained-grade one-hop inputs cover the character recurrence and coefficient positivity support needed for this scoped result, and the open beta=6 Perron/environment identifications are explicitly outside the theorem. The primary runner computes recurrence layers, exact rational leading coefficients and tails, and finite Bessel packet checks; the helper's hard-coded beta=6 comparator diagnostics are not used in the load-bearing path."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/native_gauge_transfer_strong_coupling_gap_narrow_2026_06_12.py",
+  "title": "Native Gauge Transfer Strong-Coupling Gap Narrow Theorem Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

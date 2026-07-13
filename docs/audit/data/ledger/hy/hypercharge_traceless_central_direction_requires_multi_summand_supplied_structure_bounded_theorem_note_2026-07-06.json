@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+    "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2b76416941f33f328184023f5df683b5eceebc7649a826c63cd00ef655fd0d3c",
+  "note_path": "docs/HYPERCHARGE_TRACELESS_CENTRAL_DIRECTION_REQUIRES_MULTI_SUMMAND_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:29.578727+00:00",
+      "audit_date": "2026-07-09T10:10:30.984971+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06": "Bounded conditional color-orientation algebra: for a supplied complex C^3 carrier, the fundamental and conjugate su(3) modules are complex-linearly inequivalent, the su(2) epsilon control is one-dimensional, and the exact cubic-anomaly signs are opposite; T2 is only a named candidate premise conditional on comparability, ARROW, and SUCCESSION-ORIENT, and no C^3 carrier, orientation supplier, T-oddness, anomaly-cancellation law, physical color/quark identification, gauge dynamics, chirality, or hypercharge bridge is derived.",
+          "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06": "Bounded finite-dimensional algebra theorem: on supplied C^3 tensor C^2 with named factor subalgebras and ordered infinitesimal factor preservation, the stabilizer in u(6) is exactly the 12-dimensional factorwise u(3)+u(2) image with semisimple su(3)+su(2) and one central u(1); REGISTERED-FACTOR/T2 are conditional bookkeeping only, not a derived gauging, carrier, chirality, hypercharge, or physical color/weak bridge.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06": "bounded_theorem",
+          "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06": "retained_bounded",
+          "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06",
+          "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "55202c03a20e816b12f7e2f244be8cf3f373da2902cb151a7482d8502a4581cb",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-trace-20260709",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic closure from factorwise central projectors to one trace-zero equation is exact in the supplied direct-sum surface. The retained-bounded dependencies supply only the allowed factor-preservation and 3/3bar arithmetic boundaries, not physical hypercharge or a multi-summand supplier.",
+      "claim_scope": "Within supplied SUMMAND-FIXED direct sums of N factorwise C^3 tensor C^2 blocks, central directions have dimension N and the traceless central subspace has dimension N-1; no physical hypercharge or summand supplier is claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T10:10:30.984971+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For Z(q) = q_1 Z_1 + ... + q_N Z_N, tr Z(q) = 6i(q_1 + ... + q_N), so the traceless central condition is q_1 + ... + q_N = 0 and the traceless central subspace has dimension N-1.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "Clean within the bounded supplied-summand scope. The runner verifies the central-dimension and traceless-dimension algebra, the two-summand typed-constraint coincidence, commutant dimensions, quote guards, and AST discipline with TOTAL PASS=13 FAIL=0 and py_compile passing. Residual risk is scope drift only: downstream rows must not cite this as a physical hypercharge derivation or as deriving the multi-summand supplier."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/hypercharge_traceless_central_multi_summand_2026_07_06.py",
+  "title": "Hypercharge-Like Traceless Central Direction Requires Multi-Summand Supplied Structure",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

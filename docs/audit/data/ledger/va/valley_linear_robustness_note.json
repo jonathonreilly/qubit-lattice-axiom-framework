@@ -1,0 +1,190 @@
+{
+  "audit_date": "2026-05-12T00:26:58.004161+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_claim_scope": {
+      "action_crossover_note": "The scoped runner reproduces the finite DAG-slice crossover table for spent-delay versus valley-linear at regularities 0.0, 0.2, 0.4, 0.6, 0.8, and 0.95, with best observed valley-minus-spent delta at regularity 0.40.",
+      "valley_linear_action_note": "Bounded same-harness comparison of spent-delay versus valley-linear S=L(1-f) on the fixed 3D ordered dense lattice 1/L^2 family at h=0.25 with the stated slit geometry, detector readout, and field shape."
+    },
+    "dep_claim_type": {
+      "action_crossover_note": "bounded_theorem",
+      "valley_linear_action_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "action_crossover_note": "retained_bounded",
+      "valley_linear_action_note": "retained_bounded"
+    },
+    "deps": [
+      "action_crossover_note",
+      "valley_linear_action_note"
+    ],
+    "load_bearing_score": 10.245,
+    "runner_hash": "d35520085cf162bcf866b3fd9212d1d0897588474e468d204f7a691644211ea1",
+    "transitive_descendants": 428
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260512-002551-332e8573-valley_linear_robustness-003",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The provided runner source constructs the lattice, propagates amplitudes under the stated action and kernel, and computes the reported observables rather than printing hard-coded expected values. The conclusions are explicitly limited to the tested slices and match the completed runner output.",
+  "claim_id": "valley_linear_robustness_note",
+  "claim_scope": "Bounded replay of scripts/valley_linear_robustness_sweep.py for S = L(1-f), kernel 1/L^2 with h^2 measure, h = 0.5, on the tested 3D ordered-lattice width, connectivity, and length slices.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-12T00:26:58.004161+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-12T00:13:39.749370+00:00",
+      "auditor": "codex-cli-gpt-5.5-20260512-000558-b0c4bc75-valley_linear_robustness-007",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Bounded robustness replay of S = L(1-f) on the specified h=0.5 3D ordered-lattice width, connectivity, and length slices.",
+      "claim_type": "bounded_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-05-12T00:26:58.004161+00:00",
+      "auditor": "codex-cli-gpt-5.5-20260512-002551-332e8573-valley_linear_robustness-003",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Bounded replay of scripts/valley_linear_robustness_sweep.py for S = L(1-f), kernel 1/L^2 with h^2 measure, h = 0.5, on the tested 3D ordered-lattice width, connectivity, and length slices.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "valley_linear_action_note",
+    "action_crossover_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 5.085,
+  "load_bearing_step": "The strongest safe summary is that the valley-linear action is robust on the tested 3D ordered-lattice slices, with Born machine-clean, F~M = 1.00, and gravity TOWARD throughout the tested rows.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6f734b8fbd36b4ad344c5615e41367205fdd7896d1095de22d03e898c651ec67",
+  "note_path": "docs/VALLEY_LINEAR_ROBUSTNESS_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check that runner_check_breakdown row count convention matches the pipeline\u2019s intended counting of sweep rows versus observable checks.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.237280+00:00",
+      "audit_date": "2026-05-02T02:18:49.683019+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered robustness sweep reproduced the note's width, connectivity, and length tables. The claim is explicitly bounded to tested ordered-lattice slices and does not assert a universal tail exponent or continuum theorem.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:action_crossover_note,valley_linear_action_note",
+      "load_bearing_step": "The valley-linear action is robust on the tested 3D ordered-lattice slices, with machine-clean Born rows, F~M=1.00, and TOWARD gravity throughout, but the distance-tail exponent remains slice-dependent.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The current runner output matches the frozen memo tables: all 12 rows are Born-clean, all gravity rows are TOWARD, and all F~M exponents print as 1.00. Tail fits are reported only where enough post-peak points exist, and the slopes vary across width, connectivity, and length slices. The note's bounded interpretation is therefore exactly supported by the registered artifact."
+    },
+    {
+      "archived_at": "2026-05-10T14:40:27.632154+00:00",
+      "audit_date": "2026-05-04T10:49:25.077746+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "action_crossover_note": "retained_bounded",
+          "valley_linear_action_note": "retained_bounded"
+        },
+        "deps": [
+          "action_crossover_note",
+          "valley_linear_action_note"
+        ],
+        "load_bearing_score": 3.585,
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-2026-05-04",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note's two listed dependencies are already retained-bounded, and the completed frozen log named by the note reproduces the width, connectivity, and length sweep tables. The live runner was longer than the current audit budget, so the clean verdict rests on the completed cached replay artifact rather than on timeout behavior.",
+      "claim_scope": "Bounded frozen-replay result that the valley-linear action stays Born-clean, F~M-linear, and TOWARD on the tested h=0.5 ordered-lattice width/connectivity/length slices, with non-universal tail exponents.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-04T10:49:25.077746+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:valley_linear_action_note:retained_bounded->unaudited",
+      "load_bearing_step": "The frozen robustness sweep shows Born remains machine-clean, F~M stays at 1.00, and gravity remains TOWARD across the tested width, connectivity, and length rows on the 3D ordered-lattice family.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A future re-audit should rerun the full sweep to completion or provide a sliced runner if the cached log is considered stale; do not broaden beyond the tested ordered-lattice slices.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing claim is explicitly bounded to the tested 3D ordered-lattice slices, and the on-disk completed log matches the note's reported tables: machine-scale Born, F~M = 1.00, and TOWARD gravity across the width, connectivity, and length sweeps. The dependency chain is retained-bounded through valley_linear_action_note and action_crossover_note, so the bounded replay claim closes at the stated scope. Residual risk is exactly the note's caveat: this does not prove robustness across all architectures, universal tail exponents, or continuum behavior."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.977060+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 12,
+    "D": 0,
+    "total_pass": 12
+  },
+  "runner_path": "scripts/valley_linear_robustness_sweep.py",
+  "title": "Valley-Linear Robustness Note",
+  "transitive_descendants": 11,
+  "verdict_rationale": "The note\u2019s bounded tables are directly reproduced by a completed runner whose source performs the relevant numerical computation from the stated lattice/action setup. The runner does not import the contested table values from another note and does not use external comparator data. The claim is carefully scoped: it does not assert universality, a continuum theorem, or a settled derivation of the action law."
+}

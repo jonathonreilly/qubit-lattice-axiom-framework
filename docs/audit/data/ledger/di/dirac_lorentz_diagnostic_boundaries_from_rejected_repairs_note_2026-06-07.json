@@ -1,0 +1,514 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+    "minimal_axioms",
+    "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+    "emergent_lorentz_invariance_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e77b3cd43b7cdeccb3d4f39a05d8288223ad8732fbc8011287b2003d1f83848b",
+  "note_path": "docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T08:57:40.536469+00:00",
+      "archived_for_note_hash": "484a57ed8b9c1ae6e9e1e444e17721109aa501bbcc4e50021f4916dd28b334e6",
+      "audit_date": "2026-06-08T20:29:20.784974+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h/cubic artifact checks on Z^3 x Z_tau do not by themselves force c_t=c_s or full SO(4) kinetic covariance; an explicit Euclidean normalization or 4D-hypercubic premise is needed for that stronger wording."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "retained_bounded",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "b5d985cce0c9cea1ed12c1d448f4fb7cfc62a4f2129640ec80f40cad9df99de2",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-202555-5741f34519-dirac_lorentz_diagnostic_bou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The qualitative math closes by independent algebra/asymptotics, but the presented primary runner does not compute the stated L2 Gaussian norms: its HermiteE quadrature weight corresponds to exp(-a*zeta^2/2) in the norm integral, while psi=exp(-a*zeta^2/2) requires exp(-a*zeta^2). A corrected norm certificate or analytic replacement is needed before the packet is clean as written.",
+      "claim_scope": "Diagnostic boundary only: the common Gaussian analytic-vector repair fails for H, and native spatial Z^3 continuous-time counting differs from Euclidean temporal-lattice anisotropy counting.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-08T20:29:20.784974+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The rapidity Gaussian is analytic for K=-i d/dzeta but not for H=M_perp cosh(zeta), and invariant counting gives one native spatial quadratic coefficient versus two c_t/c_s coefficients on Z^3 x Z_tau unless a 4D hypercubic/normalization premise is supplied.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: correct the Gaussian norm quadrature/cache, or replace the sampled-ratio certificate with an explicit analytic proof of K analyticity and H non-analyticity, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The one-hop authorities used for the diagnostic scope are retained-grade or the flagged minimal-axiom premise, and the invariant-counting and dispersion claims check algebraically. The rapidity analytic-vector separation is also qualitatively correct: Gaussian Fourier moments give K analyticity, while cosh-multiplication moments grow like exp(c*n^2), defeating n!. However, the runner source uses the wrong Gaussian quadrature weight for the displayed norm ratios, so its table and threshold are not a valid certificate for the stated norms. Because the source note names that runner as the primary certificate, the clean audit should wait for a corrected cached runner or explicit analytic proof."
+    },
+    {
+      "archived_at": "2026-06-09T19:27:18.107887+00:00",
+      "audit_date": "2026-06-09T12:46:46.021194+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h/cubic artifact checks on Z^3 x Z_tau do not by themselves force c_t=c_s or full SO(4) kinetic covariance; an explicit Euclidean normalization or 4D-hypercubic premise is needed for that stronger wording."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "retained_bounded",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "2502a299f487582fe198d05914cb355ca004cd7199c5fa29be44a14e953ee4fa",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-124429-1b24cff4b0-dirac_lorentz_diagnostic_bou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The analytic lower bound for H, Fourier-side Gaussian analyticity for K, coordinate-orbit invariant counts, and sin^2 p Taylor expansion close as standard algebra/calculus over the cited retained-grade inputs. No extra dynamics, normalization, or interacting-naturalness premise is used.",
+      "claim_scope": "Diagnostic boundary: the rejected common-Gaussian analytic-vector repair fails for H, and the Lorentz anisotropy count distinguishes native continuous-time Z^3 from Euclidean Z^3 x Z_tau without claiming Nelson, Poincare, or interacting Lorentz closure.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-09T12:46:46.021194+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:spatial_cubic_time_anisotropy_gate_no_go_2026-06-06:retained_no_go->unaudited",
+      "load_bearing_step": "The rapidity-Gaussian common-vector route fails because ||H^n psi||/n! has a superfactorial lower bound, while signed-permutation orbit counting gives one native spatial quadratic coefficient, two coefficients on Z^3 x Z_tau, and one under 4D hypercubic symmetry.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Independent checking confirms the lower-bound exponent n^2/(2a)-a/2 and its divergence after division by n!, while K analyticity follows from Gaussian exponential moments in Fourier space. The invariant dimensions are just coordinate-orbit counts: {x,y,z}, {tau},{x,y,z}, and {tau,x,y,z}; the group sizes 48, 96, and 384 also match. The dispersion claim matches sin^2 p = p^2 - p^4/3 + O(p^6), and the source scope explicitly avoids the broader Nelson, unitary-representation, and interacting Lorentz claims."
+    },
+    {
+      "archived_at": "2026-06-11T11:41:06.484750+00:00",
+      "audit_date": "2026-06-10T05:17:03.813436+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h plus time parity alone permits a marginal time-vs-space kinetic anisotropy and therefore does not by itself justify full SO(4) continuum wording; adding c_t=c_s or 4D hypercubic symmetry is an extra premise that closes this specific obstruction."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "retained_bounded",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "2502a299f487582fe198d05914cb355ca004cd7199c5fa29be44a14e953ee4fa",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-051514-622d4156dc-dirac_lorentz_diagnostic_bou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Gaussian H obstruction follows from the stated interval lower bound, while K analyticity follows from standard Fourier-Gaussian moment decay for the full-line derivative operator. The invariant counts reduce to orbit partitions of diagonal quadratic coefficients under signed-permutation groups; no Nelson theorem, full Poincare integration, or interacting Lorentz closure is claimed.",
+      "claim_scope": "Audited only the diagnostic/open-gate facts: failure of the common Gaussian analytic-vector bridge for H, and the quadratic invariant-count distinction between native spatial Z^3, Euclidean Z^3 x Z_tau, and 4D hypercubic surfaces.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-10T05:17:03.813436+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+      "load_bearing_step": "The diagnostic boundary is that the rapidity Gaussian is analytic for K = -i d/dzeta but not for H = M_perp cosh(zeta), and signed-permutation invariant counting gives one native spatial quadratic coefficient, two Euclidean time/spatial coefficients, and one B4 coefficient.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should recheck that the K analytic-vector sentence remains scoped to the rapidity Gaussian diagnostic and is not read as reviving a common Nelson analytic core.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing math is class A: it is analytic/algebraic closure over the displayed rapidity operators, signed-permutation groups, and free dispersion formula. The cited dependencies used for this narrow scope are retained-grade, with the Minimal Axioms treated under the accepted-premise carve-out; the note does not rely on the later kinetic-isotropy primitive or on conditional Planck-scale material. The source is scoped as an open-gate diagnostic packet and explicitly avoids promoting the rejected Nelson, unitary-representation, or interacting-naturalness claims."
+    },
+    {
+      "archived_at": "2026-06-17T10:29:53.306001+00:00",
+      "archived_for_note_hash": "f7106ad17fcd0d76d1b5138fca8ce8cf2041820d571eada890d4454a91756f6f",
+      "audit_date": "2026-06-11T15:21:36.641516+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "retained_bounded",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "2502a299f487582fe198d05914cb355ca004cd7199c5fa29be44a14e953ee4fa",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-151923-4eac442e1d-dirac_lorentz_diagnostic_bou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The H obstruction follows from the displayed interval lower bound, which grows like exp(n^2/(2a))/n! and therefore rules out analytic-vector convergence, while the K side is standard Gaussian momentum-operator analyticity. The invariant-counting boundary follows from signed-permutation orbits on diagonal quadratic forms: one spatial orbit on Z^3, two orbits when time is separate, and one orbit under full 4D hypercubic mixing.",
+      "claim_scope": "Diagnostic/open-gate packet preserving two boundaries: the old common-Gaussian K/H analytic-vector bridge is false for H, and temporal-lattice coefficient counting distinguishes native continuous-time Z^3 from Euclidean Z^3 x Z_tau and B4 surfaces.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-11T15:21:36.641516+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The rapidity Gaussian is analytic for K=-i d/dzeta but not for H=M_perp cosh(zeta), and signed-permutation invariant counting gives one native spatial quadratic speed coefficient but two Euclidean Z^3 x Z_tau coefficients unless a 4D hypercubic/normalization premise is supplied.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check primitive-registry files if available in a non-isolated packet; no registered primitive is load-bearing for this audited scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The audited claim is explicitly diagnostic and does not promote the rejected Nelson repair, a unitary Poincare representation, interacting naturalness, or full Lorentz closure. The two load-bearing formula families independently check out: cosh(zeta) >= exp(zeta)/2 gives the stated superfactorial H lower bound, and the quadratic invariant dimensions are exactly the orbit counts of the stated signed-permutation groups. The substantive runner checks are algebraic/asymptotic diagnostics rather than first-principles framework computation; the final hard-coded diagnostic-only PASS is non-load-bearing."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.448680+00:00",
+      "audit_date": "2026-06-18T11:56:37.581416+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "retained_bounded",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "31c38ebafeb6429ce98f06fb455fa71d5757893dc09317ff107b4fc609a02cdd",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The H lower bound grows superfactorially relative to n!, while K is controlled by Gaussian derivative moments; the invariant counts follow from signed-permutation orbit counting and the dispersion expansion. The note does not promote these diagnostics into Nelson, Poincare-representation, dynamics, or interacting naturalness closure.",
+      "claim_scope": "Audited the narrow diagnostic boundary: the rejected Gaussian common-analytic-vector bridge fails for H, and native spatial Z^3/continuous-time invariant counting does not manufacture an independent c_t/c_s anisotropy absent an added temporal lattice or 4D premise.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T11:56:37.581416+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The diagnostic packet rests on the two checks that the rapidity Gaussian is analytic for K=-i d/dzeta but not for H=M_perp cosh(zeta), and that spatial Z^3 has one quadratic speed coefficient while Z^3 x Z_tau has two unless a 4D hypercubic/normalization premise is added.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing facts are exact analytic and group-theoretic diagnostics over the provided operators, symmetry groups, and retained/accepted inputs. The runner source computes the Gaussian ratios, analytic H lower bound, signed-permutation invariant dimensions, dispersion coefficients, and primitive-registry firewall rather than merely printing pass lines. The cited non-axiom authorities are retained-grade for the scoped uses, and the minimal-axiom premise is accepted under the rubric carve-out. The source note explicitly preserves only open-gate diagnostic facts and withholds the broader repairs, so no hidden Lorentz, dynamics, or naturalness bridge is imported."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:57.068491+00:00",
+      "audit_date": "2026-07-10T03:58:50.631181+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "retained_bounded",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "31c38ebafeb6429ce98f06fb455fa71d5757893dc09317ff107b4fc609a02cdd",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00054-dirac_lorentz_diagnostic_bou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The H lower bound, invariant counts, and dispersion expansion close as algebraic diagnostics. The assertion that the Gaussian is an analytic vector for K does not close because the runner checks only finitely many orders, while analyticity requires an all-orders convergence or factorial-exponential bound.",
+      "claim_scope": "The rapidity-Gaussian H-analyticity obstruction, signed-permutation quadratic-invariant counts, and free continuous-time lattice dispersion boundary, including review of the separate K-analyticity assertion.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T03:58:50.631181+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:spatial_cubic_time_anisotropy_gate_no_go_2026-06-06:retained_no_go->unaudited",
+      "load_bearing_step": "The explicit lower bound ||H^n psi||/n! >= (mass/2)^n exp(n^2/(2a)-a/2)/n! diverges, so the common-Gaussian analytic-vector bridge is false.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the K sentence to finite sampled behavior or add a complete all-orders analytic-vector proof, then rerun the restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the runner infers K-analyticity from decreasing ratios only through n=8. Why this blocks: finite sampled moments cannot establish the all-orders analytic-vector property stated in the note. Repair target: add an analytic all-n bound for ||K^n psi|| or narrow the claim to the sampled K behavior, which is sufficient because the independently proved H obstruction already rejects the common-vector repair. Claim boundary until fixed: the H nonanalyticity proof, invariant counts, and free-dispersion diagnostics remain supported, without any Nelson, interacting-naturalness, or full Lorentz theorem."
+    },
+    {
+      "archived_at": "2026-07-10T17:18:17.979688+00:00",
+      "audit_date": "2026-07-10T16:33:27.170959+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "minimal_axioms": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "On a Z^3 x Z_tau quadratic kinetic surface, spatial O_h symmetry and time parity permit independent temporal and spatial coefficients, so spatial cubic and quartic-artifact checks alone cannot establish SO(4) covariance."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "retained_bounded",
+          "minimal_axioms": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "minimal_axioms",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "31c38ebafeb6429ce98f06fb455fa71d5757893dc09317ff107b4fc609a02cdd",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00005-dirac_lorentz_diagnostic_bou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The divergent analytic lower bound establishes the H obstruction independently of the finite-order quadrature, while explicit signed-permutation enumeration establishes the quadratic-invariant dimensions 1, 2, and 1. The cited structural inputs are retained-grade or an explicitly accepted axiom premise.",
+      "claim_scope": "The rapidity Gaussian cannot be a common analytic vector for K and H because it is non-analytic for H; spatial cubic symmetry yields one spatial quadratic coefficient, while a Euclidean temporal-lattice extension permits two unless additional time-space symmetry or normalization is supplied.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T16:33:27.170959+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30:retained_bounded->unaudited",
+      "load_bearing_step": "The explicit lower bound on ||H^n psi||/n! grows superfactorially, so the rapidity Gaussian is not an analytic vector for H and cannot provide the rejected common-analytic-vector bridge.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The central falsity result rests on an explicit analytic lower bound rather than extrapolation from sampled moments. The symmetry dimensions are obtained by direct finite-group construction, and the dispersion check algebraically reproduces the retained structural formula. The two remaining passing checks are scope declarations rather than independent scientific derivations, but no diagnostic conclusion relies on them."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py",
+  "title": "Dirac/Lorentz Diagnostic Boundaries from Rejected Repairs",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

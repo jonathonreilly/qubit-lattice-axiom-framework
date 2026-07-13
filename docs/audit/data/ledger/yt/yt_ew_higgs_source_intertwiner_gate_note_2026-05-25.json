@@ -1,0 +1,171 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+    "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26",
+    "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "40d5b032ddf31fc6732e432e8b57b0d1aada7eb54aee68d56cc4256cd87aea45",
+  "note_path": "docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.496244+00:00",
+      "audit_date": "2026-05-29T07:44:32.946901+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Exact finite Pauli/projector and retained EW one-Higgs bookkeeping carrier-ray bridge: the signed-record sigma_z source is affinely equivalent to the P_- occupation source, and P_- is the neutral Higgs ray; radial source-coordinate scale cancels only by the prior ratio gate."
+        },
+        "dep_claim_type": {
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d2245416087e828a1908e5f9e8b108a17c140c2ef354ea66fe2afed695ddfebf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-audit-loop-2026-05-29",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli/EW generator algebra gives QH(h)=0 for the lower radial doublet and nonzero charged W directions. Under the explicitly conditional common-source top and W mass formulas, differentiating with respect to h gives a shared factor a that cancels from the ratio.",
+      "claim_scope": "Bounded support gate: given the retained-bounded neutral carrier-ray bridge and the conditional one-Higgs top-carrier response formulas, the neutral radial Higgs carrier is annihilated by Q = T_3 + Y and a common source coordinate would cancel from dM_t/dh divided by dM_W/dh; no retained Y_T closure, top coefficient theorem, same-surface top/W transfer-response theorem, retained top-carrier or hypercharge authority, physical-scale g_2 bridge, or y_t/m_t value is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T07:44:32.946901+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25:retained_bounded->unaudited",
+      "load_bearing_step": "For H(h) = (0, (v_0 + a h)/sqrt(2))^T, Q = T_3 + Y annihilates the neutral radial carrier, while dM_W/dh = (g_2/2)a and dM_t/dh = (y_t/sqrt(2))a on a common source, so the unknown source slope cancels in the top/W response ratio.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check if broadened to retained Y_T closure, a top coefficient theorem, same-surface top/W transfer-response theorem, retained one-Higgs top-carrier or hypercharge authority, physical-scale g_2 authority, strict pole rows, or a physical y_t/m_t value claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 34,
+        "C": 0,
+        "D": 0,
+        "total_pass": 43
+      },
+      "verdict_rationale": "Within the bounded support scope, the algebra closes: Q annihilates the neutral radial Higgs carrier, T1/T2 generate the charged directions, and the common-source top/W response ratio cancels the unknown affine source slope. The independent manual check matches the sympy runner's generator action and derivative identities. The runner and source note also preserve the current blockers: one-Higgs top carrier and hypercharge rows are not retained authority, coefficient-certified top/W response rows are absent, and no physical y_t or g_2 value is derived. Residual risk appears only if this row is broadened from a bounded support gate to full retained Y_T closure."
+    },
+    {
+      "archived_at": "2026-06-06T08:23:00.949006+00:00",
+      "archived_for_note_hash": "05b9b8853437ec7f4ece44b891aff22737624ab26568da6f03eea8a46b3784b2",
+      "audit_date": "2026-06-06T00:51:56.104018+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Exact bounded support that the signed one-qubit source in the sigma_z readout basis is affinely equivalent to a P_- occupation source, and that P_- is the neutral carrier ray of the retained one-Higgs electroweak doublet."
+        },
+        "dep_claim_type": {
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d2245416087e828a1908e5f9e8b108a17c140c2ef354ea66fe2afed695ddfebf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-005023-5b97f59308-yt_ew_higgs_source_intertwin",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebra checks independently: Q annihilates the lower Higgs ray, T1/T2 act nontrivially, and the common source slope cancels in the symbolic top/W response ratio. The chain does not close as retained source-intertwiner authority because the top coefficient, same-source top transfer response, one-Higgs top carrier retention, and hypercharge retention remain missing or explicitly open.",
+      "claim_scope": "Audited the algebraic neutral-Higgs carrier map and top/W response-ratio cancellation conditional on a common radial source and the one-Higgs up-type top carrier; no derivation of y_t, m_t, g_2, v, or retained Y_T closure was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T00:51:56.104018+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "With H(h)=(0,(v_0+a h)/sqrt(2))^T, dM_W/dh=(g_2/2)a and dM_t/dh=(y_t/sqrt(2))a, so y_t=(g_2/sqrt(2))(dM_t/dh)/(dM_W/dh) and the unknown source slope a cancels.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or replace the one-Higgs top-carrier and hypercharge dependencies, then provide a coefficient-certified same-source top response theorem or measurement.",
+      "open_dependency_paths": [
+        "docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md",
+        "docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md",
+        "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 34,
+        "C": 0,
+        "D": 0,
+        "total_pass": 43
+      },
+      "verdict_rationale": "The load-bearing math is class A symbolic algebra, not a first-principles compute, and the independent formula check agrees with the runner's factors and signs. However, the note's own closure path imports top-carrier and hypercharge authority that the packet and runner identify as not retained, and it leaves the coefficient-certified same-source top response absent. The runner mostly verifies text, file presence, ledger status, and simple algebra; it does not prove the missing physical top coefficient or same-surface transfer theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py",
+  "title": "Y_T EW/Higgs Source-Intertwiner Gate",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

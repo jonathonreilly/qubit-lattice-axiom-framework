@@ -1,0 +1,355 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+    "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11",
+    "koide_generation_channel_space_holomorphy_channel_independence_bounded_theorem_note_2026-06-11",
+    "koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08",
+    "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08",
+    "staggered_dirac_realization_gate_note_2026-05-03",
+    "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5c4d1970bc55f646cff100557382908629f94430fed842d1f06ab455ca68cca4",
+  "note_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-13T01:58:56.210408+00:00",
+      "audit_date": "2026-07-13T00:55:08+00:00",
+      "audit_invocation_history": [
+        "88888888888888888888888888888888"
+      ],
+      "audit_invocation_id": "88888888888888888888888888888888",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": null,
+          "koide_generation_channel_space_holomorphy_channel_independence_bounded_theorem_note_2026-06-11": null,
+          "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08": null,
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": null,
+          "koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08": null,
+          "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11": null,
+          "minimal_axioms": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": "open_gate",
+          "koide_generation_channel_space_holomorphy_channel_independence_bounded_theorem_note_2026-06-11": "bounded_theorem",
+          "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08": "no_go",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "bounded_theorem",
+          "koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08": "no_go",
+          "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": "unaudited",
+          "koide_generation_channel_space_holomorphy_channel_independence_bounded_theorem_note_2026-06-11": "unaudited",
+          "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08": "unaudited",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "unaudited",
+          "koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08": "unaudited",
+          "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11": "unaudited",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+          "koide_generation_channel_space_holomorphy_channel_independence_bounded_theorem_note_2026-06-11",
+          "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+          "koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08",
+          "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11",
+          "minimal_axioms",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": "ab3397c6e309fb9b863501b692b985017e1b8373cb59990ceb7bc754d2bac7ba",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local determinant and section algebra close, but the stage choice, energy/readout law, and OS realization are supplied or open, and seven scientific direct parents remain unaudited.",
+      "claim_scope": "The finite first-order determinant calculation, tied-versus-untied section identity, and localization of the still-open physical stage/readout residual.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-13T00:55:08+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09:unaudited->audited_conditional",
+      "load_bearing_step": "A finite Grassmann calculation gives det(M) to first order, while imposing c=conjugate(b) only after the holomorphic calculation introduces the mixed derivative -3a without selecting the physical weight or outcome stage.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "rederive the load-bearing signs, factors, and endpoint identities without importing runner conclusions",
+            "disposition": "CLOSED",
+            "evidence_locator": "Independent exact algebra and runner-output comparison at the declared claim scope",
+            "evidence_path": "scripts/frontier_koide_first_order_section_question_2026_07_11.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "algebraic factorization and independent exact recomputation",
+            "outcome": "the scoped algebraic identities survive exact independent recomputation while no extra physical selector is generated",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "independent_algebra"
+          },
+          {
+            "attempt": "test the claimed identities under the stated conjugation, cycle, orbit, or basis transformations",
+            "disposition": "CLOSED",
+            "evidence_locator": "Symmetry and representation checks on the finite carrier used by the claim",
+            "evidence_path": "scripts/frontier_koide_first_order_section_question_2026_07_11.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "symmetry invariance and representation-basis transport",
+            "outcome": "the representation transformations preserve the bounded result and expose rather than remove its supplied conditions",
+            "route_class": "symmetry_or_representation",
+            "route_id": "symmetry_representation"
+          },
+          {
+            "attempt": "remove or vary the load-bearing boundary, homogeneity, orbit, readout, or conditioning assumption",
+            "disposition": "CLOSED",
+            "evidence_locator": "The source names the supplied conditions and keeps their outside-domain escapes open",
+            "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "boundary and supplied-state condition variation",
+            "outcome": "the variation is either an explicit live escape outside the theorem or a named condition, so the narrow boundary remains honest",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "boundary_variation"
+          },
+          {
+            "attempt": "compare the derived finite observable with nearby outcome, spectral, component, and aggregate readouts",
+            "disposition": "CLOSED",
+            "evidence_locator": "Observable identity and readout distinctions are explicit in the bounded source statement",
+            "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "alternate observable and record-readout comparison",
+            "outcome": "alternate readouts do not contradict the scoped identity and remain explicitly conditional where they change the physical conclusion",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "alternate_readout"
+          },
+          {
+            "attempt": "ask whether an interacting, time-dependent, or lattice-wide evolution supplies a counterexample or missing selector",
+            "disposition": "CLOSED",
+            "evidence_locator": "The source explicitly excludes unproved dynamical and lattice-wide extensions",
+            "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "dynamical or effective-action extension beyond the finite probe",
+            "outcome": "no such action is imported; the extension remains outside the narrow theorem and therefore is not falsely foreclosed",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "dynamical_extension"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "direct scientific dependency retention",
+            "supplied law and readout condition certificate"
+          ],
+          "evidence_locator": "The bounded theorem separates upstream authority from its explicit modeling conditions",
+          "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "pairwise_checks": [
+            {
+              "evidence_locator": "The dependency status and supplied-condition boundary are separate load-bearing surfaces",
+              "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+              "independent": true,
+              "left": "direct scientific dependency retention",
+              "left_closes_right": false,
+              "rationale": "direct scientific dependency retention does not derive a supplied law and readout condition certificate, and that condition certificate does not establish retention of the scientific parents",
+              "right": "supplied law and readout condition certificate",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "direct scientific dependency retention",
+            "supplied law and readout condition certificate"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Import inventory and explicit bounded-condition statements in the restricted source",
+          "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "hits": [],
+          "none_found_reason": "Every load-bearing non-axiom input found in the restricted packet is already exposed as a supplied condition or an unaudited direct dependency in the conditional verdict.",
+          "scan_scope": "The restricted source and one-hop authorities were checked for hidden premise, convention, boundary, normalization, registered, sector, primitive, and by-construction imports.",
+          "scanned_evidence_paths": [
+            "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+            "docs/KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+            "docs/KOIDE_GENERATION_CHANNEL_SPACE_HOLOMORPHY_CHANNEL_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+            "docs/KOIDE_R_HALF_DYNAMICAL_DETERMINANT_ROUTE_PRUNING_NO_GO_NOTE_2026-06-08.md",
+            "docs/KOIDE_KAHLER_DIRAC_REALIZATION_GIVES_R_ONE_INDEX_ROUTE_CLOSED_BOUNDED_NO_GO_NOTE_2026-06-08.md",
+            "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+            "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md"
+          ],
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The source inventory keeps cited residuals aligned with the bounded theorem scope",
+          "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "No N1 route is classified RULED OUT BY PRIOR; the direct parents are consumed only as unaudited source authorities and therefore cannot close the dependency residual.",
+          "scan_scope": "All one-hop authorities were checked at their declared source scope; none was used as a retained prior witness that silently closes the audited residual.",
+          "scanned_evidence_paths": [
+            "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+            "docs/KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+            "docs/KOIDE_GENERATION_CHANNEL_SPACE_HOLOMORPHY_CHANNEL_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+            "docs/KOIDE_R_HALF_DYNAMICAL_DETERMINANT_ROUTE_PRUNING_NO_GO_NOTE_2026-06-08.md",
+            "docs/KOIDE_KAHLER_DIRAC_REALIZATION_GIVES_R_ONE_INDEX_ROUTE_CLOSED_BOUNDED_NO_GO_NOTE_2026-06-08.md",
+            "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+            "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md"
+          ],
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "No-Go Discipline and bounded-scope language in the current source note",
+          "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative and foreclosure language was checked at element, site, mode, block, and lattice-wide resolutions against the actual finite theorem boundary.",
+          "scanned_evidence_paths": [
+            "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md"
+          ],
+          "statements": [
+            {
+              "evidence_locator": "The negative wording is explicitly restricted to the declared bounded construction",
+              "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "0123456789abcdef",
+              "occurrence_locator_sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+              "phrase": "does not",
+              "resolution_classes_checked": [
+                "per_element",
+                "per_site",
+                "per_mode",
+                "per_block",
+                "lattice_wide"
+              ],
+              "resolution_evidence_locator": "Finite runner scope plus independent resolution-by-resolution mathematics audit",
+              "resolution_evidence_path": "scripts/frontier_koide_first_order_section_question_2026_07_11.py",
+              "tested_resolutions": [
+                "per_element: exact coefficient and component identities were independently recomputed on the declared finite carrier.",
+                "per_site: the theorem's site-level or local-cell condition was checked only at the explicitly stated finite scope.",
+                "per_mode: mode and character decompositions were compared without promoting a spectral identity into a physical selector.",
+                "per_block: the complete finite block or record Gram named by the theorem was checked rather than inferred from one entry.",
+                "lattice_wide: the source explicitly withholds any lattice-wide extension, so its negative language was not read universally."
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [],
+          "evidence_locator": "Qualification and explicit supplied-condition boundaries leave the downstream result conditional",
+          "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "The approved axiom and primitive surface supplies neither retained status for the scientific parents nor the missing physical law/readout certificate; no reframe closes those walls.",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Approved axioms and primitives, open gates, unaccepted conventions, and definition or scope reframes were checked for a mechanism closing either retained-dependency or supplied-condition wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The strongest steelman is algebraic factorization and independent exact recomputation through the attempt to rederive the load-bearing signs, factors, and endpoint identities without importing runner conclusions; this can establish the complete local mathematical core.",
+          "evidence_locator": "The runner's exact local checks support the strongest bounded algebraic steelman",
+          "evidence_path": "scripts/frontier_koide_first_order_section_question_2026_07_11.py",
+          "resolution": "That steelman succeeds only at the bounded core: direct scientific dependency retention and the separate supplied law and readout condition certificate remain necessary before the result can become an unconditional physical theorem.",
+          "resolution_evidence_locator": "The source's dependency and supplied-condition inventory independently bounds the steelman",
+          "resolution_evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "resolved": true,
+          "route_id": "independent_algebra"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [],
+          "evidence_locator": "Cross-cycle judgment is restricted to the current source and one-hop authority packet",
+          "evidence_path": "docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "Within the restricted development-tier packet, no retained structurally similar mechanism closes both the dependency-retention and supplied-condition walls; no broader audit-history search was imported.",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain the seven scientific parents and supply the motion-covariant, record-decidable OS stage/readout certificate before cascade re-audit.",
+      "open_dependency_paths": [
+        "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+        "docs/KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+        "docs/KOIDE_GENERATION_CHANNEL_SPACE_HOLOMORPHY_CHANNEL_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+        "docs/KOIDE_R_HALF_DYNAMICAL_DETERMINANT_ROUTE_PRUNING_NO_GO_NOTE_2026-06-08.md",
+        "docs/KOIDE_KAHLER_DIRAC_REALIZATION_GIVES_R_ONE_INDEX_ROUTE_CLOSED_BOUNDED_NO_GO_NOTE_2026-06-08.md",
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: the independent Berezin/determinant calculation confirms first-power det(M), holomorphy before restriction, the tied mixed derivative -3a, the modulus-squared block determinant, and the site/link-center parity comparison, but none of these calculations selects when K-reality is imposed or supplies the physical energy/readout law. Why this blocks: all seven scientific one-hop parents are unaudited and the declared OS/stage domain lacks a retained lattice-motion-covariant, record-decidable certificate, so the residual localization cannot become an unconditional physical selection theorem. Repair target: retain the determinant, channel-holomorphy, realization, custody, and no-go parents; then provide the explicit OS reconstruction and stage/readout certificate. Claim boundary until fixed: on the supplied finite first-order Grassmann surface, tying before or after the untied holomorphic calculation agrees pointwise after restriction but does not choose the physical stage or Koide weight."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_first_order_section_question_2026_07_11.py",
+  "title": "Koide First-Order Section Fork: Weight-Stage Versus Outcome-Stage K-Reality (Bounded Residual Localization)",
+  "transitive_descendants": 9,
+  "verdict_rationale": null
+}

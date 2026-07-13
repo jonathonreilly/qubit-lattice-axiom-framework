@@ -2,8 +2,8 @@
 
 Verify a claim's audit-ratified status before citing it, building on it, or
 listing it as a dependency. In-file `Status:` headers, note prose, and session
-memory all go stale; `docs/audit/data/audit_ledger.json` on `origin/main` is
-the authoritative surface.
+memory all go stale; the tracked shards under `docs/audit/data/ledger/` plus
+`ledger_meta.json` on `origin/main` are authoritative.
 
 ## Invocation
 
@@ -13,23 +13,32 @@ the authoritative surface.
 
 ## Procedure
 
-1. Best-effort freshness: `git fetch origin main`, then read the ledger from
-   `origin/main` rather than the local checkout (a science branch may carry a
-   stale ledger):
+1. Best-effort freshness: `git fetch origin main`, then extract the tracked
+   shards from `origin/main` rather than trusting a local materialized cache
+   (a science branch may be stale):
 
    ```bash
-   git show origin/main:docs/audit/data/audit_ledger.json > /tmp/ledger-main.json
+   rm -rf /tmp/ledger-main-shards
+   mkdir -p /tmp/ledger-main-shards
+   git archive origin/main docs/audit/data/ledger docs/audit/data/ledger_meta.json \
+     | tar -x -C /tmp/ledger-main-shards
    ```
 
-   Fall back to the local file if offline, and say so.
+   If offline, run `python3 docs/audit/scripts/ledger_io.py --materialize` and
+   fall back to the local cache, saying so.
 
 2. Match rows by claim id or note path:
 
    ```bash
    python3 - "<query>" <<'PY'
-   import json, sys
+   import glob, json, sys
    q = sys.argv[1].lower()
-   rows = json.load(open("/tmp/ledger-main.json"))["rows"]
+   rows = {}
+   for path in glob.glob(
+       "/tmp/ledger-main-shards/docs/audit/data/ledger/*/*.json"
+   ):
+       row = json.load(open(path, encoding="utf-8"))
+       rows[row["claim_id"]] = row
    hits = {cid: r for cid, r in rows.items()
            if q in cid.lower() or q in (r.get("note_path") or "").lower()}
    for cid, r in sorted(hits.items()):

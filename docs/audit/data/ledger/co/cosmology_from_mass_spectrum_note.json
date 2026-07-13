@@ -1,0 +1,144 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cosmology_from_mass_spectrum_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "neutrino_mass_derived_note",
+    "omega_lambda_derivation_note",
+    "dm_flagship_closure_review_note_2026-04-17",
+    "dm_neutrino_atmospheric_scale_theorem_note_2026-04-15",
+    "r_base_group_theory_derivation_theorem_note_2026-04-24"
+  ],
+  "direct_in_degree": 8,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.285,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d740ae6a17d9a3330b30303b9e56d98b5a04bb4d2be79a874abbe24b5a38809c",
+  "note_path": "docs/COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.367975+00:00",
+      "archived_for_note_hash": "8531d9e6e1ede07007871150b27459685a650aad5620798982151cfd5098d2bb",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-06-06T22:40:04.271906+00:00",
+      "archived_for_note_hash": "0b0544c979356cdfb094d491bd5a0a9b8eee8c81349be18edc20e177a616daa3",
+      "audit_date": "2026-05-27T00:31:10.562812+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "r_base_group_theory_derivation_theorem_note_2026-04-24": "Given retained SU(3)/SU(2) structural inputs and the admitted GUT hypercharge normalization factor 3/5, the exact algebraic identity R_base = (3/5) * [(4/3)*8 + (3/4)*3] / [(3/4)*3] = 31/9."
+        },
+        "dep_claim_type": {
+          "r_base_group_theory_derivation_theorem_note_2026-04-24": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "r_base_group_theory_derivation_theorem_note_2026-04-24": "retained_bounded"
+        },
+        "deps": [
+          "r_base_group_theory_derivation_theorem_note_2026-04-24"
+        ],
+        "load_bearing_score": 9.748,
+        "runner_hash": "d09674d07e6b2a070633794a764da27a92758ccafb50c3ee607f5f73934bba2f",
+        "transitive_descendants": 75
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-gpt-5.5-fresh-cosmology-mass-spectrum-2026-05-26",
+      "auditor_confidence": null,
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic closes only after importing eta_obs, external BBN/flatness assumptions, and a tuned/self-consistent R value. Under the restricted packet, only R_base is a retained one-hop dependency; the named Phase 4, eta-support, Omega_Lambda, and DM/neutrino authorities are missing direct dependency edges or are unaudited/conditional, and the runner hard-codes the calibrated R rather than deriving the Sommerfeld selection.",
+      "claim_scope": "Calibrated conditional cosmology cascade: given imported eta_obs, external BBN/flatness inputs, retained-bounded R_base = 31/9, and a bounded/tuned Sommerfeld alpha_GUT fixing R near 5.48, the downstream Omega_b, Omega_DM, Omega_m, and Omega_Lambda arithmetic matches observed comparators.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T00:31:10.562812+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The cascade `eta -> Omega_b (BBN) -> Omega_DM = R * Omega_b -> Omega_m -> Omega_Lambda = 1 - Omega_m (flatness)` uses one imported input (`eta`) and one bounded/tuned parameter (`alpha_GUT`) to match the Planck pie-chart entries.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add explicit ledger dependencies for NEUTRINO_MASS_DERIVED_NOTE.md, OMEGA_LAMBDA_DERIVATION_NOTE.md, DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md, and DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md if they remain load-bearing, then re-audit after eta and alpha_GUT/Sommerfeld selection are retained rather than imported or tuned.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 0,
+        "D": 9,
+        "total_pass": 14
+      },
+      "verdict_rationale": "Issue: the note and runner verify a calibrated comparator cascade, not a closed bounded theorem. Why this blocks: eta is imported from observation and R = 5.48 is selected by matching the observed DM/baryon ratio, while several named authorities needed for the cascade are not retained one-hop dependencies. Repair target: add the missing dependency edges and provide retained bridge theorems for eta, the matter/cosmology-flatness assumptions, and the alpha_GUT/Sommerfeld selection, with a runner that computes the bounded band instead of hard-coding R_selfconsistent. Claim boundary until fixed: arithmetic conditional cascade from imported eta, external BBN/flatness, retained-bounded R_base, and calibrated alpha_GUT/Sommerfeld only."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_cosmology_from_mass_spectrum.py",
+  "title": "Cosmology Cascade from Mass Spectrum (Phase 5 of mass spectrum)",
+  "transitive_descendants": 77,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

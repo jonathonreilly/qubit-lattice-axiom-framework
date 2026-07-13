@@ -1,0 +1,186 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "strong_cp_theta_zero_note",
+    "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+    "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "95ca107159c9b803a6ab4a4dc95017aa2f7cfc5fcb572af38b9349e0f517a0bd",
+  "note_path": "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-12T19:48:21.823681+00:00",
+      "archived_for_note_hash": "1fd583da12962088e7ca73f94192c83af6118e27e1188715168013f6a49c6f59",
+      "audit_date": "2026-06-11T15:51:18.743930+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "f5cd4b7405f82e076be8d19366eb29a875a3103b2722af485dc7369967d366ae",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-154859-189e6d2d66-theta_p2_k_cpt_determinant_c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic implication closes inside the supplied determinant-character family: differentiating the invariance identity at phi=0 gives 2 i k = 0. The restricted packet does not derive the determinant readout context from Record or prove that it exhausts the physical arg det(M_u M_d) datum.",
+      "claim_scope": "Within the stipulated continuous multiplicative determinant-character readout family chi_{s,k}(z)=|z|^s exp(i k arg z), with K/CPT acting by complex conjugation, invariant members have k=0; no strong-CP mass-orientation discharge is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T15:51:18.743930+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Requiring exp(i k phi) = exp(-i k phi) for all phi gives sin(k phi) = 0 for all phi, hence k = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: retain a determinant-readout bridge proving that the physical arg det(M_u M_d) contribution is exhausted by the multiplicative determinant-character readout and that no phase-sensitive non-multiplicative or action-level datum remains.",
+      "open_dependency_paths": [
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing math is a valid class A algebraic identity check, and the hostile guard is also correct: K-even functions such as cos(arg z) need not erase phase. The runner source verifies text boundaries and the same elementary algebra, but it does not construct the determinant readout from framework primitives. Because the source explicitly imports a supplied determinant-class readout and names the determinant-readout bridge as open for strong-CP use, the chain is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.962817+00:00",
+      "audit_date": "2026-07-04T16:36:34.928165+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context.",
+          "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12": "Under a supplied finite mass determinant-channel readout interface with determinant block multiplicativity, continuous U(1) phase characters, and K/CPT orbit registration z ~ conj(z), the only admissible determinant phase character is k = 0; no gauge/action theta closure, physical exhaustion bridge, or Tier-A registry landing is audited.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12": "bounded_theorem",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12": "retained_bounded",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+          "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "bae3b8d71bf35f95d3a232e11f5f9febb90bf6740a77457f69111b9cd1fdce12",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-theta-p2-kcpt-round3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The direct non-axiom dependencies are retained_bounded and the minimal-axiom node is an accepted premise/meta dependency. Within the explicitly supplied determinant-character channel, the conclusion is exact U(1) character algebra and the note expressly excludes gauge/action theta closure, Tier-A registry edits, and broader physical-readout exhaustion.",
+      "claim_scope": "Bounded determinant-character phase erasure only: in a supplied determinant-class/mass determinant-channel readout whose phase readouts are continuous multiplicative characters and whose K/CPT orbit identifies z with conj(z), the invariant phase index is k=0; no gauge/action theta closure, Tier-A registry change, or retirement-basis match is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-04T16:36:34.928165+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Requiring the determinant phase character to be K/CPT-invariant gives exp(i k phi) = exp(-i k phi) for all phi, hence sin(k phi) = 0 for all phi, so k = 0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second pass should recheck that the runner's legacy MINIMAL_AXIOMS_2026-06-05 path remains non-load-bearing relative to the ledger's current MINIMAL_AXIOMS_2026-06-29 dependency; the present verdict used the current axiom note directly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The audited scope is narrow enough to close: once the determinant-character readout class and K/CPT conjugation z -> conj(z) are supplied, the phase-character invariance equation forces k=0 without a hidden physical bridge. The retained bounded bridge notes supply only the bounded determinant-channel/readout context, while the strong-CP parent is consumed only as the retained bounded selected-surface premise allowed for this row. The live runner returns PASS=15 FAIL=0 and checks both the exact algebra and the source/dependency boundary guards; its legacy 2026-06-05 axiom path is not load-bearing because the current 2026-06-29 axiom note was read directly and preserves the needed no-readout-context boundary."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py",
+  "title": "Theta P2 K/CPT Determinant-Character Phase Erasure: Bounded Candidate Route",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

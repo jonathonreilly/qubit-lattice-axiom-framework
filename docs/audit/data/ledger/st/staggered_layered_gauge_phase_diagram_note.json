@@ -1,0 +1,133 @@
+{
+  "audit_date": "2026-05-05T12:26:04.880004+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_effective_status": {
+      "staggered_graph_portability_note": "retained",
+      "staggered_layered_gauge_engineering_note": "retained"
+    },
+    "deps": [
+      "staggered_graph_portability_note",
+      "staggered_layered_gauge_engineering_note"
+    ],
+    "load_bearing_score": 0.0,
+    "runner_hash": "d80d5864e11940bea8cc018aec8652316b76380a8de622ee8d8862b13640528e",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-20260505",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Both one-hop dependencies are retained positive staggered graph and layered-gauge engineering probes. The runner builds the swept layered graph families, computes the native staggered Hamiltonian persistent-current span, reuses the retained force-side battery, and prints the pass/fail/N/A phase diagram directly.",
+  "claim_id": "staggered_layered_gauge_phase_diagram_note",
+  "claim_scope": "On the fixed layered graph sweep implemented by scripts/frontier_staggered_layered_gauge_phase_diagram.py, the current runner computes 15 gauge-current PASS rows, 10 FAIL rows, and 1 N/A row, with nearest-neighbor brickwall and defect step-1 cases passing, step-2 cases failing throughout, step-3 cases mixed, the sparse holdout failing, and the acyclic DAG control marked N/A.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-05T12:26:04.880004+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_graph_portability_note",
+    "staggered_layered_gauge_engineering_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/frontier_staggered_graph_portability.py",
+    "scripts/frontier_staggered_layered_backreaction.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "The practical pass/fail boundary is PASS for nearest-neighbor layered brickwall/plaquette graphs, FAIL for the sparse layered holdout and most long-shift layered loop geometries, and N/A for acyclic layered DAG controls.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f28b799f7119870ded0c288e52cd5cbf671a75c7741230e192c64fd99c6afb73",
+  "note_path": "docs/STAGGERED_LAYERED_GAUGE_PHASE_DIAGRAM_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-audit if the row-level J-span numerals are promoted as exact cited values; update the source table to the current cache before citing exact spans rather than pass/fail classifications.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369861+00:00",
+      "archived_for_note_hash": "59d2d15b082d3bdaa8e7ac57ea1b1d8b0b89456875c3d2849226b5c953edd6ba",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.494098+00:00",
+      "archived_for_note_hash": "c194325c72d0d3f711f4016a7b5262940b07a61fa6e9103526491514f01ca6df",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner preserves the finite PASS/FAIL/N/A classification, but the exact current-span table is stale and the promoted geometry criterion is an empirical finite-sweep rule over the conditional graph-current readout, not a retained theorem.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The practical pass/fail boundary is that nearest-neighbor layered brickwall/plaquette graphs pass, sparse layered holdouts and most long-shift layered loops fail, and acyclic DAG controls are N/A.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/STAGGERED_GRAPH_PORTABILITY_NOTE.md",
+        "docs/STAGGERED_LAYERED_GAUGE_ENGINEERING_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 26,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "Issue: The current runner reproduces the qualitative phase map, but many frozen J_span values are stale, the sparse holdout is now about 5.015e-35 rather than 4.769e-06, and the claimed plaquette-quality criterion is a finite empirical classification over a conditional graph-current observable. Why this blocks: a candidate retained-grade phase-diagram criterion needs either exact current output and toleranced assertions, or a theorem deriving the boundary; the runner shows PASS rows with square-plaquette density 0.00 and FAIL rows with density up to 0.25, so the scalar criterion is not closed as stated. Repair target: update the table to live output, define the actual graph feature used by the criterion, and prove or assert-test the boundary on holdouts after the graph force/current observable is audited clean. Claim boundary until fixed: safe to claim the live runner gives 15 PASS, 10 FAIL, and 1 N/A rows, with all step-1 brickwall/defect rows passing and step-2 rows failing; not safe to claim an audit-clean retained geometry criterion from this sweep alone."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.977010+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 26,
+    "D": 0,
+    "total_pass": 26
+  },
+  "runner_path": "scripts/frontier_staggered_layered_gauge_phase_diagram.py",
+  "title": "Staggered Layered Gauge Phase Diagram Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The current cached output supports the bounded phase-diagram classification: PASS=15, FAIL=10, N/A=1, with the same nearest-neighbor brickwall, long-shift, sparse-holdout, defect, and acyclic-control boundary described by the note. Several row-level J-span numerals in the source table have drifted from the current cache, so the clean claim is the current runner's pass/fail/N/A boundary and qualitative geometry criterion, not those stale exact span values. No external comparator or unretained bridge is needed for that finite graph sweep."
+}

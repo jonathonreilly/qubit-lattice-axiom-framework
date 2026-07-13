@@ -1,0 +1,588 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "kinetic_isotropy_primitive",
+    "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+  ],
+  "direct_in_degree": 13,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.984,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a71e6c268fa3369114fb10565e1987b31fa3f673872c5c5e884d98d981ccacad",
+  "note_path": "docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-30T12:51:03.723661+00:00",
+      "archived_for_note_hash": "a3c0cff4debb71f778c9b481dc84201236202346e320bfc842417cd921de205c",
+      "audit_date": "2026-05-29T19:57:55.787800+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "69c5495a1d7d48b7993e503f7039f85feef9a19146f589e1553ff3b50b56d3d4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-detailed-lorentz-20260529-lorentz_boost_free_stagg",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic inverse, continuum limit, SO(4) covariance, and ell=4 anisotropy close for the displayed D~(p). The restricted packet does not close the prior bridge from the one-component staggered action with canonical phases to that exact spin/taste momentum-space operator with taste as a spectator identity; the cited K\u00e4hler-Dirac authority explicitly leaves the physical/dynamical operator identification and Kawamoto-Smit forcing out of scope.",
+      "claim_scope": "Audited the free U=1 staggered-Dirac two-point SO(4) continuum-limit statement for the displayed spin/taste momentum-space operator, including the O(a^2) ell=4 anisotropy characterization; no interacting, n-point, OS-reconstruction, or physical-unit claim was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T19:57:55.787800+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For s_mu = sin(p_mu a)/a, the Clifford identity gives G~_E(p) = (m1 - i gamma.s)/(m^2+s.s), and as a -> 0 this tends to (m1 - i gamma.p)/(p^2+m^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation from the canonical free staggered action/phases to the displayed reduced-BZ spin/taste D~(p) with taste spectator identity, or narrow the claim explicitly to assume that operator.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "The runner genuinely instantiates Euclidean gamma matrices and the displayed D~(p), checks the closed-form inverse, continuum SO(4) covariance, O(a^2) scaling, and the cubic-harmonic anisotropy; no external comparator or tuned numerical match is used. Several summary PASS lines are hard-coded narrative assertions and are not load-bearing evidence. The conditional blocker is upstream: the source note cites the K\u00e4hler-Dirac narrow theorem as supplying the spin/taste structure, but that authority expressly does not prove the dynamical staggered-operator/K\u00e4hler-Dirac identification or the Kawamoto-Smit phase forcing. Thus the theorem is clean only after taking the displayed free operator as an admitted premise, not as a closed consequence of the cited inputs."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:24.902657+00:00",
+      "archived_for_note_hash": "7c8c76c1558ca37bacd692ccd12bfa6e014eab32247c248192dcf10daffa4992",
+      "audit_date": "2026-05-30T13:14:07.220062+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "283aae3b2446b7afc3df277e0ae22631fcf19274ab072c101ed2d897d1614f9f",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-131110-e4645442-lorentz_boost_free_stagg",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic limit and scalar-spectrum harmonic checks close for the displayed D~ sector. The stated free-staggered 2-point claim still relies on an open finite-a hypercube spin-taste reconstruction boundary: the packet itself admits O(a) non-spectator taste-mixing terms, so O(a^2) is not established as the leading correction of the full free staggered spin-taste propagator.",
+      "claim_scope": "Audited the algebraic continuum SO(4) covariance of the explicitly displayed free taste-spectator Dirac propagator and the taste-singlet scalar-spectrum ell=4 O(a^2) anisotropy.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T13:14:07.220062+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "As a -> 0 with p fixed, sin(p_mu a)/a -> p_mu and Delta(p) -> m^2+p^2, so the displayed taste-spectator propagator tends to (m 1 - i gamma.p)/(p^2+m^2) with an O(a^2) Sigma_mu p_mu^4 anisotropy.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow the O(a^2) leading-correction statement to the taste-singlet scalar spectrum/displayed taste-spectator D~ sector, or add a retained finite-a spin-taste reconstruction proving the admitted O(a) non-spectator taste terms are outside the audited observable.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 36,
+        "B": 0,
+        "C": 11,
+        "D": 0,
+        "total_pass": 47
+      },
+      "verdict_rationale": "The runner genuinely checks the Clifford inverse, continuum covariance, scalar-spectrum Delta, finite lattice spectrum, and ell=4 harmonic identities; it is not a trivial PASS printer and contains no external comparator. However, the source note\u2019s formula inventory is broader than what those checks establish: it simultaneously admits honest finite-a O(a) non-spectator taste mixing while presenting the O(a^2) dimension-6 ell=4 term as the leading lattice correction for the free staggered-Dirac 2-point. The cited K\u00e4hler-Dirac authority is retained-bounded but explicitly leaves the physical dynamical staggered/K\u00e4hler-Dirac operator identification open, so retained status does not close this bridge for the full stated propagator."
+    },
+    {
+      "archived_at": "2026-06-04T19:25:59.907949+00:00",
+      "archived_for_note_hash": "dd4635922fd1be8a1157913640e58d375e7c17db76967dc9738c7c537afe2c0c",
+      "audit_date": "2026-05-31T13:26:41.208697+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.585,
+        "runner_hash": "51381e75f0b0a91eae33b759ca2b312beab1245d95c70bef2cb6bab24347932d",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-132406-9510409e-lorentz_boost_free_stagg",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from the displayed D~(p) to the continuum SO(4)-covariant propagator closes. However, the displayed source action uses a kinetic normalization 1/2 rather than 1/(2a), while the derived momentum operator and runner use (i/a) sin(p_mu a); the restricted packet does not state the lattice-units rescaling/mass normalization bridge needed to make those displayed formulas identical.",
+      "claim_scope": "Free U=1 staggered-Dirac two-point Schwinger function in the displayed taste-spectator/scalar-spectrum sector, including the a->0 SO(4) continuum propagator and O(a^2) ell=4 scalar-spectrum anisotropy.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T13:26:41.208697+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The free staggered momentum operator is taken to be D~(p)=m+(i/a)\u03a3_mu gamma_mu sin(p_mu a), so its Clifford inverse tends as a->0 to (m-i gamma.p)/(p^2+m^2), giving SO(4)-covariant continuum Dirac/Kahler-Dirac 2-point covariance.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add an explicit action-normalization bridge, e.g. write the kinetic term as 1/(2a) or state the dimensionless lattice-units action and the rescaling that yields physical D~(p)=m+(i/a) gamma.sin(pa), then re-audit the formula inventory.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The Clifford inverse, SO(4) covariance, c4=-1/3 expansion, S^3 average 1/2, axis/body-diagonal ratio 4, and H4 harmonic check are algebraically consistent within the displayed D~ sector. The source packet nevertheless has a normalization gap between the written staggered action and the momentum-space operator: without an explicit lattice-units convention or a 1/(2a) kinetic term, the claimed D~ does not follow from that displayed action as written. This is a repairable bridge/normalization defect, not a timeout or external-comparator issue."
+    },
+    {
+      "archived_at": "2026-06-09T19:19:55.353317+00:00",
+      "archived_for_note_hash": "718d3203263d7f04ebf809bc45f5d73a3f3f935b4b066f82034103689a6d8920",
+      "audit_date": "2026-06-05T18:15:59.514166+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 5.585,
+        "runner_hash": "c5caa0e09a30f24e369d89a9dda5038114ab105e014003c94f422a57bd136699",
+        "transitive_descendants": 11
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-181323-9a6fa4f856-lorentz_boost_free_staggered",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet derives the reduced free operator directly from the canonical phases, then the inverse and continuum covariance follow from the Clifford identity and sin(pa)/a -> p. The cited K\u00e4hler-Dirac authority is used only for retained algebraic spin/taste counting; its open physical-realization disclaimer is not load-bearing because the free-action phase derivation is supplied inside this packet.",
+      "claim_scope": "Free U=1 staggered Euclidean 2-point function for the displayed canonical action/phases: continuum SO(4) bispinor covariance of the free propagator and O(a^2) ell=4 anisotropy of the taste-singlet scalar spectrum/D~ sector, excluding interacting theory, n-point/OS reconstruction, physical-unit readout, and full spin-taste leading finite-a correction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T18:15:59.514166+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Blocking the canonical free staggered action by n=2y+b and rephasing chi_b(p)=exp(i a p\u00b7b) zeta_b(p) gives D_red(p)=m I_16+i sum_mu alpha_mu sin(p_mu a)/a with alpha_mu satisfying the Clifford relations, so its inverse has denominator Delta(p)=m^2+sum_mu sin^2(p_mu a)/a^2 and tends to the SO(4)-covariant Dirac propagator as a->0.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the full untruncated runner source for Parts 0 and 1a and the source wording around finite-a taste mixing versus exact free Clifford block diagonalization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 34,
+        "B": 2,
+        "C": 18,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The load-bearing computation is framework-internal and algebraic: the blocked staggered matrices realize Cl_4, the propagator inverse follows exactly, and the SO(4) continuum covariance is a direct spin-representation identity. Independent checks of the displayed coefficients give sin^2(pa)/a^2=p^2-(a^2/3)p^4+O(a^4), <sum n_mu^4>_{S^3}=1/2, harmonic H4=sum x_mu^4-(1/2)r^4, and the axis/body-diagonal ratio 4. No external comparator, tuned input scale, or unretained dependency is load-bearing; the scalar-note bridge checks are contextual rather than needed for closure."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.228152+00:00",
+      "audit_date": "2026-06-09T19:24:04.324990+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "kinetic_isotropy_primitive": null,
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "kinetic_isotropy_primitive",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 15.524,
+        "runner_hash": "c5caa0e09a30f24e369d89a9dda5038114ab105e014003c94f422a57bd136699",
+        "transitive_descendants": 45
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-192120-ed1fdb84-lorentz_boost_free_stagg-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner derives the free blocked operator from the stated phases, verifies the Clifford algebra and scalar spectrum, and the inverse plus sine expansion gives the claimed continuum propagator and leading anisotropy. Interacting, n-point, OS-reconstruction, physical-unit, and full finite-a spin-taste leading-correction claims are excluded.",
+      "claim_scope": "Free U=1 staggered Euclidean two-point function with canonical phases: continuum momentum-space SO(4) Dirac/Kahler-Dirac covariance and O(a^2) ell=4 anisotropy in the taste-singlet scalar-spectrum/displayed D~ sector only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T19:24:04.324990+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "From the canonical phases, the blocked/rephased free operator is D_red(p)=m I_16+i sum_mu alpha_mu sin(p_mu a)/a with {alpha_mu,alpha_nu}=2 delta_mu_nu I, hence D_red^{-1} has denominator m^2+sum_mu sin^2(p_mu a)/a^2 and tends to (m-i gamma.p)/(p^2+m^2) as a -> 0.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use preserves the narrow free U=1 two-point and taste-singlet scalar-spectrum scope, especially around the Wick-rotation and finite-a taste wording.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 23,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The primary runner source is present and performs the load-bearing construction rather than merely printing constants: it builds the staggered operator from the canonical phases, checks the Cl_4 structure, verifies the inverse, spectrum, SO(4) covariance, and Taylor/anistropy structure. No external comparator, tuned scale, cross-note numerical import, or definition-only renaming is used. The retained-bounded Kahler-Dirac authority's open physical-realization caveat does not block this narrow row because the row assumes the free staggered action and independently reconstructs the relevant spin/taste algebra inside the packet."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.075049+00:00",
+      "audit_date": "2026-06-12T00:39:10.429832+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "kinetic_isotropy_primitive": null,
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Abstract finite-dimensional component-space theorem: V_Hn = C^(2^d) is graded-linearly equivalent to Lambda^*(C^d); D_KD = d - delta has the stated parity, square, adjoint, and Hermiticity properties; the d=4 spinor-count arithmetic matches the cited Cl(3) chirality-pair dimension, with physical staggered-operator and JW/Fock identifications out of scope."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "kinetic_isotropy_primitive",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 11.524,
+        "runner_hash": "c5caa0e09a30f24e369d89a9dda5038114ab105e014003c94f422a57bd136699",
+        "transitive_descendants": 45
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-003553-bd66916658-lorentz_boost_free_staggered",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The stated free action and canonical phases generate the required Clifford reduced operator, whose closed inverse and continuum limit are algebraic consequences. The finite-a O(a) taste-mixing caveat is scoped out of the O(a^2) leading-correction claim, which is confined to Delta(p) / the displayed taste-spectator sector.",
+      "claim_scope": "Free U=1 staggered-Dirac Euclidean 2-point function: continuum SO(4) covariance of the displayed taste-spectator spin block, plus the O(a^2) ell=4 anisotropy of the taste-singlet scalar spectrum Delta(p), excluding interacting, n-point, OS-reconstruction, physical-unit, and full finite-a spin x taste leading-correction claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T00:39:10.429832+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17:retained_bounded->unaudited",
+      "load_bearing_step": "From the canonical free staggered phases, the blocked reduced operator is D_red(p)=m I_16+i sum_mu alpha_mu sin(p_mu a)/a with {alpha_mu,alpha_nu}=2 delta_mu nu I, so its inverse has denominator Delta=m^2+sum_mu sin^2(p_mu a)/a^2 and tends as a->0 to (m-i gamma.p)/(p^2+m^2).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the finite-a taste-spectator wording against the momentum-dependent spin/taste basis; the clean verdict applies only within the explicitly free 2-point and taste-singlet scalar-spectrum scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 36,
+        "B": 0,
+        "C": 18,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The runner source does real operator construction from the explicit staggered phases and does not merely print expected constants; independent checks confirm the alpha_mu Clifford algebra, the -1/3 coefficient from sin^2(pa)/a^2, and the pure S^3 ell=4 harmonic H4=sum x_mu^4-(1/2)r^4. No external comparator or tuned empirical value is used. The retained_bounded K\u00e4hler-Dirac authority is consumed only for abstract spin/taste algebra; the packet independently derives the canonical free staggered reduced operator, so the upstream open physical-realization disclaimer is not load-bearing here."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.259482+00:00",
+      "audit_date": "2026-07-02T00:47:57.835960+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "kinetic_isotropy_primitive": null,
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract per-hypercube Z2^d component-space to exterior-form-complex equivalence, the finite-dimensional D_KD = d - \u03b4 algebraic operator properties, the d=4 spinor-count factor match, Hermiticity of iD_KD, and the narrow Wilson parity-breaking statement, excluding any physical staggered-Dirac dynamical identification."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "kinetic_isotropy_primitive",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 12.144,
+        "runner_hash": "c5caa0e09a30f24e369d89a9dda5038114ab105e014003c94f422a57bd136699",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T004757Z-01a16541-lorentz_boost_free_stagg",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows algebraically from the displayed free staggered operator: the blocked alpha matrices satisfy the Clifford relations, the closed-form inverse follows, and sin(p_mu a)/a -> p_mu gives the standard SO(4)-covariant Euclidean Dirac propagator. The finite-a leading-correction statement is explicitly narrowed away from the full spin x taste propagator and onto Delta(p)/D~.",
+      "claim_scope": "For the specified free U=1 staggered/Kogut-Susskind operator on Z^3 x Z_tau with canonical phases, the continuum-limit 2-point Dirac/Kahler-Dirac propagator is SO(4)-covariant; the O(a^2) ell=4 anisotropy claim is scoped to the taste-singlet scalar spectrum/displayed D~ sector.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T00:47:57.835960+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17:retained_bounded->unaudited",
+      "load_bearing_step": "After hypercube blocking and the rephasing chi_b(p)=exp(i a p.b) zeta_b(p), the free staggered operator is D_red(p)=m I_16+i sum_mu alpha_mu sin(p_mu a)/a with alpha_mu satisfying Cl_4, so its inverse has scalar denominator Delta(p) and tends to (m-i gamma.p)/(p^2+m^2) as a->0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Future re-audits should ensure the O(a^2) correction remains scoped to Delta(p)/D~ and is not broadened to the full finite-a spin x taste propagator.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 54,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The runner source genuinely constructs the canonical finite matrices, checks the Clifford algebra, inverse, continuum covariance, c4=-1/3 coefficient, S^3 harmonic decomposition, and scalar-spectrum finite-a anisotropy rather than merely printing PASS lines. The cited retained-grade/accepted-premise authorities are not used to smuggle an interacting-theory, OS reconstruction, or full finite-a spin x taste O(a^2) claim. Within the stated free two-point and taste-singlet scalar/D~ scope, the chain is an algebraic closure with no external comparator or tuned numerical input."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:56.381228+00:00",
+      "audit_date": "2026-07-09T23:51:44.911408+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "kinetic_isotropy_primitive": null,
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Bounded finite-dimensional algebraic theorem: the Z2^d-indexed per-hypercube component space C^{2^d} is graded-isomorphic to Lambda*(C^d), D_KD=d-delta has the stated nilpotency, parity-reversal, Hodge-Laplacian, and Hermiticity identities, and at even d the 2^d count factors into spinor/taste with the d=4 spinor factor matching the retained Cl(3) chirality-pair count. This does not audit any physical staggered-Dirac dynamical equivalence, continuum/species reduction, or statistics-forcing claim."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "kinetic_isotropy_primitive",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 11.785,
+        "runner_hash": "c5caa0e09a30f24e369d89a9dda5038114ab105e014003c94f422a57bd136699",
+        "transitive_descendants": 38
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-lorentz_boost_free_stagg-057",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic and numerical chain closes for the stipulated staggered action. The restricted packet does not close the identification of that action and its canonical phases with the framework's physical dynamical operator, and it supplies no analytic-continuation proof for the additional Wightman claim.",
+      "claim_scope": "For the stipulated free one-component staggered action and canonical phases, the Euclidean two-point spin block converges to the SO(4)-covariant Dirac propagator, while its scalar spectrum has a leading O(a^2) dimension-6 ell=4 hypercubic anisotropy.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T23:51:44.911408+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:kinetic_isotropy_primitive:5dd0ccb9->9186702f",
+      "load_bearing_step": "The exact reduced operator D_red(p) = mI_16 + i sum_mu alpha_mu sin(p_mu a)/a, with Clifford alpha_mu, has the stated closed inverse and tends under sin(p_mu a)/a -> p_mu to the SO(4)-covariant continuum Dirac propagator.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge establishing the framework's canonical staggered action and phases and a real analytic-continuation derivation, or narrow this note to an explicitly stipulated Euclidean free-lattice theorem and remove the uncomputed Wightman and full-propagator O(a) claims; if narrowing downstream scope, also add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the audit queue.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 34,
+        "B": 0,
+        "C": 20,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The runner substantively constructs the blocked operator, verifies its Clifford algebra and spectrum, computes its inverse, and checks the Euclidean continuum covariance and scalar-spectrum anisotropy. However, the cited K\u00e4hler-Dirac authority explicitly leaves the physical staggered-operator and Kawamoto-Smit phase identification open, while this note imports that carrier as canonical. The Wightman continuation and full-propagator O(a) taste-mixing statements are represented only by unconditional check(True) summaries rather than load-bearing computations or proofs."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.745127+00:00",
+      "audit_date": "2026-07-10T13:00:11.583575+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "9186702f30a2faa7ce41afd398a0f1956f41f796b704dd34a04047352fd35d99"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "kinetic_isotropy_primitive": null,
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Bounded finite-dimensional algebraic theorem: the Z2^d-indexed per-hypercube component space C^{2^d} is graded-isomorphic to Lambda*(C^d), D_KD=d-delta has the stated nilpotency, parity-reversal, Hodge-Laplacian, and Hermiticity identities, and at even d the 2^d count factors into spinor/taste with the d=4 spinor factor matching the retained Cl(3) chirality-pair count. This does not audit any physical staggered-Dirac dynamical equivalence, continuum/species reduction, or statistics-forcing claim."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "kinetic_isotropy_primitive",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 11.992,
+        "runner_hash": "c5caa0e09a30f24e369d89a9dda5038114ab105e014003c94f422a57bd136699",
+        "transitive_descendants": 44
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-124556-b32a85dc-lorentz_boost_free_stagg-007",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes once the canonical staggered action and phases are assumed. The restricted packet does not close their identification with the framework's physical dynamical operator: the cited K\u00e4hler-Dirac authority explicitly leaves that realization bridge open, while the runner takes the action as input.",
+      "claim_scope": "The specified free U=1 staggered action has a pointwise momentum-space continuum propagator with SO(4) bispinor covariance, while its scalar spectrum Delta(p) has the stated O(a^2), ell=4 hypercubic anisotropy.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T13:00:11.583575+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->unaudited",
+      "load_bearing_step": "Blocking and rephasing the specified free staggered action gives D_red(p) = mI + i sum_mu alpha_mu sin(p_mu a)/a with Clifford generators alpha_mu, whose inverse therefore converges as a approaches zero to (mI - i gamma\u00b7p)/(p^2 + m^2).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow the claim to a theorem conditional on the explicitly specified free staggered action, remove or separately support the framework-carrier and Wightman/CPT extensions, and add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the row into the audit queue.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 7,
+        "C": 31,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The runner genuinely constructs the blocked free operator, verifies its Clifford algebra and inverse, and numerically checks the continuum and scalar-anisotropy statements without an external comparator. Those results support a conditional theorem for the explicitly supplied staggered action. They do not establish that this action is the framework's physical carrier, because the cited retained-bounded authority expressly disclaims that identification; several Wick-rotation and CPT classification checks are also assertion-only and do not repair the gap."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py",
+  "title": "Free Staggered-Dirac 2-Point Schwinger Function: SO(4) Covariance in the Continuum Limit (Narrow)",
+  "transitive_descendants": 715,
+  "verdict_rationale": null
+}

@@ -1,0 +1,402 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "poisson_self_gravity_loop_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_source_driven_field_probe_note"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/minimal_source_driven_field_probe.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.576,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f38b76469c7b32792f25899bfb3071934b1f271d949a6065ed272f8478775daf",
+  "note_path": "docs/POISSON_SELF_GRAVITY_LOOP_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.236712+00:00",
+      "audit_date": "2026-05-01T11:32:17.103185+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered runner reproduces the note's qualitative sweep: zero-epsilon reduction is exact, all nonzero epsilon rows are TOWARD with mean loop/inst about 1.010, mean escape rises mildly, frozen Born checks remain at machine precision, and nonzero rows have converged=0/4.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "The Poisson-like self-gravity loop is a bounded positive control: exact epsilon=0 reduction holds, frozen terminal fields remain Born-linear to machine precision, nonzero rows preserve weak-field TOWARD sign with near-linear mass scaling, but the strict nonzero fixed-point loop does not converge and remains a small effect.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Clean within the note's bounded-control scope. The note explicitly does not claim a new backreaction mechanism; it claims the frozen-field propagation remains Born-linear and weak-field-like while the outer loop is small and nonconvergent. The current runner, executed on the Mac mini clean clone, reproduces that boundary: exact zero-epsilon reduction, machine-level frozen Born residuals, TOWARD sign across nonzero couplings, near-linear source-strength exponents, loop/inst around 1.010, and no strict convergence for nonzero epsilon. Residual risk is the declared narrow setup and the nonconvergent outer loop; machine-epsilon Born mean/max digits vary at the cancellation floor but do not affect the audited conclusion."
+    },
+    {
+      "archived_at": "2026-05-09T10:55:06.461570+00:00",
+      "audit_date": "2026-05-05T06:41:22.399704+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 4.585,
+        "runner_hash": "78f50f63f503135148f4ff5eddcc54583ee7d54cd9e4c8af1f3db9cb39a6650e",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-poisson_self_gravity_loo-269",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the restricted packet, the runner source performs an actual lattice propagation, screened-field construction, fixed-point iteration, Born I3 check, and power-law fit rather than printing constants. The conclusion is bounded to the tested lattice/kernel/coupling/source grid and explicitly excludes a converged new backreaction mechanism.",
+      "claim_scope": "Audited the narrow h=0.25 exact-lattice screened Poisson-like self-gravity loop sweep and its bounded claims about zero-epsilon reduction, frozen-field Born linearity, weak-field sign, and near-linear mass-law on the terminal iterates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T06:41:22.399704+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->high",
+      "load_bearing_step": "The exact epsilon = 0 reduction survives, the terminal frozen field remains Born-linear to machine precision, and the weak-field sign and essentially linear mass-law survive on the tested nonzero couplings, despite nonconvergence of the outer loop.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the imported helper module scripts/minimal_source_driven_field_probe.py, which was not included in the restricted packet, to confirm Lattice3D and K are not encoding a contested premise or hard-coded readout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing claim is a bounded computational result from the supplied runner, and the runner output matches the note's stated qualitative conclusions: exact zero-epsilon reduction, machine-level frozen-field Born residuals, toward-sign rows for nonzero epsilon, and approximately linear source-strength scaling. The code visibly computes these observables from lattice propagation and a screened Poisson-like field loop, with no hard-coded expected result table. The nonzero-epsilon nonconvergence is disclosed in both runner and note, and the final claim is limited accordingly."
+    },
+    {
+      "archived_at": "2026-05-10T16:26:44.367798+00:00",
+      "archived_for_note_hash": "7ccad2ed200c2ddc3c6985831023200c2ab94034a6b04408ddbbe76655f0f751",
+      "audit_date": "2026-05-10T13:21:05.693342+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.326,
+        "runner_hash": "78f50f63f503135148f4ff5eddcc54583ee7d54cd9e4c8af1f3db9cb39a6650e",
+        "transitive_descendants": 641
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e120a-fb50-7902-8100-594c90c4f7eb",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical conclusion is load-bearing, but the supplied runner stdout is only a timeout and the runner imports the lattice implementation and K from scripts.minimal_source_driven_field_probe, which is not supplied. Under the restricted packet, the table values, convergence claims, and exact-lattice implementation cannot be verified.",
+      "claim_scope": "Finite numerical control claim for one h=0.25 exact-lattice Poisson-like self-field harness with fixed source patch, screened kernel, couplings, and source strengths.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T13:21:05.693342+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The strongest bounded statement is that the exact epsilon=0 reduction survives, the terminal frozen field remains Born-linear to machine precision, the weak-field sign survives, and the weak-field mass-law read stays essentially linear.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue - include scripts/minimal_source_driven_field_probe.py in the restricted packet and provide a completed run, sliced runner output, or cached certificate for scripts/poisson_self_gravity_loop.py.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the claim rests on finite runner results, but no completed stdout or cached certificate is supplied, and the runner's core lattice implementation is imported from an unprovided module. Why this blocks: the audit cannot verify the reported zero-epsilon reduction, Born residuals, sign, or mass-law exponents from the restricted inputs. Repair target: provide a completed or sliced deterministic run plus the imported runner dependency needed to inspect the exact-lattice construction. Claim boundary until fixed: this remains a described bounded harness, not an audited numerical theorem."
+    },
+    {
+      "archived_at": "2026-05-16T11:52:16.319536+00:00",
+      "archived_for_note_hash": "c93d108d781aa9e320c3389054d6deadd393c48e237ea47f497571d0b49fdd4e",
+      "audit_date": "2026-05-15T12:54:03.836807+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_source_driven_field_probe_note": "Audited the provided self-contained runner and cached stdout for the declared 3D lattice, source strengths, damped telegraph-style field rule, and fixed target-field calibration."
+        },
+        "dep_claim_type": {
+          "minimal_source_driven_field_probe_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_source_driven_field_probe_note": "audited_conditional"
+        },
+        "deps": [
+          "minimal_source_driven_field_probe_note"
+        ],
+        "load_bearing_score": 12.41,
+        "runner_hash": "706fc7b7ba77eeba3904caa082258a57d2369a6af0fd6ba6a08f0b3b1136e75a",
+        "transitive_descendants": 480
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-judicial-20260515-poisson-self-gravity-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Issue: the Poisson loop row cites and inherits its lattice geometry, amplitude propagation, and field-update conventions from minimal_source_driven_field_probe_note, while the current audit ledger records that dependency as audited_conditional with chain_closes=false. Why this blocks: an audited_clean bounded theorem cannot close through a conditional upstream authority even when its own runner cache is status ok and all finite hard bars pass. Repair target: ratify or replace the minimal source-driven field dependency with a retained-grade theorem for the inherited primitives, or restate this Poisson row so the inherited primitives are treated as explicit bounded admissions rather than retained dependencies. Claim boundary until fixed: the Poisson runner supports the finite h=0.25 control result and hard-bar replay, but the audit status remains conditional on upstream field-rule closure.",
+      "claim_scope": "A bounded exact-lattice numerical control for one h=0.25 3D lattice family, one source patch, one screened Poisson-like kernel, and a fixed-point field loop, with hard-bar checks on zero-epsilon reduction, frozen-field Born I3, weak-field sign, loop/instantaneous ratio, and mass-law exponent.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-15T12:54:03.836807+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T12:05:35.689584+00:00",
+          "auditor": "codex-audit-loop-20260511-poisson-self-gravity-loop-a",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded Poisson-like self-gravity loop control on the exact h=0.25 lattice family, using the documented quick audit subset: exact epsilon=0 reduction, frozen-field Born floor, weak-field TOWARD sign, loop/inst ratio band, and near-linear mass-law exponent hard bars.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-15T12:53:12.117161+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260515-125251-759ec01c-poisson_self_gravity_loo-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "A bounded computational control for one exact 3D lattice family, one source patch, one screened Poisson-like amplitude-sourced field loop, and the stated source-strength/coupling sweep.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-15T12:54:03.836807+00:00",
+          "auditor": "codex-audit-loop-judicial-20260515-poisson-self-gravity-loop",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "A bounded exact-lattice numerical control for one h=0.25 3D lattice family, one source patch, one screened Poisson-like kernel, and a fixed-point field loop, with hard-bar checks on zero-epsilon reduction, frozen-field Born I3, weak-field sign, loop/instantaneous ratio, and mass-law exponent.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first audit treated the inherited minimal_source_driven_field_probe_note authority as retained-grade, matching stale source-note prose, but the current ledger has that dependency as audited_conditional and chain_closes=false.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Issue: the Poisson loop row cites and inherits its lattice geometry, amplitude propagation, and field-update conventions from minimal_source_driven_field_probe_note, while the current audit ledger records that dependency as audited_conditional with chain_closes=false. Why this blocks: an audited_clean bounded theorem cannot close through a conditional upstream authority even when its own runner cache is status ok and all finite hard bars pass. Repair target: ratify or replace the minimal source-driven field dependency with a retained-grade theorem for the inherited primitives, or restate this Poisson row so the inherited primitives are treated as explicit bounded admissions rather than retained dependencies. Claim boundary until fixed: the Poisson runner supports the finite h=0.25 control result and hard-bar replay, but the audit status remains conditional on upstream field-rule closure.",
+          "load_bearing_step_class": "C",
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 5,
+            "D": 0,
+            "total_pass": 5
+          },
+          "second_auditor_error": "No material error for the current ledger state; the second audit correctly demoted the row to conditional because a cited load-bearing dependency is not retained-grade.",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "The runner computes the finite hard-bar checks for the Poisson loop, but the row inherits exact-lattice geometry, amplitude propagation, and field-update conventions from minimal_source_driven_field_probe_note, which is currently audited_conditional rather than retained-grade.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "dependency_not_retained: re-audit after minimal_source_driven_field_probe_note is ratified retained-grade or after this row is rewritten to make the inherited exact-lattice and field-update primitives explicit bounded admissions.",
+      "open_dependency_paths": [
+        "minimal_source_driven_field_probe_note"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the Poisson loop row cites and inherits its lattice geometry, amplitude propagation, and field-update conventions from minimal_source_driven_field_probe_note, while the current audit ledger records that dependency as audited_conditional with chain_closes=false. Why this blocks: an audited_clean bounded theorem cannot close through a conditional upstream authority even when its own runner cache is status ok and all finite hard bars pass. Repair target: ratify or replace the minimal source-driven field dependency with a retained-grade theorem for the inherited primitives, or restate this Poisson row so the inherited primitives are treated as explicit bounded admissions rather than retained dependencies. Claim boundary until fixed: the Poisson runner supports the finite h=0.25 control result and hard-bar replay, but the audit status remains conditional on upstream field-rule closure."
+    },
+    {
+      "archived_at": "2026-05-17T08:06:23.432496+00:00",
+      "archived_for_note_hash": "5692bb7df4f6e5ad5376a29ceaed8d68515d303396d1ce9bc83ed57740d82936",
+      "audit_date": "2026-05-16T12:45:53.456514+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.135,
+        "runner_hash": "706fc7b7ba77eeba3904caa082258a57d2369a6af0fd6ba6a08f0b3b1136e75a",
+        "transitive_descendants": 794
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-124532-d369106f-poisson_self_gravity_loo-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner genuinely computes the stated sweep and hard bars, but it imports the lattice geometry, propagation offsets, action normalization, and K from scripts/minimal_source_driven_field_probe.py. That dependency source is not included in the restricted packet shown here, so the inherited primitives BA-1 through BA-3 are admissions rather than closed derivations from the axiom.",
+      "claim_scope": "A bounded numerical control claim for the specific h=0.25, W=3, L=6 exact-lattice family, fixed 5-node source patch, screened Poisson-like kernel, and tested source/coupling sweep, with Born-linearity checked only on frozen terminal field snapshots.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T12:45:53.456514+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The primary runner computes the fixed exact-lattice Poisson-like field loop and all five hard-bar assertions pass: exact epsilon=0 reduction, frozen-field Born floor, TOWARD sign, bounded loop/instant ratio, and near-linear mass-law exponent.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full minimal_source_driven_field_probe.py dependency source and its retained-grade audit status, or explicitly scope the claim as conditional on BA-1 through BA-3.",
+      "open_dependency_paths": [
+        "scripts/minimal_source_driven_field_probe.py",
+        "docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner is substantive rather than a printout of constants: it builds fields, propagates amplitudes, computes centroid/escape/Born/mass-law quantities, and asserts the stated hard bars. The cached run matches the note and supports the bounded numerical statement on its own restricted sweep. However, the computation depends on unshown upstream primitives from minimal_source_driven_field_probe.py and the note explicitly treats those as bounded admissions, not retained-grade closed inputs. Under the rubric, that imported lattice/propagation/readout layer keeps the chain conditional even though the new Poisson-loop layer appears internally computed."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.002506+00:00",
+      "audit_date": "2026-05-18T13:07:59.387810+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_source_driven_field_probe_note": "Audited only the declared-run computation at h = 0.5, W = 6, L = 30, source z = 3, s in {0.001, 0.002, 0.004, 0.008}, with the telegraph rule and calibration parameters treated as declared modeling inputs."
+        },
+        "dep_claim_type": {
+          "minimal_source_driven_field_probe_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_source_driven_field_probe_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_source_driven_field_probe_note"
+        ],
+        "load_bearing_score": 13.309,
+        "runner_hash": "706fc7b7ba77eeba3904caa082258a57d2369a6af0fd6ba6a08f0b3b1136e75a",
+        "transitive_descendants": 896
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-130737-41b06c76-poisson_self_gravity_loo-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet includes the primary runner, its helper source, the upstream note marked retained_bounded, and completed cached stdout. The code computes the lattice, Poisson-like field, propagation, Born I3, sign, ratio, and exponent checks rather than merely printing fixed expected values.",
+      "claim_scope": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T13:07:59.387810+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-18T13:05:21.251959+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-130500-4533a7c3-poisson_self_gravity_loo-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded numerical control for the declared h=0.25, W=3, L=6 exact-lattice Poisson-like self-gravity loop with the stated source patch, screened kernel, couplings, strengths, and frozen-field Born check.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-18T13:07:59.387810+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-130737-41b06c76-poisson_self_gravity_loo-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:minimal_source_driven_field_probe_note:retained_bounded->unaudited",
+      "load_bearing_step": "On the declared h=0.25 exact lattice with the specified screened Poisson-like amplitude-sourced field loop, the runner computes and hard-bars exact epsilon=0 reduction, frozen-field Born floor, TOWARD sign, bounded loop/instantaneous ratio, and near-linear mass-law exponent.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that future edits preserve the narrow declared-run scope and do not promote the calibrated Poisson-like kernel or nonconvergent loop into a general self-gravity claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The cited one-hop authority is retained_bounded, which is retained-grade under the rubric, and the note explicitly bounds the inherited primitives as declared finite constructions. The primary runner source and helper source are present, and the completed cache shows all five hard-bar assertions passing. The result is a bounded first-principles numerical computation on declared lattice and kernel inputs, with the nonconvergent nonzero-epsilon loop correctly retained as a limitation rather than promoted to a broader physical claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/poisson_self_gravity_loop.py",
+  "title": "Poisson Self-Gravity Loop Note",
+  "transitive_descendants": 762,
+  "verdict_rationale": null
+}

@@ -1,0 +1,410 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_prerecord_instrument_kernel_gate_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem / bounded finite algebra under supplied readout context",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "record_context_generator_nonidentifiability_no_go_2026-06-17",
+    "minimal_axioms",
+    "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+    "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9bea020daea807a87e0374a9876ceaa299f02dbf93b3515dbef9fadf967ab74e",
+  "note_path": "docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:13.649662+00:00",
+      "archived_for_note_hash": "2fe01446f8ef2bf4a5cc39160ee203a25eb20c7e33e7473eb5b12c540114fb85",
+      "audit_date": "2026-06-06T20:12:31.196321+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9d20603f017eed857017e852394a1e67256c33cb4270d1208813300495f0c2ea",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-201041-284ebc9e41-record_prerecord_instrument_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed matrix arithmetic closes once rho, the projectors, and the Born trace rule are supplied. The restricted packet does not derive the supplied instrument or Born trace bridge from an axiom or retained authority, so the chain does not close unconditionally.",
+      "claim_scope": "Finite one-qubit algebra showing that the displayed rho plus supplied Z/X projective instruments and Born trace rule yields the stated probability kernels, and that realized record/count updates are one-hot rather than probability vectors.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-06T20:12:31.196321+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "A pre-record density matrix plus a supplied projective instrument and Born trace rule gives a probability vector over possible future record atoms, e.g. p_Z=(Tr(P_0 rho), Tr(P_1 rho))=(2/3, 1/3) and p_X=(1/2+sqrt(2)/3, 1/2-sqrt(2)/3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: retain a bridge theorem supplying or deriving the projective instrument and Born trace rule from accepted premises if unconditioned retention is desired.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 5,
+        "C": 6,
+        "D": 4,
+        "total_pass": 26
+      },
+      "verdict_rationale": "Independent matrix checks confirm that rho has trace 1 and determinant 0, that the Z and X projectors are complete, and that the Born traces give the displayed probability vectors. The one-hot atoms, integral count updates, fractional ensemble expectation, selective states, and nonselective state also check. However, the production kernel uses the supplied projective instrument and Born trace rule as explicit open bridges; the packet contains no cited retained authority deriving them from Record or Quantum alone. The source therefore supports only the stated conditional theorem."
+    },
+    {
+      "archived_at": "2026-06-09T22:15:39.939230+00:00",
+      "audit_date": "2026-06-07T01:24:39.898493+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on H_Lambda with nonzero displayed outcome projectors: canonical Naimark/Lueders readout gives K_r=P_r; outcome-label phases/permutations preserve this up to phase/relabeling; general label-mixing apparatus unitaries change the POVM element on nonzero sectors.",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "Finite-region qubit-lattice projective measurements, conditional on the L\u00fcders/canonical-frame instrument selection K_P = P, give M_{P,E}=P E P for any later effect E and the normalized postselected state P sigma P / Tr(P sigma P) when the denominator is nonzero.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3065cec2175549ac9e568539a90f3641b13ab55579dec9fc230c154b05427402",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-012416-94c3d1329a-record_prerecord_instrument_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The numerical identities close by direct matrix algebra from the displayed rho and projectors plus the retained-bounded projective/Lueders authorities. The source correctly keeps the readout context supplied rather than derived from the Record axiom.",
+      "claim_scope": "Audited the finite one-qubit algebra showing that a supplied Z or X projective instrument maps the displayed rho to probability vectors, and that realized post-record atoms/counts are typed separately from ensemble expectations.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T01:24:39.898493+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22:retained_bounded->unaudited",
+      "load_bearing_step": "With a supplied projective readout context and cited canonical projective/Lueders authority, the trace pairings Tr(P_r rho) produce the Z and X probability kernels while realized records are one-hot atoms/count increments.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that downstream ledger status preserves the supplied-readout-context limitation and does not promote this bounded gate into readout-context derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing computation is an algebraic identity check over independent retained-bounded inputs and an accepted axiom premise. Independently checking the displayed formulas gives Tr(P0 rho)=2/3, Tr(P1 rho)=1/3, X probabilities 1/2 +/- sqrt(2)/3, one-hot realized atoms, and expected count (14/3, 7/3). The runner source performs actual symbolic matrix calculations and citation-string boundary checks rather than merely printing constants, though several boundary checks are necessarily textual or tautological. No open or non-retained dependency is imported beyond the explicitly supplied readout context, which is part of the audited bounded scope."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:36.321218+00:00",
+      "archived_for_note_hash": "db5bdda4f7d427851ea914fb4f6556d596592f27e5ac0b5203382fc7b7d0913e",
+      "audit_date": "2026-06-10T05:48:41.565024+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on H_Lambda with nonzero displayed outcome projectors: canonical Naimark/Lueders readout gives K_r=P_r; outcome-label phases/permutations preserve this up to phase/relabeling; general label-mixing apparatus unitaries change the POVM element on nonzero sectors.",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "For finite qubit-lattice regions, under the LSP/canonical Naimark-frame selection K_P=P for ideal unrefined projective measurement, the sequential joint effect is K_P\u2020 E K_P=PEP and the postselected state is P sigma P / Tr(P sigma P).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "3065cec2175549ac9e568539a90f3641b13ab55579dec9fc230c154b05427402",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260610-054603-b671352407-record_prerecord_instrument_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite algebra closes under the stated supplied readout context: the displayed rho is pure trace-one, the Z/X projectors are complete, the trace probabilities and one-hot/count updates check exactly. The packet does not derive or select the physical readout context, so closure is bounded to that supplied-context scope.",
+      "claim_scope": "Exact finite one-qubit algebra for Z/X supplied projective readout contexts using retained-bounded `K_r = P_r` and L\u00fcders trace-normalized branch authority, with realized records typed separately from probability vectors and ensemble expectations.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:48:41.565024+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given a pre-record density matrix and a supplied projective readout context, the projective trace pairing `p_r = Tr(P_r rho)` gives probabilities over possible future record atoms, while a realized outcome writes a one-hot post-record atom/count update.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest promotion repair is a retained derivation or approved premise selecting the physical readout context / record-production probability bridge; no repair is needed for the stated supplied-context finite algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 12,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing mathematics is class A algebra over supplied matrices and retained-bounded projective/L\u00fcders inputs, not a first-principles derivation of measurement or readout. Independent checks reproduce `p_Z=(2/3,1/3)`, `p_X=(1/2+sqrt(2)/3,1/2-sqrt(2)/3)`, the integral realized updates, and the fractional ensemble expectation. The source is careful that Record and Quantum alone do not supply measurement, probability, or readout-context selection, so the result is valid only as bounded support under an explicitly supplied readout context."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:09.077799+00:00",
+      "archived_for_note_hash": "06f2fc728cf4d1cba5c3cda0ed6f19ffbe86d1969f053e23e8402f3adda51e8e",
+      "audit_date": "2026-06-14T04:08:46.233736+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on H_Lambda with nonzero displayed outcome projectors: canonical Naimark/Lueders readout gives K_r=P_r; outcome-label phases/permutations preserve this up to phase/relabeling; general label-mixing apparatus unitaries change the POVM element on nonzero sectors.",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "For finite qubit-lattice regions, under the LSP/canonical Naimark-frame selection K_P=P for ideal unrefined projective measurement, the sequential joint effect is K_P\u2020 E K_P=PEP and the postselected state is P sigma P / Tr(P sigma P).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "fb19040d450eef577c00e8f250c0c741e9800ba8994412ea3f5ccfd6ef2fe536",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-040608-ad26e556d7-record_prerecord_instrument_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed finite algebra checks: p_Z=(2/3,1/3), p_X=(1/2+sqrt(2)/3,1/2-sqrt(2)/3), and the realized atom/count updates are typed separately from ensemble expectations. The result closes only under the supplied readout context and cited projective trace authority; it does not derive the readout context, Born/probability authority from Record, physical generator, or clock/rate normalization.",
+      "claim_scope": "Finite one-qubit supplied-context gate: using retained-bounded canonical projective/Lueders trace authority and supplied Z/X projective readout contexts, the displayed rho gives the stated probability vectors and realized outcomes give one-hot record/count updates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T04:08:46.233736+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the supplied projective readout context, the pre-record density matrix is mapped to future-record probabilities by p_r = Tr(P_r rho), while a realized outcome is written as a one-hot post-record atom/count update rather than as the probability vector.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained authority deriving or selecting the physical readout context/production generator if downstream use requires more than the current supplied-context finite algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 6,
+        "C": 5,
+        "D": 6,
+        "total_pass": 36
+      },
+      "verdict_rationale": "The load-bearing math is an algebraic identity over supplied inputs, not a first-principles derivation of a physical production kernel. The retained-bounded LSP and Lueders authorities support the projective trace calculation, and the accepted Minimal Axioms premise is used within its stated bounds. However the readout context remains explicitly supplied and not selected or derived by the restricted packet, so the row is conditional rather than clean as a bare record-production theorem."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:35.259476+00:00",
+      "archived_for_note_hash": "47ec29a08450d6dfd5dc279474e743c78806c77d41081f6958300ac1838a4ac1",
+      "audit_date": "2026-06-16T03:41:12.774412+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on H_Lambda with nonzero displayed outcome projectors: canonical Naimark/Lueders readout gives K_r=P_r; outcome-label phases/permutations preserve this up to phase/relabeling; general label-mixing apparatus unitaries change the POVM element on nonzero sectors.",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "For finite qubit-lattice regions, under the LSP/canonical Naimark-frame selection K_P=P for ideal unrefined projective measurement, the sequential joint effect is K_P\u2020 E K_P=PEP and the postselected state is P sigma P / Tr(P sigma P).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "46db7e0816c88ad0dd4589ff85394b56e513597055f89f493fffd80d0e053365",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-033744-07fa1b546f-record_prerecord_instrument_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra itself closes under the stated supplied context, and an independent scalar check confirms the displayed rho, Z/X probabilities, normalization, and count updates. The packet is not clean as written because the source note reports Scorecard PASS=36 FAIL=0 while the completed SHA-pinned runner/cache reports PASS=38 FAIL=0; the missing step is artifact reconciliation, not a physics bridge.",
+      "claim_scope": "Supplied-context finite algebra only: a one-qubit rho plus retained-bounded projective/Lueders trace authority and a supplied Z/X readout context yields p_r = Tr(P_r rho), followed by realized one-hot record/count updates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T03:41:12.774412+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the cited projective/Lueders authority and a supplied readout context, the trace pairing p_r = Tr(P_r rho) gives the future-record probability vector, while a chosen outcome separately writes a one-hot post-record atom/count update.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: reconcile the source note scorecard with the completed runner/cache, currently source PASS=36 FAIL=0 versus runner PASS=38 FAIL=0, then rerun the same restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 17,
+        "C": 0,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "Issue: the supplied-context algebra is correct, but the source note's displayed runner scorecard PASS=36 FAIL=0 conflicts with the completed runner/cache PASS=38 FAIL=0. Why this blocks: the strict formula and artifact inventory treats displayed quantitative scorecards and source-runner drift as not clean as written, even though the mismatch is non-load-bearing for the physics. Repair target: update the source scorecard or provide a reconciled cache/source pair, then re-audit the same supplied-context theorem. Claim boundary until fixed: bounded support for p_r = Tr(P_r rho) and one-hot realized record updates under cited retained-bounded projective/Lueders authority and supplied readout context."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:45.529691+00:00",
+      "archived_for_note_hash": "badd14969f0e0eb360847ae3daea1667462ce4d931625b7a7c42fd0a1dff2055",
+      "audit_date": "2026-06-18T14:33:55.483877+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on H_Lambda with nonzero displayed outcome projectors: canonical Naimark/Lueders readout gives K_r=P_r; outcome-label phases/permutations preserve this up to phase/relabeling; general label-mixing apparatus unitaries change the POVM element on nonzero sectors.",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "For finite qubit-lattice regions, under the LSP/canonical Naimark-frame selection K_P=P for ideal unrefined projective measurement, the sequential joint effect is K_P\u2020 E K_P=PEP and the postselected state is P sigma P / Tr(P sigma P).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "46db7e0816c88ad0dd4589ff85394b56e513597055f89f493fffd80d0e053365",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-record_prerecord_instrument_kernel_gate_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped finite algebra closes: the supplied projectors are orthogonal and complete, the cited projective/Lueders authorities support K_r=P_r and trace-normalized branches, and the runner computes p_Z, p_X, and one-hot/count updates exactly. No physical readout-context selection, production generator, IID frequency theorem, or clock/rate normalization is audited as part of this scope.",
+      "claim_scope": "Finite supplied-context one-qubit algebra: supplied Z/X projective readout contexts plus retained-bounded projective/Lueders authority yield probability vectors over possible future record atoms, distinct from realized one-hot record/count updates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T14:33:55.483877+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given a one-qubit density matrix, cited canonical projective/Lueders trace authority, and a supplied projective readout context, the production kernel is p_r = Tr(P_r rho), while a realized outcome writes a one-hot post-record atom.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers cite this row no more broadly than the supplied-context finite probability-to-record typing; no broader physical production-kernel claim was audited.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 6,
+        "C": 5,
+        "D": 16,
+        "total_pass": 38
+      },
+      "verdict_rationale": "The load-bearing step is an exact algebraic trace calculation over supplied matrices/projectors and retained-bounded upstream projective/Lueders authority, not a tuned numerical match or a definition substitution. The runner source actually constructs rho, Z/X projectors, trace probabilities, selective/nonselective states, and record atoms; the hard-coded True checks are boundary/firewall checks rather than the load-bearing probability algebra. The clean verdict applies only to the stated supplied-context finite gate and does not promote this row into a physical readout, generator, rate, or Born-rule authority beyond the cited bounded inputs."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py",
+  "title": "Record Pre-Record Instrument Kernel Gate Under Supplied Readout Context",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,482 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_p1_delta_r_fermion_regulator_dependence_and_scalar_ntaste_resolution_note_2026-06-16",
+    "yt_p1_bz_quadrature_full_staggered_pt_note_2026-04-18",
+    "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16",
+    "plaquette_self_consistency_note",
+    "yt_p1_shared_fierz_no_go_sub_theorem_note_2026-04-17",
+    "yt_p1_color_factor_retention_note_2026-04-17",
+    "yt_ward_identity_derivation_theorem",
+    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.767,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "90b182fb457a5550ecfeec4d1730e733708b69d965371d74ee5c59f4b1382e6c",
+  "note_path": "docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370329+00:00",
+      "archived_for_note_hash": "03678e7db87dfb50eab2eb58b6d8bc6ab16690e82042831c022cb131f700c141",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-27T21:45:34.182408+00:00",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies arithmetic over the cited bracket and explicitly says the cited value is not framework-native. The bracket, color-factor reduction, Ward/current reduction, plaquette constants, and master-obstruction comparison are inherited from non-clean or unaudited upstream authorities.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->high",
+      "load_bearing_step": "The cited tadpole-improved staggered scalar-density bracket I_S in [4,10] with central I_S=6 maps via P1=(alpha_LM/(4 pi)) C_F I_S to P1 in [3.848%,9.620%] with central 5.772%, a 3x upward revision relative to packaged I_S=2.",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+        "docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md",
+        "docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md",
+        "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "Issue: the P1 revision is a citation-and-bound calculation with hard-coded I_S in [4,10] and central I_S=6, while the note explicitly does not derive I_S on the retained Cl(3) x Z^3 action and depends on non-clean color, Ward, plaquette, bridge, and obstruction inputs. Why this blocks: citation arithmetic can document an external bracket, but it cannot promote a retained framework-specific P1 value or budget revision without the native BZ integral and clean upstream reductions. Repair target: perform the framework-native 1-loop BZ integration for the composite H_unit scalar bilinear, audit the color/current/canonical-surface parents, and reconcile the result with the master P1 assembly. Claim boundary until fixed: safe to claim that, if the cited analogue bracket I_S in [4,10] is adopted, the arithmetic gives P1 in [3.848%,9.620%] and central 5.772%; not safe to claim a retained native P1 revision from this note alone."
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.494652+00:00",
+      "archived_for_note_hash": "ebe0786b62d6ee37c6b512d8457c8fe9b9fd8d7dd6c3bb44ddf9cf8ca294d7d1",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner reproduces the arithmetic from the cited bracket and logs that the cited I_S is not framework-native. The bracket, color-factor reduction, Ward/current reduction, plaquette constants, and bridge/obstruction comparison are inherited from external or non-clean authorities.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note adopts the cited tadpole-improved staggered scalar-density bracket I_S in [4,10] with central I_S ~= 6 and maps it through P1 = (alpha_LM/(4 pi)) C_F I_S to P1 in [3.848%,9.620%] with central 5.772%.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+        "docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md",
+        "docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md",
+        "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "Issue: the P1 revision is a citation-and-bound calculation over a hard-coded external analogue bracket I_S in [4,10] and central I_S ~= 6, while the note explicitly does not derive I_S on the retained Cl(3) x Z^3 canonical action. Why this blocks: the arithmetic maps the adopted bracket to P1, but a candidate retained-grade framework-specific P1 revision needs the native H_unit Brillouin-zone integral and clean color/current/canonical-surface bridge inputs, not only an external staggered-scalar analogue. Repair target: perform and audit the framework-native 1-loop BZ integration for the composite H_unit scalar bilinear, and separately clean-audit the color-factor, Ward/current, plaquette/tadpole, bridge, and obstruction parents. Claim boundary until fixed: safe to claim that, conditional on adopting the cited analogue bracket I_S in [4,10], the arithmetic gives P1 in [3.848%,9.620%] with central 5.772%; not safe to claim an audited retained native P1 revision from this note alone."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.496360+00:00",
+      "audit_date": "2026-05-30T23:09:34.875720+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.",
+          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 12.061,
+        "runner_hash": "a56ad1f7afcd49926af060243e7bff9fb253464818df727ec9cf27de1f117cf1",
+        "transitive_descendants": 533
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-230747-21156b4a-yt_p1_i_s_lattice_pt_cit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic propagation from an assumed I_S bracket closes, but the load-bearing lattice-QCD bracket I_S in [4,10] is asserted and hard-coded rather than verified from supplied authority excerpts or computed natively. The packet also imports alpha_LM through a plaquette authority that explicitly withholds a same-surface derivation of the canonical 0.5934 readout.",
+      "claim_scope": "Audited the citation-and-bound claim that, assuming the stated external I_S bracket and alpha_LM=0.0907, the P1 contribution is revised upward from the packaged 1.92% to a cited range of about 3.85%-9.62% with central estimate about 5.77%.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T23:09:34.875720+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_ward_identity_derivation_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "The published lattice-QCD literature for the closest tadpole-improved staggered scalar-density analogue brackets I_S in [4,10] with central estimate near 6, which is then mapped by P1=(alpha_LM/(4*pi))*C_F*I_S to [3.85%,9.62%].",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide restricted one-hop excerpts or tables from the cited staggered scalar-density matching papers supporting I_S in [4,10], or replace the citation premise with a framework-native BZ integration for the retained surface.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "external_lattice_qcd_I_S_coefficient_sources_not_provided"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 9,
+        "C": 0,
+        "D": 6,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The runner verifies SU(3) algebra, normalization arithmetic, ratio arithmetic, and scope flags, but it does not derive or independently check the contested I_S bracket; the bracket is embedded as constants. The source note correctly disclaims a framework-native BZ integration, so the result is a conditional citation/bound rather than retained closure. No first-principles class-C computation of I_S, and no supplied per-reference coefficient table, appears in the restricted packet."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:23.729576+00:00",
+      "archived_for_note_hash": "1652b2cc270512674a95d5a2df54ceb788f26546425454a25d232cd7bec8bfcb",
+      "audit_date": "2026-06-11T23:10:07.834782+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 12.877,
+        "runner_hash": "c52615c12ea2086e99edb7bd75872ca8036afcd16b132c205f7bc6b5c0b66fb5",
+        "transitive_descendants": 664
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-230820-470436da3d-yt_p1_i_s_lattice_pt_citatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic from an assumed I_S bracket, C_F=4/3, and alpha_LM closes. The bracket itself is an external lattice-QCD citation range not supplied as a verifiable authority in the restricted packet, and the helper hard-codes the plaquette-derived alpha_LM input whose cited authority admits the 0.5934 readout is reused rather than derived here.",
+      "claim_scope": "Conditional citation-and-bound check that, assuming the stated external I_S bracket plus imported C_F and alpha_LM, the P1 contribution maps to [3.85%,9.62%] with central 5.77%, upward from the packaged 1.92%.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T23:10:07.834782+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The tadpole-improved staggered scalar-density literature is asserted to bracket the composite-H_unit surrogate coefficient as I_S in [4,10] in the alpha/(4pi) convention, with central estimate near 6.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full prior P1 I_1=I_S reduction/color-factor authorities and a restricted-packet citation table or native BZ certificate supporting the I_S in [4,10] bracket for the claimed operator/scheme.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+        "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The runner verifies metadata, scope flags, and linear arithmetic, but it does not compute the Brillouin-zone integral or verify the quoted literature coefficients against provided source tables. The load-bearing I_S range is imported from external lattice-QCD literature and explicitly marked non-framework-native with O(1) uncertainty. The numeric P1 range is therefore a valid conditional consequence of the asserted bracket, not a retained derivation of the bracket or its applicability to the exact Cl(3) x Z^3 H_unit operator."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:44.485547+00:00",
+      "archived_for_note_hash": "c05651a61ec4d5752dd6ed3a28ad4acd1596ac4217ce09f86941311d03b9af58",
+      "audit_date": "2026-06-12T21:01:27.462254+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 12.888,
+        "runner_hash": "a16a2fec6c2dabb271c7f9f8e00b4005348b375c17490144bc054d5ae3301798",
+        "transitive_descendants": 669
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-205755-15430394f7-yt_p1_i_s_lattice_pt_citatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The independent arithmetic checks: the coefficient is alpha_LM/(4*pi)*4/3, so I_S = 4, 6, 10 maps to about 3.85%, 5.77%, 9.62%, and the ratios to I_S = 2 are exactly 2x, 3x, 5x. The chain does not close as a retained derivation because the I_S bracket and its transfer to the exact H_unit operator/scheme are explicitly supplied/open rather than established by the restricted packet.",
+      "claim_scope": "Conditional arithmetic map from a supplied I_S bracket and retained alpha_LM/C_F inputs to the P1 percentage range and revision factor; not an audit of the external literature bracket or a framework-native BZ value.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T21:01:27.462254+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Assuming the supplied bracket I_S in [4,10], compute P1 = (alpha_LM/(4*pi))*C_F*I_S at alpha_LM = 0.0907 and C_F = 4/3, giving P1 in [3.85%, 9.62%] with central 5.77%.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained framework-native one-loop BZ integration or retained citation certificate for I_S on the exact composite-H_unit operator/scheme before requesting a clean verdict.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "total_pass": 43
+      },
+      "verdict_rationale": "The note's narrowed conditional arithmetic is internally consistent, and the runner source does compute the displayed P1 range and revision factors rather than merely printing the final percentages. However, the runner hard-codes the supplied I_S bracket and imports a hard-coded canonical plaquette helper; it does not derive or verify the bracket from a framework-native one-loop BZ integral or from provided literature tables. The source note itself correctly states that exact operator/scheme acceptance remains open, so the proper verdict is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:28.486142+00:00",
+      "archived_for_note_hash": "7f33743eee399cfa4680c245ab978225871f955ba91b42a6224ce7f08afc0424",
+      "audit_date": "2026-06-13T23:44:32.748981+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 16.804,
+        "runner_hash": "d096bb472132ca14807b2824c6fa0221b2f135bf593ca53abea799e111e2a81b",
+        "transitive_descendants": 1263
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-234149-9981cd1419-yt_p1_i_s_lattice_pt_citatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic itself closes and independently reproduces the stated percentages. The full scientific chain does not close because the I_S in [4,10] bracket and the native BZ lower-end candidate remain supplied/open inputs for the exact Cl(3) x Z^3 H_unit operator/scheme.",
+      "claim_scope": "Conditional arithmetic map from a supplied I_S bracket, C_F=4/3, and alpha_LM=0.0907 to the P1 percentage range; not an audit of the bracket or native BZ derivation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T23:44:32.748981+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Assuming the supplied bracket I_S in [4,10], P1 = (alpha_LM/(4*pi))*C_F*I_S gives P1 in [3.85%,9.62%] with central estimate about 5.77%, three times the packaged I_S=2 value.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: audit or replace the supplied I_S bracket with a framework-native one-loop BZ derivation for the exact Cl(3) x Z^3 H_unit operator/scheme, with the alpha_LM carrier explicitly closed or admitted.",
+      "open_dependency_paths": [
+        "docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md",
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 49,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "Independent arithmetic gives alpha_LM/(4*pi)=0.007215117, P1(I_S=2)=1.9240%, P1(4)=3.8481%, P1(6)=5.7721%, and P1(10)=9.6202%, so the conditional map is correct to rounding. The primary runner mostly performs artifact/string verification plus this arithmetic; it does not derive the supplied lattice-QCD bracket or the exact operator/scheme identification. The source note explicitly firewalls those inputs as not framework-native or audit-closed, so the row is conditional support rather than a closed bounded theorem."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:05.951542+00:00",
+      "archived_for_note_hash": "2fbf0af93d07bc7b8e0f42956796250e90ab63481a8ed764a034315896948f15",
+      "audit_date": "2026-06-15T20:34:46.571834+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note",
+          "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 16.912,
+        "runner_hash": "7e088fce76e512daa40658cd708e1b998d896f6d976dda708cec316108d17d10",
+        "transitive_descendants": 680
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260615-203047-1d98b4c3d7-yt_p1_i_s_lattice_pt_citatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical substitution is correct, but the chain to retained P1 authority does not close from this packet. The missing step is independent retained authority for the I_S input path, especially the native BZ quadrature row, plus closed authority for the canonical alpha_LM value rather than the hard-coded admitted plaquette reuse.",
+      "claim_scope": "Audited the restricted-packet arithmetic bridge from supplied/imported I_S values and alpha_LM to the quoted P1 percentages; not the literature bracket, the native BZ quadrature derivation, or any master-obstruction budget revision.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T20:34:46.571834+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Assuming the supplied input I_S in [4,10], the note substitutes P1 = (alpha_LM/(4*pi)) * C_F * I_S to obtain P1 in [3.85%, 9.62%], and similarly maps the native candidate I_S = 3.902217 to P1_native = 3.754% if the BZ row is independently audited clean.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the native BZ quadrature note and canonical alpha/plaquette value certificate as direct audited dependencies, then re-audit the arithmetic bridge with the literature bracket remaining non-load-bearing.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+        "docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 52,
+        "C": 0,
+        "D": 0,
+        "total_pass": 59
+      },
+      "verdict_rationale": "Issue: the runner and note correctly check arithmetic, but the load-bearing inputs are supplied or imported: the literature bracket is explicitly not retained, the native BZ value is explicitly pending independent audit, and alpha_LM comes through a helper hard-coding the admitted plaquette value 0.5934. Why this blocks: a conditional substitution cannot promote the P1 value or replace the packaged reference without a retained input theorem for I_S on the exact operator/scheme. Repair target: audit and wire the native full-staggered BZ quadrature row, and separately close or explicitly premise the canonical alpha_LM carrier. Claim boundary until fixed: the row supports only conditional arithmetic from stated inputs to P1 percentages."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py",
+  "title": "P1 I_S Lattice-PT Citation and Bound Note (Composite H_unit Scalar-Bilinear Matching)",
+  "transitive_descendants": 870,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

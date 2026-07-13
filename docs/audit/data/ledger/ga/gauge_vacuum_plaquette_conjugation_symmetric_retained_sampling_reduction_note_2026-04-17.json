@@ -1,0 +1,115 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+    "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.907,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d025088880e83006015bef71727f6d6064ce4fcc864a8b5f2fa8bc3ffb5d0c83",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONJUGATION_SYMMETRIC_RETAINED_SAMPLING_REDUCTION_NOTE_2026-04-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.950023+00:00",
+      "audit_date": "2026-06-05T17:47:08.551261+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17": "For a fixed finite retained marked class sector, compressed boundary samples satisfy Z=Ec and determine the retained coefficients exactly for any full-rank N x N marked-holonomy evaluation matrix; fewer than N samples remain underdetermined.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17": "positive_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17": "retained",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 6.907,
+        "runner_hash": null,
+        "transitive_descendants": 59
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-174647-96a559271d-gauge_vacuum_plaquette_conju",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The orbit-basis dimension count and reduced linear system follow by elementary linear algebra from the stated conjugation symmetry and the retained finite-sampling inversion theorem. The conclusion is conditional on the explicitly stated full-rank/generic-sample hypothesis, not on a missing runner.",
+      "claim_scope": "Algebraic orbit-basis reduction of a finite conjugation-closed retained sector, assuming the retained coefficient vector is conjugation-symmetric and the reduced orbit-evaluation matrix is full rank.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:47:08.551261+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17:retained->retained_pending_chain",
+      "load_bearing_step": "Because the retained coefficients satisfy c_(p,q)=c_(q,p), every vector on a conjugation-closed finite sector has a unique expansion in the orbit basis Phi_O, so the independent sampling dimension is |Lambda / ~|.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the finite/bounded scope of the conjugation-symmetry authority rather than upgrading it to an all-weight actual-environment statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade inputs: one cited authority supplies conjugation symmetry on the retained coefficient packet, and the other supplies finite sampling inversion. For a conjugation-closed Lambda, symmetric vectors are exactly parametrized by one coefficient per orbit, with singleton diagonal orbits and two-element off-diagonal orbits as written. The four-weight witness reduction from 4 to 3 is also just the listed orbit count. No runner source is available, but the theorem does not require first-principles computation to judge the algebraic reduction."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Gauge-Vacuum Plaquette Conjugation-Symmetric Retained Sampling Reduction",
+  "transitive_descendants": 59,
+  "verdict_rationale": null
+}

@@ -1,0 +1,165 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "unordered_mass_pdep_record_independence_no_go_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "96480d47c70d12c771d1ad228bf868466bc2339ceebc6308a1e22417bca12934",
+  "note_path": "docs/UNORDERED_MASS_PDEP_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.523323+00:00",
+      "audit_date": "2026-06-21T19:18:40.173934+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "7d61d990daaffebedbef2e18eb17f2d5d921332476507c95c16a69e757433d98",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-unordered_mass_pdep_record_independence_no_go_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Record axiom explicitly supplies additivity and orbit constancy but no weighting, normalization, or readout-identification rule. A q-scaled additive orbit-constant readout with q outside the registered datum is a countermodel to derivability of P-dep from Record alone.",
+      "claim_scope": "Record finite additivity plus K/CPT orbit constancy alone do not derive P-dep for the unordered-mass registered datum; P-dep is an extra extensionality/readout-identification premise.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-21T19:18:40.173934+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "There are Record-compatible contexts with the same registered ([k], lambda_k) data but different unregistered K-even q, and I_q(S, delta) = q * sum_{k in S} lambda_k(delta) satisfies Record finite additivity and K/CPT orbit constancy while assigning different values to the same registered datum.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that q is outside the registered datum under the cited Record boundary and that the no-go remains limited to Record alone.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic countermodel over the accepted Record axiom, not a definition, renaming, tuned numerical match, or external comparator. For each fixed q, the runner verifies finite additivity, I(empty)=0, and K/CPT orbit constancy on the C3 surface; comparing q=1 and q=2 then gives different readout values at the same ([k], lambda_k) datum. The no-go is scoped only to Record-alone derivability and explicitly leaves physical-readout/extensionality theorems or governance-approved P-dep premise routes open, so it does not overclaim a broader impossibility."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:33.654774+00:00",
+      "audit_date": "2026-07-10T04:43:40.346791+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7d61d990daaffebedbef2e18eb17f2d5d921332476507c95c16a69e757433d98",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00111-unordered_mass_pdep_record_i",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic q-scaling checks succeed, but the packet does not show that varying an unregistered context scale is compatible with the current axiom's fixed readout determined by record content alone. The cited authority also places K/CPT and readout-context structure downstream rather than inside Record.",
+      "claim_scope": "Whether the displayed q-scaled countermodel establishes that the current Record axiom cannot derive P-dep for the unordered-mass registered datum.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T04:43:40.346791+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "Two supplied contexts with the same registered sector datum but different unregistered scales q yield different per-record scalar values while allegedly preserving Record.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: reconcile the q-dependent witness with the current fixed, record-content-only readout clause\u2014by a retained or accepted compatibility bridge\u2014and then rerun the restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The runner genuinely verifies finite additivity, orbit identities, and differing q-scaled values, so it is not a print-only or tuned-match artifact. Its load-bearing witness nevertheless assumes that q may alter readout without being registered as record content, which is precisely the compatibility point not established from the superseding Record axiom. Thus the computation supports a conditional countermodel but does not close the stated Record-alone no-go under the current authority."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/unordered_mass_pdep_record_independence_no_go_2026_06_18.py",
+  "title": "Unordered-Mass P-dep Record-Independence No-Go",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

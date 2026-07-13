@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "energy_gauss_constraint_obstruction_route_b_note_2026-07-08",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "noether_source_current_classification_bounded_note_2026-07-08"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e71c32f65351a8dae3ca2cf0e1ad63c47e2e721269aab1d549aaed4cb9eb6436",
+  "note_path": "docs/ENERGY_GAUSS_CONSTRAINT_OBSTRUCTION_ROUTE_B_NOTE_2026-07-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:37.968492+00:00",
+      "audit_date": "2026-07-10T15:53:29.982333+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "noether_source_current_classification_bounded_note_2026-07-08": "The declared nonconstant, Hermitian, per-species-number-conserving fermion basis of degree at most four was numerically classified at windows four and six for five deterministic samples of the specified one-dimensional two-species Hamiltonian."
+        },
+        "dep_claim_type": {
+          "noether_source_current_classification_bounded_note_2026-07-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "noether_source_current_classification_bounded_note_2026-07-08": "retained_bounded"
+        },
+        "deps": [
+          "noether_source_current_classification_bounded_note_2026-07-08"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "baedd6b5df2818fe4809cf3b6eefeca3c81891927f3c53893e3284d2099f683a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00017-energy_gauss_constraint_obst",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner delegates the load-bearing construction and operator algebra to scripts/noether_source_current_classification_2026_07_08.py, whose source is absent from the packet. Consequently, the restricted packet cannot verify that the reported nonzero commutator is genuinely computed from the declared Hamiltonian rather than produced by opaque helper behavior.",
+      "claim_scope": "For the declared cell-energy apportioning and coupling point, with mutually commuting auxiliaries that also commute with the matter densities, the adjacent constraints G_0 and G_1 have a nonzero commutator.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T15:53:29.982333+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:noether_source_current_classification_bounded_note_2026-07-08:retained_bounded->unaudited",
+      "load_bearing_step": "At the displayed coupling point, the computed adjacent matter commutator [h_0,h_1] is nonzero, so the identity [G_0,G_1]=[h_0,h_1] makes the commuting-auxiliary constraint pair nonabelian.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include the full source and SHA-pinned cache excerpt for scripts/noether_source_current_classification_2026_07_08.py in the restricted packet, then rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The displayed expansion of the constraint commutator is algebraically sound under the two explicit auxiliary-commutation premises, and the completed runner reports all five checks passing. However, the runner dynamically imports its load-bearing Hamiltonian construction, normal-ordering engine, commutator primitives, and matrix representation from an omitted helper source, despite the packet claiming that no helper imports were detected. This runner-artifact defect prevents verification of the first-principles computation and therefore prevents a clean verdict."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/energy_gauss_constraint_obstruction_2026_07_08.py",
+  "title": "Adjacent Cell-Energy Obstruction For A Commuting-Auxiliary Constraint Ansatz",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

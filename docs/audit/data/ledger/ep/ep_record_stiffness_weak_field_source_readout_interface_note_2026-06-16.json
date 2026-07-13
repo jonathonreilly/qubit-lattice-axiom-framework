@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "af8e4efd2dc0fb14c38fefdb20b46c0503e4915f50712ff0121730f3b72648d7",
+  "note_path": "docs/EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:27.879550+00:00",
+      "audit_date": "2026-06-18T09:39:35.380822+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "Finite-dimensional weak-field Z^3 graph-Laplacian source-response bridge on the zero-mode-removed sector, including scalar Born-density readout uniqueness under the stated local diagonal assumptions and first-order test-source response; the 1/(4 pi r) asymptotic is supplied by the retained Green-kernel authority."
+        },
+        "dep_claim_type": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "retained_bounded"
+        },
+        "deps": [
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "5b20c6f187b0af0537564504b0e5fcf20fbe9598c721efdb864583a944f112a5",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the scoped EP-S3a claim because the cited retained-bounded authority supplies the Born-density readout and weak-field source/test coupling, and normalization gives the coefficient integral. The continuous action, inertial rest-gap readout, and inertial/gravitational coefficient identity remain open but are explicitly outside this claim.",
+      "claim_scope": "Only EP-S3a: the normalized |psi|^2 source-readout and weak-field source-coupling form used by the EP stiffness template have retained-bounded weak-field support.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T09:39:35.380822+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The retained-bounded weak-field bridge supplies rho_psi(x)=|psi(x)|^2 and the same-source weak-field coupling form, so the normalized EP source integral integral m|psi(x)|^2 dx = m has bounded framework-native support.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers do not treat this EP-S3a interface result as closing EP-S3b or WEP.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "Within the stated boundary, the note does not claim WEP closure or a shared inertial/gravitational coefficient derivation. The retained-bounded cited bridge supplies the needed |psi|^2 source-readout and weak-field coupling surface, and the added normalization is straightforward algebra over that input. The runner mostly verifies note/dependency text plus algebraic Gaussian normalization and residual lambda scaling; it does not pretend to compute a first-principles EP closure. No external comparator, tuned numerical scale, or hidden promotion is needed for EP-S3a as scoped."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16.py",
+  "title": "EP Record-Stiffness Weak-Field Source/Readout Interface Boundary Note",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

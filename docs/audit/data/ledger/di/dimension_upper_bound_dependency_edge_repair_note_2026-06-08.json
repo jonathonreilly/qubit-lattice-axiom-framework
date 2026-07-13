@@ -1,0 +1,308 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "meta",
+  "claim_type_author_hint": "meta",
+  "claim_type_author_hint_raw": "meta",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
+    "coulomb_stability_upper_bound_support_note_2026-05-20",
+    "d3_upper_bound_import_scope_gate_note_2026-06-06"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "meta",
+  "effective_status_reason": "metadata",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "meta",
+  "load_bearing_score": 2.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "76ab3115684e9f34f1f70cbcb388c2cbbcd588ab00795f2520696e9d221c0a19",
+  "note_path": "docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-10T12:50:50.036889+00:00",
+      "archived_for_note_hash": "55f8307f062dde810937f52ed482548152f051c7ec36128fbbd123f5a44ace85",
+      "audit_date": "2026-06-10T04:13:48.218171+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "For d>=3 under the stated continuum Laplacian Green-kernel convention and fixed-angular-momentum central-force effective potential, the note audits the stability sign of circular orbits for V(r)=-k/r^(d-2), k>0.",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "Bounded continuum-math lemma for the stated Green-kernel quadratic form on smooth compactly supported test functions away from the origin: dilation scaling gives ultraviolet collapse for d >= 5, marginal scaling at d = 4, and no collapse from this scaling test at d = 3.",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "Audited only the branch-local import-scope composition gate: given the stated lower runner set {3,4,5}, Bertrand d<=3 uniquely selects d=3, while weak atomic stability d<=4 does not."
+        },
+        "dep_claim_type": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "bounded_theorem",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "bounded_theorem",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "retained_bounded",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "retained_bounded",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
+          "coulomb_stability_upper_bound_support_note_2026-05-20",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06"
+        ],
+        "load_bearing_score": 5.322,
+        "runner_hash": "b973fb6d389e971aedb42f56bfff950a0187e2de47b13953cc3a2e1c893f622a",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-041050-2450172898-dimension_upper_bound_depend",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite intersections are exact, and the cited one-hop authorities are retained_bounded, which the rubric treats as retained-grade for this scoped bounded claim. The note does not consume the out-of-scope stronger physics statements preserved as non-claims in the support packets.",
+      "claim_scope": "Source-side dependency-edge repair plus exact finite-set composition for the dimension upper-bound wrapper; no framework-native Bertrand, Coulomb, electromagnetic-sector, substrate, or audit-status promotion claim was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T04:13:48.218171+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "With L_runner = {3,4,5}, L_runner intersect {d : d <= 3} = {3} while L_runner intersect {d : d <= 4} = {3,4}, so the Bertrand route is the decisive uniqueness gate and the weak atomic route is companion support.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream users keep this row limited to dependency-edge repair and finite-set composition, not a framework-native derivation of Bertrand, Coulomb stability, or full dimension selection.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 39,
+        "C": 0,
+        "D": 0,
+        "total_pass": 47
+      },
+      "verdict_rationale": "The load-bearing step is elementary finite-set algebra over the exposed lower support set and upper-bound scopes. The runner mainly verifies cross-note citation/existence edges and cache certificates, with only the finite set operations providing direct algebraic checks; it performs no first-principles physics computation and no external comparator check. Independent formula review of the displayed radial Green-kernel, effective-potential sign, dilation-scaling, and finite-composition identities found no sign, factor, or normalization defect relevant to this bounded repair scope."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.017651+00:00",
+      "audit_date": "2026-06-11T14:32:42.293763+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "Bounded continuum result: for d>=3 and k>0, the radial Green-kernel potential V(r)=-k/r^(d-2) with the fixed-angular-momentum effective potential has stable circular orbits only for integer d=3, with d=4 marginal and d>=5 unstable.",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "Bounded continuum-math lemma for the stated Green-kernel quadratic form on smooth compactly supported test functions away from the origin: dilation scaling gives ultraviolet collapse for d >= 5, marginal scaling at d = 4, and no collapse from this scaling test at d = 3.",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "Branch-local finite-packet gate: the current lower-bound set {3,4,5} composed with the native stable-circular-orbit upper edge d <= 3 selects {3}; the weaker atomic d <= 4 companion does not."
+        },
+        "dep_claim_type": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "bounded_theorem",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "bounded_theorem",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "retained_bounded",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "retained_bounded",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
+          "coulomb_stability_upper_bound_support_note_2026-05-20",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06"
+        ],
+        "load_bearing_score": 5.322,
+        "runner_hash": "d27dc3ec0e4f615027f1c8f433f632c5b4372948435b88d1240a1ccb49966680",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-143005-6e1bd06069-dimension_upper_bound_depend",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained_bounded authorities supply the bounded native stable upper edge, weak atomic edge, and finite lower support set used by the note. The remaining load-bearing step is exact finite-set intersection, and the note explicitly avoids claiming the full Bertrand theorem, full atomic stability, or any status promotion.",
+      "claim_scope": "Audited the bounded source dependency-edge repair: the wrapper is supported by the retained_bounded native stable-orbit packet, retained_bounded Coulomb companion packet, and D3 scope gate, with exact finite-set composition from L_runner = {3,4,5}.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T14:32:42.293763+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:d27dc3ec->74ac3b4f",
+      "load_bearing_step": "The decisive composition is L_runner intersect {d : d <= 3} = {3}, while the weak atomic route gives L_runner intersect {d : d <= 4} = {3,4}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that the D3 gate is accepted as the retained_bounded one-hop source for the finite lower support set rather than requiring the lower-bound note as an additional authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 40,
+        "C": 0,
+        "D": 0,
+        "total_pass": 48
+      },
+      "verdict_rationale": "The scoped claim is a source-edge and finite-composition repair, not a new framework-level physics derivation. The load-bearing math independently checks as elementary set intersection over retained_bounded inputs, and the cited authorities' limitations match the note's non-claims. The runner mainly verifies citation anchors, bounded-scope guardrails, cache certificates, and the same finite-set arithmetic; it does not substitute a hidden external comparator or tuned numerical match."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:36.493000+00:00",
+      "archived_for_note_hash": "8e9acdb9a10d1e2f0ecbbcdac46e3fd5fe882bfab1f9b8f998a28af6fc15bcef",
+      "audit_date": "2026-06-13T00:19:01.636252+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "Bounded continuum result: for d>=3 and k>0, the radial Green-kernel potential V(r)=-k/r^(d-2) with the fixed-angular-momentum effective potential has stable circular orbits only for integer d=3, with d=4 marginal and d>=5 unstable.",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "Bounded continuum-math lemma for the stated Green-kernel quadratic form on smooth compactly supported test functions away from the origin: dilation scaling gives ultraviolet collapse for d >= 5, marginal scaling at d = 4, and no collapse from this scaling test at d = 3.",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "Finite-packet scope gate: lower support {3,4,5} composed with the retained-bounded native stable-orbit edge d <= 3 selects {3}, while the Coulomb scaling companion d <= 4 leaves {3,4}."
+        },
+        "dep_claim_type": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "bounded_theorem",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "bounded_theorem",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "retained_bounded",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "retained_bounded",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
+          "coulomb_stability_upper_bound_support_note_2026-05-20",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06"
+        ],
+        "load_bearing_score": 5.322,
+        "runner_hash": "74ac3b4f2fe198c094fa4cd532e947f0330bcbb3c9081291f3b0957112d0d3b2",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-001700-6d5fcd5abc-dimension_upper_bound_depend",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The class-A finite-set intersections close for the narrow source-repair note. They do not close the queued positive_theorem because the packet explicitly limits itself to dependency-edge repair and disclaims any effective status promotion or full upper-bound theorem.",
+      "claim_scope": "Audited the source note's one-hop dependency-edge repair and exact finite-set intersections for the D3 upper-bound wrapper; no audit status promotion or full dimension-selection theorem was audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-13T00:19:01.636252+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The finite-set composition is `L_runner intersect {d : d <= 3} = {3}`, while the weaker atomic route gives `{3,4}`, so the decisive uniqueness gate is the native stable-orbit upper route.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: requeue this as a bounded source-graph repair or audit the parent dimension-selection theorem directly under its own theorem scope.",
+      "open_dependency_paths": [
+        "docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
+        "docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
+        "docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 40,
+        "C": 0,
+        "D": 0,
+        "total_pass": 48
+      },
+      "verdict_rationale": "The displayed finite-set algebra is correct: `{3,4,5} \u2229 {d <= 3} = {3}`, `{3,4,5} \u2229 {d <= 4} = {3,4}`, and `{3,4,5} \u2229 {3} = {3}`. The runner mostly performs citation, cache, and source-surface checks plus the same finite-set intersections; it is not a first-principles framework compute. Under the queued positive_theorem guard, this packet is only a source-side dependency-edge repair and explicitly disallows effective status promotion, so it cannot be audited_clean as the queued theorem even though the narrow repair arithmetic closes."
+    },
+    {
+      "archived_at": "2026-06-17T10:29:52.644734+00:00",
+      "archived_for_note_hash": "9bd8fe026908638d9bf303642e4418c10555e4ad624fa2bc7c4a5b94e05b9f2f",
+      "audit_date": "2026-06-16T00:56:43.450832+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "Bounded continuum result: for d>=3 and k>0, the radial Green-kernel potential V(r)=-k/r^(d-2) with the fixed-angular-momentum effective potential has stable circular orbits only for integer d=3, with d=4 marginal and d>=5 unstable.",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "Bounded continuum-math lemma for the stated Green-kernel quadratic form on smooth compactly supported test functions away from the origin: dilation scaling gives ultraviolet collapse for d >= 5, marginal scaling at d = 4, and no collapse from this scaling test at d = 3.",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "Finite-packet scope gate: lower support {3,4,5} composed with the retained-bounded native stable-orbit edge d <= 3 selects {3}, while the Coulomb scaling companion d <= 4 leaves {3,4}."
+        },
+        "dep_claim_type": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "bounded_theorem",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "bounded_theorem",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": "retained_bounded",
+          "coulomb_stability_upper_bound_support_note_2026-05-20": "retained_bounded",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
+          "coulomb_stability_upper_bound_support_note_2026-05-20",
+          "d3_upper_bound_import_scope_gate_note_2026-06-06"
+        ],
+        "load_bearing_score": 8.322,
+        "runner_hash": "19f2dc31b1a75a0c001dd6f686bacb7838dd6716221b05696159709a59f1d68e",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-005405-f784c0a01d-dimension_upper_bound_depend",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The bounded source-graph repair closes on citation and finite-set arithmetic, but the queued positive theorem does not. The packet explicitly leaves the parent dimension-selection theorem, full Bertrand closed-orbit theorem, atomic-stability theorem, electromagnetic-sector bridge, and substrate derivation outside scope.",
+      "claim_scope": "Queued positive-theorem audit of whether the packet proves more than a bounded dependency-edge repair replacing the upper-bound wrapper's old textbook-import edge with repo-native support packets and finite intersections.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-16T00:56:43.450832+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The upper-bound wrapper's old textbook-import edge has a repo-native bounded source graph for the finite composition L_runner={3,4,5} with d<=3 support, while full dimension selection remains owned by the parent wrapper/audit lane.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad: retag/requeue this row as a meta dependency-edge certificate, or split and audit a separate positive_theorem for the parent dimension-selection theorem.",
+      "open_dependency_paths": [
+        "docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+        "docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
+        "docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
+        "docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 41,
+        "C": 0,
+        "D": 0,
+        "total_pass": 49
+      },
+      "verdict_rationale": "Issue: The queued row is a positive_theorem, but the source packet explicitly reclassifies itself as a bounded source-graph repair and does not prove the parent dimension-selection theorem. Why this blocks: the runner verifies citations, bounded support packet firewalls, cached PASS summaries, and finite intersections; that is cross-note/source-surface verification, not theorem-grade dimension selection from framework primitives. Repair target: retag or requeue this packet as a meta dependency-edge certificate, or audit a separate positive-theorem parent with the native d<=3 upper edge and lower-bound packet as direct dependencies. Claim boundary until fixed: it may be cited only as a bounded dependency-edge repair replacing the old textbook-import edge, not as a clean positive theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py",
+  "title": "Dimension Upper-Bound Dependency-Edge Repair Note",
+  "transitive_descendants": 3,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (alpha-constrained residual-closure diagnostic",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "nn_lattice_rescaled_continuum_identification_note_2026-05-10",
+    "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/lattice_nn_rescaled_continuum_identification.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c1feb5b939ea57a6230920fc1494201f59c74ef0ea8d2d1b0c30133b20201d55",
+  "note_path": "docs/NN_LATTICE_RESCALED_C_ARM_ALPHA_CONSTRAINED_REFIT_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:39.360368+00:00",
+      "audit_date": "2026-05-27T03:50:00.801996+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10": "Finite checked-grid result for the exact primary runner/helper, rescaled NN blocked-slit geometry, BETA=0.8, K_PHYS=5.0, L=40, FANOUT=3, and h in {0.25,0.125,0.0625,0.03125}: phase-corrected L2 coherent saddle predicts directly measured blocked-slit arm widths within 1.96%, with Born residual <=2.06e-15; the h->0 C_arm=2.4855 comparison to the historical diagnostic fit is comparator-only.",
+          "nn_lattice_rescaled_continuum_identification_note_2026-05-10": "Finite-window numerical diagnostic for the field-free slit-detector decoherence subblock of the deterministic-rescale NN harness with BETA = 0.8, K_PHYS = 5.0, SLIT_Y = 3, PHYS_L = 40, through h = 0.03125."
+        },
+        "dep_claim_type": {
+          "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10": "bounded_theorem",
+          "nn_lattice_rescaled_continuum_identification_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10": "retained_bounded",
+          "nn_lattice_rescaled_continuum_identification_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10",
+          "nn_lattice_rescaled_continuum_identification_note_2026-05-10"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "e6e1d7ca9e08598df778363965607b3627c4930ea74aadc636cd93729ce372a0",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-nietzsche-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The constrained estimator is just the retained alpha=1/2 comparison applied to upstream retained bounded widths plus a new direct helper measurement at h=0.015625; the cached primary runner checks the residual, monotone trend, Born residual, and arm symmetry. Closure is only finite-window/protocol closure, not a continuum proof or general theorem for C_arm.",
+      "claim_scope": "Bounded finite-grid residual-closure diagnostic for the rescaled NN blocked-slit harness at fixed BETA=0.8, K_PHYS=5.0, PHYS_L=40, FANOUT=3, SLIT_Y=3, using the retained alpha=1/2 comparison protocol and comparing measured C_arm(h)=sigma_arm/sqrt(h) through h=0.015625 against the retained analytic C_arm=2.485529.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T03:50:00.801996+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:nn_lattice_rescaled_c_arm_derivation_note_2026-05-10:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Under the scoped alpha=1/2 protocol, C_arm(h)=sigma_arm(h)/sqrt(h) gives residuals vs analytic of +0.504% at h=0.03125 and +0.268% at the newly measured h=0.015625, with monotone shrinkage and clean Born/symmetry gates.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check future uses for scope drift: this result should not be cited as a formal continuum proof, a general C_arm theorem, or an unbounded physical explanation of the unconstrained-fit bias.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 2,
+        "C": 3,
+        "D": 0,
+        "runner_result": "runner_sha256=e6e1d7ca9e08598df778363965607b3627c4930ea74aadc636cd93729ce372a0; h=0.03125 residual +0.504%; h=0.015625 residual +0.268%; monotone shrinkage, Born, and symmetry gates pass",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The dependencies supplied for the alpha=1/2 diagnostic and analytic C_arm comparator are retained_bounded, and the runner source shows the new finest point is measured via the same deterministic blocked-slit helper rather than merely printed. The phrases 'residual removed' and 'explained by finite-window fit protocol' are supportable only inside this bounded comparison: they mean the alpha-constrained residual closes numerically on the checked harness, not that all finite-h corrections or a formal continuum bridge have been derived. With that scope, the note's bounded theorem closes cleanly."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_nn_rescaled_C_arm_alpha_constrained_refit.py",
+  "title": "Rescaled NN Lattice C_arm Alpha-Constrained Refit Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

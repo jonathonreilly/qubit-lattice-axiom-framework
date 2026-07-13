@@ -1,0 +1,135 @@
+{
+  "audit_date": "2026-05-05T11:39:01.965488+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_effective_status": {
+      "alt_connectivity_family_basin_note": "retained_bounded",
+      "alt_connectivity_family_sign_note": "retained_bounded"
+    },
+    "deps": [
+      "alt_connectivity_family_basin_note",
+      "alt_connectivity_family_sign_note"
+    ],
+    "load_bearing_score": 0.0,
+    "runner_hash": "64de99eacf20767518f0b1833edc1c3ccee136014c1ddabb7370f3fa5d21b824",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-alt_connectivity_family_-048",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited authorities are retained_bounded and the supplied runner source computes the F~M exponent from generated geometries, propagated fields, and centroid shifts rather than printing constants or importing the contested result. The conclusion closes only for the finite tested drift/seed slice, not as a family-wide theorem.",
+  "claim_id": "alt_connectivity_family_fm_transfer_note",
+  "claim_scope": "Weak-field mass-scaling F~M was audited for the parity-rotated sector-transition alternative connectivity family on the no-restore grown slice over drifts 0.0, 0.1, 0.2, 0.3, 0.5 and seeds 0, 1, 2.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-05T11:39:01.965488+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "alt_connectivity_family_sign_note",
+    "alt_connectivity_family_basin_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
+    "scripts/gate_b_no_restore_farfield.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 4.7,
+  "load_bearing_step": "The runner reports that all 15 drift/seed rows pass the weak-field F~M test with mean F~M = 0.999994, so the alternative family preserves weak-field linearity on the tested no-restore grown slice.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0ba8ce2fe370b178b068d6fe541a23fded62bbce80f43f4616e809af2e0d4c27",
+  "note_path": "docs/ALT_CONNECTIVITY_FAMILY_FM_TRANSFER_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-check that the imported helper functions in ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP and gate_b_no_restore_farfield implement the intended framework operators, since their bodies are outside this restricted packet.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.367607+00:00",
+      "archived_for_note_hash": "fd36263f72ee762af020690bc5b2c922fc2f71d947e71489a01e4af99904c15b",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.234462+00:00",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The live runner rebuilds each stated drift/seed geometry, applies the alternative connectivity family, compares response at source strengths 5e-5 and 1e-4, and reproduces 15/15 passing rows with mean F~M = 0.999994. The result closes only as a finite weak-field transfer computation on the tested grid, not as an all-strength, all-seed, or geometry-generic theorem.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:alt_connectivity_family_basin_note,alt_connectivity_family_sign_note",
+      "load_bearing_step": "The note's load-bearing finite claim is that the parity-rotated alternative connectivity family preserves weak-field F~M linearity over the tested no-restore grown-slice drift/seed grid, with 15 of 15 rows passing and mean F~M = 0.999994.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 15,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner computes the load-bearing exponent from two independently propagated weak source amplitudes on each listed drift/seed row and gates the result at |F~M - 1| < 0.05; the current output matches the source note's 15/15 count and 0.999994 mean. The conclusion is correctly bounded to weak-field linearity across the stated tested drift range and does not assert family-wide sign closure, geometry genericity, or uniqueness. Residual risk is registration hygiene rather than science closure: the queue row has no runner_path or registered deps for the sign/basin notes even though the source note names those artifacts."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 15,
+    "D": 0,
+    "total_pass": 15
+  },
+  "runner_path": "scripts/ALT_CONNECTIVITY_FAMILY_FM_TRANSFER.py",
+  "title": "ALT Connectivity Family F~M Transfer Note",
+  "transitive_descendants": 12,
+  "verdict_rationale": "The load-bearing computation is a direct runner calculation across the stated finite sweep, with all 15 rows passing the stated tolerance. The runner source constructs the alternative connectivity, propagates fields at two weak source strengths, and computes the log-slope F~M value, so stdout is supported by actual computation. The upstream sign and basin authorities are retained_bounded, and the audited claim is limited to the tested no-restore grown slice."
+}

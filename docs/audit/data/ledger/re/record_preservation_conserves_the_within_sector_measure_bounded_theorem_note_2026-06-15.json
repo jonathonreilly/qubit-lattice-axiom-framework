@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+    "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b3e66feb4b331fd137c34c746d18a4d1fe3041905690ded243ebcd7b3df893db",
+  "note_path": "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:32.333374+00:00",
+      "audit_date": "2026-06-16T01:50:13.268257+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited.",
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "Audited the bounded algebraic claim that K-real C3-invariant einselection selects the 2-sector partition but does not derive r=1/2, leaving K-reality and block-counting/equal-power as explicit residual inputs."
+        },
+        "dep_claim_type": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "bounded_theorem",
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "retained_bounded",
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "retained_bounded"
+        },
+        "deps": [
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+        ],
+        "load_bearing_score": 8.17,
+        "runner_hash": "650ca52480dd1744e7558742dbc6fedb02867fbe20aaa153a63c4e064b21109c",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-014837-2b3fe24280-record_preservation_conserve",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Stage-1 authority supplies [H,S]=0 and the pointer authority supplies the two-sector decomposition. Spectral-projector algebra then gives [H,P_doublet]=0 and D_S(rho)'s doublet block equals the original doublet block, so the scoped conservation/preservation conclusion follows.",
+      "claim_scope": "For the supplied C3 pointer S=C+C^2 and the Stage-1 circulant record-preserving generator, singlet/doublet block weights are conserved under H-evolution and the two-sector record preserves doublet-internal coherence.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T01:50:13.268257+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Since [H,S]=0, H commutes with the singlet/doublet spectral projectors of S, so U(t)=exp(-iHt) preserves tr(P_doublet rho) and the coarse record D_S leaves P_doublet rho P_doublet intact.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that later uses keep (r, delta) within this bounded conservation/preservation scope and do not treat this note as deriving their values.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing step is exact finite-dimensional algebra over retained-bounded inputs, not a definition, external comparator, or tuned numerical match. Independently, P_singlet=(S+I)/3 and P_doublet=(2I-S)/3, so [H,S]=0 implies [H,P_doublet]=0 and therefore conservation of Tr(P_doublet rho(t)); likewise D_S preserves P_doublet rho P_doublet by construction. The runner checks the relevant matrix identities, conservation behavior, contrasting non-record-preserving control, and record-map properties without hard-coding the conclusion as a fitted target. The clean verdict is only for the stated bounded scope and does not derive or select r, delta, a state, or a relaxation mechanism."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_record_preservation_conserves_within_sector_measure_2026_06_15.py",
+  "title": "Record-Preservation Conserves the Within-Sector Measure: the Breaking Is Not a Relaxation Outcome (Bounded Theorem)",
+  "transitive_descendants": 7,
+  "verdict_rationale": null
+}

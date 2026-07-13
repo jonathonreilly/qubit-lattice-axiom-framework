@@ -1,0 +1,268 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "free_dirac_poincare_representation_bounded_note_2026-05-30",
+    "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/free_dirac_poincare_representation_2026-05-30.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c7bccb41cefd6942a4853e89a2055ce8fd817d6573277c29d70e6184f0aa30c3",
+  "note_path": "docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:06.723775+00:00",
+      "archived_for_note_hash": "c92959edb526cca9d84b356db13e76eca149c8636c6fc3f30b92a5c5ca9cbae5",
+      "audit_date": "2026-06-05T23:09:26.078999+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "For the continuum free Dirac kernel S(p)=(m-i gamma.p)/(p^2+m^2), the audited scope is the finite Clifford/Dirac spinor algebra and the finite CAR antiparticle relabeling, not OS reconstruction, locality, or statistics selection.",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance."
+        },
+        "dep_claim_type": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "bounded_theorem",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": "retained_bounded",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3a12a67b3ce44e7892144e6f08fdfa594580661cac7403fd6db7715a27ac6c1b",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260605-230659-86dbf10376-free_dirac_poincare_generato",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The single-boost rapidity reduction is sound, but the claimed common analytic-vector step does not close. The exhibited rapidity Gaussian is not analytic for H or P, since E and p grow like cosh(zeta) and sinh(zeta), giving moments that grow like exp(c n^2), faster than any C R^n n!.",
+      "claim_scope": "Essential self-adjointness and Nelson-integrability of the conditional free Dirac one-particle Poincare generators on the Schwartz mass-shell core.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T23:09:26.078999+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note reduces the orbital boost to K_orb = -i d/dzeta and then asserts that the Gaussian/Hermite vectors are common analytic vectors for the Nelson Laplacian, so Nelson's theorem integrates the Lie-algebra representation.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit after a proved dense common analytic core for H, P, J, K or a valid alternate integrability theorem is supplied, with runner checks covering H/P/Delta or mixed-generator bounds.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner genuinely checks internal rapidity, Hermite, Cayley, and unitary-flow signatures for the boost model, but it does not check the full common Nelson core needed for all ten generators or for Delta. N2 verifies only K = -i d/dzeta on rapidity Gaussians through n <= 12, while the source note uses those vectors to claim analyticity for H, P, and the Nelson Laplacian. That displayed bridge is mathematically false as written, so S-ii and the S-iii integration claim do not follow from the restricted packet."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:53.417335+00:00",
+      "archived_for_note_hash": "a3c7deb08819ea77a583462b813d74f6f5d09113fadade3c69b440e34a93df24",
+      "audit_date": "2026-06-07T00:25:32.473077+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "cb881f7573c90d6c346147ee5ea129dbd1e8f50cfe7db39915412a75da783857",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-002421-3cfc05bf58-free_dirac_poincare_generato",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rapidity identities and the rejection of the Gaussian analytic-vector route check out as local mathematics. The full conclusion still depends on the explicit Wigner carrier, cocycle, invariant mass-shell action, and strong-continuity inputs said to come from a companion packet, but that authority is not provided or cited in the restricted packet.",
+      "claim_scope": "Bounded audit of the free Dirac one-particle Poincare generator integrability/self-adjointness repair via direct mass-shell/Wigner unitary action, excluding the rejected Nelson/Gaussian common analytic-vector route and excluding interacting-theory claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T00:25:32.473077+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The displayed mass-shell/Wigner action is a strongly continuous unitary Poincare representation, so Stone's theorem supplies the self-adjoint one-parameter generators.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite and include the companion free-Dirac Poincare representation packet, with its retained status and the carrier/cocycle/strong-continuity proof, or replace the import with a self-contained derivation in this packet.",
+      "open_dependency_paths": [
+        "companion free-Dirac Poincare representation packet path not provided in restricted packet"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner performs meaningful sanity checks of the rapidity reduction, unit-modulus phases, Gaussian obstruction, and finite spectral/full-line proxies, but these are algebraic or finite-model checks rather than a derivation of the full Poincare representation. The load-bearing step is the direct unitary mass-shell/Wigner action and its strong continuity, and the source note explicitly says the companion packet supplies the smooth carrier and cocycle checks. Since section 2 provides no cited authorities and says the load-bearing step must derive from the axiom, the restricted packet has an unsupported dependency edge rather than a closed bounded theorem."
+    },
+    {
+      "archived_at": "2026-06-08T18:21:36.809033+00:00",
+      "archived_for_note_hash": "b34dc28e3a0d44abcc093b326cfee936930eb984f4f9f48b0e67a746042d00bd",
+      "audit_date": "2026-06-07T18:15:44.354412+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance."
+        },
+        "dep_claim_type": {
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "free_dirac_poincare_representation_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "bd6832a9b630f9f9d2c543d5ccc606fe3c10fcfdd8645dc6eff24e76227dc684",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-181407-a2aaf5b5e8-free_dirac_poincare_generato",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rapidity identities and one-parameter scalar boost checks close locally, but the restricted packet does not close the full Wigner cocycle/strong-continuity/domain bridge for the complete Poincare action. The cited companion explicitly disclaims exponentiation and full self-adjointness/domain results.",
+      "claim_scope": "Bounded audit of the direct-integrability repair for free massive one-particle Dirac Poincare generators using the mass-shell/Wigner action, translation phases, and rapidity boost reduction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T18:15:44.354412+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The displayed mass-shell/Wigner action is a strongly continuous unitary representation, so Stone's theorem supplies the self-adjoint one-parameter generators.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained-grade proof that the displayed mass-shell/Wigner action is a strongly continuous unitary Poincare representation with the stated self-adjoint infinitesimal generators, including the spin/Wigner boost terms and core closure.",
+      "open_dependency_paths": [
+        "docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The displayed rapidity formulas dp_parallel/(2E)=d zeta/2 and E d/dp_parallel=d/dzeta check out, and the runner correctly rejects the old Gaussian analytic-vector route. The load-bearing conclusion nevertheless requires a retained-grade proof that the full Wigner mass-shell formula is a strongly continuous Poincare representation and that its Stone generators coincide with the claimed differential generators on the relevant cores. The companion authority is retained_bounded but explicitly says it does not prove exponentiation or essential self-adjointness, while this runner checks anchors and finite/scalar proxies rather than that full bridge."
+    },
+    {
+      "archived_at": "2026-07-10T17:16:30.404955+00:00",
+      "audit_date": "2026-06-08T19:58:01.428895+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance.",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "Bounded free one-particle Wigner action on the supplied continuum positive-energy mass-shell carrier is a strongly continuous unitary Poincare representation, with Stone generators for one-parameter subgroups."
+        },
+        "dep_claim_type": {
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "retained_bounded"
+        },
+        "deps": [
+          "free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "5d76aecb86c966ec587805e761813f3a8c8fa3b32a5cb8c64bad37f8dd6e865d",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-195557-122d5fe85f-free_dirac_poincare_generato",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited companion and bridge authorities are retained_bounded and supply the explicit carrier, invariant mass-shell measure, Wigner SU(2) carrier/cocycle facts, strong continuity, and Stone consequence. The rapidity identities and Gaussian analytic-vector obstruction are standard algebraic checks at the restricted free-field scope.",
+      "claim_scope": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T19:58:01.428895+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:free_dirac_poincare_representation_bounded_note_2026-05-30",
+      "load_bearing_step": "The displayed mass-shell/Wigner action is a strongly continuous unitary representation, so Stone's theorem supplies the self-adjoint one-parameter generators.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the parent shorthand D(W(Lambda,p)) is read with the bridge's Wigner-argument convention D(W(Lambda,Lambda^{-1}p)).",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 14,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The load-bearing step is a class-A functional-analytic closure over retained_bounded one-hop inputs, not a first-principles lattice derivation. The previously missing Wigner strong-continuity dependency is now explicit and supplies the direct integrability route the parent relies on. The runner mostly verifies source anchors and finite/proxy algebraic checks, but that is adequate because the upstream retained_bounded authorities are included as inputs. The clean scope remains bounded to the supplied continuum free one-particle carrier and does not derive lattice Lorentz symmetry, spin-statistics, or an interacting theory."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py",
+  "title": "Free Dirac Poincare Generators: Direct Integrability Repair",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

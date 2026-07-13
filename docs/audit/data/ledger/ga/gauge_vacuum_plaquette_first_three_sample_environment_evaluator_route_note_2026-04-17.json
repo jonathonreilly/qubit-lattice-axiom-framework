@@ -1,0 +1,284 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+    "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+    "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
+    "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+    "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
+    "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6a04d63834fa2231bdce29ac00d6a2e212240265a3cc17a80b405fd76de3118f",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-12T19:48:05.860509+00:00",
+      "archived_for_note_hash": "e7b6bae9695e5fb1bf2c7f683d28b92db2a17fab5434da8c7aa2d0ed33d198d4",
+      "audit_date": "2026-06-09T13:24:29.030088+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "Purely formal finite-dimensional linear-algebra lemma for abstract `(S, eta, K)` on the class-sector space; no Wilson/Haar, beta=6, plaquette, or physical-identification closure was audited as in scope.",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "Finite retained marked class sector: K_Lambda(W)=sum_lambda d_lambda conj(chi_lambda(W)) chi_lambda is the unique Riesz representative of the compressed boundary functional v -> sum_lambda d_lambda c_lambda chi_lambda(W); no full slice lift B_beta(W) is audited.",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical reconstruction matrix, inverse map, W_A adjoint annihilation, sign separation, and no universal sub-three-sample linear collapse for the named first symmetric witness sector only; beta=6 sample evaluation is out of scope.",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "Audited the finite first-symmetric retained-sector obstruction: the named local Wilson one-plaquette sample triple lies outside Cone(r_0,r_1,r_2) and therefore cannot itself be a nonnegative first-sector positive-type retained evaluator; the true environment samples remain unevaluated.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Narrow finite structural-surface no-go only: on the runner's listed class-sector witness surface, the enumerated positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique beta=6 spatial-environment pair (S_6^env, eta_6) or a unique induced normalized three-sample datum. This does not audit any claim that the full beta=6 Wilson-parent/factorization/current-stack admissibility constraints fail, nor does it close explicit S_6^env, eta_6, rho_(p,q)(6), canonical P(6), or a global plaquette selector."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "no_go",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "retained_no_go",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "331ebb0dc75ae7c63c0fc6ffba81d8e7c72881a2e407207993cfb85d220be55d",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-0a79426812-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The formal factorization and first symmetric sample operator close algebraically, and the runner constructs two distinct finite structural witnesses. The missing step is a retained bridge showing that this finite listed structural surface exhausts the actual beta=6 Wilson/Haar current stack, rather than merely a narrowed witness surface.",
+      "claim_scope": "Common-vector three-sample factorization plus finite listed-structural-surface underdetermination for the normalized three-sample output.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-09T13:24:29.030088+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner exhibits two distinct admissible positive conjugation-symmetric beta = 6 environment witnesses on the current exact surface that produce different normalized three-sample triples.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove that the runner's listed finite structural witness surface is admissible and exhaustive for the actual beta=6 Wilson/Haar current stack, or narrow the claim to finite structural-surface underdetermination plus formal E3 factorization.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 5,
+        "C": 2,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner genuinely checks the radical three-row operator and constructs two finite positive swap-symmetric witnesses whose normalized triples differ. However, the beta6 seam-reduction authority is explicitly a formal conditional lemma with required-but-unsupplied physical Wilson/Haar authorities, and the underdetermination authority is narrowed to the listed structural surface only. The source note's wording overreaches when it promotes that finite structural-surface no-go to the actual current exact beta-side evaluator stack."
+    },
+    {
+      "archived_at": "2026-06-18T01:40:24.884284+00:00",
+      "audit_date": "2026-06-16T02:50:10.633238+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "Purely formal finite-dimensional linear-algebra lemma for arbitrary abstract (S, eta, K); no beta=6 Wilson/Haar physical identification is audited.",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "Finite retained marked class sector: K_Lambda(W)=sum_lambda d_lambda conj(chi_lambda(W)) chi_lambda is the unique Riesz representative of the compressed boundary functional v -> sum_lambda d_lambda c_lambda chi_lambda(W); no full slice lift B_beta(W) is audited.",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical-form reconstruction on the named first symmetric three-sample witness sector, including the matrix, inverse map, `W_A` annihilation, opposite-sign `chi_(1,1)` separation, and no universal linear relation among the three named samples; beta=6 sample evaluation is excluded.",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "Scoped obstruction only: on the named samples W_A, W_B, W_C and the first symmetric retained sector, the exact local Wilson one-plaquette triple is outside the retained positive cone and therefore cannot itself be a positive-type retained evaluator.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Finite structural-surface no-go only: on the runner's finite class-sector witness surface, the listed positivity, self-adjointness, conjugation-swap symmetry, positive symmetric boundary, and normalization constraints do not force a unique normalized beta-side vector or induced three-sample triple."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "no_go",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "retained_no_go",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-3c81b92068-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The formal factorization is elementary linear algebra once E_3 and the common beta-side vector are defined. Independently checking the SU(3) character rows gives rank(F)=3 and a nonzero perturbation of admissible positive symmetric finite witnesses changes the normalized sample triple, so the listed surface is non-unique on its own terms.",
+      "claim_scope": "Narrow finite-surface no-go plus formal E_3 factorization: the listed finite structural witness surface does not determine the normalized three-sample environment triple, without claiming exhaustiveness for the actual beta=6 Wilson/Haar stack.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-16T02:50:10.633238+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17:retained_bounded->unaudited",
+      "load_bearing_step": "The listed finite structural surface admits two distinct positive conjugation-symmetric normalized beta-side witnesses whose images under the same fixed three-row operator E_3 give different normalized triples.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "One runner SUPPORT string check reads an unprovided current-stack note, but the clean verdict above does not rely on that non-load-bearing check; re-audit should include or remove that artifact for packet hygiene.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing no-go is scoped to the runner-listed finite structural surface, not to the physical beta=6 Wilson/Haar current stack. The cited retained-grade inputs support the formal common-vector route and the fixed Peter-Weyl sample operator, while the finite witness construction supplies the required nonuniqueness. The N1-N8 stress test passes only at this narrowed scope: the strongest physical-stack steelman is explicitly preserved as the open exhaustiveness bridge, not counted as a failed route."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.952017+00:00",
+      "audit_date": "2026-06-18T12:48:38.595824+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "Purely formal finite-dimensional algebra lemma for arbitrary abstract operators (S, eta, ell_W), with beta=6 Wilson/Haar identification and closed-form matrix evaluation excluded from the audited scope.",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "Finite retained marked class sector: K_Lambda(W)=sum_lambda d_lambda conj(chi_lambda(W)) chi_lambda is the unique Riesz representative of the compressed boundary functional v -> sum_lambda d_lambda c_lambda chi_lambda(W); no full slice lift B_beta(W) is audited.",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical reconstruction matrix, inverse map, W_A adjoint annihilation, sign separation, and no sector-local linear collapse for the named first symmetric witness sector, with beta=6 sample evaluation excluded.",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "The normalized local Wilson one-plaquette triple on W_A, W_B, W_C is outside the first symmetric retained positive cone because its reconstructed adjoint retained coordinate is strictly negative.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Finite structural-surface no-go only: on the runner's finite class-sector witness surface, the listed positivity, self-adjointness, conjugation-swap symmetry, positive symmetric boundary, and normalization constraints do not force a unique normalized beta-side vector or induced three-sample triple."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "no_go",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "retained_no_go",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped no-go follows from finite linear algebra: two admissible witnesses on the same listed surface are evaluated by the same universal left operator and give different normalized triples. The open Wilson/Haar exhaustiveness bridge is explicitly excluded from the claim scope.",
+      "claim_scope": "Formal compressed-sector factorization through one common beta-side vector and one fixed three-row sample operator, plus finite listed-structural-surface underdetermination of the normalized three-sample triple; no physical beta=6 Wilson/Haar exhaustiveness claim was audited.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-18T12:48:38.595824+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17:decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17->unaudited",
+      "load_bearing_step": "The runner exhibits two distinct admissible positive conjugation-symmetric witnesses on the listed finite structural surface whose normalized three-sample triples under the same fixed E_3 operator disagree.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers preserve the narrowed finite-surface scope and do not read this as a physical Wilson/Haar exhaustiveness no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing step is a finite algebraic counterexample on the listed structural surface, not a definition, numerical match, or external comparison. The cited authorities are retained-grade for the narrowed use made here, and the runner source constructs the sample operator and two witness packets rather than merely printing expected values. The no-go discipline gate is satisfied only at the narrowed finite-surface resolution; the source correctly leaves the physical beta=6 Wilson/Haar exhaustiveness bridge open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+  "title": "Gauge-Vacuum Plaquette First Three-Sample Environment Evaluator Route",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

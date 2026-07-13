@@ -1,0 +1,374 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem (the structure of `delta` / `|K|`; the precise value left open)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+    "hw1_second_order_return_shape_theorem_note",
+    "staggered_self_consistent_two_body_note_2026-04-11",
+    "wilson_two_body_open_refined_note_2026-04-11"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "143d85b9d740999f15ecf886a30111b5307517d6e7582c8cf061145cbad0798f",
+  "note_path": "docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-07T15:15:56.023516+00:00",
+      "archived_for_note_hash": "f9d4f22a5066692ec2adcd12ec1c98e4468fcad3222b70089cd8cc933fb021d5",
+      "audit_date": "2026-06-07T00:45:10.800517+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "For the stipulated 2-sector Luders/records sharpening update, r=1/2 is a repelling fixed point/separatrix rather than an attractor, while the 2-sector entropy maximum at r=1/2 is a separate variational statement.",
+          "hw1_second_order_return_shape_theorem_note": "Exact finite-matrix shape theorem on the retained C^16 Cl(3) x chirality carrier: for weak-axis Gamma_1 and the hw=1 generation/species basis, W=w_O0 P_O0 + w_a P_(1,1,0) + w_b P_(1,0,1) + w_c P_(0,1,1) gives diag(w_O0,w_a,w_b), with w_c absent; uniform weights give I_3. Physical charged-lepton mass values, positivity/normalization of weights, and derivation of the intermediate propagator weights are out of scope.",
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "wilson_two_body_open_refined_note_2026-04-11": "Registered open-boundary Wilson two-body refined sweep for sides 11,13,15,17,19 at fixed G=5 and mu^2=0.22, using the declared clean-attractive subset fit: 25/25 ATTRACT+CLEAN, global exponent -3.669 with R^2=0.9896, per-side exponents -3.139,-3.313,-3.500,-3.671,-3.837; excludes universal law claims, unscreened/Newtonian crossover claims, and blind-law estimation over rejected rows."
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "hw1_second_order_return_shape_theorem_note": "positive_theorem",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "wilson_two_body_open_refined_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "hw1_second_order_return_shape_theorem_note": "retained",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "wilson_two_body_open_refined_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "hw1_second_order_return_shape_theorem_note",
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "wilson_two_body_open_refined_note_2026-04-11"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9cb81f88d1abf234474ca043a4e244bc966978fb280efcf13afb78dfa2ef5b46",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-004313-c60988330e-interaction_asymmetry_delta_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The factorization, second-difference, and forbidden-diagonal identities close algebraically. The exact sign law does not close as stated: independent second-order downfolding gives K = t^2(1/eps - 1/(eps+U)) = t^2 U/[eps(eps+U)], so sign(K)=sign(U) only under an unstated no-level-crossing condition eps+U>0.",
+      "claim_scope": "Algebraic structure of delta as occupation-number curvature in the axis-separable single-hop model and symmetric pair-count interaction, excluding any computed physical value of delta.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-07T00:45:10.800517+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The free Hamiltonian factorizes so E(hw) is affine and delta=0, while the pair-count term has second difference +1, so a native pair coupling U gives delta=U and the C3 off-diagonal coefficient is claimed to have sign(U).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: add and verify the symbolic effective-coupling formula with the eps+U>0 or weak-coupling hypothesis, then restate the sign law within that regime.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The runner performs genuine finite-dimensional algebra checks and its displayed sampled K values are consistent with the formula above. However, those samples do not prove the unconditional sign law, and the source states the sign lock as exact without the required denominator-sign boundary. The structure theorem is supportable in the weak/no-resonance regime, but the unrestricted theorem as written imports an unstated scope condition."
+    },
+    {
+      "archived_at": "2026-06-11T21:38:54.159029+00:00",
+      "audit_date": "2026-06-07T18:25:48.586180+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "For the stipulated 2-sector Luders/records sharpening update, r=1/2 is a repelling fixed point/separatrix rather than an attractor, while the 2-sector entropy maximum at r=1/2 is a separate variational statement.",
+          "hw1_second_order_return_shape_theorem_note": "Exact finite-matrix shape theorem on the retained C^16 Cl(3) x chirality carrier: for weak-axis Gamma_1 and the hw=1 generation/species basis, W=w_O0 P_O0 + w_a P_(1,1,0) + w_b P_(1,0,1) + w_c P_(0,1,1) gives diag(w_O0,w_a,w_b), with w_c absent; uniform weights give I_3. Physical charged-lepton mass values, positivity/normalization of weights, and derivation of the intermediate propagator weights are out of scope.",
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "wilson_two_body_open_refined_note_2026-04-11": "Registered open-boundary Wilson two-body refined sweep for sides 11,13,15,17,19 at fixed G=5 and mu^2=0.22, using the declared clean-attractive subset fit: 25/25 ATTRACT+CLEAN, global exponent -3.669 with R^2=0.9896, per-side exponents -3.139,-3.313,-3.500,-3.671,-3.837; excludes universal law claims, unscreened/Newtonian crossover claims, and blind-law estimation over rejected rows."
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "hw1_second_order_return_shape_theorem_note": "positive_theorem",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "wilson_two_body_open_refined_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "hw1_second_order_return_shape_theorem_note": "retained",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "wilson_two_body_open_refined_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "hw1_second_order_return_shape_theorem_note",
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "wilson_two_body_open_refined_note_2026-04-11"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "488d1c7ae410f3a74591aa8a1ba90c00a2960009eb68c907f557e1701ef06ed3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-182439-e0a9ff4e36-interaction_asymmetry_delta_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supplies the needed operator definitions and the algebra closes directly: tensor-factorization gives an additive spectrum, one-body occupation terms have zero second difference, the pair count has unit second difference, and direct second-order elimination gives the displayed K_off formula. The open mediator value is explicitly outside the audited claim scope.",
+      "claim_scope": "Algebraic structure of delta in the minimal Hamming single-hop model: the factorized free sector has zero occupation curvature, a uniform pair interaction gives delta=U, the Schur off-diagonal has the stated no-resonance sign law, and a one-body lattice realization would require forbidden face-diagonal hops.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-07T18:25:48.586180+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_r_half_is_the_records_flow_separatrix_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "Because H=sum_mu(eps*n_mu+t*X_mu) factorizes and the first nonzero occupation second difference is the pair count C(hw,2), delta=E_2-2E_1+E_0 equals the connected pair coefficient U and K_off=t^2*(1/eps-1/(eps+U)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers preserve the scoped wording: this audit does not certify any computed sign or scale for the native mediator-sourced delta.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner source performs actual finite-dimensional matrix and arithmetic checks rather than printing constants, and its 13 passing checks match the note's load-bearing identities. An independent algebra check confirms the Schur denominators eps and -(eps+U), hence K_off=t^2*U/[eps*(eps+U)] and the stated sign restriction. The cited upstream notes are retained-grade or retained_bounded and are not needed to compute the open value of delta, which the note does not claim."
+    },
+    {
+      "archived_at": "2026-06-13T23:49:04.559934+00:00",
+      "audit_date": "2026-06-12T02:00:15.734566+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "For the stipulated two-sector records/Lueders sharpening rule and its stated r-coordinate, the induced one-dimensional map, its finite fixed points/stability, and the S2/S3 entropy optima were audited; the physical charged-lepton records-flow identification was not.",
+          "hw1_second_order_return_shape_theorem_note": "Exact finite-matrix shape theorem on the retained C^16 Cl(3) x chirality carrier: for weak-axis Gamma_1 and the hw=1 generation/species basis, W=w_O0 P_O0 + w_a P_(1,1,0) + w_b P_(1,0,1) + w_c P_(0,1,1) gives diag(w_O0,w_a,w_b), with w_c absent; uniform weights give I_3. Physical charged-lepton mass values, positivity/normalization of weights, and derivation of the intermediate propagator weights are out of scope.",
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "wilson_two_body_open_refined_note_2026-04-11": "Registered open-boundary Wilson two-body refined sweep for sides 11,13,15,17,19 at fixed G=5 and mu^2=0.22, using the declared clean-attractive subset fit: 25/25 ATTRACT+CLEAN, global exponent -3.669 with R^2=0.9896, per-side exponents -3.139,-3.313,-3.500,-3.671,-3.837; excludes universal law claims, unscreened/Newtonian crossover claims, and blind-law estimation over rejected rows."
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "hw1_second_order_return_shape_theorem_note": "positive_theorem",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "wilson_two_body_open_refined_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "hw1_second_order_return_shape_theorem_note": "retained",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "wilson_two_body_open_refined_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "hw1_second_order_return_shape_theorem_note",
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "wilson_two_body_open_refined_note_2026-04-11"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "488d1c7ae410f3a74591aa8a1ba90c00a2960009eb68c907f557e1701ef06ed3",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-015741-2473202b86-interaction_asymmetry_delta_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed operator algebra closes internally: tensor-summand factorization gives sumset spectra and affine free occupation energy, and the finite-difference basis makes one-body curvature vanish while pair curvature is unity. The Schur formula follows from the two hw=0 and hw=2 paths, and the product-to-sum identity gives the face-diagonal exclusion.",
+      "claim_scope": "For the stated Hamming-weight single-hop model and uniform native pair coupling, delta=E2-2E1+E0 vanishes for axis-separable one-body dynamics, equals the pair coefficient, and gives the regime-scoped off-diagonal K formula with the stated forbidden-diagonal one-body realization.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-12T02:00:15.734566+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+      "load_bearing_step": "Because H=sum_mu(eps*n_mu+t*X_mu) is axis-additive, one-body occupation energies are affine in hw with zero second difference, while C(hw,2) has second difference +1 and Schur elimination gives K_off=t^2*(1/eps-1/(eps+U)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses keep the scope structure-only: this audit does not compute the native mediator value or unconditional sign of delta.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner source performs genuine finite-dimensional algebra checks rather than printing constants, and its 13 PASS rows match the note's displayed identities. Independent math checks confirm the affine second-order shift, pair-count curvature, Schur denominator signs, and cos(k_mu)cos(k_nu) product-to-sum identity. The retained_bounded mediator notes are cited only for the open future value/sign route, not for the audited structure theorem itself."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.967860+00:00",
+      "audit_date": "2026-06-14T01:47:02.822550+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "Audited only the bounded theorem for the supplied two-sector records/L\u00fcders map: derivation of r -> 2r^2, its finite fixed-point stability, and the S2 versus S3 entropy comparator maxima.",
+          "hw1_second_order_return_shape_theorem_note": "Exact finite-matrix shape theorem on the retained C^16 Cl(3) x chirality carrier: for weak-axis Gamma_1 and the hw=1 generation/species basis, W=w_O0 P_O0 + w_a P_(1,1,0) + w_b P_(1,0,1) + w_c P_(0,1,1) gives diag(w_O0,w_a,w_b), with w_c absent; uniform weights give I_3. Physical charged-lepton mass values, positivity/normalization of weights, and derivation of the intermediate propagator weights are out of scope.",
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "wilson_two_body_open_refined_note_2026-04-11": "Registered open-boundary Wilson two-body refined sweep for sides 11,13,15,17,19 at fixed G=5 and mu^2=0.22, using the declared clean-attractive subset fit: 25/25 ATTRACT+CLEAN, global exponent -3.669 with R^2=0.9896, per-side exponents -3.139,-3.313,-3.500,-3.671,-3.837; excludes universal law claims, unscreened/Newtonian crossover claims, and blind-law estimation over rejected rows."
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "hw1_second_order_return_shape_theorem_note": "positive_theorem",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "wilson_two_body_open_refined_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "hw1_second_order_return_shape_theorem_note": "retained",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "wilson_two_body_open_refined_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "hw1_second_order_return_shape_theorem_note",
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "wilson_two_body_open_refined_note_2026-04-11"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "488d1c7ae410f3a74591aa8a1ba90c00a2960009eb68c907f557e1701ef06ed3",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-014517-642e59c796-interaction_asymmetry_delta_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The factorization follows from commuting tensor-factor one-axis Hamiltonians, giving an additive per-axis spectrum with zero discrete curvature. The pair-count curvature, Schur denominator formula, C3 off-diagonal equality, and product-to-sum face-diagonal identity are direct algebraic consequences of the stated operators and do not require the open mediator value.",
+      "claim_scope": "Audited the finite Hamming-cube structure theorem that delta is the occupation-number second difference, vanishes for the axis-separable free single-hop sector, is the symmetric pair-count coefficient for a native two-body term, and gives K_off=t^2*U/[eps*(eps+U)] with sign lock only for eps>0 and eps+U>0; no mediator-derived value of delta is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-14T01:47:02.822550+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:hw1_second_order_return_shape_theorem_note:retained->unaudited",
+      "load_bearing_step": "Because H=eps*N+t*sum_mu X_mu factorizes as a sum of commuting per-axis Hamiltonians, the free spectrum is an additive sumset so E(hw) is affine and delta=E_2-2E_1+E_0 vanishes, while the first nonzero occupation curvature is the pair-count coefficient w_pair.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the notation that E(hw) in the all-orders free statement denotes the additive per-axis excitation branch after factorization, not an invariant Hamming-weight block of H when t*V is included.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner source performs actual finite-matrix and algebraic checks rather than merely printing constants, and its 13 PASS rows match the source claims within the scoped theorem. An independent algebra check gives per-axis eigenvalue additivity, second difference zero for affine/one-body terms, second difference +1 for C(hw,2), and K_off=t^2(1/eps-1/(eps+U)). The cited retained_bounded two-body mediator notes are used only to name an open future value route, not as a load-bearing closure for this structure theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.638976+00:00",
+      "audit_date": "2026-06-21T15:16:25.486008+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "Audited only the bounded theorem for the supplied two-sector records/L\u00fcders map: derivation of r -> 2r^2, its finite fixed-point stability, and the S2 versus S3 entropy comparator maxima.",
+          "hw1_second_order_return_shape_theorem_note": "Exact affine second-order Gamma_1 return on the specified hw=1 generation species block: weighted O0 plus T2 intermediate projectors produce diag(w_O0,w_a,w_b), with w_c absent; no charged-lepton weight values are audited.",
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "wilson_two_body_open_refined_note_2026-04-11": "Registered open-boundary Wilson two-body refined sweep for sides 11,13,15,17,19 at fixed G=5 and mu^2=0.22, using the declared clean-attractive subset fit: 25/25 ATTRACT+CLEAN, global exponent -3.669 with R^2=0.9896, per-side exponents -3.139,-3.313,-3.500,-3.671,-3.837; excludes universal law claims, unscreened/Newtonian crossover claims, and blind-law estimation over rejected rows."
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "hw1_second_order_return_shape_theorem_note": "positive_theorem",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "wilson_two_body_open_refined_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "hw1_second_order_return_shape_theorem_note": "retained",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "wilson_two_body_open_refined_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "hw1_second_order_return_shape_theorem_note",
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "wilson_two_body_open_refined_note_2026-04-11"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "488d1c7ae410f3a74591aa8a1ba90c00a2960009eb68c907f557e1701ef06ed3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The load-bearing statements are algebraic identities on the supplied finite-dimensional operators: factorization/sumset, finite second differences, Schur denominators, and the product-to-sum diagonal-hop identity. The mediator sign/scale route is explicitly left open and is outside this audited structure claim.",
+      "claim_scope": "Exact algebraic structure of delta in the Hamming single-hop model: free axis-separable dynamics has zero occupation curvature, a symmetric pair coupling gives delta=U and the stated regime-scoped Schur sign law, and realizing that curvature as a one-body lattice term would require forbidden face-diagonal hopping.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-21T15:16:25.486008+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_r_half_is_the_records_flow_separatrix_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "Because H=eps*N+t*sum_mu X_mu factorizes into per-axis two-level Hamiltonians, the free energy is affine in occupation number so delta=E_2-2E_1+E_0 vanishes, while a pair term U*sum_{i<j}n_i n_j gives delta=U and K_off=t^2*(1/eps-1/(eps+U)).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if a later version promotes the open mediator sign/scale of delta into the theorem rather than keeping it outside this audited scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner source genuinely constructs the finite Hamming-space operators, diagonalizes the free Hamiltonian for L=3,4,5, checks the second-difference identities, evaluates the Schur off-diagonal formula including the denominator-boundary counterexample, and verifies the face-diagonal trigonometric identity. These checks match the source note and do not hard-code a contested physical value for delta; they verify only the structure and regime-scoped sign law. All cited upstream authorities are retained-grade or retained_bounded, and the note does not claim the open mediator-derived value of delta."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/interaction_asymmetry_delta_occupation_curvature_runner.py",
+  "title": "The Interaction Asymmetry `delta`: it is the Occupation-Number Curvature, Vanishes to All Orders for the Free Dynamics, and is Irreducibly Two-Body \u2014 Structure Theorem",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

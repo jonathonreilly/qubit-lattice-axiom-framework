@@ -1,0 +1,210 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
+    "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
+    "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+    "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+    "three_generation_observable_theorem_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c902f582475bfa8efe0d991d73000cfa83e854cc478a5a395515ac5f0abc5316",
+  "note_path": "docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.472830+00:00",
+      "audit_date": "2026-06-21T14:51:44.019098+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09": "Finite current-surface operator-algebra theorem: on V_x = C^2_weak tensor C^3_fibre, local U(3) fibre-frame changes leave the registered weak/Record-sector projectors unchanged and rewrite hopping links by U_xy -> g_x U_xy g_y^dag, making U=I a flat trivialization choice rather than canonical physical cross-site fibre pinning.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "Exact finite-matrix orbit identity for the runner-defined JW Gamma_i family, T1 species basis, full-cube C3 bit-cycle, and transported full-cube template W1(u,v,w,z), including nullity of the fourth slot in axis-matched returns.",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "Exact algebraic bridge identity on Herm_circ(3), and equivalence of a_0^2 = 2|z|^2 with a^2 = 2|b|^2 under the stated eigenvalue/sqrt-mass identification; no derivation of Q = 2/3 itself is audited.",
+          "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08": "Current-surface finite operator-algebra theorem: local U(3) fibre-frame covariance of the retained nearest-neighbor hopping forces a link transporter with the lattice connection law and yields the covariant hopping and lattice covariant difference; no gauge action, dynamics, continuum limit, or physical SU(3)_c identification is audited.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09": "bounded_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "positive_theorem",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "bounded_theorem",
+          "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08": "bounded_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09": "retained_bounded",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "retained",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "retained_bounded",
+          "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08": "retained_bounded",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+          "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "6afba9f01e1e4ada370e45c5fcd2b9e40b92b9401dcdcaae710f30578fde6425",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade inputs supply the generation circulant/hop coefficient readout and finite unitary link-representation setting; the remaining step is the elementary unitary-eigenvalue trace bound. The proof and runner do not select a physical sector-to-representation readout or any observed r value.",
+      "claim_scope": "Finite algebraic character-suppression kernel: for a unitary fibre/holonomy representation endomorphism, normalized character averaging multiplies the Koide hop coefficient and cannot increase r=|b|^2/a^2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T14:51:44.019098+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "For unitary eigenvalues z_i, the fibre-averaged hop coefficient is b_eff = b*(sum_i z_i)/d and d^2 - |sum_i z_i|^2 = sum_{i<j}|z_i-z_j|^2 >= 0, so |chi_R(U)/d_R| <= 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the scope boundary: the clean result applies to the finite normalized-character averaging kernel, not to any physical sector readout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing suppression inequality is genuine finite algebra over the supplied unitary representation, not a fitted numerical comparison or symbol renaming. The runner source actually constructs the dressed generation matrix, takes the fibre trace blockwise, checks the normalized-character formula, verifies the triangle identity on deterministic phase grids, and tests several free r0 values. The clean verdict is for the bounded kernel only; the source correctly leaves physical sector-to-representation/readout assignment outside the claim."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.390117+00:00",
+      "audit_date": "2026-07-02T06:27:37.463612+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09": "Current-surface finite operator-algebra bridge: on V_x = C^2_weak tensor C^3_fibre and two-site hopping blocks, local U(3) fibre-basis changes leave the cited weak-sector/projector data invariant and rewrite links by U_xy -> g_x U_xy g_y^dag, making U=I a flat trivialization choice rather than invariant physical fibre-frame pinning.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "Exact finite-matrix orbit identity for the runner-defined JW Gamma_i family, T1 species basis, full-cube C3 bit-cycle, and transported full-cube template W1(u,v,w,z), including nullity of the fourth slot in axis-matched returns.",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "Exact algebraic bridge identity on Herm_circ(3), and equivalence of a_0^2 = 2|z|^2 with a^2 = 2|b|^2 under the stated eigenvalue/sqrt-mass identification; no derivation of Q = 2/3 itself is audited.",
+          "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08": "Current-surface finite operator-algebra theorem: given retained local U(3) fibre-frame redundancy and retained nearest-neighbour hopping, local frame covariance fixes the link transporter law, covariant hopping, and covariant lattice difference; no gauge dynamics, continuum limit, or physical SU(3)_c identification is audited.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09": "bounded_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "positive_theorem",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "bounded_theorem",
+          "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08": "bounded_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09": "retained_bounded",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "retained",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "retained_bounded",
+          "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08": "retained_bounded",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+          "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "6afba9f01e1e4ada370e45c5fcd2b9e40b92b9401dcdcaae710f30578fde6425",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T062737Z-a033b88d-flavor_gauge_holonomy_ch",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by finite matrix algebra once the bounded fibre-average setup is supplied: normalized trace gives the character factor and the unit-modulus eigenvalue identity gives the non-enhancement bound. The cited authorities are retained-grade for the finite link/generation/circulant surfaces, while the physical readout bridge is explicitly outside scope.",
+      "claim_scope": "Finite normalized-character suppression kernel: for a supplied finite-dimensional unitary link/holonomy representation and normalized fibre trace average, the Koide block ratio is multiplied by |chi_R(U)/d_R|^2 <= 1, with no physical sector-to-representation readout derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T06:27:37.463612+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "Since U_R is unitary with eigenvalues |z_i|=1, the fibre-averaged coefficient is b_eff = b Tr(U_R)/d and r_R = r0 |sum_i z_i/d|^2, with d^2 - |sum_i z_i|^2 = sum_{i<j}|z_i-z_j|^2 >= 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if a downstream note reuses this as a gauge-invariant open-link Wilson trace; the audited clean scope is the normalized-character suppression kernel itself.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity over finite unitary matrices, not a definition, fit, or external comparator. The runner source actually constructs the tensor-product hopping matrix and checks the character normalization and bound over deterministic phase grids; it does not merely print constants or import a contested numerical value. All direct dependencies are retained-grade under the rubric, including retained_bounded support, and the note preserves the separate open physical sector/readout question rather than claiming it."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py",
+  "title": "Flavor Gauge Holonomy Character-Suppression Kernel",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

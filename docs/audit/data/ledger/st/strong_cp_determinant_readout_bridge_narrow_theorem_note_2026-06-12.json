@@ -1,0 +1,124 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+    "minimal_axioms",
+    "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+    "strong_cp_theta_zero_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.322,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6ddb54a718ae10359d888dd04632a8fe747a77b4deb5b42a176dacc0caf46eec",
+  "note_path": "docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.388186+00:00",
+      "audit_date": "2026-07-04T16:32:28.464592+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 2.5,
+        "runner_hash": "583972badcf1b7829e0e224d57d194ce5070a3ec5d81fbfc319ff00a3cabca45",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-strong-cp-det-bridge-round3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded supplied interface, the U(1) character algebra plus orbit equality f(phi) = f(-phi) forces k = 0, while K-even nonmultiplicative probes such as cos(arg det) are excluded by the block-multiplicativity law. The direct dependencies are retained_bounded or accepted/meta for this bounded use, and the source note expressly excludes gauge theta, action-level observables, and physical readout exhaustion.",
+      "claim_scope": "Under a supplied finite mass determinant-channel readout interface with determinant block multiplicativity, continuous U(1) phase characters, and K/CPT orbit registration z ~ conj(z), the only admissible determinant phase character is k = 0; no gauge/action theta closure, physical exhaustion bridge, or Tier-A registry landing is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-04T16:32:28.464592+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "K/CPT orbit registration sends phi -> -phi, so an admissible scalar for one realized orbit must obey f_k(e^{i phi}) = f_k(e^{-i phi}) for all phi, forcing k = 0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if this row or a downstream consumer expands the claim beyond supplied mass determinant-channel readouts into gauge/action theta closure, physical determinant-channel selection, action-level observable exhaustion, or Tier-A registry landing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The load-bearing result is an exact algebraic closure over the supplied determinant-channel interface and retained/accepted one-hop authorities. The runner completes with PASS=19 FAIL=0 and checks the character multiplicativity, K/CPT conjugation, k=0 invariance result, and the cosine hostile guard, while also verifying the note's scope exclusions. The clean verdict applies only to the bounded mass-determinant-channel character-erasure bridge and must not be read as deriving the determinant readout interface, setting theta_gauge = 0, exhausting action-level observables, or moving any Tier-A registry row."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_strong_cp_determinant_readout_bridge_2026_06_12.py",
+  "title": "Strong-CP Determinant-Readout Bridge - Narrow Bounded Theorem",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": "exact-support bridge theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "default_positive_theorem",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_self_consistent_two_body_note_2026-04-11"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a1c9dd97e5d69e92e024e6ca55b1d965c24372602d3f8d9f3cde7b4c04c72091",
+  "note_path": "docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:38.371417+00:00",
+      "audit_date": "2026-06-07T17:27:51.048216+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion."
+        },
+        "dep_claim_type": {
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "staggered_self_consistent_two_body_note_2026-04-11"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "48a22b25510d3ca5fae6a35a88702489332e2d024239d060f452c77a4016aac0",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-172526-f5b7a7ee98-generation_periodic_plane_wa",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "With V_L defined on the periodic torus, plane waves diagonalize Delta and the Green kernel. The constant density and exchange transition density each carry the stated finite-volume 1/N normalization under the Hartree-Fock bilinear kernel pairing, so the formula and hw=1 equal negative signs follow.",
+      "claim_scope": "Finite even periodic torus normalization and Fourier-kernel bridge for V_L = -G(Delta + mu^2 I)^(-1), including equal negative hw=1 corner pair deltas with eps(k_i-k_j)=8.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-07T17:27:51.048216+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_self_consistent_two_body_note_2026-04-11:retained_bounded->unaudited",
+      "load_bearing_step": "For normalized periodic plane waves, the Hartree-Fock density-density matrix element is delta(k,l) = (Vq(0) - Vq(k-l)) / N.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check exchange-bracket convention: the displayed formula uses the Hartree-Fock bilinear kernel pairing of transition densities, not a Hermitian inner product on those transition densities.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 10,
+        "C": 10,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The load-bearing identity is an algebraic Fourier closure over the explicitly defined finite periodic operator and normalized plane waves. The runner source builds the periodic Laplacian, inverts the massive operator, and checks direct Hartree-Fock matrix contractions rather than merely printing constants; its source/text marker checks are not used as the scientific derivation. No external comparator or tuned physical magnitude is imported, and the cited mediator authority is retained_bounded, which is retained-grade for this scoped bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py",
+  "title": "Generation Periodic Plane-Wave Density-Kernel Bridge",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

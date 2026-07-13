@@ -1,0 +1,376 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graph_first_su3_integration_note",
+    "plaquette_self_consistency_note"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.833,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "80efaee9b8c902f4734becbed1aef34681012e5298692cdf31bd602e5f543a0b",
+  "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-01T15:38:35.811905+00:00",
+      "archived_for_note_hash": "9a0f61c97470471f107b1f2212b99cda6fdad077080a6d86b63f2ee4f443c6cb",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-02T21:01:22.837217+00:00",
+      "archived_for_note_hash": "1849c0f3a377926ac38ac38a8c4fdf911b5ae94206386bf2a934521683600295",
+      "audit_date": "2026-05-02T19:01:38.764951+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-pr291-alpha-s-direct-kuhn-2026-05-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited authorities close the graph-first SU(3) structural surface and the g_bare=1 input, but they do not close the physical r0=0.5 fm scale anchor, pure-gauge/quenched-to-full-N_f=5 bridge, continuum scheme conversion, or high-loop running and threshold bridge to M_Z. The runner verifies a certificate and PDG-window consistency; it does not derive those physical bridges from the one-hop authorities.",
+      "claim_scope": "Direct Wilson-loop/static-potential certificate on the beta=6, g_bare=1 Cl(3)/Z^3 SU(3) Wilson surface, bounded by external Sommer-scale setting and standard QCD running to M_Z.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T19:01:38.764951+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The route sets the Sommer physical scale anchor and then converts the extracted short-distance coupling to the chosen continuum scheme and runs it to M_Z using the standard high-loop QCD beta function and threshold matching.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "Re-audit if retained authorities are added for the Sommer physical scale, pure-gauge-to-full-QCD matching, continuum scheme conversion, and standard running bridge, or if the runner is changed to construct those bridges rather than accepting them as certificate inputs.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 8,
+        "D": 3,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: the final alpha_s(M_Z) claim imports external Sommer scale setting, standard QCD running/threshold matching, and a sea-quark/full-QCD bridge not closed by the cited authorities or constructed by the runner. Why this blocks: the Wilson-loop certificate can support a bounded lattice/static-potential computation, but the physical M_Z observable requires those additional bridges before retained-grade status can propagate. Repair target: supply retained-grade authorities or runner-constructed derivations for the r0 physical anchor, continuum scheme conversion, N_f/sea-quark matching, and high-loop running to M_Z. Claim boundary until fixed: the repository has a strict-passing direct Wilson-loop certificate whose result is numerically consistent with alpha_s(M_Z), but not a closed retained derivation of the physical alpha_s(M_Z) theorem."
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.234431+00:00",
+      "audit_date": "2026-05-02T21:07:35.516014+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 9.913,
+        "transitive_descendants": 240
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-agent-cicero-2026-05-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Wilson-loop certificate passes, but the full readout to alpha_s(M_Z) uses admitted external scale setting, standard QCD running, threshold matching, and a pure-gauge to full-QCD bridge. g_bare=1 is an accepted normalization axiom in the dependency note, so beta=6 is a normalization-surface input, not a theorem derived here.",
+      "claim_scope": "Direct Wilson-loop/static-potential certificate for alpha_s(M_Z) on the Cl(3)/Z^3 SU(3) Wilson surface at g_bare=1, beta=6, including strict certificate checks but not an internally derived Sommer-scale, sea-quark, threshold, or QCD-running bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T21:07:35.516014+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "On the Cl(3)/Z^3 graph-first SU(3) Wilson gauge surface with g_bare = 1 and beta = 6, the renormalized strong coupling extracted from Wilson loops, the static potential, the Sommer scale, and standard QCD running to M_Z should give alpha_s(M_Z) = 0.1181 +/- total_direct_Wilson_loop_uncertainty.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-check only if the four admitted bridges are promoted to retained inputs or the runner is changed to compute the M_Z bridge directly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 16,
+        "C": 0,
+        "D": 2,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: the note's alpha_s(M_Z) conclusion depends on admitted-context bridges: physical Sommer-scale calibration, standard QCD running, heavy-threshold matching, and the pure-gauge/sea-quark full-QCD bridge; the runner validates a supplied certificate after those choices rather than deriving the bridge from the allowed one-hop inputs. Why this blocks: the stated alpha_s(M_Z) theorem cannot be claimed from Wilson-loop/lattice inputs alone, and g_bare=1/beta=6 is an axiom/normalization surface, not a derived theorem in this note. Repair target: provide retained bridge theorems and a runner that computes the scale/running/full-QCD map from retained inputs rather than checking certificate consistency against calibrated/readout values. Claim boundary until fixed: the safe claim is a strict-passing Wilson-loop/static-potential certificate on the beta=6 surface, conditional on the admitted external bridges."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.810614+00:00",
+      "audit_date": "2026-05-03T17:27:41.265822+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 7.024,
+        "transitive_descendants": 45
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-alpha-s-direct-wilson-loop-2026-05-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner passes the supplied certificate, but the cited g_bare=1 authority is a superseded meta note that says this normalization has been recategorized as an open gate, and the M_Z bridge relies on admitted external scale-setting, running, threshold, and sea-quark/full-QCD inputs. Therefore the full alpha_s(M_Z) theorem does not close from the allowed one-hop authorities.",
+      "claim_scope": "Strict-runner validation of a supplied Wilson-loop/static-potential certificate on the Cl(3)/Z^3 graph-first SU(3) Wilson gauge surface at g_bare=1, beta=6; the full bridge to alpha_s(M_Z) remains conditional on admitted scale-setting, QCD-running, threshold, and sea-quark/full-QCD inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T17:27:41.265822+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "Use the graph-first SU(3) gauge sector and the g_bare = 1 canonical-normalization input to fix the Wilson gauge action at beta = 6, then extract alpha_qq from the static force and apply the external running bridge to M_Z.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit should check whether the current axiom/open-gate row for g_bare=1 and the full-QCD/running bridge have since been ratified; this audit intentionally did not read those downstream or replacement notes.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 8,
+        "C": 0,
+        "D": 3,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: The claim's surface and M_Z readout require g_bare=1 plus Sommer scale setting, standard QCD running, threshold matching, and a sea-quark/full-QCD bridge; the note itself marks the latter four as out of scope, while the supplied minimal-axioms dependency is superseded and no longer carries g_bare=1 as a current primitive axiom. Why this blocks: A strict-passing certificate can validate internal consistency of the supplied Wilson-loop/static-potential data, but it cannot promote the full alpha_s(M_Z) derivation to clean when load-bearing physical bridges are admitted rather than derived from retained inputs. Repair target: Provide retained/open-gate closure for g_bare=1 on the current axiom surface and for the pure-gauge-to-full-QCD plus scale-setting/running/threshold map, with a runner that constructs or imports those bridges under audited retained authorities. Claim boundary until fixed: It is safe to say that the current runner reports PASS=18 FAIL=0 for a supplied beta=6 Wilson-loop certificate and that the resulting number is comparator-consistent; it is not safe to claim a closed derivation of physical alpha_s(M_Z)."
+    },
+    {
+      "archived_at": "2026-05-11T12:24:19.441245+00:00",
+      "archived_for_note_hash": "29202ae82052a809b7d5a6e5ed48b82568184c70f52e1d91df16d572d3deafa0",
+      "audit_date": "2026-05-05T04:52:09.167722+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 9.561,
+        "runner_hash": "0bfcc76b4b64a087157b0644db297c2c1def1d2878c918c338d96b94d0affa0f",
+        "transitive_descendants": 266
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-alpha_s_direct_wilson_lo-091",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The in-packet runner validates a JSON certificate and comparator gates rather than recomputing the production Wilson loops, static-potential fit, scheme conversion, and running bridge from raw retained inputs. The full alpha_s(M_Z) claim also explicitly depends on external Sommer scale setting, QCD running, threshold matching, and the sea-quark/full-QCD bridge.",
+      "claim_scope": "Audited only the restricted packet's Wilson-loop/static-potential certificate gate at beta = 6 on the Cl(3)/Z^3 SU(3) Wilson surface, not independent full-QCD alpha_s(M_Z) closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:52:09.167722+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The strict-passing production certificate reports alpha_s(M_Z) = 0.1179962733 +/- 0.0067923686 from Wilson-loop static-potential data plus Sommer scale setting and the standard QCD running bridge.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: replace the superseded minimal-axioms citation with the current retained axiom/normalization authority and provide a retained bridge theorem or independently auditable certificate derivation for Sommer scale setting, QCD running, threshold matching, and the sea-quark/full-QCD bridge.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 15,
+        "C": 0,
+        "D": 3,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The note is careful to bound the in-scope content to a Wilson-loop certificate, but the numeric alpha_s(M_Z) conclusion imports admitted external bridge machinery and a certificate artifact. The cited MINIMAL_AXIOMS_2026-04-11 authority is explicitly superseded and not retained-grade for the current axiom/normalization status. The runner source confirms that strict mode checks certificate contents, metadata, uncertainties, PDG-window agreement, and cross-check flags; it does not itself perform a first-principles production computation from the cited authorities."
+    },
+    {
+      "archived_at": "2026-05-27T12:19:09.893535+00:00",
+      "archived_for_note_hash": "586d77cd861461a359b2293310a58f33ee3d5b0215634e12ce07484337af6c40",
+      "audit_date": "2026-05-26T00:00:00+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null,
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 10.276,
+        "runner_hash": "0bfcc76b4b64a087157b0644db297c2c1def1d2878c918c338d96b94d0affa0f",
+        "transitive_descendants": 154
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-alpha-s-direct-wilson-loop-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The certificate-only surface closes only as an internal gate over supplied JSON fields. The full alpha_s(M_Z) candidate still imports g_bare=1, physical Sommer scale setting, continuum QCD running with threshold matching, and the pure-gauge-to-full-QCD bridge.",
+      "claim_scope": "Bounded audit of the direct Wilson-loop/static-potential certificate at beta=6, g_bare=1: the packet supports strict JSON gate validation of the certificate surface, not a closed retained derivation of alpha_s(M_Z).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "On the Cl(3)/Z^3 graph-first SU(3) Wilson gauge surface with g_bare = 1 and beta = 6, the Wilson-loop/static-potential certificate is asserted to give alpha_s(M_Z) = 0.1181 +/- total_direct_Wilson_loop_uncertainty.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad -- split or retag the row so the retained citable surface is the strict-passing Wilson-loop/static-potential certificate only, then add retained bridge theorems for g_bare=1, physical Sommer scale setting, QCD running plus threshold matching, and the pure-gauge-to-full-QCD sea-quark bridge before re-auditing the alpha_s(M_Z) theorem.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 15,
+        "C": 0,
+        "D": 3,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: The source's alpha_s(M_Z)=0.1181 theorem relies on a JSON certificate plus imported g_bare=1, external Sommer r0=0.5 fm scale setting, standard QCD running/threshold matching, and a pure-gauge-to-full-QCD bridge; the runner validates certificate fields and PDG/target windows but does not recompute the production Wilson loops, static-potential fit, scheme conversion, or bridge from retained inputs. Why this blocks: Those imports are not closed by the retained direct dependencies, and the PDG/target checks are comparator gates, with numerical-match risk if used as support rather than as posture checks. Repair target: Split the certificate-only gate from the alpha_s(M_Z) theorem and provide retained-grade bridge theorems or an auditable raw-data-to-M_Z production runner for g_bare, scale setting, running/threshold matching, and sea-quark/full-QCD conversion. Claim boundary until fixed: downstream rows may cite only the existence of a strict-passing Wilson-loop/static-potential certificate on the beta=6, g_bare=1 surface that avoids alpha_LM/u0 authority; they may not cite a retained framework derivation of alpha_s(M_Z)."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:25.830768+00:00",
+      "audit_date": "2026-05-28T02:56:21.663396+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 10.285,
+        "runner_hash": "8751432f0659773f743b192ccb0a2c50a66a04f93afd692f5786f56011c74e2a",
+        "transitive_descendants": 155
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-alpha-s-static-certificate-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The current repo certificate passes the direct runner and an independent field inspection: three distinct volumes, 500 configurations each, 72 qualified Wilson-loop statistics, 12 plateau diagnostics, 18 finite local alpha_qq values, and finite global Cornell parameters. The bounded/non-claim discipline is satisfied because the verdict ratifies only the finite packet gate and does not assert closure or impossibility for the physical alpha_s(M_Z) bridge.",
+      "claim_scope": "Bounded finite certificate gate for outputs/alpha_s_direct_wilson_loop_certificate_2026-04-30.json at sha256 b7188292c238a7cb95445ded8d11394852664fb79800075c1ac27a4ee436f54d: certificate predicates on the configured beta=6 Cl3Z3_SU3_Wilson surface pass; physical scale, running, threshold, full-QCD, PDG-window, and downstream alpha_s(M_Z) claims are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T02:56:21.663396+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For the supplied certificate outputs/alpha_s_direct_wilson_loop_certificate_2026-04-30.json, the runner verifies Wilson-loop/static-potential authority on the configured beta=6 Wilson surface, blocks alpha_LM/u0/plaquette authority, checks three >=500-configuration volumes, and quarantines physical alpha_s(M_Z) bridge fields as context only.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if the certificate hash changes, if the source reinstates physical alpha_s(M_Z) bridge claims, or if a later runner uses Sommer/running/threshold/full-QCD fields as pass/fail authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The narrowed finite certificate gate closes on its own terms. The runner does not use the historical alpha_LM/u0 plaquette chain as authority, and direct inspection confirms that the physical scale/running fields remain quarantined rather than load-bearing. This is retained only at the bounded certificate level; it is not evidence for a physical alpha_s(M_Z) theorem or any downstream publication promotion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop_static_certificate.py",
+  "title": "Direct Wilson-Loop Static-Potential Certificate Gate",
+  "transitive_descendants": 56,
+  "verdict_rationale": null
+}

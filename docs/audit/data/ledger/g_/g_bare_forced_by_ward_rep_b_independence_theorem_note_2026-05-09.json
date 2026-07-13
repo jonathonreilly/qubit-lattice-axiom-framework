@@ -1,0 +1,170 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (proposed; audit-lane to ratify)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+    "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+    "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.496,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ebcaff01edcec5c97fb96603a16a3ba833422209d9c00fd04e8996c46d0d20a2",
+  "note_path": "docs/G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-05-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.475274+00:00",
+      "audit_date": "2026-05-26T18:51:37.635950+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "Given admitted Wilson canonical-normalization g_bare = 1, the standard Wilson \u03b2 relation/field-strength rescaling, and retained graph-first SU(3) giving N_c = 3, \u03b2 = 6 and F^lattice = \u03a9^Cl(3) within the stated lattice expansion.",
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "Conditional algebraic pinning of g_bare=1 on Q_L from retained Rep-B independence plus the explicitly admitted H_unit-residue identification of Rep B with the complete same-projected 1PI coefficient; the same-projected 1PI exhaustion bridge itself is not audited as proved."
+        },
+        "dep_claim_type": {
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration",
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 10.273,
+        "runner_hash": "47f647c99d22f9005326e961ef32eea7a2e460f1abc068ce20a6f7d3a3fb49b5",
+        "transitive_descendants": 874
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-g-bare-forced-ward-repb-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "A five-judge panel produced a 3-of-5 majority for the first audit tuple. The direct same-1PI pinning dependency was retained_bounded at selection time, which is retained-grade for this bounded downstream theorem. The target row does not re-derive or broaden the H_unit-residue same-1PI bridge; it uses the already retained_bounded W2 identity as a bounded premise and performs exact class-A algebra with the retained_bounded W1 identity. The older canonical convention row is decoration/background only, and the runner's 54 A-labelled passes corroborate note structure and the substitution without carrying the proof. Clean status is therefore restricted to this downstream bounded algebra, and must be rechecked if the W2 dependency status or admitted bounded premise changes.",
+      "claim_scope": "Bounded Ward-route algebra: given the retained_bounded Ward Rep-B form-factor identity and the retained_bounded same-1PI coefficient identity on the same Q_L block, the unique positive bare coupling satisfying both at N_c=3 is g_bare=1; no continuum, Wilson-phenomenological, top-Yukawa readout, physical coupling normalization, or independent derivation of the same-1PI bridge is audited here.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T18:51:37.635950+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T18:39:36.782327+00:00",
+          "auditor": "codex-gpt-5.5-fresh-g-bare-forced-ward-repb-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded Ward-route algebra: given the retained_bounded Ward Rep-B form-factor identity and the retained_bounded same-1PI coefficient identity on the same Q_L block, the unique positive bare coupling satisfying both at N_c=3 is g_bare=1; no continuum, Wilson-phenomenological, top-Yukawa readout, or derivation of the same-1PI bridge is audited here.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-26T18:45:09.089314+00:00",
+          "auditor": "codex-gpt-5.5-fresh-g-bare-forced-ward-repb-second-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded Ward-route claim that the retained Rep-B form-factor identity plus the same-1PI coefficient identity force the unique positive solution g_bare = 1 at N_c = 3 on the retained Q_L block; no continuum, Wilson-phenomenological, or physical coupling normalization extension is included.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-26T18:51:37.635950+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-g-bare-forced-ward-repb-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded Ward-route algebra: given the retained_bounded Ward Rep-B form-factor identity and the retained_bounded same-1PI coefficient identity on the same Q_L block, the unique positive bare coupling satisfying both at N_c=3 is g_bare=1; no continuum, Wilson-phenomenological, top-Yukawa readout, physical coupling normalization, or independent derivation of the same-1PI bridge is audited here.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "No material tuple error; the retained result should keep the inherited H_unit-residue premise visibly bounded and not treat the canonical convention decoration as proof.",
+          "independence": "judicial_review",
+          "judgment_rationale": "A five-judge panel produced a 3-of-5 majority for the first audit tuple. The direct same-1PI pinning dependency was retained_bounded at selection time, which is retained-grade for this bounded downstream theorem. The target row does not re-derive or broaden the H_unit-residue same-1PI bridge; it uses the already retained_bounded W2 identity as a bounded premise and performs exact class-A algebra with the retained_bounded W1 identity. The older canonical convention row is decoration/background only, and the runner's 54 A-labelled passes corroborate note structure and the substitution without carrying the proof. Clean status is therefore restricted to this downstream bounded algebra, and must be rechecked if the W2 dependency status or admitted bounded premise changes.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 54,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 54
+          },
+          "second_auditor_error": "The second audit reopened the upstream same-1PI/H_unit-residue bridge as if the W2 dependency were not retained-grade, converting an inherited bounded premise into a fresh blocker for this downstream algebraic row.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Substitute F_Htt^(0)(g_bare)=1/sqrt(6) into F_Htt^(0)(g_bare)^2=g_bare^2/(2 N_c); at N_c=3 this gives 1/6=g_bare^2/6, hence g_bare^2=1 and on the positive branch g_bare=1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if the same-1PI pinning dependency loses retained_bounded status, if its inherited H_unit-residue bounded premise is retired or reclassified, or if this source broadens beyond the W1-plus-W2 algebraic scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 54,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "A five-judge panel produced a 3-of-5 majority for the first audit tuple. The direct same-1PI pinning dependency was retained_bounded at selection time, which is retained-grade for this bounded downstream theorem. The target row does not re-derive or broaden the H_unit-residue same-1PI bridge; it uses the already retained_bounded W2 identity as a bounded premise and performs exact class-A algebra with the retained_bounded W1 identity. The older canonical convention row is decoration/background only, and the runner's 54 A-labelled passes corroborate note structure and the substitution without carrying the proof. Clean status is therefore restricted to this downstream bounded algebra, and must be rechecked if the W2 dependency status or admitted bounded premise changes."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_g_bare_canonical_convention_narrow.py",
+  "title": "g_bare Forced (Not Chosen) via Ward Rep-B-Independence \u2014 Upgrade Theorem",
+  "transitive_descendants": 721,
+  "verdict_rationale": null
+}

@@ -1,0 +1,195 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
+    "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
+    "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.67,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "329b681eb77f3920d58558998f2a587ed245acae3fbf0c18867f0d1c5e2f575f",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-25T15:52:03.939621+00:00",
+      "archived_for_note_hash": "073e0bdd7d2e527737e5ba32ccdc4d32602cb0bef550efa9c842d3c54236e0a6",
+      "audit_date": "2026-05-24T17:25:51.330275+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks.",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "Finite source-sector coefficient packet on the runner's bounded box 0 <= p,q <= 5 at beta = 6 and MODE_MAX = 80, including computed Wilson coefficients and finite package matrix checks.",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 6.522,
+        "runner_hash": "62b4f0b858a3afdda14bd69efcc328b4e2854f137477d4d770aa12d5d1e450a4",
+        "transitive_descendants": 64
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T172436Z-5d2e8b0d-gauge_vacuum_plaquette_r-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The U1-U3 uniqueness step closes as a finite-dimensional algebraic identity. The full U1-U5 claim does not close because U4's structural-class transport is false as stated: D^{-1} M^{-1} K M^{-1} need not be self-adjoint for arbitrary self-adjoint K unless D^{-1} commutes with M^{-1} K M^{-1}, and the runner only tests K constructed from an already diagonal symmetric residual.",
+      "claim_scope": "Finite-box algebraic stripping uniqueness on 0 <= p,q <= 3 from the assumed decomposition K = M D R M, plus the stated beta=6 round-trip coefficient check.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T17:25:51.330275+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Since exp[(beta/2)J|_B] and D_beta^loc|_B are invertible, K = M D R M algebraically inverts to R = D^{-1} M^{-1} K M^{-1}, giving a unique finite-box stripped residual.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: repair U4 by adding the missing commutation/diagonal-residual hypotheses or narrowing the claim to U1-U3 uniqueness plus an explicitly circular U5 round-trip check.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The core stripping uniqueness claim is a valid algebraic inverse once the finite-box decomposition and invertibility of M and D are granted. However, the note also claims structural-class transport from K to R, and its proof incorrectly treats left multiplication by D^{-1} after a symmetric congruence as preserving symmetry without a commutation hypothesis. The runner does not repair this, since its U4 test reconstructs K from a residual already having the desired structural class. The U5 coefficient check is also only a round-trip from an inserted rho packet, not an independent computation from an explicit source-sector kernel."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.953245+00:00",
+      "audit_date": "2026-05-25T19:21:59.313623+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks.",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "Finite source-sector coefficient packet on the runner's bounded box 0 <= p,q <= 5 at beta = 6 and MODE_MAX = 80, including computed Wilson coefficients and finite package matrix checks.",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
+          "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 6.522,
+        "runner_hash": "62b4f0b858a3afdda14bd69efcc328b4e2854f137477d4d770aa12d5d1e450a4",
+        "transitive_descendants": 64
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T191954Z-8d5628cb-gauge_vacuum_plaquette_r-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The uniqueness conclusion follows from finite-dimensional invertible matrix algebra once M and D are positive/invertible. The rho(6) comparison is explicitly a circular consistency check and is not needed for the uniqueness step.",
+      "claim_scope": "Finite-box H_B with 0 <= p,q <= 3: algebraic uniqueness of the stripped residual operator from finite K, J, D data, plus the beta=6 circular Wilson-rho round-trip check; no all-weight or physical unmarked-environment identification is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:21:59.313623+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_residual_environment_identification_theorem_note:retained_bounded->unaudited",
+      "load_bearing_step": "With M = exp[(beta/2)J|_B] and D = D_beta^loc|_B invertible, K = M D R M algebraically gives R = D^{-1} M^{-1} K M^{-1}, so any second solution R' equals R.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the finite algebraic scope and do not treat this as closing the all-weight or unmarked-spatial residual-environment identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic inversion, not a definition or symbol renaming. The runner source constructs the finite recurrence matrix, local diagonal factor, random residual round-trips, and the rho(6) round-trip using high-precision arithmetic rather than printing constants. The cited inputs are retained or retained_bounded, and the note keeps the open physical residual-environment identification outside its audited scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow.py",
+  "title": "Gauge-Vacuum Plaquette Residual Environment Finite-Box Stripping-Uniqueness Narrow Note",
+  "transitive_descendants": 71,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

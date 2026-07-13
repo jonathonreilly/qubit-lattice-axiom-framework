@@ -1,0 +1,170 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "single_clock_uniqueness_scope_boundary_2026-06-06",
+    "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6b1f39ed7486461df69704cd537c7b5035bfb901ae43d751690d465a68d8d6b8",
+  "note_path": "docs/SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-02T16:37:11.127681+00:00",
+      "audit_date": "2026-06-18T14:47:43.433639+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "Finite-dimensional algebra shows Stone uniqueness is relative to a supplied positive transfer and fixed tau; it does not by itself fix the clock unit or exclude separately supplied commuting transfer factors.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "no_go",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "retained_no_go",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "single_clock_uniqueness_scope_boundary_2026-06-06",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "e8253ce005303b7f4521a9f685328ca3f8b36a308040acaf0206288ed95d5203",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs W and the finite staggered hop matrices and verifies the APBC transport and symmetry-breaking claims directly. The retained no-go scope supplies the B-AXIS residual, and the retained bounded Berezin note supports only the algebra-after-generators point, so the narrow route-pruning conclusion follows.",
+      "claim_scope": "KMS/APBC is audited only as a pre-B-AXIS axis supplier: on the finite staggered block and cyclic-shift checks, APBC is axis-covariant after a circle is supplied and does not itself provide the per-axis boundary-condition asymmetry.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-18T14:47:43.433639+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:e8253ce0->a68d9eb1",
+      "load_bearing_step": "Under the exchange W, APBC on the supplied tau circle transports exactly to APBC on the supplied x1 circle, so APBC decorates whichever circle was already supplied rather than selecting the axis.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the KMS-note string checks are treated only as route context, not as an unstated proof dependency.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 14,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The load-bearing content is an algebraic finite-matrix covariance check, not a tuned numerical match or a definition substitution. The runner source actually constructs the exchange operator, staggered hop matrices, rank witnesses, and cyclic shifts; it does not merely print the PASS summary. The no-go is scoped narrowly to KMS/APBC as an axis supplier before the axis is supplied, and its N1-N8 discipline explicitly leaves future independently derived BC-asymmetry bridges open."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.689693+00:00",
+      "audit_date": "2026-07-09T06:56:02.459095+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "Finite-dimensional algebra shows Stone uniqueness is relative to a supplied positive transfer and fixed tau; it does not by itself fix the clock unit or exclude separately supplied commuting transfer factors.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "no_go",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "retained_no_go",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "single_clock_uniqueness_scope_boundary_2026-06-06",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "a68d9eb10850bf12ebcb1de3eca8e9339ebb51206b5b9880b546c8d30ec39512",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The direct dependencies are retained-grade for the single-clock scope boundary and the algebraic Grassmann/Berezin support, and the runner verifies the finite exchange-map APBC covariance directly. KMS and prior axis-selection notes are used as route/context text, while the no-go conclusion itself rests on the exact supplied-circle covariance and the retained B-AXIS scope boundary.",
+      "claim_scope": "No-go for the KMS/APBC-as-axis-supplier route: on the stated finite staggered block, APBC on a supplied circle is axis-covariant under the tau<->x1 exchange, and axis selection requires an independently supplied per-axis boundary-condition asymmetry; this does not derive B-AXIS, physical time step, APBC from minimal axioms, exclusion of independent clocks, or a broad no-future-BC-supplier theorem.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-09T06:56:02.459095+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "If APBC is supplied on the tau circle, then W transports that operator exactly to the operator with APBC on the x1 circle, so KMS/APBC does not pick an axis before B-AXIS; it only decorates whichever axis was already chosen.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if cited as a broad no-future boundary-condition supplier theorem, as deriving B-AXIS or APBC from minimal axioms, or as excluding independent commuting clock factors rather than pruning only the KMS/APBC pre-axis supplier route.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 14,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The load-bearing negative step is an explicit finite matrix statement: W carries APBC on the supplied tau circle to APBC on the supplied x1 circle, and only an asymmetric supplied boundary datum breaks the exchange. The runner constructs that map and the staggered/APBC operators directly, checks the zero-kernel and cyclic-shift contrasts, and uses quote checks only to pin the route context and retained no-go checklist. The residual boundary is explicit: this prunes KMS/APBC as a pre-axis supplier but does not rule out a future independently derived boundary-condition asymmetry or close B-AXIS itself."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py",
+  "title": "Single-Clock KMS/APBC Axis-Supplier No-Go",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

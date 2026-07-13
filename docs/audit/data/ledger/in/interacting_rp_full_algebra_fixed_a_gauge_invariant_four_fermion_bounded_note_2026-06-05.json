@@ -1,0 +1,352 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
+    "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+    "staggered_only_det_positivity_case_a_note_2026-05-17",
+    "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+    "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+    "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1e0f0eb7079b6881025f3ca1afa9047b796ccd494badfc14efc6265ba099ed52",
+  "note_path": "docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T19:27:03.544761+00:00",
+      "archived_for_note_hash": "ed9cb67a82a0fca6f362b41a2fcd3e2f18f4f859aff9a596421d73c0584e44d7",
+      "audit_date": "2026-06-09T13:29:31.479285+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Bounded pure-gauge Wilson plaquette temporal-gauge bridge on the explicit two-slice lattice for A_+^(2) observables: reflection split plus positive plane kernel imply the integrated reflected Gram is PSD; exact finite-Haar for Z_N, analytic U(1) plane-kernel positivity with quadrature Gram cross-check, and structural SU(N) support without a finite exact SU(N) computation or fermion/full-interacting/continuum claim.",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "Algebraic SU(3) statement on the cited symmetric-base carrier: 3 \u2297 3 \u2297 3 decomposes as 1 \u2295 8 \u2295 8 \u2295 10 and has a unique totally antisymmetric epsilon singlet.",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "Finite-carrier gauge-invariant, number-conserving meson Berezin/operator representation equality for the runner's stated U(1) quadratures and SU(3) Haar samples, including determinant weighting and non-vacuity controls; no continuum, full interacting RP, Wilson-boundary, or per-config fermion-rung closure audited.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "decoration",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "retained_bounded",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "47b36c166adbc87af747d3fc48b089135154b55d09d5482ad616b580a1e491f2",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260609-132502-b822a07492-interacting_rp_full_algebra_",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The provided runner genuinely computes the m=0.5 finite-carrier Grams and the executed checks pass. The source as written also claims an m=0.01 robustness scan and a non-conjugating link-reflection control with quantitative values, but those checks are not present in the provided runner source or stdout packet.",
+      "claim_scope": "Finite fixed-a temporal-gauge staggered carriers at m=0.5: runner-computed Berezin OS Grams for the listed meson/baryon basis are PSD and non-vacuous, with retained inputs for determinant and 2-step transfer positivity.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T13:29:31.479285+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Per configuration the Berezin OS Gram for the tested full-algebra operator set is PSD, and positive det/gauge weights preserve PSD under averaging while the meson/baryon diagonal entries are strictly positive.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add a source-hash-pinned companion runner/cache for the m=0.01 mass scan and non-conjugating link-reflection control, or narrow the note to the checks actually present.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 8,
+        "C": 20,
+        "D": 0,
+        "total_pass": 36
+      },
+      "verdict_rationale": "The main finite m=0.5 computation is not a print-only runner: it builds the KS matrix, Wick contractions, OS reflection, gauge transforms, determinant weights, and eigenvalue checks directly. The retained one-hop authorities close the determinant, fixed-background transfer-positivity, Wilson-plane, and epsilon-singlet inputs at their bounded scopes. However, strict packet audit cannot certify source claims for the additional m=0.01 scan or the quoted non-conjugating link-reflection Hermiticity/PSD failure numbers because the supplied runner does not execute or print them."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.605853+00:00",
+      "audit_date": "2026-06-10T05:42:39.684635+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Bounded pure-gauge Wilson plaquette temporal-gauge bridge on the explicit two-slice lattice for A_+^(2) observables: reflection split plus positive plane kernel imply the integrated reflected Gram is PSD; exact finite-Haar for Z_N, analytic U(1) plane-kernel positivity with quadrature Gram cross-check, and structural SU(N) support without a finite exact SU(N) computation or fermion/full-interacting/continuum claim.",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "Algebraic SU(3) statement on the cited symmetric-base carrier: 3 \u2297 3 \u2297 3 decomposes as 1 \u2295 8 \u2295 8 \u2295 10 and has a unique totally antisymmetric epsilon singlet.",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "Finite-carrier gauge-invariant, number-conserving meson Berezin/operator representation equality for the runner's stated U(1) quadratures and SU(3) Haar samples, including determinant weighting and non-vacuity controls; no continuum, full interacting RP, Wilson-boundary, or per-config fermion-rung closure audited.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "decoration",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "retained_bounded",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-053948-b77386e3e2-interacting_rp_full_algebra_",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained fixed-background two-step transfer positivity and determinant positivity give the per-configuration PSD and positive weights; the runner independently constructs the finite Berezin Wick Gram and verifies the explicit meson/baryon sector is non-vacuous with wrong-reflection controls. The all-A extension is carried by the retained OS transfer theorem, while the new finite-carrier non-vacuity checks are computed directly.",
+      "claim_scope": "Finite fixed-a staggered KS temporal-gauge carriers with positive mass, positive determinant weight, and the tested full-algebra basis including identity, single chibar fields, gauge-singlet mesons, SU(3) baryon/antibaryon, and product polynomials; no continuum, infinite-volume, exact full-Haar numerical value, or Wilson-boundary closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:42:39.684635+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02:decoration_under_cl3_color_automorphism_theorem->unaudited",
+      "load_bearing_step": "Per configuration the two-step blocked transfer is PSD, `T_hat^2[U]=B[U]^dag B[U]`, so `G[U]_{IJ}=<Theta(A_I) A_J>_U` is a manifest Gram for any operator set, and the positive `w_U det(M[U])` average preserves PSD while the runner verifies nonzero meson/baryon diagonals.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the finite fixed-a bounded scope and do not treat the random degree<=3 stress test as an exhaustive full-algebra proof independent of the retained OS theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 38,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "The primary runner is not a print-only or hard-coded comparator: it builds `M[U]`, inverts it, performs Wick contractions, forms Grams, checks eigenvalues, gauge covariance, determinant sign, and wrong-reflection failures on finite carriers. The helper runner hash-pins the primary source and adds mass-scan plus link-reflection convention controls. The algebraic backbone, positive weighted sums of PSD per-config Grams, is independently consistent with the cited retained transfer and determinant authorities, and no external tuned numerical input is imported."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.763090+00:00",
+      "audit_date": "2026-06-13T02:38:27.407788+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Bounded pure-gauge Wilson plaquette temporal-gauge bridge on the explicit two-slice lattice for A_+^(2) observables: reflection split plus positive plane kernel imply the integrated reflected Gram is PSD; exact finite-Haar for Z_N, analytic U(1) plane-kernel positivity with quadrature Gram cross-check, and structural SU(N) support without a finite exact SU(N) computation or fermion/full-interacting/continuum claim.",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "Algebraic SU(3) statement on the cited symmetric-base fundamental: 3 \u2297 3 \u2297 3 decomposes as 1 \u2295 8 \u2295 8 \u2295 10 and has exactly one normalized totally antisymmetric epsilon singlet; no physical SM-color or baryon-existence corollary is audited as closed.",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "Finite-carrier gauge-invariant, number-conserving meson Berezin/operator representation equality for the runner's stated U(1) quadratures and SU(3) Haar samples, including determinant weighting and non-vacuity controls; no continuum, full interacting RP, Wilson-boundary, or per-config fermion-rung closure audited.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "decoration",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "retained_bounded",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-023602-31741ff67e-interacting_rp_full_algebra_",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade inputs supply fixed-background two-step transfer positivity and positive determinant weights. The included runner source genuinely builds the finite staggered matrix, uses full-spacetime M[U]^{-1} Wick contractions, checks per-config/U-averaged PSD and non-vacuity, and includes negative/reflection/gauge/determinant controls.",
+      "claim_scope": "Finite fixed-a staggered Kogut-Susskind carriers in temporal gauge with m>0: per-config and positive-weight U-averaged OS Grams are PSD for the stated half-space polynomial surfaces, including gauge-invariant meson/baryon observables, with explicit nonzero four-fermion diagonals on the tested SU(3) carriers; no continuum, infinite-volume, or Wilson-boundary closure is audited here.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T02:38:27.407788+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02:decoration_under_cl3_color_automorphism_theorem->unaudited",
+      "load_bearing_step": "Per configuration, the 2-step transfer input gives T_hat^2[U]=B[U]^dag B[U], so G[U]_{IJ}=<Theta(A_I)A_J>_U is a Gram form for any half-space operator set, and the runner's Berezin Wick computation verifies positive meson/baryon diagonals on the finite carriers.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the source-note operator-language convention around baryon creation versus annihilation; the audited closure here rests on the Berezin OS correlator and nonzero diagonal computation, not that prose phrasing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 2,
+        "C": 30,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "The load-bearing PSD claim is not a printed constant or tuned comparator: it follows from the retained T^2=B^dag B input plus an explicit finite Berezin computation of the stated Gram surfaces. The runner source computes the contested objects directly and the companion helper is included, hash-pinned, and used only for mass/link-reflection controls. The claim remains bounded to the finite fixed-a carrier and sampled/finite positive U-average surface stated in the note."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:24.709653+00:00",
+      "audit_date": "2026-06-18T15:44:21.466216+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Bounded pure-gauge Wilson plaquette temporal-gauge bridge on the explicit two-slice lattice for A_+^(2) observables: reflection split plus positive plane kernel imply the integrated reflected Gram is PSD; exact finite-Haar for Z_N, analytic U(1) plane-kernel positivity with quadrature Gram cross-check, and structural SU(N) support without a finite exact SU(N) computation or fermion/full-interacting/continuum claim.",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "On the algebraic symmetric-base SU(3) carrier supplied by CL3_COLOR_AUTOMORPHISM_THEOREM.md, 3 x 3 x 3 decomposes as 1 + 8 + 8 + 10 and has exactly one normalized totally antisymmetric epsilon singlet.",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "Finite-carrier gauge-invariant, number-conserving meson Berezin/operator representation equality for the runner's stated U(1) quadratures and SU(3) Haar samples, including determinant weighting and non-vacuity controls; no continuum, full interacting RP, Wilson-boundary, or per-config fermion-rung closure audited.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "decoration",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30": "retained_bounded",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
+          "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-153428-eb742fcb-interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05-first",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained fixed-background two-step transfer positivity and retained determinant positivity supply the per-config PSD and positive-weight inputs. The provided runner source genuinely builds the staggered matrix, Wick/Berezin contractions, reflected Grams, gauge-transform controls, wrong-reflection controls, and non-vacuity checks rather than printing constants.",
+      "claim_scope": "Finite fixed-a staggered carriers in temporal gauge, with det-weighted finite Haar/quadrature samples, for the stated half-space polynomial operator families including gauge-invariant mesons, baryons, antibaryons, and tested products; no continuum, infinite-volume, or full Wilson-gauge transfer claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T15:44:21.466216+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_reflection_positivity_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Per configuration the reflected full-algebra form is a manifest Gram, so positive determinant/gauge weights preserve PSD under the finite U-average, while the Berezin runner computes strictly positive meson/baryon diagonal entries.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should keep the clean scope finite-carrier/fixed-a and verify that 'full algebra' is read through the retained two-step OS reflection-square theorem, not as exhaustive enumeration by the runner alone.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 38,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "The source packet is bounded to finite carriers and finite U samples/quadratures, and within that scope the conclusion follows from retained-grade upstream inputs plus a first-principles finite-matrix/Berezin computation. The helper is present, source-hash-pins the primary runner, and adds substantive mass-scan and link-reflection controls. The runner does not import an external comparator or tuned numerical target, and the wrong-reflection and non-conjugating controls make the sign/link conventions load-bearing rather than decorative."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_interacting_rp_full_algebra_2026_06_05.py",
+  "title": "Full Polynomial Half-Space Algebra OS Reflection Positivity at Fixed `a`: The Gauge-Invariant Four-Fermion (Meson / Baryon) Observables Act Non-Vacuously and the OS Gram is PSD (Bounded Note)",
+  "transitive_descendants": 3,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

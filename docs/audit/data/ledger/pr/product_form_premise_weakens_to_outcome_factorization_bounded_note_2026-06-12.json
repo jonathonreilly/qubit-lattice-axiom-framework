@@ -1,0 +1,187 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+    "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d96e050aece1aa076d096a8fbb51a50abfbaaefa3fc21c23f520004bd38d9ef3",
+  "note_path": "docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.512812+00:00",
+      "audit_date": "2026-06-15T11:53:42.075273+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "For the accepted one-qubit carrier Ax ~= M2(C), any m:E(M2)->[0,1] satisfying the stated M1-M3 POVM-additivity assumptions is uniquely represented as m(E)=Tr(sigma E) for a density matrix sigma; parent-row status and higher-dimensional closure are out of scope.",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite Lambda subset Z^3 with |Lambda|>=2, assuming the standard Gleason theorem, every countably additive probability measure on P(tensor_x C^2) has a unique density-matrix trace representation.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "14c06fb75d3d032905fa723cb355f8186a9cb286cb324d282bac4d358896bd1b",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-115220-dc9013faa5-product_form_premise_weakens",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The L1 flow is a direct normalization identity from the four outcome weights, L2 gives an explicit positive trace-one non-product state whose partition weights factor, and L3 is cyclicity of trace plus commutation with the projectors. The note does not attempt to discharge outcome-level independence, select a cell, fix r, or promote the quoted unraveling context.",
+      "claim_scope": "Given a supplied two-outcome partition and the bounded premise of outcome-level factorization, the note audits the algebraic x -> x^2 agreement-conditioned flow, a non-product witness with factorized partition weights, and invariance under frame motion commuting with the partition.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T11:53:42.075273+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Assuming only m(j,k)=p_j p_k on the two-outcome partition, agreement conditioning gives q_i=p_i^2/(p_s^2+p_d^2), hence the quotient odds coordinate obeys x'=q_s/q_d=x^2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second audit should re-check the implicit coordinate-domain convention for x=p_s/p_d when p_d=0; it does not affect the bounded algebraic claim on the finite odds chart.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing mathematics is algebraic over the supplied partition and bounded outcome-factorization premise. Independent checks of the displayed identities confirm the agreement-conditioning normalization, the L2 density-matrix positivity and factorized partition weights, the non-product covariance witness, and the L3 frame invariance. The cited authorities are retained-grade or accepted axiom-premise material, and the unaudited unraveling quotes are explicitly scoped as non-load-bearing context."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.499106+00:00",
+      "audit_date": "2026-07-02T05:49:55.370218+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "For a qubit effect functional m:E(M_2)->[0,1] satisfying the stated POVM-additivity hypotheses (M1)-(M3), the note proves the unique density-matrix trace representation m(E)=Tr(sigma E) on E(M_2).",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite Lambda subset Z^3 with |Lambda| >= 2, any countably additive probability measure on P((C^2)^{tensor Lambda}) has the Born trace form with a unique density matrix.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "14c06fb75d3d032905fa723cb355f8186a9cb286cb324d282bac4d358896bd1b",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T054955Z-2217a314-product_form_premise_wea",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The closure is bounded to the supplied partition and the explicitly assumed outcome-factorization premise; it does not assert that premise. The displayed conclusions follow by conditioning, finite-dimensional trace algebra, and cyclicity of trace under commuting block-frame motion.",
+      "claim_scope": "For a supplied C^3 two-outcome partition and an assumed outcome-level factorization m(j,k)=p_jp_k, the note proves the agreement-conditioned odds map x -> x^2, strict weakness versus state-product form by a finite-dimensional witness, and invariance under block-frame unitaries commuting with the partition.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T05:49:55.370218+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Given only m(j,k)=p_j p_k, agreement conditioning gives q_i=p_i^2/(p_s^2+p_d^2) and x'=q_s/q_d=x^2, while the rho witness has factorizing partition weights but nonzero X tensor X covariance, so outcome-level factorization is strictly weaker than state-product form.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the implicit quotient-coordinate chart boundary p_d>0 for x=p_s/p_d; it does not affect the bounded algebraic closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The proof is a genuine algebraic closure over the stated bounded premises: L1 is direct conditional-probability algebra, L2 is an explicit positive correlated state with factorizing registered weights, and L3 is trace cyclicity plus commutation with the projectors. The cited authorities are retained-grade or accepted axiom-premise material, and the unaudited unraveling quotes are explicitly scope-only rather than load-bearing. The runner source actually constructs the symbolic matrices and trace identities rather than merely printing pass constants, and independent recomputation matches the signs, factors, and normalizations."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_product_form_weakens_to_outcome_factorization_2026_06_12.py",
+  "title": "Product-Form Premise Weakens to Outcome-Level Factorization",
+  "transitive_descendants": 4,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

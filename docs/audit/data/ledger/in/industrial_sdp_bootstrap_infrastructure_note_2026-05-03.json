@@ -1,0 +1,218 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "industrial_sdp_bootstrap_infrastructure_note_2026-05-03",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": "infrastructure + validation support theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "default_positive_theorem",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "plaquette_self_consistency_note"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.615,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "dec37228fc1fadd9a0b6091c68eb7d6fa8a798e6b7305d3b8b2c49edb6c80fce",
+  "note_path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-27T12:42:35.486908+00:00",
+      "archived_for_note_hash": "bae3f71710d5f8619369d3c5d6cf3873f66b8b92afd8a5216b00a536f3d99207",
+      "audit_date": "2026-05-27T02:15:48.352034+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 7.144,
+        "runner_hash": "d81544345adc4d7a4e9c2b423780897bb12de63ae7f9309f0685dcac8e87da5d",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-einstein-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The narrow infrastructure smoke-test core is supported by runner output showing CVXPY 1.8.2 installed, solvers available, moment references computed, PSD-only brackets support-trivial, and fixed-higher-moment brackets containing the printed SU(2)/SU(3) reference m1 values. However, the note says the brackets recover the known reference values, while the runner's own recovery predicates print False for both SU(2) and SU(3), and the runner has no asserts to certify the validation interpretation.",
+      "claim_scope": "CVXPY-based single-variable moment-problem SDP infrastructure for SU(2)/SU(3) single-plaquette validation at beta=6; excludes full lattice beta=6 bracketing, loop equations, and industrial-precision SDP claims.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-27T02:15:48.352034+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The CVXPY moment SDP with Hankel PSD and Hausdorff shifted-PSD constraints produces single-plaquette brackets that contain the SU(2) and SU(3) reference first moments when higher moments m2-m4 are fixed.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue - Re-audit after the runner has explicit PASS/FAIL assertions for solver status, support-trivial PSD brackets, fixed-moment bracket containment, and after the note no longer describes non-endpoint containment as recovered endpoint reference values.",
+      "open_dependency_paths": [
+        "scripts/frontier_industrial_sdp_bootstrap_block01.py",
+        "docs/INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 16,
+        "D": 2,
+        "assert_count": 0,
+        "runner_recovered_boolean_su2": false,
+        "runner_recovered_boolean_su3": false,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: The runner output supports only a bounded infrastructure smoke test: the brackets contain the reference m1 values, but the runner's own recovery predicates report False for both SU(2) and SU(3), and there are no asserts. Why this blocks: the note's stronger language that CVXPY brackets recover known reference values is not mechanically checked and is partly contradicted by the printed runner output. Repair target: replace the recovery criterion with explicit containment checks, add asserts for solver status and reference containment within tolerance, and revise note language from endpoint recovery to containment unless endpoint recovery is intended and achieved. Claim boundary until fixed: CVXPY infrastructure runs and produces feasible support-aware moment brackets containing the single-plaquette reference values in this printed run; it does not certify recovery or full lattice beta=6 bracketing."
+    },
+    {
+      "archived_at": "2026-05-28T19:56:39.931506+00:00",
+      "archived_for_note_hash": "203617dd1609c540bff674cf5b7d2382bb36d57bc0b1af5d51185bd20d03af9e",
+      "audit_date": "2026-05-28T04:02:08.541021+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 7.672,
+        "runner_hash": "36b5a0384d343d8023a8bd2126085f7d8961c49a9938c25957dfc9266f125919",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-industrial-sdp-bootstrap-block01-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The CVXPY feasibility/bracketing machinery runs, but the SU(2) reference surface is not the stated full SU(2) Haar/Bessel single-plaquette integral. The runner integrates theta in [0, pi] with P=cos(theta/2), restricting to P>=0; the full SU(2) class-angle integral gives I2(6)/I1(6)=0.76272608, not 0.76736480.",
+      "claim_scope": "Finite CVXPY moment-problem SDP infrastructure validation at beta=6 for SU(2)/SU(3) single-plaquette moment data, including support-only PSD brackets and fixed-higher-moment containment of m1. The full lattice plaquette value, loop-equation bootstrap, industrial precision, and external MC/Kazakov-Zheng comparators are not audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T04:02:08.541021+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner-computed SU(2)/SU(3) single-plaquette reference moments are used as fixed higher moments in a Hankel/Hausdorff CVXPY moment problem whose m1 bracket is claimed to contain the known reference value.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: fix the SU(2) Haar/Bessel reference to integrate the full class-angle domain, update the source table and fixed-moment bracket test, then rerun the CVXPY containment certificate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The cached runner exits successfully and reports PASS=13 FAIL=0, and its CVXPY bracket logic is internally consistent for the moments it computes. Independent math check of the SU(2) reference construction fails: for SU(2) with P=(1/2)tr U=cos(phi), Haar weight sin^2(phi) on phi in [0,pi] gives <P>=I2(beta)/I1(beta)=0.76272608 at beta=6, while the runner/note value 0.76736480 comes from integrating only phi in [0,pi/2]. Because the stated validation is against SU(2) single-plaquette Bessel/Haar reference data, the load-bearing validation does not close on its own terms even though the infrastructure itself is present. The SU(3) and pure PSD portions are not enough to ratify the combined source claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.605324+00:00",
+      "audit_date": "2026-05-29T05:05:38.474171+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 7.672,
+        "runner_hash": "5fec271ff86d939b62d16fe7822322a8a21786d652c8415058b54286d5d328b6",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-hegel-019e721c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded single-plaquette infrastructure validation closes: the runner computes the stated Haar/Bessel reference moments and solves the SDP with m1 free; the one-hop 0.5934 plaquette note is comparator-only here.",
+      "claim_scope": "Bounded validation that the CVXPY moment-SDP runner computes SU(2)/SU(3) beta=6 single-plaquette reference moments and returns N=3 Hankel/Hausdorff brackets containing m1 when m2-m4 are fixed; excludes full lattice <P>(beta=6), 0.5934 certification, infinite-volume closure, and industrial-precision bracketing.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T05:05:38.474171+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "CVXPY brackets contain known reference values when higher moments are fixed.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "Independent recomputation gives I_2(6)/I_1(6)=0.7627260757491918, matching the SU(2) m1 in the note. A fresh independent PSD feasibility scan gives SU(2) m1 about [0.6799586, 0.7669342] and SU(3) about [0.2819121, 0.4515328], both containing their reference m1 values and matching runner output to solver tolerance. The runner source does not hard-code target brackets; 0.5934/0.59353 appear only as printed comparators. The clean scope is bounded infrastructure validation, not the source note's broader positive theorem hint."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py",
+  "title": "Industrial SDP Bootstrap \u2014 Infrastructure + SU(2)/SU(3) Single-Plaquette Validation",
+  "transitive_descendants": 48,
+  "verdict_rationale": null
+}

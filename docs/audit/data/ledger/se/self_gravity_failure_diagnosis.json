@@ -1,0 +1,379 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "self_gravity_failure_diagnosis",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "poisson_self_gravity_loop_v3_note",
+    "self_gravity_backreaction_closure_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/minimal_source_driven_field_probe.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8732e06e89c5eb9047b0778722ceecf50c9159887fe3384dcf923c54ecd23979",
+  "note_path": "docs/SELF_GRAVITY_FAILURE_DIAGNOSIS.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-context",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.107018+00:00",
+      "archived_for_note_hash": "ad48ddf25815eebbc6e853721a731ef84bba667ad53a929ffb0b8d025fc5304e",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.236880+00:00",
+      "audit_date": "2026-05-01T23:32:39.518877+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited artifact-chain notes and the current runner output agree on the exact epsilon=0 identity, the small nonzero matched-null centroid/phase shifts, zero nonzero-coupling convergence under the strict tolerance, and end-to-end Born drift of 4.911e-06. Those facts support the note's support-tier diagnosis that only a weak control surface survives, not a promoted mechanism.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:poisson_self_gravity_loop_v3_note,self_gravity_backreaction_closure_note",
+      "load_bearing_step": "The failure is a three-part limit: the backreaction signal is small, the strict nonzero-coupling loop does not converge cleanly, and the end-to-end Born audit is no longer machine-clean, so the lane remains a bounded no-go rather than a retained self-gravity mechanism.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The note is an operational/diagnostic support row, not an asserted retained positive self-gravity result. Its load-bearing conclusion is a conservative failure diagnosis and is directly supported by the runner: exact null reduction holds, nonzero rows show only tiny shifts, the nonlinear loop fails to converge for nonzero coupling, and the full-loop Born value is not machine-clean. The stated bounded-no-go boundary therefore closes at support tier without importing a hidden physical mechanism."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:11.391741+00:00",
+      "audit_date": "2026-05-03T21:36:02.603663+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "poisson_self_gravity_loop_v3_note": "retained_bounded",
+          "self_gravity_backreaction_closure_note": "retained_no_go"
+        },
+        "deps": [
+          "poisson_self_gravity_loop_v3_note",
+          "self_gravity_backreaction_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-self-gravity-diagnosis",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note's diagnosis is directly supported by the two retained-grade one-hop notes: exact epsilon=0/null controls survive, nonzero-coupling rows fail strict convergence, and full-loop Born is not machine-clean. The quick runner completed and reproduced the exact null identity plus nonzero-coupling nonconvergence, while explicitly skipping only the full end-to-end Born sweep.",
+      "claim_scope": "Bounded no-go for the exact-lattice Poisson-like self-gravity/backreaction lane as a stable retained mechanism on this architecture.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-03T21:36:02.603663+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:self_gravity_backreaction_closure_note:retained_no_go->unaudited",
+      "load_bearing_step": "The failure is a three-part limit: the backreaction signal is small, the nonlinear loop is not stable enough, and end-to-end Born stops being machine-clean.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether apply_audit accepts no_go for this support-labeled diagnosis note despite the seeded positive_theorem hint.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The scoped claim is not a positive self-gravity theorem; it is a bounded no-go diagnosis. The cited retained_bounded and retained_no_go dependencies supply the load-bearing facts, and the current quick run agrees with the core failure pattern rather than contradicting it. Residual risk is limited to the full-sweep end-to-end Born value, which was not rerun in quick mode but is supplied by the retained one-hop closure note."
+    },
+    {
+      "archived_at": "2026-05-09T10:55:06.724752+00:00",
+      "audit_date": "2026-05-05T11:41:00.498095+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "poisson_self_gravity_loop_v3_note": "retained_bounded",
+          "self_gravity_backreaction_closure_note": "retained_no_go"
+        },
+        "deps": [
+          "poisson_self_gravity_loop_v3_note",
+          "self_gravity_backreaction_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-self_gravity_failure_dia-053",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained_bounded and retained_no_go authorities state the same three-part limit, and the runner source performs the lattice propagation, Poisson-like field update, convergence test, and Born audit rather than printing constants. The runner output supports exact epsilon=0 identity, nonzero-coupling non-convergence, small centroid/phase shifts, and end-to-end Born drift.",
+      "claim_scope": "Audited the bounded no-go diagnosis for the exact-lattice Poisson-like self-gravity/backreaction loop v3 under the cited reduction, convergence, centroid/phase, and Born controls.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-05T11:41:00.498095+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:poisson_self_gravity_loop_v3_note:retained_bounded->unaudited",
+      "load_bearing_step": "The lane fails because the nonzero-coupling backreaction signal remains small, the nonlinear loop does not converge cleanly, and end-to-end Born is not machine-clean.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check whether the audit policy should label this support-style diagnosis as no_go rather than bounded_theorem; the scientific chain itself closes for the bounded no-go scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The conclusion is a bounded negative result, not a promoted mechanism claim. Its load-bearing evidence is computed by the supplied runner from the exact lattice setup: epsilon=0 reduction is exact, all nonzero-coupling sweep rows fail strict convergence, and the full-loop Born audit is 4.911e-06 rather than machine-clean. Both cited authorities are retained-grade and directly support the no-go scope, with no open dependency required inside the restricted packet."
+    },
+    {
+      "archived_at": "2026-05-10T07:52:51.892053+00:00",
+      "audit_date": "2026-05-09T12:00:11.335085+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "poisson_self_gravity_loop_v3_note": "For the specified h=0.25, W=3, L=6 reduced exact-lattice Poisson-like loop and listed coupling/source sweep, the audit checks exact zero-coupling reduction, matched-null shifts, convergence, and Born behavior.",
+          "self_gravity_backreaction_closure_note": "Bounded no-go for the registered h=0.25, W=3, L=6 exact-lattice Poisson-like amplitude-sourced backreaction loop: the finite sweep preserves the epsilon=0 reduction but does not produce a converged, end-to-end Born-clean nonzero-coupling self-gravity mechanism."
+        },
+        "dep_claim_type": {
+          "poisson_self_gravity_loop_v3_note": "bounded_theorem",
+          "self_gravity_backreaction_closure_note": "no_go"
+        },
+        "dep_effective_status": {
+          "poisson_self_gravity_loop_v3_note": "retained_bounded",
+          "self_gravity_backreaction_closure_note": "retained_no_go"
+        },
+        "deps": [
+          "poisson_self_gravity_loop_v3_note",
+          "self_gravity_backreaction_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e0c9a-fadd-7e03-a34f-4f9b6b868d24",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained_bounded and retained_no_go authorities plus the runner output all support the stated boundary: epsilon=0 reduction is exact, while nonzero coupling has 0/3 convergence in each nonzero epsilon block and representative end-to-end Born drift of 4.911e-06. No additional physical bridge is needed for the bounded no-go scope.",
+      "claim_scope": "Audited the bounded no-go diagnosis for the specified exact-lattice Poisson-like self-gravity/backreaction loop and its retained runner outputs.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-09T12:00:11.335085+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:poisson_self_gravity_loop_v3_note:retained_bounded->unaudited",
+      "load_bearing_step": "The lane is a bounded no-go because the exact epsilon=0 identity holds but nonzero-coupling rows show only tiny perturbations, fail strict convergence, and lose machine-clean end-to-end Born behavior.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the imported lattice helper module if available, since the restricted packet includes the main runner but not scripts.minimal_source_driven_field_probe.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source constructs the specified lattice loop, computes the zero-coupling reduction, nonzero-coupling sweep, convergence flags, and Born diagnostics, and the stdout matches the note's no-go diagnosis. The claim is bounded to this architecture and does not promote the tiny perturbation into a mechanism, so the negative conclusion follows from retained inputs and completed computation."
+    },
+    {
+      "archived_at": "2026-05-19T11:19:03.095128+00:00",
+      "archived_for_note_hash": "fed55aed0d71338bdebd15b8b8ed8706a77f7bccb460c17eecd964f36a500772",
+      "audit_date": "2026-05-17T15:49:25.556332+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "poisson_self_gravity_loop_v3_note": "Restricted finite-harness no-go: at nonzero coupling the runner shows small matched-null centroid and detector-line phase-ramp shifts, but all nonzero-coupling sweep rows fail the stated convergence tolerance and the result is not promoted to a self-gravity mechanism; the same-loop epsilon=0 reduction is out of binding scope.",
+          "self_gravity_backreaction_closure_note": "Bounded no-go for the registered h=0.25, W=3, L=6 exact-lattice Poisson-like amplitude-sourced backreaction loop: the finite sweep preserves the epsilon=0 reduction but does not produce a converged, end-to-end Born-clean nonzero-coupling self-gravity mechanism."
+        },
+        "dep_claim_type": {
+          "poisson_self_gravity_loop_v3_note": "no_go",
+          "self_gravity_backreaction_closure_note": "no_go"
+        },
+        "dep_effective_status": {
+          "poisson_self_gravity_loop_v3_note": "retained_no_go",
+          "self_gravity_backreaction_closure_note": "retained_no_go"
+        },
+        "deps": [
+          "poisson_self_gravity_loop_v3_note",
+          "self_gravity_backreaction_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-154750-a5e2dcef-self_gravity_failure_dia-026",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The nonzero-coupling no-go portion closes from the supplied runner output and source code. The full note as written also imports exact epsilon=0 identity as a retained survivor, but the cited authority explicitly scopes that out and the runner short-circuits epsilon==0 rather than testing the same nonlinear machinery.",
+      "claim_scope": "Audited the bounded no-go diagnosis for the supplied Poisson self-gravity loop v3: nonzero-coupling rows show small centroid/phase-ramp perturbations, fail strict convergence, and have non-machine-clean end-to-end Born; exact same-loop epsilon=0 identity was not closed.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-17T15:49:25.556332+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The failure is a three-part limit: the backreaction signal is small, the nonlinear loop is not stable enough, and end-to-end Born is no longer machine-clean at the retained tolerance.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: revise docs/SELF_GRAVITY_FAILURE_DIAGNOSIS.md to remove the exact same-loop epsilon=0 survivor from the binding claim, or add a separate zero-epsilon theorem/runner without the short-circuit.",
+      "open_dependency_paths": [
+        "docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The runner genuinely computes the finite-lattice nonzero-coupling observables: the reported small perturbations, 0/3 convergence at nonzero epsilon, and end-to-end Born drift are supported. However, the source note still presents exact epsilon=0 identity reduction as retained, while the provided upstream note narrows that claim out of binding scope because the runner uses a coded epsilon==0 branch. The safe reduced claim is the bounded nonzero-coupling no-go, not the stronger diagnosis including same-loop exact-null retention."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.628244+00:00",
+      "audit_date": "2026-05-19T15:16:08.686336+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "poisson_self_gravity_loop_v3_note": "Restricted finite-harness no-go: at nonzero coupling the runner shows small matched-null centroid and detector-line phase-ramp shifts, but all nonzero-coupling sweep rows fail the stated convergence tolerance and the result is not promoted to a self-gravity mechanism; the same-loop epsilon=0 reduction is out of binding scope.",
+          "self_gravity_backreaction_closure_note": "Bounded no-go for the registered h=0.25, W=3, L=6 exact-lattice Poisson-like amplitude-sourced backreaction loop: the finite sweep preserves the epsilon=0 reduction but does not produce a converged, end-to-end Born-clean nonzero-coupling self-gravity mechanism."
+        },
+        "dep_claim_type": {
+          "poisson_self_gravity_loop_v3_note": "no_go",
+          "self_gravity_backreaction_closure_note": "no_go"
+        },
+        "dep_effective_status": {
+          "poisson_self_gravity_loop_v3_note": "retained_no_go",
+          "self_gravity_backreaction_closure_note": "retained_no_go"
+        },
+        "deps": [
+          "poisson_self_gravity_loop_v3_note",
+          "self_gravity_backreaction_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-self_gravity_failure_dia-064",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied runner and helper code instantiate the lattice propagation, Poisson-like field update, matched-null comparison, convergence check, and Born audit rather than merely printing constants. The nonzero-epsilon rows show small shifts, 0/3 convergence for tested nonzero epsilons, and non-machine-clean end-to-end Born on the retained audit row.",
+      "claim_scope": "Bounded no-go only for nonzero-epsilon Poisson-like self-gravity/backreaction loops on the supplied exact-lattice runner architecture; the epsilon=0 identity case is outside the no-go scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-19T15:16:08.686336+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For nonzero-epsilon loops, the signal is too small, the nonlinear iteration is too unstable, and end-to-end Born is not clean enough to support a stable self-gravity mechanism.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the no-go remains strictly limited to nonzero-epsilon loops and does not reuse the epsilon=0 short-circuit as binding same-loop evidence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Both cited authorities are retained-grade no-go authorities, and the source note narrows the no-go to nonzero-epsilon loops, avoiding the earlier overbroad epsilon=0 binding. The runner source contains an epsilon=0 short-circuit, but the audited no-go does not depend on treating that branch as same-machinery evidence. The load-bearing nonzero-epsilon failure is computed by the runner from the included lattice and propagation code: nonzero rows show small perturbations, strict nonconvergence, and degraded end-to-end Born."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/poisson_self_gravity_loop_v3.py",
+  "title": "Self-Gravity Failure Diagnosis",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,190 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gate_b_strong_field_observable_split_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gate_b_complex_action_falsifier_note",
+    "gate_b_grown_propagating_field_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f3cd0e6f4ae9a74b7fa35c15d910d045788e1216926b12f6046a67b55e3135e7",
+  "note_path": "docs/GATE_B_STRONG_FIELD_OBSERVABLE_SPLIT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368420+00:00",
+      "archived_for_note_hash": "87e1e8af2b5ef0d71204d82e9a345315b2e698613d1ae285cdef1d46c580b243",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.235590+00:00",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The synthesis is faithful to the two cited notes, but one cited input, the complex-action falsifier, is already audited conditional because its retained-row/Born guardrail depends on bounded unaudited Gate B context. A cross-note split cannot be cleaner than that input.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:gate_b_complex_action_falsifier_note,gate_b_grown_propagating_field_note",
+      "load_bearing_step": "The absorptive proxy is a real strong-field amplitude effect, while the minimal causal-memory probe is a clean no-go for propagating causality in that exact form, so the two probes are not testing the same mechanism.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GATE_B_COMPLEX_ACTION_FALSIFIER_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the split note synthesizes two upstream probes, but the absorptive/complex-action input is audited conditional while only the causal-memory no-go input is audited clean. Why this blocks: the claim that the absorptive proxy is a separate useful strong-field observable inherits the unresolved retained-row and Born-guardrail boundary from the complex-action falsifier, so the synthesis cannot be ratified as clean retained science. Repair target: audit-retain or re-scope the complex-action falsifier and its Gate B grown-row guardrail, then rerun this synthesis against two clean or explicitly bounded inputs. Claim boundary until fixed: safely claim only that the two cited finite probes test different implemented mechanisms and that the minimal causal-memory ansatz is a clean no-go; the absorptive proxy remains a bounded conditional amplitude-effect probe, not evidence for a causal field."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.545179+00:00",
+      "audit_date": "2026-05-28T07:51:13.379058+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_complex_action_falsifier_note": "Bounded finite numerical certificate for the runner-defined attenuation probe on the retained Gate B grown row only: h=0.5, W=8, NL=25, seeds 0..3, drift=0.2, restore=0.7, source_z=3.0, gamma sweep 0, 0.05, 0.10, 0.20, 0.50, and the unnormalized final-layer detector weight ratio escape(gamma)=P_det(gamma)/P_det(0). It supports only the local detector-attenuation effect and centroid direction on this named row, not a retained complex-action branch, package-transfer closure, or physical probability claim.",
+          "gate_b_grown_propagating_field_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "gate_b_complex_action_falsifier_note": "bounded_theorem",
+          "gate_b_grown_propagating_field_note": "no_go"
+        },
+        "dep_effective_status": {
+          "gate_b_complex_action_falsifier_note": "retained_bounded",
+          "gate_b_grown_propagating_field_note": "retained_no_go"
+        },
+        "deps": [
+          "gate_b_complex_action_falsifier_note",
+          "gate_b_grown_propagating_field_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-gate-b-strong-field-split-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Both one-hop dependencies are retained-grade and their current cached outputs match the source note's frozen numbers. The restricted packet supports only the named finite synthesis and not any broader field-theory or generated-family claim.",
+      "claim_scope": "Bounded synthesis over the two named Gate B grown-row probes only: the absorptive gamma term directly attenuates detector amplitude and changes escape on the retained row, while the minimal causal-memory gamma changes only the layerwise field history and produces no coherent phase-ramp or escape observable in that exact architecture. This does not retain a complex-action branch, a causal-field theory, or generated-geometry transfer.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T07:51:13.379058+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:gate_b_complex_action_falsifier_note:retained_bounded->unaudited",
+      "load_bearing_step": "The note's mechanism split follows because the complex-action runner propagates with exp(i*K*act - gamma*act), so positive gamma directly attenuates amplitudes, while the causal-memory runner keeps propagation exp(i*K*act) and varies only the layerwise source field history.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only if either named Gate B runner or dependency scope changes; no broader complex-action or causal-field claim is retained here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "causal_memory_escape_to_three_decimals": 1.0,
+        "causal_memory_output_match": true,
+        "causal_memory_phase_slope_and_span_flat": true,
+        "causal_memory_runner_sha256": "89e45b6931dbb093ac5ba6004a2c33f7e27733693c0da47305e229166b4a646c",
+        "complex_action_escape_mean": {
+          "0.05": 0.215,
+          "0.10": 0.047,
+          "0.20": 0.002,
+          "0.50": 0.0
+        },
+        "complex_action_output_match": true,
+        "complex_action_runner_sha256": "3c49055ec922510b7a90609e698c4cac910f6f94946c10ed617da746b54abbef",
+        "fresh_context_second_read": "agreed_clean_bounded_synthesis_class_B"
+      },
+      "verdict_rationale": "The two probes are not testing the same perturbation: the absorptive proxy inserts a real attenuation factor in every propagation weight, while the causal-memory proxy changes the field source history without an absorptive term. Current cached outputs reproduce the note's frozen comparison: absorptive escape falls from 0.215 to approximately 0.000 across the gamma sweep, while causal-memory escape remains 1.000 to three decimals and the phase-ramp observable stays flat. Because the support is finite runner-output synthesis from two retained one-hop rows, the clean verdict is bounded to that mechanism split only."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Gate B Strong-Field Observable Split Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

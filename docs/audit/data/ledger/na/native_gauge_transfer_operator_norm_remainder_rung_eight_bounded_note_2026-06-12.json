@@ -1,0 +1,122 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+    "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4a90d754e86f96cca4a71a420df633380891467499581e3ab0d1866972d62989",
+  "note_path": "docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.976274+00:00",
+      "audit_date": "2026-06-16T03:28:45.470052+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "Audited only the finite beta=6, NMAX=7, MODE_MAX=200 source-sector Perron packet with supplied rho choices rho=1 and rho=delta, three enumerated one-parameter rho-family sweeps, and the internally computed all-forward L_s=2 Schur diagnostic; no physical 3D residual environment, thermodynamic limit, or canonical P(6)=0.5934 closure is included.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "1aa6155472434410ee8bf878677abb5d44bc7f84032301a0908566bba576c3cd",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-032629-fcbac2d1d8-native_gauge_transfer_operat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed polynomial expansion, Gaussian tail estimate, contraction argument, and ratio perturbation inequality close from the provided definitions and retained-grade one-hop inputs. The exact Wilson determinant remainder, true Wilson tail, explicit K, beta_0, and half-line gap theorem are named as outside the claimed scope.",
+      "claim_scope": "Audited the bounded partial Route B result: the saddle-diagonal geometric expansion, saddle-tail multiplier bound, scaled half-slice contraction, and eigen-ratio perturbation algebra, with the exact Wilson-to-saddle and full large-beta operator remainder explicitly left open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T03:28:45.470052+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_tensor_transfer_perron_solve_note:retained_bounded->unaudited",
+      "load_bearing_step": "For 0 <= x,y <= a and beta >= 1, the saddle diagonal satisfies |beta^(-3/2) r_sad_(p,q)(beta) - H(x,y) exp[-Q(x,y)]| <= K_geom(a) beta^(-1/2), with K_geom(a)=6a^4+3a^2+3a+1, and the scaled half-slice factors are contractions.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if a later row tries to promote this bounded partial result into the true Wilson-to-saddle estimate or a full explicit large-beta operator remainder.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 17,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "Independent formula checks confirm the beta^(-1/2) saddle-profile constant, the A2 tail bound, the contraction of exp((beta/2)(J-I)), and the perturbation ratio inequality. The runner source performs witness computations and source-hygiene checks without importing a contested fitted K or promoting the non-authority L_sample. The source note is carefully bounded and does not claim the missing Wilson-to-saddle estimate or the full operator-norm remainder."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py",
+  "title": "Native Gauge Transfer Operator-Norm Remainder Rung Eight Bounded Note",
+  "transitive_descendants": 15,
+  "verdict_rationale": null
+}

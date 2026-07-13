@@ -1,0 +1,442 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.068,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ce0ab768f13eddc3ba9ec5a2048ecbcb50de64b263f4543c7b9a67337b15fb0f",
+  "note_path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-07T08:10:02.495039+00:00",
+      "archived_for_note_hash": "dd7b78a9c0b70f696c0722b7d46410abb16abb17f1426e28d19788b079e0e0c6",
+      "audit_date": "2026-05-06T02:56:07.659423+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 9.833,
+        "runner_hash": "f5115ce1145d6366453a50167d854516411f958d95072a2a02febf949baca7b7",
+        "transitive_descendants": 455
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260506-025541-5861cacb-staggered_wilson_det_pos-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The block determinant algebra closes under the stated symmetric-canonical assumptions. The restricted packet does not close the imported convention stack D1-D4 from a retained-grade authority, and the only provided cited authority is a superseded meta note.",
+      "claim_scope": "Algebraic determinant positivity for M = M_KS + M_W + m I on the explicitly restricted symmetric-canonical surface M_W = r d I, balanced sublattices, m > 0, and anti-Hermitian staggered off-diagonal K.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-06T02:56:07.659423+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "With A = B = alpha I, gamma5 M is unitarily reduced by the SVD of K to 2 x 2 blocks whose determinants give det(M) = product_i (alpha^2 + sigma_i^2) > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide the current retained axiom/convention authority and the parent reflection-positivity note, or narrow the claim to a self-contained conditional linear-algebra theorem with D1-D4 stated as hypotheses rather than imported authority.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The theorem's core determinant factorisation is a genuine algebraic identity, and the runner source actually constructs finite-volume staggered operators and checks that factorisation numerically rather than merely printing constants. However, the claim imports the parent-note convention stack, especially eps M_W eps = M_W and M_W = r d I, without a retained-grade upstream authority in the packet. The only supplied cited authority, docs/MINIMAL_AXIOMS_2026-04-11.md, is explicitly superseded and meta-status, so clean status cannot propagate."
+    },
+    {
+      "archived_at": "2026-05-18T09:35:15.447622+00:00",
+      "archived_for_note_hash": "90548a478455cccd2da8aef89672816dc3b1af5bd6033c0d6a0b4d7672baee7f",
+      "audit_date": "2026-05-17T14:43:10.100137+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 11.192,
+        "runner_hash": "f5115ce1145d6366453a50167d854516411f958d95072a2a02febf949baca7b7",
+        "transitive_descendants": 826
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-144247-bc2044d8-staggered_wilson_det_pos-003",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The block-SVD determinant argument closes on its stated symmetric-canonical assumptions. The restricted packet does not close the imported parent/A_min convention stack, and the only cited authority provided is superseded meta-status rather than retained-grade support.",
+      "claim_scope": "Algebraic determinant-positivity theorem for M = M_KS + (r d + m) I on balanced staggered sublattices with M_KS anti-Hermitian and epsilon-odd, m > 0, and the symmetric-canonical restriction M_W = r d I.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-17T14:43:10.100137+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "With A = B = alpha I, SVD of the off-diagonal staggered-hop block K reduces gamma_5 M to independent 2 x 2 blocks whose determinant gives det(M) = product_i(alpha^2 + sigma_i^2) > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide the current retained axiom/convention source and the parent reflection-positivity note, or narrow the audited claim to the purely algebraic conditional theorem with D1-D4 explicitly treated as assumptions.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The theorem's core algebra is valid on its own terms: once M_W + m I is alpha I and M_KS has the stated chiral anti-Hermitian block form, the determinant product and positivity follow. The runner genuinely constructs finite staggered operators and checks this algebraic factorisation; it does not establish the upstream physical convention that the Wilson sector is legitimately reduced to M_W = r d I. The cited MINIMAL_AXIOMS_2026-04-11.md authority is explicitly superseded/meta, and the parent note that supplies D1-D4 is not included as retained-grade input in the packet."
+    },
+    {
+      "archived_at": "2026-05-23T01:44:14.018019+00:00",
+      "archived_for_note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
+      "audit_date": "2026-05-22T23:10:56.878987+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 11.294,
+        "runner_hash": "f5115ce1145d6366453a50167d854516411f958d95072a2a02febf949baca7b7",
+        "transitive_descendants": 887
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T230924Z-85977efa-staggered_wilson_det_pos-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The block/SVD determinant argument closes algebraically once D1-D4 are assumed. The restricted packet does not provide retained-grade closure for those imported canonical-surface premises, and the supplied Minimal Axioms authority is explicitly superseded/meta rather than retained-grade.",
+      "claim_scope": "Algebraic determinant positivity for the symmetric-canonical staggered operator M=M_KS+(r d+m)I on a balanced bipartite lattice, with M_KS=[[0,K],[-K^dagger,0]], canonical r=1, m>0, and arbitrary SU(3) link background.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T23:10:56.878987+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "After SVD of K, gamma_5 M decomposes into 2x2 blocks with determinants -(alpha^2+sigma_i^2), and det(gamma_5)=(-1)^(n/2), giving det(M)=prod_i(alpha^2+sigma_i^2)>0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: replace the superseded A_min citation with the retained current axiom source and provide retained/audited closure for the parent canonical-surface premises D1-D4, especially the M_W=r*d*I restriction.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The proof is a genuine class-A linear-algebra factorisation, and the runner source actually constructs finite staggered SU(3) operators and checks the block identity, positivity, and determinant product rather than merely printing constants. However, the theorem imports the canonical-surface assumptions D1-D4 from a parent convention chain, while the only provided cited authority is superseded/meta and not retained-grade. The runner also assumes the contested narrowing M_W=r*d*I, so it supports the algebraic bridge on that surface but does not close the upstream identification of that surface as retained."
+    },
+    {
+      "archived_at": "2026-05-24T08:14:16.093728+00:00",
+      "archived_for_note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
+      "audit_date": "2026-05-23T19:12:56.225994+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 10.753,
+        "runner_hash": "f5115ce1145d6366453a50167d854516411f958d95072a2a02febf949baca7b7",
+        "transitive_descendants": 862
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T191234Z-a45bb99d-staggered_wilson_det_pos-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The block/SVD algebra closes once D1-D4 are assumed. The restricted packet does not close the imported canonical-surface premises from retained-grade authorities, and the only provided cited authority is a superseded meta axiom note rather than a retained-grade source for those premises.",
+      "claim_scope": "Algebraic determinant-positivity theorem for M = M_KS + M_W + m I on the balanced staggered lattice under the explicit symmetric-canonical restriction M_W = r d I, mass m I, and the stated M_KS block/anti-Hermitian structure.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T19:12:56.225994+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "After the epsilon-block decomposition with A = B = alpha I, SVD of K gives det(M) = product_i (alpha^2 + sigma_i^2), hence every factor is strictly positive for m > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained-grade current axiom/canonical-surface authorities, or narrow the audited claim to a purely conditional algebraic theorem whose D1-D4 premises are explicitly assumed rather than imported.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The mathematical bridge itself is a genuine class-A linear-algebra identity: the runner constructs the finite staggered operator, checks the epsilon block structure, and verifies the determinant factorization without hard-coded determinant values. However, the theorem depends on admitted inputs D1-D4, especially the canonical convention M_W = r d I / epsilon-commuting Wilson surface and mass m I, which are not closed by the provided upstream packet. The cited MINIMAL_AXIOMS_2026-04-11.md authority is explicitly superseded and meta, so it triggers the not-retained-grade downgrade under the rubric."
+    },
+    {
+      "archived_at": "2026-05-25T09:45:03.168876+00:00",
+      "archived_for_note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
+      "audit_date": "2026-05-24T20:44:39.399366+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 10.785,
+        "runner_hash": "f5115ce1145d6366453a50167d854516411f958d95072a2a02febf949baca7b7",
+        "transitive_descendants": 881
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T204417Z-a0806ce6-staggered_wilson_det_pos-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic block determinant step closes once D1-D4 are assumed. The restricted packet does not close the imported parent conventions/A_min carrier, and the only provided cited authority is explicitly superseded meta rather than retained-grade.",
+      "claim_scope": "Determinant positivity for M = M_KS + M_W + mI on the symmetric-canonical finite staggered surface with balanced sublattices, anti-Hermitian off-diagonal M_KS, mass mI with m>0, and restricted Wilson term M_W = r d I.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-24T20:44:39.399366+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "After eps-blocking with M_KS = [[0,K],[-K^\u2020,0]] and M_W + mI = \u03b1I on both sublattices, SVD reduces \u03b35 M to 2x2 blocks whose determinants give det(M)=\u220f(\u03b1\u00b2+\u03c3_i\u00b2)>0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide the current retained axiom authority and the parent convention source, or restate D1-D4 purely as explicit hypotheses with no retained-status import.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The presented determinant factorisation is a genuine algebraic closure over the stated symmetric-canonical hypotheses, and the runner source actually constructs finite SU(3) staggered operators and verifies the block factorisation rather than printing constants. However, the proof explicitly depends on admitted inputs D1-D4, including parent-note conventions and the symmetric Wilson restriction, while the restricted upstream authority provided here is `docs/MINIMAL_AXIOMS_2026-04-11.md`, marked superseded/meta. Under the rubric, that non-retained upstream and the imported unclosed conventions force a conditional verdict even though the local algebra is sound on its assumed surface."
+    },
+    {
+      "archived_at": "2026-05-28T20:45:16.826007+00:00",
+      "archived_for_note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
+      "audit_date": "2026-05-28T01:25:08.601814+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 10.794,
+        "runner_hash": "f5115ce1145d6366453a50167d854516411f958d95072a2a02febf949baca7b7",
+        "transitive_descendants": 887
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The determinant algebra and runner checks close on the supplied symmetric-canonical matrix surface, but the row's only declared dependency is the superseded minimal_axioms_2026-04-11 meta note and the source still imports parent canonical-surface assertions not retained in the restricted packet.",
+      "claim_scope": "Bounded determinant algebra on a supplied symmetric-canonical matrix surface: for balanced sublattices and M=[[alpha I,K],[-K^dag,alpha I]] with real nonzero alpha=m+r d, the determinant factorizes as prod_i(alpha^2+sigma_i^2)>0. Certification that this surface is the current framework Wilson/staggered convention remains conditional.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T01:25:08.601814+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "After epsilon-block ordering and SVD K=U Sigma V^dag, gamma5 M is unitarily equivalent to independent 2x2 blocks [[alpha,sigma_i],[sigma_i,-alpha]], so det(M)=det(epsilon)^-1 det(epsilon M)=prod_i(alpha^2+sigma_i^2)>0.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: replace the direct dependency on superseded minimal_axioms_2026-04-11 with current retained/axiom-premise authority for the matrix surface, or reframe the row as explicitly supplied-surface algebra with no framework-convention authority claim.",
+      "open_dependency_paths": [
+        "minimal_axioms_2026-04-11"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "Issue: the algebraic bridge is valid on the supplied surface M_W=r d I, but the source cites the superseded minimal_axioms_2026-04-11 stack and parent canonical-surface assertions for why that surface is the framework Wilson/staggered convention. Why this blocks: the audit packet can certify the determinant factorization as bounded algebra, but not the authority that the current framework is on that symmetric-canonical Wilson surface. Independent math check: SVD of K reduces epsilon M to 2x2 blocks with determinant -(alpha^2+sigma_i^2); det(epsilon)=(-1)^(n/2), so the signs cancel and det(M)=prod_i(alpha^2+sigma_i^2), strictly positive for alpha=m+r d != 0. Repair target: replace the superseded minimal-axioms dependency with the current axiom premise or a retained surface-selection theorem, and wire/audit any parent convention needed for M_W=r d I. Claim boundary until fixed: the determinant positivity formula is sound as a bounded algebraic theorem on a supplied symmetric-canonical matrix surface, not yet as a current-framework Wilson-sector authority."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.381838+00:00",
+      "audit_date": "2026-05-29T02:53:43.349930+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.815,
+        "runner_hash": "2fd8e75e893f059137fff521efb433d5d16c259545975f99e73114ff34037f95",
+        "transitive_descendants": 900
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-staggered-wilson-det-second-20260529",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebra closes independently of the runner: with W=diag(U,V), W^dag M W has off-diagonal Sigma and -Sigma, and a permutation of basis exposes the 2x2 block direct sum. Each factor alpha^2+sigma_i^2 is strictly positive because alpha>0 and sigma_i>=0.",
+      "claim_scope": "Finite-dimensional determinant positivity for the supplied balanced eps-block matrix surface with square K and supplied Wilson/mass diagonal alpha I, alpha>0; no framework derivation of that Wilson surface is audited or claimed.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T02:53:43.349930+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-29T02:50:20.137412+00:00",
+          "auditor": "codex-gpt-5.5-fresh-staggered-wilson-det-first-20260529",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For a supplied finite balanced eps-decomposed matrix M = [[alpha I,K],[-K^dag,alpha I]] with square K and alpha > 0, det(M) = product_i(alpha^2 + sigma_i^2) > 0.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-29T02:53:43.349629+00:00",
+          "auditor": "codex-gpt-5.5-fresh-staggered-wilson-det-second-20260529",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional determinant positivity for the supplied balanced eps-block matrix surface with square K and supplied Wilson/mass diagonal alpha I, alpha>0; no framework derivation of that Wilson surface is audited or claimed.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Using K = U Sigma V^dag, unitary block conjugation reduces M = [[alpha I,K],[-K^dag,alpha I]] to direct two-by-two blocks [[alpha,sigma_i],[-sigma_i,alpha]], so det(M)=prod_i(alpha^2+sigma_i^2)>0 for alpha>0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Preserve the supplied-surface scope in downstream use; this clean verdict must not be cited as a framework derivation of the Wilson/mass diagonal surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The determinant formula is a standard finite-dimensional algebraic identity once the balanced eps decomposition and supplied alpha I diagonal surface are assumed. The note explicitly does not claim that M_W = r d I is framework-forced, does not cover the standard Wilson nearest-neighbour Laplacian, and does not assert parent-row reflection positivity or Wilson-sector sign-problem closure. On that scoped supplied surface, no open dependency or hidden bridge theorem is imported. The runner source performs actual finite-matrix construction and factorisation checks, but the clean verdict rests on the independent SVD/block determinant argument."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
+  "title": "Staggered + Wilson Supplied-Surface Determinant Positivity",
+  "transitive_descendants": 758,
+  "verdict_rationale": null
+}

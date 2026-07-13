@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "canonical_two_cell_context_c3_ew_instance_bounded_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09",
+    "c3_generation_readout_context_canonical_definition_note_2026-07-02",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8840e4c3cf1327fed34372d6100486e67f3b44e7bc0446517972e97e7dd7aee7",
+  "note_path": "docs/CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:26.415436+00:00",
+      "audit_date": "2026-07-09T09:02:08.116872+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "c3_generation_readout_context_canonical_definition_note_2026-07-02": null,
+          "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09": "The audited claim is only that the current approved Lattice + Quantum + Record baseline plus the registered scale-reference and kinetic-isotropy primitives do not supply a weighting/readout-bridge rule fixing kappa_EW; future derivation or owner-approved admission remains open.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "c3_generation_readout_context_canonical_definition_note_2026-07-02": "meta",
+          "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09": "no_go",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "c3_generation_readout_context_canonical_definition_note_2026-07-02": "meta",
+          "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09": "retained_no_go",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "c3_generation_readout_context_canonical_definition_note_2026-07-02",
+          "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "25adbd67ed7c9428e5baa429ea5e6180b747cc80500661feea71465c58657b9e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "Noether",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet closes for the bounded algebraic instance: the note and runner verify the unit/traceless Hilbert-Schmidt frame, the 8/9 dimension witness, automorphism preservation, and the kappa boundary while explicitly firewalling EW readout adoption.",
+      "claim_scope": "Bounded finite-algebra verification that the supplied M3 unit/traceless two-cell frame reproduces the landed C3 frame, gives the 8/9 instance witness, and leaves kappa_EW and EW readout adoption unclaimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T09:02:08.116872+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "If the EW readout context is supplied as the M3 unit/traceless two-cell frame, it matches the parent's 8/9 count and channel naming without adopting the EW readout premise or determining kappa_EW.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck only if a later version broadens the claim from a supplied-frame instance witness to adopting or deriving the EW readout context.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "Closure holds because the claim is bounded to exact instance witnesses and firewall language, not to physical EW adoption. The runner computes the C3/M3 Hilbert-Schmidt facts, dimension/count identity, automorphism preservation checks, and kappa boundary without setting kappa_EW or importing a tuned comparator. The residual risk is downstream misuse: citing this row as an EW readout theorem would exceed the audited scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_ctx_instantiation_canonical_two_cell_2026_07_02.py",
+  "title": "Canonical Two-Cell Contexts: C3 Instance And EW Instance Witnesses (Bounded Note)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,110 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2cf28ce51f7779649ca1bfc5a030d58348fed8f42c0dd3ee8ab2cc241f71c175",
+  "note_path": "docs/HARMONIC_LADDER_ORIGIN_OF_CAPTURE_DEFICIT_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.361996+00:00",
+      "audit_date": "2026-06-19T23:09:09.835078+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12": "Exact finite L=3 realized-state check for K=3 seed 391, K=4 seed 99, K=5 seed 99, and K=6 seed 466 at tau=0.35, T=256, Hankel window 64: the order-4 capture deficit equals the Hankel-Frobenius SVD tail fraction and the ascending tail order is K6,K5,K3,K4."
+        },
+        "dep_claim_type": {
+          "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "9171fe0ca4c85e4d72b59a67bf2586c64f3ce7aadfea2eacbd3c4e2245eb2a11",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop capture-deficit authority is retained_bounded and supplies the landed Hankel capture/tail surface. The primary runner independently instantiates the finite L=3 Hamiltonian, supplied realized states, determinant-polar readout, FFT/Hankel calculations, and verifies the stated ladder, leakage, k=2, and ordering claims within the declared finite scope.",
+      "claim_scope": "Exact finite L=3 realized states K=3 seed 391, K=4 seed 99, K=5 seed 99, and K=6 seed 466 at tau=0.35, T=256, Hankel window 64.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T23:09:09.835078+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12:retained_bounded->unaudited",
+      "load_bearing_step": "In the physical base-angle coordinate, the determinant-phase readout has an integer harmonic ladder at gaps 3k, with nonzero k=2 weight in every realized state, while the landed deficit remains the Hankel-SVD tail rather than a simple Fourier tail.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Primitive registry files were not present in the restricted workspace; re-check only that the realized-state primitive remains registered as stated in the prompt footer.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 5,
+        "C": 12,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Within the bounded finite-state scope, the claim does not require a generic-state, asymptotic, or empirical bridge. The runner is not merely printing constants: it constructs the lattice Hamiltonian, realized projectors from the supplied seeds, determinant-polar phase increments, raw and base-angle spectra, and Hankel singular-value tails before checking the source-note tables and qualitative distinctions. The note also explicitly avoids the overclaim that Fourier coefficient tail mass is the landed capture deficit, preserving the upstream Hankel-SVD definition."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_harmonic_ladder_origin_2026_06_12.py",
+  "title": "Harmonic Ladder Origin of the Capture Deficit: Bounded L=3 Realized-State Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,244 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_readout_channel_map_note_2026-05-31",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+    "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4a99f2afeff2a6b88b76b1cc86ed943bc43c8ed9c4fcc29194aca50af31a74b0",
+  "note_path": "docs/KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.501991+00:00",
+      "audit_date": "2026-06-05T23:48:58.826311+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": "Finite-dimensional Z_N-equivariant spectral-asymmetry well-definedness, no-zero-crossing invariance, admissible finite local weight-sum finiteness, and exact N=3 evaluations L_3(1,2)=2/9 and L_3(1,1)=L_3(2,2)=1/9.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting."
+        },
+        "dep_claim_type": {
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "df417628908668970323ef50fdb386a5d1c49fca0979c60f6b97372c8b3a4d62",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-234615-21fdab6cb4-koide_readout_channel_map_no",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed identities follow by trace orthogonality of the C3 circulant basis, the root-of-unity cosine sums, and the cited retained-grade L_3(1,2)=2/9 calculation. The note explicitly leaves the physical interaction or record mechanism outside scope.",
+      "claim_scope": "Finite C3 circulant bookkeeping identities for trace decomposition, Koide-form Q values, the cited L_3(1,2) spectral-asymmetry weight, and phase independence, excluding physical charged-lepton readout closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T23:48:58.826311+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "For H=aI+bC+conj(b)C^2, the trace projections recover a and b, Q=(1+2|b|^2/a^2)/3 gives Q=1/3 at b=0 and Q=2/3 at r=1/2, L_3(1,2)=2/9, and Q is independent of the phase of b.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check future downstream uses for any promotion from bookkeeping labels to a derived charged-lepton interaction/readout mechanism.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Independent algebra checks reproduce a=Tr(H)/3, b=Tr(C^{-1}H)/3, Q=(3a^2+6|b|^2)/(3a)^2=(1+2r)/3, the r=0 and r=1/2 values, phase independence, and L_3(1,2)=2/9. The runner performs finite algebraic checks rather than merely printing constants, although it is not a first-principles framework computation. All cited authorities are retained-grade for the bounded algebra used here, and the source does not claim charged-lepton channel closure."
+    },
+    {
+      "archived_at": "2026-07-10T17:01:33.942471+00:00",
+      "audit_date": "2026-07-10T04:17:20.157754+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": "Finite-dimensional eta_g well-definedness and path constancy without zero crossing; admissible finite local cyclotomic weight sum; exact N=3 values L_3(1,2)=2/9 and L_3(1,1)=L_3(2,2)=1/9.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting."
+        },
+        "dep_claim_type": {
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "df417628908668970323ef50fdb386a5d1c49fca0979c60f6b97372c8b3a4d62",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00075-koide_readout_channel_map_no",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The separate algebraic identities close, but no map derives L_3(1,2) from H, its eigenvalue signs, or its spectral flow. The runner evaluates L_N from an independently specified weight tuple and then merely conjoins that result with the H-based checks.",
+      "claim_scope": "The finite circulant trace and Koide-ratio identities, the cyclotomic evaluation L_3(1,2)=2/9, phase independence of Q, and their asserted bookkeeping identification as readouts of one operator.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:17:20.157754+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+      "load_bearing_step": "The spectral-asymmetry weight and the other listed quantities are finite readouts or projections of the same circulant operator H.",
+      "load_bearing_step_class": "F",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained theorem constructing the spectral-asymmetry readout from H and revise the runner so L_3(1,2) is obtained through that construction rather than evaluated independently.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the runner labels an independently computed cyclotomic weight sum as a spectral-asymmetry projection of H without constructing that projection. Why this blocks: the final F5 check only conjoins earlier booleans and does not establish the claimed common-operator readout map. Repair target: derive an explicit finite map from H, with specified symmetry operator, spectral object, and weights, to L_3(1,2), and compute that map in the runner. Claim boundary until fixed: the trace, Q, phase-independence, and cyclotomic identities remain valid as separate algebraic statements."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.097992+00:00",
+      "audit_date": "2026-07-10T17:41:21.505629+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": "Finite-dimensional eta_g well-definedness and path constancy without zero crossing; admissible finite local cyclotomic weight sum; exact N=3 values L_3(1,2)=2/9 and L_3(1,1)=L_3(2,2)=1/9.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The exact C_3-character power identity, the Q values produced by three stipulated isotype-weight prescriptions, and the counting-versus-splitting localization; no physical selection of the equal-block prescription."
+        },
+        "dep_claim_type": {
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "df417628908668970323ef50fdb386a5d1c49fca0979c60f6b97372c8b3a4d62",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00038-koide_readout_channel_map_no",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The elementary circulant and cyclotomic identities close individually. The packet supplies no construction deriving L_3(1,2), or the asserted r=1 asymmetry channel, as a projection of H; the runner computes L_3 solely from the separately specified tuple (1,2;3).",
+      "claim_scope": "Finite C3 coefficient extraction, Q at the chosen values r=0 and r=1/2, phase invariance of Q, and the proposed bookkeeping association of L_3(1,2)=2/9 with the circulant family.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T17:41:21.505629+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "The note labels the singlet scale, doublet magnitude, spectral-asymmetry weight, and phase as finite readouts of the same circulant operator.",
+      "load_bearing_step_class": "F",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a construction and runner deriving the (1,2) spectral-asymmetry functional from H and explaining the r=1 association; if instead narrowing the claim to mere juxtaposition, also add a dated downstream-hygiene line to this note's own boundary.",
+      "open_dependency_paths": [
+        "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner genuinely computes the seven reported algebraic checks. Its final same-operator assertion merely conjoins results obtained from different parameter choices, while the spectral-asymmetry calculation never consumes H, its eigenvalues, or a derived operator/readout map. Consequently the channel map is a bookkeeping labeling of independently established quantities, not a theorem connecting all of them as readouts of one fixed operator."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_readout_channel_map_2026_05_31.py",
+  "title": "Koide Circulant Readout Bookkeeping Map",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

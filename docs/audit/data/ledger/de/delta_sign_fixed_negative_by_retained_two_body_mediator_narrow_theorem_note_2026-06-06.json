@@ -1,0 +1,308 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem / exact-support bridge (the **sign** of",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+    "staggered_self_consistent_two_body_note_2026-04-11",
+    "wilson_two_body_open_refined_note_2026-04-11",
+    "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7ac615a81a28f2c4d3d313f7918526dd3170c4b1f4f73640f24cf4f372dabcf7",
+  "note_path": "docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-07T15:15:48.133548+00:00",
+      "archived_for_note_hash": "dce3d74202ba0e5c794eaa921cf08af0af3a96c27d4a390557f1db59f79edd8b",
+      "audit_date": "2026-06-07T00:11:27.328043+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "For the stipulated 2-sector Luders/records sharpening update, r=1/2 is a repelling fixed point/separatrix rather than an attractor, while the 2-sector entropy maximum at r=1/2 is a separate variational statement.",
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "wilson_two_body_open_refined_note_2026-04-11": "Registered open-boundary Wilson two-body refined sweep for sides 11,13,15,17,19 at fixed G=5 and mu^2=0.22, using the declared clean-attractive subset fit: 25/25 ATTRACT+CLEAN, global exponent -3.669 with R^2=0.9896, per-side exponents -3.139,-3.313,-3.500,-3.671,-3.837; excludes universal law claims, unscreened/Newtonian crossover claims, and blind-law estimation over rejected rows."
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "wilson_two_body_open_refined_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "wilson_two_body_open_refined_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "wilson_two_body_open_refined_note_2026-04-11"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "0c2274664e0a8c29f104a1e901a3ac7d06096e7d4628b034e722e3cfbadd281d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-000855-26354a8e7b-delta_sign_fixed_negative_by",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The mediator-sign portion closes on the retained_bounded finite surface, but the final K_C3 sign does not follow from sign(delta) alone in the runner\u2019s own second-order C^8 model. An independent two-path elimination gives K_offdiag = delta/(1 + delta), so sign(K_C3)=sign(delta) requires an additional normalization/gap condition such as delta > -1, which the packet does not supply.",
+      "claim_scope": "The retained screened-Poisson two-body surface supports attractive partner force and negative two-excitation mediator energy on the audited finite rows; the audited packet does not close the unconditional propagation from that negative mediator energy to negative K_C3.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-07T00:11:27.328043+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "\u201cSince delta = E_2 - 2*E_1 + E_0 is exactly this two-excitation mutual energy, delta = E_mut < 0; propagating into the second-order effective operator on C^8 gives K_C3 < 0.\u201d",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained bridge fixing the generation-pair-to-psi identification and the delta normalization/gap regime so that the second-order K_C3 sign is proven on the same branch as the negative mediator energy.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The cited two-body authority is retained_bounded and the runner genuinely recomputes the attractive force surface and negative E_mut rows rather than merely printing constants. However, the load-bearing sign propagation is only checked at the chosen sample delta = -0.3 and is not an unconditional algebraic identity of the displayed second-order model. The packet also flags but does not close the bridge identifying the generation pair with the same psi-quanta sourcing the retained mediator, and sign-definiteness of the inverse supports E_mut < 0 but does not by itself prove the stated monotone-distance law beyond the finite checked rows."
+    },
+    {
+      "archived_at": "2026-06-11T21:38:54.110538+00:00",
+      "audit_date": "2026-06-07T17:48:37.318584+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "For the stipulated 2-sector Luders/records sharpening update, r=1/2 is a repelling fixed point/separatrix rather than an attractor, while the 2-sector entropy maximum at r=1/2 is a separate variational statement.",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07": "Finite even periodic torus normalization and Fourier-kernel bridge for V_L = -G(Delta + mu^2 I)^(-1), including equal negative hw=1 corner pair deltas with eps(k_i-k_j)=8.",
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "wilson_two_body_open_refined_note_2026-04-11": "Registered open-boundary Wilson two-body refined sweep for sides 11,13,15,17,19 at fixed G=5 and mu^2=0.22, using the declared clean-attractive subset fit: 25/25 ATTRACT+CLEAN, global exponent -3.669 with R^2=0.9896, per-side exponents -3.139,-3.313,-3.500,-3.671,-3.837; excludes universal law claims, unscreened/Newtonian crossover claims, and blind-law estimation over rejected rows."
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07": "positive_theorem",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "wilson_two_body_open_refined_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07": "retained",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "wilson_two_body_open_refined_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07",
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "wilson_two_body_open_refined_note_2026-04-11"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5826e6f4b96ee07805e1c4b209ea31c0b838cee6a98dfe87b2dec93f2b2fc150",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-174640-1972fd3e45-delta_sign_fixed_negative_by",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained periodic bridge supplies the finite-volume density-kernel formula and eps=8 corner-pair input; the sign delta_ij<0 follows algebraically for G>0, mu^2>0, and N>0. The second-order formula has denominator sign fixed by the stated nonresonant inequalities, so sign(K_C3)=sign(delta) within the claimed branch.",
+      "claim_scope": "Bounded sign theorem on the retained mediator and periodic hw=1 corner surface: delta_ij is negative and equal across the three generation pairs, and K_C3 is negative on the explicitly stated nonresonant branch; no physical magnitude or branch-realization claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T17:48:37.318584+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_r_half_is_the_records_flow_separatrix_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "By the periodic density-kernel bridge, the retained hw=1 corner pairs have eps(k_i-k_j)=8, so delta_ij = (-G/mu^2 + G/(8+mu^2))/N < 0, and K_C3 = t^2*delta/(eps_gap*(eps_gap+delta)) has sign(delta) on eps_gap > 0 and eps_gap + delta > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers preserve the nonresonant-branch condition and do not promote this sign theorem into a physical magnitude or gap-closure claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing work is algebra over retained-grade inputs, not a tuned numerical match or symbol renaming. The runner source does instantiate the mediator surface and the finite C^8 elimination rather than merely printing constants, and the independent sign checks agree with the displayed formulas. Because the mediator input is retained_bounded and the note leaves magnitude and physical gap closure open, the clean verdict applies only to the bounded scoped theorem."
+    },
+    {
+      "archived_at": "2026-06-13T23:49:04.497255+00:00",
+      "audit_date": "2026-06-12T02:15:19.865550+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "For the stipulated two-sector records/Lueders sharpening rule and its stated r-coordinate, the induced one-dimensional map, its finite fixed points/stability, and the S2/S3 entropy optima were audited; the physical charged-lepton records-flow identification was not.",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07": "Finite even periodic torus normalization and Fourier-kernel bridge for V_L = -G(Delta + mu^2 I)^(-1), including equal negative hw=1 corner pair deltas with eps(k_i-k_j)=8.",
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "wilson_two_body_open_refined_note_2026-04-11": "Registered open-boundary Wilson two-body refined sweep for sides 11,13,15,17,19 at fixed G=5 and mu^2=0.22, using the declared clean-attractive subset fit: 25/25 ATTRACT+CLEAN, global exponent -3.669 with R^2=0.9896, per-side exponents -3.139,-3.313,-3.500,-3.671,-3.837; excludes universal law claims, unscreened/Newtonian crossover claims, and blind-law estimation over rejected rows."
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07": "positive_theorem",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "wilson_two_body_open_refined_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07": "retained",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "wilson_two_body_open_refined_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07",
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "wilson_two_body_open_refined_note_2026-04-11"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "5826e6f4b96ee07805e1c4b209ea31c0b838cee6a98dfe87b2dec93f2b2fc150",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-021305-0fc6ca65c8-delta_sign_fixed_negative_by",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited periodic bridge supplies the finite-volume kernel formula and eps(k_i-k_j)=8, making delta_ij negative by direct algebra for G, mu^2, N > 0. The second-order elimination formula independently gives sign(K_C3)=sign(delta) exactly when the two denominators are positive; the physical gap inequality is explicitly outside scope.",
+      "claim_scope": "Audited the bounded sign theorem that the retained two-body mediator gives negative pair curvature on the stated open/periodic surfaces and that the induced C3 coupling is negative on the explicitly nonresonant branch; no physical magnitude or branch realization is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T02:15:19.865550+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+      "load_bearing_step": "For the retained hw=1 corner pairs, the periodic density-kernel bridge gives delta_ij = (-G/mu^2 + G/(8+mu^2))/N < 0, and K_C3 = t^2 * delta/(eps_gap*(eps_gap+delta)) therefore has sign(delta) on eps_gap > 0 and eps_gap + delta > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the generation-to-psi identification remains confined to the periodic corner bridge and that no physical IR/gap branch claim is inferred downstream.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic sign closure over retained-grade inputs, not a definition substitution or tuned numerical match. The runner source performs real lattice/operator checks and a finite C^8 elimination check; its hard-coded comparison is only to reproduce an upstream retained force row, not to assert the contested sign. The bounded upstream mediator status limits the effective downstream tier, but it is retained-grade and the note does not claim the open physical magnitude or nonresonant branch realization."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.697416+00:00",
+      "audit_date": "2026-06-14T02:38:58.925271+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "Audited only the bounded theorem for the supplied two-sector records/L\u00fcders map: derivation of r -> 2r^2, its finite fixed-point stability, and the S2 versus S3 entropy comparator maxima.",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07": "Finite even periodic torus normalization and Fourier-kernel bridge for V_L = -G(Delta + mu^2 I)^(-1), including equal negative hw=1 corner pair deltas with eps(k_i-k_j)=8.",
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "wilson_two_body_open_refined_note_2026-04-11": "Registered open-boundary Wilson two-body refined sweep for sides 11,13,15,17,19 at fixed G=5 and mu^2=0.22, using the declared clean-attractive subset fit: 25/25 ATTRACT+CLEAN, global exponent -3.669 with R^2=0.9896, per-side exponents -3.139,-3.313,-3.500,-3.671,-3.837; excludes universal law claims, unscreened/Newtonian crossover claims, and blind-law estimation over rejected rows."
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07": "positive_theorem",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "wilson_two_body_open_refined_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07": "retained",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "wilson_two_body_open_refined_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07",
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "wilson_two_body_open_refined_note_2026-04-11"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "5826e6f4b96ee07805e1c4b209ea31c0b838cee6a98dfe87b2dec93f2b2fc150",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-023642-01d2d0caaf-delta_sign_fixed_negative_by",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade bridge supplies the finite-volume delta_ij formula, and the sign follows algebraically for G>0, mu^2>0, N>0, eps(Delta k)=8. The second-order expression independently reduces to t^2(1/eps_gap - 1/(eps_gap + delta)), so the K_C3 sign follows under the stated branch inequalities.",
+      "claim_scope": "Bounded sign theorem: on the retained mediator surfaces and the periodic hw=1 corner density-kernel bridge, delta is negative and K_C3 is negative on the explicit nonresonant branch; no physical magnitude or branch-realization claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T02:38:58.925271+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_r_half_is_the_records_flow_separatrix_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "By the periodic density-kernel bridge, the retained hw=1 corner pairs have delta_ij = (-G/mu^2 + G/(8+mu^2))/N < 0, and K_C3 = t^2 * delta / (eps_gap * (eps_gap + delta)) has the same sign as delta on eps_gap > 0 and eps_gap + delta > 0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses preserve the explicit nonresonant-branch and no-physical-magnitude boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing result is an algebraic closure over retained-grade inputs rather than a new fitted value or renaming. The runner source performs nontrivial lattice and finite C^8 checks, and its outputs match the stated finite-surface and branch claims, but the clean verdict rests on the independently checked sign algebra. The theorem is correctly bounded: it does not assert the physical size of delta or that the realized branch satisfies eps_gap + delta > 0."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/delta_sign_from_retained_mediator_runner.py",
+  "title": "The Sign of the Interaction Asymmetry `delta` is Fixed Negative by the Retained Two-Body Mediator; `K_C3` is Negative on the Nonresonant Branch \u2014 Narrow Theorem",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

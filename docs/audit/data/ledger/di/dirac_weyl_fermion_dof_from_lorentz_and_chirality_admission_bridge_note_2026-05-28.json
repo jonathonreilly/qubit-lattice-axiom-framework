@@ -1,0 +1,666 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.17,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5917d1d8c52785f3224c1658e624a7c753eeedb6c00c90040c2154c1f9bb99ce",
+  "note_path": "docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T00:47:09.835796+00:00",
+      "audit_date": "2026-05-28T07:10:49.484704+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "Given the k=1 qubit-per-site reading H_x = C\u00b2 and the retained Pauli/Cl(3) per-site representation, the per-site generators S_i = \u03c3_i/2 form the unique spin-1/2 su(2) irrep on each site.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "Finite-dimensional complex single-mode CCR/CAR algebra: CCR has no nonzero finite-dimensional realization, CAR has a 2-dimensional irreducible carrier, and CAR implies (a\u2020)^2 = 0 and n^2 = n; the Cl(3) connection is only the abstract dimension-2 match."
+        },
+        "dep_claim_type": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_note": "positive_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_note": "retained",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "cpt_exact_note",
+          "per_site_su2_spin_half_theorem_note_2026-05-02",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5f21c53618b3ba9661e378166b0e4b1863cf5c5ea0f1233238de024aee7ed28d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-2026-05-28-dirac-weyl-dof-admission-bridge",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The integer arithmetic and projector algebra close under the stated packet, and all ledger dependencies are retained-grade or retained_bounded. The row still depends load-bearingly on Q1 and Q2, which are explicit non-framework-retained admissions rather than accepted premises in the restricted packet.",
+      "claim_scope": "Conditional admission-bridge arithmetic only: given retained framework authorities R1-R4 plus the explicit Q1 Cl(3,1) Lorentzian-signature extension and Q2 on-shell thermal-counting convention admissions, the parent P4 Dirac count 2 spin * 2 particle-antiparticle = 4 and Weyl count 4/2 = 2 are reconstructed by exact rational arithmetic and projector checks. This does not derive Q1, Q2, the Dirac equation/on-shell convention, Lorentzian signature, parent thermal inventory closure, or downstream cosmology/leptogenesis status.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T07:10:49.484704+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "strong",
+      "invalidation_reason": "dep_weakened:per_site_su2_spin_half_theorem_note_2026-05-02:retained->unaudited",
+      "load_bearing_step": "With R1 giving spin factor 2, R3 giving particle-antiparticle factor 2, and R2 giving chirality projectors at admitted n=4 from Q1, the bridge computes dof_Dirac=2*2=4 and dof_Weyl=4/2=2, with Q2 supplying the on-shell/off-shell counting convention.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: derive or explicitly accepted-premise-register Q1 and Q2, then re-audit whether the bridge can promote beyond conditional P4 arithmetic support.",
+      "open_dependency_paths": [
+        "Q1 Cl(3,1) Lorentzian signature extension / Wick-rotation sign admission",
+        "Q2 on-shell relativistic thermal-counting convention and Dirac-equation halving",
+        "parent thermal-inventory remaining premises P1, P2, P3, P5"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 2,
+        "C": 4,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 82
+      },
+      "verdict_rationale": "The cache and local rerun both report PASS=82 FAIL=0, and independent checks agree that the retained R1/R3 factors give 4, R2 chirality halves to 2 at admitted n=4, and the runner's Cl(3,1) matrices/projectors satisfy the stated identities. However, Q1 supplies the Lorentzian Cl(3,1) extension and Q2 supplies the on-shell thermal-counting convention; neither is derived or registry-accepted here. No-go-discipline scope check: this verdict does not claim Q1/Q2 are irreducible walls or that alternative derivations are impossible; it only records that this bridge has not retired them."
+    },
+    {
+      "archived_at": "2026-06-03T00:43:52.781986+00:00",
+      "audit_date": "2026-05-31T15:37:04.513437+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On a single Axiom 1 qubit site, for an oriented Pauli triple satisfying the stated Pauli commutation and anticommutation relations, S_i = sigma_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "Finite-dimensional complex single-mode CCR/CAR algebra: CCR has no nonzero finite-dimensional realization, CAR has a 2-dimensional irreducible carrier, and CAR implies (a\u2020)^2 = 0 and n^2 = n; the Cl(3) connection is only the abstract dimension-2 match."
+        },
+        "dep_claim_type": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_note": "positive_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_note": "retained",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "cpt_exact_note",
+          "per_site_su2_spin_half_theorem_note_2026-05-02",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5f21c53618b3ba9661e378166b0e4b1863cf5c5ea0f1233238de024aee7ed28d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-153455-6f1a1fba-dirac_weyl_fermion_dof_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The integer arithmetic closes once Q1 and Q2 are accepted. The retained-grade chain does not close because Q1 and Q2 remain explicit admitted inputs rather than retained framework derivations.",
+      "claim_scope": "Conditional bridge arithmetic for the parent P4 Dirac/Weyl thermal degree-of-freedom factors, assuming Q1 Cl(3,1) and Q2 on-shell counting admissions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T15:37:04.513437+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:per_site_su2_spin_half_theorem_note_2026-05-02",
+      "load_bearing_step": "Dirac on-shell dof = 2 (spin, from R1) * 2 (particle-antiparticle, from R3) = 4, and Weyl on-shell dof = Dirac dof / 2 via the R2 chirality projection = 2, conditional on Q1-Q2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained or explicitly accepted-premise coverage for Q1 and Q2, and recheck any active-neutrino P1 use plus a genuinely real Cl(3,1) matrix certificate.",
+      "open_dependency_paths": [
+        "docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md",
+        "docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md",
+        "docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 42,
+        "B": 40,
+        "C": 0,
+        "D": 0,
+        "total_pass": 82
+      },
+      "verdict_rationale": "The load-bearing step is class A arithmetic over named factors: R1 supplies a two-state spin label, R3 supplies a two-state particle-antiparticle label, and R2 supplies chirality halving at even n. The note expressly imports Q1, the Cl(3,1)/Wick-rotation signature extension, and Q2, the on-shell thermal-counting convention, as not framework-retained admissions. The runner validates many text scans and algebraic identities, but its claimed real 4x4 Cl(3,1) realization is implemented with complex gamma matrices and does not independently certify Q1's real M_4(R) module claim. The result is therefore a bounded admission bridge, not a clean retained derivation."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.471600+00:00",
+      "audit_date": "2026-06-03T02:13:30.786307+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On a single Axiom 1 qubit site with an oriented Pauli triple satisfying relation (1), S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module; no physical spin-statistics, matter-sector, or multi-site claim is audited.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "Finite-dimensional complex single-mode CCR/CAR algebra: CCR has no nonzero finite-dimensional realization, CAR has a 2-dimensional irreducible carrier, and CAR implies (a\u2020)^2 = 0 and n^2 = n; the Cl(3) connection is only the abstract dimension-2 match."
+        },
+        "dep_claim_type": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_note": "positive_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_note": "retained",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "cpt_exact_note",
+          "per_site_su2_spin_half_theorem_note_2026-05-02",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5f21c53618b3ba9661e378166b0e4b1863cf5c5ea0f1233238de024aee7ed28d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-021012-b2d5bf05-dirac_weyl_fermion_dof_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact factor arithmetic closes once Q1-Q2 and the physical interpretations of R1 and R3 are granted. It does not close from the restricted retained authorities alone because Q1-Q2 are admitted inputs, and R1/R3 do not themselves establish the physical SM thermal spin and distinct particle-antiparticle state-count identifications.",
+      "claim_scope": "Conditional bridge that checks the Dirac dof = 4 and Weyl dof = 2 arithmetic from R1-R4 plus the explicitly admitted Q1 Cl(3,1) extension and Q2 on-shell counting convention.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T02:13:30.786307+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:per_site_su2_spin_half_theorem_note_2026-05-02:retained->unaudited",
+      "load_bearing_step": "Given Q1-Q2, the Dirac on-shell thermal count is 2 spin states from R1 times 2 particle-antiparticle states from R3, hence 4, and the Weyl count is 4/2 = 2 by the R2 chirality projector.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained bridges from R1 per-site j = 1/2 to the physical thermal spin degeneracy and from R3 CPT exactness to distinct particle-antiparticle thermal state counting, and retire or explicitly register the Q1/Q2 admissions.",
+      "open_dependency_paths": [
+        "docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md",
+        "docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md",
+        "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
+        "docs/CPT_EXACT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 42,
+        "B": 40,
+        "C": 0,
+        "D": 0,
+        "total_pass": 82
+      },
+      "verdict_rationale": "The runner performs exact rational and Clifford/CAR algebra checks, plus structure scans, and its source does not support class (C) first-principles closure. The displayed Dirac/Weyl arithmetic is internally consistent as class (A), but the note explicitly imports Q1 and Q2 as non-framework-retained admissions. In addition, the cited R1 authority is scoped to a per-site Pauli su(2) action and explicitly does not identify that action with the physical spin generator of all matter excitations, while R3's retained CPT scope is a finite-lattice Hamiltonian identity rather than a retained particle-antiparticle thermal-state counting theorem."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:09.022977+00:00",
+      "audit_date": "2026-06-05T18:47:33.579964+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum-axiom qubit site A_x ~= M_2(C), the Pauli action S_i = \u03c3_i/2 realizes the irreducible two-dimensional complex su(2) module with Casimir 3/4 and j = 1/2, without identifying it with all physical spin sectors.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "Finite-dimensional complex single-mode CCR/CAR algebra: CCR has no nonzero finite-dimensional realization, CAR has a 2-dimensional irreducible carrier, and CAR implies (a\u2020)^2 = 0 and n^2 = n; the Cl(3) connection is only the abstract dimension-2 match."
+        },
+        "dep_claim_type": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_note": "positive_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_note": "retained",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "cpt_exact_note",
+          "per_site_su2_spin_half_theorem_note_2026-05-02",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "5f21c53618b3ba9661e378166b0e4b1863cf5c5ea0f1233238de024aee7ed28d",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-184353-9b5cf2942d-dirac_weyl_fermion_dof_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rational arithmetic closes once the factors are granted, but the restricted packet does not derive the physical-identification steps from R1's per-site Pauli module to on-shell Dirac spin degeneracy or from R3's CPT Hamiltonian identity to a distinct particle-antiparticle thermal label. Q1 and Q2 also remain explicit admissions.",
+      "claim_scope": "Conditional admission bridge reconstructing Dirac = 4 and Weyl = 2 thermal degrees of freedom from R1-R4 plus admitted Q1 Cl(3,1) and Q2 on-shell counting for the parent P4 premise.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T18:47:33.579964+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:per_site_su2_spin_half_theorem_note_2026-05-02:retained->unaudited",
+      "load_bearing_step": "Dirac on-shell thermal dof = 2 (spin, from R1) * 2 (particle-antiparticle, from R3) = 4, and Weyl on-shell thermal dof = dof_Dirac / 2 via the R2 chirality projector.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge from the per-site Pauli su(2) action and CPT-exact Hamiltonian identity to the physical on-shell Dirac spin and particle-antiparticle thermal labels, or demote those labels to explicit admitted Q2 content before re-audit.",
+      "open_dependency_paths": [
+        "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
+        "docs/CPT_EXACT_NOTE.md",
+        "docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md",
+        "docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md",
+        "docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md#Q2"
+      ],
+      "runner_check_breakdown": {
+        "A": 42,
+        "B": 40,
+        "C": 0,
+        "D": 0,
+        "total_pass": 82
+      },
+      "verdict_rationale": "Independent formula checking agrees with the displayed arithmetic: 2*2=4, (4*2)/2=4, and a rank-2 chirality split gives Weyl=2 once Q1/Q2 and the spin/CPT labels are granted. The runner has useful algebraic checks, but its load-bearing thermal factors are assigned as constants labelled R1/R3 and it does not prove the physical identification of those labels. R1 explicitly limits itself away from identifying the Pauli action with every matter excitation's physical spin, and the narrowed CPT note does not by itself establish a particle-antiparticle thermal degeneracy. Since Q1/Q2 are admissions as well, the row is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:48.507881+00:00",
+      "archived_for_note_hash": "20f3a147b4572e3bb0a13dead07e53f4a4fa0d226fbaef69010dcc7457f8517a",
+      "audit_date": "2026-06-05T21:52:49.865797+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum/Axiom-1 qubit site with an oriented Pauli triple satisfying the stated relations, the local action S_i = \u03c3_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "Finite-dimensional complex single-mode CCR/CAR algebra: CCR has no nonzero finite-dimensional realization, CAR has a 2-dimensional irreducible carrier, and CAR implies (a\u2020)^2 = 0 and n^2 = n; the Cl(3) connection is only the abstract dimension-2 match."
+        },
+        "dep_claim_type": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_note": "positive_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_note": "retained",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "cpt_exact_note",
+          "per_site_su2_spin_half_theorem_note_2026-05-02",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "5f21c53618b3ba9661e378166b0e4b1863cf5c5ea0f1233238de024aee7ed28d",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-215226-a79f7cb415-dirac_weyl_fermion_dof_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic closes over the stated inputs, but the bridge explicitly depends on Q1 Cl(3,1) Lorentzian signature admission and Q2 on-shell thermal-counting convention, neither derived or retained in the restricted packet. Thus it closes only conditionally on those admissions.",
+      "claim_scope": "Bounded admission bridge showing the Dirac and Weyl thermal degree-of-freedom counts reduce to exact integer/rational arithmetic from retained R1-R4 plus explicit admissions Q1-Q2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:52:49.865797+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given Q1 supplying the Cl(3,1) n=4 spinor setting and Q2 supplying the on-shell convention, Dirac dof = 2(spin from R1) * 2(particle-antiparticle from R3) = 4 and Weyl dof = Dirac dof / 2 by R2 chirality = 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: retire Q1 and Q2 by providing retained derivations for the Lorentzian Cl(3,1) signature extension and the on-shell thermal-counting convention, or keep this row explicitly bounded on those admissions.",
+      "open_dependency_paths": [
+        "docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md",
+        "docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 82,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 82
+      },
+      "verdict_rationale": "The displayed quantitative identities are internally consistent: 2*2=4, 8/2=4, and 4/2=2, and the cited retained authorities support the named algebraic factors at the level claimed. The runner performs genuine exact arithmetic and matrix/CAR checks, but its load-bearing values for Q1 and Q2 are admitted inputs rather than framework-derived outputs. Because the source note itself depends on explicit non-retained admission content, the proper terminal status is conditional, not clean."
+    },
+    {
+      "archived_at": "2026-06-08T12:37:17.339083+00:00",
+      "archived_for_note_hash": "e2bb25002531e285998e75fe274b03fa440cf16843b8a96f88c242da3c4a0be3",
+      "audit_date": "2026-06-07T16:28:56.065056+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum/Axiom-1 qubit site with an oriented Pauli triple satisfying the stated relations, the local action S_i = \u03c3_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "Finite-dimensional complex single-mode CCR/CAR algebra: CCR has no nonzero finite-dimensional realization, CAR has a 2-dimensional irreducible carrier, and CAR implies (a\u2020)^2 = 0 and n^2 = n; the Cl(3) connection is only the abstract dimension-2 match."
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_note": "positive_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_note": "retained",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "cpt_exact_note",
+          "per_site_su2_spin_half_theorem_note_2026-05-02",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.17,
+        "runner_hash": "8d861832d803ac01319fc1722df055f6c3ecf1108502eac2186cd9b2f9afb3ba",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-162617-986ee8fde1-dirac_weyl_fermion_dof_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Clifford/rank arithmetic and chirality projector math close under the stated gamma-matrix and Dirac-equation premise. The restricted R3 authority proves finite-lattice CPT Hamiltonian-sector identities, but it does not prove the distinct particle-antiparticle thermal-label cardinality consumed here; R1 is also explicitly scoped away from identifying the local Pauli action with the physical spin generator of every matter excitation.",
+      "claim_scope": "Bounded P4 bridge for Dirac/Weyl thermal state-count arithmetic using Q1 Cl(3,1), Q2 on-shell Dirac rank/nullity, R1 spin, R2 chirality, and R3 CPT particle-antiparticle pairing.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T16:28:56.065056+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Dirac count is asserted as dof_Dirac = 2 (spin, from R1) * 2 (particle-antiparticle, from R3) = 4, with Weyl dof = dof_Dirac / 2 = 2 from the R2 chirality projector.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge deriving the distinct particle-antiparticle thermal label from the retained CPT content, and if the P4 wording remains, bridge the retained per-site SU(2) action to the physical spin/helicity label used in the inventory.",
+      "open_dependency_paths": [
+        "docs/CPT_EXACT_NOTE.md",
+        "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 68,
+        "B": 69,
+        "C": 0,
+        "D": 0,
+        "total_pass": 137
+      },
+      "verdict_rationale": "Independent algebra checks support the finite-rank Q2 count, the 8-to-4 on-shell halving, and the 4-to-2 chirality halving. The remaining load-bearing P4 replacement is not just arithmetic: it needs the state-label interpretation that CPT supplies a distinct antiparticle factor and that the per-site SU(2) action supplies the physical spin/helicity label. The runner hard-codes the CPT pair cardinality as 2 rather than deriving it from the quoted R3 theorem, so the bridge remains conditional on that missing identification theorem."
+    },
+    {
+      "archived_at": "2026-06-09T08:57:41.113236+00:00",
+      "archived_for_note_hash": "33ee39e24c29e81b8e5ca78339b2efbf2f201be775a656f7f3c8b67ec8196fcd",
+      "audit_date": "2026-06-08T15:03:41.702128+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum/Axiom-1 qubit site with an oriented Pauli triple satisfying the stated relations, the local action S_i = \u03c3_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "Finite-dimensional complex single-mode CCR/CAR algebra: CCR has no nonzero finite-dimensional realization, CAR has a 2-dimensional irreducible carrier, and CAR implies (a\u2020)^2 = 0 and n^2 = n; the Cl(3) connection is only the abstract dimension-2 match."
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_note": "positive_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_note": "retained",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "cpt_exact_note",
+          "per_site_su2_spin_half_theorem_note_2026-05-02",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.17,
+        "runner_hash": "75ce25034a5c4dc89f2d48d7b64e85512db9747ca93871ff341a2659abc59625",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-150024-3693ca4213-dirac_weyl_fermion_dof_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite rank, projector, and rational arithmetic checks close as algebraic identities over the supplied Clifford/CAR inputs. The physical thermal-label interpretation does not close from the packet: R1 does not derive physical spin/helicity, and R3 CPT exactness does not derive a distinct particle-antiparticle thermal species label.",
+      "claim_scope": "Finite algebraic Dirac/Weyl counting bridge: retained Q1 supplies the n=4 Cl(3,1) spinor cell, Q2 supplies the on-shell rank count, and R2 supplies chirality halving, while the physical spin/helicity and particle-antiparticle label semantics remain supplied rather than derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T15:03:41.702128+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Dirac dof = 2 (spin label) * 2 (particle-antiparticle label) = 4 and Weyl dof = Dirac dof / 2 = 2, with Q2 giving rank-nullity on shell and R2 giving chirality halving, once the physical label semantics are supplied.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained physical-label bridge identifying the framework SU(2) doublet with the physical spin/helicity thermal label and CPT pairing with a distinct particle-antiparticle thermal species label, then re-audit P4 replacement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 68,
+        "B": 72,
+        "C": 0,
+        "D": 0,
+        "total_pass": 140
+      },
+      "verdict_rationale": "The runner source performs real exact algebra/rank/projection checks rather than merely printing constants, and the displayed load-bearing arithmetic is independently consistent: the massive Dirac mass-shell operator has complex nullity 2 per energy branch and chirality halves the four on-shell Dirac states to two Weyl states. No external comparator or tuned numerical input is used. However, the source explicitly imports the physical label semantics and states that the SU(2)-to-spin/helicity and CPT-to-particle-antiparticle identifications remain open, so the row is conditional under the rubric rather than clean."
+    },
+    {
+      "archived_at": "2026-07-02T15:28:38.357857+00:00",
+      "audit_date": "2026-06-09T11:53:50.017906+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd."
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 6.144,
+        "runner_hash": "7d0e52551f3a2d65b43474bf24c052a37168e29fa112dcc43b8c37f6d8010f23",
+        "transitive_descendants": 24
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-115126-20744346d8-dirac_weyl_fermion_dof_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, Q1 supplies the n=4 spinor/chirality setting and R2 supplies the chirality projectors; the source-local rank calculation gives nullity 2 on each massive energy branch and rank 1 after fixed chirality on each massless branch. The note explicitly leaves the Dirac equation, physical thermal inventory, and label semantics outside the claim.",
+      "claim_scope": "Finite branch-rank arithmetic for the supplied first-order Dirac mass-shell operator on C^4, using retained Cl(3,1) and chirality inputs, yielding the numeric P4 counts 4 for Dirac and 2 for fixed-chirality Weyl without deriving the physical labels or thermal inventory.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T11:53:50.017906+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "The Dirac count is dim_C ker D(E,+p) + dim_C ker D(-E,+p) = 2 + 2 = 4, and the fixed-chirality Weyl count is dim_C P_chi ker D(E,+p) + dim_C P_chi ker D(-E,+p) = 1 + 1 = 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the Cl(3,1) real-cell to complex (+---) Dirac-gamma presentation convention if a later note widens this bridge beyond finite branch-rank counting.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 71,
+        "B": 73,
+        "C": 0,
+        "D": 0,
+        "total_pass": 144
+      },
+      "verdict_rationale": "The load-bearing step is finite Clifford/Dirac linear algebra, not a definition, renaming, tuned numerical match, or external comparator check. The runner source constructs gamma matrices and chirality projectors and verifies the relevant ranks exactly rather than merely printing constants, and the independent algebraic check agrees with the displayed 2+2 and 1+1 branch sums. The clean result is only for the bounded branch-rank count; it does not promote the physical spin, helicity, particle-antiparticle, Wick-rotation, or thermal-inventory bridges."
+    },
+    {
+      "archived_at": "2026-07-10T17:16:11.735064+00:00",
+      "audit_date": "2026-07-10T02:06:05.428844+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure complexified Clifford-algebra theorem: square-normalized chirality anticommuting with all generators exists exactly for even total dimension; at d_s = 3 this restricts d_t to odd values."
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.17,
+        "runner_hash": "2c4c1cb092aaeaa87445cb06766b6ca0f82dd928d820cb463bb4656e82ab0ae1",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-dirac_weyl_fermion_dof_f-072",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact runner establishes the asserted ranks only at selected rest, moving, and lightlike momenta, not for every on-shell momentum as claimed. The packet also lacks a retained or explicitly accepted bridge from complex solution-space dimensions to physical thermal degrees of freedom.",
+      "claim_scope": "The finite Dirac and fixed-chirality Weyl branch-rank counts for the supplied first-order mass-shell operator, excluding derivation of that operator, physical labels, and the thermal inventory itself.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:06:05.428844+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27:retained->audit_in_progress",
+      "load_bearing_step": "The supplied Dirac operator has kernel dimension two on each massive energy-sign branch and fixed-chirality kernel dimension one on each massless energy-sign branch, giving Dirac and Weyl counts 2+2=4 and 1+1=2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the universal branch-rank statements to the exact momenta certified by the runner, or add a source-local symbolic proof covering arbitrary nonzero on-shell momentum and explicitly retain the thermal-inventory bridge as a premise.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 71,
+        "B": 72,
+        "C": 0,
+        "D": 0,
+        "total_pass": 143
+      },
+      "verdict_rationale": "The displayed matrix calculations genuinely verify the finite ranks at the enumerated momenta, so the result is not a renaming or numerical fit. However, the note generalizes those examples to all on-shell branches without a general rank argument, while the Dirac equation and its thermal-inventory interpretation remain explicit unclosed premises. Additionally, the runner labels its first Clifford construction a real 4\u00d74 realization even though several constructed matrices have imaginary entries; retained Q1 supplies the algebra cell independently, but the runner does not verify that claimed real presentation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
+  "title": "Dirac / Weyl Fermion DOF From Lorentz and Chirality Admission Bridge Note",
+  "transitive_descendants": 8,
+  "verdict_rationale": null
+}

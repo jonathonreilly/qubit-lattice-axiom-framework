@@ -1,0 +1,228 @@
+{
+  "audit_date": "2026-05-28T03:50:47.795466+00:00",
+  "audit_state_snapshot": {
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Bounded Maxwell-Boltzmann/Sommerfeld normalization algebra at the explicit benchmark slice x_f=25, with a=x_f/4=25/4: verifies the normalized MB denominator, <1/v>=5/sqrt(pi), <1/v^2>=25/2, the substitution t=a v^2 giving alpha_eff/v=alpha_eff*sqrt(a/t), and the thermal-average t-measure prefactor 2/sqrt(pi). No framework derivation of the Maxwell-Boltzmann distribution, freeze-out value x_f=25, Sommerfeld enhancement law, relic-abundance dynamics, or downstream DM thermal closure is audited."
+    },
+    "dep_claim_type": {
+      "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+    },
+    "deps": [
+      "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+    ],
+    "load_bearing_score": 8.728,
+    "runner_hash": "825b7ea0959379d317e1f52b1a4d9b0bf079cef805a6eca8e447bb1c99b5ae9b",
+    "transitive_descendants": 52
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-dm-thermal-integral-representation-20260528-r1",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The sole one-hop dependency is retained-bounded and supplies the normalization constants and Sommerfeld argument convention. The row's runner and independent symbolic check verify only the integral representation and moment identities; the open selector/integral-evaluation problem remains outside the audited closure.",
+  "claim_id": "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+  "claim_scope": "Bounded same-surface thermal integral representation at the declared freeze-out slice x_f=25: using the retained Maxwell-Boltzmann/Sommerfeld normalization certificate, the thermal average can be written as <S>=(2/sqrt(pi))*int_0^infty S(alpha_eff*sqrt(a)/sqrt(t))*sqrt(t)*exp(-t) dt with a=25/4 and sqrt(a)=5/2, and the low-order moments are <1/v>=5/sqrt(pi), <1/v^2>=25/2. No DM selector closure, Sommerfeld-factor derivation, freeze-out derivation, relic-abundance theorem, or evaluation/bound of the remaining integral family is audited.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-28T03:50:47.795466+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 11.172,
+  "load_bearing_step": "The cached runner and direct rerun pass five checks: exact denominator, t-prefactor 2/sqrt(pi), <1/v>=5/sqrt(pi), <1/v^2>=25/2, and reduction of the former grid-average object to one continuum integral target. An independent symbolic substitution t=a v^2 gives normalized t-weight 2*sqrt(t)*exp(-t)/sqrt(pi) and sqrt(a)=5/2 at x_f=25.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "retained_bounded",
+  "max_descendant_status_rank": 95,
+  "note_hash": "c717de9cb7ff6bdd99cdda05ede637f32c523d99b0dc84372ce7ea7f00a258e9",
+  "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md",
+  "notes_for_re_audit_if_any": "Re-audit if this row is cited as closing the DM selector, deriving or bounding the remaining integral family, deriving the Sommerfeld factor, deriving x_f=25 or the Maxwell-Boltzmann distribution, or proving relic-abundance/freeze-out dynamics rather than just the stated continuum representation and moments.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.104950+00:00",
+      "archived_for_note_hash": "59f7663e753430a5a75ebe8d584576a8e3956cde491d2667cae4e61f23c1f27d",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.811252+00:00",
+      "audit_date": "2026-04-30T19:10:14.281406+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.087,
+        "transitive_descendants": 33
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-ca82-second-slice-d-fresh-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the scoped x_f = 25 slice, the note and runner close the normalization, change-of-variable prefactor, and two moment identities directly. No external comparator or selector law is being claimed.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "On the fixed x_f = 25 slice, the normalized thermal average is reduced to a continuum integral with prefactor 2/sqrt(pi) and exact low-order inverse-velocity moments.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is a structural continuum-representation calculation on a fixed slice, and the current runner reproduces the denominator, prefactor, <1/v>, and <1/v^2> identities with PASS=5 FAIL=0. The clean audit is scoped to that representation only; it does not ratify the retained status of x_f = 25 or any downstream selector."
+    },
+    {
+      "archived_at": "2026-05-18T11:31:37.034986+00:00",
+      "archived_for_note_hash": "5434c27a7ce8247e1c63b69652df9228b4ec820bfc4ab1e8881553dd8b8664d1",
+      "audit_date": "2026-05-05T05:41:47.050271+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.055,
+        "runner_hash": "825b7ea0959379d317e1f52b1a4d9b0bf079cef805a6eca8e447bb1c99b5ae9b",
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-dm_full_closure_same_sur-169",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The change of variables and moment formulas close algebraically once the Maxwell-Boltzmann thermal-average definition, the same-surface slice x_f = 25, and the Sommerfeld argument normalization are granted. Those premises are imported in the restricted packet and are not derived from the stated axiom or cited retained authorities.",
+      "claim_scope": "Audited only the algebraic change-of-variables and low-order moment formulas for the stated Maxwell-Boltzmann same-surface thermal average at x_f = 25.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T05:41:47.050271+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On the retained freeze-out slice x_f = 25, the same-surface thermal Sommerfeld average has the normalized continuum form <S> = (2/sqrt(pi)) \u222b_0^\u221e S(alpha_eff*sqrt(a)/sqrt(t)) sqrt(t) e^{-t} dt with a = x_f/4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite or include the retained source that defines the same-surface Maxwell-Boltzmann thermal average, x_f = 25 slice, and Sommerfeld argument normalization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The displayed integral representation is a standard algebraic normalization/change-of-variables result, not a first-principles computation from Cl(3) on Z^3. The runner mostly recomputes closed-form constants from hard-coded X_F = 25 and checks identities against the same formulas, with one consequence check set to True. The bounded conclusion is honest about the DM selector still being open, but the thermal average convention and retained freeze-out slice are unproved premises in this restricted packet."
+    },
+    {
+      "archived_at": "2026-05-27T11:23:09.968902+00:00",
+      "archived_for_note_hash": "f79c2bc90ba5c2b276183ba657e571ec590da2fc92604b4480b17e572a8628bd",
+      "audit_date": "2026-05-27T01:49:53.615990+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Finite normalization-algebra certificate for the declared Maxwell-Boltzmann relative-velocity weight at benchmark `x_f=25` and the Sommerfeld argument convention `z=alpha_eff/v_rel`; it does not derive the MB law, freeze-out value, or Sommerfeld enhancement."
+        },
+        "dep_claim_type": {
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 8.728,
+        "runner_hash": "825b7ea0959379d317e1f52b1a4d9b0bf079cef805a6eca8e447bb1c99b5ae9b",
+        "transitive_descendants": 52
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-beauvoir-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited dependency is retained_bounded for exactly the normalization algebra, benchmark slice, and Sommerfeld argument convention consumed here. The source note and runner explicitly leave current-bank DM selector closure open, so the auditable bounded claim is only the continuum integral/moment reduction, which follows from the dependency by algebra.",
+      "claim_scope": "Exact normalized same-surface thermal Sommerfeld continuum integral representation and inverse-velocity moments at the declared benchmark x_f=25, using the retained-bounded MB/Sommerfeld normalization dependency; excludes DM selector closure, freeze-out derivation, MB-law derivation, and Sommerfeld-law derivation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T01:49:53.615990+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "On the retained freeze-out slice x_f = 25, the same-surface thermal Sommerfeld average has the exact normalized continuum form <S> = (2/sqrt(pi)) integral_0^infinity S(alpha_eff*sqrt(a)/sqrt(t)) sqrt(t) e^-t dt, with <1/v> = 5/sqrt(pi) and <1/v^2> = 25/2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check downstream uses do not cite the title as full DM selector closure; the audited clean scope is the narrow thermal integral representation only.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Clean only under the bounded scope: the note does not establish DM full selector closure, but it does not actually claim that in the body or runner. The load-bearing content is an algebraic restatement/application of the retained-bounded normalization packet at x_f=25, and the runner's five PASS lines check the declared formula, prefactor, two moments, and localization consequence without importing external comparator physics."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 5,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_fail": 0,
+    "total_pass": 6
+  },
+  "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_integral_representation_theorem.py",
+  "title": "DM Full Closure Same-Surface Thermal Integral Representation Theorem",
+  "transitive_descendants": 50,
+  "verdict_rationale": "Clean bounded retention is appropriate after strict scope narrowing. The title says full closure, but the body and runner only close an exact integral representation and low-order moments on the declared same-surface slice. The independent change-of-variables audit confirms the normalized MB measure transforms to (2/sqrt(pi))*sqrt(t)*exp(-t) dt and the Sommerfeld argument becomes alpha_eff*sqrt(a/t). The source explicitly states current-bank selector closure remains open, so no downstream DM closure or Sommerfeld physics is smuggled into the verdict."
+}

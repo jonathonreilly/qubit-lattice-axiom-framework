@@ -1,0 +1,298 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "accessible_prediction_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "action_normalization_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "cb411374a9be26d602f6562e2ec06fdfc860402711c421984ee2008f03909918",
+  "note_path": "docs/ACCESSIBLE_PREDICTION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-09T19:35:28.496947+00:00",
+      "audit_date": "2026-04-30T15:11:01.430630+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The rho=|psi|^2 gravitational-source law and born-gravity cross-constraint are used as framework premises rather than derived in this audit packet, so the conclusion cannot be ratified from the source note alone.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_artifact_issue_resolved:scripts/frontier_accessible_prediction.py",
+      "load_bearing_step": "Accessible Predictions: Where the Framework Differs from GR: Does NOT depend on lattice spacing. Tests quantum nature of gravity.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 10,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the rho=|psi|^2 gravitational-source law and Born-gravity cross-constraint are used as framework premises rather than derived in this audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+    },
+    {
+      "archived_at": "2026-05-24T22:11:52.989120+00:00",
+      "archived_for_note_hash": "91ad45bcf2454b344c5b1732bb5e9d7800593f225e5b567b5e27598c1b4b363d",
+      "audit_date": "2026-05-10T18:17:46.801189+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "54ad5c4f62da19261c97c51f678c8feff41fb1ed9b8d08b9afaf6b54803345f4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e131b-b985-7873-a914-7c53b1c04fad",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet contains no retained authority deriving the physical source law, branch/coherence readout, Born-gravity cross-constraint, or experimental comparator bridges from the framework axioms. The note and runner assume these bridges and then compute consequences of the assumptions.",
+      "claim_scope": "Audit of the note's asserted accessible-prediction map from rho=|psi|^2 Poisson sourcing to BMV entanglement, Born-gravity cross-constraint, extended source potential, mesoscopic backreaction, and decoherence corrections.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-10T18:17:46.801189+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "\"The framework treats gravity as sourced by the quantum density rho = |psi|^2\" and therefore the five listed accessible predictions arise independent of lattice spacing.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem \u2014 cheapest repair is to split the note into conditional prediction scenarios and add/audit a direct bridge theorem deriving rho=|psi|^2 gravitational sourcing and the Born-gravity constraint from retained primitives.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing physics is an asserted identification of framework gravity with rho=|psi|^2 Poisson sourcing plus additional readout claims, not a closed derivation. Why this blocks: without a cited retained bridge theorem, the BMV, extended-source, backreaction, and Born-gravity predictions are consequences of assumed semiclassical/quantum source rules rather than audited framework theorems. Repair target: add retained bridge theorems deriving the source law, branch-level entangling dynamics, and Born-gravity cross-constraint from the framework primitives, with runners that construct those maps instead of hard-coding formulas. Claim boundary until fixed: this can stand only as a prediction agenda conditional on those bridges."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:39.618363+00:00",
+      "audit_date": "2026-05-27T04:24:08.842129+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "action_normalization_note": "Audited only the narrowed current-packet no-go: self-consistency scans, rescaling degeneracy, conditional PPN gamma readout, massive-probe sanity checks, and source-normalization conventions do not uniquely select c without a separate f/Phi and Poisson-normalization bridge."
+        },
+        "dep_claim_type": {
+          "action_normalization_note": "no_go"
+        },
+        "dep_effective_status": {
+          "action_normalization_note": "retained_no_go"
+        },
+        "deps": [
+          "action_normalization_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "54ad5c4f62da19261c97c51f678c8feff41fb1ed9b8d08b9afaf6b54803345f4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-bohr-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed boundary, the chain closes as a bounded conditional because the missing bridges are explicitly promoted to named premises and the note disclaims derivation or retained status for them. The retained no-go dependency blocks treating P1's f/Phi and Poisson-normalization import as an audited framework consequence, but the current source note does not make that stronger claim.",
+      "claim_scope": "Conditional prediction scenarios only: if the named premises P1..P6 are taken as inputs, then the listed numerical/algebraic signatures follow; the note does not claim P1..P6 are derived, retained, unique, falsifying, or Planck-lattice-dependent framework consequences.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T04:24:08.842129+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:action_normalization_note:retained_no_go->unaudited",
+      "load_bearing_step": "The narrowed claim is that five accessible-prediction scenarios follow algebraically only after granting explicit named premises P1..P6, including imported Newtonian Poisson sourcing, branch-phase dynamics, Born-gravity cross-link, extended-source ansatz, Schrodinger-Newton Gaussian evolution, and decoherence scaling.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if the source or runner broadens this into a retained framework derivation, uniqueness claim, or forward falsification claim without retained bridge theorems for P1..P6.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "runner_result": "runner_sha256=54ad5c4f62da19261c97c51f678c8feff41fb1ed9b8d08b9afaf6b54803345f4; exit_code=0; no PASS/FAIL accounting",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Clean only as a conditional bounded theorem: all load-bearing bridge/readout/normalization assumptions are named as inputs, and the note expressly withdraws uniqueness, forward falsification, retained-premise, and primitive-derivation claims. The runner is not proof of primitives and still contains stale broad wording, but the source-note scope no longer relies on that wording."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:17.993223+00:00",
+      "archived_for_note_hash": "19a0bf95dc3e2b6eefbd2fc2f58f02b332da8d09dccd329e5be760ff35141669",
+      "audit_date": "2026-06-18T10:55:49.467076+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "action_normalization_note": "Within `scripts/frontier_action_normalization.py`, the finite propagator-Poisson scans, reciprocal rescaling check, PPN-gamma algebra, and massive-probe sanity checks do not select a convention-free coefficient `c` in `S = L(1 - c*f)`."
+        },
+        "dep_claim_type": {
+          "action_normalization_note": "no_go"
+        },
+        "dep_effective_status": {
+          "action_normalization_note": "retained_no_go"
+        },
+        "deps": [
+          "action_normalization_note"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "54ad5c4f62da19261c97c51f678c8feff41fb1ed9b8d08b9afaf6b54803345f4",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-accessible_prediction_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional algebra is only over assumed premises, but the restricted packet does not close P1-P6. ACTION_NORMALIZATION_NOTE is retained as a no-go and explicitly leaves the scalar-potential/source-normalization bridge open; P2-P6 and P3 are also unproved inputs here.",
+      "claim_scope": "Conditional prediction scenarios mapping explicit premises P1-P6 to five accessible signatures, without auditing derivation of those premises from retained primitives.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T10:55:49.467076+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "If the named premises P1-P6 are granted as inputs, the five scenario conclusions and the lattice-spacing observation follow algebraically; the note does not derive P1-P6 from framework primitives.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and audit the direct bridge theorem(s) for rho=|psi|^2 Poisson sourcing/source normalization, branch-level entangling dynamics, the Born-gravity cross-link, and P4-P6 validity ranges before re-auditing as a framework prediction theorem.",
+      "open_dependency_paths": [
+        "docs/ACTION_NORMALIZATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The note's conclusions require P1-P6, including rho=|psi|^2 Poisson sourcing, branch-level entangling dynamics, the Born-gravity cross-link, and ansatz validity ranges. Why this blocks: the cited normalization authority does not derive the needed bridge and the runner evaluates formulas after assuming the contested premises rather than computing them from retained primitives. Repair target: retained bridge theorem(s) for P1/P2/P3 and P4-P6 validity. Claim boundary until fixed: conditional scenarios only."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:36.938587+00:00",
+      "audit_date": "2026-06-21T16:02:36.688974+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "action_normalization_note": "Within `scripts/frontier_action_normalization.py`, the finite propagator-Poisson scans, reciprocal rescaling check, PPN-gamma algebra, and massive-probe sanity checks do not select a convention-free coefficient `c` in `S = L(1 - c*f)`."
+        },
+        "dep_claim_type": {
+          "action_normalization_note": "no_go"
+        },
+        "dep_effective_status": {
+          "action_normalization_note": "retained_no_go"
+        },
+        "deps": [
+          "action_normalization_note"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "b6d387690640174b2f9b6d4473e703534ef2128bc5e6900f8b2d72c70ba47433",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-accessible_prediction_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional arithmetic closes under the supplied P1..P6 assumptions, but the chain does not close as a framework theorem because P1..P6 are explicitly not derived in the note or cited authority. The missing steps are the bridge theorems deriving rho=|psi|^2 Poisson sourcing, branch dynamics, and the Born-gravity cross-link from retained primitives.",
+      "claim_scope": "Audited only the bounded conditional scenario packet: if P1..P6 are supplied as premises, the listed scenario formulas and scale estimates are algebraic consequences, not framework-derived predictions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T16:02:36.688974+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:action_normalization_note:retained_no_go->unaudited",
+      "load_bearing_step": "Given the named premises P1..P6, compute the corresponding experimental scale or algebraic companion bound.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is to derive P1 rho=|psi|^2 Poisson sourcing, P2 branch-level entangling dynamics, and P3 Born-gravity cross-link from retained primitives, then rerun the scenario packet as framework consequences rather than admitted premises.",
+      "open_dependency_paths": [
+        "docs/ACTION_NORMALIZATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The note correctly narrows its scope to conditional scenarios and withdraws uniqueness, falsification, and audited-framework-prediction language. The runner likewise computes downstream scenario arithmetic after P1..P6 are supplied; it does not derive those premises from framework primitives. ACTION_NORMALIZATION_NOTE is retained_no_go, but it explicitly says the scalar-potential and Poisson source normalization conventions are not convention-free derived, so retained status does not close P1. Therefore the reduced conditional packet is coherent, but it remains conditional on missing bridge theorems."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_accessible_prediction.py",
+  "title": "Accessible Predictions: Where the Framework Differs from GR \u2014 Conditional Prediction Scenarios (Binding)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,252 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_records_pointer_grounds_block_channel_note_2026-05-31",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+    "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8896e000ac63e6c55774278bd85684039ff20bf4b6c663db2319251a7d44387f",
+  "note_path": "docs/KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T20:16:28.892729+00:00",
+      "audit_date": "2026-06-03T10:55:04.840151+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3eb0f5ca5a30b7de6de9bb4ebee8955e4280f339267662e7e072b97ab225668b",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-105318-fc96a8f0-koide_records_pointer_gr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The selected finite-algebra bookkeeping claims follow by direct matrix algebra and elementary constrained-log optimization. The note correctly preserves the records/objectivity and equal-weight-selection question as out of scope.",
+      "claim_scope": "Finite C3 pointer/trace bookkeeping: S resolves singlet versus doublet blocks, commutes with Gamma_chi, Jcs squares to -P_doublet, trace weights the doublet by dimension 2, and the stated log-functionals have extrema r=1/2 and r=1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T10:55:04.840151+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "The finite C3 algebra splits into a pointer-style singlet/doublet readout via S=C+C^2 and a trace-style readout that weights the doublet by dimension 2, yielding equal-weight r=1/2 and dimension-weighted r=1 extrema.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: repair the Herm_circ(d) validation multiplicity formula from sign = d mod 2 to sign = 1 if d is even else 0, then re-run the restricted formula-inventory audit.",
+      "open_dependency_paths": [
+        "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The selected claim's own load-bearing algebra closes, and the runner performs genuine finite matrix and symbolic optimization checks rather than merely printing constants. However, the strict formula-inventory pass finds a false displayed quantitative formula in the cited KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS authority: its validation bullet states the sign multiplicity as d mod 2, while the note's own table/proof require sign multiplicity 1 for even d and 0 for odd d. Because that false displayed formula is in the restricted source packet, the row should not be marked audited_clean until the formula family is repaired and re-audited."
+    },
+    {
+      "archived_at": "2026-06-21T08:24:33.926373+00:00",
+      "audit_date": "2026-06-06T18:38:12.125110+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3eb0f5ca5a30b7de6de9bb4ebee8955e4280f339267662e7e072b97ab225668b",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-183705-8d71d51fec-koide_records_pointer_ground",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed identities follow from finite polynomial algebra in `C^3=I`, the singlet projector `J/3`, and elementary constrained optimization using the retained block-total formulas. The remaining records/objectivity selection question is explicitly outside the claim boundary.",
+      "claim_scope": "Finite `C_3` matrix bookkeeping: `S=C+C^2` singlet/doublet block resolution, commuting relation with `Gamma_chi`, fixed doublet complex structure, trace dimension count, and the two stated log-functional extrema; no records dynamics, objectivity theorem, or selection of `r=1/2` audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T18:38:12.125110+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "`S=C+C^2` resolves the real singlet/doublet block while trace weights the doublet by dimension 2; with `E_+=3a^2` and `E_perp=6|b|^2`, equal-weight versus dimension-weighted log extrema give `r=1/2` versus `r=1`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses keep this as finite bookkeeping only and do not cite it as selecting the equal-weight `r=1/2` branch.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner source actually instantiates the finite matrices and symbolic extrema rather than only printing constants, and all seven passing checks are class-A algebraic checks. Independent eigenvalue and projector algebra confirms `spec(C+C^2)={2,-1,-1}`, `[S,Gamma_chi]=0`, `Jcs^2=-P_doublet`, trace weights `(1,2)`, and the extrema `r=1/2` and `r=1`. All cited authorities are retained-grade for the bounded algebraic inputs used here, and the note does not import the open dynamics/objectivity bridge as a conclusion."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.104765+00:00",
+      "audit_date": "2026-06-21T17:44:27.564980+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure linear algebra on Herm_circ(3): the projector decomposition, Frobenius block totals, equal-weight log extremum at kappa = 2, and d = 3 uniqueness of the clock-action real-irrep pattern among d in {2,3,4,5,6}.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "3eb0f5ca5a30b7de6de9bb4ebee8955e4280f339267662e7e072b97ab225668b",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_records_pointer_grounds_block_channel_note_2026-05-31-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The audited claim is restricted to finite matrix identities and elementary constrained extrema. It does not import the open records/objectivity dynamics or claim selection of the equal-weight extremum.",
+      "claim_scope": "Finite C3 pointer/trace bookkeeping: S=C+C^2 resolves singlet/doublet blocks, commutes with Gamma_chi, Jcs squares to -P_doublet, trace weights the doublet by dimension, and the stated fixed-total log-functionals have extrema r=1/2 and r=1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T17:44:27.564980+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_complexification_split_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "The finite C3 algebra gives a two-block observable S=C+C^2 while the trace block totals E_+=3a^2 and E_perp=6|b|^2 make equal-weight and dimension-weighted log extrema land at r=1/2 and r=1 respectively.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers preserve the stated boundary and do not cite this row as a records/objectivity or equal-weight-selection theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner source actually instantiates the C3 matrices and checks the spectrum, commutators, Jcs square, and the two symbolic Lagrange extrema rather than merely printing constants. Independent algebra agrees: S has eigenvalues 2,-1,-1; Gamma_chi is co-diagonal with S; Jcs has eigenvalues 0,\u00b1i and squares to -P_doublet; and E_+=E_perp gives r=1/2 while E_perp=2E_+ gives r=1. The cited authorities are retained-grade for the algebraic identities used, and the note explicitly excludes the unresolved dynamics/readout-selection question from its claim boundary."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_records_pointer_grounds_block_channel_2026_05_31.py",
+  "title": "Koide Finite Pointer-Trace Channel Bookkeeping",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

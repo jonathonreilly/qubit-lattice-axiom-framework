@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_transpose_sheet_uniqueness_fiber_evidence_bounded_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (deterministic rigidity certificates,",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "28bd6b97d3e2203d43b422b7e88ad335a6f248bb8c2267ffc1b136b22c86f41b",
+  "note_path": "docs/THETA_TRANSPOSE_SHEET_UNIQUENESS_FIBER_EVIDENCE_BOUNDED_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.994311+00:00",
+      "audit_date": "2026-07-10T04:41:50.069283+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c90212493ed1f40a97e2365e236eb8620eb3706de7d641df453ed6af786b69c5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00106-theta_transpose_sheet_unique",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied runner directly performs the optimization, finite-difference Jacobian calculations, and joint-kernel computations that support the note's bounded claims. Its results do not establish the explicitly excluded global fiber theorem.",
+      "claim_scope": "Deterministic bounded computational evidence for two sampled fixed-(A,B) fibers, numerical local rigidity at one generic triple and its transpose, and singlet multiplicities at three specified low multidegrees; no global sheet-uniqueness theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:41:50.069283+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner finds no differing flip-odd invariant among 38 converged fixed-(A,B) fiber solutions, computes full-rank numerical Jacobians on both sheets, and obtains singlet dimensions 1, 2, and 2 at the stated multidegrees.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the fixed-(A,B), two-sample scope of the search and never promote it to a global transpose-sheet uniqueness result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 2,
+        "C": 3,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The source computes rather than merely prints the reported search outcomes, singular values, and representation-theoretic nullities, with no imported fitted value or contested cross-note premise. The search is local and sample-limited, and the Jacobians are numerical, but the note repeatedly preserves those limitations and does not claim uniqueness. The stated bounded evidence therefore follows on its own terms."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py",
+  "title": "The Transpose-Sheet Sliver Strengthened on Three Angles: Expanded Fiber Search Finds No Second Branch in Two Independent Families, Both Sheets Pass Matching Rigidity Certificates, and Low-Multidegree Even Invariant Counts Are Pair-Generated (Bounded Evidence Note)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

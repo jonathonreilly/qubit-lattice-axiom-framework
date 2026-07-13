@@ -1,0 +1,91 @@
+{
+  "audit_date": "2026-05-03T02:53:44.450230+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_effective_status": {
+      "cycle_battery_note_2026-04-10": "retained_bounded"
+    },
+    "deps": [
+      "cycle_battery_note_2026-04-10"
+    ],
+    "load_bearing_score": 1.5,
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "fresh-agent-mcclintock-3rd-019debc0-eab9-7e42-85c9-8da3000a319d",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The one-hop dependency is now retained_bounded and supplies the row semantics and caveats. The provided scaled runner output directly covers the larger side sweep without invoking an external comparator, a hidden physical identification, or a new semantic standard.",
+  "claim_id": "cycle_battery_scaled_note_2026-04-10",
+  "claim_scope": "The larger-size sibling harness for the retained cycle-bearing graph battery passes the inherited B1-B9 checks for random geometric, growing, and layered cycle graph families through side 12, with force treated as the primary observable and B9 as characterization only.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-03T02:53:44.450230+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cycle_battery_note_2026-04-10"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/frontier_staggered_cycle_battery.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 4.5,
+  "load_bearing_step": "The scaled runner reports that all nine family/size cases, spanning random geometric, growing, and layered cycle graphs at side 8, 10, and 12, score 9/9 under the inherited cycle-battery protocol.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "retained_bounded",
+  "max_descendant_status_rank": 95,
+  "note_hash": "973754949d49414d46249e7bd66313e0eb92c44565a22afd77712a11fd1b5aa4",
+  "note_path": "docs/CYCLE_BATTERY_SCALED_NOTE_2026-04-10.md",
+  "notes_for_re_audit_if_any": "Retain the claim only as a bounded scaled battery result under the inherited protocol and caveats; do not promote beyond the provided runner rows.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.104845+00:00",
+      "archived_for_note_hash": "0eb4c2bc4f5da39d9a800461924bda2b3a983d9458a79275efe9769a7d146467",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 36,
+    "B": 0,
+    "C": 45,
+    "D": 0,
+    "total_pass": 81
+  },
+  "runner_path": "scripts/frontier_staggered_cycle_battery_scaled.py",
+  "title": "Cycle-Bearing Graph Battery, Scaled",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The scoped bounded claim closes as a retained scaled computation: the base battery semantics are clean, and the scaled runner output reports 9/9 scores for all nine family/size cases. The clean verdict is limited to the stated battery protocol and inherits the base-note caveats: irregular-graph force is a shell-radial proxy, two-sign behavior narrows sign interpretation, and B9 is characterization rather than a gate. This does not establish a full gravity-selection theorem or exact lattice-coordinate force result."
+}

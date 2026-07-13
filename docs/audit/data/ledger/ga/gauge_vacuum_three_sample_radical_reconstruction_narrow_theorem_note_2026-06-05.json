@@ -1,0 +1,235 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+    "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "38a9cd17b53b7b08c39b997212cb851e595b4185f9f48618d38408a551a72b14",
+  "note_path": "docs/GAUGE_VACUUM_THREE_SAMPLE_RADICAL_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-12T19:48:32.058277+00:00",
+      "audit_date": "2026-06-06T11:58:51.241655+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "Purely formal finite-dimensional linear-algebra lemma for abstract `(S, eta, K)` on the class-sector space; no Wilson/Haar, beta=6, plaquette, or physical-identification closure was audited as in scope.",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17": "Audited the explicit three-sample reconstruction of the first conjugation-symmetric retained witness sector from the named rational-angle marked holonomies."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f8608c04198daa68e4f6f83029ae1ba277094953a5f981d249dfdd39d03e4e1e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-115706-2eced1398e-gauge_vacuum_three_sample_ra",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant and inverse formulas follow by direct 3x3 adjugate algebra, and the pi/16 entries match the displayed character values with nonzero determinant and the stated c/e signs. The beta=6 physical identification is not used in the algebraic closure and is explicitly kept behind the four-bridge conditional.",
+      "claim_scope": "The audited claim is the unconditional abstract three-sample radical reconstruction map over the pi/16 radical field, with the beta=6 PF-seam interpretation only recorded as conditional on four named bridge authorities.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-06T11:58:51.241655+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17:retained_bounded->unaudited",
+      "load_bearing_step": "For the structured matrix F = [[1,a,0],[1,b,c],[1,d,e]], det F = Delta = a*c - a*e + b*e - c*d, Delta is nonzero on the pi/16 radical specialization, and the displayed adjugate formula gives the unique alpha = F^{-1}Z.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that this clean verdict is scoped only to the abstract algebra and does not promote the four beta=6 bridge authorities.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 8,
+        "C": 3,
+        "D": 4,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity check, not a renaming or numerical match. Independent expansion of the determinant and cofactors gives the displayed Delta and reconstruction matrix, and the pi/16 half-angle reductions reproduce a,b,c,d,e with the stated W_A annihilation and sign separation. The cited beta=6 reduction authority is used only to state the downstream conditional scope, not to close or import the physical bridge premises."
+    },
+    {
+      "archived_at": "2026-06-18T01:40:24.888282+00:00",
+      "audit_date": "2026-06-16T02:53:08.855022+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "Purely formal finite-dimensional linear-algebra lemma for arbitrary abstract (S, eta, K); no beta=6 Wilson/Haar physical identification is audited.",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17": "Audited the explicit three-sample reconstruction of the first conjugation-symmetric retained witness sector from the named rational-angle marked holonomies."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "f8608c04198daa68e4f6f83029ae1ba277094953a5f981d249dfdd39d03e4e1e",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-025051-51cb8af426-gauge_vacuum_three_sample_ra",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant and displayed inverse follow by direct cofactor expansion of the structured 3x3 matrix, and the radical specialization satisfies the stated character values, nonzero determinant, and c>0/e<0 checks. The beta=6 Wilson/Haar identification is explicitly scoped as conditional and is not used in the algebraic proof.",
+      "claim_scope": "The abstract three-sample radical reconstruction map, its pi/16 radical specialization/nondegeneracy and sign facts, and the statement that the beta=6 physical PF-seam application remains four-bridge-conditional.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-16T02:53:08.855022+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17:retained_bounded->unaudited",
+      "load_bearing_step": "For F = [[1,a,0],[1,b,c],[1,d,e]] with Delta = a*c - a*e + b*e - c*d, det(F)=Delta and, when Delta != 0, the unique solution is alpha = Delta^(-1) adj(F) Z with the displayed entries.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No repair needed for the scoped abstract theorem; a future physical beta=6 seam audit must separately supply the four bridge authorities.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 8,
+        "C": 3,
+        "D": 4,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The load-bearing step is a finite-dimensional adjugate identity over the displayed radical field, not a definition, renaming, tuned numerical match, or external comparator. Independent cofactor checking verifies the determinant and numerator matrix, and a separate trig/radical evaluation confirms the pi/16 entries, signs, and nonzero determinant. The retained_bounded seam-reduction authority is used only to document the conditional beta=6 application; the scoped theorem does not consume the four open bridge premises."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.956121+00:00",
+      "audit_date": "2026-06-18T13:06:21.166711+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "Purely formal finite-dimensional algebra lemma for arbitrary abstract operators (S, eta, ell_W), with beta=6 Wilson/Haar identification and closed-form matrix evaluation excluded from the audited scope.",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17": "Audited the explicit three-sample reconstruction of the first conjugation-symmetric retained witness sector from the named rational-angle marked holonomies."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "f8608c04198daa68e4f6f83029ae1ba277094953a5f981d249dfdd39d03e4e1e",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant and inverse are direct finite-dimensional algebraic identities, and the radical specialization is nondegenerate with the stated structural signs. The physical beta=6 identification is explicitly excluded from the load-bearing theorem and is only recorded as conditional on the four bridges.",
+      "claim_scope": "The exact abstract three-sample radical reconstruction map over the displayed \u03c0/16 radical field, including det F=\u0394, the adjugate inverse, F_(A,2)=0, c>0, e<0, while the beta=6 PF-seam identification remains conditional.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-18T13:06:21.166711+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17:retained->unaudited",
+      "load_bearing_step": "For F = [[1,a,0],[1,b,c],[1,d,e]] with \u0394 = a*c - a*e + b*e - c*d, det F = \u0394 != 0 on the radical specialization and the displayed formula is \u03b1 = \u0394^{-1} adj(F) Z.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the exact c/e sign and Delta nonzero certification for the nested-radical specialization.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 8,
+        "C": 3,
+        "D": 4,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The load-bearing content is class-A algebra: determinant expansion, adjugate inversion, and exact radical/trigonometric specialization checks. The runner source genuinely computes the symbolic matrix identities and radical specialization checks rather than importing beta=6, Wilson/Haar, Monte-Carlo, or fitted data. The cited retained_bounded seam-reduction authority is used only to state the downstream conditional physical application, not to prove the abstract reconstruction map. Residual risk is limited to independently rechecking the exact nested-radical sign and nonzero certificates, not to any missing physics bridge for the audited scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_gauge_vacuum_three_sample_radical_2026_06_05.py",
+  "title": "Gauge-Vacuum Three-Sample Radical Reconstruction \u2014 The Exact Abstract Reconstruction Map Is The Load-Bearing Theorem; The \u03b2 = 6 PF-Seam Stays Conditional On Four Bridges Narrow Theorem Note",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

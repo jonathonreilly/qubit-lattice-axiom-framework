@@ -1,0 +1,293 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "electrostatics_grown_sign_law_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gate_b_grown_joint_package_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/gate_b_grown_joint_package.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.892,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b76fd45b8e6917d5a5aba4a4208d36d639f7c2f8462225dd9846cb94235c0842",
+  "note_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368246+00:00",
+      "archived_for_note_hash": "768626fd72dddcc819aa6fd0ef28cd8ada57ab17ccc4d619abc358d72bbffae6",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T03:48:09.221747+00:00",
+      "archived_for_note_hash": "4e011be653c80df5cc9771da1d4b6e367b4a56a4d8eeb372cc2b53e452ca2385",
+      "audit_date": "2026-04-26",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The claim is a narrow numerical grown-geometry compute, but the ledger has no registered runner/output and the artifact paths in the note are absolute external paths rather than audit-registered evidence.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On the fixed retained grown row drift=0.2, restore=0.7, the tabulated single-source, neutral-pair, like-pair, dipole, and double-charge cases have the expected sign response and a +1 to +2 charge exponent of 1.000.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [
+        "scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py_not_registered_primary_runner",
+        "logs/2026-04-05-electrostatics-grown-sign-law.txt_not_registered_primary_output",
+        "grown_geometry_parameter_sweep_not_performed",
+        "graph_update_case_not_tested"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the retained sign-law companion rests on frozen numerical results for one fixed grown geometry row, but the audit ledger registers no primary runner or output, and the note's artifact links are absolute local paths outside the audit packet. Why this blocks: a hostile auditor cannot reproduce the printed delta_z signs, neutral cancellation, dipole partial cancellation, or +1/+2 linearity threshold from registered evidence; moreover the note explicitly limits the result to fixed-field, no graph update, one source layer, and one final-layer centroid on a single grown row. Repair target: register scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py as the claim runner with deterministic output and explicit PASS thresholds for sign, cancellation, and charge-linearity; either keep the note scoped to the single grown row or add sweeps over grown-geometry parameters, graph update, source layers, and detector definitions. Claim boundary until fixed: it is safe to say the source note reports a conditional fixed-row sign-law transfer check with neutral cancellation and approximate charge linearity; it is not yet an audited retained grown-geometry theorem or geometry-generic electrostatics result."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.811862+00:00",
+      "audit_date": "2026-05-01T16:36:26.842026+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.67,
+        "transitive_descendants": 35
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the bounded fixed-row claim, the registered runner constructs the drift=0.2, restore=0.7 grown geometry, computes the listed source cases, and reproduces the frozen signs, neutral cancellation, and +1/+2 charge exponent. The note explicitly excludes full electromagnetism, Maxwell/radiation, and geometry-generic scope, so the audited-clean result is only for this narrow numerical companion.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The same sign-coupled propagator still supports like/unlike sign response on the retained grown row, with same-point neutral cancellation and approximately linear response in source charge.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing bounded statement closes because the current registered runner deterministically recomputes the fixed grown-row source cases: single +1 is AWAY, single -1 is TOWARD, same-point +1/-1 cancels to printed zero, the dipole partially cancels, and +2 has charge exponent 1.000 relative to +1. Residual risk is limited to audit ergonomics: the runner prints tables rather than classified PASS lines, and stale source-note boundary text still says the runner is unregistered, but the ledger now supplies the registered runner used for this audit. This clean audit does not promote the row beyond its bounded fixed-geometry claim and does not ratify full electromagnetism or a geometry-generic theorem."
+    },
+    {
+      "archived_at": "2026-05-17T12:58:13.166416+00:00",
+      "archived_for_note_hash": "84dc0c6cbb84a0236d1b49b47056039db5e56a976ed34e570012b944b624891a",
+      "audit_date": "2026-05-05T01:03:56.682277+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.175,
+        "runner_hash": "61009b503a32b17bd359720a0b7b2be7950886167fbbc74d8ce9aac51ece9ba5",
+        "transitive_descendants": 288
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-005357-f2a031da-electrostatics_grown_sig-019",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner source performs a real numerical propagation and reproduces the note's printed signs, cancellation, and linearity checks, but it imports the grown geometry generator `scripts.gate_b_grown_joint_package.grow` whose implementation and retained-grade basis are not included in the restricted packet. The missing step is closure of the retained grown row/geometry generator and its boundary conditions from the stated axiom or provided evidence.",
+      "claim_scope": "Fixed grown geometry row drift=0.2, restore=0.7, seeds=[0,1], fixed-field/no graph update, one source layer, final-layer centroid readout, with the provided runner output and source code.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T01:03:56.682277+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On the retained grown row, the sign law survives cleanly: single +1 moves AWAY, single -1 moves TOWARD, same-point +/- cancels, and +2 is linear relative to +1.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the `grow` implementation and a registered deterministic runner artifact with explicit PASS thresholds for sign, neutral cancellation, dipole partial cancellation, and +1/+2 linearity.",
+      "open_dependency_paths": [
+        "scripts/gate_b_grown_joint_package.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The provided stdout matches the note and the runner is not merely printing constants: it constructs fields, propagates amplitudes, computes detector centroids, and aggregates the claimed sign responses. However, the computation depends on an unprovided imported `grow` routine and fixed numerical choices for geometry, seeds, field strength, propagation constants, and centroid readout. With no cited authorities and no source for the grown-geometry generator, the restricted packet does not close the bridge from the axiom to the retained grown row, so the claim remains conditional despite the successful cached run."
+    },
+    {
+      "archived_at": "2026-05-18T11:31:37.036279+00:00",
+      "archived_for_note_hash": "681d4be08ee2be1209abc0bb84cba278c8464c4f12fda9cab3788f5f2d23a6d1",
+      "audit_date": "2026-05-17T13:13:21.268138+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.156,
+        "runner_hash": "61009b503a32b17bd359720a0b7b2be7950886167fbbc74d8ce9aac51ece9ba5",
+        "transitive_descendants": 806
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-131300-20260517T131300Z-dcb3049b-electrostatics_grown_sig-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner source computes the printed table rather than hard-coding the contested numbers, but it depends on scripts.gate_b_grown_joint_package.grow and that helper implementation is not included in the restricted packet. The missing step is verification of the grown-geometry construction used as the retained row.",
+      "claim_scope": "One fixed grown geometry row with drift=0.2 and restore=0.7, fixed field, no graph update, one source layer, one final-layer detector centroid, and the listed single-source/superposition cases.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T13:13:21.268138+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On the retained grown row, the sign law survives cleanly: single +1 is AWAY, single -1 is TOWARD, same-point +/- cancels to zero, and +2 is linear relative to +1.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full scripts/gate_b_grown_joint_package.py helper source or an equivalent cached certificate for grow(drift=0.2, restore=0.7, seeds=[0,1]).",
+      "open_dependency_paths": [
+        "scripts/gate_b_grown_joint_package.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The provided runner output matches the note, and the runner source performs an actual propagation computation over generated geometries with neutral-cancellation and charge-linearity checks. However, the load-bearing geometry is imported through an unavailable helper, so the restricted packet does not fully close the computation from the allowed inputs. The claim remains narrow and bounded, not geometry-generic, but its reproducibility depends on a missing dependency edge."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.929820+00:00",
+      "audit_date": "2026-05-28T03:36:40.380722+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_grown_joint_package_note": "Bounded numerical certificate for the declared Gate-B grown-geometry joint comparison: on h=0.5, four seeds, exact grid versus drift=0.2/restore=0.7 plus drift=0.3/restore=0.5 stress row, the runner-computed Born, d_TV, MI, and decoherence values match the source/cache and support only the stated finite comparison, not Gate-B package transfer or physical-gravity closure."
+        },
+        "dep_claim_type": {
+          "gate_b_grown_joint_package_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_grown_joint_package_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_grown_joint_package_note"
+        ],
+        "load_bearing_score": 7.67,
+        "runner_hash": "61009b503a32b17bd359720a0b7b2be7950886167fbbc74d8ce9aac51ece9ba5",
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-electrostatics-grown-sign-law-20260528-r1",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop dependency gate_b_grown_joint_package_note is retained-bounded, the primary runner and helper runner are in the restricted packet, and the cached output supports the finite sign/cancellation/linearity table under the narrowed fixed-row scope. The closure is bounded to the runner-defined scalar sign-law companion and does not promote the stale broader final-verdict/status prose.",
+      "claim_scope": "Bounded fixed-runner scalar sign-law companion on the imported Gate-B grown-geometry helper row grow(drift=0.2, restore=0.7) for seeds [0,1], fixed field and no graph update: the registered runner reproduces the printed single-source, neutral same-point, like-pair, dipole, and double-charge delta_z sign table, exact printed neutral cancellation, and approximately linear +1/+2 charge response. No Maxwell theory, radiation derivation, electromagnetic field theory, geometry-generic theorem, or physical Gate-B closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T03:36:40.380722+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gate_b_grown_joint_package_note:retained_bounded->unaudited",
+      "load_bearing_step": "The SHA-pinned runner cache completes and reports: single +1 delta_z=-1.882286e-04 AWAY, single -1 delta_z=+1.882349e-04 TOWARD, neutral same-point +1/-1 delta_z=0, like pair +1/+1 delta_z=-2.556525e-04 AWAY, dipole +1/-1 delta_z=+3.137392e-05 TOWARD, double +2 delta_z=-3.764509e-04 AWAY, and charge exponent 1.000. The helper path is registered and supplies the grow(drift, restore, seed) geometry constructor.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if this row is cited as full electromagnetism, Maxwell/radiation theory, physical Gate-B closure, or a geometry-generic sign-law theorem; if the source makes W, seed coverage, or helper geometry width load-bearing; if the runner's imported grow helper changes; or if the stale absolute artifact/status prose is edited in a way that broadens the claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "This closes as a bounded numerical companion after narrowing to the registered runner evidence. The old blocker was restricted-packet incompleteness; the current ledger registers the primary runner and helper path, and the one-hop grown-joint helper authority is retained-bounded. The runner computes fields and propagates amplitudes on the helper-grown row rather than printing constants. Independent checks confirmed the sign table, exact same-point neutral cancellation by algebraic cancellation of +1 and -1 source terms, +2/+1 scaling with exponent about 0.999976, and near antisymmetry of single +/- sources. I did not audit a W=8 geometry claim: the runner header prints W=8 while the imported grow helper uses its own W=10 constant, so the retained scope is the helper grow(drift=0.2, restore=0.7, seed) row and the printed finite delta_z table, not the runner's width label."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py",
+  "title": "Electrostatics Grown Sign-Law Note",
+  "transitive_descendants": 83,
+  "verdict_rationale": null
+}

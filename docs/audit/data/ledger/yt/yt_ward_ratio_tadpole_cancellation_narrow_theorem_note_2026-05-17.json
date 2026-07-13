@@ -1,0 +1,273 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_ew_color_projection_theorem",
+    "yt_ward_tadpole_cancellation_premise_derivation_narrow_theorem_note_2026-06-06",
+    "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5ab2ae72e8656315cb28d152b754ebf123f6e3c2ffd302038b80e0b6bbb9c104",
+  "note_path": "docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:30:26.224552+00:00",
+      "audit_date": "2026-05-17T18:58:38.444251+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "yt_ew_color_projection_theorem": "Audited only the bounded EW normalization family K_EW(kappa_EW)=1/(8/9+kappa_EW/9) at N_c=3, using retained F_adj=8/9 and an explicit free readout coefficient kappa_EW; kappa_EW=0 was not audited as derived."
+        },
+        "dep_claim_type": {
+          "yt_ew_color_projection_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "yt_ew_color_projection_theorem": "retained_bounded"
+        },
+        "deps": [
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6a4f423ed33c2db96ecab741c936b4c70c12ba9112558aace81859e8aae42b16",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260517-185816-41cdea85-yt_ward_ratio_tadpole_ca-022",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic cancellation follows exactly from the two stipulated definitions D1 and D2. The audit does not rederive the upstream CMT identity, n_link count, or the square-root coupling-readout rule beyond their cited retained-input role.",
+      "claim_scope": "Audited only the conditional algebraic identity y_t(M_Pl)/g_s(M_Pl)=y_t_bare/g_bare given the cited retained CMT input and equal n_link=1 single-vertex tadpole powers.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-17T18:58:38.444251+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "yt_ew_color_projection_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_ew_color_projection_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "From D1 and D2, (y_t_bare/sqrt(u_0))/(g_bare/sqrt(u_0)) = y_t_bare/g_bare, so the common tadpole factor cancels.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only whether the upstream audit ledger continues to treat yt_ew_color_projection_theorem D14-D15 as retained inputs for this exact single-vertex use.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The stated ratio identity is correct as a class-A algebraic substitution over the cited equal-tadpole inputs, and the runner source genuinely verifies that symbolic cancellation rather than merely printing constants. However, the note adds only a standard-mathematics corollary of one upstream retained authority's CMT/n_link packet and contains no independent physical computation or comparator. Under the decoration tie-break rule, this should be retained as an algebraic decoration rather than promoted as an independent clean theorem."
+    },
+    {
+      "archived_at": "2026-05-29T12:09:01.755521+00:00",
+      "archived_for_note_hash": "10438ee488107dc27e54485ec600ee0e0a600824b9d0adfe0a3ed72322ebfd8f",
+      "audit_date": "2026-05-27T05:56:44.664886+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6a4f423ed33c2db96ecab741c936b4c70c12ba9112558aace81859e8aae42b16",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the symbolic cancellation exactly after D1 and D2 are assumed, including counterfactual checks showing equal n_link is load-bearing. The chain does not close from the one-hop dependency because yt_ew_color_projection_theorem is currently audited as a K_EW(kappa_EW) family/no-go boundary; its audited scope does not ratify the broader CMT D14 / n_link=1 single-vertex tadpole readout for both g_s and y_t used by this note.",
+      "claim_scope": "Conditional algebraic tadpole-cancellation lemma: if both g_s(M_Pl) and y_t(M_Pl) are assigned the same single-vertex readout factor 1/sqrt(u_0), then y_t(M_Pl)/g_s(M_Pl)=y_t_bare/g_bare identically and is u_0-independent. The current cited parent does not supply retained authority for applying that common tadpole readout to this Ward-ratio pair.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T05:56:44.664886+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "g_s(M_Pl) := g_bare / sqrt(u_0), y_t(M_Pl) := y_t_bare / sqrt(u_0), therefore y_t(M_Pl) / g_s(M_Pl) = y_t_bare / g_bare.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained authority for the common CMT single-vertex tadpole readout of both g_s and y_t in this Ward-ratio context, or narrow the row to a conditional algebra lemma over D1 and D2.",
+      "open_dependency_paths": [
+        "yt_ew_color_projection_theorem"
+      ],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "Issue: the algebraic cancellation is correct, but the source treats yt_ew_color_projection_theorem as retained authority for the common single-vertex tadpole readouts g_s(M_Pl)=g_bare/sqrt(u_0) and y_t(M_Pl)=y_t_bare/sqrt(u_0). The current audited parent scope is instead the K_EW(kappa_EW) no-go/family boundary and does not close those Ward-ratio CMT readout premises.\nWhy this blocks: without a retained theorem assigning the same tadpole power/readout map to both g_s and y_t in this context, the runner only proves a conditional symbolic identity after the contested readout equations are inserted.\nRepair target: add or cite a retained CMT/single-vertex tadpole-readout theorem for this Ward-ratio pair, or narrow the note to an explicitly conditional algebra lemma over D1 and D2.\nClaim boundary until fixed: given D1 and D2 as assumptions, the u_0 cancellation and corollaries are exact; no u_0 value, g_bare value, y_t_bare value, SM identification, or RGE running is established by this row."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:39.149433+00:00",
+      "archived_for_note_hash": "673d979a97abf46a82e67ff9ae69361a8c1fa4b0ee1bac60f48367b00d1dbe44",
+      "audit_date": "2026-05-30T00:43:11.086181+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6a4f423ed33c2db96ecab741c936b4c70c12ba9112558aace81859e8aae42b16",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-004148-d4a120ac-yt_ward_ratio_tadpole_ca",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The D1/D2-to-P1 algebra closes exactly. The restricted packet does not close the antecedent that the cited YT_EW_COLOR_PROJECTION_THEOREM supplies the common CMT single-vertex tadpole readout for both g_s and y_t; the provided authority is a kappa-family no-go and does not contain the cited D14/D15 CMT content.",
+      "claim_scope": "The conditional algebraic cancellation y_t(M_Pl)/g_s(M_Pl)=y_t_bare/g_bare given the two readouts D1 and D2 with equal single-vertex tadpole power.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T00:43:11.086181+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "From D1 and D2, (y_t_bare / sqrt(u_0)) / (g_bare / sqrt(u_0)) simplifies to y_t_bare / g_bare, so the common tadpole factor cancels.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained one-hop bridge that derives the common single-vertex CMT readouts D1 and D2 for both couplings in this Ward-ratio context, or retitle the row as a purely conditional algebra lemma over admitted D1/D2 premises.",
+      "open_dependency_paths": [
+        "docs/YT_EW_COLOR_PROJECTION_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The runner genuinely performs exact symbolic class-A checks of the cancellation and corollaries after hardwiring D1 and D2, and those algebraic formulas are correct. However, the source note still imports the common readout normalization and equal-n_link bridge as an admitted premise rather than closing it from the one-hop authority in the packet. The cited authority as provided does not supply the claimed CMT D14/D15 material, so the chain is only conditional on D1 and D2."
+    },
+    {
+      "archived_at": "2026-06-06T22:40:16.633156+00:00",
+      "archived_for_note_hash": "10438ee488107dc27e54485ec600ee0e0a600824b9d0adfe0a3ed72322ebfd8f",
+      "audit_date": "2026-06-01T21:26:31.974309+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6a4f423ed33c2db96ecab741c936b4c70c12ba9112558aace81859e8aae42b16",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260601-212516-5fc2ad47-yt_ward_ratio_tadpole_ca",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic cancellation from D1 and D2 is correct. However, the restricted packet's cited one-hop authority is a retained_no_go kappa-family note and does not provide the claimed CMT D14 identity, n_link=1 D15 premise, or operator-square-root coupling readout needed to justify D1 and D2.",
+      "claim_scope": "The audited algebra is the exact cancellation y_t(M_Pl)/g_s(M_Pl)=y_t_bare/g_bare under the stipulated equal single-vertex 1/sqrt(u_0) dressing for both couplings.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-01T21:26:31.974309+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "From D1 and D2, (y_t_bare / sqrt(u_0)) / (g_bare / sqrt(u_0)) = y_t_bare / g_bare, so the common tadpole factor cancels.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the retained one-hop authority that actually contains CMT D14, n_link=1 D15, and the square-root coupling readout used for D1/D2, then rerun the same algebra audit.",
+      "open_dependency_paths": [
+        "docs/YT_EW_COLOR_PROJECTION_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The runner source genuinely performs symbolic class-A checks of the tadpole-factor cancellation and its corollaries under D1 and D2; it is not merely printing PASS lines. The displayed algebraic identities in the narrow note are true once the equal 1/sqrt(u_0) dressing is stipulated. The restricted cited authority, though retained-grade as a no-go row, does not contain the CMT and n_link premises the note claims to import, so the chain from cited inputs to D1/D2 is not closed in this packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py",
+  "title": "yt_ward Canonical-Surface Ratio Narrow Theorem (Tadpole Cancellation)",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

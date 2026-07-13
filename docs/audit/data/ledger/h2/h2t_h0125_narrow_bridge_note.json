@@ -1,0 +1,269 @@
+{
+  "audit_date": "2026-05-25T19:50:35.236856+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "lattice_3d_l2_numpy_h0125_bridge_note": "Finite fixed-family 3D dense 1/L^2+h^2 bridge evidence at phys_l=6, phys_w=3 through h=0.125, with Born/k=0 clean, TOWARD bridge sign in the completed cache, and F~M near 0.50 rather than Newtonian closure."
+    },
+    "dep_claim_type": {
+      "lattice_3d_l2_numpy_h0125_bridge_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "lattice_3d_l2_numpy_h0125_bridge_note": "retained_bounded"
+    },
+    "deps": [
+      "lattice_3d_l2_numpy_h0125_bridge_note"
+    ],
+    "load_bearing_score": 1.5,
+    "runner_hash": "4b9c6ad309cb6559952b59ea5f944a3fff250902727f8e207944dd949336c619",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T195015Z-3e6824e0-h2t_h0125_narrow_bridge_-01",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The supplied runner and helper sources instantiate the lattice, field, propagation, detector readouts, and log-log F~M fit rather than importing the contested exponent. The computed reduced-family h=0.125 result supports the note's bounded negative conclusion that this family does not deliver F~M approx 1.",
+  "claim_id": "h2t_h0125_narrow_bridge_note",
+  "claim_scope": "Bounded audit of the current dense 3D numpy 1/L^2 + h^2 family at h=0.125 for Born cleanliness, gravity sign, and weak-field F~M closure on the stated fixed boxes.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-25T19:50:35.236856+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lattice_3d_l2_numpy_h0125_bridge_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/lattice_3d_l2_numpy.py",
+    "scripts/numpy_replay_bootstrap.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": "At h=0.125 the reduced fixed family has clean Born and TOWARD sign, but F~M alpha remains about 0.50 rather than the Newtonian approx 1 bar, so the narrow retained bridge claim fails.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "19657c97c7aff2de5f47ce1925910f5e0cf8c1e6b1055d5bdfc13fc6c608d0bb",
+  "note_path": "docs/H2T_H0125_NARROW_BRIDGE_NOTE.md",
+  "notes_for_re_audit_if_any": "A second auditor should re-check the runner_check_breakdown counting convention, but the load-bearing class and verdict do not depend on that count.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368682+00:00",
+      "archived_for_note_hash": "4caeb78f1a5bce67696677ec464695bbc3d8f71edd94e4b60a7e6707d04c67d1",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-01T12:12:50.873700+00:00",
+      "archived_for_note_hash": "01415acce021b1cbd4f519a6756ffb6d8826f93fd5dc7715f4c3895a476ce740",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live reduced-family runner reproduces the bounded negative table through h=0.125, but the source status and final verdict explicitly reject rather than retain the narrow h=0.125 bridge claim. The row is in the candidate retained-grade queue only because the status line mentions a candidate retained-grade claim that the note is auditing down.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The narrow h=0.125 bridge claim does not currently survive on main: the reduced family lacks enough TOWARD points for F~M, and the bridge family reaches h=0.125 with F~M about 0.50 rather than near 1.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the source is not a candidate retained-grade bridge result; it is explicitly a bounded negative for a candidate retained-grade h=0.125 bridge claim. Why this blocks: applying a retained/candidate retained-grade audit result would promote the opposite of the note's own final verdict, and the reproduced reduced-family runner gives AWAY/no-F~M rows rather than a retained h=0.125 bridge. Repair target: change the note status/ledger classification to bounded negative, or if a retained negative theorem is intended, declare that status and include the focused h=0.125 single-row decision artifact plus the limit-diagnosis scripts/logs in the artifact chain. Claim boundary until fixed: safely claim only the bounded negative: Born is clean where measured, the reduced family reaches h=0.125 but has no TOWARD/F~M bridge, and the focused bridge row does not meet the F~M near-1 bar."
+    },
+    {
+      "archived_at": "2026-05-08T10:21:41.719379+00:00",
+      "archived_for_note_hash": "0635d0cb260832e8f56020099ae8578df7303addf0193b33bcc0f452aa47ea58",
+      "audit_date": "2026-05-01T20:30:55.611706+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Mac mini runner reproduces the decisive reduced-family negative, including h=0.125 Born 4.23e-15 and zero TOWARD points for F~M. The runner output is not tagged with classified A/B/C/D PASS lines, and the companion bridge-family diagnostics are outside this primary runner.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The reduced fixed family reaches h = 0.125 with machine-clean Born but AWAY gravity and too few TOWARD points, so the narrow weak-field F~M bridge claim does not survive.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: update the runner to emit classified C PASS lines for h=0.125 Born cleanliness, AWAY/no-TOWARD failure of F~M, and the bounded-negative conclusion; optionally register the bridge-family companion checks separately.",
+      "open_dependency_paths": [
+        "scripts/lattice_3d_l2_numpy_h0125_audit.py",
+        "scripts/lattice_3d_l2_numpy_h0125_bridge.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the reduced-family negative reproduces, but the primary runner emits unclassified PASS/FAIL lines and does not classify the negative bridge conclusion as an audit PASS. Why this blocks: the audit lane can read the AWAY/no-TOWARD output, but cannot record it as a closed C-class check for the narrow h=0.125 bridge failure. Repair target: update the runner to emit classified C PASS lines for h=0.125 Born cleanliness, AWAY/no-TOWARD failure of F~M, and the bounded-negative conclusion; optionally register the bridge-family companion checks separately. Claim boundary until fixed: current main supports a bounded negative for this narrow bridge claim, not a positive h=0.125 continuum or F~M\u22481 bridge theorem."
+    },
+    {
+      "archived_at": "2026-05-23T18:38:15.797338+00:00",
+      "audit_date": "2026-05-11T15:49:22.080612+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "lattice_3d_l2_numpy_h0125_bridge_note": "Finite fixed-family 3D dense 1/L^2+h^2 bridge evidence at phys_l=6, phys_w=3 through h=0.125, with Born/k=0 clean, TOWARD bridge sign in the completed cache, and F~M near 0.50 rather than Newtonian closure."
+        },
+        "dep_claim_type": {
+          "lattice_3d_l2_numpy_h0125_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_3d_l2_numpy_h0125_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "lattice_3d_l2_numpy_h0125_bridge_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "a82a8d4b0f1f3a6e3c9ecb4baa9e4b5082633db24a01d990962882375bfc272c",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary audit runner cache completes the reduced h ladder through h=0.125 and matches the source note's negative table. The direct bridge dependency is retained-bounded and supports the larger-family boundary that h=0.125 completion still does not produce Newtonian mass scaling.",
+      "claim_scope": "Bounded negative h=0.125 dense 3D 1/L^2+h^2 bridge result: the reduced fixed-family audit reaches h=0.125 with Born clean where measurable but no recovered TOWARD/F~M bridge, and the retained bridge-family dependency remains at F~M about 0.50 rather than 1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T15:49:22.080612+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:a82a8d4b->4b9c6ad3",
+      "load_bearing_step": "The reduced audit family reaches h=0.125 but stays AWAY with too few TOWARD points for F~M, while the larger bridge family reaches h=0.125 with TOWARD sign but F~M remains about 0.50, so the narrow F~M near 1 bridge claim fails.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit if a new h=0.125 continuation claims F~M near 1, a continuum limit, or a stronger positive bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The source note makes a narrow bounded negative claim, and the current runner cache supports it: Born is machine-clean where readable, k=0 is zero, but the reduced family never produces TOWARD points and the bridge-family dependency remains F~M about 0.50. The claim does not promote a continuum theorem or Newtonian h=0.125 bridge. Residual risk is limited to the finite two-family diagnostic and the exact h=0.125 harnesses."
+    },
+    {
+      "archived_at": "2026-05-25T15:52:04.122193+00:00",
+      "archived_for_note_hash": "44c0db1fa87421c2e185558665d5d0fcf744274bf384bc56eab2fc16f918b04c",
+      "audit_date": "2026-05-23T20:03:45.597948+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lattice_3d_l2_numpy_h0125_bridge_note": "Finite fixed-family 3D dense 1/L^2+h^2 bridge evidence at phys_l=6, phys_w=3 through h=0.125, with Born/k=0 clean, TOWARD bridge sign in the completed cache, and F~M near 0.50 rather than Newtonian closure."
+        },
+        "dep_claim_type": {
+          "lattice_3d_l2_numpy_h0125_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_3d_l2_numpy_h0125_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "lattice_3d_l2_numpy_h0125_bridge_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "4b9c6ad309cb6559952b59ea5f944a3fff250902727f8e207944dd949336c619",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T200325Z-7ef1d610-h2t_h0125_narrow_bridge_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The negative F~M conclusion is supported by the runner and cited bridge note, but the source note's reduced-family replay table and prose claim AWAY gravity and too few TOWARD points while the provided primary runner output reports TOWARD gravity and F~M alpha \u2248 0.50 for h=0.5, 0.25, and 0.125. That completed-run mismatch means the presented note does not close cleanly as written.",
+      "claim_scope": "Audited the bounded negative claim that the provided dense 3D 1/L^2 + h^2 h=0.125 replay chain does not support a retained Newtonian weak-field bridge with F~M \u2248 1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T20:03:45.597948+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The bridge family also falls short of the narrow F~M \u2248 1 bar at h = 0.125, so the narrow h=0.125 bridge claim does not currently survive.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "other: update the source note's reduced-family table and prose to match the completed runner output, then re-audit the bounded negative F~M\u22481 claim on that corrected statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner source genuinely instantiates the lattice and propagation calculation rather than printing hard-coded expected values, so the computational load-bearing readout is class C. However, the provided stdout contradicts the source note's decisive reduced-family summary on the gravity sign and availability of F~M points. Although both the stdout and cited bridge authority still support the narrower negative that F~M is about 0.50 rather than 1.00, the note's stated chain relies on stale or incorrect reduced-family facts."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 4,
+    "B": 0,
+    "C": 4,
+    "D": 0,
+    "total_pass": 8
+  },
+  "runner_path": "scripts/lattice_3d_l2_numpy_h0125_audit.py",
+  "title": "3D `1/L^2 + h^2` Narrow `h=0.125` Bridge Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The cited authority is retained_bounded, which is retained-grade under the rubric, and it independently agrees that the bridge-family F~M readout is about 0.50 rather than a Newtonian closure. The primary runner plus included helpers perform first-principles numerical computation within the framework and do not hard-code the contested h=0.125 F~M outcome. The source note's conclusion is negative and bounded, so the observed failure to reach the stated F~M bar closes the audited claim on its own terms."
+}

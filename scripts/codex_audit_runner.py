@@ -60,6 +60,7 @@ AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 # prompt and the deterministic pipeline cannot drift.
 sys.path.insert(0, str(AUDIT_DIR / "scripts"))
 import premise_nodes
+import ledger_io
 import no_go_discipline_gate
 import audit_invocation
 import compute_audit_dispatch_queue
@@ -71,6 +72,7 @@ DISPATCH_QUEUE_PATH = AUDIT_DIR / "data" / "audit_dispatch_queue.json"
 CANONICAL_DISPATCH_QUEUE_PATH = DISPATCH_QUEUE_PATH
 PROMPT_TEMPLATE_PATH = AUDIT_DIR / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
 APPLY_AUDIT_SCRIPT = AUDIT_DIR / "scripts" / "apply_audit.py"
+PIPELINE_SCRIPT = AUDIT_DIR / "scripts" / "run_pipeline.sh"
 ISOLATED_BASE = Path("/tmp/codex-audit-isolated")
 LOG_DIR = REPO_ROOT / "logs" / "codex-audit-runs"
 DISPATCH_ALLOWED_PROCESS_PATHS = {
@@ -674,6 +676,7 @@ def load_dispatch_targets(
 
 
 def load_ledger_rows() -> dict[str, dict]:
+    ledger_io.ensure_cache()
     return json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
 
 
@@ -1312,8 +1315,21 @@ def run_codex(prompt: str, isolated_dir: Path, timeout_sec: int,
 
 # Files that the audit pipeline regenerates and that should be committed
 # alongside any verdict-write to keep main internally consistent.
-AUDIT_DATA_FILES = [
+# Pipeline-generated caches that are deliberately UNTRACKED (gitignored)
+# since the 2026-07-13 ledger sharding: they are materialized locally by
+# run_pipeline.sh / ledger_io.py and must never be staged or demanded as
+# committed surfaces. The sharded ledger under docs/audit/data/ledger/ is
+# the tracked source of truth and is covered by the docs/audit/data prefix.
+GENERATED_UNTRACKED_FILES = [
     "docs/audit/AUDIT_LEDGER.md",
+    "docs/audit/data/audit_ledger.json",
+    "docs/audit/data/ledger_cache_manifest.json",
+    "docs/audit/data/citation_graph.json",
+    "docs/audit/data/audit_queue.json",
+    "docs/audit/data/runner_classification.json",
+]
+
+AUDIT_DATA_FILES = [
     "docs/audit/AUDIT_DISPATCH_QUEUE.md",
     "docs/audit/AUDIT_QUEUE.md",
     "docs/audit/data",
@@ -2303,6 +2319,25 @@ def main() -> int:
                 print("  Resolve the conflict on main manually, then re-run.")
                 print(f"  rebase stderr: {(rebase.stderr or rebase.stdout).strip()[:300]}")
                 return 2
+
+    if (
+        not args.from_dispatch
+        and not args.from_reaudit_candidates
+        and not QUEUE_PATH.exists()
+    ):
+        print("Derived audit caches missing (fresh clone); running the pipeline once.")
+        bootstrap = subprocess.run(
+            ["bash", str(PIPELINE_SCRIPT)],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=1800,
+            check=False,
+        )
+        if bootstrap.returncode != 0:
+            detail = (bootstrap.stderr or bootstrap.stdout).strip()[-500:]
+            print(f"REFUSING: audit pipeline bootstrap failed: {detail}")
+            return 2
 
     run_commit = git("rev-parse", "HEAD", check=False).stdout.strip()
     ledger_rows = load_ledger_rows()

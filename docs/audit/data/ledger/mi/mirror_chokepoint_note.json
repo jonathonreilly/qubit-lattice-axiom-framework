@@ -1,0 +1,372 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "mirror_chokepoint_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "mirror_chokepoint_boundary_fit_note"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.748,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "28a64284b184e9b653e90058ed9226c52e72f5172596b6c1a036dcddd424ad1e",
+  "note_path": "docs/MIRROR_CHOKEPOINT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369143+00:00",
+      "archived_for_note_hash": "4cff43ef4ab807841073152f28af76ebc4628ab86f850f8a3c2fa2b3d73834cb",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T03:48:09.222629+00:00",
+      "archived_for_note_hash": "1929b93dadf14ee0c6cc73a4bb7d7049065ee90853f92919e0f0feb39bb32cea",
+      "audit_date": "2026-04-26",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner supports a finite bounded mirror pocket and reproduces the dense NPL_HALF=60, connect_radius=5.0 N=80/N=100 rows plus N=120 gravity collapse, but the retained table is stitched across parameter surfaces and the cited primary logs for several rows are absent. A clean chain would need a registered per-row parameter card or archived logs and hard pass/fail gates for the retained criteria.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note claims a retained bounded mirror chokepoint pocket through N = 100, with Born-clean and k=0-clean rows, positive gravity, decoherence advantage, and N = 120 losing gravity.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [
+        "logs/2026-04-03-mirror-chokepoint-joint.txt_missing",
+        "logs/2026-04-03-mirror-chokepoint-scale-r5p0-n50.txt_missing",
+        "logs/2026-04-03-mirror-chokepoint-scale-r5p0-p2p02-n50.txt_missing",
+        "logs/2026-04-03-mirror-chokepoint-boundary-n45-r5p0.txt_missing",
+        "logs/2026-04-03-mirror-chokepoint-boundary-n50-r5p2.txt_missing",
+        "logs/2026-04-03-mirror-chokepoint-boundary-n55-r5p0.txt_missing",
+        "logs/2026-04-03-mirror-chokepoint-boundary-n55-r5p0-N100.txt_missing",
+        "logs/2026-04-03-mirror-chokepoint-boundary-n55-r5p2-N100.txt_missing",
+        "logs/2026-04-03-mirror-chokepoint-boundary-n60-r5p0-N100.txt_missing",
+        "logs/2026-04-03-mirror-chokepoint-boundary-n60-r5p0-N120.txt_missing",
+        "mixed_parameter_surface_not_registered_per_retained_row",
+        "runner_prints_diagnostics_without_hard_retention_assertions"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the finite mirror-chokepoint pocket is partly reproducible, but the candidate retained-grade packet depends on a stitched table whose N=40/N=60 values are not recovered by the strict NPL_HALF=25 radius-4.0 baseline or by NPL_HALF=25 radius-5.0, and several cited log files for the joint, scaling, sparse-rescue, and boundary scans are missing. Why this blocks: a hostile auditor can verify N=15/N=25 on the strict baseline and the dense NPL_HALF=60 radius-5.0 N=40/60/80/100 positive-gravity window with N=120 collapse, but cannot certify the exact retained table or the through-N=100 retention story as a single closed claim without knowing which archived parameter surface supports each row and without assertion-gated retention criteria. Repair target: register one primary runner/log packet or per-row parameter-card table, archive the named logs, and add hard checks for seed counts, NPL_HALF/connect_radius/layer2_prob, Born tolerance, k=0, gravity positivity/significance, decoherence ceiling, and N=120 failure. Claim boundary until fixed: it is safe to claim a finite diagnostic pocket: strict NPL_HALF=25 radius-4.0 reproduces retained N=15/N=25, dense NPL_HALF=60 radius-5.0 reproduces positive-gravity Born-clean k=0-clean mirror rows through N=100 and zero-gravity collapse at N=120; it is not yet a clean retained asymptotic or single-surface mirror-chokepoint theorem."
+    },
+    {
+      "archived_at": "2026-05-08T11:38:47.374580+00:00",
+      "archived_for_note_hash": "f9bb9452cae52f710b8eb2458498397d1e44c2ee8417a26ef5e90b39bec79584",
+      "audit_date": "2026-05-07T01:49:37.260797+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows."
+        },
+        "dep_claim_type": {
+          "mirror_chokepoint_boundary_fit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mirror_chokepoint_boundary_fit_note": "retained_bounded"
+        },
+        "deps": [
+          "mirror_chokepoint_boundary_fit_note"
+        ],
+        "load_bearing_score": 6.5,
+        "runner_hash": "afff61d204cc8a146c0b15c1c40e2105cdcb71693de7302da791b21efe07d563",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-mirror-chokepoint-parent-audit-1-2026-05-07",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "A clean bounded core is present, but the source note still presents exact stitched retained-row values and NPL_HALF=50/sparse/boundary provenance that are not reproduced by the default runner and rely on missing archived logs. The retained boundary-fit dependency closes the dense-card N=40/60/80/100 claim, but not the full stitched table as written.",
+      "claim_scope": "Finite mirror chokepoint diagnostic only: default runner evidence for N=15/25 plus the retained bounded boundary-fit dependency for the named dense NPL_HALF=60, connect_radius=5.0 card at N=40,60,80,100 with zero-gravity wall at N=120; no single-surface theorem, asymptotic law, sparse-rescue closure, or exact stitched-table certificate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-07T01:49:37.260797+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The source note's current bounded claim is that the mirror chokepoint lane is real as a finite pocket, with default strict NPL_HALF=25 rows at N=15/25 and a dense NPL_HALF=60, connect_radius=5.0 boundary extension through N=100 with an N=120 wall.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue - cheapest repair is to add a per-row parameter-card table tied to present runner-cache artifacts, or delete/mark out-of-scope the unsupported NPL_HALF=50 and sparse-rescue retained-row provenance.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the note's load-bearing retained table and through-N=100 interpretation still stitch rows across parameter surfaces while several cited joint/scaling/sparse/boundary logs are absent, and the live default runner only recovers N=15/25 while N=40/60/80/100 fail at default settings. Why this blocks: a hostile reviewer can certify the default N=15/25 rows and the retained dense NPL_HALF=60 boundary-card dependency, but cannot certify the exact source table or the NPL_HALF=50/sparse stitched provenance from the restricted packet. Repair target: replace the retained table with per-row parameter-card provenance backed by present cached logs or a registered assertion-gated runner, or narrow the note to cite only the default N=15/25 rows and the retained boundary-fit card. Claim boundary until fixed: safe bounded claim is the default small-N diagnostic plus the retained dense boundary card through N=100 with N=120 wall; not the exact stitched retained table or a single-surface/asymptotic mirror theorem."
+    },
+    {
+      "archived_at": "2026-05-09T12:29:40.585771+00:00",
+      "archived_for_note_hash": "402d1a60f90093bbfb83fb3f54b7073355cb444ce82f56688bbc3b15a590345a",
+      "audit_date": "2026-05-08T19:51:14.667124+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows."
+        },
+        "dep_claim_type": {
+          "mirror_chokepoint_boundary_fit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mirror_chokepoint_boundary_fit_note": "retained_bounded"
+        },
+        "deps": [
+          "mirror_chokepoint_boundary_fit_note"
+        ],
+        "load_bearing_score": 7.087,
+        "runner_hash": "afff61d204cc8a146c0b15c1c40e2105cdcb71693de7302da791b21efe07d563",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-gpt55-xhigh-019e0924-64c0-7fe2-8a65-28a87725175a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The strict runner stdout supports the N=15 and N=25 rows, and the retained_bounded boundary authority supports a dense-card pocket through N=100, but the source note's N=40 and N=60 retained-table values do not match the cited boundary authority values. The missing step is a closed per-row provenance certificate reconciling the stitched table values with the registered runner-cache artifacts.",
+      "claim_scope": "A bounded finite mirror-chokepoint diagnostic pocket through N=100 across two named parameter cards, with no single-surface or asymptotic theorem claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-08T19:51:14.667124+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The retained table is stitched across two parameter cards: N=15/25 from the strict NPL_HALF=25 card and N=40/60/80/100 from the dense NPL_HALF=60, connect_radius=5.0 boundary card.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-check whether a corrected per-row runner-cache certificate reconciles the N=40/N=60 retained values with docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: the current note claims a specific retained stitched table, but the provided strict runner only recovers N=15/N=25 and the cited dense boundary authority gives different N=40/N=60 values than the table in this note. Why this blocks: the bounded diagnostic claim depends on exact per-row provenance, and a hostile reviewer cannot certify the table as stated from the restricted packet. Repair target: land a per-row certificate or update the retained table so every row matches the named runner-cache artifact. Claim boundary until fixed: only the strict N=15/N=25 rows and the separate retained_bounded dense boundary-card result can be cited, not this exact stitched retained table."
+    },
+    {
+      "archived_at": "2026-05-09T18:08:13.016012+00:00",
+      "archived_for_note_hash": "69f71e48a9327c07764f462021c6aac79c855b7b72d86c98cfc37dc2367929e3",
+      "audit_date": "2026-05-09T14:16:01.186774+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows."
+        },
+        "dep_claim_type": {
+          "mirror_chokepoint_boundary_fit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mirror_chokepoint_boundary_fit_note": "retained_bounded"
+        },
+        "deps": [
+          "mirror_chokepoint_boundary_fit_note"
+        ],
+        "load_bearing_score": 7.087,
+        "runner_hash": null,
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0d17-cdf3-7fe0-95eb-dca7608341d7",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note's narrowed scope is clear, but the restricted packet does not include the named runner-cache contents, the certificate runner source, or certificate stdout. The missing step is an included artifact or runner transcript showing the N=15 and N=25 rows actually match the asserted cache and gates.",
+      "claim_scope": "Bounded finite mirror chokepoint diagnostic on the strict default NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0 card at N=15 and N=25 only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-09T14:16:01.186774+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The retained N=15 and N=25 rows are read directly from logs/runner-cache/mirror_chokepoint_joint.txt and mechanically verified by an assertion-gated certificate runner.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide the mirror_chokepoint_note_certificate_runner_2026_05_09.py source and its registered runner-cache stdout so the two retained rows and gates can be audited directly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the claim depends on a named runner-cache and assertion-gated certificate that are described but not present in the restricted packet. Why this blocks: without the cache, source, or stdout, the auditor cannot verify the retained N=15/N=25 numerical rows or the pass/fail gates from the provided inputs alone. Repair target: include the certificate runner source plus completed registered stdout or the exact cache excerpt it checks. Claim boundary until fixed: cite only that the note asserts a narrowed finite strict-card pocket, not that this packet independently certifies it."
+    },
+    {
+      "archived_at": "2026-05-11T08:51:19.625840+00:00",
+      "archived_for_note_hash": "19607243c8116e616b1d1625d050c17e46b9956d65f3b8a6c38fd7a7b6dd168a",
+      "audit_date": "2026-05-10T16:30:02.273900+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows."
+        },
+        "dep_claim_type": {
+          "mirror_chokepoint_boundary_fit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mirror_chokepoint_boundary_fit_note": "retained_bounded"
+        },
+        "deps": [
+          "mirror_chokepoint_boundary_fit_note"
+        ],
+        "load_bearing_score": 7.087,
+        "runner_hash": null,
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e12b9-158e-7c61-9b35-c01ec0b33a06",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source note narrows the claim appropriately, but the restricted audit packet contains no runner stdout, no cache contents, and no runner source for the load-bearing verification. The note's statement that a cache and certificate exist is not itself a supplied authority proving the rows.",
+      "claim_scope": "Bounded strict-default mirror chokepoint pocket at N=15 and N=25 on NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, contingent on the named runner-cache and certificate artifacts.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T16:30:02.273900+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The retained rows below are read directly from one runner-cache artifact: logs/runner-cache/mirror_chokepoint_joint.txt, and the certificate runner mechanically verifies these two rows against the cache.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue \u2014 supply logs/runner-cache/mirror_chokepoint_joint.txt, scripts/mirror_chokepoint_note_certificate_runner_2026_05_09.py, and its cached PASS stdout as the direct runner artifacts for re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the retained bounded pocket depends on unsupplied runner-cache and certificate artifacts. Why this blocks: hostile review cannot verify that the N=15/N=25 table values, PASS accounting, Born cleanliness, k=0 control, or strict-card failures at larger N match the named artifacts from the restricted packet. Repair target: provide the strict runner cache plus assertion-gated certificate runner source/stdout as direct audit inputs or make them the listed primary runner. Claim boundary until fixed: the note is only a documented narrowed claim, not an independently closed bounded theorem in this packet."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:53.137675+00:00",
+      "audit_date": "2026-05-11T12:49:21.639836+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows."
+        },
+        "dep_claim_type": {
+          "mirror_chokepoint_boundary_fit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mirror_chokepoint_boundary_fit_note": "retained_bounded"
+        },
+        "deps": [
+          "mirror_chokepoint_boundary_fit_note"
+        ],
+        "load_bearing_score": 8.248,
+        "runner_hash": null,
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-20260511-mirror-chokepoint-note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The live strict default runner reproduces the retained N=15/N=25 metrics and same-card FAIL markers, and the certificate runner verifies the note table against the registered cache. The note now excludes stitched large-N and asymptotic claims, and the dense-card result is covered only by the separate retained boundary-fit dependency.",
+      "claim_scope": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T12:49:21.639836+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:mirror_chokepoint_boundary_fit_note:retained_bounded->unaudited",
+      "load_bearing_step": "The strict default runner/cache and assertion certificate verify only the N=15 and N=25 mirror p2=0 retained rows, while the same card records FAIL for N=40,60,80,100.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if this row is expanded beyond strict-card N=15/N=25 or if dense-card/asymptotic/sparse-rescue results are stitched back into this note rather than kept as separate scoped claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The note's current scope is narrow enough to close: live strict-card output and the certificate cache agree on the retained N=15/N=25 rows and the N=40/60/80/100 failures. The prior stitched-table problem is repaired by excluding dense-card and other exploratory surfaces from this row. The boundary-fit dependency remains retained_bounded for its own named dense card and is not imported as part of this note's retained table."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Mirror Chokepoint Note",
+  "transitive_descendants": 18,
+  "verdict_rationale": null
+}

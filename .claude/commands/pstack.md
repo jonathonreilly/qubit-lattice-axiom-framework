@@ -95,9 +95,9 @@ Side channels (run anytime): `/frontier`, `/progress`, `/ledger`,
    selector, or empirical content.
 3. **Nature Decides** — Artifacts are ground truth. When theory and a
    verified runner disagree, investigate the runner first, then the theory.
-4. **The Ledger Is Authoritative** — `docs/audit/data/audit_ledger.json` on
-   `origin/main` is the only source of retained-grade status. Note headers,
-   memory, and prose go stale.
+4. **The Ledger Is Authoritative** — the tracked claim shards under
+   `docs/audit/data/ledger/` on `origin/main` are the only source of
+   retained-grade status. Note headers, memory, and prose go stale.
 5. **Propose, Never Ratify** — Author-side surfaces use `proposed_*` /
    `support` / `bounded` / `open` vocabulary. Audit verdicts come only from
    the independent audit lane; nothing in this stack runs it.

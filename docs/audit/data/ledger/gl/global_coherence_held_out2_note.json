@@ -1,0 +1,302 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "global_coherence_held_out2_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": "bounded empirical table",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "global_coherence_off_scaffold_note",
+    "global_coherence_predictor_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/global_coherence_predictor.py",
+    "scripts/independent_generators_heldout.py",
+    "scripts/universality_classifier.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "878abaf3099e10590c702083ddab66e5793e6c70e278cf0882023e2f79df0c38",
+  "note_path": "docs/GLOBAL_COHERENCE_HELD_OUT2_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368486+00:00",
+      "archived_for_note_hash": "f13ce1e999ee97de04659b0b7a13001ccd07b6dcb362e3565f0db35981f309ae",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-11T08:32:51.396484+00:00",
+      "archived_for_note_hash": "e2ae2182c4243a19b9e3bae745984e7e730e06a8be4650906b8a2b879fb4d9ab",
+      "audit_date": "2026-04-30T19:29:16.060481+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "global_coherence_off_scaffold_note": "unaudited",
+          "global_coherence_predictor_note": "audited_failed"
+        },
+        "deps": [
+          "global_coherence_off_scaffold_note",
+          "global_coherence_predictor_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. One-hop dependencies are not all retained (global_coherence_off_scaffold_note=bounded, global_coherence_predictor_note=audited_failed), so the chain does not close under the leaf audit rule.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "> is now the governing result for the free_coh program. On an",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit or repair the listed dependency rows to retained/equivalent closure, then re-audit this claim.",
+      "open_dependency_paths": [
+        "docs/GLOBAL_COHERENCE_OFF_SCAFFOLD_NOTE.md",
+        "docs/GLOBAL_COHERENCE_PREDICTOR_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: the load-bearing chain depends on non-retained one-hop authorities (global_coherence_off_scaffold_note=bounded, global_coherence_predictor_note=audited_failed). Why this blocks: the leaf row can only audit clean if its cited inputs are already retained or if it has no open upstream premise. Repair target: audit or repair the listed dependency rows to retained/equivalent closure, then re-audit this claim. Claim boundary until fixed: safe to cite only at its declared candidate retained-grade tier with the upstream dependency condition attached."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:54.696597+00:00",
+      "archived_for_note_hash": "e0b4a5c29736dc99aae2cfb1bed9caaa983b8d4ebd3cf0f3d7df4d7b60b14e6a",
+      "audit_date": "2026-05-11T17:04:22.345583+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "global_coherence_off_scaffold_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "global_coherence_predictor_note": "Historical scaffolded global-coherence finite replay: free_coh >= 7.9597e-04 gives 7/9 scaffolded held-out accuracy versus 6/9 for the old two-property rule, with the retained off-scaffold dependency limiting this to scaffold-specific evidence and closing the classifier lane."
+        },
+        "dep_claim_type": {
+          "global_coherence_off_scaffold_note": "bounded_theorem",
+          "global_coherence_predictor_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "global_coherence_off_scaffold_note": "retained_bounded",
+          "global_coherence_predictor_note": "retained_bounded"
+        },
+        "deps": [
+          "global_coherence_off_scaffold_note",
+          "global_coherence_predictor_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d179faa57bef6637de06060fd6463a11b46201cc4fd0ead044168bdb6e3b5800",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The current runner reproduces the 12-family table and 10/12 versus 6/12 finite comparison, while the retained first-batch dependency supplies the 7/9 versus 6/9 scaffolded component. The off-scaffold retained-bounded dependency explicitly blocks broad generator-agnostic or law-level promotion, so the chain closes only for the bounded scaffolded replay scope.",
+      "claim_scope": "Bounded scaffolded held-out finite replay: the registered runner's 12 predeclared grid-scaffolded generators give 10/12 frozen free_coh-threshold accuracy versus 6/12 for the old node-level rule, and with the retained first-batch scaffolded dependency give the descriptive 17/21 versus 12/21 scaffolded statistic. The retained off-scaffold dependency limits this to scaffolded historical evidence; no generator-agnostic predictor, law-level theorem, or classifier-exhaustion closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T17:04:22.345583+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The frozen rule `free_coh >= 7.96e-04` applied without refit to the 12 new scaffolded generators gives 10/12 accuracy versus 6/12 for the old node-level rule, and combined with the first scaffolded batch gives 17/21 versus 12/21.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit only if downstream text cites this as generator-agnostic, law-level, off-scaffold, or as a classifier-exhaustion theorem; those claims are outside the clean bounded scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The finite replay is computed from the scripted generator definitions and frozen threshold, and a live rerun matches the archived 12-family results: 10/12 for free_coh and 6/12 for the old node-level rule. The source note's own header and honest-read section, together with the retained off-scaffold dependency, prevent interpreting this as a universal predictor or classifier-closure theorem. Residual risk is scope drift: downstream uses must preserve that this is scaffolded empirical finite evidence, not an off-scaffold law."
+    },
+    {
+      "archived_at": "2026-06-08T10:14:10.868181+00:00",
+      "archived_for_note_hash": "a9805c3b71b2b3d1bc67400daffab8a4be7d7f694231879473d94a4a5835f897",
+      "audit_date": "2026-06-07T18:22:02.770668+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "global_coherence_off_scaffold_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "global_coherence_predictor_note": "Historical scaffolded global-coherence finite replay: free_coh >= 7.9597e-04 gives 7/9 scaffolded held-out accuracy versus 6/9 for the old two-property rule, with the retained off-scaffold dependency limiting this to scaffold-specific evidence and closing the classifier lane."
+        },
+        "dep_claim_type": {
+          "global_coherence_off_scaffold_note": "bounded_theorem",
+          "global_coherence_predictor_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "global_coherence_off_scaffold_note": "retained_bounded",
+          "global_coherence_predictor_note": "retained_bounded"
+        },
+        "deps": [
+          "global_coherence_off_scaffold_note",
+          "global_coherence_predictor_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5556fba86e9f96f593823f46c177fed9bbbbbaa95b2c8e189f489c6c421e41eb",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-181958-67a2785d21-global_coherence_held_out2_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The 12-row L2 arithmetic is internally supported by the note table and the frozen-log verifier, but the supplied runner path verifies archived values rather than independently recomputing the batch. The broader positive-theorem framing also needs a bridge from finite scaffolded empirical accuracy to the claimed predictor status, which the note itself leaves bounded and open.",
+      "claim_scope": "Audited the finite scaffolded 12-generator held-out table/log claim for the frozen free_coh threshold, including the 10/12 L2 count and archived 6/12 old-rule comparison; not a law-level or off-scaffold predictor theorem.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-07T18:22:02.770668+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The frozen rule free_coh >= 7.96e-04 applied without refit to 12 new scaffolded generators achieves 10/12 = 83.3%, beating the old node-level rule's 6/12 = 50.0% by about +33 points.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad: split the retained claim to the finite 12-generator scaffolded table/log result, demote cross-batch predictor language to bounded interpretation, and correct the L1 heading typo.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The runner reports 11/11 checks, but those checks parse and assert a frozen log; they are not a live first-principles recomputation unless --recompute is run. The displayed L2 table does count to 10/12, and 10/12, 6/12, 17/21, and 12/21 arithmetic checks out. The packet also contains an internal typo in the L1 heading, which says 6/12 = 66.7% even though the misses listed and summary table give 8/12 = 66.7%. The audited support is therefore a bounded archived empirical table, not a clean positive theorem for a global predictor."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:18.498512+00:00",
+      "audit_date": "2026-06-08T11:36:17.953819+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "global_coherence_off_scaffold_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "global_coherence_predictor_note": "Historical scaffolded global-coherence finite replay: free_coh >= 7.9597e-04 gives 7/9 scaffolded held-out accuracy versus 6/9 for the old two-property rule, with the retained off-scaffold dependency limiting this to scaffold-specific evidence and closing the classifier lane."
+        },
+        "dep_claim_type": {
+          "global_coherence_off_scaffold_note": "bounded_theorem",
+          "global_coherence_predictor_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "global_coherence_off_scaffold_note": "retained_bounded",
+          "global_coherence_predictor_note": "retained_bounded"
+        },
+        "deps": [
+          "global_coherence_off_scaffold_note",
+          "global_coherence_predictor_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d1f05dddd55b8791571f3c971a0c0985542739e61c4922b51b84314a70dc1e1b",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-113245-c7f97c145e-global_coherence_held_out2_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source table's L2 rule applications tally to 10/12, and the stated old-rule comparator gives 6/12, so the finite-table arithmetic closes. The cited one-hop authorities are marked retained_bounded in this packet and are used only for threshold provenance and bounded context.",
+      "claim_scope": "Finite 12-generator scaffolded held-out table only: frozen `free_coh >= 7.9597e-04` scores 10/12 and the old node-level rule scores 6/12; 17/21 cross-batch language is context only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T11:36:17.953819+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On this 12-generator scaffolded held-out table, the frozen rule `free_coh >= 7.96e-04` has 10 agreements out of 12 while the old node-level rule has 6 out of 12, giving an 83.3% vs 50.0% finite-table comparison.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor may re-check the non-load-bearing off-scaffold authority prose around `free_coh` ranges; it is not used for this finite 12-row scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The repaired note confines the load-bearing claim to the 12-row scaffolded table and explicitly demotes cross-batch and off-scaffold generalization. The runner cache reports 11/11 frozen-log checks passing, and the supplied source contains a recompute path that constructs the generators and battery through the included helper code rather than merely printing the headline. Manual tally of the displayed L2 table matches 10/12 = 83.3%, and the old-rule comparison arithmetic matches 6/12 = 50.0% and a 33.3 point gap."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/global_coherence_held_out2.py",
+  "title": "Global Coherence \u2014 Larger Held-Out Batch (12 NEW Generators)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

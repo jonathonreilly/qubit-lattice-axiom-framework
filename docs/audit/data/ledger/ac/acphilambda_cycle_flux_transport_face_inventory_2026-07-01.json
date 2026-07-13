@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_cycle_flux_transport_face_inventory_2026-07-01",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+    "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+    "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c29b0a7b7401cca42e523de0eada207a29aab4340892ebdf3be022dfbdf39c17",
+  "note_path": "docs/ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:36.938676+00:00",
+      "audit_date": "2026-07-10T03:41:15.527123+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited.",
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded."
+        },
+        "dep_claim_type": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "bounded_theorem",
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "retained_bounded",
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "86a5ebbcf9c343e08d50d899cbfdc21fd7976b826acb3eeba571cf910eb0541a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00036-acphilambda_cycle_flux_trans",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Exact algebra and pseudoinverse computations establish the fixed-point/Green correspondence from the retained forced-pair result. They do not derive the separately acknowledged physical identification Phi = Tr L^+.",
+      "claim_scope": "The retained C3 (1,2) fixed-locus sums admit an exact cycle-Laplacian Green-trace and per-site-diagonal presentation; the physical flux-equals-return wall was not audited as derived.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T03:41:15.527123+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15:retained_bounded->unaudited",
+      "load_bearing_step": "For the forced conjugate pair, each fixed-point denominator is the modulus-squared nonzero cycle-Laplacian eigenvalue, yielding S_sum(1,2) = Tr L_3^+ = 2/3 and L3(1,2) = (L_3^+)vv = 2/9.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should preserve the distinction between the exact algebraic transport face and the expressly underived physical Phi = Tr L^+ wall.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 19,
+        "C": 54,
+        "D": 6,
+        "total_pass": 127
+      },
+      "verdict_rationale": "The load-bearing contribution is an algebraic re-expression of one retained parent result using standard cycle-graph spectral mathematics, with no external-comparator check. The runner genuinely computes the fixed-point and pseudoinverse identities, but its physical-wall block assigns delta = 2/9 and then checks consistency rather than deriving that assignment. Consequently the exact transport face is decoration-grade, while the note correctly leaves the physical wall open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py",
+  "title": "AC_phi_lambda Cycle-Flux Transport-Face Inventory",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

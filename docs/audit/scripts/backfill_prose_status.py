@@ -16,9 +16,10 @@ goes silent. New audits write prose_status via apply_audit.py.
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 from pathlib import Path
+
+import ledger_io
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
@@ -35,11 +36,8 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    if not LEDGER_PATH.exists():
-        print(f"FAIL: ledger missing at {LEDGER_PATH}", file=sys.stderr)
-        return 1
-
-    ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+    ledger_io.ensure_cache()
+    ledger = ledger_io.load_ledger()
     rows = ledger.get("rows", {})
     if not rows:
         print("audit_ledger.json has no rows; nothing to backfill")
@@ -67,10 +65,7 @@ def main() -> int:
         print("no rows needed backfill; ledger unchanged")
         return 0
 
-    LEDGER_PATH.write_text(
-        json.dumps(ledger, indent=2, sort_keys=True) + "\n",
-        encoding="utf-8",
-    )
+    ledger_io.save_ledger(ledger)
     print(f"wrote {LEDGER_PATH.relative_to(REPO_ROOT)}")
     return 0
 

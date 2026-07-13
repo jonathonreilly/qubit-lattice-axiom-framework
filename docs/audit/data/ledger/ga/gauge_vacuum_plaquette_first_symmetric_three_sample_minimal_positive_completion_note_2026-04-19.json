@@ -1,0 +1,353 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.172,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b447c3121b47c2482b8cfcfa9552ba565e83e9a724cc56f17080885cc0182dfe",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.105571+00:00",
+      "archived_for_note_hash": "7269d1524de66567a510fdf1a20c9a01e6cbee3ff845dbb24046b187ea6a9089",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T14:18:54.699287+00:00",
+      "archived_for_note_hash": "5f072bf36eb08f4f5a3d4fdae0cc250c0ad1313c511797fbb0b4a1804183eca0",
+      "audit_date": "2026-04-30T19:29:03.757912+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The registered runner returned nonzero, so the current executable chain is not cleanly reproducible.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "three-sample seam; the local Wilson triple still fails the retained positive",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the primary runner returned nonzero in the restricted audit environment. Why this blocks: a nonzero runner leaves either stale artifact/import drift or an explicit open-burden FAIL in the executable witness, so the chain cannot be ratified cleanly. Repair target: repair the runner's missing artifact/import path or narrow the note around the runner-reported burden, then rerun. Claim boundary until fixed: safe to cite as a support note with non-clean executable support."
+    },
+    {
+      "archived_at": "2026-05-04T12:32:51.254321+00:00",
+      "audit_date": "2026-05-03T21:24:35.062618+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-gauge-symmetric-three-sample",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped result is an algebraic half-line cone-membership statement over the reconstructed coordinates: the first two coordinates are positive and the third becomes nonnegative exactly when t >= -a^loc_(1,1). The note explicitly excludes the broader beta = 6 boundary/PF realization, so that unclosed physical bridge is outside the audited scope.",
+      "claim_scope": "Given the displayed local Wilson three-sample coordinates and first symmetric retained positive cone coordinates, the adjoint-only repair has the unique minimal positive completion a^min = (a^loc_(0,0), a^loc_(1,0), 0) and completed sample triple Z^min = F a^min.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T21:24:35.062618+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "Among all adjoint-only repairs a = (a^loc_(0,0), a^loc_(1,0), a^loc_(1,1) + t), cone membership is equivalent to t >= -a^loc_(1,1), so t = -a^loc_(1,1) is the unique minimal adjoint-only positive repair.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if the scoped claim is later expanded to assert full beta = 6 spatial-environment realization or global PF selector closure.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-context",
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner completed with PASS=10 FAIL=0 and reproduced the note's a^loc, r_min, and Z^min values to the stated tolerance. The load-bearing uniqueness claim is not a hidden physical identification; it is the direct coordinate-cone fact that along the adjoint-only family the third coordinate is a^loc_(1,1)+t and the cone condition is coordinatewise nonnegativity. Residual risk is limited to claims beyond this scoped first-sector adjoint-only completion candidate, which the note expressly lists as not closed."
+    },
+    {
+      "archived_at": "2026-05-11T12:24:19.444002+00:00",
+      "archived_for_note_hash": "5f072bf36eb08f4f5a3d4fdae0cc250c0ad1313c511797fbb0b4a1804183eca0",
+      "audit_date": "2026-05-05T04:45:58.761386+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.566,
+        "runner_hash": "a48d33ae347b8d41003099301bb36c6704ea4dfd82cadb0d8c90ef8a4a8ddc22",
+        "transitive_descendants": 267
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-gauge_vacuum_plaquette_f-076",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The adjoint-only half-line argument closes algebraically once Z^loc, F, and the retained cone coordinates are accepted. The restricted packet does not provide the upstream derivation of those inputs, and the runner imports them from an unprovided prior module.",
+      "claim_scope": "Audited the adjoint-only minimal positive completion on the three named samples W_A, W_B, W_C, assuming the imported local Wilson triple, radical reconstruction map F, and first symmetric retained cone.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:45:58.761386+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the explicit local Wilson triple, the first two retained coordinates of a^loc = F^(-1) Z^loc are nonnegative and the third is strictly negative, so along adjoint-only repairs cone membership is equivalent to t >= -a^loc_(1,1).",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the upstream local-Wilson obstruction note or runner source in the restricted packet, or inline an independent derivation of radical_entries, sample_matrix, and su3_partition_sum.",
+      "open_dependency_paths": [
+        "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The visible theorem is a valid algebraic consequence of the imported coordinates: setting the negative third coordinate to zero is the unique minimum along the stated adjoint-only repair family. However, the note has no provided cited authority even though it relies on the local-Wilson obstruction theorem, and the runner source imports radical entries, the sample matrix, and the partition sum from an external script not included in the restricted packet. Therefore the audit can only certify the conditional algebraic completion, not a first-principles derivation from the axiom."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.601886+00:00",
+      "audit_date": "2026-06-09T11:39:04.530205+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "Audited the finite first-symmetric retained-sector obstruction: the named local Wilson one-plaquette sample triple lies outside Cone(r_0,r_1,r_2) and therefore cannot itself be a nonnegative first-sector positive-type retained evaluator; the true environment samples remain unevaluated."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
+        ],
+        "load_bearing_score": 6.728,
+        "runner_hash": "a48d33ae347b8d41003099301bb36c6704ea4dfd82cadb0d8c90ef8a4a8ddc22",
+        "transitive_descendants": 52
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-113644-60eb53ec2b-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited parent authority is retained_no_go and supplies the required local triple, radical reconstruction map, and cone-membership coordinate test. From those inputs, the half-line inequality and the displayed a^min and Z^min values follow by direct algebra, with no additional physical bridge required at this scope.",
+      "claim_scope": "Given the retained parent inputs Z^loc, F, and the first symmetric retained cone C with coordinate test F^(-1)Z >= 0, the adjoint-only one-parameter repair has unique minimum r_min = -a^loc_(1,1), yielding a^min and Z^min on W_A, W_B, W_C; no full beta=6 environment realization is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-09T11:39:04.530205+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17:retained_no_go->unaudited",
+      "load_bearing_step": "Along a(t) = (a^loc_(0,0), a^loc_(1,0), a^loc_(1,1) + t), cone membership is equivalent to t >= -a^loc_(1,1), so t = -a^loc_(1,1) is the unique minimal adjoint-only positive repair.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if the retained_no_go parent status or the radical/cone normalization changes; stale conditional-perimeter prose in the source note appears superseded by the retained parent supplied in this packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic closure over retained-grade inputs, not a first-principles recomputation claim. I independently checked the displayed radical matrix route using the cited Z^loc values: it gives a^loc = (0.349606952458405..., 0.09339384931083795..., -0.03190961277002442...), r_min = 0.03190961277002442..., and Z^min = (0.1351652795620484..., 0.3740128800091385..., 0.5438438585441972...). The runner's hard-coded reference comparisons are therefore not the sole support, and its computed signs and half-line scan match the theorem. The source note's caveats about full beta=6 environment/PF closure are outside the audited claim scope."
+    },
+    {
+      "archived_at": "2026-06-18T01:40:24.884168+00:00",
+      "audit_date": "2026-06-15T23:23:52.148123+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "Scoped obstruction only: on the named samples W_A, W_B, W_C and the first symmetric retained sector, the exact local Wilson one-plaquette triple is outside the retained positive cone and therefore cannot itself be a positive-type retained evaluator."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
+        ],
+        "load_bearing_score": 9.728,
+        "runner_hash": "a48d33ae347b8d41003099301bb36c6704ea4dfd82cadb0d8c90ef8a4a8ddc22",
+        "transitive_descendants": 52
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-232131-0be51e41e8-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained parent supplies F, Z^loc, the reconstructed coordinates, and the coordinatewise cone-membership criterion. Since a^loc_(0,0)>0, a^loc_(1,0)>0, and a^loc_(1,1)<0, the adjoint-only half-line closes algebraically at t=-a^loc_(1,1), and F a^min gives the stated Z^min values.",
+      "claim_scope": "Adjoint-only first-symmetric retained positive completion of the named W_A, W_B, W_C local Wilson triple, with a^loc_(0,0) and a^loc_(1,0) fixed and only the adjoint coordinate repaired.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-15T23:23:52.148123+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17:retained_no_go->retained_pending_chain",
+      "load_bearing_step": "Along a(t) = (a^loc_(0,0), a^loc_(1,0), a^loc_(1,1) + t), cone membership is equivalent to t >= -a^loc_(1,1), with unique minimum t = -a^loc_(1,1).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the adjoint-only scope explicit and not read this as a full environment-realization theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The cited parent is supplied as retained_no_go and fixes the local Wilson triple, radical sample matrix, inverse reconstruction coordinates, and cone-membership test. The primary/helper sources compute those inputs rather than merely printing constants, and an independent direct 3x3 numerical inversion from the displayed radicals and parent Z^loc reproduces a^loc, r_min, Z^min, and the stated signs/directions. The clean scope is only the adjoint-only minimal completion; it does not audit realization by the true beta=6 spatial environment or any global minimization outside that half-line."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.951863+00:00",
+      "audit_date": "2026-06-18T06:06:28.558786+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "The normalized local Wilson one-plaquette triple on W_A, W_B, W_C is outside the first symmetric retained positive cone because its reconstructed adjoint retained coordinate is strictly negative."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
+        ],
+        "load_bearing_score": 6.755,
+        "runner_hash": "a48d33ae347b8d41003099301bb36c6704ea4dfd82cadb0d8c90ef8a4a8ddc22",
+        "transitive_descendants": 53
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The current packet supplies the upstream local-Wilson obstruction authority as retained_no_go, including Z^loc, F, and the negative adjoint coordinate. The completion claim then follows by coordinatewise nonnegativity on a one-dimensional half-line; it does not close any broader beta=6 environment realization.",
+      "claim_scope": "Given the retained local Wilson coordinates, radical sample matrix F, and coordinatewise retained positive cone, the adjoint-only family has the unique minimal positive repair r_min=-a^loc_(1,1), yielding a^min and Z^min on W_A,W_B,W_C.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-18T06:06:28.558786+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17:retained_no_go->retained_pending_chain",
+      "load_bearing_step": "Along the adjoint-only family a=(a^loc_(0,0),a^loc_(1,0),a^loc_(1,1)+t), cone membership is equivalent to t >= -a^loc_(1,1), so the unique minimum is t=-a^loc_(1,1).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that the scoped claim remains adjoint-only; broader full beta=6 spatial-environment realization is explicitly outside scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 5,
+        "C": 1,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "Issue: the scoped result is an exact algebraic corollary of the retained parent obstruction rather than an independent framework computation. Why this blocks a clean theorem classification: once a^loc and F^{-1}Z>=0 are accepted, the half-line minimum and completed triple are standard arithmetic. Repair target: an independent promotion would need a new retained theorem realizing or deriving the completed triple beyond the parent inputs. Claim boundary until fixed: unique minimality is audited only along the declared adjoint-only repair route."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_2026_04_19.py",
+  "title": "Gauge-Vacuum Plaquette First Symmetric Three-Sample Minimal Positive Completion",
+  "transitive_descendants": 50,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

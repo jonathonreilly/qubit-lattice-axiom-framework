@@ -1,0 +1,817 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 17,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 18.76,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e3f4ce0a0b208757225d718d12be839c1f2fbf3e67e072db64935025da37fd0a",
+  "note_path": "docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.088488+00:00",
+      "audit_date": "2026-05-26T01:48:14.742718+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.786,
+        "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
+        "transitive_descendants": 882
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T014754Z-91d14616-tensor_product_translati-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof closes by finite tensor-product basis permutation algebra using the accepted A1 qubit factor and A2 Z^3 translation structure, plus stated standard finite-volume periodic identification. Charge conservation follows by conjugating each summand and relabeling the finite site sum.",
+      "claim_scope": "Tensor-permutation translations on finite periodic tensor-product qubit blocks are unitary, obey the translation group law, translate the per-site ladder operators by conjugation, and commute with Q_total = sum_x a_x^dagger a_x.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-26T01:48:14.742718+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-25T23:53:39.238817+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T235316Z-0a7b7bbc-tensor_product_translati-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For a finite periodic block \u039b \u2282 Z^3 with H_\u039b = \u2297_x C^2_x, the tensor-permutation translations T_a are unitary, obey T_a T_b = T_{a+b}, conjugate the local per-site ladder operators as T_a a_x T_a^\u2020 = a_{x+a} and T_a a_x^\u2020 T_a^\u2020 = a_{x+a}^\u2020, and commute with Q_total = \u03a3_x a_x^\u2020 a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-26T01:48:14.742718+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T014754Z-91d14616-tensor_product_translati-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Tensor-permutation translations on finite periodic tensor-product qubit blocks are unitary, obey the translation group law, translate the per-site ladder operators by conjugation, and commute with Q_total = sum_x a_x^dagger a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "Using definition (2), T_a sends factor-content |c_y>_y to |c_{y-a}>_y, so conjugating the single-site ladder operator a_x by T_a gives a_{x+a}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the convention match between the note's active translation T_a and the runner's basis-index convention, but the packet is internally consistent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 131,
+        "D": 0,
+        "total_pass": 131
+      },
+      "verdict_rationale": "The load-bearing covariance identity is a direct algebraic consequence of the defined tensor-permutation action and the single-site ladder operator definition. The cited upstream axiom memo is explicitly flagged as an accepted axiom premise, so its meta status does not force a conditional downgrade. The runner source genuinely constructs the finite tensor-product matrices and permutation matrices with exact sympy arithmetic and verifies the claimed identities; it does not hard-code contested outputs or import external comparators."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.552010+00:00",
+      "audit_date": "2026-06-05T16:31:41.003574+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.414,
+        "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
+        "transitive_descendants": 964
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-162952-57ca763e66-tensor_product_translation_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted axiom premise supplies the Z^3 translation structure and one-site M_2(C) qubit algebra; the finite tensor product, ladder matrices, and periodic quotient are explicit scoped definitions. Direct basis-state permutation algebra proves T1-T4 without importing external numerics, dynamics, Noether input, or CAR anticommutation.",
+      "claim_scope": "For finite periodic lattice blocks, the tensor-factor permutation translation T_a on H_Lambda = tensor_x C^2_x is unitary, obeys the translation group law, covariantly shifts the defined per-site Pauli ladder operators a_x and a_x^dagger, and commutes with Q_total = sum_x a_x^dagger a_x.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T16:31:41.003574+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-05T16:29:18.889496+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260605-162736-27470239c2-tensor_product_translation_f",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For a finite periodic lattice block, the tensor-permutation translation T_a on H_Lambda = tensor_{x in Lambda} C^2_x is unitary, obeys the translation group law, conjugates the per-site Pauli ladder operators as T_a a_x T_a^dagger = a_{x+a} and likewise for adjoints, and commutes with Q_total = sum_x a_x^dagger a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-05T16:31:41.003574+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260605-162952-57ca763e66-tensor_product_translation_f",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For finite periodic lattice blocks, the tensor-factor permutation translation T_a on H_Lambda = tensor_x C^2_x is unitary, obeys the translation group law, covariantly shifts the defined per-site Pauli ladder operators a_x and a_x^dagger, and commutes with Q_total = sum_x a_x^dagger a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "After T_a^\u2020 moves the content b_{y+a} into factor y, a_x lowers the x factor, and applying T_a moves that lowered factor to x+a, giving T_a a_x T_a^\u2020 = a_{x+a}; the adjoint and Q_total identities then follow by adjointing and relabeling the finite periodic sum.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Confirm downstream consumers need only the per-site Pauli ladder convention, not inter-site CAR fermions; no gap in this scoped bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 131,
+        "D": 0,
+        "total_pass": 131
+      },
+      "verdict_rationale": "The displayed matrix conventions are internally consistent: sigma_minus lowers |1> to |0>, sigma_plus raises |0> to |1>, and sigma_plus sigma_minus is the local number projector. Independently of the runner, the definition T_a|b>_x = |b_{x-a}>_x makes T_a a basis permutation, gives T_a T_b = T_{a+b}, and moves any local operator at x to x+a under conjugation. The runner source genuinely constructs exact sympy permutation and tensor-product matrices and checks the asserted identities, with no hard-coded measured constants or opaque helper imports."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.521387+00:00",
+      "audit_date": "2026-06-05T20:49:22.915147+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.416,
+        "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
+        "transitive_descendants": 965
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-204814-f04dec8823-tensor_product_translation_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Lattice and Quantum axioms supply the site translation structure and one-site C^2/M_2(C) carrier, while the finite tensor product, local ladder operators, and periodic identification are explicit scoped definitions. The displayed basis-vector computation proves the covariance identity, and unitarity, group law, and charge conservation follow by permutation algebra and relabeling.",
+      "claim_scope": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T20:49:22.915147+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-05T20:47:41.439116+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260605-204544-34b9369204-tensor_product_translation_f",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-periodic-torus tensor-product statement: on H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators, the tensor-permutation translations T_a are unitary, obey T_a T_b = T_{a+b}, covary a_x and a_x^dagger to site x+a, and commute with Q_total = sum_x a_x^dagger a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-05T20:49:22.915147+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260605-204814-f04dec8823-tensor_product_translation_f",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "On a tensor-product basis vector, applying T_a^\u2020 shifts the site content to y+a, a_x lowers the content originally at x+a, and T_a shifts back, giving exactly the action of a_{x+a}.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only the source-note citation filename drift: the note names MINIMAL_AXIOMS_2026-05-20.md while the packet supplies the current 2026-06-05 minimal-axiom authority; this does not affect the audited algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 131,
+        "D": 0,
+        "total_pass": 131
+      },
+      "verdict_rationale": "The proof does not import a physical Hamiltonian, Noether theorem, fitted value, external comparator, or Jordan-Wigner anticommutation premise. An independent check of the translation convention confirms the sign: T_a a_x T_a^\u2020 lowers the bit at x+a, matching a_{x+a}, and the adjoint and Q_total identities follow algebraically. The runner source genuinely constructs exact sympy permutation and local-operator matrices and verifies the stated identities, rather than printing hard-coded expected passes."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.896947+00:00",
+      "audit_date": "2026-06-30T15:24:20.028569+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 22.179,
+        "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
+        "transitive_descendants": 1158
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T152420Z-afe22280-tensor_product_translati",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited minimal-axioms premise supplies the Z^3 translation structure and one-site M_2(C) algebra; the remaining tensor-product space, local ladder matrices, periodic finite block, and Q_total are explicit definitions. The displayed conjugation computation correctly tracks the inverse shift and gives x -> x+a, and charge conservation follows by relabeling a finite periodic sum.",
+      "claim_scope": "For finite periodic blocks of the Z^3 site lattice with one C^2 factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^\u2020, and commutes with Q_total = sum_x a_x^\u2020 a_x.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-30T15:24:20.028569+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T15:22:09.106228+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T152209Z-5663b9f9-tensor_product_translati",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On a finite periodic Z^3 block, the tensor-permutation translation T_a on \u2297_x C\u00b2_x is unitary, obeys the translation group law, covariantly shifts the stated per-site Pauli ladder operators, and commutes with Q_total = \u03a3_x a_x\u2020 a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T15:24:20.028569+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T152420Z-afe22280-tensor_product_translati",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For finite periodic blocks of the Z^3 site lattice with one C^2 factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^\u2020, and commutes with Q_total = sum_x a_x^\u2020 a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Using the basis-permutation definition of T_a, conjugation sends the local ladder operator on factor x to the same ladder operator on factor x+a, hence T_a a_x T_a^\u2020 = a_{x+a} and similarly for a_x^\u2020.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 131,
+        "D": 0,
+        "total_pass": 131
+      },
+      "verdict_rationale": "The theorem is a direct finite-dimensional operator-algebra computation from the accepted Lattice and Qubit premise plus explicit definitions. Independent inspection of the shift convention confirms the signs: T_a maps output slot y to prior content y-a, so T_a a_x T_a^\u2020 acts at x+a. The runner source genuinely constructs exact sympy permutation and tensor-product matrices and checks the claimed identities entrywise; it does not hard-code contested outcomes or import external comparators."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.508891+00:00",
+      "audit_date": "2026-07-01T19:34:12.191691+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 22.179,
+        "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
+        "transitive_descendants": 1158
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-p1-20260701T193026Z-bce90a6c-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal-axiom premise supplies the one-site M_2(C) qubit algebra and Z^3 translation substrate, and the note constructs the finite tensor-product operators and proves the advertised covariance, unitarity, group law, and charge conservation directly from those primitives plus explicit finite-volume definitions. The runner source also genuinely instantiates the matrices and permutation operators and checks the identities exactly, without importing a contested theorem, fitted value, or comparator. Under the packet's axiom-premise carve-out, this is a class C first-principles framework computation/closure, not merely a downstream algebraic corollary of an already-retained parent claim.",
+      "claim_scope": "On a finite periodic tensor-product space H_\u039b = \u2297_{x\u2208\u039b} C\u00b2_x with per-site Pauli ladder operators and T_a defined as the cyclic tensor-factor permutation, T_a is unitary, obeys the translation group law, translates a_x and a_x^\u2020 by conjugation, and commutes with Q_total.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T19:34:12.191691+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T19:25:59.721152+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T192559Z-97706a82-tensor_product_translati",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For finite periodic blocks of the Z^3 site set with per-site C^2 factors and local Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covaries a_x and a_x^\u2020 by site shift, and commutes with Q_total.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-01T19:29:23.404410+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T192923Z-cc0bc4da-tensor_product_translati",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On a finite periodic tensor-product space H_\u039b = \u2297_{x\u2208\u039b} C\u00b2_x with per-site Pauli ladder operators and T_a defined as the cyclic tensor-factor permutation, T_a is unitary, obeys the translation group law, translates a_x and a_x^\u2020 by conjugation, and commutes with Q_total.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-01T19:34:12.191691+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-p1-20260701T193026Z-bce90a6c-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "The first audit reached the correct clean verdict and claim type, but under-classified the load-bearing step and runner checks as class A; this bridge derives the operator identities from the accepted framework baseline rather than checking an identity over an already-derived retained input.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The accepted minimal-axiom premise supplies the one-site M_2(C) qubit algebra and Z^3 translation substrate, and the note constructs the finite tensor-product operators and proves the advertised covariance, unitarity, group law, and charge conservation directly from those primitives plus explicit finite-volume definitions. The runner source also genuinely instantiates the matrices and permutation operators and checks the identities exactly, without importing a contested theorem, fitted value, or comparator. Under the packet's axiom-premise carve-out, this is a class C first-principles framework computation/closure, not merely a downstream algebraic corollary of an already-retained parent claim.",
+          "load_bearing_step_class": "C",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers preserve the narrow finite-periodic, per-site Pauli/non-CAR scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The accepted minimal-axiom premise supplies the one-site M_2(C) qubit algebra and Z^3 translation substrate, and the note constructs the finite tensor-product operators and proves the advertised covariance, unitarity, group law, and charge conservation directly from those primitives plus explicit finite-volume definitions. The runner source also genuinely instantiates the matrices and permutation operators and checks the identities exactly, without importing a contested theorem, fitted value, or comparator. Under the packet's axiom-premise carve-out, this is a class C first-principles framework computation/closure, not merely a downstream algebraic corollary of an already-retained parent claim."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.506712+00:00",
+      "audit_date": "2026-07-02T07:22:55.215626+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 22.179,
+        "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
+        "transitive_descendants": 1158
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-20260702T072206Z-unanimous",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "All five independent panel judges sided with the first audit. The claim closes cleanly from the registered minimal_axioms premise plus the note's explicit finite tensor-product, ladder-operator, periodic-block, and tensor-permutation definitions. The covariance identity and charge conservation are bridge content constructed from the one-qubit local algebra on Z^3, not merely restatements of an independent retained input. Under the class rubric, accepted axiom-premise dependencies do not downgrade this first-principles framework-baseline closure; the exact runner also constructs those finite operators and reports 131 class-C pass checks with no failures.",
+      "claim_scope": "For finite periodic tensor-product qubit blocks over Z^3, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates the defined per-site ladder operators and their adjoints, and commutes with Q_total = sum_x a_x^dagger a_x.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T07:22:55.215626+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T07:13:50.531702+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T071350Z-d955dbe4-tensor_product_translati",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For finite periodic tensor-product qubit blocks over Z^3, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates the defined per-site ladder operators and their adjoints, and commutes with Q_total = \u03a3_x a_x^\u2020a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-02T07:15:00.608840+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T071500Z-f60f1899-tensor_product_translati",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Tensor-permutation translations on finite periodic tensor-product qubit blocks are unitary, obey the translation group law, covariantly translate the per-site Pauli ladder operators, and commute with Q_total = \u03a3_x a_x^\u2020 a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-07-02T07:22:55.215626+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-20260702T072206Z-unanimous",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For finite periodic tensor-product qubit blocks over Z^3, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates the defined per-site ladder operators and their adjoints, and commutes with Q_total = sum_x a_x^dagger a_x.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "None material for the judicial tuple; the first audit correctly classified the load-bearing bridge derivation as class C.",
+          "independence": "judicial_review",
+          "judgment_rationale": "All five independent panel judges sided with the first audit. The claim closes cleanly from the registered minimal_axioms premise plus the note's explicit finite tensor-product, ladder-operator, periodic-block, and tensor-permutation definitions. The covariance identity and charge conservation are bridge content constructed from the one-qubit local algebra on Z^3, not merely restatements of an independent retained input. Under the class rubric, accepted axiom-premise dependencies do not downgrade this first-principles framework-baseline closure; the exact runner also constructs those finite operators and reports 131 class-C pass checks with no failures.",
+          "load_bearing_step_class": "C",
+          "runner_check_breakdown": {
+            "reported_class": "C",
+            "total_fail": 0,
+            "total_pass": 131
+          },
+          "second_auditor_error": "The second audit reached the correct clean verdict and claim type but misclassified the load-bearing step as class A by treating the note's explicit definitions and target identities as already existing independent retained inputs. Class A would fit an algebraic identity check over independent retained inputs already containing the bridge; this packet derives T_a a_x T_a^dagger = a_{x+a} and charge conservation from the accepted framework baseline and explicit normalizations, so the correct class is C.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "The conjugation calculation showing that after T_a^dagger shifts basis contents, a_x lowers the content originally at x+a, and applying T_a moves that lowered factor to site x+a, hence T_a a_x T_a^dagger = a_{x+a}; charge conservation then follows by finite periodic relabeling.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "reported_class": "C",
+        "total_fail": 0,
+        "total_pass": 131
+      },
+      "verdict_rationale": "All five independent panel judges sided with the first audit. The claim closes cleanly from the registered minimal_axioms premise plus the note's explicit finite tensor-product, ladder-operator, periodic-block, and tensor-permutation definitions. The covariance identity and charge conservation are bridge content constructed from the one-qubit local algebra on Z^3, not merely restatements of an independent retained input. Under the class rubric, accepted axiom-premise dependencies do not downgrade this first-principles framework-baseline closure; the exact runner also constructs those finite operators and reports 131 class-C pass checks with no failures."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.956082+00:00",
+      "audit_date": "2026-07-02T21:50:40.757574+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bec23a13ccffcf107d26ab30b311100e073bcbf38917c2ab6037786ab9b9f6f6"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 22.273,
+        "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
+        "transitive_descendants": 1236
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-tensor-translation-20260702-p1-20260702T214713Z-a6c9c275-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The second audit has the correct tuple. The load-bearing covariance computation is a first-principles exact operator construction from the registered minimal_axioms premise, using the one-site M_2(C) factor and Z^3 translation structure plus explicit finite-volume definitions; the runner source independently instantiates those matrices and verifies the identities exactly. The chain closes cleanly, with no Noether, Jordan-Wigner, gauge, dynamics, fitted value, or external comparator import.",
+      "claim_scope": "For a finite periodic Z^3 block with H_Lambda = tensor_x C^2_x and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^dagger, and commutes with Q_total = sum_x a_x^dagger a_x.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T21:50:40.757574+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T21:44:29.899293+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T214429Z-35a88156-tensor_product_translati",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For a finite periodic block of the Z^3 lattice with one M_2(C) qubit factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, conjugates a_x and a_x^\u2020 to the translated site, and commutes with Q_total.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-02T21:46:50.558842+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T214650Z-0fe92a82-tensor_product_translati",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For a finite periodic Z^3 block with H_Lambda = tensor_x C^2_x and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^dagger, and commutes with Q_total = sum_x a_x^dagger a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-02T21:50:40.757574+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-tensor-translation-20260702-p1-20260702T214713Z-a6c9c275-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "It correctly reached audited_clean, but classified the load-bearing step as A. Under this packet's axiom-premise carve-out and runner classification, this bridge is class C: a baseline-derived exact operator computation, not merely an algebraic check over an already retained parent theorem.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The second audit has the correct tuple. The load-bearing covariance computation is a first-principles exact operator construction from the registered minimal_axioms premise, using the one-site M_2(C) factor and Z^3 translation structure plus explicit finite-volume definitions; the runner source independently instantiates those matrices and verifies the identities exactly. The chain closes cleanly, with no Noether, Jordan-Wigner, gauge, dynamics, fitted value, or external comparator import.",
+          "load_bearing_step_class": "C",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bec23a13->70324c45",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The second audit has the correct tuple. The load-bearing covariance computation is a first-principles exact operator construction from the registered minimal_axioms premise, using the one-site M_2(C) factor and Z^3 translation structure plus explicit finite-volume definitions; the runner source independently instantiates those matrices and verifies the identities exactly. The chain closes cleanly, with no Noether, Jordan-Wigner, gauge, dynamics, fitted value, or external comparator import."
+    },
+    {
+      "archived_at": "2026-07-04T10:59:07.869295+00:00",
+      "audit_date": "2026-07-03T18:49:24.206349+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "7b581f9f475c7bf16a02e664ef48a271d20d0404d8b2b1f7e58bc41ab3d50a24"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 22.284,
+        "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
+        "transitive_descendants": 1246
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-context-20260703-tensor-product-translation",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof is a finite-dimensional basis-permutation argument: unitarity and group law are bijection facts, covariance is tensor-factor relabeling, and charge conservation is a relabeling of the summed number operators. The audited boundary uses only the defined per-site Pauli tensor-product algebra and periodic lattice translation, not CAR/Jordan-Wigner, Noether momentum, Hamiltonian, gauge, current, or observational bridges.",
+      "claim_scope": "On a finite periodic tensor-product block H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x/a_x^dagger and tensor-permutation translations T_a, T_a is unitary, obeys the translation group law, covaries a_x/a_x^dagger by site relabeling, and commutes with Q_total = sum_x a_x^dagger a_x.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-03T18:49:24.206349+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-03T18:46:22.726615+00:00",
+          "auditor": "codex-audit-loop-20260703-gpt-5.5-xhigh",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block tensor-product algebra over one qubit per Z^3 site: the defined cyclic-shift tensor permutation T_a is unitary, obeys the translation group law, conjugates the defined local Pauli ladder operators a_x and a_x^dagger to the translated site, and commutes with the defined Q_total=sum_x a_x^dagger a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-03T18:49:24.206212+00:00",
+          "auditor": "codex-audit-loop-fresh-context-20260703-tensor-product-translation",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On a finite periodic tensor-product block H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x/a_x^dagger and tensor-permutation translations T_a, T_a is unitary, obeys the translation group law, covaries a_x/a_x^dagger by site relabeling, and commutes with Q_total = sum_x a_x^dagger a_x.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:7b581f9f->0f59e220",
+      "load_bearing_step": "Conjugating a local ladder operator by the tensor-factor permutation relabels the acted-on factor from x to x+a, so T_a a_x T_a^\u2020 = a_{x+a}; the adjoint and Q_total identities then follow by adjointing and relabeling the finite sum.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only if downstream use broadens this bridge to CAR/Jordan-Wigner fermions, Noether/continuum momentum generators, Hamiltonian translation invariance, gauge links, physical current/charge bridges, or observational claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 131,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 131
+      },
+      "verdict_rationale": "The source note closes as a narrow exact operator-algebra theorem over the stated finite tensor-product definitions and the minimal Z^3/qubit premises. The runner completed 131 exact symbolic matrix identity checks with FAIL=0; under the requested exact-algebra-over-definitions rule these are counted as A-class checks despite the runner's internal PASS(C) labels. The note explicitly excludes the physical bridges that would otherwise overbroaden the result, so the clean verdict applies only to the scoped finite-block Pauli tensor-product identities."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.910881+00:00",
+      "audit_date": "2026-07-07T23:51:11.538235+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 22.169,
+        "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
+        "transitive_descendants": 1150
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-019f3efb-7107-73a2-a9e0-82b3971c2c40",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal_axioms premise supplies per-site M_2(C) and Z^3 translations; after the note defines H_Lambda, a_x, T_a, and periodic labels, the result is finite-dimensional tensor-permutation algebra. The proof does not import Jordan-Wigner anticommutation, Noether translation, a physical fermion carrier, or a continuum momentum generator.",
+      "claim_scope": "Finite periodic tensor-product space H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x and tensor-permutation translations T_a: unitarity, group law, T_a a_x T_a^dagger = a_{x+a} and adjoint covariance, and [T_a,Q_total]=0.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-07T23:51:11.538235+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-07T23:45:33.888544+00:00",
+          "auditor": "codex-audit-loop-2026-07-07-row1-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Tensor-permutation cyclic shifts on a finite periodic tensor product of one-qubit site factors are unitary, obey the translation group law, covariantly translate per-site Pauli lowering/raising operators, and conserve the summed site number operator.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-07T23:51:11.538094+00:00",
+          "auditor": "codex-cli-019f3efb-7107-73a2-a9e0-82b3971c2c40",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite periodic tensor-product space H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x and tensor-permutation translations T_a: unitarity, group law, T_a a_x T_a^dagger = a_{x+a} and adjoint covariance, and [T_a,Q_total]=0.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On every tensor-product basis state, T_a a_x T_a^dagger |b> = a_{x+a}|b>, hence T_a a_x T_a^dagger = a_{x+a}; taking adjoints gives the a_x^dagger identity and summing/relabeling gives [T_a,Q_total]=0.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should verify downstream users cite only the tensor-permutation Pauli-ladder covariance and charge-sum identity, not a Jordan-Wigner or continuum momentum theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 131,
+        "D": 0,
+        "total_pass": 131
+      },
+      "verdict_rationale": "The exact load-bearing identity is T_a a_x T_a^dagger = a_{x+a} on the defined tensor-product basis, with charge conservation following by adjoint covariance and relabeling the finite periodic sum. The runner constructs exact Sympy ladder and permutation matrices and reports 131 class-C passes with 0 failures, checking the same operator identities rather than a fitted or physical comparator. The word fermion is scoped to the single-mode per-site Pauli ladder convention, and the note explicitly excludes Jordan-Wigner, Noether-current, Hamiltonian-invariance, and exp(i a.P) continuum claims, so no hidden physical bridge is being imported."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
+  "title": "Tensor-Product Translation / Fermion Operator Bridge Narrow Theorem",
+  "transitive_descendants": 1225,
+  "verdict_rationale": null
+}

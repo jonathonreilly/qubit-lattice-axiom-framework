@@ -1,0 +1,217 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (proposed; audit-lane to ratify)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_spin_statistics_theorem_note_2026-04-29"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0864a1c67d3ba0db4517ebb8c464448ac7f670ce8d787191d08356c31cc98dde",
+  "note_path": "docs/PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-12T19:48:15.142548+00:00",
+      "archived_for_note_hash": "6888ac34cb1fbdcd2de1a3041d804c305653ffbc8b4b061cc8a8d051d98d1201",
+      "audit_date": "2026-06-11T15:37:42.945820+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame."
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "b44e726cd4cb1ffac657de214b43270a27f7e23dcf9ffecf73a09d8e49da93af",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-153444-925b46b402-pauli_exclusion_from_spin_st",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The CAR-to-Pauli algebra closes, including the factor of 2 and n_\u03c6^2=n_\u03c6 for a normalized mode. The missing step is that the restricted cited authority no longer supplies an unconditional retained spin-statistics/CAR selection for the retained matter content; it supplies Grassmann consequences only under a declared Grassmann frame.",
+      "claim_scope": "Pauli exclusion for a normalized single fermionic mode on retained matter, with the CAR-to-Pauli step audited conditional on the CAR/Grassmann mode algebra.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-11T15:37:42.945820+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Specialising the assumed fermionic anticommutator {a^\u2020_\u03c6, a^\u2020_\u03c8}=0 to \u03c6=\u03c8 gives 2(a^\u2020_\u03c6)^2=0, hence (a^\u2020_\u03c6)^2=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite a retained CAR/GL(F) frame-selection theorem for the retained matter modes, or re-scope the note as a pure CAR/Grassmann-frame corollary before re-audit.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The displayed CAR consequences are algebraically correct once CAR is admitted: nilpotency follows from {a^\u2020,a^\u2020}=0, the same-mode vector is zero, and n^2=n follows from {a,a^\u2020}=1 plus nilpotency. The primary runner contains substantive finite-matrix checks for CAR, nilpotency, the zero same-mode state, and projection; its basis-enumeration PASS is hard-coded but redundant. The cited authority is re-scoped retained_bounded and explicitly withdraws statistics forcing, leaving Grassmann/CAR adoption conditional and the hard-core-vs-CAR selection out of scope. Therefore the source note imports an unclosed frame-selection bridge when it treats the dependency as a retained spin-statistics theorem for all retained matter."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.978388+00:00",
+      "audit_date": "2026-06-13T02:53:25.004796+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame."
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "8f380ac621b6f457f1b2613deadf799c28753ca092fed5224b6cf4f08d458e18",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260613-025102-6008a0d023-pauli_exclusion_from_spin_st",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained_bounded parent supplies the CAR anticommutators on the declared CAR frame. Over the complex Hilbert space, the same-mode anticommutator immediately gives nilpotence, and P2/P3 follow by standard operator algebra for a normalized mode.",
+      "claim_scope": "On a declared CAR/Grassmann surface, for a normalized fermionic mode phi, (a_phi^dagger)^2=0, a_phi^dagger a_phi^dagger|0>=0, and n_phi=a_phi^dagger a_phi is a projection with eigenvalues in {0,1}; no CAR-selection claim is audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-13T02:53:25.004796+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "axiom_first_spin_statistics_theorem_note_2026-04-29",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_spin_statistics_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Specializing the CAR relation to the same mode gives {a_phi^dagger, a_phi^dagger}=2(a_phi^dagger)^2=0, hence (a_phi^dagger)^2=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should note that runner Test 4's PASS flag is hard-coded after printing computed occupations; the audited closure rests on the P1-P3 algebra, not that redundant flag.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The restricted packet's load-bearing mathematics is a direct algebraic consequence of the retained_bounded CAR/Grassmann parent, not an independent first-principles computation. With A=a_phi^dagger, {A,A}=0 gives 2A^2=0 over C; applying this to the vacuum gives the same-mode zero vector, and {a_phi,a_phi^dagger}=1 gives n_phi^2=n_phi. The runner constructs a Jordan-Wigner CAR representation and checks the same identities, but this is an illustrative algebraic verification. The result does not audit or supply the separate hard-core-vs-CAR frame-selection bridge."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.509511+00:00",
+      "audit_date": "2026-06-21T18:03:06.639673+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson/CCR realization is excluded on the finite dim-2 substep-1 per-site carrier; hard-core bosons and CAR-vs-hard-core selection are out of scope, and Grassmann determinant/exchange consequences are conditional on the declared Grassmann frame."
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "8f380ac621b6f457f1b2613deadf799c28753ca092fed5224b6cf4f08d458e18",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The stated Pauli conclusions follow by exact algebra from the supplied CAR anticommutation relations plus the vacuum definition and standard linear algebra. The argument closes only inside the declared CAR frame, which matches the audited scope.",
+      "claim_scope": "Within a declared normalized CAR/Grassmann fermionic mode algebra, (a^\u2020_\u03c6)^2=0, the same-mode two-fermion vector a^\u2020_\u03c6 a^\u2020_\u03c6|0\u27e9 is zero, and n_\u03c6=a^\u2020_\u03c6 a_\u03c6 is a projection with occupations in {0,1}; no CAR-frame selection is audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-21T18:03:06.639673+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "axiom_first_spin_statistics_theorem_note_2026-04-29",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_spin_statistics_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Specialising the CAR relation {a^\u2020_\u03c6,a^\u2020_\u03c8}=0 to \u03c6=\u03c8 gives {a^\u2020_\u03c6,a^\u2020_\u03c6}=2(a^\u2020_\u03c6)^2=0, hence (a^\u2020_\u03c6)^2=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if the parent CAR/Grassmann authority or the declared normalized-mode scope changes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The source claim is a correct algebraic corollary of the single retained_bounded upstream CAR/Grassmann authority: CAR anticommutation implies nilpotent creation operators and projection-valued mode occupation. The runner constructs an explicit two-mode Jordan-Wigner CAR representation and checks the identities without hard-coded physical constants, but it verifies a finite illustrative representation rather than deriving CAR or selecting the CAR frame. Because every load-bearing step is class A, there are no external comparator checks, and the chain reduces to one parent claim plus standard algebra, the appropriate verdict is audited_decoration."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/pauli_exclusion_check.py",
+  "title": "Pauli Exclusion Principle in a Declared CAR/Grassmann Frame",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

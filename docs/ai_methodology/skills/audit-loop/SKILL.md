@@ -247,7 +247,7 @@ python3 scripts/cached_runner_output.py scripts/<runner>.py
 
 Per-runner declared timeout (preferred for runners that are persistently slow): add a top-level `AUDIT_TIMEOUT_SEC = <N>` assignment to the runner file. `scripts/runner_cache.runner_timeout_for()` reads this and overrides the default.
 
-After bulk cache refresh, commit `logs/runner-cache/*.txt` and the mechanical `audit_ledger.json` delta together. The full audit pipeline (`docs/audit/scripts/run_pipeline.sh`) will then regenerate `runner_classification.json`, `audit_queue.json`, `effective_status_summary.json`, and `AUDIT_QUEUE.md` against the new cache.
+After bulk cache refresh, commit `logs/runner-cache/*.txt` and the mechanical sharded-ledger delta (`docs/audit/data/ledger/`) together; the monolithic `audit_ledger.json` is an untracked cache materialized by the pipeline. The full audit pipeline (`docs/audit/scripts/run_pipeline.sh`) will then regenerate `runner_classification.json`, `audit_queue.json`, `effective_status_summary.json`, and `AUDIT_QUEUE.md` against the new cache.
 
 **Refresh propagation**: refreshed cache files land on `main` via PR. After merge:
 
@@ -625,12 +625,15 @@ policy blocker prevents progress:
 
 Review the diff. It should normally touch only:
 
-- `docs/audit/data/audit_ledger.json`;
+- `docs/audit/data/ledger/<claim-id-prefix>/<claim-id>.json`;
+- `docs/audit/data/ledger_meta.json` when top-level statistics change;
 - `docs/audit/data/effective_status_summary.json`;
-- `docs/audit/data/audit_queue.json`;
-- `docs/audit/AUDIT_LEDGER.md`;
 - `docs/audit/AUDIT_QUEUE.md`;
-- possibly generated load-bearing/runner files if the pipeline refreshed them.
+- possibly other tracked load-bearing/runner summaries if the pipeline refreshed them.
+
+The monolithic ledger, queue JSON, runner classification, citation graph, and
+rendered `AUDIT_LEDGER.md` are ignored materialized caches; never force-add
+them.
 
 Commit:
 

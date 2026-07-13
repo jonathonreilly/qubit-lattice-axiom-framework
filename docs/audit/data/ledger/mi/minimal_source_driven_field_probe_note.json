@@ -1,0 +1,387 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "minimal_source_driven_field_probe_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "source_driven_field_recovery_sweep_note"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.613,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c4d9ac0c052074993464e7d7f738ff93261b67e11dc1fb6402fa737c36540fe9",
+  "note_path": "docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.236486+00:00",
+      "audit_date": "2026-05-01T07:08:59.616290+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered runner recomputes the zero-source dynamic shift, instantaneous and source-driven deflections, ratios, field maxima, and fitted mass exponents, and the current output matches the note. The conclusion is explicitly bounded as a partial survival plus failed linear scaling at this calibration.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:source_driven_field_recovery_sweep_note",
+      "load_bearing_step": "The smallest source-driven local field rule preserves TOWARD sign and exact zero-source reduction on the tested 3D lattice, but fails full weak-field recovery because the source-driven F~M exponent drops to 0.64.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The runner verifies the load-bearing result directly: zero-source reduction is exact, all source-driven rows remain TOWARD, and the dynamic scaling exponent is 0.64 rather than near-linear. The note does not claim clean self-consistent field dynamics; it records a bounded calibration hierarchy/no-go at stronger calibration. Residual risk is addressed by the companion recovery sweep, not by this note alone."
+    },
+    {
+      "archived_at": "2026-05-04T12:32:51.254453+00:00",
+      "audit_date": "2026-05-03T21:33:39.492334+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "source_driven_field_recovery_sweep_note": "retained_bounded"
+        },
+        "deps": [
+          "source_driven_field_recovery_sweep_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-minimal-source-driven",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note's frozen table matches the named completed runner log, including zero-source shift, 4/4 TOWARD rows, and dynamic exponent 0.64. The companion dependency is supplied as retained_bounded and supports the limited calibration-hierarchy read rather than a blanket field-dynamics success claim.",
+      "claim_scope": "Bounded finite-run claim that the stated 3D lattice source-driven telegraph field rule preserves TOWARD sign and exact zero-source reduction at target max |f_dyn| = 0.08, but fails linear F~M scaling there, with calibration-sensitive recovery supplied by the retained one-hop companion.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T21:33:39.492334+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "the source-driven field does not recover the linear weak-field mass scaling class; the frozen dynamic F~M exponent is 0.64 while the zero-source reduction is +0.000000e+00",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-run the runner to completion or compare a cached current run artifact; this audit relied on the completed frozen log after the live run produced no early stdout.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-context",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The live runner produced no stdout within the short audit window, so noncompletion was not used as evidence. The named completed log exists and matches the source note's frozen numerical readout exactly. Within the explicitly bounded setup, the conclusion is conservative: sign and zero-source reduction survive, while linear mass scaling fails at the stronger calibration. Residual risk is only computational reproducibility of the long runner, not closure of the recorded bounded claim."
+    },
+    {
+      "archived_at": "2026-05-10T14:40:27.622575+00:00",
+      "audit_date": "2026-05-05T06:43:58.697830+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "source_driven_field_recovery_sweep_note": "retained_bounded"
+        },
+        "deps": [
+          "source_driven_field_recovery_sweep_note"
+        ],
+        "load_bearing_score": 3.0,
+        "runner_hash": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-minimal_source_driven_fi-276",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the lattice, evolves the local field, propagates amplitudes, computes centroid shifts, and fits the mass exponent rather than merely printing constants. The companion cited authority is marked retained_bounded and supports the calibration-hierarchy framing.",
+      "claim_scope": "Audited the bounded local computation for the minimal damped source-driven field rule on the stated exact 3D lattice and its comparison to instantaneous 1/r deflection at the listed source strengths and calibration.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T06:43:58.697830+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "On the retained exact 3D lattice at stronger calibration, the source-driven rows remain TOWARD and zero-source reduction is exact, but the dynamic F~M exponent drops to 0.64 rather than recovering linear weak-field mass scaling.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the fixed target-field calibration should remain treated as part of the bounded setup rather than as a tuned numerical-match premise.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing result is a bounded first-principles numerical computation from the stated lattice, field rule, source strengths, and calibration, producing the reported deflections and exponent. The code does not read the contested result from another note, hard-code the output table, or match an external empirical target. The conclusion is limited to the stated calibration and explicitly records failure of full weak-field recovery, with the retained companion authority used only for the broader calibration-sensitivity interpretation."
+    },
+    {
+      "archived_at": "2026-05-11T13:38:53.382814+00:00",
+      "audit_date": "2026-05-11T11:23:30.011459+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "source_driven_field_recovery_sweep_note": "Audited only the self-contained numerical theorem for the exact stated 3D lattice, source strengths, telegraph-style field rule, centroid-z readout, calibration targets, and PASS/FAIL thresholds printed by the supplied runner."
+        },
+        "dep_claim_type": {
+          "source_driven_field_recovery_sweep_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "source_driven_field_recovery_sweep_note": "retained_bounded"
+        },
+        "deps": [
+          "source_driven_field_recovery_sweep_note"
+        ],
+        "load_bearing_score": 10.833,
+        "runner_hash": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+        "transitive_descendants": 455
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e16c6-c202-7163-b1da-11436c1c7098",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the lattice, instantaneous comparator, source-driven field evolution, fixed calibration, centroid readout, and exponent fit inline, and the stdout matches the note's frozen numbers. The cited recovery sweep is marked retained_bounded and supports the note's narrower calibration-hierarchy framing.",
+      "claim_scope": "A bounded numerical local-field probe on the exact 3D lattice for one damped telegraph-style static-source rule, establishing preserved attraction sign and exact zero-source reduction while failing linear mass scaling at the stronger calibration, read together with the retained recovery sweep as calibration sensitivity.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T11:23:30.011459+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T11:22:33.332569+00:00",
+          "auditor": "codex-audit-loop-019e16c5-e425-7913-abf0-80bdd33e2813",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "A bounded local numerical probe of the exact 3D lattice with a static source, damped telegraph-style source-driven field evolution, fixed stronger calibration target max |f_dyn| = 0.08, and comparison to the instantaneous 1/r field on the same retained replay.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-11T11:23:30.011338+00:00",
+          "auditor": "codex-audit-loop-019e16c6-c202-7163-b1da-11436c1c7098",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "A bounded numerical local-field probe on the exact 3D lattice for one damped telegraph-style static-source rule, establishing preserved attraction sign and exact zero-source reduction while failing linear mass scaling at the stronger calibration, read together with the retained recovery sweep as calibration sensitivity.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:source_driven_field_recovery_sweep_note:retained_bounded->unaudited",
+      "load_bearing_step": "At TARGET_FIELD_MAX = 0.08, the source-driven rows remain TOWARD with zero-source dynamic shift +0.000000e+00, but the source-driven F~M exponent is 0.64 rather than near-linear.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 4,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Within its stated bounded scope, the note does not claim a full physical bridge or external gravitational prediction; it reports a local numerical probe and a negative stronger-calibration result. The load-bearing computation is not hard-coded to the disputed exponent: the runner evolves the field, propagates amplitudes, computes centroid shifts, and fits the mass exponent from generated rows. No D-class external comparator is present, but none is required for this bounded local dynamics/no-recovery claim."
+    },
+    {
+      "archived_at": "2026-05-18T11:37:01.067905+00:00",
+      "archived_for_note_hash": "17e0a80d3e1f7de90ea465cac48c4aa83a526d4f45e5a95c89b9f25c3b3ccc3d",
+      "audit_date": "2026-05-12T00:12:36.606490+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "source_driven_field_recovery_sweep_note": "Bounded weak-field recovery sweep on the declared self-contained 3D lattice runner family: h=0.5, W=6, L=30, source strengths 0.001/0.002/0.004/0.008, broad sweep c_field=0.45 damp=0.35 over target max values 0.001..0.080, and conservative pocket c_field=0.40 damp=0.35 target_max=0.010. The runner verifies PASS=5 FAIL=0: zero-source pocket shift is zero, pocket TOWARD is 4/4, pocket dynamic F~M is within 0.05 of linear, broad-sweep TOWARD is 7/7, and broad-sweep exponent drifts from near-linear to non-linear at the largest calibration. This excludes derivation of the telegraph field rule, its parameters, and the calibration ladder from retained framework dynamics."
+        },
+        "dep_claim_type": {
+          "source_driven_field_recovery_sweep_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "source_driven_field_recovery_sweep_note": "retained_bounded"
+        },
+        "deps": [
+          "source_driven_field_recovery_sweep_note"
+        ],
+        "load_bearing_score": 11.434,
+        "runner_hash": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+        "transitive_descendants": 488
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260512-000558-b0c4bc75-minimal_source_driven_fi-004",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes the stated bounded outputs and does not merely print constants. The broader chain does not close because the local field rule, damping/speed parameters, and calibration target are selected modeling inputs rather than derived in the restricted packet.",
+      "claim_scope": "Audited the provided self-contained runner and cached stdout for the declared 3D lattice, source strengths, damped telegraph-style field rule, and fixed target-field calibration.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-12T00:12:36.606490+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At fixed stronger calibration target max |f_dyn| = 0.08, the source-driven runner keeps all four rows TOWARD and gives a dynamic F~M exponent of 0.64, while zero-source returns exactly to free propagation.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the telegraph rule, c_field/damp values, and target-field calibration ladder from retained framework inputs, or narrow the claim text to a pure declared-run computation.",
+      "open_dependency_paths": [
+        "docs/SOURCE_DRIVEN_FIELD_RECOVERY_SWEEP_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The source code builds the lattice, evolves the source-driven field, propagates amplitudes, computes centroid shifts, and fits the mass exponent inline, so the frozen table is substantive runner evidence. The zero-source reduction and TOWARD/sign checks are supported for the declared run. However, the claim depends on runner-selected field dynamics and calibration hierarchy, and the cited companion explicitly says deriving those choices from retained framework dynamics remains future theorem work."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.970152+00:00",
+      "audit_date": "2026-05-18T12:39:59.661107+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "source_driven_field_recovery_sweep_note": "Bounded weak-field recovery sweep on the declared self-contained 3D lattice runner family: h=0.5, W=6, L=30, source strengths 0.001/0.002/0.004/0.008, broad sweep c_field=0.45 damp=0.35 over target max values 0.001..0.080, and conservative pocket c_field=0.40 damp=0.35 target_max=0.010. The runner verifies PASS=5 FAIL=0: zero-source pocket shift is zero, pocket TOWARD is 4/4, pocket dynamic F~M is within 0.05 of linear, broad-sweep TOWARD is 7/7, and broad-sweep exponent drifts from near-linear to non-linear at the largest calibration. This excludes derivation of the telegraph field rule, its parameters, and the calibration ladder from retained framework dynamics."
+        },
+        "dep_claim_type": {
+          "source_driven_field_recovery_sweep_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "source_driven_field_recovery_sweep_note": "retained_bounded"
+        },
+        "deps": [
+          "source_driven_field_recovery_sweep_note"
+        ],
+        "load_bearing_score": 12.347,
+        "runner_hash": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+        "transitive_descendants": 920
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-123911-c0b36f0f-minimal_source_driven_fi-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed declared-run scope, the runner source self-containedly constructs the lattice, evolves the field, propagates amplitudes, computes centroid shifts, and fits the reported exponents. It does not close a framework derivation of the telegraph rule, c_field/damp values, or calibration ladder, but those are explicitly outside the audited load-bearing scope.",
+      "claim_scope": "Audited only the declared-run computation at h = 0.5, W = 6, L = 30, source z = 3, s in {0.001, 0.002, 0.004, 0.008}, with the telegraph rule and calibration parameters treated as declared modeling inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T12:39:59.661107+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-18T12:04:34.075613+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-minimal_source_driven_fi-005",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the declared-run computation at h=0.5, W=6, L=30, source z=3, s in {0.001,0.002,0.004,0.008}, with C_FIELD=0.45, DAMP=0.35, TARGET_FIELD_MAX=0.08 as declared modeling inputs.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-18T12:39:59.661107+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-123911-c0b36f0f-minimal_source_driven_fi-002",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the declared-run computation at h = 0.5, W = 6, L = 30, source z = 3, s in {0.001, 0.002, 0.004, 0.008}, with the telegraph rule and calibration parameters treated as declared modeling inputs.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On the declared exact 3D lattice with fixed telegraph-style parameters and TARGET_FIELD_MAX = 0.08, the runner computes zero-source dynamic shift exactly zero, TOWARD in 4/4 rows, and a source-driven F~M exponent of about 0.64.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the narrowed scope remains enforced downstream and is not cited as a derivation of the telegraph rule or calibration ladder.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner is not a constant-printing artifact: it computes the frozen table and fitted exponents from the declared lattice, field rule, source strengths, propagation rule, and centroid readout. The source note has narrowed the claim to exactly that declared computation and explicitly excludes derivation of the telegraph dynamics and calibration values. The cited companion authority is retained_bounded and consistent with the same boundary, so no non-retained upstream dependency blocks the narrowed claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/minimal_source_driven_field_probe.py",
+  "title": "Minimal Source-Driven Field Probe",
+  "transitive_descendants": 782,
+  "verdict_rationale": null
+}

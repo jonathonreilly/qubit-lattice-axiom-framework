@@ -1,0 +1,254 @@
+{
+  "audit_date": "2026-05-19T15:30:24.899813+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_claim_scope": {
+      "asymmetry_persistence_joint_card_note": "Dense 3D generated same-graph joint card for N=80 with npl=50 and N=100 with npl=60, 8 matched seeds, thresholds 0.00/0.10/0.20, measuring pur_cl, pur_min, gravity delta, and corrected Born |I3|/P under linear and layer-normalized propagation.",
+      "asymmetry_persistence_pilot_note": "Audited only the sparse npl=30, xyz_range=12.0, connect_radius=4.0, 16-seed primary-runner results for N=40, N=60, and sparse N=80 failure using the included gap_topological_asymmetry readout source."
+    },
+    "dep_claim_type": {
+      "asymmetry_persistence_joint_card_note": "bounded_theorem",
+      "asymmetry_persistence_pilot_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "asymmetry_persistence_joint_card_note": "retained_bounded",
+      "asymmetry_persistence_pilot_note": "retained_bounded"
+    },
+    "deps": [
+      "asymmetry_persistence_joint_card_note",
+      "asymmetry_persistence_pilot_note"
+    ],
+    "load_bearing_score": 2.585,
+    "runner_hash": "675fc80c9bfb3381a55f964af42ff8f4803d3366ff8ab1d2cf4a01d603bc9646",
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-asymmetry_persistence_ma-023",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The restricted packet includes the runner stdout, primary runner source, and transitive helper sources needed to verify that the quoted LN fits are computed from generated graphs and propagated amplitudes rather than printed constants. The conclusion is bounded to this generated-family setup and does not assert an asymptotic gravity law.",
+  "claim_id": "asymmetry_persistence_mass_window_note",
+  "claim_scope": "Audited the bounded N=100 dense generated-family mass-response window for thresholds 0.10 and 0.20 under the layer-normalized propagator, with M in {1,2,3,5,8,12} and fits over {2,3,5,8}.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-19T15:30:24.899813+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "asymmetry_persistence_joint_card_note",
+    "asymmetry_persistence_pilot_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/asymmetry_persistence_joint_card.py",
+    "scripts/asymmetry_persistence_pilot.py",
+    "scripts/gap_topological_asymmetry.py",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": "The threshold-0.10 and threshold-0.20 LN power-law fits and R^2 values are reproducible from the cited runner cache as direct stdout of scripts/asymmetry_persistence_mass_scaling.py, supporting a bounded mass-response window on the generated family.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "meta",
+  "max_descendant_status_rank": 25,
+  "note_hash": "fcb5283f007bdedf0e1e33ae4eafa20fe9fb2cf2a02c8b6c4b87a931e18f973e",
+  "note_path": "docs/ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md",
+  "notes_for_re_audit_if_any": "A second auditor should re-check that treating the layernorm propagator and generated-family construction as in-packet helper code is sufficient for this row rather than requiring separate native runner registration against the source note.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-08T11:38:51.160672+00:00",
+      "audit_date": "2026-04-30T15:12:41.365359+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet, so the conclusion cannot be ratified from the source note alone.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "Asymmetry Persistence Mass Window Note: Asymmetry Persistence Mass Window Note",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim.",
+      "open_dependency_paths": [
+        "unregistered_or_missing_primary_runner_or_frozen_log"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+    },
+    {
+      "archived_at": "2026-05-10T16:52:16.235105+00:00",
+      "archived_for_note_hash": "681b3f0011f4ecc1d5227b429a2776d881612c8c1f30c1c98bcf498eebb5c987",
+      "audit_date": "2026-05-08T20:24:43.597539+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": null,
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0943-233d-7c71-84a2-0227a8f86dc3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The chain depends on an external retained log, generated-family construction, pruning rule, and fit calculation that are not included as cited authorities or runner output. The packet does not show the source data or computation establishing the quoted exponents and R^2 values.",
+      "claim_scope": "Audited whether the note's stated mass-response window follows from the restricted packet's supplied fits and dependencies.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-08T20:24:43.597539+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The pruned LN rows give the cleanest mass-response windows, with threshold 0.10 fit delta ~= 0.4032 * M^0.420 and R^2 = 0.970, and threshold 0.20 fit delta ~= 0.5332 * M^0.262 and R^2 = 0.892.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the retained mass-scaling log or a reproducible runner that recomputes the quoted LN threshold fits from raw generated-family data.",
+      "open_dependency_paths": [
+        "logs/2026-04-02-asymmetry-persistence-mass-scaling.txt"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note imports the retained log and summarized fitted mass-scaling rows without providing the log, data, pruning rule, or runner. Why this blocks: the conclusion that the lane has a real bounded mass-response window rests entirely on those quoted fits and their selected thresholds, so the restricted packet cannot verify the computation or selection. Repair target: provide the retained log or a runner that reconstructs the generated family, applies the pruning, and recomputes the fits from raw outputs. Claim boundary until fixed: at most a report that a prior retained summary claimed these mass-response fits, not an independently closed theorem."
+    },
+    {
+      "archived_at": "2026-05-17T12:58:11.223341+00:00",
+      "archived_for_note_hash": "b172ccf6365fa16e4cba0a80adc87a15f3074e8d5ae8b09576165e3da76ce905",
+      "audit_date": "2026-05-10T17:14:28.677201+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": "675fc80c9bfb3381a55f964af42ff8f4803d3366ff8ab1d2cf4a01d603bc9646",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e12e1-8701-7711-b80d-9f5b509e5f7c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The quoted fit numbers match the supplied runner stdout, but the runner imports the generated-family construction, LN propagator, field computation, K_BAND, and pruning/readout machinery from files not included as one-hop authorities. With no listed cited authorities for this row, the restricted packet cannot close the construction or validate the admitted-context imports behind the claimed window.",
+      "claim_scope": "Audited only the note's bounded mass-response-window claim and its quoted LN mass-scaling fits against the supplied runner source and stdout.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T17:14:28.677201+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The generated hard-geometry lane has a real, bounded mass-response window, supported by the threshold-0.10 and threshold-0.20 LN power-law fits reproduced by the runner cache.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct dependency edges for scripts/asymmetry_persistence_joint_card.py and scripts/gap_topological_asymmetry_layernorm_combo.py, audit those dependencies retained-grade, and register the mass-scaling runner or cache as this row's primary evidence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the note's numerical fits are reproduced by stdout, but the load-bearing generated-family construction and LN/pruning/readout infrastructure are imported rather than closed inside the restricted packet. Why this blocks: without those direct dependencies, the runner is evidence of a computed fit only conditional on unverified upstream machinery, not a retained-grade bounded theorem. Repair target: add direct dependency edges and retained-grade audits for the imported construction/propagator/pruning machinery, or provide a self-contained runner/certificate for this row. Claim boundary until fixed: the row can cite the reproduced fit table only as conditional on the supplied runner and unclosed imports."
+    },
+    {
+      "archived_at": "2026-05-18T09:35:15.431682+00:00",
+      "archived_for_note_hash": "ce04ebde8c9648c79b23951e201be35934db474a7e862bf0edf244d714f3fddf",
+      "audit_date": "2026-05-17T13:16:39.135841+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": "675fc80c9bfb3381a55f964af42ff8f4803d3366ff8ab1d2cf4a01d603bc9646",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-131619-20260517T131619Z-8fe10543-asymmetry_persistence_ma-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner source genuinely computes means and power-law fits rather than hard-coding the quoted values, and its stdout matches the note. The chain still imports build_graph, the LN regulated propagator, measurement readout, and pruning rule from helper modules that are not included as closed authorities in the restricted packet.",
+      "claim_scope": "Audited the note's bounded generated-family mass-response window claim as supported by the provided mass-scaling runner stdout and source, limited to the quoted LN threshold 0.10 and 0.20 fits.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T13:16:39.135841+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The threshold-0.10 and threshold-0.20 LN power-law fits and R^2 values are reproducible from the cited runner cache, supporting a bounded mass-response window conditional on the LN regulated propagator and pruning rule.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include retained-grade audit closure or full restricted-packet source for the helper imports that define build_graph, the pruning rule, LN propagation, and measurement readout.",
+      "open_dependency_paths": [
+        "scripts/asymmetry_persistence_joint_card.py",
+        "scripts/asymmetry_persistence_pilot.py",
+        "scripts/gap_topological_asymmetry.py",
+        "scripts/gap_topological_asymmetry_layernorm_combo.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The provided runner cache reproduces the note's quoted LN fits, and the runner source shows those fits are computed from generated graphs and propagation outputs rather than merely printed constants. However, the runner's load-bearing construction and readout depend on imported helper modules, especially the generated-family graph builder and layernorm propagation machinery, whose closure is explicitly outside this row. Under the rubric, that makes the bounded window a conditional result rather than an audited-clean first-principles derivation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/asymmetry_persistence_mass_scaling.py",
+  "title": "Asymmetry Persistence Mass Window Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The runner constructs graphs, selects mass nodes, computes fields and linear/layernorm gravity deltas, then performs log-log power-law fits; the quoted threshold 0.10 and 0.20 LN coefficients, exponents, and R^2 values match the provided cache. The helper chain for graph generation, propagation, field computation, and fitting is included and contains no hard-coded contested fit values. The audited result is a bounded computational theorem for this parameter window only."
+}

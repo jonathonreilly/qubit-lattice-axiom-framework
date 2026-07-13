@@ -1,0 +1,174 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "23c71fd1b4110b22326834c9d544a31ddb4ca70f2ae694b9b2ebaa21779e060a",
+  "note_path": "docs/EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.467875+00:00",
+      "audit_date": "2026-06-13T02:02:15.348432+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "030b2d0e7cbc69344232ec39dd7d035b8b134937d82e04543c43ea7c4c054a4c",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-015829-2e91c89803-exp_decay_lieb_robinson_quas",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The reproducing inequality follows from the triangle inequality and alpha>d lattice summability, and K(u,v)<=J_F F(d(u,v)) then gives P_k(x,y)<=J_F^k C_alpha^{k-1} F(d(x,y)). The Duhamel/nested-commutator estimate supplies the displayed factor 2||A||||B||(2|t|)^k/k!, so the exponential LR series closes without importing an unstated transfer-log theorem.",
+      "claim_scope": "Finite-block quasilocal Lieb-Robinson bound for distinct single-site observables on Z^d, alpha>d, finite-dimensional site Hilbert spaces, and Hamiltonians with finite pair weighted norm J_F; log-transfer use is conditional on separately supplied finite J_F.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T02:02:15.348432+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_cluster_decomposition_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "The proof establishes the reproducing estimate sum_z F(d(x,z))F(d(z,y)) <= C_alpha^{(d)} F(d(x,y)) with C_alpha^{(d)}=2^alpha sum_z(1+||z||_1)^(-alpha), which is then used at each path-series induction step.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should verify downstream citations preserve the distinct-site/disjoint-support scope and separately certify finite J_F for any log-transfer consumer.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The Minimal Axioms authority is an accepted premise and the finite-range cluster note is retained_bounded; no non-retained upstream result is load-bearing for this bounded theorem. Independent math checks confirm the 2^alpha reproducing constant, the C_alpha powers in the path induction, and the 2 C_alpha J_F velocity factor. The runner source performs actual finite lattice and Pauli-matrix computations with no external comparator, fitted constant, or hard-coded contested premise; its log-transfer example is correctly only a witness, not an unconditional theorem for all transfer logarithms."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.984581+00:00",
+      "audit_date": "2026-07-10T04:02:03.517310+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) norm/J_* bound for finite-range Hermitian Cl(3) lattice Hamiltonians; L2 only as conditional transfer-gap temporal clustering routing, not unconditional spatial cluster decomposition.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "030b2d0e7cbc69344232ec39dd7d035b8b134937d82e04543c43ea7c4c054a4c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00055-exp_decay_lieb_robinson_quas",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Equation (20) does not follow from the raw expansion (18): a later interaction can attach to an earlier part of the accumulated support rather than form the linear chain counted by P_k. For example, a small term supported on {x,z,y} followed by a large term supported on {z,w} can produce a second-order contribution proportional to their product, while P_2(x,y) contains no corresponding product.",
+      "claim_scope": "The claimed finite-block Lieb-Robinson envelope for arbitrary finite-dimensional interactions with finite F_{mu,alpha} pair norm, together with its cone, finite-range, and conditional log-transfer corollaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:02:03.517310+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_cluster_decomposition_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Equation (20) asserts that every k-th nested-commutator contribution is bounded by the linear weighted path sum P_k(x,y).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check equation (20) against branching multi-site interaction sequences and the missing x != y hypothesis.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The reproducing inequality and the resulting bound on the formal path powers P_k are sound, but the load-bearing identification of those path powers with the raw Duhamel contributions is not valid for the arbitrary multi-site interactions allowed by the theorem. The runner checks P_2 and P_3 themselves and one particular numerical Hamiltonian; it does not test or establish equation (20) for general branching interaction sequences. The displayed bound also silently requires x != y, since otherwise the omitted zeroth-order commutator need not vanish."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/exp_decay_lieb_robinson_quasilocal_bridge_2026_06_11.py",
+  "title": "Exponential-Decay Lieb-Robinson Quasilocal Bridge Theorem Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

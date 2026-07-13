@@ -1,0 +1,532 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "s3_time_bilinear_tensor_primitive_note",
+    "quark_route2_exact_readout_map_note_2026-04-19",
+    "quark_route2_exact_time_coupling_note_2026-04-19",
+    "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
+    "rconn_derived_note"
+  ],
+  "direct_in_degree": 35,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/_frontier_loader.py",
+    "scripts/frontier_coarse_grained_exterior_law.py",
+    "scripts/frontier_discrete_dtn_shell_kernel.py",
+    "scripts/frontier_finite_rank_gravity_residual.py",
+    "scripts/frontier_flux_fixed_matching_theorem.py",
+    "scripts/frontier_microscopic_dirichlet_bridge_principle.py",
+    "scripts/frontier_oh_schur_boundary_action.py",
+    "scripts/frontier_one_parameter_reduced_shell_law.py",
+    "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py",
+    "scripts/frontier_quark_endpoint_readout_constraints.py",
+    "scripts/frontier_quark_route2_exact_readout_map.py",
+    "scripts/frontier_radial_shell_matching_law.py",
+    "scripts/frontier_same_source_metric_ansatz_scan.py",
+    "scripts/frontier_sewing_shell_source.py",
+    "scripts/frontier_star_shell_projector.py",
+    "scripts/frontier_tensor_boundary_drive_two_channel.py",
+    "scripts/frontier_tensor_support_center_excess_law.py",
+    "scripts/frontier_tensor_universal_kernel.py",
+    "scripts/frontier_tensorial_einstein_regge_completion.py",
+    "scripts/frontier_universal_shell_profile.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 24.813,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ba952cdbdf285f26849c5e901709765fb7f9a8358b23032312a3f437c8e8f557",
+  "note_path": "docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-10T13:05:06.028510+00:00",
+      "audit_date": "2026-05-01T23:19:07.906780+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-agent-019de5d6",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "As a no-go, the chain closes because the negative boundary is established on the supplied typed-edge inventory: the existing exact algebra is checked conditionally, and the missing source-domain bridge remains absent even after granting the stated T-side premises and SU(3) value. The result is not a derivation of the up-type scalar law, but a clean current-bank non-derivability boundary.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:leaf->critical",
+      "load_bearing_step": "The current exact Route-2 support bank plus retained SU(3) color-projection bank has no typed edge or path identifying R_conn=8/9 with c_TE=gamma_T(center)/gamma_E(center)=-8/9; only if that bridge is added as a new premise does the exact endpoint algebra force q_E=15/8 and beta_E/alpha_E=21/4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The claim is a negative no-go rather than a positive physical identification. The load-bearing step is the finite typed-graph absence of a current-bank bridge from SU(3) R_conn to the Route-2 E/T center endpoint ratio, with exact conditional algebra showing what would follow if the bridge were added. The runner directly checks both the conditional algebra and the missing typed path, while blocking untyped promotion and comparator-only/numerical routes. No hidden physical identification is used to close the no-go."
+    },
+    {
+      "archived_at": "2026-05-11T13:20:51.509731+00:00",
+      "archived_for_note_hash": "ae4928b89e4b03edaa63812863f0d0c12e63dd6592f5e41092f9d9b36a5b6181",
+      "audit_date": "2026-05-10T13:35:58.470503+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.829,
+        "runner_hash": "341a7e7169db6b19dce6671ca560f2aa6f80610b1a59d1ec1bae53cbc41482c2",
+        "transitive_descendants": 642
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e1218-e33a-7a12-bcd1-c4c03278145c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The graph no-path and downstream arithmetic close only relative to the asserted finite typed-edge inventory. With no one-hop authorities supplied, the restricted packet cannot verify that this inventory is complete for the current support bank.",
+      "claim_scope": "Audited the no-go that, given the enumerated typed-edge inventory, current Route-2 plus SU(3) support has no typed path from R_conn to the Route-2 center T/E ratio, while adding that bridge algebraically forces rho_E = 21/4.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-10T13:35:58.470503+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "There is no current typed edge R_conn = 8/9 -> c_TE = gamma_T(center)/gamma_E(center) = -8/9.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge - add the named Route-2/readout/R_conn notes as direct deps and include an audited complete typed-edge inventory or runner that builds it rather than hard-coding CURRENT_TYPED_EDGES.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "Issue: the source note relies on named Route-2/R_conn authorities and a complete current-bank typed-edge inventory, but the audit ledger supplies no one-hop authorities and the runner hard-codes CURRENT_TYPED_EDGES rather than deriving the inventory. Why this blocks: absence of a path proves the no-go only if the inventory is complete. Repair target: wire the named source notes as direct dependencies and audit a complete typed-edge inventory or runner that constructs it. Claim boundary until fixed: the conditional algebra bridge -> rho_E = 21/4 and the no-path result for the hard-coded graph remain valid."
+    },
+    {
+      "archived_at": "2026-05-18T00:34:52.579570+00:00",
+      "archived_for_note_hash": "89c6b91b7b49e89f040002aa89ae50b36dd6d0a463175511e02df7f6bb1f7b87",
+      "audit_date": "2026-05-11T13:24:27.727470+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.79,
+        "runner_hash": "341a7e7169db6b19dce6671ca560f2aa6f80610b1a59d1ec1bae53cbc41482c2",
+        "transitive_descendants": 625
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-20260511-quark-route2-source-domain-no-go",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner verifies the configured typed-bank no-path result, but the completeness and authority of CURRENT_TYPED_EDGES are not derived from retained one-hop Route-2/R_conn authorities in the restricted packet. A clean no-go for the current support bank requires that inventory to be retained or generated from retained inputs, not hard-coded.",
+      "claim_scope": "Configured current-bank Route-2/SU(3) bridge no-go only: using the runner's hard-coded CURRENT_TYPED_EDGES and admitted T-side candidates, no typed path exists from R_conn=8/9 to gamma_T(center)/gamma_E(center)=-R_conn; adding exactly that bridge would force rho_E=21/4. This excludes a retained derivation of the typed-edge inventory, a retained Route-2 up-type scalar law, and any m_u or m_c claim.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-11T13:24:27.727470+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner's hard-coded CURRENT_TYPED_EDGES contain no path from su3_R_conn_8_9 to route2_rho_E_21_4, while adding the explicit missing bridge creates the algebraic path and forces rho_E=21/4.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge \u2014 provide a retained typed-edge inventory derivation for CURRENT_TYPED_EDGES from the Route-2 exact readout/time-coupling/R_conn authorities, or include one-hop retained authorities that let the audit packet verify inventory completeness.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 33,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "Issue: the no-go is reproducible over the configured typed-edge bank, but the runner hard-codes CURRENT_TYPED_EDGES and reads named Route-2/R_conn authority surfaces without a retained one-hop inventory derivation. Why this blocks: absence of a path in an unratified hard-coded graph is not a theorem that the actual current support bank lacks the bridge. Repair target: add a retained inventory-derivation authority that produces CURRENT_TYPED_EDGES from the Route-2/readout/R_conn inputs, or bundle retained one-hop authorities sufficient for the restricted packet to verify graph completeness. Claim boundary until fixed: the current configured-bank diagnostic blocks overreading R_conn as the Route-2 center ratio, but the retained source-domain bridge no-go remains conditional."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:16.472514+00:00",
+      "archived_for_note_hash": "f378585dd65692858faeac2877970740003c779cb93437da90e80f751a3a38ec",
+      "audit_date": "2026-05-26T20:02:10.695547+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "On the restricted Route-2 carrier class, an admissible readout map P_R gives the exact family Xi_P(t;c) = (P_R c) tensor exp(-t Lambda_R)u_*, and the unresolved E-channel readout entry induces a non-unique exact time-coupling obstruction.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "bounded_theorem",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained_bounded",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 10.439,
+        "runner_hash": "341a7e7169db6b19dce6671ca560f2aa6f80610b1a59d1ec1bae53cbc41482c2",
+        "transitive_descendants": 693
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-quark-route2-source-domain-bridge-no-go-C75Ktt-2026-05-26-pass2",
+      "auditor_confidence": null,
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes only at the configured finite-bank level: the readout dependency leaves beta_E/alpha_E independent, the Rconn dependency supplies only the SU(3) adjoint fraction/color scalar, and the runner checks graph reachability over CURRENT_TYPED_EDGES plus exact rational endpoint algebra. It would not close as a broader claim that every possible retained upstream authority outside that explicit inventory has been exhaustively excluded.",
+      "claim_scope": "Scoped finite-bank no-go: over the explicit CURRENT_TYPED_EDGES inventory, the retained Route-2 readout scopes, the SU(3) adjoint-fraction scalar F_adj=8/9 rather than a physical connected-trace selector, and granted T-side candidates, no typed path derives gamma_T(center)/gamma_E(center)=-R_conn; adjoining that bridge gives beta_E/alpha_E=21/4 by endpoint algebra.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-26T20:02:10.695547+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T19:56:18.831164+00:00",
+          "auditor": "codex-gpt-5.5-fresh-quark-route2-source-domain-bridge-no-go-C75Ktt-2026-05-26-pass1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Scoped no-go over the explicitly configured finite Route-2 support/readout typed-edge inventory plus the SU(3) F_adj=8/9 color-channel scalar denoted R_conn in this packet: the current bank has no typed derivation of gamma_T(center)/gamma_E(center) = -R_conn, while adding that bridge forces beta_E/alpha_E = 21/4. This does not derive the inventory, the T-side candidates, a physical connected-trace selector, quark masses, or any untyped color-endpoint identification.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-26T20:02:10.695359+00:00",
+          "auditor": "codex-gpt-5.5-fresh-quark-route2-source-domain-bridge-no-go-C75Ktt-2026-05-26-pass2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Scoped finite-bank no-go: over the explicit CURRENT_TYPED_EDGES inventory, the retained Route-2 readout scopes, the SU(3) adjoint-fraction scalar F_adj=8/9 rather than a physical connected-trace selector, and granted T-side candidates, no typed path derives gamma_T(center)/gamma_E(center)=-R_conn; adjoining that bridge gives beta_E/alpha_E=21/4 by endpoint algebra.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Over the configured typed current bank there is no edge or path from R_conn=8/9 to c_TE=gamma_T(center)/gamma_E(center)=-8/9, while adding exactly that bridge makes the endpoint algebra force beta_E/alpha_E=21/4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "Audited clean for the narrowed configured-inventory no-go. N1 passes via the five packet attack frames; N2 has one collapsed wall, the missing typed source-domain bridge; N3 passes only with CURRENT_TYPED_EDGES treated as configured input rather than derived authority; N4 residuals match the readout and Rconn dependency scopes; N5 is finite typed-bank scoped; N6 finds no packet convention path; N7 steelman is an unenumerated upstream path, outside the audited scope; N8 was evaluated only within the restricted packet and found no closure mechanism. The runner is not a first-principles inventory derivation: it is existence/string checking plus exact algebra, hard-coded graph reachability, and endpoint-map identity checks over the configured bank."
+    },
+    {
+      "archived_at": "2026-06-13T08:46:35.032971+00:00",
+      "archived_for_note_hash": "09d7d912ef66d892ef54a67109c1d2e60b2c42c14b2472f6bdd2e62cc43ae6b5",
+      "audit_date": "2026-06-12T20:44:49.916166+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "On the restricted Route-2 carrier class, an admissible readout map P_R gives the exact family Xi_P(t;c) = (P_R c) tensor exp(-t Lambda_R)u_*, and the unresolved E-channel readout entry induces a non-unique exact time-coupling obstruction.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "bounded_theorem",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained_bounded",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 12.26,
+        "runner_hash": "4a24f8253f2784ab9b64fdcc89d5022758bc5f7fc89c9f84aa3e64da9c3e90b1",
+        "transitive_descendants": 866
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-19e4acd9b1-quark_route2_source_domain_b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rational algebra and configured graph reachability close: `(-2)(5/6)/(-8/9)=15/8` and `6(15/8-1)=21/4`, and the configured graph has no outgoing bridge from `su3_R_conn_8_9`. The repaired inventory-completeness claim does not close from this restricted packet because two files in the runner's named authority bank are not supplied in full.",
+      "claim_scope": "Bounded current-bank typed-graph audit: no retained Route-2/SU(3) source-domain edge derives `gamma_T(center)/gamma_E(center) = -R_conn`; adding that edge algebraically forces `beta_E/alpha_E = 21/4`.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-12T20:44:49.916166+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The finite typed graph has no path from `R_conn` to `rho_E = 21/4`; adding exactly the missing bridge creates the path immediately.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: bundle the full S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md and QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md authority notes, then update the stale expected runner count to PASS=103 and rerun the restricted audit.",
+      "open_dependency_paths": [
+        "docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md",
+        "docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 4,
+        "C": 3,
+        "D": 5,
+        "total_pass": 103
+      },
+      "verdict_rationale": "The scoped no-go is sound over the configured typed-edge inventory and the endpoint algebra independently checks out. However, the quote-anchored inventory repair is load-bearing, and the runner's own authority bank includes `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md` and `QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`, which are not provided as full cited authorities in the restricted packet. The source note also has stale verification text: it expects `PASS=33`, while the included completed cache reports `PASS=103`."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:38.976569+00:00",
+      "audit_date": "2026-06-13T22:40:45.405606+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "Audited the reduced Route-2 E-channel no-go: after granting the stated T-side candidates and the restricted carrier/readout family, minimal carrier linearity and shell normalization do not force rho_E=21/4.",
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "On the restricted Route-2 carrier class, an admissible readout map P_R gives the exact family Xi_P(t;c) = (P_R c) tensor exp(-t Lambda_R)u_*, and the unresolved E-channel readout entry induces a non-unique exact time-coupling obstruction.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "no_go",
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "bounded_theorem",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "retained_no_go",
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained_bounded",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 15.808,
+        "runner_hash": "4a24f8253f2784ab9b64fdcc89d5022758bc5f7fc89c9f84aa3e64da9c3e90b1",
+        "transitive_descendants": 1267
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-f3ca398fd6-quark_route2_source_domain_b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebra independently checks: q_E = (-2)(5/6)/(-8/9) = 15/8 and rho_E = 6(15/8 - 1) = 21/4. The graph no-go closes only over the enumerated current authority bank: no typed edge connects R_conn to the Route-2 center endpoint ratio, and adding exactly that edge creates the path.",
+      "claim_scope": "Bounded current-bank no-go: the named Route-2/SU(3) authority bank does not already type a bridge from the SU(3) adjoint fraction 8/9 to the Route-2 center endpoint ratio c_TE = -8/9; if that bridge is added, exact endpoint algebra gives rho_E = 21/4.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-13T22:40:45.405606+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-13T22:36:01.313621+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-119fbf09d0-quark_route2_source_domain_b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded current-bank audit that the quote-anchored finite typed-edge inventory over the provided Route-2/readout/SU(3) authority bank contains no derivation from the SU(3) adjoint-fraction node to the Route-2 center T/E endpoint ratio; if that bridge is added, endpoint algebra forces `rho_E = 21/4`.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-13T22:40:45.405606+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-f3ca398fd6-quark_route2_source_domain_b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded current-bank no-go: the named Route-2/SU(3) authority bank does not already type a bridge from the SU(3) adjoint fraction 8/9 to the Route-2 center endpoint ratio c_TE = -8/9; if that bridge is added, exact endpoint algebra gives rho_E = 21/4.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:quark_route2_exact_time_coupling_note_2026-04-19:retained_bounded->unaudited",
+      "load_bearing_step": "The quote-derived finite typed graph has no path from `su3_R_conn_8_9` to `route2_rho_E_21_4` unless the missing bridge `su3_R_conn_8_9 -> route2_center_TE_minus_8_9` is added.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the authority-bank sweep vocabulary and exception list if any cited Route-2 or R_conn authority note changes; this verdict does not cover authorities outside the named bank.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 80,
+        "C": 0,
+        "D": 0,
+        "total_pass": 103
+      },
+      "verdict_rationale": "The load-bearing step is finite graph reachability plus exact rational algebra over retained-grade inputs, not a numerical fit, external comparator, or symbol renaming. The runner source validates quote anchors for the configured typed edges, sweeps the named authority bank, derives two additional reverse algebra edges, and verifies that these do not create the missing R_conn-to-endpoint bridge. The clean no-go is narrow: it rules out the bridge in the current named bank and explicitly leaves outside-bank bridge theorems or alternate Route-2/readout primitives open."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:24.909562+00:00",
+      "archived_for_note_hash": "9df1cd7d3c6b1780a99506ac2bcb7e5320ba579558fff9383ac145e7dafc43f9",
+      "audit_date": "2026-06-15T20:20:45.601937+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "Audited the reduced Route-2 E-channel no-go: after granting the stated T-side candidates and the restricted carrier/readout family, minimal carrier linearity and shell normalization do not force rho_E=21/4.",
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "The audited claim is the restricted Route-2 result that an exact conditional family Xi_P(t;c) exists for any supplied admissible P_R, and that the retained readout-map non-uniqueness induces a current-carrier time-coupling obstruction.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "no_go",
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "positive_theorem",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "retained_no_go",
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 16.286,
+        "runner_hash": "4a24f8253f2784ab9b64fdcc89d5022758bc5f7fc89c9f84aa3e64da9c3e90b1",
+        "transitive_descendants": 882
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-7a52804b01-quark_route2_source_domain_b",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The rational algebra independently checks: `(-2)(5/6)/(-8/9)=15/8` and `6(15/8-1)=21/4`. The finite graph check also closes: `su3_R_conn_8_9` has no outgoing current-bank edge to the Route-2 endpoint domain unless the explicitly missing bridge is added.",
+      "claim_scope": "Bounded current-bank no-go over the supplied Route-2/readout/R_conn authority packet and finite typed-edge inventory: the packet does not derive the typed bridge `R_conn -> gamma_T(center)/gamma_E(center) = -R_conn`, while that bridge would algebraically force `beta_E/alpha_E = 21/4`.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-15T20:20:45.601937+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T20:17:06.371643+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-025d46477f-quark_route2_source_domain_b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded current-bank no-go: over the quote-derived Route-2/SU(3) typed-edge inventory and the granted T-side candidates, the packet contains no typed source-domain bridge from the SU(3) adjoint/color projection value to the Route-2 center endpoint ratio; adding that bridge algebraically forces `rho_E = 21/4`.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-15T20:20:45.601937+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-7a52804b01-quark_route2_source_domain_b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded current-bank no-go over the supplied Route-2/readout/R_conn authority packet and finite typed-edge inventory: the packet does not derive the typed bridge `R_conn -> gamma_T(center)/gamma_E(center) = -R_conn`, while that bridge would algebraically force `beta_E/alpha_E = 21/4`.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "In the current typed-edge inventory there is no path from `su3_R_conn_8_9` to `route2_center_TE_minus_8_9` or `route2_rho_E_21_4`; adding exactly that bridge creates the algebraic path to `rho_E = 21/4`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the quote-sweep completeness for `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`, since the packet exposes it mainly through runner anchors/cache rather than a full authority body.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 82,
+        "C": 1,
+        "D": 0,
+        "total_pass": 103
+      },
+      "verdict_rationale": "The load-bearing result is not a first-principles physics derivation; it is a finite typed-graph absence check plus exact rational endpoint algebra over retained-grade cited inputs. The no-go is properly scoped to the current quoted/derived authority bank and does not claim that no future source-domain bridge or alternate primitive can exist. The cited R_conn authority itself withholds the physical connected-trace selector, but this note uses only the exact SU(3) `8/9` color-support scalar as the source-domain node and then proves the missing typed promotion to Route-2 endpoint syntax."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_quark_route2_source_domain_bridge_no_go.py",
+  "title": "Quark Route-2 Source-Domain Bridge No-Go",
+  "transitive_descendants": 158,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

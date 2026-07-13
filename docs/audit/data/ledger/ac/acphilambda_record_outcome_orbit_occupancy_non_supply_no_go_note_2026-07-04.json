@@ -1,0 +1,2349 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "realized_state_primitive"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e438581cf6c11aff029cdb598acdb15aedd63311c5cb4fb1ef9375f6cecd295e",
+  "note_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-12T03:55:17.910152+00:00",
+      "archived_for_note_hash": "3e1b27a325ea50025873bcecd66ea79ff3dd78687d5157a5c2b5bbe85e9715e9",
+      "audit_date": "2026-07-12T03:14:48.686835+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+          "realized_state_primitive": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+        },
+        "dep_claim_scope": {
+          "ac_orbit_occupancy_statistical_grain_derivation_obligation": "The note records, but does not discharge, the obligation to derive the physical charged-lepton determinant-counting grain.",
+          "minimal_axioms": null,
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "ac_orbit_occupancy_statistical_grain_derivation_obligation": "open_gate",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "ac_orbit_occupancy_statistical_grain_derivation_obligation": "audited_renaming",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+          "minimal_axioms",
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ff4cd8e5d02e559634f900fa7b17658a0b97330795d203d2e6521dbd4e7ade8c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.6-sol-xhigh-acphilambda-occupancy-20260711",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Two models with the same lattice, local possibility structure, admissibility, records, record contents, and auxiliary carrier but different allowed scalar-readout normalizations are enough to refute entailment of either raw power. Exact algebra and an independent non-SymPy finite determinant check confirm the factor, additivity, and n versus 2n scaling.",
+      "claim_scope": "On a granted finite invertible complex carrier, the four axioms plus pointwise realized-state evaluation do not select between the additive raw determinant readouts log|det_C A| and log det_R R(A)=2 log|det_C A|; no physical charged-lepton action or measure claim is included.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-12T03:14:48.686835+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The two scalar laws I_C(C)=N(C) log 2 and I_R(C)=2N(C) log 2 share the same non-readout record-model reduct and both satisfy content-only finite additivity, while det_R R(A)=|det_C A|^2 makes their raw determinant powers distinct.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Construct both functionals on exactly the same invertible complex block and the same cardinality-based carrier assignment.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Grant an auxiliary invertible complex block carrier",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A supplied complex carrier might itself privilege holomorphic determinant power one over its realification.",
+            "outcome": "Both functionals exist on that carrier and differ only by the exact factor two, so complex carrier structure alone does not select one.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "same_complex_carrier"
+          },
+          {
+            "attempt": "Apply A -> S A S^(-1) symbolically and in the finite runner to both complex and realified determinants.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Both are similarity invariant",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Complex-basis similarity invariance might eliminate one of the determinant readouts.",
+            "outcome": "Both determinants are similarity invariant, so basis covariance does not select the raw power.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "similarity_invariance"
+          },
+          {
+            "attempt": "Conjugate the carrier and compare both readout values using det_R R(A)=det_C(A) conjugate(det_C(A)).",
+            "disposition": "CLOSED",
+            "evidence_locator": "Complex conjugation leaves both values unchanged",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "K/conjugation evenness might distinguish the complex-modulus readout from realified determinant readout.",
+            "outcome": "Both are functions of |det_C A| and remain unchanged, so the granted K-even criterion does not select one.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "conjugation_evenness"
+          },
+          {
+            "attempt": "Evaluate both laws on A(C)=2 I_(N(C)) and use N(C union D)=N(C)+N(D) for arbitrary finite disjoint collections.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Both readouts are determined by record content alone",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Record's content-only empty-zero and finite-additivity clauses might fix the per-record determinant coefficient.",
+            "outcome": "Both laws are constant per record, content-only, empty-zero, and additive; Record leaves the overall coefficient free.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "record_additivity"
+          },
+          {
+            "attempt": "Differentiate log determinants under A -> exp(t)A for an n-dimensional complex block.",
+            "disposition": "CLOSED",
+            "evidence_locator": "d/dt F_C(exp(t)A) at t=0 = n",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Response to a positive carrier rescaling might canonically normalize the determinant power.",
+            "outcome": "The two allowed laws have distinct covariant degrees n and 2n, and no supplied normalization clause chooses between them.",
+            "route_class": "normalization_or_units",
+            "route_id": "positive_scale_response"
+          },
+          {
+            "attempt": "Apply both laws pointwise to the same supplied record configuration and check the registered realized-state primitive boundary.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This is pointwise evaluation, not a state-selection rule",
+            "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Evaluation at the supplied realized state might select one determinant functional through state data.",
+            "outcome": "Pointwise evaluation supplies no state-selection, weighting, normalization, measure, or probability rule, so it cannot choose the functional.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "realized_state_evaluation"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "W_power: raw complex-versus-realified determinant-power choice on the granted auxiliary carrier"
+          ],
+          "evidence_locator": "one wall: `W_power`",
+          "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "W_power: raw complex-versus-realified determinant-power choice on the granted auxiliary carrier"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The proof text was scanned for",
+          "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "registered-mass coordinate package",
+              "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+              "phrase": "registered"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "once a canonical determinant line is derived",
+              "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+              "phrase": "canonical"
+            }
+          ],
+          "scan_scope": "Checked the source note, exact one-hop authorities, target runner/cache, and premise registry for we assume, by construction, as is standard, the framework provides, bridge context, background, naturally, obviously, standard QFT, registered, canonical, and close variants.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "No prior negative row is used as evidence",
+          "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+          "none_found_reason": "No N1 route is marked RULED OUT BY PRIOR and the source explicitly uses no prior negative row as evidence.",
+          "scan_scope": "Checked every source-note citation and every N1 route for reliance on a prior negative witness; all six routes are attempted directly and no prior verdict rationale is used.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "It makes no claim about a continuum action",
+          "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+          "scan_scope": "Checked every negative selection/non-entailment sentence against the resolutions actually proved, separating finite raw carrier normalization from physical action, measure, continuum, and interaction claims that the source excludes.",
+          "statements": [
+            {
+              "evidence_locator": "finite-carrier determinant-power non-entailment claim",
+              "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+              "phrase": "the current axiom surface does not select between the two raw determinant-power normalizations",
+              "tested_resolutions": [
+                "generic finite complex matrix",
+                "finite direct-sum block",
+                "every finite record collection through the cardinality formula",
+                "arbitrary finite complex dimension under positive scale deformation"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Structural kinetic-form isotropy supplies neither a determinant carrier nor a readout normalization and is irrelevant to the scoped wall.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The registered axiom node is the premise tested by the countermodel; its Record clause permits both additive content-only readouts and supplies no determinant normalization, K/CPT structure, or action bridge.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise evaluation supplies no state, weighting, normalization, measure, or selector, so it cannot choose between the two functionals.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference carries zero dimensionless normalization content and cannot distinguish determinant power one from two.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": true,
+              "disposition": "A future retained action-and-measure theorem could select the physical grain, but this registry entry is presently an open obligation with zero premise weight; the source explicitly preserves it outside the raw-normalization no-go.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This open h-class/h-unit identity-read target concerns a different readout residual and does not normalize the granted determinant carrier.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This open cross-sector theta identification concerns channel matching, not the raw complex-versus-realified determinant power on the granted carrier.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Dispositioned every orchestrator-indexed axiom/approved primitive and open derivation obligation; the index found no convention, vocabulary, meta-note, definition-refactor, or in-flight-reframe candidate for this residual.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Because F_R=2F_C, the two formulas may be only a coordinate normalization pair: defining the realified readout as F_R/2 recovers F_C, and a future complex CAR/Berezin determinant-line theorem could then privilege the holomorphic first power without any physical ambiguity.",
+          "evidence_locator": "normalized-readout convention | `F_R/2=F_C` is exact on this carrier",
+          "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+          "resolution": "This defeats any action-level inequivalence claim, which the source explicitly excludes, but not the narrower current-surface result: neither the factor-one normalization nor a physical action/measure bridge is contained in the four axioms or the realized-state primitive.",
+          "resolved": true,
+          "route_id": "positive_scale_response"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The exact physical AC(i) action-and-measure obligation remains open; it is applicable as a possible future selector but is addressed by excluding it from the audited raw-normalization scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The adjacent determinant-power-split cycle is applicable; the present proof directly checks its factor-two normalization mechanism and keeps action-level inequivalence outside scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The source cycle for record-orbit non-supply is applicable and is addressed by the repaired same-reduct two-readout countermodel plus the explicit AC(i) boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator candidate has no indexed term overlap with this raw determinant-power normalization residual (or names a different open gate), so it supplies no applicable retirement mechanism for the scoped wall.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04": {
+              "accepted_premise_type": null,
+              "content_sha256": "36d1a924ab1be2ab47eb10db0c8396f37f3aa765220eca9870587fd7d5d5f506",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04": {
+              "accepted_premise_type": null,
+              "content_sha256": "a79e73fecf7f647dd6c4f06fe7bc40ca3cc33d6b756b1f024f3e56f9343a7b30",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "3e1b27a325ea50025873bcecd66ea79ff3dd78687d5157a5c2b5bbe85e9715e9",
+              "effective_status": null,
+              "path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Both are similarity invariant",
+                "Both readouts are determined by record content alone",
+                "Complex conjugation leaves both values unchanged",
+                "Grant an auxiliary invertible complex block carrier",
+                "It makes no claim about a continuum action",
+                "No prior negative row is used as evidence",
+                "The proof text was scanned for",
+                "d/dt F_C(exp(t)A) at t=0 = n",
+                "finite-carrier determinant-power non-entailment claim",
+                "normalized-readout convention | `F_R/2=F_C` is exact on this carrier",
+                "once a canonical determinant line is derived",
+                "one wall: `W_power`",
+                "registered-mass coordinate package"
+              ]
+            },
+            "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+              "effective_status": "meta",
+              "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "This is pointwise evaluation, not a state-selection rule"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "Re-audit if the source is broadened from raw finite-carrier normalization non-entailment to the physical AC(i) action-and-measure obligation.",
+      "open_dependency_paths": [
+        "docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 36,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The same-reduct countermodels satisfy Record's empty-zero, record-content-only, and finite disjoint-additivity clauses, while exact realification forces F_R=2F_C; therefore the supplied axiom and primitive surface does not select the raw determinant normalization. Residual risk is intentionally outside this scope: the construction neither builds nor distinguishes physical charged-lepton actions or Gaussian measures and does not discharge AC(i); the directly cited occupancy obligation remains open and will block effective retained-grade propagation."
+    },
+    {
+      "archived_at": "2026-07-12T17:09:32.866742+00:00",
+      "audit_date": "2026-07-12T04:01:34.750653+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+          "realized_state_primitive": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ff4cd8e5d02e559634f900fa7b17658a0b97330795d203d2e6521dbd4e7ade8c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.6-sol-xhigh-reaudit-aci-nogo-graph-20260711",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "A manual check independent of the runner complexifies the realification to diag(A, conjugate(A)), giving det_R R(A)=det_C(A) conjugate(det_C(A))=|det_C(A)|^2; block determinants multiply and exp(t) scaling gives degrees n and 2n. The two cardinality readouts then satisfy the same accepted Record clauses on one unchanged model, establishing the stated non-entailment.",
+      "claim_scope": "Finite-carrier countermodel theorem: the four axioms and pointwise realized-state evaluation do not entail whether an explicitly granted auxiliary complex determinant readout uses F_C=log|det_C| or the realified raw normalization F_R=2F_C; no physical AC(i) matter-action or occupancy-grain discharge is claimed.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-12T04:01:34.750653+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_invalid",
+      "load_bearing_step": "The record-level construction shows that I_C(C)=N(C)log(2) and I_R(C)=2N(C)log(2) are distinct scalar readouts on the same unchanged four-axiom record model, so the axiom surface does not select the raw complex-versus-realified determinant power.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Construct F_C and F_R on one carrier rather than switching carrier sectors.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Both `F_C` and `F_R` are constructed from the same granted complex block",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the same granted invertible complex block carrier for both raw determinant readouts.",
+            "outcome": "Both functionals exist on the identical carrier and differ by a factor of two, so complex carrier structure alone does not select one.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "same_complex_carrier"
+          },
+          {
+            "attempt": "Check determinant invariance under A -> S A S^(-1) for both the complex and realified functionals.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Similarity `A -> S A S^(-1)` leaves both determinants unchanged.",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Demand invariance under complex-basis similarity transformations.",
+            "outcome": "Both functionals are similarity invariant, so the basis-symmetry requirement does not distinguish the raw power.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "similarity_invariance"
+          },
+          {
+            "attempt": "Compare both readouts under complex conjugation on the same finite carrier.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Complex conjugation leaves both values unchanged.",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Demand a K-even determinant-style scalar readout.",
+            "outcome": "Both depend on the determinant modulus and are conjugation even, leaving the factor-one versus factor-two normalization unselected.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "conjugation_evenness"
+          },
+          {
+            "attempt": "Extend one unchanged record model by I_C(C)=N(C)log(2) and I_R(C)=2N(C)log(2).",
+            "disposition": "CLOSED",
+            "evidence_locator": "Both give one answer on every finite supplied record collection",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the Record axiom's empty-zero, content-only, and finite disjoint-additivity clauses to select a readout.",
+            "outcome": "Both extensions satisfy the same Record requirements, so the accepted premise does not select the raw determinant power.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "record_additivity"
+          },
+          {
+            "attempt": "Differentiate both log-determinant functionals under A -> exp(t) A in complex dimension n.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Both respond covariantly but with degrees `n` and `2n`",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use positive scalar deformation response to identify a canonical determinant degree.",
+            "outcome": "The responses are n and 2n; covariance exposes rather than removes the raw normalization ambiguity.",
+            "route_class": "normalization_or_units",
+            "route_id": "positive_scale_response"
+          },
+          {
+            "attempt": "Hold the carrier assignment fixed and evaluate each already-defined readout pointwise on the same realized record state.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Evaluating the same carrier at a realized state does not select the functional",
+            "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use pointwise evaluation at the supplied realized state to select a determinant functional.",
+            "outcome": "The realized-state primitive supplies only the evaluation slot and no selector or normalization, so both readouts remain admissible.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "realized_state_evaluation"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "W_power: raw determinant-power normalization on the granted auxiliary complex carrier"
+          ],
+          "evidence_locator": "The scoped claim has one wall: `W_power`",
+          "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "W_power: raw determinant-power normalization on the granted auxiliary complex carrier"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The proof text was scanned for `we assume`",
+          "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "registered-mass coordinate package",
+              "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+              "phrase": "registered"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "canonical determinant line is derived",
+              "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+              "phrase": "canonical"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "Scanned the source note, its N1-N8 checklist, primary runner, minimal-axiom authority, and realized-state authority for: we assume; by construction; as is standard; the framework provides; bridge context; background; naturally; obviously; standard QFT; registered; canonical.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "No prior negative row is used as evidence.",
+          "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+          "none_found_reason": "No prior negative row is used as evidence; the raw determinant-power residual is established by direct same-model countermodels.",
+          "scan_scope": "Checked every prior-witness statement in N1 and the N4 table; all six routes are ATTEMPTED and no prior negative witness is used.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "It makes no claim about a continuum action",
+          "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+          "none_found_reason": "",
+          "scan_scope": "Checked every negative selection/non-entailment statement against the finite resolutions enumerated in the source scope and runner.",
+          "statements": [
+            {
+              "evidence_locator": "The current axiom surface does not select between them.",
+              "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+              "phrase": "The current axiom surface does not select between them.",
+              "tested_resolutions": [
+                "one scalar block",
+                "finite complex matrix block",
+                "finite disjoint record collections of sizes 0 through 4",
+                "block-direct-sum composition",
+                "complex dimensions 1 through 4"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Structural c_t=c_s kinetic-form isotropy has no determinant-readout or normalization content.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms are the tested foundation; the same-model extensions show they do not select the raw determinant power.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies no selector, weighting, or normalization and therefore does not close W_power.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units ruler supplies no dimensionless determinant normalization.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": true,
+              "disposition": "A future retained physical action/counting theorem could select the physical grain; it is preserved as a non-load-bearing target and does not defeat the current-surface raw-normalization countermodel.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The h-class/h-unit angle readout residual is different from the raw complex-versus-realified determinant power.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The quark-sector readout identification is a different cross-sector residual and does not by itself select the raw determinant normalization here.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Dispositioned every orchestrator-indexed axiom/approved primitive and open derivation obligation, and checked the source's normalization/action reframes against the single raw-power wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Because F_R=2F_C, the two functionals may be only a coordinate-normalization pair; choosing F_R/2 recovers F_C, and a future complex Berezin/action theorem could canonically privilege the first power.",
+          "evidence_locator": "The strongest objection is that `F_R=2F_C`",
+          "evidence_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+          "resolution": "This is decisive against any action-level or physical-occupancy dichotomy, so that extension remains outside scope. It does not defeat the narrow current-surface claim because neither the factor-one normalization nor the physical action/readout bridge is supplied by the accepted foundation.",
+          "resolved": true,
+          "route_id": "positive_scale_response"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04:previous_audit:0",
+              "evidence_locator": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "Archived audit provenance is excluded from this fresh judgment and is not used as scientific evidence.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The physical occupancy-grain obligation is the nearest live echo; it remains open and is explicitly outside the raw-normalization claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The indexed open gate has a different named residual from raw complex-versus-realified determinant normalization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The indexed open gate has a different named residual from raw complex-versus-realified determinant normalization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The determinant-power-split campaign is a direct mechanism echo; the current same-carrier countermodel closes only raw normalization non-entailment and preserves action-level closure paths.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The record-orbit non-supply campaign is a direct mechanism echo; the current two-readout record extensions address the narrow raw-power residual without claiming physical AC(i) discharge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "mechanism": "The orchestrator index reports no shared determinant-power or occupancy term for this historical no-go ledger, so no analogous retirement mechanism is imported.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04": {
+              "accepted_premise_type": null,
+              "content_sha256": "e1442e5d59da97bcf5115a5343023a0c625acb237915cd14e18dcf415282d2f1",
+              "cross_cycle_candidate_ids": [
+                "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04:previous_audit:0",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04": {
+              "accepted_premise_type": null,
+              "content_sha256": "a79e73fecf7f647dd6c4f06fe7bc40ca3cc33d6b756b1f024f3e56f9343a7b30",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "f5eac7bcc3c76c0aa5beb472857d4c4240bcf06a93f3efa05e9eff5779b3d78b",
+              "effective_status": null,
+              "path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Both `F_C` and `F_R` are constructed from the same granted complex block",
+                "Both give one answer on every finite supplied record collection",
+                "Both respond covariantly but with degrees `n` and `2n`",
+                "Complex conjugation leaves both values unchanged.",
+                "Evaluating the same carrier at a realized state does not select the functional",
+                "It makes no claim about a continuum action",
+                "No prior negative row is used as evidence.",
+                "Similarity `A -> S A S^(-1)` leaves both determinants unchanged.",
+                "The current axiom surface does not select between them.",
+                "The proof text was scanned for `we assume`",
+                "The scoped claim has one wall: `W_power`",
+                "The strongest objection is that `F_R=2F_C`",
+                "canonical determinant line is derived",
+                "registered-mass coordinate package"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "Re-check only if the accepted foundation or the raw-normalization scope changes; the physical AC(i) matter-action/occupancy obligation is not discharged by this result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 36,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The same-model counterexample closes: the four axioms allow both content-only, empty-zero, finitely additive readouts, while the realized-state primitive supplies no selector or normalization. Independently of SymPy, realification is complex-similar to diag(A, conjugate(A)), proving the squared-modulus identity and the factor-two scaling exactly. This ratifies only raw determinant-normalization non-entailment on the granted finite carrier; the physical AC(i) action/occupancy target remains outside scope and non-load-bearing."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py",
+  "title": "The Axiom Surface Does Not Select a Complex-vs-Realified Determinant Power",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

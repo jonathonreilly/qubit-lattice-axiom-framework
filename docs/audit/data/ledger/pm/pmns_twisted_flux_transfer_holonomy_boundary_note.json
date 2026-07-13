@@ -1,0 +1,1630 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_twisted_flux_transfer_holonomy_boundary_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem;",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_realization_gate_note_2026-05-03"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/pmns_lower_level_utils.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.56,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ea303cd0565dafa7be4862826e78734703704f6bc2b37e28f16a7e05b2185986",
+  "note_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106658+00:00",
+      "archived_for_note_hash": "679695663f52451d6dee77739968de79f116dc925c13f5a55a31deaf3f3d184b",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T13:40:45.893012+00:00",
+      "archived_for_note_hash": "77d9b1cb05247fbbb95a45642d1e2c272ff8602951004f9274c7005488973315",
+      "audit_date": "2026-05-01T11:09:33.674368+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered runner completes with PASS=16 FAIL=0, verifying exact fluxed spectral/holonomy recovery, demonstrating the two-real kernel on the reduced carrier, and checking the circularity guard.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The twisted flux transfer kernel exactly recovers (xbar, ybar, phi), but a single flux holonomy has a two-real kernel on the three-real reduced PMNS oriented-cycle carrier and therefore does not select a unique PMNS point.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Clean within the note's support-boundary scope. The note does not claim full PMNS value selection; it records a partial positive value law for the fluxed transfer carrier and the remaining one-holonomy obstruction on the reduced PMNS cycle family. The current runner verifies Hermiticity, Fourier diagonalization, exact recovery of xbar/ybar/phi, two independent kernel directions for the one-angle holonomy, shared holonomy for distinct reduced-channel points, and no PMNS target inputs. Residual risk is the declared one-holonomy limitation: further dynamics or an admitted extension would still be needed for positive PMNS selection."
+    },
+    {
+      "archived_at": "2026-05-12T08:18:40.755210+00:00",
+      "archived_for_note_hash": "93a0b5badb4d36f6c853870a8ac2292677bdd48c52f43dae9a35a263b91d25ad",
+      "audit_date": "2026-05-11T14:20:16.437875+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.735,
+        "runner_hash": "3d3b48a5974cfe452e92a60e6a66c25f7a852e8cff301d9f494a671959a7f47b",
+        "transitive_descendants": 425
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the holonomy recovery and non-selection boundary with PASS=16/FAIL=0. The retained chain does not close because the canonical graph-first PMNS cycle frame and staggered-Dirac realization context are admitted/open rather than retained one-hop dependencies.",
+      "claim_scope": "Bounded algebraic holonomy-value law and one-holonomy non-selection boundary for the PMNS twisted flux transfer carrier on the admitted graph-first cycle frame.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T14:20:16.437875+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For T(xbar,ybar,phi)=xbar I + ybar(e^{i phi}C+e^{-i phi}C^2), tr(T)/3 recovers xbar and tr(C^2T)/3 recovers ybar e^{i phi}, but one flux holonomy has a 2-real kernel on the reduced PMNS oriented-cycle family and does not select a unique point.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: register retained one-hop authority for the staggered-Dirac realization/canonical graph-first PMNS cycle frame before re-auditing the holonomy boundary.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: the twisted-transfer holonomy law is exact algebra on the admitted canonical graph-first cycle frame, but that frame and the broader staggered-Dirac realization context are not retained in this row's dependency packet. Why this blocks: retained bounded status would require retained upstream authority for the carrier/frame before the holonomy-value law can be used as PMNS science rather than conditional algebra. Repair target: register and retain the staggered-Dirac/canonical graph-first PMNS cycle-frame authority, or split this as a standalone matrix-algebra lemma with no PMNS-frame claim. Claim boundary until fixed: exact conditional holonomy recovery for the admitted carrier and a bounded no-unique-selection result for one holonomy probe."
+    },
+    {
+      "archived_at": "2026-06-11T21:38:40.466717+00:00",
+      "archived_for_note_hash": "9e665463b2cccc44c3d1da1807e7fac76c7a11dbf7fc89605047a17d6db67b7b",
+      "audit_date": "2026-06-11T13:29:45.741910+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 10.497,
+        "runner_hash": "3d3b48a5974cfe452e92a60e6a66c25f7a852e8cff301d9f494a671959a7f47b",
+        "transitive_descendants": 510
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-132745-fe93f7c6cd-pmns_twisted_flux_transfer_h",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-cycle algebra closes: using `C^3=I` and `tr(C)=tr(C^2)=0`, the trace identities follow, and the reduced-family probe is `h(u,v,w)=2 cos(phi) u + 2 sin(phi) v + w`, hence has a 2-real kernel. The full retained-grade chain is missing retained-grade closure of the admitted staggered-Dirac/PMNS carrier parent.",
+      "claim_scope": "Algebraic audit of the 3x3 graph-first cycle transfer kernel and the one-angle holonomy boundary on the 3-real reduced PMNS oriented-cycle carrier, conditional on the upstream carrier/realization context.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T13:29:45.741910+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The trace moments `tr(T)/3 = xbar` and `tr(C^2 T)/3 = ybar e^{i phi}` recover the flux-transfer parameters, while a single one-angle holonomy probe on `A_fwd(u,v,w)` is a rank-one real functional with a 2-real kernel.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: obtain retained-grade audit/closure for `docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` or remove the admitted carrier dependency, then re-audit this algebraic boundary row.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner source performs genuine finite 3x3 matrix algebra rather than merely printing constants, and the helper import used on the load-bearing path is only a signature circularity guard. I independently checked the trace normalizations, signs, and reduced-carrier functional; they match the note's stated identities and the one-holonomy non-selection boundary. However, the source note explicitly depends on `docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, which the packet marks `effective_status: unaudited` and `claim_type: bounded_theorem`, so the row cannot be clean at retained grade from this restricted packet."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.955196+00:00",
+      "audit_date": "2026-06-11T23:27:16.546332+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 10.517,
+        "runner_hash": "3d3b48a5974cfe452e92a60e6a66c25f7a852e8cff301d9f494a671959a7f47b",
+        "transitive_descendants": 517
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-232419-49cb920a4c-pmns_twisted_flux_transfer_h",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The trace identities follow directly from cyclic-matrix trace orthogonality, and the reduced probe is a nonzero rank-one real linear functional on a 3-real-dimensional carrier. The only non-algebraic PMNS naming input is explicitly routed as a bounded Tier-A carrier admission, so the closure is bounded, not unbounded.",
+      "claim_scope": "Exact finite cyclic-frame algebra: the fluxed transfer moments recover (xbar,ybar,phi), and a single one-angle holonomy functional on the 3-real reduced oriented-cycle carrier leaves a 2-real kernel; PMNS carrier naming remains bounded through the registered Tier-A admission.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T23:27:16.546332+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T23:23:40.973831+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-232100-8d542f3d34-pmns_twisted_flux_transfer_h",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The abstract 3-cycle flux-transfer kernel has exact trace/holonomy recovery of xbar, ybar, and phi, while a single holonomy probe does not uniquely select the 3-real reduced oriented-cycle family.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-11T23:27:16.546332+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-232419-49cb920a4c-pmns_twisted_flux_transfer_h",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite cyclic-frame algebra: the fluxed transfer moments recover (xbar,ybar,phi), and a single one-angle holonomy functional on the 3-real reduced oriented-cycle carrier leaves a 2-real kernel; PMNS carrier naming remains bounded through the registered Tier-A admission.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "From C^3 = I and tr(C) = tr(C^2) = 0, tr(T)/3 = xbar and tr(C^2 T)/3 = ybar e^{i phi}, while the one-angle reduced-family probe h(u,v,w)=2cos(phi)u+2sin(phi)v+w has a 2-real kernel.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that AC_phi_lambda is still registered as the Tier-A derivation target; the runner's explicit kernel-direction independence check is weaker than its label, but the independent rank-one functional argument closes the audited scope.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner source performs finite 3x3 matrix algebra with no external comparator, fitted input, or PMNS target-coordinate import; the hard-coded sample values are test points, not calibrated premises. An independent trace and rank check confirms the displayed factors and signs, including the 2-real kernel of the one-angle probe. The claim does not assert full PMNS value selection or phenomenology, and its carrier-name dependency is bounded through the Tier-A route rather than closed as an unbounded theorem."
+    },
+    {
+      "archived_at": "2026-07-11T22:03:24.209662+00:00",
+      "archived_for_note_hash": "a1f9fbd3e5ec07a900d73baec0e0e346b01cffc262c45fd1a74abba4c70dfe53",
+      "audit_date": "2026-07-11T18:25:34.992562+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 10.392,
+        "runner_hash": "3d3b48a5974cfe452e92a60e6a66c25f7a852e8cff301d9f494a671959a7f47b",
+        "transitive_descendants": 671
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00058-pmns_twisted_flux_transfer_h",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The matrix identities and two-real-dimensional kernel close algebraically, but exact recovery of ybar and phi requires unstated nonzero-sign and phase-branch conventions. The owner-governed dependency boundary explicitly supplies no PMNS alignment, so it does not close the physical PMNS carrier naming.",
+      "claim_scope": "Exact finite cyclic-frame moment identities and the rank-one fixed-angle holonomy functional on the three-real reduced oriented-cycle carrier; global parameter identifiability and the physical PMNS carrier identification were also checked.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T18:25:34.992562+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The identities tr(T)/3 = xbar and tr(C^2 T)/3 = ybar e^{i phi}, together with h(u,v,w) = 2cos(phi)u + 2sin(phi)v + w, establish the transfer moments and the two-real-dimensional kernel of one fixed-angle probe.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The supplied functional was written in coordinate form and its coefficient vector was checked to be nonzero for every phi because the w coefficient equals one.",
+            "disposition": "CLOSED",
+            "evidence_locator": "h(u,v,w) = 2cos(\u03c6)u + 2sin(\u03c6)v + w",
+            "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Try to reconstruct three real carrier coordinates from the single real linear functional by algebraic inversion.",
+            "outcome": "A nonzero map from R^3 to R has rank one and kernel dimension two, so algebraic inversion cannot be unique.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "rank_nullity"
+          },
+          {
+            "attempt": "The runner definition was inspected: the reduced-family readout explicitly takes the real part of a Hilbert-Schmidt pairing and returns a float.",
+            "disposition": "CLOSED",
+            "evidence_locator": "return float(np.real(np.trace(probe.conj().T @ m)))",
+            "evidence_path": "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat one holonomy as a complex-valued readout carrying two real constraints.",
+            "outcome": "The audited probe is one real functional; replacing it by a different complex observable changes the claim surface and does not refute the stated kernel result.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "complex_readout"
+          },
+          {
+            "attempt": "The restricted packet was checked for an additional constraint among u, v, and w.",
+            "disposition": "CLOSED",
+            "evidence_locator": "A_fwd(u, v, w) = (u + i v) E12 + w E23 + (u - i v) E31",
+            "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Restrict the three-real carrier to a one-dimensional physical submanifold on which one scalar could be injective.",
+            "outcome": "No such constraint is supplied; the claimed domain is explicitly the full three-real reduced oriented-cycle family.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "restricted_subcarrier"
+          },
+          {
+            "attempt": "The analytic coefficient vector was checked independently of the numerical fixture.",
+            "disposition": "CLOSED",
+            "evidence_locator": "has a 2-real kernel by linear algebra",
+            "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Challenge the general kernel claim on the ground that the runner tests only phi = 0.41.",
+            "outcome": "Its third component is identically one, so the functional has rank one and a two-real kernel at every real phi; the finite fixture is not load-bearing for this conclusion.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "finite_angle_gap"
+          },
+          {
+            "attempt": "The source was checked for a supplied dynamical selector or action.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Any further positive selection law would have to use genuinely new dynamics",
+            "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Add an effective action or dynamical extremum that selects one point inside each holonomy fiber.",
+            "outcome": "No selector is presented, and the note expressly places genuinely new dynamics outside the current result; adding it would not invalidate the one-probe rank statement.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "new_dynamics"
+          },
+          {
+            "attempt": "The cycle-frame representation and supplied authority were checked for a symmetry theorem imposing such relations.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The algebra is standalone.",
+            "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use cyclic symmetry to force two further relations among u, v, and w.",
+            "outcome": "The cyclic frame defines the carrier but supplies no additional invariant equations that collapse its three real coordinates.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "symmetry_selector"
+          },
+          {
+            "attempt": "The exact owner-governed registry boundary was compared with the source note's claimed PMNS naming dependency.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.",
+            "evidence_path": "docs/audit/data/owner_governed_premise_nodes.json",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the retired Tier-A owner-governed AC premise as authority for the physical PMNS carrier identification.",
+            "outcome": "The registry expressly supplies no CKM/PMNS alignment, so it cannot close the physical naming bridge.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "owner_pmns_bridge"
+          },
+          {
+            "attempt": "The coordinate functional was examined under invertible relabelings of its three-real domain.",
+            "disposition": "CLOSED",
+            "evidence_locator": "one flux holonomy alone",
+            "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Change phase or basis conventions to remove the kernel.",
+            "outcome": "An invertible coordinate change preserves the rank of a single real functional and therefore preserves its two-real kernel dimension.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "phase_relabel"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "single_real_holonomy_rank_wall",
+            "physical_pmns_carrier_identification_wall"
+          ],
+          "evidence_locator": "Only the *naming* of the cycle frame as the **PMNS** channel",
+          "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "single_real_holonomy_rank_wall",
+              "left_closes_right": false,
+              "right": "physical_pmns_carrier_identification_wall",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "single_real_holonomy_rank_wall",
+            "physical_pmns_carrier_identification_wall"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.",
+          "evidence_path": "docs/audit/data/owner_governed_premise_nodes.json",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "the physical identification of `E12, E23, E31` with the lepton-sector observable surface",
+              "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+              "phrase": "PMNS channel",
+              "promoted_wall": "physical_pmns_carrier_identification_wall"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "genuinely new dynamics or a further admitted extension",
+              "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+              "phrase": "new dynamics"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The algebra is standalone.",
+              "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+              "phrase": "canonical graph-first frame"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The phrases PMNS channel, canonical graph-first frame, admitted extension, new dynamics, exact recovery, and registered Tier-A routing were checked against the source, authority, runner, and premise registries.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The holonomy probe annihilates two independent reduced-carrier directions",
+          "evidence_path": "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
+          "none_found_reason": "All N1 routes are marked ATTEMPTED, so no RULED OUT BY PRIOR witness requires residual matching.",
+          "scan_scope": "No N1 route was closed solely by a prior no-go witness; all attacks were tested directly against the supplied algebra, source scope, or current registries.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "with one flux holonomy alone",
+          "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative phrases concerning non-selection, kernel dimension, remaining values, and need for new dynamics were checked for resolution overreach.",
+          "statements": [
+            {
+              "evidence_locator": "does not select the full reduced PMNS oriented cycle family",
+              "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+              "phrase": "does not select the full reduced PMNS oriented cycle family",
+              "tested_resolutions": [
+                "one fixed real holonomy functional on the full three-real reduced carrier"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "has a 2-real kernel on that reduced carrier",
+              "evidence_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+              "phrase": "has a 2-real kernel",
+              "tested_resolutions": [
+                "exact coordinate-level rank-nullity over the three-real carrier"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Space-time kinetic normalization supplies neither extra holonomy constraints nor PMNS carrier alignment.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms explicitly do not supply a transfer operator, mixing selector, or downstream physical identification.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies no state-contingent value or selector and cannot reduce the holonomy fiber.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference is irrelevant to this dimensionless finite-rank problem.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The exact adopted boundary excludes CKM/PMNS alignment and mixing-angle content, so it cannot close the PMNS carrier bridge.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The unaccepted bare-coupling rescaling convention has no relation to holonomy rank or PMNS alignment.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "The unaccepted hypercharge normalization convention neither selects reduced-cycle coordinates nor supplies a PMNS observable bridge.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All candidates supplied by the partial-closure index were checked across approved primitives, owner-governed residuals, retired Tier-A metadata, unaccepted conventions, and possible scope reframes.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The strongest hostile case is that retirement of AC_phi_lambda into an accepted owner-governed premise should now validate the PMNS carrier name and remove the former dependency objection.",
+          "evidence_locator": "It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.",
+          "evidence_path": "docs/audit/data/owner_governed_premise_nodes.json",
+          "resolution": "The registry boundary is narrower than that steelman: it adopts only the occupancy grain and R-eta readout license and expressly supplies no CKM/PMNS alignment. It therefore does not validate the physical cycle-frame identification, although it also does not affect the standalone rank-nullity theorem.",
+          "resolved": true,
+          "route_id": "owner_pmns_bridge"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:0",
+              "evidence_locator": "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Prior unaudited cycle.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:1",
+              "evidence_locator": "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Prior clean support-boundary audit.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:2",
+              "evidence_locator": "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Prior conditional carrier-authority objection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:3",
+              "evidence_locator": "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Prior conditional audit of the same finite algebra.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:4",
+              "evidence_locator": "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Prior clean result invalidated for missing no-go discipline.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:0",
+              "evidence_locator": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Earlier open-gate parent audit.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:1",
+              "evidence_locator": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Earlier conditional parent-identity audit.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:2",
+              "evidence_locator": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Earlier conditional open-gate audit.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:3",
+              "evidence_locator": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Earlier parent renaming verdict.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:4",
+              "evidence_locator": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Earlier invalidated parent renaming verdict.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:5",
+              "evidence_locator": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Earlier conditional parent verdict after axiom change.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:6",
+              "evidence_locator": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:6",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Earlier parent renaming verdict.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:7",
+              "evidence_locator": "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:7",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Bounded-synthesis clean audit invalidated for missing no-go discipline.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "AC_phi_lambda retirement by owner governance with an explicit narrow boundary.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated strong-CP Tier-A retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Owner-governed AC retirement boundary.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated foundational-campaign no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated Newton-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated coupling-source repair boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated textbook and RP-axis audit guard.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Broad inherited no-go inventory with adjacent flavor routes but no fixed-angle rank escape.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated coupling-identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated beta6 coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated lensing-observable no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Carrier-symmetry registry exhaustiveness boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Adjacent charged-lepton selector no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated emergent-Lorentz scope guard.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated metric-source boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated finite-family replay boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated Wilson normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Adjacent flavor-carrier physical-identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated analytic-vector bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated gauge-environment computation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated gauge-isotropy no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated gravity-dispersion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated weak-field gravity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated absolute-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Analogous distinction between invariant structure and physical species naming.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Adjacent PMNS right-frame selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated atomic-scale underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Analogous C3 carrier underdetermination without a source/readout law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated asymptotic-limit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated lensing observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated finite-path lensing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated source-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated temporal readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Empty unrelated no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated planning-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated time-step boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Adjacent neutrino and PMNS selector no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated neutrino absolute-scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated finite-lattice Newtonian scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated finite recompute scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated coupling authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated finite-memory boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated finite-grid theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated Planck-carrier representation wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated Planck projector-selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated plaquette bootstrap boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Analogous warning that supplied arithmetic is not selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "AC_phi_lambda readout and governance boundary history.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated transfer-generator and axis-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Analogous physical-basis identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Spin-statistics limitation in the one-hop realization authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Current-minimal-surface non-selection of a staggered kinetic law and physical corner carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated SU3 quotient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated documentation mismatch boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated three-family finite-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated theta mass-side retirement walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated theta gauge-side walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated theta positive-gate walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated theta insertion wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated theta defect-closure wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "AC determinant-power horn-selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "AC record-orbit occupancy nonsupply wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "AC R-eta formation/readout nonsupply wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated artifact-visibility boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Analogous record-only physical-readout nonsupply wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated finite numerical-family boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Unrelated finite-lattice scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "mechanism": "Analogous physical-readout renaming warning.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "bb142ae67845a1e4ef26a907b7f9581aa5fc330800b303e6f38ecd7b99d095c3",
+              "cross_cycle_candidate_ids": [
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:0",
+                "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:1",
+                "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:2",
+                "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:3",
+                "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:4",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:0",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:1",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:2",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:3",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:4",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:5",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:6",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:7",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:0",
+                "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:1",
+                "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:2",
+                "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:3",
+                "pmns_twisted_flux_transfer_holonomy_boundary_note:previous_audit:4",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:0",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:1",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:2",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:3",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:4",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:5",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:6",
+                "staggered_dirac_realization_gate_note_2026-05-03:previous_audit:7",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/pmns_twisted_flux_transfer_holonomy_boundary_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "2588aab8b51da7fd2f5df9b9fe041250ecd3afeb282085e7c8a7e910ced35d4e",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/pmns_twisted_flux_transfer_holonomy_boundary_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "a1f9fbd3e5ec07a900d73baec0e0e346b01cffc262c45fd1a74abba4c70dfe53",
+              "effective_status": null,
+              "path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "A_fwd(u, v, w) = (u + i v) E12 + w E23 + (u - i v) E31",
+                "Any further positive selection law would have to use genuinely new dynamics",
+                "Only the *naming* of the cycle frame as the **PMNS** channel",
+                "The algebra is standalone.",
+                "does not select the full reduced PMNS oriented cycle family",
+                "genuinely new dynamics or a further admitted extension",
+                "h(u,v,w) = 2cos(\u03c6)u + 2sin(\u03c6)v + w",
+                "has a 2-real kernel by linear algebra",
+                "has a 2-real kernel on that reduced carrier",
+                "one flux holonomy alone",
+                "the physical identification of `E12, E23, E31` with the lepton-sector observable surface",
+                "with one flux holonomy alone"
+              ]
+            },
+            "docs/audit/data/owner_governed_premise_nodes.json": {
+              "accepted_premise_type": "owner_governed_residual",
+              "content_sha256": "5acb432a7dce2e24ecbda4c7e2ca0c8c6e665913f7fc5b708cf900d37d341579",
+              "effective_status": null,
+              "path": "docs/audit/data/owner_governed_premise_nodes.json",
+              "roles": [
+                "premise_registry"
+              ],
+              "verified_locators": [
+                "It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law."
+              ]
+            },
+            "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "3d3b48a5974cfe452e92a60e6a66c25f7a852e8cff301d9f494a671959a7f47b",
+              "effective_status": null,
+              "path": "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "The holonomy probe annihilates two independent reduced-carrier directions",
+                "return float(np.real(np.trace(probe.conj().T @ m)))"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: state ybar > 0 and ybar != 0 with phi recovered only on a declared principal branch or modulo 2pi, and narrow or split the PMNS wording to an abstract cyclic-frame lemma unless a retained PMNS carrier bridge is cited; add a dated downstream-hygiene line to this note's own boundary so the repair's hash drift re-enters the row into the audit queue.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner genuinely evaluates finite 3x3 algebra, and the fixed-angle functional is nonzero because its w coefficient is one, so rank-nullity gives an exact two-real kernel. However, the asserted recovery of ybar and phi is not globally injective without ybar > 0, ybar != 0, and a specified phase branch or modulo-2pi interpretation; the sampled positive fixture does not supply those hypotheses. Moreover, the registered owner-governed boundary expressly supplies no CKM/PMNS alignment, leaving the physical PMNS naming outside the accepted-premise carve-out."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
+  "title": "PMNS Twisted Flux Transfer Holonomy Boundary",
+  "transitive_descendants": 754,
+  "verdict_rationale": null
+}

@@ -1,0 +1,304 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_scalar_temporal_completion_theorem_note",
+    "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+    "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+    "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note"
+  ],
+  "direct_in_degree": 13,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
+    "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
+    "scripts/frontier_scalar_3plus1_temporal_ratio.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 16.111,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b66bb2c03e10b4d3d53f631836169a7fb28fc415d9f5d3b605eda7f58ef021a0",
+  "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-07T08:10:09.339782+00:00",
+      "audit_date": "2026-05-03T20:06:30.119255+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "gauge_scalar_temporal_completion_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "retained_no_go",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "retained_bounded",
+          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "retained_no_go",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_scalar_temporal_completion_theorem_note",
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 6.129,
+        "transitive_descendants": 34
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-van-der-waerden",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited onset and underdetermination notes leave beta_eff(6), Perron/Jacobi data, and the exact beta-6 spectral measure unselected. The two analytic witnesses share the cited packet but give distinct local-response bridge readouts by injectivity, so the narrow non-entailment claim follows.",
+      "claim_scope": "No-go that the cited current Wilson packet does not entail the exact observable bridge <P>_full = R_O(beta_eff) at beta=6 without adding an exact nonperturbative completion object.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-03T20:06:30.119255+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "A derivation from the current Wilson packet would have to assign the same output to two completion witnesses that agree on every retained premise, but BRIDGE gives unequal readouts R_O(beta_eff^-(6)) and R_O(beta_eff^+(6)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Runner was not executed because it reads docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md, outside this restricted packet; runner breakdown is from static inspection of the provided runner.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The note proves a narrow formal no-go, not a positive plaquette bridge: current retained primitives plus the finite onset/regularity data do not select the missing beta-6 completion object. The proof uses a valid two-witness non-entailment argument and explicitly keeps fitted beta_eff, external plaquette values, and perturbative imports outside the derivation. Residual risk is only scope creep: this clean verdict applies to the current-packet non-entailment claim, not to any stronger claim that Wilson theory cannot determine the physical plaquette."
+    },
+    {
+      "archived_at": "2026-05-23T13:34:34.128077+00:00",
+      "audit_date": "2026-05-07T11:45:36.730110+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_completion_theorem_note": "Exact algebraic theorem for the explicitly bounded Wilson nearest-neighbor scalar gauge-source class: one common plaquette weight across the six orientations, no independent site term, no anisotropic plaquette splitting, directional kernel K_O(p)=sum_mu a_mu sin^2 p_mu, evaluated on the L_s=2 APBC minimal spatial cube with A_O(L_t)=(1/(2L_t)) sum_omega 1/K_O(omega). It does not audit the full interacting plaquette expectation bridge.",
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "Current beta^5 onset jet plus real analyticity and strict monotonicity on [0,6] do not determine beta_eff(6) or analytic P(6).",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "Audited the closed small-beta/onset theorem that the first nonlocal full-vacuum plaquette mixed-cumulant contribution is 4/18^5=1/472392 and hence beta_eff(beta)=beta+beta^5/26244+O(beta^6), with beta=6 continuation outside scope.",
+          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "Within the factorized beta=6 source-sector class T=M D6^loc R M with positive conjugation-symmetric diagonal residual R, the local Wilson factor plus Perron symmetry do not determine unique Perron moments or symmetry-reduced Jacobi coefficients for the fixed source operator J.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded."
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_completion_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "no_go",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "no_go",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_completion_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "retained_no_go",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "retained_bounded",
+          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "retained_no_go",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_scalar_temporal_completion_theorem_note",
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 11.268,
+        "runner_hash": "ae342d1744c06a72013336e999185d1f11b84597b24ede0a14d1bcd1ee532be4",
+        "transitive_descendants": 435
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-agent-019e023f-85b6-7da0-91f8-dd85c1fef888",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained dependencies supply the temporal kernel law, beta^5 onset, operator packet, and underdetermination of beta_eff(6)/Perron data. The note's two analytic increasing completions share those retained premises and produce distinct local-response readouts, so the current packet cannot entail a unique BRIDGE value.",
+      "claim_scope": "No retained-packet derivation of the exact observable-level bridge <P>_full = R_O(beta_eff(6)) from A_min plus the current Wilson primitives, unless an additional exact beta-6 nonperturbative completion object is added.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-07T11:45:36.730110+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-07T11:43:20.565290+00:00",
+          "auditor": "codex-audit-loop-agent-019e023c-f229-7d42-a2ba-dcce850ff685",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The current retained Wilson packet does not entail the exact observable bridge <P>_full = R_O(beta_eff) at beta=6 without adding an independently selected nonperturbative completion object.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-07T11:45:36.729840+00:00",
+          "auditor": "codex-audit-loop-agent-019e023f-85b6-7da0-91f8-dd85c1fef888",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "No retained-packet derivation of the exact observable-level bridge <P>_full = R_O(beta_eff(6)) from A_min plus the current Wilson primitives, unless an additional exact beta-6 nonperturbative completion object is added.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_type_changed:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:bounded_theorem->positive_theorem",
+      "load_bearing_step": "The two completion witnesses agree on every retained premise, but BRIDGE evaluates them as R_O(beta_eff^-(6)) and R_O(beta_eff^+(6)), which are unequal because R_O is injective.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that the witnesses are used only for non-entailment from the current packet, not as asserted physical Wilson completions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 7,
+        "C": 3,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The no-go is a valid two-witness non-entailment argument over retained inputs: the witnesses share the retained onset and source/operator data but differ by an O(beta^6) term at beta=6. Since the local response is strictly increasing, the bridge readouts differ, so a derivation from the same packet cannot select one without importing the missing exact nonperturbative object. The runner supports this with input checks, exact witness arithmetic, and local-response computations, and it does not use a fitted beta_eff or external plaquette comparator. Residual risk is limited to witness admissibility resting on the supplied retained_no_go underdetermination dependencies."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.614904+00:00",
+      "audit_date": "2026-06-06T16:45:11.306842+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_completion_theorem_note": "Exact temporal-completion ratio for the accepted Wilson nearest-neighbor local bosonic scalar gauge-source class with one uniform plaquette weight on the minimal APBC 3 spatial + 1 derived-time block.",
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "Current beta^5 onset jet plus real analyticity and strict monotonicity on [0,6] do not determine beta_eff(6) or analytic P(6).",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "Exact small-beta first nonlocal Wilson plaquette onset coefficient on the accepted 3 spatial + 1 derived-time surface, excluding nonperturbative beta=6 plaquette closure.",
+          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "Within the factorized beta=6 source-sector class T=M D6^loc R M with positive conjugation-symmetric diagonal residual R, the local Wilson factor plus Perron symmetry do not determine unique Perron moments or symmetry-reduced Jacobi coefficients for the fixed source operator J.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope."
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_completion_theorem_note": "positive_theorem",
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "no_go",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "positive_theorem",
+          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "no_go",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_completion_theorem_note": "retained",
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "retained_no_go",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "retained",
+          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": "retained_no_go",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
+        },
+        "deps": [
+          "gauge_scalar_temporal_completion_theorem_note",
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+          "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 15.994,
+        "runner_hash": "ae342d1744c06a72013336e999185d1f11b84597b24ede0a14d1bcd1ee532be4",
+        "transitive_descendants": 254
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-8e9f7b98c4-gauge_scalar_temporal_observ",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained packet fixes the local response, scalar temporal ratio, beta^5 onset, and prior underdetermination boundaries, but it does not fix beta_eff(6). The two witnesses satisfy the retained premises and yield distinct R_O values, so a derivation from only those premises would have to assign one value and cannot close.",
+      "claim_scope": "Audited the scoped claim that the exact observable bridge <P>_full = R_O(beta_eff) is not derivable from A_min plus the explicitly listed current Wilson primitives unless an exact beta-6 nonperturbative completion primitive is added.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-06T16:45:11.306842+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-23T15:16:46.518040+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T151624Z-89520c44-gauge_scalar_temporal_ob-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The current Wilson packet, without an added exact beta-6 nonperturbative completion object or fitted beta_eff, does not derive the observable bridge <P>_full = R_O(beta_eff).",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-06T16:45:11.306842+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-8e9f7b98c4-gauge_scalar_temporal_observ",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the scoped claim that the exact observable bridge <P>_full = R_O(beta_eff) is not derivable from A_min plus the explicitly listed current Wilson primitives unless an exact beta-6 nonperturbative completion primitive is added.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Two analytic strictly increasing completion witnesses share every retained current-packet premise through the beta^5 onset but differ at beta=6, and injectivity of R_O makes their BRIDGE readouts unequal.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check scope if a future retained primitive supplies exact beta_eff(6), the beta-6 spectral measure, Perron/Jacobi data, or an exact effective action.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 3,
+        "C": 3,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "All cited authorities are retained or retained_no_go, and the note uses the open beta-6 completion only negatively rather than importing it as a positive bridge premise. Independent formula checks confirm a=1/26244, c*6^6=0.0046656, beta_eff^-(6)=6+8/27, and R_O injectivity follows from dR_O/dx=Var_x(P)>0 for the nondegenerate one-plaquette source family. The runner's Bessel values support the separation but are not the proof; the proof is the scoped two-witness non-entailment, with exact spectral/Perron/effective-action primitives correctly left as escape routes."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_no_go.py",
+  "title": "Gauge-Scalar Temporal Observable Bridge No-Go Theorem",
+  "transitive_descendants": 781,
+  "verdict_rationale": null
+}

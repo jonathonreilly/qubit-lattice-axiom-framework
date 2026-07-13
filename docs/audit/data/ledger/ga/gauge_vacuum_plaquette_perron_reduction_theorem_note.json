@@ -1,0 +1,275 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_perron_reduction_theorem_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "fb7055adbf82f99386eecaab739819cefd9f12df8e4be35f29ad72eb23375420",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_PERRON_REDUCTION_THEOREM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:35:38.962472+00:00",
+      "audit_date": "2026-05-03T11:29:20.201561+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.443,
+        "transitive_descendants": 245
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-agent-euler-019ded94-43e7-70e0-8347-1a8746125df2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "SECOND is correct under the PR291 rules. The note explicitly imports an exact transfer-operator / character-recurrence theorem already on main, including the Wilson transfer factorization, positivity/self-adjointness, strict kernel positivity, and source-operator identification J, but the audit row registers no one-hop dependencies and the note does not prove those premises self-contained. The runner only checks a finite truncated positive transfer proxy with deformation parameters, so it cannot substitute for missing authority about the exact finite Wilson transfer operator. The safe retained boundary is therefore a conditional Perron-Jentzsch and Jacobi-data reduction for any finite transfer operator satisfying the stated hypotheses.",
+      "claim_scope": "Finite-volume Perron-Jentzsch reduction of the Wilson transfer state to a unique positive Perron vector, its large-Lt trace limit, symmetry invariance, and equivalent Jacobi data for the plaquette source operator J, conditional on the exact Wilson transfer kernel and J-identification hypotheses.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T11:29:20.201561+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-04-29T11:44:20.089529+00:00",
+          "auditor": "codex-gpt-5.5-backlog-sweep-2026-04-29",
+          "auditor_family": "codex-gpt-5.5",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-04-30T14:53:54.997489+00:00",
+          "auditor": "codex-audit-loop-second-20260430-gauge-perron-reduction",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-03T11:29:20.201561+00:00",
+          "auditor": "fresh-agent-euler-019ded94-43e7-70e0-8347-1a8746125df2",
+          "auditor_family": "codex-fresh-agent",
+          "claim_scope": "Finite-volume Perron-Jentzsch reduction of the Wilson transfer state to a unique positive Perron vector, its large-Lt trace limit, symmetry invariance, and equivalent Jacobi data for the plaquette source operator J, conditional on the exact Wilson transfer kernel and J-identification hypotheses.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "FIRST treated the operator-theoretic reduction as clean despite an unregistered and unprovided upstream exact transfer-operator/J-identification theorem, and allowed support-tier/source-prose framing plus proxy numerics to stand in for the missing exact authority.",
+          "independence": "judicial_review",
+          "judgment_rationale": "SECOND is correct under the PR291 rules. The note explicitly imports an exact transfer-operator / character-recurrence theorem already on main, including the Wilson transfer factorization, positivity/self-adjointness, strict kernel positivity, and source-operator identification J, but the audit row registers no one-hop dependencies and the note does not prove those premises self-contained. The runner only checks a finite truncated positive transfer proxy with deformation parameters, so it cannot substitute for missing authority about the exact finite Wilson transfer operator. The safe retained boundary is therefore a conditional Perron-Jentzsch and Jacobi-data reduction for any finite transfer operator satisfying the stated hypotheses.",
+          "load_bearing_step_class": "B",
+          "second_auditor_error": null,
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "For beta > 0, the kernel of T_(L_s,beta) is pointwise strictly positive, so compact self-adjoint Perron-Jentzsch gives a unique strictly positive Perron vector.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "SECOND is correct under the PR291 rules. The note explicitly imports an exact transfer-operator / character-recurrence theorem already on main, including the Wilson transfer factorization, positivity/self-adjointness, strict kernel positivity, and source-operator identification J, but the audit row registers no one-hop dependencies and the note does not prove those premises self-contained. The runner only checks a finite truncated positive transfer proxy with deformation parameters, so it cannot substitute for missing authority about the exact finite Wilson transfer operator. The safe retained boundary is therefore a conditional Perron-Jentzsch and Jacobi-data reduction for any finite transfer operator satisfying the stated hypotheses."
+    },
+    {
+      "archived_at": "2026-05-09T14:37:41.961484+00:00",
+      "archived_for_note_hash": "b7431c6d0d6eb0b99f4d42eae14bd82801b2027f2c4cc6e10d1ec82f2395bfe5",
+      "audit_date": "2026-05-03T13:30:10.526312+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.571,
+        "transitive_descendants": 268
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5-fresh-audit-loop-2026-05-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Perron-Jentzsch and spectral-decomposition consequences would close once the exact Wilson transfer operator is known to have a continuous strictly positive symmetric kernel. In the restricted packet, that kernel positivity/compact self-adjoint transfer construction is imported from an unnamed upstream theorem and is not itself derived.",
+      "claim_scope": "Finite Wilson large-derived-time plaquette transfer-state reduction to the unique Perron vector and equivalent Jacobi data of J, conditional on an exact strictly positive symmetric Wilson transfer kernel.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T13:30:10.526312+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "For beta > 0, the kernel of T_(L_s,beta) is pointwise strictly positive.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "other: cite and audit the exact transfer-operator/character-recurrence theorem proving the compact self-adjoint positivity-improving kernel, or extend the runner to construct/check the exact finite Wilson transfer object rather than a proxy.",
+      "open_dependency_paths": [
+        "missing cited retained dependency for the exact transfer-operator / character-recurrence theorem proving strict positivity of T_(L_s,beta)"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the note's exact theorem rests on the asserted pointwise strict positivity and symmetry of the finite Wilson transfer kernel, while the declared dependency set is empty and the runner checks only a finite truncated proxy built from a chosen matrix exponential. Why this blocks: the functional-analytic Perron reduction is standard after that premise, but the restricted audit packet does not establish that the actual gauge-invariant Wilson transfer operator satisfies the required kernel hypotheses. Repair target: cite and audit the exact transfer-operator/character-recurrence theorem proving the compact self-adjoint positivity-improving kernel, or extend the runner to construct/check the exact finite Wilson transfer object rather than a proxy. Claim boundary until fixed: the note may claim a conditional Perron/Jacobi reduction assuming the exact positive symmetric transfer kernel; it cannot be retained as an unconditional positive theorem from the supplied inputs."
+    },
+    {
+      "archived_at": "2026-05-23T13:34:34.128786+00:00",
+      "audit_date": "2026-05-09T14:55:54.165869+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 11.431,
+        "runner_hash": "9a21307e4888c3f8e6002bb90d94f085b0312236542516a1b4418f8326f6ec36",
+        "transitive_descendants": 487
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-019e0d3b-7f49-71c3-9481-052d4fd60131",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained_bounded upstream transfer-operator theorem's positive symmetric kernel and explicit self-adjoint plaquette operator J, standard Perron-Jentzsch and spectral-theorem arguments close the finite-surface reduction. This does not construct psi_0(L_s,6), beta=6 Jacobi coefficients, infinite-volume control, or canonical P(6).",
+      "claim_scope": "Finite Wilson L_s^3 x L_t source-surface reduction: for beta>0, bounded Borel functions of the explicit plaquette source J have a large-derived-time transfer-state limit given by the unique Perron vector state, equivalently by its Jacobi data.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-09T14:55:54.165869+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_type_changed:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:bounded_theorem->positive_theorem",
+      "load_bearing_step": "By positivity improvement and the compact self-adjoint Perron-Jentzsch theorem, T has a simple spectral-radius eigenvalue with a unique strictly positive Perron vector, and spectral decomposition gives the large-L_t transfer state as <psi_0,f(J)psi_0>.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that the upstream strict-positivity and compactness hypotheses are retained explicitly; the included runner is a finite proxy and should not be credited as an exact Wilson-transfer computation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the note's substantive work is a standard Perron-Jentzsch/spectral-theorem reduction once the single upstream transfer-operator theorem supplies a strictly positive symmetric kernel and explicit self-adjoint J. Why this blocks a clean verdict: with zero external comparator or independent framework computation, the claim is a mathematical corollary of one retained_bounded parent, and the runner only builds a truncated proxy rather than the actual Wilson transfer operator. Repair target: either box it explicitly as a corollary under the transfer-operator/character-recurrence theorem, or add an independent retained construction/computation of the actual Perron/Jacobi data. Claim boundary until fixed: finite-surface Perron/Jacobi reduction only, not explicit beta=6 coefficients, infinite-volume control, or canonical P(6)."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.309296+00:00",
+      "audit_date": "2026-05-23T14:59:00.777584+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 12.961,
+        "runner_hash": "9a21307e4888c3f8e6002bb90d94f085b0312236542516a1b4418f8326f6ec36",
+        "transitive_descendants": 996
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T145713Z-3d18ef24-gauge_vacuum_plaquette_p-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited authority is retained and supplies the positive self-adjoint transfer-operator realization and explicit plaquette source operator J. The remaining steps are standard compact-operator Perron-Jentzsch, spectral decomposition, and orthogonal-polynomial/Jacobi compression consequences.",
+      "claim_scope": "Finite-volume beta>0 Perron-state and Jacobi-data reduction for the Wilson transfer-operator plaquette problem, assuming the retained transfer-operator/character-recurrence theorem; not explicit beta=6 Perron data, infinite-volume control, or canonical P(6) closure.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-23T14:59:00.777584+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:retained->unaudited",
+      "load_bearing_step": "From the strictly positive symmetric compact transfer kernel, Perron-Jentzsch gives a unique strictly positive Perron vector and spectral decomposition makes the normalized large-Lt trace state converge to that Perron vector state.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only whether the parent transfer theorem's trace factorization is still retained if its scope is later narrowed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The note does not import an unretained dependency: its one cited authority is retained and provides the finite transfer-operator setup. The source claim follows as a standard mathematical corollary of that single parent theorem, with no external comparator and no first-principles numerical closure of beta=6 data. The runner checks a finite proxy model rather than the exact Wilson transfer operator, so it is supportive but not load-bearing. Under the tie-break rule, this is decoration rather than an independent clean positive theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "relabel_date": "2026-05-06T17:45:26.976879+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
+  "title": "Gauge-Vacuum Plaquette Perron-State Reduction Theorem",
+  "transitive_descendants": 47,
+  "verdict_rationale": null
+}

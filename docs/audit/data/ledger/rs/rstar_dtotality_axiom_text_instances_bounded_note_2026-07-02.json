@@ -1,0 +1,179 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "rstar_dtotality_axiom_text_instances_bounded_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "realized_state_primitive"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b8903900bdba7231d1ec7644ac9750a2e7dc00f13dd0421cb1a02bbd1a47a4d8",
+  "note_path": "docs/RSTAR_DTOTALITY_AXIOM_TEXT_INSTANCES_BOUNDED_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.392300+00:00",
+      "audit_date": "2026-07-09T11:25:13.841512+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "5ae28ea86dbb0f29cbb5974923f9e9750077c9f46f4bed790e361dff389e91ef"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "11f46a51227145e2e6c8a297ceaebd12d47369392380f5121dcd942f86c3e828",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-context-rstar-dtotality-auditor-2026-07-09",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited axiom and primitive text contain the exact finite-additivity, content-determination, exactly-one-answer, and pointwise-evaluation boundary clauses, and the note explicitly excludes sibling PR adjudication, wall/gate closure, motion closure, pointwise-domain closure, and audit/status changes.",
+      "claim_scope": "Bounded clause mapping: the quoted R* finite-additivity/content-determination clauses and D-totality exactly-one-answer domain clause are direct instances of the cited Record/law text, with the realized-state primitive used only to preserve the pointwise-evaluation boundary.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T11:25:13.841512+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:realized_state_primitive:5ae28ea8->0515188f",
+      "load_bearing_step": "R* clauses 1-2 map to the Record axiom's finite additivity and content-determination sentences, and D-totality maps to the law sentence requiring exactly one answer at every state in the supplied domain.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit only on source/dependency hash drift or if downstream surfaces cite this note as closing wall/gate, motion-closure, pointwise-domain, or sibling-PR questions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "fail": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The note stays within a bounded text-instance claim: the relevant Record and law-domain sentences are present in the minimal axioms, and the realized-state primitive supports only pointwise evaluation without supplying a domain certificate. The runner checks finite witnesses for additivity, fixed-content exclusion of unsupplied auxiliary basis variation, exactly-one-answer totality, and firewall language. I found no overclaim of sibling PR adjudication, wall/gate closure, motion closure, pointwise-domain closure, or audit/status changes."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.903984+00:00",
+      "audit_date": "2026-07-10T15:53:36.327516+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "0515188f2f4ca91b4c75a5f2ec35f42c9d3f2efec86b20f8d22b1bc991a9e44b"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "11f46a51227145e2e6c8a297ceaebd12d47369392380f5121dcd942f86c3e828",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00018-rstar_dtotality_axiom_text_i",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited premises directly contain the mapped requirements, and the exclusion and domain-relative consequences are correctly stated. The runner verifies finite examples and boundary language, but the chain establishes only the claimed clause correspondence.",
+      "claim_scope": "The quoted R* and D-totality clauses were audited only as labels for requirements already stated in the accepted Record and law-domain premises, with finite illustrative witnesses and the stated realized-state boundary.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:53:36.327516+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "The R* clauses are the Record axiom's finite-additivity and content-determination requirements, while D-totality is the law sentence applied to a rule's stated supplied domain.",
+      "load_bearing_step_class": "F",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: Retain this as an explicitly bounded clause-mapping result; re-audit only if the note adds a non-definitional consequence derived beyond the quoted premise wording.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The note explicitly presents R* and D-totality as names for clauses already contained in the accepted axiom text, so its load-bearing move is a class-F identification rather than a new derivation. The runner genuinely evaluates finite examples, but those examples instantiate definitions chosen to pass or fail the quoted requirements and produce no new framework consequence. The accepted-premise carve-out prevents a conditional downgrade but does not convert a direct re-labeling of premise text into class C."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_rstar_dtotality_axiom_text_instances_2026_07_02.py",
+  "title": "R* And D-Totality Clauses As Axiom-Text Instances (Bounded Note)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

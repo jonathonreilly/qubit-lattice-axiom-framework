@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "nn_lattice_rescaled_full_kernel_identification_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (translation-invariant Gaussian-magnitude",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "nn_lattice_rescaled_kernel_identification_note_2026-05-10",
+    "nn_lattice_rescaled_continuum_identification_note_2026-05-10"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.307,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "72c7d30ee73f6ac152de10a735354298afc9c2f80b467f6d8db326e04d639d1c",
+  "note_path": "docs/NN_LATTICE_RESCALED_FULL_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:31.366241+00:00",
+      "audit_date": "2026-05-23T19:55:18.746080+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "nn_lattice_rescaled_continuum_identification_note_2026-05-10": "Finite-window numerical diagnostic for the field-free slit-detector decoherence subblock of the deterministic-rescale NN harness with BETA = 0.8, K_PHYS = 5.0, SLIT_Y = 3, PHYS_L = 40, through h = 0.03125.",
+          "nn_lattice_rescaled_kernel_identification_note_2026-05-10": "Bounded numerical no-go on the deterministic-rescale NN harness with BETA=0.8, K_PHYS=5.0, PHYS_L=40, single source, no slits, no blocked nodes, no field, h in {0.5, 0.25, 0.125, 0.0625}, and central detector window |y_d| <= 6."
+        },
+        "dep_claim_type": {
+          "nn_lattice_rescaled_continuum_identification_note_2026-05-10": "bounded_theorem",
+          "nn_lattice_rescaled_kernel_identification_note_2026-05-10": "no_go"
+        },
+        "dep_effective_status": {
+          "nn_lattice_rescaled_continuum_identification_note_2026-05-10": "retained_bounded",
+          "nn_lattice_rescaled_kernel_identification_note_2026-05-10": "retained_no_go"
+        },
+        "deps": [
+          "nn_lattice_rescaled_continuum_identification_note_2026-05-10",
+          "nn_lattice_rescaled_kernel_identification_note_2026-05-10"
+        ],
+        "load_bearing_score": 3.307,
+        "runner_hash": "a2101647f5490f37cd7a32c187e191b8e078578f31a79c27633d6ab1ca91cf6c",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T195237Z-bad75f67-nn_lattice_rescaled_full-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source instantiates the lattice, propagates amplitudes from the specified sources, fits the resulting detector amplitudes in displacement coordinates, and applies the stated tolerance checks; it is not merely printing preloaded fit values. The provided one-hop cited authorities are retained-grade, and the PR #1007 c2 and slit-anchoring comparisons are non-load-bearing context for this scoped finite-grid fit.",
+      "claim_scope": "Finite checked-grid, field-free, no-slit rescaled NN harness with BETA=0.8, K_PHYS=5.0, L=40, y_s in {-6,-3,0,+3,+6}, h in {0.25,0.125,0.0625}, and central window |u|<=6: translation-invariant Gaussian-magnitude and quadratic-phase fit within the runner tolerances.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T19:55:18.746080+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:nn_lattice_rescaled_continuum_identification_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "The runner computes A(y_s -> y_d) for y_s in {-6,-3,0,+3,+6} and h in {0.25,0.125,0.0625}, fits |A| and arg A in u=y_d-y_s, and finds zero displayed spread in sigma and c2 plus passing Gaussian/quadratic R^2 guards.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that the PR #1007 analytic c2 comparison and L1 slit-anchoring prose remain non-load-bearing; the clean verdict covers the finite checked-grid kernel-shape fit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 11,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The load-bearing finite-grid kernel-shape claim is supported by a genuine first-principles deterministic runner over the stated harness, with no helper imports and no hard-coded sigma/c2 pass values on the load-bearing path. The acceptance checks for sigma spread, c2 spread, centroid drift, and Gaussian/quadratic fit quality all pass in the supplied cache. The broader analytic c2 comparison and slit-anchored L1 interpretation should remain scoped as cross-checks rather than independent derivations."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_nn_rescaled_full_kernel_identification.py",
+  "title": "NN Lattice Rescaled-Lane Full Kernel Identification A(y_s -> y_d)",
+  "transitive_descendants": 6,
+  "verdict_rationale": null
+}

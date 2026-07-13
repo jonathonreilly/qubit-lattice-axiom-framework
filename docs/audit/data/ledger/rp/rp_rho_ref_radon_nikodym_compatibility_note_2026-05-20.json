@@ -1,0 +1,280 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem candidate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3f4dcf367801be509732dd19cb53591e43fd022ac14e3301d37971671be17aee",
+  "note_path": "docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.083253+00:00",
+      "audit_date": "2026-05-27T05:37:32.587904+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "A1/A2 supply the finite qubit-lattice matrix algebra, and the retained tracial-state theorem supplies tau_Lambda(A)=Tr(A)/2^|Lambda| as the finite-region trace. The remaining proof is standard finite-dimensional matrix functional calculus and trace positivity. The audited scope deliberately excludes the still-open Wilson/RP representation and pre-record identification bridges.",
+      "claim_scope": "Finite-volume trace Radon-Nikodym template only: on A_Lambda ~= M_{2^|Lambda|}(C) with normalized trace tau_Lambda, any self-adjoint H defines D_H = e^{-H}/tau_Lambda(e^{-H}), a positive tau_Lambda-normalized density, and omega_H(O)=tau_Lambda(D_H O) is a normal state with Radon-Nikodym density D_H. Any wording in terms of rho_ref is audited only insofar as rho_ref|_Lambda denotes this normalized trace; this does not close the pre-record physical identification, Wilson-measure-to-operator representation bridge, mutual absolute continuity across carriers, thermodynamic limit, or RP compatibility theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T05:37:32.587904+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:pre_record_reference_state_tracial_derivation_note_2026-05-20:retained->unaudited",
+      "load_bearing_step": "For self-adjoint finite-region H, functional calculus gives e^{-H} positive and tau_Lambda(e^{-H})>0, so D_H is a positive normalized density and omega_H(O)=tau_Lambda(D_H O) is the finite-dimensional density-matrix/Radon-Nikodym representation relative to the faithful normalized trace.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck any downstream citation that treats this row as Wilson/RP-to-rho_ref compatibility, mutual absolute continuity across carriers, thermodynamic-limit RP, or pre-record-reference physical identification. Those require separate retained bridge theorems.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The finite-dimensional trace-density theorem closes on the restricted packet: e^{-H} is positive for self-adjoint H, the normalized trace is faithful, D_H has tau_Lambda(D_H)=1, and every normal finite-dimensional state has a density relative to the faithful trace. The row is clean only as this bounded template. The source's bridge language is not ratified as RP compatibility: the Wilson Euclidean measure still needs a retained representation as H_Wilson,Lambda on A_Lambda, and the upstream tracial-state audit excludes the physical identification of tau with a pre-record reference. The no-go/wall discipline check is therefore handled by narrowing the audited scope rather than treating the missing bridges as closed or impossible."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:12.922516+00:00",
+      "archived_for_note_hash": "ca7ae9ca5ad47d657ec26327f88dc967c5e58fc979f2bde4d019aa3bc4c6ae2d",
+      "audit_date": "2026-06-06T00:26:44.588593+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique tracial-state characterization for the stipulated one-qubit tensor-product quasi-local algebra over Z^3; the pre-record reference-state identification and downstream consequences are excluded."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-002526-c2dd805166-rp_rho_ref_radon_nikodym_com",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional matrix-algebra Gibbs/tracial density calculation closes relative to tau_Lambda. The rho_ref compatibility reading does not close because the cited pre-record authority explicitly leaves the tau-to-rho_ref identification open, and the Wilson measure-to-H_Wilson,Lambda representation bridge is also not supplied.",
+      "claim_scope": "Finite-volume Gibbs density on A_Lambda relative to the normalized trace tau_Lambda; any reading as rho_ref or Wilson/RP compatibility remains conditional on separate identification and carrier-representation bridges.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T00:26:44.588593+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For self-adjoint H, D_H = e^{-H}/tau_Lambda(e^{-H}) is positive with tau_Lambda(D_H)=1, so omega_H(O)=tau_Lambda(D_H O) is the finite-dimensional Radon-Nikodym density representation relative to the faithful trace.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: audit a retained bridge identifying rho_ref|_Lambda with tau_Lambda and, for Wilson use, a carrier representation H_Wilson,Lambda in A_Lambda.",
+      "open_dependency_paths": [
+        "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The displayed finite-dimensional identities are standard and check out: e^{-H} is strictly positive, Z_H is positive by faithfulness of the trace, and cyclicity gives positivity of Tr(e^{-H}O) for O >= 0. However, the note's rho_ref wording depends on an upstream authority that explicitly demotes identifying the unique tracial state with the pre-record reference to an open admission. The Wilson/RP compatibility reading also imports a separate representation bridge from configuration-space measure to a self-adjoint operator on A_Lambda, which the note admits is not proved here. No runner source or stdout was available, so the judgment is from the note text and supplied authorities alone."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.515036+00:00",
+      "audit_date": "2026-06-06T20:21:32.072336+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "85e5817681a6771918b954f63f909d52900e73bb1416a3140584997ed17bb946",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-202003-5ba6f68fd6-rp_rho_ref_radon_nikodym_com",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Once the accepted qubit-lattice finite matrix algebra and normalized trace are in scope, the result follows from finite-dimensional spectral calculus, faithfulness of the trace, and trace cyclicity. The rho_ref and Wilson/RP clauses are explicitly conditional downstream applications and are not consumed by the audited theorem.",
+      "claim_scope": "Finite-volume Gibbs/Radon-Nikodym density relative to the normalized trace on A_Lambda ~= M_{2^|Lambda|}(C), excluding rho_ref and Wilson/RP carrier bridges.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T20:21:32.072336+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "For self-adjoint H in A_Lambda, D_H = e^{-H}/tau_Lambda(e^{-H}) is positive with tau_Lambda(D_H)=1, and omega_H(O)=tau_Lambda(D_H O) is the trace-relative Radon-Nikodym density representation.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that future downstream uses keep the rho_ref identification and Wilson/RP carrier representation outside this audited scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The displayed quantitative identities reduce to finite matrix algebra: e^{-H} is strictly positive for self-adjoint H, Z_H=tau_Lambda(e^{-H}) is positive, tau_Lambda(D_H)=1, and Tr(e^{-H}O)=Tr(e^{-H/2} O e^{-H/2}) >= 0 for O>=0. The cited minimal-axiom authority is flagged as an accepted axiom premise, so it does not trigger a dependency downgrade. The runner source performs consistent finite matrix sanity checks and contains no hidden rho_ref, Wilson/RP, external comparator, or tuned numerical import."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.902320+00:00",
+      "audit_date": "2026-07-10T04:31:49.266553+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "85e5817681a6771918b954f63f909d52900e73bb1416a3140584997ed17bb946",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00094-rp_rho_ref_radon_nikodym_com",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite matrix algebra supplied by the accepted Qubit premise, together with standard functional calculus and trace identities, suffices to prove positivity, normalization, and the density representation. The downstream rho_ref and Wilson/RP identifications are explicitly excluded.",
+      "claim_scope": "The finite-dimensional Gibbs density theorem relative to tau_Lambda on A_Lambda; no rho_ref identification or Wilson/RP carrier bridge was audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T04:31:49.266553+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "minimal_axioms",
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "For self-adjoint H, functional calculus makes e^{-H} positive, so D_H = e^{-H}/tau_Lambda(e^{-H}) is positive, normalized, and represents omega_H relative to the faithful normalized trace.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The proof is a correct algebraic application of standard finite-dimensional matrix facts to the single cited axiom authority. The runner performs genuine randomized matrix checks consistent with the analytic proof, but it does not establish a new first-principles numerical result. With no external-comparator checks and no additional independent retained theorem inputs, the row is decoration-grade."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py",
+  "title": "Finite-Volume Gibbs State Relative to the Normalized Trace",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

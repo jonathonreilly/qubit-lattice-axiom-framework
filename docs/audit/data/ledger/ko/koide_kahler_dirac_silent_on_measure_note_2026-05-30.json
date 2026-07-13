@@ -1,0 +1,280 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+    "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+    "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+    "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5e38c12775cd677aff3eb6ee38d3384faf4832f136fde188d45e42054a2120d9",
+  "note_path": "docs/KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-10T20:11:19.224526+00:00",
+      "audit_date": "2026-06-03T04:48:38.907997+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": "Finite-dimensional algebraic obstruction to realizing a continuous `b`-phase symmetry by scalar rephasing of the order-three cyclic generator `C`; only cube-root phases preserve `C^3 = I`, while centralizer and gauge actions leave `b` unchanged and diagonal corner phases either exit the circulant class or reduce to the same discrete case.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "C1 only: under the qubit-per-site/R1 k=1 axiom reading, a single faithful Cl(3) module per site has dim_C H_x = 2; full staggered-Dirac/U4 realization and chirality forcing are outside scope.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "bounded_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained_bounded",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b34e59b29fb62266f1a916b6843272cee110e7e5a677851c9de996f0e9e7437e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-044543-4a2cd327-koide_kahler_dirac_silen",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The grade-off-diagonal statement follows directly from the form-degree shifts d: Lambda^p -> Lambda^{p+1} and delta: Lambda^p -> Lambda^{p-1}; the determinant/Pfaffian and Jcs identities are exact finite matrix algebra. The note explicitly leaves the matter-action real-antisymmetric bilinear as an open binary, so that bridge is not required for the bounded conclusion.",
+      "claim_scope": "Finite-dimensional audit of D_KD on Lambda*(R^3), determinant/Pfaffian counting for M=aI+b(C+C^2), and the C3-equivariant candidate complex-structure objects; no Koide mass-measure derivation is claimed or audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T04:48:38.907997+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Since d raises form degree and delta lowers form degree, D_KD=d-delta has zero Lambda^k -> Lambda^k blocks, including the Lambda^1 candidate generation block, while the determinant/Pfaffian and Jcs checks only localize the remaining measure binary.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check downstream use does not promote the open matter-action bilinear binary or the Lambda^1 generation-block reading into a closed physical generation-measure derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing steps are class A algebraic closures over retained-grade inputs: zero grade-diagonal D_KD blocks, det(M)=(a+2b)(a-b)^2, det(M tensor eps)=det(M)^2, Jcs^2=-P_doublet, and the one-dimensional C3-equivariant antisymmetric direction. The runner source actually constructs the matrices and symbolic determinants rather than hard-coding the contested conclusions, and independent finite checks confirm the displayed target identities. No external comparator, tuned numerical input, or closed Koide-measure claim is imported; the no-go language is bounded to the checked routes and leaves the bilinear route open."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.969534+00:00",
+      "audit_date": "2026-06-12T02:45:42.980638+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": "Finite-dimensional algebraic obstruction to realizing a continuous `b`-phase symmetry by scalar rephasing of the order-three cyclic generator `C`; only cube-root phases preserve `C^3 = I`, while centralizer and gauge actions leave `b` unchanged and diagonal corner phases either exit the circulant class or reduce to the same discrete case.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "C1 only: conditional on a single faithful Cl(3) module per site, the retained Cl(3) split and standard semisimple representation theory give dim_C H_x = 2; unconditional U4 closure and chirality/unitary-conjugacy claims are outside this ratified scope.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Abstract finite-dimensional component-space theorem: V_Hn = C^(2^d) is graded-linearly equivalent to Lambda^*(C^d); D_KD = d - delta has the stated parity, square, adjoint, and Hermiticity properties; the d=4 spinor-count arithmetic matches the cited Cl(3) chirality-pair dimension, with physical staggered-operator and JW/Fock identifications out of scope."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "bounded_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained_bounded",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "b34e59b29fb62266f1a916b6843272cee110e7e5a677851c9de996f0e9e7437e",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-024247-1c8803c205-koide_kahler_dirac_silent_on",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conclusion follows from finite exterior-algebra degree shifting and elementary C3 matrix identities. The note does not derive the Koide measure; it only rules out the checked K\u00e4hler-Dirac, determinant/Pfaffian, and full-space complex-structure routes.",
+      "claim_scope": "Finite-dimensional algebra on Lambda*(R^3): D_KD is grade-off-diagonal and cannot supply the within-generation block; determinant/Pfaffian counting weights the C3 doublet by dimension 2; central iI_3 and Jcs have the stated limitations, leaving the C3-equivariant antisymmetric matter-bilinear question open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T02:45:42.980638+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:retained_bounded->unaudited",
+      "load_bearing_step": "Since D_KD = d - delta maps Lambda^k only to Lambda^(k+1) or Lambda^(k-1), every grade-diagonal block P_k D_KD P_k vanishes, especially the Lambda^1 -> Lambda^1 generation-triplet block.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses keep the 'must be Jcs' conclusion scoped to C3-equivariant real-antisymmetric bilinears; no registered primitive is load-bearing here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner source genuinely constructs the relevant finite operators and checks matrix identities rather than printing constants or importing a fitted premise. An independent exterior-basis check confirms the grade-diagonal blocks vanish, and the C3 Fourier/centralizer identities confirm the determinant doublet exponent, Jcs^2 = -P_doublet, det(Jcs) = 0, and the one-dimensional C3-equivariant skew direction. The result is bounded and preserves the remaining matter-action bilinear as an open residual."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.071833+00:00",
+      "audit_date": "2026-06-21T17:34:15.892494+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": "Finite-dimensional algebraic obstruction to realizing a continuous `b`-phase symmetry by scalar rephasing of the order-three cyclic generator `C`; only cube-root phases preserve `C^3 = I`, while centralizer and gauge actions leave `b` unchanged and diagonal corner phases either exit the circulant class or reduce to the same discrete case.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "On the current minimal-Quantum one-qubit surface, the one-site Cl(3) physical carrier has multiplicity k=1 and complex dimension 2; on the abstract Cl(3) representation surface only the conditional k=1 => dim_C=2 statement holds, with k>=2 counterexamples preserved.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Abstract finite-dimensional component-space theorem: V_Hn = C^(2^d) is graded-linearly equivalent to Lambda^*(C^d); D_KD = d - delta has the stated parity, square, adjoint, and Hermiticity properties; the d=4 spinor-count arithmetic matches the cited Cl(3) chirality-pair dimension, with physical staggered-operator and JW/Fock identifications out of scope."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "positive_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "b34e59b29fb62266f1a916b6843272cee110e7e5a677851c9de996f0e9e7437e",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_kahler_dirac_silent_on_measure_note_2026-05-30-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The claimed negative boundary follows from exact finite-dimensional exterior/Fock and C3-circulant matrix algebra. The matter-action bilinear needed to select Jcs is explicitly left open and is not required for the bounded conclusion that D_KD and determinant/Pfaffian counting do not supply it.",
+      "claim_scope": "Finite algebraic audit of D_KD on Lambda*(R^3), determinant/Pfaffian counting for a C3-circulant generation operator, and the residual real-antisymmetric generation-bilinear binary; no Koide mass-measure derivation is claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T17:34:15.892494+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:retained->unaudited",
+      "load_bearing_step": "On Lambda*(R^3), D_KD=d-delta maps each grade only to adjacent grades, so every Lambda^k -> Lambda^k block vanishes, including the Lambda^1 triplet block.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream users preserve the bounded scope and do not cite this row as deriving the Koide measure or the matter-action bilinear.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing checks are algebraic identities over the provided retained-grade inputs: D_KD is real-antisymmetric and grade-off-diagonal, det/Pfaffian count the doublet with dimension power 2, central iI_3 is generation-blind, and Jcs is rank-deficient rather than a full-space complex structure. The runner source performs the relevant finite matrix computations rather than merely printing expected PASS lines. The no-go boundary is narrow: it closes the tested K\u00e4hler-Dirac/determinant/Pfaffian routes and leaves the matter-action real-antisymmetric bilinear as an explicit residual."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_kahler_dirac_silent_on_measure_2026_05_30.py",
+  "title": "Koide K\u00e4hler-Dirac Is Silent on the Measure",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

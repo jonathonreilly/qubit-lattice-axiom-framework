@@ -1,0 +1,224 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+    "three_generation_observable_theorem_note"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.358,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "69f35e077b98e5cde5e52b61f4fb970c622ea7fb2f7583f1aca5b5e9c75761ba",
+  "note_path": "docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T00:57:35.076166+00:00",
+      "audit_date": "2026-05-25T14:47:25.490570+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+        },
+        "dep_claim_type": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
+          "three_generation_observable_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
+          "three_generation_observable_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T144610Z-aa578827-koide_dimensionless_radi-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted separation follows directly from exact rational arithmetic plus irrationality/transcendence of pi: Q*pi intersects Q only at 0, while 2/9 is nonzero. The result does not depend on closing the radian-bridge postulate P or on proving that the six listed units are exhaustive.",
+      "claim_scope": "For the six explicitly listed nonzero alpha_i = q_i*pi values, the pure rational 2/9 is not in Q.alpha_i; no closure of P or exhaustive native-unit enumeration is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T14:47:25.490570+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:three_generation_observable_theorem_note:bounded_theorem->positive_theorem",
+      "load_bearing_step": "If c_i * alpha_i = 2/9 with c_i,q_i in Q\\{0}, then t_i*pi = 2/9 for t_i in Q\\{0}, forcing pi = 2/(9*t_i) in Q, contradicting transcendence/irrationality of pi.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only the scope boundary: this clean verdict covers the six explicitly listed alpha_i values, not their full provenance or exhaustiveness; also note the non-load-bearing overbroad wording about arbitrary polynomials in pi.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 146,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 146
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic identity over the six stated q_i inputs and the admitted standard fact that pi is irrational/transcendental. The cited authorities are retained-grade, and the open radian-bridge primitive is explicitly excluded from the audited scope rather than imported. The runner source hard-codes the six listed q_i values and checks the exact symbolic separation; it does not pretend to derive P or use external comparator data. The No-Go Discipline gate does not block clean because the negative boundary is narrowly limited to these six alpha_i and rational coefficients."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:56.357886+00:00",
+      "archived_for_note_hash": "4be8387fa1470374d354fab3de7aae1a60623fe4e6ef849fc5652dd29f76ed65",
+      "audit_date": "2026-05-29T06:59:58.140955+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-audit-loop-2026-05-29",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded six-value scope, the proof needs only q_i != 0, rational arithmetic, and pi irrational/transcendental: a rational multiple of pi cannot equal the nonzero rational 2/9. The retained three-generation dependency supplies the d=3 positional value used in the listed coefficients, and the retained no-go is only positional for the bridge residual rather than a forcing input.",
+      "claim_scope": "Bounded algebraic theorem over the six explicitly stated native angular values alpha_i in {2*pi, (2/3)*pi, (2/9)*pi, pi, (2/3)*pi, (1/3)*pi}: the pure rational 2/9 is not in Q.alpha_i for any listed nonzero rational multiple of pi. The verdict does not derive the six native-unit enumeration, does not prove exhaustiveness over all angular constructions, and does not close or retain the radian-bridge primitive P.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T06:59:58.140955+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For each listed alpha_i = q_i*pi with q_i a nonzero rational, any rational c satisfying c*alpha_i = 2/9 would make pi = 2/(9*c*q_i) rational, so no such rational c exists; c=0 gives 0 != 2/9.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No-go gate summary: N1-N8 checked for overclaim risk; verdict ratifies only the six-listed-value Q vs Q*pi separation and leaves hidden/exhaustive native-unit routes, multi-unit combinations, convention-reframing, and primitive P closure out of scope. Re-check if broadened beyond the six stated alpha_i or if the admitted-context polynomial wording is promoted into a claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 146,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 146
+      },
+      "verdict_rationale": "The audited result is a class-A separation theorem over six stated rational multiples of pi, and the independent calculation closes by the elementary fact Q*pi intersects Q only at 0. The cached runner computes the exact rational/pi forms and no-rational-solution checks with PASS=146, FAIL=0 under SHA 73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275. No-go discipline is satisfied only because the verdict is bounded: it does not ratify an exhaustive native-unit list, a radian-bridge closure, or the broader Koide/Brannen programme. A non-load-bearing admitted-context sentence about arbitrary polynomials in pi is broader than needed; the clean audit relies only on the correct linear q*pi case."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.859452+00:00",
+      "audit_date": "2026-06-21T12:03:30.435266+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 7.044,
+        "runner_hash": "73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275",
+        "transitive_descendants": 32
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped statement closes by exact arithmetic: every nonzero rational multiple of each alpha_i is a nonzero rational multiple of pi, while 2/9 is a nonzero rational. This does not prove exhaustiveness of native angular constructions or close the radian-bridge postulate P.",
+      "claim_scope": "For the six explicitly listed nonzero values alpha_i = q_i*pi with q_i in Q, the pure rational 2/9 is not in Q.alpha_i for any i.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T12:03:30.435266+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "If c_i * alpha_i = 2/9 with c_i and q_i nonzero rationals, then (c_i q_i) * pi = 2/9 would make pi rational, contradicting transcendence/irrationality of pi.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should keep the scope limited to the six stated alpha_i values, not provenance or exhaustiveness of the native-unit enumeration.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 146,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 146
+      },
+      "verdict_rationale": "The load-bearing proof is a genuine class-A algebraic identity over the six stated nonzero rational coefficients and the admitted standard fact that pi is irrational/transcendental. The runner source hard-codes the six q_i inputs but then performs exact symbolic consistency checks; that is appropriate for this scoped algebraic theorem and is not a class-C first-principles derivation. Both cited authorities are retained-grade for the limited context used, and the note explicitly leaves P closure and exhaustiveness outside the audited claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25.py",
+  "title": "Koide Dimensionless `2/9` vs Radian `2/9` \u2014 Native-Unit Separation Narrow Theorem",
+  "transitive_descendants": 28,
+  "verdict_rationale": null
+}

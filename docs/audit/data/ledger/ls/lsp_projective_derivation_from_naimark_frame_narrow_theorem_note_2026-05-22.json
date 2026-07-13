@@ -1,0 +1,1739 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem candidate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 9,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.99,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b35bc6b2e49b30724199b7bf653ac427e58260b19588204733a7cff6045608ed",
+  "note_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-23T12:01:21.823700+00:00",
+      "audit_date": "2026-05-23T00:10:11.949973+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T000947Z-4d3c800e-lsp_projective_derivatio-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic substitution itself is correct, but the restricted packet does not supply retained-grade support for the imported canonical Naimark/Lueders construction; it is introduced as standard measurement theory rather than derived from the cited authority. The only provided upstream authority is meta and itself describes K_P = P as a framework-rule selection, not a theorem from A1+A2.",
+      "claim_scope": "In the explicitly chosen canonical Naimark/Lueders dilation for a finite-region projective measurement, the outcome-r Kraus operator is P_r, while U P_r twists represent distinct instruments unless later effects are frame-rotated.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T00:10:11.949973+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+      "load_bearing_step": "Substituting the canonical dilation U_int |psi> |0> = sum_r (P_r |psi>) |r> into K_r = <r| U_int (I_sys otimes |0>) gives K_r = P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add retained-grade upstream support or a self-contained lemma for the canonical Naimark/Lueders dilation and Kraus extraction assumptions, separate from the prior framework-rule ratification.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing calculation is a valid algebraic identity once the canonical dilation formula and Kraus extraction formula are granted. However, those measurement-theory inputs are imported as standard textbook content and are not provided as retained-grade upstream authorities in the restricted packet. The supplied cited authority has effective_status meta and explicitly says the LSP-projective clause is a framework-rule selection, so it cannot by itself promote this note to clean theorem status."
+    },
+    {
+      "archived_at": "2026-05-23T13:02:51.570312+00:00",
+      "archived_for_note_hash": "1eb1fb3f8758e7935ba243a9bde9890f94566bb9daf1ab24d3d6b1c58f68ddd2",
+      "audit_date": "2026-05-23T12:46:37.598654+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T124617Z-0dd41b35-lsp_projective_derivatio-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the stated canonical dilation formula and the standard Kraus extraction formula, the equality K_r = P_r follows by an orthonormal apparatus-basis contraction. The note explicitly limits the result to the canonical L\u00fcders/Naimark frame and does not claim instrument uniqueness.",
+      "claim_scope": "Audited only the narrow canonical-frame statement that a projective measurement's canonical Naimark/L\u00fcders dilation has outcome Kraus operator K_P = P and hence sequential effect PEP, not uniqueness among all instruments for the same POVM.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T12:46:37.598654+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substituting the canonical dilation U_int |psi>|0> = sum_r P_r|psi>|r> into K_r = <r| U_int (I \u2297 |0>) gives K_r = P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that accepting standard Naimark/Kraus measurement formalism as ordinary mathematical infrastructure is consistent with this audit lane's policy.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is a straightforward algebraic contraction inside the explicitly stated canonical projective-measurement dilation. The cited axiom-premise authority supplies only the finite qubit-lattice setting and is covered by the axiom-premise carve-out; the measurement-theory content is used in the note's bounded, canonical-frame scope rather than as a uniqueness claim. No runner was needed because the claim is symbolic, not numerical or computational."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.077688+00:00",
+      "audit_date": "2026-05-23T15:45:19.777182+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T154459Z-2d1de7d9-lsp_projective_derivatio-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The derivation is an algebraic verification of the explicitly constructed canonical dilation using only projection orthogonality, completeness, the Kraus readout formula, and finite-dimensional isometry extension. The note correctly bounds the result to the canonical frame and does not claim uniqueness against U P twisted instruments.",
+      "claim_scope": "For a finite qubit-lattice region and an explicitly chosen canonical projective-measurement Naimark/L\u00fcders dilation, the outcome-r Kraus operator is P_r and sequential composition with a later effect is P_r E P_r; no uniqueness of all instruments implementing the same POVM is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T15:45:19.777182+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "Substituting the explicit canonical dilation U_int(|\u03c8\u27e9\u2297|0\u27e9)=\u03a3_r(P_r|\u03c8\u27e9)\u2297|r\u27e9 into K_r=\u27e8r|_A U_int(I\u2297|0\u27e9_A) gives K_r=\u03a3_{r'}P_{r'}\u03b4_{r,r'}=P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check only the convention-sensitive wording around apparatus-frame rotations; it is not load-bearing for K_r=P_r in the canonical construction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "No runner was supplied, so the audit is based on the note text alone. The load-bearing step is a genuine algebraic closure within the explicitly defined canonical dilation, not a definition substitution or numerical match. The only cited authority is flagged as an accepted axiom premise, and the remaining ingredients are standard finite-dimensional Hilbert-space/projective-measurement mathematics stated inside the packet. The conclusion is properly scoped as a canonical-frame bounded theorem rather than a physical-instrument uniqueness theorem."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.539780+00:00",
+      "audit_date": "2026-06-05T17:25:23.919628+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 10.358,
+        "runner_hash": null,
+        "transitive_descendants": 28
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-172345-fa1c72ddd0-lsp_projective_derivation_fr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The canonical K_r=P_r calculation itself closes by direct finite-dimensional algebra. As written, however, Step 3 overstates the apparatus-unitary twist: for arbitrary V_A with the same readout basis, K_r = U_sys \u03a3_s <r|V_A|s> P_s and K_r\u2020K_r = \u03a3_s |<r|V_A|s>|^2 P_s, not generally P_r.",
+      "claim_scope": "Finite-dimensional projective measurement in the stated canonical Naimark/Luders construction, including the claimed unitary-twist/frame-covariance discussion.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:25:23.919628+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Substituting the canonical dilation U_int(|psi>\u2297|0>) = \u03a3_r (P_r|psi>)\u2297|r> into K_r = <r|_A U_int (I\u2297|0>_A) gives K_r = P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: restrict Step 3 to V_A=I, outcome-label phase/permutation apparatus unitaries, or an explicit rotated readout-frame convention, then re-audit the canonical K_P=P theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The core canonical-frame derivation is a valid class-A algebraic substitution after the explicit isometry construction. The restricted packet also contains a math-bearing overbroad claim that (U_sys\u2297V_A)U_int is still a dilation of the same first-outcome POVM for arbitrary apparatus unitary V_A; that is false unless the readout frame is correspondingly updated or V_A is restricted so it does not mix the projective outcome labels. Therefore the note is not clean as written, though the narrower V_A=I system-unitary twist and the canonical K_P=P result are sound."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.505379+00:00",
+      "audit_date": "2026-06-05T21:13:33.125557+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 10.358,
+        "runner_hash": null,
+        "transitive_descendants": 28
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-211307-dbd43c62c1-lsp_projective_derivation_fr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed construction defines an isometry from H_sys tensor |0> by orthogonal projectors, extends it to a finite-dimensional unitary, and the apparatus-basis contraction algebraically returns P_r. The twist discussion also correctly shows U P preserves the first POVM element while rotating later effects in sequential composition.",
+      "claim_scope": "Audited the narrow finite-dimensional canonical Naimark/Luders construction for a projective measurement and its conclusion that the canonical outcome Kraus operator is K_P = P.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:13:33.125557+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Substituting the canonical dilation into the apparatus-basis Kraus formula gives K_r = sum_{r'} P_{r'} delta_{r,r'} = P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the convention boundary around treating the apparatus-basis Kraus formula as part of the audited canonical Naimark/Luders setup rather than an extra physical measurement axiom.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "No runner was provided, so the audit is based on the note text. The load-bearing math is a direct finite-dimensional algebraic closure from the projective-measurement identities P_r P_{r'} = delta_{rr'} P_r, P_r^dagger = P_r, and sum_r P_r = I, plus the standard finite-dimensional isometry-extension fact. The cited minimal-axiom authority is flagged as an accepted axiom premise and does not create a retention downgrade; the theorem is explicitly scoped to the canonical frame and does not overclaim uniqueness of physical instruments."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.882681+00:00",
+      "audit_date": "2026-07-01T07:52:25.992978+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.229,
+        "runner_hash": null,
+        "transitive_descendants": 74
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T075225Z-4df3c4d4-lsp_projective_derivatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The canonical Naimark/Luders part closes by direct substitution. The full source scope does not close because an arbitrary apparatus-unitary twist is not a same-POVM dilation with the readout basis held fixed; a rotated readout-frame update or a restriction on V_A is missing.",
+      "claim_scope": "Finite-dimensional projective measurement in the stipulated canonical Naimark/Kraus construction, including the note's stated system/apparatus twist covariance.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:52:25.992978+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Substituting the canonical dilation (N2) into the Kraus formula (N1) gives K_r = P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: restrict Step 3 to V_A=I/system post-unitary twists or specify and verify the rotated apparatus readout basis.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Substitution of the explicitly defined canonical isometry into the Kraus formula correctly gives K_r = P_r, so the core Luders-frame calculation is an elementary operator-algebra closure. However Step 3 overstates the twist result: with fixed apparatus readout and arbitrary V_A, K_r^twist = U_sys sum_s <r|V_A|s> P_s, giving POVM element sum_s |<r|V_A|s>|^2 P_s rather than P_r in general. The note is clean only after narrowing to V_A = I, or after explicitly rotating the apparatus readout basis consistently."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.472933+00:00",
+      "audit_date": "2026-07-02T00:17:00.367970+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.229,
+        "runner_hash": null,
+        "transitive_descendants": 74
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T001700Z-16213432-lsp_projective_derivatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The canonical K_r = P_r calculation closes by direct algebra. However the source also says an arbitrary apparatus twist V_A with fixed readout basis is still a dilation of the same labelled first-outcome POVM; generally K_r = U_sys sum_s (V_A)_{rs} P_s and K_r^dagger K_r = sum_s |(V_A)_{rs}|^2 P_s, not P_r.",
+      "claim_scope": "Audited the finite-dimensional canonical projective-measurement dilation, the K_r = P_r extraction, and the source's twist/frame-covariance statement for U_sys otimes V_A.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T00:17:00.367970+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Substituting the canonical dilation into the Kraus formula gives K_r = <r|_A U_int (I_sys otimes |0>_A) = sum_{r'} P_{r'} delta_{r,r'} = P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow Step 3 to V_A = I or to outcome-preserving apparatus relabels/phases, or explicitly state that the apparatus readout basis is rotated with V_A, then re-audit the canonical core.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The narrow canonical-frame result K_P = P is a valid algebraic consequence of the displayed construction, including the isometry check and finite-dimensional unitary extension. The source is not clean as written because Step 3 overstates the allowed apparatus-unitary twist: arbitrary V_A mixes outcome labels unless the readout basis is rotated or V_A is restricted. No runner was available, but the issue is decidable from the note text alone."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.827421+00:00",
+      "audit_date": "2026-07-10T17:10:13.442690+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 17.281,
+        "runner_hash": null,
+        "transitive_descendants": 439
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00017-lsp_projective_derivation_fr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The projective-measurement identities make the displayed map an isometry, finite dimensionality permits a unitary extension, and direct contraction with the apparatus outcome basis gives K_r=P_r. The system-unitary twist and sequential-composition statements then follow algebraically.",
+      "claim_scope": "For a finite-dimensional projective measurement, the explicitly defined canonical premeasurement isometry yields K_r=P_r and hence K_P\u2020EK_P=PEP; a system-side unitary twist UP preserves the first-outcome effect while rotating subsequent effects.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T17:10:13.442690+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-09T23:48:21.558038+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-lsp_projective_derivatio-052",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The canonical projective-measurement isometry yields the L\u00fcders Kraus operator K_r = P_r and hence the sequential effect P_r E P_r; no uniqueness among all instruments implementing the same POVM is claimed.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T17:10:13.442690+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00017-lsp_projective_derivation_fr",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For a finite-dimensional projective measurement, the explicitly defined canonical premeasurement isometry yields K_r=P_r and hence K_P\u2020EK_P=PEP; a system-side unitary twist UP preserves the first-outcome effect while rotating subsequent effects.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting the explicitly constructed premeasurement isometry into K_r = \u27e8r|U_int(\ud835\udfd9\u2297|0\u27e9) gives K_r = \u03a3_{r'}P_{r'}\u03b4_{r,r'} = P_r.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should confirm that the audited scope remains restricted to the canonical construction and system-side twists; the source's unsupported arbitrary-apparatus-rotation sentence should not be propagated as part of the theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The audited result is a genuine algebraic closure from the supplied projective-measurement hypotheses and explicit dilation construction, rather than a definition of the Kraus operator. The accepted minimal-axiom authority supplies the finite qubit-region setting and creates no retention downgrade. No runner or runner source was provided, so this judgment rests on the complete inline proof. The broader statement that an arbitrary apparatus rotation V_A preserves the same labeled POVM is generally false, but it is non-load-bearing because the claimed twist analysis immediately specializes to V_A=\ud835\udfd9_A."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:50.880136+00:00",
+      "audit_date": "2026-07-12T14:43:40.419621+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 13.278,
+        "runner_hash": null,
+        "transitive_descendants": 438
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00090-lsp_projective_derivation_fr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The canonical K_r=P_r contraction closes algebraically. The source's broader assertion that (U_sys\u2297V_A)U_int preserves the same labeled first-outcome POVM for arbitrary V_A does not close with a fixed readout basis.",
+      "claim_scope": "The canonical finite-dimensional construction yields K_r=P_r and P_r E P_r; an arbitrary apparatus-unitary twist preserves the labeled POVM only if the apparatus readout basis is correspondingly rotated.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T14:43:40.419621+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:49756ee75b3c",
+      "load_bearing_step": "Substituting the explicitly constructed canonical dilation into the Kraus extraction formula gives K_r = P_r.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Substitute N2 into N1 and use \u27e8r|r'\u27e9=\u03b4_rr'.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Substituting the canonical dilation (N2) into the Kraus formula (N1):",
+            "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Direct contraction of the apparatus outcome basis against the canonical premeasurement isometry.",
+            "outcome": "The contraction closes and gives K_r=P_r.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "canonical_contraction"
+          },
+          {
+            "attempt": "Check the source's dimension count for the orthogonal complements.",
+            "disposition": "CLOSED",
+            "evidence_locator": "A linear isometry defined on a subspace of a finite-dimensional Hilbert space extends to a unitary",
+            "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Extend the canonical isometry from the prepared-apparatus subspace to the full system-apparatus Hilbert space.",
+            "outcome": "Finite-dimensional isometry extension supplies a valid unitary dilation.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "unitary_extension"
+          },
+          {
+            "attempt": "Set V_A=\ud835\udfd9_A and contract the Kraus formula.",
+            "disposition": "CLOSED",
+            "evidence_locator": "For the specific case `V_A = \ud835\udfd9_A` and `U_sys` arbitrary:",
+            "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Postcompose the canonical dilation with a system-side unitary while leaving the apparatus basis fixed.",
+            "outcome": "K_r becomes U_sys P_r and retains effect P_r, while later fixed effects generally distinguish the instrument.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "system_unitary_twist"
+          },
+          {
+            "attempt": "Contract the displayed twisted dilation to obtain K_r=U_sys \u03a3_s\u27e8r|V_A|s\u27e9P_s.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This is still a valid dilation of the same first-outcome POVM.",
+            "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Apply an apparatus unitary with off-diagonal matrix elements while retaining the original labeled readout basis.",
+            "outcome": "The labeled effect is generally \u03a3_s|\u27e8r|V_A|s\u27e9|\u00b2P_s rather than P_r, refuting the unrestricted fixed-basis statement.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "fixed_basis_apparatus_mix"
+          },
+          {
+            "attempt": "Inspect whether the source defines the compensating apparatus-basis rotation.",
+            "disposition": "OPEN",
+            "evidence_locator": "They become equivalent only after a corresponding frame update of the later effect",
+            "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Rotate the apparatus readout basis together with V_A so the physical outcome projectors are unchanged.",
+            "outcome": "This would repair the covariance statement, but the source only rotates later system effects and does not formulate the apparatus readout update.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "rotated_apparatus_readout"
+          },
+          {
+            "attempt": "Compare PEP with P(U_sys\u2020EU_sys)P.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Without that effect-frame update, it is a distinct instrument.",
+            "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Hold the subsequent effect fixed and compare the canonical and system-unitary-twisted post-measurement maps.",
+            "outcome": "The two instruments generally differ, so the source correctly avoids a uniqueness theorem for instruments.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "instrument_nonuniqueness"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "An arbitrary apparatus unitary does not preserve the same labeled POVM when the original apparatus readout basis is held fixed."
+          ],
+          "evidence_locator": "This is still a valid dilation of the same first-outcome POVM.",
+          "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "An arbitrary apparatus unitary does not preserve the same labeled POVM when the original apparatus readout basis is held fixed."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Alternative frames (`K_P = U_sys \u00b7 P`) have the same first-outcome POVM",
+          "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "This is still a valid dilation of the same first-outcome POVM.",
+              "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+              "phrase": "This is still a valid dilation of the same first-outcome POVM.",
+              "promoted_wall": "An arbitrary apparatus unitary does not preserve the same labeled POVM when the original apparatus readout basis is held fixed."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The canonical L\u00fcders frame is the convention that no such extra post-measurement unitary is inserted.",
+              "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+              "phrase": "The canonical L\u00fcders frame is the convention that no such extra post-measurement unitary is inserted."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The canonical-frame convention, arbitrary system/apparatus twists, fixed later effects, and labeled apparatus readout were checked.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:3",
+          "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "none_found_reason": "No N1 route uses the RULED OUT BY PRIOR honesty marker.",
+          "scan_scope": "The N1 routes were calculated directly; none was ruled out solely by a prior witness.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "They become equivalent only after a corresponding frame update of the later effect",
+          "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+          "none_found_reason": "",
+          "scan_scope": "Claims of preserving the same POVM, frame equivalence, and instrument nonuniqueness were checked at fixed and rotated readout resolutions.",
+          "statements": [
+            {
+              "evidence_locator": "This is still a valid dilation of the same first-outcome POVM.",
+              "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+              "phrase": "This is still a valid dilation of the same first-outcome POVM.",
+              "tested_resolutions": [
+                "fixed apparatus readout basis",
+                "V_A=\ud835\udfd9_A system-side specialization"
+              ],
+              "untested_resolutions": [
+                "correspondingly rotated apparatus readout basis"
+              ]
+            },
+            {
+              "evidence_locator": "Thus Naimark by itself does not prove uniqueness of the physical instrument.",
+              "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+              "phrase": "Thus Naimark by itself does not prove uniqueness of the physical instrument.",
+              "tested_resolutions": [
+                "system-unitary twist with later effect held fixed"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": [
+            "The arbitrary-V_A statement does not test or define the compensating apparatus-readout rotation."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no measurement-apparatus readout covariance.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms supply the finite qubit setting but explicitly withhold measurement and update-law content.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state reference does not select or rotate an apparatus readout.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference is irrelevant to the labeled-POVM algebra.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "Charged-lepton occupancy counting is unrelated to projective-measurement apparatus covariance.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The AC eta readout obligation concerns a different physical readout and does not define the apparatus basis here.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The theta determinant cross-sector readout gate is unrelated to the projective apparatus labels.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All approved primitives and open gates listed by the supplied partial-closure index were checked against the apparatus-readout covariance wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "An arbitrary V_A can be interpreted as a pure apparatus-frame change if the readout projectors are rotated by the same unitary, so the underlying physical POVM can remain unchanged.",
+          "evidence_locator": "Suppose we replace `U_int` with `U_int^{twist} := (U_sys \u2297 V_A) \u00b7 U_int`",
+          "evidence_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+          "resolution": "The steelman succeeds as a repair, but the source evaluates \u27e8r| in the original basis and never defines the compensating apparatus readout rotation; therefore it does not validate the statement as written.",
+          "resolved": true,
+          "route_id": "rotated_apparatus_readout"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:0",
+              "evidence_locator": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Earlier conditional audit based on alleged measurement-theory imports; the current inline finite-dimensional construction addresses that concern.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:1",
+              "evidence_locator": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Earlier clean audit of the canonical K_P=P core; that core is confirmed here.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:2",
+              "evidence_locator": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Earlier clean audit of the canonical finite-dimensional contraction; that result remains valid.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:3",
+              "evidence_locator": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Earlier audit identified arbitrary apparatus-unitary mixing as the exact overbreadth; the current audit confirms it.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:4",
+              "evidence_locator": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Earlier clean audit scoped only the canonical theorem and did not resolve the apparatus-unitary extension.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:5",
+              "evidence_locator": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Earlier conditional audit derived the same fixed-basis V_A mixing formula; it remains applicable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:6",
+              "evidence_locator": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:6",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Earlier conditional audit found the same apparatus-label wall; it is confirmed.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:7",
+              "evidence_locator": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:7",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Earlier clean audit treated arbitrary V_A as non-load-bearing; the mandatory source-shape gate now requires that extension to be resolved or removed.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated charged-lepton counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated charged-lepton eta-readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated theta determinant-readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated foundational-campaign no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated architecture-portability boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated audit-source repair boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated textbook-import and axis-selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated multi-lane inherited no-go registry.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated coupling-identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated beta-six runner boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated lensing and scattering walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated carrier-orbit representation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated charged-lepton selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated dimensional-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated emergent-metric bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated finite-family replay boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated Wilson-environment boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated flavor-tracial route boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated gauge-plaquette estimator walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated gauge-isotropy mechanisms.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated gravity-dispersion bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated weak-gravity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated absolute-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated hypercharge-normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated multi-lane campaign boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated atomic-scale and threshold walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated quark-mass selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated lattice-asymptotic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated lensing-observable boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated finite-path lensing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated magnitude-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated temporal-magnitude boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Empty unrelated matter-cone ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated planning-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated emergent-time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated neutrino-construction walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated neutrino-cosmology walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated Newtonian-distance scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated finite-recompute boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated coupling-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated packet-memory bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated finite-window differential-equation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated Clifford-carrier selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated Planck carrier-retention walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated plaquette-bootstrap walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated post-record selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated registrability and determinant-readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated single-clock locality and axis walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated source-measure semantic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated spin-statistics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated staggered-kinetic selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated SU(3) quotient-encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated documentation-synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated theta mass-orientation walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated theta gauge-action walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated positive-theta assembly walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated theta insertion wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated theta defect-closure wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated AC determinant-power wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated AC record-orbit wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated AC record-formation wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated Casimir-block artifact boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated record-readout independence wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated finite numerical-family boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated wide-lattice scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "mechanism": "Unrelated Yukawa-readout renaming boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "An arbitrary apparatus unitary does not preserve the same labeled POVM when the original apparatus readout basis is held fixed."
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": {
+              "accepted_premise_type": null,
+              "content_sha256": "f2098b25d09933fc80ae077e44aa01c471159da9e85e596be77477dcbc6a1d06",
+              "cross_cycle_candidate_ids": [
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:0",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:1",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:2",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:3",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:4",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:5",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:6",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:7",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:0",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:1",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:2",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:3",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:4",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:5",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:6",
+                "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:previous_audit:7",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": {
+              "accepted_premise_type": null,
+              "content_sha256": "dc6cc9921e151b138a9a439895bfe57ce266e5c3269e5ec299acf93fea801041",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "b35bc6b2e49b30724199b7bf653ac427e58260b19588204733a7cff6045608ed",
+              "effective_status": null,
+              "path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "A linear isometry defined on a subspace of a finite-dimensional Hilbert space extends to a unitary",
+                "Alternative frames (`K_P = U_sys \u00b7 P`) have the same first-outcome POVM",
+                "For the specific case `V_A = \ud835\udfd9_A` and `U_sys` arbitrary:",
+                "Substituting the canonical dilation (N2) into the Kraus formula (N1):",
+                "Suppose we replace `U_int` with `U_int^{twist} := (U_sys \u2297 V_A) \u00b7 U_int`",
+                "The canonical L\u00fcders frame is the convention that no such extra post-measurement unitary is inserted.",
+                "They become equivalent only after a corresponding frame update of the later effect",
+                "This is still a valid dilation of the same first-outcome POVM.",
+                "Thus Naimark by itself does not prove uniqueness of the physical instrument.",
+                "Without that effect-frame update, it is a distinct instrument."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: the rotated-apparatus-readout repair route remains open in the source.",
+          "N5: the arbitrary-V_A rhetoric leaves the compensating apparatus-readout resolution untested."
+        ],
+        "narrowed_claim_scope": "The canonical finite-dimensional construction yields K_r=P_r and P_r E P_r; an arbitrary apparatus-unitary twist preserves the labeled POVM only if the apparatus readout basis is correspondingly rotated.",
+        "next_route": {
+          "reason_untested": "The source does not define the compensating rotated apparatus projectors or redo the Kraus extraction in that basis.",
+          "route_id": "rotated_apparatus_readout"
+        },
+        "prior_claim_scope": "For a finite-dimensional projective measurement, the explicitly defined canonical premeasurement isometry yields K_r=P_r and hence K_P\u2020EK_P=PEP; a system-side unitary twist UP preserves the first-outcome effect while rotating subsequent effects.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: restrict Step 3 to V_A=\ud835\udfd9_A or add the corresponding rotated-apparatus-readout construction, then re-audit the corrected source hash.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The explicit isometry and Kraus contraction correctly establish the narrow canonical L\u00fcders result without requiring a runner. Step 3 is overbroad: with fixed apparatus readout, arbitrary V_A mixes outcome labels and generally gives K_r=U_sys \u03a3_s\u27e8r|V_A|s\u27e9P_s, whose effect need not equal P_r. The clean core survives after restricting to V_A=\ud835\udfd9_A or explicitly rotating the apparatus readout basis."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "LSP-Projective Derivation from Naimark Dilation + Canonical Frame (Narrow)",
+  "transitive_descendants": 718,
+  "verdict_rationale": null
+}

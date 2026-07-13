@@ -1,0 +1,114 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "electrostatics_grown_sign_law_audited_scope_narrow_bounded_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "electrostatics_grown_sign_law_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/gate_b_grown_joint_package.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "06df5410bef95514297972e83520bf900d58f55c558b07b649b0bcd68c11fbea",
+  "note_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:27.779491+00:00",
+      "audit_date": "2026-05-28T07:24:35.071702+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "electrostatics_grown_sign_law_note": "Bounded fixed-runner scalar sign-law companion on the imported Gate-B grown-geometry helper row grow(drift=0.2, restore=0.7) for seeds [0,1], fixed field and no graph update: the registered runner reproduces the printed single-source, neutral same-point, like-pair, dipole, and double-charge delta_z sign table, exact printed neutral cancellation, and approximately linear +1/+2 charge response. No Maxwell theory, radiation derivation, electromagnetic field theory, geometry-generic theorem, or physical Gate-B closure is audited."
+        },
+        "dep_claim_type": {
+          "electrostatics_grown_sign_law_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "electrostatics_grown_sign_law_note": "retained_bounded"
+        },
+        "deps": [
+          "electrostatics_grown_sign_law_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "df64b1622b5a93bc39aad14c3cd5bb743d8c257104a11d9d0fc579271f70a96a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-electrostatics-grown-sign-law-audited-scope-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded single-grown-row scope, the registered runner and helper source are present, the direct parent is retained-bounded for the same imported grown row, and independent arithmetic from the runner stdout confirms all numeric thresholds.",
+      "claim_scope": "Bounded fixed-runner scalar sign-law threshold gate on the imported Gate-B grown-geometry helper row grow(drift=0.2, restore=0.7) for seeds [0,1], fixed field, no graph update, one source layer, and final-layer centroid readout. Closes only reproduction of the printed delta_z sign table, neutral cancellation, antisymmetry, and approximate +1/+2 charge linearity under explicit thresholds; no geometry-generic theorem, Maxwell/EM/radiation claim, or physical Gate-B closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T07:24:35.071702+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The companion runner computes six mean delta_z source cases from the imported grown geometry and applies explicit sign, neutral-cancellation, antisymmetry, charge-linearity, and scope thresholds.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 8,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The primary runner does not merely print constants: it constructs source fields on the imported grow(drift=0.2, restore=0.7) geometry for seeds [0,1], propagates amplitudes, reads final-layer centroid shifts, and gates the resulting six source cases. Independent arithmetic on the reported deltas gives antisymmetry about 3.35e-05 < 1e-3 and a +2/+1 linearity error about 3.35e-05 < 5e-3, with the required signs and exact printed neutral cancellation. The clean verdict is only bounded: it ratifies the registered single-row threshold checks and does not promote a geometry-generic electrostatics theorem, Maxwell/radiation derivation, or first-principles closure of the grow generator beyond the retained-bounded input scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_electrostatics_grown_sign_law_audited_scope_pass_thresholds.py",
+  "title": "Electrostatics Grown Sign-Law Audited-Scope Narrowing Bounded Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

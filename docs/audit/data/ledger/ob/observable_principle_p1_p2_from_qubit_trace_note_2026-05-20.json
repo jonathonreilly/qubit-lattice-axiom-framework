@@ -1,0 +1,187 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem candidate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+    "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.466,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1b984955aa9b0edd3c265ac430a26b6670abbbcceeb16c16c0c9fa1c167513cd",
+  "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.977709+00:00",
+      "audit_date": "2026-06-15T23:58:54.143108+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "Self-contained finite-matrix CPT identities for the explicitly supplied pure KS matrix family on even finite 4D blocks with periodic/APBC wrap signs; framework selection of the KS carrier and the SU(3) gauge-sector lift are not audited as in-block claims.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "bounded_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "retained_bounded",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.255,
+        "runner_hash": "32ec1408984041f27c0c2eaf82ab3008630d40b41fd87b552a627696b4e2e5f5",
+        "transitive_descendants": 26
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-235618-ddfa323ddd-observable_principle_p1_p2_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The P1 identity follows exactly from commuting tensor-factor exponentials plus the ordinary matrix trace tensor identity, with the zero-source baselines factorizing the same way. The P2 phase-blindness side follows from the spectral theorem: exp(-(H+J)) is positive definite, so Z[J] is a positive real and |Z[J]|=Z[J].",
+      "claim_scope": "Finite-region qubit-trace W_qubit for self-adjoint H,J: P1 additivity under an explicitly independent tensor-product Hamiltonian/source split and P2 phase-blindness from positive trace; no audit closure of the Grassmann/log-det bridge or parent observable-principle row.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T23:58:54.143108+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_cpt_theorem_stretch_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "For an independent split, exp(-((H1+J1)\u2297I + I\u2297(H2+J2))) = exp(-(H1+J1))\u2297exp(-(H2+J2)) and Tr(A\u2297B)=Tr(A)Tr(B), while self-adjoint H+J makes Tr(exp(-(H+J))) strictly positive.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream application preserves the stated boundary: qubit-trace P1/P2 support only, not closure of the log|det| bridge or the observable-principle parent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The audited bounded core is standard finite-dimensional operator algebra over the accepted qubit premise and retained tensor-locality input. Independent manual checking confirms the signs, tensor ordering, trace normalization, and baseline subtraction; the runner source performs real symbolic and randomized checks rather than hard-coding the contested conclusion. The open Grassmann/Berezin and staggered-Dirac bridge is explicitly outside this clean scope, so no parent log|det| retag follows from this verdict alone."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.508692+00:00",
+      "audit_date": "2026-06-21T12:34:55.147504+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "Bounded finite-matrix theorem for the explicitly supplied pure KS carrier M=mI+M_KS on finite even 4D blocks with periodic/APBC wrap signs: \u0398_CPT is an involution and satisfies \u0398_CPT M \u0398_CPT^{-1}=M^*, with the fermion-sector determinant/action/Theta_CPT-odd expectation consequences on that carrier only.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "bounded_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "retained_bounded",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.2,
+        "runner_hash": "32ec1408984041f27c0c2eaf82ab3008630d40b41fd87b552a627696b4e2e5f5",
+        "transitive_descendants": 25
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-observable_principle_p1_p2_from_qubit_trace_note_2026-05-20-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The audited qubit-trace scope closes from finite-dimensional operator algebra, trace-tensor factorization, and positivity of exponentials of self-adjoint matrices. The Grassmann/Berezin transfer to the determinant formulation is explicitly outside this closed scope.",
+      "claim_scope": "Finite-region qubit-trace functional W_qubit on the one-qubit-per-site algebra: additivity for explicitly independent decomposed subsystems and phase-blind real positivity for self-adjoint sources; no closure of the log|det(D+J)| bridge or parent-row retagging.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T12:34:55.147504+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_cpt_theorem_stretch_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "For a decomposed independent split, trace-tensor factorization gives Z[J_1 \u2295 J_2]=Z_1[J_1]Z_2[J_2] and hence W_qubit[J_1 \u2295 J_2]=W_1[J_1]+W_2[J_2], while self-adjoint H+J makes exp(-(H+J)) positive so Z[J]>0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the retained clean scope is limited to the finite-region qubit-trace formulation and not read as closure of the log|det(D+J)| bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The finite-region qubit-trace claim is standard linear algebra: decomposed disjoint Hamiltonian/source terms commute, exponentials factor, traces multiply, and the logarithmic baseline subtraction preserves additivity. Positivity also closes because exp of a self-adjoint finite matrix is strictly positive definite, so the trace is positive and has no phase. The runner performs exact symbolic checks and randomized numerical checks of these identities without importing external comparators or hard-coding a disputed physical value. This clean verdict is confined to W_qubit and does not certify the determinant bridge or downstream observable-principle parent promotion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
+  "title": "Observable-Principle P1 + P2 from Qubit-Trace Generating Functional",
+  "transitive_descendants": 706,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

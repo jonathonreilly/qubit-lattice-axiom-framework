@@ -1,0 +1,113 @@
+{
+  "audit_date": "2026-05-05T11:38:41.425941+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_effective_status": {
+      "alt_connectivity_family_basin_note": "retained_bounded",
+      "alt_connectivity_family_sign_note": "retained_bounded"
+    },
+    "deps": [
+      "alt_connectivity_family_basin_note",
+      "alt_connectivity_family_sign_note"
+    ],
+    "load_bearing_score": 0.0,
+    "runner_hash": "f35520a00efd8267eaa32ec3264ed6a4ae7cc2e655a0d810605f84ce7ed4a18d",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-alt_connectivity_family_-047",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited authorities establish a retained_bounded alternative family and basin, and the provided runner sweeps the same drift/seed grid, calls the basin measurement routine, and classifies failed rows by zero, neutral, orientation, and scaling criteria. Within the restricted packet, the diagnostic conclusion follows for the tested basin rows.",
+  "claim_id": "alt_connectivity_family_failure_note",
+  "claim_scope": "Diagnosis that the 13 failing rows in the tested alternative connectivity basin fail by sign-orientation reversal, not by zero leakage, neutral leakage, or weak-scaling failure.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-05T11:38:41.425941+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "alt_connectivity_family_sign_note",
+    "alt_connectivity_family_basin_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/ALT_CONNECTIVITY_FAMILY_BASIN.py",
+    "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
+    "scripts/gate_b_no_restore_farfield.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": "The misses are a pure sign-orientation boundary: zero-control leakage 0, neutral-cancellation leakage 0, sign-orientation failures 13, scaling failures 0.",
+  "load_bearing_step_class": "B",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4eb5b1bd06fab9c4086ce8d7f3cb41d3e74ff277613576572fd581f5a7e8892a",
+  "note_path": "docs/ALT_CONNECTIVITY_FAMILY_FAILURE_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check the upstream _measure implementation if runner source for ALT_CONNECTIVITY_FAMILY_BASIN.py is included in a wider packet; it is not available here, so this audit judges the failure-classification wrapper and supplied cached output.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.234456+00:00",
+      "audit_date": "2026-04-30T15:12:13.046251+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet, so the conclusion cannot be ratified from the source note alone.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:alt_connectivity_family_basin_note,alt_connectivity_family_sign_note",
+      "load_bearing_step": "ALT Connectivity Family Failure Note: diagnosed failure boundary for the alternative connectivity family",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "unregistered_or_missing_primary_runner_or_frozen_log"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 1,
+    "B": 1,
+    "C": 0,
+    "D": 0,
+    "total_pass": 2
+  },
+  "runner_path": "scripts/ALT_CONNECTIVITY_FAMILY_FAILURE_AUDIT.py",
+  "title": "ALT Connectivity Family Failure Note",
+  "transitive_descendants": 2,
+  "verdict_rationale": "The load-bearing step is a bounded diagnostic check over a retained_bounded upstream basin, not a universal family theorem. The runner does not merely print constants: it iterates over imported DRIFTS and SEEDS, calls _measure, skips passing rows, and counts concrete failure reasons from returned zero/plus/minus/neutral/exponent values. Because the cited authorities are retained_bounded and the conclusion is scoped to the tested failing rows, no open dependency or external comparator is needed for this diagnostic claim."
+}

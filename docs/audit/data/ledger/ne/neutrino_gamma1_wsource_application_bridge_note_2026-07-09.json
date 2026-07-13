@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "neutrino_gamma1_wsource_application_bridge_note_2026-07-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "observable_principle_from_axiom_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.185,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "eee84377355879021c83bb475121e6b4f0d4ef25ba6caba8a814bc6abda11b64",
+  "note_path": "docs/NEUTRINO_GAMMA1_WSOURCE_APPLICATION_BRIDGE_NOTE_2026-07-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:39.343809+00:00",
+      "audit_date": "2026-07-10T16:52:28.722422+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "observable_principle_from_axiom_note": "Finite real-positive staggered source-surface theorem: given Record finite additivity, determinant positivity, and the explicit T1-d readout-identification Boundary, the log-det generator family, local derivative formulas, Matsubara kernel identity, and Klein-four Lt=4 selector close on the runner block."
+        },
+        "dep_claim_type": {
+          "observable_principle_from_axiom_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "observable_principle_from_axiom_note": "retained_bounded"
+        },
+        "deps": [
+          "observable_principle_from_axiom_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "56f58d0294137f0d4246c0fd6f26db694cb546f6bb821e1cc4657c320482cc04",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T164715Z-1ebf2b3d-00004-neutrino_gamma1_wsource_appl",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The determinant, trace, and additivity identities close exactly after stipulating W, P1, and P2. The application chain remains conditional because P1 supplies the neutrino readout identification and P2 supplies the scalar comparator without derivation in the restricted packet.",
+      "claim_scope": "Conditional exact C^16 determinant, response-normalization, chiral-ratio, and direct-sum identities for the stipulated W functional, comparator D = mI\u2081\u2086, and identified Y/\u0393\u2081 source family; the physical identification and comparator selection were not derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:52:28.722422+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:observable_principle_from_axiom_note:retained_bounded->unaudited",
+      "load_bearing_step": "From \u0393\u2081\u00b2 = I\u2081\u2086 and Tr(\u0393\u2081) = 0, the note obtains eight eigenvalues of each sign and hence det(mI\u2081\u2086 + j\u0393\u2081) = (m\u00b2 - j\u00b2)\u2078, which yields the stated W response and normalization identities.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the P1 neutrino-family readout map; if P2 is intended as a physical baseline, also derive that comparator map, then re-audit.",
+      "open_dependency_paths": [
+        "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 4,
+        "C": 5,
+        "D": 4,
+        "total_pass": 21
+      },
+      "verdict_rationale": "Issue: P1 supplies the neutrino-family readout identification and P2 supplies D = mI\u2081\u2086; neither is derived by the cited authority or runner. Why this blocks: the runner rigorously verifies only downstream finite-matrix identities after those choices, while the W authority itself retains a declared readout-identification Boundary. Repair target: provide a retained bridge deriving P1 and, if the baseline is intended physically rather than stipulatively, a retained justification for P2. Claim boundary until fixed: T1\u2013T5 are valid exact algebra for the stipulated matrices and comparator, without a certified neutrino readout or physical baseline."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py",
+  "title": "Neutrino \u0393\u2081 W-source application bridge (narrow theorem)",
+  "transitive_descendants": 822,
+  "verdict_rationale": null
+}

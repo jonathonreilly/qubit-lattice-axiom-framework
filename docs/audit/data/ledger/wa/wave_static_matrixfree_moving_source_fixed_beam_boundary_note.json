@@ -1,0 +1,83 @@
+{
+  "audit_date": "2026-04-27",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 0.0,
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The live runner reproduces both source-note comparisons: field PW 6.0 -> 9.0 and 9.0 -> 12.0. The note keeps the conclusion mixed and bounded, explicitly withholding continuum-quality promotion.",
+  "claim_id": "wave_static_matrixfree_moving_source_fixed_beam_boundary_note",
+  "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 0,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/wave_retardation_continuum_limit.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "At H = 0.35 with fixed beam geometry, the moving-source exact static comparator remains field-box sensitive, but the 9.0 -> 12.0 large-box branch shows low rel_MS and smaller dS movement without meeting the strict stability bar.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3c955fe4fb70c7e87da21a6c67dbed44beaee1a6f149c2060bd8ea5f95a6bb98",
+  "note_path": "docs/WAVE_STATIC_MATRIXFREE_MOVING_SOURCE_FIXED_BEAM_BOUNDARY_NOTE.md",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370182+00:00",
+      "archived_for_note_hash": "760833d7b28375f8c4431b3e67f7f9b0e7eb7b3776c8c610f9e7336cc7b69c3a",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 14,
+    "D": 0,
+    "total_pass": 14
+  },
+  "runner_path": "scripts/wave_static_matrixfree_moving_source_fixed_beam_boundary.py",
+  "title": "Wave Static Matrix-Free Moving-Source Fixed-Beam Boundary Probe",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The note accurately preserves both sides of the runner output. The 6.0 -> 9.0 comparison is still materially box-dependent, with dS move 20.84% and rel_MS move 86.21%, while dM is stable; the 9.0 -> 12.0 comparison improves to dS move 5.52% and rel_MS 3.18% -> 2.42% but still does not pass a strict stability criterion. This closes only the stated mixed diagnostic: no boundary-stable moving-source comparator is retained yet, but the medium-H large-box branch remains a plausible stabilization candidate."
+}

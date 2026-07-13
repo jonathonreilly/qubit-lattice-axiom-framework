@@ -1,0 +1,1819 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+  ],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/dm_leptogenesis_exact_common.py",
+    "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.508,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f0a8fcb1dc140b9d527d34b3c391994102d7f2fa1af9b3e75da7b4bd1df21c5f",
+  "note_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T15:35:10.811400+00:00",
+      "audit_date": "2026-04-30T17:50:00.551413+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 7.833,
+        "transitive_descendants": 113
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judge-20260430-phase-b-dm-mininfo",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source note explicitly calls the rule an invented post-axiom selector law. The second auditor's conditional/E reading holds because the runner optimizes after that law is assumed; the first numerical-match reading missed the invented selector premise.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-04-30T02:42:15.079724+00:00",
+          "auditor": "codex-audit-loop-round-2",
+          "auditor_family": "codex-gpt-5",
+          "independence": "cross_family",
+          "load_bearing_step_class": "G",
+          "verdict": "audited_numerical_match"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-04-30T11:45:00.753739+00:00",
+          "auditor": "codex-fresh-context-20260430-05-dm-mininfo",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "E",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-04-30T17:50:00.551413+00:00",
+          "auditor": "codex-judge-20260430-phase-b-dm-mininfo",
+          "auditor_family": "codex-gpt-5",
+          "first_auditor_error": "It treated the closure output as a numerical-match problem instead of the introduced selector law that makes the output possible.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The source note explicitly calls the rule an invented post-axiom selector law. The second auditor's conditional/E reading holds because the runner optimizes after that law is assumed; the first numerical-match reading missed the invented selector premise.",
+          "load_bearing_step_class": "E",
+          "previous_auditor_family": "codex-current",
+          "second_auditor_error": null,
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "The note defines a minimum-information selector over exact-closure off-seed sources and chooses the minimizer of I_seed.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The source note explicitly calls the rule an invented post-axiom selector law. The second auditor's conditional/E reading holds because the runner optimizes after that law is assumed; the first numerical-match reading missed the invented selector premise."
+    },
+    {
+      "archived_at": "2026-05-16T18:54:42.643647+00:00",
+      "archived_for_note_hash": "f3000a553aff7fe9c3ccbcc7ac7e011c666bcf51c6d95e9771e1f2a0a6b02779",
+      "audit_date": "2026-05-05T04:52:30.059248+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.561,
+        "runner_hash": "d9064ed07923d4b153469d27f09b6ea7b6dd6d767c50c2d42e6558f99e25f515",
+        "transitive_descendants": 266
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-dm_leptogenesis_pmns_min-092",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note introduces the minimum-information selector as an invented post-axiom law rather than deriving it from the axiom. The runner also imports the transport kernel, projector interface, active packet map, and normalizations from unprovided modules, so the restricted packet does not close the claimed chain from Cl(3) on Z^3.",
+      "claim_scope": "Audited the asserted minimum-information selector law and its reported closure source for the PMNS-assisted N_e branch using only the note, runner output, and runner source provided.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:52:30.059248+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Among all positive off-seed sources on the same seed surface satisfying eta_{i_*}/eta_obs = 1, choose the one minimizing I_seed.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the intended claim is only definitional adoption of the selector law or a stronger theorem that the selector follows from the axiom.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing step is a definition of a new selector principle: minimize I_seed subject to exact closure on the favored column. The runner appears to perform a real constrained optimization, but the selection criterion itself is not derived from the axiom and several imported framework components are not available in the restricted packet. Therefore the note can document the consequences of adopting this invented law, but it does not audit as a first-principles theorem."
+    },
+    {
+      "archived_at": "2026-05-22T01:27:45.972988+00:00",
+      "archived_for_note_hash": "5e6eb1f0d7ca0724f6d303a1da3a303b5e249cc354920ad7ec8478d64d71d891",
+      "audit_date": "2026-05-16T21:35:16.019482+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.124,
+        "runner_hash": "24b2a52addd33cddd4aab7f4beb972169781aae61d92b40e340988ca070b44eb",
+        "transitive_descendants": 788
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-213442-20260516T213442Z-951f1eeb-dm_leptogenesis_pmns_min-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner checks the stated constrained optimization consequence, but the selector I_seed is explicitly adopted rather than derived from Cl(3) on Z^3. The missing step is a framework-internal derivation or retained bridge justifying I_seed as the correct selector.",
+      "claim_scope": "Audited only the conditional consequence of adopting the minimum-information selector law on the fixed native N_e seed surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T21:35:16.019482+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Among all positive off-seed sources on the fixed seed surface satisfying eta_{i_*}/eta_obs = 1, choose the one minimizing I_seed.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained framework-internal derivation of I_seed or an equivalent selector from Cl(3) on Z^3, then re-audit whether the conditional theorem upgrades.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The source note honestly frames the result as conditional on importing a minimum-information selector from information geometry. The runner performs nontrivial numerical constrained optimization and verifies exact closure on the favored column, but it does not derive the selector from the stated axiom. Therefore the audited result is bounded support for the conditional law, not a closed first-principles theorem."
+    },
+    {
+      "archived_at": "2026-05-23T17:05:05.670523+00:00",
+      "archived_for_note_hash": "707e65a27f3fa475b369d9886ec5ba70716ad5a3d8e9a0d66a53e53d490cb55d",
+      "audit_date": "2026-05-22T02:39:43.540803+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.451,
+        "runner_hash": "24b2a52addd33cddd4aab7f4beb972169781aae61d92b40e340988ca070b44eb",
+        "transitive_descendants": 989
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260522-023108-49f0228b-dm_leptogenesis_pmns_min-009",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional optimization is internally represented by the runner, but the restricted packet does not include the helper modules that compute the transport kernel, active packet map, exact package, and canonical charged block. The selector and favored-column identification are also explicit imported premises, not derived in this note.",
+      "claim_scope": "Audited only the bounded conditional optimization claim: adopting I_seed as an imported selector and taking the favored column as input yields the reported exact-closure source.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T02:39:43.540803+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the imported information-geometric selector I_seed and the transport-favored column i_* from sister theorems, minimize I_seed over positive off-seed sources on the fixed N_e seed surface subject to eta_{i_*}/eta_obs = 1.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [
+        "scripts/dm_leptogenesis_exact_common.py",
+        "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+        "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
+        "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The load-bearing move is the adoption of a new post-axiom selector law, not a derivation from Cl(3) on Z^3. The note is admirably explicit that I_seed is imported from information geometry and that the favored column comes from sister theorems, so the retained claim is conditional rather than primitive. The runner performs a constrained numerical optimization around those adopted definitions, but it cannot turn the selector choice itself into a first-principles result."
+    },
+    {
+      "archived_at": "2026-06-17T10:29:56.154096+00:00",
+      "archived_for_note_hash": "69cb1b45eb0b83247dd137bc9077a74ff215815bd40465b241870aebbad8aca0",
+      "audit_date": "2026-05-26T21:58:02.711631+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "For the supplied fixed-chart matrix Y(delta) with real x_i,y_i, the audit verifies only the displayed H_e(delta)=Y(delta)Y(delta)^dagger formula, H_e(-delta)=conjugate(H_e(delta)), and evenness of conjugation-invariant readouts on that fixed chart."
+        },
+        "dep_claim_type": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "retained_bounded"
+        },
+        "deps": [
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+        ],
+        "load_bearing_score": 12.959,
+        "runner_hash": "24b2a52addd33cddd4aab7f4beb972169781aae61d92b40e340988ca070b44eb",
+        "transitive_descendants": 351
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-dm-pmns-mininfo-pass1-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner imposes eta_i*/eta_obs = 1 as a constraint and finds one SLSQP solution with finite cost, so the exact closure is calibrated into the optimization problem. The restricted packet does not prove the stated uniqueness/global stationary classification or supply a one-hop authority for the favored-column/stationary-branch theorem; the supplied dependency explicitly excludes KKT branch classification and favored-column closure.",
+      "claim_scope": "Conditional numerical source selection from the imported I_seed objective on the fixed N_e seed surface, constrained by eta_i*/eta_obs = 1; not a baseline derivation of the selector.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T21:58:02.711631+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Given the imported information-geometric selector I_seed and the transport-favored column i_* identified by sister theorems, minimize I_seed over positive off-seed sources on the fixed native N_e seed surface subject to eta_i*/eta_obs = 1, yielding a unique stationary point with the reported values.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained one-hop theorem proving the favored-column identification and global stationary/minimality classification for the I_seed constrained problem, or narrow this row to the runner-found calibrated eta_obs-matching source without retained uniqueness language.",
+      "open_dependency_paths": [
+        "docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "G": 15,
+        "total_fail": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The bounded framing honestly admits that I_seed is imported, but the retained claim still says the constrained problem has a unique stationary point on the exact closure manifold. The primary runner hard-codes the seed surface and eta_obs target, constrains eta_i*/eta_obs to equal 1, and verifies one numerical optimizer output; it does not prove global uniqueness, stationarity, or minimality. The direct dependency note currently retained for this path is only a fixed-chart Hermitian-block parity theorem and explicitly says favored-column closure, eta normalization, KKT branch classification, and stationary-branch minimality are outside its theorem. The safe reduced result is therefore a calibrated numerical constrained-optimization sample, not a clean retained bounded theorem."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:28.598055+00:00",
+      "archived_for_note_hash": "f4620f0e196b14837126ab5cef70ab1b4c09016a6b788b4b74d09675610502f0",
+      "audit_date": "2026-06-18T03:19:36.743065+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "For the supplied fixed-chart matrix Y(delta) with real x_i,y_i, the audit verifies only the displayed H_e(delta)=Y(delta)Y(delta)^dagger formula, H_e(-delta)=conjugate(H_e(delta)), and evenness of conjugation-invariant readouts on that fixed chart."
+        },
+        "dep_claim_type": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "retained_bounded"
+        },
+        "deps": [
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+        ],
+        "load_bearing_score": 13.96,
+        "runner_hash": "9c223d8f914db9aad69a5a477b2768bff47a77c910e86816a7be230e83560406",
+        "transitive_descendants": 497
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes a reproducible constrained-optimization diagnostic under the adopted convention. The chain from cited inputs to the selector law itself does not close; the missing step is a retained derivation of I_seed and its use as the source selector.",
+      "claim_scope": "Audited the row as a bounded post-axiom selector diagnostic: after adopting I_seed and imposing eta_0/eta_obs = 1, the runner reports the stated low-cost off-seed source.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T03:19:36.743065+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Define the imported information-deformation cost I_seed and choose the positive off-seed source minimizing it on the fixed seed surface subject to eta_{i_*}/eta_obs = 1.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Recheck after a retained framework-internal theorem derives I_seed and the favored-column eta constraint rather than adopting them as a selector convention.",
+      "open_dependency_paths": [
+        "docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 21,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "Issue: the source-selecting rule is an explicit definition of an information-geometric objective plus an imposed eta equality constraint. Why this blocks: the runner computes consequences of that convention, but the convention is not derived from the cited fixed-chart algebra or a retained selector theorem in the packet. Repair target: supply and audit a framework-internal derivation of the selector objective and constraint authority before treating this as source-law theorem authority. Claim boundary until fixed: this is a reproducible post-axiom selector diagnostic, not an independent selector derivation."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.564069+00:00",
+      "audit_date": "2026-06-21T07:35:40.429052+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "For the supplied fixed-chart matrix Y(delta) with real x_i,y_i, the audit verifies only the displayed H_e(delta)=Y(delta)Y(delta)^dagger formula, H_e(-delta)=conjugate(H_e(delta)), and evenness of conjugation-invariant readouts on that fixed chart."
+        },
+        "dep_claim_type": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "retained_bounded"
+        },
+        "deps": [
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+        ],
+        "load_bearing_score": 13.98,
+        "runner_hash": "87f20280260c0fa605529f5797a858213cbe96423a7cab831153d144dfc884bd",
+        "transitive_descendants": 504
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes a conditional constrained-optimization consequence after the selector objective and `eta_obs` equality are supplied. The missing step is a retained framework derivation of the selector/equality surface and its favored-column authority.",
+      "claim_scope": "Open-gate conditional diagnostic: given the adopted minimum-information selector and imposed favored-column closure constraint, the runner reports a low-cost off-seed source closing column 0; no selector derivation, global uniqueness, or retained PMNS-branch closure is audited.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T07:35:40.429052+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:retained_bounded->unaudited",
+      "load_bearing_step": "Adopt `I_seed = D_KL(x||x_seed)+D_KL(y||y_seed)+(1-cos delta)` and, among positive off-seed sources on the fixed seed surface satisfying `eta_{i_*}/eta_obs = 1`, choose the source minimizing that adopted cost.",
+      "load_bearing_step_class": "E",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite a retained theorem for the `I_seed` selector and imposed `eta_{i_*}/eta_obs = 1` equality; otherwise keep this row as an open-gate diagnostic.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Issue: the load-bearing selector `I_seed` and the equality constraint `eta_{i_*}/eta_obs = 1` are adopted definitions/constraints, not derived from the cited retained inputs. Why this blocks: the PASS output verifies consequences after those choices, so it cannot promote the row to selector-theorem or baseline PMNS-branch authority. Repair target: a retained bridge theorem deriving the selector, closure constraint, and favored-column surface from the framework; claim boundary until fixed: cite only as an open-gate post-axiom diagnostic."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:24.895374+00:00",
+      "audit_date": "2026-07-11T19:38:20.191361+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "For the supplied fixed-chart matrix Y(delta) with real x_i and y_i, the displayed product H_e=Y Y^dagger, the relation H_e(-delta)=conjugate(H_e(delta)), and evenness of scalar readouts invariant under entrywise conjugation were audited."
+        },
+        "dep_claim_type": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16": "retained_bounded"
+        },
+        "deps": [
+          "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+        ],
+        "load_bearing_score": 14.324,
+        "runner_hash": "87f20280260c0fa605529f5797a858213cbe96423a7cab831153d144dfc884bd",
+        "transitive_descendants": 640
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00085-dm_leptogenesis_pmns_minimum",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical optimization closes conditionally after the selector objective, fixed seed surface, favored column, and eta equality are supplied. No cited authority derives those selector inputs from the framework baseline.",
+      "claim_scope": "Open-gate post-axiom diagnostic: after adopting I_seed and imposing favored-column closure, the runner reports a feasible low-cost off-seed source; selector derivation, global minimality, and baseline PMNS closure are excluded.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-11T19:38:20.191361+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:c9cba4bc4057",
+      "load_bearing_step": "Define I_seed as the KL-plus-phase cost and choose the positive off-seed source minimizing it subject to eta_{i_*}/eta_obs = 1.",
+      "load_bearing_step_class": "E",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Compared the cited parity theorem's binding scope with the selector conclusion.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It does not define or derive a relative-action selector.",
+            "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use fixed-chart Hermitian conjugation parity to force the selector or favored closure branch.",
+            "outcome": "The authority proves only matrix entries and delta parity and expressly excludes selector and closure authority.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "fixed_chart_symmetry"
+          },
+          {
+            "attempt": "Checked the registered minimal-axiom boundary for selector, normalization, source/action, or observable-selection content.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The four axioms do not close, import, or rename the framework's downstream open gates.",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Derive the information objective and equality constraint directly from Record additivity or the other minimal axioms.",
+            "outcome": "The accepted axiom source explicitly withholds those downstream bridges.",
+            "prior_witness_id": "minimal_axioms_selector_boundary",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "minimal_axiom_selector"
+          },
+          {
+            "attempt": "Checked the restricted packet for the named relative-action theorem, its proof, and an equivalence bridge.",
+            "disposition": "OPEN",
+            "evidence_locator": "relative-action stationarity theorem and the observable relative-action law",
+            "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive an equivalent selector from a framework-internal relative-action observable and then prove equivalence to I_seed.",
+            "outcome": "The source names sister laws, but neither their authority nor an equivalence theorem is included.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "relative_action_sister"
+          },
+          {
+            "attempt": "Inspected the primary runner's differential-evolution initialization followed by one SLSQP constrained solve.",
+            "disposition": "OPEN",
+            "evidence_locator": "result = minimize(",
+            "evidence_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Establish global constrained minimality or uniqueness through exhaustive multistart optimization and stationary-point classification.",
+            "outcome": "The run supplies a reproducible feasible point but no exhaustive stationary classification or global certificate.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "multistart_global"
+          },
+          {
+            "attempt": "Checked the source and runner for an upstream derivation of the equality.",
+            "disposition": "OPEN",
+            "evidence_locator": "imposed `eta_{i_*} / eta_obs = 1` equality constraint",
+            "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive eta_{i_*}/eta_obs = 1 as a physical boundary or normalization law instead of imposing it.",
+            "outcome": "Both surfaces label the equality as imposed, and the optimizer enforces it as a constraint.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "closure_constraint_derivation"
+          },
+          {
+            "attempt": "Dispositioned every candidate in the supplied partial-closure index.",
+            "disposition": "CLOSED",
+            "evidence_locator": "approved_primitive:minimal_axioms",
+            "evidence_path": "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Close the selector wall through an already accepted primitive, owner-governed residual, or convention reframe.",
+            "outcome": "No registered candidate supplies a PMNS selector, favored column, seed surface, or eta constraint.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "registry_reclassification"
+          },
+          {
+            "attempt": "Checked the helper constants and convention registry boundary.",
+            "disposition": "CLOSED",
+            "evidence_locator": "ETA_OBS = 6.12e-10",
+            "evidence_path": "scripts/dm_leptogenesis_exact_common.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the hard-coded transport normalization or g_bare convention to select I_seed.",
+            "outcome": "Those constants normalize the numerical transport map but provide no selector principle.",
+            "route_class": "normalization_or_units",
+            "route_id": "normalization_convention"
+          },
+          {
+            "attempt": "Compared the primitive's pointwise-evaluation boundary with the required source selection.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This is pointwise evaluation, not a state-selection rule.",
+            "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat the realized-state primitive as selecting the off-seed source or information objective.",
+            "outcome": "The primitive supplies only a state-reference slot and explicitly supplies no state-selection rule or value.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "realized_state_selection"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "No framework derivation of the I_seed selector objective",
+            "No framework derivation of the eta_{i_*}/eta_obs = 1 closure constraint",
+            "No cited retained authority for the fixed seed surface and favored-column selector input"
+          ],
+          "evidence_locator": "Open selector gate",
+          "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "No framework derivation of the I_seed selector objective",
+              "left_closes_right": false,
+              "right": "No framework derivation of the eta_{i_*}/eta_obs = 1 closure constraint",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "No framework derivation of the I_seed selector objective",
+              "left_closes_right": false,
+              "right": "No cited retained authority for the fixed seed surface and favored-column selector input",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "No framework derivation of the eta_{i_*}/eta_obs = 1 closure constraint",
+              "left_closes_right": false,
+              "right": "No cited retained authority for the fixed seed surface and favored-column selector input",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "No framework derivation of the I_seed selector objective",
+            "No framework derivation of the eta_{i_*}/eta_obs = 1 closure constraint",
+            "No cited retained authority for the fixed seed surface and favored-column selector input"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Runner imports (transparency)",
+          "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "It is a choice of objective imported from information geometry.",
+              "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+              "phrase": "imported from information geometry",
+              "promoted_wall": "No framework derivation of the I_seed selector objective"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "the favored-column equality constraint remain supplied/adopted selector data.",
+              "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+              "phrase": "favored-column equality constraint remain supplied/adopted selector data",
+              "promoted_wall": "No framework derivation of the eta_{i_*}/eta_obs = 1 closure constraint"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "On the fixed native charged-lepton-active seed surface",
+              "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+              "phrase": "fixed native charged-lepton-active seed surface",
+              "promoted_wall": "No cited retained authority for the fixed seed surface and favored-column selector input"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "It does not classify stationary KKT branches or prove branch minimality.",
+              "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md",
+              "phrase": "does not classify stationary KKT branches"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "Checked the source, runner, helper chain, cited parity authority, and registered premise boundaries for imported selectors, constraints, seed data, normalization, and favored-column authority.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Open Gates And Admissions Outside The Axioms",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "none_found_reason": "",
+          "scan_scope": "Matched every RULED OUT BY PRIOR route against the supplied accepted-premise source that states the same selector residual.",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "The minimal axioms do not derive I_seed or the imposed favored-column closure constraint.",
+              "evidence_locator": "Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration before use as a premise.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "match": true,
+              "route_id": "minimal_axiom_selector",
+              "witness_id": "minimal_axioms_selector_boundary",
+              "witness_residual": "The minimal axioms supply no source/action, physical-observable, weighting, normalization, or context-selection bridge."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "What this note does NOT claim",
+          "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+          "none_found_reason": "",
+          "scan_scope": "Checked every negative or resolution statement about selector derivation, uniqueness, stationarity, and baseline closure against the actual finite runner coverage.",
+          "statements": [
+            {
+              "evidence_locator": "is **not** answered here.",
+              "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+              "phrase": "The deriving-the-selector question is not answered here.",
+              "tested_resolutions": [
+                "fixed-chart Hermitian parity authority",
+                "minimum-information constrained optimizer",
+                "registered accepted-premise surfaces"
+              ],
+              "untested_resolutions": [
+                "the named relative-action sister theorems and any exact equivalence to I_seed"
+              ]
+            },
+            {
+              "evidence_locator": "not a proof of global uniqueness, global stationarity classification",
+              "evidence_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+              "phrase": "The runner output is not a proof of global uniqueness or global stationarity classification.",
+              "tested_resolutions": [
+                "one differential-evolution extremal search",
+                "one SLSQP equality-constrained optimization"
+              ],
+              "untested_resolutions": [
+                "exhaustive closure-manifold stationary classification",
+                "global-minimum certificate"
+              ]
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no mixing selector, readout bridge, phase, or closure constraint.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The axioms explicitly withhold selector, normalization, source/action, and physical-observable bridges.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies no state content or state-selection law.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference has no dimensionless selector or PMNS-branch content.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The AC_phi_lambda boundary expressly supplies no PMNS alignment, mixing angle, phase, or sector-weight law.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The g_bare rescaling convention cannot select I_seed or an observational closure surface.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization is unrelated to the information objective and is not an accepted selector premise.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Checked all supplied approved primitives, owner-governed residuals, Tier-A registry content, conventions, definitions, and scope reframes for selector-closing content.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The runner performs genuine transport integration, differential evolution, root finding, and constrained minimization, so the reported conditional source is more than a printed constant and could support a bounded numerical theorem.",
+          "evidence_locator": "result = minimize(",
+          "evidence_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
+          "resolution": "This steelman succeeds only for existence of the reported conditional feasible point. It does not derive the selector definition or equality constraint and does not certify global minimality, so it cannot defeat the scoped selector-authority wall.",
+          "resolved": true,
+          "route_id": "multistart_global"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:0",
+              "evidence_locator": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Prior conditional finding that the invented selector remains an input.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:1",
+              "evidence_locator": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Prior definition-versus-derivation finding.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:2",
+              "evidence_locator": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Prior conditional-optimization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:3",
+              "evidence_locator": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Prior selector-definition classification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:4",
+              "evidence_locator": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Prior numerical-match warning about imposed eta normalization and absent global proof.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:5",
+              "evidence_locator": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Prior post-axiom diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:6",
+              "evidence_locator": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:6",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Prior open-gate finding for the supplied selector and closure constraint.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:0",
+              "evidence_locator": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unaudited historical authority state.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:1",
+              "evidence_locator": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Prior broad conditional selector classification of the authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:2",
+              "evidence_locator": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Narrowed clean parity theorem that expressly excludes selector content.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Retired AC_phi_lambda admission with no PMNS-selector content.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Retired strong-CP admission unrelated to this selector.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Owner-governed AC residual retirement outside the PMNS-selector boundary.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated campaign-level no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Finite-sweep versus full-closure boundary in an unrelated gravity lane.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "General finite-support versus bridge-closure warning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated textbook-import and audit-edit boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Earlier DM information-geometric selection obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated coupling-identity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated lattice comparator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated lensing observable-bridge walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated carrier-registry exhaustiveness boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Charged-lepton selector no-go cluster, adjacent but not a derivation of this PMNS selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated finite-set dimension boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated Lorentz-scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated emergent-metric source bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated replay-only radial boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated Wilson local-versus-environment boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Flavor-selector route pruning on a different observable surface.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated analytic-vector and audit-routing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated gauge-character contraction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated gauge-isotropy mechanism walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated gravity observable bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated weak-field scope limits.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated absolute-scale and carrier-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated normalization-rescaling boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Adjacent PMNS right-frame and selector-source boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated atomic normalization and hidden-selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated quark source/readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated finite-check versus asymptotic-proof boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated lensing observable mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated finite-path falsification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "General source-readout selector boundary on another lane.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated temporal-source selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Empty unrelated no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unregistered objective cannot become theorem-grade target selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated time-bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Adjacent DM/PMNS selector and active-mass-basis no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated neutrino mass-scale dependency walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated finite-lattice scope correction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated frozen-log and finite-basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated calibrated plaquette-value boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated finite-packet physical-bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated finite-grid versus global theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated carrier-selection no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated rank-match and carrier forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated bootstrap and hard-coded bracket boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated plaquette diagnostic correction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Supplied finite data and arithmetic do not provide selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Different flavor readout and governance walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated locality and axis-selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Different source-semantics and physical-basis boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Different kinetic-law selector no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated SU(3) quotient-encoder scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated documentation synchronization issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated partial-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated theta determinant-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated theta gauge-action boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated theta positive-gate boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated theta insertion-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated theta defect-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Different flavor occupancy-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Different Record-versus-occupancy selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Different Record-formation readout-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated artifact-visibility issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "General Record-only readout nonselection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Hard-coded numerical matching cannot establish a structural selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Unrelated finite-row versus universal-law boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "mechanism": "Definition or physical-readout identification cannot be promoted by consistency checks.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "No framework derivation of the I_seed selector objective",
+          "No framework derivation of the eta_{i_*}/eta_obs = 1 closure constraint",
+          "No cited retained authority for the fixed seed surface and favored-column selector input"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16": {
+              "accepted_premise_type": null,
+              "content_sha256": "74a477e199140d2657451fda70d34dff90fc548a1ec5ff9ecdc1ef365096bc2e",
+              "cross_cycle_candidate_ids": [
+                "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:0",
+                "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:1",
+                "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:2",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:0",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:1",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:2",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:3",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:4",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:5",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:6",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:0",
+                "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:1",
+                "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16:previous_audit:2",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:0",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:1",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:2",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:3",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:4",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:5",
+                "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16:previous_audit:6",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16": {
+              "accepted_premise_type": null,
+              "content_sha256": "3238bb32c81f9757b7b55a4fc648e780c5a88975e14b718da91dd7281ba91211",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "bec1ebb4f442bbe535678359b97a740dd270cb93f270ad78080dabfa7e3af2ee",
+              "effective_status": "retained_bounded",
+              "path": "docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "It does not classify stationary KKT branches or prove branch minimality.",
+                "It does not define or derive a relative-action selector."
+              ]
+            },
+            "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "f0a8fcb1dc140b9d527d34b3c391994102d7f2fa1af9b3e75da7b4bd1df21c5f",
+              "effective_status": null,
+              "path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "It is a choice of objective imported from information geometry.",
+                "On the fixed native charged-lepton-active seed surface",
+                "Open selector gate",
+                "Runner imports (transparency)",
+                "What this note does NOT claim",
+                "imposed `eta_{i_*} / eta_obs = 1` equality constraint",
+                "is **not** answered here.",
+                "not a proof of global uniqueness, global stationarity classification",
+                "relative-action stationarity theorem and the observable relative-action law",
+                "the favored-column equality constraint remain supplied/adopted selector data."
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+              "effective_status": null,
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration before use as a premise.",
+                "Open Gates And Admissions Outside The Axioms",
+                "The four axioms do not close, import, or rename the framework's downstream open gates."
+              ]
+            },
+            "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "0515188f2f4ca91b4c75a5f2ec35f42c9d3f2efec86b20f8d22b1bc991a9e44b",
+              "effective_status": null,
+              "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "This is pointwise evaluation, not a state-selection rule."
+              ]
+            },
+            "scripts/dm_leptogenesis_exact_common.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
+              "effective_status": null,
+              "path": "scripts/dm_leptogenesis_exact_common.py",
+              "roles": [
+                "helper"
+              ],
+              "verified_locators": [
+                "ETA_OBS = 6.12e-10"
+              ]
+            },
+            "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "87f20280260c0fa605529f5797a858213cbe96423a7cab831153d144dfc884bd",
+              "effective_status": null,
+              "path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "result = minimize("
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: relative_action_sister, multistart_global, and closure_constraint_derivation remain OPEN.",
+          "N5: the global stationary classification and framework-internal sister-selector resolutions remain untested."
+        ],
+        "narrowed_claim_scope": "Open-gate post-axiom diagnostic: after adopting I_seed and imposing favored-column closure, the runner reports a feasible low-cost off-seed source; selector derivation, global minimality, and baseline PMNS closure are excluded.",
+        "next_route": {
+          "reason_untested": "The restricted packet names framework-internal relative-action sister theorems but does not include their proofs or an audited equivalence bridge to I_seed.",
+          "route_id": "relative_action_sister"
+        },
+        "prior_claim_scope": "Open-gate conditional diagnostic: given the adopted minimum-information selector and imposed favored-column closure constraint, the runner reports a low-cost off-seed source closing column 0; no selector derivation, global uniqueness, or retained PMNS-branch closure is audited.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and audit a framework-internal selector and closure-constraint authority before re-auditing this row as theorem-grade source law.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 2,
+        "C": 6,
+        "D": 2,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Issue: the source-selecting rule is introduced as an explicit information-geometric definition together with an imposed observational equality. Why this blocks: the genuine optimizer computes consequences of those choices but cannot convert the choices into a framework-derived selector law. Repair target: supply a retained bridge deriving the objective, fixed selector surface, favored-column authority, and closure constraint. Claim boundary until fixed: this row is a reproducible post-axiom optimization diagnostic only."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
+  "title": "DM Leptogenesis PMNS Minimum-Information Source Law",
+  "transitive_descendants": 727,
+  "verdict_rationale": null
+}

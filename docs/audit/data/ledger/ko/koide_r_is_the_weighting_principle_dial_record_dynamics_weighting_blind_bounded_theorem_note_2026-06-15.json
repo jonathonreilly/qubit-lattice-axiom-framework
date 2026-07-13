@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
+    "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c563938b4a222427eb7de7190a70ce10e374518e53361c7b9c76ef44753a7b20",
+  "note_path": "docs/KOIDE_R_IS_THE_WEIGHTING_PRINCIPLE_DIAL_RECORD_DYNAMICS_WEIGHTING_BLIND_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:30.097883+00:00",
+      "audit_date": "2026-06-16T03:16:20.788123+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "Audited the bounded algebraic claim that K-real C3-invariant einselection selects the 2-sector partition but does not derive r=1/2, leaving K-reality and block-counting/equal-power as explicit residual inputs.",
+          "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15": "For the supplied C3 pointer S=C+C^2 and the Stage-1 circulant record-preserving generator, singlet/doublet block weights are conserved under H-evolution and the two-sector record preserves doublet-internal coherence."
+        },
+        "dep_claim_type": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "bounded_theorem",
+          "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "retained_bounded",
+          "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15": "retained_bounded"
+        },
+        "deps": [
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+          "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "a4303e4bcea21b097054fb2f6d37457aed213f2c82e7cf74f0552831d4f9a1b2",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260616-031352-ec91acdd09-koide_r_is_the_weighting_pri",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The projector identities, rank counts, Q arithmetic, density-state block traces, and D_S block-weight conservation check out as finite-dimensional algebra. The missing step is an independent bridge deriving the Koide-block r readout from sector weights rather than identifying r with that ratio by stipulation.",
+      "claim_scope": "Audited the supplied two-sector C3 record algebra, the mapping from declared singlet/doublet weights to the advertised r and Q values, and conservation of those block weights under the two-sector record map.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T03:16:20.788123+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_einselection_2sector_modulo_kreality_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "The registered Koide-block parameter is identified with the sector-weight ratio `r = w_doublet/(2 w_singlet)`.",
+      "load_bearing_step_class": "F",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check after a bridge theorem derives `r = w_doublet/(2 w_singlet)` from the Koide-block readout; otherwise treat the note as definitional dial bookkeeping.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "Issue: the finite-dimensional projector algebra and D_S block-weight conservation are correct, but the theorem\u2019s load-bearing move identifies the already-named Koide r with the sector-weight ratio. Why this blocks: the runner defines `r_from_weights` as `w_doublet/(2*w_singlet)` and then verifies arithmetic, so it does not derive the r/readout bridge from the cited authorities. Repair target: supply a retained bridge deriving the Koide-block r from the sector-weighted density/readout, or present this note explicitly as a definition of the weighting dial. Claim boundary until fixed: dimension and equal-sector weights map to the advertised r,Q values under the stipulated formula, and D_S preserves those weights."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_r_weighting_principle_dial_2026_06_15.py",
+  "title": "Koide r Is the Weighting-Principle Dial; Record Dynamics Is Weighting-Blind",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

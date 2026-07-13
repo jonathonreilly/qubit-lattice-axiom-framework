@@ -1,0 +1,117 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_qg_canonical_smooth_gravitational_weak_measure_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_qg_optional_textbook_comparison_note",
+    "universal_qg_canonical_textbook_weak_measure_equivalence_note",
+    "universal_qg_smooth_gravitational_global_solution_class_note",
+    "universal_qg_smooth_gravitational_local_identification_note",
+    "universal_qg_smooth_gravitational_global_atlas_note"
+  ],
+  "direct_in_degree": 11,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.522,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a30c356a17848a1f02152627cdcf307724c5948fdd90d68b8cfdc3476ae4cfb6",
+  "note_path": "docs/UNIVERSAL_QG_CANONICAL_SMOOTH_GRAVITATIONAL_WEAK_MEASURE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-07T08:10:02.495938+00:00",
+      "archived_for_note_hash": "b346f882988bfdd4a57b99a464621e3abb12a69956e9e8ae014029f3489fdcb8",
+      "audit_date": "2026-05-06T13:16:39.394842+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "universal_qg_optional_textbook_comparison_note": null
+        },
+        "dep_claim_type": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "dep_effective_status": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "deps": [
+          "universal_qg_optional_textbook_comparison_note"
+        ],
+        "load_bearing_score": 13.0,
+        "runner_hash": null,
+        "transitive_descendants": 511
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-06-universal-qg-canonical-smooth-grav-weak-measure",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The only direct ledger dependency is the optional textbook comparison meta note, which explicitly provides no theorem authority. The runner's substantive premises are canonical textbook weak/measure equivalence and smooth global gravitational solution-class closure, but those rows are not wired as dependencies and are not retained-grade in the current ledger.",
+      "claim_scope": "Canonical smooth global gravitational weak/measure identification with the canonical textbook weak Sobolev/Gaussian object on the chosen smooth realization of PL S^3 x R.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-06T13:16:39.394842+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "the weak action on the chosen smooth realization is the same closed coercive action already determining the canonical textbook weak problem; the stationary family and Gaussian covariance are the same canonical objects in smooth gravitational coordinates",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire scripts/frontier_universal_qg_canonical_smooth_gravitational_weak_measure.py as the runner and replace the metadata-only optional comparison dependency with direct retained-grade dependencies for canonical textbook weak/measure equivalence and smooth global gravitational solution-class closure; then re-audit the smooth global weak/measure identification scope.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md",
+        "docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md",
+        "docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_LOCAL_IDENTIFICATION_NOTE.md",
+        "docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_ATLAS_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the note identifies the smooth global gravitational weak/Gaussian realization with the canonical textbook weak/Gaussian object, but the direct dependency is only a meta packaging note. Why this blocks: the completed runner verifies coordinate-equivalence algebra after importing the canonical textbook weak/measure object and the smooth global gravitational solution class, both unwired and not retained-grade. Repair target: wire scripts/frontier_universal_qg_canonical_smooth_gravitational_weak_measure.py as the runner and replace the meta-only dependency with direct retained-grade dependencies for canonical textbook weak/measure equivalence and smooth global gravitational solution-class closure. Claim boundary until fixed: the finite coordinate-equivalence checks pass, but the theorem cannot retain until those upstream objects are direct retained-grade authorities."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_qg_canonical_smooth_gravitational_weak_measure.py",
+  "title": "Universal QG Canonical Smooth Gravitational Weak/Measure Equivalence",
+  "transitive_descendants": 129,
+  "verdict_rationale": null
+}

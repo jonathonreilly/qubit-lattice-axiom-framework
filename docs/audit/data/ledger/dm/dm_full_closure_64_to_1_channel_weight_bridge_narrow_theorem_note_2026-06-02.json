@@ -1,0 +1,228 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_color_automorphism_theorem",
+    "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.115,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "bfa9d9a1767a57e6b819f9725e2a4b1045418c39c316b71ab998cc4ac3da7ff0",
+  "note_path": "docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-12T19:48:32.020904+00:00",
+      "audit_date": "2026-06-07T00:13:33.475386+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded.",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Bounded Maxwell-Boltzmann/Sommerfeld normalization algebra at the explicit benchmark slice x_f=25, with a=x_f/4=25/4: verifies the normalized MB denominator, <1/v>=5/sqrt(pi), <1/v^2>=25/2, the substitution t=a v^2 giving alpha_eff/v=alpha_eff*sqrt(a/t), and the thermal-average t-measure prefactor 2/sqrt(pi). No framework derivation of the Maxwell-Boltzmann distribution, freeze-out value x_f=25, Sommerfeld enhancement law, relic-abundance dynamics, or downstream DM thermal closure is audited."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "61913a7f27f6acaf4a5c1732073aa10bb1745e6b42511d8b33d4fccf2779d054",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-001200-e603ab5710-dm_full_closure_64_to_1_chan",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited SU(3) carrier supplies N_c=3 and the 1 plus 8 decomposition, while the displayed Casimir/channel-scalar algebra gives -4/3 and +1/6. Squaring those scalars, multiplying by multiplicities, and normalizing gives the parent-visible coefficient identity exactly, without observational or physical-color input.",
+      "claim_scope": "Algebraic SU(3) 3 x 3bar singlet/octet channel-weight folding on the stated carrier, with physical-color identification and downstream DM closure excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T00:13:33.475386+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained->unaudited",
+      "load_bearing_step": "The multiplicity-folded weights w_1=(1/9)(4/3)^2=16/81 and w_8=(8/9)(1/6)^2=2/81 normalize to (w_1 s_1+w_8 s_8)/(w_1+w_8)=(8 s_1+s_8)/9.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers do not cite this narrow algebraic bridge as closure of physical-color identification or observational DM inputs.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing calculation is an exact algebraic identity over the restricted SU(3) carrier and retained-grade bounded normalization notation. An independent check confirms the Casimir, octet scalar, raw 64:1 squared ratio, multiplicity-folded 8:1 ratio, and final normalized formula. The runner source performs real Gell-Mann/projector and rational-arithmetic checks for the algebraic core; its text-boundary checks are non-load-bearing. The verdict is clean only for the narrow algebraic bridge and does not upgrade physical-color identification, observational constants, packet completeness, endpoint selection, or parent-row status."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.138825+00:00",
+      "audit_date": "2026-06-12T23:47:41.839346+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the 8D taste carrier, its tensor-factor commutation with the defined weak-fiber and block-scalar Y operators, and the SU(3) channel-count fraction R_conn=8/9; no physical SM-color or EW-readout bridge is audited.",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Bounded Maxwell-Boltzmann/Sommerfeld normalization algebra at the explicit benchmark slice x_f=25, with a=x_f/4=25/4: verifies the normalized MB denominator, <1/v>=5/sqrt(pi), <1/v^2>=25/2, the substitution t=a v^2 giving alpha_eff/v=alpha_eff*sqrt(a/t), and the thermal-average t-measure prefactor 2/sqrt(pi). No framework derivation of the Maxwell-Boltzmann distribution, freeze-out value x_f=25, Sommerfeld enhancement law, relic-abundance dynamics, or downstream DM thermal closure is audited."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 6.728,
+        "runner_hash": "61913a7f27f6acaf4a5c1732073aa10bb1745e6b42511d8b33d4fccf2779d054",
+        "transitive_descendants": 52
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-234519-bd30328d77-dm_full_closure_64_to_1_chan",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "From the retained algebraic SU(3) carrier with N_c=3 and 3 x 3bar=1+8, the standard Casimir relation for q qbar channels gives singlet -4/3 and octet +1/6. Squaring these factors, multiplying by multiplicities 1 and 8, and normalizing gives the displayed formula, while the note explicitly preserves the physical-color and downstream-closure deferrals.",
+      "claim_scope": "Exact algebraic SU(3) carrier identity that the 3 x 3bar singlet/octet multiplicities and squared channel factors normalize to visible-channel coefficients 8/9 and 1/9; physical-color identification and downstream DM closure are outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T23:47:41.839346+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "The multiplicity-folded squared color weights are w_1=(1/9)(4/3)^2=16/81 and w_8=(8/9)(1/6)^2=2/81, so (w_1 s_1+w_8 s_8)/(w_1+w_8)=(8s_1+s_8)/9.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that the square-of-channel-scalar weighting remains within the claimed algebraic bridge scope and is not being read as a physical cross-section derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing step is finite SU(3) algebra plus rational normalization, not a new empirical match or definition substitution. The runner source constructs explicit Gell-Mann generators, singlet/octet projectors, channel scalars, and exact Fraction arithmetic rather than merely printing constants, and its 29 checks pass with no failures. An independent Casimir check T_q.T_qbar=(C_R-2C_F)/2 reproduces -4/3 for the singlet and +1/6 for the octet, and the 64:1 to 8:1 fold follows exactly. The cited authorities are retained_bounded and are used only for the algebraic carrier split and Sommerfeld notation; their physical-color deferrals are not imported into this scoped claim."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:24.661838+00:00",
+      "audit_date": "2026-06-15T23:20:48.357465+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Bounded Maxwell-Boltzmann/Sommerfeld normalization algebra at the explicit benchmark slice x_f=25, with a=x_f/4=25/4: verifies the normalized MB denominator, <1/v>=5/sqrt(pi), <1/v^2>=25/2, the substitution t=a v^2 giving alpha_eff/v=alpha_eff*sqrt(a/t), and the thermal-average t-measure prefactor 2/sqrt(pi). No framework derivation of the Maxwell-Boltzmann distribution, freeze-out value x_f=25, Sommerfeld enhancement law, relic-abundance dynamics, or downstream DM thermal closure is audited."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 9.728,
+        "runner_hash": "61913a7f27f6acaf4a5c1732073aa10bb1745e6b42511d8b33d4fccf2779d054",
+        "transitive_descendants": 52
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-231814-6d2d291a42-dm_full_closure_64_to_1_chan",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited SU(3) carrier input supplies the 1+8 decomposition and normalization; the channel scalars follow from standard Casimir algebra, giving -4/3 and +1/6, and the rational folding arithmetic is exact. The note preserves the physical-color deferral and does not use observational constants, endpoint selection, or parent-state claims.",
+      "claim_scope": "Algebraic SU(3) 3 x 3bar singlet/octet channel-weight bridge: the raw 64:1 squared color-coupling ratio folds with 1:8 multiplicities to the declared same-carrier formula s_vis=(8 s_1+s_8)/9, excluding physical-color identification and downstream DM closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T23:20:48.357465+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "The multiplicity-folded weights w_1=(1/9)(4/3)^2=16/81 and w_8=(8/9)(1/6)^2=2/81 have ratio 8, so (w_1 s_1+w_8 s_8)/(w_1+w_8)=(8 s_1+s_8)/9.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check if a later note expands this bridge from the algebraic carrier identity to physical SM color or downstream DM thermal closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 2,
+        "C": 6,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing step is a finite algebraic identity over the provided SU(3) carrier and Sommerfeld notation, not a tuned numerical match or a new definition. Independent checking via the Casimir relation T_q.T_qbar=(C_R-2C_F)/2 verifies the singlet and octet signs and factors, and the weights reduce exactly to 16/81 and 2/81. The runner source actually constructs Gell-Mann generators, projectors, and exact rational weights; its weaker textual boundary checks are not needed for the algebraic closure. The clean verdict applies only to the stated bounded algebraic bridge, not to physical SM-color identification or the downstream parent theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py",
+  "title": "DM Full Closure -- 64:1 Channel-Weight Bridge",
+  "transitive_descendants": 48,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

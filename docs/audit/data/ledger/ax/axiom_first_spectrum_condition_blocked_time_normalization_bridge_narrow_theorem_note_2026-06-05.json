@@ -1,0 +1,1505 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.064,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "252c4d38ff8b8c3f64a7210aa3fd2a6478d0b01910fe4ec4e14a24c954639650",
+  "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:23.802891+00:00",
+      "audit_date": "2026-06-06T16:33:09.403997+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d, finite periodic L_s, m>0: the single-step transfer object is non-positive, while the two-step blocked Fock transfer matrix built from the decaying action-derived channel is positive Hermitian."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        ],
+        "load_bearing_score": 10.466,
+        "runner_hash": "10ffa3f8870b8265b7e71ffdcbf3843e446726ac15d70dffa792088af7a27208",
+        "transitive_descendants": 999
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-163050-ae9b3b33f4-axiom_first_spectrum_conditi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained_bounded authority supplies T_hat^2 positive Hermitian and T_hat^2 = exp(-2 a_tau H_hat). Standard finite-dimensional functional calculus then gives the corrected 1/(2 a_tau) normalization and shows the old 1/a_tau form is exactly twice the same excitation energies.",
+      "claim_scope": "Audited only the finite free staggered two-step transfer-matrix surface: T_hat^2 advances two lattice spacings, so the reconstructed Hamiltonian and mass gap use 1/(2 a_tau) and agree with the retained bounded two-step authority after vacuum normalization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T16:33:09.403997+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-06T11:53:11.592745+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-115144-e352bea200-axiom_first_spectrum_conditi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite free/fixed-background staggered two-step transfer normalization only: T_hat^2 advances one period-two block of time 2 a_tau, so H and m_gap use 1/(2 a_tau); no interacting, U-integrated, continuum, cluster, or physical-mass identification is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-06T16:33:09.403997+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-163050-ae9b3b33f4-axiom_first_spectrum_conditi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the finite free staggered two-step transfer-matrix surface: T_hat^2 advances two lattice spacings, so the reconstructed Hamiltonian and mass gap use 1/(2 a_tau) and agree with the retained bounded two-step authority after vacuum normalization.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "Since the imported transfer operator is the two-step block T_hat^2 = exp(-2 a_tau H_hat), Hamiltonian and gap reconstruction must use the block time 2 a_tau: H = -(1/(2 a_tau)) log(T_hat^2 / M_T) and m_gap = -(1/(2 a_tau)) log(lambda_1 / M_T).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if later consumers interpret this beyond the free finite staggered T_hat^2 surface; fixed-background gauge or U-integrated extensions are not audited here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing bridge is not a tuned numerical match or a renaming; it is spectral algebra over the retained_bounded two-step transfer authority. Independently, T_odd T_even has determinant 1 and trace 2 cosh(2E), so its decaying eigenvalue is e^(-2E), and applying -log with denominator 2 a_tau recovers E/a_tau while denominator a_tau gives 2E/a_tau. The runner source materially computes the single-step alternation, two-step eigenvalues, Fock-space positivity, functional-calculus Hamiltonian, and gap checks rather than merely printing constants. The clean verdict is bounded to the free finite staggered surface supported by the one-hop authority."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.881136+00:00",
+      "audit_date": "2026-06-06T23:03:09.885130+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        ],
+        "load_bearing_score": 10.473,
+        "runner_hash": "10ffa3f8870b8265b7e71ffdcbf3843e446726ac15d70dffa792088af7a27208",
+        "transitive_descendants": 1004
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260606-230106-01bd1fd11b-axiom_first_spectrum_conditi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained_bounded authority explicitly supplies T_hat^2=exp(-2 a_tau H_hat) for the positive two-step blocked transfer matrix. Finite-dimensional functional calculus then gives H=H_hat-E_0 and m_gap=-(1/(2 a_tau))log(lambda_1/M_T), so the factor-of-two correction closes without extra premises.",
+      "claim_scope": "Audited the bounded free/fixed-background staggered normalization bridge: T_hat^2 has block spacing 2 a_tau, so Hamiltonian and gap reconstruction use 1/(2 a_tau) and agree with the vacuum-subtracted H_hat from the retained_bounded two-step positivity authority.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-06T23:03:09.885130+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "Because the imported object is T_hat^2=exp(-2 a_tau H_hat) and advances one two-step block, the reconstructed Hamiltonian is H=-(1/(2 a_tau)) log(T_hat^2/M_T), not the spectrum-condition note's -(1/a_tau) log(T_hat^2/M_T).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the dimensional convention H_hat versus E(p)/a_tau and the M_T != 1 vacuum-subtraction wording if this bridge is generalized beyond the free vacuum-normalized carrier.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The source note's load-bearing content is an algebraic normalization corollary of one retained_bounded upstream authority plus standard spectral calculus. The independent formula check confirms the factor of two: applying 1/a_tau to T_hat^2 doubles every excitation energy, while 1/(2 a_tau) recovers the upstream H_hat after vacuum subtraction. The runner source performs real finite-matrix computations and does not just print constants, but those computations re-exhibit the same one-parent bridge rather than supplying an independent new theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.114375+00:00",
+      "audit_date": "2026-07-08T04:15:25.724691+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 1+1d staggered-only finite periodic L_s, real m>0: single-step transfer is non-positive, while the two-step blocked Fock transfer built from the decaying channel e^{-2E(p)} is positive Hermitian. Gauge, U-integrated RP, continuum OS reconstruction, and Wilson-sector claims are out of scope."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        ],
+        "load_bearing_score": 14.132,
+        "runner_hash": "10ffa3f8870b8265b7e71ffdcbf3843e446726ac15d70dffa792088af7a27208",
+        "transitive_descendants": 560
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-second-auditor-2026-07-08",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The direct retained-bounded dependency supplies T_hat^2 = exp(-2 a_tau H_hat) and the positive two-step blocked transfer surface. Finite-dimensional functional calculus then gives H = -(1/(2 a_tau)) log(T_hat^2/M_T) = H_hat after vacuum subtraction, and the same factor fixes the gap formula.",
+      "claim_scope": "Within the free/fixed-background staggered-only finite Fock-space surface of the cited two-step transfer-matrix authority, the reconstructed Hamiltonian and gap from T_hat^2 use the two-step block normalization 1/(2 a_tau), not 1/a_tau; no U-integrated interacting, continuum/OS, closed-form universal nondegeneracy, or physical-mass identification is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-08T04:15:25.724691+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-08T03:59:51.779091+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-audit-lane-2026-07-08-row4-fresh-subagent",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the free/fixed-background staggered-only finite Fock-space surface of the cited two-step transfer-matrix authority, the reconstructed Hamiltonian and gap from T_hat^2 use the two-step block normalization 1/(2 a_tau), not 1/a_tau; no U-integrated interacting, continuum/OS, closed-form universal nondegeneracy, or physical-mass identification is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-08T04:15:25.724553+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-second-auditor-2026-07-08",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the free/fixed-background staggered-only finite Fock-space surface of the cited two-step transfer-matrix authority, the reconstructed Hamiltonian and gap from T_hat^2 use the two-step block normalization 1/(2 a_tau), not 1/a_tau; no U-integrated interacting, continuum/OS, closed-form universal nondegeneracy, or physical-mass identification is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Since the cited transfer object is T_hat^2 = exp(-2 a_tau H_hat), the reconstructed Hamiltonian and gap from T_hat^2 must use -(1/(2 a_tau)) log(T_hat^2/M_T) and -(1/(2 a_tau)) log(lambda_1/M_T), while the 1/a_tau form is exactly twice as large.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second-auditor recheck: retained scope is only the two-step blocked-time normalization over the cited finite Fock-space transfer surface; downstream spectrum-condition claims outside that normalization bridge remain separately bounded or open.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The derivation closes as exact algebra over the retained-bounded two-step transfer authority: a two-step block advances time by 2 a_tau, so the logarithmic generator and gap necessarily carry 1/(2 a_tau). I independently derived the 2x2 action-transfer eigenvalues e^{\u00b12E} and checked an abstract diagonal finite-spectrum example, both confirming that the 1/a_tau form doubles every excited energy and gap. The runner aligns with T_hat^2 itself and verifies the same factor-of-two relation, self-adjointness, forward cone, and corrected gap with 9 PASS / 0 FAIL. The clean verdict is bounded to this normalization bridge only; it does not promote U-integrated interacting RP, continuum/OS reconstruction, universal nondegeneracy, cluster decomposition, or physical mass identification."
+    },
+    {
+      "archived_at": "2026-07-12T17:09:41.109993+00:00",
+      "audit_date": "2026-07-11T18:58:21.085035+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 1+1d staggered-only finite periodic L_s, real m>0: single-step transfer is non-positive, while the two-step blocked Fock transfer built from the decaying channel e^{-2E(p)} is positive Hermitian. Gauge, U-integrated RP, continuum OS reconstruction, and Wilson-sector claims are out of scope."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        ],
+        "load_bearing_score": 11.743,
+        "runner_hash": "10ffa3f8870b8265b7e71ffdcbf3843e446726ac15d70dffa792088af7a27208",
+        "transitive_descendants": 605
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00072-axiom_first_spectrum_conditi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The factor-of-two algebra closes on the scoped retained-bounded parent, but the mandatory source-shape no-go discipline gate does not close because alternate-carrier, interacting, and continuum routes remain outside the tested packet. A terminal clean or decoration verdict is therefore unavailable under the binding gate.",
+      "claim_scope": "On the finite free staggered two-step transfer-matrix surface supplied by the retained-bounded parent, T_hat^2 advances 2 a_\u03c4 and therefore reconstructs the vacuum-subtracted Hamiltonian and conditional gap with the factor 1/(2 a_\u03c4); interacting, continuum, universal-nondegeneracy, clustering, and physical-mass claims are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T18:58:21.085035+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "Because T_hat^2 advances one two-step block, the logarithmic generator is H := -(1/(2 a_\u03c4)) log(T_hat^2/M_T), while using 1/a_\u03c4 doubles every excitation energy and gap.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Substituted T_hat^2=exp(-2a_\u03c4H_hat) into both candidate normalizations and compared the resulting generators.",
+            "disposition": "CLOSED",
+            "evidence_locator": "H  :=  -(1/(2 a_\u03c4)) log(T_hat^2 / M_T)  =  H_hat \u2265 0",
+            "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Apply the finite-dimensional logarithm directly to the parent exponential identity.",
+            "outcome": "The route closes the scoped factor-of-two identity but only as algebra over the parent.",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "direct_log_algebra"
+          },
+          {
+            "attempt": "Checked the supplied T_even/T_odd construction and the computed inequality T_even\u2260T_odd away from exceptional momenta.",
+            "disposition": "CLOSED",
+            "evidence_locator": "T_hat^2 = T_odd \u00b7 T_even",
+            "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the parity-alternating staggered recurrence to identify the translation-invariant monodromy as a two-step product.",
+            "outcome": "The supplied finite staggered construction supports a two-slice block.",
+            "prior_witness_id": null,
+            "route_class": "symmetry_or_representation",
+            "route_id": "period_two_monodromy"
+          },
+          {
+            "attempt": "Compared the energies reconstructed with denominators a_\u03c4 and 2a_\u03c4 on the same positive spectrum.",
+            "disposition": "CLOSED",
+            "evidence_locator": "a_block = 2 a_\u03c4",
+            "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Interpret a_\u03c4 as one lattice spacing and 2a_\u03c4 as the elapsed time associated with one blocked transfer.",
+            "outcome": "The 1/a_\u03c4 convention gives exactly twice the 1/(2a_\u03c4) excitation spectrum.",
+            "prior_witness_id": null,
+            "route_class": "normalization_or_units",
+            "route_id": "block_unit_scaling"
+          },
+          {
+            "attempt": "Inspected the stated scope and one-hop dependency for any independent alternate-carrier construction.",
+            "disposition": "OPEN",
+            "evidence_locator": "inherits the **free / fixed-background staggered-only** surface",
+            "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether the same normalization statement closes on carriers beyond the supplied free finite staggered Fock construction.",
+            "outcome": "No alternate carrier is supplied; the note explicitly inherits the free/fixed-background staggered-only surface.",
+            "prior_witness_id": null,
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "alternate_carrier"
+          },
+          {
+            "attempt": "Checked whether the restricted packet supplies a U-integrated transfer operator with a proved block-time exponential identity.",
+            "disposition": "OPEN",
+            "evidence_locator": "No `U`-integrated full interacting `SU(3)` closure",
+            "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test the bridge after gauge integration or with full interacting SU(3) evolution.",
+            "outcome": "The interacting construction is explicitly excluded and remains untested.",
+            "prior_witness_id": null,
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "interacting_extension"
+          },
+          {
+            "attempt": "Inspected the stated limit and reconstruction boundary.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "no continuum / Osterwalder\u2013Schrader reconstruction is asserted",
+            "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether the finite blocked-time identity supplies continuum or Osterwalder\u2013Schrader reconstruction.",
+            "outcome": "No continuum-limit or OS-reconstruction argument is supplied.",
+            "prior_witness_id": null,
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "continuum_limit"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [],
+          "evidence_locator": "Does **not** assert a no-go. It is a positive normalization identity.",
+          "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": []
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "No new foundational premise beyond the cited retained-bounded two-step positivity authority",
+          "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "hits": [
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "The positive object is the **2-step** transfer matrix, not the single-step one;",
+              "evidence_path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
+              "phrase": "positivity input itself"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "inherits the **free / fixed-background staggered-only** surface",
+              "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+              "phrase": "free / fixed-background staggered-only"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "Checked the source, runner, retained-bounded parent, and premise registries for hidden admissions behind the block-spacing, positivity, vacuum normalization, dispersion, and gap statements.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Does **not** assert a no-go. It is a positive normalization identity.",
+          "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "none_found_reason": "No N1 route is marked RULED OUT BY PRIOR and the source explicitly disclaims a no-go.",
+          "scan_scope": "Checked for prior-witness residuals supporting a scoped no-go; none are invoked because this row presents a positive normalization identity.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "Does **not** assert a no-go. It is a positive normalization identity.",
+          "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "none_found_reason": "The row makes no universal negative-resolution claim; its headline result is a positive normalization identity.",
+          "scan_scope": "Checked the source's negative wording for universal impossibility language; the single-step observation is confined to the supplied staggered construction and the note expressly disclaims a no-go.",
+          "statements": [],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy does not derive the elapsed time of this particular two-step staggered monodromy and is unnecessary once the parent exponential identity is supplied.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four minimal axioms supply no transfer operator or kinetic normalization and therefore do not independently close this bridge.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation is unrelated to blocked transfer time or logarithmic normalization.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "The absolute scale reference converts units but does not determine whether the transfer object advances one or two lattice slices.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The AC_phi_lambda occupancy/readout boundary concerns flavor realization and supplies no transfer-time normalization.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The bare-coupling rescaling convention is unrelated to the two-step time interval.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization has no bearing on the transfer-matrix logarithm or block spacing.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Checked every indexed approved primitive, owner-governed residual, Tier-A convention, and definition/scope candidate against the scoped blocked-time normalization issue.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The strongest objection is that a physically meaningful spectrum condition should persist after gauge integration, where the transfer operator and its temporal blocking may differ from the free diagonal Fock construction.",
+          "evidence_locator": "No `U`-integrated full interacting `SU(3)` closure",
+          "evidence_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "resolution": "That objection does not refute the scoped finite free normalization identity, but it prevents reading the note as an interacting or general spectrum-condition theorem; the source explicitly excludes that extension.",
+          "resolved": true,
+          "route_id": "interacting_extension"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05:previous_audit:0",
+              "evidence_locator": "previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Prior clean classification of the same bounded factor-of-two bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05:previous_audit:1",
+              "evidence_locator": "previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Prior decoration classification of the same one-parent algebraic corollary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05:previous_audit:2",
+              "evidence_locator": "previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Prior clean classification bounded to the finite staggered surface.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:0",
+              "evidence_locator": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Earlier concern about the free-fermion functor bridge in the parent.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:1",
+              "evidence_locator": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Earlier parent source/count drift concern.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:2",
+              "evidence_locator": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Earlier concern about the monodromy-to-forward-kernel bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:3",
+              "evidence_locator": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Prior clean parent audit invalidated by runner-hash change.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:4",
+              "evidence_locator": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Prior clean parent audit after decaying-channel repair.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:5",
+              "evidence_locator": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Earlier parent runner-scope drift involving C7.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:6",
+              "evidence_locator": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:6",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Earlier parent mass-sweep validation drift.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Retired flavor-realization admission unrelated to time normalization.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Retired strong-CP admission unrelated to time normalization.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Owner-governed flavor premise unrelated to the transfer block.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated foundational-campaign no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated finite-sweep and Newton-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated coupling/source-repair boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Adjacent warning against reinstating a unique RP axis; this note assumes the supplied staggered time direction and does not claim axis selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated inherited campaign no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated electroweak normalization identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated beta-six and comparator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated scattering-observable walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated carrier selector and antisymmetry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated charged-lepton route exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated Lorentz-restoration scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Adjacent warning that finite reconstructed-H evidence does not prove a global metric theorem; the audited scope excludes that extension.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated replay and basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated local Wilson environment boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated flavor-selector pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated analytic-vector proof boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated gauge-character contraction walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Adjacent warning that staggered phases do not by themselves derive broader spacetime isotropy; this note only uses their stated period-two alternation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated gravity dispersion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated gravity sign boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated absolute-scale and carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated hypercharge rescaling boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated campaign-level mass, coupling, and scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated atomic unit and threshold walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated quark-mass selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Adjacent warning that finite checks do not prove a continuum asymptotic; this note excludes continuum reconstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated lensing observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated finite-path lensing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated source-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Adjacent warning against treating transfer-step count as a physical clock rate; this note only normalizes the supplied Euclidean lattice spacing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated empty no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated planning-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Adjacent warning that an update tick does not derive physical time; the audited claim is restricted to a supplied Euclidean lattice spacing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated neutrino construction walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated neutrino and cosmological scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated finite-lattice distance-law scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated cache and basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated coupling-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated finite packet-memory boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated finite-grid differential-equation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated Clifford-carrier selector wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated P_A carrier-selection history.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated plaquette bootstrap and RP dependency boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated record-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated registrability and strong-CP/flavor walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Adjacent warning that -log(T) need not be finite-range and RP does not select a unique axis; neither stronger claim is made here.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated source-measure and readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Adjacent no-go that the current minimal axioms do not select the staggered kinetic law; this note instead takes the free staggered action surface from its retained-bounded parent.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated SU(3) cube encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated theta mass-side admission wall.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated theta gauge-side admission wall.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated theta positive-route gates.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated theta G3 route walls.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated theta G1 route walls.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated AC determinant-power wall.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated AC occupancy wall.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated AC R-eta formation wall.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated finite-dimensional artifact-visibility issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated record-only mass-readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Unrelated hard-coded table and finite-family boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "Adjacent finite-lattice scope warning; the audited normalization is not promoted to a continuum theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "mechanism": "General warning that coefficient consistency after an identification can be renaming; here the factor-of-two step is algebra over a parent, but the mandatory gate prevents a terminal decoration verdict.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": {
+              "accepted_premise_type": null,
+              "content_sha256": "02caddba58c777b79f0e57ad6d380eb80612547c719c4dbca0c6951078ef7090",
+              "cross_cycle_candidate_ids": [
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:0",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:1",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:2",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:3",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:4",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:5",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:6",
+                "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05:previous_audit:0",
+                "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05:previous_audit:1",
+                "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05:previous_audit:2",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "audit-unlock-20260612/NO_GO_LEDGER.md",
+                "axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:0",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:1",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:2",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:3",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:4",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:5",
+                "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:previous_audit:6",
+                "bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "impact-campaign-20260429/NO_GO_LEDGER.md",
+                "lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "no_go_cross_cycle_index_v1",
+                "nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "previous_audit:0",
+                "previous_audit:1",
+                "previous_audit:2",
+                "registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note",
+                "universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": {
+              "accepted_premise_type": null,
+              "content_sha256": "459d2d5e1ffbbb20a1a846d8b6af93b89347729e7ea2535532eb5269feef3e73",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "no_go_partial_closure_index_v1",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "c518109a463ca79fdcd77b6346ef30b93a864df40f4341a018fbb1d137404f83",
+              "effective_status": "retained_bounded",
+              "path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "The positive object is the **2-step** transfer matrix, not the single-step one;"
+              ]
+            },
+            "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "252c4d38ff8b8c3f64a7210aa3fd2a6478d0b01910fe4ec4e14a24c954639650",
+              "effective_status": null,
+              "path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Does **not** assert a no-go. It is a positive normalization identity.",
+                "H  :=  -(1/(2 a_\u03c4)) log(T_hat^2 / M_T)  =  H_hat \u2265 0",
+                "No `U`-integrated full interacting `SU(3)` closure",
+                "No new foundational premise beyond the cited retained-bounded two-step positivity authority",
+                "T_hat^2 = T_odd \u00b7 T_even",
+                "a_block = 2 a_\u03c4",
+                "inherits the **free / fixed-background staggered-only** surface",
+                "no continuum / Osterwalder\u2013Schrader reconstruction is asserted"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: the mandatory no-go gate cannot pass because alternate-carrier, interacting-dynamics, and continuum-limit routes are explicitly outside the tested positive normalization claim and remain OPEN or UNTESTED."
+        ],
+        "narrowed_claim_scope": "On the finite free staggered two-step transfer-matrix surface supplied by the retained-bounded parent, T_hat^2 advances 2 a_\u03c4 and therefore reconstructs the vacuum-subtracted Hamiltonian and conditional gap with the factor 1/(2 a_\u03c4); interacting, continuum, universal-nondegeneracy, clustering, and physical-mass claims are excluded.",
+        "next_route": {
+          "reason_untested": "The restricted packet supplies no U-integrated interacting transfer operator or retained exponential identity from which an interacting blocked-time normalization could be audited.",
+          "route_id": "interacting_extension"
+        },
+        "prior_claim_scope": "Audited only the finite free staggered two-step transfer-matrix surface: T_hat^2 advances two lattice spacings, so the reconstructed Hamiltonian and mass gap use 1/(2 a_tau) and agree with the retained bounded two-step authority after vacuum normalization.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "other: Separate the positive normalization theorem from the incidental single-step negative wording, refresh this note's own hash, and re-audit so the source-shape no-go gate can be evaluated against the intended bounded positive claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing operation is finite-dimensional logarithmic spectral calculus applied to one upstream parent that already supplies the two-step spacing and T_hat^2=exp(-2a_\u03c4H_hat). The runner performs substantive matrix computations and correctly re-exhibits the factor-of-two normalization on the bounded free finite-Fock-space surface. However, the binding no-go discipline gate fails because several required alternative-route classes remain explicitly untested, so the result must remain conditional despite the correctness of the scoped algebra."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.py",
+  "title": "Spectrum-Condition Blocked-Time-Spacing Normalization Bridge Narrow Theorem",
+  "transitive_descendants": 756,
+  "verdict_rationale": null
+}

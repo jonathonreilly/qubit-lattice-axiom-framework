@@ -1,0 +1,151 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "charged_lepton_y_tau_ward_identity_u1_anchor_note_2026-04-28",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "charged_lepton_y_tau_ward_identity_su2_anchor_note_2026-04-28",
+    "yt_ward_identity_derivation_theorem"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "997f0d79af101593f7c8c87a9009206f7e237344bc0cd549079b002d13ed391c",
+  "note_path": "docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_NOTE_2026-04-28.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-09T12:29:40.582427+00:00",
+      "archived_for_note_hash": "f41095b87c0f43297f4eabb9e7dbbe1509a5b6fbeaa71e9c67865f6ee12ba2a3",
+      "audit_date": "2026-04-30T15:14:57.125439+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The source note explicitly frames this as open, future, planning, or a stretch attempt rather than a closed theorem, so the conclusion cannot be ratified from the source note alone.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "`y_\u03c4` Ward Identity from `U(1)_Y` Anchor \u2014 Stretch Attempt (SA-B): open branch-local **stretch-attempt** note on",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim.",
+      "open_dependency_paths": [
+        "unregistered_or_missing_primary_runner_or_frozen_log"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the source note explicitly frames this as open, future, planning, or a stretch attempt rather than a closed theorem. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+    },
+    {
+      "archived_at": "2026-05-10T07:52:43.401376+00:00",
+      "archived_for_note_hash": "e93096324f70505d0da7a5cca1ede7bef2fd550c722a928ea69443e69bb099e3",
+      "audit_date": "2026-05-09T15:57:48.619488+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.5,
+        "runner_hash": null,
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0d75-1604-7ec1-bb36-a9ba64b0c93a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The U(1)-specific obstruction is plausibly an algebraic no-go as stated, but the stronger combined no-go imports the SU(2) Cycle 2 exclusion and the retained YT-lane D12/D17 chain without those authorities being present in the restricted packet. The missing step is a retained upstream theorem establishing the SU(2) exclusion and the exact YT structural primitive being analogized.",
+      "claim_scope": "Audited only the note's stated SA-B exclusion: a direct U(1)_Y hypercharge anchor does not determine a specific tau Yukawa value because the proposed chain leaves an unfixed dimensionless constant.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-09T15:57:48.619488+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Because U(1)_Y is abelian, its charge multiplication has no SU(N) Fierz/D12 analog and therefore leaves an undetermined prefactor C rather than fixing y_tau.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the SU(2) Cycle 2 exclusion and YT D12/D17 theorem as cited authorities, then re-audit whether the stronger combined no-go closes from those retained inputs.",
+      "open_dependency_paths": [
+        "docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_SU2_ANCHOR_NOTE_2026-04-28.md",
+        "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note's SA-B argument rests on the algebraic claim that abelian U(1) charge multiplication supplies no Fierz normalization and leaves C free, while the stronger no-go also relies on Cycle 2 and YT-lane retained results that are not supplied. Why this blocks: without those upstream inputs, the restricted packet cannot close the advertised combined direct-gauge-anchor no-go, only the local U(1) stretch-attempt obstruction. Repair target: provide the Cycle 2 SU(2) exclusion and YT D12/D17 retained authority as one-hop cited inputs, or narrow the claim to SA-B alone. Claim boundary until fixed: U(1)_Y alone is not shown here to determine y_tau, but the full 'no direct gauge-anchor YT analog works' conclusion remains conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "`y_\u03c4` Ward Identity from `U(1)_Y` Anchor \u2014 Stretch Attempt (SA-B)",
+  "transitive_descendants": 3,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

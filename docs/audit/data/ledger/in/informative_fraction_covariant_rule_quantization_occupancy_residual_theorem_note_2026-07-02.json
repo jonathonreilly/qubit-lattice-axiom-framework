@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "informative_fraction_covariant_rule_quantization_occupancy_residual_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "g_bare_rigidity_theorem_note",
+    "record_classical_semigroup_boundary_2026-06-06"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3ac4bd6220689c590609dc589b584ab1496aaa2450cc2de8e56d3413ec18ac98",
+  "note_path": "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:29.608678+00:00",
+      "audit_date": "2026-07-10T16:35:45.208325+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+          "minimal_axioms": null,
+          "record_classical_semigroup_boundary_2026-06-06": "Conditional on representing a supplied finite post-record alphabet by C^O, the audit establishes discrete permutation automorphisms, zero derivations, irreversible nonzero append/count translations, and the need to supply Markov generators to select continuous rates or stationary points."
+        },
+        "dep_claim_type": {
+          "g_bare_rigidity_theorem_note": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "record_classical_semigroup_boundary_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "g_bare_rigidity_theorem_note": "retained_bounded",
+          "minimal_axioms": "meta",
+          "record_classical_semigroup_boundary_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "g_bare_rigidity_theorem_note",
+          "minimal_axioms",
+          "record_classical_semigroup_boundary_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7983c728a9f5402f49816ed739e4bb4a4b4a6e37377ea2192d967a0d6eb2c3f5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00009-informative_fraction_covaria",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The orbit classification, subset sums, occupancy polynomials, and Haar integral are computed directly. However, neither the note nor its cited authorities derives the load-bearing unit-variance relation p* = 4/(<s2_min>_Haar + 8/27); the runner hard-codes that conversion after computing the integral.",
+      "claim_scope": "Within the named six-binary-neighbor recorded-neighborhood model, the audit covered the proper-rotation orbit classification, uniform-occupancy k/64 attainable set, numerical Haar integral, off-lattice comparison, and exhibited iid-density roots.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:35:45.208325+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g_bare_rigidity_theorem_note:retained_bounded->unaudited",
+      "load_bearing_step": "The unit-variance point is asserted to be p* = 4/(<s2_min>_Haar + 8/27) = 0.409730132, making 64p* = 26.222728 and therefore off the k/64 lattice.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a derivation or retained citation for p* = 4/(<s2_min>_Haar + 8/27), including the origins of 4 and 8/27, and make the runner verify that variance relation rather than introducing it directly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 6,
+        "C": 6,
+        "D": 9,
+        "total_pass": 70
+      },
+      "verdict_rationale": "The runner performs substantive enumeration, integration, polynomial construction, and root finding rather than merely printing expected results. Its numerical p* calculation nevertheless assumes the unexplained constants and functional relation that identify the Haar moment with the unit-variance point. The cited rigidity authority supplies canonical normalization and a logarithm branch but not this variance-to-p relation, so the off-lattice and occupancy-residual conclusions remain conditional on a missing bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py",
+  "title": "Informative-Step Fraction: Covariant-Rule Quantization and the Occupancy Residual",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

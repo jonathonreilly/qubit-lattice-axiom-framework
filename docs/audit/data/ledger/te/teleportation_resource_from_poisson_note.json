@@ -1,0 +1,1258 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "teleportation_resource_from_poisson_note",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "teleportation_retained_axis_operator_algebra_closure_note",
+    "teleportation_microscopic_closure_note",
+    "teleportation_apparatus_dynamics_closure_note",
+    "teleportation_finite_gapped_preparation_path_support_note_2026-06-16",
+    "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
+    "minimal_axioms",
+    "teleportation_poisson_resource_sweep_note",
+    "teleportation_resource_fidelity_note",
+    "teleportation_measurement_record_note",
+    "teleportation_operator_consistent_end_to_end_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_bell_inequality.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f7a6d9f6723cfc3066d332b523727e8e874743cc1c4f8c26c5db6af6d294dadb",
+  "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-08T10:21:45.951194+00:00",
+      "audit_date": "2026-05-02T22:59:08.884884+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-teleportation-resource-poisson-auditor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated small-surface numerical scope, the runner sanity-checks the teleportation convention, constructs the traced logical two-qubit resource, and reports Bell overlap, CHSH, negativity, and teleportation fidelity above the note's threshold for both Poisson cases. The note explicitly leaves generalization, preparation/readout, and parameter sensitivity outside this scoped claim.",
+      "claim_scope": "On the audited small default cases, 1D N=8 and 2D 4x4 at mass 0 and G=1000, the Poisson/CHSH ground-state extraction yields a deterministic encoded two-qubit Bell-like resource suitable for ideal standard quantum state teleportation diagnostics.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T22:59:08.884884+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "After tracing cells and spectator taste bits while keeping the last KS taste bit per species, the audited Poisson/CHSH ground states yield deterministic two-qubit logical resources with Bell overlap above 0.90 and high standard teleportation fidelity.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit if the claim is promoted beyond the two default surfaces, changes parameters, or asserts a physical preparation/readout protocol rather than offline ground-state extraction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The proper retained object is not an open gate but a bounded numerical theorem over the specified small surfaces and extraction rule. The current runner output matches the note's reported values and separates deterministic traced extraction from postselected diagnostic branches. No one-hop cited authorities are present, and the remaining limitations are future hardening tasks rather than missing premises for the scoped result."
+    },
+    {
+      "archived_at": "2026-05-10T16:47:25.554091+00:00",
+      "archived_for_note_hash": "79e892feba8bb7098bccf64c14419f9c4cf35ee2d8e5474f1a6adea5131acd3e",
+      "audit_date": "2026-05-08T11:02:09.389850+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": "58372e79a50eaaa488f03eb81365bddab6e0b54c03c4808720aff2d825af5ace",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt55-xhigh-019e073e-2842-7560-a419-50b2fb11876e",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the reported reduced-resource diagnostics for the chosen extraction, but the packet does not close the native preparation/readout theorem selecting the last taste bit as a physical deterministic teleportation resource. The note itself keeps that bridge and broader mass/coupling/boundary hardening open.",
+      "claim_scope": "Audited only the small-surface numerical artifact: 1D N=8 and 2D 4x4 Poisson/CHSH ground states at G=1000, with an offline traced last-taste-bit logical extraction tested as a two-qubit teleportation resource.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-08T11:02:09.389850+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The runner keeps the last KS taste bit of each species as the logical qubit, traces over cells and spectator taste bits, and reports high Bell overlap/teleportation fidelity for the two G=1000 Poisson cases.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the native preparation/readout and last-taste-bit logical-carrier selection, then rerun the small-surface checks with the Poisson/CHSH machinery source included in the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the numerical artifact supports a chosen offline extraction, but the logical carrier/readout and preparation map are asserted as an extraction choice rather than derived. Why this blocks: high Bell overlap after tracing a selected taste bit is not yet a retained theorem that the Poisson/CHSH lane provides an operational deterministic teleportation resource. Repair target: derive the last-taste-bit logical resource, Bell-measurement readout, and preparation protocol from retained Poisson/CHSH primitives and include the imported machinery source in the audit packet. Claim boundary until fixed: small-surface diagnostic evidence only, not a promoted teleportation-resource derivation."
+    },
+    {
+      "archived_at": "2026-05-29T12:08:56.850611+00:00",
+      "archived_for_note_hash": "441d4eb2ebb1b5dfb3512b855a2b1d2c394992ba9974ebae3aea5a0758f2e039",
+      "audit_date": "2026-05-23T20:06:28.514199+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_measurement_record_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "58372e79a50eaaa488f03eb81365bddab6e0b54c03c4808720aff2d825af5ace",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T200606Z-d19d2bfd-teleportation_resource_f-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the bounded extraction diagnostics, but the packet does not prove the native preparation/readout theorem or justify selecting the last taste bit as a physical deterministic carrier. The note itself keeps that bridge open and treats the result as a first-artifact diagnostic.",
+      "claim_scope": "Small-surface bounded diagnostic that the specified Poisson/CHSH ground-state extraction yields high-fidelity encoded two-qubit Bell resources on 1D N=8 and 2D 4x4 cases, restricted to ordinary quantum state teleportation.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-23T20:06:28.514199+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner builds the Poisson-coupled two-species ground state, keeps the last Kogut-Susskind taste bit of each species, traces over cells and spectator tastes, and obtains a high-Bell-overlap two-qubit logical resource on the 1D N=8 and 2D 4x4 Poisson cases.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the native preparation/readout and last-taste-bit logical-carrier selection, then rerun the small-surface checks with the Poisson/CHSH machinery source included in the restricted packet.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The primary runner genuinely constructs Hamiltonians, diagonalizes the Poisson-coupled two-species system, traces to the selected logical taste bits, and computes Bell overlap, CHSH, negativity, and sampled teleportation fidelity rather than merely printing constants. The cited bounded fidelity and record/apparatus notes support adjacent protocol pieces, but they do not derive the native Poisson preparation/readout bridge or the last-taste-bit logical-carrier selection. The source note correctly acknowledges this open gate, so the bounded numerical diagnostic is supported while the full deterministic resource derivation does not close."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:35.136157+00:00",
+      "archived_for_note_hash": "0473494b6647080959a303ed34f387ddedb83540f51f4c7bfe0c045b8753e53a",
+      "audit_date": "2026-05-29T22:02:42.483404+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_measurement_record_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "58372e79a50eaaa488f03eb81365bddab6e0b54c03c4808720aff2d825af5ace",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-teleportation_resource_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the finite small-surface reduced-resource diagnostics, and the source code is a real eigenstate/reduction/fidelity computation rather than a print-only or hard-coded certificate. The chain still does not prove the native preparation/readout theorem or justify the last taste bit as a physical deterministic teleportation carrier.",
+      "claim_scope": "Bounded small-surface offline extraction diagnostics for the stipulated last-taste-bit logical resource from the 1D N=8 and 2D 4x4 Poisson/CHSH ground states, restricted to ordinary quantum-state teleportation.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-29T22:02:42.483404+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Keep the last taste bit of each species as the logical qubit, trace over cells and spectator taste bits, and compute Bell overlap, negativity, CHSH, and standard teleportation fidelity of the resulting two-qubit density matrix.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the native preparation/readout theorem and last-taste-bit logical-carrier selection, then rerun the small-surface checks with the Poisson/CHSH machinery source included in the restricted packet.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The bounded diagnostic core is supported: the primary runner imports the Poisson/CHSH construction, diagonalizes the finite Hamiltonians, traces to the stipulated logical qubits, and computes the reported resource diagnostics. However, the note itself admits that the native preparation/readout theorem and last-taste-bit logical-carrier selection are not supplied, and the adjacent retained bounded teleportation notes do not close that bridge. The row therefore remains an open-gate conditional rather than a closed deterministic resource derivation."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.088326+00:00",
+      "audit_date": "2026-05-31T14:19:00.151565+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_measurement_record_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "58372e79a50eaaa488f03eb81365bddab6e0b54c03c4808720aff2d825af5ace",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-141701-e0de320b-teleportation_resource_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the stated small-surface extraction rather than merely printing constants, but the chain does not close to a physical deterministic teleportation resource. The missing step is the native preparation/readout theorem selecting the last taste bit as a physical logical carrier.",
+      "claim_scope": "Bounded offline extraction diagnostic on 1D N=8 and 2D 4x4 Poisson/CHSH ground states, using the last taste bit per species as the encoded qubit and reporting Bell-resource/teleportation metrics only within that identification.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-31T14:19:00.151565+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "Keeping the last Kogut-Susskind taste bit of each species as the logical qubit and tracing over cells/spectator tastes gives a two-qubit resource whose Bell overlap, negativity, CHSH, and ideal teleportation fidelity are high on the two Poisson/CHSH small-surface cases and null on G=0.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove and supply the native preparation/readout plus last-taste-bit logical-carrier theorem, then rerun the small-surface checks and reconcile the null Bell-label table drift.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The primary runner diagonalizes the supplied small Hamiltonians, reduces the state to the last taste bit per species, and independently computes the resource metrics; the cached output matches the substantive Poisson rows in the note. However, the source note explicitly admits that the native preparation/readout and last-taste-bit carrier-selection bridge is still missing, so retained status cannot propagate to a deterministic resource theorem. The formula/table pass also finds a minor source-runner drift in the null traced Bell label: the note lists Psi+ while the runner prints Phi+ for a tied 0.500000 overlap."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.551831+00:00",
+      "audit_date": "2026-06-05T19:18:34.192282+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_measurement_record_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "126b86801cb9a9e6edb3c9a91b197e5f66d3f707f1b85ddd93112a5e18aced22",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-191647-2af7d8a828-teleportation_resource_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The bounded numerical extraction closes as an offline diagnostic, but the chain to a physical deterministic teleportation resource does not. The missing step is the native preparation/readout theorem selecting the last taste bit as an operational carrier.",
+      "claim_scope": "Bounded offline small-surface extraction of an encoded two-qubit logical resource from Poisson/CHSH ground states on 1D N=8 and 2D 4x4, under the last-taste-bit identification; no native preparation/readout, matter transfer, or FTL claim is audited as closed.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-05T19:18:34.192282+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "The runner traces cells and spectator taste bits, keeps the last Kogut-Susskind taste bit of each species as the logical qubit, and reports high Bell overlap, negativity, and ideal teleportation fidelity for the Poisson cases relative to the G=0 null case.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or cite a retained native preparation/readout theorem selecting the last taste bit as a physical deterministic carrier, then re-audit the bounded runner certificate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 3,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The primary runner is not a print-only certificate: it builds Hamiltonians, diagonalizes the small cases, traces the logical resource, and computes Bell, CHSH, negativity, and teleportation diagnostics without hard-coded result constants. The helper-source visibility and carrier-label checks repair the earlier packet/source-label issue for the bounded computation. However, the note explicitly admits that the physical native preparation/readout bridge for the last-taste-bit carrier remains unproved. Therefore the row remains an open-gate conditional artifact rather than a clean deterministic-resource theorem."
+    },
+    {
+      "archived_at": "2026-06-07T15:16:08.949679+00:00",
+      "archived_for_note_hash": "ab50b02422bff91798a7290d12ec4a2228f4cfe543f48c4aee088203d38bf691",
+      "audit_date": "2026-06-05T22:07:15.834359+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_measurement_record_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "126b86801cb9a9e6edb3c9a91b197e5f66d3f707f1b85ddd93112a5e18aced22",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-220500-8dcfe2b704-teleportation_resource_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner source genuinely computes the bounded small-surface traced-resource diagnostics rather than printing constants, and the displayed fidelity formula is consistent with the cited fixed-protocol resource note. The chain still does not derive the native preparation/readout theorem or justify the last taste bit as a physical deterministic carrier.",
+      "claim_scope": "Audited the bounded offline extraction diagnostics for the last-taste traced two-qubit resource on 1D N=8 and 2D 4x4 Poisson/CHSH ground states, excluding native preparation/readout and any matter, mass, charge, energy, or FTL claim.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-05T22:07:15.834359+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Keep the last Kogut-Susskind taste bit of each species as the logical qubit, trace over cells and spectator tastes, and use the resulting two-qubit density matrix to compute Bell overlap, negativity, CHSH, and teleportation fidelity on the small Poisson/CHSH cases.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the native preparation/readout and last-taste-bit physical-carrier theorem, then rerun the bounded small-surface resource checks with the same restricted source packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The numerical core is a first-principles finite-lattice computation from the supplied Poisson/CHSH machinery and local teleportation-resource algebra, with no external comparator or tuned empirical constant. The quoted tables are internally consistent with the fixed-protocol relation F_avg = (1 + 2<Phi+|rho|Phi+>)/3 and with the null-control behavior. However, the source note itself admits that the operational bridge selecting the last taste bit as a native physical deterministic teleportation carrier remains open. Retained bounded adjacent notes supply fidelity and apparatus/record diagnostics, but they do not close that carrier/readout bridge."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:41.530743+00:00",
+      "archived_for_note_hash": "3daa784d081d67a9a76afc6deba0c2dbce112e431170217503a858a8863ad5f7",
+      "audit_date": "2026-06-07T16:52:46.102105+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling.",
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem",
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded",
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_measurement_record_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note",
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "eb2f1bc46e1b3539c75bc53a9a934d8693cd8d600d2ab28323ae2f2e99b38af3",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-165037-36e1040eff-teleportation_resource_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical offline extraction and finite retained-axis algebra close on the stated bounded surfaces. The chain does not close as a physical deterministic teleportation-resource derivation because native preparation/readout of the retained-axis carrier remains an admitted missing bridge.",
+      "claim_scope": "Bounded offline extraction diagnostics for an encoded two-qubit logical resource from the Poisson/CHSH ground states on 1D N=8 and 2D 4x4, with finite last-taste operator algebra supplied by RALA; no native preparation/readout theorem or physical deterministic apparatus is audited as closed.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-07T16:52:46.102105+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "After tracing cells and spectator taste bits and keeping the last KS taste bit per species, the two Poisson/CHSH small-surface ground states have high Bell overlap, positive negativity, CHSH violation, and high standard teleportation fidelity relative to the null case.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the native preparation/readout theorem for the retained-axis last-taste carrier and rerun the bounded Poisson/CHSH extraction with that bridge in the restricted packet.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md",
+        "docs/TELEPORTATION_MEASUREMENT_RECORD_NOTE.md",
+        "docs/TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 2,
+        "C": 3,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The primary runner source genuinely constructs the Poisson/CHSH Hamiltonians, diagonalizes the small cases, traces to the last-taste logical qubits, and computes Bell overlap, CHSH, negativity, and teleportation fidelities without hard-coded target numerics. The included helper source supports the imported Poisson/CHSH machinery, and the RALA authority supports the finite algebraic last-axis carrier selection at retained-bounded status. However, both the source note and cited authorities explicitly leave open the native preparation/readout and physical apparatus theorem needed to realize the retained-axis carrier as a deterministic physical teleportation resource. The clean result is therefore only the bounded offline diagnostic, not the promoted physical-resource claim."
+    },
+    {
+      "archived_at": "2026-06-14T09:00:07.636521+00:00",
+      "archived_for_note_hash": "3daee337bc508ce68df4254d8a99b58d1f1cab421b0588325448b4b344a98028",
+      "audit_date": "2026-06-14T01:10:07.931524+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling.",
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem",
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded",
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_measurement_record_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note",
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "1cc56af24ec48192824c8ae0a03bf14db4dc749a6c7d77b18ca4b98fb794dde4",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-010838-e3e4a3ac59-teleportation_resource_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The bounded numerical extraction and finite RALA operator algebra are supported by the packet. The native preparation/readout and apparatus theorem realizing the retained-axis last-taste carrier as a physical deterministic teleportation resource remains explicitly missing.",
+      "claim_scope": "Bounded offline small-surface Poisson/CHSH ground-state extraction of a retained-axis logical two-qubit Bell resource, with RALA supplying finite operator-algebra support, not a native physical deterministic preparation/readout theorem.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-14T01:10:07.931524+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner's bounded extraction diagnostics on 1D N=8 and 2D 4x4 trace cells and spectator tastes, keep the last taste bit per species, and find high Bell overlap/negativity/teleportation fidelity for the Poisson cases relative to the null case.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or cite a retained native preparation/readout and apparatus theorem for the retained-axis Poisson resource, then re-audit the same bounded extraction packet.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md",
+        "docs/TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 3,
+        "C": 3,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The primary runner source genuinely constructs the finite Hamiltonian, diagonalizes the small cases, reduces to the last-taste logical qubits, and computes resource diagnostics rather than merely printing constants. Independent checks of the displayed RALA factor counts, Bell-projector normalization, and fixed-protocol fidelity formula are consistent with the reported scope. However, the source note repeatedly and explicitly leaves the native preparation/readout and apparatus bridge open, and the adjacent retained-bounded artifacts do not close that operational theorem. The row therefore cannot audit clean as a physical deterministic resource claim."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:21.128870+00:00",
+      "archived_for_note_hash": "2ffeb5cf55829018e2f6fcdde51475d38e854de2c000fd217bb4e3fab88298e5",
+      "audit_date": "2026-06-14T16:30:30.534381+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_operator_consistent_end_to_end_note": null,
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling.",
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem",
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded",
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_measurement_record_note",
+          "teleportation_operator_consistent_end_to_end_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note",
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "1cc56af24ec48192824c8ae0a03bf14db4dc749a6c7d77b18ca4b98fb794dde4",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-162808-afbae02ff9-teleportation_resource_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner and helper sources genuinely compute finite Hamiltonian ground states, trace to the retained logical bits, and check resource diagnostics; RALA supplies retained-bounded finite operator algebra. The chain does not close to a physical deterministic teleportation resource because no native preparation/readout or apparatus theorem realizes the offline retained-axis carrier.",
+      "claim_scope": "Bounded offline extraction of a retained-axis logical two-qubit Bell resource on 1D N=8 and 2D 4x4 Poisson/CHSH cases, with native preparation/readout and apparatus realization left open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-14T16:30:30.534381+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Poisson/CHSH small-surface ground states, after tracing cells and spectator tastes, contain a high-fidelity retained-axis logical Bell resource relative to the null case under the last-taste-bit identification.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the native preparation/readout and apparatus theorem for the retained-axis last-taste carrier, then rerun the bounded Poisson resource checks with that bridge included in the restricted packet.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 3,
+        "C": 3,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The primary and helper code instantiate the finite lattice Hamiltonian, diagonalize it, reduce the state to the retained logical qubits, and compute the reported Bell/resource diagnostics rather than merely printing constants. The retained-axis algebra authority is retained_bounded and supports the finite logical-carrier convention. However, the source note explicitly preserves the native preparation/readout and apparatus theorem as an open bridge, and the operator-consistent end-to-end authority is meta/conditional support rather than retained closure."
+    },
+    {
+      "archived_at": "2026-06-17T10:32:24.643269+00:00",
+      "archived_for_note_hash": "11521a87c290269b30138bb18b36d6943fc4bc286a7175b8465fba98c00a75f2",
+      "audit_date": "2026-06-16T01:03:17.489126+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_microscopic_closure_note": "Within the retained-axis taste-apparatus model, ordinary quantum state teleportation has a computed stabilizer-Hamiltonian Bell-record write, an exponential pointer+bath decoherence bound for the candidate family, and a native conservation-ledger commutation class; uniqueness, hardware construction, resource preparation, retained readout/correction scaling, object transport, and FTL transport are outside scope.",
+          "teleportation_operator_consistent_end_to_end_note": null,
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling.",
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_microscopic_closure_note": "bounded_theorem",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem",
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_microscopic_closure_note": "retained_bounded",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded",
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_measurement_record_note",
+          "teleportation_microscopic_closure_note",
+          "teleportation_operator_consistent_end_to_end_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note",
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 8.748,
+        "runner_hash": "1b319e081c066147239237256908aef39755fcc01fd3255c1a873f517b43a978",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-010005-a56551433b-teleportation_resource_from_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely diagonalizes the finite Poisson/CHSH Hamiltonians, traces to the retained-axis logical two-qubit resource, and reports consistent Bell overlap, negativity, CHSH, and teleportation-fidelity diagnostics. The chain does not close to a physical deterministic teleportation resource because no cited authority derives native Poisson-resource preparation plus retained-axis readout/apparatus as a full theorem.",
+      "claim_scope": "Bounded offline extraction on 1D N=8 and 2D 4x4 Poisson/CHSH ground states, using retained-axis logical qubits, with native preparation/readout still open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-16T01:03:17.489126+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "After tracing cells and spectator taste bits, the Poisson/CHSH small-surface ground states contain a high-fidelity retained-axis logical Bell resource relative to the null case.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the native Poisson-resource preparation and retained-axis readout/apparatus theorem, then rerun the bounded extraction and end-to-end checks under that theorem.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md",
+        "docs/TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md",
+        "docs/TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 3,
+        "C": 3,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the finite offline resource extraction is computed, but the native preparation/readout and full apparatus theorem for turning that retained-axis resource into an operational deterministic physical resource is still admitted rather than derived. Why this blocks: RALA closes the finite logical-operator algebra, and the apparatus notes provide bounded candidates, but they explicitly do not force resource preparation, unique apparatus dynamics, or a complete native detector/readout theorem from the framework baseline. Repair target: prove and audit the native preparation/resource-production plus retained-axis readout apparatus theorem for this Poisson resource. Claim boundary until fixed: the bounded small-surface Bell-resource diagnostics stand as support, not as a retained teleportation-resource theorem."
+    },
+    {
+      "archived_at": "2026-06-19T10:12:10.187792+00:00",
+      "archived_for_note_hash": "e3d3d2901b4a37ab3e1c16c8c341fc801cadc787a317fa41a3dc159b1d79ec15",
+      "audit_date": "2026-06-18T09:00:47.866028+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "Finite sampled support only: the declared Poisson/CHSH finite Hamiltonians have an affine sampled path with positive sampled gaps on 1D N=8 and 2D 4x4, and the G=1000 endpoints reproduce the traced logical Bell-resource diagnostics; no physical apparatus/readout or all-G/continuum gap theorem is audited.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_microscopic_closure_note": "Within the retained-axis taste-apparatus model, ordinary quantum state teleportation has a computed stabilizer-Hamiltonian Bell-record write, an exponential pointer+bath decoherence bound for the candidate family, and a native conservation-ledger commutation class; uniqueness, hardware construction, resource preparation, retained readout/correction scaling, object transport, and FTL transport are outside scope.",
+          "teleportation_operator_consistent_end_to_end_note": null,
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling.",
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_microscopic_closure_note": "bounded_theorem",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem",
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_microscopic_closure_note": "retained_bounded",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded",
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16",
+          "teleportation_measurement_record_note",
+          "teleportation_microscopic_closure_note",
+          "teleportation_operator_consistent_end_to_end_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note",
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "1b319e081c066147239237256908aef39755fcc01fd3255c1a873f517b43a978",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-teleportation_resource_from_poisson_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite numerical extraction closes on its own bounded terms, and the retained-axis algebra is supplied by a retained-bounded RALA authority. The full deterministic physical teleportation-resource chain does not close because the native preparation/readout/apparatus theorem for producing and reading this Poisson resource remains missing.",
+      "claim_scope": "Bounded offline small-surface evidence that the 1D N=8 and 2D 4x4 Poisson/CHSH ground states contain a high-fidelity retained-axis logical two-qubit Bell resource after tracing cells and spectator tastes, while physical preparation/readout remains open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T09:00:47.866028+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner diagonalizes the Poisson/CHSH two-species Hamiltonian on the audited small surfaces, traces cells and spectator tastes, keeps the last taste bit per species, and obtains high Bell overlap/negativity/ideal teleportation fidelity for the traced logical resource.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove and cite a retained native preparation/readout/apparatus theorem that physically produces and reads the Poisson retained-axis resource, then rerun the bounded extraction and end-to-end checks under that theorem.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md",
+        "docs/TELEPORTATION_FINITE_GAPPED_PREPARATION_PATH_SUPPORT_NOTE_2026-06-16.md",
+        "docs/TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md",
+        "docs/TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md",
+        "docs/TELEPORTATION_MEASUREMENT_RECORD_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 3,
+        "C": 3,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The primary runner and included helper source perform real finite Hamiltonian construction, diagonalization, logical reduction, Bell-resource diagnostics, and teleportation-fidelity sampling rather than printing hard-coded constants. The cited RALA authority supports the finite last-taste logical-operator selection, and the null controls separate the positive Poisson cases from G=0. However the source note explicitly preserves the native preparation/readout/apparatus theorem as open work, and several cited apparatus/preparation artifacts are bounded support or conditional rather than a closed deterministic resource theorem. The row therefore remains an open gate, not a retained teleportation-resource theorem."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:02.335459+00:00",
+      "archived_for_note_hash": "fa75b327daa663af8cdf10d7f42df9d84c9c08ffea3a00640a60e489ed28ccff",
+      "audit_date": "2026-06-19T22:01:24.760557+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "Finite sampled support only: the declared Poisson/CHSH finite Hamiltonians have an affine sampled path with positive sampled gaps on 1D N=8 and 2D 4x4, and the G=1000 endpoints reproduce the traced logical Bell-resource diagnostics; no physical apparatus/readout or all-G/continuum gap theorem is audited.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_microscopic_closure_note": "Within the retained-axis taste-apparatus model, ordinary quantum state teleportation has a computed stabilizer-Hamiltonian Bell-record write, an exponential pointer+bath decoherence bound for the candidate family, and a native conservation-ledger commutation class; uniqueness, hardware construction, resource preparation, retained readout/correction scaling, object transport, and FTL transport are outside scope.",
+          "teleportation_operator_consistent_end_to_end_note": null,
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "Bounded finite offline extraction on 1D N=8, G=1000 and 2D 4x4, G=1000 Poisson/CHSH cases, with 1D N=8, G=0 null separation, using RALA last-taste logical carriers.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling.",
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_microscopic_closure_note": "bounded_theorem",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem",
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_microscopic_closure_note": "retained_bounded",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded",
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16",
+          "teleportation_measurement_record_note",
+          "teleportation_microscopic_closure_note",
+          "teleportation_operator_consistent_end_to_end_note",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note",
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "10064ae4b0b8155b5210083f0d07bb0a7be1b789f1be8c58ea2cd233a56dc0b1",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-teleportation_resource_from_poisson_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite extraction computation closes for the stated small surfaces and is supported by retained-bounded RALA. The full parent chain does not close because the native preparation/readout and apparatus theorem for producing and reading the Poisson resource as a physical deterministic teleportation resource remains missing.",
+      "claim_scope": "Bounded offline extraction on 1D N=8 and 2D 4x4 Poisson/CHSH ground states, with RALA last-taste logical-operator support, while physical deterministic preparation/readout remains open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-19T22:01:24.760557+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Poisson/CHSH small-surface ground states, after tracing cells and spectator tastes and keeping the last retained taste bit per species, contain a high-fidelity retained-axis logical Bell resource relative to the null case.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove and audit the native preparation/readout and apparatus bridge for the retained-axis Poisson resource, then re-audit the parent; otherwise leave the bounded finite extraction core as the citeable theorem.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 3,
+        "C": 3,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the runner computes the bounded offline finite extraction, but the parent still relies on an unproved native preparation/readout/apparatus theorem for any deterministic physical teleportation-resource claim; one cited end-to-end artifact is explicitly conditional/meta. Why this blocks: RALA and the finite runners justify the retained-axis algebra and the 1D/2D traced Bell-resource diagnostics, but they do not derive a native preparation schedule, physical detector/readout, durable record path, or full apparatus theorem for this Poisson resource. Repair target: prove and audit the native preparation/readout/apparatus bridge, or keep the finite extraction core split out as the only bounded theorem. Claim boundary until fixed: cite only the small-surface offline retained-axis extraction support and keep this parent row as an open gate."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.521180+00:00",
+      "audit_date": "2026-06-21T14:12:15.077179+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "Finite sampled support only: the declared Poisson/CHSH finite Hamiltonians have an affine sampled path with positive sampled gaps on 1D N=8 and 2D 4x4, and the G=1000 endpoints reproduce the traced logical Bell-resource diagnostics; no physical apparatus/readout or all-G/continuum gap theorem is audited.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_microscopic_closure_note": "Within the retained-axis taste-apparatus model, ordinary quantum state teleportation has a computed stabilizer-Hamiltonian Bell-record write, an exponential pointer+bath decoherence bound for the candidate family, and a native conservation-ledger commutation class; uniqueness, hardware construction, resource preparation, retained readout/correction scaling, object transport, and FTL transport are outside scope.",
+          "teleportation_operator_consistent_end_to_end_note": null,
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "Bounded finite offline extraction on 1D N=8, G=1000 and 2D 4x4, G=1000 Poisson/CHSH cases, with 1D N=8, G=0 null separation, using RALA last-taste logical carriers.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling.",
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_microscopic_closure_note": "bounded_theorem",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem",
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_microscopic_closure_note": "retained_bounded",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded",
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16",
+          "teleportation_measurement_record_note",
+          "teleportation_microscopic_closure_note",
+          "teleportation_operator_consistent_end_to_end_note",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note",
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "492fa01d612342594bbb73c105071200db3cdce6b82a757e6c584082266de7c6",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-teleportation_resource_from_poisson_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The bounded finite extraction core closes on the supplied runner and retained-bounded RALA authority. The parent physical deterministic resource chain does not close because the native preparation/readout/apparatus bridge remains explicitly unsupplied.",
+      "claim_scope": "Bounded finite offline extraction on 1D N=8 and 2D 4x4 using the retained-axis last-taste logical algebra, with null-control separation; no physical deterministic preparation/readout/apparatus theorem.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T14:12:15.077179+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "On the two default finite surfaces, the runner diagonalizes the Poisson/CHSH Hamiltonian, traces cells and spectator tastes, keeps the last retained taste bit per species, and finds high-fidelity logical Bell resources for the Poisson cases while the G=0 null control fails.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove and wire a native preparation/readout/apparatus theorem for producing and measuring the retained-axis Poisson resource as a deterministic physical teleportation resource, then rerun the bounded extraction certificates.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md",
+        "docs/TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md",
+        "docs/TELEPORTATION_FINITE_GAPPED_PREPARATION_PATH_SUPPORT_NOTE_2026-06-16.md",
+        "docs/TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 3,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the finite diagonalization and traced-resource computation is genuine and passes, but the parent row still needs a native preparation/readout/apparatus theorem to make the Poisson resource a physical deterministic teleportation resource. Why this blocks: RALA and the bounded apparatus/preparation candidates supply algebraic and small-surface support only, not a physical production and readout path for the retained-axis carrier. Repair target: prove and audit that bridge theorem. Claim boundary until fixed: cite only the bounded offline finite extraction core and the G=0 versus Poisson contrast."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.508662+00:00",
+      "audit_date": "2026-07-02T05:56:41.035125+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "Finite sampled support only: the declared Poisson/CHSH finite Hamiltonians have an affine sampled path with positive sampled gaps on 1D N=8 and 2D 4x4, and the G=1000 endpoints reproduce the traced logical Bell-resource diagnostics; no physical apparatus/readout or all-G/continuum gap theorem is audited.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_microscopic_closure_note": "Within the retained-axis taste-apparatus model, ordinary quantum state teleportation has a computed stabilizer-Hamiltonian Bell-record write, an exponential pointer+bath decoherence bound for the candidate family, and a native conservation-ledger commutation class; uniqueness, hardware construction, resource preparation, retained readout/correction scaling, object transport, and FTL transport are outside scope.",
+          "teleportation_operator_consistent_end_to_end_note": null,
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "Bounded finite offline extraction on 1D N=8, G=1000 and 2D 4x4, G=1000 Poisson/CHSH cases, with 1D N=8, G=0 null separation, using RALA last-taste logical carriers.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling.",
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_microscopic_closure_note": "bounded_theorem",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem",
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_microscopic_closure_note": "retained_bounded",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded",
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16",
+          "teleportation_measurement_record_note",
+          "teleportation_microscopic_closure_note",
+          "teleportation_operator_consistent_end_to_end_note",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note",
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "492fa01d612342594bbb73c105071200db3cdce6b82a757e6c584082266de7c6",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T055641Z-2138dc0b-teleportation_resource_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded finite extraction closes from the visible runner/helper code plus retained-bounded RALA: the code constructs the finite Hamiltonians, diagonalizes, reduces to the logical two-qubit density matrix, and computes Bell/resource diagnostics. The physical deterministic preparation/readout/apparatus theorem is explicitly firewalled as not supplied, so it is not imported as a premise for the scoped core.",
+      "claim_scope": "Bounded offline finite extraction on 1D N=8 and 2D 4x4, with RALA-sourced last-taste logical operators; native preparation/readout/apparatus remains outside the citeable core and open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-02T05:56:41.035125+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "On the two default finite surfaces, the runner diagonalizes the Poisson/CHSH finite Hamiltonians, traces cells and spectator tastes, keeps the last taste bit per species, and finds high Bell-overlap/teleportation-fidelity logical resources for the Poisson cases while the G=0 null control fails.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Recheck if future edits promote this row beyond bounded finite extraction or make the native preparation/readout/apparatus bridge load-bearing.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 3,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The primary runner is not a print-only certificate: it imports visible helper code, constructs the finite Poisson/CHSH Hamiltonians, computes ground states, performs the retained-axis trace, and computes the resource diagnostics. RALA is retained-bounded and is used only for the finite logical-operator selection. The source boundary is honest: this is clean as an open-gate row with a bounded finite extraction core, not as a deterministic physical teleportation-resource theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.845497+00:00",
+      "audit_date": "2026-07-10T02:44:11.583485+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "Finite sampled support only: the declared Poisson/CHSH finite Hamiltonians have an affine sampled path with positive sampled gaps on 1D N=8 and 2D 4x4, and the G=1000 endpoints reproduce the traced logical Bell-resource diagnostics; no physical apparatus/readout or all-G/continuum gap theorem is audited.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_microscopic_closure_note": "Within the retained-axis taste-apparatus model, ordinary quantum state teleportation has a computed stabilizer-Hamiltonian Bell-record write, an exponential pointer+bath decoherence bound for the candidate family, and a native conservation-ledger commutation class; uniqueness, hardware construction, resource preparation, retained readout/correction scaling, object transport, and FTL transport are outside scope.",
+          "teleportation_operator_consistent_end_to_end_note": null,
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "Bounded finite offline extraction on 1D N=8, G=1000 and 2D 4x4, G=1000 Poisson/CHSH cases, with 1D N=8, G=0 null separation, using RALA last-taste logical carriers.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling.",
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_microscopic_closure_note": "bounded_theorem",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem",
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_microscopic_closure_note": "retained_bounded",
+          "teleportation_operator_consistent_end_to_end_note": "meta",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded",
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_finite_gapped_preparation_path_support_note_2026-06-16",
+          "teleportation_measurement_record_note",
+          "teleportation_microscopic_closure_note",
+          "teleportation_operator_consistent_end_to_end_note",
+          "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note",
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "492fa01d612342594bbb73c105071200db3cdce6b82a757e6c584082266de7c6",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-teleportation_resource_f-095",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The included runner and helper construct and diagonalize the finite Hamiltonians, perform the logical/environment factorization and partial trace, and independently compute Bell overlap, negativity, CHSH, and teleportation fidelity. This closes the bounded finite extraction claim only; it does not close native physical preparation, readout, or apparatus realization.",
+      "claim_scope": "Bounded offline extraction of retained-axis logical two-qubit Bell resources from the stated mass-zero Poisson/CHSH ground states on 1D N=8 and 2D 4x4, including the G=0 null control.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T02:44:11.583485+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:teleportation_apparatus_dynamics_closure_note:retained_bounded->unaudited",
+      "load_bearing_step": "On the finite 1D N=8 and 2D 4x4 surfaces, diagonalizing the Poisson/CHSH Hamiltonian and tracing cells and spectator tastes while retaining the last taste bit yields high-fidelity logical Bell resources, whereas the G=0 control does not.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply and retain a one-hop native preparation/readout/apparatus theorem for the Poisson resource, replace the conditional end-to-end dependency with that closed authority, and rerun this audit.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 3,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The primary runner is substantive rather than print-only: together with the included helper it computes the finite ground states and reduced logical resources, producing the reported diagnostics. The bounded extraction therefore closes on the named surfaces, but the source expressly leaves the native preparation/readout/apparatus theorem open. In addition, the cited operator-consistent end-to-end authority is meta and explicitly conditional, so the broader physical deterministic-resource gate is not closed by the restricted packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
+  "title": "Teleportation Resource From Poisson/CHSH: First Audit",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

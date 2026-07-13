@@ -1,0 +1,379 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hierarchy_effective_potential_endpoint_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4c9929439c5831b3f87247289ee146e9c22497c29febea974de3ac1dfaa598a1",
+  "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T09:04:47.364661+00:00",
+      "archived_for_note_hash": "261e15a75d3e557f5faccd5d217b113c86625e83f48e4c8b928b510e29a941b7",
+      "audit_date": "2026-05-23T15:43:10.967477+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_effective_potential_endpoint_note": "Class-A algebraic extraction of the small-m coefficient, endpoint sums A_2/A_4/A_inf, endpoint ratio, and dimension-4 endpoint factor from the cited Matsubara free-energy density formula; no audit of the physical electroweak insertion map."
+        },
+        "dep_claim_type": {
+          "hierarchy_effective_potential_endpoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_effective_potential_endpoint_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_effective_potential_endpoint_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5906ec6e66c2993f3e231ce04ca05e1f85174e1db70dfd12753a41a352fbe3a4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T154019Z-21e75d0c-hierarchy_dimensional_co-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes R from its finite Dirac operator and the stated root arithmetic matches, but the step that would force the dimension-4 exponent, sign, and placement in the physical VEV map is not supplied. The source and cited endpoint authority both leave that effective-potential-density/det-to-v bridge open.",
+      "claim_scope": "Audited the finite-lattice condensate-density ratio at Ls=2, u0=0.9, m=0.01 and the arithmetic comparison of R^(-1/4) versus R^(-1/16), including reader-level comparison to imported C_obs; not the determinant-to-VEV or effective-potential-density bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T15:43:10.967477+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The within-scope conclusion is that among the two compression candidates probed, the dimension-4 fourth-root is in the few-percent range of the imported C_obs, while the direct sixteenth-root is too small.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-check after a retained Bridge 2 theorem derives the effective-potential-density insertion with sign, normalization, and placement; also update the stale Verification scorecard text from 2/0 to the current 5/0 runner behavior.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
+        "docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The source's load-bearing conclusion is a numerical closeness and ordering claim at selected lattice parameters and against an imported observed prefactor. The runner is substantive for the finite-matrix part: it builds the APBC staggered Dirac operator, inverts it, forms R, and checks the root arithmetic without using C_obs in PASS gates. That still does not derive the physical insertion map or make the D=4 fourth-root a forced framework consequence. The source verification text is stale about the scorecard count, saying 2/0 while the supplied runner reports 5/0, though the printed numerical values are consistent."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.064719+00:00",
+      "audit_date": "2026-06-05T23:28:47.995458+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_effective_potential_endpoint_note": "Class-A algebraic extraction of the small-m coefficient, endpoint sums A_2/A_4/A_inf, endpoint ratio, and dimension-4 endpoint factor from the cited Matsubara free-energy density formula; no audit of the physical electroweak insertion map."
+        },
+        "dep_claim_type": {
+          "hierarchy_effective_potential_endpoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_effective_potential_endpoint_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_effective_potential_endpoint_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5906ec6e66c2993f3e231ce04ca05e1f85174e1db70dfd12753a41a352fbe3a4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260605-232552-3dd0b06097-hierarchy_dimensional_compre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed arithmetic checks out: the finite-matrix ratio gives the stated roots, and the endpoint identities in the cited authority are internally consistent. The chain does not close as theorem-grade physics because the effective-potential-density / det-to-v insertion bridge fixing sign, placement, and exponent remains open, and C_obs is an imported comparator.",
+      "claim_scope": "Audited the bounded numerical diagnostic that the finite APBC Dirac runner computes R ~= 1.154690 at chosen lattice parameters, verifies the displayed root/structural arithmetic, and shows R^(-1/4) is much closer than R^(-1/16) to the imported C_obs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T23:28:47.995458+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:5906ec6e->8964cc22",
+      "load_bearing_step": "Among the two compression candidates probed, the dimension-4 fourth-root R^(-1/4) is in the few-percent range of the imported C_obs, while the direct sixteenth-root R^(-1/16) is too small.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-check after a retained Bridge 2 theorem supplies the sign, normalization, and placement and the runner tests a derived exponent rather than comparing selected candidates to C_obs.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
+        "docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source genuinely builds and inverts the finite staggered Dirac operator rather than printing the condensate ratio, and its five PASS gates are intra-framework arithmetic or code-transparency guards with no observed-target PASS condition. However, the note's load-bearing conclusion is still a numerical ordering/closeness statement at selected inputs against an imported electroweak prefactor. The cited endpoint note also explicitly leaves Bridge 2, the physical dimension-4 insertion into the electroweak scale map, open. This supports audited_numerical_match, not audited_clean."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.174471+00:00",
+      "audit_date": "2026-06-13T02:35:21.260206+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_effective_potential_endpoint_note": "Class-A algebraic extraction of the small-m coefficient, endpoint sums A_2/A_4/A_inf, endpoint ratio, and dimension-4 endpoint factor from the cited Matsubara free-energy density formula; no audit of the physical electroweak insertion map."
+        },
+        "dep_claim_type": {
+          "hierarchy_effective_potential_endpoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_effective_potential_endpoint_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_effective_potential_endpoint_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "8964cc22450a2ec0835078759127c41a839de6ce9179c9ea2059c2b8c5d840af",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260613-022548-e99994729f-hierarchy_dimensional_compre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-matrix arithmetic and root comparisons check out, but the chain to a theorem-grade physical dimensional-compression statement does not close. The missing step is the effective-potential-density/det->v insertion bridge fixing the sign, placement, and exponent rather than selecting the root by comparator behavior.",
+      "claim_scope": "Audited the bounded numerical diagnostic that the finite Lt condensate-density ratio R gives distinct R^(-1/4) and R^(-1/16) compression candidates, with the D=4 candidate closer to the imported observed prefactor; no effective-potential-density or det->v bridge is audited as closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T02:35:21.260206+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:8964cc22->0870f004",
+      "load_bearing_step": "Among the two compression candidates probed, the dimension-4 fourth-root is the one in the few-percent range of the imported C_obs, while the direct sixteenth-root is too small.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-audit after Bridge 2 supplies the effective-potential-density insertion theorem; if the D=4 exponent is promoted from candidate to derived input, include the heat-kernel sister note as an explicit dependency.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
+        "docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Independent arithmetic from R = 1.1546901938 gives R^(-1/4) = 0.9646807905, R^(-1/16) = 0.9910507799, and distances to C_obs of about 0.002241 versus 0.024129, so the advertised numerical ordering is internally consistent. The runner source genuinely constructs a finite APBC staggered Dirac matrix and computes the condensate ratio, and its five current PASS gates avoid observed-target imports. However, the scientific load-bearing step remains a chosen-parameter/comparator match: neither the source note nor the cited endpoint authority derives the physical insertion, sign, or placement of the dimension-4 correction into det->v."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:47.009059+00:00",
+      "archived_for_note_hash": "3cd611c2ddb659ee77e3819f753a0326dd0b75d53b74c5c924083c75dbc37f1d",
+      "audit_date": "2026-06-14T03:18:18.262749+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_effective_potential_endpoint_note": "Class-A algebraic extraction of the small-m coefficient, endpoint sums A_2/A_4/A_inf, endpoint ratio, and dimension-4 endpoint factor from the cited Matsubara free-energy density formula; no audit of the physical electroweak insertion map."
+        },
+        "dep_claim_type": {
+          "hierarchy_effective_potential_endpoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_effective_potential_endpoint_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_effective_potential_endpoint_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "0870f0043023db7dd6c16bb34da765f9ac8f31cbc1c4481f811f3529e593180f",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260614-031452-f66f98a854-hierarchy_dimensional_compre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic ordering closes, but the theorem chain does not: the D=4 readout/effective-potential-density bridge, sign, and placement into det -> v remain explicitly open. The C_obs comparison is an external comparator at selected numerical inputs.",
+      "claim_scope": "Audited the numerical diagnostic that the finite-lattice ratio R gives R^(-1/4) ~= 0.96468 and R^(-1/16) ~= 0.99105, with the fourth-root closer to imported C_obs ~= 0.96692, excluding any closed effective-potential-density bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T03:18:18.262749+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Among the two compression candidates probed, the dimension-4 fourth-root is in the few-percent range of imported C_obs, while the direct sixteenth-root is too small.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-check runner/source drift: the note says SCORECARD 5/0 but the provided cache is 7/0, and the runner's source-firewall reads docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md rather than this companion; a future clean attempt needs the D=4 readout/effective-potential-density bridge supplied and cited.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
+        "docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Independent arithmetic from the displayed ratio gives R^(-1/4) = 0.9646807905 and R^(-1/16) = 0.9910507800, so the stated ordering against C_obs = 0.9669215187 is correct. That remains a numerical match at selected lattice parameters against an imported observed prefactor, not a derived D=4 insertion into the VEV map. The cited endpoint authority leaves Bridge 2, the dimension-4 insertion/readout theorem with sign and placement, open. The provided runner also drifts from the note by reporting 7 pass gates while the note expects 5 and by checking parent-note source-firewall text."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.460675+00:00",
+      "audit_date": "2026-06-16T03:09:41.951567+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_effective_potential_endpoint_note": "Class-A algebraic extraction of the small-m coefficient, endpoint sums A_2/A_4/A_inf, endpoint ratio, and dimension-4 endpoint factor from the cited Matsubara free-energy density formula; no audit of the physical electroweak insertion map."
+        },
+        "dep_claim_type": {
+          "hierarchy_effective_potential_endpoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_effective_potential_endpoint_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_effective_potential_endpoint_note"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "24a8edd368f4b4c3ac07670ded8faa4fd4db02fa07948a31ccd38b4a8f8e612d",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260616-030606-e5e3ec31ae-hierarchy_dimensional_compre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic and runner/source firewall checks close for the narrowed numerical diagnostic. The physical chain still does not close because the effective-potential-density or det-to-VEV bridge fixing the sign, placement, and exponent of the correction is explicitly left open.",
+      "claim_scope": "Audited the bounded numerical diagnostic that the finite-lattice condensate-density ratio at the selected u0=0.9, m=0.01 inputs gives R^(-1/4) ~= 0.964681 and R^(-1/16) ~= 0.991051, with the D=4 candidate closer to imported C_obs ~= 0.966922 while the effective-potential-density bridge remains open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T03:09:41.951567+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:24a8edd3->00aac3ac",
+      "load_bearing_step": "Among the two compression candidates probed, the dimension-4 fourth-root is in the few-percent range of the imported C_obs, while the direct sixteenth-root is too small.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-audit after a retained bridge theorem derives the dimension-4 effective-potential-density insertion into the physical VEV map; also verify that any runner reference to the heat-kernel sister note is either wired as a dependency or remains explicitly non-load-bearing.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
+        "docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Independent arithmetic reproduces the displayed values: the APBC spectral formula gives cond(Lt=2) ~= 0.0030863245, cond(Lt=10) ~= 0.0035637486, R ~= 1.1546901938, R^(-1/4) ~= 0.9646807905, and R^(-1/16) ~= 0.9910507799. Issue: the load-bearing physical interest is still a numerical match at selected lattice inputs against imported C_obs, not a derived insertion theorem. Why this blocks clean closure: the cited endpoint authority and the source note both leave Bridge 2, the dimension-4 insertion into the electroweak scale map, open. Repair target: derive the effective-potential-density/det-to-VEV bridge with sign, normalization, and placement so the compression exponent is forced rather than selected by comparator fit."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.540807+00:00",
+      "audit_date": "2026-06-18T13:11:13.511335+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_effective_potential_endpoint_note": "Audited the bounded algebraic extraction of the small-m coefficient, APBC endpoint sums, ratio A_inf/A_2, and formal dimension-4 endpoint factor from the provided Matsubara free-energy density formula; no physical electroweak insertion theorem was audited."
+        },
+        "dep_claim_type": {
+          "hierarchy_effective_potential_endpoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_effective_potential_endpoint_note": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_effective_potential_endpoint_note"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "00aac3acb1a9b4dce51c800ac71ec02182e4978d7f9ea8ebea1aab79d223d373",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic diagnostic closes at the chosen inputs, and the runner keeps observed-target values out of PASS gates. The derivational chain to a physical VEV scale does not close because the effective-potential-density/det->VEV insertion bridge fixing sign, placement, and normalization remains unsupplied.",
+      "claim_scope": "Audited the bounded numerical diagnostic: the finite-lattice condensate-density ratio at u0=0.9, m=0.01, the D=4 and D=16 inverse-root arithmetic, and the numerical ordering/comparison against imported C_obs, excluding any physical det->VEV bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T13:11:13.511335+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:hierarchy_effective_potential_endpoint_note:retained_bounded->unaudited",
+      "load_bearing_step": "Among the two compression candidates probed, the dimension-4 fourth-root R^(-1/4) is in the few-percent range of the imported C_obs while the direct sixteenth-root R^(-1/16) is too small.",
+      "load_bearing_step_class": "G",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check any future promotion for direct retained dependencies proving the D=4 insertion/readout bridge rather than relying on best-match-to-C_obs selection.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
+        "docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner source genuinely computes the finite APBC Dirac condensate ratio and performs the inverse-root arithmetic; its seven PASS gates are five algebraic/code-scope checks and two source-firewall checks. However, the load-bearing scientific comparison remains a numerical match/order statement at selected u0,m and against an imported observed prefactor, not a theorem forcing the D=4 exponent or mapping it to the physical VEV. Repair target: a retained effective-potential-density insertion theorem with explicit sign, placement, and normalization."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hierarchy_dimensional_compression.py",
+  "title": "Hierarchy Dimensional Compression Audited-Scope Narrowing Bounded Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,201 @@
+{
+  "audit_date": "2026-05-05T04:42:28.879857+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 8.709,
+    "runner_hash": "bb0f86c1bca9d547eba476212a3c43bd39192823a69c7919705c5a48a65bbebe",
+    "transitive_descendants": 295
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-fresh-second-source_resolved_wavefield_v2_note-20260505",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The fresh cached run for runner SHA bb0f86c1bca9d547eba476212a3c43bd39192823a69c7919705c5a48a65bbebe exits 0 and its stdout matches the note's reductions, row table, TOWARD count, and fitted exponents. The visible runner computes the finite-lattice fields, propagation, centroid shifts, phase-ramp metrics, and power fits rather than printing the frozen table as constants; this closes only the bounded runner-output claim.",
+  "claim_id": "source_resolved_wavefield_v2_note",
+  "claim_scope": "Bounded finite-lattice numerical claim that scripts/source_resolved_wavefield_v2.py, on the stated h=0.25, W=4, L=8 source family and five source strengths, produces exact zero-source same-site and wavefield reduction, positive wavefield deflections for all five rows, near-unit centroid mass-scaling exponents, and near-unit detector phase-ramp slope/span exponents.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-05T04:42:28.879857+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-05T03:37:59.331688+00:00",
+      "auditor": "codex-cli-gpt-5.5-20260505-033337-de2b049d-source_resolved_wavefiel-008",
+      "auditor_family": "codex-gpt-5.5",
+      "claim_scope": "Audited the bounded exact-lattice numerical claim that the provided wavefield v2 runner produces zero-source reduction, TOWARD wavefield deflections for all five source strengths, near-linear mass scaling, and near-linear detector phase-ramp slope/span scaling on the stated finite lattice family.",
+      "claim_type": "bounded_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-05-05T04:42:28.879460+00:00",
+      "auditor": "codex-fresh-second-source_resolved_wavefield_v2_note-20260505",
+      "auditor_family": "codex-gpt-5",
+      "claim_scope": "Bounded finite-lattice numerical claim that scripts/source_resolved_wavefield_v2.py, on the stated h=0.25, W=4, L=8 source family and five source strengths, produces exact zero-source same-site and wavefield reduction, positive wavefield deflections for all five rows, near-unit centroid mass-scaling exponents, and near-unit detector phase-ramp slope/span exponents.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/minimal_source_driven_field_probe.py",
+    "scripts/source_resolved_wavefield_escalation.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": "The Frozen Result reports zero-source same-site and wavefield shifts of +0.000000e+00, positive wavefield deflections for s=0.0005 through 0.0080, and fitted exponents 1.00, 1.00, 0.99, 1.02, and 1.01 for instantaneous, same-site, wavefield, phase-ramp slope, and phase-ramp span scaling.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ad863401c46fa5024c716e019b34273aac7112e9133c77c9923de445706c6f5e",
+  "note_path": "docs/SOURCE_RESOLVED_WAVEFIELD_V2_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should keep the scope bounded to the current runner/cache output and not import the source note's broader retained-lane prose.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369708+00:00",
+      "archived_for_note_hash": "43a92c653f7251bf90d84b5708506de1d4bcdc3cfd731658309c73641730a6d8",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.236997+00:00",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The current runner reproduces the phase-ramp law table, but the law is conditional on the selected wavefield update inherited from the conditional escalation lane, and the row table labels wave/instantaneous ratios as wave/same.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "The larger exact-lattice v2 runner shows that the detector-line phase-ramp slope and span scale close to linearly with source strength while zero-source reduction, TOWARD sign, and near-linear centroid scaling persist.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md",
+        "docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md",
+        "docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md",
+        "docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The source-strength phase-ramp fit is reproducible, but it is built on the same underived finite-speed wavefield update and calibrated normalization as the conditional wavefield parent; additionally, the table's wave/same column is wave_delta / inst_delta, while the true mean wave/same ratio appears only in the summary as 47.680. Why this blocks: a retained exact-lattice phase-ramp law requires the wavefield carrier/update/normalization and comparator definitions to be audit-clean; otherwise the fitted slope/span exponents are a conditional property of one selected runner architecture. Repair target: close the wavefield green pocket and escalation notes, correct the table to report wave/inst and wave/same separately, and add hard assertions for zero-source reduction, 5/5 TOWARD, centroid exponents, phase-ramp slope/span exponents, R^2, and comparator ratios. Claim boundary until fixed: it is safe to claim that the current runner gives zero-source shifts 0, 5/5 TOWARD, wavefield F~M exponent 0.99, phase-ramp slope exponent 1.02, span exponent 1.01, mean R^2 0.961, and true mean wave/same 47.680; it is not safe to claim a retained phase-ramp law beyond this conditional exact-lattice wavefield v2 probe."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.813597+00:00",
+      "audit_date": "2026-05-03T16:14:31.327550+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.144,
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-source-v2-hostile-fresh-2026-05-03",
+      "auditor_confidence": 0.84,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner reproduces the frozen zero-source check, TOWARD sign, table values, and near-unit fitted exponents, but this closes only a configured finite numerical proxy. It does not derive the phase-ramp observable, source law, normalization, or wavefield update as a theorem from independent retained inputs.",
+      "claim_scope": "Audited the claim that the frozen larger exact-lattice wavefield family establishes a source-strength detector-line phase-ramp law, with exact zero-source reduction, TOWARD sign, and near-linear phase-ramp slope/span scaling on the listed source-strength ladder.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T16:14:31.327550+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The note promotes the fitted detector-line phase-ramp slope/span exponents, approximately 1.02 and 1.01 over five configured source strengths, into a retained exact-lattice phase-ramp source-strength law.",
+      "load_bearing_step_class": "configured_numerical_proxy",
+      "notes_for_re_audit_if_any": "Re-audit should prioritize an exact derivation that replaces the configured exponent-fit proxy and proves the detector-line phase-ramp readout/source law rather than fitting it on this five-point ladder.",
+      "open_dependency_paths": [
+        "missing retained theorem deriving the detector-line phase-ramp source-strength law from exact-lattice primitives and the finite-speed wavefield construction"
+      ],
+      "runner_check_breakdown": {
+        "checks": [
+          "Current runner execution completed and matches the note's frozen table and summary numbers.",
+          "The log reports zero-source same-site and wavefield shifts of +0.000000e+00.",
+          "The log reports TOWARD rows 5/5 and fitted exponents: instantaneous 1.00, same-site 1.00, wavefield 0.99, phase-ramp slope 1.02, and phase-ramp span 1.01.",
+          "The runner computes detector-line phase-ramp metrics and power-law fits on the fixed source-strength ladder."
+        ],
+        "does_not_check": [
+          "It does not prove a structural theorem for the phase-ramp source law beyond the configured finite numerical cases.",
+          "It does not independently derive the detector-line phase-ramp observable as the required physical readout.",
+          "It does not remove dependence on the chosen family parameters, source cluster, source ladder, gain normalization, wavefield update parameters, or imported wavefield construction.",
+          "It does not establish continuum transfer or an experimental-amplitude bridge, which the note itself excludes."
+        ]
+      },
+      "verdict_rationale": "Issue: The load-bearing theorem step is the promotion of a five-point fitted detector-line phase-ramp proxy on one frozen exact-lattice family into a retained exact-lattice phase-ramp law. Why this blocks: A positive_theorem requires the law to follow from retained inputs, but the available packet only shows configured numerical consistency for selected parameters and readouts; the runner checks the proxy after constructing the wavefield candidate rather than proving the hard bridge. Repair target: Provide an exact derivation that the detector-line phase-ramp slope/span scale with source strength for the stated family, including the observable/readout, normalization, source law, and wavefield update, plus a runner that verifies the derived theorem or fails when the bridge is removed. Claim boundary until fixed: The note may safely claim a frozen-run numerical observation: on the listed parameter family and source-strength ladder, zero-source reduction holds and the computed phase-ramp slope/span fits are close to linear."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 8,
+    "D": 0,
+    "total_pass": 8
+  },
+  "runner_path": "scripts/source_resolved_wavefield_v2.py",
+  "title": "Source-Resolved Wavefield V2 Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The scoped claim is exactly the finite computation printed by the current cache: both zero-source shifts are zero, all five wavefield centroid shifts are positive, and the fitted exponents are near unity for the centroid and detector phase-ramp observables. No external comparator, continuum limit, generated-geometry transfer, or experimental-amplitude bridge is needed for this bounded scope. The clean verdict should not be read as validating any broader continuum or physical-source theorem beyond the stated finite runner family."
+}

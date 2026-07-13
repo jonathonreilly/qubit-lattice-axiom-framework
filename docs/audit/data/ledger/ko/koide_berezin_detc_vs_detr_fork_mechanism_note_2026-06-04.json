@@ -1,0 +1,232 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (conditional mechanism / route-pruning support)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "key_terminology",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.907,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "88f24e0eee9b3948021e383123dc9e9402f92962f3b3d4cae592fd2ad487d606",
+  "note_path": "docs/KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:51:39.635744+00:00",
+      "audit_date": "2026-06-11T14:10:31.183621+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30": "Audited only the narrow claim that the listed real-representation, CPT/Theta, signed-det_R/readout, and real-D constraints do not force the (1,1) block-count weighting over the surviving (1,2) dimension weighting."
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30": "no_go"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30": "retained_no_go"
+        },
+        "deps": [
+          "key_terminology",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30"
+        ],
+        "load_bearing_score": 9.587,
+        "runner_hash": "e885284796c93acb375ef35be6415e0ecfa93c3e55ff1a75f3ff3b3a36ef19fc",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-140810-6f4ce2b3ef-koide_berezin_detc_vs_detr_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite algebra, determinant, Pfaffian, complex-structure, and Q = (1 + 2r) / 3 checks support the four table entries under the stated model-cell choices. The source does not claim to derive or adopt J, so the still-open native polarization selector is outside this audited scope.",
+      "claim_scope": "Four-cell mechanism check separating polarization from statistics for the real versus holomorphic doublet count in R[Z_3] = R (+) C, with the corresponding r and Q values.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-11T14:10:31.183621+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_real_rep_block_count_permitted_not_forced_note_2026-05-30:retained_no_go->unaudited",
+      "load_bearing_step": "The r = 1/2 cell follows from holomorphic polarization, choosing the doublet complex structure J and counting the doublet as one complex slot; changing Gaussian to Berezin statistics alone does not supply it because the real Majorana Berezin cell remains on the real-slot count.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the generic Q-lever citation wording, but the restricted packet and runner close the algebra directly for this scoped open gate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The runner source performs finite algebraic checks rather than relying only on printed PASS lines, and the independent formula check matches the displayed decompositions, determinant counts, Berezin/Pfaffian identities, and r-to-Q table. No external comparator, fitted value, or physical charged-lepton identification is imported. The complex-slot count is a scoped holomorphic-polarization model-cell assumption, not a claimed native derivation, which is consistent with claim_type open_gate."
+    },
+    {
+      "archived_at": "2026-07-07T18:55:28.369524+00:00",
+      "archived_for_note_hash": "c0a9e0737c359a35f6a7d1c5f9d91970f249468cceb45b277325798e13734b8f",
+      "audit_date": "2026-06-18T06:43:19.581283+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30": "Audited only the narrow claim that the listed real-representation/CPT/signed-readout constraints do not force the (1,1) block-count weighting or make the (1,2) dimension weighting incompatible."
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30": "no_go"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30": "retained_no_go"
+        },
+        "deps": [
+          "key_terminology",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30"
+        ],
+        "load_bearing_score": 9.0,
+        "runner_hash": "e885284796c93acb375ef35be6415e0ecfa93c3e55ff1a75f3ff3b3a36ef19fc",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Q lever is retained, and the four cell assignments are algebraic model checks in the provided runner; no external comparator or unretained premise is used to reach the scoped mechanism statement. The note explicitly leaves derivation or adoption of J open, so that missing positive selector is outside the audited closure.",
+      "claim_scope": "Audited the four explicit real/holomorphic and Gaussian/Berezin model cells showing that the tested fork separates polarization choice from statistics for the Koide r and Q counts.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T06:43:19.581283+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The r = 1/2 cell follows from holomorphic polarization, i.e. choosing the doublet complex structure J and counting the doublet as one complex slot, not merely from switching Gaussian to Berezin statistics.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations keep the scope limited to the four tested model cells and do not use this as a no-go against deriving J.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The runner source constructs the C3 idempotents, real split, doublet complex structure, determinant/Pfaffian checks, and the four modeled cells rather than merely printing pass lines. The load-bearing conclusion is an algebraic comparison of explicitly scoped cells, so it is class A rather than a first-principles class C derivation. The cited physics authorities are retained-grade for the uses made here, and the broad no-go is explicitly demoted rather than claimed."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.779978+00:00",
+      "audit_date": "2026-07-07T19:10:13.295377+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0."
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "key_terminology",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 9.392,
+        "runner_hash": "d67696ed069a59d402f2670d46c1e1d625938d60a2561d6a0c95160e9f6d916e",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260707-191013-c5dd4741-koide_berezin_detc_vs_de-004",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Direct algebra gives tr(P_s)=1, tr(P_d)=2, P_s+P_d=I, J^2=-P_d, and det_R(alpha P_s + beta P_d)=alpha beta^2, so the displayed projection, trace, complex-structure, and determinant identities match. With POLARIZATION-SELECT supplied, r is the normalized doublet slot count and the cited algebraic lever Q=(1+2r)/3 gives Q=1 for r=1 and Q=2/3 for r=1/2.",
+      "claim_scope": "Conditional four-cell det_C-vs-det_R fork algebra on R[Z_3] = R (+) C: supplied real versus holomorphic polarization fixes the doublet slot count and the listed conditional (r, Q) branch values, without deriving or preferring a polarization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T19:10:13.295377+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Under POLARIZATION-SELECT, real polarization counts the doublet as two real slots while holomorphic polarization counts it as one complex slot, yielding real => r = 1, Q = 1 and holomorphic => r = 1/2, Q = 2/3.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The source note states a bounded conditional theorem and preserves the boundary that no polarization selector is derived. The runner source performs exact rational matrix/projector, determinant, complex-realification, Pfaffian, and table-consistency checks; the randomized Koide replay is explicitly motivation-tier and not used for the verdict. The only upstream cited authority is retained-grade, and no PDG value, fitted selector, or physical mass bridge is consumed by the audited claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/berezin_detc_detr_fork_2026_06_04.py",
+  "title": "Koide Berezin det_C vs det_R Fork Mechanism",
+  "transitive_descendants": 29,
+  "verdict_rationale": null
+}

@@ -1,0 +1,603 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_color_automorphism_theorem"
+  ],
+  "direct_in_degree": 9,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.004,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "26dfd880d33d43d4aaf39c2cf983704d4bf223bcb582be63ed8f0fd320f25c9c",
+  "note_path": "docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:30:26.209278+00:00",
+      "audit_date": "2026-05-05T03:33:58.630313+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 9.626,
+        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+        "transitive_descendants": 394
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260505-033337-de2b049d-g_bare_rescaling_freedom-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic scaling of the trace form and the coefficient beta follows directly from the provided canonical normalization plus the stated Wilson matching relation. However, the result is a narrow downstream repackaging of those inputs, not an independent first-principles derivation of the normalization or Wilson action choice.",
+      "claim_scope": "Given the canonical SU(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson matching formula beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the generator/connection normalization shifts beta by c^2 rather than providing an independent g_bare freedom.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-05T03:33:58.630313+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Given Tr(T_a T_b)=delta_ab/2, rescaling T_a -> c T_a gives Tr((cT_a)(cT_b))=c^2 delta_ab/2 and the Wilson matching sends beta_new=c^2 beta_old with g_bare unchanged.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the Wilson matching formula beta=2N_c/g_bare^2 is being treated as an admitted premise or as part of this row's audited scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The audited load-bearing step is a straightforward algebraic rescaling identity over the canonical trace normalization and beta matching formula. There are no external comparator checks, no new first-principles computation needed for the conclusion, and the source explicitly depends on one upstream normalization authority plus standard trace algebra. The cited authority is retained_bounded, so the narrow algebraic chain can close, but the theorem is best classified as decoration because it packages a direct consequence of the upstream canonical-normalization claim rather than adding independent closure."
+    },
+    {
+      "archived_at": "2026-05-22T22:55:23.495108+00:00",
+      "audit_date": "2026-05-22T15:58:40.140288+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the fiber SU(2) and base-sector Y, and the Fierz channel-count fraction R_conn = 8/9 on End(C^3), excluding physical SM-color and EW-readout identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 14.182,
+        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+        "transitive_descendants": 1161
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T155643Z-6e805e4f-g_bare_rescaling_freedom-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic scaling follows directly from the retained-bounded canonical Gram relation and the stated Wilson matching relation. The audited scope does not derive the canonical normalization itself, the Wilson action form, or the physical-color bridge.",
+      "claim_scope": "Under the canonical Cl(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the stated Wilson plaquette matching beta=2N_c/g_bare^2, a scalar dilation of the generator/connection normalization leaves the canonical surface and scales the Wilson coefficient beta by c^2 rather than supplying an independent g_bare convention.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T15:58:40.140288+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:cl3_color_automorphism_theorem:bounded_theorem->positive_theorem",
+      "load_bearing_step": "Given Tr(T_a T_b)=delta_ab/2, the rescaling T_a -> c T_a gives Tr((cT_a)(cT_b))=c^2 delta_ab/2 and correspondingly beta_new=c^2 beta_old with g_bare held fixed.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the claimed scope remains limited to the stated canonical-normalization and Wilson-plaquette surface, not to uniqueness of the Wilson action or physical color identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing step is a straightforward trace-rescaling identity plus substitution into the Wilson coefficient relation. The cited authority is retained_bounded for the canonical Gell-Mann trace normalization, and this claim stays within that algebraic normalization scope rather than using the authority's deferred physical-color identification. Because the note has zero external comparator checks and reduces to a standard algebraic consequence of the single upstream normalization claim plus stated Wilson matching, it is decoration rather than an independently clean positive theorem."
+    },
+    {
+      "archived_at": "2026-05-23T13:19:00.402192+00:00",
+      "audit_date": "2026-05-22T23:03:13.352229+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base of the 8D taste carrier, commutation with fiber SU(2) and base-sector Y, and the SU(3) Fierz channel-count fraction R_conn = 8/9; physical SM color and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 14.004,
+        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+        "transitive_descendants": 1026
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judicial-panel-per-site-k1-20260522T230313Z-g_bare_rescaling_freedom_removal_theorem-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The immediate trace-scaling and beta-scaling step is a valid class A algebraic identity, and the runner source does compute the relevant Gram rescalings rather than merely printing outcomes. However, the theorem depends on the Wilson plaquette action/matching surface beta=2N_c/g_bare^2, while the restricted one-hop authority list supplies only the CL3 normalization authority. Because an explicit action-surface premise is outside the cited retained dependency chain, the clean verdict over retained inputs is not warranted under the rubric. | The rescaling calculation itself is a valid class A algebraic identity, and the runner source materially checks the Gram and beta scaling. The CL3 cited authority supplies the canonical trace normalization sufficiently for this scoped algebraic step; its physical-color bridge caveat is not load-bearing here. However, the theorem also relies on the Wilson plaquette matching/action surface, and the restricted packet supplies no retained one-hop authority for that premise while the source note explicitly leaves Wilson-action uniqueness outside this row. The correct retained status is therefore conditional/bounded until that dependency edge is supplied or the row is narrowed to a purely conditional algebra lemma. | The central rescaling computation is a valid class A algebraic identity, and the runner source performs the relevant Gram and beta-scaling checks. The canonical trace-normalization input is supplied by the cited CL3 authority and the open physical-color bridge there is not load-bearing for this narrowed canonical-triplet claim. However, the theorem also depends on the Wilson plaquette action/matching surface beta=2N_c/g_bare^2, while the restricted packet does not provide a retained one-hop authority for that premise and the note explicitly keeps Wilson action uniqueness outside scope. That makes the applyable status conditional/bounded rather than clean. | The trace-rescaling and beta-rescaling step is a genuine class A algebraic identity, and the supplied runner actually recomputes the relevant Gram scaling rather than merely printing constants. The CL3 cited authority closes the canonical T_F=1/2 normalization for the scoped algebraic carrier, and its physical-color bridge caveat is not load-bearing here. However, the theorem also relies on the Wilson plaquette matching/action surface, which the note itself says is outside this theorem's closure and which is not supplied as a retained one-hop authority in the restricted packet. The correct terminal status is therefore conditional, not clean. | The rescaling calculation itself is a straightforward class A algebraic identity, and the runner source really recomputes the Gram scaling and beta scaling. The CL3 cited authority supplies the canonical trace normalization at retained status for the scoped algebraic use. However, the theorem also needs the Wilson plaquette matching/action surface, and the restricted packet provides no retained one-hop authority for that premise while explicitly acknowledging the Wilson action-form caveat. Therefore the retained applyable tuple is conditional/bounded rather than clean.",
+      "claim_scope": "Given canonical SU(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson plaquette matching surface beta=2N_c/g_bare^2, nontrivial scalar generator/connection rescaling violates the canonical normalization and is absorbed as beta -> c^2 beta rather than as independent g_bare freedom.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T23:03:13.352229+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T22:58:29.096441+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T225807Z-f54bd255-g_bare_rescaling_freedom-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the retained canonical SU(3) triplet trace normalization Tr(T_a T_b)=delta_ab/2 and the Wilson small-a matching beta=2N_c/g_bare^2, nontrivial scalar rescaling of the operator basis violates the canonical normalization and routes into beta rather than an independent g_bare freedom.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-22T22:59:12.964716+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T225851Z-f54bd255-g_bare_rescaling_freedom-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the canonical Cl(3) SU(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson plaquette matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the generator-valued connection violates the canonical normalization and is absorbed as beta -> c^2 beta rather than as an independent g_bare freedom.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-22T23:03:13.352229+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260522T230313Z-g_bare_rescaling_freedom_removal_theorem-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given canonical SU(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson plaquette matching surface beta=2N_c/g_bare^2, nontrivial scalar generator/connection rescaling violates the canonical normalization and is absorbed as beta -> c^2 beta rather than as independent g_bare freedom.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "Treated the Wilson matching formula as an accepted local premise despite no retained one-hop authority for that premise in the restricted packet.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The immediate trace-scaling and beta-scaling step is a valid class A algebraic identity, and the runner source does compute the relevant Gram rescalings rather than merely printing outcomes. However, the theorem depends on the Wilson plaquette action/matching surface beta=2N_c/g_bare^2, while the restricted one-hop authority list supplies only the CL3 normalization authority. Because an explicit action-surface premise is outside the cited retained dependency chain, the clean verdict over retained inputs is not warranted under the rubric. | The rescaling calculation itself is a valid class A algebraic identity, and the runner source materially checks the Gram and beta scaling. The CL3 cited authority supplies the canonical trace normalization sufficiently for this scoped algebraic step; its physical-color bridge caveat is not load-bearing here. However, the theorem also relies on the Wilson plaquette matching/action surface, and the restricted packet supplies no retained one-hop authority for that premise while the source note explicitly leaves Wilson-action uniqueness outside this row. The correct retained status is therefore conditional/bounded until that dependency edge is supplied or the row is narrowed to a purely conditional algebra lemma. | The central rescaling computation is a valid class A algebraic identity, and the runner source performs the relevant Gram and beta-scaling checks. The canonical trace-normalization input is supplied by the cited CL3 authority and the open physical-color bridge there is not load-bearing for this narrowed canonical-triplet claim. However, the theorem also depends on the Wilson plaquette action/matching surface beta=2N_c/g_bare^2, while the restricted packet does not provide a retained one-hop authority for that premise and the note explicitly keeps Wilson action uniqueness outside scope. That makes the applyable status conditional/bounded rather than clean. | The trace-rescaling and beta-rescaling step is a genuine class A algebraic identity, and the supplied runner actually recomputes the relevant Gram scaling rather than merely printing constants. The CL3 cited authority closes the canonical T_F=1/2 normalization for the scoped algebraic carrier, and its physical-color bridge caveat is not load-bearing here. However, the theorem also relies on the Wilson plaquette matching/action surface, which the note itself says is outside this theorem's closure and which is not supplied as a retained one-hop authority in the restricted packet. The correct terminal status is therefore conditional, not clean. | The rescaling calculation itself is a straightforward class A algebraic identity, and the runner source really recomputes the Gram scaling and beta scaling. The CL3 cited authority supplies the canonical trace normalization at retained status for the scoped algebraic use. However, the theorem also needs the Wilson plaquette matching/action surface, and the restricted packet provides no retained one-hop authority for that premise while explicitly acknowledging the Wilson action-form caveat. Therefore the retained applyable tuple is conditional/bounded rather than clean.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained->unaudited",
+      "load_bearing_step": "Under T_a -> c T_a, Tr((cT_a)(cT_b))=c^2 delta_ab/2, so the matched Wilson coefficient becomes beta_new=c^2 beta_old with g_bare unchanged.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a retained one-hop dependency for the Wilson plaquette matching/action-surface premise, or narrow the row title and scope to an explicitly conditional-on-Wilson-matching algebraic lemma.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The immediate trace-scaling and beta-scaling step is a valid class A algebraic identity, and the runner source does compute the relevant Gram rescalings rather than merely printing outcomes. However, the theorem depends on the Wilson plaquette action/matching surface beta=2N_c/g_bare^2, while the restricted one-hop authority list supplies only the CL3 normalization authority. Because an explicit action-surface premise is outside the cited retained dependency chain, the clean verdict over retained inputs is not warranted under the rubric. | The rescaling calculation itself is a valid class A algebraic identity, and the runner source materially checks the Gram and beta scaling. The CL3 cited authority supplies the canonical trace normalization sufficiently for this scoped algebraic step; its physical-color bridge caveat is not load-bearing here. However, the theorem also relies on the Wilson plaquette matching/action surface, and the restricted packet supplies no retained one-hop authority for that premise while the source note explicitly leaves Wilson-action uniqueness outside this row. The correct retained status is therefore conditional/bounded until that dependency edge is supplied or the row is narrowed to a purely conditional algebra lemma. | The central rescaling computation is a valid class A algebraic identity, and the runner source performs the relevant Gram and beta-scaling checks. The canonical trace-normalization input is supplied by the cited CL3 authority and the open physical-color bridge there is not load-bearing for this narrowed canonical-triplet claim. However, the theorem also depends on the Wilson plaquette action/matching surface beta=2N_c/g_bare^2, while the restricted packet does not provide a retained one-hop authority for that premise and the note explicitly keeps Wilson action uniqueness outside scope. That makes the applyable status conditional/bounded rather than clean. | The trace-rescaling and beta-rescaling step is a genuine class A algebraic identity, and the supplied runner actually recomputes the relevant Gram scaling rather than merely printing constants. The CL3 cited authority closes the canonical T_F=1/2 normalization for the scoped algebraic carrier, and its physical-color bridge caveat is not load-bearing here. However, the theorem also relies on the Wilson plaquette matching/action surface, which the note itself says is outside this theorem's closure and which is not supplied as a retained one-hop authority in the restricted packet. The correct terminal status is therefore conditional, not clean. | The rescaling calculation itself is a straightforward class A algebraic identity, and the runner source really recomputes the Gram scaling and beta scaling. The CL3 cited authority supplies the canonical trace normalization at retained status for the scoped algebraic use. However, the theorem also needs the Wilson plaquette matching/action surface, and the restricted packet provides no retained one-hop authority for that premise while explicitly acknowledging the Wilson action-form caveat. Therefore the retained applyable tuple is conditional/bounded rather than clean."
+    },
+    {
+      "archived_at": "2026-05-23T15:58:55.019956+00:00",
+      "audit_date": "2026-05-23T14:46:02.838472+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) action on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the displayed fiber SU(2) and base-sector Y, and the resulting SU(3) Fierz/channel-count fraction 8/9 on that carrier only."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 13.974,
+        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+        "transitive_descendants": 1005
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T144328Z-f38d530c-g_bare_rescaling_freedom-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic Gram and beta-scaling identity closes. The broader claimed removal of continuum A -> cA rescaling freedom does not close from the packet, because the note does not prove that a continuum connection-field reparametrization is exhausted by the forbidden generator-basis dilation, nor justify holding g_bare unchanged under the same Wilson matching relation.",
+      "claim_scope": "Audited the algebraic basis-rescaling statement: under canonical Tr(T_a T_b)=delta_ab/2, replacing the generator basis by cT_a violates canonical normalization and scales the Wilson coefficient by c^2 if g_bare is held fixed.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T14:46:02.838472+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:cl3_color_automorphism_theorem:bounded_theorem->positive_theorem",
+      "load_bearing_step": "Given Tr(T_a T_b)=delta_ab/2, the rescaling T_a -> c T_a gives Tr((cT_a)(cT_b))=c^2 delta_ab/2 and beta_new=c^2 beta_old, with g_bare held fixed.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained theorem equating the continuum A -> cA reparametrization on the CN-fixed connection with the noncanonical basis dilation analyzed here, or narrow the claim to the basis-rescaling beta identity.",
+      "open_dependency_paths": [
+        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 11,
+        "C": 8,
+        "D": 12,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The cited authority supplies the canonical T_F=1/2 trace normalization on the algebraic triplet block, and the runner verifies the displayed scaling arithmetic. However, the theorem's stated target is continuum rescaling-freedom removal, while the proof only analyzes noncanonical generator-basis dilation with g_bare fixed. The missing bridge between general A -> cA reparametrization and the specific T_a -> cT_a move is load-bearing for the advertised conclusion."
+    },
+    {
+      "archived_at": "2026-05-26T14:07:36.720183+00:00",
+      "archived_for_note_hash": "b0478e6823f34f2994d77587db9bdd2a33e9413d1a8ffea379ebaa6239365d5c",
+      "audit_date": "2026-05-23T16:00:33.545696+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 13.974,
+        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+        "transitive_descendants": 1005
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T160012Z-74608d88-g_bare_rescaling_freedom-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained authority supplies the canonical T_F=1/2 trace normalization needed for the Gram calculation. The remaining step is direct algebraic substitution into the stated Wilson matching relation, so the scoped conclusion follows on its own terms.",
+      "claim_scope": "Under the canonical Cl(3) triplet generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson small-a matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the operator basis violates the canonical Gram normalization and routes into beta rather than an independent g_bare freedom.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T16:00:33.545696+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-23T15:59:45.168208+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T155925Z-74608d88-g_bare_rescaling_freedom-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the retained canonical SU(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the connection basis violates the canonical normalization and is absorbed as a c^2 shift of beta, not as independent freedom in g_bare.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-23T16:00:33.545696+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T160012Z-74608d88-g_bare_rescaling_freedom-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the canonical Cl(3) triplet generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson small-a matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the operator basis violates the canonical Gram normalization and routes into beta rather than an independent g_bare freedom.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Given Tr(T_a T_b)=delta_ab/2 and beta=2N_c/g_bare^2, rescaling T_a -> c T_a gives Tr((cT_a)(cT_b))=c^2 delta_ab/2 and beta_new=c^2 beta_old while g_bare is unchanged.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the Wilson matching formula is accepted as part of the scoped surface rather than requiring a separate cited retained dependency.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing calculation is an algebraic identity over the retained canonical generator normalization plus the stated Wilson matching surface. The runner\u2019s Section D actually constructs scaled generators, recomputes the Gram matrix, and verifies beta_new=c^2 beta_old for several c values; it does not import an external comparator or tune a numerical input for this claim. The source note explicitly does not claim that the canonical normalization or Wilson action form is uniquely forced, so the audited scope remains narrow and closes."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.039018+00:00",
+      "audit_date": "2026-05-26T16:24:45.024771+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 16.336,
+        "runner_hash": "d9933dd7a93558728bb9b6922d06396f69d73dd6dd1b715f691c0728d8ad301a",
+        "transitive_descendants": 913
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-g-bare-rescaling-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed claim explicitly scopes Wilson matching as an assumption and uses the retained color theorem only for canonical trace normalization. Under that bounded surface, the rescaling statements are exact algebraic consequences and no broader g_bare-removal theorem is asserted.",
+      "claim_scope": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T16:24:45.024771+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T16:20:49.763216+00:00",
+          "auditor": "codex-gpt-5.5-fresh-g-bare-rescaling-audit-2026-05-26-C75Ktt",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional algebraic implication that canonical trace normalization plus scoped Wilson matching/action-surface normalization and scalar rescaling by c sends the Gram form to c^2 Gram and the matched beta coefficient to c^2 beta.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-26T16:24:45.024552+00:00",
+          "auditor": "codex-gpt-5.5-g-bare-rescaling-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained->unaudited",
+      "load_bearing_step": "Assuming canonical trace normalization, scoped Wilson matching beta = 2 N_c / g_bare^2, and scalar rescaling by c, Tr((c T_a)(c T_b)) = c^2 delta_ab / 2 and beta_new = c^2 beta_old.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The old broad claim has been removed; the present source claims only a bounded implication over CN, scoped WM, and scalar rescaling by c. The cited CL3 color authority supplies the canonical trace normalization, while WM is clearly marked as a scoped input rather than a retained conclusion. The runner uses exact rational arithmetic and checks the Gram scaling and beta scaling cases with 13 PASS and 0 FAIL, without asserting retained status for Wilson matching or downstream g_bare claims."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.157150+00:00",
+      "audit_date": "2026-06-12T21:14:59.556419+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the 8D taste carrier, its tensor-factor commutation with the defined weak-fiber and block-scalar Y operators, and the SU(3) channel-count fraction R_conn=8/9; no physical SM-color or EW-readout bridge is audited."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 14.954,
+        "runner_hash": "d9933dd7a93558728bb9b6922d06396f69d73dd6dd1b715f691c0728d8ad301a",
+        "transitive_descendants": 495
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-211216-4e8af2e9da-g_bare_rescaling_freedom_rem",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Gram scaling follows directly from Tr((cT_a)(cT_b)) = c^2 Tr(T_aT_b). The beta scaling does not follow from the displayed WM formula alone: with N_c and g_bare^2 fixed, beta = 2 N_c / g_bare^2 is unchanged unless an additional action-surface or rescaled-coupling rule is supplied.",
+      "claim_scope": "Conditional algebraic rescaling lemma: assuming canonical SU(3) trace normalization and a scoped Wilson matching/action-surface rule, a scalar rescaling by c changes the Gram normalization by c^2 and is asserted to route the same factor into beta.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T21:14:59.556419+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "CN + WM + rescaling by c => Gram -> c^2 Gram and beta -> c^2 beta.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a retained or explicitly scoped dependency that supplies the Wilson action-surface rescaling rule beta_new = c^2 beta_old, or narrow that relation to an assumption rather than a consequence of WM alone.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The trace-normalization part is a valid class-A algebraic identity over the retained CL3 trace normalization. Wilson matching is explicitly scoped rather than derived, and the packet does not include the extra rule needed to turn a generator/connection rescaling into beta_new = c^2 beta_old. The runner confirms exact rational Gram scaling, but its beta check assigns beta_new = c_squared * beta_old and then verifies the assigned ratio, so it does not independently close the missing Wilson action-surface transformation."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:06.963118+00:00",
+      "archived_for_note_hash": "05a0181dc87773bed10391e1220d55f95f1f1af58cf3a21f65c6c3e76b51ef82",
+      "audit_date": "2026-06-15T20:44:40.238056+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 19.006,
+        "runner_hash": "d9933dd7a93558728bb9b6922d06396f69d73dd6dd1b715f691c0728d8ad301a",
+        "transitive_descendants": 513
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260615-204107-3f6ffb3bd9-g_bare_rescaling_freedom_rem",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Gram statement follows directly from bilinearity of the trace. The beta statement does not follow from the displayed WM relation beta = 2 N_c / g_bare^2 alone unless an additional transformation rule for g_bare or for the Wilson action coefficient under T_a -> c T_a is supplied.",
+      "claim_scope": "The bounded claim that canonical trace normalization plus scoped Wilson matching imply both Gram scaling and matched beta scaling by c^2 under scalar carrier/connection rescaling.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T20:44:40.238056+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "CN + WM + rescaling by c => Gram -> c^2 Gram and beta -> c^2 beta.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a Wilson-action normalization/transformation theorem deriving beta_new/beta_old under T_a -> c T_a, or narrow the row to the closed Gram-scaling lemma only.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "Issue: beta_new = c^2 beta_old is asserted, and the runner assigns beta_new = c_squared * beta_old, rather than deriving it from the stated WM formula. Why this blocks: with only beta = 2 N_c / g_bare^2 and no transformation law for g_bare or the action coefficient, the beta scaling is an extra normalization premise, not a closed algebraic consequence. Repair target: add a scoped Wilson-action normalization derivation or explicit retained premise proving beta_new / beta_old under the generator/connection rescaling. Claim boundary until fixed: the nontrivial rescaling changes the canonical Gram by c^2; beta routing remains conditional on an additional matching-normalization rule."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:24.704394+00:00",
+      "audit_date": "2026-06-18T02:34:55.921074+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 15.57,
+        "runner_hash": "e3278aaeb983f97f05f1646b7f3cf3bbd6c862e9dbc193ef842f6008862a955b",
+        "transitive_descendants": 759
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260618-021040-5a6921b6-g_bare_rescaling_freedom_removal_theorem_note_2026-05-03-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The CL3 cited authority is retained_bounded and supplies the canonical SU(3) trace normalization needed for this narrowed algebraic lemma. The conclusion follows by bilinearity of trace under scalar multiplication and does not use the authority's open physical-color bridge or any Wilson beta-routing premise.",
+      "claim_scope": "Given the retained canonical trace normalization Tr(T_a T_b)=delta_ab/2, scalar rescaling T_a -> c T_a scales the Gram matrix by c^2 and preserves the canonical surface only when c^2=1.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-18T02:34:55.921074+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Tr((c T_a)(c T_b)) = c^2 delta_ab / 2, so a nontrivial scalar rescaling does not preserve the canonical Gram normalization.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the source remains limited to Gram scaling and does not re-import Wilson beta-routing or the physical-color bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing step is an exact class-A trace/Gram scaling identity over the single retained CL3 trace-normalization parent plus standard mathematics. The runner uses exact rational arithmetic to check representative nontrivial c^2 values and verifies that the source note quarantines Wilson beta-routing. Because the chain reduces to one upstream parent claim and contains no independent first-principles computation or external comparator, it is decoration rather than an independent audited_clean theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_g_bare_rescaling_conditional_algebra_check.py",
+  "title": "g_bare Rescaling Gram-Scaling Lemma",
+  "transitive_descendants": 725,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

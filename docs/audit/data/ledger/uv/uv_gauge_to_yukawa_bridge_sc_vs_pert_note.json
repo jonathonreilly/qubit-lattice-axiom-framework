@@ -1,0 +1,1558 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem.",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.273,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7d7c26477b45dcbd6ae2da5376ca9796c87886250191af6c61a4036af9ea8ab7",
+  "note_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370019+00:00",
+      "archived_for_note_hash": "2bd700fb7868d98baa1b0042f85b87eafb2f991eb9e92acd751dc22d9ad9ddcd",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-27T08:58:19.030574+00:00",
+      "archived_for_note_hash": "d34460eb9aae8d0bb5710aa08322f75581b8da83b7b522b1ee86dc205e3dbe1c",
+      "audit_date": "2026-05-26T21:12:25.605110+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null,
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
+          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta",
+          "yt_ew_color_projection_theorem": "no_go",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "yt_ew_color_projection_theorem": "retained_no_go",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "yt_ew_color_projection_theorem",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 12.006,
+        "runner_hash": "02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172",
+        "transitive_descendants": 513
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-uv-gauge-yukawa-pass1-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic coefficient comparison closes, but the surface-selection step does not. The restricted packet computes C_pert, C_strong, alpha_LM, and n_opt, but does not derive the claimed perturbative-domain selector or the strong-coupling character-ratio nonconvergence criterion from a retained direct authority.",
+      "claim_scope": "Subordinate coefficient-selection support only: on the canonical tadpole-improved surface, compare the perturbative scalar-singlet coefficient C_pert = 1/(2 N_c) = 1/6 with the strong-coupling one-link coefficient C_strong = 1/N_c^2 = 1/9, without ratifying physical top-Yukawa readout, shared tadpole transport, or an unconditional y_t(M_Pl)/g_s(M_Pl) bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T21:12:25.605110+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "On the tadpole-improved canonical surface alpha_LM = alpha_bare / u_0 = 0.0907 is small, so the perturbative coefficient 1/(2 N_c) = 1/6 is the dominant 4-fermion structure and the strong-coupling 1/N_c^2 = 1/9 coefficient is not the correct coefficient on that surface.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and directly cite a retained canonical-surface expansion-selector theorem, with runner coverage for the u_0/alpha_LM input and the strong-coupling character-ratio comparison, then re-audit the same subordinate coefficient-selection scope.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 44,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "Issue: the note's load-bearing selection says the canonical tadpole-improved surface makes the perturbative coefficient govern over the strong-coupling coefficient. Why this blocks: the runner genuinely computes the SU(3) Fierz coefficient, Haar one-link coefficient, Clifford projection, and canonical alpha arithmetic, but the expansion-domain selector is asserted from small alpha_LM and an uncomputed c1/c0 claim rather than derived in the restricted dependency packet. Repair target: add or derive a retained canonical-surface perturbative-regime selector, including the u_0/alpha_LM authority and the strong-coupling character-ratio comparison, and wire it as a direct dependency. Claim boundary until fixed: the clean bounded core is the algebraic comparison C_pert = 1/6 versus C_strong = 1/9 plus support-only NLO arithmetic; no physical y_t readout, shared tadpole transport, or unconditional Planck-ratio bridge is ratified."
+    },
+    {
+      "archived_at": "2026-05-28T09:41:28.576785+00:00",
+      "archived_for_note_hash": "d8e2d7f0a182335907e13c2e4e234f3988f855585e4c731c43c442bdba4fa9e6",
+      "audit_date": "2026-05-28T01:56:58.249505+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null,
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
+          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta",
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "yt_ew_color_projection_theorem": "no_go",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "plaquette_self_consistency_note": "retained_bounded",
+          "yt_ew_color_projection_theorem": "retained_no_go",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "plaquette_self_consistency_note",
+          "yt_ew_color_projection_theorem",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 12.014,
+        "runner_hash": "02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172",
+        "transitive_descendants": 516
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebraic coefficient checks close: the SU(N_c) Fierz singlet coefficient is 1/(2N_c), the Q_L scalar-singlet normalization gives Z^2=N_c N_iso=6 and 1/sqrt(6), and the strong-coupling one-link route gives a distinct 1/N_c^2 coefficient. The domain-selection step that makes the perturbative coefficient govern the canonical surface uses alpha_LM from the canonical plaquette surface, while the one-hop plaquette authority explicitly withholds a derivation/certificate of the canonical 0.5934 readout.",
+      "claim_scope": "Subordinate Ward-identity support comparing the perturbative color-singlet coefficient C_pert=1/(2N_c) with the strong-coupling coefficient C_strong=1/N_c^2, and arguing that the perturbative coefficient is the relevant leading input on the tadpole-improved canonical surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T01:56:58.249505+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The exact SU(3) Fierz algebra gives C_pert=1/(2N_c)=1/6 and the Haar one-link strong-coupling route gives C_strong=1/N_c^2=1/9, but selecting C_pert as governing the canonical tadpole-improved surface depends on the canonical plaquette/alpha_LM bridge.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained canonical-surface bridge for the plaquette/u0/alpha_LM input and perturbative-domain selection, and rewire the superseded minimal_axioms_2026-04-11 dependency to current open-gate authorities.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 44,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "Issue: exact Fierz, Haar, Clifford, and H_unit normalization algebra closes, but the support note's canonical-surface selection of the perturbative coefficient imports alpha_LM/u0 from the canonical plaquette surface and still cites a superseded minimal-axioms surface. Why this blocks: the direct plaquette authority is retained only for the finite bounded observable/diagnostic and explicitly says the canonical 0.5934 value is an admitted comparison/reuse number, not a retained derivation; the source therefore cannot independently certify that the perturbative expansion governs the retained surface. Repair target: replace the superseded minimal-axioms dependency with the current named gates and add a retained canonical-surface bridge deriving or ratifying the plaquette/u0/alpha_LM input and the perturbative-domain selection. Claim boundary until fixed: the row may be used as support for exact finite coefficient algebra and for the parent bounded Ward matrix-element packet, but not as retained authority that the canonical physical y_t bridge is perturbatively governed."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:37.753668+00:00",
+      "archived_for_note_hash": "5303f2e681e47f902e0fb66d41319ff8f39405a4d476ad917539b0fecbe9f688",
+      "audit_date": "2026-05-29T03:28:01.490880+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "minimal_axioms_2026-04-11": null,
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
+          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "yt_ew_color_projection_theorem": "no_go",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "plaquette_self_consistency_note": "retained_bounded",
+          "yt_ew_color_projection_theorem": "retained_no_go",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "minimal_axioms_2026-04-11",
+          "plaquette_self_consistency_note",
+          "yt_ew_color_projection_theorem",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 12.039,
+        "runner_hash": "02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172",
+        "transitive_descendants": 525
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-context-20260529-uv-bridge-wall-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebraic coefficients close, but the expansion-domain and selection claim does not follow from the one-hop packet. The packet does not supply a retained theorem deriving the plaquette 0.5934/u0 surface, closing the g_bare and staggered-Dirac gates, proving shared tadpole transport, or proving that tadpole-improved perturbation theory rather than the strong-coupling expansion governs this coefficient.",
+      "claim_scope": "Exact algebraic support for C_pert = 1/(2*N_c), C_strong = 1/N_c^2, the SU(3)/Dirac Fierz factors, and the H_unit 1/sqrt(6) matrix element; not a closed theorem selecting C_pert over C_strong on the canonical tadpole-improved surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T03:28:01.490880+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "On the canonical surface (alpha_LM = 0.091 << 1, n_opt ~ 35 loops), the perturbative expansion is convergent, so C_pert is the correct input to the main theorem's Step 3 UV side and C_strong is not.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad: supply a retained expansion-domain/selection theorem for the tadpole-improved canonical surface, plus retained closure or explicit admissions for plaquette 0.5934/u0, g_bare, staggered-Dirac realization, and shared tadpole transport.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 36,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "Issue: the source's load-bearing selection step says the tadpole-improved canonical surface makes C_pert the governing coefficient and excludes C_strong, but the restricted packet only closes the finite algebraic coefficients and small-alpha arithmetic. Why this blocks: small alpha_LM and n_opt ~ pi/alpha_LM do not by themselves prove convergence or supply a retained expansion-domain/selector theorem, and the runner imports the canonical plaquette/u0 surface rather than deriving it. Repair target: supply a retained expansion-domain/selection theorem for the tadpole-improved canonical surface, plus retained closure or explicit bounded admissions for plaquette 0.5934/u0, g_bare, staggered-Dirac realization, and shared tadpole transport. Claim boundary until fixed: the exact algebraic support C_pert = 1/(2*N_c), C_strong = 1/N_c^2, the SU(3)/Dirac Fierz factors, and the H_unit 1/sqrt(6) matrix element are verified, but the governing-coefficient selection remains conditional."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.335947+00:00",
+      "audit_date": "2026-05-30T23:06:15.747547+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.069,
+        "runner_hash": "7daae00ac0a3cdc6043b8b07f3611f77b309c3f69480cda0b4d45c61929394de",
+        "transitive_descendants": 536
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-230442-72cfe21a-uv_gauge_to_yukawa_bridg",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed SU(N_c) Fierz identity follows from the stated generator normalization, and the Haar two-point contraction plus singlet projection gives the stated 1/N_c^2 coefficient. The N_c=3 and N_iso=2 numerical values then follow by direct substitution.",
+      "claim_scope": "Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T23:06:15.747547+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-30T23:03:12.917922+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-230147-336fc206-uv_gauge_to_yukawa_bridg",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For N_c=3 and N_iso=2, the audit covers only the finite algebraic coefficient packet: C_pert=1/6, C_strong=1/9, their distinction, the checked Dirac channel facts, and the H_unit overlap 1/sqrt(6), with no expansion-selector claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-30T23:06:15.747547+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-230442-72cfe21a-uv_gauge_to_yukawa_bridg",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The SU(N_c) Fierz identity gives C_pert = 1/(2 N_c), while the leading one-link Haar contraction gives the color-singlet coefficient C_strong = 1/N_c^2, so at N_c = 3 they are 1/6 and 1/9.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the Haar-contraction-to-color-singlet projection because the runner verifies the contraction and then records C_strong rather than making that projection an explicit executable assertion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The repaired note is scoped to finite algebraic coefficient support and explicitly removes the prior governing-coefficient selector claim. Independent formula inventory found the SU(3) normalization, Fierz coefficient, Haar contraction, singlet projection to 1/N_c^2, 1/6 versus 1/9 arithmetic, Dirac-channel nonzero/zero statements, and 1/sqrt(6) overlap consistent under the note's conventions. No cited support or open bridge is needed for the bounded algebraic comparison as stated."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:15.047619+00:00",
+      "audit_date": "2026-07-11T17:38:33.750511+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.146,
+        "runner_hash": "7daae00ac0a3cdc6043b8b07f3611f77b309c3f69480cda0b4d45c61929394de",
+        "transitive_descendants": 800
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00034-uv_gauge_to_yukawa_bridge_sc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the Haar tensor coefficient 1/N_c but then assigns C_strong=1/N_c^2 directly. It never constructs the normalized color-singlet projection that would supply the additional factor 1/N_c.",
+      "claim_scope": "Audited the N_c=3 SU(3) Fierz coefficient 1/6, the one-link Haar tensor-contraction witness, the Dirac-channel checks, and the six-component H_unit overlap; identifying the Haar tensor with C_strong=1/9 remains conditional on an explicit singlet-projection normalization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T17:38:33.750511+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:49756ee75b3c",
+      "load_bearing_step": "The leading one-link Haar contraction gives the corresponding strong-coupling color-singlet coefficient C_strong = 1/N_c^2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner constructs all eight Gell-Mann generators, checks their trace normalization, and checks the Fierz tensor entrywise.",
+            "disposition": "CLOSED",
+            "evidence_locator": "SU(3) Fierz identity holds entrywise",
+            "evidence_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Direct SU(3) generator-completeness evaluation of the perturbative singlet coefficient.",
+            "outcome": "This closes C_pert=1/6 on the stated N_c=3 surface.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "fierz_completeness"
+          },
+          {
+            "attempt": "The runner samples Haar-distributed SU(3) matrices and compares the averaged tensor with the invariant delta tensor.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Haar witness for integral dU U_ab U^dag_cd",
+            "evidence_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Haar-invariance testing of the one-link rank-four tensor.",
+            "outcome": "This supplies a numerical witness for the 1/N_c Haar tensor, but not the subsequent normalized singlet projection.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "haar_tensor"
+          },
+          {
+            "attempt": "The runner source was inspected for a singlet projector, normalized singlet state, or tensor contraction producing the second factor 1/N_c.",
+            "disposition": "OPEN",
+            "evidence_locator": "c_strong = 1.0 / (N_c * N_c)",
+            "evidence_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Explicitly project the Haar tensor onto a normalized color-singlet operator and track every normalization factor.",
+            "outcome": "No such calculation occurs; c_strong is assigned directly after the Haar witness.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "strong_singlet_projection"
+          },
+          {
+            "attempt": "The runner constructs gamma matrices, checks the Clifford algebra, and performs component contractions.",
+            "disposition": "CLOSED",
+            "evidence_locator": "tensor channel vanishes in the vector-vector Fierz",
+            "evidence_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Instantiate an explicit Clifford carrier and project the vector-vector tensor onto scalar, pseudoscalar, and tensor channels.",
+            "outcome": "The stated scalar, pseudoscalar, and vanishing tensor-channel sanity checks close for this explicit basis.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "dirac_basis"
+          },
+          {
+            "attempt": "The runner constructs the normalized diagonal matrix and contracts it with all six diagonal basis elements.",
+            "disposition": "CLOSED",
+            "evidence_locator": "all six diagonal overlaps are 1/sqrt(6)",
+            "evidence_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Direct finite-dimensional Hilbert-Schmidt normalization of the six-component diagonal singlet.",
+            "outcome": "The norm and all six 1/sqrt(6) overlaps close exactly to floating-point tolerance.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "hunit_finite_block"
+          },
+          {
+            "attempt": "The source and firewall checks were inspected for any surviving convergence or governing-coefficient assertion.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This row does not select `C_pert` over `C_strong`",
+            "evidence_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive which perturbative or character expansion governs the canonical physical surface.",
+            "outcome": "The route remains open research but is explicitly excluded from the repaired bounded claim, so it cannot repair or invalidate the missing local singlet projection.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "expansion_selector"
+          },
+          {
+            "attempt": "The runner verifies every trace pairing against the explicitly stated half-trace convention.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Tr(T^A T^B) = (1/2) delta_AB",
+            "evidence_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Check whether the perturbative coefficient is an artifact of an unstated generator normalization.",
+            "outcome": "The normalization is explicit and internally consistent; it does not account for the missing strong-channel projection.",
+            "route_class": "normalization_or_units",
+            "route_id": "generator_normalization"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "normalized one-link Haar-tensor to color-singlet coefficient projection"
+          ],
+          "evidence_locator": "gives the corresponding leading strong-coupling color-singlet coefficient",
+          "evidence_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "normalized one-link Haar-tensor to color-singlet coefficient projection"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "check_strong_coupling(c_pert)",
+          "evidence_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "c_strong = 1.0 / (N_c * N_c)",
+              "evidence_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
+              "phrase": "c_strong = 1.0 / (N_c * N_c)",
+              "promoted_wall": "normalized one-link Haar-tensor to color-singlet coefficient projection"
+            }
+          ],
+          "scan_scope": "The source's coefficient definitions, proof sketch, runner assignments, projector constructions, normalization factors, and scope firewalls were checked.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "No new axiom is introduced.",
+          "evidence_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+          "none_found_reason": "No RULED OUT BY PRIOR route is used in N1.",
+          "scan_scope": "No N1 route was ruled out solely by a prior witness; all routes were tested against the supplied source or runner.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "## Explicit Non-Claims",
+          "evidence_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+          "scan_scope": "Negative-looking scope statements were checked to distinguish source-boundary language from global impossibility claims.",
+          "statements": [
+            {
+              "evidence_locator": "It does not decide which expansion governs a physical surface.",
+              "evidence_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+              "phrase": "It does not decide which expansion governs a physical surface.",
+              "tested_resolutions": [
+                "source-note finite coefficient scope"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "This row does not prove perturbative convergence or strong-coupling non-convergence",
+              "evidence_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+              "phrase": "This row does not prove perturbative convergence or strong-coupling non-convergence for the framework surface.",
+              "tested_resolutions": [
+                "source-note claim firewall"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no color-singlet projector or strong-coupling normalization.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal ontology does not define an SU(3) Haar singlet projection.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies no color-channel normalization.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference cannot supply the missing dimensionless singlet projection.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The owner-governed AC boundary concerns occupancy and R-eta readout, not the SU(3) one-link singlet normalization.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The g_bare convention is not an accepted derivational premise and does not determine the singlet projection.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization is unrelated to the SU(3) Haar color-singlet contraction.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All candidates supplied by the partial-closure index were checked against the sole retained wall: the missing normalized Haar-to-singlet projection.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The extra factor 1/N_c may be a short standard consequence of contracting the Haar tensor with a normalized singlet projector, so no new physical selector should be necessary.",
+          "evidence_locator": "c_strong = 1.0 / (N_c * N_c)",
+          "evidence_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
+          "resolution": "That argument may furnish a cheap repair, but the restricted packet neither defines nor contracts such a projector in the strong-coupling calculation. The runner therefore does not presently establish the claimed 1/N_c^2 coefficient.",
+          "resolved": true,
+          "route_id": "strong_singlet_projection"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:0",
+              "evidence_locator": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Prior unaudited state.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:1",
+              "evidence_locator": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Prior missing expansion-domain selector.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:2",
+              "evidence_locator": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Prior plaquette and perturbative-domain selector dependency.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:3",
+              "evidence_locator": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Prior governing-coefficient selector overclaim.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:4",
+              "evidence_locator": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Prior clean bounded audit invalidated for missing no-go-discipline packet.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Retired AC occupancy and R-eta admission.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Retired strong-CP theta admission.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Owner-governed AC residual retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Unrelated foundational and flavor no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Finite gravitational-sweep scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Physical bridge closure separated from finite support.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Textbook-import and axis-selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Broad inherited no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Coupling-identity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Beta=6 and Monte Carlo derivation firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Lensing observable and finite-path walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Carrier-registry exhaustiveness boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Charged-lepton selector no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Dimension-selection partial closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Emergent-Lorentz scope limitation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Metric reconstruction and finite-runner boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Replay-only and basin-language boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Local Wilson scorecard versus environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Flavor-carrier route pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Analytic-vector and audit-retag boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Plaquette environment estimator and operator boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Gauge-isotropy carrier-route walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Physical Fermat-bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Weak-field gravity scope firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Absolute-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "U(1) normalization degeneracy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Cross-lane campaign demotions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Atomic scale and threshold underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Quark-mass selector and readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Finite checks versus uniform asymptotics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Signed detector-adjoint observable wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Centered-surrogate geometry mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Physical static-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Temporal-rate and readout-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Empty matter-cone no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Planning criterion versus theorem selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Update-tick versus physical-time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Neutrino mass-construction walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Neutrino and cosmological-scale dependency walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Finite replay versus universal distance law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Frozen-log and finite-basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Plaquette and coupling-selector authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Finite detector packet versus physical memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Finite-degree scan versus all-degree theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Clifford-carrier selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "P_A carrier and first-variation boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Plaquette mean-field and bootstrap boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Character-expansion diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Finite arithmetic versus selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Readout registrability and retired-admission boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Transfer locality and axis-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Finite H_unit overlap versus physical Yukawa readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Statistics-forcing withdrawal.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Minimal-surface kinetic-selection countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "SU(3) cube-encoder fidelity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Documentation-source synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Single-slot versus full-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Theta mass-side readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Theta gauge-side action and weighting walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Theta positive-route gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Theta insertion-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Theta defect-closure walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "AC determinant-power horn selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Record-orbit occupancy nonsupply.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Record-formation R-eta nonsupply.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Artifact-visibility rather than derivation obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Record-only readout-scale countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Hard-coded table matcher and finite-family scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Finite lattice rows versus continuum universality.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "mechanism": "Physical Yukawa readout renaming wall.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "normalized one-link Haar-tensor to color-singlet coefficient projection"
+        ],
+        "demotion": "stretch-attempt-with-honest-residual",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "5785c46ec2eddc28c80e753d092f999dde06001501c5af7820baaeb723a7eaaf",
+              "cross_cycle_candidate_ids": [
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note",
+                "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:0",
+                "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:1",
+                "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:2",
+                "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:3",
+                "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:4"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "no_go_cross_cycle_index_v1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note",
+                "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:0",
+                "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:1",
+                "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:2",
+                "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:3",
+                "uv_gauge_to_yukawa_bridge_sc_vs_pert_note:previous_audit:4"
+              ]
+            },
+            "audit-packet://partial-closure-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "81b7e9e88aa3f9900d96ac7141c1f421a2b2610998ad9a36d5a6c603b530f71b",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "no_go_partial_closure_index_v1",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "7d7c26477b45dcbd6ae2da5376ca9796c87886250191af6c61a4036af9ea8ab7",
+              "effective_status": null,
+              "path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## Explicit Non-Claims",
+                "It does not decide which expansion governs a physical surface.",
+                "No new axiom is introduced.",
+                "This row does not prove perturbative convergence or strong-coupling non-convergence",
+                "This row does not select `C_pert` over `C_strong`",
+                "Tr(T^A T^B) = (1/2) delta_AB",
+                "gives the corresponding leading strong-coupling color-singlet coefficient"
+              ]
+            },
+            "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "7daae00ac0a3cdc6043b8b07f3611f77b309c3f69480cda0b4d45c61929394de",
+              "effective_status": null,
+              "path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "Haar witness for integral dU U_ab U^dag_cd",
+                "SU(3) Fierz identity holds entrywise",
+                "all six diagonal overlaps are 1/sqrt(6)",
+                "c_strong = 1.0 / (N_c * N_c)",
+                "check_strong_coupling(c_pert)",
+                "tensor channel vanishes in the vector-vector Fierz"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: strong_singlet_projection remains OPEN because the runner assigns C_strong without computing the normalized projection."
+        ],
+        "narrowed_claim_scope": "Audited the N_c=3 SU(3) Fierz coefficient 1/6, the one-link Haar tensor-contraction witness, the Dirac-channel checks, and the six-component H_unit overlap; identifying the Haar tensor with C_strong=1/9 remains conditional on an explicit singlet-projection normalization.",
+        "next_route": {
+          "reason_untested": "The packet never defines and contracts the normalized singlet projector needed to derive the second factor 1/N_c.",
+          "route_id": "strong_singlet_projection"
+        },
+        "prior_claim_scope": "Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add an explicit normalized color-singlet projection from the Haar tensor to C_strong and make the runner compute that projection instead of assigning 1/(N_c*N_c).",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The SU(3) Fierz, Clifford, and H_unit portions are genuine finite algebraic checks. The strong-coupling headline does not close because the runner verifies only integral dU U_ab U^dag_cd=(1/N_c)delta_ad delta_bc and then assigns c_strong=1/(N_c*N_c) without constructing the claimed color-singlet projection or its normalization. Because that missing step lies inside the bounded coefficient packet, the row remains conditional even though the expansion-selector claims have been cleanly removed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
+  "title": "UV Gauge-to-Yukawa Bridge: Perturbative vs Strong-Coupling Coefficients",
+  "transitive_descendants": 874,
+  "verdict_rationale": null
+}

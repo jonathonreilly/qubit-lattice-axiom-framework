@@ -1,0 +1,207 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
+    "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d639109587b10936d3e9fc054a6a856c15ff39b634ec36288bf0ab165cb14623",
+  "note_path": "docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-18T11:31:37.038823+00:00",
+      "archived_for_note_hash": "dab137c70bd776942c237616b5a99fba7b7a9b0cb06d2ebe5a0a6950d52ff625",
+      "audit_date": "2026-05-16T21:53:33.744265+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c71357305e2e76ef597f34f43b6141ac432b18bcc30f441a8c8475872528f260",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-215313-20260516T215313Z-66970ce6-meron_half_instanton_4pi-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic half-action identity closes internally, but the physical meron/fractional-instanton boundary construction and external authority for finite half-action sectors are not supplied in the restricted packet. The missing step is a retained derivation or provided authority establishing the regulator/twist/patching hypotheses for the cited sector.",
+      "claim_scope": "Audited only the narrow open-gate recording of the half-instanton action scale 4\u03c0\u00b2/g\u00b2 as an algebraic half of the BPST 8\u03c0\u00b2/g\u00b2 action, with regulator/twist/patching assumptions explicitly left load-bearing.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-16T21:53:33.744265+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under regularized meron-pair, capped-core, half-volume, or fractional-instanton boundary conditions, the candidate half-instanton scale is S_half = 4\u03c0\u00b2/g\u00b2 = (1/2) S_inst.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide retained-grade source packets or an internal derivation for the specific regulator/twist/patching construction that yields the half-action sector.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The runner correctly verifies the symbolic identity S_half = (1/2)S_inst and checks that the note disclaims unregularized single-meron finite-action status, substrate identification, and hierarchy closure. However, the runner does not derive the regulated meron or fractional-instanton sector from first principles; it assumes the BPST scale and checks text boundaries. Because the note explicitly depends on regulator, twist, pair, cap, or patching data not closed by the restricted packet, the audit remains conditional despite the narrow open-gate framing."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:48.068001+00:00",
+      "archived_for_note_hash": "5dc5376a531586e51bd9015220de851bf3b4b52ddf264ac326046a10761e8125",
+      "audit_date": "2026-05-28T08:32:12.083450+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "Finite Hodge/Bogomolny algebra, BPST radial 8pi^2 normalization integral, and twisted T4 k/N arithmetic after the stated conventions and standard inputs are fixed."
+        },
+        "dep_claim_type": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c71357305e2e76ef597f34f43b6141ac432b18bcc30f441a8c8475872528f260",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "Huygens-fresh-context-019e6db4-e96b-7b63-857f-7ac312c4780e",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For an open_gate row, the chain closes because the source keeps the regulator/twist/patching construction load-bearing and does not promote the external context to a retained theorem. The one-hop retained_bounded instanton infrastructure supplies the finite half-action arithmetic and twisted T4 k/N fractional-charge arithmetic used by this bounded gate.",
+      "claim_scope": "External open gate for the meron/fractional-instanton half-action scale 4 pi^2/g^2, scoped to regulator, twist, patching, half-volume, paired/capped, or fractional-instanton contexts; excludes framework substrate identification, hierarchy closure, alpha_LM^16 closure, and scale-ratio derivation.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-28T08:32:12.083450+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note records S_half = (1/2) S_inst = 4 pi^2/g^2 only under regulator, meron-pair, half-volume, or twisted-boundary/fractional-instanton boundary data, while refusing standalone singular-meron finite-action status.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Open gate ratified only at the stated external boundary; any later framework use must separately prove the regulator/twist/patching sector and substrate/observable bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Fresh-context audit agreed that the row cleanly records only an external open gate. The runner verifies the half-action algebra and boundary-disclaimer checks, and the note explicitly refuses standalone finite-action singular-meron status, framework substrate identification, hierarchy closure, alpha_LM^16 closure, and 4pi^2-to-ln(M_Pl/v) scale matching. This is clean as an open gate, not a retained positive theorem."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:12.533371+00:00",
+      "archived_for_note_hash": "42aedfc536b4b9c7b926dac9fe30814d899504f3a1a3b8f777476520b4db763d",
+      "audit_date": "2026-06-18T13:48:30.115920+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "Finite Hodge/Bogomolny algebra, BPST radial 8pi^2 normalization integral, and twisted T4 k/N arithmetic after the stated conventions and standard inputs are fixed."
+        },
+        "dep_claim_type": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "74626901e5c6bf4811a8d061de821ee570561b49acd6353a71d4475a292a63d7",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The half-action algebra follows from the retained_bounded BPST normalization and Q = 1/2 arithmetic, but the packet does not close the regulator/twist/patching construction for the meron or fractional-instanton sector. That boundary construction remains the missing load-bearing step.",
+      "claim_scope": "External open gate recording the half-action algebra S_half = 4 pi^2/g^2 for boundary-conditioned Q = 1/2 meron/fractional-instanton contexts, with explicit firewall against unregularized finite-action, framework-substrate, and hierarchy-closure uses.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T13:48:30.115920+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "In the regularized meron-pair, capped-core, half-volume, or fractional-instanton contexts, the candidate half-instanton scale is S_half = 4 pi^2/g^2, with the regulator/boundary construction remaining load-bearing.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained theorem or full restricted authority proving the specific regulator/twist/patching sector for the meron/fractional-instanton half-action, or split the packet to pure algebraic decoration.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 27,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "Issue: the runner verifies algebraic halving, numerical evaluations, and disclaimer text, but it does not prove the regulator/twist/patching sector that makes the half-action meron/fractional-instanton context available. Why this blocks: the note explicitly makes that boundary construction load-bearing, so the theorem chain does not close from the restricted packet alone. Repair target: provide a retained theorem or full restricted authority deriving the relevant boundary-conditioned Q = 1/2 sector and its action. Claim boundary until fixed: the packet can be cited only as an open external gate and source-boundary firewall for the algebraic half-action target."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py",
+  "title": "Meron / Fractional-Instanton Half-Action `4\u03c0\u00b2/g\u00b2` \u2014 Algebraic Decoration of the Retained Half-Action Core",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

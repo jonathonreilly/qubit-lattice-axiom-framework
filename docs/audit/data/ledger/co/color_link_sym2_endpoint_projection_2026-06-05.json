@@ -1,0 +1,183 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "color_link_sym2_endpoint_projection_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem \u2014 exact finite-algebra support under an",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "color_link_index_routing_carrier_budget_2026-06-05",
+    "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
+    "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4b6b2bbadd9f66b3631117f518a616455fb9d90fc035ddc5ff3fddb9181491f8",
+  "note_path": "docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:05.051414+00:00",
+      "audit_date": "2026-06-18T09:29:56.185077+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27": "Exact algebraic Gell-Mann su(3) embedding on the abstract chiral cube C^8=C^4_base tensor C^2_fiber under the b3-fiber convention, including block/full trace normalization, Lie closure, Jacobi, and commutation with fiber SU(2), excluding physical SM color identification.",
+          "color_link_index_routing_carrier_budget_2026-06-05": null,
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "Finite four-qubit endpoint Gauss-law model with explicit U(1)/SU(2) endpoint generators and bounded link-dressing conventions."
+        },
+        "dep_claim_type": {
+          "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "color_link_index_routing_carrier_budget_2026-06-05": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "color_link_index_routing_carrier_budget_2026-06-05": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
+          "color_link_index_routing_carrier_budget_2026-06-05",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "acec8f89fa365b2afff2b105de79502bffc8da4ee1873fe308fa04c279ee93bb",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-color_link_sym2_endpoint_projection_2026-06-05-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Under the stated admitted endpoint hypothesis, the projectors, ranks, orthogonality, and embedded block action follow by finite-dimensional linear algebra. The chain does not derive endpoint ontology, block preservation dynamics, transport, Gauss/Wilson observables, action, or color readout, and the note keeps those outside scope.",
+      "claim_scope": "Exact finite-dimensional projection algebra for an admitted two-qubit endpoint: the swap projector decomposes C^2\u2297C^2 into Sym^2(C^2)\u2295Anti^2(C^2), with standard su(3) acting on the symmetric rank-3 block and zero on the antisymmetric rank-1 block.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T09:29:56.185077+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Given an admitted two-qubit endpoint, the swap involution defines P_sym=(I+S_ab)/2 and P_anti=(I-S_ab)/2 with ranks 3 and 1, and the Gell-Mann su(3) action embeds on the rank-3 symmetric block while annihilating the antisymmetric complement.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use preserves the admitted-endpoint boundary and does not treat this as a derivation of link ontology or physical color.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 66,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 66
+      },
+      "verdict_rationale": "The primary runner instantiates the two-qubit swap, projectors, symmetric/antisymmetric bases, and embedded Gell-Mann generators directly rather than printing constants; the 66 passing checks match the bounded algebraic scope. An independent algebra check gives the same closure: for an isometry V into the symmetric subspace, T_a=V(\u03bb_a/2)V^\u2020 preserves P_sym, kills P_anti, and inherits Hermiticity, trace normalization, and su(3) commutators from the standard Gell-Mann matrices. The result is clean only as a bounded theorem on an admitted two-qubit endpoint, with all endpoint-ontology and dynamics claims explicitly residual."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.228713+00:00",
+      "audit_date": "2026-07-02T06:19:50.304389+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27": "Audited the explicit algebraic Gell-Mann embedding on the selected abstract C^8 = C^4_base tensor C^2_fiber carrier, including base/full trace normalization, Lie closure, Jacobi identity, and commutation with the fiber SU(2); no physical SM color identification was audited or claimed.",
+          "color_link_index_routing_carrier_budget_2026-06-05": null,
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "Bounded four-qubit endpoint-Gauss model: for the runner-defined Pauli raising/lowering link transports and SU(2) double-singlet observable, the endpoint invariance profiles and U(1) commutant dimension are as stated."
+        },
+        "dep_claim_type": {
+          "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "color_link_index_routing_carrier_budget_2026-06-05": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "color_link_index_routing_carrier_budget_2026-06-05": "meta",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
+          "color_link_index_routing_carrier_budget_2026-06-05",
+          "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "acec8f89fa365b2afff2b105de79502bffc8da4ee1873fe308fa04c279ee93bb",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T061950Z-0a899e54-color_link_sym2_endpoint",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the admitted-endpoint scope, the projector ranks, orthogonality, and block action follow from elementary C^2 \u2297 C^2 swap algebra plus the standard Gell-Mann action transported through the symmetric-basis isometry. The omitted endpoint, transport, Gauss/Wilson, dynamics, and readout steps are explicitly residual and not used to prove the bounded claim.",
+      "claim_scope": "Exact finite-dimensional swap-projector decomposition and symmetric-block su(3) embedding for an admitted two-qubit link endpoint, with endpoint ontology, dynamics, transport, observables, and physical color out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T06:19:50.304389+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Given a two-qubit endpoint C^2_a \u2297 C^2_b, the swap operator canonically gives P_sym=(I+S_ab)/2 and P_anti=(I-S_ab)/2 with ranks 3 and 1, and the Gell-Mann su(3) action can be embedded on the symmetric block while killing the antisymmetric block.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that canonical language remains limited to the swap projection and fixed symmetric-basis algebra, not to a derived physical SU(3) transport choice.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 55,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 66
+      },
+      "verdict_rationale": "The load-bearing mathematics is exact finite-dimensional algebra: the swap eigenspaces have dimensions 3 and 1, and V(\u03bb^a/2)V^\u2020 gives the standard su(3) representation on Sym^2 with zero action on the orthogonal complement. The runner source constructs the matrices rather than merely printing constants, and checks the projector identities, ranks, traces, block preservation, sample commutators, trace normalization, and source-scope markers. Full su(3) closure is inherited algebraically from the standard Gell-Mann relations under the symmetric-block isometry; the note does not claim the missing physical endpoint, transport law, or color-readout bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_color_link_sym2_endpoint_projection_2026_06_05.py",
+  "title": "Color Link Sym2 Endpoint Projection",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

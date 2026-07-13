@@ -36,6 +36,7 @@ REPO_ROOT = SCRIPTS.parents[2]
 DATA = REPO_ROOT / "docs" / "audit" / "data"
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import codex_audit_runner as audit_runner  # noqa: E402
+import ledger_io  # noqa: E402
 
 MODEL = "gpt-5.6-sol"
 AUDITOR_FAMILY = "codex-gpt-5.6"
@@ -77,6 +78,7 @@ def sh(cmd: list[str], timeout: int | None = None) -> subprocess.CompletedProces
 
 
 def load_rows() -> dict[str, dict]:
+    ledger_io.ensure_cache()
     ledger = json.loads((DATA / "audit_ledger.json").read_text(encoding="utf-8"))
     return ledger.get("rows", {})
 
@@ -1029,6 +1031,13 @@ def main() -> int:
                 "Each run requires a fresh workdir; remove it or point "
                 "AUDIT_BATCH_WORKDIR at a new path."
             )
+            return 2
+
+    if not args.dry_run and not (DATA / "citation_graph.json").exists():
+        print("derived audit caches missing (fresh clone); running the pipeline once")
+        bootstrap = sh(["bash", str(SCRIPTS / "run_pipeline.sh")], timeout=1800)
+        if bootstrap.returncode != 0:
+            print(f"pipeline bootstrap failed: {(bootstrap.stderr or bootstrap.stdout)[-300:]}")
             return 2
 
     for round_no in range(1, args.rounds + 1):

@@ -1,0 +1,209 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "realized_state_primitive",
+    "kinetic_isotropy_primitive",
+    "flavor_missing_axiom_carrier_measure_note_2026-05-30",
+    "ac_orbit_occupancy_statistical_grain_derivation_obligation"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f815e25af622b50ead35aa39b587c49845878cfb60a776dca3961d9ef36223f4",
+  "note_path": "docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.277596+00:00",
+      "audit_date": "2026-07-10T02:30:40.313134+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "5ae28ea86dbb0f29cbb5974923f9e9750077c9f46f4bed790e361dff389e91ef"
+        },
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null,
+          "flavor_missing_axiom_carrier_measure_note_2026-05-30": "Audited the finite generator-channel Hilbert-Schmidt algebra and the bounded Record statement that additive two-sector readout coordinates do not select the Koide weight by themselves.",
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "flavor_missing_axiom_carrier_measure_note_2026-05-30": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "flavor_missing_axiom_carrier_measure_note_2026-05-30": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23",
+          "flavor_missing_axiom_carrier_measure_note_2026-05-30",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "e91a72300d3717eb293cdbb85c6605eb7fb2890de24b837b03ea5c048c2ff5f7",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-acphilambda_measure_bina-087",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra and accepted-premise texts support the narrow non-supply result, but the note's live Tier-A-survivor framing is contradicted by the supplied registry, which reports zero live Tier-A targets and AC_phi_lambda retirement through owner governance. The primary runner fails on that same stale assumption.",
+      "claim_scope": "Bounded claim that the four axioms and the scale, kinetic-isotropy, and realized-state primitives do not themselves select count-once versus count-twice generation readout.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T02:30:40.313134+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:kinetic_isotropy_primitive:5dd0ccb9->9186702f",
+      "load_bearing_step": "For any normalized two-sector coordinate p in (0,1), choosing d = pu/(1-p) realizes p, so Record additivity permits the competing readings but does not rank or select them.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: Date and narrow the result to axiom-and-approved-primitive non-supply, reconcile the live Tier-A and non-retirement assertions with the 2026-07-05 owner-governed retirement, then update and rerun the primary runner against the current registry schema.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The finite-coordinate calculation genuinely shows that Record additivity alone cannot select among the stated measures, and the accepted axiom and primitive authorities explicitly withhold the required selector. However, the source also treats the AC_phi_lambda binary as a current live Tier-A survivor, while its cited registry says that AC_phi_lambda has been retired through an owner-governed premise. The runner consequently raises a KeyError before testing most of its assertions, so the source must be narrowed or reconciled with the post-2026-07-05 registry state before a clean verdict."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:36.954148+00:00",
+      "audit_date": "2026-07-10T15:42:13.741050+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "9186702f30a2faa7ce41afd398a0f1956f41f796b704dd34a04047352fd35d99",
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "0515188f2f4ca91b4c75a5f2ec35f42c9d3f2efec86b20f8d22b1bc991a9e44b"
+        },
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null,
+          "flavor_missing_axiom_carrier_measure_note_2026-05-30": "Audited the finite generator-channel Hilbert-Schmidt algebra and the bounded Record statement that additive two-sector readout coordinates do not select the Koide weight by themselves.",
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "flavor_missing_axiom_carrier_measure_note_2026-05-30": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "flavor_missing_axiom_carrier_measure_note_2026-05-30": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23",
+          "flavor_missing_axiom_carrier_measure_note_2026-05-30",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "e91a72300d3717eb293cdbb85c6605eb7fb2890de24b837b03ea5c048c2ff5f7",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00005-acphilambda_measure_binary_a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The premise texts and retained carrier-measure theorem support the narrow non-supply result, but the cited current registry says AC_phi_lambda has been retired from live Tier A through owner governance. The note and runner instead assume a live derivation-target entry, so the claimed current registry boundary is unreconciled.",
+      "claim_scope": "Bounded non-supply claim that the four axioms plus realized-state, kinetic-isotropy, and scale primitives do not select count-once versus count-twice generation measure.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T15:42:13.741050+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_missing_axiom_carrier_measure_note_2026-05-30:retained_bounded->unaudited",
+      "load_bearing_step": "None of the updated axioms or approved primitives selects a physical generation readout partition or carrier-measure scoring rule.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: reconcile the note with the post-2026-07-05 owner-governed retirement boundary, update the runner to the current Tier-A/retired-target schema, and rerun the complete verifier.",
+      "open_dependency_paths": [
+        "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The narrow axiom-and-primitive non-supply conclusion is well supported, and the finite algebra is explicitly conditional rather than presented as selection of a measure. However, the non-retained meta registry now reports zero live Tier-A targets and owner-governed retirement of AC_phi_lambda, contradicting the note's current-live-survivor framing. The runner confirms this stale dependency assumption by raising KeyError before reaching its substantive algebra checks."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py",
+  "title": "AC_phi_lambda Measure Binary Axiom-Update No-Go",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,180 @@
+{
+  "audit_date": "2026-05-07T02:17:45.375642+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_claim_scope": {
+      "lattice_nn_deterministic_rescale_note": "Finite computational claim only: for the exact supplied runner, constants, lattice geometry, slit construction, propagation rule, and tested spacings down to h=0.0625, the deterministic geometry-only rescale schedule keeps the Born diagnostic machine-clean and yields the printed observable rows. It does not establish a continuum theory or physical interpretation beyond this finite tested surface."
+    },
+    "dep_claim_type": {
+      "lattice_nn_deterministic_rescale_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "lattice_nn_deterministic_rescale_note": "retained_bounded"
+    },
+    "deps": [
+      "lattice_nn_deterministic_rescale_note"
+    ],
+    "load_bearing_score": 1.5,
+    "runner_hash": "340569f707fbdd84001c0c2bbf6be77eed01688f18dc2b8d43ed1d84b9cbd4e3",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-gpt-5.5-xhigh-lattice-nn-rg-alpha-sweep-audit-1-2026-05-07",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The one-hop dependency is audited clean for the finite deterministic Born-safe path, and the supplied runner source summary plus live completed stdout compute the asserted bounded scan rows without external comparator data or target fitting. The cache Born-residual triplet discrepancy does not break closure because the live runner matches the note for the listed rows and the discrepant cache values preserve the only load-bearing Born assertion, namely machine-clean residuals; exact alternate cache residuals are not needed for the alpha-stability conclusion. The note explicitly caveats the result as a scan-edge fixed-point-style probe rather than a renormalization theorem.",
+  "claim_id": "lattice_nn_rg_alpha_sweep_note",
+  "claim_scope": "Finite computational scan only: exact supplied deterministic NN lattice/rescale runner, h values 1.0, 0.5, 0.25, alpha values 0.0, 0.5, 1.0, 1.5, with the comparison focused on gravity at h=0.5 versus h=0.25 and Born-safe behavior inherited only on the audited finite deterministic path. No optimized exponent, continuum renormalization, physical fixed point, or extension beyond the scanned grid is established.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-07T02:17:45.375642+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lattice_nn_deterministic_rescale_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": "The supplied runner computes the finite alpha-by-h grid for the deterministic nearest-neighbor lattice path, derives g(0.25)/g(0.5) and pair exponent for each alpha, and the live completed stdout matches the source-note gravity values, ratios, exponents, k=0 zeros, and machine-clean Born conclusion; alpha=1.5 is the least h-sensitive measured point on the scanned grid with ratio 0.858.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "21e6572370e9261fbe6f916caabdc371d823f8d037c629395195c53f580d6a3c",
+  "note_path": "docs/LATTICE_NN_RG_ALPHA_SWEEP_NOTE.md",
+  "notes_for_re_audit_if_any": "If future wording promotes the result to optimized alpha, continuum renormalization, or established fixed point, re-audit as unsupported. If exact Born residual triplets become load-bearing rather than illustrative machine-clean diagnostics, reconcile the cache/live discrepancy explicitly.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-context",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106229+00:00",
+      "archived_for_note_hash": "02638a0689e240594a462a340727d7ad1ef7d96e50c5148f9a58363301fe27d5",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.236362+00:00",
+      "audit_date": "2026-04-30T19:35:58.514813+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The runner exits zero, but the audit classifier records no A/B/C/D PASS checks for a load-bearing audit surface.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:lattice_nn_deterministic_rescale_note",
+      "load_bearing_step": "The alpha sweep does support the fixed-point-style claim that stronger",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the registered runner exits with status 0 but has no classified A/B/C/D PASS checks in runner_classification.json. Why this blocks: infrastructure registration alone does not show that the load-bearing step is being computed or checked. Repair target: add explicit runner checks or a proof artifact that exposes the load-bearing computation under the audit classifier. Claim boundary until fixed: safe to cite as a bounded note with executable but unratified support."
+    },
+    {
+      "archived_at": "2026-05-04T21:26:13.881295+00:00",
+      "audit_date": "2026-05-03T21:19:46.458972+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "lattice_nn_deterministic_rescale_note": "retained_bounded"
+        },
+        "deps": [
+          "lattice_nn_deterministic_rescale_note"
+        ],
+        "load_bearing_score": 1.5,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-lattice-nn-alpha-sweep",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop dependency is retained_bounded for the deterministic Born-safe NN refinement path, and the current runner completes with the note's gravity values, ratios, Born values, and scan-edge conclusion. The note explicitly limits the result to the scanned grid and disclaims h-independence, fixed-point establishment, and renormalized continuum closure.",
+      "claim_scope": "Bounded finite alpha sweep on the Born-safe deterministic NN refinement path showing alpha=1.5 is the best tested h=0.5 to h=0.25 gravity-stability point, with ratio 0.858, without promoting a continuum RG theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T21:19:46.458972+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:lattice_nn_deterministic_rescale_note:retained_bounded->unaudited",
+      "load_bearing_step": "Within the scanned grid, the strongest checked alpha is 1.5; at that alpha, gravity is nearly h-independent between h = 0.5 and h = 0.25, with ratio 0.858.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only if the alpha grid, deterministic rescale dependency status, or runner constants change.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The runner computes the finite alpha grid rather than setting the ratio by definition, and its completed output matches the source note: alpha 1.5 gives gravity +0.209207 at h=0.5, +0.179561 at h=0.25, and ratio 0.858. The dependency supplies the retained bounded deterministic refinement/Born-safe path, while this note only claims a bounded scan-edge probe. Residual risk is that this is not an optimized exponent or continuum theorem, but the note already states that boundary."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_nn_rg_alpha_sweep.py",
+  "title": "NN Lattice RG Alpha Sweep Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": "Under the bounded scope, the claim follows from the supplied completed runner and audited finite dependency: alpha=1.5 is the strongest checked alpha, gives the highest measured h=0.25/h=0.5 gravity ratio of 0.858, and the note avoids claiming a solved RG fixed point or continuum theory. The cache mismatch is non-load-bearing because it changes only sub-femtoscale Born residual numerics while preserving the machine-clean conclusion and not altering gravity values, ratios, exponents, or k=0 behavior."
+}

@@ -1,0 +1,287 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+  ],
+  "direct_in_degree": 15,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 17.853,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8b7f82d4de294d0c61593cd8f8bbbb6ede4f94fb96036bbf8d30bd7d558d6827",
+  "note_path": "docs/CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:08:24.484881+00:00",
+      "audit_date": "2026-05-22T12:49:45.953589+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 13.04,
+        "runner_hash": "943572bed145e5b0e514c1c2f6ed5ce17e5c48635334c79e3782bd7f79947d6a",
+        "transitive_descendants": 1052
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T124913Z-34ddc3b9-cl3_per_site_hilbert_dim-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The abstract Cl(3) representation-theoretic dimension follows from the cited retained_bounded authority, but the physical identification of each lattice-site Hilbert space with that faithful irreducible Cl(3) module is imported as a structural bridge. The cited authority explicitly moved the physical per-site Hilbert-dimension bridge out of scope and says downstream consumers should cite the staggered-Dirac/Grassmann substep instead.",
+      "claim_scope": "Per-site Hilbert dimension 2 and finite-block tensor-product dimension 2^|\u039b| for a Cl(3) site Hilbert space identified with a faithful irreducible complex Cl(3) representation.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T12:49:45.953589+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "The framework's per-site algebra at every x \u2208 Z^3 is Cl(3), and the site Hilbert space is the faithful irreducible representation; by the cited uniqueness theorem, dim_C H_x = 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite and include the retained-grade staggered-Dirac/Grassmann or equivalent bridge theorem that identifies the physical per-site Hilbert space with the faithful irreducible Cl(3) module.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner verifies Pauli anticommutation, irreducibility of the Pauli module, unitary conjugacy preservation, and the tensor-product dimension arithmetic, but it does not establish the missing bridge from the physical lattice site Hilbert space to a faithful irreducible Cl(3) module. The one-hop cited authority is retained_bounded for abstract physical-Cl(3)-only U1\u2013U3 content, while explicitly excluding U4, the per-site Hilbert-dimension conclusion on the framework baseline. Therefore the claim depends on an imported site-Hilbert-space identification not closed by this restricted packet."
+    },
+    {
+      "archived_at": "2026-05-29T00:46:44.308790+00:00",
+      "audit_date": "2026-05-22T22:27:30.948187+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 12.803,
+        "runner_hash": "943572bed145e5b0e514c1c2f6ed5ce17e5c48635334c79e3782bd7f79947d6a",
+        "transitive_descendants": 892
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T222605Z-5799a028-cl3_per_site_hilbert_dim-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The former physical-Hilbert bridge is supplied by the allowed k=1 qubit-per-site axiom-content context, which states H_x is exactly C^2 rather than a multi-copy Cl(3) module. The retained_bounded Cl(3) uniqueness authority supplies the 2-dim Pauli irrep, and the finite-block formula is standard tensor-product arithmetic.",
+      "claim_scope": "Under the k=1 qubit-per-site A1/R1 reading on Z^3 plus retained Cl(3) irrep/Pauli uniqueness, each site has H_x \u2245 C^2 with Pauli generators and each finite block has dim_C 2^|\u039b|.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T22:27:30.948187+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T22:25:42.685215+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T222412Z-5799a028-cl3_per_site_hilbert_dim-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under A1/R1 k=1 one-qubit-per-site content, each lattice site has H_x \u2245 C^2 with Pauli Cl(3) action, and finite \u039b has dim_C \u2297_{x\u2208\u039b} H_x = 2^|\u039b|.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-22T22:27:30.948187+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T222605Z-5799a028-cl3_per_site_hilbert_dim-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the k=1 qubit-per-site A1/R1 reading on Z^3 plus retained Cl(3) irrep/Pauli uniqueness, each site has H_x \u2245 C^2 with Pauli generators and each finite block has dim_C 2^|\u039b|.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_type_changed:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:bounded_theorem->positive_theorem",
+      "load_bearing_step": "The framework's per-site algebra at every x in Z^3 is Cl(3), the site Hilbert space is the faithful irreducible representation, and by the cited per-site uniqueness theorem dim_C H_x = 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that R1/QUBIT_AXIOM_HARDENING is accepted by the audit lane as admissible Axiom 1 content for this targeted re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "On the targeted packet including the R1 k=1 axiom-content reading, the missing physical-Hilbert bridge does not remain. The cited Cl(3) authority alone would not carry the old U4 physical-site conclusion, but it is sufficient for the abstract Pauli irrep content once R1 supplies H_x = C^2. The runner checks only algebraic Pauli relations, irreducibility, unitary equivalence, and tensor-dimension arithmetic; it does not independently prove R1."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.790561+00:00",
+      "audit_date": "2026-05-29T02:46:05.558357+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 13.33,
+        "runner_hash": "943572bed145e5b0e514c1c2f6ed5ce17e5c48635334c79e3782bd7f79947d6a",
+        "transitive_descendants": 909
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260529-cl3-per-site-dim",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel result: 3/5 judges sided with the second tuple and ratified audited_clean / positive_theorem / class C; 2/5 sided with the first tuple and class A. Majority rationale: the claim closes only with accepted A1/A2 in the packet. A1 supplies the one-qubit/C^2/Pauli local site module and physical site-Hilbert bridge, A2 supplies the Z^3 site set, and the retained pure Cl(3,0) theorem supplies the finite-dimensional faithful irreducible module classification. The finite-block formula is then ordinary tensor-product dimension algebra. Under the audit rubric, correct use of accepted axiom content as the framework baseline is class C rather than a mere class A identity check over retained inputs. The clean verdict is therefore ratified in the scoped A1/A2 sense, not as a pure-Cl(3)-only derivation or a chirality/spin-statistics claim.",
+      "claim_scope": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T02:46:05.558357+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-29T02:35:04.894425+00:00",
+          "auditor": "codex-gpt-5.5-fresh-per-site-dim-first-20260529",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given A1/A2 as accepted premises and the retained pure Cl(3) irrep classification, dim_C H_x = 2 at each site and dim_C tensor_{x in Lambda} H_x = 2^|Lambda| for finite Lambda; no independent derivation of the physical Hilbert-space bridge from pure Cl(3) alone is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-29T02:40:33.362502+00:00",
+          "auditor": "codex-gpt-5.5-fresh-per-site-dim-second-20260529",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "A1/A2-scoped dimension claim: each lattice site has a one-qubit faithful irreducible Cl(3) site module of complex dimension 2, and a finite block tensor product has dimension 2^|Lambda|; no downstream spin-statistics or independent chirality-selection claim is audited here.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-29T02:46:05.558357+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260529-cl3-per-site-dim",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "The first audit correctly scoped A1 as load-bearing and reached the clean positive-theorem verdict, but its class A label undercounted the role of accepted A1/A2 framework-baseline content in supplying the physical site-Hilbert bridge and one-qubit local module. Majority judges held that this makes the load-bearing class C under the rubric.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel result: 3/5 judges sided with the second tuple and ratified audited_clean / positive_theorem / class C; 2/5 sided with the first tuple and class A. Majority rationale: the claim closes only with accepted A1/A2 in the packet. A1 supplies the one-qubit/C^2/Pauli local site module and physical site-Hilbert bridge, A2 supplies the Z^3 site set, and the retained pure Cl(3,0) theorem supplies the finite-dimensional faithful irreducible module classification. The finite-block formula is then ordinary tensor-product dimension algebra. Under the audit rubric, correct use of accepted axiom content as the framework baseline is class C rather than a mere class A identity check over retained inputs. The clean verdict is therefore ratified in the scoped A1/A2 sense, not as a pure-Cl(3)-only derivation or a chirality/spin-statistics claim.",
+          "load_bearing_step_class": "C",
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 5
+          },
+          "second_auditor_error": "No material error. The majority preserves the second tuple's class C and clean positive-theorem result, with the explicit caveat that pure Cl(3) classification alone does not derive the physical per-site Hilbert-space bridge, chirality selection, spin-statistics, or downstream physics.",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:retained->unaudited",
+      "load_bearing_step": "The accepted A1/A2 framework premise fixes a one-qubit/C^2 Pauli local module at each Z^3 site, and the retained Cl(3,0) irrep classification supplies the faithful irreducible module dimension, so dim_C H_x = 2 and finite-block tensor dimensions are 2^|Lambda|.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if a future source widens this row to include a standalone pure-Cl(3)-only physical Hilbert-space bridge, chirality selection, spin-statistics, dynamics, or downstream physics claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Five-judge panel result: 3/5 judges sided with the second tuple and ratified audited_clean / positive_theorem / class C; 2/5 sided with the first tuple and class A. Majority rationale: the claim closes only with accepted A1/A2 in the packet. A1 supplies the one-qubit/C^2/Pauli local site module and physical site-Hilbert bridge, A2 supplies the Z^3 site set, and the retained pure Cl(3,0) theorem supplies the finite-dimensional faithful irreducible module classification. The finite-block formula is then ordinary tensor-product dimension algebra. Under the audit rubric, correct use of accepted axiom content as the framework baseline is class C rather than a mere class A identity check over retained inputs. The clean verdict is therefore ratified in the scoped A1/A2 sense, not as a pure-Cl(3)-only derivation or a chirality/spin-statistics claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/cl3_per_site_hilbert_dim_two_check.py",
+  "title": "Per-Site Hilbert Space Dimension = 2 from Cl(3) Per-Site Uniqueness",
+  "transitive_descendants": 1307,
+  "verdict_rationale": null
+}

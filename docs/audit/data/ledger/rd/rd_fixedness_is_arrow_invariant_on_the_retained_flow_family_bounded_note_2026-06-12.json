@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+    "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "58ca08a89f0cf0c8d340593d5188c5c11b1990ab7359a228eda7266c08265fd6",
+  "note_path": "docs/RD_FIXEDNESS_IS_ARROW_INVARIANT_ON_THE_RETAINED_FLOW_FAMILY_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:32.243481+00:00",
+      "audit_date": "2026-06-14T04:05:30.051440+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "Audited only the bounded theorem for the supplied two-sector records/L\u00fcders map: derivation of r -> 2r^2, its finite fixed-point stability, and the S2 versus S3 entropy comparator maxima.",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "Audited only the bounded algebraic claim that r=1/2 is stable for the explicitly supplied two-sector map g(r)=sqrt(r/2), with HS 2-sector equipartition and endpoint checks as stated; no physical-arrow selection was audited."
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "retained_bounded"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "d4f8f8c776c70145d6a7ebbbd770a73d03f8ba0f7ad9eee3184816bdc23daaa3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-040333-c971b365cf-rd_fixedness_is_arrow_invari",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-bounded authorities supply the two maps, and independent algebra verifies that they are inverses on r >= 0, have the same finite and projective fixed points, and reverse stability at r=1/2. The result closes only for the retained family and stated fixedness/side-condition reading; it does not close the physical R-D bridge or coarse-graining selector.",
+      "claim_scope": "Bounded algebraic audit of fixedness and stability for the retained two-map family phi(r)=2r^2 and g(r)=sqrt(r/2), including the stated endpoint exclusions under the R-D fixedness reading.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T04:05:30.051440+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Fix(phi) = Fix(g) = {0, 1/2}, with the same projective fixed point at infinity, so fixedness-based selection is unchanged when the retained map orientation is reversed.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use preserves the bounded scope and does not cite this as a physical R-D bridge or arrow-selection theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing mathematics is a direct algebraic closure over the supplied retained-bounded maps, not a numerical fit, definition substitution, or external comparator. Manual checking confirms g(phi(r))=r and phi(g(r))=r on r>=0, Fix(phi)=Fix(g)={0,1/2}, the common projective fixed point at s=0, and the multiplier reversal 2 versus 1/2. The note\u2019s firewall language keeps the clean result bounded to fixedness on the retained family and does not promote R-D, the physical arrow, or the coarse-graining prong."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_rd_fixedness_arrow_invariant_2026_06_12.py",
+  "title": "R-D Fixedness Is Arrow-Invariant on the Retained Flow Family",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

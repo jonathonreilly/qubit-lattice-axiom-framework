@@ -1,0 +1,331 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
+    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+    "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.644,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4e30d12f617c58d6f68034977c54518349794509c5ffab5f8056b44847834d51",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368458+00:00",
+      "archived_for_note_hash": "96779c3011ad90786b4710f67b4ead4c78ae0c634db5cfb534b8885831337d58",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-27T02:00:03.378705+00:00",
+      "archived_for_note_hash": "b7991275106db5fb5178eb79f25d79a36306b66ac8d10dec4113a85eb6a292b4",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.492322+00:00",
+      "archived_for_note_hash": "1749b008562024ada81c3672f9f235e36e8b8b94790a415162f0a402696d2256",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner reproduces PASS=6 and the algebraic reconstruction gap, but it imports the completed-sector data and checks canonical environment language from one-hop notes whose audit/effective states are unknown or support. The retained theorem therefore depends on upstream inputs that are not audit-retained.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Normalizing the completed first-sector coefficient vector by its trivial-channel coefficient gives rho_ret = (1, 0.267139565315, 0.267139565315, 0), and z00_min E_3 rho_ret reconstructs Z_min exactly.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the runner verifies the normalization and reconstruction algebra, but the completion vector v_min/Z_min comes from an unaudited unknown note and the canonical environment description comes from support notes rather than retained/audited-clean inputs. Why this blocks: the claim that the completed triple determines a retained diagonal/environment packet cannot be stronger than the upstream completion and environment-identification theorems it imports. Repair target: audit-retain the minimal positive completion note and the source-sector factorization / spatial environment character-measure inputs, or make this runner construct those inputs directly from retained authorities. Claim boundary until fixed: conditionally, given v_min and the canonical environment definitions, rho_ret is normalized, nonnegative, conjugation-symmetric, and reconstructs Z_min with gap 1.777e-16; the full beta=6 environment extension remains open."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.601818+00:00",
+      "audit_date": "2026-06-09T11:42:56.991522+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": "Given the retained parent inputs Z^loc, F, and the first symmetric retained cone C with coordinate test F^(-1)Z >= 0, the adjoint-only one-parameter repair has unique minimum r_min = -a^loc_(1,1), yielding a^min and Z^min on W_A, W_B, W_C; no full beta=6 environment realization is audited.",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": "positive_theorem",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": "retained",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 6.672,
+        "runner_hash": "cc076c8ee6c4dee414271f4819e01e9ab6f63d8d5ccb8b94471ee16dc1533a01",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260609-113938-22a2540dfb-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The arithmetic closes from the completed retained vector: 0.09339384931083795 / 0.34960695245840506 = 0.2671395653149936, and an independent first-sector SU(3) character evaluation at the three sample angles reproduces the displayed Z_min values. The result is only the truncated retained packet, not an extension to the full environment data.",
+      "claim_scope": "Algebraic normalization of the retained first-sector completion vector into a conjugation-symmetric nonnegative truncated coefficient packet, with reconstruction of the retained three-sample triple; no full beta=6 environment realization is audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-09T11:42:56.991522+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19:retained->retained_pending_chain",
+      "load_bearing_step": "Given the completed retained vector v_min, set z00_min = v_min(0,0) and rho_ret = v_min / z00_min, so Z_min = z00_min E_3 rho_ret.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if the upstream completion row or the first-sector basis normalization changes; the primitive registry sidecar was unavailable in the isolated packet and no primitive was used by this claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The note does not derive a new framework-point environment object; it repackages the upstream completed first-sector coefficient vector by standard normalization. The primary runner's numerical checks verify the ratio, conjugation symmetry, nonnegativity, and reconstruction, while its cross-note string checks only confirm the naming context. The full beta=6 environment extension remains explicitly outside the audited scope."
+    },
+    {
+      "archived_at": "2026-06-18T01:40:24.883855+00:00",
+      "audit_date": "2026-06-15T23:29:39.372413+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": "Adjoint-only first-symmetric retained positive completion of the named W_A, W_B, W_C local Wilson triple, with a^loc_(0,0) and a^loc_(1,0) fixed and only the adjoint coordinate repaired.",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": "positive_theorem",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": "retained",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 10.2,
+        "runner_hash": "cc076c8ee6c4dee414271f4819e01e9ab6f63d8d5ccb8b94471ee16dc1533a01",
+        "transitive_descendants": 51
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-232714-bdada2cb4b-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The step is an algebraic normalization and reconstruction over the retained completed-sector input and the retained first-symmetric evaluation map. Independently, 0.09339384931083795 / 0.34960695245840506 = 0.2671395653149936, and direct SU(3) character evaluation at the three stated sample angles reconstructs the displayed Z_min values to roundoff.",
+      "claim_scope": "Audited only the truncated retained first-symmetric-sector packet determined by the completed vector v_min: normalization, conjugation symmetry, coefficient nonnegativity on the retained sector, and exact reconstruction of the three retained samples; no full beta=6 environment extension was audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-15T23:29:39.372413+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19:retained->retained_pending_chain",
+      "load_bearing_step": "The retained packet is obtained by normalizing the completed first-sector vector, rho_ret = v_min / z00_min, and it reconstructs the triple as Z_min = z00_min E_3 rho_ret.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor may re-check that the cited completion authority's retained effective_status is the live status despite historical conditional-perimeter prose in its source note; the packet algebra itself is direct.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The primary runner's load-bearing checks are not first-principles physics computation; they are algebraic checks on retained inputs plus two cross-note string/input checks. The source claim is narrow enough: it asserts only a retained truncated diagonal coefficient packet and explicitly leaves full beta=6 realization open. The cited authorities in the restricted packet are marked retained or retained_bounded, and the open full-environment identifications in those authorities are not used as closed premises for this narrowed claim."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.951479+00:00",
+      "audit_date": "2026-06-18T06:12:21.850936+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": "Given the retained local Wilson coordinates, radical sample matrix F, and coordinatewise retained positive cone, the adjoint-only family has the unique minimal positive repair r_min=-a^loc_(1,1), yielding a^min and Z^min on W_A,W_B,W_C.",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": "decoration",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": "decoration_under_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 7.228,
+        "runner_hash": "cc076c8ee6c4dee414271f4819e01e9ab6f63d8d5ccb8b94471ee16dc1533a01",
+        "transitive_descendants": 52
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the completed retained vector v_min with nonzero first coordinate, normalization by z00_min gives rho_ret(0,0)=1 and z00_min E_3 rho_ret = E_3 v_min = Z_min. This closes only the truncated retained packet statement, not extension to the full beta=6 environment data.",
+      "claim_scope": "Algebraic retained first-symmetric-sector normalization of the completed vector v_min into the packet (z00_min, rho_ret), with reconstruction of Z_min on the three named samples.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-18T06:12:21.850936+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note:retained_bounded->unaudited",
+      "load_bearing_step": "Define z00_min = v_min(0,0) and rho_ret = v_min / z00_min, so that Z_min = z00_min E_3 rho_ret.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that the parent completion row remains retained-grade; this verdict does not cover the full beta=6 environment realization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner normalizes an imported completed-sector vector and checks the resulting reconstruction, so the load-bearing work is algebra over the parent completion claim rather than a new first-principles computation. The factorization and character-measure authorities support the packet vocabulary only within the stated truncated/finite scope. The result is therefore a valid decoration of the completed first-sector triple, not an independent positive theorem about the full beta=6 environment extension."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py",
+  "title": "Gauge-Vacuum Plaquette First-Sector Truncated Environment Packet",
+  "transitive_descendants": 49,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,73 @@
+{
+  "audit_date": "2026-06-03T02:09:41.602441+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified."
+    },
+    "dep_claim_type": {
+      "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained"
+    },
+    "deps": [
+      "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
+    ],
+    "load_bearing_score": 0.0,
+    "runner_hash": "11466ccc8248cf24c27e1a89a23998e2531417783524e110032a73d2730b370e",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-cli-gpt-5.5-20260603-020712-ca523a15-cluster_decomposition_de",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The one-hop upstream temporal-axis parent is marked retained, and the source note's load-bearing move only permutes finite product SU(3) link labels in the same Wilson heat-kernel construction. Within that narrowed finite-Lambda pure-Wilson scope, no additional open upstream premise is required.",
+  "claim_id": "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
+  "claim_scope": "Finite-Lambda pure-Wilson spatial-axis transfer-operator gap, audited only as an axis-permutation decoration under the retained finite-Lambda temporal-axis T_W gap theorem; no thermodynamic-limit, Yang-Mills mass-gap, fermion-factor, or downstream bridge-lift claim.",
+  "claim_type": "decoration",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-06-03T02:09:41.602441+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+  "deps": [
+    "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+  "effective_status_reason": "decoration_parent_retained",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+  "load_bearing_score": 2.5,
+  "load_bearing_step": "Relabeling the transfer coordinate as x_mu for any mu in {1,2,3} carries every load-bearing temporal-axis step through without modification on the finite Wilson kernel surface.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4f21abcf286f66b77112465996269957aa25ca986a9e533f99aa4408b89e0b92",
+  "note_path": "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md",
+  "notes_for_re_audit_if_any": "Re-check that downstream consumers use this only as finite-Lambda pure-Wilson H1+H2 support and do not treat the runner's approximate sampled positivity path as first-principles evidence.",
+  "open_dependency_paths": [],
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 8,
+    "B": 3,
+    "C": 7,
+    "D": 0,
+    "total_pass": 18
+  },
+  "runner_path": "scripts/frontier_cluster_decomp_delta_x_su3_axis_permutation_2026_06_02.py",
+  "title": "Operator-Theoretic Delta_x > 0 Support via Axis-Permutation from the Finite-Lambda SU(3) Temporal-Axis Theorem",
+  "transitive_descendants": 3,
+  "verdict_rationale": "The claimed spatial gap is not an independent first-principles computation; the SU(3) heat-kernel positivity, trace-class property, and Perron-Jentzsch gap are all imported from the retained temporal-axis parent. The new step is a finite-kernel axis-label permutation, which is a class-A algebraic decoration of that parent under the note's own pure-Wilson definitions. The runner reports 18 passes, but its sampled positivity check uses an approximate character surrogate, so the runner should be treated as non-load-bearing sanity support rather than a class-C proof."
+}

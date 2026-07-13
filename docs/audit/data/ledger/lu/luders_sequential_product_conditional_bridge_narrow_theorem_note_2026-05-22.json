@@ -1,0 +1,363 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+    "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.984,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f5206c36846759cac0d1411c872b2038b6ced8756f09376f459ae35c912a5be0",
+  "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-24T08:14:11.000082+00:00",
+      "archived_for_note_hash": "b43bff4093d29d7a62de7a1f214e89eadb22a27047e186db08935177a467b7c7",
+      "audit_date": "2026-05-23T12:50:14.139303+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "For finite \u039b \u2282 Z^3, linear maps \u03a6: A_\u039b \u2192 A_\u039b on A_\u039b = \u2297_{x\u2208\u039b} M_2(C) \u2245 M_{2^|\u039b|}(C) have the standard finite-dimensional Kraus representation iff CP, are TP iff \u03a3_r K_r\u2020K_r = 1, and are CP iff the Choi matrix is positive semidefinite.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "2c02298d92080b864a2fe8053831a720a5db0b1c4bbe7c43d96b31854be31ca4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T124813Z-fe58fcd0-luders_sequential_produc-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra after assuming LSP is exact, but the restricted packet does not derive or retain the LSP instrument-selection premise K_P = P. Thus the chain does not close from cited retained inputs alone.",
+      "claim_scope": "Conditional L\u00fcders bridge only: assuming the projective instrument selection K_P = P, the sequential joint effect is M_{P,E}=PEP on finite qubit-lattice matrix algebras; no uniqueness or LSP derivation is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T12:50:14.139303+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the LSP premise K_P = P, K_P\u2020 E K_P = P\u2020 E P = P E P using P\u2020 = P.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade derivation or explicit framework approval selecting the projective L\u00fcders instrument K_P=P, then re-audit for possible clean bounded status.",
+      "open_dependency_paths": [
+        "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The runner source genuinely performs symbolic matrix checks for the conditional identity and a non-L\u00fcders twist, rather than merely printing pass counts. However the theorem imports LSP as an explicit load-bearing instrument-selection premise, and the provided retained Kraus-Choi authority supplies Kraus representation/existence rather than the selection K_P=P. The axiom-premise carve-out covers A1+A2 only; it does not close the separate LSP selection. No-Go gate N6 also blocks treating the negative boundary as clean closure because the packet itself points to a separate derivation or approval route for LSP."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.077740+00:00",
+      "audit_date": "2026-05-24T17:09:53.929834+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "For finite \u039b \u2282 Z^3, linear maps \u03a6: A_\u039b \u2192 A_\u039b on A_\u039b = \u2297_{x\u2208\u039b} M_2(C) \u2245 M_{2^|\u039b|}(C) have the standard finite-dimensional Kraus representation iff CP, are TP iff \u03a3_r K_r\u2020K_r = 1, and are CP iff the Choi matrix is positive semidefinite.",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "For a finite qubit-lattice region and an explicitly chosen canonical projective-measurement Naimark/L\u00fcders dilation, the outcome-r Kraus operator is P_r and sequential composition with a later effect is P_r E P_r; no uniqueness of all instruments implementing the same POVM is audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "2c02298d92080b864a2fe8053831a720a5db0b1c4bbe7c43d96b31854be31ca4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T170829Z-c768dd34-luders_sequential_produc-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained_bounded LSP-projective authority supplies the canonical-frame premise K_P=P for ideal unrefined projective measurements, and the remaining equality is direct matrix algebra. The runner checks the algebra symbolically and verifies that alternative Kraus choices are distinct rather than silently forced.",
+      "claim_scope": "For finite qubit-lattice projective measurements in the retained canonical L\u00fcders/Naimark frame with K_P=P, the joint sequential effect satisfies M_{P,E}=K_P\u2020 E K_P=PEP and the normalized L\u00fcders state update follows when Tr(P\u03c3P)>0.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T17:09:53.929834+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:retained->unaudited",
+      "load_bearing_step": "The conclusion (1) follows by direct algebra: K_P\u2020 E K_P = P\u2020 E P = P E P, using P\u2020 = P.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check scoped wording stays restricted to ideal unrefined projective measurements and the canonical L\u00fcders/Naimark frame.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "All load-bearing non-axiom dependencies in the restricted packet are retained-grade: Kraus-Choi is retained and LSP-projective is retained_bounded; the Minimal Axioms node is an axiom-premise carve-out. The theorem is clean only at bounded scope, namely the canonical projective L\u00fcders/Naimark frame, not uniqueness of all sequential products. Same-packet negative-boundary checks do not defeat that scoped result because the alternative-Kraus routes are explicitly outside the canonical-frame claim."
+    },
+    {
+      "archived_at": "2026-06-09T22:15:39.927826+00:00",
+      "audit_date": "2026-06-06T11:35:10.941980+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "Finite-region qubit-lattice CPTP maps on A_Lambda = tensor_{x in Lambda} M_2(C) admit standard Kraus operator-sum representations and equivalent positive Choi matrices under the stated unnormalized convention.",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "Audited the narrow finite-dimensional canonical Naimark/Luders construction for a projective measurement and its conclusion that the canonical outcome Kraus operator is K_P = P.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.5,
+        "runner_hash": "2c02298d92080b864a2fe8053831a720a5db0b1c4bbe7c43d96b31854be31ca4",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-113056-ea23ffa7ef-luders_sequential_product_co",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conditional theorem closes from the explicit LSP premise plus standard projection identities P\u2020=P and P^2=P. The state-update formula follows from the same Kraus sandwich update and normalization under the stated nonzero-probability condition.",
+      "claim_scope": "Finite-region qubit-lattice projective measurements, conditional on the L\u00fcders/canonical-frame instrument selection K_P = P, give M_{P,E}=P E P for any later effect E and the normalized postselected state P sigma P / Tr(P sigma P) when the denominator is nonzero.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T11:35:10.941980+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:retained->unaudited",
+      "load_bearing_step": "Given the LSP premise K_P = P, the joint effect reduces by direct algebra: K_P\u2020 E K_P = P\u2020 E P = P E P.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check wording around non-load-bearing examples: several Pauli test operators are called effects even though the conditional PEP identity holds for arbitrary matrices.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The audited claim is the bounded conditional bridge, not an unconditional derivation of LSP or a uniqueness theorem for sequential products. The non-axiom cited authorities in the packet are retained-grade, with the LSP-projective authority retained_bounded, and the minimal-axiom memo is an accepted premise under the carve-out. The runner performs actual symbolic matrix checks and a twisted-Kraus comparison rather than printing constants; independently, the displayed bridge reduces to K_P=P, P\u2020=P, matrix multiplication, and trace cyclicity. Some runner examples are Pauli observables rather than positive effects, but the class-A identity itself is stronger than the effect domain and does not rely on positivity."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.505485+00:00",
+      "audit_date": "2026-06-10T03:02:28.116450+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "Finite-region specialization of the retained single-convention Kraus/Choi correspondence to A_\u039b = \u2297_{x\u2208\u039b} M\u2082(\u2102) \u2245 M_{2^|\u039b|}(\u2102), including CP iff Choi-positive and TP iff \u03a3_r K_r\u2020K_r = \ud835\udfd9.",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "Audited the narrow finite-dimensional canonical Naimark/Luders construction for a projective measurement and its conclusion that the canonical outcome Kraus operator is K_P = P.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "decoration",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.755,
+        "runner_hash": "2c02298d92080b864a2fe8053831a720a5db0b1c4bbe7c43d96b31854be31ca4",
+        "transitive_descendants": 26
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-025927-646786aa54-luders_sequential_product_co",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained-bounded LSP-projective authority for the scoped K_P=P selection and the projection identity P\u2020=P, the displayed bridge is direct operator algebra. The result does not assert uniqueness of projective instruments, non-projective POVM selection, or physical closure outside the ideal unrefined projective/canonical-frame scope.",
+      "claim_scope": "For finite qubit-lattice regions, under the LSP/canonical Naimark-frame selection K_P=P for ideal unrefined projective measurement, the sequential joint effect is K_P\u2020 E K_P=PEP and the postselected state is P sigma P / Tr(P sigma P).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T03:02:28.116450+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05->unaudited",
+      "load_bearing_step": "The conclusion (1) follows by direct algebra: K_P\u2020 E K_P = P\u2020 E P = P E P, using P\u2020 = P.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream users preserve the ideal unrefined projective/canonical-frame restriction; runner Pauli examples are Hermitian-operator tests rather than positive-effect coverage, but this does not affect the K_P=P algebraic bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class A algebraic closure over retained-grade inputs: the LSP-projective cited authority is retained_bounded, the minimal axiom authority is an accepted premise, and the Kraus-Choi authority is retained-grade decoration. The runner substantively checks exact matrix identities and a non-L\u00fcders twist, with the remaining PASS lines only checking source-boundary wording. This is clean scoped bounded support, not a universal uniqueness theorem or a promotion of any broader L\u00fcders row."
+    },
+    {
+      "archived_at": "2026-07-10T17:07:21.986398+00:00",
+      "audit_date": "2026-07-10T01:50:51.588779+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "Finite-region Kraus-Choi/operator-sum representation theorem for CPTP maps on the qubit-lattice matrix algebra A_Lambda, using the retained single-convention normalization theorem as the framework-local Kraus-Choi authority.",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "The canonical projective-measurement isometry yields the L\u00fcders Kraus operator K_r = P_r and hence the sequential effect P_r E P_r; no uniqueness among all instruments implementing the same POVM is claimed.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.115,
+        "runner_hash": "2c02298d92080b864a2fe8053831a720a5db0b1c4bbe7c43d96b31854be31ca4",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-luders_sequential_produc-055",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes exactly once K_P=P is assumed, but the restricted packet does not establish that the canonical L\u00fcders/Naimark representative is the framework's physically selected projective instrument. The retained-bounded Naimark authority explicitly leaves that canonical-frame selection as a convention rather than a unique physical consequence.",
+      "claim_scope": "The finite-region identity M_{P,E}=PEP and the corresponding normalized state update, conditional on selecting the L\u00fcders Kraus operator K_P=P for projective measurements.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T01:50:51.588779+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:retained->retained_pending_chain",
+      "load_bearing_step": "Given the LSP selection K_P = P, K_P\u2020 E K_P = P\u2020 E P = P E P because P\u2020 = P.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained authority deriving the framework's physical selection of the canonical L\u00fcders instrument, or record explicit owner-governance adoption of that selection within a precise projective-measurement boundary, then re-audit.",
+      "open_dependency_paths": [
+        "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The runner genuinely verifies the class-A operator identities and demonstrates that a unitary-twisted Kraus operator can produce different sequential statistics. Thus LSP is load-bearing rather than derived by the runner. The cited retained-bounded Naimark note supplies K_P=P only within the canonical frame and explicitly leaves the physical instrument-selection bridge open, so the stronger framework-selection premise remains conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
+  "title": "L\u00fcders Sequential-Product Conditional Bridge (Narrow)",
+  "transitive_descendants": 715,
+  "verdict_rationale": null
+}

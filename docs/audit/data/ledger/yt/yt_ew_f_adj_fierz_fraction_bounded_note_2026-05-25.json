@@ -1,0 +1,117 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ew_current_fierz_channel_decomposition_note_2026-05-01",
+    "yt_ew_color_projection_theorem"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8154e599ba1847fecb06a5cabb1e0da69b4419b926f7c0d0566baab3c9046793",
+  "note_path": "docs/YT_EW_F_ADJ_FIERZ_FRACTION_BOUNDED_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:34.908046+00:00",
+      "audit_date": "2026-05-27T05:52:32.634505+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9bbb9ada827b250ff518b9b1b85f0cc2f4a247b71bda401a5eae55493d57d2c4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The arithmetic closes exactly from the cited Fierz channel-count authority and the runner verifies the rational specialization. However, the same 8/9 channel-count fraction is already the audited content of the parent Fierz/decomposition row; this note adds no independent comparator, no compression, and no new physical readout selector.",
+      "claim_scope": "Algebraic specialization of the cited Fierz channel-count authority: from singlet count 1, adjoint count N_c^2 - 1, and total N_c^2, the exact adjoint fraction at N_c = 3 is 8/9. This adds no independent physical selector, comparator, or theorem beyond the parent Fierz/decomposition row.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-27T05:52:32.634505+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "ew_current_fierz_channel_decomposition_note_2026-05-01",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_ew_color_projection_theorem:retained_no_go->unaudited",
+      "load_bearing_step": "F_adj = (N_c^2 - 1) / N_c^2 = 8/9 at N_c = 3.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "decoration: re-audit only if the row gains independent physical/comparator content or becomes load-bearing for a non-decoration claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: the source presents an exact bounded proof-walk, but the proof-walk is only the rational specialization of the cited Fierz channel-count parent.\nWhy this blocks: a separate retained bounded theorem would duplicate algebraic content already carried by the parent decoration authority, and would inflate the claim surface without adding an independent observable, comparator, or selector theorem.\nRepair target: box this note under the Fierz channel-count parent, or re-promote only if a later revision adds independent physical content such as a retained EW-current selector or a new comparator not already attached to the parent.\nClaim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebra under the parent; it should be treated as decoration, not as an independent retained bounded theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/yt_ew_f_adj_fierz_runner.py",
+  "title": "y_t EW F_adj Fierz-Fraction Bounded Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

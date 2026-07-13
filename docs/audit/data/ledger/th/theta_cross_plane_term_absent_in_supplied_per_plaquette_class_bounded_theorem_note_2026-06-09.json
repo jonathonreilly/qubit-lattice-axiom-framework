@@ -1,0 +1,163 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (conditional per-plaquette class exclusion)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.97,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "92e045914cc688b54bf9a952fd6726c0276ceed29a09ad060c5e1818e9122e8d",
+  "note_path": "docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.400412+00:00",
+      "audit_date": "2026-06-11T15:48:22.392386+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09": "Finite enumeration of rooted non-backtracking edge-simple closed loops at the origin in Z^3 for lengths 4 and 6 under the stipulated unit-neighborhood link-support license."
+        },
+        "dep_claim_type": {
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "7b0c7fab4d697da842970e7109df088db0a0c4f7c7e6758c4e91d65f2fd029aa",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-154518-26e4be3a96-theta_cross_plane_term_absen",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Treating the per-plaquette action class as the stated hypothesis, the action separates by plaquette plane, so mixed derivatives with respect to disjoint plane variables are zero. Multi-plaquette and clover terms are not closed by this argument, but they are explicitly outside the audited scope.",
+      "claim_scope": "Conditional exclusion of a local cross-plane F tilde F slot only inside the supplied additive per-plaquette action class A = sum_P f(U_P).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T15:48:22.392386+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "The coefficient of a cross-plane monomial such as F_01 F_23 is a mixed derivative of a sum of single-plane plaquette functions, and those mixed derivatives vanish identically.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only that downstream uses do not broaden this beyond the supplied per-plaquette action class or treat it as full theta_QCD closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 14,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing step is a direct algebraic separability check: a sum of one-plane functions has zero mixed derivative across different plane variables. An independent manual check agrees with the runner's symbolic and direction-counting result, and the note consistently limits the conclusion to the supplied per-plaquette class. The cited per-plaquette enumeration authority is retained_bounded and non-load-bearing for this theorem; no external comparator or tuned numerical value is used."
+    },
+    {
+      "archived_at": "2026-07-10T17:16:20.799210+00:00",
+      "audit_date": "2026-07-10T15:34:04.289821+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09": "Under the explicitly defined unit-neighborhood endpoint license, the rooted cubic-lattice loops of lengths 4 and 6 have counts 24 and 264 respectively, with license acceptance counts 24 and 0; no gauge-action derivation is included."
+        },
+        "dep_claim_type": {
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
+        ],
+        "load_bearing_score": 6.892,
+        "runner_hash": "7b0c7fab4d697da842970e7109df088db0a0c4f7c7e6758c4e91d65f2fd029aa",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00003-theta_cross_plane_term_absen",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The mixed-derivative identity and direction count establish the stated exclusion for the supplied additive per-plaquette class. The packet does not derive that action-class premise, so the closure remains conditional on it.",
+      "claim_scope": "Within the supplied class A = sum_P f(U_P), no single local summand contains a cross-plane F tilde F coefficient.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:34:04.289821+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "For an action that is a sum of single-plane functions, every mixed derivative with respect to field strengths from two complementary plaquette planes vanishes identically.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation forcing the relevant action into the additive per-plaquette class, then re-audit; otherwise preserve the present bounded conditional scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 14,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing result is a genuine class-A algebraic identity, and the runner actually computes the relevant mixed derivatives rather than printing a predetermined outcome. The theorem nevertheless imports the per-plaquette action class as an explicit premise, and the retained-bounded cited authority expressly does not derive that class. The result therefore closes only within its carefully stated conditional scope and does not establish full theta-term absence."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py",
+  "title": "Theta Cross-Plane Term Absent in a Supplied Per-Plaquette Class",
+  "transitive_descendants": 708,
+  "verdict_rationale": null
+}

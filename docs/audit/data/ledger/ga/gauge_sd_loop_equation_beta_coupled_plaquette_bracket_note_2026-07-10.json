@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_sd_loop_equation_beta_coupled_plaquette_bracket_note_2026-07-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "788a54ea75b488f41691993e3e542a224348c34ae0ea4cb2ae4eea684bd1c860",
+  "note_path": "docs/GAUGE_SD_LOOP_EQUATION_BETA_COUPLED_PLAQUETTE_BRACKET_NOTE_2026-07-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:28.638754+00:00",
+      "audit_date": "2026-07-10T16:50:24.105239+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06": "The old W_lift lambda=3 shortcut and support-only SDP constraints cannot certify a nontrivial finite SU(3), Wilson beta=6 reproduction bracket; source-data and beta-coupled SDP routes remain open."
+        },
+        "dep_claim_type": {
+          "gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6ff5805be1da70492d6f616630ae6b1938cf89394d14628d0bd49f29d0b9cfbd",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T164715Z-1ebf2b3d-00003-gauge_sd_loop_equation_beta_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The verifier rebuilds the finite model and proves the dual affine identities and multiplier positivity in exact rational arithmetic, so every feasible functional satisfies the certified D=2 bracket. The all-ones box, PSD, and equation evaluations are likewise exact.",
+      "claim_scope": "Exact certification of w_P in [-10000001/20000000, 903482039/1000000000] for the embedded N=3, beta=6, D=2 truncated constraint model; exact all-ones refutation for the D=2 and D=4 models; D=4 bound restricted to the kinematic box [-1/2,1].",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:50:24.105239+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The embedded D=2 dual certificates are verified coefficient-by-coefficient against the rebuilt exact model, including nonnegative box multipliers and exact rational LDLT positivity of every PSD multiplier, thereby proving the quoted upper and lower bounds.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 1,
+        "C": 17,
+        "D": 1,
+        "total_pass": 51
+      },
+      "verdict_rationale": "The certificate path is substantive: it rebuilds the SHA-pinned model, verifies every dual multiplier by exact rational LDLT, and checks the dual identity coefficient-by-coefficient. The quoted bounds are also hard-coded as drift pins, but their validity comes from the verified proof objects, making the load-bearing step class A rather than C or G. The retained_no_go authority supplies the acceptance contract, while the bounded result closes self-containedly; the fenced 0.5934 comparator contributes no derivation input."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_sd_loop_equation_beta_coupled_plaquette_bracket.py",
+  "title": "Gauge SD Loop-Equation Beta-Coupled Plaquette Bracket Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

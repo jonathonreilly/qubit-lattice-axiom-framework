@@ -1,0 +1,572 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.522,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b4abd98e7f2abe39d951678d6fe7a98ad907263f852ca5acdeab8e53271913fd",
+  "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.086009+00:00",
+      "audit_date": "2026-05-25T14:52:17.922432+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "861a8cb2edb607f055982eefa1cc96c6478f329de8b4c4f69af90dadc2aab9ee",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T144935Z-a5277593-staggered_dirac_substep1-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "From the axiom-premise qubit algebra, the finite tensor product admits bare commuting hard-core ladders and also JW-dressed CAR generators. The runner verifies the decisive finite matrix facts and no additional retained selector for fermionic grading/locality is present in the restricted packet.",
+      "claim_scope": "A1/A2 qubits on Z^3 plus the tested ungraded operator-algebra, per-site dimension, and finite local-ordering facts do not force Grassmann/CAR statistics over the hard-core-boson reading.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-25T14:52:17.922432+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "The qubit-ladder algebra and the JW-fermion algebra each generate the same full matrix algebra M_{2^N}(C), so JW is an invertible change of generators and ungraded operator-algebra/dimension data do not prefer the fermionic frame.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the locality horn is treated as supporting scope only, not as an exhaustive theorem over all possible graded-locality formalisms.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 34,
+        "D": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "The runner source genuinely constructs Pauli/tensor-product/JW operators, computes commutators, anticommutators, algebra ranks, per-site truncation behavior, and the finite bandwidth obstruction; it does not hard-code a contested premise or import an external comparator. The only cited authority is the A1/A2 axiom premise, which is covered by the accepted-premise carve-out, and the proof uses standard finite-dimensional algebra from that baseline. The negative-claim gate passes within the packet: five forcing routes are considered, collapsed to the single missing statistics/graded-locality selector, and the steelman requires an extra principle absent from A1/A2."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.549128+00:00",
+      "audit_date": "2026-06-05T17:30:39.106661+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.2,
+        "runner_hash": "861a8cb2edb607f055982eefa1cc96c6478f329de8b4c4f69af90dadc2aab9ee",
+        "transitive_descendants": 12
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-eaecdade9c-staggered_dirac_substep1_sta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited axiom memo is an accepted-premise authority for the one-qubit local algebra and Z^3 substrate, and the remaining steps are finite tensor-product algebra. The no-go is properly scoped to lack of forcing from ungraded algebra/dimension/local-ordering facts, not to impossibility of a future graded-locality or spin-statistics selector.",
+      "claim_scope": "Audited the scoped no-go that the Lattice/Quantum qubit-on-Z^3 baseline plus finite ungraded operator-algebra, per-site dimension, and checked JW-ordering locality facts do not force Grassmann/CAR statistics.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T17:30:39.106661+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "The qubit-ladder algebra and the JW-fermion algebra each generate the same full ungraded matrix algebra M_{2^|Lambda|}(C), so JW is an invertible change of generators and the checked operator-algebra/dimension data cannot select fermionic statistics over the hard-core-boson frame.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use preserves the scoped wording: not forced by the current ungraded baseline, not impossible under an added retained graded-locality or spin-statistics principle.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 8,
+        "C": 6,
+        "D": 10,
+        "total_pass": 34
+      },
+      "verdict_rationale": "Independent formula review agrees with the runner's core identities: disjoint bare ladders commute but do not anticommute, JW strings satisfy CAR, both generator sets recover the full matrix algebra, hard-core boson and fermion per-site dimensions are both 2, and the displayed lexicographic/bandwidth locality checks have the stated values. The runner source actually constructs the Pauli tensor products, JW operators, algebra ranks, and cube bandwidth rather than hard-coding the verdict. The N1-N8 no-go discipline gate is satisfied because the source note names alternative routes, collapses the wall to the missing statistics/graded-locality selector, scopes the rhetoric, and preserves future partial-closure paths."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.518405+00:00",
+      "audit_date": "2026-06-10T20:50:10.256414+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 18.905,
+        "runner_hash": "861a8cb2edb607f055982eefa1cc96c6478f329de8b4c4f69af90dadc2aab9ee",
+        "transitive_descendants": 958
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-0834e4fc8c-staggered_dirac_substep1_sta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited minimal axiom premise supplies the one-qubit local algebra on the Z^3 substrate, and standard finite tensor-product algebra closes the hard-core-boson and JW-CAR computations. No additional retained selector is needed for this scoped negative conclusion; possible future graded-locality or spin-statistics selectors are outside the claim.",
+      "claim_scope": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-10T20:50:10.256414+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-05T21:23:53.742986+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-179e8048b7-staggered_dirac_substep1_sta",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the scoped no-go that the Lattice/Quantum qubit-on-Z^3 baseline plus finite tensor-product ungraded algebra, dimension, and finite local-ordering checks do not derive Grassmann/CAR statistics as forced rather than compatible.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-10T20:50:10.256414+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-0834e4fc8c-staggered_dirac_substep1_sta",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The qubit-ladder generators and the JW-fermion generators generate the same full ungraded matrix algebra on each finite tensor block, while the hard-core-boson site has the same two-dimensional per-site space as a fermion.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the locality horn scope: it rules out strict total-order JW nearest-neighbor locality, not every possible graded-locality selector.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 8,
+        "C": 6,
+        "D": 10,
+        "total_pass": 34
+      },
+      "verdict_rationale": "The runner source actually constructs Pauli tensor operators, JW strings, generated-algebra ranks, hard-core/free-boson dimension checks, and finite ordering obstructions; it is not merely printing expected constants. Independent algebra confirms that disjoint bare ladders commute, JW-dressed ladders satisfy CAR, and both generator sets recover the same full matrix algebra, so ungraded algebra and dimension data cannot distinguish the statistics frame. The no-go is properly scoped to forcing from those baseline data and does not claim that every possible future graded-locality or spin-statistics principle is excluded."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.894239+00:00",
+      "audit_date": "2026-06-30T17:21:32.138635+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 18.375,
+        "runner_hash": "861a8cb2edb607f055982eefa1cc96c6478f329de8b4c4f69af90dadc2aab9ee",
+        "transitive_descendants": 938
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-p1-20260630T171737Z-17563f33-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The ratified tuple is clean/no_go/A. The decisive step is exact finite tensor-product algebra: bare qubit ladders and JW-dressed CAR generators generate the same ungraded full matrix algebra, while the hard-core-boson and fermion per-site dimensions are both 2. That is an algebraic closure over the accepted qubit-on-Z^3 premise and standard mathematics, not a tuned comparison, renaming, or unsupported bridge; the no-go is narrowly scoped to absence of forcing from ungraded algebra, dimension, and the stated locality-ordering checks.",
+      "claim_scope": "Audited the scoped no-go that the accepted qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and stated finite ordering/locality checks make Grassmann/CAR statistics compatible via JW but do not force them over the hard-core-boson qubit frame.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-30T17:21:32.138635+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T17:14:13.377964+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T171413Z-b43bc55f-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the scoped no-go that the accepted qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and stated finite ordering/locality checks make Grassmann/CAR statistics compatible via JW but do not force them over the hard-core-boson qubit frame.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-30T17:17:26.507876+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T171726Z-af18a02b-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the registered Lattice/Qubit baseline and standard finite tensor-product algebra on finite Z^3 blocks, Grassmann/CAR statistics are compatible via JW but are not forced by ungraded operator-algebra, per-site dimension, or the finite ordering-locality checks supplied here.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-06-30T17:21:32.138635+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-p1-20260630T171737Z-17563f33-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "no_go",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "The ratified tuple is clean/no_go/A. The decisive step is exact finite tensor-product algebra: bare qubit ladders and JW-dressed CAR generators generate the same ungraded full matrix algebra, while the hard-core-boson and fermion per-site dimensions are both 2. That is an algebraic closure over the accepted qubit-on-Z^3 premise and standard mathematics, not a tuned comparison, renaming, or unsupported bridge; the no-go is narrowly scoped to absence of forcing from ungraded algebra, dimension, and the stated locality-ordering checks.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second audit overclassified the load-bearing step as C and treated all runner PASS lines as first-principles compute; the central step is an exact algebraic identity/closure check, while class C is better reserved for framework computations producing new numerical outputs rather than pure finite-matrix algebra equivalence.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream uses preserve the narrow scope: this does not rule out a future retained graded-locality, spin-statistics, or superselection selector.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The ratified tuple is clean/no_go/A. The decisive step is exact finite tensor-product algebra: bare qubit ladders and JW-dressed CAR generators generate the same ungraded full matrix algebra, while the hard-core-boson and fermion per-site dimensions are both 2. That is an algebraic closure over the accepted qubit-on-Z^3 premise and standard mathematics, not a tuned comparison, renaming, or unsupported bridge; the no-go is narrowly scoped to absence of forcing from ungraded algebra, dimension, and the stated locality-ordering checks."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.505491+00:00",
+      "audit_date": "2026-07-01T21:13:25.631643+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 18.375,
+        "runner_hash": "861a8cb2edb607f055982eefa1cc96c6478f329de8b4c4f69af90dadc2aab9ee",
+        "transitive_descendants": 938
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T211325Z-65a78cbf-staggered_dirac_substep1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal axiom premise supplies the Z^3 site set and one-site M_2(C) algebra, and the remaining proof is finite tensor-product algebra plus finite graph ordering checks. No unprovided physical selector, graded-locality principle, comparator, fitted value, or downstream staggered-Dirac carrier is used for the scoped conclusion.",
+      "claim_scope": "Audited the scoped no-go that the accepted Lattice/Qubit baseline plus standard finite tensor-product linear algebra, ungraded operator-algebra dimensions, and finite JW ordering checks do not force Grassmann/CAR statistics; they establish compatibility via JW while leaving the hard-core-boson qubit frame on equal ungraded-algebra footing.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-01T21:13:25.631643+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T21:09:24.204409+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T210924Z-2e63c124-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the scoped no-go that the registered Qubit/Lattice baseline plus ungraded finite tensor-product algebra, per-site dimension, and tested total-order locality facts do not force Grassmann/CAR statistics over the hard-core-boson qubit frame.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T21:13:25.631643+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T211325Z-65a78cbf-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the scoped no-go that the accepted Lattice/Qubit baseline plus standard finite tensor-product linear algebra, ungraded operator-algebra dimensions, and finite JW ordering checks do not force Grassmann/CAR statistics; they establish compatibility via JW while leaving the hard-core-boson qubit frame on equal ungraded-algebra footing.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The qubit-ladder algebra and JW-fermion algebra generate the same full ungraded matrix algebra M_{2^|Lambda|}(C), while the hard-core-boson and fermion per-site dimensions are both 2, so the checked operator-algebra and dimension data cannot force the fermionic frame over the hard-core-boson frame.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations preserve the scoped limitation to ungraded operator-algebra, dimension, and checked JW-ordering facts, not a no-go against all possible graded-locality formalisms.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 34,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "The runner source genuinely constructs Pauli tensor-factor operators, JW strings, algebra spans, hard-core/free-boson dimension comparisons, and the finite cube bandwidth check rather than merely printing the claimed verdict. Independent sign checks confirm the bare ladders commute across sites, JW strings give CAR, and both generator sets recover the same full ungraded matrix algebra. The no-go discipline gate is adequately scoped: the note enumerates five forcing routes, collapses them to the single missing graded-locality/statistics selector wall, states the steelman, and explicitly leaves future spin-statistics or graded-locality selectors open."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.503953+00:00",
+      "audit_date": "2026-07-02T08:52:59.511612+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 18.375,
+        "runner_hash": "861a8cb2edb607f055982eefa1cc96c6478f329de8b4c4f69af90dadc2aab9ee",
+        "transitive_descendants": 938
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T085259Z-02cd35e1-staggered_dirac_substep1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted axiom premise supplies the Z^3 site set and one-site M_2(C) algebra; standard finite tensor products then give commuting bare site ladders, nilpotency, the JW CAR construction, and identical full matrix-algebra closure for the two generator frames. The no-go is scoped to those ungraded algebra, dimension, and finite ordering facts, and it explicitly leaves any future graded-locality or spin-statistics selector outside the conclusion.",
+      "claim_scope": "Finite-block audit of whether the accepted Lattice+Qubit baseline plus standard tensor-product algebra, per-site dimension, and checked total-order locality facts force Grassmann/CAR statistics rather than merely admit a JW fermion frame alongside a hard-core-boson frame.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T08:52:59.511612+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T08:44:58.293523+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T084458Z-80f08da6-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the scoped no-go that the accepted qubit-on-Z^3 baseline plus finite ungraded operator-algebra, dimension, and JW-order locality checks do not force Grassmann/CAR statistics over the hard-core-boson qubit frame.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T08:52:59.511612+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T085259Z-02cd35e1-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block audit of whether the accepted Lattice+Qubit baseline plus standard tensor-product algebra, per-site dimension, and checked total-order locality facts force Grassmann/CAR statistics rather than merely admit a JW fermion frame alongside a hard-core-boson frame.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "The qubit-ladder generators and the Jordan-Wigner fermion generators each close to the same full ungraded matrix algebra M_{2^|Lambda|}(C), while both hard-core boson and fermion have per-site dimension 2, so the checked algebra/dimension data cannot select the fermionic frame.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the implicit finite tensor-product reading of the Qubit axiom and the stated exclusion of future graded-locality selectors from the no-go scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 16,
+        "D": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "The runner source genuinely constructs the finite qubit tensor-product operators, computes commutators/anticommutators, algebra ranks, per-site dimensions, JW string lengths, and the 2x2x2 bandwidth obstruction; it does not read a contested premise or external comparator. Independently, disjoint tensor factors commute, JW signs come from moving a ladder through its Z string, and both generator sets recover the same full matrix algebra, so the algebra/dimension forcing claim is defeated on its stated scope. The source note includes a scoped N1-N8 no-go discipline check and does not overclaim against possible future graded-locality or spin-statistics principles."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.097941+00:00",
+      "audit_date": "2026-07-08T00:28:47.858502+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 17.087,
+        "runner_hash": "861a8cb2edb607f055982eefa1cc96c6478f329de8b4c4f69af90dadc2aab9ee",
+        "transitive_descendants": 543
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-cross-confirm-20260707-26919470-staggered_dirac_substep1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted axiom premise supplies the Z^3 lattice and one-site M2(C) structure, and the runner constructs the finite tensor-product bare ladders and JW operators directly from it. The verified same-algebra, dimension-blindness, and ordering-locality checks are enough for the scoped no-forcing conclusion without importing an additional selector.",
+      "claim_scope": "Audited only the narrowed no-go that the Lattice/Qubit baseline plus the tested ungraded operator-algebra, per-site dimension, and finite ordering-locality facts do not force Grassmann/CAR statistics over the hard-core-boson qubit frame.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-08T00:28:47.858502+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-07T23:55:32.595615+00:00",
+          "auditor": "codex-audit-loop-2026-07-07-row5-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "No-go on deriving fermionic/Grassmann statistics from the minimal qubit-on-Z^3 baseline using only the tested ungraded operator algebra, per-site dimension, JW compatibility, and finite ordering/locality checks; compatibility with fermions remains allowed.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-08T00:28:47.858502+00:00",
+          "auditor": "codex-cli-gpt-5.5-cross-confirm-20260707-26919470-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the narrowed no-go that the Lattice/Qubit baseline plus the tested ungraded operator-algebra, per-site dimension, and finite ordering-locality facts do not force Grassmann/CAR statistics over the hard-core-boson qubit frame.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The qubit-ladder algebra and the JW-fermion algebra generate the same full matrix algebra, so the checked ungraded operator-algebra and dimension data do not prefer the fermionic frame over the hard-core-boson frame.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 8,
+        "C": 6,
+        "D": 3,
+        "total_pass": 34
+      },
+      "verdict_rationale": "The runner source genuinely computes finite Pauli/JW tensor-product identities, generated-algebra ranks, hard-core versus free-boson dimension behavior, and the 2x2x2 grid bandwidth; it does not hard-code the contested no-go or import external comparator values. The only upstream authority is an explicitly accepted axiom premise, so the carve-out applies and there is no dependency downgrade. The no-go discipline gate passes for the narrowed claim: five forcing routes are enumerated, collapsed to one missing statistics/locality selector wall, scoped against a graded-locality steelman, and not phrased as forbidding future retained selectors."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py",
+  "title": "Staggered-Dirac Substep 1 \u2014 Statistics-Agnostic: Grassmann is Compatible, Not Forced",
+  "transitive_descendants": 734,
+  "verdict_rationale": null
+}

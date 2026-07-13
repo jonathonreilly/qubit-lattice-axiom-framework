@@ -1,0 +1,491 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "emergent_lorentz_invariance_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cpt_exact_note",
+    "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
+    "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02"
+  ],
+  "direct_in_degree": 26,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 22.504,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "29a3b32fb0a98ceffa08f704654474b64f1cce57a894df3b6e47e1599454d5ad",
+  "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368255+00:00",
+      "archived_for_note_hash": "0e5214ad8d05036270adda4d5a09facd5c78d9c667b3f55033b5d61c06f3aa7b",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T03:48:09.221761+00:00",
+      "archived_for_note_hash": "b0d095ed469612b774a161303190cd133194098f30498f908a424654eb544413",
+      "audit_date": "2026-04-26",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the staggered/bosonic dispersion expansion and cubic-harmonic angular structure, but the broad emergent-observable conclusion relies on CPT exactness, parity protection, and a ~ 1/M_Planck as imported bridges. Those bridges are not registered as one-hop dependencies for this claim and are asserted in the runner rather than derived or read from audited inputs.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On the retained hierarchy surface a ~ 1/M_Planck, the dimension-6 cubic-lattice correction is suppressed by (E/M_Planck)^2, so Lorentz invariance is emergent to all currently accessible precision.",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "docs/CPT_EXACT_NOTE.md_not_registered_one_hop_dependency",
+        "parity_operator_basis_dimension5_LV_no_go_theorem_not_registered",
+        "hierarchy_scale_a_equals_planck_length_theorem_not_registered"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 15,
+        "C": 9,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "Issue: the source note's structural dispersion and cubic-harmonic checks are reproduced by the registered runner, but the retained conclusion that Lorentz invariance holds to all accessible precision depends on unregistered bridge premises: exact CPT, exact/tree-level parity protection against odd-dimension LV, and the hierarchy-scale identification a ~ 1/M_Planck. Why this blocks: without ledger one-hop dependencies and a runner that constructs or verifies those bridges, a hostile auditor cannot distinguish a theorem from a calculation performed on an assumed symmetry/scale surface; the runner's CPT, P, and hierarchy checks are hard-coded assertions downstream of the contested inputs. Repair target: register the CPT_EXACT_NOTE, a parity/operator-basis theorem forbidding dimension-5 LV on the relevant action surface, and the hierarchy theorem fixing the physical lattice spacing as dependencies, then update the runner to read/verify those inputs and fail if any bridge is absent or conditional. Claim boundary until fixed: it is safe to claim the conditional lattice result that the implemented Z^3 staggered and Laplacian dispersions have leading O(a^2 p^4) cubic-harmonic anisotropy and exact cubic isotropy at leading order; the Planck-suppressed observable-Lorentz-invariance theorem remains conditional on the unregistered symmetry and scale bridges."
+    },
+    {
+      "archived_at": "2026-05-02T16:08:20.768952+00:00",
+      "audit_date": "2026-04-30T03:24:57.532067+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.322,
+        "transitive_descendants": 39
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-round-2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The structural-dispersion and cubic-harmonic checks close, but the observable Lorentz-invariance conclusion depends on unregistered bridge premises: exact CPT, exact/tree-level parity protection against lower-dimension LV, and the hierarchy-scale identification a ~ 1/M_Planck.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "On the assumed CPT/parity-protected hierarchy surface a ~ 1/M_Planck, the runner verifies cubic Z3 staggered and Laplacian dispersion, leading O(a^2 p^4) dimension-6 anisotropy, unique l=4 cubic-harmonic angular structure, and Planck-suppressed observable Lorentz violation.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/CPT_EXACT_NOTE.md_not_registered_one_hop_dependency",
+        "parity_operator_basis_dimension5_LV_no_go_theorem_not_registered",
+        "hierarchy_scale_a_equals_planck_length_theorem_not_registered"
+      ],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 15,
+        "C": 9,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "Issue: the registered runner passes the lattice dispersion and angular-structure checks, but the broad claim remains conditional on symmetry and scale bridges that are asserted rather than imported from audit-clean dependencies. Why this blocks: without one-hop ledger dependencies for CPT exactness, parity/operator-basis protection, and the Planck-scale lattice-spacing theorem, the runner's CPT/P/hierarchy checks are not independent derivations of the contested premises. Repair target: register and clean-audit those bridge notes, then update the runner to fail if any bridge is absent or conditional. Claim boundary until fixed: conditional structural theorem that cubic Z3 dispersions have leading dimension-6 l=4 anisotropy and are Planck-suppressed on the stated symmetry/scale surface, not a standalone Lorentz-invariance theorem from the lattice alone."
+    },
+    {
+      "archived_at": "2026-05-09T19:15:24.116474+00:00",
+      "archived_for_note_hash": "296429f41517fec385da2461b9423dec161f859714822611a94680e67a8d4973",
+      "audit_date": "2026-05-02T18:52:05.362073+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.055,
+        "transitive_descendants": 46
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-pr291-emergent-lorentz-harvey-2026-05-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The internal dispersion and cubic-harmonic checks close on the runner output, but the physical interpretation does not close from this row alone because the symmetry and scale premises are assumed rather than registered as audit-clean dependencies.",
+      "claim_scope": "Conditional structural-dispersion result for the cubic Z3 lattice: leading infrared dispersion is isotropic and the first anisotropic correction has the dimension-6 cubic-harmonic form; reported physical Lorentz-invariance precision follows only if exact CPT, exact/tree-level parity protection, and a ~ 1/M_Planck are supplied as bridge premises.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T18:52:05.362073+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The step from lattice dispersion/cubic harmonic structure to reported physical Lorentz-invariance precision depends on unregistered bridge inputs: exact CPT, parity protection forbidding dimension-5 LV, and the hierarchy-scale identification a ~ 1/M_Planck.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add audit-clean dependency rows or a runner that constructs the CPT, parity-protection, and hierarchy-scale bridges.",
+      "open_dependency_paths": [
+        "exact CPT on the cubic Z3 lattice",
+        "exact/tree-level parity protection forbidding odd-dimension Lorentz-violating operators",
+        "hierarchy-scale identification a ~ 1/M_Planck"
+      ],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 3,
+        "C": 9,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "Issue: the runner supports the bounded lattice-dispersion surface, including low-p isotropy, p^4 coefficients, dimension-6 leading correction, and l=4 cubic anisotropy, but the reported physical precision imports CPT exactness, parity protection, and a ~ 1/M_Planck. Why this blocks retained status: those bridge premises are not registered retained-grade dependencies for this row, and the runner asserts rather than constructs them. Repair target: add audit-clean dependency rows or a runner that constructs the CPT, parity-protection, and hierarchy-scale bridges. Claim boundary until fixed: cite this as a bounded conditional structural-dispersion theorem on the stated symmetry/scale surface, not as a standalone Lorentz-invariance theorem."
+    },
+    {
+      "archived_at": "2026-05-16T07:45:35.886388+00:00",
+      "archived_for_note_hash": "490d19fc7acba33aa032d7297573ddb981be8f381b12c97a6e95b9df0535d817",
+      "audit_date": "2026-05-16T03:11:54.797961+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact free staggered even-periodic lattice CPT invariance for the real anti-Hermitian D-level operator, with physical Hermitian H=iD and SME-zero sector imported through the cited bridge note.",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "Audited the bounded no-go claim that the four listed single-flavor local dimension-5 SME-style fermion-bilinear LV structures with an unpaired spatial index are P-odd on the staggered Cl(3)/Z^3 even-torus framework.",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Clean only as a bounded free staggered lattice Hamiltonian statement: D anti-Hermitian implies H=iD Hermitian, naive CP K flips H, and Theta_H=P K preserves H with zero Theta_H-odd lattice Hamiltonian sectors on the checked even periodic lattices. Not clean as an unconditional physical SME-zero theorem beyond the explicitly defined lattice odd-sector proxy."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "no_go",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "audited_conditional",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "audited_conditional",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "audited_conditional"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 18.598,
+        "runner_hash": "bfd6027f165ce8f8d6dea657d7e6d12a15745908e8aeba1c00a053ab6f2678dd",
+        "transitive_descendants": 774
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-031130-7dcb5886-emergent_lorentz_invaria-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The structural dispersion and cubic-harmonic calculation close on the runner's own free-lattice support surface, but the physical conclusion still imports conditional or unprovided bridge authorities. The missing closed step is retained-grade closure of exact CPT/SME lift, parity-protection against dimension-5 LV in the relevant EFT, and the hierarchy-scale pin a ~ 1/M_Planck.",
+      "claim_scope": "Conditional bounded audit of the free staggered cubic Z^3 structural-dispersion result, cubic-harmonic angular signature, and Planck-suppressed LV estimate assuming CPT, parity-protection, and Planck-pin bridge premises.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T03:11:54.797961+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "If exact CPT, tree-level parity protection, and the Planck pin a ~ 1/M_Planck are supplied, the staggered Z^3 dispersion has leading Lorentz-violating correction -(a^2/3) sum_i p_i^4, so the first non-isotropic correction is dimension-6 and suppressed as (E/M_Planck)^2.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "dependency_not_retained: cheapest repair is to provide retained-grade audited dependencies for the CPT/SME lift, the parity dim-5 no-go in the intended EFT scope, and the Planck-pin lane, then re-run this audit with those one-hop authorities included.",
+      "open_dependency_paths": [
+        "docs/CPT_EXACT_NOTE.md",
+        "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+        "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
+        "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
+        "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 3,
+        "C": 24,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The runner does substantive computation for the dispersion expansion, finite-lattice checks, and cubic-harmonic signature, so the load-bearing structural step is not mere renaming. However, every cited authority provided in the restricted packet is marked audited_conditional, and the Planck-pin authority is cited but not provided as a closed retained-grade dependency. The source note correctly narrows itself to an IF-conditional support surface, so this is conditional rather than failed."
+    },
+    {
+      "archived_at": "2026-05-28T20:49:46.555154+00:00",
+      "archived_for_note_hash": "89d481c97209538cac4b73b028c2fd48a9373a1d8af52614b5d58bb726b9535d",
+      "audit_date": "2026-05-28T01:17:23.329308+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "Bounded formal sign theorem only: under 4x4 Dirac parity conjugation by gamma^0 and the abstract derivative signs partial_0 -> +partial_0 and partial_i -> -partial_i, the four named dimension-5 SME-style bilinear structures have formal parity weight (-1)^(total spatial index count), with the corresponding formal symmetric/antisymmetric projection vanishings. This does not audit any lattice-action Lorentz-violation no-go, concrete staggered derivative representative, CPT theorem, or new axiom.",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional finite-lattice free staggered Hamiltonian statement: H=iD is Hermitian, Theta_H=P K preserves H given the stated staggered P spectral-flip identity, and the resulting Theta_H-odd Hamiltonian-sector proxy vanishes in the checked free substrate sectors.",
+          "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25": "Exact finite Cl_4(C) carrier algebra on a supplied rank-four complex block with a supplied metric-compatible coframe response: irreducible M_4(C) module, two formal-Clifford-# CAR pairs, Clifford spin phase, and 4/16 trace arithmetic. No coframe-response derivation, ambient-adjoint CAR, substrate-forcing, physical-unit map, Newton-coupling, or Planck-unit claim is audited."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "bounded_theorem",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem",
+          "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "retained_bounded",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded",
+          "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
+          "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
+        ],
+        "load_bearing_score": 19.811,
+        "runner_hash": "bfd6027f165ce8f8d6dea657d7e6d12a15745908e8aeba1c00a053ab6f2678dd",
+        "transitive_descendants": 897
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local dispersion, parity, CPT-support, and angular math close; the Planck-suppressed physical readout still imports the Planck-pin/unit-map premise from an upstream package lane that is not a retained one-hop dependency for this row.",
+      "claim_scope": "Conditional bounded structural-dispersion support for the free cubic Z^3 staggered lattice: the source and runner close the low-momentum dispersion expansion, dimension-6 p^4 correction, cubic l=4 angular signature, finite free-H CPT support, and dispersion parity support. Planck-suppressed physical estimates and broad SME Lorentz-invariance interpretation remain conditional on an upstream Planck-pin/unit-map authority not closed by this row.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T01:17:23.329308+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "If exact CPT, tree-level parity protection, and the hierarchy-scale pin a ~ 1/M_Planck are supplied, then E^2=sum_i sin^2(p_i a)/a^2 gives E^2=p^2-(a^2/3)sum_i p_i^4+O(a^4 p^6), with relative suppression (1/5)(E/M_Planck)^2 and cubic l=4 angular structure.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a direct dependency edge to planck_scale_lane_status_note_2026-04-23 and audit that Planck-pin/unit-map lane to retained grade, or split the structural dispersion core from the Planck-suppressed physical estimate.",
+      "open_dependency_paths": [
+        "planck_scale_lane_status_note_2026-04-23"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 4,
+        "C": 7,
+        "D": 3,
+        "total_fail": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "Issue: the source's Planck-suppressed Lorentz-invariance interpretation depends on the hierarchy-scale identification a ~ 1/M_Planck, but the named Planck scale lane is unaudited and not wired as a direct retained dependency; the wired Planck Target 3 dependency explicitly excludes physical-unit, Newton-coupling, and Planck-unit claims. Why this blocks: the runner checks the consequence of the pin after reading/citing it; it does not derive the unit map or promote the Planck pin to retained authority. Repair target: either wire and audit-clean the Planck scale lane, or split this row so the audited clean core is only the structural dispersion/CPT/parity/cubic-harmonic support and the Planck-suppressed physical estimate waits on a retained unit-map bridge. Claim boundary until fixed: the free staggered lattice has a checked dimension-6 p^4 correction with cubic l=4 angular signature and bounded runner-local CPT/parity support; physical Planck-suppressed Lorentz-invariance estimates remain conditional."
+    },
+    {
+      "archived_at": "2026-05-29T11:52:30.127386+00:00",
+      "archived_for_note_hash": "27daebf0c02301c18d4126218a1d27ee424e8ba2a57939d8e06441668c6db131",
+      "audit_date": "2026-05-29T02:22:29.736690+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "Bounded formal sign theorem only: under 4x4 Dirac parity conjugation by gamma^0 and the abstract derivative signs partial_0 -> +partial_0 and partial_i -> -partial_i, the four named dimension-5 SME-style bilinear structures have formal parity weight (-1)^(total spatial index count), with the corresponding formal symmetric/antisymmetric projection vanishings. This does not audit any lattice-action Lorentz-violation no-go, concrete staggered derivative representative, CPT theorem, or new axiom.",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional finite-lattice free staggered Hamiltonian statement: H=iD is Hermitian, Theta_H=P K preserves H given the stated staggered P spectral-flip identity, and the resulting Theta_H-odd Hamiltonian-sector proxy vanishes in the checked free substrate sectors."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "bounded_theorem",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "retained_bounded",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 19.831,
+        "runner_hash": "d9e6624dccf6241cc1083e0fe4abc987148434c7255d58a3a9bcac11db6d13ad",
+        "transitive_descendants": 910
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-gpt-5.5-restricted-input-emergent-lorentz-20260529",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The sin^2 expansion, bosonic coefficient, p^4/dimension-6 classification, parity-even absence of odd-power dispersion terms, and narrowed CPT/Theta_H proxy support close for the structural surface, without a load-bearing Planck pin. The exact cubic-harmonic normalization does not close as written: with standard normalized Y_lm, K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_4,-4) gives sum_i n_i^4 = 3/5 + (4 sqrt(pi)/15) K_4, not 3/5 + (4/5) K_4.",
+      "claim_scope": "Free even-periodic cubic Cl(3)/Z^3 staggered structural-dispersion surface: sin^2 dispersion expansion, no odd-power term in the checked parity-even dispersion, retained-bounded finite-lattice CPT/Theta_H proxy support, formal parity dim-5 support, and cubic-harmonic l=4 angular statement; excluding Planck-pin numerical estimates and canonical SME coefficient identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T02:22:29.736690+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The structural core asserts that the free staggered dispersion expands as E^2 = a^-2 sum_i sin^2(p_i a) = p^2 - (a^2/3) sum_i p_i^4 + O(a^4 p^6), making the leading non-isotropic correction dimension-6 with angular decomposition sum_i n_i^4 = 3/5 + (4/5) K_4 and K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_4,-4).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Correct the K_4 normalization by either rescaling K_4 or replacing the coefficient 4/5 with 4 sqrt(pi)/15 under standard normalized spherical harmonics; re-check that the final scope still excludes Planck-pin estimates, canonical SME coefficients, and broad no-dimension-5 lattice-action language.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 3,
+        "C": 30,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "Issue: the source's load-bearing cubic-harmonic normalization states sum_i n_i^4 = 3/5 + (4/5) K_4 with K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_4,-4). Why this blocks: under standard normalized spherical harmonics the matching coefficient is 4 sqrt(pi)/15; for example along [100] the anisotropic part is 0.4, while (4/5)K_4 gives about 0.677. Repair target: either rescale the definition of K_4 or replace the coefficient by 4 sqrt(pi)/15, and add a runner check for the exact decomposition coefficient. Claim boundary until fixed: the safe reduced statement is that the p^4 anisotropy has an l=4 cubic-harmonic angular component with the stated special-direction factor, while the exact normalized decomposition is wrong as written."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.848293+00:00",
+      "audit_date": "2026-05-29T19:47:54.010290+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "Bounded formal sign theorem only: under 4x4 Dirac parity conjugation by gamma^0 and the abstract derivative signs partial_0 -> +partial_0 and partial_i -> -partial_i, the four named dimension-5 SME-style bilinear structures have formal parity weight (-1)^(total spatial index count), with the corresponding formal symmetric/antisymmetric projection vanishings. This does not audit any lattice-action Lorentz-violation no-go, concrete staggered derivative representative, CPT theorem, or new axiom.",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional finite-lattice free staggered Hamiltonian statement: H=iD is Hermitian, Theta_H=P K preserves H given the stated staggered P spectral-flip identity, and the resulting Theta_H-odd Hamiltonian-sector proxy vanishes in the checked free substrate sectors."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "bounded_theorem",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "retained_bounded",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 19.833,
+        "runner_hash": "cf45285c87ca2982094b078109d4e38a9ea81e6e41b18d9a5a687350aa507d78",
+        "transitive_descendants": 911
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-detailed-lorentz-20260529-panel1-judge02",
+      "auditor_confidence": "judicial_panel_vote",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 3/5 ratified tuple ('first', 'audited_clean', 'bounded_theorem', 'C'). Representative rationale: Under the note's binding narrowed scope, the Planck-pin estimate and broad/full SME coefficient interpretation are explicitly non-load-bearing. The runner source genuinely computes the sin^2 dispersion coefficients, finite-lattice free-H residuals, parity-even dispersion check, and the cubic harmonic identity rather than merely printing constants. The normalization issue is correctly repaired: for normalized Y_lm the K4 coefficient is 4 sqrt(pi)/15, not 4/5, and the runner checks this pointwise and symbolically. The open SME-basis caveats in upstream notes would block a broader SME/operator-basis claim, but not this bounded structural free-lattice theorem.",
+      "claim_scope": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T19:47:54.010290+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-29T19:41:19.672209+00:00",
+          "auditor": "codex-cli-detailed-lorentz-20260529-emergent_lorentz_invaria",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: leading low-momentum isotropy, first anisotropic O(a^2 p^4) dimension-6 correction, CPT/P support on the checked free-H/dispersion surface, and normalized l=4 cubic-harmonic signature; Planck readout and full SME interpretation excluded.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-29T19:43:02.547684+00:00",
+          "auditor": "codex-cli-detailed-lorentz-20260529-second-emergent_lorentz_invaria",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded structural result for the free cubic Cl(3)/Z\u00b3 staggered lattice: leading infrared dispersion is isotropic, the first non-isotropic correction is O(a\u00b2p\u2074), dimension-6, parity-even/CPT-supported on the checked free-H surface, and has the normalized \u2113=4 cubic-harmonic angular signature.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-29T19:47:54.010290+00:00",
+          "auditor": "codex-cli-detailed-lorentz-20260529-panel1-judge02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "No material error; the clean verdict is correct only with the first auditor's narrowed structural scope and must not be read as ratifying Planck-suppressed phenomenology or full SME coefficient-zero claims.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 3/5 ratified tuple ('first', 'audited_clean', 'bounded_theorem', 'C'). Representative rationale: Under the note's binding narrowed scope, the Planck-pin estimate and broad/full SME coefficient interpretation are explicitly non-load-bearing. The runner source genuinely computes the sin^2 dispersion coefficients, finite-lattice free-H residuals, parity-even dispersion check, and the cubic harmonic identity rather than merely printing constants. The normalization issue is correctly repaired: for normalized Y_lm the K4 coefficient is 4 sqrt(pi)/15, not 4/5, and the runner checks this pointwise and symbolically. The open SME-basis caveats in upstream notes would block a broader SME/operator-basis claim, but not this bounded structural free-lattice theorem.",
+          "load_bearing_step_class": "C",
+          "second_auditor_error": "The second audit treated quarantined full SME/operator-basis caveats as load-bearing for the structural dispersion theorem. That is too broad for the source note's repaired binding scope, where CPT/P are only credited on the checked free-H and dispersion support surface.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The staggered dispersion expands as E^2 = p^2 - (a^2/3) sum_i p_i^4 + O(a^4 p^6), and the anisotropic sum_i n_i^4 term decomposes as 3/5 + (4 sqrt(pi)/15) K4 in normalized real spherical harmonics with only l=4 cubic-harmonic content.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if downstream scope is broadened to Planck-pin numerical estimates, full SME coefficient-zero interpretation, or a lattice-action no-dimension-5 no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 3/5 ratified tuple ('first', 'audited_clean', 'bounded_theorem', 'C'). Representative rationale: Under the note's binding narrowed scope, the Planck-pin estimate and broad/full SME coefficient interpretation are explicitly non-load-bearing. The runner source genuinely computes the sin^2 dispersion coefficients, finite-lattice free-H residuals, parity-even dispersion check, and the cubic harmonic identity rather than merely printing constants. The normalization issue is correctly repaired: for normalized Y_lm the K4 coefficient is 4 sqrt(pi)/15, not 4/5, and the runner checks this pointwise and symbolically. The open SME-basis caveats in upstream notes would block a broader SME/operator-basis claim, but not this bounded structural free-lattice theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_emergent_lorentz_invariance.py",
+  "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
+  "transitive_descendants": 725,
+  "verdict_rationale": null
+}

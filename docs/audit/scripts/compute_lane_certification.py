@@ -18,6 +18,7 @@ import subprocess
 from pathlib import Path
 
 import premise_nodes
+import ledger_io
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA = REPO_ROOT / "docs" / "audit" / "data"
@@ -42,6 +43,7 @@ def status_satisfies_certification(claim_id: str, status: object) -> bool:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     config = json.loads(CONFIG.read_text(encoding="utf-8"))
     ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
     rows = ledger.get("rows", {})

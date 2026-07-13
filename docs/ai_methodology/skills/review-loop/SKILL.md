@@ -774,7 +774,6 @@ DROP the regenerated files before recommitting:
 
 ```bash
 git checkout origin/main -- docs/audit/data/ \
-                            docs/audit/AUDIT_LEDGER.md \
                             docs/audit/AUDIT_QUEUE.md \
                             docs/audit/MISSING_DERIVATION_PROMPTS.md \
                             'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
@@ -824,8 +823,8 @@ notes, apply the audit-hash churn guard above before landing any broad cleanup.
 git diff --name-only origin/main...HEAD -- 'docs/*NO_GO*.md' 'docs/*BOUNDED*.md' \
                                            'docs/*STRETCH_ATTEMPT*.md' \
                                            'docs/*OBSTRUCTION*.md'
-# Audit-data rows whose verdict_rationale or claim_type record walls
-git diff origin/main...HEAD -- docs/audit/data/audit_ledger.json \
+# Audit-data shards whose verdict_rationale or claim_type record walls
+git diff origin/main...HEAD -- docs/audit/data/ledger docs/audit/data/ledger_meta.json \
   | grep -E '"claim_type": "no_go"|"verdict_rationale".*wall|"verdict_rationale".*condition'
 # Any source note touched on this branch whose body contains negative-claim shape
 git diff origin/main...HEAD -- 'docs/*.md' \

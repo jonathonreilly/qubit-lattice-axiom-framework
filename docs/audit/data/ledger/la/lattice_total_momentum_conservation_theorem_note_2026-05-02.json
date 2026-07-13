@@ -1,0 +1,317 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lattice_total_momentum_conservation_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_lattice_noether_theorem_note_2026-04-29"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3ba627049673f1a7d6140ec2b20c759c02cdcce7389047435ff1002aafd6f700",
+  "note_path": "docs/LATTICE_TOTAL_MOMENTUM_CONSERVATION_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-25T22:48:52.939324+00:00",
+      "archived_for_note_hash": "5bef9915c435817f41dd6c9801ba8339e77012f17fbf052b0a150b9503109a63",
+      "audit_date": "2026-05-25T20:05:11.668657+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "066cf20c684ba9b78b880818fe8203947594bcd52c2b021b6d1bdbf856800f08",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T200449Z-d8a9ca0d-lattice_total_momentum_c-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited authority no longer supplies the claimed divergence-free canonical momentum density; it narrows translation to an exact two-step Ward identity and marks the canonical density as support-only. A bridge deriving \u2202^L_\u03bc P^\u03bc_x = 0 for the stated P^\u03bc_x from the retained two-step Ward identity is missing.",
+      "claim_scope": "Total lattice momentum conservation, quantum commutation with H, and periodic momentum quantization as derived from the cited lattice Noether authority.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T20:05:11.668657+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By the cited lattice Noether theorem N1, the canonical lattice momentum density P^\u03bc_x satisfies the local on-shell divergence identity \u2202^L_\u03bc P^\u03bc_x = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or cite a retained theorem deriving the stated canonical staggered momentum density divergence \u2202^L_\u03bc P^\u03bc_x = 0 from the retained two-step Ward identity, or narrow the downstream claim to the actual two-step translation quantum number.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The proof's central citation overstates the current cited authority: the authority explicitly retracts theorem-grade derivation of the canonical density as the arbitrary-field translation Ward current. The runner does not repair this gap, since Test 1 uses a constant field giving trivially zero momentum, Test 3 is composed from that trivial case, Test 4 enumerates a definition, and Test 5 checks a generic translation-invariant toy Hamiltonian rather than the claimed reconstructed H_phys operator. The chain can be bounded only after a retained bridge proves the canonical momentum-density divergence identity, and the quantum/operator claims also need a retained reconstruction bridge if kept in scope."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.076716+00:00",
+      "audit_date": "2026-05-25T23:51:51.444887+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "24f7c2f2e273227d3104e22844888f2038bc94c16d2057474aba969c47b8b9b9",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T235045Z-59739f88-lattice_total_momentum_c-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Noether authority is retained_bounded for the two-step translation surface, and the remaining result is finite cyclic-group projector algebra under the explicit hypothesis [H,T_2]=0. The repaired note does not rely on the unsupported canonical density, local divergence, one-site momentum, or H_phys reconstruction claims.",
+      "claim_scope": "Finite even periodic two-step translation-sector conservation: for H satisfying [H,T_{2rho}]=0, the T_{2rho} cyclic spectral projectors commute with H, sector weights are conserved, and one-site momenta are identified modulo pi.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-25T23:51:51.444887+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Since each Pi_{rho,k} is a polynomial in T_{2 rho}, [H, Pi_{rho,k}] = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the decoration versus bounded_theorem retag; the algebraic closure itself is straightforward.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is a standard algebraic consequence of a single upstream retained_bounded two-step translation statement plus the explicit commutation hypothesis. The runner actually constructs finite shift matrices, projectors, and a two-step-invariant Hamiltonian, and all five checks are algebraic finite-matrix checks with no external comparator or tuned numerical input. Because the chain reduces to one parent claim plus standard finite cyclic-group mathematics, the conservative classification is decoration rather than an independent bounded theorem."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:22.350241+00:00",
+      "audit_date": "2026-06-06T12:07:26.235626+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice Noether identity on the explicitly admitted Grassmann/Kawamoto-Smit staggered carrier: U(1) current (4), bilateral current (5) for local infinitesimal generators, and exact central two-step Ward identity (3a) for (2Z)^3 translations; density (3) is support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "24f7c2f2e273227d3104e22844888f2038bc94c16d2057474aba969c47b8b9b9",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-120533-9149eec418-lattice_total_momentum_conse",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited authority is retained_bounded for the exact two-step translation symmetry, and the present conclusion follows by finite cyclic-group projector algebra from the explicit commutator hypothesis [H,T_{2 rho}]=0. The stronger canonical-density and one-site-momentum claims are explicitly excluded.",
+      "claim_scope": "Finite even periodic carriers with unitary two-step shifts: if a finite Hamiltonian/time-evolution generator H commutes with T_{2 rho}, then the T_{2 rho} cyclic spectral sectors are invariant and the two-step character identifies one-site momenta modulo pi; no canonical P_x divergence, full one-site momentum operator, or H_phys reconstruction is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T12:07:26.235626+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Since each Pi_{rho,k} is a polynomial in T_{2 rho}, [H,T_{2 rho}]=0 implies [H,Pi_{rho,k}]=0, so unitary time evolution preserves the corresponding two-step translation sector weights.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the phrase \"transfer generator\" is read with the same unitary/self-adjoint evolution convention used in the norm-weight statement; otherwise the algebra still gives sector invariance but not norm preservation for a nonunitary transfer matrix.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The formulas for the cyclic order, Fourier projectors, eigencharacters, and modulo-pi one-site ambiguity check out independently by finite cyclic-group algebra. The runner source performs real matrix constructions and algebraic residual checks rather than printing constants or importing the contested premise. The result is bounded to the two-step sector statement supplied by the retained_bounded Noether authority and does not rely on the retracted canonical momentum-density bridge."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.227196+00:00",
+      "audit_date": "2026-06-08T20:43:38.813753+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice algebraic Noether identities on the admitted KS staggered/Grassmann carrier: the onsite/internal nearest-neighbor current including U(1), and the separate (2Z)^3 two-step Ward identity; canonical density (3) is support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "24f7c2f2e273227d3104e22844888f2038bc94c16d2057474aba969c47b8b9b9",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-204106-5bab279bc5-lattice_total_momentum_conse",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Noether authority is retained_bounded for the two-step translation surface, and the note separately assumes the operator-level commutator [H,T_{2 rho}]=0. The rest is finite cyclic-group algebra: Fourier projectors in T_{2 rho} commute with H and decompose the two-step characters.",
+      "claim_scope": "Finite even periodic staggered carriers with retained two-step translation symmetry: for each axis rho, any H satisfying [H,T_{2 rho}]=0 preserves the T_{2 rho} spectral sectors and two-step characters; no canonical momentum density, local divergence identity, full one-site momentum, or H_phys momentum operator is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T20:43:38.813753+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Since [H,T_{2 rho}]=0 and each Pi_{rho,k} is a polynomial in T_{2 rho}, [H,Pi_{rho,k}]=0, so the two-step spectral sectors are invariant under the evolution generated by H.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations preserve the two-step-only scope and do not quote this as a canonical momentum-density or one-site momentum theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over the retained two-step symmetry input and the explicit [H,T_{2 rho}]=0 hypothesis. The runner source actually constructs shifts, projectors, a two-step-invariant Hermitian H, commutators, and unitary evolution checks; it does not hard-code a contested physics premise or compare to external data. The source note keeps the stronger canonical-density, one-site-momentum, and H_phys reconstruction claims out of scope."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.503948+00:00",
+      "audit_date": "2026-06-21T17:51:19.127662+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice Noether identities on the admitted staggered/Grassmann Kawamoto-Smit carrier: onsite/internal U(1) and general onsite/internal bilateral current (5), plus the separate (2Z)^3 two-step localized Ward identity (3a); density (3) is support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "24f7c2f2e273227d3104e22844888f2038bc94c16d2057474aba969c47b8b9b9",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-lattice_total_momentum_conservation_theorem_note_2026-05-02-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by finite cyclic-group projector algebra once the retained_bounded upstream two-step translation symmetry and the stated [H,T_2]=0 hypothesis are admitted. The note stays within that bounded two-step sector and explicitly excludes the unsupported canonical-density and one-site momentum claims.",
+      "claim_scope": "For finite even periodic staggered carriers, any finite Hamiltonian or transfer generator satisfying [H,T_{2 rho}]=0 preserves the spectral sectors and characters of the two-step translation operator; no canonical momentum density, local divergence theorem, full one-site momentum, or H_phys reconstruction is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T17:51:19.127662+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Since each spectral projector Pi_{rho,k} is a polynomial in T_{2 rho}, [H,T_{2 rho}]=0 implies [H,Pi_{rho,k}]=0, so sector weights are conserved under time evolution.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that the pipeline preserves this as a bounded theorem rather than promoting it to a full canonical momentum-density or one-site momentum theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing step is a standard algebraic consequence of commuting with a finite cyclic shift: projectors built as polynomials in T_2 commute with H and therefore their sector weights are conserved. The cited Noether authority is marked retained_bounded and supplies the bounded two-step translation surface needed here; this note does not consume the parent\u2019s support-only canonical density or open full carrier-selection claims. The runner source actually constructs shifts, projectors, a two-step-invariant Hermitian H, commutators, and finite time evolution, and its PASS output matches the narrowed claim rather than hard-coding the conclusion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_total_momentum_conservation_check.py",
+  "title": "Lattice Total Momentum Conservation from Retained Lattice Noether",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,109 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "born_scattering_comparison_note",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lensing_adjoint_kernel_note",
+    "lensing_finite_path_explanation_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/kubo_continuum_limit.py",
+    "scripts/lensing_adjoint_kernel_probe.py",
+    "scripts/lensing_adjoint_kernel_reduced_model.py",
+    "scripts/lensing_deflection_sweep.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a0e9a8a523b1a63631da72a43e8fd79650f0ee6be8ec3b580e4f8257ae8492a4",
+  "note_path": "docs/BORN_SCATTERING_COMPARISON_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-10T13:32:07.353821+00:00",
+      "archived_for_note_hash": "54fe36635dcf878733d2afdf7fbbd6268ee26ab24c78bd23587dc4f6a63d9535",
+      "audit_date": "2026-05-05T22:56:11.979088+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "dispersion_relation_note": "audited_conditional"
+        },
+        "deps": [
+          "dispersion_relation_note"
+        ],
+        "load_bearing_score": 10.794,
+        "runner_hash": "9415a164aef2688959a9825a872cb7a90dc220f7e024cf17a600094a6a3dbafc",
+        "transitive_descendants": 443
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-born_scattering_comparis-007",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the plane-wave and 2D Gaussian computations, but the lattice measurement, the 3D beam correction, and the physical identification of this eikonal comparison with the grown-DAG observable are imported rather than closed in the packet.",
+      "claim_scope": "Audited the restricted-packet claim that the plane-wave finite-path eikonal slope is -1.28 and is closer to the stated lattice slope -1.43 than the provided 2D Gaussian beam correction.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T22:56:11.979088+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The finite-path plane-wave eikonal formula at L=15, x_src=5 gives a power-law slope of about -1.28 on b in {3..6}, closer to the imported lattice slope -1.43 than the tested beam-averaged corrections.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide retained-grade lattice measurement and 3D beam-correction artifacts, plus a bridge theorem identifying the finite-path eikonal observable with the grown-DAG lensing readout.",
+      "open_dependency_paths": [
+        "docs/DISPERSION_RELATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The runner genuinely computes the finite-path eikonal and Gaussian-beam slopes from chosen parameter values L=15, x_src=5, beta=0.8, and b in {3..6}; it is not merely printing constants. However, the scientific conclusion is a comparison to an imported lattice slope and chosen lattice configuration, not a first-principles closure from the stated axioms. The cited dispersion authority is itself audited_conditional/open_gate, and the packet does not close the 3D beam correction or L-independence explanation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gaussian_beam_eikonal.py",
+  "title": "Born/Eikonal Scattering Comparison \u2014 Gaussian Pole Theorem and Finite-Harness Negative Boundary",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

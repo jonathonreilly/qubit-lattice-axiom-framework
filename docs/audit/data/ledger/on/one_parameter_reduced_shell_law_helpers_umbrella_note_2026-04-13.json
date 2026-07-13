@@ -1,0 +1,389 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "coarse_grained_exterior_law_helper_note_2026-04-14",
+    "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py",
+    "scripts/frontier_star_shell_projector.py",
+    "scripts/frontier_same_source_metric_ansatz_scan.py",
+    "scripts/frontier_coarse_grained_exterior_law.py",
+    "scripts/frontier_sewing_shell_source.py",
+    "scripts/frontier_radial_shell_matching_law.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.539,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6b97d7a428776536ff6d7514b705e6751e74bab02fdf4e26b86a0151ec81f882",
+  "note_path": "docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:50:57.950063+00:00",
+      "archived_for_note_hash": "549ff56dd8824e41443adeaaf816e15f8b7ccdc0cd18b8df4af0431e4afa4df7",
+      "audit_date": "2026-05-25T11:10:12.364653+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited the bounded helper-module claim that the provided runner constructs the finite-rank and local O_h scalar exterior fields, shell-averages them, projects them to a/r, and reports small coarse-grained residuals within the stated finite lattice scan."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14"
+        ],
+        "load_bearing_score": 7.322,
+        "runner_hash": null,
+        "transitive_descendants": 79
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T110953Z-2df54087-one_parameter_reduced_sh-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note establishes an administrative wrapper/definition rather than deriving or independently validating the five helper modules. The restricted packet provides a retained authority for the coarse-grained exterior helper but not comparable one-hop authorities or source evidence for the other named helpers.",
+      "claim_scope": "Audited the umbrella note only as a named-import wrapper for five frontier helper modules, with the provided one-hop authority for the coarse-grained exterior helper.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T11:10:12.364653+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The wrapper's only function is to provide a citeable one-hop authority for the five helper modules used by the parent runner.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check only if separate retained wrapper notes or complete helper-runner sources for the other four named modules are added to the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing move is the creation of a citeable umbrella handle for existing helper-module imports, which is class E definition rather than a derivation. The note explicitly disclaims framework derivations, stronger upstream status, and closure of the parent theorem's tensorial blocker. No runner or helper sources are provided for this umbrella itself, and the single cited retained authority only covers one of the five helper roles."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:59.638498+00:00",
+      "archived_for_note_hash": "45892b84314c89caaacba9d790eb03b461e5f5b4def440f39ff121132f78f49d",
+      "audit_date": "2026-06-15T22:33:59.194464+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited the bounded helper-module claim that the provided runner constructs the finite-rank and local O_h scalar exterior fields, shell-averages them, projects them to a/r, and reports small coarse-grained residuals within the stated finite lattice scan."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14"
+        ],
+        "load_bearing_score": 10.976,
+        "runner_hash": "2166767a71e73d9acd4a44af06fc0d5089d9ce3fb1112b65d97d29e904e3ac77",
+        "transitive_descendants": 88
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-222902-e0c885b0d4-one_parameter_reduced_shell_",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner source loads the five named helpers and computes the normalized point-column charge, radial, orbit-mode, shell-mean, and family agreement checks rather than merely printing constants. Given unit charge and identical normalized profiles for the basis columns, the one-parameter reduced law follows by linearity within the stated reduced surface.",
+      "claim_scope": "Bounded helper-umbrella audit for the five named helper modules consumed by `scripts/frontier_one_parameter_reduced_shell_law.py` on the reduced R=4 sewing-shell surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T22:33:59.194464+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner-checked content is exact lattice arithmetic on seven point-Green columns, with the helpers supplying the input operators and the parent law following by linearity from identical normalized columns.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check transitive dynamic helper imports if the packet policy later requires full side-effect inspection beyond the named load-bearing helpers.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner cache reports 7/7 passes, and the included source shows actual finite-lattice Green-column, sewing-shell, radial-average, and family-comparison computations. The constant `c_aniso` is computed from the reduced data, not imported as an expected value. The clean verdict is limited to the note's bounded helper-wrapper scope and does not promote the helpers to framework derivations or close the parent tensorial 3+1 blocker."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:15.476940+00:00",
+      "archived_for_note_hash": "af134684ba29fbc8ecfebe63de3d8f741a0811b00d0c0acb73f8180215ea6593",
+      "audit_date": "2026-06-18T03:15:01.002605+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited the bounded finite-grid helper claim that the specified local O_h and finite-rank lattice fields, after shell averaging and least-squares radial-harmonic projection, produce the reported vacuum-close coarse-grained exterior residual improvement on the scanned 15^3 Dirichlet grid.",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "Finite-grid scalar lattice-Laplacian shell-localization identity and reduced-shell corollaries for the 15^3 Dirichlet Z^3 nearest-neighbor Laplacian at R = 4, excluding any GR/tensor activation claim."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 10.344,
+        "runner_hash": "36ac3194345224fdf5d9ddb2a31249ce801c08c852fc316945da651faa77bab6",
+        "transitive_descendants": 649
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped wrapper claim closes as a definition/registry handle: the note lists the five modules and states the one-hop citation boundary. No derivation of the helper modules, the shell law, or the tensor/GR completion is supplied or claimed.",
+      "claim_scope": "A named umbrella registry for the five helper modules loaded by scripts/frontier_one_parameter_reduced_shell_law.py, limited to a one-hop dependency handle and not a derivation of the helpers or parent shell law.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T03:15:01.002605+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The load-bearing move is the creation of a citeable umbrella handle for five helper modules.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check only if the row is later promoted beyond registry scope or used as authority for helper-module derivations.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The source note's own boundary is named-import-only wrapper support, and its load-bearing step is creating a citeable umbrella handle. The primary runner performs genuine lattice-shell computations with PASS=7 FAIL=0, but those computations support the parent shell-law surface rather than turning this wrapper registry into a derivation. The verdict is therefore audited_renaming: the row may serve as a citation handle, but it does not promote or derive the five helper modules or the parent theorem."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.509143+00:00",
+      "audit_date": "2026-06-21T11:23:49.883380+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited the bounded finite-grid helper claim that the specified local O_h and finite-rank lattice fields, after shell averaging and least-squares radial-harmonic projection, produce the reported vacuum-close coarse-grained exterior residual improvement on the scanned 15^3 Dirichlet grid.",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "Finite-grid scalar lattice-Laplacian shell-localization identity and reduced-shell corollaries for the 15^3 Dirichlet Z^3 nearest-neighbor Laplacian at R = 4, excluding any GR/tensor activation claim."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 7.976,
+        "runner_hash": "b4d910b15b6d23e40322ada3f35a5ed06abd5dfef5f0fe122bf11fb50ef0eca5",
+        "transitive_descendants": 88
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supports the narrow registry boundary: the source note lists the five helpers, the runner imports and uses them, and the runner checks the citation-firewall markers and direct citation contexts. This closes only as a definition/registry handle, not as a derivation of the helper modules or parent shell law.",
+      "claim_scope": "Audited only the bounded registry claim that the umbrella note names the five helper modules used by scripts/frontier_one_parameter_reduced_shell_law.py and firewalls citations to helper-wrapper / one-hop-registry use.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T11:23:49.883380+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "The load-bearing move is the creation of a citeable umbrella handle for five helper modules consumed by the one-parameter reduced shell-law runner, usable only as a helper-wrapper registry / one-hop dependency handle.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check only if the runner import set or direct citation firewall changes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "Issue: the actual load-bearing act is defining a citation-graph umbrella handle for existing helper modules. Why this blocks clean theorem status: the note does not derive the helpers or the parent shell-law physics; it correctly restricts itself to named-import / registry use. Repair target: a clean theorem verdict would require separate retained derivations or complete helper-runner sources proving the helper behavior rather than registering it. Claim boundary until fixed: the note may be cited as the helper-wrapper registry and one-hop dependency handle only."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.886274+00:00",
+      "audit_date": "2026-07-01T12:48:28.028578+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited only the bounded helper computation: on the explicit 15^3 local O_h and finite-rank lattice source families, shell averaging plus least-squares a/r projection gives the reported small finite-difference vacuum residuals, without auditing physical forcing of the projection or a full tensor/GR completion.",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "Finite 15^3 zero-Dirichlet Z^3 nearest-neighbor Laplacian with R=4: seven-star Green columns induce a localized sewing-band shell source and a reduced radial/anisotropic shell map depending only on total charge."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 7.976,
+        "runner_hash": "b4d910b15b6d23e40322ada3f35a5ed06abd5dfef5f0fe122bf11fb50ef0eca5",
+        "transitive_descendants": 88
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T124828Z-1ac6143b-one_parameter_reduced_sh",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the limited registry function: the source names the five helpers, and the runner checks the source firewall and direct citation qualification. It does not close, or claim to close, a derivation of the helper modules or the parent shell law.",
+      "claim_scope": "A helper-wrapper registry naming the five modules imported by scripts/frontier_one_parameter_reduced_shell_law.py and enforcing that direct citations use the note only as a one-hop registry/firewall.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T12:48:28.028578+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "The load-bearing move is the creation of a citeable umbrella handle for five helper modules.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-audit only if the source scope is changed from helper-wrapper registry to a derivation of the helpers, the exterior projector, or the parent one-parameter shell law.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The audited row is explicitly a citeable umbrella handle for existing helper imports. That is a definition/registry act, not an independent derivation, so the rubric classifies it as audited_renaming even though the runner substantively recomputes the reduced shell-law checks and validates the citation firewall. The cited one-hop authorities are retained_bounded, so there is no dependency-status blocker for the narrow registry scope."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.495106+00:00",
+      "audit_date": "2026-07-02T01:47:34.414359+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Bounded finite-grid check that the provided 15^3 O_h and finite-rank lattice fields, after shell averaging and least-squares a/r projection, give the reported isotropic-metric residual reductions.",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "Finite 15^3 zero-Dirichlet Z^3 nearest-neighbor Laplacian shell-localization and reduced-shell factorization at R=4 for the seven-site star, with O_h orbit organization; no nonlinear GR or tensor-valued matching law."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 7.976,
+        "runner_hash": "b4d910b15b6d23e40322ada3f35a5ed06abd5dfef5f0fe122bf11fb50ef0eca5",
+        "transitive_descendants": 88
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T014734Z-71a77cff-one_parameter_reduced_sh",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registry claim closes: the primary runner imports the five named helper modules and the boundary checks verify the wrapper/firewall language and qualified direct citations. This does not derive any helper module or the parent shell-law; it only establishes the registry handle the note actually claims.",
+      "claim_scope": "Audited only the one-hop helper-wrapper registry naming the five helper modules consumed by scripts/frontier_one_parameter_reduced_shell_law.py and the citation firewall around that registry use.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T01:47:34.414359+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "The load-bearing move is the creation of a citeable umbrella handle for five helper modules.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that future direct citations continue to use this note as a helper-wrapper registry and not as derivation or status-promotion authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The source note's load-bearing act is definitional infrastructure: it creates and firewalls a citeable umbrella handle for existing helper modules. The runner does perform substantive finite-lattice shell-law checks, but those checks belong to the helper/parent shell-law surface rather than turning this wrapper into a derivation. Since the audited claim reduces to a registry definition rather than a new theorem, the correct verdict is audited_renaming."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_one_parameter_reduced_shell_law.py",
+  "title": "One-Parameter Reduced Shell Law Helpers \u2014 Umbrella Wrapper",
+  "transitive_descendants": 92,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

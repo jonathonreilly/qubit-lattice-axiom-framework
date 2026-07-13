@@ -1,0 +1,83 @@
+{
+  "audit_date": "2026-04-30T18:42:23.195704+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 2.585,
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop:medium-sweep-2026-04-30-01",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The source is explicitly bounded to the externally imposed two-branch protocol, and the current runner recomputes the overlaps, entropy values, positive delta_S table, and norm conservation without one-hop dependencies.",
+  "claim_id": "bmv_entanglement_note_2026-04-11",
+  "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 3,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/periodic_geometry.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 6.5,
+  "load_bearing_step": "On a fixed externally imposed geometry-branch superposition, the runner computes delta_S > 0 for every tested coupling and S_quantum saturates near ln(2).",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "retained_bounded",
+  "max_descendant_status_rank": 95,
+  "note_hash": "c74bdb0ee52f050c65d713513380d4614149044cd8854812b993f3dc6b347ae9",
+  "note_path": "docs/BMV_ENTANGLEMENT_NOTE_2026-04-11.md",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.104586+00:00",
+      "archived_for_note_hash": "831303a12e128310864c8cbf30e33a32c6018a1b47d6cec04dbaabcfde9b5c0a",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 5,
+    "D": 0,
+    "total_pass": 5
+  },
+  "runner_path": "scripts/frontier_bmv_entanglement.py",
+  "title": "Branch-Mediated Entanglement on a Staggered Lattice",
+  "transitive_descendants": 3,
+  "verdict_rationale": "The note's claim is narrow and matches the current runner output: a finite staggered-lattice protocol with an externally imposed source branch gives positive branch-mediated entanglement beyond the corresponding classical mixture. The note does not claim a full BMV witness or dynamically generated gravitational branch, so the main hidden-premise failure mode is already excluded by the source boundary. Residual risk is limited to the finite protocol and implementation assumptions, which are inside the declared bounded scope."
+}

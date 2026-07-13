@@ -1,0 +1,296 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+    "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+    "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0da0bb874d2e95b251e11685caa8756f91beae3eab673ff326a3641964e94dc9",
+  "note_path": "docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T01:27:59.086707+00:00",
+      "audit_date": "2026-05-27T05:40:13.014242+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "Exact linear-algebra theorem on abstract C^3: the specified diagonal involutions have distinct joint sign characters on X_1, X_2, X_3 and yield the rank-1 sector-projector decomposition, with no physical-generation identification audited.",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "Abstract finite-dimensional matrix-algebra theorem on C^3 only: for the cyclic permutation C and three diagonal involutions T_1,T_2,T_3 with distinct joint sign characters, the sign projectors P_i are rank-1 orthogonal projectors, E_ij=P_i C^{(i-j) mod 3} P_j gives all matrix units, the generated associative algebra equals M_3(C), no proper nonzero invariant subspace exists, and the Burnside rank-one/irreducibility hypotheses are exhibited. This excludes any identification with Cl(3), Z^3, BZ-corner hw=1 triplets, staggered-Dirac, taste-cube, generation physics, charged-lepton flavor, CKM, or PMNS content.",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "On the retained finite C^3/hw=1 triplet, the diagonal translation-character projectors together with the C3[111] cycle generate M_3(C), and no nonzero proper subspace or quotient preserves both structures. Physical-species interpretation, SM-generation identification, substrate physicality, and full matter-content closure are out of scope."
+        },
+        "dep_claim_type": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "retained_bounded"
+        },
+        "deps": [
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "efdf766f1ed91a79992f58fde89675f8893d3a2441ae816564bd321a0a544a03",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "All one-hop dependencies are retained-grade, and the bridge consumes only their abstract-C^3 algebraic content. The runner reconstructs the projectors, order-3 cycle, matrix-unit generation, and no-nontrivial-invariant-subspace conclusion with PASS=8 FAIL=0. The parent dependency is used as the repair target context; the load-bearing closure comes from the retained character and Burnside siblings plus standard finite-dimensional linear algebra.",
+      "claim_scope": "Bounded abstract-C^3 composition bridge only: given the retained distinct-translation-character theorem and retained M_3(C) Burnside theorem, the diagonal joint projectors P_{X_i} and the order-3 cycle sigma generate M_3(C), so there is no proper nonzero/nontrivial subspace of C^3 invariant under both the projector family and sigma. This does not close physical hw=1 carrier identification, physical-species interpretation, three-generation matter content, staggered-Dirac realization, or any continuum/numerical claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T05:40:13.014242+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02:bounded_theorem->positive_theorem",
+      "load_bearing_step": "The retained character theorem supplies rank-1 coordinate projectors as polynomials in T_x,T_y,T_z, the retained Burnside theorem supplies <sigma,T_x,T_y,T_z>_alg = M_3(C), and the standard M_3(C) action on C^3 has no invariant subspaces other than {0} and C^3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck downstream citations for scope drift: this row supplies only the abstract-C^3 no-proper-nontrivial-invariant-subspace bridge, not physical generation/species identification or staggered-Dirac carrier closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The clean verdict is for the narrow finite-dimensional algebraic statement. The generated matrix units span M_3(C), and invariance under the projector family plus sigma therefore forces invariance under the full matrix algebra; any nonzero vector then generates all of C^3 under matrix units, so the only invariant subspaces are {0} and C^3. The no-go discipline gate passes as a scope check because this is not a broad physical no-go: it is an exact abstract-C^3 irreducibility result, with physical carrier, species, staggered-Dirac, matter-content, and continuum readings explicitly excluded. The phrase 'no proper subspace' is audited as 'no proper nonzero/nontrivial invariant subspace' because {0} is invariant."
+    },
+    {
+      "archived_at": "2026-06-03T00:53:51.292523+00:00",
+      "audit_date": "2026-05-29T07:32:10.066075+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "Exact linear-algebra theorem on abstract C^3: the specified diagonal involutions have distinct joint sign characters on X_1, X_2, X_3 and yield the rank-1 sector-projector decomposition, with no physical-generation identification audited.",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "Abstract finite-dimensional matrix-algebra theorem on C^3 only: for the cyclic permutation C and three diagonal involutions T_1,T_2,T_3 with distinct joint sign characters, the sign projectors P_i are rank-1 orthogonal projectors, E_ij=P_i C^{(i-j) mod 3} P_j gives all matrix units, the generated associative algebra equals M_3(C), no proper nonzero invariant subspace exists, and the Burnside rank-one/irreducibility hypotheses are exhibited. This excludes any identification with Cl(3), Z^3, BZ-corner hw=1 triplets, staggered-Dirac, taste-cube, generation physics, charged-lepton flavor, CKM, or PMNS content.",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "Exact finite-dimensional algebra theorem on the retained hw=1 carrier H_hw=1 ~= C^3 with basis X_1, X_2, X_3: the coordinate projectors D_3 together with the C3[111] cycle generate M_3(C), and the only subspaces invariant under both retained structures are 0 and C^3. Equivalently, there is no nontrivial proper quotient preserving both translation-character separation and the C3[111] cycle. Physical-species interpretation, SM-generation identification, full staggered-carrier/substrate realization, and broader matter-content closure are out of scope."
+        },
+        "dep_claim_type": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "efdf766f1ed91a79992f58fde89675f8893d3a2441ae816564bd321a0a544a03",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-audit-loop-2026-05-29",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained dependencies supply the coordinate projectors and full M_3(C)/cycle generation on abstract C^3, and the no-nontrivial-quotient result follows by elementary linear algebra. The audited scope excludes the zero subspace identity quotient and excludes any physical carrier or species interpretation.",
+      "claim_scope": "Bounded abstract-C^3 bridge: given the retained distinct translation-character projectors P_Xi and the retained M_3(C) Burnside/cyclic-generation theorem, no nonzero proper subspace of C^3 is invariant under both the three coordinate projectors and the order-3 cyclic permutation; equivalently there is no nontrivial proper quotient preserving both structures. No physical hw=1 carrier, species, or matter-content identification is included.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T07:32:10.066075+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10:retained->audit_in_progress",
+      "load_bearing_step": "If 0 != V is invariant under the coordinate projectors P_Xi and the cycle sigma, then some nonzero coordinate component of v in V gives e_i in V via P_Xi, and sigma cycles e_i to every basis vector, so V=C^3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check if broadened to exclude the zero subspace/identity quotient literally, to identify the abstract C^3 carrier with a physical hw=1 staggered-Dirac sector, or to attach Standard Model species/matter-content semantics.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The clean proof does not need hidden staggered-Dirac or physical-generation input: projector invariance extracts coordinate lines and the cyclic permutation forces the whole three-dimensional space. The runner verifies the projectors, cycle, generated matrix units, and finite sanity checks, while the independent argument covers arbitrary complex subspaces including two-dimensional cases. The no-go gate passes under the nontrivial quotient reading; a literal exclusion of the zero subspace or any physical hw=1/species claim would be outside this audited scope."
+    },
+    {
+      "archived_at": "2026-06-04T20:18:16.395469+00:00",
+      "archived_for_note_hash": "918f90ef71f58f416b9310adcc1f9b2dc998cfda7fdb16aaf9f61a2e5ebf40cf",
+      "audit_date": "2026-06-03T11:10:50.776267+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "Exact linear-algebra theorem on abstract C^3: the specified diagonal involutions have distinct joint sign characters on X_1, X_2, X_3 and yield the rank-1 sector-projector decomposition, with no physical-generation identification audited.",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "Abstract C^3 matrix-algebra theorem: the specified C and diagonal involutions generate all matrix units and hence M_3(C), with irreducibility and Burnside corollaries.",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "Exact finite-dimensional algebra theorem on the retained hw=1 carrier H_hw=1 ~= C^3 with basis X_1, X_2, X_3: the coordinate projectors D_3 together with the C3[111] cycle generate M_3(C), and the only subspaces invariant under both retained structures are 0 and C^3. Equivalently, there is no nontrivial proper quotient preserving both translation-character separation and the C3[111] cycle. Physical-species interpretation, SM-generation identification, full staggered-carrier/substrate realization, and broader matter-content closure are out of scope."
+        },
+        "dep_claim_type": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "efdf766f1ed91a79992f58fde89675f8893d3a2441ae816564bd321a0a544a03",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-110925-42abaacf-three_generation_no_prop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic bridge closes for nonzero proper invariant subspaces, but the stated claim says no proper subspace, and {0} is a proper invariant subspace. The source note also displays an incorrect matrix-unit formula: conjugation sigma^k P_i sigma^{-k} only gives diagonal projectors, not arbitrary E_ij.",
+      "claim_scope": "Abstract C^3 algebraic bridge from retained diagonal translation-character projectors and a retained order-3 cycle to absence of nonzero proper invariant subspaces.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T11:10:50.776267+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The projectors P_{X_i} obtained from the retained translation characters together with the cyclic permutation sigma generate M_3(C), so any invariant subspace is only 0 or C^3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: revise the claim and B8/runner verdict text to say no nonzero proper invariant subspace, and replace the matrix-unit formula sentence with the retained Burnside formula using consistent indices.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "All cited authorities are retained-grade, and the intended linear-algebra composition is class A over those inputs. However the claim is too broad as written because the zero subspace is proper and invariant under both the projectors and sigma. The displayed matrix-unit generation sentence is also false/inconsistent with the retained Burnside formula; the correct family is of the form E_ij = P_i sigma^k P_j with k = i-j mod 3, up to the note's indexing convention. Runner PASS does not repair these source-text defects."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.044144+00:00",
+      "audit_date": "2026-06-06T00:44:16.794894+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "Exact linear-algebra theorem on abstract C^3: the specified diagonal involutions have distinct joint sign characters on X_1, X_2, X_3 and yield the rank-1 sector-projector decomposition, with no physical-generation identification audited.",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "Abstract C^3 matrix-algebra theorem: the specified C and diagonal involutions generate all matrix units and hence M_3(C), with irreducibility and Burnside corollaries.",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "Exact finite-dimensional algebra theorem on the retained hw=1 carrier H_hw=1 ~= C^3 with basis X_1, X_2, X_3: the coordinate projectors D_3 together with the C3[111] cycle generate M_3(C), and the only subspaces invariant under both retained structures are 0 and C^3. Equivalently, there is no nontrivial proper quotient preserving both translation-character separation and the C3[111] cycle. Physical-species interpretation, SM-generation identification, full staggered-carrier/substrate realization, and broader matter-content closure are out of scope."
+        },
+        "dep_claim_type": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b26532b40b8f2ff0f955a16cdd1e64d6fd7a1f7e2fdb6976339064754848ec59",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-004305-cc01a51e1e-three_generation_no_proper_q",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited distinct-character theorem supplies the diagonal rank-1 projectors, and the cited Burnside theorem supplies the compatible cyclic/full-matrix-algebra closure. Independently, the displayed projectors reduce invariant subspaces to coordinate subsets, and the 3-cycle leaves only the empty and full subsets invariant.",
+      "claim_scope": "Abstract C^3 theorem: for a chosen ordered basis, the coordinate rank-1 projectors together with the cyclic permutation of the three basis lines admit no nonzero proper invariant subspace; equivalently the generated matrix units give M_3(C) on that carrier.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T00:44:16.794894+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Invariance under the three rank-1 coordinate projectors forces any invariant subspace to be a coordinate subspace, and the order-3 cycle has no nonempty proper invariant coordinate subset.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should keep the audited scope limited to abstract C^3; downstream physical hw=1 carrier or species interpretation is not closed by this row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "All cited authorities in the restricted packet are marked retained-grade, and no open physical carrier or species-identification dependency is used in the audited abstract-C^3 claim. Independent formula checking confirms the signs and factors in the projectors, sigma^3 = I, the matrix-unit formula P_i sigma^k P_j = E_ij, and the coordinate-subspace argument. The runner source performs exact integer matrix checks rather than merely printing constants, and there are no external comparator or tuned-scale inputs."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py",
+  "title": "Three-Generation No-Proper-Quotient via Burnside + Characters Bridge",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

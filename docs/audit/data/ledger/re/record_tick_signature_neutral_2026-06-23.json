@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_tick_signature_neutral_2026-06-23",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "bec376c5eed0aa5a81b83ca9010bc30bb341227b3d1c2ff2ca26a484ee315dd4",
+  "note_path": "docs/RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:32.340112+00:00",
+      "audit_date": "2026-07-09T08:12:57.486855+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16": "No-go for the KMS/APBC-as-axis-supplier route: on the stated finite staggered block, APBC on a supplied circle is axis-covariant under the tau<->x1 exchange, and axis selection requires an independently supplied per-axis boundary-condition asymmetry; this does not derive B-AXIS, physical time step, APBC from minimal axioms, exclusion of independent clocks, or a broad no-future-BC-supplier theorem."
+        },
+        "dep_claim_type": {
+          "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "06056842b269d1b0fa48a19d3a4710d47da4781cb4884f14974217b376d06fe5",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-mill",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the stated finite channels: the retained no-go dependency supplies the relevant single-clock KMS/APBC-axis boundary, and the runner checks the finite algebraic counterchannels without deriving a Lorentzian sign. The result is bounded and does not claim a universal impossibility theorem for every future Lorentzian-sign route.",
+      "claim_scope": "Bounded negative theorem that the checked finite record-tick channels do not derive Lorentzian eps = e_4^2 = -1; the Lorentzian sign remains a separate Wick/sign admission, and no global no-go against all possible Lorentzian-sign derivations is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T08:12:57.486855+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "eps = e_4^2 = -1 remains a separate binary input, not supplied by the checked record-tick channels.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit should preserve the bounded scope and not cite this as a global no-go against all possible Lorentzian-sign derivations.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Clean within the bounded negative scope. The runner completed with TOTAL: PASS=10 FAIL=0 and checks finite algebraic counterchannels: no on-site e_4 in M_2(C), Euclidean contraction/arrow with eps=+1, Wick i needed for the unitary branch, and Pauli-span sign ambiguity between so(3,1) and so(4). No fitted comparator or hidden external value is used, and the source excludes a broader global no-go."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/record_tick_signature_neutral_2026_06_23.py",
+  "title": "The Record-Tick is Signature-Neutral: the Lorentzian Sign is a Separate Admission",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

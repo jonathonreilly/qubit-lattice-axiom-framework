@@ -1,0 +1,183 @@
+{
+  "audit_date": "2026-05-29T05:45:58.127652+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "wave_direct_dm_h025_fam1_seed1_control_note": "Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%."
+    },
+    "dep_claim_type": {
+      "wave_direct_dm_h025_fam1_seed1_control_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "wave_direct_dm_h025_fam1_seed1_control_note": "retained_bounded"
+    },
+    "deps": [
+      "wave_direct_dm_h025_fam1_seed1_control_note"
+    ],
+    "load_bearing_score": 5.407,
+    "runner_hash": "fec0e48bfbd52dc6800e290ec9c5f738b2a86ac7c93b42db7622bbb8928bc418",
+    "transitive_descendants": 14
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-wave-direct-dm-h025-low-band-2026-05-28",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The one-hop dependency is retained_bounded for the same Fam1 seed-1 H=0.25 control ladder, and the primary no-argument wrapper pins exactly family=Fam1, seed=1, H=0.25 before delegating to the included computation helpers. The cached runner output matches the source row and summary; independent arithmetic from the printed values confirms the negative signs, R_hist scale, and approximately 5.2% scaled-spread.",
+  "claim_id": "wave_direct_dm_h025_low_band_retention_note",
+  "claim_scope": "Bounded seed-1 Fam1 H=0.25 direct-dM controlled replay: exact S=0 null, negative delta_hist for S=0.002/0.004/0.008, R_hist near -29% to -30%, and low scaled-spread in the pinned control-ladder runner. Coarse H=0.5/0.35 continuity rows, cross-seed ordering, downstream synthesis, and portability claims are excluded.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-05-29T05:45:58.127652+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wave_direct_dm_h025_fam1_seed1_control_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/wave_direct_dm_h025_control_batch.py",
+    "scripts/wave_direct_dm_matched_history_probe.py",
+    "scripts/wave_retardation_continuum_limit.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 8.307,
+  "load_bearing_step": "The seed-1 control runner is the load-bearing H=0.25 point and reproduces the S=0.004 row with dM_early=+0.004411, dM_late=+0.006255, delta_hist=-0.001843, and R_hist=-29.47%, hardened by the S=0 null and S=0.002/0.004/0.008 ladder.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "retained_bounded",
+  "max_descendant_status_rank": 95,
+  "note_hash": "edd85b76642a2dd6d0b0cfa235f97d16765576e377ea0644d6bc748519a86731",
+  "note_path": "docs/WAVE_DIRECT_DM_H025_LOW_BAND_RETENTION_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should preserve the bounded seed-1 control-ladder scope and not promote the contextual H=0.5/H=0.35, cross-seed, downstream synthesis, or portability language.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370101+00:00",
+      "archived_for_note_hash": "8be722db9f1f85917b316b4bc95d3a5e1e66c2c64a1bc1c03d1e30e82591068a",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-30T01:01:47.231697+00:00",
+      "archived_for_note_hash": "5abd2c8e55364732132539e87cbd3b0e18e484b199d44a6fdc4bb1cc3c774f21",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-28T21:12:46.656942+00:00",
+      "archived_for_note_hash": "470b2631c8ba049104e90846fe57ab10b87877cb533c1035e6a03665234a606f",
+      "audit_date": "2026-05-28T04:37:57.348181+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam1_seed1_control_note": "Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%.",
+          "wave_direct_dm_h025_two_point_synthesis_note": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam1_seed1_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_two_point_synthesis_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam1_seed1_control_note": "retained_bounded",
+          "wave_direct_dm_h025_two_point_synthesis_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam1_seed1_control_note",
+          "wave_direct_dm_h025_two_point_synthesis_note"
+        ],
+        "load_bearing_score": 5.407,
+        "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+        "transitive_descendants": 14
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-xhigh-2026-05-28-wave-direct-dm-h025-low-band",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The one-hop retained-bounded control and synthesis notes support the Fam1 seed-1 H=0.25 value, but this row's primary SHA-pinned runner cache is the default seed-0 point, not the source note's seed-1 point. The coarse H=0.5/H=0.35 continuity comparison is also not provided as a retained one-hop authority in this packet.",
+      "claim_scope": "Bounded audit of the Fam1 seed-1 H=0.25 one-strength direct-dM replay and its claimed continuity with the H=0.5/H=0.35 seed-1 branch. The audit does not cover a positive theorem, portability law, or refinement-stable amplitude package.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T04:37:57.348181+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The direct H = 0.25 historical low-band replay is a retained continuation of the seed-1 branch at the level of sign plus late-gain difference.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: primary cached runner output is the default seed-0 point rather than the source note's Fam1 seed-1 point; cheapest repair is to repoint/narrow the row to the retained seed-1 control artifact or add a SHA-pinned seed-1 command/cache plus retained coarse-reference provenance.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 1,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the source note's load-bearing row is Fam1 seed 1 at H=0.25 with dM(early)=+0.004411, dM(late)=+0.006255, delta_hist=-0.001843, and R_hist=-29.47%, but the current cached output for its primary runner path reports the default seed 0 row with dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, and R_hist=-20.12%. Why this blocks: the audit packet does not SHA-pin the row's own seed-1 replay artifact, and the note also uses H=0.5/H=0.35 branch-continuity numbers that are not retained one-hop authorities here. Repair target: either retarget this row to the retained seed-1 control/synthesis notes or provide an auditable seed-1-specific command/cache and retained provenance for the coarse seed-1 reference values. Claim boundary until fixed: the retained-bounded seed-1 control ladder and Fam1 fine-pair synthesis remain available through their own audited rows, but this older one-strength branch-retention note should not promote independently."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 4,
+    "D": 0,
+    "total_pass": 4
+  },
+  "runner_path": "scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py",
+  "title": "Wave Direct-dM H=0.25 Low-Band Retention Note",
+  "transitive_descendants": 13,
+  "verdict_rationale": "Clean within the stated bounded scope. The runner is not a constant-printer: the wrapper pins the intended Fam1/seed1/H=0.25 arguments, the helper constructs source histories and wave/beam responses, and the cache completes under the declared 1800 s budget. The note also correctly demotes the H=0.5/H=0.35 comparison rows and broader cross-seed/portability discussion to non-load-bearing context."
+}

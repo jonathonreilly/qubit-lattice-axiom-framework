@@ -1,0 +1,625 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_spin_statistics_theorem_note_2026-04-29",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+    "minimal_axioms",
+    "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+    "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+  ],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.512,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "451c4cfb500ef81862570bd16734305a606855a9fdb502054c403bce0cf14082",
+  "note_path": "docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T16:53:49.909507+00:00",
+      "audit_date": "2026-04-30T15:13:27.532853+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Yes. The note gives a self-contained structural proof on the stated A_min objects, and the registered runner completed successfully on the load-bearing algebraic checks.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "Axiom-First Spin-Statistics Theorem on Cl(3) \u2297 Z^3: the stated finite-lattice/Cl(3) theorem is proved on the listed A_min objects and checked by the registered runner.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing theorem is structural rather than a tuned numerical match: support \u2014 branch-local theorem note on A_min; runner passing; audit-pending.. The registered runner completed successfully and its classified PASS surface is {'A': 0, 'B': 0, 'C': 9, 'D': 0, 'total_pass': 9}. Residual risk is limited to the support/branch-local scope stated by the note; this does not promote the row beyond its author-declared tier."
+    },
+    {
+      "archived_at": "2026-05-03T19:49:42.760558+00:00",
+      "archived_for_note_hash": "cf781bfad36f6f4c9820886f5e4982b2d8776aab5dda3c93064bf09ce6674de4",
+      "audit_date": "2026-05-02T22:39:14.049664+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The anticommutator/determinant/sign-flip exhibits close only after Grassmann generators are already assumed by A3. The claimed force step depends on a per-site Cl(3) uniqueness/dimension premise that is not retained and has been audited failed, and the runner does not prove uniqueness of Grassmann quantisation from A1-A4.",
+      "claim_scope": "Attempted axiom-first lattice spin-statistics theorem claiming Grassmann anticommutation is forced by A_min rather than assumed, with determinant and correlator antisymmetry corollaries for the canonical staggered matter sector.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T22:39:14.049664+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Grassmann implementation is the unique canonical-quantisation choice on A_min that gives a finite-dim per-site Hilbert space matching the Cl(3) spinor module, hence anticommutation is forced.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit after the note is either narrowed to a Grassmann-calculus lemma or supported by a corrected retained per-site representation/quantisation theorem.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the note treats A3's finite Grassmann partition as evidence that anticommutation is forced, then relies on a finite per-site Cl(3) module argument to exclude bosonic CCR; that per-site representation premise is not retained and the stronger uniqueness claim has failed audit. Why this blocks: the row would let downstream notes cite spin-statistics as derived from A_min, when the runner only checks standard CAR/Berezin consequences and a finite-dimensional trace obstruction to exact bosonic CCR. Repair target: either demote this to a bounded Grassmann-calculus lemma conditional on A3, or provide a correct independent theorem deriving the matter algebra from retained Cl(3)/locality/reflection-positivity inputs. Claim boundary until fixed: given Grassmann generators, the anticommutators, determinant identity, and exchange sign checks are valid; the forced spin-statistics theorem is not retained."
+    },
+    {
+      "archived_at": "2026-06-11T10:02:07.572367+00:00",
+      "archived_for_note_hash": "26d94f3f157d4ed633f507596c5ac4a23e4cbcce13dbcb18eff8253deda95429",
+      "audit_date": "2026-06-10T20:53:05.753543+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "minimal_axioms_2026-04-11": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "minimal_axioms_2026-04-11": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "minimal_axioms_2026-04-11": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "minimal_axioms_2026-04-11",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.896,
+        "runner_hash": "fdf41bef25ff5a544ab3c5a6081fe2e96461601557f2ee2af7a4a054f7a5e1a0",
+        "transitive_descendants": 952
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260610-205046-e48a569f6b-axiom_first_spin_statistics_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional CCR trace obstruction itself is sound. The restricted packet does not close the separate physical readout that the substep-1 per-site matter Hilbert space is exactly dim 2: the cited Cl(3) note explicitly moves that U4 bridge out of scope, and the cited minimal-axiom note is superseded/meta rather than retained-grade.",
+      "claim_scope": "Audited the re-scoped claim that, under the explicit canonical CCR hypothesis, a free-boson realization is excluded on any finite/dim-2 substep-1 per-site Hilbert space, while Grassmann-calculus statements are conditional on the declared Grassmann frame and hard-core-vs-CAR selection is out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T20:53:05.753543+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The canonical CCR has no finite-dimensional realization because tr([a,a\u2020])=0 in finite dimension while tr(I)=d>0; combined with a cited dim-2 substep-1 per-site Cl(3) readout, this excludes the free-boson/CCR branch.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained one-hop authority or explicit hypothesis for the substep-1 per-site Hilbert space being finite/dim 2, and replace the superseded 2026-04-11 meta cite with the current registered premise if it is intended to carry framework scope.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The runner performs genuine finite-matrix algebra checks for the CCR trace obstruction, hard-core boundary, CAR/JW identities, determinant/Pfaffian identity, and context checks; these support the scoped algebraic statements and do not over-exclude hard-core bosons. However, the conclusion needs a retained one-hop bridge from the framework surface to a finite, specifically dim-2, per-site physical Hilbert space. The provided Cl(3) authority only retains the abstract chirality-irrep classification and explicitly says the physical per-site U4 readout is out of scope, so the exclusion closes only conditional on importing that missing readout."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.889037+00:00",
+      "audit_date": "2026-06-11T11:58:51.940483+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "C1 only: conditional on a single faithful Cl(3) module per site, the retained Cl(3) split and standard semisimple representation theory give dim_C H_x = 2; unconditional U4 closure and chirality/unitary-conjugacy claims are outside this ratified scope."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 15.422,
+        "runner_hash": "fdf41bef25ff5a544ab3c5a6081fe2e96461601557f2ee2af7a4a054f7a5e1a0",
+        "transitive_descendants": 969
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-115610-b5e880a490-axiom_first_spin_statistics_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The trace obstruction is a direct finite-dimensional linear-algebra identity, and the dim-2 per-site input is supplied by the accepted Quantum axiom plus retained Cl(3)/single-module authorities. The hard-core alternative is correctly outside the CCR hypothesis, so no broader statistics-forcing claim is needed.",
+      "claim_scope": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T11:58:51.940483+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T11:55:31.827107+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-115315-669e54c736-axiom_first_spin_statistics_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the explicit-CCR/free-boson exclusion on the one-qubit substep-1 carrier, plus Grassmann-calculus consequences conditional on an already declared Grassmann frame; hard-core-boson versus CAR/graded-locality selection is out of scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-11T11:58:51.940483+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-115610-b5e880a490-axiom_first_spin_statistics_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:retained_bounded->unaudited",
+      "load_bearing_step": "The canonical CCR [a,a^+] = I has no finite-dimensional realization by trace cyclicity, while the accepted one-qubit/Cl(3) per-site surface is dim_C H_x = 2, so the free-boson CCR branch is excluded.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the k=1 reading of the current Quantum axiom if that axiom wording changes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Independent trace-cyclicity checking closes the CCR obstruction without relying on runner stdout. The runner source performs actual finite-matrix checks for the CCR truncation defect, Cl(3) chirality readout, hard-core boundary, CAR/Grassmann exhibits, determinant/Pfaffian identity, and positivity context. All non-axiom cited authorities used for the scoped claim are retained-grade, and the minimal axiom authority is explicitly flagged as an accepted framework premise. The clean verdict applies only to the bounded CCR exclusion and conditional Grassmann consequences, not to any CAR-forcing or hard-core exclusion claim."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.425523+00:00",
+      "audit_date": "2026-06-21T06:35:42.915099+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "On the current minimal-Quantum one-qubit surface, the one-site Cl(3) physical carrier has multiplicity k=1 and complex dimension 2; on the abstract Cl(3) representation surface only the conditional k=1 => dim_C=2 statement holds, with k>=2 counterexamples preserved."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 18.367,
+        "runner_hash": "fdf41bef25ff5a544ab3c5a6081fe2e96461601557f2ee2af7a4a054f7a5e1a0",
+        "transitive_descendants": 933
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_spin_statistics_theorem_note_2026-04-29-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-dimensional trace obstruction is exact linear algebra, and the dim-2 per-site carrier is supplied by the accepted Quantum axiom plus retained single-module/Cl(3) authorities. The note correctly limits the exclusion to the CCR branch and does not claim hard-core or CAR selection.",
+      "claim_scope": "Under the explicit canonical-CCR hypothesis, the free-boson/CCR realization is excluded on the finite dim-2 substep-1 per-site carrier; hard-core bosons and CAR-vs-hard-core selection are out of scope, and Grassmann determinant/exchange consequences are conditional on the declared Grassmann frame.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T06:35:42.915099+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T06:32:28.457241+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_spin_statistics_theorem_note_2026-04-29-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the explicit canonical CCR hypothesis, the free-boson branch is excluded on the one-qubit/dim-2 substep-1 surface; hard-core bosons and CAR/Grassmann selection remain out of scope, and S1/S3/S4 are only conditional Grassmann-frame calculus consequences.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T06:35:42.915099+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_spin_statistics_theorem_note_2026-04-29-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the explicit canonical-CCR hypothesis, the free-boson/CCR realization is excluded on the finite dim-2 substep-1 per-site carrier; hard-core bosons and CAR-vs-hard-core selection are out of scope, and Grassmann determinant/exchange consequences are conditional on the declared Grassmann frame.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The canonical CCR has no finite-dimensional realization because tr([a,a^\u2020]) = 0 in finite dimension while [a,a^\u2020] = I would require tr(I) = d > 0, and the substep-1 per-site carrier is a dim-2 Cl(3) module.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor may re-check the S1 wording distinguishing Grassmann generators from CAR operators, but it is not load-bearing for the CCR exclusion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing CCR exclusion closes as an algebraic contradiction over finite-dimensional matrices combined with retained/accepted finite-carrier inputs. The runner source genuinely computes the finite cutoff defects, Pauli/Cl(3) checks, hard-core falsification boundary, JW/CAR checks, determinant/Pfaffian identity, and positivity context rather than merely printing PASS. The source note is scoped narrowly enough: it withdraws statistics forcing and leaves the hard-core-vs-CAR discriminator outside the claim."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.809492+00:00",
+      "audit_date": "2026-06-30T17:54:43.391226+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited the scoped no-go that the accepted qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and stated finite ordering/locality checks make Grassmann/CAR statistics compatible via JW but do not force them over the hard-core-boson qubit frame.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "On the registered minimal-Qubit surface plus the retained Cl(3) complexification split, the physical one-site carrier is the single two-dimensional Pauli module; on the abstract Cl(3) representation surface, k>=2 faithful modules remain admissible."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 18.367,
+        "runner_hash": "fdf41bef25ff5a544ab3c5a6081fe2e96461601557f2ee2af7a4a054f7a5e1a0",
+        "transitive_descendants": 933
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T175443Z-5eb4b346-axiom_first_spin_statist",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The CCR exclusion follows by finite-dimensional trace algebra plus the accepted minimal-axiom premise and retained single-module/Cl(3) dimensional authorities. The hard-core alternative is correctly outside the CCR hypothesis, and the Grassmann determinant and antisymmetry statements are standard conditional Berezin/JW consequences rather than statistics-forcing claims.",
+      "claim_scope": "Under the explicit canonical CCR hypothesis, the free-boson realization is excluded on the finite one-qubit/Cl(3) substep-1 surface; Grassmann calculus consequences are conditional on the declared Grassmann frame, and hard-core-vs-CAR selection is not audited as decided.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T17:54:43.391226+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T17:51:54.369816+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T175154Z-b4a7dd44-axiom_first_spin_statist",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Explicit-CCR/free-boson exclusion on the finite dim-2 one-qubit/Cl(3) per-site carrier, plus Grassmann algebra, Berezin determinant, and exchange-sign consequences conditional on the declared Grassmann frame; no statistics forcing or hard-core-vs-CAR selection audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T17:54:43.391226+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T175443Z-5eb4b346-axiom_first_spin_statist",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the explicit canonical CCR hypothesis, the free-boson realization is excluded on the finite one-qubit/Cl(3) substep-1 surface; Grassmann calculus consequences are conditional on the declared Grassmann frame, and hard-core-vs-CAR selection is not audited as decided.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "The canonical CCR has no finite-dimensional realization because tr([a,a\u2020])=0 in finite dimension while [a,a\u2020]=I would require tr(I)=d>0; combined with the retained dim-2 one-qubit/Cl(3) per-site carrier, this excludes only the free-boson CCR branch.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that future minimal_axioms wording continues to preserve the one-qubit/M2(C) carrier premise used by the retained single-module dependency.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic obstruction, not a definition, renaming, numerical fit, or external comparator. The one-hop dependencies supplied in the packet are retained-grade or the registered minimal-axiom accepted premise, and the source scope no longer claims statistics forcing. The runner performs finite matrix checks for the CCR obstruction, Cl(3) chirality dimension, hard-core boundary, JW/CAR identities, Berezin determinant/Pfaffian identity, and the stated context check, with no D-class comparator or tuned empirical input."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.314119+00:00",
+      "audit_date": "2026-07-01T21:38:12.540525+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited the scoped no-go that the accepted Lattice/Qubit baseline plus standard finite tensor-product linear algebra, ungraded operator-algebra dimensions, and finite JW ordering checks do not force Grassmann/CAR statistics; they establish compatibility via JW while leaving the hard-core-boson qubit frame on equal ungraded-algebra footing.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "Single-site carrier/multiplicity only: on the current registered Qubit axiom surface the primitive one-site carrier is the k=1 two-dimensional Pauli module; on the abstract Cl(3) representation surface only the conditional k=1 => dim_C H_x=2 statement holds and k>=2 counterexamples remain."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 18.367,
+        "runner_hash": "fdf41bef25ff5a544ab3c5a6081fe2e96461601557f2ee2af7a4a054f7a5e1a0",
+        "transitive_descendants": 933
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T213812Z-fa3199b6-axiom_first_spin_statist",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The S2 CCR exclusion core closes from finite-dimensional trace cyclicity plus the accepted minimal_axioms premise and retained dim-2/Cl(3) authorities. The full scoped claim does not close as written because S1 says the displayed Grassmann generator relations, including {\u03c7bar_x,\u03c7_y}=0, are realized on a 2^{|\u039b|}-dimensional Fock space, while the runner checks ordinary CAR {c,c\u2020}=I instead.",
+      "claim_scope": "Re-scoped CCR/free-boson exclusion on the dim-2 substep-1 carrier, with hard-core-vs-CAR selection out of scope and Grassmann side consequences conditional on the declared Grassmann frame.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T21:38:12.540525+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The canonical CCR has no finite-dimensional realization by tr([a,a\u2020])=0 while tr(I)=d>0, and the cited substep-1 per-site matter carrier is a finite dim-2 Cl(3) module, so the free-boson CCR branch is excluded.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow S1 to pure Grassmann-algebra/Berezin consequences and separate the CAR/Jordan-Wigner operator realization, or add a correct exterior-multiplication proof for the displayed Grassmann relations with the right Hilbert/algebra dimension.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The CCR exclusion itself is a valid algebraic closure: no finite-dimensional operator pair can satisfy [a,a\u2020]=I, and the cited/accepted inputs supply a finite dim-2 per-site carrier. The hard-core boundary is also correctly scoped because \u03c3+ violates the CCR hypothesis on-site. However the source-runner convention for S1 drifts: the note states all Grassmann generators anticommute with zero cross anticommutator, but the executable check verifies CAR creation/annihilation operators with nonzero mixed anticommutator. That prevents a clean verdict for the full claim as written."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.412898+00:00",
+      "audit_date": "2026-07-02T09:26:13.521834+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Finite-block audit of whether the accepted Lattice+Qubit baseline plus standard tensor-product algebra, per-site dimension, and checked total-order locality facts force Grassmann/CAR statistics rather than merely admit a JW fermion frame alongside a hard-core-boson frame.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "On the accepted minimal Qubit surface plus the retained Cl(3) split, the primitive one-site Cl(3)-compatible carrier is the single two-dimensional Pauli module; on the abstract representation surface only the conditional k=1 => dim_C H_x=2 holds and k>=2 counterexamples remain."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        ],
+        "load_bearing_score": 18.367,
+        "runner_hash": "fdf41bef25ff5a544ab3c5a6081fe2e96461601557f2ee2af7a4a054f7a5e1a0",
+        "transitive_descendants": 933
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T092613Z-f79480f4-axiom_first_spin_statist",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-dimensional trace obstruction is standard algebra, and the finite dim-2 per-site carrier is supplied by the accepted minimal-axiom premise plus retained Cl(3)/single-module authorities. The hard-core alternative is correctly outside the CCR hypothesis and remains tied with CAR except under an additional graded-locality selector not claimed here.",
+      "claim_scope": "Under the explicit canonical-CCR hypothesis, the free-boson realization is excluded on the finite one-qubit/Cl(3) per-site surface; Grassmann CAR, Berezin determinant, and exchange-sign consequences are audited only conditional on the declared Grassmann frame, with hard-core-vs-CAR selection out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T09:26:13.521834+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T09:22:50.447335+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T092250Z-18f5ef3f-axiom_first_spin_statist",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the explicit canonical-CCR hypothesis, the free-boson/CCR realization is excluded on the finite one-site M2(C)/Cl(3) substep-1 surface; hard-core-vs-CAR selection is out of scope, and Grassmann/Berezin/exchange consequences are conditional on the declared Grassmann frame.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T09:26:13.521834+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T092613Z-f79480f4-axiom_first_spin_statist",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the explicit canonical-CCR hypothesis, the free-boson realization is excluded on the finite one-qubit/Cl(3) per-site surface; Grassmann CAR, Berezin determinant, and exchange-sign consequences are audited only conditional on the declared Grassmann frame, with hard-core-vs-CAR selection out of scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "The canonical CCR has no finite-dimensional realization because tr([a,a^\u2020])=0 in finite dimension while [a,a^\u2020]=I would require tr(I)=d>0; combined with the cited dim-2 per-site Cl(3) carrier, this excludes the free-boson/CCR branch on the substep-1 surface.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that future re-datings of minimal_axioms preserve the one-site M2(C)/single-qubit carrier bridge used by the retained U4 single-module authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The source note no longer claims statistics forcing and confines the exclusion to the canonical CCR/free-boson branch. The runner performs real finite-matrix checks for the trace obstruction witnesses, Cl(3) chirality modules, hard-core falsification boundary, CAR/JW relations, determinant/Pfaffian identity, and exchange antisymmetry rather than merely printing constants. All load-bearing cited authorities are retained-grade or the registered minimal-axiom premise, and the bounded no-go boundary is narrow enough not to overclaim the hard-core/CAR residual."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/axiom_first_spin_statistics_check.py",
+  "title": "Axiom-First Spin-Statistics Note \u2014 Re-scoped to the Free-Boson (CCR) Exclusion on the Substep-1 Surface",
+  "transitive_descendants": 729,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

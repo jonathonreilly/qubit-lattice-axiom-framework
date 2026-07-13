@@ -1,0 +1,448 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+    "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d4994611976c2b0174cb3f8d244365bd55a45d3b8cf773c37769c5bce0d3b194",
+  "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:51:12.478948+00:00",
+      "archived_for_note_hash": "3e0c33fc6bd18fbdffa845e16f9add9203b90eef736f6aa3f31b0e202130e687",
+      "audit_date": "2026-06-13T01:14:14.268780+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "Bounded scoping theorem on the exact bare bulk staggered-Dirac surface: for the massless mean-field Hermitian staggered Dirac operator on the L_s=2, L_t in {2,4}, APBC closed-torus Z^3 x S^1 substrate, the APS signed spectral asymmetry sum is zero by +/- spectral pairing; and the candidate 1/8 expressions 2^(1-d), 1/(2d), and 1-eta(d)/zeta(d) coincide at d=4 only through the existing integer-alignment identity 2^(d-2)=d. Broad APS mechanisms with Wilson/domain-wall mass, nontrivial gauge background, boundary geometry, spectral flow, or residue corrections remain open and are excluded.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "58fe1f92c37420f054b488d9f1cf0be8c6eeb55413e7b50d1ed6f400896128e0",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-011153-297684801d-signed_gravity_product_gradi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Clifford and sector-restriction algebra closes, but T3 is over-scoped as written. The label table follows for the half-integer cutoff used by the runner, not for a generic spectral cutoff Lambda unless an additional fractional-cutoff condition is imposed.",
+      "claim_scope": "Finite-dimensional audit of the retained Cl(3,1) eps-sector swap, boundary orientation sign flip, sector-selected eta labels on the truncated twisted tower, and coexistence with the product-grading anticommutation/commutation structure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T01:14:14.268780+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the sector-selection block I \u2297 A(a) \u2297 eps, restriction to the eps=s sector gives sA(a), and the spectrally truncated twisted tower has eta_delta(A(a))=+1 on a in (0,1/2) and -1 on a in (-1/2,0), yielding chi_s=s sign(eta_delta(A(a))).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow T3 to Lambda in Z+1/2 or state and prove the exact fractional-cutoff condition, then update the runner to check both the intended cutoff family and excluded counterexample cutoffs.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The Clifford sector-swap and product-grading identities are genuine class-A finite-dimensional algebra, and the runner performs nontrivial matrix and tower checks. However the T3 label table is not valid for generic spectral cutoffs: writing Lambda=m+r and 0<a<1/2, an independent count gives eta=1_{r>=a}-1_{r>=1-a}, so eta can be 0 for ordinary non-boundary cutoffs such as r<a. The runner only checks lam_max=20.5, where r=1/2, so it certifies a half-integer regulator instance rather than the broader regulator wording in the note."
+    },
+    {
+      "archived_at": "2026-06-19T10:12:06.324603+00:00",
+      "archived_for_note_hash": "214ff66bfae64a6f88678cc1e403945ef681fb6608e13acc21c96973c413f779",
+      "audit_date": "2026-06-16T01:54:33.307767+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "Bounded scoping theorem on the exact bare bulk staggered-Dirac surface: for the massless mean-field Hermitian staggered Dirac operator on the L_s=2, L_t in {2,4}, APBC closed-torus Z^3 x S^1 substrate, the APS signed spectral asymmetry sum is zero by +/- spectral pairing; and the candidate 1/8 expressions 2^(1-d), 1/(2d), and 1-eta(d)/zeta(d) coincide at d=4 only through the existing integer-alignment identity 2^(d-2)=d. Broad APS mechanisms with Wilson/domain-wall mass, nontrivial gauge background, boundary geometry, spectral flow, or residue corrections remain open and are excluded.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.17,
+        "runner_hash": "f3b3041f622ac2b855f2ccdd07b37635282b481d3d0704e87ede41c844ed4add",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-015054-1948c5dd0f-signed_gravity_product_gradi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Clifford signs, sector restriction, eta-count floor formula, branch failures, and product-grading commutator identities follow by finite-dimensional algebra from the scoped inputs. The twist datum, native boundary realization, eta-sector dynamics, and source action are explicitly outside the audited theorem.",
+      "claim_scope": "Finite-dimensional product-Hilbert-space theorem: retained Cl(3,1) chirality sectors are exchanged by e4 with boundary-orientation sign reversal; A(a) x eps selects opposite eta labels under the half-integer spectral cutoff; and the product grading anticommutes with the generation part while commuting with the boundary part.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T01:54:33.307767+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On the eps=s eigenspace, the boundary block I x A(a) x eps acts as s A(a) with multiplicity 2, and for Lambda in Z_{>=0}+1/2 the spectral count gives eta_delta(A(a))=+1 on a in (0,1/2) and -1 on a in (-1/2,0).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check scope only if a later row tries to promote this bounded theorem into derivation of the twist datum, native boundary construction, eta-sector superselection, or source action.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The runner source genuinely constructs the Clifford matrices, sector projections, finite spectral tower, product grading, and falsifier cases rather than merely printing the target label. Independent exact checks of the matrix signs and finite spectral counts agree with the note, including the half-integer cutoff condition and excluded non-half-integer counterexamples. The cited dependencies are retained-grade or an accepted axiom-premise, and the retained_bounded APS row is used only as a consistency leg for the untwisted no-label case."
+    },
+    {
+      "archived_at": "2026-06-21T08:20:08.641539+00:00",
+      "audit_date": "2026-06-19T22:35:20.865203+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "Bounded scoping theorem on the exact bare bulk staggered-Dirac surface: for the massless mean-field Hermitian staggered Dirac operator on the L_s=2, L_t in {2,4}, APBC closed-torus Z^3 x S^1 substrate, the APS signed spectral asymmetry sum is zero by +/- spectral pairing; and the candidate 1/8 expressions 2^(1-d), 1/(2d), and 1-eta(d)/zeta(d) coincide at d=4 only through the existing integer-alignment identity 2^(d-2)=d. Broad APS mechanisms with Wilson/domain-wall mass, nontrivial gauge background, boundary geometry, spectral flow, or residue corrections remain open and are excluded.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "318b27626a9570b0ea9780a9f7843c8006ac22b305d2c74a668ec7648ff118bf",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated finite-dimensional scope, T1-T4 follow from Clifford anticommutation, tensor-product sector restriction, and exact spectral counting. The twist realization, eta-sector dynamics, and source action are explicitly outside the audited claim.",
+      "claim_scope": "Finite-dimensional product-grading theorem: retained Cl(3,1) chirality plus a supplied spectrally truncated twisted tower yields opposite eta-sector labels and coexists with generation-factor anticommutation under the stated half-integer cutoff scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T22:35:20.865203+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+      "load_bearing_step": "On the eps=s sector, the boundary block I\u2297A(a)\u2297eps restricts to sA(a) with multiplicity 2, so eta_delta^(s)=2s eta_delta(A(a)); under the half-integer spectral cutoff eta_delta(A(a)) is +1 on a in (0,1/2) and -1 on a in (-1/2,0).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers do not broaden this clean finite-dimensional theorem into a derivation of the twist datum, eta-sector dynamics, or S_int.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The load-bearing content is exact Clifford/tensor-product algebra plus a finite spectral count; the retained Clifford authorities supply the algebraic carrier, and the half-integer cutoff formula follows by direct counting of n+a. The runner source substantively constructs the matrices, tower, sector projections, floor formula, and falsifiers rather than merely printing expected constants. No external comparator, tuned numerical input, or definition-as-derivation is used, and the note keeps downstream physical realization claims out of scope."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.516224+00:00",
+      "audit_date": "2026-06-21T13:17:49.478354+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "Exact bare-bulk scoping result on L_s=2, L_t in {2,4}, APBC, mean-field, massless closed-torus staggered Dirac: eta_APS is zero, and the d=4 value 1/8 is only the existing A(d)=B(d)=C(d) identity collapse, not an independent APS-eta witness.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.248,
+        "runner_hash": "318b27626a9570b0ea9780a9f7843c8006ac22b305d2c74a668ec7648ff118bf",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The sector-label result follows by exact Clifford-sector projection plus the floor-count formula for the spectrally truncated tower. T1 and T4 are direct matrix/tensor algebra identities over the stated inputs; twist existence, eta-sector dynamics, and the source action are outside the audited scope.",
+      "claim_scope": "Finite-dimensional product-grading theorem for the specified `Cl(3,1)` spinor factor, twisted spectral tower `A(a)`, and half-integer spectral cutoff: the two `eps` sectors carry opposite eta labels while the generation-factor anticommutation and boundary-sector commutation coexist.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T13:17:49.478354+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "On the `eps=s` sector, `I x A(a) x eps` restricts to `s A(a) x I_2`, so `eta_delta^(s)=2s eta_delta(A(a))`, and the spectral half-integer cutoff gives `eta_delta(A(a))=+1` on `a in (0,1/2)` and `-1` on `a in (-1/2,0)`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The load-bearing step is exact finite-dimensional algebra over retained Clifford inputs and the explicitly scoped twisted spectral tower, not a definition, external comparator, or tuned numerical match. The runner source constructs the Clifford matrices, sector projections, spectral counts, commutators, and falsifiers rather than merely printing the claimed result. Independent formula checks of the conjugation signs and the floor-count identity agree with the note and runner within the bounded theorem surface."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.503375+00:00",
+      "audit_date": "2026-07-02T05:01:14.037289+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "Exact bare-bulk scoping result on L_s=2, L_t in {2,4}, APBC, mean-field, massless closed-torus staggered Dirac: eta_APS is zero, and the d=4 value 1/8 is only the existing A(d)=B(d)=C(d) identity collapse, not an independent APS-eta witness.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.248,
+        "runner_hash": "318b27626a9570b0ea9780a9f7843c8006ac22b305d2c74a668ec7648ff118bf",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T050114Z-bb8315af-signed_gravity_product_g",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The T3 interval statement is false as written for the stated repo regulator delta = 1e-8: for any 0 < a <= delta, the n = 0 eigenvalue lies in the zero window, so h_delta = 1 and the label is undefined even at half-integer cutoff. The proof and runner effectively use delta = 0 counting or sample only twists far from zero; the missing step is to restrict the claimed intervals to |a| > delta or change the regulator statement.",
+      "claim_scope": "Finite-dimensional Clifford/product-grading claim that retained Cl(3,1) eps sectors are exchanged by e4, the boundary block A(a) eps gives opposite sector eta labels, and half-integer spectral cutoffs quantize those labels for the supplied twisted tower.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T05:01:14.037289+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "For the spectrally truncated tower, the note counts positives and negatives as eta_delta(A(a)) = floor(Lambda - a) + 1 - floor(Lambda + a), giving eta_delta = +1 for all a in (0, 1/2) at half-integer Lambda and hence chi_s = s sign(eta_delta(A(a))).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck T3 with finite delta; either narrow the theorem to delta < |a| < 1/2 or set delta = 0, then add runner samples with 0 < |a| <= delta.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "T1, T2, and T4 are straightforward finite-dimensional algebra and the runner genuinely checks those identities. The load-bearing T3 quantized-label formula omits the finite delta window, so the claimed branch failures do not occur exactly only at a = 0 and a = +/-1/2. The runner samples a = 0.1, 0.3, 0.49, etc., and therefore misses the small-nonzero-twist counterexample."
+    },
+    {
+      "archived_at": "2026-07-10T17:16:11.765280+00:00",
+      "audit_date": "2026-07-10T02:19:54.266570+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure complexified Clifford-algebra theorem: square-normalized chirality anticommuting with all generators exists exactly for even total dimension; at d_s = 3 this restricts d_t to odd values.",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "Exact bare-bulk scoping result on L_s=2, L_t in {2,4}, APBC, mean-field, massless closed-torus staggered Dirac: eta_APS is zero, and the d=4 value 1/8 is only the existing A(d)=B(d)=C(d) identity collapse, not an independent APS-eta witness.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "318b27626a9570b0ea9780a9f7843c8006ac22b305d2c74a668ec7648ff118bf",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-signed_gravity_product_g-081",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The proof silently applies zero-threshold sign counting despite defining eta_delta and h_delta with delta = 1e-8. For 0 < |a| <= delta, the n = 0 eigenvalue lies in the delta-window, so the claimed uniform interval label and floor formula do not hold as stated.",
+      "claim_scope": "Finite-dimensional Cl(3,1) sector-swap and sector-selection identities, together with half-integer-cutoff eta-label quantization for the twisted tower A(a) using delta = 1e-8.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:19:54.266570+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27:retained->audit_in_progress",
+      "load_bearing_step": "On the eps = s sector the boundary block is sA(a) with eta_delta^(s) = 2s eta_delta(A(a)), while the half-integer spectral cutoff is claimed to give eta_delta(A(a)) = sign(a) throughout 0 < |a| < 1/2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the corrected near-zero twist domain and confirm that the runner explicitly tests the delta-window transition rather than only O(0.1) twists.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "Issue: T3 asserts h_delta = 0 and eta_delta = sign(a) for every 0 < |a| < 1/2, but twists with 0 < |a| <= delta produce a zero-window eigenvalue and an undefined label. Why this blocks: the advertised uniform quantization theorem is false as stated, and the runner samples only twists far above delta while its closed formulas omit delta. Repair target: narrow the theorem and formulas to the regulator-compatible domain and add runner cases immediately below, at, and above delta. Claim boundary until fixed: T1, T2, and T4 remain valid finite-dimensional algebra, as does T3 away from the regulator window, conditional on the chosen twisted spectral tower and cutoff."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
+  "title": "Product-Grading Eta Sector Selection: the Signed-Source Label Pair Is Derived from the Retained Cl(3,1) Grading Plus One Twist Datum",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

@@ -1,0 +1,400 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su2_witten_z2_anomaly_theorem_note_2026-04-24",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": "structural-anomaly cancellation theorem (binary parity arithmetic on retained chiral fermion content)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "native_gauge_closure_note",
+    "left_handed_charge_matching_note",
+    "graph_first_su3_integration_note",
+    "three_generation_structure_note",
+    "anomaly_forces_time_theorem",
+    "one_generation_matter_closure_note"
+  ],
+  "direct_in_degree": 16,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 17.549,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b2c6a0f16e4a9afdf0493a2d063f6e700da14f65bdca578b39a536905c2bcb76",
+  "note_path": "docs/SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369903+00:00",
+      "archived_for_note_hash": "412fea7f1ff216f33e5bd81da571611d02f7ec62c3cef37a143f6219ff012c50",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T11:23:54.963746+00:00",
+      "archived_for_note_hash": "b8f34a53bccaf89e13155e770f234f868f6e659dbf2869f1ab00451484c75c20",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T11:40:10.272331+00:00",
+      "archived_for_note_hash": "38b4cd7b3ebadd4ae5e78adb1dd73a1c1b335c4f2e372421b7ab62f3200749cd",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-02T14:40:53.194260+00:00",
+      "audit_date": "2026-05-01T18:15:21.592253+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "left_handed_charge_matching_note": "audited_conditional",
+          "native_gauge_closure_note": "retained",
+          "three_generation_structure_note": "audited_conditional"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "left_handed_charge_matching_note",
+          "native_gauge_closure_note",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 15.044,
+        "transitive_descendants": 263
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-cbc9",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The parity arithmetic closes once the matter content, N_c=3, and three-generation structure are accepted, but the retained-chain closure depends on left-handed charge matching and three-generation structure rows whose effective status is currently audited_conditional.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:graph_first_su3_integration_note:retained->retained_bounded",
+      "load_bearing_step": "The retained one-generation content contributes Q_L as three color copies of one SU(2) doublet and L_L as one lepton SU(2) doublet, so N_D(one generation)=3+1=4 and N_D(three generations)=3*4=12.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
+        "docs/THREE_GENERATION_STRUCTURE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "Issue: the Witten count imports the retained Q_L/L_L doublet surface and the three-generation replication as upstream inputs, while those dependencies are currently audited_conditional rather than retained. Why this blocks: the note proves only that the supplied retained matter surface has even SU(2) Weyl-doublet parity; it does not independently close the conditional upstream matter-content and generation premises. Repair target: clean audits or replacement theorems for the left-handed charge/doublet content and three-generation structure, plus runner coverage that derives or verifies those inputs rather than hard-coding them. Claim boundary until fixed: standard Witten parity arithmetic on the stated matter surface is correct, but the framework-level retained anomaly-freedom claim remains conditional on the upstream matter/generation closures."
+    },
+    {
+      "archived_at": "2026-05-02T21:22:50.990386+00:00",
+      "audit_date": "2026-05-02T19:15:32.942072+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "left_handed_charge_matching_note": "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "native_gauge_closure_note": "retained_bounded",
+          "three_generation_structure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "left_handed_charge_matching_note",
+          "native_gauge_closure_note",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 14.077,
+        "transitive_descendants": 134
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-pr291-su2-witten-lagrange-2026-05-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The parity arithmetic closes if the Q_L/L_L Weyl-doublet content is granted, but that content is not closed by the retained-grade one-hop authorities provided. The left-handed charge note is an audited decoration/narrow eigenvalue-pattern restatement with SM/matter identification out of scope, and the remaining needed matter-completion inputs are imported as unregistered/plaintext references rather than retained-grade one-hop authorities.",
+      "claim_scope": "Conditional audit of the SU(2) Witten Z2 parity cancellation count for fundamental Weyl doublets on the retained matter surface, assuming the one-generation Q_L/L_L SU(2) Weyl-doublet content and three-generation replication.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T19:15:32.942072+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "On the retained one-generation content, Q_L is three color copies of one SU(2) doublet and L_L is one lepton SU(2) doublet, so N_D(one generation)=3+1=4 and N_D(three generations)=3*4=12.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-check only after a retained-grade one-generation matter-content authority explicitly closes which chiral fields are fundamental SU(2) Weyl doublets; do not use full hypercharge, perturbative anomaly, B-L, or higher-isospin claims to fill that gap.",
+      "open_dependency_paths": [
+        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
+        "docs/ANOMALY_FORCES_TIME_THEOREM.md",
+        "docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md",
+        "docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "Issue: the theorem's load-bearing premise identifies the retained chiral matter fields Q_L and L_L as SU(2) Weyl doublets with multiplicities 3 and 1, while treating RH fields as singlets. Why this blocks retained status: the supplied retained-grade authorities close native SU(2), graph-first 3+1 structure, and three-generation algebra, but they do not ratify the full one-generation chiral field identification; the runner hard-codes that premise and then checks parity. Repair target: add or cite a retained-grade one-generation matter theorem deriving the Q_L/L_L SU(2) Weyl-doublet content and singlet completion from the retained graph/gauge surface, or make it an explicit assumption. Claim boundary until fixed: the note may state the exact Witten parity consequence of an assumed 3+1 fundamental-doublet generation, giving 4 per generation and 12 for three generations."
+    },
+    {
+      "archived_at": "2026-05-03T11:33:19.607679+00:00",
+      "archived_for_note_hash": "b3b13e7ac1fbc890770ea58d020ebef4254715a996a492596c8ed7df69e00e0f",
+      "audit_date": "2026-05-02T21:29:12.449111+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-su2-witten-z2-auditor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The parity arithmetic closes if the Q_L/L_L SU(2) doublet content, color multiplicity, and three-generation replication are retained inputs. The direct cited left-handed doublet-content dependency is currently audited_decoration with a decoration_under effective status, not retained-grade, so the one-hop retained chain does not close.",
+      "claim_scope": "Witten Z_2 SU(2) global-anomaly cancellation for the imported retained weak-doublet matter content, using the standard even-doublet criterion.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T21:29:12.449111+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "N_D(three generations) = 3 * 4 = 12 = 0 mod 2.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-check whether a retained parent of LEFT_HANDED_CHARGE_MATCHING_NOTE.md should be the direct cited authority for Q_L/L_L SU(2) carrier assignment. The note names an unregistered reproduction script that passed locally, but runner_path is null in the ledger and dependency closure is the blocker.",
+      "open_dependency_paths": [
+        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-fresh",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the theorem imports the SU(2) weak-doublet carrier assignment Q_L/L_L and then applies the standard Witten even-doublet rule, but the direct cited dependency for that left-handed doublet content is not retained-grade. Why this blocks: the claimed cancellation is a correct standard-physics parity restatement once the field content is granted, but the audit question is whether the retained one-hop chain supplies that field content; it currently does not. Repair target: provide a retained-grade dependency deriving or ratifying the chiral SU(2) carrier/doublet assignment used in the count, or cite the retained parent directly if that parent is the actual authority. Claim boundary until fixed: the note may state that the imported SM-like retained field surface with 3 colored Q_L doublets plus 1 L_L doublet per generation has even Witten parity, but not that this closes as a retained theorem from the present one-hop dependencies."
+    },
+    {
+      "archived_at": "2026-05-03T13:40:53.233871+00:00",
+      "audit_date": "2026-05-03T13:33:34.747958+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "left_handed_charge_matching_note": "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "native_gauge_closure_note": "retained_bounded",
+          "three_generation_structure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "left_handed_charge_matching_note",
+          "native_gauge_closure_note",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 13.67,
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-audit-loop-2026-05-03-su2-witten-z2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The parity arithmetic closes if the upstream matter, color, SU(2), and three-generation inputs are already retained-grade as actual chiral Weyl doublet content. In the restricted packet, the left-handed matter-content and physical three-generation replication bridge are not closed strongly enough for an unconditional positive theorem.",
+      "claim_scope": "Given native SU(2), a left-handed (2,3) plus (2,1) doublet sector with N_c=3, and three replicated generations as retained upstream inputs, the Witten SU(2) doublet count is even: N_D = 12.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T13:33:34.747958+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:three_generation_structure_note:retained->unaudited",
+      "load_bearing_step": "N_D(three generations) = 3 * 4 = 12 = 0 mod 2, so the retained SU(2) matter content is Witten-Z2 anomaly-free.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check if the ledger gains an explicit retained matter-completion/replicated chiral-generation authority for the SU(2) Weyl doublet surface. The parity arithmetic and runner are straightforward once that surface is retained.",
+      "open_dependency_paths": [
+        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
+        "docs/THREE_GENERATION_STRUCTURE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "Issue: the load-bearing Witten count is correct algebra over imported premises, but the source claim depends on retained native SU(2), N_c=3 color, left-handed Q_L/L_L doublet content, and physical three-generation replication; the one-hop packet does not independently close the chiral matter-content and physical replication bridge needed to count actual Weyl doublets. Why this blocks: the audit can verify the parity arithmetic, but it cannot promote the theorem from conditional arithmetic to retained anomaly cancellation when the required retained chiral-matter surface is supplied only by scope-limited upstream notes. Repair target: provide or cite retained-grade audit closure for the chiral SU(2) Weyl-doublet content and the bridge from local hw=1 triplet structure to three physical replicated chiral generations used in the Witten count. Claim boundary until fixed: the note may safely state that the Witten Z2 obstruction cancels on the assumed retained SM-like surface with N_D = 3*(3+1) = 12."
+    },
+    {
+      "archived_at": "2026-05-28T09:41:27.609459+00:00",
+      "archived_for_note_hash": "12fd7ef6374d06440447bcab675a44b6736448e402a8e00dee78cf29bf24b429",
+      "audit_date": "2026-05-28T02:27:59.368150+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the selected-axis (2,3) and (2,1) LH-doublet blocks, using only the 6+2 multiplicities and tracelessness; no absolute normalization, SM hypercharge identification, charge formula, or anomaly closure audited.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_structure_note": "Finite Z^3 corner/Hamming-weight Wilson-mass spectrum on the supplied staggered-Dirac/Wilson surface, plus only the retained-bounded D3+C3 -> M3(C) no-proper-quotient dependency for the hw=1 triplet. No no-rooting, physical-species, SM-generation, CKM, chirality, substrate-physicality, or full matter-content claim is audited."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "left_handed_charge_matching_note": "decoration",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_structure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "left_handed_charge_matching_note": "decoration_under_graph_first_su3_integration_note",
+          "native_gauge_closure_note": "retained",
+          "three_generation_structure_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "left_handed_charge_matching_note",
+          "native_gauge_closure_note",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 16.2,
+        "runner_hash": null,
+        "transitive_descendants": 207
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-su2-witten-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The parity arithmetic closes, but the restricted retained dependencies do not establish the chiral Weyl matter-content premise to which the Witten anomaly applies, and the Witten sign rule is imported as standard QFT input rather than supplied by a retained one-hop authority.",
+      "claim_scope": "Witten Z2 parity cancellation for the stated SU(2) fundamental Weyl doublet content: three Q_L color copies plus one L_L doublet per generation across three generations gives N_D=12, conditional on a retained chiral matter-content authority and retained Witten-anomaly lemma.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-28T02:27:59.368150+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the stated SU(2) fundamental Weyl doublet content, N_D(total) = n_gen * (N_c + 1) = 3 * (3 + 1) = 12, so (-1)^N_D = +1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire and audit the named matter/anomaly authorities needed to establish Q_L/L_L as chiral fundamental SU(2) Weyl doublets and to supply the Witten Z2 sign rule as retained one-hop authority.",
+      "open_dependency_paths": [
+        "docs/ANOMALY_FORCES_TIME_THEOREM.md",
+        "docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "Issue: the note counts Q_L and L_L as retained chiral SU(2) fundamental Weyl doublets and applies the Witten sign rule, but the retained one-hop packet only supplies native gauge structure, graph SU(3)/left-handed block algebra, and a bounded generation spectrum; it does not ratify full chiral matter content or a retained Witten-anomaly lemma. Why this blocks: the equation N_D=12 is enough only after the fermion representation content and the anomaly theorem are established, so the conclusion is presently conditional on imported matter/anomaly premises. Repair target: wire and audit a narrow retained-grade one-generation chiral SU(2) matter-content authority, plus a retained textbook Witten Z2 anomaly lemma or equivalent one-hop authority for pi_4(SU(2)) and the (-1)^N_D Pfaffian sign rule. Claim boundary until fixed: given those premises, the binary count is correct and the runner verifies the stated parity and extension arithmetic."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_su2_witten_z2_anomaly.py",
+  "title": "SU(2) Witten Z_2 Global Anomaly Cancellation Theorem",
+  "transitive_descendants": 748,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

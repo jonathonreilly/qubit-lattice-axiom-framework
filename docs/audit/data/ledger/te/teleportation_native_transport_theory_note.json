@@ -1,0 +1,264 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "teleportation_native_transport_theory_note",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "teleportation_retained_axis_operator_algebra_closure_note",
+    "teleportation_3d1_causal_record_channel_note",
+    "teleportation_3d_initial_ramp_probe_note",
+    "teleportation_bell_measurement_circuit_note",
+    "teleportation_logical_readout_audit"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "bdae4ea5015fe882e3b246a6e05de73e972546dbcc06cb7e517c5d19b194fe64",
+  "note_path": "docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-07T12:58:46.427007+00:00",
+      "archived_for_note_hash": "6369a5c311dfe16846670cd67623495904d89897fa900e53032fda5927b0929d",
+      "audit_date": "2026-05-03T01:29:57.114878+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-Einstein-the-2nd-019deb73-c127-71d0-94cd-2531424d0107",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped open gate closes because the note and runner consistently separate formal transport-invariant consequences from the missing native-dynamics bridge; it does not close a positive physical teleportation theorem.",
+      "claim_scope": "Open-gate transport theory note: assuming the stated base/fiber split, Pauli-frame connection, causal record section, branch-record, and holonomy bookkeeping axioms, the listed algebraic invariants hold, while nature-grade native teleportation remains explicitly unclosed pending native physical derivations.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-03T01:29:57.114878+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note's retained claim is not native teleportation closure, but the open-gate boundary that Pauli-frame transport invariants are only conditional formal structure until Bell-resource preparation, durable Bell records, record carriers, apparatus/noise, and conservation ledgers are derived from native dynamics.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit as a positive or bounded theorem only if a future note derives T1-T6 objects from retained native dynamics and the runner constructs those bridges rather than hard-coding the Pauli-frame formalism.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The source note explicitly withholds promotion and states that the transport vocabulary is candidate lane theory. The runner checks only the algebraic consequences of the assumed Pauli-frame/record formalism and explicitly reports nature-grade unconditional closure as HOLD. Because the audited object is the open-gate articulation rather than a positive physical derivation, there is no hidden physical identification being ratified as closed physics; the missing Bell resource, measurement, record carrier, apparatus, noise model, and conservation-ledger derivations are preserved as the blocker."
+    },
+    {
+      "archived_at": "2026-06-07T15:16:19.708305+00:00",
+      "audit_date": "2026-05-07T18:49:49.530683+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite RALA algebra closure T1-T8 for dim in {1,2,3}, side in {2,4}, all retained axes, with X_fixed taken as the explicitly defined last-axis taste flip; physical apparatus and downstream teleportation gates are excluded."
+        },
+        "dep_claim_type": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "bdae22731104821ffa11e66b2bedfc6c8e895303f9d4b7f01057aebbfc081d01",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-teleportation-native-transport-auditor-20260507-f161",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The open-gate claim closes because the one-hop RALA authority is retained_bounded for the finite algebraic T1/T2 support, and the source note explicitly keeps all physical transport closure obligations open. The runner corroborates only formal Pauli-frame, twirl, commutation, holonomy, and toy causal-record bookkeeping, and itself holds nature-grade unconditional closure open.",
+      "claim_scope": "Open transport-theory gate for native taste-qubit teleportation: finite RALA supports the bounded algebraic base/fiber and Pauli-frame connection layer, but physical resource derivation, durable records, apparatus, noise, conservation ledgers, branch records, and calibration remain open; no matter, mass, charge, energy, object transport, or FTL closure is claimed.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-07T18:49:49.530683+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:teleportation_retained_axis_operator_algebra_closure_note:retained_bounded->unaudited",
+      "load_bearing_step": "RALA gives bounded algebraic support for T1 base/fiber separation and T2 Bell connection, while T3 causal records, T4 holonomy bookkeeping, T5 branch records, and T6 preparation curvature require physical content beyond RALA and remain open.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if later edits promote T3-T6, physical apparatus, Bell-resource derivation, record carriers, noise, or conservation ledgers from open obligations to theorem claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "This is clean only as an open_gate, not as a retained physical teleportation theorem. The restricted packet supports the bounded algebraic layer through the retained_bounded RALA authority, and the runner source shows seven algebraic/formal checks rather than first-principles native-dynamics derivations. The note does not promote Bell-resource dynamics, durable measurement, record carrier, apparatus, noise model, or conservation ledgers; it names those as unresolved closure requirements."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:40.883657+00:00",
+      "archived_for_note_hash": "892c23c42897bec546a534d767ef460acdb474fc28fa6b3ac171c70ab8001820",
+      "audit_date": "2026-06-07T19:15:52.439426+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "bdae22731104821ffa11e66b2bedfc6c8e895303f9d4b7f01057aebbfc081d01",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-191527-a073c7478d-teleportation_native_transpo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The formal Pauli-frame and RALA algebra consequences close, but the full candidate transport theory does not: the packet explicitly leaves the native Bell-resource derivation, durable record carrier, apparatus, noise model, conservation ledgers, loop bookkeeping implementation, and preparation curvature open.",
+      "claim_scope": "Audited the bounded algebraic consistency of the native transport note's Pauli-frame connection, base/fiber separation, causal-record bookkeeping, loop holonomy, and hidden-branch dephasing claims, not a physical native teleportation implementation.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-07T19:15:52.439426+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Bob corrections and Bell-frame updates act in the retained fiber algebra while conserved support, charge, mass, energy, and apparatus records live in the base ledger, with admissibility requiring [C_B, L] = 0 and Pauli-frame corrections k = c xor h.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a bounded or retained derivation of the causal record carrier, native Bell-resource preparation/calibration, conservation-ledger commutation for the actual apparatus, loop-record protocol, and branch-record/readout model.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner genuinely computes algebraic consistency checks for Z2 x Z2 Pauli frames, twirling, multi-hop xor composition, causal delivery arithmetic, ledger commutation, loop holonomy detection, and branch dephasing; these are class A checks, not first-principles physical derivations. The cited RALA authority is retained_bounded and supports T1/T2 algebraic content, but it also explicitly states that T3, T4, T5, and T6 need physical content beyond RALA. Because the source note itself is an open-gate candidate theory and imports unresolved record, apparatus, preparation, and conservation assumptions, the chain does not close to an unconditional retained transport theory."
+    },
+    {
+      "archived_at": "2026-06-14T09:00:06.672947+00:00",
+      "archived_for_note_hash": "078a6042e82a4e903e78445f38f350d4296343d4d4f62c0a9ce41eccfc0fe30c",
+      "audit_date": "2026-06-14T04:13:42.883835+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "2a4c32b1352ca5fb704f3d5983c107a300e5e326b8678ca24403bc1b6dcd8232",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-041138-540cac693d-teleportation_native_transpo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Pauli XOR, twirl, commutator, loop-holonomy, and branch-dephasing identities close as algebra under the stated premises. The full chain does not close because the causal record carrier, durable apparatus records, loop records, branch/readout model, and Bell-resource preparation/calibration are explicitly supplied/open rather than derived.",
+      "claim_scope": "Finite Pauli-frame/base-fiber transport bookkeeping for taste-qubit teleportation, conditional on T1-T6; T1/T2 have bounded RALA algebraic support and T3-T6 remain open physical bridges.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-14T04:13:42.883835+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the supplied transport premises, Bob's correction is the Pauli-frame holonomy k = c xor h, with corrections acting in the retained fiber and commuting with base-ledger observables.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is to split/retain the purely algebraic Pauli-frame theorem separately or provide retained derivations for the T3-T6 record, loop, branch/readout, and preparation-calibration bridges.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+        "docs/TELEPORTATION_3D_INITIAL_RAMP_PROBE_NOTE.md",
+        "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+        "docs/TELEPORTATION_LOGICAL_READOUT_AUDIT.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Independent formula checks confirm the finite Z2 x Z2 Pauli-frame algebra: xor composition is associative and self-inverse, the four-Pauli twirl gives I/2, fiber corrections commute with base ledgers, and unrecorded Z-branch averaging dephases |+> to fidelity 1/2. The runner performs real finite algebra/arithmetic checks plus textual firewall checks, not merely constant printing. However the source itself keeps T3-T6 as supplied/open physical premises, and the RALA authority only gives retained-bounded algebraic support for T1/T2, not native resource genesis, record transport, apparatus durability, loop-record closure, branch readout, or conservation-ledger derivation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_teleportation_transport_invariants.py",
+  "title": "Native Teleportation Transport Theory Note",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

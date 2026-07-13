@@ -1,0 +1,119 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_qg_smooth_gravitational_local_identification_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_qg_optional_textbook_comparison_note",
+    "universal_gr_positive_background_local_closure_note",
+    "universal_qg_canonical_textbook_weak_measure_equivalence_note",
+    "universal_qg_pl_weak_form_note",
+    "universal_qg_pl_sobolev_interface_note",
+    "universal_qg_external_fe_smooth_equivalence_note"
+  ],
+  "direct_in_degree": 14,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.066,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7ac099437f53a3604fdf446df919eb68af178aa8d3c006a712a81bb1f6d29000",
+  "note_path": "docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_LOCAL_IDENTIFICATION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-07T08:10:02.496131+00:00",
+      "archived_for_note_hash": "4f17e4559f2c80c40119a40e136856c5f262a4818b229aa8d20047d5d74f72c6",
+      "audit_date": "2026-05-06T13:14:55.883876+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "universal_qg_optional_textbook_comparison_note": null
+        },
+        "dep_claim_type": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "dep_effective_status": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "deps": [
+          "universal_qg_optional_textbook_comparison_note"
+        ],
+        "load_bearing_score": 13.5,
+        "runner_hash": null,
+        "transitive_descendants": 511
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-06-universal-qg-local-identification",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The direct ledger dependency is only the optional textbook comparison meta note, which explicitly carries no theorem authority. The runner's substantive premises require positive-background local K_GR(D) closure and canonical textbook weak/measure equivalence, but those rows are not wired as direct dependencies and are not retained-grade in the current ledger.",
+      "claim_scope": "Positive-background local identification of the canonical textbook weak Sobolev/Gaussian cylinder object with the project-native smooth local gravitational weak/Gaussian object determined by K_GR(D).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-06T13:14:55.883876+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "on the positive-background local class, the weak bilinear form of the canonical textbook object is exactly the weak form induced by K_GR(D); the textbook weak solution is exactly F_* and the textbook Gaussian covariance is exactly K_GR(D)^-1",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire scripts/frontier_universal_qg_smooth_gravitational_local_identification.py as the runner and replace the metadata-only optional comparison dependency with direct retained-grade dependencies for positive-background local K_GR(D) closure and the canonical textbook weak/measure carrier; then re-audit this exact positive-background local identification scope.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+        "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md",
+        "docs/UNIVERSAL_QG_PL_WEAK_FORM_NOTE.md",
+        "docs/UNIVERSAL_QG_PL_SOBOLEV_INTERFACE_NOTE.md",
+        "docs/UNIVERSAL_QG_EXTERNAL_FE_SMOOTH_EQUIVALENCE_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the note claims local smooth gravitational weak/Gaussian identification from already-closed inputs, but the only direct ledger authority is a meta packaging note with zero theorem authority. Why this blocks: the completed runner checks the algebraic identification only after importing the positive-background local operator family and the canonical textbook weak/Gaussian object from unwired upstream rows, including rows that are conditional or unaudited. Repair target: wire the local-identification runner and replace the meta-only dependency with direct retained-grade dependencies for the K_GR(D) positive-background local closure and canonical textbook weak/measure carrier. Claim boundary until fixed: the runner gives a useful consistency/algebra check on the positive-background local class, but the theorem cannot retain until those premises are direct retained-grade authorities."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_qg_smooth_gravitational_local_identification.py",
+  "title": "Universal QG Smooth Gravitational Local Identification",
+  "transitive_descendants": 133,
+  "verdict_rationale": null
+}

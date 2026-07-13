@@ -1,0 +1,1841 @@
+{
+  "audit_date": "2026-07-13T06:49:02.767515+00:00",
+  "audit_invocation_history": [
+    "0b333dd93b2b4e99a4e46b537ab5b4a0",
+    "780a9f69fced4b209e8799f6e34bf16d",
+    "ab9ef26a016b489db41db610803482f6"
+  ],
+  "audit_invocation_id": "ab9ef26a016b489db41db610803482f6",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional algebraic free-staggered theorem: for real anti-Hermitian D satisfying P D P = -D, H=iD is Hermitian, Theta_H=P K preserves H, and the full Theta_H-odd Hamiltonian proxy vanishes; the runner additionally verifies direction-resolved proxies at L=4 and L=6. No SME operator-basis completeness or physical SME-coefficient conclusion was audited."
+    },
+    "dep_claim_type": {
+      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+    },
+    "deps": [
+      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+    ],
+    "load_bearing_score": 31.775,
+    "runner_hash": "31e432fcb81ef0ee3292f8a5f6d810191fb688261fbd13ca367d0e9f09840edc",
+    "transitive_descendants": 875
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-judicial-1-20260713-7abd2d90",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separately defined Theta_H odd-sector result may survive a narrower formulation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260713-7abd2d90\", \"judge\": 1, \"rationale\": \"The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separa\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260713-eb4834ff\", \"judge\": 2, \"rationale\": \"The runner tests the real anti-Hermitian operator D while calling it H; its physical Hermitian lift iD appears only in a spectral calculation. Because K(iD)K=-iD, the retained simultaneous claims T=K invariance and CP K/CPT invariance of physical H=iD are false, while the cited bridge instead establishes the distinct Theta_H=P K symmetry. The first position correctly ratifies failure over the exact supplied pre-audit scope.\", \"tuple\": [\"first\", \"audited_failed\", \"positive_theorem\", \"The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260713-e80e1202\", \"judge\": 3, \"rationale\": \"The primary runner computes the real anti-Hermitian operator D while calling it H; its direct T=K and CPK checks therefore do not establish those identities for the physical Hermitian lift iD. The cited bridge confirms that K reverses i, so CPK flips iD and must be replaced by Theta_H=PK; this contradicts the retained theorem and symmetry table as written.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260713-7737686a\", \"judge\": 4, \"rationale\": \"The primary runner constructs the real anti-Hermitian hopping operator D under the variable name H and applies T=K and CPK to that operator; multiplying by i appears only in the spectral calculation. For the physical Hermitian lift H=iD, complex conjugation reverses i, so T=K does not preserve H and CPK flips H. The cited bridge explicitly confirms this and instead establishes the distinct antiunitary symmetry Theta_H=PK. Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, despite the valid PK odd-sector result.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260713-433197b8\", \"judge\": 5, \"rationale\": \"The primary runner\\u2019s C, P, T=K, and CP/CPT identities concern the real anti-Hermitian operator D that it labels H; multiplying by i makes the physical Hermitian lift complex, so K sends iD to -iD. The cited bridge expressly confirms that naive CP K flips physical H and replaces it with Theta_H=P K (equivalently using T_H=C K). Thus the retained theorem and symmetry table incorrectly combine D-level T=K/CPK identities with physical-Hamiltonian claims, and the theorem as written does not close.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}]",
+  "claim_id": "cpt_exact_note",
+  "claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": "2026-07-13T06:49:02.767515+00:00",
+  "claim_type_provenance": "judicial_review",
+  "criticality": "critical",
+  "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
+    "first_audit": {
+      "audit_date": "2026-07-13T02:45:05.299073+00:00",
+      "audit_invocation_id": "0b333dd93b2b4e99a4e46b537ab5b4a0",
+      "auditor": "codex-audit-batch-A-20260713-bd68e749",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.",
+      "claim_type": "positive_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "Narrow the retained theorem so T=K and CP K invariance apply only to D, while the physical Hermitian lift claims only Theta_H=P K invariance and its vanishing odd projection.",
+      "verdict": "audited_failed",
+      "verdict_rationale": "The finite-lattice D-level identities and residual computations are genuine algebraic checks, but they do not prove the theorem as written for physical H=iD. The cited bridge explicitly states that naive CP K flips H and replaces it with Theta_H=P K, contradicting the simultaneous retained assertions T=K invariance and CP/CPT invariance for physical H. A narrower theorem asserting the D-level identities separately from Theta_H invariance of H=iD would avoid this contradiction."
+    },
+    "mode": "judicial_third_pass",
+    "second_audit": {
+      "audit_date": "2026-07-13T02:45:05.303128+00:00",
+      "audit_invocation_id": "780a9f69fced4b209e8799f6e34bf16d",
+      "auditor": "codex-audit-batch-B-20260713-0df09396",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
+      "claim_type": "positive_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "Re-state the physical-Hamiltonian theorem consistently with Theta_H=PK and T_H=CK, remove the false T=K/CPK identities for H=iD, and update the primary runner to test the Hermitian lift directly.",
+      "verdict": "audited_failed",
+      "verdict_rationale": "The runner consistently constructs and tests the real anti-Hermitian hopping operator D while labeling it H; its Hermitian lift iD appears only in a spectrum check. Therefore its T=K and CP K identities do not transfer to physical H=iD because K reverses i. The cited bridge explicitly confirms this failure and substitutes Theta_H=PK, which is not the CPK transformation asserted in the retained theorem and symmetry table."
+    },
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-07-13T06:49:02.767515+00:00",
+      "audit_invocation_id": "ab9ef26a016b489db41db610803482f6",
+      "auditor": "codex-judicial-1-20260713-7abd2d90",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
+      "claim_type": "positive_theorem",
+      "first_auditor_error": "Its verdict and core rationale are correct, but its scope describes a generic \"free staggered operator\" and attaches \"after H=iD\" only to the residuals, leaving ambiguous whether the contested T=K and CPK assertions concern physical H. The second position more exactly captures the retained theorem as written and the operator-level mismatch demonstrated by the runner and bridge.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separately defined Theta_H odd-sector result may survive a narrower formulation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260713-7abd2d90\", \"judge\": 1, \"rationale\": \"The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separa\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260713-eb4834ff\", \"judge\": 2, \"rationale\": \"The runner tests the real anti-Hermitian operator D while calling it H; its physical Hermitian lift iD appears only in a spectral calculation. Because K(iD)K=-iD, the retained simultaneous claims T=K invariance and CP K/CPT invariance of physical H=iD are false, while the cited bridge instead establishes the distinct Theta_H=P K symmetry. The first position correctly ratifies failure over the exact supplied pre-audit scope.\", \"tuple\": [\"first\", \"audited_failed\", \"positive_theorem\", \"The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260713-e80e1202\", \"judge\": 3, \"rationale\": \"The primary runner computes the real anti-Hermitian operator D while calling it H; its direct T=K and CPK checks therefore do not establish those identities for the physical Hermitian lift iD. The cited bridge confirms that K reverses i, so CPK flips iD and must be replaced by Theta_H=PK; this contradicts the retained theorem and symmetry table as written.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260713-7737686a\", \"judge\": 4, \"rationale\": \"The primary runner constructs the real anti-Hermitian hopping operator D under the variable name H and applies T=K and CPK to that operator; multiplying by i appears only in the spectral calculation. For the physical Hermitian lift H=iD, complex conjugation reverses i, so T=K does not preserve H and CPK flips H. The cited bridge explicitly confirms this and instead establishes the distinct antiunitary symmetry Theta_H=PK. Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, despite the valid PK odd-sector result.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260713-433197b8\", \"judge\": 5, \"rationale\": \"The primary runner\\u2019s C, P, T=K, and CP/CPT identities concern the real anti-Hermitian operator D that it labels H; multiplying by i makes the physical Hermitian lift complex, so K sends iD to -iD. The cited bridge expressly confirms that naive CP K flips physical H and replaces it with Theta_H=P K (equivalently using T_H=C K). Thus the retained theorem and symmetry table incorrectly combine D-level T=K/CPK identities with physical-Hamiltonian claims, and the theorem as written does not close.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_failed"
+    }
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+  ],
+  "direct_in_degree": 44,
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
+  "helper_runner_paths": [],
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_failed",
+  "load_bearing_score": 31.775,
+  "load_bearing_step": "The physical-Hamiltonian statement uses the bridge theorem's Hermitian lift H = iD and antiunitary representative Theta_H = P K.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
+  "note_hash": "5b8f580bf1abc9b2485f451acec1be9f87d3e7aa0ec45cabd339de9f05b383ef",
+  "note_path": "docs/CPT_EXACT_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-state the physical-Hamiltonian theorem consistently with Theta_H=PK and T_H=CK, remove the false T=K/CPK identities for H=iD, and update the primary runner to test the Hermitian lift directly.",
+  "open_dependency_paths": [
+    "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md"
+  ],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.104833+00:00",
+      "archived_for_note_hash": "1558aae5cbb05ad6c125372e19aa91256263871a22ede6845b3061e4191cca80",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-01T00:32:54.096708+00:00",
+      "archived_for_note_hash": "f7269be553f471109102d50923a9137a6657f4a05c3b596e31ff8917e4bf3992",
+      "audit_date": "2026-04-30T21:56:14.354063+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-high-ready-20260430-09",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the identity for the real anti-Hermitian staggered hopping operator on even lattices, but the source and runner both present the result as a physical Hamiltonian/SME statement. The runner itself notes that the physical Hermitian Hamiltonian is iH, and the antiunitary T action on that i factor is not included in the closure argument.",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The combined transformation gives CPT * H * (CPT)^(-1) = C * P * H * P * C = C * (-H) * C = H, so [CPT, H] = 0 and the CPT-odd part of H vanishes.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [
+        "physical_hermitian_hamiltonian_and_sme_bridge"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 53,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "Issue: the proof and runner establish CPT invariance for the real anti-Hermitian staggered hopping operator D, while the note states a physical Hamiltonian/SME-zero theorem for H; the runner's own convention says the physical Hermitian Hamiltonian is iD, but the antiunitary time-reversal action on that i factor is not carried through. Why this blocks: exact CP/D algebra is not yet a closed derivation that all physical CPT-odd SME coefficients vanish. Repair target: either restate the theorem explicitly for the anti-Hermitian lattice operator only, or add a runner/proof for the Hermitian Hamiltonian and the SME operator map with antiunitary CPT handled explicitly. Claim boundary until fixed: on even periodic lattices, the real staggered hopping operator satisfies C D C = -D, P D P = -D, and C P D P C = D."
+    },
+    {
+      "archived_at": "2026-05-02T19:59:24.485356+00:00",
+      "audit_date": "2026-05-01T00:57:58.987146+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained"
+        },
+        "deps": [
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 10.285,
+        "transitive_descendants": 38
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:2026-05-01-cpt_exact_note-reraudit-after-bridge",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The D-level runner verifies the exact C, P, CP, CPT identities and zero CPT-odd sector on even finite lattices; the now-clean bridge proves the antiunitary Hermitian lift by showing the naive CP K action flips H while the physical Theta_H=P K representative preserves H=iD.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "For the free staggered Cl(3) Hamiltonian on even periodic Z^3 lattices, the D-level C/P identities plus the audited Hermitian lift H=iD give an antiunitary CPT representative preserving H, so the CPT-odd Hamiltonian/SME sector vanishes on that substrate.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 63,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "Clean after bridge audit: the prior conditional blocker was the unaudited Hermitian-Hamiltonian/SME bridge, and that dependency is now audited_clean. The source claim is scoped to the free staggered Hamiltonian on even periodic lattices, with interactions, CKM-sector CP violation, and continuum CPT relation explicitly left outside the theorem. The D-level CPT runner gives PASS=53/FAIL=0 for the staggered identities, finite-lattice CPT preservation, Cl(3) automorphism checks, and zero CPT-odd SME sector; the bridge runner gives PASS=10/FAIL=0 and closes the antiunitary i -> -i step for H=iD. Within that stated boundary, the chain closes without a hidden physical-Hamiltonian premise."
+    },
+    {
+      "archived_at": "2026-05-03T11:35:38.961853+00:00",
+      "audit_date": "2026-05-02T20:12:02.941647+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained"
+        },
+        "deps": [
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 13.5,
+        "transitive_descendants": 63
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-pr291-cpt-exact-singer-2026-05-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note proves the D-level C/P/T algebra by exact matrix identities and the one-hop bridge is stated as audited_clean/effective retained for the Hermitian H=iD and SME-zero lift. No unaudited or open dependency is needed for the scoped free-Hamiltonian theorem.",
+      "claim_scope": "Exact CPT invariance of the free staggered Cl(3) Hamiltonian on even periodic Z^3 lattices, plus vanishing CPT-odd Hermitian-Hamiltonian SME sector under the retained bridge lift.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T20:12:02.941647+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-02T20:08:36.368993+00:00",
+          "auditor": "codex-fresh-pr291-cpt-exact-dirac-2026-05-02",
+          "auditor_family": "codex-current",
+          "claim_scope": "Exact CPT invariance of the free staggered Cl(3) Hamiltonian on even periodic Z^3 lattices, including vanishing CPT-odd Hamiltonian/SME bilinear sector under the retained Hermitian-lift bridge.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-02T20:12:02.941471+00:00",
+          "auditor": "codex-fresh-pr291-cpt-exact-singer-2026-05-02",
+          "auditor_family": "codex-current",
+          "claim_scope": "Exact CPT invariance of the free staggered Cl(3) Hamiltonian on even periodic Z^3 lattices, plus vanishing CPT-odd Hermitian-Hamiltonian SME sector under the retained bridge lift.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:retained->unaudited",
+      "load_bearing_step": "CPT * H * (CPT)^{-1} = C * P * H * P * C = C * (-H) * C = -(-H) = H, with the Hermitian Hamiltonian and SME-zero lift supplied by the bridge theorem.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that future wording keeps 'all CPT-odd SME coefficients' bounded to the free Hermitian Hamiltonian bilinear sector supplied by the bridge note.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic closure: C and P each flip the staggered hopping operator, T is handled through the retained Hermitian bridge, and the combined antiunitary representative preserves H. The source-note runner reran locally with PASS=53 and FAIL=0, checking only internal exact identities and finite-lattice/taste-space consistency, with no external comparator or tuned input. Residual risk is wording scope: the clean verdict applies to the free Hermitian Hamiltonian-sector SME-zero statement, not to interacting or continuum SME sectors beyond the stated assumptions."
+    },
+    {
+      "archived_at": "2026-05-09T14:37:41.959693+00:00",
+      "archived_for_note_hash": "3afa404d43a363c2dde5dd7c210c3aaa95d92fa696759bab6ceac344f83b7826",
+      "audit_date": "2026-05-05T22:54:21.317107+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "audited_conditional"
+        },
+        "deps": [
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 17.798,
+        "runner_hash": null,
+        "transitive_descendants": 444
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-cpt_exact_note-005",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic CPT step closes only conditional on the cited Hermitian-Hamiltonian/SME bridge. That bridge is explicitly marked audited_conditional rather than retained-grade, so the restricted packet does not close the full positive theorem at retained status.",
+      "claim_scope": "Audited the free staggered Cl(3) Hamiltonian CPT-invariance claim on even periodic Z^3 lattices, including the stated Hermitian lift and CPT-odd SME-zero sector as imported from the bridge note.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T22:54:21.317107+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The physical-Hamiltonian CPT and SME-zero claims are carried by the bridge theorem's Hermitian lift H = iD with antiunitary representative Theta_H = P K, for which Theta_H H Theta_H^{-1} = H and H_odd = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: ratify the Hermitian-Hamiltonian/SME bridge to retained_bounded or retained status, ideally with runner source and captured output, then re-audit this CPT exact note.",
+      "open_dependency_paths": [
+        "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The core step is an algebraic identity over the staggered C/P/K operators and the Hermitian lift H = iD, not a numerical match or renaming. However, the source note explicitly relies on docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md for the physical-Hamiltonian CPT representative and SME-zero sector, and that cited authority is provided with effective_status audited_conditional. No runner stdout or runner source is available in this packet for the primary claim, so the note text and cited authority must carry the audit."
+    },
+    {
+      "archived_at": "2026-05-18T11:37:06.610170+00:00",
+      "audit_date": "2026-05-16T03:09:10.945513+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Clean only as a bounded free staggered lattice Hamiltonian statement: D anti-Hermitian implies H=iD Hermitian, naive CP K flips H, and Theta_H=P K preserves H with zero Theta_H-odd lattice Hamiltonian sectors on the checked even periodic lattices. Not clean as an unconditional physical SME-zero theorem beyond the explicitly defined lattice odd-sector proxy."
+        },
+        "dep_claim_type": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "audited_conditional"
+        },
+        "deps": [
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 23.115,
+        "runner_hash": "31e432fcb81ef0ee3292f8a5f6d810191fb688261fbd13ca367d0e9f09840edc",
+        "transitive_descendants": 783
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-030850-19fdc1cd-cpt_exact_note-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The D-level finite-lattice algebra closes on its own terms, but the full stated claim relies on the Hermitian-Hamiltonian/SME bridge. That cited authority is marked audited_conditional rather than retained-grade, so the physical-Hamiltonian and SME-zero conclusion is not closed by retained inputs in this packet.",
+      "claim_scope": "Exact free staggered even-periodic lattice CPT invariance for the real anti-Hermitian D-level operator, with physical Hermitian H=iD and SME-zero sector imported through the cited bridge note.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-16T03:09:10.945513+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
+      "load_bearing_step": "Using C H C = -H, P H P = -H, and T acting by complex conjugation, CPT H (CPT)^{-1} = C P H P C = C(-H)C = H.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: ratify or replace the Hermitian-Hamiltonian/SME bridge with a retained-grade bridge theorem, then re-audit the full physical-Hamiltonian scope.",
+      "open_dependency_paths": [
+        "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The runner genuinely constructs the staggered lattice operators and verifies the algebraic identities C H C = -H, P H P = -H, and C P H P C = H on L=4,6,8; these are class A algebraic checks, not hard-coded stdout. However, the source note\u2019s broader physical Hermitian Hamiltonian and SME-zero claim explicitly depends on docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md. That cited bridge is labeled audited_conditional, and the rubric requires audited_conditional when a load-bearing cited authority is not retained-grade."
+    },
+    {
+      "archived_at": "2026-05-22T01:27:45.727244+00:00",
+      "archived_for_note_hash": "8892bef0bec8c2b9b37bb545549a408426981064d9e6ae35ad6fa2ac413beb2c",
+      "audit_date": "2026-05-18T13:05:47.551009+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional finite-lattice free staggered Hamiltonian statement: H=iD is Hermitian, Theta_H=P K preserves H given the stated staggered P spectral-flip identity, and the resulting Theta_H-odd Hamiltonian-sector proxy vanishes in the checked free substrate sectors."
+        },
+        "dep_claim_type": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+        },
+        "deps": [
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 25.803,
+        "runner_hash": "31e432fcb81ef0ee3292f8a5f6d810191fb688261fbd13ca367d0e9f09840edc",
+        "transitive_descendants": 892
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-130500-4533a7c3-cpt_exact_note-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-lattice C/P/CP identity closes for the free staggered operator. The stronger statement that all CPT-odd SME coefficients vanish does not close because the cited bridge explicitly withholds the SME bilinear-basis completeness identification.",
+      "claim_scope": "Exact finite-lattice CPT invariance of the free staggered operator on even periodic Z^3, plus the note's claimed SME-zero corollary via the cited Hermitian/SME bridge.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-18T13:05:47.551009+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "CPT H (CPT)^{-1} = C P H P C = C(-H)C = H, with the physical Hermitian statement delegated to the bridge's Theta_H = P K lift.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained SME bilinear-operator-basis-on-staggered-substrate derivation proving canonical normalization and basis completeness, or narrow this note to the exact finite-lattice Theta_H/CP identity without the all-SME-coefficients corollary.",
+      "open_dependency_paths": [
+        "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The runner genuinely constructs the lattice operators and verifies the stated finite-lattice identities rather than merely printing constants. However, the source note still claims all CPT-odd SME coefficients vanish, while its cited bridge is retained only for the Theta_H-odd Hamiltonian-sector proxy and explicitly says the SME-coefficient identification is not retained. Retained-bounded status does not propagate through that open identification."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.015331+00:00",
+      "audit_date": "2026-05-22T03:03:08.908443+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional finite-lattice free staggered Hamiltonian statement: H=iD is Hermitian, Theta_H=P K preserves H given the stated staggered P spectral-flip identity, and the resulting Theta_H-odd Hamiltonian-sector proxy vanishes in the checked free substrate sectors."
+        },
+        "dep_claim_type": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+        },
+        "deps": [
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 26.46,
+        "runner_hash": "31e432fcb81ef0ee3292f8a5f6d810191fb688261fbd13ca367d0e9f09840edc",
+        "transitive_descendants": 995
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260522-030039-6656c1a8-cpt_exact_note-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained finite-lattice statement follows algebraically from the explicitly constructed staggered C and P operators each flipping the hopping operator, while their product preserves it. The Hermitian lift is supplied by the retained_bounded bridge via Theta_H = P K; canonical SME coefficient identification is explicitly outside scope.",
+      "claim_scope": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T03:03:08.908443+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T02:35:18.387874+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260522-023108-49f0228b-cpt_exact_note-005",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Even-periodic finite-lattice staggered Cl(3) Hamiltonian-sector CPT/Theta_H-odd zero identities, excluding canonical SME coefficient identification.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-22T03:03:08.908443+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260522-030039-6656c1a8-cpt_exact_note-002",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "`CPT * H * (CPT)^{-1} = C * P * H * P * C = C * (-H) * C = -(-H) = H`, hence the CPT/Theta_H-odd Hamiltonian-sector projection vanishes.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck that downstream claims do not reuse the runner's stale canonical SME coefficient labels as retained SME-basis conclusions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The primary runner constructs the staggered phases, finite lattice hopping operator, C/P operators, CPT transform, and odd projections directly, with no external comparator or hard-coded target constants in the load-bearing path. Its PASS=53 result supports the algebraic identities on the tested even lattices, and the note supplies the general algebraic closure for even periodic L. The runner stdout still contains stale canonical-SME wording, but the source note explicitly demotes that identification to admitted, non-retained bridge material."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:14.138848+00:00",
+      "audit_date": "2026-07-11T18:54:01.058384+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional algebraic free-staggered theorem: for real anti-Hermitian D satisfying P D P = -D, H=iD is Hermitian, Theta_H=P K preserves H, and the full Theta_H-odd Hamiltonian proxy vanishes; the runner additionally verifies direction-resolved proxies at L=4 and L=6. No SME operator-basis completeness or physical SME-coefficient conclusion was audited."
+        },
+        "dep_claim_type": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+        },
+        "deps": [
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 31.51,
+        "runner_hash": "31e432fcb81ef0ee3292f8a5f6d810191fb688261fbd13ca367d0e9f09840edc",
+        "transitive_descendants": 728
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00063-cpt_exact_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Theta_H=PK symmetry of physical H=iD closes, but the source and primary runner also identify T with K and CPT with CPK while operating on the real anti-Hermitian D. For physical H=iD, K and CPK flip H, so the retained symmetry table and runner do not verify the theorem as written.",
+      "claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-11T18:54:01.058384+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "With the physical lift H=iD and antiunitary representative Theta_H=PK, the note claims Theta_H H Theta_H^{-1}=H and therefore H^{odd}=0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The primary runner constructs the real anti-Hermitian operator and evaluates C P conjugate(D) P C.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This is the anti-Hermitian hopping operator; the physical (Hermitian)",
+            "evidence_path": "scripts/frontier_cpt_exact.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Verify the combined CPK action directly on the real staggered hopping operator.",
+            "outcome": "CLOSED: this proves the D-level identity but does not prove the same transformation for physical H=iD.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "d_level_cpk"
+          },
+          {
+            "attempt": "The cited bridge carries K(i)=-i explicitly and derives Theta_H H Theta_H^{-1}=H.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The naive antiunitary `CP K` that is useful on `D` sends `H` to `-H`",
+            "evidence_path": "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Absorb the spectral-flip unitary into time reversal and use Theta_H=PK on H=iD.",
+            "outcome": "CLOSED: it establishes the physical-H odd-sector identity, but it contradicts the source table's T=K and CPK presentation.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "physical_h_bridge"
+          },
+          {
+            "attempt": "The note narrows the output to traces and Frobenius norms of finite-lattice odd-sector matrices.",
+            "disposition": "CLOSED",
+            "evidence_locator": "These are the **Theta_H-odd Hamiltonian-sector residuals**, and they vanish",
+            "evidence_path": "docs/CPT_EXACT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Project full and direction-resolved matrices onto their Theta_H-odd sectors.",
+            "outcome": "CLOSED: the proxy vanishes, but it does not repair the source's mixed antiunitary conventions or establish a canonical SME dictionary.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "odd_sector_proxy"
+          },
+          {
+            "attempt": "The runner checks the finite taste representation and its Cl(3) automorphism.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The combined CP operator maps each KS gamma",
+            "evidence_path": "docs/CPT_EXACT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the taste-space CP action on the three Kogut-Susskind gamma generators.",
+            "outcome": "CLOSED: the internal automorphism is supporting algebra and does not select the physical antiunitary representative or a complete SME basis.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "taste_cl3"
+          },
+          {
+            "attempt": "No such construction or runner is contained in the restricted packet.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "requires a retained operator-basis bridge that this note no longer claims to supply",
+            "evidence_path": "docs/CPT_EXACT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct a canonically normalized complete staggered representation of every CPT-odd SME bilinear.",
+            "outcome": "UNTESTED: this remains the named bridge required for canonical SME-coefficient claims.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "canonical_sme_basis"
+          },
+          {
+            "attempt": "The source explicitly leaves this sector outside the theorem.",
+            "disposition": "OPEN",
+            "evidence_locator": "Extension to the interacting theory (gauge fields, Yukawa couplings).",
+            "evidence_path": "docs/CPT_EXACT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Extend the free symmetry argument to gauge and Yukawa interactions.",
+            "outcome": "OPEN: no interacting action or coefficient transformation is provided.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "interacting_action"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "physical-H antiunitary representative mismatch between the source/runner and the bridge",
+            "missing canonically normalized complete SME bilinear-operator dictionary"
+          ],
+          "evidence_locator": "The physical-Hamiltonian statement uses the bridge theorem's Hermitian",
+          "evidence_path": "docs/CPT_EXACT_NOTE.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "physical-H antiunitary representative mismatch between the source/runner and the bridge",
+              "left_closes_right": false,
+              "right": "missing canonically normalized complete SME bilinear-operator dictionary",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "physical-H antiunitary representative mismatch between the source/runner and the bridge",
+            "missing canonically normalized complete SME bilinear-operator dictionary"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The SME-coefficient labeling of that zero sector is admitted, not retained",
+          "evidence_path": "docs/CPT_EXACT_NOTE.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "`T H T^{-1} = H`",
+              "evidence_path": "docs/CPT_EXACT_NOTE.md",
+              "phrase": "T H T^{-1} = H",
+              "promoted_wall": "physical-H antiunitary representative mismatch between the source/runner and the bridge"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "antiunitary representative `Theta_H = P K`",
+              "evidence_path": "docs/CPT_EXACT_NOTE.md",
+              "phrase": "antiunitary representative `Theta_H = P K`"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "canonical normalization and basis completeness",
+              "evidence_path": "docs/CPT_EXACT_NOTE.md",
+              "phrase": "canonical normalization and basis completeness",
+              "promoted_wall": "missing canonically normalized complete SME bilinear-operator dictionary"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source theorem, symmetry table, assumptions, runner comments and transformations, cited bridge, and supplied premise registries were checked for hidden carrier, antiunitary, readout, normalization, and basis assumptions.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The runner output and `D`-level identities are unchanged.",
+          "evidence_path": "docs/CPT_EXACT_NOTE.md",
+          "none_found_reason": "All N1 dispositions are based on calculations or explicit boundaries in the current restricted packet, not inherited prior-route witnesses.",
+          "scan_scope": "No N1 route was ruled out solely by a prior witness; the current source, runner, and one-hop bridge were used directly.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "What Remains Open",
+          "evidence_path": "docs/CPT_EXACT_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative and boundary language concerning the SME bridge, physical Hermitian lift, interactions, and continuum scope was checked against the resolutions actually computed.",
+          "statements": [
+            {
+              "evidence_locator": "requires a retained operator-basis bridge that this note no longer claims to supply",
+              "evidence_path": "docs/CPT_EXACT_NOTE.md",
+              "phrase": "requires a retained operator-basis bridge that this note no longer claims to supply",
+              "tested_resolutions": [
+                "finite-lattice full odd-sector matrix",
+                "direction-resolved trace and Frobenius residuals"
+              ],
+              "untested_resolutions": [
+                "canonical SME normalization and basis completeness"
+              ]
+            },
+            {
+              "evidence_locator": "necessary but not sufficient for the full interacting framework",
+              "evidence_path": "docs/CPT_EXACT_NOTE.md",
+              "phrase": "necessary but not sufficient for the full interacting framework",
+              "tested_resolutions": [
+                "free even-periodic finite lattice"
+              ],
+              "untested_resolutions": [
+                "gauge-field and Yukawa interaction sectors"
+              ]
+            }
+          ],
+          "unresolved": [
+            "canonical SME operator-basis resolution remains untested",
+            "interacting-theory resolution remains outside the packet"
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic isotropy supplies neither antiunitary conventions nor an SME dictionary.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cpt_exact_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The axioms leave K/CPT structure and physical-observable bridges unsupplied.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/cpt_exact_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise state evaluation selects neither symmetry representatives nor operator bases.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cpt_exact_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A units reference cannot repair antiunitary algebra or basis completeness.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cpt_exact_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "Its boundary concerns AC_phi_lambda occupancy and R-eta readout, not CPT/SME content.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/cpt_exact_note",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The g-bare convention is unrelated and not an accepted premise.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/cpt_exact_note",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "The hypercharge convention is unrelated and not an accepted premise.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/cpt_exact_note",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/cpt_exact_note",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All candidates in the supplied partial-closure index were checked for an accepted physical-H representation rule or canonical SME operator dictionary.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The bridge explicitly fixes the antiunitary i-sign by defining T_H=CK and physical CPT as Theta_H=PK, so the intended physical odd-sector theorem is correct even if the primary runner uses D-level notation.",
+          "evidence_locator": "Choosing `T_H = C K` gives",
+          "evidence_path": "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+          "resolution": "This succeeds for the separately stated Theta_H odd-sector identity, but not for the retained theorem and table that still assert T=K, H real, CP invariance, and CPK invariance for physical H=iD.",
+          "resolved": true,
+          "route_id": "physical_h_bridge"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cpt_exact_note:previous_audit:0",
+              "evidence_locator": "cpt_exact_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Initial unaudited state.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cpt_exact_note:previous_audit:1",
+              "evidence_locator": "cpt_exact_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Prior Hermitization gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cpt_exact_note:previous_audit:2",
+              "evidence_locator": "cpt_exact_note:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Prior clean bridge verdict.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cpt_exact_note:previous_audit:3",
+              "evidence_locator": "cpt_exact_note:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Prior clean physical-H scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cpt_exact_note:previous_audit:4",
+              "evidence_locator": "cpt_exact_note:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Conditional bridge dependency.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cpt_exact_note:previous_audit:5",
+              "evidence_locator": "cpt_exact_note:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Conditional dependency scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cpt_exact_note:previous_audit:6",
+              "evidence_locator": "cpt_exact_note:previous_audit:6",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Canonical-SME bridge gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cpt_exact_note:previous_audit:7",
+              "evidence_locator": "cpt_exact_note:previous_audit:7",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Narrowed finite-lattice scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:0",
+              "evidence_locator": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Original bridge verdict.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:1",
+              "evidence_locator": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Bridge SME-basis boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:2",
+              "evidence_locator": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Narrowed bridge proxy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated AC retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated theta retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated owner-governed retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated campaign boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated Newton boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated coupling repair.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated import boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated inherited no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated coupling identity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated beta-six boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated lensing walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated carrier wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated lepton walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated dimension wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated Lorentz scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated metric bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated radial boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated Wilson wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated flavor boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated analytic-vector wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated plaquette walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated gauge-isotropy walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated Fermat boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated gravity sign.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated hypercharge wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated campaign closures.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated atomic walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated quark walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated asymptotic wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated lensing wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated finite-path wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated temporal wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "No relevant no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated planning wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated time wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated neutrino walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated neutrino scale.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated distance scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated recompute wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated coupling wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated memory wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated finite-window wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated Cl4 wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated carrier wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated bootstrap walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated diagnostic wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated Record wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated registrability walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated clock walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated source wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated statistics wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Minimal axioms do not select the kinetic law; not the audited fixed-law identity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated SU3 wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated synchronization issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated family-card scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated theta mass wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated theta gauge wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated theta gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated theta insertion wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated theta defect wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated AC determinant wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated AC orbit wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated AC readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated artifact gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated Record wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated finite-table wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated continuum scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "mechanism": "Unrelated Yukawa renaming.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/cpt_exact_note",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "physical-H antiunitary representative mismatch between the source/runner and the bridge",
+          "missing canonically normalized complete SME bilinear-operator dictionary"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/cpt_exact_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "144adcbaa95cb2ba88ca441f46fee1096827e3e04d3de7518b1246da57e20fd8",
+              "cross_cycle_candidate_ids": [
+                "cpt_exact_note:previous_audit:0",
+                "cpt_exact_note:previous_audit:1",
+                "cpt_exact_note:previous_audit:2",
+                "cpt_exact_note:previous_audit:3",
+                "cpt_exact_note:previous_audit:4",
+                "cpt_exact_note:previous_audit:5",
+                "cpt_exact_note:previous_audit:6",
+                "cpt_exact_note:previous_audit:7",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:0",
+                "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:1",
+                "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:2",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/cpt_exact_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "cpt_exact_note:previous_audit:0",
+                "cpt_exact_note:previous_audit:1",
+                "cpt_exact_note:previous_audit:2",
+                "cpt_exact_note:previous_audit:3",
+                "cpt_exact_note:previous_audit:4",
+                "cpt_exact_note:previous_audit:5",
+                "cpt_exact_note:previous_audit:6",
+                "cpt_exact_note:previous_audit:7",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:0",
+                "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:1",
+                "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30:previous_audit:2",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/cpt_exact_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "3ff3b2e65e08ec30c08a4380dd1b31ecd737b17a93a3010b5b6b529e6d421ce1",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/cpt_exact_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/CPT_EXACT_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "5b8f580bf1abc9b2485f451acec1be9f87d3e7aa0ec45cabd339de9f05b383ef",
+              "effective_status": null,
+              "path": "docs/CPT_EXACT_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Extension to the interacting theory (gauge fields, Yukawa couplings).",
+                "The SME-coefficient labeling of that zero sector is admitted, not retained",
+                "The combined CP operator maps each KS gamma",
+                "The physical-Hamiltonian statement uses the bridge theorem's Hermitian",
+                "The runner output and `D`-level identities are unchanged.",
+                "These are the **Theta_H-odd Hamiltonian-sector residuals**, and they vanish",
+                "What Remains Open",
+                "`T H T^{-1} = H`",
+                "antiunitary representative `Theta_H = P K`",
+                "canonical normalization and basis completeness",
+                "necessary but not sufficient for the full interacting framework",
+                "requires a retained operator-basis bridge that this note no longer claims to supply"
+              ]
+            },
+            "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "7bedb81876474133c560bcbb2ee9a360fe048c945b4802676a01855391282a0a",
+              "effective_status": "retained_bounded",
+              "path": "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "Choosing `T_H = C K` gives",
+                "The naive antiunitary `CP K` that is useful on `D` sends `H` to `-H`"
+              ]
+            },
+            "scripts/frontier_cpt_exact.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "31e432fcb81ef0ee3292f8a5f6d810191fb688261fbd13ca367d0e9f09840edc",
+              "effective_status": null,
+              "path": "scripts/frontier_cpt_exact.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "This is the anti-Hermitian hopping operator; the physical (Hermitian)"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains an untested canonical-SME-basis route and an open interacting-action route.",
+          "N5 identifies untested canonical-basis and interacting-theory resolutions."
+        ],
+        "narrowed_claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
+        "next_route": {
+          "reason_untested": "The packet contains no canonically normalized complete representation of CPT-odd SME bilinears on the staggered substrate.",
+          "route_id": "canonical_sme_basis"
+        },
+        "prior_claim_scope": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "Re-audit after one convention-consistent runner constructs both D and H=iD and verifies the separately named D-level CP K and physical-H Theta_H=P K transformations; also remove stale canonical-SME PASS wording.",
+      "open_dependency_paths": [
+        "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "Issue: the primary runner names the real anti-Hermitian hopping operator H and verifies CPK invariance of that operator, whereas the retained physical Hamiltonian is H=iD. On the Hermitian lift, K and CPK contribute the antiunitary i-to-minus-i sign and flip H; only the bridge's different representative Theta_H=PK preserves H. The D-level C/P/CP identities and the separate Theta_H=PK odd-sector identity are supported, but their current combined C/P/T/CPT presentation is not."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 53,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 53
+  },
+  "runner_path": "scripts/frontier_cpt_exact.py",
+  "title": "CPT Exact Preservation in the Cl(3) Staggered Framework",
+  "transitive_descendants": 875,
+  "verdict_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separately defined Theta_H odd-sector result may survive a narrower formulation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260713-7abd2d90\", \"judge\": 1, \"rationale\": \"The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separa\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260713-eb4834ff\", \"judge\": 2, \"rationale\": \"The runner tests the real anti-Hermitian operator D while calling it H; its physical Hermitian lift iD appears only in a spectral calculation. Because K(iD)K=-iD, the retained simultaneous claims T=K invariance and CP K/CPT invariance of physical H=iD are false, while the cited bridge instead establishes the distinct Theta_H=P K symmetry. The first position correctly ratifies failure over the exact supplied pre-audit scope.\", \"tuple\": [\"first\", \"audited_failed\", \"positive_theorem\", \"The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260713-e80e1202\", \"judge\": 3, \"rationale\": \"The primary runner computes the real anti-Hermitian operator D while calling it H; its direct T=K and CPK checks therefore do not establish those identities for the physical Hermitian lift iD. The cited bridge confirms that K reverses i, so CPK flips iD and must be replaced by Theta_H=PK; this contradicts the retained theorem and symmetry table as written.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260713-7737686a\", \"judge\": 4, \"rationale\": \"The primary runner constructs the real anti-Hermitian hopping operator D under the variable name H and applies T=K and CPK to that operator; multiplying by i appears only in the spectral calculation. For the physical Hermitian lift H=iD, complex conjugation reverses i, so T=K does not preserve H and CPK flips H. The cited bridge explicitly confirms this and instead establishes the distinct antiunitary symmetry Theta_H=PK. Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, despite the valid PK odd-sector result.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260713-433197b8\", \"judge\": 5, \"rationale\": \"The primary runner\\u2019s C, P, T=K, and CP/CPT identities concern the real anti-Hermitian operator D that it labels H; multiplying by i makes the physical Hermitian lift complex, so K sends iD to -iD. The cited bridge expressly confirms that naive CP K flips physical H and replaces it with Theta_H=P K (equivalently using T_H=C K). Thus the retained theorem and symmetry table incorrectly combine D-level T=K/CPK identities with physical-Hamiltonian claims, and the theorem as written does not close.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}]"
+}

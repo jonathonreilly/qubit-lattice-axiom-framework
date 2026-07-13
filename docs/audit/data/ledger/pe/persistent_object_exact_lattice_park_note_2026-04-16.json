@@ -1,0 +1,170 @@
+{
+  "audit_date": "2026-05-19T15:40:08.411036+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_claim_scope": {
+      "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16": "Fixed exact-lattice h=0.25, blend=0.25 outer second-ring sweep: top3 passes 4/5 cases and top2 passes 1/5, with source1.0 closed; the uncached inward-source boundary row pattern is not audited.",
+      "persistent_object_blended_readout_transfer_sweep_note_2026-04-16": "The audited packet supports only the sliced four-case boundary probe for `top3` at fixed `blend=0.25`: baseline, source1.5, width4, and length7 under the stated gates.",
+      "persistent_object_compact_inertial_probe_note_2026-04-16": "Audited the bounded finite-run claim that the top3 compact exact-lattice object carries a stable weak-field response across the four specified nearby cases when allowing the passing broad or adaptive readout per case; not a single-readout, readout-invariant, persistent inertial-mass, or matter-closure claim.",
+      "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16": "Finite exact-lattice inward-source floor-width diagnosis with h=0.25, blend=0.25, three updates per segment, three chained segments, inward rows source0p75/source1p00/source1p25/source1p50, and top_keep in {4,5,6,8}; the ratified claim is the reported 2/4 admissible split at every width, with source0p75/source1p00 closed and source1p25/source1p50 open, excluding full local-pocket universality, beyond-pocket transfer, inertial-mass closure, and matter closure.",
+      "persistent_object_multistage_floor_sweep_note_2026-04-16": "Within the fixed exact-lattice setup h=0.25, blend=0.25, four source strengths, three updates per segment, three chained segments, and the same five stable widened-regime rows, top4 is the first configured multistage-admissible object width among top3/top4/top5/top6; top6 is only the exact five-source-node identity with top5.",
+      "persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16": "Audited the bounded claim that the retained exact-lattice `top4` multistage floor transfers on 4 of 5 specified one-ring-farther cases and preserves an inward-source boundary.",
+      "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16": "Finite exact-lattice top4 multistage transfer sweep with h=0.25, blend=0.25, top_keep=4, three updates per segment, three chained segments, and exactly the 13 listed widened-pocket cases; support is the reported 11/13 admissible cases with failures at source0p75 and source1p00, excluding full local-pocket universality, persistent inertial-mass closure, and matter closure."
+    },
+    "dep_claim_type": {
+      "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16": "bounded_theorem",
+      "persistent_object_blended_readout_transfer_sweep_note_2026-04-16": "bounded_theorem",
+      "persistent_object_compact_inertial_probe_note_2026-04-16": "bounded_theorem",
+      "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16": "bounded_theorem",
+      "persistent_object_multistage_floor_sweep_note_2026-04-16": "bounded_theorem",
+      "persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16": "bounded_theorem",
+      "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16": "retained_bounded",
+      "persistent_object_blended_readout_transfer_sweep_note_2026-04-16": "retained_bounded",
+      "persistent_object_compact_inertial_probe_note_2026-04-16": "retained_bounded",
+      "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16": "retained_bounded",
+      "persistent_object_multistage_floor_sweep_note_2026-04-16": "retained_bounded",
+      "persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16": "retained_bounded",
+      "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16": "retained_bounded"
+    },
+    "deps": [
+      "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16",
+      "persistent_object_blended_readout_transfer_sweep_note_2026-04-16",
+      "persistent_object_compact_inertial_probe_note_2026-04-16",
+      "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16",
+      "persistent_object_multistage_floor_sweep_note_2026-04-16",
+      "persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16",
+      "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16"
+    ],
+    "load_bearing_score": 11.445,
+    "runner_hash": "62c5c7c74ddfd2ae78c65b0201d58f5d87f574b8e65baa0f8e89bb73d58983eb",
+    "transitive_descendants": 985
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260519-153947-c8646410-persistent_object_exact_-001",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The conclusion is a conservative cross-note synthesis of the cited retained_bounded authorities: each component positive and the inward-source boundary are explicitly present in the restricted packet. The note does not claim persistent inertial-mass closure and preserves the stated limitations.",
+  "claim_id": "persistent_object_exact_lattice_park_note_2026-04-16",
+  "claim_scope": "Audited the park note's bounded synthesis of the provided retained_bounded upstream exact-lattice persistent-object notes and the compact-update runner output, not an independent recomputation of all upstream sweeps.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-19T15:40:08.411036+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-19T15:35:36.704301+00:00",
+      "auditor": "codex-cli-gpt-5.5-20260519-153419-d5be05e0-persistent_object_exact_-017",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Audited only the park note's bounded synthesis of the cited retained_bounded exact-lattice compact-object notes: compact update/object response, blended readout transfer, top4 multistage floor transfer, inward-boundary diagnosis, and 4/5 beyond-pocket transfer.",
+      "claim_type": "bounded_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "B",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-05-19T15:40:08.411036+00:00",
+      "auditor": "codex-cli-gpt-5.5-20260519-153947-c8646410-persistent_object_exact_-001",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Audited the park note's bounded synthesis of the provided retained_bounded upstream exact-lattice persistent-object notes and the compact-update runner output, not an independent recomputation of all upstream sweeps.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "B",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "persistent_object_compact_inertial_probe_note_2026-04-16",
+    "persistent_object_blended_readout_transfer_sweep_note_2026-04-16",
+    "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16",
+    "persistent_object_multistage_floor_sweep_note_2026-04-16",
+    "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16",
+    "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16",
+    "persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/minimal_source_driven_field_probe.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 7.055,
+  "load_bearing_step": "The exact-lattice branch now supports a compact repeated-update object, weak-field response, retained blended readout, self-maintaining top4 multistage floor, widened-pocket 11/13 transfer, and beyond-pocket 4/5 transfer, while the inward-source rows remain closed.",
+  "load_bearing_step_class": "B",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "39ce47ab52a569f22b6bcc34e9018154dfe0a3591caa01548573fc45d355261b",
+  "note_path": "docs/PERSISTENT_OBJECT_EXACT_LATTICE_PARK_NOTE_2026-04-16.md",
+  "notes_for_re_audit_if_any": "Re-check that the upstream retained_bounded audit statuses remain current for the top4 outer transfer and inward-boundary floor diagnosis rows.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.236639+00:00",
+      "audit_date": "2026-05-01T04:42:27.734482+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.587,
+        "transitive_descendants": 33
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note is a cross-artifact park/status synthesis, but this row has no registered dependencies or runner, so the upstream sweep evidence cannot be verified from the restricted audit packet.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16,persistent_object_blended_readout_transfer_sweep_note_2026-04-16,persistent_object_compact_inertial_probe_note_2026-04-16",
+      "load_bearing_step": "The repo has a bounded beyond-pocket exact-lattice compact-object-plus-response regime with a real self-maintaining multistage floor at top4, but that regime still carries a persistent inward-source directional boundary and is not a closure-grade inertial-mass law.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the bounded exact-lattice stop-state is asserted by summarizing seven upstream sweep artifacts, but none are registered as dependencies and no runner is attached to this row. Why this blocks: the audit cannot verify the multistage floor, widened-pocket transfer, or inward-boundary failure pattern from the source note alone. Repair target: register the artifact trail as dependencies and attach a runner or consolidated log check that reproduces the stated transfer/failure counts. Claim boundary until fixed: the note is a bounded parking/status summary, not an audited compact-object or inertial-mass closure result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 7,
+    "C": 1,
+    "D": 0,
+    "total_pass": 8
+  },
+  "runner_path": "scripts/persistent_object_compact_update_probe.py",
+  "title": "Persistent Object Exact-Lattice Park Note",
+  "transitive_descendants": 46,
+  "verdict_rationale": "The park note's load-bearing work is cross-note verification over retained_bounded inputs, plus the included compact-update runner source/output for the initial compact object step. All cited authorities in the restricted packet are retained_bounded and the final claim is scoped to a bounded beyond-pocket object-plus-response regime with a persistent inward-source boundary. No missing upstream note, open bridge, or unsupported promotion to closure-grade inertial mass is needed for the stated conclusion."
+}

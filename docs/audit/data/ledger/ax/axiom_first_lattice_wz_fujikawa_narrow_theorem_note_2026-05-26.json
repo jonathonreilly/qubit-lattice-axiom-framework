@@ -1,0 +1,424 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "no_per_site_chirality_theorem_note_2026-05-02",
+    "cpt_exact_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.47,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6818375a0424672b2dbde75064a57c3102f4a693fc6052699e9fa2616e0c392e",
+  "note_path": "docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T00:47:09.822692+00:00",
+      "audit_date": "2026-05-28T06:10:50.064494+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "minimal_axioms": null,
+          "no_per_site_chirality_theorem_note_2026-05-02": "Under the k=1 qubit-per-site reading H_x = C^2 with the canonical Pauli Cl(3) action, no \u03b3_5 \u2208 M_2(C) satisfies \u03b3_5^2 = I and anticommutes with all three generators."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "minimal_axioms",
+          "no_per_site_chirality_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "68d8d90af5cc3643b58b90875058346bc6624dd07395c8f4eaffe14d8bddecb7",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "raman-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-lattice-wz-fujikawa-narrow",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded finite-matrix identity closes on the auxiliary Z4 site-index grading and direct runner construction. The grading is not a forbidden per-site gamma5 in M_2(C), and the row's scope excludes anomaly/cohomology/continuum claims.",
+      "claim_scope": "Finite Z4 staggered-grading trace theorem on L={4,6} even periodic boxes, for free, random U(1), and flux-winding backgrounds and tested t values: epsilon D epsilon = -D; Tr(epsilon exp(-t D^dag D)) is t-stable, integer-valued, equals the zero-mode chirality count, and is gauge-invariant. This does not retain any ABJ/Wess-Zumino/Fujikawa anomaly replacement, continuum coefficient, cohomology obstruction, or nonzero-index claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T06:10:50.064494+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:no_per_site_chirality_theorem_note_2026-05-02:retained_no_go->unaudited",
+      "load_bearing_step": "Because epsilon anticommutes with finite anti-Hermitian D, D^dag D commutes with epsilon and nonzero eigenspaces pair with opposite epsilon, so Tr(epsilon exp(-t D^dag D)) reduces to n_+ - n_-.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit only if downstream text uses this as an ABJ/WZ/Fujikawa anomaly, continuum coefficient, local-cohomology, or nonzero-index theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 50,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 50
+      },
+      "verdict_rationale": "The source note is narrowly scoped to finite Z4 staggered-grading trace identities and explicitly disclaims ABJ/Wess-Zumino/Fujikawa replacement claims. Independent check: each nearest-neighbor hop flips epsilon, giving epsilon D epsilon = -D; with finite anti-Hermitian D, D^dag D commutes with epsilon and nonzero modes pair between epsilon sectors, so Tr(epsilon exp(-t D^dag D)) equals the zero-mode chirality count and is t-independent/integer-valued. U(1) gauge rotations conjugate D while commuting with site-diagonal epsilon, so cyclicity gives gauge invariance. The runner constructs D matrices, U(1) backgrounds, gauge rotations, heat kernels, and zero-mode counts on L=4 and L=6 with PASS=50 FAIL=0. The observed index is zero throughout, which is inside the stated bounded scope and does not undercut the finite trace theorem."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.060067+00:00",
+      "audit_date": "2026-05-31T13:58:30.889166+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "minimal_axioms": null,
+          "no_per_site_chirality_theorem_note_2026-05-02": "Single-site one-qubit algebra M_2(C) with a Pauli Cl(3) generating triple: omega = sigma_1 sigma_2 sigma_3 = iI, and no nonzero M in M_2(C) anticommutes with all three sigma_i, so no gamma_5-based one-site chirality projector exists."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "minimal_axioms",
+          "no_per_site_chirality_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "68d8d90af5cc3643b58b90875058346bc6624dd07395c8f4eaffe14d8bddecb7",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-135410-8085d25e-axiom_first_lattice_wz_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite trace identity itself closes algebraically from epsilon D epsilon = -D and anti-Hermiticity, and the runner genuinely computes the matrix traces and spectra. The missing step is that the packet labels the special background as flux-winding/nonzero winding while the runner neither asserts the relevant plaquette or Polyakov invariant nor implements the displayed constant-flux boundary-twist formula as written.",
+      "claim_scope": "Finite even Z4 staggered-grading trace identity on L=4,6 for free, random U(1), and the named special U(1) background: linearity, epsilon-D anticommutation, t-independent integer trace equal to zero-mode chirality, and tested gauge invariance; no ABJ anomaly, continuum coefficient, cohomology, or nonzero-index claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T13:58:30.889166+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "The staggered grading anticommutes with the finite staggered Dirac matrix, epsilon D[U] epsilon = -D[U], so D^dag D commutes with epsilon and the nonzero modes cancel in Tr(epsilon exp(-t D^dag D)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add a direct plaquette/Polyakov-loop assertion proving the intended flux-winding invariant, or rename the source and runner background to the non-identity/nonflat U(1) link background actually checked.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 50,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 50
+      },
+      "verdict_rationale": "The core finite-dimensional staggered trace theorem is a genuine algebraic closure, not a renaming or tuned numerical match. The runner source constructs D[U], epsilon, heat kernels, zero-mode counts, and gauge rotations directly, with 50 finite-matrix PASS checks and no hard-coded anomaly coefficient. However, the strict formula inventory blocks a clean verdict because the special U(1) background is described as flux-winding/one-flux constant plaquette data while the code leaves mu=0 links at identity and applies a mu=1 boundary twist that is not accompanied by an invariant check of the stated winding/flux property."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.497365+00:00",
+      "audit_date": "2026-06-05T18:53:06.282188+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "minimal_axioms": null,
+          "no_per_site_chirality_theorem_note_2026-05-02": "One-site Pauli presentation of A_x ~= M_2(C): omega = sigma_1 sigma_2 sigma_3 = iI, and no nonzero element of M_2(C) anticommutes with all three sigma_i, so no internal gamma_5 chirality projector exists."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "minimal_axioms",
+          "no_per_site_chirality_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 3.807,
+        "runner_hash": "a16baa8f6d39cc2959c71c8b69d5b683e6fd5f4953650cf20ef3571dc61c3f4b",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-185138-39b19ec346-axiom_first_lattice_wz_fujik",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-matrix algebra closes: epsilon flips on every nearest-neighbor hop, D is anti-Hermitian for the U(1) link construction, D^dagger D commutes with epsilon, and trace cyclicity gives gauge invariance. The explicit flux background's principal-branch plaquette sum and periodic Polyakov closure are checked within the bounded stated scope.",
+      "claim_scope": "Bounded finite Z4 staggered-grading trace identities on L=4,6 even periodic tori for free, seeded random U(1), and explicit one-principal-flux U(1) backgrounds; no ABJ anomaly, continuum coefficient, nonzero index, or cohomology claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T18:53:06.282188+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Because epsilon anticommutes with the finite anti-Hermitian staggered Dirac matrix, D^dagger D commutes with epsilon, so positive modes cancel in Tr(epsilon exp(-t D^dagger D)) and only the zero-mode chirality count n_+ - n_- remains.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the principal-branch flux convention and keep the retained scope bounded to L in {4,6} and the listed backgrounds.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 58,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "The runner source constructs the finite staggered matrices, U(1) links, gauge rotations, heat kernels, zero-mode projector trace, plaquette fluxes, and Polyakov loops directly; it does not merely print constants or import the contested conclusion. An independent algebra check of the displayed identities confirms the sign, anticommutation, t-independence, integer kernel trace, and gauge-conjugation invariance used by the note. The cited authorities are retained-grade or an explicitly accepted axiom premise, and the note keeps the claim bounded to tested finite boxes/backgrounds without promoting anomaly or continuum consequences."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.424273+00:00",
+      "audit_date": "2026-06-05T21:58:57.169046+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "minimal_axioms": null,
+          "no_per_site_chirality_theorem_note_2026-05-02": "Inside a single one-qubit site algebra M_2(C) with a Pauli generating triple, no nonzero element anticommutes with all three Pauli generators, hence no internal \u03b3_5 with \u03b3_5^2=I exists."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "minimal_axioms",
+          "no_per_site_chirality_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 3.807,
+        "runner_hash": "a16baa8f6d39cc2959c71c8b69d5b683e6fd5f4953650cf20ef3571dc61c3f4b",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-215711-9aa668e2c7-axiom_first_lattice_wz_fujik",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The core identity closes by finite-dimensional linear algebra: even periodicity makes epsilon flip on every nearest-neighbor hop, anti-Hermiticity gives a normal D, and D pairs all nonzero D^dag D eigenspaces across epsilon signs. The gauge-invariance and explicit-background checks are direct finite matrix/U(1) computations in the supplied runner source.",
+      "claim_scope": "Bounded finite even L in {4,6} periodic Z4 staggered-Dirac trace identity on the free, seeded random U(1), and explicit one-principal-flux U(1) backgrounds exercised by the runner; no ABJ, continuum, nonzero-index, nonabelian, or cohomology claim audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:58:57.169046+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Because the finite anti-Hermitian staggered Dirac matrix anticommutes with epsilon, D^dag D commutes with epsilon and D bijects the positive-eigenvalue epsilon=+ and epsilon=- subspaces, so Tr(epsilon exp(-t D^dag D)) equals n_+ - n_- and is t-independent/integer-valued.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the even-periodic boundary sign flip and the principal-branch flux convention for L=4,6; no repair needed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 58,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "The cited minimal-axiom authority is explicitly flagged as an accepted axiom premise, and the retained cited authorities are not used for any open SME/anomaly identification. The runner source actually constructs the finite matrices, U(1) links, heat kernels, spectra, plaquettes, and Polyakov loops; it does not hard-code the contested trace values or compare to an external calibrated source. The source note is correctly narrowed to bounded finite trace support, with observed index zero and no claimed ABJ/cohomology/continuum bridge."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.312951+00:00",
+      "audit_date": "2026-07-02T03:07:39.187949+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "minimal_axioms": null,
+          "no_per_site_chirality_theorem_note_2026-05-02": "Single-site complex one-qubit operator algebra M_2(C): the Pauli volume element is iI and no nonzero internal matrix anticommutes with all three Pauli generators, so no one-site gamma_5 projector exists."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "minimal_axioms",
+          "no_per_site_chirality_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 6.992,
+        "runner_hash": "a16baa8f6d39cc2959c71c8b69d5b683e6fd5f4953650cf20ef3571dc61c3f4b",
+        "transitive_descendants": 44
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T030739Z-089cb50f-axiom_first_lattice_wz_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conclusion follows by finite-dimensional matrix algebra from the displayed staggered construction and even-torus epsilon grading. The runner directly constructs the matrices and backgrounds and checks the bounded L=4,6 cases without importing an external comparator or contested value.",
+      "claim_scope": "Finite even L=4,6 periodic Z4 staggered-Dirac matrices on the tested free, random U(1), and one-quantum principal-plaquette U(1) backgrounds satisfy the stated epsilon anticommutation, heat-kernel trace/index equality, integer-valuedness, and tested gauge invariance; no anomaly, continuum, nonzero-index, Wess-Zumino, or non-Abelian claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T03:07:39.187949+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Because D is finite-dimensional and anti-Hermitian with epsilon D epsilon = -D, D^dagger D commutes with epsilon; positive modes pair between epsilon sectors, so Tr(epsilon exp(-t D^dagger D)) equals n_+ - n_- and is t-independent.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Future re-audit should check that downstream consumers preserve the finite-matrix bounded scope and do not cite this as an ABJ, cohomology, continuum, or nonzero-index theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 58,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "The runner constructs the finite staggered matrices, U(1) links, heat-kernel diagonals, spectra, gauge rotations, plaquette sums, and Polyakov loops directly; it is not a print-only or constant-substitution runner. Independently, every nearest-neighbor hop on an even torus flips epsilon, the U(1) staggered D is anti-Hermitian, D^dagger D commutes with epsilon, positive modes pair between epsilon sectors, and site-diagonal gauge rotations commute with epsilon. The explicit flux background is a designed finite background whose principal plaquette-angle sum is checked algebraically, and the audited scope remains only the bounded finite-matrix theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.135973+00:00",
+      "audit_date": "2026-07-10T00:03:55.610752+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "minimal_axioms": null,
+          "no_per_site_chirality_theorem_note_2026-05-02": "Inside a single one-qubit site algebra A_x ~= M_2(C) with a Pauli Cl(3) presentation, no nonzero element anticommutes with all three Pauli generators, so no internal gamma5/chirality projector exists there."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "minimal_axioms",
+          "no_per_site_chirality_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 6.585,
+        "runner_hash": "a16baa8f6d39cc2959c71c8b69d5b683e6fd5f4953650cf20ef3571dc61c3f4b",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-axiom_first_lattice_wz_f-067",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Even periodic nearest-neighbor hopping gives exact anticommutation with epsilon, while anti-Hermiticity makes D\u2020D commute with epsilon and enables the nonzero-mode pairing argument. Gauge invariance and the background invariants then follow from finite matrix conjugation and direct link/plaquette calculations.",
+      "claim_scope": "Finite-dimensional staggered-grading trace identities, gauge invariance, and the explicitly bounded U(1) background checks on even periodic Z4 lattices with L in {4,6}.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T00:03:55.610752+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->unaudited",
+      "load_bearing_step": "On each positive eigenvalue subspace, D maps the epsilon=+1 part bijectively to the epsilon=-1 part, so the nonzero modes cancel and Tr(epsilon exp(-t D\u2020D)) equals the zero-mode chirality count.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 58,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "The load-bearing result is a genuine finite-dimensional algebraic closure, and the supplied runner constructs the staggered operators and evaluates all asserted residuals rather than merely printing expected outcomes. All 58 checks are algebraic or spectral checks of the stated bounded identities, with no external comparator, tuned physical input, or open identification. The claim remains properly narrowed away from any continuum anomaly, nonzero-index existence, or Wess-Zumino cohomology conclusion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py",
+  "title": "Finite Z4 Staggered-Grading Trace Theorem (Bounded)",
+  "transitive_descendants": 708,
+  "verdict_rationale": null
+}

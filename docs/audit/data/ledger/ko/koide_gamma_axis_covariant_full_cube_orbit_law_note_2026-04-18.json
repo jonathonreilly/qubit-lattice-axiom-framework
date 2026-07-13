@@ -1,0 +1,141 @@
+{
+  "audit_date": "2026-05-10T14:44:09.593722+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_claim_scope": {
+      "koide_gamma_orbit_selector_bridge_note_2026-04-18": "Given the stated linear map from (u,v,w) to (r0,r1,r2), the cyclic Koide selector 2r0^2 = r1^2 + r2^2 is exactly equivalent to u^2 + v^2 + w^2 = 4(uv + uw + vw), and for positive amplitudes to Q = 2/3."
+    },
+    "dep_claim_type": {
+      "koide_gamma_orbit_selector_bridge_note_2026-04-18": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "koide_gamma_orbit_selector_bridge_note_2026-04-18": "retained"
+    },
+    "deps": [
+      "koide_gamma_orbit_selector_bridge_note_2026-04-18"
+    ],
+    "load_bearing_score": 12.464,
+    "runner_hash": "4ba1bac7ade51d8d1ef1e835cc84abf03813dabd14401389996d8918db2ae2e9",
+    "transitive_descendants": 352
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-judicial-019e1256-fd1f-79b2-ba3e-71b35dc8c1e0",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The runner directly constructs the finite matrices, projectors, bit-cycle, and template slots, then verifies exact slot images whose arbitrary-template result follows by linearity. Under the audit rubric this is an algebraic identity check over explicitly defined inputs, not a class C first-principles computation producing a new physical number from the axiom. The clean verdict is therefore ratified with the second audit's narrower A-class scope.",
+  "claim_id": "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
+  "claim_scope": "Exact finite-matrix orbit identity for the runner-defined JW Gamma_i family, T1 species basis, full-cube C3 bit-cycle, and transported full-cube template W1(u,v,w,z), including nullity of the fourth slot in axis-matched returns.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-10T14:44:09.593722+00:00",
+  "claim_type_provenance": "judicial_review",
+  "criticality": "high",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-10T14:38:11.946487+00:00",
+      "auditor": "codex-audit-loop-019e1252-b439-71b0-9902-2fad5c2427f2",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Exact finite-dimensional Clifford/full-cube computation that a single transported axis-1 template produces the cyclic axis-return family on the specified T_1 species basis, with the fourth slot null for axis-matched returns.",
+      "claim_type": "positive_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "mode": "judicial_third_pass",
+    "second_audit": {
+      "audit_date": "2026-05-10T14:44:07.822086+00:00",
+      "auditor": "codex-audit-loop-019e1253-4edd-7e13-b766-57dc890282c4",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Exact finite-matrix orbit identity for the runner-defined JW Gamma_i family, T1 species basis, full-cube C3 bit-cycle, and transported full-cube template W1(u,v,w,z), including nullity of the fourth slot in axis-matched returns.",
+      "claim_type": "positive_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-05-10T14:44:09.593722+00:00",
+      "auditor": "codex-audit-loop-judicial-019e1256-fd1f-79b2-ba3e-71b35dc8c1e0",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Exact finite-matrix orbit identity for the runner-defined JW Gamma_i family, T1 species basis, full-cube C3 bit-cycle, and transported full-cube template W1(u,v,w,z), including nullity of the fourth slot in axis-matched returns.",
+      "claim_type": "positive_theorem",
+      "first_auditor_error": "Classified an exact finite matrix/projector identity as class C even though the load-bearing step produces no new physical number and is better described as algebraic closure over runner-defined operators.",
+      "independence": "judicial_review",
+      "judgment_rationale": "The runner directly constructs the finite matrices, projectors, bit-cycle, and template slots, then verifies exact slot images whose arbitrary-template result follows by linearity. Under the audit rubric this is an algebraic identity check over explicitly defined inputs, not a class C first-principles computation producing a new physical number from the axiom. The clean verdict is therefore ratified with the second audit's narrower A-class scope.",
+      "load_bearing_step_class": "A",
+      "second_auditor_error": "",
+      "sided_with": "second",
+      "verdict": "audited_clean"
+    }
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_gamma_orbit_selector_bridge_note_2026-04-18"
+  ],
+  "direct_in_degree": 9,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "judicial_review",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 14.281,
+  "load_bearing_step": "The axis-matched second-order returns D_i = P_{T_1} Gamma_i W_i Gamma_i P_{T_1}|_{species} obey D_1 = diag(u,v,w), D_2 = diag(w,u,v), and D_3 = diag(v,w,u).",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "retained_no_go",
+  "max_descendant_status_rank": 100,
+  "note_hash": "ffce1c648d0404ed18ebd3a6927787dd9d2283d19afa89b62c32493cf691c43f",
+  "note_path": "docs/KOIDE_GAMMA_AXIS_COVARIANT_FULL_CUBE_ORBIT_LAW_NOTE_2026-04-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T01:01:47.230781+00:00",
+      "archived_for_note_hash": "59c233d45883c61493d2da4e4852ce3bf08eb4c2251ac187d6747803677da3bb",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_gamma_axis_covariant_full_cube_orbit_law.py",
+  "title": "Koide `Gamma` Axis-Covariant Full-Cube Orbit Law",
+  "transitive_descendants": 54,
+  "verdict_rationale": "The runner directly constructs the finite matrices, projectors, bit-cycle, and template slots, then verifies exact slot images whose arbitrary-template result follows by linearity. Under the audit rubric this is an algebraic identity check over explicitly defined inputs, not a class C first-principles computation producing a new physical number from the axiom. The clean verdict is therefore ratified with the second audit's narrower A-class scope."
+}

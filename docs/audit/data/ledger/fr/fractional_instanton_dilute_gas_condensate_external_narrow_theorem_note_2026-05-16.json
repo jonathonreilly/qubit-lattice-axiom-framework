@@ -1,0 +1,262 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
+    "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "99b18ec7dce052fa6febc1b8136278c4e4091e683e5d1f9d9bee39b0227ce4de",
+  "note_path": "docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-18T11:31:37.036440+00:00",
+      "archived_for_note_hash": "c3bcd2eab2de05fc04ef9cfd20914afc6ed40d83e33bf854c6d22b3123e10006",
+      "audit_date": "2026-05-17T11:49:56.341129+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4fdb1b6aa5dc0b1dbd6c5ae9cf283308b79887e4041d83eb4c9d6c1e38879acc",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-114937-20260517T114937Z-46db87b8-fractional_instanton_dil-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner checks algebraic consequences and boundary disclaimers, but the restricted packet supplies no retained upstream authority deriving fractional Q = k/N on twisted T^4 or the dilute-gas determinant structure. The missing step is an included retained derivation or admitted external theorem for the twisted-boundary fractional sector and its measure regime.",
+      "claim_scope": "Audited only the restricted-packet recording of the external twisted-T^4 fractional-instanton charge/action formula and schematic dilute-gas/open-condensate language.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-17T11:49:56.341129+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On T^4 with a non-trivial 't Hooft twist, the fractional sector has Q = k/N and self-dual action S_frac = (8\u03c0\u00b2/g\u00b2)|k/N|.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide retained upstream authority packets deriving fractional Q = k/N and S_frac on twisted T^4, plus a separate retained bridge for any dilute-gas determinant/validity claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The note is appropriately scoped as an open_gate and repeatedly disclaims framework hierarchy closure, condensate formation, and substrate identification. However, the load-bearing physics formula is imported as external gauge-theory context rather than derived from the restricted packet, and Section 2 provides no cited authorities for audit. The runner mostly confirms text presence, algebraic substitutions, and numerical evaluations of the assumed formula; it does not establish the external theorem or dilute-gas validity from first principles."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:02.245735+00:00",
+      "archived_for_note_hash": "1d91d9da453a5163d4a685d15b508037f601c97d8bac9939ed3adfa9cf65b532",
+      "audit_date": "2026-05-28T07:29:07.779727+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "Finite Hodge/Bogomolny algebra, BPST radial 8pi^2 normalization integral, and twisted T4 k/N arithmetic after the stated conventions and standard inputs are fixed."
+        },
+        "dep_claim_type": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4fdb1b6aa5dc0b1dbd6c5ae9cf283308b79887e4041d83eb4c9d6c1e38879acc",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-fractional-instanton-open-gate-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "As an open_gate, the row closes: the retained-bounded upstream authority supplies the finite 8pi^2 normalization and twisted-T4 k/N arithmetic, the runner verifies the symbolic/numeric action checks and boundary disclaimers, and no downstream hierarchy or condensate bridge is claimed.",
+      "claim_scope": "External twisted-T4 SU(N) fractional-instanton gate: records Q=k/N and S_frac=(8 pi^2/g^2)|k/N| under the stated twisted-boundary conventions, plus the schematic dilute-gas ensemble/free-energy form only as an open modeling target. Determinant, phase-space, coupling scale, condensate formation, framework substrate/observable identification, alpha_LM^16, v/M_Pl, and hierarchy bridges remain unaudited and open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-28T07:29:07.779727+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note restricts theorem-grade content to the external fractional charge/action formula under twisted-T4 conventions and records the dilute-gas/condensate material only as an open target with named missing determinant, phase-space, coupling-scale, convergence, substrate, observable, and hierarchy bridges.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit if a downstream row cites this as a positive hierarchy bridge, supplies or fixes a determinant/measure/coupling-scale prescription, asserts dilute-gas condensate closure, or identifies the external twisted-T4 sector with a framework substrate/observable.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "Clean only as an open gate. The cited retained-bounded infrastructure supports the normalized external charge/action arithmetic after fixed Yang-Mills/T4 conventions, and independent arithmetic confirms the canonical raw factors: exp(-4 pi^2)=7.16e-18, exp(-8 pi^2/3)=3.71e-12, and exp(-2 pi^2)=2.68e-9. The runner's PASS lines are mostly symbolic/textual boundary guards, not a condensate computation, but that matches the source scope: determinant, measure, phase-space, coupling scale, convergence, framework substrate/observable identification, alpha_LM^16, v/M_Pl, and hierarchy substitution are explicitly left open."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:35.161175+00:00",
+      "archived_for_note_hash": "6bb29936292d9a86b30a17eaf6e0439c2ae52fe41f3bcc9317d293a62e1aa5d1",
+      "audit_date": "2026-06-18T12:25:49.843983+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "Finite Hodge/Bogomolny algebra, BPST radial 8pi^2 normalization integral, and twisted T4 k/N arithmetic after the stated conventions and standard inputs are fixed."
+        },
+        "dep_claim_type": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "289c1241f64f261783d68766178e19f121edf7502fa5adbfaf429a3b6d1981ff",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The fractional action and canonical numerical values close algebraically from the upstream fractional Q = k/N arithmetic and Bogomolny/BPST normalization. The full open-gate packet does not close as a theorem because the dilute-gas determinant, measure, coupling scale, convergence/condensate criterion, and any framework substrate or observable bridge remain explicitly open.",
+      "claim_scope": "External twisted-T4 SU(N) fractional charge/action algebra with canonical g^2=1 numerical values, plus only schematic dilute-gas and condensate-target language under explicit firewall boundaries.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T12:25:49.843983+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The classical action of the self-dual minimum in the Q = k/N sector is S_frac = (8 pi^2 / g^2) |k/N|.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained dilute-gas determinant/measure/coupling-scale/convergence bridge, or split the fractional action algebra into a separate decoration of the retained-bounded topological-instanton authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 41,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "Issue: the runner checks the algebraic action formula, numerical substitutions, and boundary/firewall prose, but it does not derive the dilute-gas determinant, phase-space measure, running-coupling scale, convergence regime, or condensate criterion. Why this blocks: the safe fractional-charge/action core is supported, but the dilute-gas and condensate portions remain external model-regime premises rather than retained theorem content. Repair target: supply a retained theorem or authority packet for the dilute-gas measure/regime data, or split the algebraic action core into a narrower decoration of the topological-instanton parent. Claim boundary until fixed: cite only the twisted-T4 fractional charge/action algebra and schematic open target, not hierarchy, condensate, substrate, or observable closure."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.929479+00:00",
+      "audit_date": "2026-06-21T17:04:42.435316+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18": "Bounded action-core algebra for fractional twisted-sector charge, deriving only the coefficient S_frac(k,N) = (8*pi^2/g^2)|k/N| and excluding dilute-gas, condensate, substrate, and hierarchy claims.",
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "Finite Hodge/Bogomolny algebra, BPST radial 8pi^2 normalization integral, and twisted T4 k/N arithmetic after the stated conventions and standard inputs are fixed."
+        },
+        "dep_claim_type": {
+          "fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18": "bounded_theorem",
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18": "retained_bounded",
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "09cbcb8012efd98e06c84f10bf250433fdf16b121ed7b1bb1bb9b1100e34656e",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The action-core arithmetic closes as a class-A substitution from retained-bounded inputs. The broader dilute-gas/condensate mechanism does not close because the determinant, measure, phase-space density, coupling-scale prescription, validity regime, convergence, and condensate criterion are explicitly unsupplied.",
+      "claim_scope": "External open gate recording the fractional-instanton action arithmetic on twisted T^4 as an algebraic decoration, with the dilute-gas/condensate and hierarchy bridge left open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T17:04:42.435316+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18:retained_bounded->unaudited",
+      "load_bearing_step": "The retained-bounded action normalization plus twisted Q = k/N arithmetic gives S_frac(k,N) = (8*pi^2/g^2)|k/N|, while the dilute-gas determinant/measure/coupling-scale/convergence bridge is explicitly not supplied.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained bridge deriving the dilute-gas determinant, measure, phase-space density, coupling-scale prescription, validity regime, convergence/condensate criterion, and any framework substrate/observable identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 44,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "The runner source performs symbolic arithmetic and source-boundary checks, and its PASS=44 output is consistent with the note's narrowed action-core decoration. However, the note itself keeps the dilute-gas and condensate bridge open and the cited retained-bounded authorities expressly support only the action-core arithmetic. This is therefore not a closed positive theorem for a condensate, hierarchy bridge, determinant prescription, or framework substrate/observable identification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py",
+  "title": "Fractional Instanton Dilute-Gas Hierarchy Mechanism \u2014 External Narrow Gate",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

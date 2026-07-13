@@ -1,0 +1,280 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_zero_import_authority_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "alpha_s_derived_note",
+    "yt_color_projection_correction_note"
+  ],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.982,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f73244bcee2322c61eb3efe7308476633e56543ffb892af7bddff3602ad82cf3",
+  "note_path": "docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-29T11:23:54.963957+00:00",
+      "archived_for_note_hash": "de5109a84e11b2772efa5000043cc09c8a56c8ca86b56276a30476d1f6b71a03",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T23:15:46.071101+00:00",
+      "archived_for_note_hash": "eb10d363fb551e8d11ca8b0a13033e3a486563d7bf6f417d4cd1dde287fbfe01",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-05T23:41:49.467531+00:00",
+      "audit_date": "2026-05-05T23:41:27.444650+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "alpha_s_derived_note": "audited_conditional",
+          "yt_color_projection_correction_note": "audited_renaming",
+          "yt_explicit_systematic_budget_note": "unaudited"
+        },
+        "deps": [
+          "alpha_s_derived_note",
+          "yt_color_projection_correction_note",
+          "yt_explicit_systematic_budget_note"
+        ],
+        "load_bearing_score": 11.831,
+        "runner_hash": "c43270c1e514c779c357bdb53d6f7f07b12c41ef161d7da117eb0694924c570b",
+        "transitive_descendants": 321
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-yt_zero_import_authority-082",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet supports the Ward-ratio runner as a computed algebraic/first-principles check, but the full y_t(v)/m_t lane depends on cited authorities that are unaudited or audited_renaming and on explicit standard matching/RGE/pole-conversion bridges not closed in the packet. The color-projection authority also says the physical scalar self-energy bridge and numerical predictions are out of scope.",
+      "claim_scope": "Audited the asserted zero-import y_t authority surface: exact Ward ratio at M_Pl plus color projection and standard-method transport to the quoted low-energy y_t and top-mass central values.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:41:27.444650+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_explicit_systematic_budget_note:unaudited->audited_conditional",
+      "load_bearing_step": "The live primary path takes the exact lattice-scale Ward theorem, multiplies by the derived color projection sqrt(8/9), then uses standard lattice-to-continuum matching, SM RGE running, and pole-mass conversion to obtain y_t(v) and m_t(pole).",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit or replace the alpha_s boundary, physical color-projection bridge, and standard matching/RGE/pole-conversion authority rows with retained-grade one-hop dependencies before re-auditing the full low-energy y_t/m_t authority claim.",
+      "open_dependency_paths": [
+        "docs/ALPHA_S_DERIVED_NOTE.md",
+        "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
+        "docs/YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 45,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The runner source and cached output substantively compute the Ward identity coefficients and report 45 class-C passes, so the exact lattice-scale ratio y_t(M_Pl)/g_s(M_Pl)=1/sqrt(6) is not the weak point of this packet. The audited claim is broader: it promotes a quantitative low-energy y_t/m_t authority surface that requires alpha_s/g_s boundary input, color projection as a physical scalar correction, lattice-to-continuum matching, SM RGE running, and pole conversion. Several cited authorities are not retained-grade, and the color-projection note explicitly scopes the physical bridge and numerical readouts out of its audited theorem. Therefore the full chain does not close from the restricted inputs."
+    },
+    {
+      "archived_at": "2026-07-10T16:01:04.853263+00:00",
+      "archived_for_note_hash": "83079a33d1e2afe1c28784de3ecfc652858215d65e2e1340f37be22951273cdc",
+      "audit_date": "2026-07-08T04:04:04.214585+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_derived_note": "Exact forward arithmetic for alpha_s(v) and the alpha_LM identity over declared boundary inputs B1-B4; the M_Z running readout is only a bounded quarantined corollary.",
+          "yt_color_projection_correction_note": "Packet-level no-go that the cited SU(3) Fierz/channel-count authority plus color-blind scaling do not derive the Yukawa-side selector kappa_Y = 0 or an unconditional sqrt(8/9) Y_T correction."
+        },
+        "dep_claim_type": {
+          "alpha_s_derived_note": "bounded_theorem",
+          "yt_color_projection_correction_note": "no_go"
+        },
+        "dep_effective_status": {
+          "alpha_s_derived_note": "retained_bounded",
+          "yt_color_projection_correction_note": "retained_no_go"
+        },
+        "deps": [
+          "alpha_s_derived_note",
+          "yt_color_projection_correction_note"
+        ],
+        "load_bearing_score": 17.836,
+        "runner_hash": "fa08cefaf4b1d968604e10cef1944041dca76a7eacbcf518dcbf4051ef6c6732",
+        "transitive_descendants": 913
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019f3fe1-e385-7de0-952f-5c4dcb8bf259",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the lattice Ward identity and y_t_bare/g_bare = 1/sqrt(6), but explicitly does not certify the physical top-Yukawa readout, transport, or precision package. The missing step is a retained theorem deriving kappa_Y = 0, since the direct color-projection no-go says sqrt(8/9) is only a conditional connected-trace specialization.",
+      "claim_scope": "Supported core is the lattice-scale Ward ratio y_t/g_s = 1/sqrt(6); the note's low-energy sqrt(8/9) physical package remains unclosed.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-08T04:04:04.214585+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note claims that the physical low-energy Yukawa is the Ward value times the derived color-projection factor sqrt(8/9), yielding zero-external-observable low-energy y_t and m_t central values.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the physical Yukawa-side kappa_Y=0 selector, or demote sqrt(8/9) to a conditional connected-trace specialization before re-auditing the low-energy package.",
+      "open_dependency_paths": [
+        "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 45,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "Issue: the note calls sqrt(8/9) a derived color-projection factor for the physical low-energy Yukawa, but its retained no-go dependency says K_Y(0)=8/9 is only the connected-trace specialization and kappa_Y=0 is not derived. Why this blocks: the low-energy y_t/m_t package depends on that physical Yukawa-side selector, so the claimed zero-import derived central values do not follow from the allowed packet. Repair target: add a retained scalar/taste-condensate matching theorem deriving kappa_Y=0 and a runner/authority for the low-energy transport package, or narrow the note to a conditional scenario. Claim boundary until fixed: y_t/g_s=1/sqrt(6) is runner-supported on the lattice surface; the sqrt(8/9) low-energy y_t/m_t package is conditional."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:35.004199+00:00",
+      "audit_date": "2026-07-10T16:05:09.323134+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_derived_note": "Exact forward arithmetic for alpha_s(v) and the alpha_LM identity over declared boundary inputs B1-B4; the M_Z running readout is only a bounded quarantined corollary.",
+          "yt_color_projection_correction_note": "Packet-level no-go that the cited SU(3) Fierz/channel-count authority plus color-blind scaling do not derive the Yukawa-side selector kappa_Y = 0 or an unconditional sqrt(8/9) Y_T correction."
+        },
+        "dep_claim_type": {
+          "alpha_s_derived_note": "bounded_theorem",
+          "yt_color_projection_correction_note": "no_go"
+        },
+        "dep_effective_status": {
+          "alpha_s_derived_note": "retained_bounded",
+          "yt_color_projection_correction_note": "retained_no_go"
+        },
+        "deps": [
+          "alpha_s_derived_note",
+          "yt_color_projection_correction_note"
+        ],
+        "load_bearing_score": 15.323,
+        "runner_hash": "fa08cefaf4b1d968604e10cef1944041dca76a7eacbcf518dcbf4051ef6c6732",
+        "transitive_descendants": 905
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T160258Z-55b61261-00001-yt_zero_import_authority_not",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the canonical-bare matrix-element ratio through explicit lattice, representation, Fierz, Clifford, and normalization computations. It does not close the shared-dressing/physical-readout lift, derive kappa_Y = 0, or compute the quoted low-energy values and precision budget from the supplied authorities.",
+      "claim_scope": "The exact bounded canonical-bare ratio and the conditional Planck-surface and low-energy y_t/m_t package, including its selector and precision qualifications.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:05:09.323134+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:alpha_s_derived_note:retained_bounded->unaudited",
+      "load_bearing_step": "The canonical-bare matrix-element ratio is exact on the bounded Ward surface: y_t_bare / g_bare = 1 / sqrt(6).",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow this note's audited claim surface to the canonical-bare ratio and add a dated downstream-hygiene line to this note's own boundary explicitly excluding the Planck/IR values and precision budgets; audit those outputs separately after the bridge and selector theorems exist.",
+      "open_dependency_paths": [
+        "docs/ALPHA_S_DERIVED_NOTE.md",
+        "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 45,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "The helper's hard-coded plaquette quantities occur only in context blocks and do not contaminate the runner's load-bearing bare-ratio computation, which is consistent with class C. The Planck-surface bridge is not supplied or certified, while the retained color-projection no-go explicitly establishes that the required kappa_Y = 0 selector remains underived. Consequently, the bare core is supported but the numerical Planck-to-IR package and its precision claims remain conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
+  "title": "y_t Lane: Zero-Import Authority",
+  "transitive_descendants": 1010,
+  "verdict_rationale": null
+}

@@ -1,0 +1,149 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+    "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.143,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9dd378b1cad052680bbb4ee8858749f25a6309b166df4451197aafaa1475b651",
+  "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.197755+00:00",
+      "audit_date": "2026-07-05T19:12:18.688124+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "Bare finite-set theorem: the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), and charge conjugation pairs them into combined S_3 x Z_2 orbits of sizes (2,6).",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": "Audited only the abstract finite-dimensional algebra statement: on V_3 with the explicit diagonal commuting unitary triple having joint eigenvalue triples (-1,+1,+1), (+1,-1,+1), (+1,+1,-1), every operator commuting with all three T_mu is diagonal in the given joint eigenbasis."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "retained",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+          "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 13.97,
+        "runner_hash": "e3346eb2bfc35ce3e27ec219d5b5a865dbfbb225ae2334832e767914e8d69abe",
+        "transitive_descendants": 1002
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260705-amin-joint-c3-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The minimal axiom memo supplies proper cubic rotations, covariance, and the no-unfixed-choice qualification; the retained upstream notes supply the hw=1 triplet and the explicit tau table. The finite cyclic action is transitive and intertwines the supplied generators, so the selector-invariance conclusion follows within the stated bounded presentation scope.",
+      "claim_scope": "Presentation-level A_min joint-C3 automorphism bridge: on the finite hw=1 corner triplet with the retained joint translation eigenvalue table, non-admitted A_min-definable selectors are invariant under joint cyclic axis/corner relabeling and cannot choose a labeled bijection.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-05T19:12:18.688124+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-05T19:08:14.726768+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260705-amin-joint-c3-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded presentation-level bridge that the joint C3[111] automorphism of the supplied lattice action and retained hw=1 corner/tau carrier makes every non-admitted A_min-definable corner selector invariant, so no derived selector labels the transitive triplet.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-05T19:12:18.688007+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260705-amin-joint-c3-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Presentation-level A_min joint-C3 automorphism bridge: on the finite hw=1 corner triplet with the retained joint translation eigenvalue table, non-admitted A_min-definable selectors are invariant under joint cyclic axis/corner relabeling and cannot choose a labeled bijection.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "By (T1) the supplied structure is sigma-symmetric and by (T2) every derived readout is sigma-covariant, so any A_min-derivable non-admitted selector value on the corner triplet is constant on the transitive sigma-orbit and cannot fix a bijection to a labeled 3-set.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that downstream consumers do not cite this bounded bridge as closing physical species labeling or any non-A_min admitted C3-breaking route.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The load-bearing step is an exact automorphism/finite-orbit argument over accepted axiom text and retained finite carrier inputs, not a definition, numerical fit, or physical-observable identification. The runner recomputes the proper rotation, corner action, intertwining identities, word-sweep covariance, selector consequence, and a C3-breaking negative control, with PASS=28 FAIL=0 under the stated runner SHA. Residual risk is only scope risk: this clean verdict covers the narrow presentation-level selector-invariance bridge, not downstream physical species labeling or any admitted C3-breaking premise."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_2026_07_05.py",
+  "title": "Staggered-Dirac Substep 4 \u2014 A_min Joint-C\u2083 Automorphism / Selector-Invariance Bridge (Narrow Theorem)",
+  "transitive_descendants": 1130,
+  "verdict_rationale": null
+}

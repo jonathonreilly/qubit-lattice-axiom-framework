@@ -1,0 +1,1960 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.61,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4c2d67cf11adcbc0f9ccc4dcde75566152fe82a2580fa48e2600570f94c8a2a8",
+  "note_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:51:07.513748+00:00",
+      "archived_for_note_hash": "76c044d00e05b94cf2ced436038f0a615298b2f91ef7e2165ce2d848c60e3423",
+      "audit_date": "2026-06-08T18:31:25.454945+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "key_terminology",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 10.725,
+        "runner_hash": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+        "transitive_descendants": 845
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-182921-648ca50319-real_diagonal_source_det_pos",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The L1 and L2 determinant claims close by finite-dimensional real linear algebra: antisymmetric spectral pairing, positive diagonal congruence, Neumann invertibility, and sign constancy. L3 closes only in the scoped sense stated in the note: Record supplies finite additivity, while determinant-only dependence, continuity/regularity, and c=1 are explicit conventions rather than derived axioms.",
+      "claim_scope": "Finite-dimensional real antisymmetric D with positive real diagonal source S has det(S+D)>0; the stated small real-diagonal patch stays positive, and a determinant-only readout on R_{>0} is c log det under the explicit continuity/regularity convention with c=1 conventional.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T18:31:25.454945+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-08T18:28:47.368636+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260608-182657-bdd940932f-real_diagonal_source_det_pos",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional real antisymmetric determinant positivity for positive diagonal sources, the local real diagonal sign patch under `||D^{-1}J||<1`, and logarithmic readout on `R_{>0}` under the stated continuity/regularity and `c=1` convention.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-08T18:31:25.454945+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260608-182921-648ca50319-real_diagonal_source_det_pos",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional real antisymmetric D with positive real diagonal source S has det(S+D)>0; the stated small real-diagonal patch stays positive, and a determinant-only readout on R_{>0} is c log det under the explicit continuity/regularity convention with c=1 conventional.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The determinant positivity follows from S + D = S^(1/2)(I + B)S^(1/2) with B real antisymmetric, so det(I+B)=prod_k(1+lambda_k^2)>0, and determinant multiplicativity plus Record finite additivity and explicit continuity give W=c log det.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that L3 remains scoped to a determinant-only readout under the explicit continuity/regularity and c=1 conventions; L1/L2 have no apparent open dependency.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The displayed matrix factorization, spectral product sign, Neumann patch, block determinant identity, and continuous multiplicative-to-additive Cauchy solution all check independently of the runner. The runner performs finite random and structural sanity checks with no hard-coded fitted values or contested external comparators, and its source matches the note's scoped claims. The clean verdict is limited to the bounded theorem as written and does not derive a physical readout context, the continuity convention, or the c=1 normalization from Record."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.513905+00:00",
+      "audit_date": "2026-06-15T19:52:32.895720+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.319,
+        "runner_hash": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+        "transitive_descendants": 902
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-195020-e857d9835d-real_diagonal_source_det_pos",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant-positivity and Neumann sign patch are exact finite-dimensional linear algebra, and the log statement is the standard continuous homomorphism from (R_{>0}, multiplication) to (R, addition). The Record axiom is used only for finite additivity; continuity and c=1 are explicit bounded conventions rather than derived axiom content.",
+      "claim_scope": "Finite-dimensional real antisymmetric D with real positive diagonal S has det(S+D)>0; on the stated positive determinant branch, finite block additivity plus explicit continuity/normalization convention gives the logarithmic readout family c log det with c=1 as convention.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T19:52:32.895720+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T19:49:37.055032+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-194651-4ef28524d9-real_diagonal_source_det_pos",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite real antisymmetric D with positive real diagonal S has det(S+D) in R_{>0}; a small real diagonal Neumann patch around invertible D keeps positive determinant sign; and, under the explicit continuous determinant-readout convention on R_{>0}, the additive readout is c log det with c=1 as convention.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-15T19:52:32.895720+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-195020-e857d9835d-real_diagonal_source_det_pos",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional real antisymmetric D with real positive diagonal S has det(S+D)>0; on the stated positive determinant branch, finite block additivity plus explicit continuity/normalization convention gives the logarithmic readout family c log det with c=1 as convention.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The proof factors S + D as S^{1/2}(I+B)S^{1/2} with B real antisymmetric, giving det(S+D)=det(S)prod_k(1+lambda_k^2)>0, and then uses block determinant multiplicativity plus finite additivity/continuity to obtain W_c=c log det on R_{>0}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers do not cite this as deriving the determinant-only readout bridge or the c=1 normalization beyond the explicit bounded convention stated here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing determinant claim closes independently of the runner: conjugating by S^{-1/2} reduces the problem to I plus a real skew matrix, whose eigenvalues are zero or imaginary conjugate pairs, so each determinant factor is positive. The derivative patch also closes by Neumann invertibility and sign constancy of a real continuous determinant. The log-readout component is clean only within its stated bounded scope: Record supplies additivity, while determinant-only dependence, continuity on R_{>0}, and c=1 are explicit conventions, not hidden derived physics."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.890300+00:00",
+      "audit_date": "2026-06-30T18:11:35.038336+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.856,
+        "runner_hash": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+        "transitive_descendants": 926
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T181135Z-8d639218-real_diagonal_source_det",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant-positivity and Neumann sign-constancy steps close by finite-dimensional linear algebra. The log-readout portion closes only within the stated bounded scope because continuity/regularity and c=1 are explicit conventions, while Record supplies only finite additivity over disjoint records.",
+      "claim_scope": "For finite real antisymmetric D and positive real diagonal S, det(S+D) is strictly positive real; on the stated Neumann patch det(D+J)>0; with separately assumed continuity/regularity on R_{>0}, additive block readout is c log det with c=1 by convention.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T18:11:35.038336+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T18:09:51.063855+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T180951Z-c2ed335c-real_diagonal_source_det",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional real linear-algebra lemma: positive-diagonal real sources added to real antisymmetric matrices have strictly positive determinant, the stated Neumann patch preserves positivity, and a continuous determinant-valued additive direct-sum readout on `R_{>0}` is `c log det` with `c=1` only conventional.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T18:11:35.038336+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T181135Z-8d639218-real_diagonal_source_det",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For finite real antisymmetric D and positive real diagonal S, det(S+D) is strictly positive real; on the stated Neumann patch det(D+J)>0; with separately assumed continuity/regularity on R_{>0}, additive block readout is c log det with c=1 by convention.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "S + D = S^{1/2}(I + B)S^{1/2} with B real antisymmetric, so det(I+B)=prod_k(1+lambda_k^2)>0 and det S>0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations preserve the bounded scope of the L3 regularity and c=1 convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing determinant positivity proof is a direct algebraic closure over the stated finite matrices and does not import the observable-principle parent or any empirical comparator. The cited minimal-axiom authority is an accepted axiom premise and is used only for finite scalar additivity in L3. The runner source performs randomized and structural finite-dimensional checks plus the block/log identity check; it does not hard-code a contested physical value. The conclusion is clean for the bounded statement as written, with continuity and c=1 treated as explicit conventions rather than derived axiom content."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.500288+00:00",
+      "audit_date": "2026-07-01T21:57:45.918404+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.856,
+        "runner_hash": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+        "transitive_descendants": 926
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judge-panel-gpt-5.5-p1-20260701T215315Z-b5cb2ce0-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The determinant-positivity core closes by finite-dimensional linear algebra, but the full L3 log-readout claim does not follow from Record plus continuity alone. Record supplies finite additivity over disjoint records; it does not identify the scalar readout as a determinant-only function of direct-sum source blocks. Continuity solves the Cauchy equation only after that determinant-branch readout bridge is assumed, so the correct tuple is bounded theorem, class A, audited_conditional.",
+      "claim_scope": "Finite-dimensional determinant positivity for positive diagonal real sources added to real antisymmetric matrices, with log readout only after assuming a determinant-only continuous block-additive readout on R_{>0}.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T21:57:45.918404+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T21:49:09.945226+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T214909Z-c1360034-real_diagonal_source_det",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite real antisymmetric D with positive diagonal S has det(S+D)>0; small real diagonal perturbations of invertible D remain positive-det; under explicit finite-block continuity/regularity on R_{>0}, additive disjoint-record readout selects c log det, with c=1 by convention.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-01T21:53:03.709375+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T215303Z-03f4ac62-real_diagonal_source_det",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional determinant positivity for positive diagonal real sources added to real antisymmetric matrices, with log readout only after assuming a determinant-only continuous block-additive readout on R_{>0}.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-01T21:57:45.918404+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-p1-20260701T215315Z-b5cb2ce0-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "It treated the explicit continuity and c=1 conventions as sufficient to close L3, but those conventions do not supply the missing determinant-only source-block readout bridge from the Record axiom.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The determinant-positivity core closes by finite-dimensional linear algebra, but the full L3 log-readout claim does not follow from Record plus continuity alone. Record supplies finite additivity over disjoint records; it does not identify the scalar readout as a determinant-only function of direct-sum source blocks. Continuity solves the Cauchy equation only after that determinant-branch readout bridge is assumed, so the correct tuple is bounded theorem, class A, audited_conditional.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained theorem that the scalar Record readout is a determinant-only continuous additive readout over direct-sum source blocks, or split the clean L1/L2 determinant-positivity core from the conditional L3 readout step.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The determinant-positivity core closes by finite-dimensional linear algebra, but the full L3 log-readout claim does not follow from Record plus continuity alone. Record supplies finite additivity over disjoint records; it does not identify the scalar readout as a determinant-only function of direct-sum source blocks. Continuity solves the Cauchy equation only after that determinant-branch readout bridge is assumed, so the correct tuple is bounded theorem, class A, audited_conditional."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.500297+00:00",
+      "audit_date": "2026-07-02T09:47:46.682743+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.856,
+        "runner_hash": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+        "transitive_descendants": 926
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T094746Z-2cea1970-real_diagonal_source_det",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "L1 and L2 close by standard finite-dimensional real antisymmetric spectral structure and Neumann invertibility. L3 closes only within its stated bounded scope: determinant multiplicativity, Record finite additivity, and explicit continuity/regularity yield the continuous multiplicative-to-additive Cauchy solution c log det, with c=1 not derived.",
+      "claim_scope": "Finite linear-algebra lemma that det(S+D)>0 for real antisymmetric D and positive diagonal S, plus the continuous determinant-only block readout W=c log det on R_{>0} with c=1 only as a convention.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T09:47:46.682743+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T09:44:11.722616+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T094411Z-bb6bff4f-real_diagonal_source_det",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional real antisymmetric D with positive diagonal S gives det(S+D)>0; the small real-diagonal invertible patch has positive determinant; and a continuous determinant-branch readout additive over disjoint positive determinant blocks is c log det, with c=1 only a convention.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T09:47:46.682743+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T094746Z-2cea1970-real_diagonal_source_det",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite linear-algebra lemma that det(S+D)>0 for real antisymmetric D and positive diagonal S, plus the continuous determinant-only block readout W=c log det on R_{>0} with c=1 only as a convention.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "S + D = S^{1/2}(I + B)S^{1/2} with B real antisymmetric gives det(I+B)=prod_k(1+lambda_k^2)>0, and block determinant multiplicativity plus finite Record additivity and explicit continuity on R_{>0} gives W=c log det.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the bounded L3 scope: continuity/regularity and c=1 are conventions, not Record-derived outputs.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing determinant-positivity steps are exact algebra, not imported physics or a comparator match. The runner performs finite numerical/spectral sanity checks and does not hard-code an external value; the general closure rests on the note's displayed algebra, which is correct. Minimal axioms are an accepted premise for finite scalar Record additivity, and the log-readout conclusion is clean only under the note's explicit continuity/regularity and normalization scope. No observable-principle, source-action, or physical-observable bridge is audited here."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.948936+00:00",
+      "audit_date": "2026-07-02T21:55:58.028275+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bec23a13ccffcf107d26ab30b311100e073bcbf38917c2ab6037786ab9b9f6f6"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.237,
+        "runner_hash": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+        "transitive_descendants": 1206
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T215558Z-0e663f8d-real_diagonal_source_det",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "L1 and L2 close by standard finite-dimensional real linear algebra. L3 closes only in the bounded scope where the readout is already a continuous determinant-branch homomorphism on R_{>0}; Record supplies finite additivity, not any broader source/action bridge.",
+      "claim_scope": "Finite-dimensional real antisymmetric D with positive real diagonal S gives det(S+D)>0; the Neumann local diagonal patch preserves positive determinant sign; and a determinant-only continuous block-additive readout on R_{>0} is c log det, with c=1 conventional.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T21:55:58.028275+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T21:52:43.621691+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T215243Z-5ec46d68-real_diagonal_source_det",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional real antisymmetric D with positive real diagonal S gives det(S+D) in R_{>0}; on the stated Neumann neighborhood det(D+J)>0; with explicit continuity on R_{>0}, finite disjoint-record additivity selects c log det up to the c=1 convention.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T21:55:58.028275+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T215558Z-0e663f8d-real_diagonal_source_det",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional real antisymmetric D with positive real diagonal S gives det(S+D)>0; the Neumann local diagonal patch preserves positive determinant sign; and a determinant-only continuous block-additive readout on R_{>0} is c log det, with c=1 conventional.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bec23a13->70324c45",
+      "load_bearing_step": "Factor S + D as S^{1/2}(I+B)S^{1/2} with B real antisymmetric, so det(I+B)=prod_k(1+lambda_k^2)>0, and combine block determinant multiplicativity with Record additivity plus continuity on R_{>0} to get W=c log det.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The determinant positivity and sign-constant patch are correct algebraic consequences of real antisymmetry, positive diagonal dressing, and the Neumann bound. The log readout part is clean only as the stated bounded functional-equation result under explicit continuity and determinant-branch scope; it does not derive a physical source/action or observable bridge. The cited Minimal Axioms authority is a registered accepted premise for Record finite additivity, and no external comparator or tuned numerical input is used."
+    },
+    {
+      "archived_at": "2026-07-04T10:59:07.864060+00:00",
+      "audit_date": "2026-07-03T18:54:35.781829+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "7b581f9f475c7bf16a02e664ef48a271d20d0404d8b2b1f7e58bc41ab3d50a24"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.24,
+        "runner_hash": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+        "transitive_descendants": 1208
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-context-20260703-real-diagonal-source-det",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The L1 and L2 determinant claims close by real antisymmetric spectral structure and the Neumann invertibility bound. L3 closes only as a bounded convention-bearing readout lemma: Record supplies finite disjoint scalar additivity, while continuity/regularity and c=1 are explicit conventions, not derived framework axioms or a physical source/readout bridge.",
+      "claim_scope": "Finite-dimensional real linear-algebra lemma proving L1 det(S+D)>0, L2 positive determinant sign on the Neumann-bounded diagonal patch, and L3 log-det additivity on R_{>0} under explicit continuity/regularity and c=1 conventions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-03T18:54:35.781829+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-03T18:51:37.068100+00:00",
+          "auditor": "codex-audit-loop-20260703-gpt-5.5-xhigh",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-dimensional lemma: real antisymmetric D plus real positive diagonal S has det(S+D) in R_{>0}; the small real-diagonal derivative patch preserves positive determinant sign; and, for a determinant readout on R_{>0} satisfying the explicit finite-block continuity/regularity convention and c=1 normalization, disjoint-block multiplicativity is represented by log det additivity.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-03T18:54:35.781664+00:00",
+          "auditor": "codex-audit-loop-fresh-context-20260703-real-diagonal-source-det",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional real linear-algebra lemma proving L1 det(S+D)>0, L2 positive determinant sign on the Neumann-bounded diagonal patch, and L3 log-det additivity on R_{>0} under explicit continuity/regularity and c=1 conventions.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:7b581f9f->0f59e220",
+      "load_bearing_step": "For real antisymmetric D and positive diagonal S, det(S+D)>0, and under explicit finite-block continuity on R_{>0} plus Record additivity the disjoint-block determinant readout is W_c=c log det with c=1 as convention.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only that downstream consumers preserve the bounded convention boundary and do not cite this as a physical source/readout theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The source note proves the determinant positivity and sign-constant patch with standard finite-dimensional linear algebra, and the runner completed with PASS=4 FAIL=0 on the corresponding algebraic checks. The clean verdict is bounded to the convention-bearing mathematical statement: continuity/regularity on R_{>0} and c=1 are explicit bounded conventions, not promoted as axioms. The note does not claim a physical source/readout theorem, species content, numerical comparator, or parent-cycle derivation, so no unsupported physical bridge is needed inside the audited scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.259770+00:00",
+      "audit_date": "2026-07-08T03:44:31.135655+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.504,
+        "runner_hash": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+        "transitive_descendants": 1026
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-audit-lane-2026-07-08-row3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant positivity and derivative-patch sign constancy follow from finite-dimensional real linear algebra, while the log readout is explicitly bounded by the stated continuity and normalization conventions rather than claimed from Record alone.",
+      "claim_scope": "Real antisymmetric D plus positive diagonal S gives det(S+D)>0, a small real-diagonal derivative patch preserves positive determinant sign, and Record additivity plus explicit continuity and c=1 conventions selects log det on R_{>0}.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-08T03:44:31.135655+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-08T00:27:32.431954+00:00",
+          "auditor": "codex-cli-019f3f1d-5f73-79b3-b5e9-5728ee4deff5",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional real antisymmetric D and positive real diagonal S give det(S+D) in R_{>0}; on that positive determinant branch, Record finite additivity plus explicitly bounded continuity/regularity and c=1 conventions selects log det readout.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-08T03:44:31.135515+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-audit-lane-2026-07-08-row3",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Real antisymmetric D plus positive diagonal S gives det(S+D)>0, a small real-diagonal derivative patch preserves positive determinant sign, and Record additivity plus explicit continuity and c=1 conventions selects log det on R_{>0}.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "S + D = S^{1/2}(I+B)S^{1/2} with B real antisymmetric, so det(S+D)=det(S) det(I+B)>0; multiplicativity over disjoint blocks plus explicit continuity gives W_c=c log det, with c=1 chosen by convention.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Already confirmed before this session; this fresh-context pass re-checks the same bounded clean scope, with the regularity and c=1 log-readout choices remaining explicit conventions rather than axiom-derived content.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing determinant argument is correct: congruence by S^{1/2} reduces the positive diagonal source case to I+B with B real antisymmetric, whose eigenvalues occur as 0 or +/- i lambda and therefore give positive factors 1+lambda^2. For the derivative patch, ||D^{-1}J||<1 keeps D+tJ invertible for t in [0,1], so the real determinant cannot cross zero and preserves the positive sign of invertible real antisymmetric D. The log-readout step does not overclaim Record: continuity on R_{>0} and c=1 are explicit bounded conventions, so the result is clean only at bounded-theorem scope."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.826402+00:00",
+      "audit_date": "2026-07-11T17:19:42.809384+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.542,
+        "runner_hash": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+        "transitive_descendants": 1053
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00015-real_diagonal_source_det_pos",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The determinant-positivity and Neumann-patch arguments close algebraically. The full L3 chain does not: Record additivity over disjoint records does not by itself identify readout as a function only of the determinant of direct-sum source blocks.",
+      "claim_scope": "L1 and L2 establish finite-dimensional determinant positivity; L3 establishes c log det only conditional on an additional determinant-only readout bridge, with continuity and c=1 explicitly conventional.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T17:19:42.809384+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "Record finite additivity is combined with determinant multiplicativity and continuity to assert that the readout satisfies the multiplicative-to-additive Cauchy equation and hence equals c log det.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Checked the displayed S^{1/2}(I+B)S^{1/2} factorization and conjugate-pair spectral product.",
+            "disposition": "CLOSED",
+            "evidence_locator": "det(I + B) = \u220f_k (1 + \u03bb_k^2) \u2265 1 > 0",
+            "evidence_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Positive-diagonal congruence reduces S+D to I plus a real antisymmetric matrix.",
+            "outcome": "This closes L1 exactly.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "l1_congruence"
+          },
+          {
+            "attempt": "Applied the stated Neumann bound along t in [0,1] and checked the initial determinant sign.",
+            "disposition": "CLOSED",
+            "evidence_locator": "the path `D + tJ` (`t \u2208 [0,1]`) is invertible (Neumann)",
+            "evidence_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A norm-bounded local source patch preserves invertibility and determinant sign.",
+            "outcome": "This closes L2 on its stated finite neighborhood.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "l2_neumann_patch"
+          },
+          {
+            "attempt": "Inspected the runner source implementing randomized finite-dimensional checks.",
+            "disposition": "CLOSED",
+            "evidence_locator": "for _ in range(400):",
+            "evidence_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Random finite matrices test the positivity and sign-preservation formulas.",
+            "outcome": "The tests support the algebra but do not replace the general proof or establish the missing readout bridge.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "finite_runner_sampling"
+          },
+          {
+            "attempt": "Searched the source note, runner, accepted Record authority, and supplied registries for this identification.",
+            "disposition": "OPEN",
+            "evidence_locator": "P2/modulus/phase-blindness and any log-det readout theorem",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Identify scalar readout with a single-valued function W(det A) before applying block additivity.",
+            "outcome": "The identification is not supplied; continuity alone cannot create it.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "determinant_only_readout"
+          },
+          {
+            "attempt": "Checked whether the source presents c=1 as derived or conventional.",
+            "disposition": "CLOSED",
+            "evidence_locator": "the choice `c=1` are conventions for this bounded lemma",
+            "evidence_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Choose the overall coefficient c=1 after solving the functional equation.",
+            "outcome": "It is honestly labeled a convention and is not a derivational defect by itself.",
+            "route_class": "normalization_or_units",
+            "route_id": "c1_normalization"
+          },
+          {
+            "attempt": "Compared that reading with the registered boundary of the accepted minimal-axiom authority.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Rows that require P2/modulus, log-det, source/action, measurement",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Treat finite Record additivity itself as supplying determinant-only dependence.",
+            "outcome": "The authority explicitly leaves log-det and readout bridges downstream, so this route is ruled out on the supplied premise text.",
+            "prior_witness_id": "record_boundary_witness",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "record_alone_supplies_bridge"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "missing determinant-only scalar-readout bridge"
+          ],
+          "evidence_locator": "The Record axiom supplies only finite scalar additivity over disjoint records.",
+          "evidence_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "missing determinant-only scalar-readout bridge"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Further physical structure requires derivation, bridge, explicit admission",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "the readout family satisfies the multiplicative-to-additive Cauchy equation",
+              "evidence_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+              "phrase": "readout family satisfies the multiplicative-to-additive Cauchy equation",
+              "promoted_wall": "missing determinant-only scalar-readout bridge"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "continuity on the positive real determinant branch",
+              "evidence_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+              "phrase": "continuity on the positive real determinant branch"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "the choice `c=1` are conventions for this bounded lemma",
+              "evidence_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+              "phrase": "choice c=1"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source statement, runner wording, accepted Record boundary, explicit regularity convention, and c=1 convention were checked for hidden readout, normalization, source/action, or observable identifications.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "must cite separate retained authorities or remain bounded/pending",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "none_found_reason": "",
+          "scan_scope": "The prior accepted-premise boundary used to rule out derivation of the determinant-readout bridge from Record alone was matched to the current L3 residual.",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "The determinant-only scalar-readout bridge is missing before the Cauchy equation can be applied.",
+              "evidence_locator": "P2/modulus/phase-blindness and any log-det readout theorem",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "match": true,
+              "route_id": "record_alone_supplies_bridge",
+              "witness_id": "record_boundary_witness",
+              "witness_residual": "Record finite additivity does not supply a log-det or source/readout bridge."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "## What this is and is not",
+          "evidence_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+          "none_found_reason": "The row is a positive bounded theorem and does not assert a universal no-go; its 'is not' language limits downstream scope rather than ruling out mechanisms.",
+          "scan_scope": "The source's exclusion and scope language was checked for universal no-go or resolution claims.",
+          "statements": [],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies only kinetic-form isotropy and explicitly supplies no readout bridge.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "It supplies finite Record additivity but explicitly leaves log-det and source/readout bridges downstream.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies only a pointwise realized-state reference and no readout functional.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "It is a dimensionful units reference and supplies no dimensionless readout bridge.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "Its boundary is confined to AC occupancy grain and R-eta readout licensing, not the generic determinant-only readout asserted here.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The g-bare rescaling convention is unrelated and is not an accepted premise.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "The hypercharge normalization convention is unrelated and is not an accepted premise.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All supplied approved primitives, owner-governed residuals, Tier-A registry entries, conventions, and scope-reframe candidates were checked against the missing determinant-only readout bridge.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Because determinant is multiplicative on direct sums and Record readout is additive on disjoint records, one might regard W(det A) as implicit and immediately obtain the Cauchy equation.",
+          "evidence_locator": "P2/modulus/phase-blindness and any log-det readout theorem",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "resolution": "That argument presupposes the disputed point: that record content and scalar readout factor through det A. The accepted authority explicitly leaves log-det and readout bridges outside Record, while the runner merely checks log(xy)=log x+log y for one candidate.",
+          "resolved": true,
+          "route_id": "determinant_only_readout"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:0",
+              "evidence_locator": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Prior clean audit bounded L3 to a determinant-only readout convention.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:1",
+              "evidence_locator": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Prior clean audit treated determinant-only dependence as bounded scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:2",
+              "evidence_locator": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Prior clean audit accepted the explicit-convention reading of L3.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:3",
+              "evidence_locator": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Prior conditional audit identified the same missing determinant-only readout bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:4",
+              "evidence_locator": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Prior clean audit read determinant-only dependence into the scoped statement.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:5",
+              "evidence_locator": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Prior clean audit expressly scoped L3 to a determinant-only readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:6",
+              "evidence_locator": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:6",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Prior clean audit treated the statement as convention-bearing mathematics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:7",
+              "evidence_locator": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:7",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Prior clean audit focused on explicit continuity and normalization conventions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "AC-specific occupancy and R-eta retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Theta retirement names a separate determinant-readout bridge in a restricted mass-side context.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Owner-governed AC residual retirement has a narrow boundary.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated campaign no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated architecture and Newton boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Finite positivity does not close a physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated atomic and RP-axis boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated inherited no-go portfolio.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated coupling boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated plaquette comparator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated lensing observable bridges.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated carrier-registry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated charged-lepton selectors.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated dimension boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated metric source boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated replay boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated Wilson boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated flavor pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated gauge-character boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated gauge-isotropy no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated gravity bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated weak-field boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated scale and carrier no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated U(1) normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated multi-lane boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated atomic underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated quark selectors.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated asymptotic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated detector no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated finite-path boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Physical static-source readout remains un-derived.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Per-record readout selector remains open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Empty unrelated ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated planning boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated neutrino no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated cosmology boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated finite distance-law scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated recomputation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Register-not-read selection remains un-derived.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated memory bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated finite-grid boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated carrier selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated Planck source-domain boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated bootstrap constraints.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Record does not supply downstream selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "A determinant-readout bridge is separate from Record.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated locality and axis boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated statistics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated kinetic-law no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated SU(3) boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated documentation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated family-card boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Record text is not a determinant-channel readout bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Record does not supply action or readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated theta carrier gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated theta insertion gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated theta closure gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Determinant algebra does not select a physical readout horn.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Record content does not select determinant power.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Record formation does not select a readout assignment.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated artifact visibility.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "A q-decorated countermodel limits what Record additivity forces.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated table-matching boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated finite-lattice scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "mechanism": "Unrelated physical-readout renaming boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "missing determinant-only scalar-readout bridge"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
+              "accepted_premise_type": null,
+              "content_sha256": "865728d56d9ce81962887947c553952f5e6e84918ee51fc1056e656733ca5731",
+              "cross_cycle_candidate_ids": [
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:0",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:1",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:2",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:3",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:4",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:5",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:6",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:7",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:0",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:1",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:2",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:3",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:4",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:5",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:6",
+                "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08:previous_audit:7",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
+              "accepted_premise_type": null,
+              "content_sha256": "c5514d36c7b8b5346e4a4a05c71458e3e4e2e807b6e9741230174f9b3e6d56d2",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Further physical structure requires derivation, bridge, explicit admission",
+                "P2/modulus/phase-blindness and any log-det readout theorem",
+                "Rows that require P2/modulus, log-det, source/action, measurement",
+                "must cite separate retained authorities or remain bounded/pending"
+              ]
+            },
+            "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "4c2d67cf11adcbc0f9ccc4dcde75566152fe82a2580fa48e2600570f94c8a2a8",
+              "effective_status": null,
+              "path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## What this is and is not",
+                "The Record axiom supplies only finite scalar additivity over disjoint records.",
+                "continuity on the positive real determinant branch",
+                "det(I + B) = \u220f_k (1 + \u03bb_k^2) \u2265 1 > 0",
+                "the choice `c=1` are conventions for this bounded lemma",
+                "the path `D + tJ` (`t \u2208 [0,1]`) is invertible (Neumann)",
+                "the readout family satisfies the multiplicative-to-additive Cauchy equation"
+              ]
+            },
+            "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+              "effective_status": null,
+              "path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "for _ in range(400):"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: the determinant-only readout route remains OPEN, so the full L3 chain is not closed.",
+          "N6: no supplied premise, registry entry, convention, or reframe closes the missing determinant-only readout bridge."
+        ],
+        "narrowed_claim_scope": "L1 and L2 establish finite-dimensional determinant positivity; L3 establishes c log det only conditional on an additional determinant-only readout bridge, with continuity and c=1 explicitly conventional.",
+        "next_route": {
+          "reason_untested": "The packet contains neither an explicit assumption nor a retained theorem showing that scalar Record readout factors only through the positive determinant.",
+          "route_id": "determinant_only_readout"
+        },
+        "prior_claim_scope": "Finite-dimensional real antisymmetric D with positive real diagonal source S has det(S+D)>0; the stated small real-diagonal patch stays positive, and a determinant-only readout on R_{>0} is c log det under the explicit continuity/regularity convention with c=1 conventional.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add an explicit determinant-only readout assumption to L3, or cite and include a retained authority proving that bridge; then state that continuity yields c log det only after that bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The L1 factorization and antisymmetric-spectrum argument are correct, and L2 follows from Neumann invertibility plus continuity of the real determinant. The runner genuinely checks finite instances and the relevant algebraic identities, without imported comparators, but its L3 check only verifies that log is one additive candidate. Neither the note nor the accepted Record premise supplies the missing determinant-only readout identification needed to infer the Cauchy equation for the physical scalar readout."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
+  "title": "Real-Diagonal Source Det-Positivity + Log Readout (Self-Contained Lemma)",
+  "transitive_descendants": 1104,
+  "verdict_rationale": null
+}

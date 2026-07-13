@@ -1,0 +1,260 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_carrier_not_derived_two_inputs_2026-05-31",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": "bounded_support",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "default_positive_theorem",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "physical_lattice_necessity_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e837e93caf9cb1242ece503a4bac1992140bdca4c06b5f8fc70dcfc2c2768d8a",
+  "note_path": "docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-03T10:30:18.159263+00:00",
+      "archived_for_note_hash": "6838d14c925059c9793548e9d5633f346d1e5f1205031c3fbab00766588a7e50",
+      "audit_date": "2026-06-03T02:30:17.416852+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "8c06c934b4e52f5935c74333971a6f4672db6997d30bffa5a771310d58806507",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-022759-c93470c7-flavor_carrier_not_deriv",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic mismatch between the bare C3 character and 2/9 checks out, and the runner also checks elementary r-freedom examples. The full two-input conclusion does not close from this restricted packet because the species-to-flavor gate, retained theorem scope, and section-family/no-canonical-zero-section claims are imported from authorities not supplied here and are partly explicit open work.",
+      "claim_scope": "Audited the bounded refutation of the momentum-corner finite-character derivation of 2/9 and the claimed two-input bookkeeping for carrier selection plus basepoint selection.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T02:30:17.416852+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The operative step is that 2/9 is the index/eta denominator sum rather than a bare C3 character, while the species-to-flavor carrier and the r=1/2 basepoint are left as cited open or no-go inputs, so two independent inputs remain.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retire or provide retained-grade authority for the open species-to-flavor carrier gate and the section/basepoint selection, or rescope this row to only the algebraic finite-character refutation.",
+      "open_dependency_paths": [
+        "docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS.md",
+        "docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The displayed character and denominator identities independently check: omega+omega^2=-1, 1+omega+omega^2=0, and L_3(1,2)=2/9 from the normal-bundle denominators. But the runner\u2019s decisive provenance/input-count step is hard-coded in D1, and the note\u2019s broader conclusion depends on unprovided or explicitly open cross-note claims about species-to-flavor identification and basepoint selection. Thus the finite-character shortcut is refuted, but the full carrier/basepoint irreducibility claim remains conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:06.308216+00:00",
+      "archived_for_note_hash": "cfb3c316ae4a17ca7ceaa57039041c723f14aa2888e270808e94bd138d22d53d",
+      "audit_date": "2026-06-03T10:35:08.453034+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can."
+        },
+        "dep_claim_type": {
+          "physical_lattice_necessity_note": "no_go"
+        },
+        "dep_effective_status": {
+          "physical_lattice_necessity_note": "retained_no_go"
+        },
+        "deps": [
+          "physical_lattice_necessity_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "8c06c934b4e52f5935c74333971a6f4672db6997d30bffa5a771310d58806507",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-103307-8a22657c-flavor_carrier_not_deriv",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The A1-A3 arithmetic closes within the packet: omega+omega^2 = -1 and L3(1,2) = 2/9 from the two-factor denominator. The broader two-input conclusion does not close because the species-to-flavor out-of-scope claim and the r=1/2 section-family authority are imported from statuses/notes not fully included in the restricted packet, and the only full cited authority explicitly delegates the species semantics.",
+      "claim_scope": "Audited the bounded negative that the finite-corner character route does not derive the charged-lepton flavor carrier and that carrier/factor selection plus r=1/2/basepoint remain separate inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T10:35:08.453034+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The retained three_generation_observable theorems prove an irreducible M3(C) algebra carrier but keep the physical species-to-flavor identification out of scope, while equivariance leaves r free, so carrier/factor selection and r=1/2 basepoint selection remain separate inputs.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full one-hop authorities for three_generation_observable_*, koide_q_delta_residual_cohomology_obstruction, and lepton_brannen_bae_delta_two_ninths, then repair the determinant-denominator shorthand and re-audit.",
+      "open_dependency_paths": [
+        "docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner genuinely checks the finite-character arithmetic and C3-equivariant form freedom, but its D1 independence conclusion is asserted rather than derived from included authorities. The only full cited authority is retained_no_go, but it explicitly says triplet physical-species semantics are open/delegated, so retained status does not close the carrier identification. Formula inventory also finds the shorthand 1/(omega^k-1) = det(1-g)^-1 false as written; the determinant inverse is the product 1/((omega^k-1)(omega^(2k)-1)), even though the displayed L3 sum itself evaluates to 2/9. Thus the bare-character refutation is supported, but the broader two-input bounded theorem remains conditional."
+    },
+    {
+      "archived_at": "2026-06-06T22:40:05.305030+00:00",
+      "archived_for_note_hash": "be0710c86a2438b9ce99f7ca4974e115564d098456d6a62f4d7831500ee1938e",
+      "audit_date": "2026-06-06T18:03:54.053727+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can."
+        },
+        "dep_claim_type": {
+          "physical_lattice_necessity_note": "no_go"
+        },
+        "dep_effective_status": {
+          "physical_lattice_necessity_note": "retained_no_go"
+        },
+        "deps": [
+          "physical_lattice_necessity_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a7108eeb4f7a0f01015c319c642570381aaf38a0696cd641e2e0d9268c5eebb8",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-180211-76815ed9cc-flavor_carrier_not_derived_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The 2/9-versus-character arithmetic closes algebraically, but the full two-input conclusion relies on upstream species-ID and basepoint-status authorities not supplied in this restricted packet. The provided PHYSICAL_LATTICE_NECESSITY authority explicitly narrows physical-species semantics out of its load-bearing scope.",
+      "claim_scope": "Audited the bounded negative/refinement that the finite-corner character route does not derive the 2/9 flavor carrier and that carrier selection plus r=1/2 basepoint remain independent inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T18:03:54.053727+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The carrier theorem/text is asserted to leave physical species-to-flavor identification out of scope, while the 2/9 shortcut is only an index/eta determinant value and the r=1/2 basepoint is a separate unforced section choice.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full one-hop authorities for the three_generation_observable species-scope text, lepton_brannen_bae_delta_two_ninths, and koide_q_delta_residual_cohomology_obstruction, or narrow the audited claim to the algebraic 2/9-vs-character refutation only.",
+      "open_dependency_paths": [
+        "docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The independent arithmetic check agrees that omega + omega^2 = -1, 1 + omega + omega^2 = 0, and the determinant terms give L_3(1,2) = 2/9, so the bare-character shortcut is refuted. But the broader claim that exactly two independent flavor inputs remain depends on cited status/text for three_generation_observable_*, lepton_brannen_bae_delta_two_ninths, and koide_q_delta_residual_cohomology_obstruction that is not included as authority here; the runner's final independence check is hard-coded true. The only provided authority, PHYSICAL_LATTICE_NECESSITY_NOTE, is retained only for a narrowed algebraic no-go and explicitly delegates physical-species semantics, so it cannot close the carrier-selection bridge."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.138846+00:00",
+      "audit_date": "2026-06-07T00:16:14.854484+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can."
+        },
+        "dep_claim_type": {
+          "physical_lattice_necessity_note": "no_go"
+        },
+        "dep_effective_status": {
+          "physical_lattice_necessity_note": "retained_no_go"
+        },
+        "deps": [
+          "physical_lattice_necessity_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "355106975e889e85d0fecde370d5c0014618d49f4be4f0453a4b7e0467dab504",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-001551-502da554b0-flavor_carrier_not_derived_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite character identities and determinant-denominator sum close by direct algebra: omega+omega^2=-1, 1+omega+omega^2=0, and each two-eigenvalue denominator term equals 1/3. The circulant equivariant form also leaves b, hence r=|b|^2/a^2, freely choosable.",
+      "claim_scope": "Audited only the bounded finite C3 route-pruning claim that 2/9 is not a bare character, that the determinant-denominator doublet weight gives 2/9, and that C3 equivariance alone leaves r unselected.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T00:16:14.854484+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "A finite C3 triplet has bare characters 1 on the singlet, omega+omega^2=-1 on the doublet, and 1+omega+omega^2=0 on the full triplet, so none equals 2/9, while L_3(1,2)=(1/3) sum_{k=1,2} 1/((omega^k-1)(omega^{2k}-1))=2/9 comes only from the determinant denominator.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream ledger handling preserves the bounded route-pruning scope and does not promote this into carrier or basepoint closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The audited claim is deliberately narrow and does not assert physical carrier derivation, basepoint selection, or the old two-input theorem. The displayed finite identities check independently of the runner: the bare characters are 1, -1, and 0, while the determinant-denominator average is 2/9. The cited upstream note is retained_no_go and is used only as a bookkeeping dependency, not as an open bridge needed for this finite route-pruning result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py",
+  "title": "Flavor Carrier Derivation: 2/9 Is Not A Bare Character; Carrier And Basepoint Remain Open",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

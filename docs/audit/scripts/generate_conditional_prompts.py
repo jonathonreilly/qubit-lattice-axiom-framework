@@ -31,6 +31,8 @@ import json
 import re
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 LOG = REPO_ROOT / "docs" / "audit" / "data" / "repair_class_backfill_log.json"
@@ -183,6 +185,7 @@ def replace_or_append_sections(prompts_text: str, new_sections_text: str) -> str
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     ledger = json.loads(LEDGER.read_text())
     rows = ledger["rows"]
     synthesized = load_synthesized_ids()

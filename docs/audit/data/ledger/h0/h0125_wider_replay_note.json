@@ -1,0 +1,270 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "h0125_wider_replay_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "h0125_scalable_scout_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/lattice_3d_l2_numpy_h0125_only.py",
+    "scripts/numpy_replay_bootstrap.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.2,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f1f8659dd853ca6a03492079cfe222f5ccab42087a985a79223288a833550c27",
+  "note_path": "docs/H0125_WIDER_REPLAY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.105909+00:00",
+      "archived_for_note_hash": "3cc630b2b9c5de3434b4bc8dcb98ac26bb272d1471ea367f66daed2c7f329906",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.235747+00:00",
+      "audit_date": "2026-04-30T19:30:34.614853+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The registered runner did not complete inside the 30-second leaf audit budget, so current executable closure is not established.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:h0125_scalable_scout_note",
+      "load_bearing_step": "This note records the widened-family diagnostic for the retained 3D dense",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the primary runner timed out during the restricted leaf audit. Why this blocks: the audit cannot verify the load-bearing computation or replay surface from the current registered runner. Repair target: provide a frozen log or a faster/sliced runner that completes under the audit budget and checks the load-bearing step. Claim boundary until fixed: safe to cite as a bounded note whose executable closure is pending."
+    },
+    {
+      "archived_at": "2026-05-11T09:23:39.745278+00:00",
+      "archived_for_note_hash": "ff952f464072b40b041c3b95251292b7dfecfda03a1c4ec5d52bd2854dea5d9f",
+      "audit_date": "2026-05-03T19:02:38.734960+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "h0125_scalable_scout_note": "retained_no_go"
+        },
+        "deps": [
+          "h0125_scalable_scout_note"
+        ],
+        "load_bearing_score": 5.024,
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-agent-hopper",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The one-hop scout dependency is already clean in current operational metadata, but the load-bearing width-4 replay row did not reproduce within bounded current audit runs, including a narrowed full-window invocation.",
+      "claim_scope": "Bounded h=0.125 wider-family replay claim that the observed full-window width-4 row and shorter-scale scout remain in the alpha~0.5 class rather than rescuing F~M alpha~1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T19:02:38.734960+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The weak-field exponent does not move toward 1.0; it stays pinned to the fixed-family ~0.5 class.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide a current completed runner output or a faster deterministic runner path that reproduces the exact phys_l=6, phys_w=4, h=0.125, full-window z=3.0 row and its alpha~0.5 fit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the bounded conclusion relies on a current numerical replay row, but the replay runner did not produce the load-bearing Born, k=0, gravity, and alpha diagnostics within bounded audit runs. Why this blocks: a retained bounded theorem cannot rest on stale summarized output when the current executable support is unavailable in the audit lane. Repair target: provide a current completed runner output or a faster deterministic runner path that reproduces the exact phys_l=6, phys_w=4, h=0.125, full-window z=3.0 row and its alpha~0.5 fit. Claim boundary until fixed: the note may be cited only as a conditional diagnostic summary of observed rows, not as an audited retained bounded no-go."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.181383+00:00",
+      "audit_date": "2026-05-21T23:40:52.570739+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "h0125_scalable_scout_note": "Bounded no-go that the cited h=0.125 phys_l=4, phys_w=3 full-window scout rows do not provide a wider or more scalable rescue relative to the cited phys_l=6, phys_w=4 full-window comparator."
+        },
+        "dep_claim_type": {
+          "h0125_scalable_scout_note": "no_go"
+        },
+        "dep_effective_status": {
+          "h0125_scalable_scout_note": "retained_no_go"
+        },
+        "deps": [
+          "h0125_scalable_scout_note"
+        ],
+        "load_bearing_score": 10.434,
+        "runner_hash": "0084873da2d6e9974801a532524d1f7e96d959d0f89d7d913ff9c12df500a7c1",
+        "transitive_descendants": 977
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-h0125-wider-20260521-h0125_wider_replay_note-majority",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note self-declares bounded_theorem and the evidence is a completed row-level numerical replay, not a universal closure of all wider h=0.125 routes. No-Go Discipline was considered because the prose says bounded no-go: N1, N7, and N8 do not justify a broad no_go beyond the observed rows because future wider configurations remain an out-of-scope steelman; N2 has no multiwall set; N3 terms such as bounded, observed, and retained function as scope qualifiers; N4 residual matching is satisfied for the scout comparator; N5 is valid only at the full-window observed-row resolution; N6 invokes no new-axiom or convention-retirement wall. The clean applyable tuple is therefore audited_clean bounded_theorem C, preserving the no-rescue readout only inside the supplied row scope.\n\nFive-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C').",
+      "claim_scope": "Bounded numerical theorem that the supplied completed h=0.125 dense-family replay rows at phys_l=6, including the phys_w=4 full-window z_mass=3.0 row and phys_w=3 control, remain in the alpha~0.5 weak-field exponent class rather than moving toward 1.0, with the one-hop scout comparator also in that class.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-21T23:40:52.570739+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T14:48:57.877750+00:00",
+          "auditor": "codex-audit-loop",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded no-go that the completed h=0.125 phys_l=6 full-window replay rows, including the genuinely wider phys_w=4 z=3.0 row, do not rescue the weak-field mass-law exponent from the alpha approximately 0.5 class.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-19T14:39:02.275207+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-h0125_wider_replay_note-025",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded audit of the h=0.125 dense-family replay at phys_l=6, phys_w=4, full window, z_mass=3.0, with the supplied phys_w=3 control and one-hop scout comparator.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-21T23:40:52.570739+00:00",
+          "auditor": "codex-judicial-panel-h0125-wider-20260521-h0125_wider_replay_note-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded numerical theorem that the supplied completed h=0.125 dense-family replay rows at phys_l=6, including the phys_w=4 full-window z_mass=3.0 row and phys_w=3 control, remain in the alpha~0.5 weak-field exponent class rather than moving toward 1.0, with the one-hop scout comparator also in that class.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "Overclassified the row-level bounded replay result as claim_type no_go. That label would require stronger N1-N8 closure unless read only as shorthand for the observed-row no-rescue result.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The source note self-declares bounded_theorem and the evidence is a completed row-level numerical replay, not a universal closure of all wider h=0.125 routes. No-Go Discipline was considered because the prose says bounded no-go: N1, N7, and N8 do not justify a broad no_go beyond the observed rows because future wider configurations remain an out-of-scope steelman; N2 has no multiwall set; N3 terms such as bounded, observed, and retained function as scope qualifiers; N4 residual matching is satisfied for the scout comparator; N5 is valid only at the full-window observed-row resolution; N6 invokes no new-axiom or convention-retirement wall. The clean applyable tuple is therefore audited_clean bounded_theorem C, preserving the no-rescue readout only inside the supplied row scope.\n\nFive-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C').",
+          "load_bearing_step_class": "C",
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0,
+            "total_pass": 2
+          },
+          "second_auditor_error": "No material error; its scope could state more explicitly that the scout comparator is supportive and that the negative readout is limited to the supplied observed rows.",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:h0125_scalable_scout_note:retained_no_go->unaudited",
+      "load_bearing_step": "The cached runner exits 0 under the declared 1800s budget and reports phys_w=4, phys_l=6, full-window z=3.0 with count=6 alpha=0.499, Born=8.01e-15, and clean k=0, while the phys_w=3 full-window z=3.0 control reports alpha=0.500 and the one-hop scout dependency reports alpha=0.501-0.502 on its observed full-window rows.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Keep future audits scoped to the completed full-window rows unless new runner evidence broadens the family.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The source note self-declares bounded_theorem and the evidence is a completed row-level numerical replay, not a universal closure of all wider h=0.125 routes. No-Go Discipline was considered because the prose says bounded no-go: N1, N7, and N8 do not justify a broad no_go beyond the observed rows because future wider configurations remain an out-of-scope steelman; N2 has no multiwall set; N3 terms such as bounded, observed, and retained function as scope qualifiers; N4 residual matching is satisfied for the scout comparator; N5 is valid only at the full-window observed-row resolution; N6 invokes no new-axiom or convention-retirement wall. The clean applyable tuple is therefore audited_clean bounded_theorem C, preserving the no-rescue readout only inside the supplied row scope.\n\nFive-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C')."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_3d_l2_wide_h0125_replay.py",
+  "title": "Wider `h = 0.125` Replay Note",
+  "transitive_descendants": 25,
+  "verdict_rationale": null
+}

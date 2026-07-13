@@ -1,0 +1,129 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (the B4-orbit / taste-multiplet-*summed* marginal",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+    "minimal_axioms",
+    "kinetic_isotropy_primitive",
+    "scale_reference_primitive"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5ba1218e1439fc0168c5cdaf2874df4e1aa04f0a219af22c940c6e20d5816760",
+  "note_path": "docs/TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.520380+00:00",
+      "audit_date": "2026-06-18T15:00:52.374694+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "On the approved OS0 kinetic-form surface, B4 signed-permutation symmetry forbids a diagonal marginal time/spatial velocity anisotropy and makes B4-symmetric one-loop temporal/spatial self-energy coefficients equal; the remaining cited lattice artifact is dimension-6 with only a scale-reference units estimate.",
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "70e2e21f10e51cd0594172dd934149eec5c98c8e5353f1a7322aaab74cde8d58",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained B4 theorem and registered kinetic-isotropy primitive supply the OS0 B4-covariant setting, and the runner explicitly constructs the Clifford/taste operators, self-energy, honest inverse-propagator observable, and curvature averages rather than reading the target values from another note. The scale primitive is used only for the disclosed dim-6 size estimate and does not carry the marginal protection step.",
+      "claim_scope": "Within the stated finite-cut one-loop staggered taste-changing rainbow model on the OS0 xi=1 B4 regulator block, the B4 taste-orbit summed marginal velocity curvature is isotropic while single-taste sectors are not.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T15:00:52.374694+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08:retained->unaudited",
+      "load_bearing_step": "For the honest observable G_hon(p,B)=Dinv(p)-Sigma(p,B), the individual taste curvatures on OS0 are anisotropic O(0.2), but averaging over the hw=2 B4 taste orbit gives equal four-direction curvatures and Sigma_t-Sigma_s near 1e-14.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the G_hon observable convention and finite-difference curvature extraction; no open dependency blocks the scoped bounded claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 2,
+        "C": 8,
+        "D": 8,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing result is a bounded first-principles computation inside the declared model: the runner source computes Sigma(p,B), G_hon, curvature finite differences, B4-orbit averages, and off-OS0 falsification controls, with no helper imports or hard-coded contested pass values. The cited non-retained-looking inputs are registered axiom/primitive premises and are used within their declared scope; the one retained B4 authority supplies the relevant orbit-relabel symmetry. The clean scope is bounded to this one-loop model and taste-summed marginal sector; the physical interpretation of a single taste remains explicitly outside the claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_taste_sector_marginal_lv_b4_2026_06_13.py",
+  "title": "The Taste-SUMMED Marginal Lorentz-Violation Is B4-Protected on the OS0 Surface; the Per-Single-Taste Marginal Velocity Is Not (Bounded)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

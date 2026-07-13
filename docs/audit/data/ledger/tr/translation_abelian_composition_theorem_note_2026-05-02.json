@@ -1,0 +1,413 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "translation_abelian_composition_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.024,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ae37fe915439037f4d5636d1a394fe3612399df8ffb8b270fd312d10161354f8",
+  "note_path": "docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-26T00:44:09.420826+00:00",
+      "archived_for_note_hash": "950c7679b545ee7c194a4b21f36b864f8c6e161d81e1f1e82deb9bca7011656a",
+      "audit_date": "2026-05-25T19:31:39.172534+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "07385ca8038000bd42b56336dd11bfa149c51649f96f696c5a5e9ea59ec2be17",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T193031Z-c608de6f-translation_abelian_comp-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The regular-representation algebra closes for any translation subgroup that is actually supplied. The cited Noether authority only supports exact pure translations on the (2Z)^3 two-step sublattice and explicitly says one-site shifts are not pure symmetries, so the full Z^3 physical-translation claim is missing a retained bridge.",
+      "claim_scope": "Algebraic composition, commutativity, unitarity, identity, and faithfulness of permutation translations T_a|x> = |x+a> on a lattice-site basis; not the unsupported upgrade to full pure Z^3 physical translation symmetry from the cited Noether authority.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:31:39.172534+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Direct computation on basis states: T_a T_b |x> = T_a |x+b> = |x+b+a> = |x+(a+b)> = T_{a+b}|x>.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to the exact (2Z)^3 two-step translation subgroup supplied by the Noether authority, or add a retained bridge theorem establishing pure one-site Z^3 translations on H_phys.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner genuinely constructs finite periodic permutation matrices and verifies seven algebraic group-representation properties, all class A. Those checks support the regular-representation statement on the toy (Z/L)^3 basis, but they do not establish that the framework authority provides pure one-site Z^3 translations on H_phys. The one-hop authority is narrower: its translation branch is the (2Z)^3 two-step Ward identity on an admitted staggered carrier, with one-site shifts requiring extra taste/staggered structure outside scope."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.089016+00:00",
+      "audit_date": "2026-05-26T01:59:57.021166+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "Tensor-permutation translations on finite periodic tensor-product qubit blocks are unitary, obey the translation group law, translate the per-site ladder operators by conjugation, and commute with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "5a54a0275f8f8a96a4c099eb86688962c8d9bfe64050edc05d62dd89e078fca4",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T015908Z-ff238d86-translation_abelian_comp-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited bridge is explicitly retained and supplies the tensor-product Fock space, translation definition, unitarity, group law, identity, and inverse. The remaining commutativity and faithfulness steps are standard finite-quotient arithmetic plus the stated tensor-product basis action.",
+      "claim_scope": "Finite periodic tensor-product translations T_a form a unitary abelian representation with trivial kernel on the quotient translation group.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-26T01:59:57.021166+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "Using the retained bridge's tensor-permutation group law and inverse identities, commutativity follows from abelian finite-quotient addition and faithfulness follows because a nonzero shift moves a one-site occupation basis vector to a distinct orthonormal basis vector.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only whether the added finite-quotient faithfulness corollary should remain decoration under the repository decoration policy.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The derivation is a genuine algebraic closure over one retained upstream theorem and standard finite quotient arithmetic. The runner source constructs the finite tensor-permutation matrices and checks identity, unitarity, closure, commutativity, inverse, and kernel without hard-coded contested constants; its retained-status check is a ledger dependency check. Because the chain reduces to a single retained parent plus standard mathematics and has no external comparator checks, the rubric's tie-break classifies it as audited_decoration rather than an independent positive theorem."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.552565+00:00",
+      "audit_date": "2026-06-05T18:03:03.448509+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic lattice blocks, the tensor-factor permutation translation T_a on H_Lambda = tensor_x C^2_x is unitary, obeys the translation group law, covariantly shifts the defined per-site Pauli ladder operators a_x and a_x^dagger, and commutes with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.115,
+        "runner_hash": "5a54a0275f8f8a96a4c099eb86688962c8d9bfe64050edc05d62dd89e078fca4",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260605-180132-299beacb50-translation_abelian_composit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop bridge is marked retained and explicitly supplies the tensor-product space, the translation operators, unitarity, group law, identity, and adjoint inverse. Commutativity follows from abelian finite-quotient addition, and faithfulness follows directly from the basis-permutation action on a one-site occupation vector.",
+      "claim_scope": "Algebraic corollary that the retained finite periodic tensor-permutation translations form an abelian unitary representation of the finite quotient translation group with trivial quotient kernel.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-05T18:03:03.448509+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "For nonzero quotient a, the tensor-permutation definition sends a one-site occupation basis vector at x to the distinct basis vector occupied at x+a, while the retained bridge supplies T_a T_b = T_{a+b}, T_0 = I, and T_a^{-1}=T_{-a}=T_a^dag.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Runner samples only the 2x2x2 block, so the verdict rests on the independent symbolic permutation argument and the retained bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "All displayed identities reduce to algebra over the retained tensor-permutation bridge plus finite quotient arithmetic: T_0=I, T_a T_b=T_{a+b}, T_a T_b=T_b T_a, T_a^dag=T_{-a}, and the kernel statement. Independent checking via the basis-action definition confirms that an occupation at x moves to x+a, so a nonzero quotient shift cannot be the identity. The runner source constructs the same finite permutation matrices and checks the identities on a 2x2x2 block; its Test 0 is a retained-status lookup, not mathematical derivation evidence. Because the claim is a one-parent algebraic corollary with no external comparator or tuned input, it is best classified as a decoration of the retained bridge."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.522156+00:00",
+      "audit_date": "2026-06-05T21:39:05.688989+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.115,
+        "runner_hash": "5a54a0275f8f8a96a4c099eb86688962c8d9bfe64050edc05d62dd89e078fca4",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-213805-022c07342d-translation_abelian_composit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited bridge is retained-grade and directly supplies the tensor-permutation unitarity, group law, identity, and inverse. Commutativity follows from abelian quotient addition, and faithfulness follows from the free translation action on site labels applied to one-site occupation basis states.",
+      "claim_scope": "Unitary abelian group law, adjoint inverse, identity, and finite-quotient faithfulness for tensor-permutation translations on the finite periodic tensor-product Fock space H_Lambda.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:39:05.688989+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "The retained tensor-permutation bridge gives T_a T_b = T_{a+b}, T_0 = I, and T_a^{-1} = T_{-a} = T_a^dag, while any nonzero finite-quotient shift sends a one-occupied-site basis vector to a distinct orthonormal basis vector.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing mathematics is algebraic closure over the retained tensor-product translation bridge plus finite quotient arithmetic. Independent checking of the formulas confirms the composition convention T_a T_b = T_{a+b}, the adjoint inverse, commutativity, and the one-site basis proof of quotient faithfulness. The runner source constructs actual permutation matrices and verifies the same finite identities on a 2x2x2 periodic block; it does not hard-code the contested algebraic conclusions, though its dependency-status test is bookkeeping rather than mathematics."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.897601+00:00",
+      "audit_date": "2026-07-01T13:40:29.602898+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic blocks of the Z^3 site lattice with one C^2 factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^\u2020, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "5a54a0275f8f8a96a4c099eb86688962c8d9bfe64050edc05d62dd89e078fca4",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T134029Z-3231b304-translation_abelian_comp",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge supplies T_0, the group law, unitarity, and T_a^dag = T_-a; finite quotient addition gives commutativity. Faithfulness follows from the tensor-product occupation basis and the permutation action on a non-fixed site, with no extra physics input.",
+      "claim_scope": "Algebraic corollary that finite periodic tensor-permutation translations form a unitary abelian quotient representation with trivial kernel on the retained tensor-product Fock-space surface.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-01T13:40:29.602898+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "For nonzero quotient a, the tensor-permutation sends a one-occupied-site basis vector at x to the distinct basis vector occupied at x+a, so T_a is not the identity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should only re-check decoration classification versus treating finite-quotient faithfulness as a standalone algebraic corollary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The cited bridge is retained-grade and already supplies the load-bearing translation representation identities. The remaining claims are ordinary finite-group and tensor-basis algebra over that single parent, including the trivial-kernel argument from one-site basis states. The runner genuinely constructs finite tensor-permutation matrices on a 2x2x2 block and checks the identities, but it adds no independent comparator or physical content beyond the parent theorem."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.509892+00:00",
+      "audit_date": "2026-07-02T02:48:08.837045+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "On a finite periodic tensor-product space H_\u039b = \u2297_{x\u2208\u039b} C\u00b2_x with per-site Pauli ladder operators and T_a defined as the cyclic tensor-factor permutation, T_a is unitary, obeys the translation group law, translates a_x and a_x^\u2020 by conjugation, and commutes with Q_total."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "5a54a0275f8f8a96a4c099eb86688962c8d9bfe64050edc05d62dd89e078fca4",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T024808Z-adabd18f-translation_abelian_comp",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited bridge is retained-grade and already supplies the translation operators, unitarity, identity, group law, and inverse. The remaining steps are ordinary finite-quotient algebra and the direct basis-permutation observation that a nonzero quotient shift moves a one-site occupation basis vector to a distinct orthonormal basis vector.",
+      "claim_scope": "Finite periodic tensor-permutation translations on H_Lambda obey the abelian quotient group law, unitary inverse identity, and trivial quotient kernel.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-02T02:48:08.837045+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "The bridge supplies T_a T_b = T_{a+b}, T_0 = I, and T_a^{-1}=T_{-a}=T_a^dag; commutativity and faithfulness then follow from finite quotient addition and the tensor-permutation action on one-site occupation basis states.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor may re-check whether finite-quotient faithfulness adds enough structural content to escape decoration; the algebraic closure itself is sound.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The chain closes, but it closes as a one-parent algebraic corollary of the retained tensor-product translation bridge plus standard finite quotient arithmetic. The runner constructs the same finite tensor-permutation matrices and checks identity, closure, commutativity, inverse, and kernel triviality; it has no external comparator checks. Because the note adds no new physical observable, bridge, or independent comparator beyond the parent surface, the conservative audit-lane classification is algebraic decoration."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.111452+00:00",
+      "audit_date": "2026-07-10T00:04:51.117514+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "Finite periodic tensor-product space H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x and tensor-permutation translations T_a: unitarity, group law, T_a a_x T_a^dagger = a_{x+a} and adjoint covariance, and [T_a,Q_total]=0."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "5a54a0275f8f8a96a4c099eb86688962c8d9bfe64050edc05d62dd89e078fca4",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-translation_abelian_comp-069",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained cited bridge supplies the translation definition, unitarity, group law, identity, and inverse. Commutativity and faithfulness then follow by finite quotient arithmetic and the explicit action on occupation-basis states.",
+      "claim_scope": "Identity, abelian composition, adjoint inverse, and finite-quotient faithfulness of tensor-permutation translations on the retained finite periodic tensor-product Fock space.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T00:04:51.117514+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "For nonzero quotient translation a, the tensor permutation moves a one-occupied-site basis vector at x to the distinct orthonormal basis vector occupied at x+a, so T_a is not the identity.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The only cited authority is retained-grade, and the note correctly derives commutativity and faithfulness from its tensor-permutation representation using standard finite-group and basis-state algebra. The runner genuinely constructs the permutation matrices and checks the asserted identities; its separate retained-status lookup is a class-B bookkeeping check. Because the scientific chain is entirely class-A algebra over a single upstream parent with no external comparator, the decoration verdict applies."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/translation_abelian_composition_check.py",
+  "title": "Tensor-Product Translation Group Composition",
+  "transitive_descendants": 45,
+  "verdict_rationale": null
+}

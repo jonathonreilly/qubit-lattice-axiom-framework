@@ -1,0 +1,151 @@
+{
+  "audit_date": "2026-05-03T12:20:53.876502+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 9.665,
+    "transitive_descendants": 286
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-fresh-holographic-boundary-auditor-2026-05-03",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The finite-model computation directly evaluates the claimed observable and fit comparison under the stated parameters; the conclusion is only the bounded numerical boundary-preference statement and coefficient shift.",
+  "claim_id": "holographic_probe_note_2026-04-11",
+  "claim_scope": "Within the fixed finite 2D periodic staggered-lattice Dirac-sea correlation-matrix probe for sides 8, 10, 12, and 14, entropy and Schmidt rank fit boundary size better than volume for G=0 and G=10, with the G=10 boundary coefficient about 12.0% lower than the free coefficient.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-03T12:20:53.876502+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-03T12:18:44.240771+00:00",
+      "auditor": "codex-fresh-auditor-2026-05-03",
+      "auditor_family": "codex-gpt-5",
+      "claim_scope": "Audited the bounded claim that the fixed 2D periodic staggered-lattice Dirac-sea correlation-matrix probe shows entropy and Schmidt-rank scaling more cleanly with BFS-region boundary size than volume for sides 8,10,12,14, in both G=0 and G=10, with G=10 reducing the fitted boundary coefficient by about 12%.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "C",
+      "previous_auditor_family": "codex-fresh-agent",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-05-03T12:20:53.876132+00:00",
+      "auditor": "codex-fresh-holographic-boundary-auditor-2026-05-03",
+      "auditor_family": "codex-gpt-5",
+      "claim_scope": "Within the fixed finite 2D periodic staggered-lattice Dirac-sea correlation-matrix probe for sides 8, 10, 12, and 14, entropy and Schmidt rank fit boundary size better than volume for G=0 and G=10, with the G=10 boundary coefficient about 12.0% lower than the free coefficient.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "C",
+      "previous_auditor_family": "codex-fresh-agent",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 4,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/periodic_geometry.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 8.129,
+  "load_bearing_step": "The current runner computes the stated correlation-matrix entropies/ranks and reports boundary-fit R^2 exceeding volume-fit R^2 for both G=0 and G=10 globally and per side, with boundary slopes 0.186053 and 0.211399 giving ratio 0.8801.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "78010e70c3159f75d8fc4214f3af85261ed74aceab7d4b4d669835c210bdeae6",
+  "note_path": "docs/HOLOGRAPHIC_PROBE_NOTE_2026-04-11.md",
+  "notes_for_re_audit_if_any": "Re-audit should preserve the same bounded scope: finite sides 8-14, BFS-ball regions, Dirac-sea correlation matrix, entropy/rank observables, and boundary-vs-volume linear R^2 criterion. Any stronger holography or continuum claim would require a separate audit.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.105971+00:00",
+      "archived_for_note_hash": "5ce3d93ae74f8e6fcf3506050cb0544f9c2f439134f4a697fc10b117e2eebd9c",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:33:25.056508+00:00",
+      "audit_date": "2026-05-01T01:56:39.476294+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.959,
+        "transitive_descendants": 43
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:2026-05-01-holographic_probe_note_2026-04-11",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner reproduces the finite-lattice fit table, but it emits no classified PASS lines, imports periodic_geometry.py without a declared dependency, and the result remains a bounded finite-size probe rather than a theorem about holography.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "In the corrected minimum-image Dirac-sea correlation-matrix rerun on 2D periodic staggered lattices, entropy and Schmidt rank fit boundary size more cleanly than volume, with self-gravity preserving the boundary preference and reducing the fitted boundary-law coefficient by about 12%.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "scripts/periodic_geometry.py"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the runner output matches the note's rerun numbers, but it has zero classified PASS lines, depends on scripts/periodic_geometry.py without a declared dependency, and reports optional plot generation failed because matplotlib is unavailable. The claimed boundary-law preference is also a finite-size correlation-matrix probe on sides 8,10,12,14, not a proof of holography or a continuum quantum-gravity result. Why this blocks: clean audit requires classified runner checks for the boundary-vs-volume regressions and helper geometry, and the claim must remain bounded to the tested lattice construction. Repair target: add classified PASS checks for the regression comparisons and coefficient shift, declare the periodic geometry helper, and make plotting optional or restore its dependency if artifacts are part of the evidence. Claim boundary until fixed: bounded numerical probe that the tested 2D periodic Dirac-sea construction favors boundary scaling over volume scaling; not an audited holographic theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/frontier_holographic_probe.py",
+  "title": "Holographic Boundary-Law Probe (Bounded Companion Note)",
+  "transitive_descendants": 69,
+  "verdict_rationale": "The audited claim is tightly bounded to the finite-lattice runner's fixed model, observable, regions, and fit criterion. The provided runner output matches the note's numerical values, including global entropy fits, rank fits, per-side boundary preference, and the gravity/free coefficient ratio. No stronger holographic, continuum, Bekenstein-Hawking, AdS/CFT, or quantum-gravity conclusion is needed for the scoped statement."
+}

@@ -83,6 +83,8 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import runner_cache as rc  # noqa: E402
 import no_go_discipline_gate  # noqa: E402
 
+import ledger_io
+
 
 def _load_runner_classification() -> dict:
     """Load the latest runner classification (produced by classify_runner_passes.py)."""
@@ -789,6 +791,7 @@ def soft_reset_to_cross_confirmation_pending(row: dict, reason: str) -> dict:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         raise SystemExit("audit_ledger.json missing; run seed_audit_ledger.py first")
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
@@ -823,7 +826,7 @@ def main() -> int:
         for c, r in (invalidated + soft_reset)
     ]
 
-    LEDGER_PATH.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
+    ledger_io.save_ledger(ledger)
 
     GROWTH_TARGETS_PATH.write_text(
         json.dumps(

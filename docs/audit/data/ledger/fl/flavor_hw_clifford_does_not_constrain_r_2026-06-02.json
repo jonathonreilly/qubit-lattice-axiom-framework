@@ -1,0 +1,203 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_hw_clifford_does_not_constrain_r_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2b7481de14c6853926e730a29f21598a4728a3168b2c51a60b1f023cd243db1a",
+  "note_path": "docs/FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T16:24:06.982348+00:00",
+      "archived_for_note_hash": "6ab340e70f666dd4b5819f350b7f170c77d8f4d232cbb01eee847c285ac521f7",
+      "audit_date": "2026-06-05T22:39:57.459814+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f904fd29aa1512f22ce2a681c41cc9b16c184906f9d892d5a0a2f99345ae984b",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-223708-1e878aefdb-flavor_hw_clifford_does_not_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The core Fourier-conjugation algebra closes. The broader source packet does not close because its r=1 Clifford-landmark claims are not derived in the restricted inputs, and the displayed det(K) landmark needs an unstated branch or positivity restriction.",
+      "claim_scope": "The note's symmetry-axis package: H is not Fourier-fixed at r=1/2, F-covariance of G forces only b=c, and the accompanying Clifford-landmark quantitative statements are included in the source packet.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-05T22:39:57.459814+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Fourier conjugation sends the pure-shift H to the clock line and makes G fixed iff b=c with a free, so HW/Fourier covariance does not relate a to |b| and cannot select r=1/2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow the note to the Fourier/HW no-go only, or add derivations and runner assertions for the r=1 landmark claims plus the exact branch condition under which det(K)=0 is singled out at g^2=1/4.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The matrix-conjugation checks are valid algebraic closures: independently, FZF\u2020=X\u00b2, so K is fixed for all g, G is fixed iff b=c, and H is fixed only at b=0; the r=1/2 distance is sqrt(6)\u22482.449 for a=1, b=1/sqrt(2). However, for K with a=1, det(I+gS)=1-6g\u00b2+4g\u00b3, so g\u00b2=1/4 is not a unique determinant landmark unless an extra branch or positivity condition is imposed. The Wigner/PSD/full-orbit r=1 statements are also not proved by the runner or cited authorities, so the narrow no-go is supported but the note is too broad for audited_clean."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:30.548447+00:00",
+      "archived_for_note_hash": "8b258fcb091ce1fd5ec1fa623e0522f243e8d0828a4182de6aeeb2eb810fbe3b",
+      "audit_date": "2026-06-06T18:07:06.351610+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "fc9e9fb949499e05d508d3ed2782cc9a81b83fc928cc5a4d662817a4f5544def",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-180644-eab6ac26d1-flavor_hw_clifford_does_not_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from direct finite-dimensional matrix algebra on the supplied X, Z, F, H, K, and G definitions. The runner source performs actual operator computations rather than importing or hard-coding the contested value, and the note keeps broader Clifford/Wigner/readout claims out of scope.",
+      "claim_scope": "Audited only the narrow route-local claim that the qutrit Heisenberg-Weyl/Fourier symmetry equations supplied in the packet do not force r=1/2.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-06T18:07:06.351610+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the scoped qutrit HW/Fourier equations, pure-shift H is not Fourier-fixed at r=1/2, the true F-self-dual clock-shift family is fixed for all g, and F-covariance of G forces only b=c while leaving a free.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the Fourier convention and the asserted fixedness of K under the same convention, since that is the main sign/normalization-sensitive point.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic closure over explicitly supplied qutrit matrices and operator families, with no cited upstream authority and no external comparator. Independent inspection of the formulas confirms the core facts: F conjugates X to Z, the pure-shift line is not fixed except at zero hopping, the symmetric clock-shift family has a free coupling, and b=c is the only off-diagonal balance condition in G. The conclusion is also carefully scoped as a no-selection/open-gate result, not a universal no-go over all possible symmetry or readout routes."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:57.072739+00:00",
+      "audit_date": "2026-07-10T04:00:33.380532+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "Bounded relative independence claim only: the current checked Record/Koide bookkeeping surface admits both sector-slot and orbit-slot occupancy models with exact doublet-weight ratio 2, so it does not fix the occupancy rule; the orbit-occupancy paragraph is audited only as a proposed premise with non-input support, not as adopted or derived content.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "dfcbe836e19b834ba1df7bfc21333afe3d49c4ce4ef1c52a881757bb649356fc",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00057-flavor_hw_clifford_does_not_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Direct matrix-conjugation identities establish that Fourier invariance swaps the shift and clock components, leaving a continuous self-dual family and imposing only b=c in G while a remains free. Thus the narrowly scoped tested Fourier/HW equations contain no equation selecting r=1/2.",
+      "claim_scope": "For the explicitly defined qutrit pure-shift and clock-shift operator families, Fourier conjugation does not select r=1/2: H is not fixed there, while the F-fixed K and G families retain a free on-site-to-hopping ratio.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T04:00:33.380532+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "The genuine Fourier-self-dual family K = aI + g(X + Z + X\u00b2 + Z\u00b2) is F-fixed for arbitrary g, so r = g\u00b2 remains free and r = 1/2 is unmarked.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "The non-load-bearing occupancy helper checks the superseded 2026-06-05 Record wording rather than the current 2026-06-29 Qualification; a second auditor should re-check this if downstream occupancy alignment is later made load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The load-bearing conclusion is a genuine algebraic closure from the explicitly instantiated qutrit Weyl and Fourier matrices, not a definition, imported numerical value, or tuned match. Linearity of the displayed operators makes the free-parameter conclusion exact despite the runner evaluating representative nonzero parameter values. The retained-bounded occupancy authority is downstream boundary context and is not needed for the core Fourier non-selection result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py",
+  "title": "Flavor \u2014 the Heisenberg-Weyl / Fourier symmetry axis does not force r=1/2",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

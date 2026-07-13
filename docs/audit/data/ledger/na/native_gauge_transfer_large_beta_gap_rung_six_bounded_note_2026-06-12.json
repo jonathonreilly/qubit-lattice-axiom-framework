@@ -1,0 +1,181 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+    "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2c3a2bf70ea6dae0a22a3a498ffc49e3c9a2bc7313787a3362889e66b5098254",
+  "note_path": "docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T07:43:49.467938+00:00",
+      "audit_date": "2026-06-18T13:56:38.832727+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Gauge-only SU(3) Wilson one-link weight/kernel: non-negative character coefficients for all irreps and beta>=0, hence PSD convolution/Gram kernel; no fermion, mixed OS, or full interacting RP closure."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "35e8d94955262b978a120647e85497fc10d4ab5fe4c2261d6e5c47a35d9aa25d",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12-first",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the chain closes: the cited retained-grade authorities supply the six-neighbor J recurrence, half-slice factorization surface, and Wilson coefficient positivity, while the runner computes the finite-shell ratios and saddle-diagonal cross-check from those ingredients. The missing scaled-operator remainder lemma is needed only for the stronger uniform half-line theorem, which the source note explicitly disclaims.",
+      "claim_scope": "Repo-native discrete SU(3) half-slice packet operator: finite-shell large-beta ratios, numerical Richardson limit 0.1938058, saddle-reduced diagonal cross-check, and normalization falsifiers; no continuum, beta=6 physical, operator-norm remainder, or uniform half-line bound audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T13:56:38.832727+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+      "load_bearing_step": "The scaled true half-slice operator is evaluated with exact Wilson character coefficients on shell-stable beta rows and Richardson-extrapolated in powers of 1/beta to lambda_1/lambda_0 -> 0.1938058, with a saddle-diagonal route giving the same extrapolated limit.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should keep the 0.1938058 result scoped as a numerical large-beta extrapolation and not as a proved uniform half-line bound.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 4,
+        "C": 8,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing number is computed rather than imported: the primary runner builds J-I from the six-neighbor recurrence, evaluates Wilson character coefficients through the helper Bessel-determinant evaluator, forms the sparse scaled half-slice LinearOperator, solves the top-two eigenvalue ratios, and performs independent Richardson fits. The helper's beta=6 comparator and environment-reference machinery are not on the load-bearing path used by this runner. The saddle route shares the half-slice eigensolve but changes the diagonal input, so it is a structural cross-check rather than an operator-independent proof; the source states that limitation clearly."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.212064+00:00",
+      "audit_date": "2026-06-21T11:14:28.804591+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Audited only the gauge-sector SU(3) Wilson one-link weight w(U)=exp((beta/3) Re Tr U): its character coefficients are non-negative for beta >= 0, equivalently the single-link gauge convolution kernel is PSD."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 7.392,
+        "runner_hash": "35e8d94955262b978a120647e85497fc10d4ab5fe4c2261d6e5c47a35d9aa25d",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12-first",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet closes the scoped bounded claim: the runner instantiates the six-neighbor J, Wilson diagonal, scaled half-slice action, sparse eigensolve, shell checks, saddle-diagonal comparison, and normalization falsifiers without hard-coding the target ratio. The operator-norm remainder lemma and all-beta/physical statements remain open but are explicitly outside the claim boundary.",
+      "claim_scope": "Bounded numerical characterization of the repo-native discrete SU(3) half-slice packet operator: finite-shell large-beta ratios, a 1/beta extrapolated large-beta ratio near 0.1938058, and a saddle-diagonal cross-check, excluding physical beta=6, continuum, and uniform half-line claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T11:14:28.804591+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner forms the scaled half-slice operator v -> exp((beta/2)(J-I))[r(beta) * exp((beta/2)(J-I))v], computes stable finite-shell top-two eigenvalue ratios, and Richardson-extrapolates the exact-Wilson and saddle-diagonal routes to lambda_1/lambda_0 = 0.1938058.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the Wilson/Bessel coefficient evaluator and Richardson extrapolation if the helper implementation or coefficient normalization changes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 8,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The cited authorities retain the recurrence, half-slice factorization surface, and Wilson coefficient positivity needed for the native packet construction. The primary runner and helper source compute the numerical object from framework-local operators and coefficient evaluation rather than importing an external comparator or fitted target, and the cache matches the note tables. Residual risk is confined to the explicitly disclaimed uniform large-beta operator-norm remainder and tail/eigenvalue-isolation proof, not to the bounded numerical characterization audited here."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/native_gauge_transfer_large_beta_gap_rung_six_bounded_2026_06_12.py",
+  "title": "Native Gauge Transfer Large-Beta Gap Rung Six Bounded Note",
+  "transitive_descendants": 5,
+  "verdict_rationale": null
+}

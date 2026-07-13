@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08",
+    "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ee2a062c689907b3717fa3f7f4c9ebb0fa42360270667c99f297dfc7a7034757",
+  "note_path": "docs/UNIVERSAL_GR_GRAVITON_DISPERSION_LORENTZ_ISOTROPY_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:40.511615+00:00",
+      "audit_date": "2026-06-10T06:01:21.678565+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08": "Bounded finite-BZ diagnostic comparison showing the implemented staggered K\u00e4hler-Dirac block has a few-percent Zener anisotropy residual and is much closer to A=1 than the naive Dirac control under the runner's vertex scheme.",
+          "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08": "Audited only the finite-BZ runner-defined staggered TT stiffness positivity, tested mass/grid stability, negative control, scalar ellipticity check, and conditional sign-only G/a^2 conversion; no physical Einstein-Hilbert or Newton-constant bridge was audited."
+        },
+        "dep_claim_type": {
+          "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08": "retained_bounded"
+        },
+        "deps": [
+          "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08",
+          "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "48cff9775ffb9b67bf5cf4eb616da823daaa7aa4f62d229619c7e3ddbbcb1eab",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-055945-c86c62991c-universal_gr_graviton_disper",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source explicitly constructs the 16x16 staggered operator, velocity-momentum stress vertex, propagators, and finite Brillouin-zone sum, with no hard-coded target constants or opaque helper imports. The audited conclusion is only the finite-grid channel diagnostic, so no continuum Lorentz, GR-recovery, or gravitational-wave-speed bridge is needed.",
+      "claim_scope": "For the implemented staggered Kahler-Dirac 16x16 finite-BZ TT two-point calculation at m=0.7, yz polarization, and N=6,8,10, C(e0) and C(e1) agree within tolerance while the sampled t-x diagonal excess is positive and scales approximately as 0.043 k0^2 over the tested grids.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T06:01:21.678565+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08:retained_bounded->unaudited",
+      "load_bearing_step": "The finite Brillouin-zone runner computes C(Khat) for the implemented staggered Kahler-Dirac 16x16 TT channel and finds axis equality, positive decreasing t-x diagonal excess, and a stable finite-grid coefficient near 0.043.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "No registered primitive is load-bearing; re-check the vertex-convention identification only if a later claim broadens beyond the implemented finite-grid diagnostic.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The load-bearing step is a first-principles finite computation within the supplied implementation, not a definition, cross-note import, external comparator, or tuned observational match. Independent arithmetic from the displayed table gives diagonal excesses 0.046898, 0.026247, and 0.016737, with coefficients 0.04277, 0.04255, and 0.04239 and spread about 0.9%, matching the runner claims. The cited authorities are retained_bounded and used only as contextual finite-grid support; their open physical bridges are not imported by this narrowed claim. This verdict does not audit or retain any physical dispersion, continuum Lorentz theorem, GR recovery, or GW-speed comparison."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_gr_graviton_dispersion_lorentz_isotropy.py",
+  "title": "Finite-Grid Induced Graviton TT Stiffness Anisotropy Boundary",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

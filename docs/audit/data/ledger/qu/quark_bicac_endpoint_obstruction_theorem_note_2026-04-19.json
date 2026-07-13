@@ -1,0 +1,262 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_realization_gate_note_2026-05-03"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.555,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e1a57283bce68af99cfd8bcc147fe2de0b7baebeb7e97832af553e36c3d58253",
+  "note_path": "docs/QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369491+00:00",
+      "archived_for_note_hash": "e321d749be324441fe5977ff8e68a94d8ed092aa80935d883ffbe41401d88340",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T13:40:45.893255+00:00",
+      "archived_for_note_hash": "7ea838c44108662f4b70cbdd73c0070cf88eabe111e24b9e87a59ff424adfe39",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source theorem is exact algebra over its stated packet atoms, and the live runner verifies all twelve identities: support endpoint, target point, BICAC endpoint, ordering, positive interval width, and kappa-independence of the packet invariants.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The current retained ray/support packet leaves kappa unfixed because the same packet identities remain true at sqrt(6/7), 48/49, and 1, giving a positive-width bridge interval rather than forcing the BICAC endpoint.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The claim is a negative algebraic obstruction, not a positive BICAC derivation. Given the stated packet atoms p, r, a_d, supp, and delta_A1, the runner verifies three distinct exact kappa points and shows the retained packet invariants do not select among them. Residual risk is limited to provenance of the packet atoms outside this note; this audit retains only the obstruction that the present ray/support packet does not force kappa = 1."
+    },
+    {
+      "archived_at": "2026-05-12T08:18:40.755825+00:00",
+      "archived_for_note_hash": "b7c4b9dc13c8474d10ea5000218915d20019c3aa449b2b740902679c0dca0fe3",
+      "audit_date": "2026-05-11T14:40:59.730102+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.228,
+        "runner_hash": "3549db272c82e76b27bae3f4b650185d996282776f398c0ddaed2f3b63414cd0",
+        "transitive_descendants": 423
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The interval and endpoint algebra closes, and the runner reports PASS=12 FAIL=0. The source note does not wire retained authorities for the ray/support packet constants and explicitly imports the staggered-Dirac realization gate for the quark observable lane, so the retained scientific packet is not closed in the audit graph.",
+      "claim_scope": "No-go/obstruction statement that the stipulated quark ray/support packet leaves the bridge parameter kappa unfixed and therefore does not derive the BICAC endpoint, conditional on the packet constants and quark-lane realization inputs.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-11T14:40:59.730102+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The retained ray/support identities are kappa-independent and remain true at kappa=sqrt(6/7), kappa=48/49, and kappa=1, with sqrt(6/7)<48/49<1, so the packet does not force the BICAC endpoint kappa=1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct dependencies for the quark ray/support packet constants and bridge-factor authority, plus the stated staggered-Dirac realization gate, then re-audit the no-go as a retained obstruction.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "Issue: the algebra proves non-uniqueness of kappa for the stated constants, but the note's input packet is asserted as retained without direct retained dependency edges, and the quark-lane realization is tied to the open staggered-Dirac gate. Why this blocks: without those authorities, the result is an internal calculation over stipulated numbers, not a retained no-go about the actual quark packet. Repair target: wire and audit the source notes for p, r, supp, delta_A1, the target bridge factor, and the stated staggered-Dirac realization gate. Claim boundary until fixed: if those constants are stipulated, they leave a positive-width kappa interval and do not force kappa=1."
+    },
+    {
+      "archived_at": "2026-06-11T21:38:41.087158+00:00",
+      "archived_for_note_hash": "b69a14b16c67378ab5fb5712bd9696cffc9be24b90cd1714dbc12308074c82c8",
+      "audit_date": "2026-06-11T14:02:33.159843+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 7.172,
+        "runner_hash": "3549db272c82e76b27bae3f4b650185d996282776f398c0ddaed2f3b63414cd0",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-140023-5bfff842a1-quark_bicac_endpoint_obstruc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local algebraic non-uniqueness claim closes over the displayed retained atoms and bridge family. The retained-grade audit chain does not close because the source relies on the staggered-Dirac realization gate as an admitted context input, and the supplied authority is unaudited/bounded.",
+      "claim_scope": "Given the displayed retained atoms and bridge family a_u(kappa) = sin_d * (1 - rho * kappa), the ray/support-only packet admits distinct support, target, and BICAC kappa values with unchanged retained identities, so it does not select the BICAC endpoint.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T14:02:33.159843+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "All retained ray/support identities in the present packet are independent of kappa, so the distinct values sqrt(6/7), 48/49, and 1 witness a positive-width bridge interval and do not force kappa = 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: re-audit after docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md reaches retained-grade or after this claim removes that admitted parent from its load-bearing scope.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing step is a direct algebraic non-uniqueness witness: the retained invariants omit kappa and remain unchanged at three distinct kappa values in the bridge interval. I independently checked rho * sqrt(6/7) = 1/7, supp * delta_A1 = 1/49, kappa_target = 48/49, sqrt(6/7) < 48/49 < 1, and the STRC-LO endpoint identity. The runner source performs finite arithmetic checks rather than a first-principles framework computation, and the obstruction is scoped to the ray/support-only packet rather than an absolute no-go. The cited staggered-Dirac realization authority is not retained-grade in the restricted packet, so the result remains conditional."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.161001+00:00",
+      "audit_date": "2026-06-12T01:00:55.046313+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 7.172,
+        "runner_hash": "3549db272c82e76b27bae3f4b650185d996282776f398c0ddaed2f3b63414cd0",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-005834-5f89638826-quark_bicac_endpoint_obstruc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independent algebra verifies rho*sqrt(supp)=1/7, supp*delta_A1=1/49, sqrt(6/7)<48/49<1, and the listed packet invariants do not contain kappa. The obstruction is narrow: it rules out endpoint selection from this support-only packet, not from later kappa-sensitive carrier normalization data.",
+      "claim_scope": "Algebraic obstruction on the retained ray/support-only packet: given p, r, a_d, supp, delta_A1, and a_u(kappa)=sin_d*(1-rho*kappa), the current packet leaves kappa unfixed and BICAC is only the kappa=1 endpoint.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T01:00:55.046313+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "All retained ray/support identities are independent of kappa and remain true at the distinct points kappa=sqrt(6/7), 48/49, and 1, so the packet admits a positive-width bridge interval and does not force kappa=1.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the Tier-A registry pointer if governance registry artifacts are supplied; no algebraic re-audit issue found.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic non-uniqueness argument over the declared retained inputs, and the runner source computes the stated identities rather than importing external comparators or opaque helpers. The cited staggered-Dirac authority is used only for carrier naming, while the endpoint-obstruction algebra is standalone and the note explicitly limits itself to bounded scope. The no-go discipline stress test does not expose an overbroad wall because the claim is confined to the current ray/support-only packet and expressly leaves shell-normalization and future endpoint-selection routes open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_quark_bicac_endpoint_obstruction_theorem.py",
+  "title": "Quark BICAC Endpoint Obstruction Theorem",
+  "transitive_descendants": 46,
+  "verdict_rationale": null
+}

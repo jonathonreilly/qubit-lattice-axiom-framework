@@ -1,0 +1,143 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wave_direct_dm_transfer_diagnostic_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wave_direct_dm_seed_band_diagnosis_note",
+    "wave_direct_dm_h025_family_pair_synthesis_note"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.322,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "dff76051c06b0db4cb2df9e55992877e0dc8072f7f6650dbe83af611d48100c3",
+  "note_path": "docs/WAVE_DIRECT_DM_TRANSFER_DIAGNOSTIC_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370141+00:00",
+      "archived_for_note_hash": "4a5174e2f9731b6edaf254b1b69154d7522370f40083094884bde23121765595",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-12T17:13:16.746323+00:00",
+      "audit_date": "2026-07-12T09:48:19.449099+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_family_pair_synthesis_note": "Finite comparison of the four controlled Fam1/Fam2, seed-0/seed-1 rows at H=0.25 and S=0.004: seed differences exceed same-seed family shifts, while late-gain ordering tracks R_hist ordering; no third-family, third-seed, portability, causal-mechanism, or stable-amplitude law.",
+          "wave_direct_dm_seed_band_diagnosis_note": "Bounded reference-strength diagnostic over the retained direct-dM portability batch at s=0.004, Fam1/Fam2/Fam3, seeds 0 and 1, H in {0.5,0.35}: all 12 rows keep negative delta_hist, seed 1 is not early-branch suppressed, and the seed-band R_hist split is explained algebraically by seed 0 having the larger late-branch gain and dL/dE ratio on this finite table. Deeper geometry cause, H=0.25 persistence, seed/family widening, and mechanism claims are excluded."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_family_pair_synthesis_note": "bounded_theorem",
+          "wave_direct_dm_seed_band_diagnosis_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_family_pair_synthesis_note": "retained_bounded",
+          "wave_direct_dm_seed_band_diagnosis_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_family_pair_synthesis_note",
+          "wave_direct_dm_seed_band_diagnosis_note"
+        ],
+        "load_bearing_score": 4.322,
+        "runner_hash": "1913e3d57c8909e6f0575f3a6c1cf487b7f472a3dbfe7d7f88bff1e9c941b709",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00265-wave_direct_dm_transfer_diag",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner parses the retained coarse and fine rows, computes each late gain and transfer ratio, and reproduces the table and stated two-band separation. The conclusion is restricted to those four rows and does not require a wider portability or family law.",
+      "claim_scope": "For the four controlled Fam1/Fam2, seed-0/1 rows at s=0.004, the defined coarse-to-fine late-gain ratio separates seed-0 compression from seed-1 retention.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T09:48:19.449099+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:wave_direct_dm_h025_family_pair_synthesis_note:retained_bounded->unaudited",
+      "load_bearing_step": "Computing T(F,s)=G(H=0.25)/mean(G(H=0.5),G(H=0.35)) gives 0.3266 and 0.4529 for seed 0, versus 1.0471 and 1.0190 for seed 1.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Both cited authorities are retained-grade bounded inputs, and the runner performs genuine arithmetic over their controlled numerical surface rather than merely printing the transfer table. Although the final narrative lines repeat rounded constants, the preceding per-row values are independently computed from parsed logs and support the bounded conclusion. No external comparator, tuned match, or unclosed bridge is used."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wave_direct_dm_transfer_diagnostic.py",
+  "title": "Wave Direct-dM Transfer Diagnostic Note",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

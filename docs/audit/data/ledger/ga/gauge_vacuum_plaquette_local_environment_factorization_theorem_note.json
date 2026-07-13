@@ -1,0 +1,453 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
+  ],
+  "direct_in_degree": 11,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.214,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "60320924a5f5df33740f40d79397ad5ce8a17d1ca55ab9e6754e60f5b2a98403",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T18:54:36.358385+00:00",
+      "archived_for_note_hash": "3093688393831480fb86ba7ecac7dd11b81d801e12a9a5c62094388b281cc7fa",
+      "audit_date": "2026-05-02T16:57:53.333732+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:fresh-2026-05-02-local-environment-factorization-mill",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated setup, the argument closes the mixed-kernel part by combining explicit one-link Wilson convolution eigenvalues with the trivial-channel action of non-marked links. It does not claim to compute the residual source-sector environment or the full beta=6 plaquette value.",
+      "claim_scope": "The normalized Wilson mixed-kernel compression on the marked plaquette character sector factorizes exactly as the four marked-link local factor a_(p,q)(beta)^4, leaving residual source-sector environment data beyond the normalized mixed kernel open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-02T16:57:53.333732+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "After trivial-channel normalization, the four marked plaquette links contribute a_(p,q)(beta)^4 while all non-marked mixed-link factors contribute only representation-independent scalars, so D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 1,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The scoped result is not the full plaquette closure but the exact localization of the normalized mixed-kernel compression. The source note explicitly keeps the residual source-sector environment and beta=6 Perron data open, so the unresolved object is not smuggled into the conclusion. The runner supports the local factorization, zero mixed-kernel spread, and distinction between the local-only Perron value and the full comparator."
+    },
+    {
+      "archived_at": "2026-05-03T11:33:25.056425+00:00",
+      "audit_date": "2026-05-02T19:05:24.128362+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.954,
+        "transitive_descendants": 247
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-pr291-gauge-plaquette-factorization-cicero-2026-05-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note closes the scoped factorization by combining the SU(3) Wilson character coefficient formula, trivial-irrep action of non-marked links, and the four marked links of the plaquette. The current runner independently computes the coefficient sequence at beta=6 and verifies the normalized mixed-kernel spread is zero, without using residual environment or canonical P(6) closure.",
+      "claim_scope": "After trivial-channel normalization, the Wilson mixed-kernel compression on the marked-plaquette character sector equals the four marked-link local factor a_(p,q)(beta)^4, with residual environment data and P(6) closure out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T19:05:24.128362+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "claim_type_reaudit": {
+          "audit_date": "2026-05-02T16:57:53.334009+00:00",
+          "auditor": "codex-audit-loop:fresh-2026-05-02-local-environment-factorization-mill",
+          "auditor_family": "codex-current",
+          "claim_scope": "The normalized Wilson mixed-kernel compression on the marked plaquette character sector factorizes exactly as the four marked-link local factor a_(p,q)(beta)^4, leaving residual source-sector environment data beyond the normalized mixed kernel open.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "first_audit": {
+          "audit_date": "2026-04-29T11:43:56.151183+00:00",
+          "auditor": "codex-gpt-5.5-backlog-sweep-2026-04-29",
+          "auditor_family": "codex-gpt-5.5",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "legacy_confirmed_clean_claim_type_reaudit",
+        "second_audit": {
+          "audit_date": "2026-04-30T14:53:54.997234+00:00",
+          "auditor": "codex-audit-loop-second-20260430-gauge-local-env-factorization",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-04-30T17:50:00.549270+00:00",
+          "auditor": "codex-judge-20260430-phase-a-local-env-factorization",
+          "auditor_family": "codex-current",
+          "first_auditor_error": null,
+          "independence": "judicial_review",
+          "judgment_rationale": "The contention was clean algebraic closure versus conditional status because the source row is open. Audit-clean is allowed on support/open/unknown rows without promoting their effective tier; the mixed-kernel locality proof and runner close the stated factorization, while residual environment data remain outside the claim boundary.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second auditor treated the source row's open tier as a bar to audit-clean, contrary to the audit-lane propose/ratify split.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "After trivial-channel normalization the full mixed-kernel compression on the marked plaquette character sector is exactly D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only if the accepted Wilson 3+1 source-surface convention or temporal-gauge mixed-kernel factorization is later removed from the scoped inputs; do not treat this clean verdict as closure of the excluded residual environment or P(6) claims.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The bounded theorem closes because the load-bearing step is a local mixed-kernel factorization: marked links contribute the normalized one-link Wilson eigenvalue and non-marked links collapse to a representation-independent trivial-channel scalar. The runner checks the hard bridge inside the scoped theorem, including explicit Wilson coefficients, positivity, local-factor symmetry, and zero normalized spread. Residual risk is limited to the stated convention that the accepted Wilson 3+1 source surface and temporal-gauge mixed-kernel factorization are the scoped inputs; this audit does not promote residual source-sector environment data, beta=6 Perron moments, analytic P(6), or canonical plaquette closure."
+    },
+    {
+      "archived_at": "2026-05-09T14:37:41.961472+00:00",
+      "archived_for_note_hash": "ef05a3f9e4c4044a77f355239a88ac5229982419274beda3be6d9c3ac928629b",
+      "audit_date": "2026-05-03T13:23:17.258379+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 15.077,
+        "transitive_descendants": 269
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-agent-20260503-gvplftn",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The internal representation-theoretic algebra closes only after the mixed-kernel factorization and marked-surface geometry are assumed. The restricted packet does not prove those premises, so the theorem remains conditional.",
+      "claim_scope": "After trivial-channel normalization, the Wilson mixed-kernel compression on the marked-plaquette character sector equals the four marked-link factor a_(p,q)(beta)^4, excluding residual source-sector environment data and P(6) closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T13:23:17.258379+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "After the temporal-gauge mixed-kernel factorization and accepted Wilson 3+1 marked-plaquette source surface are granted, trivial-channel normalization makes the mixed-kernel compression on the marked plaquette character sector D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: supply retained one-hop theorem inputs or an expanded proof/runner that constructs the mixed kernel on the marked plaquette sector and verifies non-marked-link scalar collapse without hard-coding the contested compression.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the note's algebraic factorization depends on asserted inputs that are not proved inside the restricted packet, especially exact temporal-gauge mixed-kernel factorization over spatial links and the accepted Wilson 3+1 source surface with exactly four marked mixed links. Why this blocks: the bounded conclusion follows only after those operator/surface premises are granted, and the runner constructs diag(a_link^4) and c00/c00 rather than deriving the mixed-kernel compression from the underlying link operator. Repair target: supply retained one-hop theorem inputs or an expanded proof/runner that constructs the mixed kernel on the marked plaquette sector and verifies non-marked-link scalar collapse without hard-coding the contested compression. Claim boundary until fixed: conditional on the accepted source-surface and link-factorization premises, the local algebra supports the normalized a_(p,q)^4 factor and does not address residual environment data or P(6)."
+    },
+    {
+      "archived_at": "2026-05-10T13:32:07.356392+00:00",
+      "archived_for_note_hash": "89adc7f0387f89f4aef6ded13a2adcb9a2edc743f27dee3380b21d68ada6bfa5",
+      "audit_date": "2026-05-09T14:49:29.460822+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 12.448,
+        "runner_hash": "de8639c5622055bdf528b2085c4a1e1d376e1442e19783709f4e0f89c1d0cad8",
+        "transitive_descendants": 493
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0d35-6b75-7342-bbd3-1364de96c97a",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic factorization would close if the restricted packet supplied a retained derivation from the Wilson one-step transfer kernel to independent temporal-gauge one-link mixed convolutions on the marked sector. The cited authority establishes the transfer operator and character recurrence, but does not explicitly derive the mixed-kernel spatial-link factorization or the marked/non-marked compression map.",
+      "claim_scope": "Audited only the bounded claim that the normalized Wilson mixed-kernel action on the marked-plaquette character sector reduces to the four marked-link factor a_(p,q)(beta)^4, with residual source-sector environment data outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-09T14:49:29.460822+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "After trivial-channel normalization, the full mixed-kernel compression on the marked plaquette character sector is exactly D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite or prove the retained operator bridge from the Wilson one-step kernel to the normalized marked-sector mixed-link convolution operator, and update the runner to construct that bridge rather than starting from the diagonal factor.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the decisive mixed-kernel-to-one-link-convolution bridge is asserted rather than derived in the restricted packet. Why this blocks: the runner constructs the diagonal local factor and sets the non-marked normalized scalar to c00/c00, so it witnesses consistency of the claimed factorization but does not derive it from the full transfer kernel. Repair target: add or cite a retained theorem constructing the temporal-gauge mixed-kernel factorization over spatial links and proving the marked/non-marked action on the marked plaquette character sector. Claim boundary until fixed: the note supports a conditional algebraic reduction of an already-factorized mixed kernel, not an independently closed bounded theorem from the provided authority."
+    },
+    {
+      "archived_at": "2026-05-23T13:34:34.128690+00:00",
+      "audit_date": "2026-05-10T13:40:01.143822+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 12.757,
+        "runner_hash": "de8639c5622055bdf528b2085c4a1e1d376e1442e19783709f4e0f89c1d0cad8",
+        "transitive_descendants": 611
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e121c-0aca-7ab0-b5e4-6f569c4748f4",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from an independent product of normalized one-link Wilson convolution factors to a_(p,q)(beta)^4 is clear. The supplied one-hop authorities do not explicitly establish the load-bearing temporal-gauge mixed-kernel factorization into independent one-link convolutions on the marked source sector, and the runner hard-codes that structure rather than deriving it from the transfer kernel.",
+      "claim_scope": "Bounded claim that the normalized Wilson mixed-kernel compression on the marked-plaquette character sector is exactly the four marked-link local factor a_(p,q)(beta)^4, with non-marked links contributing only trivial-channel scalars.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T13:40:01.143822+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_type_changed:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:bounded_theorem->positive_theorem",
+      "load_bearing_step": "Each marked-link factor contributes the normalized irrep eigenvalue a_(p,q)(beta), while every non-marked mixed-link factor contributes only a rep-independent scalar, hence D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or audit an explicit theorem deriving temporal-gauge mixed-kernel factorization over spatial links and the marked/non-marked compression map from the exact Wilson transfer kernel.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the note imports the temporal-gauge mixed-kernel linkwise factorization and its exact compression to one-link Wilson convolution eigenvalues without a supplied retained bridge theorem. Why this blocks: the cited transfer and source-sector notes establish the transfer setup and a central diagonal residual compression, but not the specific marked-link/non-marked-link decomposition that identifies the normalized diagonal sequence as a_(p,q)^4. Repair target: add or cite a retained theorem deriving the linkwise mixed-kernel factorization and compression map from the exact Wilson transfer kernel on the accepted 3+1 source surface. Claim boundary until fixed: conditional algebraic consequence that if the normalized mixed kernel is the stated product of one-link Wilson convolutions, then the marked sector factor is exactly a_(p,q)(beta)^4."
+    },
+    {
+      "archived_at": "2026-05-24T16:22:53.988842+00:00",
+      "archived_for_note_hash": "2302477e6ecfc7280dfb5d37239436fe1c315e9a0527b60a0afef7646855b700",
+      "audit_date": "2026-05-23T14:42:49.514118+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 14.974,
+        "runner_hash": "de8639c5622055bdf528b2085c4a1e1d376e1442e19783709f4e0f89c1d0cad8",
+        "transitive_descendants": 1005
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T144227Z-05b8ad00-gauge_vacuum_plaquette_l-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic step from linkwise factorization and trivial-link action to a_(p,q)^4 is coherent, but the restricted cited authorities do not explicitly close the required temporal-gauge mixed-kernel factorization over spatial links and the exact marked/non-marked compression map. Those premises are asserted in the note but not derived in the provided upstream text.",
+      "claim_scope": "Normalized Wilson mixed-kernel compression on the marked-plaquette character sector factors as the four marked-link local Wilson convolution eigenvalue a_(p,q)(beta)^4, with residual source-sector environment data outside this bounded scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T14:42:49.514118+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "After trivial-channel normalization the full mixed-kernel compression on the marked plaquette character sector is exactly D_beta^mix,norm chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q), because only the four marked links carry nontrivial representation dependence and all non-marked mixed-link factors see only the trivial irrep.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide the upstream theorem or explicit derivation showing temporal-gauge mixed-kernel linkwise convolution factorization and the marked/non-marked compression map on the marked-plaquette class-function sector.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Both cited authorities are retained-grade, and the runner performs a real finite algebraic/numerical witness for the Bessel determinant coefficients and normalized diagonal local factor rather than merely printing constants. However, the central load-bearing theorem depends on an operator-level bridge: that the temporal-gauge mixed kernel factorizes into independent spatial-link convolutions whose restriction to the marked plaquette sector leaves exactly four nontrivial links and only trivial-channel scalars elsewhere. That bridge is not explicitly established by the restricted cited authority text, so retained status cannot propagate to the bounded conclusion from this packet alone."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.734260+00:00",
+      "audit_date": "2026-05-24T17:12:07.909530+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks.",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+        ],
+        "load_bearing_score": 15.515,
+        "runner_hash": "23bc6ec06fcdfc0fc5083992c43a1daebc59816f8a0b9dff5371db3033f95e66",
+        "transitive_descendants": 1034
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T171147Z-716c6853-gauge_vacuum_plaquette_l-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note is explicitly narrowed to the finite coefficient packet, and the provided runner computes the Wilson coefficients from the Bessel-determinant mode sum rather than importing or hard-coding the contested values. It does not claim the still-open actual mixed-kernel compression bridge.",
+      "claim_scope": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T17:12:07.909530+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-24T17:11:19.546989+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T171057Z-716c6853-gauge_vacuum_plaquette_l-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite packet on the runner's dominant-weight box at beta = 6 and MODE_MAX = 80: normalized SU(3) one-link coefficients, their fourth-power diagonal local packet, and finite algebraic checks for exp(3J)D_6^loc exp(3J).",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-24T17:12:07.909530+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T171147Z-716c6853-gauge_vacuum_plaquette_l-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner computes normalized one-link Wilson coefficients a_(p,q)(6), builds D_6^loc = diag(a_(p,q)(6)^4), and checks the finite package K_6^loc = exp(3J) D_6^loc exp(3J) on the finite dominant-weight box.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the Bessel-determinant identity and truncation error assumptions if promoting beyond the finite packet scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Within the narrowed bounded scope, the load-bearing finite computation is directly implemented in the runner and the remaining checks are algebraic properties of the constructed finite matrices. The cited authorities are retained-grade or retained_bounded, and the note does not rely on their open stronger mixed-kernel claims. The runner includes no helper opacity and no hard-coded expected coefficient table."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
+  "title": "Gauge-Vacuum Plaquette Local Wilson Factor Finite Packet",
+  "transitive_descendants": 839,
+  "verdict_rationale": null
+}

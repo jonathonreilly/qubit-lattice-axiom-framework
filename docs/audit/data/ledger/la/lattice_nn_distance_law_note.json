@@ -1,0 +1,167 @@
+{
+  "audit_date": "2026-05-07T02:35:11.544536+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_claim_scope": {
+      "lattice_nn_continuum_note": "Bounded finite-spacing computational claim for the raw nearest-neighbor harness on H_finite = {2.0, 1.0, 0.5, 0.25}: finite gravity, k=0, MI, classical purity, total-variation, and Born rows, with Born residual < 1e-10 and h = 0.125/continuum explicitly outside the claimed window."
+    },
+    "dep_claim_type": {
+      "lattice_nn_continuum_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "lattice_nn_continuum_note": "retained_bounded"
+    },
+    "deps": [
+      "lattice_nn_continuum_note"
+    ],
+    "load_bearing_score": 0.0,
+    "runner_hash": "2ac0c0b77e6a0917a1c2f39b585b41bffb2ba4bf5a14f4bb95ce4c8a71596b06",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-gpt-5.5-xhigh-lattice-nn-distance-law-audit-1-2026-05-07",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The current runner completed and reproduces the source note's distance rows, signs, slopes, and R^2 values. The cited one-hop dependency is now retained_bounded/audited_clean for the same raw NN finite window including h=1.0,0.5,0.25, so the prior upstream Born/k=0 bridge is closed within the restricted packet.",
+  "claim_id": "lattice_nn_distance_law_note",
+  "claim_scope": "Bounded barrier-harness distance-law claim for raw nearest-neighbor h={1.0,0.5,0.25}, b={3,5,7,10,13,16,19}: signed centroid shifts and far-field |delta| power-law fits for fixed strength and alpha=1.5, inheriting Born-clean finite-window support from lattice_nn_continuum_note.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-07T02:35:11.544536+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lattice_nn_continuum_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/lattice_nn_continuum.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 3.959,
+  "load_bearing_step": "On the raw NN barrier refinement path, refined h=0.5 and h=0.25 retain a positive far-field distance signal with fixed-strength decay slopes near -1, while alpha=1.5 preserves but flattens the decay.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1f77939b889ff5d61c44061ea9cb73eeb7b0b022afabebde994b51db4059f92c",
+  "note_path": "docs/LATTICE_NN_DISTANCE_LAW_NOTE.md",
+  "notes_for_re_audit_if_any": "Recheck if the imported lattice_nn_continuum runner, B_VALUES/H_VALUES, FAR_FIELD_B threshold, or propagate/generate_nn_lattice definitions change.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368974+00:00",
+      "archived_for_note_hash": "f8a85dbbac85869ea9c1158216d30d7a4ea09bcb885b9cd7c5de29932398f78c",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T03:48:09.222340+00:00",
+      "archived_for_note_hash": "2fdaf10ceff40510bf9de3f440687100ea35c79513cfbd713cc28f072c5d245f",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live distance-law script reproduces the note's far-field rows and fits, but the candidate retained-grade framing depends on the upstream Born-clean NN continuum note, which is unaudited/unknown, and the distance runner does not verify those Born/k=0 controls.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On the raw NN barrier harness, fixed strength gives positive far-field distance-law signal at h = 0.5 and h = 0.25 with slopes -0.966 and -0.929, while alpha = 1.5 preserves the sign but flattens the decay.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [
+        "docs/LATTICE_NN_CONTINUUM_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the source's live distance-law numbers reproduce, but the retained claim is explicitly on a refinement path inherited from an upstream Born-clean NN branch whose note is not audit-clean; the archived logs named by the source are also absent from this worktree, and the distance runner does not check Born or k=0. Why this blocks: a meaningful far-field distance-law fit cannot be promoted as a retained Born-safe refinement-path result until the upstream refinement controls are independently retained or included in the same runner. Repair target: audit-retain LATTICE_NN_CONTINUUM_NOTE.md or extend this runner to recompute the Born/k=0/MI/decoherence controls for the same h values and restore/register the archived logs if they remain part of the artifact chain. Claim boundary until fixed: safely claim the live runner's finite barrier-harness table: fixed strength has positive far-field signal at h=0.5 and h=0.25 with slopes near -1, alpha=1.5 keeps the far-field sign but flattens the exponent, and near-field/coarse-sign behavior remains mixed."
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.236340+00:00",
+      "audit_date": "2026-04-30T19:35:51.736178+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The runner exits zero, but the audit classifier records no A/B/C/D PASS checks for a load-bearing audit surface.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:lattice_nn_continuum_note",
+      "load_bearing_step": "- the near-field sign remains mixed, so the retained claim is about the",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the registered runner exits with status 0 but has no classified A/B/C/D PASS checks in runner_classification.json. Why this blocks: infrastructure registration alone does not show that the load-bearing step is being computed or checked. Repair target: add explicit runner checks or a proof artifact that exposes the load-bearing computation under the audit classifier. Claim boundary until fixed: safe to cite as a bounded note with executable but unratified support."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 1,
+    "C": 5,
+    "D": 0,
+    "total_pass": 6
+  },
+  "runner_path": "scripts/lattice_nn_distance_law.py",
+  "title": "NN Lattice Distance-Law Note",
+  "transitive_descendants": 10,
+  "verdict_rationale": "The claim is bounded to the barrier harness and finite h,b grid actually executed by the runner. The live output supports the far-field sign statements, fixed-strength near-1/b decay through h=0.25, and alpha=1.5 flattening comparison, while the audited-clean continuum note supplies the raw NN finite-window Born/k=0 controls. No continuum, universal attraction, or no-barrier branch claim is needed for closure."
+}

@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "emergent_lorentz_invariance_note",
+    "lorentz_violation_derived_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1e88068801094fee3065bb8558db808edfb47d1b77dab6de8794096fb6e57d82",
+  "note_path": "docs/LORENTZ_VIOLATION_ANGULAR_FINGERPRINT_AC_PHI_LAMBDA_INDEPENDENCE_BOUNDED_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:30.755034+00:00",
+      "audit_date": "2026-06-09T13:46:12.444256+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "lorentz_violation_derived_note": "Audited the bounded derivation that a Planck-spaced cubic Z^3 lattice with the standard second-order finite-difference kinetic operator produces a dimension-6, parity-even cubic-anisotropic Lorentz-violating correction with normalized l=4 cubic-harmonic angular structure."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "lorentz_violation_derived_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "lorentz_violation_derived_note": "retained_bounded"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "lorentz_violation_derived_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "503a0b568bb5e153ca683ff1c97b92cf6a178d5f4d4e53a84e93b8eab7818714",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-134412-6df7815215-lorentz_violation_angular_fi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The two retained_bounded authorities supply the bosonic and staggered dispersion surfaces, and elementary Taylor expansion gives the stated quartic coefficients with no odd powers. Dividing out the nonzero carrier coefficient leaves the same angular polynomial, and the axis/body-diagonal ratio follows directly from evaluating sum_i n_i^4 on unit directions.",
+      "claim_scope": "Within the two cited nearest-neighbor dispersion surfaces, the coefficient-normalized quartic Lorentz-violation angular shape is p_x^4 + p_y^4 + p_z^4 for both carriers, with [100]/[111] ratio 3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T13:46:12.444256+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Solving each supplied quartic correction against A(p^2)^2 + B sum_i p_i^4 gives A = 0 with B = -1/12 for the bosonic carrier and B = -1/3 for the staggered carrier, so normalizing by B gives the same operator sum_i p_i^4.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if the scope is later broadened to magnitude, scale conversion, or parent dispersion derivation; those are excluded here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic closure over the two supplied retained-grade dispersion inputs, not a new first-principles derivation of either surface. Independent Taylor expansion confirms 2(1-cos(pa))/a^2 = p^2 - a^2 p^4/12 + O(a^4 p^6) and sin^2(pa)/a^2 = p^2 - a^2 p^4/3 + O(a^4 p^6), so scalar normalization yields the same sum_i p_i^4 shape. The note explicitly excludes magnitude, scale conversion, experimental reach, and parent-status promotion, so no open Planck-pin or scale-reference premise is imported into the audited claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_lorentz_fingerprint_ac_phi_lambda_independence.py",
+  "title": "Lorentz-Violation Angular Fingerprint Is Independent of the AC Phi Lambda Carrier (Bounded)",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

@@ -1,0 +1,159 @@
+{
+  "audit_date": "2026-06-18T13:24:38.604232+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "Exact finite-matrix orbit identity for the runner-defined JW Gamma_i family, T1 species basis, full-cube C3 bit-cycle, and transported full-cube template W1(u,v,w,z), including nullity of the fourth slot in axis-matched returns.",
+      "koide_gamma_orbit_selector_bridge_note_2026-04-18": "Given the stated linear map from (u,v,w) to (r0,r1,r2), the cyclic Koide selector 2r0^2 = r1^2 + r2^2 is exactly equivalent to u^2 + v^2 + w^2 = 4(uv + uw + vw), and for positive amplitudes to Q = 2/3."
+    },
+    "dep_claim_type": {
+      "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "positive_theorem",
+      "koide_gamma_orbit_selector_bridge_note_2026-04-18": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "retained",
+      "koide_gamma_orbit_selector_bridge_note_2026-04-18": "retained"
+    },
+    "deps": [
+      "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
+      "koide_gamma_orbit_selector_bridge_note_2026-04-18"
+    ],
+    "load_bearing_score": 4.5,
+    "runner_hash": "34cfe237a42f4f31b93ffd819248382a8bd33785ea7f6ec356554f7d1d6b5633",
+    "transitive_descendants": 15
+  },
+  "audit_status": "audited_numerical_match",
+  "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18-first",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The algebraic cone root formula and positivity of exp(beta H_*) close for the stated family, and the runner computes the reported optimized numerical match. The closure is only at calibrated-witness scope; H_*, the small-root branch choice, and beta_* are not derived from retained charged-lepton dynamics.",
+  "claim_id": "koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18",
+  "claim_scope": "Audited the restricted claim that the imported neutrino-sector H_* exponential family, with the Koide-cone small branch and an optimized beta, gives a calibrated charged-lepton amplitude-direction witness inside the exact Gamma/full-cube three-slot template.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-06-18T13:24:38.604232+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
+    "koide_gamma_orbit_selector_bridge_note_2026-04-18"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "audited_numerical_match",
+  "effective_status_reason": "terminal_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_higgs_dressed_propagator_v1.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "audited_numerical_match",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "At beta_* ~= 0.6335716, the small-root branch of u(beta)=2(v+w)-sqrt(3(v^2+4vw+w^2)) with v,w read from exp(beta H_*) matches the PDG sqrt(m) direction essentially exactly.",
+  "load_bearing_step_class": "G",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d021b1ab421befd6e2930ef4858e5317eace9f7d6d78154f64a356c69dfd7e76",
+  "note_path": "docs/KOIDE_GAMMA_ORBIT_EXPONENTIAL_VALUE_LAW_CANDIDATE_NOTE_2026-04-18.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check only promotion attempts; the current packet supports a calibrated witness but not a retained value-law theorem.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T01:01:47.230786+00:00",
+      "archived_for_note_hash": "d40ec60d78a586a14e14d2ca4a9b6faf5d2ee8ca3b3f3c355a8a23332d6c9f3d",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-06-17T10:30:28.872309+00:00",
+      "archived_for_note_hash": "2e7a107ab483f8611348d9107002e373b951e16dae2cdf7ef3790b2db0323e4d",
+      "audit_date": "2026-05-10T20:25:02.007820+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "Exact finite-matrix orbit identity for the runner-defined JW Gamma_i family, T1 species basis, full-cube C3 bit-cycle, and transported full-cube template W1(u,v,w,z), including nullity of the fourth slot in axis-matched returns.",
+          "koide_gamma_orbit_selector_bridge_note_2026-04-18": "Given the stated linear map from (u,v,w) to (r0,r1,r2), the cyclic Koide selector 2r0^2 = r1^2 + r2^2 is exactly equivalent to u^2 + v^2 + w^2 = 4(uv + uw + vw), and for positive amplitudes to Q = 2/3."
+        },
+        "dep_claim_type": {
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "positive_theorem",
+          "koide_gamma_orbit_selector_bridge_note_2026-04-18": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18": "retained",
+          "koide_gamma_orbit_selector_bridge_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
+          "koide_gamma_orbit_selector_bridge_note_2026-04-18"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "34cfe237a42f4f31b93ffd819248382a8bd33785ea7f6ec356554f7d1d6b5633",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-audit-loop-019e1390-3ce9-7162-ad9d-a7cb552231e0",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic construction closes as a candidate family, but the charged-lepton value claim depends on an observationally pinned H_* and an optimized beta_* chosen by comparison to PDG sqrt(m). The restricted packet does not derive the generator choice, branch choice, or beta selection from retained microscopic dynamics.",
+      "claim_scope": "Audited the claimed one-parameter positive exponential witness family using the imported H_* pin and Koide selector cone, including its tuned charged-lepton direction match.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-10T20:25:02.007820+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Take the live Hermitian H_* from the repo\u2019s neutrino-sector pin, set X_beta = exp(beta H_*), read v(beta), w(beta), and choose beta_* so the small-root Koide-cone branch matches the charged-lepton sqrt(m) direction.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-check whether any future repaired note derives beta_* and the H_* generator independently rather than optimizing against PDG sqrt(m).",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 2,
+        "C": 0,
+        "D": 4,
+        "total_pass": 13
+      },
+      "verdict_rationale": "Issue: the load-bearing result is a tuned numerical match using an imported neutrino-sector H_* and an optimized beta against PDG charged-lepton amplitudes. Why this blocks: the note itself admits the selector and H_* are inputs, so the near-perfect direction match is not a retained derivation of charged-lepton values. Repair target: derive H_*, the small-root branch, and beta_* from retained charged-lepton microscopic dynamics without PDG-target optimization. Claim boundary until fixed: a sharp positive calibrated witness family, not a retained value law theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 7,
+    "B": 2,
+    "C": 0,
+    "D": 4,
+    "total_pass": 13
+  },
+  "runner_path": "scripts/frontier_koide_gamma_orbit_exponential_value_law_candidate.py",
+  "title": "Koide `Gamma`-Orbit Exponential Value-Law Candidate",
+  "transitive_descendants": 0,
+  "verdict_rationale": "Issue: the load-bearing match uses an observationally pinned H_* from the helper, selects the small-root branch, and optimizes beta against hard-coded PDG sqrt(m) comparators. Why this blocks: those choices make the result a tuned calibrated witness rather than a first-principles charged-lepton value-law derivation. Repair target: derive H_*, the branch, and beta selection from retained charged-lepton microscopic dynamics without PDG fitting. Claim boundary until fixed: a sharp one-parameter numerical witness in the exact semigroup/template class."
+}

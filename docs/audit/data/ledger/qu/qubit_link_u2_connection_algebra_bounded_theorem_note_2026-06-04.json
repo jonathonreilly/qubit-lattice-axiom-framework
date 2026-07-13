@@ -1,0 +1,482 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "per_site_su2_spin_half_theorem_note_2026-05-02",
+    "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+    "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.079,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c8fe86f247e7fef6242b304596a10fe206a9c23e26121221c573c27875c6315c",
+  "note_path": "docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T20:34:08.545942+00:00",
+      "audit_date": "2026-06-05T19:55:10.814151+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "In the retained one-qubit Pauli realization H_x = C^2, the per-site Pauli su(2) generators S_i = sigma_i/2 and the Clifford/Spin(3) infinitesimal generators, after the standard anti-Hermitian-to-Hermitian convention B_i = i S_i, are the same operator triple.",
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum-axiom qubit site A_x ~= M_2(C), the Pauli action S_i = \u03c3_i/2 realizes the irreducible two-dimensional complex su(2) module with Casimir 3/4 and j = 1/2, without identifying it with all physical spin sectors."
+        },
+        "dep_claim_type": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "key_terminology",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "7e670a677e06ba6069f903979b4ee6f1ef2c88f0118707a072bd542f381fcf13",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-195233-9af4004569-qubit_link_u2_connection_alg",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained C^2/Pauli inputs and the explicit unitary-link convention reduce the claim to finite-dimensional linear algebra: u(2) splits into traceless anti-Hermitian plus central phase line, and su(3) cannot inject into a 4-real-dimensional Lie algebra. The Pauli S_i convention matches the anti-Hermitian u(2) basis by the standard multiplication-by-i generator convention.",
+      "claim_scope": "Conditional on the unitary-link convention for C^2 qubit fibers, the Pauli-frame connection algebra is u(2)=su(2)+u(1), and a single qubit fiber has no faithful native su(3) color algebra.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T19:55:10.814151+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Conditioned on unitary link maps between two C^2 qubit fibers, the anti-Hermitian endomorphism algebra is u(2)=su(2)+u(1), with Pauli su(2) and central iI_2, while dim_R u(2)=4 obstructs any faithful native su(3) embedding on a single qubit fiber.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the Hermitian-generator convention S_i versus anti-Hermitian u(2) basis iS_i; it does not change the finite-dimensional algebra closure here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The cited non-axiom dependencies are retained-grade, and the minimal-axiom authority is explicitly flagged as an accepted framework premise. Independent algebra agrees with the runner: the Pauli spin triple closes as su(2), iI_2 is central, the anti-Hermitian endomorphism algebra has real dimension 4, and an 8-dimensional faithful su(3) algebra cannot embed natively on one C^2 fiber. The bounded unitary-link convention is stated in the claim scope rather than smuggled in as a physical gauge derivation, and the note explicitly excludes hypercharge, chirality, dynamics, gauge invariance, and color derivation."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:06.020953+00:00",
+      "archived_for_note_hash": "b06ff1a5cf5e5c8ff2216963cd5e91f2497bd52a35a0a473e368f135b373a8d8",
+      "audit_date": "2026-06-05T22:20:29.286570+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Operator-level identification on the retained one-qubit Pauli Cl(3,0) realization: the per-site Pauli su(2) generators S_i = sigma_i/2 and the infinitesimal Spin(3) generators from the Clifford action are the same Hermitian operator triple on C^2.",
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum/Axiom-1 qubit site with an oriented Pauli triple satisfying the stated relations, the local action S_i = \u03c3_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module."
+        },
+        "dep_claim_type": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "key_terminology",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "7e670a677e06ba6069f903979b4ee6f1ef2c88f0118707a072bd542f381fcf13",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-222006-26c926e43a-qubit_link_u2_connection_alg",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion is a finite-dimensional Lie algebra identity once the note's explicit unitary-link convention and the cited two-dimensional qubit carrier are granted. The su(2) Pauli part, central u(1) line, u(2) real dimension 4, traceless Hermitian dimension 3, and su(3) dimension obstruction all follow by standard matrix algebra from the provided inputs.",
+      "claim_scope": "Under the stated unitary-connection convention on two-dimensional qubit fibers, the connection algebra is u(2)=su(2)+u(1), and a single qubit fiber has no faithful native su(3) color algebra by dimension obstruction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T22:20:29.286570+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Conditioned on a link connection being a unitary map between two two-dimensional complex Hilbert spaces, its infinitesimal algebra is u(2)=su(2)+u(1), with Pauli S_i=sigma_i/2 and central generator iI_2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the bounded unitary-link convention is recorded outside the axiom baseline and is not later cited as a derived gauge-principle result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The runner source actually constructs Pauli matrices, checks commutators, anti-Hermiticity, ranks, Casimir, and firewall prose rather than merely printing constants. Independently, anti-Hermitian End(C^2) has basis iI and i sigma_i, so u(2) splits as the central u(1) plus traceless su(2), with dimensions 1+3=4. Since su(3) has real dimension 8 and its faithful adjoint/simple embedding cannot fit into the four-dimensional u(2) algebra on a single qubit carrier, the bounded color boundary also closes. The explicit convention is correctly presented as the theorem's bound, not as a derived axiom or physical Standard Model identification."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.513674+00:00",
+      "audit_date": "2026-06-15T21:41:48.859184+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Operator-level identification on the retained one-qubit Pauli Cl(3,0) realization: the per-site Pauli su(2) generators S_i = sigma_i/2 and the infinitesimal Spin(3) generators from the Clifford action are the same Hermitian operator triple on C^2.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum/Axiom-1 qubit site with an oriented Pauli triple satisfying the stated relations, the local action S_i = \u03c3_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module."
+        },
+        "dep_claim_type": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 13.781,
+        "runner_hash": "7e670a677e06ba6069f903979b4ee6f1ef2c88f0118707a072bd542f381fcf13",
+        "transitive_descendants": 109
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-213923-9258a6ca09-qubit_link_u2_connection_alg",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained/accepted inputs supply the C^2 qubit carrier and Pauli su(2) action; the remaining step is standard finite-dimensional matrix Lie algebra. The link-connection convention is part of the bounded claim scope, not an unscoped conclusion.",
+      "claim_scope": "Under the stated unitary qubit-link connection convention and a Pauli frame on C^2, the connection algebra has u(2)=su(2)\u2295u(1) form and a single qubit fiber has no faithful native su(3) color algebra.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T21:41:48.859184+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Conditioned on a unitary C^2-to-C^2 link convention, the anti-Hermitian endomorphism algebra is span_R{iI_2,i\u03c3_1,i\u03c3_2,i\u03c3_3}=u(2)=su(2)\u2295u(1), whose real dimension 4 is too small for a faithful 8-dimensional su(3) embedding.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only the stated generator convention distinction between Hermitian physics generators S_i and anti-Hermitian Lie algebra generators iS_i; it does not block the bounded algebra result as scoped.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The runner source performs actual finite-dimensional Pauli, rank, centrality, Casimir, and firewall checks rather than merely printing pass lines. Independent inspection gives the same algebra: u(2) has real basis iI_2 and i\u03c3_i, decomposes into central u(1) plus traceless su(2), and cannot contain a faithful 8-real-dimensional su(3) subalgebra. The result remains bounded to the stated unitary link-connection convention and does not derive electroweak physics or color."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.890097+00:00",
+      "audit_date": "2026-07-01T07:25:13.293899+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "On the repo one-qubit Pauli/Cl(3,0) realization, the per-site Pauli su(2) generators S_i = sigma_i/2 and the infinitesimal Clifford Spin(3) generators are the same operator triple, up to the standard anti-Hermitian i convention.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "For a single accepted Qubit/Axiom-1 site with local algebra M_2(C) and an oriented Pauli triple used as S_i=\u03c3_i/2, the local action is the irreducible two-dimensional complex j=1/2 su(2) module."
+        },
+        "dep_claim_type": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 10.82,
+        "runner_hash": "7e670a677e06ba6069f903979b4ee6f1ef2c88f0118707a072bd542f381fcf13",
+        "transitive_descendants": 112
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T072513Z-390c9ae2-qubit_link_u2_connection",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained or accepted-premise inputs supply the C^2 carrier and Pauli su(2) data; the unitary-link convention is stated as the theorem's bounded hypothesis. From those inputs, the u(2) direct-sum decomposition and the su(3) dimension obstruction are finite-dimensional Lie-algebra facts.",
+      "claim_scope": "Under the explicitly conditioned unitary link-connection convention between two-dimensional qubit fibers, the finite-dimensional connection algebra is u(2)=su(2)+u(1), and a single qubit fiber has no faithful native su(3) color algebra.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:25:13.293899+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "Conditioned on a link connection being a unitary map between two C^2 qubit fibers, the infinitesimal algebra is u(2)=su(2)+u(1), with the Pauli spin-half su(2) generator data and a central phase line; the same dimension count excludes faithful native su(3) on one C^2 fiber.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the physicist Hermitian-generator convention S_i=sigma_i/2 versus the anti-Hermitian u(2) basis; the runner covers the anti-Hermitian basis with i sigma_i and i I_2.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The runner source performs actual matrix-rank, commutator, centrality, Hermiticity, Casimir, and scope-firewall checks rather than merely printing a PASS summary. No external comparator, tuned numerical scale, or hidden Standard Model identification is used. The explicit bounded convention is not derived, but the claim is scoped as conditional on that convention, so the bounded theorem closes on its stated terms."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.500054+00:00",
+      "audit_date": "2026-07-01T23:50:06.665857+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "In the canonical one-qubit Pauli/Cl(3,0) realization on C^2, the per-site Pauli spin generators S_i = sigma_i/2 coincide operator-level with the Clifford bivector/Spin(3) infinitesimal generator data, with proper cubic rotations checked by SU(2) conjugation.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one Axiom-Qubit site with an oriented Pauli triple satisfying the displayed Pauli relations, the local action S_i = sigma_i/2 is the irreducible two-dimensional j=1/2 complex su(2) module; no physical spin-statistics or multi-site sector identification is audited."
+        },
+        "dep_claim_type": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 10.82,
+        "runner_hash": "7e670a677e06ba6069f903979b4ee6f1ef2c88f0118707a072bd542f381fcf13",
+        "transitive_descendants": 112
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T235006Z-e97bacb7-qubit_link_u2_connection",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated unitary-link convention, the conclusion follows by finite-dimensional Pauli/u(2) algebra and dimension counting from the cited qubit C^2 and Pauli su(2) inputs. The color boundary is scoped only to the native single-qubit connection algebra and expressly excludes added carriers or selectors.",
+      "claim_scope": "Conditioned on the explicit convention that a qubit-link connection is a unitary map between two C^2 fibers, the infinitesimal connection algebra is u(2)=su(2) plus u(1), with no faithful native su(3) color algebra on a single qubit fiber.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T23:50:06.665857+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "The finite-dimensional algebra step is that the anti-Hermitian endomorphisms of C^2 have basis span_R{iI_2, i sigma_1, i sigma_2, i sigma_3}, giving u(2)=su(2) plus u(1) and too little dimension for a faithful native su(3) embedding.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the Hermitian-generator versus anti-Hermitian u(2) convention wording; the factor-of-i convention does not change the scoped algebraic result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The bounded input is stated as a theorem hypothesis rather than derived or hidden. The non-axiom cited authorities are retained-grade, and the minimal-axiom dependency is an accepted premise. The runner performs actual Pauli commutator, rank, centrality, Casimir, and dimension-obstruction checks; the remaining checks are source-scope firewall checks. No external comparator, tuned numerical match, or physical electroweak/color identification is used."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.775505+00:00",
+      "audit_date": "2026-07-05T20:27:39.334060+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Canonical Pauli realization gamma_i=sigma_i on C^2: internal S_i=sigma_i/2 and the self-adjoint infinitesimal Spin(3) unitary generators are the same 2x2 operators, with Clifford bivectors B_i=i*S_i.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On the Axiom/Qubit one-site algebra M_2(C), the local Pauli action S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module, without identifying physical spin for all matter sectors."
+        },
+        "dep_claim_type": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 10.214,
+        "runner_hash": "7e670a677e06ba6069f903979b4ee6f1ef2c88f0118707a072bd542f381fcf13",
+        "transitive_descendants": 104
+      },
+      "audit_status": "audit_in_progress",
+      "auditor": "codex-audit-loop-2026-07-05-wave1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": "cross_confirmation_disagreement",
+      "chain_closes": true,
+      "chain_closure_explanation": "The convention supplies U(2) as the finite-dimensional unitary connection group on C^2; retained Pauli/Hilbert-carrier inputs supply the C^2 Pauli frame. Independent algebra verifies the su(2) commutators, the central iI generator, real dimension 4 for u(2), Casimir 3/4 I, and the dimension obstruction to an injective su(3) algebra inside a single-qubit endomorphism algebra.",
+      "claim_scope": "Under the explicit convention that a link connection is a unitary map between two C^2 qubit fibers, the infinitesimal connection algebra is u(2)=su(2)+u(1), with no faithful native single-qubit su(3) color algebra.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:53:47.441816+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-05T20:27:39.334060+00:00",
+          "auditor": "codex-audit-loop-2026-07-05-wave1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the explicit convention that a link connection is a unitary map between two C^2 qubit fibers, the infinitesimal connection algebra is u(2)=su(2)+u(1), with no faithful native single-qubit su(3) color algebra.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T17:02:59.181726+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00007-qubit_link_u2_connection_alg",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional on a U(2)-valued qubit-link connection, the single-fiber infinitesimal algebra is su(2) direct-sum u(1), with no faithful su(3) action inside the four-real-dimensional anti-Hermitian endomorphism algebra of C^2.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "disagreement"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02:retained->unaudited",
+      "load_bearing_step": "Condition on the narrow connection convention that a link connection between two repo-baseline qubit fibers is a unitary map between their two-dimensional complex Hilbert spaces; after choosing the standard Pauli frame on the target fiber, the infinitesimal connection algebra is u(2)=su(2)+u(1), and the single C^2 fiber has no faithful native su(3) color algebra.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:high->critical: first-pass audit (auditor=codex-audit-loop-2026-07-05-wave1, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The load-bearing claim is bounded exactly by the explicit unitary-link convention, which is not treated as an axiom. The paired runner exits with PASS=19 FAIL=0 and checks the Pauli su(2), central u(1), u(2) dimension, spin-half Casimir, single-qubit color obstruction, and source boundary firewalls. Residual risk is downstream misuse: this row only supplies the algebraic u(2) shape and absence of native single-qubit color, not a physical Standard Model gauge identification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_qubit_link_u2_connection_algebra_bounded_2026_06_04.py",
+  "title": "Qubit-Link U(2) Connection Algebra (Bounded Theorem)",
+  "transitive_descendants": 764,
+  "verdict_rationale": null
+}

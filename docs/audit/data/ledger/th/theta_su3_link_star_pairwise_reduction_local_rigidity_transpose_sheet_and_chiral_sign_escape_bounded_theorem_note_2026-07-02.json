@@ -1,0 +1,118 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_su3_link_star_pairwise_reduction_local_rigidity_transpose_sheet_and_chiral_sign_escape_bounded_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (exact finite identities and certificates",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "fc3ddde4356d7addaf60070abf65967bc38f180b60efcbc67f4a5948141cc6a2",
+  "note_path": "docs/THETA_SU3_LINK_STAR_PAIRWISE_REDUCTION_LOCAL_RIGIDITY_TRANSPOSE_SHEET_AND_CHIRAL_SIGN_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.975989+00:00",
+      "audit_date": "2026-07-10T04:40:40.123466+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "0bcc3b4b258a9ff4f28d0c5c230efc5ef8ab02a7080b8ee4caae3983ed7117ca",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00105-theta_su3_link_star_pairwise",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner's 10x8 Jacobian varies only C with A and B fixed, so it does not establish local injectivity of the full triple pair-data map modulo diagonal conjugation. It also tests only one conjugate-symmetric weight, which cannot support the claimed evenness for arbitrary real class weights.",
+      "claim_scope": "The runner audits numerical projector identities, flip parities, an exhibited transpose pair, and a finite-difference rank test for one deterministic SU(3) witness with the hard-coded weight w = 1 + 0.35(chi_F + chi_Fb).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:40:40.123466+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16:retained_no_go->unaudited",
+      "load_bearing_step": "At fixed generic (A, B), the full-rank pair-data Jacobian locally pins the third staple, while transpose preserves the pair data and star value but reverses the chiral datum.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after explicitly restricting the theorem to flip-even conjugate-symmetric weights, replacing the finite-difference rank test with a certified derivative calculation, and checking the full pair-data Jacobian on the triple modulo diagonal conjugation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 7,
+        "C": 3,
+        "D": 4,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The individual numerical checks pass, but their scope is narrower than the theorem's load-bearing conclusions. Pointwise reality of an SU(3) class weight does not by itself imply dagger or outer-conjugation evenness; the runner instead hard-codes the stronger conjugate-symmetric character combination. Moreover, the finite-difference singular value is not an exact rank certificate and does not prove local rigidity of the complete triple orbit."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py",
+  "title": "SU(3) Link Stars: Pair Data Are Locally Rigid (Full-Rank Jacobian), the Known Global Degeneracy Is the Transpose Sheet Carrying Only the Chiral Sign, and Real-Weight Stars Are Even Across It \u2014 the SU(3) Star Reduces to Pairwise Data in the Local-Plus-Sheet Sense and the Chiral Sign Is an Exhibited Multilinear Escape (Bounded Theorem)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

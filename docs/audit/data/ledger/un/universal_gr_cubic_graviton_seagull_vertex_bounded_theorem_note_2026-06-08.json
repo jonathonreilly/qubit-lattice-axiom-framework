@@ -1,0 +1,195 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
+    "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
+    "universal_gr_polarization_frame_bundle_blocker_note",
+    "universal_gr_supermetric_normal_form_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "75d4dbacfba631b352d3bb5e2ff7e5f9c57fc7eef3f4b4c4229f07493005b829",
+  "note_path": "docs/UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T19:27:10.659699+00:00",
+      "archived_for_note_hash": "f012ff82664edfdaec47119733a17e716e5a37eb55ad40be8c133d093a9930d9",
+      "audit_date": "2026-06-09T12:05:40.404631+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08": "Finite-BZ runner-defined yz TT bubble sign diagnostic for D(q)=i sigma.sin(q)+mI over the stated N and mass tests, with the bare-Hermitian control comparison.",
+          "universal_gr_polarization_frame_bundle_blocker_note": "Bounded blocker claim that the current universal-GR stack determines a frame-orbit family of candidate localizations, not a canonical Pi_curv projector bundle.",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08": "Audited only the runner-defined finite-BZ scheme with D(q), V_cons, and S=-B0+B1+B5: leading longitudinal violation is cancelled in the tested channels and the yz TT stiffness remains positive for the tested masses.",
+          "universal_gr_supermetric_normal_form_note": "Given W[J]=log det(D+J)-log det D and positive invariant background D=diag(a,b,b,b), the local Hessian on symmetric 3+1 perturbations equals the inverse-metric contraction and has the stated canonical diagonal normal form."
+        },
+        "dep_claim_type": {
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_polarization_frame_bundle_blocker_note": "bounded_theorem",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_supermetric_normal_form_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_polarization_frame_bundle_blocker_note": "retained_bounded",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_supermetric_normal_form_note": "retained"
+        },
+        "deps": [
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
+          "universal_gr_polarization_frame_bundle_blocker_note",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
+          "universal_gr_supermetric_normal_form_note"
+        ],
+        "load_bearing_score": 5.892,
+        "runner_hash": "53cefbaa74731b04be45a03bba213d3e4525b2fb5bb3e62a956bc22ec1174e63",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260609-120250-6dfd5f6be5-universal_gr_cubic_graviton_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner source genuinely computes finite determinant cubic responses, but its T1 triangle uses a momentum-space conserved vertex that is not derived in the packet as the dD vertex of the same vielbein-coupled determinant used for T2/T3. The missing step is a same-coupling dD/d2D/d3D decomposition, or a proof that the T1 vertex is the W-native paramagnetic triangle for the trace channels.",
+      "claim_scope": "Finite single two-component Cl(3) determinant diagnostic at Lx<=8, Nyz<=10, m=1 with e=(I+h)^(1/2): nonzero trace-containing full cubic channels and vanishing tested pure-TT channels are audited, but the seagull-localization identification is not closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T12:05:40.404631+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The finite single-fermion determinant has a nonzero cubic response in trace-containing channels, and the nonzero response is localized to the vielbein seagull part rather than to the tested paramagnetic triangle.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a same-vielbein-coupled dD/d2D/d3D decomposition runner or derivation showing that the checked triangle is the paramagnetic term for the determinant cubic trace channels.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+        "docs/UNIVERSAL_GR_INDUCED_GRAVITON_W_NATIVE_FINITE_K_BOUNDED_THEOREM_NOTE_2026-06-08.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The primary runner is not a print-only or hard-coded certificate: it builds finite operators and computes the reported full determinant cubic values and robustness checks. However, the load-bearing seagull claim combines that finite-difference determinant calculation with a separate conserved-vertex triangle check, and the restricted packet does not close the bridge between those two objects. The cited stress-Ward authority also explicitly leaves the complete W-native metric-Hessian/contact identification open, so the bounded full-response numerics are supported but the seagull-localization conclusion remains conditional."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:33.985393+00:00",
+      "audit_date": "2026-06-10T03:47:50.509079+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08": "Finite-BZ runner-defined yz TT bubble sign diagnostic for D(q)=i sigma.sin(q)+mI over the stated N and mass tests, with the bare-Hermitian control comparison.",
+          "universal_gr_polarization_frame_bundle_blocker_note": "Bounded blocker claim that the current universal-GR stack determines a frame-orbit family of candidate localizations, not a canonical Pi_curv projector bundle.",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08": "Audited only the runner-defined finite-BZ scheme with D(q), V_cons, and S=-B0+B1+B5: leading longitudinal violation is cancelled in the tested channels and the yz TT stiffness remains positive for the tested masses.",
+          "universal_gr_supermetric_normal_form_note": "Given W[J]=log det(D+J)-log det D and positive invariant background D=diag(a,b,b,b), the local Hessian on symmetric 3+1 perturbations equals the inverse-metric contraction and has the stated canonical diagonal normal form."
+        },
+        "dep_claim_type": {
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_polarization_frame_bundle_blocker_note": "bounded_theorem",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_supermetric_normal_form_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_polarization_frame_bundle_blocker_note": "retained_bounded",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_supermetric_normal_form_note": "retained"
+        },
+        "deps": [
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
+          "universal_gr_polarization_frame_bundle_blocker_note",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
+          "universal_gr_supermetric_normal_form_note"
+        ],
+        "load_bearing_score": 5.959,
+        "runner_hash": "e22b58266a4d2aa2e830385b627ec7a38c743ec0c725d65d66655bb255567a92",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-034637-2afe0ab70b-universal_gr_cubic_graviton_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the finite Dirac matrices, applies the stated sqrt(I+h) vielbein coupling, computes log|det D[h]| finite differences, and independently forms the trace decomposition from finite-differenced D derivatives. Manual differentiation of log det D gives the displayed coefficients Tr[G d3D] - three d2D*dD terms + two ordered dD^3 triangle terms, matching the implemented decomposition after taking the real log-absolute determinant channel.",
+      "claim_scope": "Finite two-component Cl(3) vielbein-coupled determinant diagnostic at Lx<=8, Nyz<=10, m=1, verifying nonzero trace-containing cubic W''' channels, vanishing tested pure-TT channels, robustness checks, and same-coupling trace decomposition.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T03:47:50.509079+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:universal_gr_polarization_frame_bundle_blocker_note:retained_bounded->unaudited",
+      "load_bearing_step": "A same-vielbein-coupled finite dD/d2D/d3D decomposition reconstructs the finite-difference W''' values to 4.6e-4 absolute accuracy on the tested trace channels, with a load-bearing d3D contact term and a nonzero same-coupling dD^3 triangle term.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the log|det| versus Re log det convention for the finite vielbein-coupled operator, but the packet's finite numerical decomposition closes at the stated bounded scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The source note is explicitly bounded and does not claim Einstein-Hilbert cubic closure, Ward closure, pure-TT nonzero response, or magnitude normalization. The runner is not a constant printer: it instantiates the finite operator and computes the determinant response, robustness checks, comparator, and same-coupling decomposition directly. The cited upstream notes are retained-grade or contextual, and the current claim does not rely on their open GR-identification bridges."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py",
+  "title": "Finite W-Native Cubic Trace-Channel Contact Boundary (Bounded)",
+  "transitive_descendants": 5,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

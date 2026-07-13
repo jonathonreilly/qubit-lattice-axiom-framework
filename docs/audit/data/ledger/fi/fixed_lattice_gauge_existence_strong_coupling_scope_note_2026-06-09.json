@@ -1,0 +1,297 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (fixed-lattice one-plaquette diagnostic support)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "scale_reference_primitive",
+    "kinetic_isotropy_primitive"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.67,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d8ba4a2c73d6bb897d3ebea4601f4a89a53e37830b582b0df40f5f3d67494bf1",
+  "note_path": "docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-11T10:02:12.337673+00:00",
+      "archived_for_note_hash": "5929c6a4afc8e15c9b63a4dde5db82222357e7fd35f491be9e6897cdd930f632",
+      "audit_date": "2026-06-10T04:21:18.224949+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_primitive": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "kinetic_isotropy_primitive",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "f519d6aa5066defbad8742b398a66abf8d8d7db3364386cca8a4ef75f9ea14fb",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260610-041954-bee16fa842-fixed_lattice_gauge_existenc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner's finite-integral and factor checks close as algebraic/numerical diagnostics, but the restricted packet does not provide the Wilson gauge-action premise or the cited strong-coupling area-law/gap literature theorem. The primitives only supply a unit scale and kinetic-form isotropy, not gauge dynamics or confinement.",
+      "claim_scope": "Finite fixed-lattice compact Wilson SU(2)/U(1) one-plaquette positivity and leading strong-coupling area-law diagnostics, excluding continuum Clay, physical SU(3) beta=6, spectrum, and Planck-import claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T04:21:18.224949+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Standard lattice-gauge literature proves area-law/gap behavior in controlled strong-coupling regimes, while the runner checks representative one-plaquette strong-coupling diagnostics.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a restricted-packet theorem or cited retained authority for the Wilson gauge-action premise and controlled strong-coupling area-law/gap statement, or narrow the row to the verified one-plaquette diagnostics only.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 3,
+        "C": 1,
+        "D": 5,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner genuinely computes the displayed one-plaquette SU(2) and compact U(1) quantities, and independent checks of the Bessel/integral formulas support the reported signs, factors, monotonicity, and log-area algebra. However, these are diagnostics over an imported Wilson compact-gauge setup, not a derivation from the provided primitives. The note's stronger bounded claim depends on external strong-coupling area-law/gap literature that is named but not included as a closed authority in the restricted packet."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:56.334399+00:00",
+      "audit_date": "2026-06-11T14:24:50.363740+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_primitive": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "kinetic_isotropy_primitive",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": "9b60d3e0bd77c11494597bc7eac6d74f198cf7e76e19e2a3949d05d2e5c29b1d",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-142255-c7579756cd-fixed_lattice_gauge_existenc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrow claim closes as a compact-domain and special-function check: the displayed SU(2) integrands are positive and finite on a compact interval, I0 and I1/I0 give positive finite U(1) factors at the tested beta values, and factors in (0,1) imply sigma=-log(factor)>0. The area-law-shaped statement is then the algebraic identity R*T*log(factor)=-sigma*R*T, not a confinement theorem.",
+      "claim_scope": "Finite fixed-lattice one-plaquette SU(2) and compact U(1) Wilson diagnostics at the tested beta values, plus the local sigma and leading-loop algebra, with no continuum or physical SU(3) gap claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T14:24:50.363740+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:kinetic_isotropy_primitive:5dd0ccb9->9186702f",
+      "load_bearing_step": "On the tested finite one-plaquette compact-gauge surfaces, the Wilson integrals are finite positive and the tested leading factors lie in (0,1), so sigma=-log(factor)>0 and the toy leading-loop expression has log W(R,T)=-sigma R T.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the SU(2) class-measure normalization if the claim is later expanded beyond the runner-defined one-plaquette diagnostic.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 3,
+        "C": 1,
+        "D": 5,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner source performs actual quadrature and Bessel-ratio evaluations rather than printing fixed pass strings, and its guardrails match the source note's bounded scope. An independent formula check supports the load-bearing inequalities and the sigma/log-W sign convention for the stated tested diagnostics. The cited scale-reference and kinetic-isotropy notes are explicitly registered primitive premises in the packet and are used only as scope guardrails, not as imports of dimensionless gauge dynamics or physical spectra. The clean verdict is limited to the one-plaquette diagnostic statements and does not propagate to continuum Yang-Mills existence, physical SU(3) confinement, or a framework-native gap theorem."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:31.549699+00:00",
+      "audit_date": "2026-07-10T15:36:43.808319+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "9186702f30a2faa7ce41afd398a0f1956f41f796b704dd34a04047352fd35d99",
+          "scale_reference_primitive": "601c0206f5898df1e81b3f95ae1b77dc5cf331dd419eb935e383d1acf6039d90"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_primitive": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "kinetic_isotropy_primitive",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 4.67,
+        "runner_hash": "9b60d3e0bd77c11494597bc7eac6d74f198cf7e76e19e2a3949d05d2e5c29b1d",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00006-fixed_lattice_gauge_existenc",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner numerically evaluates the stated integrals and factors without importing observational comparators, and the logarithmic conclusions follow algebraically. The accepted primitive authorities neither supply nor are needed to establish the narrowly scoped diagnostic.",
+      "claim_scope": "Finite positivity of the explicitly defined SU(2) and compact U(1) one-plaquette integrals at beta=6, together with sampled factor inequalities and the resulting toy loop identity; no framework-native area-law, mass-gap, or continuum theorem was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:36:43.808319+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:kinetic_isotropy_primitive:9186702f->5516fb0b",
+      "load_bearing_step": "For the explicitly tested one-plaquette factors, 0 < factor < 1 implies sigma = -log(factor) > 0 and log W(R,T) = -sigma R T.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should check the wording that the factors move \"monotonically toward one\": the runner establishes only an endpoint increase from beta=0.5 to beta=8, not monotonicity over an interval or convergence to one.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 3,
+        "C": 1,
+        "D": 5,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing implication is a genuine algebraic closure over factors independently computed from the explicit one-plaquette formulas. The selected beta values are diagnostic inputs rather than calibrated external measurements, so this is not a numerical-match claim. The five guardrail checks are hard-coded scope assertions, but they do not serve as evidence for any positive physics theorem and are consistent with the note's explicit limitations."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:45.166365+00:00",
+      "audit_date": "2026-07-12T08:38:48.771471+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+          "scale_reference_primitive": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_primitive": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "kinetic_isotropy_primitive",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 4.67,
+        "runner_hash": "9b60d3e0bd77c11494597bc7eac6d74f198cf7e76e19e2a3949d05d2e5c29b1d",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00235-fixed_lattice_gauge_existenc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner directly evaluates the stated quadratures and Bessel ratios, then checks the bounded inequalities and algebraic consequences. Those computations close the narrowly scoped diagnostic claim without using the hard-coded guardrails as positive evidence.",
+      "claim_scope": "Finite positivity of the explicitly defined SU(2) and compact U(1) one-plaquette integrals at beta=6, sampled factor inequalities, and the resulting toy loop identity; no framework-native area-law, mass-gap, SU(3), or continuum theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T08:38:48.771471+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For the explicitly tested one-plaquette factors, 0 < factor < 1, hence sigma = -log(factor) > 0 and log W(R,T) = -sigma R T.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 3,
+        "C": 1,
+        "D": 5,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner performs actual numerical quadrature and Bessel-function evaluation rather than printing the contested numerical results as constants. The selected beta values are diagnostic inputs, not calibrated observational matches, and the positivity of sigma and the loop formula follow algebraically from the computed factors. The cited scale-reference and kinetic-isotropy notes are registered approved primitives used only to delimit scope, not to supply gauge dynamics. The verdict does not extend to a physical SU(3) gap, confinement theorem, or continuum Yang-Mills construction."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_fixed_lattice_gauge_gap_scope_2026_06_09.py",
+  "title": "Fixed-Lattice Gauge Existence and Strong-Coupling Gap Scope",
+  "transitive_descendants": 8,
+  "verdict_rationale": null
+}

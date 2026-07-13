@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_sector_level_loop_insertions_closed_surface_bounded_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (finite-window abelian enumeration theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6418827450b6a25366aba5e438f12d2e6762d3b8806d739bdb2d605448a42ed4",
+  "note_path": "docs/THETA_SECTOR_LEVEL_LOOP_INSERTIONS_CLOSED_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T22:04:33.534711+00:00",
+      "audit_date": "2026-07-10T04:39:56.257256+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a0cc51d174f92b7a999d5766f4d84ecc4f877a1085f9d29f2822f88e2dd4bdc4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00103-theta_sector_level_loop_inse",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied runner performs the constrained enumeration and Haar quadrature directly, with discriminating wrong-fusion and non-fusion checks. Its results support the note's explicitly bounded numerical and structural claims without relying on an uncited upstream result.",
+      "claim_scope": "Finite-window U(1) loop shifts on the 2x2 torus at beta=0.7, quadrature-tested SU(2) class-trace fusion identities and orthogonality in the stated spin window, the resulting two-cell sector-pair structure, and a numerical counterexample to the generic-argument gluing sketch.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:39:56.257256+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "Direct constrained enumeration gives each U(1) exterior sector weight as c_n^3 c_{n+q}, while independent SU(2) Haar quadrature gives the class-trace integral as the spin-1/2 fusion multiplicity and rejects the proposed generic-argument proportionality.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 3,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner computes rather than merely printing expected constants, and its independent rejectors distinguish the asserted shift and fusion structures from specified alternatives. The only cited authority is explicitly marked as an accepted axiom premise and is background rather than load-bearing. The note also correctly confines the nonabelian assembly to a structural consequence and leaves generic-argument recoupling and the 4D assembly open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_sector_level_loop_insertions_closed_surface_2026_07_02.py",
+  "title": "Loop Insertions Act at Sector Level on Closed Glued Surfaces: Abelian Insertions Are Label Shifts in the Finite Enumerated Window, Nonabelian Insertions Open the Fusion Channels at Class Trace, and the Generic-Argument Gluing Sketch Is Rejected (Bounded Theorem)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

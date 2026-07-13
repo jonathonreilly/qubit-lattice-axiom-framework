@@ -1,0 +1,183 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
+    "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
+    "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.931,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e8531281459fe5f58a194bfc0ce8810577abe06c652b5b3bd8da140f206d4fb4",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T20:45:16.665272+00:00",
+      "archived_for_note_hash": "3e1022db32082337de6478fe897cdfce5f77be7b075e3aa166a481d5d56b2909",
+      "audit_date": "2026-05-31T00:03:39.614160+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17": "A single scalar constraint L(v)=c does not determine a full positive normalized class-sector vector when the relevant level set contains distinct vectors; the displayed R^3 witnesses have equal L and unequal M.",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "Bounded finite marked class-sector Peter-Weyl evaluation-map identity: given the retained finite coefficient vector v_beta, the compressed boundary W-dependence is the canonical vector K(W), with no claim to full physical Wilson-environment coefficients or the full local rim functional.",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "Within a retained finite marked class sector, the Peter-Weyl vector K_Lambda(W) is the unique Riesz representative of the retained evaluation functional; no full slice lift B_beta(W) is derived."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17": "no_go",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17": "retained_no_go",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17"
+        ],
+        "load_bearing_score": 6.907,
+        "runner_hash": "47edfb6c99326fe19a417b43935227d32c2d6a135034092f9635894efa843b63",
+        "transitive_descendants": 59
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-000135-1705b885-gauge_vacuum_plaquette_r",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained-bounded evaluation authority supplies Z(W)=sum_lambda d_lambda c_lambda chi_lambda(W), and the inversion/underdetermination claims follow by finite-dimensional linear algebra. The runner artifact issue affects the submitted verification certificate, not the mathematical implication.",
+      "claim_scope": "For a fixed finite retained marked class sector with known compressed boundary evaluations, N samples with invertible Peter-Weyl evaluation matrix recover the N retained coefficients exactly, while fewer unconstrained samples leave a kernel.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-31T00:03:39.614160+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Whenever the chosen marked holonomies make the evaluation matrix E invertible, the retained coefficient vector is recovered exactly by c = E^(-1) Z.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: update the scalar support check to match the repaired scalar-value note and refresh the runner cache, then re-audit the same finite-inversion claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The finite inversion theorem itself is an algebraic consequence of the retained compressed boundary law: full-rank E gives c=E^(-1)Z, and m<N leaves a nontrivial nullspace. The cited scientific authorities are retained-grade for the restricted retained-sector surface. However the runner certificate in the packet is stale or inconsistent: the runner source checks for the exact scalar-note phrase \"one scalar framework-point value does not determine the class-sector vector\", which is absent from the supplied repaired scalar-value note, so the displayed SUPPORT=3/FAIL=0 summary is not reproduced from the restricted packet."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.953276+00:00",
+      "audit_date": "2026-06-05T17:46:16.549826+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17": "A single scalar constraint L(v)=c does not determine a full positive normalized class-sector vector when the relevant level set contains distinct vectors; the displayed R^3 witnesses have equal L and unequal M.",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "Finite marked class-sector evaluation only: given retained finite character coefficients, the projected boundary class function evaluates by the canonical Peter-Weyl/Riesz kernel; full B_beta(W), physical untruncated Wilson environment, and beta-dependent coefficient derivation are outside scope.",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "Finite retained marked class sector: K_Lambda(W)=sum_lambda d_lambda conj(chi_lambda(W)) chi_lambda is the unique Riesz representative of the compressed boundary functional v -> sum_lambda d_lambda c_lambda chi_lambda(W); no full slice lift B_beta(W) is audited."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17": "no_go",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17": "retained_no_go",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17"
+        ],
+        "load_bearing_score": 6.931,
+        "runner_hash": "1c10505013301caca0727840d2ece5d1fb83704185865c133de2100eab644721",
+        "transitive_descendants": 60
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-174439-c53949362f-gauge_vacuum_plaquette_retai",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained Peter-Weyl evaluation law supplied by the cited retained-grade inputs gives the finite linear system with entries E_(i,lambda)=d_lambda chi_lambda(W_i). Once the stated full-rank condition holds, invertible-matrix algebra gives uniqueness and recovery, while m<N is non-injective by dimension.",
+      "claim_scope": "For a fixed finite retained marked class sector, compressed boundary samples satisfy Z=Ec and determine the retained coefficients exactly for any full-rank N x N marked-holonomy evaluation matrix; fewer than N samples remain underdetermined.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:46:16.549826+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17:retained_bounded->unaudited",
+      "load_bearing_step": "Whenever the chosen marked holonomies are generic enough that E is invertible, the retained coefficient vector is recovered exactly: c = E^(-1) Z.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Runner verifies a finite witness; the general claim should continue to be read with the explicit full-rank sample condition.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing step is a standard finite-dimensional algebraic consequence of the retained Peter-Weyl evaluation law. The runner verifies the cited support text and a concrete four-weight SU(3) witness for invertibility, recovery, and underdetermination; it does not import a tuned external comparator or hard-code the recovered coefficients as an asserted result. The note explicitly excludes full rim maps, explicit same-surface sample values, and infinite-sector data, so those open items do not block the scoped finite-sector theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
+  "title": "Gauge-Vacuum Plaquette Retained Class-Sampling Inversion",
+  "transitive_descendants": 60,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

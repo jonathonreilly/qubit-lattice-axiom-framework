@@ -1,0 +1,466 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "sm_relativistic_dof_count_import_note_2026-05-17",
+    "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
+    "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
+    "yt_ward_identity_derivation_theorem",
+    "charged_lepton_two_higgs_canonical_reduction_note",
+    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "56977dd387d2248788700752eea759e76f4138d77d698ce7d8061dc9ec7d36f5",
+  "note_path": "docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.489609+00:00",
+      "audit_date": "2026-05-30T13:30:01.759418+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings.",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.",
+          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "sm_relativistic_dof_count_import_note_2026-05-17",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f07d1d9e3723b73bb48cb6f0554307c63c571b75a64a77d520f49b87b1d4cc21",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-132806-49d234e7-sm_gstar_higgs_sector_co",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic and the displayed Yukawa-texture matrix identities check out, but the cited Ward authority only establishes a unique scalar-singlet bilinear H_unit on Q_L, not that this object is a complex SU(2)_L EWSB doublet with four thermalized scalar modes. The EW Higgs note assumes one doublet, and the packet lacks a retained bridge identifying that assumed doublet with the Ward H_unit field content and excluding all second-doublet census carriers.",
+      "claim_scope": "Audited the restricted-packet claim that the Higgs-sector contribution to the framework-native high-T g_* census is one thermalized EWSB doublet, so g_* = 106.75 rather than 110.75, with flavor-sector two-offset/two-Higgs textures adding no Fock-space degrees of freedom.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T13:30:01.759418+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_ward_identity_derivation_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "D9/D16/D17 are used to identify the framework-native EWSB census object as exactly one composite SU(2)_L doublet H_unit with 4 real scalar dof, while the retained two-Higgs result is only a Yukawa-texture statement adding no thermalized dof.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop bridge proving that the Ward H_unit scalar-singlet object is the single complex SU(2)_L EWSB doublet contributing exactly four thermalized scalar dof, and that the flavor two-offset machinery introduces no independent thermalized scalar field.",
+      "open_dependency_paths": [
+        "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
+        "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
+        "docs/YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md",
+        "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
+        "docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 30,
+        "C": 0,
+        "D": 0,
+        "total_pass": 51
+      },
+      "verdict_rationale": "The runner successfully verifies the finite g_* arithmetic, the monomial versus two-offset Yukawa algebra, and several file/token checks, but its decisive 2HDM-exclusion and framework-native one-doublet conclusions are asserted rather than derived. The source note overuses D17: uniqueness of a unit-normalized scalar singlet on Q_L is not the same as derivation of one complex SU(2)_L EWSB doublet in the thermal census. The flavor-sector distinction is plausible within the packet, but the claim still depends on an unprovided retained bridge from composite scalar-singlet structure to EWSB doublet field content and on unaudited one-Higgs/Z3/2HDM support notes for parts of the non-dof argument."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:37.607024+00:00",
+      "archived_for_note_hash": "ddc077cb80943958c11480d1e6dddfbe19dd42270e8fe6c3626f34f53c78e542",
+      "audit_date": "2026-06-12T03:09:18.232713+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings.",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "sm_relativistic_dof_count_import_note_2026-05-17",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "7ba4d37651779d9daabe440f4c94daa6e8b47cac3223f593656cd6c3dc8b4ff0",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-030706-dbe1e0e4ad-sm_gstar_higgs_sector_count_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic and finite Yukawa-texture linear algebra close on the supplied inputs. The chain to a framework-native single-doublet census count does not close because the H_unit scalar-singlet -> one complex SU(2)_L EWSB thermal doublet bridge is explicitly not derived in the packet.",
+      "claim_scope": "Conditional support for the Higgs-sector g_* count: assuming the H_unit-to-one-EWSB-doublet bridge, the finite dof arithmetic gives g_* = 106.75 and a genuine second thermalized doublet would give 110.75; the flavor-sector two-Higgs theorem is audited only as a Yukawa-texture distinction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T03:09:18.232713+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the named EWSB-field-content bridge, the EWSB scalar entering the census is one complex SU(2)_L doublet with 4 real scalar dof, while the retained two-Higgs reduction is a Yukawa-texture statement adding no thermalized dof, so g_* = 106.75 rather than 110.75.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly accept the H_unit scalar-singlet -> one complex SU(2)_L EWSB doublet thermal-census bridge, then re-audit whether the Higgs-sector census count closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 34,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The runner independently checks the finite dof arithmetic, monomial versus two-offset Yukawa algebra, phase count, q_H relabeling, and SU(2) pseudoreality; these are class A checks and contain no external comparator. However, the decisive identification from D17's unique scalar-singlet H_unit to one complex thermal EWSB doublet is only named as a bridge and is not supplied by any retained cited authority. The note is therefore valid as conditional support, but it cannot close R-HIGGS as a positive theorem."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:14.905996+00:00",
+      "archived_for_note_hash": "7f72666c4e9a5d8d9065bf2a056031c31e41e879d7ff0272166d35a1643b1b5b",
+      "audit_date": "2026-06-14T04:10:58.811504+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings.",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "sm_relativistic_dof_count_import_note_2026-05-17",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "ceedbda75e648f4cd857694ebacf70f7bfec3ca90f8753d37d8d61abb7c6dcad",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-040925-b6c8b6d715-sm_gstar_higgs_sector_count_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite arithmetic and Yukawa-texture linear algebra close under the stated inputs. The decisive bridge from H_unit scalar-singlet structure to one complex SU(2)_L EWSB doublet in the thermal census is explicitly not derived in the packet.",
+      "claim_scope": "Conditional support for the Higgs-sector g_* count: if H_unit is separately bridged to one thermal EWSB SU(2)_L doublet, the census gives g_* = 106.75 and the retained two-Higgs flavor texture does not itself add thermalized scalar dof.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-14T04:10:58.811504+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the named EWSB-field-content bridge, one complex SU(2)_L doublet contributes 4 scalar dof so g_* = 106.75, while a genuine second thermalized doublet would add 4 dof and give g_* = 110.75; the retained two-Higgs reduction is only a Yukawa-texture statement.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly accept the bridge from retained_bounded H_unit scalar-singlet structure to one complex SU(2)_L EWSB doublet in the thermal census.",
+      "open_dependency_paths": [
+        "docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 35,
+        "C": 0,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The runner performs exact arithmetic and finite matrix checks, and an independent check confirms the displayed 28 + (7/8)*90 = 427/4, 32 + (7/8)*90 = 443/4, +4 shift, monomial/two-offset Yukawa, phase-count, q_H relabeling, and SU(2) pseudoreality identities. Those checks support the conditional distinction between flavor parameters and Fock-space thermal dof. However the source note itself repeatedly states that it does not derive the H_unit -> one EWSB doublet bridge, and retained status cannot propagate through that open identification. Therefore the row is valid only as an open-gate conditional-support note, not as R-HIGGS closure."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:53.697727+00:00",
+      "archived_for_note_hash": "359caf3e4e9614ef753e497a017c9bc259c642a6b20a879f6666e43f1cc41a2c",
+      "audit_date": "2026-06-16T03:56:23.095827+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings.",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "The audited claim is only the direct-route obstruction: H_unit as an SU(2)_L scalar singlet cannot itself equivariantly derive the full one-complex SU(2)_L EWSB doublet; neutral-ray use remains inside an already supplied doublet surface.",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "no_go",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "retained_no_go",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
+          "sm_relativistic_dof_count_import_note_2026-05-17",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "e1197baf32e7f9698a81267981b55f9b3da06abd50d166d65fa2cbb43f2cc413",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-035342-0637a52d9e-sm_gstar_higgs_sector_count_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional arithmetic closes: 24 + 4 bosons and 90 fermions give 427/4, while a second thermalized doublet shifts the count by exactly +4. The full R-HIGGS chain does not close because the restricted packet does not derive or accept the missing H_unit scalar-singlet to one complex SU(2)_L thermal EWSB doublet bridge.",
+      "claim_scope": "Conditional support for the R-HIGGS census row: downstream one-vs-two-doublet arithmetic and the flavor-sector-versus-Fock-space distinction, without deriving the H_unit to one-complex-SU(2)_L thermal EWSB doublet bridge.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-16T03:56:23.095827+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the named EWSB-field-content bridge, one complex SU(2)_L doublet contributes 4 scalar dof so g_* = 28 + (7/8)*90 = 106.75, while the retained two-Higgs reduction is a Yukawa-texture statement adding no thermalized dof.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained-grade or explicitly accepted premise for one complex SU(2)_L thermal EWSB doublet field content, independent of the forbidden direct H_unit singlet-to-doublet route.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 37,
+        "C": 0,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "The runner and independent arithmetic support the finite census calculations and the algebraic Yukawa-texture distinction: one complex doublet gives 4 real scalar dof, two independent doublets give 8, and the resulting g_* values are 427/4 and 443/4. However, the note explicitly keeps the key field-content identification conditional, and the retained representation no-go forbids deriving the full thermal doublet directly from H_unit singlet uniqueness. The row is therefore valid only as open-gate conditional support, not as audited clean closure of R-HIGGS."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:36.519549+00:00",
+      "archived_for_note_hash": "a9dacb5bd05107ce9ba109afa6b9d0501220b1b48ad0f3747550817b57e0d232",
+      "audit_date": "2026-06-19T23:30:57.444288+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings.",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling relation, rho_tree identity, and scalar Hessian companion for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev.",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "Narrow representation-theoretic no-go that H_unit's SU(2)_L scalar-singlet structure alone cannot derive a full complex SU(2)_L EWSB doublet or its four-real-component thermal census.",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "no_go",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "retained_no_go",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
+          "sm_relativistic_dof_count_import_note_2026-05-17",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "7243ad785960840cf677dfe2eee53372dd04f0f36de0b716ff31d384b2d4a3a1",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-sm_gstar_higgs_sector_count_stretch_note_2026-05-29-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the stated bounded scope, the chain closes: the one-doublet thermal field content is supplied explicitly by the retained-bounded SM inventory note, and the remaining g_* arithmetic is exact. The source correctly excludes the native H_unit-to-full-doublet derivation from the proof input rather than claiming it is closed.",
+      "claim_scope": "Bounded arithmetic and texture-vs-field-content reconciliation: given the retained-bounded finite SM inventory with one complex SU(2)_L Higgs doublet, the g_* census is 106.75, and the retained charged-lepton two-Higgs reduction is a Yukawa-texture/counting statement rather than an added thermalized scalar-doublet claim. The native H_unit-to-full-EWSB-doublet derivation is not audited as closed here.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T23:30:57.444288+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the retained-bounded declared Standard-Model inventory premise, one complex SU(2)_L Higgs doublet contributes 4 scalar dof, so N_bosons = 24 + 4 = 28 and g_* = 28 + (7/8) * 90 = 427/4 = 106.75; a second independent thermalized doublet would shift this by +4 to 110.75.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the scope discipline: the clean result is bounded to the retained-bounded declared-inventory premise and does not close the native H_unit-to-full-EWSB-doublet bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 38,
+        "C": 0,
+        "D": 0,
+        "total_pass": 59
+      },
+      "verdict_rationale": "The note does not present the one-doublet inventory as a framework-native derivation; it uses it as an explicit retained-bounded premise and then performs exact finite arithmetic. The retained charged-lepton two-Higgs authority supports a Yukawa-texture reduction and does not itself assert an independent thermalized scalar field; the runner\u2019s algebraic checks distinguish monomial/two-offset texture behavior from Fock-space dof counting. The H_unit representation no-go is used only as a boundary against the forbidden direct singlet-to-doublet route, not as positive proof of the census field content. No PDG, fitted, or numerical-comparator import is load-bearing."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.085502+00:00",
+      "audit_date": "2026-06-21T18:52:58.463298+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings.",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "Audited the narrow direct-route no-go: H_unit as an SU(2)_L scalar singlet on Q_L cannot by itself equivariantly derive a full complex SU(2)_L EWSB doublet; supplied-doublet and neutral-ray uses remain outside this direct derivation.",
+          "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18": "Exact supplied-doublet radial/orbit support: H_unit-compatible scalar support may align with the invariant radius and neutral representative, but not as authority for the full thermal doublet field content or a g_* promotion.",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "no_go",
+          "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18": "bounded_theorem",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "retained_no_go",
+          "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18": "retained_bounded",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note",
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
+          "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
+          "sm_relativistic_dof_count_import_note_2026-05-17",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "7e413009ce1167072ca1b0f9e33a4a3f799be0ab514d0a6ca1d78b929275c7da",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-sm_gstar_higgs_sector_count_stretch_note_2026-05-29-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-doublet thermal field content is not derived from H_unit; it is explicitly supplied by the retained-bounded declared-inventory authority. Given that premise, the dof arithmetic and the flavor-vs-Fock distinction close by exact algebra over retained-grade inputs.",
+      "claim_scope": "Bounded theorem over the retained-bounded SM finite-inventory premise: the Higgs-sector census uses one complex doublet, the retained flavor-sector two-Higgs texture does not add Fock-space scalar dof, and g_* is 106.75 rather than 110.75 unless an independent second doublet is admitted.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T18:52:58.463298+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15:retained_no_go->unaudited",
+      "load_bearing_step": "Under the retained-bounded declared-inventory premise, one complex SU(2)_L doublet contributes four scalar dof, while the retained two-Higgs reduction is a Yukawa-texture parameter count and adds no thermalized dof, so g_* = 28 + (7/8)*90 = 427/4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream use preserves the explicit retained-bounded declared-inventory premise and does not rephrase this row as a native H_unit-to-full-doublet derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 42,
+        "C": 0,
+        "D": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic closure over the retained-bounded inventory premise, not a first-principles H_unit-to-doublet derivation. The runner computes the rational census arithmetic, checks the Yukawa-texture algebra distinguishing coupling parameters from thermal field content, and verifies the cited retained-bounded inventory/no-go/support boundaries. No external comparator, tuned numerical input, or unclosed native H_unit bridge is used as a proof input."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py",
+  "title": "`g_*` Higgs-Sector Count: EWSB Doublet vs Flavor-Sector Two-Higgs Reconciliation \u2014 Bounded Support",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

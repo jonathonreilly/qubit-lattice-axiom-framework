@@ -1,0 +1,141 @@
+{
+  "audit_date": "2026-05-08T03:01:03.682496+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_claim_scope": {
+      "staggered_graph_gauge_closure_note": "Audited whether the provided gauge-closure runner computes a native flux-threaded persistent-current response on cycle-bearing staggered graph families and reports periodic closure without 1D helpers or proxy rows.",
+      "staggered_graph_portability_note": "The provided runner computes the stated battery on three fixed finite bipartite graph families with the stated parity-coupled scalar potential and reports passing rows."
+    },
+    "dep_claim_type": {
+      "staggered_graph_gauge_closure_note": "positive_theorem",
+      "staggered_graph_portability_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "staggered_graph_gauge_closure_note": "retained",
+      "staggered_graph_portability_note": "retained"
+    },
+    "deps": [
+      "staggered_graph_gauge_closure_note",
+      "staggered_graph_portability_note"
+    ],
+    "load_bearing_score": 1.5,
+    "runner_hash": "0afdcaa48ec18cb8f34958e3aa1e8703768f11767b59552bea6758f8c6274ba8",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-gpt55-xhigh-019e0587-81ae-7c12-97ed-89a8438a168a",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited gauge note supplies the closure criterion and the retained portability note supplies the staggered transport context; the runner then constructs flux-threaded Hamiltonians and computes current spans/residuals for the frozen graph families. The note's qualitative closure claim matches the completed runner despite minor stale table numerics.",
+  "claim_id": "staggered_graph_gauge_closure_results_2026-04-10",
+  "claim_scope": "The frozen runner computes native flux-threaded persistent-current closure for the listed staggered graph stress/layered families, with stress cycles passing and one layered cycle failing.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-08T03:01:03.682496+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_graph_gauge_closure_note",
+    "staggered_graph_portability_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/frontier_staggered_graph_portability.py",
+    "scripts/frontier_staggered_graph_portability_stress.py",
+    "scripts/frontier_staggered_layered_backreaction.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": "Native gauge/current closes on the cycle-bearing stress families because the flux-threaded staggered Hamiltonian yields nontrivial ground-state persistent-current span with periodic residual below threshold.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "meta",
+  "max_descendant_status_rank": 25,
+  "note_hash": "9d79c2eaea2916217159aba7f6e65ab986d929dbfbec4bb476151506071275ba",
+  "note_path": "docs/STAGGERED_GRAPH_GAUGE_CLOSURE_RESULTS_2026-04-10.md",
+  "notes_for_re_audit_if_any": "Re-check minor numeric drift between note table and runner stdout if exact table values become part of a downstream numeric claim.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369840+00:00",
+      "archived_for_note_hash": "57a012b3d77a694a8298015a1f91f126dd34e6d3aaf2d1fa8143c26fb7e11e8a",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.494077+00:00",
+      "archived_for_note_hash": "eadd9caa902ec4f74c488add3f87760c017c70e70fca009c4aab78300f3c91e1",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner preserves the closure conclusion, but the source freezes stale exact current-span/residual values and the retained side battery comes from the unaudited graph portability machinery.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The native flux-threaded staggered graph runner shows nontrivial persistent-current span with periodic residual closure on the cycle-bearing stress families, while DAG-compatible gauge rows are N/A or fail when the current span is below threshold.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/STAGGERED_GRAPH_GAUGE_CLOSURE_NOTE.md",
+        "docs/STAGGERED_GRAPH_PORTABILITY_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The gauge/current result is qualitatively reproduced, but the exact table is not current: the live runner gives J_span values 6.933e-04, 2.042e-03, 1.343e-04 for the three stress rows and 5.015e-35 for layered s29, while the note freezes 6.922e-04, 2.050e-03, 1.342e-04, and 4.769e-06. The retained side battery is also imported from the unaudited graph portability lane. Why this blocks: the closure result is plausible as a runner-level native gauge/current finding, but an audit-clean retained result needs current exact values and an audit-clean side battery. Repair target: refresh the frozen table from the current runner, add hard assertions for current span > 1e-4, residual < 1e-8, cycle/N/A status, and retained side-battery gates, and audit the graph portability parent. Claim boundary until fixed: it is safe to claim that the current runner closes native gauge/current on the three cycle-bearing stress families and identifies bipartite_growing_stress_s23_n82 as the largest-span row, with layered s29 failing gauge; it is not safe to claim audit-clean retained gauge closure from this note until the table and parent battery are cleaned."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 5,
+    "D": 0,
+    "total_pass": 5
+  },
+  "runner_path": "scripts/frontier_staggered_graph_gauge_closure.py",
+  "title": "Staggered Graph Gauge Closure Results",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The load-bearing result is not a mere definition or upstream restatement: the runner computes eigensystems of flux-threaded native staggered Hamiltonians and derives current spans/residuals not present as input constants. Both cited authorities are retained, and the source note explicitly includes the operator, observable, closure rule, positive stress-family results, DAG N/A handling, and the negative layered-cycle case. The table values are slightly stale relative to stdout, but the pass/fail pattern, best family, operator, and observable are unchanged."
+}

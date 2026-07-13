@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+    "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "79226ff5f5e7c3b0631c48e27cfc4ff3530d9cc40b0c358171a8bf4164bf7875",
+  "note_path": "docs/G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.475434+00:00",
+      "audit_date": "2026-05-28T04:53:27.362269+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "Conditional algebraic pinning of g_bare=1 on Q_L from retained Rep-B independence plus the explicitly admitted H_unit-residue identification of Rep B with the complete same-projected 1PI coefficient; the same-projected 1PI exhaustion bridge itself is not audited as proved."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": "15e038c77e1ec5b9302e236684b57c81a7751a7b6003fbd7314bb0b0a5f8eb8f",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-Ohm-019e6ced-91f6-7f01-9b3c-e48b8a3d1ccf",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes only on the stated P1 conditional surface inherited from the retained-bounded parent row. The runner verifies the post-P1 coefficient algebra, W1 substitution, exact rational solve, positive-branch readout, dependency/source firewall, and boundary language with PASS=67 FAIL=0; it does not derive the same-projected 1PI exhaustion premise.",
+      "claim_scope": "Conditional accepted-premise bridge: under explicit P1 that the tree-level H_unit residue exhausts the same-projected 1PI coefficient, plus retained Rep-B F_Htt=1/sqrt(6), exact coefficient algebra derives g_bare^2=1 and positive-branch g_bare=1. This does not prove P1, promote the parent status, identify the Standard Model top-Yukawa, or assert regulator/continuum/phenomenology claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T04:53:27.362269+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Under P1, the same projected coefficient gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2N_c); substituting F_Htt=1/sqrt(6) and N_c=3 yields g_bare^2=1, with g_bare=1 only on the positive branch.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit if downstream text cites g_bare=1 without the P1 condition, treats P1 as retained/Tier-A, or uses this bridge as a Standard Model top-Yukawa, coupling-value, regulator, or continuum claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 4,
+        "C": 1,
+        "D": 7,
+        "total_fail": 0,
+        "total_pass": 67
+      },
+      "verdict_rationale": "A restricted fresh-context auditor confirmed clean status only at the bounded conditional-bridge scope. The row does not launder P1 into a proved premise: it explicitly registers P1 as the H_unit-residue admission and repeats that the missing same-projected 1PI exhaustion bridge remains outside scope. Given that condition and the retained Rep-B identity, the algebra F^2=g_bare^2/(2N_c), F=1/sqrt(6), N_c=3 gives g_bare^2=1 exactly; the final g_bare=1 is only the positive-branch convention."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/g_bare_two_ward_h_unit_residue_accepted_premise_runner.py",
+  "title": "Two-Ward `g_bare` Route H_unit-Residue Accepted-Premise Bridge",
+  "transitive_descendants": 723,
+  "verdict_rationale": null
+}

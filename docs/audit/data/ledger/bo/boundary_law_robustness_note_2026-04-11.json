@@ -1,0 +1,183 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "boundary_law_robustness_note_2026-04-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (only for the fixed-run numerical diagnostic",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "holographic_probe_note_2026-04-11"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/periodic_geometry.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.609,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "15e2d83fd993faffd37e8a886f34e7acb18a30408cfde35d2fa4a836772a0a20",
+  "note_path": "docs/BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-09T17:46:22.342791+00:00",
+      "archived_for_note_hash": "ac8ae531ebd6b3d64bbbfcff658b5263ea0b10869d3ee3b41b18c1f84d7a8758",
+      "audit_date": "2026-05-03T12:29:35.630509+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "holographic_probe_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "holographic_probe_note_2026-04-11"
+        ],
+        "load_bearing_score": 9.16,
+        "transitive_descendants": 285
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-cl3-auditor-2026-05-03",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner summary is internally consistent with the source-note numbers and supports the exact fixed-grid numerical claim, but the proof chain does not close as an audited_clean bounded theorem because the physical/readout generalization rests on finite numerical sampling and selected observables rather than algebraic closure or independently forced first-principles derivation.",
+      "claim_scope": "Audited only the bounded numerical claim that the fixed runner configuration reports highly linear entropy-versus-boundary-size fits across the stated BFS-ball sweep, with all 100 counted fits above R^2=0.95, plus small side=10,G=10 partition checks above R^2=0.95.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T12:29:35.630509+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The boundary-law robustness conclusion is inferred from selected finite-run R^2 linear fits of entropy against boundary size under fixed model parameters, sides, seeds, couplings, and partition choices.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: Recast as a bounded numerical robustness result, exclude or separately report two-point R^2 fits, pre-register/justify the audited parameter and partition surface, and add broader independent partition and size checks or analytic closure if theorem status is intended.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: The packet supports a bounded finite-run numerical robustness statement, but not a clean bounded theorem-level boundary-law result. Why this blocks: The conclusion depends on finite selected observables, fixed parameters, selected sizes/seeds/couplings/partitions, and R^2 readout; 20/100 counted fits are automatic two-point R^2=1 side=6 cases, and partition-family evidence is only a separate small side=10,G=10 check. This is enough for conditional numerical support, but not Nature-grade clean closure of a theorem-style claim without stronger justification that the readout, finite sampling surface, and parameter choices are forced by retained inputs. Repair target: Recast as a bounded numerical robustness result, exclude or separately report two-point R^2 fits, pre-register/justify the audited parameter and partition surface, and add broader independent partition and size checks or analytic closure if theorem status is intended. Claim boundary until fixed: The retained statement should be limited to the exact fixed-run numerical observation that this script/parameter grid reports high R^2 boundary-size linearity for the audited BFS-ball sweep and the stated small partition check; it should not be cited as a general boundary-law theorem or holography proof."
+    },
+    {
+      "archived_at": "2026-07-12T17:09:46.028453+00:00",
+      "audit_date": "2026-05-10T12:23:30.356758+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "holographic_probe_note_2026-04-11": "Within the fixed finite 2D periodic staggered-lattice Dirac-sea correlation-matrix probe for sides 8, 10, 12, and 14, entropy and Schmidt rank fit boundary size better than volume for G=0 and G=10, with the G=10 boundary coefficient about 12.0% lower than the free coefficient."
+        },
+        "dep_claim_type": {
+          "holographic_probe_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "holographic_probe_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "holographic_probe_note_2026-04-11"
+        ],
+        "load_bearing_score": 10.292,
+        "runner_hash": "fb13e8703e5f40abc132d75c0ec43cfbb2881abb475a3702817f37bcd2d76555",
+        "transitive_descendants": 626
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e11d7-1ac1-7302-8309-b0477a890c97",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note's narrowed claim matches the runner output and source: the code constructs the fixed lattices, evolves the model, computes Dirac-sea correlation-matrix entropies, fits S against boundary size, separates automatic two-point fits, and reports the stated R^2 thresholds. This closes only for the fixed finite-run diagnostic, not for any general boundary-law or holography claim.",
+      "claim_scope": "Audited only the bounded finite-run numerical diagnostic that the provided runner reports high S-versus-counted-boundary R^2 on the stated fixed 2D periodic staggered-lattice envelope and small partition cross-check.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T12:23:30.356758+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-10T12:20:23.808801+00:00",
+          "auditor": "codex-audit-loop-019e11d4-7076-77b1-9ceb-c2fcce4048ff",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the finite-run numerical robustness diagnostic that the provided runner computes high S-versus-counted-boundary R^2 on the fixed 2D periodic staggered-lattice parameter envelope and small partition cross-check.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-10T12:23:30.356544+00:00",
+          "auditor": "codex-audit-loop-019e11d7-1ac1-7302-8309-b0477a890c97",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the bounded finite-run numerical diagnostic that the provided runner reports high S-versus-counted-boundary R^2 on the stated fixed 2D periodic staggered-lattice envelope and small partition cross-check.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_cross_confirmation_packet_invalid",
+      "load_bearing_step": "On the fixed audit parameter envelope, every counted BFS-ball fit satisfies R^2 > 0.95, and the 80-configuration >=3-radii subgrid also satisfies R^2 > 0.95 in 80/80 configurations, with the small side=10, G=10 partition cross-check also above 0.95.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that future citations preserve the fixed-envelope boundary and do not promote this diagnostic into a general boundary-law theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing result is a genuine finite-run computation in the supplied runner rather than a hard-coded printout, renaming, or external comparator match. The cited companion authority is retained_bounded, and the source note explicitly confines the conclusion to the fixed audit envelope, excluding theorem-level, parameter-independent, and holographic interpretations. A second auditor should keep the claim boundary tight: this is clean only as the reported bounded numerical diagnostic on the exact grid and readout."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_boundary_law_robustness.py",
+  "title": "Boundary-Law Robustness Addendum",
+  "transitive_descendants": 68,
+  "verdict_rationale": null
+}

@@ -1,0 +1,560 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate / conditional integration map",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+    "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+    "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.566,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "08b018da74a7a87e24d2e73cdba1b969f584e416a35bc746e72b5d8293dec0f8",
+  "note_path": "docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T09:04:44.382087+00:00",
+      "archived_for_note_hash": "b71da6f240a7ee766f7a8814fe86a37280adc27abdae7286431588fcefaa44a6",
+      "audit_date": "2026-06-03T01:12:27.418410+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.045,
+        "runner_hash": "61f299d0996f1f93a7fb25caa912cb2c98c07dd58bc127db50bf5101f3c368ec",
+        "transitive_descendants": 746
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-010941-1c2c8459-flavor_carrier_from_axio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Layer A closes within the packet as a framework-baseline spectral decomposition plus finite corner-character checks. The full bounded claim does not close because the staggered/KS import, its asserted identity with the recurring chirality gate, and the Q(r) formula are not derived or supplied as one-hop authorities.",
+      "claim_scope": "Audited the bounded claim that A2 forces the charged-lepton flavor carrier type to be momentum rather than position, while the hw=1 locus depends on a separate chiral operator-class import and r=1/2 remains separate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T01:12:27.418410+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The spectral theorem for the commuting translation family forces a basis-independent Brillouin-zone momentum decomposition, while selecting the hw=1 locus requires the staggered/KS chiral operator-class import.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the staggered/KS premise note and the generation-ID/Koide chirality-gate bridge as one-hop inputs, and include a derivation or cited definition for Q=1/3+(2/3)r from F=aI+b(J-I).",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 1,
+        "D": 1,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner does real finite computations for the corner characters, on-site blindness, momentum-projector separation, Gamma_5 sum, naive zero locus, Wilson staircase, and L_3(1,2)=2/9; these displayed arithmetic checks are internally consistent. However, the full source note explicitly relies on the staggered/Kawamoto-Smit single-mode Grassmann plus {epsilon,D}=0 operator class and on the claim that this is the same chirality gate used in generation-ID/Koide work, and those authorities are not present in the restricted packet. The D1 line only substitutes values into Q=1/3+(2/3)r; it does not derive that formula from F=aI+b(J-I) or from a supplied definition of Q. Thus the packet supports the momentum-carrier type and several counterfactual checks, but not the claimed locus consolidation as a closed derivation."
+    },
+    {
+      "archived_at": "2026-06-17T10:29:58.810614+00:00",
+      "archived_for_note_hash": "7136536d1b8ef606144204f2465031860c69caa061a2ee08381e26fc7bfb030e",
+      "audit_date": "2026-06-15T21:38:41.355863+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "Audited the bounded algebraic carrier-compatibility claim: the Cl(3,0) grade-1 Pauli vector space is a real three-dimensional Spin(3) carrier compatible with Gamma_chi, non-circulant anticommuting examples lie outside the Z_3-circulant no-go, and the r=1/2 pin remains open.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative."
+        },
+        "dep_claim_type": {
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded"
+        },
+        "deps": [
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+        ],
+        "load_bearing_score": 12.443,
+        "runner_hash": "c83a97e99f182aaef3787028230822b33f7fb02454698ccddc30af6757906b86",
+        "transitive_descendants": 122
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260615-213503-5735f9aeeb-flavor_carrier_from_axioms_m",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Layer-A Fourier/spectral carrier-type argument and the displayed finite formulas check out on the restricted packet. The full queued claim does not close because the hw=1 locus and its identification with the physical generation chirality gate are imported rather than derived by the cited authorities.",
+      "claim_scope": "Audited the two-layer claim that the carrier type is forced to the momentum/BZ factor, while the hw=1 locus is only a staggered/KS chirality-gate import and r=1/2 remains separate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T21:38:41.355863+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Singling out the hw=1 C3 triplet requires the staggered/Kawamoto-Smit first-order chiral operator, i.e. single-mode Grassmann fermionization plus {epsilon,D}=0, and the note then identifies that import with the recurring generation-ID/Koide chirality gate family.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add an audited theorem forcing the staggered/KS hw=1 physical generation locus from the baseline, or split the clean Layer-A momentum-carrier theorem into its own claim.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
+        "docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 1,
+        "D": 2,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: Layer A's momentum-carrier computation, the naive/Wilson counterfactuals, delta=2/9, and Q=1/3+(2/3)r check independently, but the locus reduction rests on the staggered/KS chiral operator import and a cross-note gate identification. Why this blocks: the staggered authority is explicitly bounded by P-KIN/P-SD and does not close the single-mode Grassmann or physical species bridge, while the generation-ID bridge authority explicitly leaves physical identification and the r pin open. Repair target: prove or audit a direct theorem forcing the hw=1 chiral operator/locus from baseline and connecting it to the physical generation bridge. Claim boundary until fixed: momentum-vs-position carrier type is supported, but hw=1 locus and 'not a new input' remain conditional gate alignment."
+    },
+    {
+      "archived_at": "2026-06-19T10:11:52.553811+00:00",
+      "archived_for_note_hash": "4086edd68be58a1bb876b8d2033153d8d2709463e78d16f2561c82a52b1b583f",
+      "audit_date": "2026-06-18T04:27:06.542977+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "Finite periodic 2 x 2 x 2 translation/BZ carrier statement for position-diagonal local readouts on the supplied hw=1 three-corner sector.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "Audited the bounded algebraic carrier-compatibility claim: the Cl(3,0) grade-1 Pauli vector space is a real three-dimensional Spin(3) carrier compatible with Gamma_chi, non-circulant anticommuting examples lie outside the Z_3-circulant no-go, and the r=1/2 pin remains open.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative."
+        },
+        "dep_claim_type": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "bounded_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "retained_bounded",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded"
+        },
+        "deps": [
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+        ],
+        "load_bearing_score": 9.431,
+        "runner_hash": "c83a97e99f182aaef3787028230822b33f7fb02454698ccddc30af6757906b86",
+        "transitive_descendants": 121
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-flavor_carrier_from_axioms_momentum_forced_2026-05-31-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The carrier-type subclaim closes on the supplied finite translation representative. The parent chain does not close to the physical hw=1 charged-lepton carrier because the staggered/KS operator class, physical generation identification, index-density readout, and r=1/2 remain imported or open selections.",
+      "claim_scope": "Audited the finite translation/BZ carrier-type derivation together with the parent note's conditional reduction of the hw=1 locus to the staggered/KS chirality import, while leaving r=1/2 and readout class as separate inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T04:27:06.542977+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "A2 gives commuting translation unitaries, so the spectral theorem forces a joint BZ decomposition in which diagonal local position observables are blind on the hw=1 character states while momentum projectors separate them; selecting the hw=1 physical locus is then supplied only by the staggered/KS chiral operator-class import.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: keep this parent conditional and use the 2026-06-15 carrier-type split for the clean Layer A result; re-audit the parent only after a theorem forces the staggered/KS hw=1 locus and closes the r/readout selections.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
+        "docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 1,
+        "D": 2,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: Layer A is a genuine finite translation/BZ computation, but the parent note also relies on the staggered/KS chiral operator class to select the hw=1 physical locus and leaves r=1/2/readout class separate. Why this blocks: the cited staggered and grade-1 authorities are retained_bounded but explicitly preserve open physical-identification and premise boundaries, so retained status does not propagate to the combined physical carrier packet. Repair target: derive the staggered/KS hw=1 locus from the baseline qubit/lattice premises and separately close the readout/r inputs, or keep using the 2026-06-15 split as the clean carrier-type theorem. Claim boundary until fixed: momentum type is supported; the physical locus/basepoint/readout package is conditional."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:30.611957+00:00",
+      "archived_for_note_hash": "8ad8f55d54c5f99f33dbcd0345f6b19d2d5986bfde066589197ac402b80aa212",
+      "audit_date": "2026-06-19T21:20:37.647834+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "Finite periodic 2 x 2 x 2 translation/BZ carrier statement for position-diagonal local readouts on the supplied hw=1 three-corner sector.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "Audited the bounded algebraic carrier-compatibility claim: the Cl(3,0) grade-1 Pauli vector space is a real three-dimensional Spin(3) carrier compatible with Gamma_chi, non-circulant anticommuting examples lie outside the Z_3-circulant no-go, and the r=1/2 pin remains open.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative."
+        },
+        "dep_claim_type": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "bounded_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "retained_bounded",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded"
+        },
+        "deps": [
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+        ],
+        "load_bearing_score": 12.443,
+        "runner_hash": "0f9bf87360e2a030fd3581c4a22a5eeff6f9662c38897e92ec90a2c04d924b15",
+        "transitive_descendants": 122
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-flavor_carrier_from_axioms_momentum_forced_2026-05-31-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet closes the Layer-A carrier-type result, but the parent package does not force the physical hw=1 locus from baseline. The r=1/2 basepoint and delta=2/9 readout class are also explicit separate selections.",
+      "claim_scope": "Layer-A momentum carrier-type support on the supplied finite translation representative, with the parent package's hw=1 locus, r=1/2 basepoint, and index-density readout left conditional.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T21:20:37.647834+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The spectral theorem for the commuting translation unitaries forces a BZ/momentum decomposition, and local position-diagonal observables are generation-blind while momentum-block projectors separate the labels.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove from baseline the staggered/KS hw=1 physical locus and close r=1/2 plus index-density readout selection, then re-audit the parent full package.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
+        "docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 1,
+        "D": 2,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Issue: the parent combines a clean momentum-carrier type theorem with an unclosed physical-locus/readout/basepoint package. Why this blocks: the staggered/KS authority is retained only on supplied kinetic/scalarization premises and does not force the physical species locus from baseline; the parent also leaves r=1/2 and the index-density readout as separate inputs. Repair target: prove the staggered/KS hw=1 physical locus from baseline and close the r=1/2 plus index-density readout selections. Claim boundary until fixed: cite the split note for Layer-A momentum type and treat this parent only as conditional consolidation/gate alignment."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.063627+00:00",
+      "audit_date": "2026-06-21T10:41:15.361871+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "Finite periodic 2 x 2 x 2 translation/BZ carrier statement for position-diagonal local readouts on the supplied hw=1 three-corner sector.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "Audited the bounded algebraic carrier-compatibility claim: the Cl(3,0) grade-1 Pauli vector space is a real three-dimensional Spin(3) carrier compatible with Gamma_chi, non-circulant anticommuting examples lie outside the Z_3-circulant no-go, and the r=1/2 pin remains open.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative."
+        },
+        "dep_claim_type": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "bounded_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "retained_bounded",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded"
+        },
+        "deps": [
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+        ],
+        "load_bearing_score": 12.454,
+        "runner_hash": "e654af41615fb763bbfa9ae50bdf911dfd741f974d10e6fe836a7c07d98b5fc5",
+        "transitive_descendants": 123
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-flavor_carrier_from_axioms_momentum_forced_2026-05-31-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Layer-A carrier-type subclaim closes on the finite translation representative, but the parent package does not close. The missing step is a retained theorem deriving the staggered/KS hw=1 physical locus from baseline and independently closing the r=1/2 and readout selections.",
+      "claim_scope": "Parent conditional integration map: Layer A momentum/BZ carrier type is derived, while the physical hw=1 locus, r=1/2 basepoint, and index-density readout remain separate open inputs.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T10:41:15.361871+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "The spectral theorem for the commuting translation unitaries forces a joint BZ/momentum decomposition, making position-diagonal local observables generation-blind while momentum-block corner projectors separate the labels.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the staggered/KS hw=1 physical locus from baseline and independently close r=1/2 plus the index-density readout selection, then re-audit the parent package.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
+        "docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 1,
+        "D": 2,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: the parent combines a clean momentum-carrier theorem with an imported staggered/KS chiral operator-class locus plus separate r=1/2 and readout selections. Why this blocks: the cited authorities explicitly bound or defer the physical generation-locus bridge and do not derive the continuous Yukawa basepoint or index-density readout selection. Repair target: prove from retained framework inputs that the physical species locus is the hw=1 staggered/KS triplet and close r=1/2 plus the readout class. Claim boundary until fixed: cite the split note for Layer A only and treat this parent as a conditional integration packet."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.458970+00:00",
+      "audit_date": "2026-07-01T07:21:29.054549+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "Finite periodic 2 x 2 x 2 translation/BZ carrier statement for position-diagonal local readouts on the supplied hw=1 three-corner sector.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "Finite matrix audit of the Cl(3,0) grade-1 Pauli span as an algebraically compatible 3-dimensional carrier candidate: Gamma_chi is a native proper rotation, non-circulant anticommuting examples evade only the literal circulant no-go, and the r=1/2 pin plus physical sign bridge remain open.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative."
+        },
+        "dep_claim_type": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "bounded_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "retained_bounded",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded"
+        },
+        "deps": [
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+        ],
+        "load_bearing_score": 8.858,
+        "runner_hash": "e654af41615fb763bbfa9ae50bdf911dfd741f974d10e6fe836a7c07d98b5fc5",
+        "transitive_descendants": 115
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T072129Z-f10418eb-flavor_carrier_from_axio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite translation-character calculation closes the bounded Layer-A readout statement. The full physical carrier chain does not close because the packet does not derive H_dyn/propagator content, the staggered/KS hw=1 locus, r=1/2, or the index-density readout selection from retained baseline inputs.",
+      "claim_scope": "Parent conditional packet: Layer-A momentum-vs-position carrier type on the finite translation representative, with hw=1 locus, r=1/2, and index-density readout left as separate open inputs.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-01T07:21:29.054549+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "Translation symmetry gives a joint BZ/momentum decomposition in which position-diagonal local observables are generation-blind while momentum projectors separate labels, but the physical hw=1 locus still requires the staggered/KS chiral operator-class import.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the staggered/KS hw=1 physical locus from baseline and separately derive r=1/2 plus the index-density readout selection before re-auditing the parent as a full package.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
+        "docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md",
+        "docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 7,
+        "C": 4,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: the runner genuinely verifies the finite translation/momentum-vs-position calculation, but the parent conclusion still depends on physical-observable, dynamics/propagator, locus, modulus, and readout bridges. Why this blocks: the registered baseline supplies lattice/qubit/admissibility/record structure, not kinetic branch selection, the Grassmann/{epsilon,D}=0 import, continuous Yukawa r=1/2, or the delta=2/9 readout choice. Repair target: derive those bridges from retained inputs; until then the safe claim is the bounded Layer-A momentum-type theorem plus a conditional integration map."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.244399+00:00",
+      "audit_date": "2026-07-01T23:45:43.076593+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "Finite periodic 2 x 2 x 2 translation/BZ carrier statement for position-diagonal local readouts on the supplied hw=1 three-corner sector.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "Finite algebraic carrier-compatibility: the Pauli/Cl(3,0) grade-1 real vector space is a three-dimensional Spin(3) vector carrier on which Gamma_chi is a proper pi-rotation; non-circulant anticommuting endomorphisms lie outside the cited Z3 no-go, and the r=1/2 pin remains unselected.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative."
+        },
+        "dep_claim_type": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "bounded_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "retained_bounded",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded"
+        },
+        "deps": [
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+        ],
+        "load_bearing_score": 8.858,
+        "runner_hash": "e654af41615fb763bbfa9ae50bdf911dfd741f974d10e6fe836a7c07d98b5fc5",
+        "transitive_descendants": 115
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T234543Z-e8d1784d-flavor_carrier_from_axio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The narrow momentum-vs-position carrier type computation closes on the supplied finite translation representative. The full parent does not close because the restricted packet lacks a theorem deriving the staggered/KS hw=1 physical locus from baseline axioms and still leaves r=1/2 plus the readout-class selection as inputs.",
+      "claim_scope": "Parent open-gate packet: the finite translation/BZ argument supports momentum rather than position as the carrier type, while the physical hw=1 locus, r=1/2 basepoint, and index-density readout remain separate inputs.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-01T23:45:43.076593+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "The spectral theorem for the commuting translation unitaries forces a joint BZ/momentum decomposition: position-diagonal local observables are generation-blind on the hw=1 character states, while momentum projectors separate the labels.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and audit the staggered/KS hw=1 physical locus from baseline, then separately close the r=1/2 and index-density readout selections before re-auditing the parent package.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
+        "docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 7,
+        "C": 4,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner genuinely computes the finite translation characters, local-position blindness, momentum-projector separation, counterfactual naive/Wilson loci, and the algebraic delta and Q(F) identities; it is not a trivial PASS printer. However the parent scope includes the physical hw=1 locus and charged-lepton readout package, and the cited staggered/KS and generation-ID authorities explicitly leave physical identification or premise-retirement work open. Under the current axiom baseline, dynamics/propagator and physical observable/readout bridges are not supplied by the axioms, so the parent remains conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-07-10T17:01:13.462083+00:00",
+      "audit_date": "2026-07-09T23:39:58.491142+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "Finite periodic 2 x 2 x 2 translation/BZ carrier statement for position-diagonal local readouts on the supplied hw=1 three-corner sector.",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "The one-qubit Cl(3,0) grade-1 real vector subspace is an algebraically compatible 3D carrier candidate for the generation triplet, with Gamma_chi realized as a proper Spin(3)-lifted pi rotation, outside only the circulant anticommuting no-go scope; no physical generation identity, r=1/2 pin, Brannen value, signed-readout transport, or mass operator is audited as closed.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative."
+        },
+        "dep_claim_type": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "bounded_theorem",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": "retained_bounded",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded"
+        },
+        "deps": [
+          "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+          "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+        ],
+        "load_bearing_score": 7.87,
+        "runner_hash": "e654af41615fb763bbfa9ae50bdf911dfd741f974d10e6fe836a7c07d98b5fc5",
+        "transitive_descendants": 116
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-flavor_carrier_from_axio-043",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite translation calculation supports the bounded Layer-A distinction within position-diagonal local readouts. The packet does not derive the staggered/KS hw=1 physical locus, r=1/2, or selection of the index-density readout.",
+      "claim_scope": "The combined parent packet: momentum/BZ carrier-type resolution on the finite periodic 2\u00d72\u00d72 representative, with the physical hw=1 locus, r=1/2 basepoint, and delta=2/9 readout selection left open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-09T23:39:58.491142+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02:retained_bounded->audit_in_progress",
+      "load_bearing_step": "The joint spectral decomposition of the commuting translations forces flavor-separating resolution onto the momentum/BZ factor, while selecting the physical hw=1 locus still requires the imported staggered/Kawamoto-Smit chiral operator class.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive from retained framework inputs the staggered/KS hw=1 physical-locus selection, then independently close r=1/2 and the index-density readout before re-auditing the combined parent.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
+        "docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 1,
+        "D": 2,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: the physical hw=1 locus, continuous r=1/2 basepoint, and delta=2/9 readout class remain explicit imports or selections. Why this blocks: the retained bounded translation theorem resolves only momentum versus position within its tested readout class, not the full physical generation carrier. Repair target: retained bridge theorems must force the staggered/KS hw=1 locus and independently select r=1/2 and the index-density readout. Claim boundary until fixed: cite the split theorem for Layer A and use this parent only as a conditional integration map."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py",
+  "title": "Flavor carrier from framework baseline up: the momentum-factor carrier TYPE is FORCED; the hw=1 triplet LOCUS reduces to the one chiral operator-class import (the framework's recurring chirality gate); r=1/2 stays a separate input",
+  "transitive_descendants": 757,
+  "verdict_rationale": null
+}

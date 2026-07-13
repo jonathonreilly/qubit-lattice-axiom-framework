@@ -1,0 +1,1237 @@
+{
+  "audit_date": "2026-07-12T19:55:26.260929+00:00",
+  "audit_invocation_history": [
+    "cc122cf176c654e7b5c1d8380327d458"
+  ],
+  "audit_invocation_id": "cc122cf176c654e7b5c1d8380327d458",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 0.0,
+    "runner_hash": "a54194b99bbbce98a27fe9fc8354255cb9d8cddb8f1271e6411156da03719897",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-gpt-5.6-sol-xhigh-fresh-registered-mass-repaired-retry-2026-07-12",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Root-of-unity orthogonality and real conjugacy close the result directly, and an independent exact Q(omega) calculation confirms every displayed identity. Positivity supplies a > 0 and in fact restricts the coordinate to 0 <= r < 1, while the theorem asserts the weaker r >= 0 and leaves its value unselected.",
+  "claim_id": "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+  "claim_scope": "For any supplied positive real mass triple, the normalized C3 DFT gives exact reconstruction, a symmetric scale- and permutation-invariant r coordinate, Q = 1/3 + 2r/3 with r unselected, and an S3-invariant folded phase for the unordered triple, including the c = 0 boundary.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": "2026-07-12T19:55:26.260929+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 0,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "Parseval in the stated normalization gives sum_j z_j^2 = 3(a^2 + 2|c|^2), hence Q = 1/3 + 2r/3, while the S3 action on c folds phi to an unordered-triple invariant.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "96d829f594877f5c842fb081aa88f87ccd70dc32d63fc3ace3826fdee91cc9bb",
+  "note_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+  "notes_for_re_audit_if_any": "Second pass should re-check the folded-boundary representative and the positive-domain range 0 <= r < 1.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-12T17:09:51.029628+00:00",
+      "audit_date": "2026-07-12T02:58:39.454084+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c773305844b6932bf08fc0eb2bde47543bfd83bfbfecf2f70a17b1a483dbe5cc",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.6-sol-xhigh-registered-dft-fresh-20260711",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Root-of-unity orthogonality, direct variance expansion, and Parseval close every displayed identity from the definitions alone. The S3 generators act by c -> omega c and c -> conjugate(c), while c=0 makes all three square roots equal and removes the phase coordinate.",
+      "claim_scope": "For every positive real triple m_j, the normalized C3 DFT of z_j=sqrt(m_j) has the stated inverse, symmetric scale- and permutation-invariant r coordinate, Koide identity Q=(1+2r)/3, S3-folded phase reconstruction, and phase-free c=0 boundary; no mass functional or physical mass values are derived.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-12T02:58:39.454084+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_invalid",
+      "load_bearing_step": "The stated normalized inverse DFT and Parseval identities are z_j = a + c omega^j + conjugate(c) omega^(-j) and sum_j z_j^2 = 3(a^2 + 2|c|^2).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Solved Q=1/3+2r/3 in both directions and checked that, absent a supplied Q, r remains a free coordinate.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This equivalence does not select `r=1/2`; it evaluates the quotient at a supplied coordinate value.",
+            "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Try to extract r=1/2 from the exact Koide-coordinate identity alone.",
+            "outcome": "The affine identity only maps supplied r to Q; it does not select either value.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "free_r_counterroute"
+          },
+          {
+            "attempt": "Derived the two S3 generator actions c -> omega c and c -> conjugate(c), hence phi -> plus or minus phi modulo 2pi/3.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Cyclic permutation multiplies `c` by a cube root of unity, and reflection of the three positions sends it to a cube-root multiple of `conjugate(c)`.",
+            "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Try to retain an ordering sign or generation origin after quotienting by all permutations.",
+            "outcome": "The orbit has exactly the folded representative in [0,pi/3], including the reflection-fixed boundary.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "s3_phase_counterroute"
+          },
+          {
+            "attempt": "Evaluated the equal positive triple and unequal positive triples independently; the equal triple has r=0 and c=0 while unequal triples vary continuously.",
+            "disposition": "CLOSED",
+            "evidence_locator": "equal_a, equal_c, equal_r = coords((3.0, 3.0, 3.0))",
+            "evidence_path": "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Try finite positive triples to see whether positivity secretly enforces the Koide value or a nonzero phase.",
+            "outcome": "Positive triples do not force r=1/2 or c nonzero, matching the theorem boundary.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "finite_triple_counterroute"
+          },
+          {
+            "attempt": "Applied cyclic shifts and reflections to the stated transform and reduced their phase actions modulo 2pi/3 and sign.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The sign and the choice of generation origin are not registered by unordered masses.",
+            "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Try changing the DFT origin or reversing the three indices to create an additional unordered coordinate.",
+            "outcome": "These changes only choose another member of the same S3 orbit; no sign or origin survives unordered registration.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "index_convention_counterroute"
+          },
+          {
+            "attempt": "Checked the registered primitive source and the theorem boundary against that interpretation.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It does not supply a state, state-selection rule, averaging over alternatives, measure, weighting, probability rule",
+            "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Try to read the realized-state primitive as supplying the positive mass triple or its r coordinate.",
+            "outcome": "The primitive permits pointwise evaluation only and supplies no state-contingent value; the theorem expressly does not use it as a mathematical premise.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "registry_scope_counterroute"
+          },
+          {
+            "attempt": "Inventoried every source formula, runner input, import, and comparator surface in the restricted packet.",
+            "disposition": "CLOSED",
+            "evidence_locator": "No observed mass table, fit, comparator, new axiom, or new primitive enters the proof.",
+            "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Try to find an observed mass table, fitted scale, or physical readout hidden in the proof or runner.",
+            "outcome": "Only an arbitrary supplied positive triple enters; no observed comparator or physical mass functional is computed.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "observable_import_counterroute"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [],
+          "evidence_locator": "Without that physical interface it remains the same exact algebraic statement for any supplied positive triple.",
+          "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": []
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "This theorem does not define a mass functional and does not use that primitive as a mathematical premise.",
+          "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Conditional on an independently defined registered-mass functional supplying a positive triple at the realized state",
+              "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+              "phrase": "registered-mass functional"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The sign and the choice of generation origin are not registered by unordered masses.",
+              "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+              "phrase": "not registered by unordered masses"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Registered positive-mass C3 Fourier coordinate theorem",
+              "evidence_path": "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py",
+              "phrase": "Registered positive-mass C3 Fourier coordinate theorem"
+            }
+          ],
+          "scan_scope": "Scanned the complete source note and primary runner for we assume, by construction, as is standard, the framework provides, bridge context, background, naturally, obviously, standard QFT, registered, and canonical, including close variants.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "No observed mass table, fit, comparator, new axiom, or new primitive enters the proof.",
+          "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "The restricted packet cites no prior negative witness and uses no prior residual as support.",
+          "scan_scope": "Checked the source note and runner for citations to prior no-go, wall, campaign, or residual witnesses; none are cited.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "It does not retire AC(i) or AC(ii). It does not force `r=1/2`.",
+          "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+          "scan_scope": "Checked every negative scope sentence in the source at the formula, arbitrary-triple, unordered-triple, runner-input, and physical-interface resolutions it names.",
+          "statements": [
+            {
+              "evidence_locator": "This theorem does not define a mass functional and does not use that primitive as a mathematical premise.",
+              "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+              "phrase": "does not define a mass functional and does not use that primitive as a mathematical premise",
+              "tested_resolutions": [
+                "source definitions",
+                "runner imports and inputs",
+                "realized-state primitive boundary"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "It does not force `r=1/2`.",
+              "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+              "phrase": "does not force r=1/2",
+              "tested_resolutions": [
+                "symbolic affine Q-r identity",
+                "equal positive triple",
+                "generic unequal positive triple"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "This theorem does not derive a charged-lepton matter action, determinant occupancy grain, fixed-locus physical readout, R-eta license, or absolute mass scale.",
+              "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+              "phrase": "does not derive a charged-lepton matter action, determinant occupancy grain, fixed-locus physical readout, R-eta license, or absolute mass scale",
+              "tested_resolutions": [
+                "complete source formula inventory",
+                "complete runner computation and imports"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "No observed mass table, fit, comparator, new axiom, or new primitive enters the proof.",
+              "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+              "phrase": "No observed mass table, fit, comparator, new axiom, or new primitive enters the proof",
+              "tested_resolutions": [
+                "complete source packet",
+                "complete primary runner source",
+                "current SHA-pinned runner output"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "No N2 wall is asserted; this indexed premise or reframe does not alter the exact DFT algebra or its explicit physical-interface boundary.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "No N2 wall is asserted; this indexed premise or reframe does not alter the exact DFT algebra or its explicit physical-interface boundary.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "No N2 wall is asserted; this indexed premise or reframe does not alter the exact DFT algebra or its explicit physical-interface boundary.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "No N2 wall is asserted; this indexed premise or reframe does not alter the exact DFT algebra or its explicit physical-interface boundary.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "No N2 wall is asserted; this indexed premise or reframe does not alter the exact DFT algebra or its explicit physical-interface boundary.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "No N2 wall is asserted; this indexed premise or reframe does not alter the exact DFT algebra or its explicit physical-interface boundary.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "No N2 wall is asserted; this indexed premise or reframe does not alter the exact DFT algebra or its explicit physical-interface boundary.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Dispositioned every orchestrator-indexed axiom/approved primitive, open derivation obligation, controlled-vocabulary, meta-reframe, and in-flight reframe candidate. The source asserts no N2 wall, so no candidate is needed to close one.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "A hostile reader could argue that calling the inputs registered masses and mentioning the realized state silently supplies the missing physical mass functional, turning the algebra into a claimed charged-lepton derivation.",
+          "evidence_locator": "Conditional on an independently defined registered-mass functional supplying a positive triple at the realized state, the theorem reconstructs its algebraic coordinates.",
+          "evidence_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+          "resolution": "The source makes that interface explicitly conditional and the registered primitive supplies no state-contingent value; the runner likewise accepts only an arbitrary numerical triple. The steelman therefore identifies an excluded downstream use, not a defect in the scoped theorem.",
+          "resolved": true,
+          "route_id": "registry_scope_counterroute"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "mechanism": "Indexed open obligation or prior no-go ledger has no search-term match to this row and cannot alter an identity over an arbitrary supplied positive triple.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11": {
+              "accepted_premise_type": null,
+              "content_sha256": "c12e8af375f112a6e853a3cd70c9973bbecaf6a17fe59a1dc73863ff28d54ca1",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11": {
+              "accepted_premise_type": null,
+              "content_sha256": "2969c2e0f75357c0d76917e910d6244b5a5aa111e246bda00bdc88eee5283402",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "70a4f934a134aeaf5ab2a92c36f4a7dcf7036a6a51f6126137f3aadfa9d40cc8",
+              "effective_status": null,
+              "path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Conditional on an independently defined registered-mass functional supplying a positive triple at the realized state",
+                "Conditional on an independently defined registered-mass functional supplying a positive triple at the realized state, the theorem reconstructs its algebraic coordinates.",
+                "Cyclic permutation multiplies `c` by a cube root of unity, and reflection of the three positions sends it to a cube-root multiple of `conjugate(c)`.",
+                "It does not force `r=1/2`.",
+                "It does not retire AC(i) or AC(ii). It does not force `r=1/2`.",
+                "No observed mass table, fit, comparator, new axiom, or new primitive enters the proof.",
+                "The sign and the choice of generation origin are not registered by unordered masses.",
+                "This equivalence does not select `r=1/2`; it evaluates the quotient at a supplied coordinate value.",
+                "This theorem does not define a mass functional and does not use that primitive as a mathematical premise.",
+                "This theorem does not derive a charged-lepton matter action, determinant occupancy grain, fixed-locus physical readout, R-eta license, or absolute mass scale.",
+                "Without that physical interface it remains the same exact algebraic statement for any supplied positive triple."
+              ]
+            },
+            "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+              "effective_status": null,
+              "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "It does not supply a state, state-selection rule, averaging over alternatives, measure, weighting, probability rule"
+              ]
+            },
+            "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "c773305844b6932bf08fc0eb2bde47543bfd83bfbfecf2f70a17b1a483dbe5cc",
+              "effective_status": null,
+              "path": "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "Registered positive-mass C3 Fourier coordinate theorem",
+                "equal_a, equal_c, equal_r = coords((3.0, 3.0, 3.0))"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "Recheck the root-of-unity normalization and the S3 orbit convention if the DFT sign convention changes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "Independent root-of-unity expansion reproduces the inverse DFT coefficients, the exact variance factor 6, and the Parseval factor 3, yielding Q=1/3+2r/3 and the two-way r=1/2 equivalence. The S3 generators send the phase to plus or minus phi modulo 2pi/3, so the folded distance is the complete unordered phase coordinate, including the pi/3 boundary; at c=0 the inverse forces the equal-root triple and is phase-independent. The runner consistently checks these identities and the note's scope guards without importing a comparator or a physical mass functional. Residual risk is confined to the explicitly excluded physical registered-mass interface, which is not part of this algebraic theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 33,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 33
+  },
+  "runner_path": "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py",
+  "title": "Registered Positive Mass Triple: Exact C3 Fourier Coordinates and Koide Identity",
+  "transitive_descendants": 0,
+  "verdict_rationale": "Direct expansion in Q(omega), using omega^2 + omega + 1 = 0, independently reproduces the inverse transform, the 6|c|^2 variance identity, Parseval, and Q = 1/3 + 2r/3. The S3 action phi -> +/-phi + 2pi k/3 proves folded-phase invariance and unordered reconstruction, including the c = 0 limit. The scope starts from a supplied positive triple; physical functional construction and empirical comparison are explicitly outside scope, and r remains unselected."
+}

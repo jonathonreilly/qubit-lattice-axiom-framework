@@ -1,0 +1,187 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "second_grown_family_complex_boundary_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "second_grown_family_complex_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
+    "scripts/SECOND_GROWN_FAMILY_COMPLEX.py",
+    "scripts/complex_action_grown_companion.py",
+    "scripts/gate_b_grown_joint_package.py",
+    "scripts/gate_b_no_restore_farfield.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.307,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ea30c46bc581d4c2fcb482d299fd069db524473696ae8a814aca963e92b61be7",
+  "note_path": "docs/SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106997+00:00",
+      "archived_for_note_hash": "f27643e5bc41c940197b7f156c0ead38303e717830f9dd6ef91f170e29f61457",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.236859+00:00",
+      "audit_date": "2026-05-01T21:14:37.532413+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": null,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The diagnostic result reproduces, but clean audit closure is conditional on asserted runner checks and explicit harness dependencies.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "deps_changed:dep_added:second_grown_family_complex_note",
+      "load_bearing_step": "The note claims the tightened second grown-family complex-action window preserves the anchor Born/weak-field guards but fails the desired TOWARD -> AWAY crossover because the response is already AWAY at gamma=0 and remains AWAY at gamma=0.1 and gamma=0.5.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py",
+        "scripts/SECOND_GROWN_FAMILY_COMPLEX.py",
+        "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
+        "scripts/gate_b_no_restore_farfield.py"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the runner recomputes the tightened window and reproduces the negative crossover result, but it emits a report rather than asserted/classified PASS lines and imports unregistered grown-family harnesses. Why this blocks: the boundary diagnosis is credible but could drift without failing, and the audit row does not expose the underlying family/growth dependencies. Repair target: add assertions for the anchor Born/F~M guards and crossover failure, emit classified PASS lines, and register the grown-family complex and gate-B harness dependencies. Claim boundary until fixed: the current local replay supports a diagnosed response-sign/crossover boundary, not a retained broad complex-action basin."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:33.110293+00:00",
+      "audit_date": "2026-05-10T20:42:27.079638+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "second_grown_family_complex_note": "Narrow anchor-row positive: drift=0.20 on the no-restore Gate B grown geometry with geometry-sector stencil satisfies the runner's Born-proxy, weak-field F~M, and TOWARD@0.1 to AWAY@0.5 complex-action gates over the tested seeds."
+        },
+        "dep_claim_type": {
+          "second_grown_family_complex_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "second_grown_family_complex_note": "retained"
+        },
+        "deps": [
+          "second_grown_family_complex_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b1889fc22e22539eb491a5e909600716ba8734e782528e52d7e7b7b53915ede5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e139e-88a0-7ca0-a0e2-c4774378c630",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source table matches the completed runner stdout: all tested rows have negative d01 and d05, so t01=0 and t05=0. The cited authority is retained-grade and is used only as prior narrow-positive context; no open bridge is needed for this bounded boundary diagnosis.",
+      "claim_scope": "Finite seed-0 no-restore grown-family geometry-sector probe over drifts 0.18, 0.20, and 0.22 showing Born/weak-field guards at the anchor but no TOWARD-to-AWAY crossover.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T20:42:27.079638+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "the gravitational response is AWAY already at gamma = 0, and it stays AWAY at gamma = 0.1 and gamma = 0.5",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the parameter distinction between the prior retained anchor row and this seed-0 anchor row before using this note in any broader basin claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The runner constructs the seed-0 grown geometry, geometry-sector adjacency, source field, and propagated deltas rather than printing the contested signs as constants. The completed output supports the bounded claim that this single-seed three-drift window lacks the crossover while preserving the anchor Born proxy and weak-field scaling checks. The clean scope is only the stated seed, drifts, sector, and source setup, not a broad family no-go."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py",
+  "title": "Second Grown Family Complex Boundary Note",
+  "transitive_descendants": 13,
+  "verdict_rationale": null
+}

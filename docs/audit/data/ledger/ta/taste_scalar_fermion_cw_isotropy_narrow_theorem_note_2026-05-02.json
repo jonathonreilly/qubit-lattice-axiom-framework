@@ -1,0 +1,1572 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (axiom-reset source narrowing 2026-05-03; source-scope sync 2026-06-12)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7c192e555025841d91bfcdb62d0ebcdb663bc97b203ede7a14efc7c3e2e1157c",
+  "note_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T13:40:45.897282+00:00",
+      "archived_for_note_hash": "e39371f874a033d26e29cee72e3c3fbb0fbff7bb24740e14cd2d04f2fb57f300",
+      "audit_date": "2026-05-03T00:28:56.256004+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-Volta-019deb3b-e174-7580-a5fe-b7ee13d26496",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The simultaneous sigma_x eigenbasis gives lambda_s(phi)=Sum_i phi_i (-1)^{s_i}; at the axis-aligned point all lambda_s^2 equal v^2, making the Hessian coefficient independent of s. Binary orthogonality then gives exactly 8 delta_ij, with no external physical bridge or Standard Model claim imported.",
+      "claim_scope": "Pure algebraic isotropy identity for V_f(phi)=Sum_s f(lambda_s(phi)^2) on C^8=(C^2)^{tensor 3} with commuting sigma_x taste shifts, evaluated at the axis-aligned point phi=(v,0,0), v != 0.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T00:28:56.256004+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "At phi=(v,0,0), lambda_s^2=v^2 is uniform, so the Hessian equals a common coefficient times Sum_s (-1)^{s_i}(-1)^{s_j}=8 delta_ij.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream use keeps the boundary to the binary taste fermion CW block only.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The claim is confined to a defined finite-dimensional binary taste block and the load-bearing Hessian isotropy follows by exact simultaneous diagonalization plus the binary orthogonality sum. The runner checks the same class-A algebra at exact rational precision and reports 31 passes with no hidden comparator, tuned numerical input, or physical sector identification. This does not audit or imply gauge-loop, scalar-loop, electroweak, Higgs-sector, or Standard Model phenomenology."
+    },
+    {
+      "archived_at": "2026-05-12T08:18:40.758013+00:00",
+      "archived_for_note_hash": "8147a3df0433c918921a1538bca40b2c94ab4f24c98110173a07c5e364da23b1",
+      "audit_date": "2026-05-11T15:39:12.499565+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": "95fac2ee75109eaaef0b3978fc9c40ad85562001379b46285bee4fba21fbfac0",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The abstract algebraic identity closes, but the note also admits the staggered-Dirac realization gate as a context input while the ledger row has no dependency edge to that open gate. The registered runner also exits nonzero because it still asserts stale positive_theorem retag strings.",
+      "claim_scope": "Pure algebraic C^8 binary-product identity for the fermion Coleman-Weinberg Hessian at phi=(v,0,0), with physical taste/staggered-Dirac realization and downstream Higgs-sector consequences out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T15:39:12.499565+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Binary orthogonality gives sum_s (-1)^{s_i}(-1)^{s_j} = 8 delta_ij, so the Hessian is delta_ij times C(v) at phi=(v,0,0).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the admitted staggered-Dirac realization gate as a direct dependency, or split/update the note and runner so the audited row is only the abstract C^8 algebra identity.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 1,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the source note's physical taste/fermion-CW framing names STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03 as the canonical open gate, but this audit row has no dependency edge to that gate; the current primary runner additionally fails two stale pre-retag scope assertions. Why this blocks: a retained-bounded clean row with deps=[] would let downstream claims cite a physical fermion/taste realization that the note itself says is still gated, and the registered verifier is not current with the bounded_theorem retag. Repair target: either split this into a purely abstract algebra note with an updated passing runner, or add the staggered-Dirac gate dependency and leave retained propagation blocked until that gate is closed. Claim boundary until fixed: the C^8 binary orthogonality/Hessian isotropy identity is valid as an abstract algebra statement only."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:21.159209+00:00",
+      "archived_for_note_hash": "2881861cb08e95e9c867d75f511f5379318dacce905a7575bb96bddeb049e821",
+      "audit_date": "2026-06-11T14:28:41.650963+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": "dcabcdea8f065195b0ca42b38022ae3314ea613361212e26f216d625157a67f7",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-142622-3673f5ff00-taste_scalar_fermion_cw_isot",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The binary orthogonality and Hessian factorization close algebraically: \u2202_ij f(lambda^2)=(2 f'(v^2)+4 v^2 f''(v^2))(-1)^{s_i+s_j}, giving a common diagonal coefficient after summing over s. The audit chain does not close to retained-grade status because the cited staggered-Dirac realization authority is supplied as unaudited/bounded context.",
+      "claim_scope": "Pure algebraic isotropy of the fermion Coleman-Weinberg Hessian V_f(phi)=\u03a3_s f(lambda_s(phi)^2) on the C^8 binary taste block at an axis-aligned real point phi=(v,0,0), with gauge, scalar, electroweak, and Higgs-sector consequences excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T14:28:41.650963+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At phi=(v,0,0), lambda_s^2=v^2 is uniform, so the Hessian coefficient factors out and the remaining binary sum is \u03a3_s (-1)^{s_i}(-1)^{s_j}=8 \u03b4_ij.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: obtain retained-grade audit status for docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md or narrow the audit row so the physical context dependency is explicitly non-load-bearing; also reconcile the verification prose listing log(1+x) with the runner's actual x^3 example.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The load-bearing theorem is a genuine class-A algebraic identity on the abstract binary taste cube, and the runner source computes the orthogonality sums and Hessian examples rather than merely printing constants. The exact generic Hessian coefficient is 8(2 f'(v^2)+4 v^2 f''(v^2)), so the claimed isotropy follows within the stated algebraic scope. However, the row cites docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md as a physical context dependency, and that authority is marked effective_status unaudited and claim_type bounded_theorem in the restricted packet. Under the rubric, retained status cannot propagate through that non-retained dependency."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.520314+00:00",
+      "audit_date": "2026-06-13T00:16:22.162301+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": "5d85503e368bda9e0788712e0822c250801120fe2b146337f7565ad159c967af",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-001508-b09352b675-taste_scalar_fermion_cw_isot",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Differentiating f(lambda^2) with lambda linear in phi gives the stated common coefficient times the binary sign sum. The finite orthogonality sum is exactly 8 delta_ij, and no open physical-context carrier is used in the theorem.",
+      "claim_scope": "Pure algebraic isotropy of the Hessian of sum_s f(lambda_s(phi)^2) for H=sum_i phi_i S_i on the binary taste cube at axis-aligned phi=(v,0,0), excluding physical realization and non-fermion loop claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T00:16:22.162301+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "At phi=(v,0,0), lambda_s^2=v^2 uniformly, so H_ij=(2 f'(v^2)+4 v^2 f''(v^2)) sum_s (-1)^{s_i}(-1)^{s_j}=8(2 f'(v^2)+4 v^2 f''(v^2)) delta_ij.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the physical-context pointer remains non-load-bearing and that f is only used through smoothness at v^2.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The load-bearing step is a finite algebraic identity on the provided sigma_x product basis. Independent differentiation gives the same coefficient 2 f'(v^2)+4 v^2 f''(v^2), and independent binary sign summation gives zero off-diagonal terms and equal diagonal terms. The runner source performs finite exact checks rather than importing a contested premise or live audit status. The staggered-Dirac pointer is explicitly non-load-bearing, and the only cited authority is an accepted axiom/meta premise, so there is no dependency downgrade."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.507710+00:00",
+      "audit_date": "2026-07-02T05:07:29.310510+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "5d85503e368bda9e0788712e0822c250801120fe2b146337f7565ad159c967af",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T050729Z-85e5b837-taste_scalar_fermion_cw_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The commuting S_i are simultaneously diagonal in the sigma_x eigenbasis, giving lambda_s(phi)=sum_i phi_i(-1)^{s_i}. A direct chain-rule computation plus the Walsh/binary orthogonality sum yields H_ij=C(v) delta_ij without using the non-load-bearing staggered-Dirac context pointer.",
+      "claim_scope": "Pure algebraic isotropy of the fermion Coleman-Weinberg Hessian V_f=sum_s f(lambda_s(phi)^2) for H=sum_i phi_i S_i on the binary sigma_x taste block at phi=(v,0,0), excluding physical carrier and non-fermion consequences.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T05:07:29.310510+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "At phi=(v,0,0), each Hessian summand has the same coefficient (2f'(v^2)+4v^2f''(v^2)) times (-1)^{s_i+s_j}, and the binary orthogonality sum over s is 8 delta_ij.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor may re-check the abbreviated Hessian prose in the displayed derivation; the explicit coefficient stated elsewhere and used in the runner is correct, and the isotropy claim only requires a common coefficient.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "Within the explicitly narrowed abstract binary taste-block scope, the result is a genuine algebraic identity. The independent derivation confirms the common Hessian coefficient and the exact sum sum_s (-1)^{s_i}(-1)^{s_j}=8 delta_ij; no external comparator, tuned input, or physical realization bridge is used. The runner source enumerates the binary states and checks representative exact Hessians, supporting the proof but not replacing the general smooth-f argument. The minimal-axiom authority is an accepted premise and is not load-bearing for the algebraic closure."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.649906+00:00",
+      "audit_date": "2026-07-10T02:24:03.353979+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.0,
+        "runner_hash": "5d85503e368bda9e0788712e0822c250801120fe2b146337f7565ad159c967af",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-taste_scalar_fermion_cw_-084",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The simultaneous eigenvalue formula follows directly from the specified tensor-product shift operators. Uniform \u03bb_s\u00b2 on the axis and the exact binary-character orthogonality sum then yield a common diagonal Hessian coefficient and zero off-diagonal entries.",
+      "claim_scope": "The exact isotropy of the Hessian of V_f(\u03c6)=\u03a3_s f(\u03bb_s(\u03c6)\u00b2) at \u03c6=(v,0,0) for the specified commuting three-shift binary taste block.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:24:03.353979+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "At \u03c6=(v,0,0), uniform \u03bb_s\u00b2=v\u00b2 factorizes the Hessian as [2f'(v\u00b2)+4v\u00b2f''(v\u00b2)] \u03a3_s(-1)^{s_i+s_j}, and binary orthogonality makes the sum 8\u03b4_{ij}.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The result is a genuine self-contained class-A algebraic closure on the explicitly bounded binary taste-block setup, not a definition, renaming, calibrated numerical match, or external comparison. The runner source independently enumerates the binary states and evaluates the orthogonality and Hessian expressions at exact rational precision. The physical staggered-Dirac pointer is explicitly non-load-bearing, and the accepted axiom authority supplies no unresolved premise needed by the proof."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:56.313947+00:00",
+      "audit_date": "2026-07-12T10:21:50.057811+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.0,
+        "runner_hash": "5d85503e368bda9e0788712e0822c250801120fe2b146337f7565ad159c967af",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00278-taste_scalar_fermion_cw_isot",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Direct differentiation gives the common factor 2f'(v\u00b2)+4v\u00b2f''(v\u00b2), while binary-character orthogonality gives 8\u03b4_{ij}. Both steps close within the stated finite-dimensional setup without using the physical staggered-Dirac context pointer.",
+      "claim_scope": "Pure algebraic isotropy of the Hessian of V_f(\u03c6)=\u03a3_s f(\u03bb_s(\u03c6)^2) for the specified commuting three-shift binary block at \u03c6=(v,0,0); physical carrier identification and non-fermion consequences are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T10:21:50.057811+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid",
+      "load_bearing_step": "At \u03c6=(v,0,0), the common chain-rule coefficient multiplies \u03a3_s(-1)^{s_i}(-1)^{s_j}=8\u03b4_{ij}, so the Hessian is \u03b4_{ij}\u00b7C(v).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Applied the scalar chain rule using \u2202_i\u03bb_s=(-1)^{s_i} and the linearity of \u03bb_s.",
+            "disposition": "CLOSED",
+            "evidence_locator": "\u2202_ij f(\u03bb\u00b2) = (2f'(v\u00b2)+4v\u00b2f''(v\u00b2))(-1)^{s_i+s_j}",
+            "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Differentiate each summand f(\u03bb_s\u00b2) twice without using the note's final conclusion.",
+            "outcome": "The summand Hessian is [2f'(\u03bb_s\u00b2)+4\u03bb_s\u00b2f''(\u03bb_s\u00b2)](-1)^{s_i+s_j}; at the axis its coefficient is state-independent, closing this challenge.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "direct-chain-rule"
+          },
+          {
+            "attempt": "Summed the three binary characters over all eight simultaneous eigenstates for every ordered pair (i,j).",
+            "disposition": "CLOSED",
+            "evidence_locator": "Part 2: binary orthogonality sum \u03a3_s (-1)^{s_i}(-1)^{s_j} = 8 \u03b4_{ij}",
+            "evidence_path": "scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether simultaneous shift characters leave unequal diagonal or nonzero off-diagonal sums.",
+            "outcome": "The character Gram matrix is exactly 8I_3, so all off-diagonal terms vanish and all diagonal terms agree.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "binary-character-orthogonality"
+          },
+          {
+            "attempt": "Evaluated \u03bb_s\u00b2 at positive, negative, integer, and rational nonzero axis values.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Part 4: at \u03c6 = (v, 0, 0), |\u03bb_s|\u00b2 = v\u00b2 uniformly",
+            "evidence_path": "scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Check whether the result silently requires positive or specially normalized v.",
+            "outcome": "Every state has \u03bb_s\u00b2=v\u00b2 for all tested signs and magnitudes, matching the general algebraic argument.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "axis-sign-and-magnitude"
+          },
+          {
+            "attempt": "Computed the diagonal entry for f(x)=x and compared it with the analytic character multiplicity.",
+            "disposition": "CLOSED",
+            "evidence_locator": "H_ii = 16 = 8 \u00b7 2 (closure factor)",
+            "evidence_path": "scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Check whether an omitted degeneracy or normalization factor could distinguish Hessian directions.",
+            "outcome": "H_ii=16=8\u00b72 for every direction; the multiplicity is common and is correctly absorbed into C(v).",
+            "route_class": "normalization_or_units",
+            "route_id": "closure-factor-normalization"
+          },
+          {
+            "attempt": "Evaluated exact rational Hessians for f(x)=x, x\u00b2, and x\u00b3.",
+            "disposition": "CLOSED",
+            "evidence_locator": "f(x) = x\u00b3: Hessian diagonal proportional to \u03b4_ij at (v=2, 0, 0)",
+            "evidence_path": "scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether the claimed arbitrary-f structure fails once f'' is nonzero.",
+            "outcome": "All three cases have equal diagonals and zero off-diagonals, including the nonzero-f'' examples.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "polynomial-finite-cases"
+          },
+          {
+            "attempt": "Used the simultaneous \u03c3_x eigenbasis and tracked the corresponding binary character labels.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Equivalently, rotate each tensor factor so \u03c3_x is diagonal;",
+            "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Check whether the proof depends on treating \u03c3_x as diagonal in the originally displayed tensor basis.",
+            "outcome": "The operators commute and are simultaneously diagonalizable; rotating each tensor factor changes representation only, not the eigenvalues or Hessian.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "basis-label-challenge"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [],
+          "evidence_locator": "The narrow theorem **does not** claim:",
+          "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": []
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "No carrier input is used.",
+          "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "plain-text, non-load-bearing for the theorem below",
+              "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "phrase": "staggered-Dirac realization derivation target"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "carries only the physical taste-block/fermion naming",
+              "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "phrase": "physical taste-block/fermion naming"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "Canonical Lattice+Qubit+Admissibility+Record axiom node.",
+              "evidence_path": "docs/audit/data/axiom_premise_nodes.json",
+              "phrase": "minimal_axioms"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "Checked the source, runner, accepted authority, and premise registry for hidden physical-carrier, action, readout, normalization, boundary, or status premises.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "No external source is load-bearing.",
+          "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "none_found_reason": "All N1 challenges were directly attempted on the supplied algebra and runner; none was marked RULED OUT BY PRIOR.",
+          "scan_scope": "Checked whether any N1 route relied on a prior no-go witness or imported residual.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "The narrow scope is **purely the fermion Coleman-Weinberg isotropy",
+          "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "none_found_reason": "",
+          "scan_scope": "Checked all negative and exclusionary language for overextension beyond the tested finite-dimensional resolution.",
+          "statements": [
+            {
+              "evidence_locator": "The narrow theorem **does not** claim:",
+              "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "phrase": "The narrow theorem **does not** claim:",
+              "tested_resolutions": [
+                "The source uses this phrase only to exclude gauge-loop, scalar-loop, electroweak, Higgs-sector, and Standard-Model conclusions from the audited scope."
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "No external source is load-bearing.",
+              "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "phrase": "No external source is load-bearing.",
+              "tested_resolutions": [
+                "The proof uses only the explicitly supplied binary product algebra, eigenvalue formula, chain rule, and finite character sum."
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "The theorem has no temporal kinetic-form wall and does not use c_t=c_s.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "This accepted premise is historical context only; the finite binary identity closes without invoking additional axiom content.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "No realized-state selection or state-contingent value enters the theorem.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "The claim is dimensionless finite algebra and requires no physical-unit conversion.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "Charged-lepton K/CPT occupancy counting is unrelated to the binary Hessian identity.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The R-eta readout obligation supplies no premise used by this theorem.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The quark determinant readout gate is outside the claim's algebraic and sector scope.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Checked every indexed axiom, approved primitive, open obligation, convention, definition, and scope-reframe candidate against the scoped algebraic result.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "For arbitrary smooth f, the f' and f'' factors could depend on the binary state and destroy character orthogonality, so polynomial spot checks alone would not prove isotropy.",
+          "evidence_locator": "At `\u03c6 = (v, 0, 0)`: `\u03bb_s\u00b2 = v\u00b2` uniformly across all 8 basis states",
+          "evidence_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "resolution": "At \u03c6=(v,0,0), every \u03bb_s\u00b2 equals v\u00b2, making 2f'(\u03bb_s\u00b2)+4\u03bb_s\u00b2f''(\u03bb_s\u00b2) exactly state-independent; the full smooth-f claim therefore reduces analytically to the exact character Gram matrix.",
+          "resolved": true,
+          "route_id": "direct-chain-rule"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:0",
+              "evidence_locator": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Prior clean audit of the same finite binary identity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:1",
+              "evidence_locator": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Prior conditional verdict based on stale scope assertions and an unresolved physical dependency edge.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:2",
+              "evidence_locator": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Prior conditional verdict treating the physical staggered-Dirac pointer as load-bearing.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:3",
+              "evidence_locator": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Prior clean audit after explicit non-load-bearing narrowing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:4",
+              "evidence_locator": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Prior clean independent derivation of the common Hessian coefficient and character sum.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:5",
+              "evidence_locator": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Prior clean result invalidated only because its no-go-discipline packet was missing.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Charged-lepton occupancy counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Charged-lepton R-eta readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Quark determinant cross-sector readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated foundational and lepton-sector no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Newton/source-response scope walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated coupling-derivation scope restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated atomic, reflection-positivity, and audit-edit boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated cross-lane no-go catalogue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated electroweak coupling normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated plaquette beta coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated lensing and detector-observable walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated K/CPT carrier-orbit primitive scan.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated charged-lepton selector and Yukawa walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated causal-metric bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated finite radial-family scope restriction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Wilson environment closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated flavor-sector identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated analytic-vector and Dirac bridge wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated gauge-plaquette environment methods.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Gauge-sector isotropy walls explicitly outside this fermion-only theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated gravity dispersion bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated weak-field gravity scope restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated absolute-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated hypercharge normalization and species-readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated campaign-level physics gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated atomic-scale and coupling-transport walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated quark mass, selector, and readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated infinite-distance asymptotic wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated lensing centroid observable obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated finite-path lensing geometry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated static-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated temporal source and physical-clock boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Empty unrelated matter-cone no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated planning-priority and objective-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated physical-time derivation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated neutrino mass and selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated neutrino-scale and cosmology gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated finite-lattice Newtonian scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated finite recompute and basin-scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated coupling and plaquette-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated packet-memory and decoherence bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated finite-degree and thermodynamic-limit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Cl4 carrier-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated rank-four carrier and Hodge-sector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated plaquette bootstrap and mean-field walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated character-integral and positivity diagnostics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Record-to-selector and Hessian-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated strong-CP and registrability bridge walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated locality and temporal-axis selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated source semantics and physical response-basis boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Physical staggered-Dirac kinetic-selection no-go, explicitly excluded from this abstract theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated SU3 Wilson-cube encoding boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated documentation synchronization issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated theta mass-orientation walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated theta gauge-action walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated positive theta-carrier gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated theta insertion-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated theta closedness and branch-dynamics walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated determinant-power horn-selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Record-orbit occupancy nonsupply wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated record-formation readout nonsupply wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated artifact-visibility gap with no no-go claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated record-only mass-readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated hard-coded finite data and cross-family scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated continuum and universal-distance-law exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "mechanism": "Unrelated Yukawa readout renaming wall.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02": {
+              "accepted_premise_type": null,
+              "content_sha256": "3705fee5fbe2672039407b631838634d59adc5d4e600e4ce8fbaa62515aa9037",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:0",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:1",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:2",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:3",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:4",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:5"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:0",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:1",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:2",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:3",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:4",
+                "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02:previous_audit:5"
+              ]
+            },
+            "audit-packet://partial-closure-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02": {
+              "accepted_premise_type": null,
+              "content_sha256": "14f3f3c552d96187d7af95d5bde7a41f4a5ebf005bda315e80bbc0282a53f571",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "7c192e555025841d91bfcdb62d0ebcdb663bc97b203ede7a14efc7c3e2e1157c",
+              "effective_status": null,
+              "path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "At `\u03c6 = (v, 0, 0)`: `\u03bb_s\u00b2 = v\u00b2` uniformly across all 8 basis states",
+                "Equivalently, rotate each tensor factor so \u03c3_x is diagonal;",
+                "No carrier input is used.",
+                "No external source is load-bearing.",
+                "The narrow scope is **purely the fermion Coleman-Weinberg isotropy",
+                "The narrow theorem **does not** claim:",
+                "carries only the physical taste-block/fermion naming",
+                "plain-text, non-load-bearing for the theorem below",
+                "\u2202_ij f(\u03bb\u00b2) = (2f'(v\u00b2)+4v\u00b2f''(v\u00b2))(-1)^{s_i+s_j}"
+              ]
+            },
+            "docs/audit/data/axiom_premise_nodes.json": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+              "effective_status": null,
+              "path": "docs/audit/data/axiom_premise_nodes.json",
+              "roles": [
+                "premise_registry"
+              ],
+              "verified_locators": [
+                "Canonical Lattice+Qubit+Admissibility+Record axiom node."
+              ]
+            },
+            "scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "5d85503e368bda9e0788712e0822c250801120fe2b146337f7565ad159c967af",
+              "effective_status": null,
+              "path": "scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "H_ii = 16 = 8 \u00b7 2 (closure factor)",
+                "Part 2: binary orthogonality sum \u03a3_s (-1)^{s_i}(-1)^{s_j} = 8 \u03b4_{ij}",
+                "Part 4: at \u03c6 = (v, 0, 0), |\u03bb_s|\u00b2 = v\u00b2 uniformly",
+                "f(x) = x\u00b3: Hessian diagonal proportional to \u03b4_ij at (v=2, 0, 0)"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The load-bearing result is a genuine class-A algebraic identity, not a definition, tuned match, or external comparison. The runner enumerates the binary states and computes exact orthogonality and representative Hessians rather than merely printing expected results. The general smooth-f conclusion follows analytically from the displayed chain-rule factorization; the explicitly non-load-bearing physical pointer creates no dependency downgrade."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py",
+  "title": "Taste-Scalar Fermion Coleman-Weinberg Isotropy \u2014 Narrow Theorem",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

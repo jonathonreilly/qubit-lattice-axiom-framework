@@ -1,0 +1,207 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
+    "hypercharge_identification_note",
+    "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+    "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+    "abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18",
+    "native_gauge_closure_note",
+    "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+    "no_per_site_chirality_theorem_note_2026-05-02",
+    "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.406,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "08851fa1e1efdbdae26433efea1f3a5e465e90109e0c611721f14e43d4525a6f",
+  "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:29:41.355186+00:00",
+      "archived_for_note_hash": "6bf5e6e4cbafa9db1a1edfe9d9baf3ac69b41f7f84814514ba0f47624204dec8",
+      "audit_date": "2026-06-15T19:03:13.700651+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "no_per_site_chirality_theorem_note_2026-05-02": "Inside a single one-qubit site algebra M_2(C) with a Pauli generating triple, no nonzero element anticommutes with all three Pauli generators, hence no internal \u03b3_5 with \u03b3_5^2=I exists.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative."
+        },
+        "dep_claim_type": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "native_gauge_closure_note": "retained",
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded"
+        },
+        "deps": [
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "no_per_site_chirality_theorem_note_2026-05-02",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+        ],
+        "load_bearing_score": 15.081,
+        "runner_hash": "28180ea7b5b5bee24e1a61ecb67780e199f50b7265894dc0b7ed8763ae7b266c",
+        "transitive_descendants": 1082
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260615-190026-eec3cd037a-anomaly_forces_time_abj_inco",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rational anomaly arithmetic and parity step check out if the quoted hypercharge content and gamma_5 premise are supplied. The restricted one-hop packet does not supply those inputs: NATIVE_GAUGE_CLOSURE_NOTE explicitly excludes the U(1)_Y/matter-completion surface, and the staggered authority proves a bounded Kawamoto-Smit phase carrier rather than the required spacetime gamma_5 bridge.",
+      "claim_scope": "Bounded conditional bridge from the supplied ABJ premise, LH/RH anomaly arithmetic, and a valid Clifford chirality carrier to d_t in the positive odd integers; not a derivation of ABJ or d_t=1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T19:03:13.700651+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "(B4) The SU(2)-singlet RH completion is chirally distinct from LH doublets, so a chirality operator gamma_5 satisfying gamma_5^2=I and anticommuting with all gamma_mu must exist on the carrying spacetime representation.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: supply the one-hop authority that actually carries the U(1)_Y LH/RH hypercharge and matter-completion surface, and add or route a bridge proving that the staggered carrier supplies a spacetime gamma_5 satisfying the Clifford anticommutation relations.",
+      "open_dependency_paths": [
+        "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
+        "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 44,
+        "B": 19,
+        "C": 0,
+        "D": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "Independent arithmetic agrees with the displayed anomaly traces and cancellations: the LH traces are 0, -16/9, 1/3, 0, 2, and the stated RH charges cancel them in the usual signed convention. But the cited NATIVE_GAUGE_CLOSURE_NOTE says it excludes the abelian eigenvalue surface, anomaly-complete U(1)_Y, and matter-completion labels that B1/B3 claim it supplies; the runner hard-codes these charges rather than verifying them from that authority. The packet also does not close the bridge from gauge left/right distinction or staggered epsilon anticommutation to a gamma_5 operator satisfying the full spacetime Clifford anticommutation premise. Therefore the theorem remains conditional on missing upstream dependency/bridge content."
+    },
+    {
+      "archived_at": "2026-06-21T05:40:56.245922+00:00",
+      "archived_for_note_hash": "9da4e49ba54730a3bbcf78149fb810cd8996985a8f385b04856b78bd9c968df7",
+      "audit_date": "2026-06-18T01:55:10.785628+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Pure finite Clifford-algebra parity theorem: in complexified Cl(p,q), a square-normalized element anticommuting with all generators exists iff total dimension n is even; with d_s=3 and a chirality-existence premise, d_t is odd.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": "For each selected axis of the graph-first C^8 taste cube, the complementary-axis swap defines projectors with ranks 6 and 2 and a traceless hypercharge-like left-handed abelian eigenvalue surface with spectrum +1/3^6 and -1^2.",
+          "no_per_site_chirality_theorem_note_2026-05-02": "Inside a single one-qubit site algebra M_2(C) with a Pauli generating triple, no nonzero element anticommutes with all three Pauli generators, hence no internal \u03b3_5 with \u03b3_5^2=I exists.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative."
+        },
+        "dep_claim_type": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": "decoration",
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "native_gauge_closure_note": "retained",
+          "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": "decoration_under_graph_first_su3_integration_note",
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded"
+        },
+        "deps": [
+          "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+          "no_per_site_chirality_theorem_note_2026-05-02",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+        ],
+        "load_bearing_score": 11.586,
+        "runner_hash": "eb649f819818eb2361181ee559d941bf9f94f418a9bb6fca118ba730b85ce8ef",
+        "transitive_descendants": 1086
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-015204-1f6874e3-anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The exact anomaly traces, SM-singlet cancellation witness, Clifford even-dimension step, and d_s=3 parity arithmetic close over the declared premise edges. The closure is conditional because P-HY, P-COMP, and P-REC are not derived by the restricted packet.",
+      "claim_scope": "Conditional bridge: assuming P-ABJ/P1, P-HY, P-COMP, P-REC, and the cited retained inputs, the LH anomaly arithmetic plus Clifford parity force d_t to be a positive odd integer, not d_t = 1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T01:55:10.785628+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "(B5)-(B6): gamma_5 existence forces d = d_s + d_t even, and with retained d_s = 3 this gives d_t in {1, 3, 5, ...}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or audit retained bridge theorems for P-HY, P-COMP, and P-REC; separately make P-ABJ/P1 registry status explicit if the accepted-premise carve-out is intended.",
+      "open_dependency_paths": [
+        "docs/ANOMALY_FORCES_TIME_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 43,
+        "B": 33,
+        "C": 0,
+        "D": 0,
+        "total_pass": 76
+      },
+      "verdict_rationale": "Issue: The exact algebraic part is sound; the runner checks the LH anomaly traces, RH cancellation witness, Clifford volume-element parity, and d_s=3 parity arithmetic without external numerical comparators. Why this blocks full clean closure: P-HY, P-COMP, and P-REC are declared premise edges rather than retained derivations in the restricted packet. Repair target: retained bridge theorems or approved premise registrations for those edges; claim boundary until fixed is the stated bounded conditional d_t in odd positives, not d_t=1 or an unconditional hypercharge/completion/chirality derivation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
+  "title": "Anomaly-Forces-Time ABJ-Inconsistency Accepted-Premise Bridge",
+  "transitive_descendants": 1356,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,358 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hypercharge_gut_normalization_three_fifths_accepted_premise_bridge_bounded_note_2026-07-10",
+    "hypercharge_identification_note",
+    "graph_first_su3_integration_note",
+    "native_gauge_closure_note"
+  ],
+  "direct_in_degree": 22,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 20.476,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "52fe05b085f1ab0312b2650cb980dc11606f84628f1fb384cf9fa77c2253806f",
+  "note_path": "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369530+00:00",
+      "archived_for_note_hash": "d2add402b6a4dcaa55e9de4f49afc7bf09c5679ed4f4555963ad65f332295346",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T23:15:46.070516+00:00",
+      "archived_for_note_hash": "9f436585ce927888e4aa45c0a3089df89b47e3d8528df4ea7e24b20e74331297",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-02T14:40:53.194176+00:00",
+      "audit_date": "2026-04-30T11:41:48.788465+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_identification_note": "audited_renaming",
+          "native_gauge_closure_note": "audited_conditional"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "hypercharge_identification_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 15.87,
+        "transitive_descendants": 116
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-critical-sweep-20260430",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: HYPERCHARGE_IDENTIFICATION_NOTE.md, NATIVE_GAUGE_CLOSURE_NOTE.md.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:graph_first_su3_integration_note:retained->retained_bounded",
+      "load_bearing_step": "R_base = (3/5)[C2(3) dim(adj3)+C2(2) dim(adj2)]/[C2(2) dim(adj2)] = 31/9.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
+        "docs/NATIVE_GAUGE_CLOSURE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: HYPERCHARGE_IDENTIFICATION_NOTE.md, NATIVE_GAUGE_CLOSURE_NOTE.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.982511+00:00",
+      "audit_date": "2026-05-26T22:30:00.988228+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hypercharge_identification_note": "Bounded chain-assembly theorem only: on the retained graph-first selected-axis LH-doublet surface, using the imported 1:(-3) Sym^2/Anti^2 traceless ratio, the imported Sym^2/Anti^2 to SU(3)-fundamental/singlet assignment with the SM-definition convention color-charged == quark and color-singlet == lepton, and the retained bounded alpha=1/3 normalization bridge with admitted Anti^2-as-L_L readout, GMN Q=T3+Y/2, T3(e_L)=-1/2, and Q(e_L)=-1, Y=(1/3)P_sym-P_anti has eigenvalues +1/3 on Q_L and -1 on L_L and the admitted GMN charge table follows on the LH-doublet surface. This does not derive matter assignment, alpha normalization/readout conventions, GMN, physical hypercharge beyond this bounded surface, the full SM spectrum, or anomaly cancellation.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hypercharge_identification_note": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_identification_note": "retained_bounded",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "hypercharge_identification_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 18.5,
+        "runner_hash": "d48763cad77aa606898849acc46e13cd52bc69282bc9e24d3cb1407c9eea3fc5",
+        "transitive_descendants": 255
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-r-base-group-theory-pass2-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The SU(3) and SU(2) Casimir/dimension inputs are standard algebra on the retained graph-first gauge structure, and the 3/5 factor is an admitted bounded normalization input from the retained_bounded hypercharge lane. Within that explicitly bounded input set, the arithmetic closes exactly and does not import cosmological observations.",
+      "claim_scope": "Given retained SU(3)/SU(2) structural inputs and the admitted GUT hypercharge normalization factor 3/5, the exact algebraic identity R_base = (3/5) * [(4/3)*8 + (3/4)*3] / [(3/4)*3] = 31/9.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T22:30:00.988228+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T22:26:08.892911+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-r-base-group-theory-pass1-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded exact algebraic base-factor identity R_base = 31/9 from standard SU(3)/SU(2) Casimir-adjoint inputs and the admitted GUT normalization factor 3/5; no full DM/baryon ratio, Omega_Lambda chain, Sommerfeld factor, representation uniqueness, or physical cosmology closure is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-26T22:30:00.988077+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-r-base-group-theory-pass2-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given retained SU(3)/SU(2) structural inputs and the admitted GUT hypercharge normalization factor 3/5, the exact algebraic identity R_base = (3/5) * [(4/3)*8 + (3/4)*3] / [(3/4)*3] = 31/9.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:hypercharge_identification_note:retained_bounded->unaudited",
+      "load_bearing_step": "R_base = (3/5) * [C_2(3) * dim(adj_3) + C_2(2) * dim(adj_2)] / [C_2(2) * dim(adj_2)] = 31/9.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that the 3/5 normalization remains treated as an admitted retained_bounded input and that no downstream cosmology or representation-uniqueness scope is inferred.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 2,
+        "C": 0,
+        "D": 1,
+        "total_fail": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "The load-bearing result is a rational arithmetic identity over retained-grade structural inputs plus one admitted normalization input. The GUT normalization 3/5 is sufficient for a bounded clean result because the claim is explicitly scoped to that admission; it would not support an unbounded positive theorem deriving the normalization itself. This verdict does not ratify the full dark-matter/baryon ratio, Omega_Lambda chain, Sommerfeld factor, representation uniqueness, or physical cosmology closure."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.215592+00:00",
+      "audit_date": "2026-07-08T00:17:38.466084+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hypercharge_identification_note": "Bounded LH-doublet chain assembly: from the retained-grade ratio, matter-assignment, alpha=1/3 normalization, and GMN readout authorities, the commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1 and the derived LH charge table; no full-spectrum anomaly, GUT-normalization, or sin^2(theta_W) claim is included.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hypercharge_identification_note": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_identification_note": "retained_bounded",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "hypercharge_identification_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 23.469,
+        "runner_hash": "d48763cad77aa606898849acc46e13cd52bc69282bc9e24d3cb1407c9eea3fc5",
+        "transitive_descendants": 500
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-five-judge-panel-20260707-b96ff3ea",
+      "auditor_confidence": "panel-majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic itself is a genuine class A exact identity, and the runner computes it with Fraction arithmetic rather than fitting a comparator. However, the 3/5 factor is load-bearing and the restricted packet does not supply a retained derivation or accepted-premise registration for that normalization. The retained_bounded hypercharge authority does not close this gap because it explicitly quarantines GUT-normalization claims, so the clean bounded core remains conditional on that admitted normalization.",
+      "claim_scope": "Exact rational reduction of the displayed SU(3)/SU(2) Casimir-adjoint formula to R_base = 31/9, with the 3/5 GUT-normalization factor treated as an admitted input and no cosmology closure audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-08T00:17:38.466084+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-07T23:49:30.906833+00:00",
+          "auditor": "codex-audit-loop-2026-07-07-row3-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact bounded algebraic identity R_base = 31/9 from SU(3)/SU(2) fundamental Casimirs, adjoint dimensions, and the bounded/admitted 3/5 hypercharge-normalization factor; no dark-matter or cosmology closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-08T00:10:46.041653+00:00",
+          "auditor": "codex-cli-gpt-5.5-cross-confirm-20260707-362f8a4c-r_base_group_theory_deri",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact rational reduction of the displayed SU(3)/SU(2) Casimir-adjoint formula to 31/9, with 3/5 treated as an admitted GUT-normalization input and no cosmology closure audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-08T00:17:38.466084+00:00",
+          "auditor": "codex-cli-gpt-5.5-five-judge-panel-20260707-b96ff3ea",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact rational reduction of the displayed SU(3)/SU(2) Casimir-adjoint formula to R_base = 31/9, with the 3/5 GUT-normalization factor treated as an admitted input and no cosmology closure audited.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "It treated the admitted 3/5 normalization factor as a closed retained-grade input, but the packet labels it admitted/not derived and the cited authority does not establish GUT normalization.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The arithmetic itself is a genuine class A exact identity, and the runner computes it with Fraction arithmetic rather than fitting a comparator. However, the 3/5 factor is load-bearing and the restricted packet does not supply a retained derivation or accepted-premise registration for that normalization. The retained_bounded hypercharge authority does not close this gap because it explicitly quarantines GUT-normalization claims, so the clean bounded core remains conditional on that admitted normalization.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 18,
+            "B": 3,
+            "C": 0,
+            "D": 1,
+            "total_pass": 22
+          },
+          "second_auditor_error": "",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:hypercharge_identification_note:retained_bounded->unaudited",
+      "load_bearing_step": "R_base = (3/5) * [C_2(3) * dim(adj_3) + C_2(2) * dim(adj_2)] / [C_2(2) * dim(adj_2)] = 31/9.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation or accepted-premise registration for the 3/5 GUT-normalization factor used here; otherwise keep this row bounded on that admission.",
+      "open_dependency_paths": [
+        "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 3,
+        "C": 0,
+        "D": 1,
+        "total_pass": 22
+      },
+      "verdict_rationale": "The arithmetic itself is a genuine class A exact identity, and the runner computes it with Fraction arithmetic rather than fitting a comparator. However, the 3/5 factor is load-bearing and the restricted packet does not supply a retained derivation or accepted-premise registration for that normalization. The retained_bounded hypercharge authority does not close this gap because it explicitly quarantines GUT-normalization claims, so the clean bounded core remains conditional on that admitted normalization."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_r_base_group_theory_derivation.py",
+  "title": "R_base = 31/9 Group-Theory Derivation Theorem",
+  "transitive_descendants": 711,
+  "verdict_rationale": null
+}

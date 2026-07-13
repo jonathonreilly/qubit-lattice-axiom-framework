@@ -1,0 +1,123 @@
+{
+  "audit_date": "2026-06-18T15:31:48.838284+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "ai_methodology_note_2026-04-25": null
+    },
+    "dep_claim_type": {
+      "ai_methodology_note_2026-04-25": "meta"
+    },
+    "dep_effective_status": {
+      "ai_methodology_note_2026-04-25": "meta"
+    },
+    "deps": [
+      "ai_methodology_note_2026-04-25"
+    ],
+    "load_bearing_score": 4.407,
+    "runner_hash": null,
+    "transitive_descendants": 14
+  },
+  "audit_status": "audited_renaming",
+  "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-ai_methodology.raw.canonical_framing_paragraph-first",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Within the declared meta scope, the note closes by adoption/definition: it designates the quoted paragraph as canonical disclosure language and explicitly excludes physics-theorem use. No physics derivation or runner-backed scientific claim is established by this packet.",
+  "claim_id": "ai_methodology.raw.canonical_framing_paragraph",
+  "claim_scope": "Audited only the source note's registration of a canonical paper-facing AI-disclosure/accountability paragraph and its stated methodology-only boundary.",
+  "claim_type": "meta",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-06-18T15:31:48.838284+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ai_methodology_note_2026-04-25"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "audited_renaming",
+  "effective_status_reason": "terminal_audit",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "audited_renaming",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "This paragraph is the canonical version and may be cited for manuscript disclosure language and methodology framing, but not as a retained physics theorem, runner-backed derivation, or audit result.",
+  "load_bearing_step_class": "E",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d6342e054709e88f85bb554caa1d2fab9ffdb33383fe430ccb517476d565d4e5",
+  "note_path": "docs/ai_methodology/raw/canonical_framing_paragraph.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check that downstream ledger/application code treats this row as meta disclosure text, not as a retained physics theorem.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:29:40.442906+00:00",
+      "archived_for_note_hash": "9501f18bfab44451e9f3c92697fb682e3698683975c9e368401e7575da9e605c",
+      "audit_date": "2026-05-19T14:59:50.502816+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "ai_methodology_note_2026-04-25": null
+        },
+        "dep_claim_type": {
+          "ai_methodology_note_2026-04-25": "meta"
+        },
+        "dep_effective_status": {
+          "ai_methodology_note_2026-04-25": "meta"
+        },
+        "deps": [
+          "ai_methodology_note_2026-04-25"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-ai_methodology.raw.canon-053",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supports that the source note defines a canonical disclosure paragraph and that the cited methodology note lists a canonical per-paper disclosure paragraph as part of the methodology surface. No physics derivation is asserted or closed here.",
+      "claim_scope": "Audited only the meta-methodology claim that this note defines a canonical per-paper AI-disclosure/accountability paragraph and explains its intended submission use.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-05-19T14:59:50.502816+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "\"This paragraph is the canonical version\" and is adopted to appear in framework submissions as the standardized AI-disclosure and accountability paragraph.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the audit lane wants purely meta adoption notes to receive a non-terminal policy status rather than audited_renaming under the physics-oriented E/F rule.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing move is definitional: the note adopts and labels a block of text as the canonical paragraph for submissions. It does not derive a physics result, instantiate a runner, or close a first-principles computation. The cited methodology note is consistent with the paragraph's role as a publishable disclosure surface, but the audited claim remains a meta-policy definition rather than a theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Canonical Methodology Framing Paragraph",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The load-bearing act is a definition/adoption of canonical disclosure text, not a derivation from framework premises. The source note itself correctly scopes the artifact as methodology/canonical-text registration only and forbids citation as a retained physics theorem or audit result. Thus the meta registration closes, but any positive-theorem interpretation would be only a definition substitution rather than a scientific derivation."
+}

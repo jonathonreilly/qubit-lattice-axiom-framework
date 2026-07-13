@@ -1,0 +1,247 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lattice_keff_continuum_note",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "continuum_limit_note",
+    "lattice_nn_continuum_note",
+    "lattice_fanout_continuum_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/lattice_continuum_limit.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0cb871252ce3d7794865c0e37843f8bb2979918cd8c0546bc67eb4082fcd427e",
+  "note_path": "docs/LATTICE_KEFF_CONTINUUM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368964+00:00",
+      "archived_for_note_hash": "b9b812a652cbee111ad1de7434f0e94094008497005b81796ec8157be6405de2",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-23T18:14:17.024884+00:00",
+      "audit_date": "2026-05-22T02:54:51.032860+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "continuum_limit_note": "On the cached size sweep h \u2208 {1.0, 0.5, 0.25, 0.125} of the registered numpy runner scripts/lattice_h2_T_numpy_continuum.py, the framework's h^2+T-normalized 3D lattice propagator exhibits: transfer norm T in [4.27, 6.47] (logarithmic growth), F~M exponent values 0.979/0.991/0.998/1.018 bracketing 1.000, gravitational deflection consistently TOWARD with 2.7% change between h=0.25 and h=0.125 at s=0.004 weak field, and Born nonlinearity below 1e-15 where measurable. The h \u2192 0 continuum-limit promotion is explicitly out of binding scope and demoted to diagnostic-only."
+        },
+        "dep_claim_type": {
+          "continuum_limit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "continuum_limit_note": "retained_bounded"
+        },
+        "deps": [
+          "continuum_limit_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9a42641695997677945c85a6302adf41ed7a033c1f27c618bc55678b3bb8afae",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "claude-audit-loop-2026-05-19-lattice-keff",
+      "auditor_confidence": null,
+      "auditor_family": "claude-opus",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Source note self-declares 'candidate retained-grade NEGATIVE' in its Status line; runner output confirms detector probability collapses to ~0 (replay value ~7e-75) at h=0.25 and the gravity channel wanders -1.69 -> +0.14 -> +0.58 across the three finite rows. The note's Bottom line concludes the scheme is a 'practical failure' and 'does not rescue the lattice continuum program'. The ledger records claim_type=positive_theorem, but there is no positive theorem in the source note; the actual content is a falsification of the k_eff = k*h candidate. As a positive_theorem the derivation does not close on its own terms because the source note itself reports a negative conclusion.",
+      "claim_scope": "Whether the dense lattice continuum scheme k_eff = k*h with kernel exp(i*(k*h)*act)*w/L*h^2 produces a clean refinement lane via scripts/lattice_keff_continuum.py over h in {2.0, 1.0, 0.5, 0.25}.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T02:54:51.032860+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:continuum_limit_note",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "claim_type_observable_mismatch",
+      "notes_for_re_audit_if_any": "scope_too_broad \u2014 claim_type=positive_theorem does not match negative content; reclassify as no_go (preferred) or bounded_theorem with bounded-negative scope, then re-audit. Apply No-Go Discipline N1-N8 if reclassified as no_go: at minimum verify (N1) alternative continuum-limit attack routes considered, (N3) hidden walls/admissions surfaced, (N4) detector underflow at h=0.25 is the named witness residual and matches runner output.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: claim_type=positive_theorem mismatches the actual claim content. Source note's Status line says 'candidate retained-grade NEGATIVE'; its Bottom line says the scheme is a 'practical failure'. The runner output (logs/runner-cache cached SHA 9a42641 elapsed 5.9s) confirms detector probability is 0.00e+00 at h=0.25 (replay reports ~7e-75 without 1e-30 prune) and the gravity sequence -1.6910 -> +0.1374 -> +0.5821 is not a stable convergent trend on the three surviving rows. Why this blocks: a positive_theorem audited_clean requires a positive theorem to close from cited inputs. No positive theorem is being asserted here; the substantive content is the negative finding that k_eff = k*h does not stabilize the dense kernel. Repair target: reclassify the ledger row as no_go (the scheme is falsified as a continuum-limit candidate) or as bounded_theorem with bounded-negative scope, then re-audit under the new claim_type with No-Go Discipline (N1-N8) applied to the named falsification scope. Alternatively, if a positive content is genuinely intended, rewrite the source note to state a positive theorem (e.g., 'finite-h gravity values for k_eff = k*h scheme: tabulated correctly by runner') and audit that narrower claim. Claim boundary until fixed: the finite-h tabulated runner output (gravity values -1.6910, +0.1374, +0.5821 at h=2.0, 1.0, 0.5 plus detector underflow at h=0.25) is a faithful record of the runner; the negative conclusion 'k_eff = k*h does not produce a clean refinement lane' is supported by the runner data on the displayed h-range only. No positive continuum-limit theorem is supported."
+    },
+    {
+      "archived_at": "2026-05-24T16:04:15.525027+00:00",
+      "archived_for_note_hash": "9a669d8f05cd99c92ace5d4ed4476006b32ea32b6cfbaad6455c6f83a5c21fd0",
+      "audit_date": "2026-05-23T20:14:16.134581+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "continuum_limit_note": "Finite-h cached h^2+T lattice trend table for h in {1.0, 0.5, 0.25, 0.125}, including transfer norms, TOWARD gravity rows, F~M exponents near 1, and 2.7% weak-field deflection change from h=0.25 to h=0.125; no audited h -> 0 convergence theorem."
+        },
+        "dep_claim_type": {
+          "continuum_limit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "continuum_limit_note": "retained_bounded"
+        },
+        "deps": [
+          "continuum_limit_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9a42641695997677945c85a6302adf41ed7a033c1f27c618bc55678b3bb8afae",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T201353Z-9f778d7c-lattice_keff_continuum_n-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The included runner genuinely modifies the propagation kernel to use k_eff = k\u00b7h, calls the shared lattice measurement stack, and produces the reported finite rows plus detector failure at h = 0.25. The note\u2019s stronger wording about exhaustion of the dense candidate pool is contextual, but the audited negative for this scheme closes on the packet evidence.",
+      "claim_scope": "Audited the bounded negative claim that the dense k_eff = k\u00b7h refinement scheme fails on the provided finite sweep h \u2208 {2.0, 1.0, 0.5, 0.25} using the included runner and helper source.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-23T20:14:16.134581+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The remaining open dense continuum scheme k_eff = k\u00b7h gives finite rows at h = 2.0, 1.0, 0.5 but detector probability collapses by h = 0.25, so it does not produce a clean retained refinement lane.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the unpruned h=0.25 P_free \u2248 7e-75 statement, since that replay source is described in the note but not included as a separate runner here; it is not needed for the finite-sweep negative because the pruned runner already establishes practical detector collapse.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The source note\u2019s load-bearing negative is supported by a completed runner cache and by runner source that actually computes the lattice propagation rather than printing constants or importing the contested result. The cited upstream authority is retained_bounded and is used only as comparator/background for the continuum-limit measurement stack, not as an open premise needed to rescue the k_eff result. The runner stdout contains an over-optimistic printed line that gravity appears to be converging, but the note does not rely on that line; it correctly treats the detector collapse and unstable finite rows as a negative for a clean refinement lane."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.337715+00:00",
+      "audit_date": "2026-05-24T18:06:56.796632+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "continuum_limit_note": "Finite-h cached h^2+T lattice trend table for h in {1.0, 0.5, 0.25, 0.125}, including transfer norms, TOWARD gravity rows, F~M exponents near 1, and 2.7% weak-field deflection change from h=0.25 to h=0.125; no audited h -> 0 convergence theorem.",
+          "lattice_fanout_continuum_note": "The audited note rules out the specific fan-out normalized kernel exp(i\u00b7k\u00b7act)\u00b7w/(L\u00b7sqrt(fan_out)) as a continuum-limit recipe for the provided lattice runner family over the tested refinements h = 2, 1, 0.5, 0.25.",
+          "lattice_nn_continuum_note": "Bounded finite-spacing computational claim for the raw nearest-neighbor harness on H_finite = {2.0, 1.0, 0.5, 0.25}: finite gravity, k=0, MI, classical purity, total-variation, and Born rows, with Born residual < 1e-10 and h = 0.125/continuum explicitly outside the claimed window."
+        },
+        "dep_claim_type": {
+          "continuum_limit_note": "bounded_theorem",
+          "lattice_fanout_continuum_note": "no_go",
+          "lattice_nn_continuum_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "continuum_limit_note": "retained_bounded",
+          "lattice_fanout_continuum_note": "retained_no_go",
+          "lattice_nn_continuum_note": "retained_bounded"
+        },
+        "deps": [
+          "continuum_limit_note",
+          "lattice_fanout_continuum_note",
+          "lattice_nn_continuum_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "e5a86fa866a16a5b083a25c7638975e08217e75aa0322421554252ba84efc387",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T180443Z-091594ef-lattice_keff_continuum_n-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied runner source computes the lattice/readout path and changes only the propagator phase to k*h; the completed stdout matches the note's finite rows and h = 0.25 detector failure. This closes a narrow harness-level no-go, not a universal continuum impossibility or an architecture-change exclusion.",
+      "claim_scope": "The audited scope is only the dense lattice scheme with kernel exp(i*(k*h)*act)*w/L*h^2 on the inherited detector/readout harness through h = 0.25.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-24T18:06:56.796632+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The current dense k_eff = k*h runner gives finite rows at h = 2.0, 1.0, and 0.5, but the detector readout fails at h = 0.25 while the surviving gravity values -1.6910 -> +0.1374 -> +0.5821 do not establish a stable refinement trend.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the support-only unpruned P_free ~= 7e-75 replay if promoting prose that depends on that exact number; the clean no-go here rests on the supplied default harness failure and surviving-row gravity trend.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The load-bearing step is a first-principles runner computation within the provided lattice harness, not a definition, renaming, or tuned external comparator. All cited authorities are retained-grade, and the no-go is explicitly scoped away from nearest-neighbor and architecture-change lanes. The N1-N8 negative-claim gate passes for that narrowed scope: attack routes are enumerated, the two walls are kept independent, the h = 0.25 detector residual matches the default runner witness, and the steelman is left as a future readout/architecture lane rather than overclaimed as closed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_keff_continuum.py",
+  "title": "k_eff = k\u00b7h Continuum Limit Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,261 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+    "kinetic_isotropy_primitive",
+    "scale_reference_primitive",
+    "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f258cf47e84139dd81d8253fc7ee957b0bd33b2274db54c9cf7ae4f118bd148d",
+  "note_path": "docs/CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-11T10:02:09.701065+00:00",
+      "archived_for_note_hash": "0e879aeb073af4bfe29415d8d9d6a5f5f026867cba3f0a9955f518c76d0825ac",
+      "audit_date": "2026-06-10T21:33:23.613880+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube.",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "The audited scope is the retained 3D cubic-Coxeter six-tetrahedra complex: second variation of S_R about flat, gauge and k=0 consistency, non-metric breathing mass, and leading O(k^2) proportionality to the in-runner-derived 3D Euclidean linearized EH pairing.",
+          "kinetic_isotropy_primitive": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
+          "kinetic_isotropy_primitive",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "52d27cb2729cc9811f00e7098fd04de933f135b822a937e8cb6d8a4681d644c8",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260610-213101-7ece46aec2-cubic_coxeter_regge_ok4_latt",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The positive sampled O(k^4) scaling, TT degeneracy, alpha special values, spread, projection split, and off-shell rational table close from the supplied runner and cited retained/primitive inputs. The unqualified no-other-branch conclusion does not close as written because F9 scans only axis, face+, and one random spatial direction, with no all-direction scan or symbolic branch-exclusion proof supplied.",
+      "claim_scope": "Sampled numerical O(k^4) characterization of the Regge graviton-sector remainder and TT dispersion on the Z^3 x Z_tau tick extension, with approved primitive use and runner-computed gauge/projection checks; the no-other-branch negative is supported only for the runner's scanned spatial directions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T21:33:23.613880+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note locates on-shell points as rank drops of the full 15x15 edge-space Bloch form at p=(k n, iE), obtaining a machine-degenerate TT pair with alpha(n)=-(1+sum_a n_a^4)/12 over sampled directions, and uses a rank-drop scan over E^2/k^2 in [0.3,2.5] to exclude other near-cone branches.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow F9/no-other-branch and trace-third-null language to the three scanned spatial directions, or add an all-direction/symbolic branch-exclusion certificate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 11,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner is not a print-only certificate: it constructs the tick-extended path complex, Regge Bloch form, metric/gauge maps, EH comparator, singular-value roots, and O(k^4) fits from the supplied geometry. The kinetic-isotropy and scale-reference authorities are registered approved primitives in the packet and are used within their declared grants, and independent formula checks confirm the displayed alpha axis/face/body values, spread 1/18, and rational table entries. However, the source's unqualified statement that no other branch exists near the cone is broader than the F9 code path, which tests only three spatial directions in the energy window. Narrowing that negative to the scanned directions, or adding a symbolic/all-direction branch certificate, is needed before clean audit."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:56.310459+00:00",
+      "audit_date": "2026-06-11T15:18:45.329937+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube.",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "The audited scope is the retained 3D cubic-Coxeter six-tetrahedra complex: second variation of S_R about flat, gauge and k=0 consistency, non-metric breathing mass, and leading O(k^2) proportionality to the in-runner-derived 3D Euclidean linearized EH pairing.",
+          "kinetic_isotropy_primitive": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
+          "kinetic_isotropy_primitive",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "8c72886bbafaa5303273fb7028b2cc56c1fd989bb17d6293e5a330ab9305bb42",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-151608-2a3fdf21a0-cubic_coxeter_regge_ok4_latt",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the path/Kuhn tick complex, Regge Bloch Hessian, exact line-averaged metric map, EH comparator, gauge maps, and rank-drop/root fits directly, with no helper imports or external numerical inputs. The closed form is audited only as a finite sampled numerical theorem, not as a symbolic all-direction proof.",
+      "claim_scope": "Sampled O(k^4) fingerprint of the Regge metric-sector deviation and full-edge-space on-shell TT dispersion on the OS0 Z^3 x Z_tau tick extension, including the scoped finite branch scan and convention-tagged projected off-shell tables.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T15:18:45.329937+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:kinetic_isotropy_primitive:5dd0ccb9->9186702f",
+      "load_bearing_step": "The full 15x15 analytic Bloch Regge form on the Z^3 x Z_tau tick extension has sampled rank-drop roots with a machine-degenerate TT pair and alpha(n) = -(1 + sum_a n_a^4)/12 to the stated sampled tolerance.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the full-edge rank-drop extraction and the projection-versus-full-form convention split; symbolic all-direction closure is explicitly outside this audited scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 11,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing computation is first-principles numerical geometry from the provided complex and accepted primitive graining, not a definition, renaming, or external match. The hard-coded prior-cache values in F1 serve only as a provenance cross-check; the O(k^4) scaling, on-shell roots, TT degeneracy, B3 enhancement, projection boundary, and off-shell table are recomputed in-runner. The primitive registry content supplied in the packet marks scale_reference_primitive and kinetic_isotropy_primitive as approved premises, and neither is used beyond its declared grant. The scoped negatives are finite scan/basis negatives rather than universal no-go claims."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.607275+00:00",
+      "audit_date": "2026-07-10T15:52:42.949737+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "9186702f30a2faa7ce41afd398a0f1956f41f796b704dd34a04047352fd35d99",
+          "scale_reference_primitive": "601c0206f5898df1e81b3f95ae1b77dc5cf331dd419eb935e383d1acf6039d90"
+        },
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube.",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "The audited scope is the retained 3D cubic-Coxeter six-tetrahedra complex: second variation of S_R about flat, gauge and k=0 consistency, non-metric breathing mass, and leading O(k^2) proportionality to the in-runner-derived 3D Euclidean linearized EH pairing.",
+          "kinetic_isotropy_primitive": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
+          "kinetic_isotropy_primitive",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "8c72886bbafaa5303273fb7028b2cc56c1fd989bb17d6293e5a330ab9305bb42",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00013-cubic_coxeter_regge_ok4_latt",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner independently constructs and supports the central sampled O(k\u2074) fingerprint and TT dispersion. However, F9 tests only 221 isolated energy ratios, excludes |E\u00b2/k\u00b2\u22121|\u22640.02, and performs no root bracketing or complex-plane scan, so it cannot establish the note's additional branch-exclusion statements.",
+      "claim_scope": "The sampled O(k\u2074) deviation, gauge structure, full-form TT dispersion, cubic-symmetry enhancement, projected-form boundary, branch scan, and off-shell basis-fit results on the specified Z\u00b3 \u00d7 Z\u03c4 Kuhn complex.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:52:42.949737+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "Rank drops of the full 15\u00d715 analytically continued Bloch form yield a machine-degenerate TT pair with sampled dispersion coefficient \u03b1(n\u0302) = \u2212(1 + \u03a3\u2090 n\u0302\u2090\u2074)/12.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow F9 to absence of detected rank drops at the 221 tested ratios outside |E\u00b2/k\u00b2\u22121|\u22640.02 and delete the unsupported complex-off-axis exclusion, then refresh the runner cache.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 1,
+        "C": 10,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "Issue: the real-axis F9 predicate can miss an additional rank drop between grid points and deliberately leaves an untested neighborhood around the cone; the claimed complex off-axis scan is absent from the supplied code. Why this blocks: the note presents absence of another branch, rather than merely absence at the evaluated grid points, as part of its bounded result. Repair target: add root-bracketing or continuity-controlled minimization across the full window and the stated complex-plane search. Claim boundary until fixed: the sampled O(k\u2074) scaling, candidate dispersion law, TT degeneracy, B\u2083 enhancement, and projection/off-shell results remain runner-supported, while branch exclusion does not."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10.py",
+  "title": "A Sampled O(k\u2074) Lattice Fingerprint of the Regge Graviton Sector on the 3+1 Tick Complex: Machine-Certified k\u2074 Scaling, a Degenerate TT Pair, and the Candidate Dispersion Law \u03b1(n\u0302) = \u2212(1 + \u03a3\u2090 n\u0302\u2090\u2074)/12",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

@@ -1,0 +1,302 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+    "higgs_mass_from_axiom_note",
+    "plaquette_self_consistency_note"
+  ],
+  "direct_in_degree": 8,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.718,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3117242c974fd5f5439b8a1c435f7ea67ced7528381da955db5ad7c3f90244b4",
+  "note_path": "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-12T19:48:08.057407+00:00",
+      "archived_for_note_hash": "c56df2dcba4911dd2368a180622390d25d7b31bb23644f349224b7caa86371f2",
+      "audit_date": "2026-06-11T23:20:21.809713+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_mass_from_axiom_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 12.79,
+        "runner_hash": "1e97cfc3299001884b13d8e20c19db38bca6bffc0e16f831f4ae2a01cc41df12",
+        "transitive_descendants": 625
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-231812-42b6838366-higgs_channel_effective_ntas",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic distinctness claim closes for any positive u_0: the squared ratio to the uniform value is 16/binomial(4,k). However, the note and runner use u_0 = 0.8776 as the Higgs note's stated input, while the provided current Higgs authority declares u_0 = 0.877681381, so the displayed numeric table is not closed from the cited current parent.",
+      "claim_scope": "Audited the algebraic boundary that the Wilson Hamming-weight staircase multiplicities alone do not select the uniform N_taste = 16 Higgs-channel assignment, including the displayed single-class channel table.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T23:20:21.809713+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "If the Higgs channel is identified with a single Hamming-weight class hw = k, then effective N_taste^(k) = binomial(4,k), so formula [5] gives squared values proportional to 1/binomial(4,k), none equal to the uniform all-corners N_taste = 16 value.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: Reconcile the source note and runner with the current parent input u_0 = 0.877681381, or explicitly cite a retained authority for u_0 = 0.8776, then rerun the channel table.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 49,
+        "C": 0,
+        "D": 0,
+        "total_pass": 88
+      },
+      "verdict_rationale": "The load-bearing math is a genuine finite algebra check: binomial(4,k) gives 1,4,6,4,1, and none of those equal 16. Independently recomputing the formula confirms the qualitative boundary and the exact squared ratios. The packet is nevertheless not clean as written because the source note and runner hard-code u_0 = 0.8776 while the supplied current parent note uses u_0 = 0.877681381; that changes at least the k = 1 and k = 3 rounded display values from 280.6 GeV to 280.5 GeV. This is source-runner/dependency drift, not a failure of the underlying boundary idea."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:48.799210+00:00",
+      "archived_for_note_hash": "f4b84743ba7abc90fa8291f2144b36609136692d74d83a6141d3e81fdcbb9cc0",
+      "audit_date": "2026-06-12T21:11:38.438794+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "plaquette_self_consistency_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_mass_from_axiom_note",
+          "plaquette_self_consistency_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 13.304,
+        "runner_hash": "7b7f6ee106c06ce09c053e2e1d7ee8acecd410809d4a193a40fedad275bd2c83",
+        "transitive_descendants": 631
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260612-higgs_channel_effective_ntaste_boundary_-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The core algebra is class A and closes for the narrower boundary: binomial(4,k) gives squared ratios 16, 4, 8/3, 4, and 16 relative to the uniform-16 value, so no single-class assignment equals the uniform readout. However, the source note and runner terminal verdict state that the five single-class assignments give five distinct tree-level values, while the displayed table itself has k=0 equal to k=4 and k=1 equal to k=3. That overstatement prevents a clean verdict for the claim as written, but the repair is a scope/wording correction rather than a dependency or compute failure.",
+      "claim_scope": "Audited the boundary claim that the Wilson Hamming-weight staircase multiplicities alone do not select the uniform N_taste = 16 choice in the parent curvature formula.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T21:11:38.438794+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-12T21:04:30.154921+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260612-210205-07886a429b-higgs_channel_effective_ntas",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic boundary audit: the Wilson Hamming-weight staircase multiplicities support the listed single-class effective-N_taste values and show that the uniform N_taste = 16 readout is an additional channel-assignment admission, not selected by the staircase identity alone.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-12T21:07:47.327690+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260612-210507-66d47d15ab-higgs_channel_effective_ntas",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the boundary claim that the Wilson Hamming-weight staircase multiplicities alone do not select the uniform N_taste = 16 choice in the parent curvature formula.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-12T21:11:38.438794+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260612-higgs_channel_effective_ntaste_boundary_-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the boundary claim that the Wilson Hamming-weight staircase multiplicities alone do not select the uniform N_taste = 16 choice in the parent curvature formula.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "It overlooked the false 'five distinct tree-level values' wording and treated 'five assignments all distinct from uniform-16' as equivalent to 'five mutually distinct values'.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The core algebra is class A and closes for the narrower boundary: binomial(4,k) gives squared ratios 16, 4, 8/3, 4, and 16 relative to the uniform-16 value, so no single-class assignment equals the uniform readout. However, the source note and runner terminal verdict state that the five single-class assignments give five distinct tree-level values, while the displayed table itself has k=0 equal to k=4 and k=1 equal to k=3. That overstatement prevents a clean verdict for the claim as written, but the repair is a scope/wording correction rather than a dependency or compute failure.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "For a single Hamming-weight class hw = k, set N_taste^(k) = binomial(4,k) in formula [5] and compare those values with the uniform all-corners N_taste = 16 assignment.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: replace 'five distinct tree-level values' in the source note and runner terminal verdict with 'five assignments yielding three distinct values, none equal to uniform-16', then rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The core algebra is class A and closes for the narrower boundary: binomial(4,k) gives squared ratios 16, 4, 8/3, 4, and 16 relative to the uniform-16 value, so no single-class assignment equals the uniform readout. However, the source note and runner terminal verdict state that the five single-class assignments give five distinct tree-level values, while the displayed table itself has k=0 equal to k=4 and k=1 equal to k=3. That overstatement prevents a clean verdict for the claim as written, but the repair is a scope/wording correction rather than a dependency or compute failure."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.396119+00:00",
+      "audit_date": "2026-06-15T20:40:25.982897+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "plaquette_self_consistency_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_mass_from_axiom_note",
+          "plaquette_self_consistency_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 17.329,
+        "runner_hash": "2e81cbd27b03405235b66aca71989245df709d29767906dd8d4afd62b7d4890a",
+        "transitive_descendants": 642
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-203808-f737c78d7a-higgs_channel_effective_ntas",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Wilson staircase gives binomial(4,k) = (1,4,6,4,1) and sum 16, and the parent formula supplies the N_taste slot. Direct substitution gives N = 1,4,6,4,1 versus uniform N = 16, so the narrow non-selection boundary follows without adding a channel selector.",
+      "claim_scope": "Audited the bounded algebraic claim that the Wilson Hamming-weight staircase supplies class multiplicities but does not by itself select the effective Higgs-channel N_taste; the five single-class substitutions yield three values distinct from the uniform-16 admission.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T20:40:25.982897+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T20:37:23.760736+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-203528-8dc3af0260-higgs_channel_effective_ntas",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the narrow boundary claim that the Wilson Hamming-weight staircase supplies multiplicities (1,4,6,4,1) but does not by itself select the effective Higgs-channel N_taste used in the parent curvature formula.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-15T20:40:25.982897+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-203808-f737c78d7a-higgs_channel_effective_ntas",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded algebraic claim that the Wilson Hamming-weight staircase supplies class multiplicities but does not by itself select the effective Higgs-channel N_taste; the five single-class substitutions yield three values distinct from the uniform-16 admission.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For a single Hamming-weight class hw = k, N_taste^(k) = binomial(4,k), while the uniform all-corners assignment uses sum_k binomial(4,k) = 16; substituting these into formula [5] gives three single-class values, none equal to the uniform-16 value.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck future edits preserve the repaired wording: five single-class assignments give three distinct values, none equal to uniform-16.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 41,
+        "B": 52,
+        "C": 0,
+        "D": 0,
+        "total_pass": 93
+      },
+      "verdict_rationale": "The load-bearing step is exact finite algebra over retained-bounded cited inputs, not a physical Higgs-pole derivation or a tuned comparator match. Independent arithmetic confirms the displayed class counts, ratios 16/binomial(4,k), rounded masses, and the uniform v/(2u_0) = 140.3 GeV readout. The clean verdict applies only to the bounded boundary statement; channel selection, the parent Higgs interpretation, and the +12% gap remain outside scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_higgs_channel_effective_ntaste_boundary.py",
+  "title": "Higgs-Channel Effective N_taste Boundary Bounded Note",
+  "transitive_descendants": 841,
+  "verdict_rationale": null
+}

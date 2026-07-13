@@ -1,0 +1,386 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.709,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d0323127a24a9d634d8db014631482363a8ce9cc20c3b27bb30eecf594f84af5",
+  "note_path": "docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:51:24.699809+00:00",
+      "archived_for_note_hash": "327c208da511abd025e92dac3edeb65019d7f0c3e58153b3cc6878c963a978ad",
+      "audit_date": "2026-06-13T03:20:18.542556+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "e8d0ac88eabe1f6941674da52a39b14a86d55a63e06aadc34ce7709b8152f2c3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-031751-b5e89cd5cc-unordered_mass_multiset_regi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebraic identities and reconstruction checks close on their own terms. The universal factorization B1 depends on P-dep, which is named as a premise/residual and is not derived from the quoted Record axiom.",
+      "claim_scope": "Finite 3x3 circulant Fourier-sector bridge: assuming the supplied context and P-dep, registrable scalar readouts factor through the orbit-resolved unordered mass multiset, reconstruct that multiset, and are invariant under delta -> -delta.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T03:20:18.542556+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By P-dep, each per-record term has the form r_k = f(k, lambda_k(delta)); Orbit plus F3 gives f(k, x) = f(sigma(k), x), so R(total) = sum_k f([k], lambda_k(delta)) factors through M(delta).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained bridge deriving P-dep from the Record axiom, or narrow the row so P-dep is explicitly part of the audited conditional premise.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The runner source performs real finite-algebra checks rather than printing constants, and the displayed identities for the flip, sector involution, signed gap, and e3 closed form check independently. However the load-bearing factorization requires P-dep to exclude additive orbit-even readouts depending directly on unregistered supplied-context data. Since P-dep is not closed by the cited Minimal Axioms packet, the theorem is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:43.887332+00:00",
+      "archived_for_note_hash": "150c1ccd7fec99c6a77e64560593f774f5409711fd865430e0d2c604c978e24b",
+      "audit_date": "2026-06-16T04:28:21.765128+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "806f878a7f00b03817b6d9ba1f74d0d086fc97ec796a8c7e130223b1afac5d26",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-041725-40fb69bb0c-unordered_mass_multiset_regi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated conditional scope, the finite algebra closes: manual eigenvalue checks give sigma(k)=-k mod 3, lambda_{sigma(k)}(-delta)=lambda_k(delta), e3=a^3-3aB^2+2B^3 cos(3 delta), and Newton-Girard reconstruction plus the singlet readout recovers M(delta). The result does not close as an unconditional Record consequence because P-dep is not derived or approved.",
+      "claim_scope": "Conditional on the supplied 3x3 circulant readout context and explicit P-dep, Record-additive orbit-constant scalar readouts factor through the orbit-resolved unordered mass multiset M(delta), which is invariant under delta -> -delta.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T04:28:21.765128+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By P-dep, each contribution has the form r_k=f(k,lambda_k(delta)); Orbit plus lambda_{sigma(k)}(-delta)=lambda_k(delta) forces f(k,x)=f(sigma(k),x), so R(total)=sum_k f([k],lambda_k(delta)) factors through M(delta).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove P-dep from retained Record/readout structure, or keep this row explicitly conditional on P-dep.",
+      "open_dependency_paths": [
+        "P-dep (explicit conditional premise; no source note path supplied)"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Issue: B1's factorization depends on explicit P-dep, which is not derived from Record and is not an approved primitive. Why this blocks: the finite algebra and runner verify orbit covariance, sign-erasure, and Newton-Girard exactness, but without P-dep additive orbit-even readouts using unregistered supplied-context data are not excluded. Repair target: prove P-dep from retained readout structure or register and audit it as an allowed premise. Claim boundary until fixed: the theorem is valid only conditional on supplied context plus P-dep, with no registry reduction or |delta| value."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.523292+00:00",
+      "audit_date": "2026-06-21T19:15:15.068118+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "12eccf4c9b3e715b0dadefb74028f66ffcd90f7eda184aa90733bfe9c00f0572",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite algebra closes on the stated conditional inputs: Additivity removes cross terms, P-dep supplies per-record dependence on registered data, and K/CPT covariance erases within-orbit order. The closure is conditional because P-dep is not derived from the Minimal Axioms packet.",
+      "claim_scope": "On the supplied 3x3 circulant readout context with fixed Fourier sectors and K/CPT conjugation, conditional on P-dep, Record-registrable scalar readouts factor through the orbit-resolved unordered mass multiset and are invariant under delta -> -delta.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T19:15:15.068118+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Under the explicit P-dep premise, Additivity gives R(total)=sum_k r_k and each r_k is a function only of the registered datum ([k], lambda_k), so R factors through M(delta).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive P-dep from retained Record/readout structure for this context, or leave the row and downstream registry reductions explicitly conditional on P-dep.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Issue: B1's factorization is load-bearing on the explicit P-dep premise. Why this blocks clean status: the cited Minimal Axioms Record clause supplies additivity and K/CPT orbit registration, but it explicitly does not supply P-dep, a readout-context bridge, or exclusion of all unregistered context-scale dependencies. Repair target: prove or register a retained bridge deriving P-dep for this supplied readout class, or keep downstream uses explicitly conditional on P-dep. Claim boundary until fixed: the runner and note support the finite algebraic multiset and flip-invariance theorem only under the stated supplied context plus P-dep."
+    },
+    {
+      "archived_at": "2026-07-04T14:40:52.756717+00:00",
+      "archived_for_note_hash": "c9d5fecc8a0733775aad03e6ea90b7f8425f2c092cbfdf71518cdcc7ccc17a1c",
+      "audit_date": "2026-07-04T14:13:10.084567+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "0f59e220b10d98e4819de0a0e2f05defea3e7c10f34a8240c7fd4af0ca77bf97"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "12eccf4c9b3e715b0dadefb74028f66ffcd90f7eda184aa90733bfe9c00f0572",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-xhigh-unordered-mass-20260704",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebraic consequences close from the supplied context plus P-dep, but the restricted cited authority does not retain K/CPT orbit constancy as generic Record axiom content and P-dep is explicitly unproved. The missing step is a retained bridge or accepted premise supplying orbit/P-dep for this readout context.",
+      "claim_scope": "Conditional finite algebra theorem on the supplied 3x3 circulant readout context, assuming additivity, K/CPT orbit constancy, and explicit P-dep.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-04T14:13:10.084567+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the explicit P-dep premise, every Record-registrable scalar readout equals a sum of per-record contributions with no cross terms, each contribution a function of ([k], lambda_k), hence factors through M(delta).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained readout-context bridge or accepted premise supplying K/CPT orbit constancy and P-dep for this context; also add a dated downstream-hygiene line to this note's own boundary so the row re-enters the audit queue.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner genuinely checks the finite 3x3 algebra, flip covariance, multiset reconstruction, and hostile readout failures; it is not merely printing constants. However, the theorem is explicitly conditional on P-dep, and the current minimal-axiom authority separates K/CPT orbit structure from generic Record content. Therefore the algebraic bridge is bounded and useful only under those supplied contextual premises, not a closed derivation from the retained axiom packet alone."
+    },
+    {
+      "archived_at": "2026-07-04T16:11:41.744205+00:00",
+      "audit_date": "2026-07-04T15:26:54.035682+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "0f59e220b10d98e4819de0a0e2f05defea3e7c10f34a8240c7fd4af0ca77bf97"
+        },
+        "dep_claim_scope": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "Bounded supplied-context bridge: from supplied ORBIT-INDEXING plus Record content-determination, registrable scalar readouts are K/CPT-orbit constant; inside the supplied determinant-character/log-character homomorphism boundary, even plus odd erases the homomorphic phase functional while log-modulus data survives.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.144,
+        "runner_hash": "a93a3dabccf60ae06bbdb92baba1908ca4d1e2f3ceaaf1164071f259b3e5df8b",
+        "transitive_descendants": 24
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-wave1-unordered-20260704",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the explicitly bounded premises, the chain closes: Record supplies only finite additivity/content-determination, T1 supplies K/CPT orbit constancy for the supplied ORBIT-INDEXING context, and P-dep is visibly a load-bearing conditional premise rather than a hidden axiom. The note does not claim registry reduction, P-dep derivation, |delta|, theta retirement, or r-selection.",
+      "claim_scope": "Conditional finite 3x3 circulant readout theorem: under the supplied projectors/K/CPT context, current Record additivity and content-determination, cited T1 K/CPT orbit constancy, and explicit P-dep, registrable scalar readouts factor through the orbit-resolved unordered mass multiset M(delta), which is exactly reconstructible and invariant under delta -> -delta.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-04T15:26:54.035682+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04:retained_bounded->unaudited",
+      "load_bearing_step": "B1: under the explicit P-dep premise, additivity gives a sum of per-record contributions and each contribution is a function only of the orbit label [k] and monitored central value lambda_k, so every registrable readout factors through M(delta).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if downstream consumers cite this row as deriving P-dep, enacting registry reduction, deriving |delta|, retiring theta, or constraining r.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The theorem is scoped as a conditional bounded theorem on a supplied finite 3x3 circulant context, and the source note repeatedly keeps P-dep explicit and load-bearing. The algebraic steps B1-B3 follow from the supplied context, Additivity, T1 orbit constancy, and P-dep; the runner recomputes the finite flip, projector, covariance, Newton-Girard reconstruction, hostile readout failures, degenerate boundary checks, and source-scope hygiene with TOTAL: PASS=15 FAIL=0. Residuals remain premise-bound: P-dep and the physical applicability of the supplied readout context are not derived here, but the note does not claim otherwise."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.331734+00:00",
+      "audit_date": "2026-07-04T16:19:22.912549+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "Within a supplied finite readout context with ORBIT-INDEXING, fixed K/CPT action, sector factorization, and a supplied determinant-character/log-character homomorphism boundary, Record content-determination gives K/CPT orbit constancy for registrable scalar readouts and the homomorphic phase contribution vanishes while log-modulus data survives.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.144,
+        "runner_hash": "a93a3dabccf60ae06bbdb92baba1908ca4d1e2f3ceaaf1164071f259b3e5df8b",
+        "transitive_descendants": 24
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-unordered-mass-round3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supplies Record additivity/content-determination as an accepted axiom premise, T1 orbit constancy from a retained_bounded direct dependency, and P-dep as an explicit bounded-scope premise rather than a derived claim. Within that scoped premise set, the L1-L5 algebra proves B1-B3 without importing a hidden physical bridge or external comparator.",
+      "claim_scope": "On the supplied 3x3 circulant readout context, with current Record additivity/content-determination, retained supplied-context T1 K/CPT orbit constancy, and explicit row-local P-dep, registrable scalar readouts factor through the orbit-resolved unordered mass multiset, that multiset is exactly reconstructible from registrable readouts, and delta orientation is not registrable; no P-dep derivation, physical context selection, registry reduction, magnitude claim, or theta retirement is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-04T16:19:22.912549+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Under explicit P-dep, Additivity gives the no-cross-term sector sum and T1 plus the flip covariance lambda_{sigma(k)}(-delta) = lambda_k(delta) forces each per-record contribution to depend only on the orbit class [k] and lambda_k, so every registrable readout factors through M(delta).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The note accurately narrows itself to a supplied finite context and does not claim to derive P-dep, choose the physical readout context, or enact downstream registry changes. The proof's load-bearing factorization is ordinary finite algebra over the supplied context plus retained T1 orbit constancy and the explicit P-dep premise, and the runner constructs the surface, checks covariance/exactness/hostile candidates/source-scope hygiene, and reports TOTAL: PASS=15 FAIL=0. Residual risks remain outside this audited scope: deriving P-dep, selecting the physical context, and deriving any magnitude would require separate claims."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py",
+  "title": "Unordered-Mass-Multiset Registrability Bridge \u2014 Conditional Narrow Bounded Theorem",
+  "transitive_descendants": 36,
+  "verdict_rationale": null
+}

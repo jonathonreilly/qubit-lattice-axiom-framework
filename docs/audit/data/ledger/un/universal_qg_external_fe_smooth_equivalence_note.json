@@ -1,0 +1,118 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_qg_external_fe_smooth_equivalence_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_qg_optional_textbook_comparison_note",
+    "universal_qg_pl_weak_form_note",
+    "universal_qg_pl_sobolev_interface_note",
+    "universal_qg_abstract_gaussian_completion_note",
+    "universal_qg_pl_field_interface_note"
+  ],
+  "direct_in_degree": 8,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.087,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "73d89d87072ab06abe26b6968fa652bc882f83595a893ca593f7cb30376652f7",
+  "note_path": "docs/UNIVERSAL_QG_EXTERNAL_FE_SMOOTH_EQUIVALENCE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-07T08:10:02.496040+00:00",
+      "archived_for_note_hash": "8dbebfc4c48f6113369168ae9eb95825aeae25de90b14fbb6171f2789403df74",
+      "audit_date": "2026-05-06T13:41:27.865965+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "universal_qg_optional_textbook_comparison_note": null
+        },
+        "dep_claim_type": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "dep_effective_status": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "deps": [
+          "universal_qg_optional_textbook_comparison_note"
+        ],
+        "load_bearing_score": 10.67,
+        "runner_hash": null,
+        "transitive_descendants": 287
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-06-universal-qg-external-fe-smooth",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The direct ledger dependency is only the optional textbook comparison meta note, which has no theorem authority. The completed runner checks the FE/Galerkin, source, and covariance compatibility after importing PL weak-form, PL Sobolev carrier, Gaussian completion, and continuum bridge premises that are not direct retained-grade dependencies.",
+      "claim_scope": "Chosen-target external FE-to-smooth weak/measure equivalence for the project-native PL weak Gaussian Sobolev completion on the barycentric-dyadic refinement ladder.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-06T13:41:27.865965+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "the nested PL spaces are the FE/Galerkin subspaces of the chosen external smooth Sobolev carrier, with discrete weak forms, source functionals, and Gaussian cylinder family exactly matching the Galerkin restrictions of the external weak/Gaussian formulation",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire scripts/frontier_universal_qg_external_fe_smooth_equivalence.py as the runner and replace the metadata-only optional comparison dependency with direct retained-grade dependencies for the PL weak form, PL Sobolev carrier, Gaussian/field completion, and continuum bridge; then re-audit the chosen-target external FE-to-smooth weak/measure equivalence scope.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_QG_PL_WEAK_FORM_NOTE.md",
+        "docs/UNIVERSAL_QG_PL_SOBOLEV_INTERFACE_NOTE.md",
+        "docs/UNIVERSAL_QG_ABSTRACT_GAUSSIAN_COMPLETION_NOTE.md",
+        "docs/UNIVERSAL_QG_PL_FIELD_INTERFACE_NOTE.md",
+        "docs/UNIVERSAL_QG_CONTINUUM_BRIDGE_REDUCTION_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the note claims a chosen-target external FE-to-smooth weak/measure equivalence, but the ledger cites only a metadata hub instead of the actual PL weak-form, Sobolev carrier, Gaussian completion, and continuum bridge authorities. Why this blocks: the runner's completed checks show algebraic Galerkin consistency only after those premises are imported from unwired, unaudited rows. Repair target: wire scripts/frontier_universal_qg_external_fe_smooth_equivalence.py as the runner and replace the meta-only dependency with direct retained-grade dependencies for the PL weak form, PL Sobolev carrier, Gaussian/field completion, and continuum bridge. Claim boundary until fixed: the chosen-target FE/Galerkin consistency checks pass, but retained status must wait for direct retained-grade upstream authorities."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_qg_external_fe_smooth_equivalence.py",
+  "title": "Universal QG External FE-to-Smooth Weak/Measure Equivalence",
+  "transitive_descendants": 135,
+  "verdict_rationale": null
+}

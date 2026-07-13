@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "pmns_hw1_source_transfer_boundary_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7261630bd9e46c6dcad5b7d4ef6972ff699d08fe90bd43465f5d2559ff0f258f",
+  "note_path": "docs/PMNS_HW1_RESPONSE_COLUMN_SCHUR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:39.611171+00:00",
+      "audit_date": "2026-05-25T12:29:55.225767+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "pmns_hw1_source_transfer_boundary_note": "Given supplied active/passive sector operators, response-column packs, tau classification, and probe weights, Lane A response-column reconstruction equals Lane B direct Schur reconstruction on the retained pair and downstream Hermitian/PMNS data."
+        },
+        "dep_claim_type": {
+          "pmns_hw1_source_transfer_boundary_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "pmns_hw1_source_transfer_boundary_note": "retained_bounded"
+        },
+        "deps": [
+          "pmns_hw1_source_transfer_boundary_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "15e87b3cbf64895f2f114e50ad3de2ed04e30b83442c0817987fa4da33c1b4a8",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T122845Z-0002a190-pmns_hw1_response_column-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The passive proof is the direct inverse identity for K = (I - lam * delta_S)^(-1); the active proof is the same identity applied to delta_S - I. The supplied runner source checks the actual symbolic/rational identities and Schur round trips without external comparators or missing helper imports.",
+      "claim_scope": "Exact matrix-algebra round trip: for a supplied sector operator M with invertible F and invertible response kernel, response-column inversion recovers the Schur complement delta_S in both passive and active conventions.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-25T12:29:55.225767+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "pmns_hw1_source_transfer_boundary_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:pmns_hw1_source_transfer_boundary_note:retained_bounded->unaudited",
+      "load_bearing_step": "From K = (I_d - lam * delta)^(-1), K^(-1) = I_d - lam * delta, so (I_d - K^(-1)) / lam = delta; in the active convention delta = delta_S - I_d and adding I_d recovers delta_S.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should confirm the decoration classification for this narrow algebraic rescope and re-check that no source/transfer-pack derivation is being credited.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The algebra is correct under the stated invertibility and nonzero-lam hypotheses, and the one cited authority is retained-grade as retained_bounded. The runner computes the load-bearing inverse identities and Schur complement round trips rather than hard-coding a contested premise. However, the audited content is only the standard linear-algebra core isolated from the single upstream parent boundary theorem, with no independent physical closure beyond that parent."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.py",
+  "title": "PMNS HW=1 Response-Column / Schur-Complement Bridge Narrow Theorem",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,366 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
+    "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
+    "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+    "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.255,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "499da7841edf1d8c83fece296d76b241d94b98ecdea3b4bfd53d964a025bd04c",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-08T18:21:55.509736+00:00",
+      "audit_date": "2026-06-06T16:59:04.716592+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical reconstruction matrix, inverse map, W_A adjoint annihilation, sign separation, and no universal sub-three-sample linear collapse for the named first symmetric witness sector only; beta=6 sample evaluation is out of scope.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 6.281,
+        "runner_hash": "34660cbd8cc025af6e50d43d5157e93e4ee9cefa34bc14db5c842874666af40c",
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-165609-cc87ffdb44-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cone and order claims follow by linear algebra from the retained radical matrix F and the nonnegative retained coefficient premise. Independent inversion of the displayed numeric F reproduces the stated half-space rows, det(F) != 0, b-a > 0, c > 0, and a < 0 < b,c.",
+      "claim_scope": "Algebraic positive-cone, inverse half-space, sample-order, and normalized-bracket statements on the named first symmetric retained three-sample sector, assuming the retained coefficient triple is nonnegative.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-06T16:59:04.716592+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:34660cbd->2968abf6",
+      "load_bearing_step": "If Z = F a_vec with a_(0,0), a_(1,0), a_(1,1) >= 0, then Z lies in Cone(r_0,r_1,r_2), equivalently F^(-1)Z >= 0, and Z_B - Z_A = (b-a)a_(1,0) + c a_(1,1) >= 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check source/runner alignment: the supplied runner mainly computes a local Wilson obstruction, while the audited source theorem itself is the algebraic positive-cone/order statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing theorem is an algebraic closure over the two retained_bounded inputs: nonnegative retained character coefficients and the exact radical three-sample matrix. The displayed inverse coefficients and sign inequalities check independently from the numeric matrix, without relying on the runner PASS output. The clean scope does not include actual beta = 6 environment sample evaluation or the open full environment identification."
+    },
+    {
+      "archived_at": "2026-06-09T08:57:54.174726+00:00",
+      "archived_for_note_hash": "0a15a3945464826a1e5cbe0c7589ebf3f5b289cbf28086994b2983d959911b8c",
+      "audit_date": "2026-06-08T19:17:17.424420+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical reconstruction matrix, inverse map, W_A adjoint annihilation, sign separation, and no universal sub-three-sample linear collapse for the named first symmetric witness sector only; beta=6 sample evaluation is out of scope.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 6.807,
+        "runner_hash": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
+        "transitive_descendants": 55
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-191457-e1d9b06cac-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic cone, inverse half-space, and order-witness math closes conditional on the nonnegative retained coefficient triple. The restricted packet does not close the source note's stronger upstream assertion that the actual Wilson-surface environment coefficient triple is already supplied by an exact nonnegative character-measure expansion; the cited authority is only a bounded finite packet and explicitly leaves that identification open.",
+      "claim_scope": "Whether the cited radical reconstruction map plus the cited character-measure input justify the stated positive-cone and order witness for the first symmetric retained three-sample sector.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-08T19:17:17.424420+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "If a_(0,0), a_(1,0), a_(1,1) >= 0, then Z = F a_vec lies in Cone(r_0,r_1,r_2), equivalently F^(-1) Z >= 0, and Z_B - Z_A = (b - a) a_(1,0) + c a_(1,1) >= 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or runner-certify that the actual Wilson-surface first retained coefficients are the nonnegative character-measure coefficients used here, or narrow the note to a conditional finite-packet cone theorem.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 4,
+        "C": 1,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Independent numerical algebra checks reproduce the radical signs, determinant, inverse half-space coefficients, and the inequalities b - a > 0 and c > 0, so the conditional linear-algebra theorem is sound. The dependency problem is scope, not arithmetic: the character-measure cited authority is retained_bounded finite-packet support and expressly does not identify the actual spatial Wilson environment boundary class function. The primary runner mainly proves a separate local Wilson obstruction and only text-checks the cone note as support, so it does not repair the missing bridge."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.054548+00:00",
+      "audit_date": "2026-06-09T11:29:39.541147+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical reconstruction matrix, inverse map, W_A adjoint annihilation, sign separation, and no universal sub-three-sample linear collapse for the named first symmetric witness sector only; beta=6 sample evaluation is out of scope.",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17": "Exact local SU(3) one-plaquette Wilson sample values and normalized local one-plaquette values at the named holonomies W_A, W_B, W_C for beta=6; no full environment amplitude Z_6^env(W_i) is audited as closed.",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "Supplied finite SU(3) rim/far plaquette-support partition with product Haar measure and no mixed rim/far plaquette; the audited result is the product-Fubini slice-marginal factorization and the formal class projection P_cls B_beta(W) after the compression boundary is supplied.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17": "positive_theorem",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17": "retained",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 6.807,
+        "runner_hash": "18172c87540e38b33e61bc1cbcb450ac7ccf51c673dcaa1c840a7507b86c82c7",
+        "transitive_descendants": 55
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-112727-cf99a3e1c1-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by linear algebra from the retained-bounded radical reconstruction matrix and the retained-bounded finite-packet nonnegativity input. The source explicitly excludes the open actual Wilson spatial-environment identification, so no open bridge is used load-bearingly.",
+      "claim_scope": "Bounded finite-packet first symmetric three-sample seam: supplied nonnegative coefficient triples mapped by the exact radical sample matrix give an explicit cone, half-space test, order witness, and normalized bracket; no identification with actual full Z_6^env(W).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T11:29:39.541147+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17:retained_bounded->unaudited",
+      "load_bearing_step": "For any supplied nonnegative first-sector coefficient triple, Z=F a_vec lies in Cone(r0,r1,r2), equivalently F^(-1)Z>=0, and the signs b-a>0 and c>0 force Z_B-Z_A=(b-a)a_(1,0)+c a_(1,1)>=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that future wording preserves the supplied finite-packet scope and does not promote the cone to the actual Z_6^env boundary function.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The load-bearing theorem is an algebraic closure over independent retained-grade inputs, not a definition or symbol identification. Independent recomputation of the radicals, inverse matrix, determinant, signs, order coefficient, normalized bracket, and displayed local obstruction matches the packet values. The open beta=6 full-environment evaluation is stated as out of scope and is not imported into the bounded conclusion."
+    },
+    {
+      "archived_at": "2026-06-18T01:40:24.884229+00:00",
+      "audit_date": "2026-06-15T23:03:42.646038+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical-form reconstruction on the named first symmetric three-sample witness sector, including the matrix, inverse map, `W_A` annihilation, opposite-sign `chi_(1,1)` separation, and no universal linear relation among the three named samples; beta=6 sample evaluation is excluded.",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17": "Local-only sample-side evaluation of J(W_i), exp(3J(W_i)), w_6(W_i), and w_6(W_i)/Z_(1plaq)(6) for W_A, W_B, W_C; no audit of Z_6^env(W_i), B_6(W), or K_6^env closure.",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "Supplied finite SU(3) rim/far plaquette-support partition with product Haar measure and no mixed rim/far plaquette; the audited result is the product-Fubini slice-marginal factorization and the formal class projection P_cls B_beta(W) after the compression boundary is supplied.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17": "positive_theorem",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17": "retained",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 9.281,
+        "runner_hash": "18172c87540e38b33e61bc1cbcb450ac7ccf51c673dcaa1c840a7507b86c82c7",
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-230113-82aee31bfc-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed supplied-triple scope, the cone, inverse half-space test, order inequality, and normalized bracket are algebraic consequences of the retained radical matrix plus nonnegative coefficients. The open beta=6 full-environment evaluation is explicitly excluded rather than imported.",
+      "claim_scope": "Audited the bounded finite-packet theorem that a supplied nonnegative first symmetric coefficient triple maps through the exact radical three-sample matrix into an explicit cone with half-space inequalities, Z_B>=Z_A, and the stated normalized baseline bracket; no identification with the actual full Wilson environment was audited or claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T23:03:42.646038+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17:retained_bounded->unaudited",
+      "load_bearing_step": "For any supplied nonnegative first-sector coefficient triple, Z=F a_vec lies in C=Cone(r_0,r_1,r_2), equivalently F^(-1)Z>=0, and Z_B-Z_A=(b-a)a_(1,0)+c a_(1,1)>=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use preserves the supplied-nonnegative-triple scope and does not reread this as an identification of the actual Z_6^env(W) three-sample vector.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade bounded inputs, not a definition or symbol identification. The runner checks the radical matrix invertibility, inverse consistency, sign pattern, cone equivalence, order witness, and local obstruction; its support checks only verify dependency/status and scope text. An independent direct radical evaluation with a separate 3x3 adjugate inversion reproduced the displayed entries, inverse coefficients, determinant magnitude, b-a>0, c>0, and the negative local adjoint coordinate. The claim remains bounded to supplied nonnegative finite-packet data, so the cited open actual-Wilson-environment identification does not enter the theorem."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.951982+00:00",
+      "audit_date": "2026-06-18T05:53:31.897456+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical reconstruction matrix, inverse map, W_A adjoint annihilation, sign separation, and no sector-local linear collapse for the named first symmetric witness sector, with beta=6 sample evaluation excluded.",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17": "Exact local beta=6 one-plaquette Wilson sample values and normalized local ratios for W_A, W_B, and W_C, excluding the full environment amplitudes Z_6^env(W_i).",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "Supplied finite SU(3) rim/far plaquette-support partition with product Haar measure and no mixed rim/far plaquette; the audited result is the product-Fubini slice-marginal factorization and the formal class projection P_cls B_beta(W) after the compression boundary is supplied.",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J)."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17": "positive_theorem",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17": "retained",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+        ],
+        "load_bearing_score": 6.307,
+        "runner_hash": "18172c87540e38b33e61bc1cbcb450ac7ccf51c673dcaa1c840a7507b86c82c7",
+        "transitive_descendants": 55
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conclusion follows by invertibility of F, componentwise nonnegativity of the supplied coefficient triple, and the retained sign pattern a<0, b>0, c>0. The note explicitly does not identify the supplied finite packet with the actual full Wilson spatial-environment boundary function, so that identification is outside the audited claim scope.",
+      "claim_scope": "Exact finite-packet first-symmetric three-sample cone, half-space, order, and normalized-baseline inequalities for supplied nonnegative coefficient triples using the retained radical sample matrix.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T05:53:31.897456+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17:retained_bounded->unaudited",
+      "load_bearing_step": "If a_(0,0), a_(1,0), a_(1,1) >= 0, then Z = F a_vec lies in C = Cone(r_0,r_1,r_2), equivalently F^(-1)Z >= 0, and Z_B - Z_A = (b-a)a_(1,0) + c a_(1,1) >= 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the displayed decimal rows of F^(-1) against the exact radical inverse, but the exact algebraic closure is clear.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The load-bearing step is exact linear algebra over retained-grade bounded inputs: the radical reconstruction map supplies F and F^(-1), and the finite packet supplies nonnegative first-sector coefficients within the stated scope. The runner source actually computes the radical matrix, inverse consistency, sign pattern, cone equivalence, and order inequality rather than merely printing pass text. The helper-backed local Wilson obstruction is used only as a scope guard and does not promote the actual beta=6 environment identification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_vacuum_plaquette_three_sample_positive_cone_scope_guard_2026_06_08.py",
+  "title": "Gauge-Vacuum Plaquette First Symmetric Three-Sample Positive-Cone Order Witness",
+  "transitive_descendants": 53,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

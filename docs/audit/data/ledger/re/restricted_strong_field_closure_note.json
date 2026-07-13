@@ -1,0 +1,404 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "restricted_strong_field_closure_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+  ],
+  "direct_in_degree": 12,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.267,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "da5c671d5ebed20b56bb5d4712f804d8f67ffb27f29a9a48cd354ff75e5e3f00",
+  "note_path": "docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T15:35:10.813357+00:00",
+      "audit_date": "2026-05-03T14:57:40.026975+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.585,
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "restricted-audit-fresh-20260503-alpha",
+      "auditor_confidence": 0.87,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic identities close only after the bridge fields and matter observables are selected in the note. With no declared dependencies and no runner, the source note does not prove that the same-charge bridge, rho/S readout, shell orbit laws, or Schur boundary action are forced by retained inputs rather than introduced as premises.",
+      "claim_scope": "Exact restricted strong-field closure on the exact local O_h star-supported source class, including exact shell source, same-charge bridge, static conformal 3+1 lift, and Schur-complement boundary action.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T14:57:40.026975+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "The note asserts the same-charge bridge and local 3+1 lift: psi = 1 + phi_ext, chi = 1 - phi_ext = alpha psi, with rho = sigma_R / (2 pi psi^5) and S = 0.5 rho (1/alpha - 1), then concludes these satisfy the static conformal constraints identically and close the strong-field package.",
+      "load_bearing_step_class": "unratified_physical_bridge_and_definition_as_closure",
+      "notes_for_re_audit_if_any": "Re-audit should focus on whether retained inputs independently derive the same-charge bridge and rho/S physical readout, and whether a runner removes those assignments and reconstructs them from the exact O_h shell source and boundary action.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "breakdown": "No executable check constructs the bridge, derives the shell-to-3+1 matter readout, or verifies the Schur-complement boundary action from independent retained inputs.",
+        "checked": false,
+        "runner": "none"
+      },
+      "verdict_rationale": "Issue: The closure package depends on unproved physical identifications: the same-charge bridge psi = 1 + phi_ext, chi = 1 - phi_ext = alpha psi, and the definitions of rho and S that make the static conformal equations hold identically. Why this blocks: Those steps are the theorem, not consequences shown from retained inputs in this restricted packet; a hostile reviewer can reject the claimed strong-field closure as a selected bridge/readout plus algebraic consistency check. Repair target: Provide retained theorem-level derivations that construct the unique same-charge bridge, prove the pointwise shell observables as orbit laws, derive rho and S as the physical 3+1 source variables, and derive the Schur-complement boundary action, preferably with a runner that constructs rather than assumes the bridge. Claim boundary until fixed: The note may state a conditional exact algebraic closure for the specified ansatz/source definitions on the local O_h class, but not an audited positive theorem that the restricted strong-field closure is no longer open."
+    },
+    {
+      "archived_at": "2026-05-07T13:13:18.234046+00:00",
+      "archived_for_note_hash": "39edfe0f9b867e3519ad876638932aeab882213992e6eb1494834d360683d668",
+      "audit_date": "2026-05-05T04:26:29.337405+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.082,
+        "runner_hash": null,
+        "transitive_descendants": 270
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-restricted_strong_field_-036",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet provides assertions and definitional substitutions but no independent derivation of the exact shell source, pointwise orbit laws, unique bridge, or Schur-complement boundary-action stationarity from the axiom. The missing step is a retained-grade derivation or runner certificate establishing those exact identities rather than declaring them.",
+      "claim_scope": "Audited whether the provided note alone closes the claimed exact restricted strong-field closure for the local O_h shell source class without cited authorities or runner evidence.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:26:29.337405+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note asserts that on the exact local O_h class, the shell law, same-charge bridge, local 3+1 lift, and Schur boundary action form one exact restricted strong-field closure package.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check if a future packet supplies a one-hop retained derivation or runner certificate for the exact O_h shell source, unique same-charge bridge, pointwise shell laws, and Schur boundary stationarity.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "No cited authorities or runner source/stdout are available, so the audit must judge the note text alone. The local 3+1 equations partly follow by substituting the definitions of rho and S once the bridge and shell source are assumed, but the core closure package is introduced as an exact status assertion rather than derived. That makes the load-bearing step a definitional/package declaration, not a first-principles computation or genuine algebraic closure over independent retained inputs."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:41.502929+00:00",
+      "archived_for_note_hash": "87fe6d10affd7ca84c68a729a244eebf555ef29cd301e546c53660eaa11fa053",
+      "audit_date": "2026-05-07T17:25:33.319504+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.209,
+        "runner_hash": "b0b469629c36d5d57b884b59f015fb1e5d5dedee434ff940cae706f4932922a5",
+        "transitive_descendants": 295
+      },
+      "audit_status": "audited_clean",
+      "auditor": "restricted-strong-field-fresh-context-20260507-B",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated finite-box O_h source class, the chain closes by finite-dimensional linear algebra: projector-shell identity, Dirichlet uniqueness, triangular solution of the restricted constraints, and positive-definite Schur minimization. The note explicitly keeps the result inside the scalar/static-conformal boundary and does not import a full Einstein/Regge or astrophysical bridge.",
+      "claim_scope": "Exact finite-box scalar/static-conformal closure on the current 15^3 local O_h star-supported source class, covering the shell source, same-charge Dirichlet bridge, pointwise rho/S readouts, and Schur boundary action; no full GR, Regge, or astrophysical strong-field theorem is included.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-07T17:25:33.319504+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-07T17:25:17.315198+00:00",
+          "auditor": "restricted-strong-field-fresh-codex-A",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-box scalar/static-conformal closure on the stated local O_h star-supported source class, including shell source, same-charge Dirichlet bridge, pointwise source readouts, and Schur boundary action.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-07T17:25:33.319366+00:00",
+          "auditor": "restricted-strong-field-fresh-context-20260507-B",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-box scalar/static-conformal closure on the current 15^3 local O_h star-supported source class, covering the shell source, same-charge Dirichlet bridge, pointwise rho/S readouts, and Schur boundary action; no full GR, Regge, or astrophysical strong-field theorem is included.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Once phi_ext = Pi_R^ext phi and sigma_R = H_0 phi_ext are fixed, Dirichlet uniqueness gives u = phi_ext and the two local static-conformal constraints uniquely force rho = sigma_R/(2 pi psi^5) and S = 0.5 rho (1/alpha - 1), while the Schur complement makes the exact trace the unique minimizer.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations preserve the bounded O_h finite-box scalar/static-conformal scope and do not promote this to full GR/Regge or astrophysical strong-field closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 41,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The current packet runner completed with PASS=41 FAIL=0 TOTAL=41, and the component code computes algebraic finite-box identities rather than checking an external comparator or tuning a target value. The source object is treated as the fixed bounded input class, not as a derived universal gravity source, and the audited conclusion is scoped accordingly. Minor roundoff-level differences between note snippets and current runner output do not affect the closure. No unclosed full-GR, Regge, no-horizon, echo, or astrophysical strong-field consequence is used by the bounded claim."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.514709+00:00",
+      "audit_date": "2026-06-18T04:41:23.302465+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "Finite-grid scalar lattice-Laplacian shell-localization identity and reduced-shell corollaries for the 15^3 Dirichlet Z^3 nearest-neighbor Laplacian at R = 4, excluding any GR/tensor activation claim."
+        },
+        "dep_claim_type": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 12.822,
+        "runner_hash": "b0b469629c36d5d57b884b59f015fb1e5d5dedee434ff940cae706f4932922a5",
+        "transitive_descendants": 79
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-restricted_strong_field_closure_note-first",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained_bounded shell-localization authority supplies the shell helper surface, and the present note then uses finite-dimensional linear algebra: sigma_R=H_0 Pi_R^ext phi, Dirichlet uniqueness gives u=phi_ext, the two conformal constraints solve uniquely for rho and S, and SPD Schur complement gives the unique action minimizer.",
+      "claim_scope": "Exact finite-box scalar/static-conformal closure on the stated local O_h star-supported source class with R=4.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T04:41:23.302465+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "From the fixed finite-box source, each closure arrow is an algebraic solve, a group-covariance consequence, or a positive-definite Schur-complement computation.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the affine-boundary convention H_0 1=0 against the component runner source if that source is available.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 34,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The audited claim is restricted to the exact finite-box O_h scalar/static-conformal sector, and within that scope the conclusion follows by exact algebra over the supplied finite-box objects plus the retained_bounded shell-localization authority. The numerical source parameters define the restricted source class rather than being fit to the closure residuals, and there is no external comparator or tuned observational match in the chain. The packet runner is a harness over component runners, but the source note's displayed identities are independently sufficient for the bounded algebraic closure."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.890864+00:00",
+      "audit_date": "2026-07-01T07:48:09.614964+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "Finite 15^3 zero-Dirichlet Z^3 nearest-neighbor Laplacian with R=4: seven-star Green columns induce a localized sewing-band shell source and a reduced radial/anisotropic shell map depending only on total charge."
+        },
+        "dep_claim_type": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 12.822,
+        "runner_hash": "b0b469629c36d5d57b884b59f015fb1e5d5dedee434ff940cae706f4932922a5",
+        "transitive_descendants": 79
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T074809Z-d52b92ed-restricted_strong_field_",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows as finite-dimensional algebra over the fixed source object, the Dirichlet-positive lattice Laplacian, and the retained_bounded shell-localization authority. The result is restricted to this scalar/static-conformal finite-box sector and does not assert a tensorial GR completion.",
+      "claim_scope": "Exact finite-box scalar/static-conformal closure on the specified local O_h star-supported source class, including shell source, same-charge Dirichlet bridge, conformal readouts, and Schur boundary-action minimizer.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:48:09.614964+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "With phi_ext fixed, sigma_R = H_0 phi_ext gives u = phi_ext by Dirichlet uniqueness; then H_0 psi = sigma_R and H_0 chi = -sigma_R solve uniquely for rho and S, while the SPD Schur complement makes the exact trace the unique action minimizer.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second audit should re-check that the fixed O_h source object remains treated only as a bounded hypothesis; component subprocess source was not included, so the clean verdict rests on the note's algebra plus completed runner summaries.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 41,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The direct cited authority is retained_bounded, which is retained-grade for this bounded theorem scope. The load-bearing steps are algebraic identities: applying H_0 to the exterior projection, Dirichlet uniqueness, triangular solution of the two conformal constraints, and the standard SPD Schur-complement minimizer argument. No external comparator or tuned empirical input is used; the numerical source parameters are part of the restricted finite-box hypothesis, not claimed as derived here."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.501127+00:00",
+      "audit_date": "2026-07-02T00:12:57.928932+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "Finite 15^3 zero-Dirichlet Z^3 nearest-neighbor Laplacian shell-localization and reduced-shell factorization at R=4 for the seven-site star, with O_h orbit organization; no nonlinear GR or tensor-valued matching law."
+        },
+        "dep_claim_type": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 12.822,
+        "runner_hash": "b0b469629c36d5d57b884b59f015fb1e5d5dedee434ff940cae706f4932922a5",
+        "transitive_descendants": 79
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T001257Z-3d8c7338-restricted_strong_field_",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted conclusion follows by finite-dimensional linear algebra from the fixed source object, the exterior projection, the retained-bounded shell-localization authority, and the positive-definite Dirichlet/Schur operators. The result is only the stated scalar/static-conformal finite-box closure, not a full GR or tensor Einstein/Regge theorem.",
+      "claim_scope": "Exact finite-box scalar/static-conformal closure on the specified local O_h star-supported source class, including shell source, same-charge Dirichlet bridge, constraint readouts, and Schur boundary action.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T00:12:57.928932+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "Once the shell source and bridge are fixed, the two static-conformal constraints determine rho = sigma_R/(2 pi psi^5) and S = 0.5 rho (1/alpha - 1), while the Schur complement gives a positive-definite quadratic action uniquely minimized at the exact shell trace.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check component runner sources if available, since the provided primary runner is only a subprocess harness; the mathematical closure itself is finite-dimensional and does not depend on hidden external comparators.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 41,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The load-bearing equations are algebraic identities and uniqueness/minimization facts for a finite positive-definite lattice operator. The cited shell-localization authority is retained-grade for bounded use, and the source note keeps the theorem conditional on the exact O_h finite-box source class rather than deriving the source parameters or claiming nonlinear GR. The packet runner is a harness, but the displayed derivation independently checks the signs, factors, boundary convention for the affine fields, and Schur objective."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.385684+00:00",
+      "audit_date": "2026-07-10T01:42:01.175651+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "The finite 15^3 zero-Dirichlet realization at R=4, restricted to seven-site-star sources and the stated shell-mean, radial-orbit, and reduced-shell observables."
+        },
+        "dep_claim_type": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 12.304,
+        "runner_hash": "b0b469629c36d5d57b884b59f015fb1e5d5dedee434ff940cae706f4932922a5",
+        "transitive_descendants": 78
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-restricted_strong_field_-039",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The retained-bounded authority closes the lattice shell-localization step, but the packet does not derive or cite a retained authority for the static-conformal constraint pair and its physical readout identification. Likewise, defining j = Lambda_R f_* makes stationarity algebraic without independently establishing that j is the claimed microscopic flux.",
+      "claim_scope": "The exact finite-box scalar/static-conformal shell closure for the specified O_h-invariant source, cutoff, Dirichlet bridge, and Schur boundary construction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T01:42:01.175651+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "From the asserted static-conformal constraints and H_0 psi = sigma_R, H_0 chi = -sigma_R, the note algebraically forces rho = sigma_R/(2 pi psi^5) and S = 0.5 rho (1/alpha - 1).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained-grade derivation or authority fixing the static-conformal constraint pair and independently identifying j with microscopic trace flux, then re-audit with the six component runner sources included.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 41,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The shell-source and Dirichlet-uniqueness portions are genuine algebraic consequences of the retained-bounded shell-localization authority and positive-definite finite-box operator. The static-conformal equations and their interpretation as density and stress are introduced without a closed upstream bridge, while the sourced Schur action selects the target trace through j = Lambda_R f_*. Moreover, the supplied runner source is only a subprocess harness; the six component sources needed to validate the reported 41 checks are absent."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_restricted_strong_field_closure_packet.py",
+  "title": "Restricted Strong-Field Closure on the Exact `O_h` Shell Class",
+  "transitive_descendants": 76,
+  "verdict_rationale": null
+}

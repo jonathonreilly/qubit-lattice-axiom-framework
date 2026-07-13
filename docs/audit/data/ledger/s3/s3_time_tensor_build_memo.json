@@ -1,0 +1,369 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "s3_time_tensor_build_memo",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "quark_route2_exact_readout_map_note_2026-04-19",
+    "quark_route2_exact_time_coupling_note_2026-04-19"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9050dcbedd09c0689b01c535ee1bcbc4921ee9a95281dc9079e634c2214e4b3a",
+  "note_path": "docs/S3_TIME_TENSOR_BUILD_MEMO.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106924+00:00",
+      "archived_for_note_hash": "7928e4f833ab9c89a315f5ef79b541d0adcd66510093358798414944ba4178d9",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-30T19:14:10.169843+00:00",
+      "archived_for_note_hash": "0c05b4cc10de47bf24380b818658c8380b1b7104cee2c0815a42e6e68eda9753",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-18T00:58:03.033094+00:00",
+      "archived_for_note_hash": "e12e5b63f1015526334b40026f1d8679a946b4cdcbb87e3cbd71cb79bae8360f",
+      "audit_date": "2026-05-01T20:59:15.573496+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": null,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The routing conclusion is conditional on unregistered upstream theorem blocks and lacks an executable audit surface.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The memo claims the Route-2 tensor carrier K_R and slice backbone are already exact, and that the remaining constructive target is the E-channel readout map entry beta_E/alpha_E rather than another tensor primitive.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: register the cited Route-2 theorem notes as one-hop dependencies and add a structured checker for the readout triple/equivalence and induced time-coupling obstruction.",
+      "open_dependency_paths": [
+        "Route-2 exact carrier/readout/time theorem notes",
+        "readout triple equivalence checker"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the memo depends on upstream exact carrier, readout-reduction, endpoint-ratio, and time-coupling theorem blocks, but no dependencies or runner are registered for this row. Why this blocks: the claim that the tensor carrier is no longer missing and that beta_E/alpha_E is the smallest remaining primitive cannot be ratified from the memo alone. Repair target: register the cited Route-2 theorem notes as one-hop dependencies and add a structured checker for the readout triple/equivalence and induced time-coupling obstruction. Claim boundary until fixed: the memo is support-level routing guidance for the next Route-2 derivation target."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:38.977866+00:00",
+      "audit_date": "2026-05-18T02:01:38.066107+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "On the restricted Route-2 carrier class, an admissible readout map P_R gives the exact family Xi_P(t;c) = (P_R c) tensor exp(-t Lambda_R)u_*, and the unresolved E-channel readout entry induces a non-unique exact time-coupling obstruction."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-015819-921435c6-s3_time_tensor_build_mem-006",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows as an algebraic synthesis of the two cited retained-grade upstream notes: one supplies the reduced readout obstruction and the other supplies the conditional time-coupling family induced by any chosen readout map.",
+      "claim_scope": "Audited the memo's synthesis that the Route-2 stack has an exact carrier and slice backbone, but the unique readout/time tensor theorem remains blocked by the E-channel readout ratio.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T02:01:38.066107+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:quark_route2_exact_time_coupling_note_2026-04-19:retained_bounded->unaudited",
+      "load_bearing_step": "The new readout/time block pins the remaining Route-2 gap to the unresolved readout map entry beta_E / alpha_E, so the branch has only an exact conditional readout-to-slice family rather than a unique exact time-coupling theorem.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that the ledger records this as a bounded theorem or obstruction memo rather than a completed positive tensor-dynamics theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The memo does not close the full positive tensor/time theorem; it narrows the target and states the obstruction. Its load-bearing step is an algebraic consequence of the cited readout-map no-go and time-coupling bounded theorem, both marked retained-grade in the restricted packet. No runner source or stdout is available, so this audit is limited to the note text and cited authorities, but the bounded conclusion itself does not require a missing compute run."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:44.499269+00:00",
+      "archived_for_note_hash": "8fa3e0fdc372f3f5445970116db80c1655a2190cc14c6c5a200c42c527fe416a",
+      "audit_date": "2026-06-16T03:44:21.140975+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "The audited claim is the restricted Route-2 result that an exact conditional family Xi_P(t;c) exists for any supplied admissible P_R, and that the retained readout-map non-uniqueness induces a current-carrier time-coupling obstruction."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": null,
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-034153-99ff0199a0-s3_time_tensor_build_memo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebra checks: q_T=1+(beta_T/alpha_T)/6, q_E=1+(beta_E/alpha_E)/6, and c_TE=s_TE*q_T/q_E make the target chain force beta_E/alpha_E=21/4 after the T-side ratios are granted. But the packet does not derive that E-channel entry or the final Einstein/Regge dynamics identification, so the positive tensor/time build remains open.",
+      "claim_scope": "Whether the cited Route-2 carrier/readout and time-coupling notes close the queued positive tensor/time build, rather than only a conditional coupling family and readout obstruction.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-16T03:44:21.140975+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Without the missing E-channel readout entry beta_E/alpha_E, the branch has only an exact conditional readout-to-slice family, not a unique exact time-coupling theorem.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the E-channel readout entry and final dynamics identification, or re-scope this row to the retained conditional-family/obstruction claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the packet supports the algebraic obstruction that P(rho_E) changes the E-center source factor, but the queued positive tensor/time build still imports the unresolved beta_E/alpha_E readout and final dynamics bridge. Why this blocks: the cited authorities themselves state that the endpoint ratio chain does not derive and that the time law is only Xi_P for an admissible P_R, so no unique Theta_R -> Lambda_R coupling follows. Repair target: derive beta_E/alpha_E=21/4 from the current stack, or retain a stronger admissibility/no-go theorem, and separately close the dynamics identification. Claim boundary until fixed: exact K_R/Lambda_R backbone, restricted P_R reduction, endpoint algebra, and conditional Xi_P family with a readout-induced obstruction."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.984012+00:00",
+      "audit_date": "2026-06-18T14:42:07.786427+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "The audited claim is the restricted Route-2 result that an exact conditional family Xi_P(t;c) exists for any supplied admissible P_R, and that the retained readout-map non-uniqueness induces a current-carrier time-coupling obstruction."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "9eed9dc5028ab29b66786089b2972fa5a9627bb2dba97d84e9a8e2bc4393b235",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-s3_time_tensor_build_memo-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conclusion follows from the two provided retained-grade authorities plus finite endpoint algebra. The unique readout map and final dynamics identification are explicitly outside the safe claim.",
+      "claim_scope": "Audited only the bounded synthesis that the cited readout and time-coupling notes imply an exact conditional readout-to-slice family plus unresolved E-channel dependence; no unique P_R or Einstein/Regge dynamics identification is claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T14:42:07.786427+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:quark_route2_exact_readout_map_note_2026-04-19:retained_no_go->unaudited",
+      "load_bearing_step": "Given the cited Route-2 readout/time authorities, the stack has exact K_R/Lambda_R, restricted P_R reduction, endpoint algebra, and a conditional Xi_P(t;c) family, while the missing E-channel readout entry blocks a unique Theta_R -> Lambda_R theorem.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Primitive registry file was not present in the restricted workspace; no registered primitive is invoked by the provided packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 12,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic/logical closure over the cited readout and time-coupling authorities, not a new first-principles physics derivation. The runner source performs exact Fraction arithmetic for the endpoint identities and checks the memo preserves the restricted source boundary. No external comparator, tuned numerical input, or asserted unique P_R enters the audited claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.559989+00:00",
+      "audit_date": "2026-06-21T18:42:43.828319+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Exact restricted Route-2 carrier/readout reduction, exact endpoint-ratio algebra, and the algebraic non-uniqueness obstruction leaving rho_E=beta_E/alpha_E unfixed.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "Exact Route-2 conditional time-coupling on the restricted carrier class, plus the induced non-uniqueness obstruction from the unresolved E-channel readout entry."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "positive_theorem",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "9eed9dc5028ab29b66786089b2972fa5a9627bb2dba97d84e9a8e2bc4393b235",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-s3_time_tensor_build_memo-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The fraction algebra checks: q_T=5/6 gives beta_T/alpha_T=-1, s_TE=-2 with c_TE=-8/9 gives q_E=15/8, and hence beta_E/alpha_E=21/4. The rho_E=0 and rho_E=21/4 maps agree on E-shell but differ on E-center, so the scoped non-uniqueness conclusion follows from the cited retained inputs.",
+      "claim_scope": "Bounded Route-2 synthesis: retained readout/time authorities imply an exact K_R/Lambda_R backbone, exact restricted P_R reduction, exact endpoint algebra, and an exact conditional Xi_P(t;c) family, with uniqueness blocked by the unresolved E-channel readout entry.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T18:42:43.828319+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The exact conditional family exists for supplied admissible P_R, but the rho_E family has identical E-shell normalization and different E-center factors, so the missing beta_E/alpha_E entry blocks a unique Theta_R -> Lambda_R coupling.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that this is not promoted downstream into a unique tensor/time theorem or final Einstein/Regge identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 12,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The note is correctly scoped as a bounded conditional-family and obstruction synthesis, not as a derivation of beta_E/alpha_E, a unique P_R, or an Einstein/Regge dynamics identification. The runner is not first-principles physics, but it does independently verify the exact finite algebra and boundary text needed for this scoped class-A closure over retained authorities. The clean verdict applies only to that bounded claim scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py",
+  "title": "Route 2 Tensor Build Memo",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

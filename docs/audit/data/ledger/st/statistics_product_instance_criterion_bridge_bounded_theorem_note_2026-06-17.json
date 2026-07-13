@@ -1,0 +1,127 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (source-side product-instance criterion bridge; no physical repeated-registration law)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+    "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+    "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f14d89abe84a216b409a4804d7c746088f11059b831e4ea43691901e3540d762",
+  "note_path": "docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.519296+00:00",
+      "audit_date": "2026-06-21T15:53:34.092475+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "For the accepted one-qubit carrier Ax ~= M2(C), any m:E(M2)->[0,1] satisfying the stated M1-M3 POVM-additivity assumptions is uniquely represented as m(E)=Tr(sigma E) for a density matrix sigma; parent-row status and higher-dimensional closure are out of scope.",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite Lambda subset Z^3 with |Lambda|>=2, assuming the standard Gleason theorem, every countably additive probability measure on P(tensor_x C^2) has a unique density-matrix trace representation.",
+          "minimal_axioms": null,
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": "Given a supplied two-outcome partition and the bounded premise of outcome-level factorization, the note audits the algebraic x -> x^2 agreement-conditioned flow, a non-product witness with factorized partition weights, and invariance under frame motion commuting with the partition."
+        },
+        "dep_claim_type": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta",
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta",
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms",
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "f7a294fa06af8209df6f4fdbf2f417ccc704d26d04949b9bfa03aa0d23980897",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated source-side algebraic scope, the Pauli tensor expansion and marginal assumptions determine all nine correlation coefficients from the product-effect cumulants. The note explicitly does not derive any physical repeated-registration independence law, so that open premise is outside the audited conclusion.",
+      "claim_scope": "Finite M_2(C) algebra showing that same marginals plus shifted-Pauli product-effect factorization force the supplied joint state to be sigma tensor sigma, with product-to-quotient factorization and same-marginal insufficiency checked only within that bounded scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T15:53:34.092475+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "For a same-marginal two-registration state, the shifted-Pauli product-effect cumulants satisfy C_ab=(T_ab-s_a s_b)/4, so vanishing for all a,b forces T_ab=s_a s_b and hence rho=sigma tensor sigma.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the C_ab factor of 1/4 and confirm the verdict is confined to the product-instance criterion, not physical repeated-registration independence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing step is an exact finite-dimensional algebraic identity, not a definition, renaming, tuned numerical match, or external comparator check. The runner source symbolically constructs the Pauli tensor ansatz, computes the cumulants, solves for the correlation matrix, verifies rho=sigma tensor sigma, and separately checks the quotient and same-marginal control statements. The cited non-axiom authorities are retained-grade, and the minimal-axioms dependency is an approved premise, so no cited open dependency blocks this bounded theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_statistics_product_instance_criterion_bridge_2026_06_17.py",
+  "title": "Statistics Product-Instance Criterion Bridge",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

@@ -1,0 +1,750 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cl3_color_automorphism_theorem",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "native_gauge_closure_note",
+    "ew_current_matching_rule_open_gate_note_2026-05-03"
+  ],
+  "direct_in_degree": 54,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 36.719,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c74aead7dfd8cc6640d3c4c7968e6afb20084a7fba3a1f2df5f5b53e2f54da1f",
+  "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:17:38.916259+00:00",
+      "audit_date": "2026-04-30T21:47:15.081510+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.248,
+        "transitive_descendants": 37
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-high-ready-20260430-05",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the Cl(3) taste-space matrices, the symmetric-base SU(3) embedding, the commuting SU(2)/Y structure, and the Fierz/R_conn algebra directly. The source note limits the result to an algebraic support packet and explicitly leaves continuum color matching and running to separate lanes.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "The Cl(3)/Z^3 taste-cube construction has a 3D symmetric base subspace carrying SU(3), commuting with fiber SU(2) and hypercharge, with N_c=3 and R_conn=(N_c^2-1)/N_c^2=8/9 from the SU(3) Fierz identity.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 95,
+        "D": 0,
+        "total_pass": 95
+      },
+      "verdict_rationale": "The support-tier algebraic color-structure claim closes on its own scoped surface: the runner verifies the Cl(3) generators, even-subalgebra su(2), hypercharge projectors, S3/Z3 taste decomposition, symmetric-base SU(3) embedding, commutators with weak/Y, N_c=3, Fierz identity, R_conn=8/9, and sqrt(9/8) factor. This clean audit is limited to the finite taste-cube support theorem; it does not ratify continuum QCD color matching, alpha_s running, or the critical native-gauge/EW-color projection lanes. Residual risk is downstream citation as a full physical gauge-closure theorem rather than as algebraic support."
+    },
+    {
+      "archived_at": "2026-05-03T16:29:14.268031+00:00",
+      "archived_for_note_hash": "3d3c339b0c3fb2cc7bd7587f6ce9949bd76b10cc028ade19dd18197c5e3d44bc",
+      "audit_date": "2026-05-03T13:43:23.290910+00:00",
+      "audit_status": "audited_renaming",
+      "auditor": "codex-fresh-audit-2026-05-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the constructed SU(3) embedding and Fierz algebra, but the theorem's physical-color step identifies the hw=1/symmetric-base structure with N_c and SU(3)_c rather than deriving that identification. The script sets N_c=3 and installs Gell-Mann generators on the selected 3D block, then checks consistency.",
+      "claim_scope": "Audited the asserted derivation that Z^3 forces N_c=3, realizes SU(3)_c on the 3D symmetric base subspace commuting with fiber SU(2) and Y, and gives R_conn=8/9 and sqrt(9/8) from the SU(3) Fierz identity.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T13:43:23.290910+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "N_c = |hw=1 states| = dim(Z^3) = 3; this is not an input, it is the algebraic image of the spatial dimension.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-check only if a retained restricted-input authority is provided that derives, rather than names, the symmetric-base SU(3) as physical color.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 95,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 95
+      },
+      "verdict_rationale": "Issue: the load-bearing step equates the three hw=1/Z^3 axis states and the selected symmetric-base SU(3) representation with physical color N_c and SU(3)_c. Why this blocks: the algebra proves a valid 3D SU(3) construction and Fierz factor once that identification is made, but it does not force the physical color interpretation from the restricted inputs. Repair target: derive an independent theorem mapping the taste-cube symmetric-base sector to continuum color carriers/gauge fields and make the runner compute that bridge rather than construct the chosen block. Claim boundary until fixed: the note supports an exact SU(3) representation on the 3D symmetric base, its commutation with fiber SU(2) and Y, and the SU(3) Fierz value R_conn=8/9 under the color identification."
+    },
+    {
+      "archived_at": "2026-05-05T00:44:50.472555+00:00",
+      "archived_for_note_hash": "609a2c0a7bd5401788580fd68f7807aaca60ecea8e01d5b7350b3661ec8cd226",
+      "audit_date": "2026-05-03T16:37:06.775551+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.781,
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-color-auto-judicial-2026-05-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The first audit is ratified. The operative load-bearing move is the asserted identity between a selected 3D taste/base carrier and physical SM color N_c/SU(3)_c. The verifier sets N_c=3 and constructs standard Gell-Mann generators on the chosen 3D symmetric block, then checks SU(3) algebra, commutation, and the Fierz 8/9 fraction. Those checks are internally valid after the carrier has been selected, but they do not derive the physical-carrier identification. The statement that the 3-axis count equals rank(SU(3)_c) is mathematically wrong because SU(3) has rank 2 and must be repaired, but it is not the step used by the runner to derive R_conn; the controlling audit failure mode is class-F renaming/identification rather than failed algebraic computation.",
+      "claim_scope": "The claim that Z3 forces N_c=3, realizes SU(3)_c on the 3D symmetric base subspace of the taste cube, and yields R_conn=8/9 from the SU(3) Fierz channel fraction.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T16:37:06.775551+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-03T16:35:28.608528+00:00",
+          "auditor": "codex-color-auto-a-2026-05-03",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "The claim that Z^3 forces N_c=3, realizes SU(3)_c on the 3D symmetric base subspace of the taste cube, and yields R_conn=8/9 from the SU(3) Fierz channel fraction.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "F",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_renaming"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-03T16:35:28.840050+00:00",
+          "auditor": "codex-color-auto-b-2026-05-03",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Audited whether the provided packet proves that Z^3/Cl(3) forces N_c=3, realizes physical SU(3)_c on the 3D symmetric base, and derives R_conn=8/9 as the color-connected fraction.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "F",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_failed"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-03T16:37:06.775551+00:00",
+          "auditor": "codex-color-auto-judicial-2026-05-03",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "The claim that Z3 forces N_c=3, realizes SU(3)_c on the 3D symmetric base subspace of the taste cube, and yields R_conn=8/9 from the SU(3) Fierz channel fraction.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "The first audit did not explicitly call out the false rank(SU(3))=3 statement; that is a real repair item but does not change the class-F verdict.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The first audit is ratified. The operative load-bearing move is the asserted identity between a selected 3D taste/base carrier and physical SM color N_c/SU(3)_c. The verifier sets N_c=3 and constructs standard Gell-Mann generators on the chosen 3D symmetric block, then checks SU(3) algebra, commutation, and the Fierz 8/9 fraction. Those checks are internally valid after the carrier has been selected, but they do not derive the physical-carrier identification. The statement that the 3-axis count equals rank(SU(3)_c) is mathematically wrong because SU(3) has rank 2 and must be repaired, but it is not the step used by the runner to derive R_conn; the controlling audit failure mode is class-F renaming/identification rather than failed algebraic computation.",
+          "load_bearing_step_class": "F",
+          "previous_auditor_family": "codex-current",
+          "second_auditor_error": "The second audit over-promotes the repairable rank wording error into audited_failed; it correctly noticed the unsupported physical-color bridge, but the packet's algebra closes conditional on the selected 3D carrier.",
+          "sided_with": "first",
+          "verdict": "audited_renaming"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "N_c = |hw=1 states| = dim(Z3) = 3, followed by the identification that the 3D symmetric base subspace carries physical SU(3)_c color.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-audit after the claim is narrowed to the algebraic embedding/channel-count result or after a retained bridge derives physical color and R_conn from the selected symmetric-base carrier.",
+      "open_dependency_paths": [
+        "docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md",
+        "docs/RCONN_DERIVED_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 95,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 95
+      },
+      "verdict_rationale": "The first audit is ratified. The operative load-bearing move is the asserted identity between a selected 3D taste/base carrier and physical SM color N_c/SU(3)_c. The verifier sets N_c=3 and constructs standard Gell-Mann generators on the chosen 3D symmetric block, then checks SU(3) algebra, commutation, and the Fierz 8/9 fraction. Those checks are internally valid after the carrier has been selected, but they do not derive the physical-carrier identification. The statement that the 3-axis count equals rank(SU(3)_c) is mathematically wrong because SU(3) has rank 2 and must be repaired, but it is not the step used by the runner to derive R_conn; the controlling audit failure mode is class-F renaming/identification rather than failed algebraic computation."
+    },
+    {
+      "archived_at": "2026-05-22T15:30:26.205472+00:00",
+      "audit_date": "2026-05-05T02:29:17.183940+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "ew_current_matching_rule_open_gate_note_2026-05-03",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 17.658,
+        "runner_hash": "136a875283bac7d12c588df8ddd0524dba1482781444e1c97ab986934c1347f5",
+        "transitive_descendants": 403
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-022854-5eea0f25-cl3_color_automorphism_t-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed algebraic scope, the construction closes: a chosen 3D carrier supports the standard SU(3) generators and the Fierz identity gives the adjoint fraction 8/9. The physical identification of this carrier with SM color remains outside the audited claim.",
+      "claim_scope": "Exact algebraic SU(3) embedding and Fierz adjoint channel-count fraction on the 3D symmetric base carrier, excluding physical SM color identification and EW readout closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T02:29:17.183940+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-05T00:55:29.757287+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260505-005357-f2a031da-cl3_color_automorphism_t-001",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Algebraic SU(3) embedding on the 3D symmetric base subspace of the taste cube, its commutation with the fiber SU(2) and base-sector Y, and the SU(3) Fierz adjoint-channel fraction R_conn = 8/9 on that carrier; physical SM-color and EW-readout identification were not audited as closed.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-05T02:29:17.183940+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260505-022854-5eea0f25-cl3_color_automorphism_t-001",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Exact algebraic SU(3) embedding and Fierz adjoint channel-count fraction on the 3D symmetric base carrier, excluding physical SM color identification and EW readout closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:ew_current_matching_rule_open_gate_note_2026-05-03:retained_no_go->retained_pending_chain",
+      "load_bearing_step": "SU(3) is embedded as Gell-Mann generators on the 3D symmetric base subspace, giving the Fierz channel-count fraction R_conn = (N_c^2 - 1) / N_c^2 = 8/9 for N_c = 3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream notes do not cite this result as an unconditional physical SM color or EW matching theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 95
+      },
+      "verdict_rationale": "The source note has narrowed the claim to an algebraic embedding/channel-count theorem and explicitly removes the physical SM color bridge from the load-bearing scope. The runner source constructs the symmetric/antisymmetric base split, embeds standard Gell-Mann generators, checks commutators, trace normalization, and the Fierz identity rather than merely printing constants. The remaining assertions about physical color and EW correction are stated as conditional/deferred, so they do not block the bounded algebraic theorem."
+    },
+    {
+      "archived_at": "2026-05-23T13:19:00.398272+00:00",
+      "audit_date": "2026-05-22T22:55:08.204439+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "Scoped no-go that the supplied retained packet fixes F_adj=8/9 but does not determine the disconnected-current readout coefficient kappa_EW or the package-level 9/8 EW matching factor.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface."
+        },
+        "dep_claim_type": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go",
+          "native_gauge_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "ew_current_matching_rule_open_gate_note_2026-05-03",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 29.518,
+        "runner_hash": "136a875283bac7d12c588df8ddd0524dba1482781444e1c97ab986934c1347f5",
+        "transitive_descendants": 1036
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-per-site-k1-20260522T225508Z-cl3_color_automorphism_theorem-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 4/5 ratified the second tuple (audited_clean, positive_theorem, class C). Vote breakdown: J1: second / audited_clean / positive_theorem / class C; J2: second / audited_clean / positive_theorem / class C; J3: hybrid / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The narrowed audit scope excludes the physical SM-color identification and EW readout, so the deferred bridge is outside the claim rather than a bounded admission. Within that algebraic scope, the runner substantively constructs the taste carrier, symmetric-base SU(3) embedding, commutators, trace normalization, and Fierz tensor identity from the Cl(3)/Z^3 carrier. The cited authorities are retained-grade and no external comparator or tuned numerical input is used. | Within the explicitly narrowed scope, the physical SM color bridge and EW readout coefficient are not part of the audited conclusion, so they do not make the algebraic theorem conditional. The runner source constructs the taste-cube matrices, symmetric-base embedding, Gell-Mann generators, commutators, and Fierz tensor check directly rather than merely importing or printing the result. That supports a clean positive-theorem classification for the algebraic carrier theorem, with the usual downstream guardrail that it cannot be cited as the physical color bridge. | The narrowed claim is an exact algebraic carrier and channel-count theorem; it expressly excludes the physical SM color bridge and EW readout coefficient. The cited dependencies are retained-grade, and the runner source substantively constructs the taste-cube operators, symmetric-base embedding, Gell-Mann generators, commutators, and Fierz tensor identity rather than merely printing constants. On this restricted scope the result qualifies as a positive theorem, not a bounded theorem, while downstream use as physical color or unconditional sqrt(9/8) remains outside the ratified claim. | The narrowed claim does not consume the physical SM color bridge or the EW readout selector, so the explicit bridge cautions do not force bounded_theorem classification for this scoped algebraic result. The runner source is substantive: it instantiates the taste-cube matrices, symmetric-base embedding, Gell-Mann generators, commutators, and Fierz tensor identity rather than importing an external comparator or tuned number. The clean verdict applies only to the algebraic carrier theorem and channel-count fraction.",
+      "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base of the 8D taste carrier, commutation with fiber SU(2) and base-sector Y, and the SU(3) Fierz channel-count fraction R_conn = 8/9; physical SM color and EW readout are excluded.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T22:55:08.204439+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T15:53:01.130912+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T155047Z-cdbcf5b8-cl3_color_automorphism_t-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, commutation with the fiber SU(2) and base-sector Y, and the SU(3) Fierz channel-count fraction 8/9; physical SM color identification and EW readout are excluded.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-22T22:47:02.733267+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T224214Z-d3911ba5-cl3_color_automorphism_t-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base of the taste carrier, its commutation with the fiber SU(2) and base-sector Y, and the SU(3) Fierz channel-count fraction R_conn = 8/9; physical SM color and EW readout are excluded.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-22T22:55:08.204439+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260522T225508Z-cl3_color_automorphism_theorem-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base of the 8D taste carrier, commutation with fiber SU(2) and base-sector Y, and the SU(3) Fierz channel-count fraction R_conn = 8/9; physical SM color and EW readout are excluded.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "It kept the source note's bounded classification despite the narrowed positive algebraic scope, and underclassified the load-bearing step as A rather than C.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 4/5 ratified the second tuple (audited_clean, positive_theorem, class C). Vote breakdown: J1: second / audited_clean / positive_theorem / class C; J2: second / audited_clean / positive_theorem / class C; J3: hybrid / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The narrowed audit scope excludes the physical SM-color identification and EW readout, so the deferred bridge is outside the claim rather than a bounded admission. Within that algebraic scope, the runner substantively constructs the taste carrier, symmetric-base SU(3) embedding, commutators, trace normalization, and Fierz tensor identity from the Cl(3)/Z^3 carrier. The cited authorities are retained-grade and no external comparator or tuned numerical input is used. | Within the explicitly narrowed scope, the physical SM color bridge and EW readout coefficient are not part of the audited conclusion, so they do not make the algebraic theorem conditional. The runner source constructs the taste-cube matrices, symmetric-base embedding, Gell-Mann generators, commutators, and Fierz tensor check directly rather than merely importing or printing the result. That supports a clean positive-theorem classification for the algebraic carrier theorem, with the usual downstream guardrail that it cannot be cited as the physical color bridge. | The narrowed claim is an exact algebraic carrier and channel-count theorem; it expressly excludes the physical SM color bridge and EW readout coefficient. The cited dependencies are retained-grade, and the runner source substantively constructs the taste-cube operators, symmetric-base embedding, Gell-Mann generators, commutators, and Fierz tensor identity rather than merely printing constants. On this restricted scope the result qualifies as a positive theorem, not a bounded theorem, while downstream use as physical color or unconditional sqrt(9/8) remains outside the ratified claim. | The narrowed claim does not consume the physical SM color bridge or the EW readout selector, so the explicit bridge cautions do not force bounded_theorem classification for this scoped algebraic result. The runner source is substantive: it instantiates the taste-cube matrices, symmetric-base embedding, Gell-Mann generators, commutators, and Fierz tensor identity rather than importing an external comparator or tuned number. The clean verdict applies only to the algebraic carrier theorem and channel-count fraction.",
+          "load_bearing_step_class": "C",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:ew_current_matching_rule_open_gate_note_2026-05-03:retained_no_go->retained_pending_chain",
+      "load_bearing_step": "The Gell-Mann generators embed as T^a_8D = (U_base^dagger diag(T^a,0_1) U_base) tensor I_2 on the 3D symmetric base block, and the SU(N_c) Fierz identity gives R_conn = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Ensure downstream citations do not use this row as a physical SM color bridge or as an unconditional EW sqrt(9/8) readout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 95
+      },
+      "verdict_rationale": "Five-judge panel majority 4/5 ratified the second tuple (audited_clean, positive_theorem, class C). Vote breakdown: J1: second / audited_clean / positive_theorem / class C; J2: second / audited_clean / positive_theorem / class C; J3: hybrid / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The narrowed audit scope excludes the physical SM-color identification and EW readout, so the deferred bridge is outside the claim rather than a bounded admission. Within that algebraic scope, the runner substantively constructs the taste carrier, symmetric-base SU(3) embedding, commutators, trace normalization, and Fierz tensor identity from the Cl(3)/Z^3 carrier. The cited authorities are retained-grade and no external comparator or tuned numerical input is used. | Within the explicitly narrowed scope, the physical SM color bridge and EW readout coefficient are not part of the audited conclusion, so they do not make the algebraic theorem conditional. The runner source constructs the taste-cube matrices, symmetric-base embedding, Gell-Mann generators, commutators, and Fierz tensor check directly rather than merely importing or printing the result. That supports a clean positive-theorem classification for the algebraic carrier theorem, with the usual downstream guardrail that it cannot be cited as the physical color bridge. | The narrowed claim is an exact algebraic carrier and channel-count theorem; it expressly excludes the physical SM color bridge and EW readout coefficient. The cited dependencies are retained-grade, and the runner source substantively constructs the taste-cube operators, symmetric-base embedding, Gell-Mann generators, commutators, and Fierz tensor identity rather than merely printing constants. On this restricted scope the result qualifies as a positive theorem, not a bounded theorem, while downstream use as physical color or unconditional sqrt(9/8) remains outside the ratified claim. | The narrowed claim does not consume the physical SM color bridge or the EW readout selector, so the explicit bridge cautions do not force bounded_theorem classification for this scoped algebraic result. The runner source is substantive: it instantiates the taste-cube matrices, symmetric-base embedding, Gell-Mann generators, commutators, and Fierz tensor identity rather than importing an external comparator or tuned number. The clean verdict applies only to the algebraic carrier theorem and channel-count fraction."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.009486+00:00",
+      "audit_date": "2026-05-23T15:58:34.632612+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "ew_current_matching_rule_open_gate_note_2026-05-03",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 32.489,
+        "runner_hash": "136a875283bac7d12c588df8ddd0524dba1482781444e1c97ab986934c1347f5",
+        "transitive_descendants": 1015
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-per-site-k1-20260523T155834Z-cl3_color_automorphism_theorem-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 4/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / positive_theorem / class A; J4: hybrid / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The narrowed claim closes as an algebraic carrier-and-channel theorem because the physical color bridge and unconditional EW readout are explicitly outside the audited scope. The correct claim type is positive_theorem for that algebraic scope, not bounded_theorem, since no open bridge is being imported into the conclusion. The load-bearing step is best classified as A: the runner verifies explicit finite-dimensional matrix identities and the standard SU(3) Fierz decomposition on the constructed carrier, rather than producing a new numerical value from first-principles dynamics. | The narrowed source statement and target question remove the physical-color bridge and unconditional sqrt(9/8) EW readout from the audited claim; within that boundary the finite-dimensional construction and Fierz arithmetic close from the provided carrier and retained nonabelian context. This supports audited_clean and positive_theorem, not bounded_theorem, because the open bridges are excluded rather than assumed. The load-bearing class is A because the theorem is an algebraic identity/construction on an explicit 3D block with standard SU(3) normalization, and the runner pass lines are algebraic identity checks rather than a new first-principles numerical computation. | The narrowed algebraic statement closes: the packet constructs the carrier, embedding, commutators, trace normalization, and Fierz channel count directly, while explicitly excluding physical color and EW readout. Because those excluded bridges are not part of the audited conclusion and the cited no-go is retained-grade and consistent with the exclusion, the verdict is clean. The load-bearing step is best classed as A, not C, because it is a standard finite-dimensional algebraic construction and identity check on the chosen carrier rather than a first-principles numerical compute from the axiom alone. The scoped algebraic theorem qualifies as positive_theorem once physical-color and EW-readout claims are excluded. | Within the narrowed scope, the construction closes as finite-dimensional algebra on the displayed tensor-product carrier. The physical SM-color bridge and unconditional EW sqrt(9/8) readout are expressly excluded, so those open issues are not imported into the audited conclusion. The scoped result should be typed as positive_theorem rather than bounded_theorem because the audited statement is an exact algebraic carrier/channel theorem, not a conditional physical-readout claim. The load-bearing class is A: the runner verifies algebraic identities and a standard SU(3) Fierz channel count on an explicitly selected carrier, rather than needing the stronger C label.",
+      "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T15:58:34.632612+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-23T14:33:16.021759+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T143028Z-faeffd18-cl3_color_automorphism_t-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the taste cube, its commutation with the displayed weak/Y operators, and the Fierz channel-count fraction 8/9 on that carrier; no physical SM color bridge or EW readout selector is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-23T15:53:00.111059+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T155234Z-dfde47b4-cl3_color_automorphism_t-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, with trace normalization, commutation with the fiber SU(2) and base-sector Y, and the SU(3) Fierz channel-count fraction R_conn=8/9; no physical SM-color or EW-readout identification audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_hybrid",
+        "third_audit": {
+          "audit_date": "2026-05-23T15:58:34.632612+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260523T155834Z-cl3_color_automorphism_theorem-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "Claim type was too conservative: bounded_theorem is unnecessary once physical color and EW readout are excluded from the audited scope.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 4/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / positive_theorem / class A; J4: hybrid / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The narrowed claim closes as an algebraic carrier-and-channel theorem because the physical color bridge and unconditional EW readout are explicitly outside the audited scope. The correct claim type is positive_theorem for that algebraic scope, not bounded_theorem, since no open bridge is being imported into the conclusion. The load-bearing step is best classified as A: the runner verifies explicit finite-dimensional matrix identities and the standard SU(3) Fierz decomposition on the constructed carrier, rather than producing a new numerical value from first-principles dynamics. | The narrowed source statement and target question remove the physical-color bridge and unconditional sqrt(9/8) EW readout from the audited claim; within that boundary the finite-dimensional construction and Fierz arithmetic close from the provided carrier and retained nonabelian context. This supports audited_clean and positive_theorem, not bounded_theorem, because the open bridges are excluded rather than assumed. The load-bearing class is A because the theorem is an algebraic identity/construction on an explicit 3D block with standard SU(3) normalization, and the runner pass lines are algebraic identity checks rather than a new first-principles numerical computation. | The narrowed algebraic statement closes: the packet constructs the carrier, embedding, commutators, trace normalization, and Fierz channel count directly, while explicitly excluding physical color and EW readout. Because those excluded bridges are not part of the audited conclusion and the cited no-go is retained-grade and consistent with the exclusion, the verdict is clean. The load-bearing step is best classed as A, not C, because it is a standard finite-dimensional algebraic construction and identity check on the chosen carrier rather than a first-principles numerical compute from the axiom alone. The scoped algebraic theorem qualifies as positive_theorem once physical-color and EW-readout claims are excluded. | Within the narrowed scope, the construction closes as finite-dimensional algebra on the displayed tensor-product carrier. The physical SM-color bridge and unconditional EW sqrt(9/8) readout are expressly excluded, so those open issues are not imported into the audited conclusion. The scoped result should be typed as positive_theorem rather than bounded_theorem because the audited statement is an exact algebraic carrier/channel theorem, not a conditional physical-readout claim. The load-bearing class is A: the runner verifies algebraic identities and a standard SU(3) Fierz channel count on an explicitly selected carrier, rather than needing the stronger C label.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "Load-bearing step class was overstated as C; the operative closure is finite-dimensional algebraic identity checking on the explicit carrier, matching the runner's A-class checks.",
+          "sided_with": "hybrid",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "runner_hash_changed:136a8752->f70414a7",
+      "load_bearing_step": "Embedding the standard Gell-Mann generators as (U_base\u2020 diag(T^a,0_1) U_base) \u2297 I_2 on the 3D symmetric base block gives an SU(3) action commuting with the fiber operators, and the standard SU(3) Fierz identity gives R_conn=(N_c^2-1)/N_c^2=8/9 for N_c=3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should confirm downstream wording preserves the exclusion of physical SM color and unconditional sqrt(9/8) EW readout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 95
+      },
+      "verdict_rationale": "Five-judge panel majority 4/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / positive_theorem / class A; J4: hybrid / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The narrowed claim closes as an algebraic carrier-and-channel theorem because the physical color bridge and unconditional EW readout are explicitly outside the audited scope. The correct claim type is positive_theorem for that algebraic scope, not bounded_theorem, since no open bridge is being imported into the conclusion. The load-bearing step is best classified as A: the runner verifies explicit finite-dimensional matrix identities and the standard SU(3) Fierz decomposition on the constructed carrier, rather than producing a new numerical value from first-principles dynamics. | The narrowed source statement and target question remove the physical-color bridge and unconditional sqrt(9/8) EW readout from the audited claim; within that boundary the finite-dimensional construction and Fierz arithmetic close from the provided carrier and retained nonabelian context. This supports audited_clean and positive_theorem, not bounded_theorem, because the open bridges are excluded rather than assumed. The load-bearing class is A because the theorem is an algebraic identity/construction on an explicit 3D block with standard SU(3) normalization, and the runner pass lines are algebraic identity checks rather than a new first-principles numerical computation. | The narrowed algebraic statement closes: the packet constructs the carrier, embedding, commutators, trace normalization, and Fierz channel count directly, while explicitly excluding physical color and EW readout. Because those excluded bridges are not part of the audited conclusion and the cited no-go is retained-grade and consistent with the exclusion, the verdict is clean. The load-bearing step is best classed as A, not C, because it is a standard finite-dimensional algebraic construction and identity check on the chosen carrier rather than a first-principles numerical compute from the axiom alone. The scoped algebraic theorem qualifies as positive_theorem once physical-color and EW-readout claims are excluded. | Within the narrowed scope, the construction closes as finite-dimensional algebra on the displayed tensor-product carrier. The physical SM-color bridge and unconditional EW sqrt(9/8) readout are expressly excluded, so those open issues are not imported into the audited conclusion. The scoped result should be typed as positive_theorem rather than bounded_theorem because the audited statement is an exact algebraic carrier/channel theorem, not a conditional physical-readout claim. The load-bearing class is A: the runner verifies algebraic identities and a standard SU(3) Fierz channel count on an explicitly selected carrier, rather than needing the stronger C label."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.125870+00:00",
+      "audit_date": "2026-06-12T20:05:44.908389+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "ew_current_matching_rule_open_gate_note_2026-05-03",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 40.999,
+        "runner_hash": "f70414a7b1dbbd2ecddc85487d4d68930c34cc9925e321042689edac686bb99b",
+        "transitive_descendants": 1022
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-200144-5ecb282dd1-cl3_color_automorphism_theor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed algebraic scope, the chain closes by finite-dimensional matrix algebra: a 3D carrier supports the standard SU(3) fundamental generators, the tensor/block construction gives the stated commutators, and dim(adj)/dim(End(C^3))=8/9. The physical identification of this carrier with SM color and the kappa_EW=0 readout are explicitly outside the audited conclusion.",
+      "claim_scope": "Exact algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the 8D taste carrier, its tensor-factor commutation with the defined weak-fiber and block-scalar Y operators, and the SU(3) channel-count fraction R_conn=8/9; no physical SM-color or EW-readout bridge is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T20:05:44.908389+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-12T20:01:06.355255+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260612-195753-a35ce047dd-cl3_color_automorphism_theor",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the taste-cube carrier, its commutation with the defined fiber SU(2) and base-sector Y operator, and the SU(3) Fierz/channel-count fraction R_conn = 8/9 for N_c = 3; no physical SM-color or EW-readout bridge was audited as derived.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-12T20:05:44.908389+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260612-200144-5ecb282dd1-cl3_color_automorphism_theor",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the 8D taste carrier, its tensor-factor commutation with the defined weak-fiber and block-scalar Y operators, and the SU(3) channel-count fraction R_conn=8/9; no physical SM-color or EW-readout bridge is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "runner_hash_changed:f70414a7->0bda55dd",
+      "load_bearing_step": "From the SU(3) Fierz/decomposition on the 3-dimensional symmetric base carrier, the non-singlet adjoint channel has dimension N_c^2-1 inside End(C^{N_c}), so R_conn=(N_c^2-1)/N_c^2=8/9 at N_c=3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check downstream wording preserves the explicit exclusion of physical SM-color identification and unconditional sqrt(9/8) EW coupling readout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 95,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 95
+      },
+      "verdict_rationale": "The runner source genuinely constructs the relevant finite matrices, verifies the SU(3) normalization/Fierz identity and commutators, and does not import an external calibrated value for the load-bearing 8/9 fraction. An independent dimension-count check gives End(C^3)=1+8, hence the non-singlet channel fraction is 8/9 and K_EW(0)=9/8 only as the stated conditional specialization. The verdict is clean only for the scope-narrowed algebraic theorem; the note\u2019s own physical-color and EW-readout bridge exclusions remain load-bearing boundaries for downstream use."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:35.534279+00:00",
+      "archived_for_note_hash": "7f1795669c3439f497792abbd993c0aff160f3e6ca221ec8811c9be58ac31b96",
+      "audit_date": "2026-06-13T21:49:04.144938+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "ew_current_matching_rule_open_gate_note_2026-05-03",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 41.397,
+        "runner_hash": "0bda55dd983412bbdc1767e6d0d82e0a7b6e8fd9a3ff71404d8cdfc1fa5eaae1",
+        "transitive_descendants": 1347
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260613T214903Z-cl3_color_automorphism_theorem",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_failed, bounded_theorem, class A). Vote breakdown: J1: second / audited_failed / bounded_theorem / A; J2: second / audited_failed / bounded_theorem / A; J3: second / audited_failed / bounded_theorem / A; J4: second / audited_failed / bounded_theorem / A; J5: second / audited_failed / bounded_theorem / A. Majority rationale: J1: The restricted packet supports the finite SU(3) embedding and the standard SU(3) Fierz identity on the chosen carrier, so the load-bearing class remains A. However, the strict formula inventory pass makes the displayed identity-channel normalization part of the audited source, and the note mixes T^0 = I/sqrt(N_c) with the T_F = 1/2 completeness coefficient 1/(2N_c). That normalization mismatch means the source is not clean as written, even tho... | J2: The narrowed algebraic SU(3) embedding and standard SU(3) Fierz identity are class-A finite algebra. However, the displayed identity-channel completion is internally inconsistent: T^0 = I/sqrt(N_c) gives T^0_ij T^0_kl = delta_ij delta_kl / N_c, not the stated 1/(2N_c) term; with T_F = 1/2 the normalized identity generator would be I/sqrt(2N_c). Under the binding formula-inventory rule, this quantitative normalization defect prevents an audited... | J3: The finite SU(3) embedding, commutators, and adjoint Fierz identity are standard algebraic checks on the chosen carrier, so class A is right for the load-bearing step. Under the binding strict formula-inventory rule, however, the displayed identity-channel normalization is inconsistent as written: T^0 = I/sqrt(N_c) does not itself contribute 1/(2N_c) under the same T_F = 1/2 completeness convention. That formula defect blocks audited_clean eve... | J4: The scoped SU(3) embedding and Fierz identity are algebraic, but the strict formula-inventory pass makes the displayed identity-channel normalization defect material. With Tr(T^a T^b)=1/2 delta_ab, the identity basis element compatible with the stated 1/(2N_c) completeness term is I/sqrt(2N_c), not I/sqrt(N_c). Because this displayed normalization is part of the Fierz-to-channel-count proof text, the source is not clean as written even though... | J5: The narrowed algebraic SU(3) embedding and Fierz identity are standard finite-dimensional algebra, but the strict formula-inventory pass makes the displayed identity-channel normalization part of the audited surface. With T_F = 1/2, an unweighted identity generator contributing 1/(2N_c) would be I/sqrt(2N_c), while I/sqrt(N_c) contributes 1/N_c unless an extra 1/2 channel coefficient is explicitly supplied. The source does not reconcile that c...",
+      "claim_scope": "Algebraic SU(3) embedding on the chosen 3D symmetric base of the taste cube, its commutation with the fiber SU(2) and sector-scalar Y, and the formal 8/9 adjoint channel fraction; no physical SM-color or EW-readout bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T21:49:04.144938+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-13T21:37:33.489371+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-213347-811ddbf9bd-cl3_color_automorphism_theor",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the 8D taste carrier, its commutation with the fiber SU(2) and sector-scalar Y operator, and the exact adjoint channel-count fraction 8/9; no physical SM-color or EW-readout bridge is audited as closed.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-13T21:41:35.395774+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-213814-6c360c82d2-cl3_color_automorphism_theor",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic SU(3) embedding on the chosen 3D symmetric base of the taste cube, its commutation with the fiber SU(2) and sector-scalar Y, and the formal 8/9 adjoint channel fraction; no physical SM-color or EW-readout bridge.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_failed"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-13T21:49:04.144938+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260613T214903Z-cl3_color_automorphism_theorem",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic SU(3) embedding on the chosen 3D symmetric base of the taste cube, its commutation with the fiber SU(2) and sector-scalar Y, and the formal 8/9 adjoint channel fraction; no physical SM-color or EW-readout bridge.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "It treated the identity-channel normalization issue as non-load-bearing and still granted audited_clean, contrary to the binding strict formula inventory rule that wrong displayed quantitative formulas prevent clean ratification. | It treated the intended adjoint dimension fraction as sufficient and did not enforce the strict displayed-formula inventory on the identity-channel normalization. | The first audit treated the identity-channel normalization issue as a non-material recheck note and still ratified clean; the current binding formula-inventory pass makes that a clean-blocking source defect. | The first audit treated the identity-channel normalization issue as non-load-bearing and still granted audited_clean, which conflicts with the binding strict formula-inventory rule that wrong displayed quantitative formulas block a clean verdict. | It treated the identity-channel normalization mismatch as a non-load-bearing wording issue; under the binding formula-inventory rule, a displayed normalization/coefficient mismatch prevents audited_clean.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_failed, bounded_theorem, class A). Vote breakdown: J1: second / audited_failed / bounded_theorem / A; J2: second / audited_failed / bounded_theorem / A; J3: second / audited_failed / bounded_theorem / A; J4: second / audited_failed / bounded_theorem / A; J5: second / audited_failed / bounded_theorem / A. Majority rationale: J1: The restricted packet supports the finite SU(3) embedding and the standard SU(3) Fierz identity on the chosen carrier, so the load-bearing class remains A. However, the strict formula inventory pass makes the displayed identity-channel normalization part of the audited source, and the note mixes T^0 = I/sqrt(N_c) with the T_F = 1/2 completeness coefficient 1/(2N_c). That normalization mismatch means the source is not clean as written, even tho... | J2: The narrowed algebraic SU(3) embedding and standard SU(3) Fierz identity are class-A finite algebra. However, the displayed identity-channel completion is internally inconsistent: T^0 = I/sqrt(N_c) gives T^0_ij T^0_kl = delta_ij delta_kl / N_c, not the stated 1/(2N_c) term; with T_F = 1/2 the normalized identity generator would be I/sqrt(2N_c). Under the binding formula-inventory rule, this quantitative normalization defect prevents an audited... | J3: The finite SU(3) embedding, commutators, and adjoint Fierz identity are standard algebraic checks on the chosen carrier, so class A is right for the load-bearing step. Under the binding strict formula-inventory rule, however, the displayed identity-channel normalization is inconsistent as written: T^0 = I/sqrt(N_c) does not itself contribute 1/(2N_c) under the same T_F = 1/2 completeness convention. That formula defect blocks audited_clean eve... | J4: The scoped SU(3) embedding and Fierz identity are algebraic, but the strict formula-inventory pass makes the displayed identity-channel normalization defect material. With Tr(T^a T^b)=1/2 delta_ab, the identity basis element compatible with the stated 1/(2N_c) completeness term is I/sqrt(2N_c), not I/sqrt(N_c). Because this displayed normalization is part of the Fierz-to-channel-count proof text, the source is not clean as written even though... | J5: The narrowed algebraic SU(3) embedding and Fierz identity are standard finite-dimensional algebra, but the strict formula-inventory pass makes the displayed identity-channel normalization part of the audited surface. With T_F = 1/2, an unweighted identity generator contributing 1/(2N_c) would be I/sqrt(2N_c), while I/sqrt(N_c) contributes 1/N_c unless an extra 1/2 channel coefficient is explicitly supplied. The source does not reconcile that c...",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none material | none material | none material | none material | none material",
+          "sided_with": "second",
+          "verdict": "audited_failed"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Correct the identity-channel normalization or rewrite the completeness/channel-count passage with one consistent convention, then re-audit the same narrowed algebraic scope while keeping physical SM-color and EW readout bridges excluded. | Fix the identity-channel normalization or rewrite the completeness/channel-count step consistently, then re-audit the bounded algebraic theorem with the physical bridge still excluded. | Repair the identity-channel normalization or rewrite the completeness/channel-count paragraph in a convention-consistent form, then re-audit the same narrowed algebraic scope. | Repair the identity-channel normalization or rewrite the completeness/channel-count paragraph purely as a dimension fraction, then re-audit the same bounded algebraic scope. | Repair the identity-channel completeness normalization explicitly, then re-audit the bounded algebraic theorem with the physical color and EW-readout bridges still excluded.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_failed, bounded_theorem, class A). Vote breakdown: J1: second / audited_failed / bounded_theorem / A; J2: second / audited_failed / bounded_theorem / A; J3: second / audited_failed / bounded_theorem / A; J4: second / audited_failed / bounded_theorem / A; J5: second / audited_failed / bounded_theorem / A. Majority rationale: J1: The restricted packet supports the finite SU(3) embedding and the standard SU(3) Fierz identity on the chosen carrier, so the load-bearing class remains A. However, the strict formula inventory pass makes the displayed identity-channel normalization part of the audited source, and the note mixes T^0 = I/sqrt(N_c) with the T_F = 1/2 completeness coefficient 1/(2N_c). That normalization mismatch means the source is not clean as written, even tho... | J2: The narrowed algebraic SU(3) embedding and standard SU(3) Fierz identity are class-A finite algebra. However, the displayed identity-channel completion is internally inconsistent: T^0 = I/sqrt(N_c) gives T^0_ij T^0_kl = delta_ij delta_kl / N_c, not the stated 1/(2N_c) term; with T_F = 1/2 the normalized identity generator would be I/sqrt(2N_c). Under the binding formula-inventory rule, this quantitative normalization defect prevents an audited... | J3: The finite SU(3) embedding, commutators, and adjoint Fierz identity are standard algebraic checks on the chosen carrier, so class A is right for the load-bearing step. Under the binding strict formula-inventory rule, however, the displayed identity-channel normalization is inconsistent as written: T^0 = I/sqrt(N_c) does not itself contribute 1/(2N_c) under the same T_F = 1/2 completeness convention. That formula defect blocks audited_clean eve... | J4: The scoped SU(3) embedding and Fierz identity are algebraic, but the strict formula-inventory pass makes the displayed identity-channel normalization defect material. With Tr(T^a T^b)=1/2 delta_ab, the identity basis element compatible with the stated 1/(2N_c) completeness term is I/sqrt(2N_c), not I/sqrt(N_c). Because this displayed normalization is part of the Fierz-to-channel-count proof text, the source is not clean as written even though... | J5: The narrowed algebraic SU(3) embedding and Fierz identity are standard finite-dimensional algebra, but the strict formula-inventory pass makes the displayed identity-channel normalization part of the audited surface. With T_F = 1/2, an unweighted identity generator contributing 1/(2N_c) would be I/sqrt(2N_c), while I/sqrt(N_c) contributes 1/N_c unless an extra 1/2 channel coefficient is explicitly supplied. The source does not reconcile that c..."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:24.658778+00:00",
+      "audit_date": "2026-06-15T19:14:15.319586+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "ew_current_matching_rule_open_gate_note_2026-05-03",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 41.95,
+        "runner_hash": "c4e016929e5444bbca9d0c7b7c9ce0d7784980c9f10512927199744d821c5cd5",
+        "transitive_descendants": 988
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260615T191415Z-cl3_color_automorphism_theorem",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / A; J2: first / audited_clean / bounded_theorem / A; J3: first / audited_clean / bounded_theorem / A; J4: first / audited_clean / bounded_theorem / A; J5: first / audited_clean / bounded_theorem / A. Majority rationale: J1: The decisive step is the SU(N_c) Fierz/completeness and dimension-count identity on an already specified 3D carrier: singlet weight 1/N_c^2 and adjoint weight (N_c^2-1)/N_c^2, giving 8/9 at N_c=3. Independent formula checks confirm the trace normalization T^0=I/sqrt(2N_c), the Fierz signs/factors, the tensor-product commutators, and the channel-count ratio. Because the audited scope explicitly excludes physical SM-color identification and the... | J2: The applyable tuple is the first audit's: the load-bearing step is a finite-dimensional SU(3) algebra/Fierz completeness calculation on an explicitly chosen 3D carrier, so class A is more precise than class C. Independent formula checks preserve the stated T_F=1/2 normalization, T^0=I/sqrt(2N_c), the Fierz signs and factors, the 1/N_c^2 singlet and (N_c^2-1)/N_c^2 adjoint weights, and the 8/9 value at N_c=3. The clean verdict is bounded becaus... | J3: The decisive step is the SU(N_c) Fierz/completeness algebra on an already specified 3D carrier: the singlet channel has dimension weight 1/N_c^2 and the adjoint channel has weight (N_c^2-1)/N_c^2=8/9 at N_c=3. Independent formula inventory checks the trace normalization, T^0 identity normalization, tensor-factor commutators, Y projector/eigenvalue arithmetic, and K_EW(kappa_EW) boundary; no runner/source mismatch blocks the bounded algebraic c... | J4: The restricted claim closes as finite-dimensional algebra: a 3D symmetric carrier supports the standard trace-normalized su(3) generators, tensor product structure gives the commutators, and SU(N) completeness gives the singlet/adjoint channel dimensions 1 and N_c^2-1, hence 8/9 at N_c=3. Formula inventory does not expose a sign, factor, or normalization defect in the load-bearing scope; T^0=I/sqrt(2N_c), the 1/(2N_c) term, and K_EW(kappa_EW)=... | J5: The applyable tuple is the first audit's: within the narrowed scope, the proof closes as finite-dimensional algebra on an already selected 3D carrier. Independent formula checks confirm the SU(N) Fierz factors, T^0=I/sqrt(2N_c) normalization, singlet/adjoin dimension fractions, projector ranks, trace of Y, and tensor-factor commutators. The physical color and EW readout bridges are explicitly excluded, so they do not make this bounded algebrai...",
+      "claim_scope": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T19:14:15.319586+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T19:07:37.964896+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-190357-d08664b445-cl3_color_automorphism_theor",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-15T19:11:07.793123+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-190819-07470efb94-cl3_color_automorphism_theor",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste cube, its commutation with the fiber SU(2) and stated Y operator, and the Fierz/channel-count fraction R_conn=8/9, excluding physical-color and EW-readout identification bridges.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-06-15T19:14:15.319586+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260615T191415Z-cl3_color_automorphism_theorem",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none material | none material | none material | none material | none material",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / A; J2: first / audited_clean / bounded_theorem / A; J3: first / audited_clean / bounded_theorem / A; J4: first / audited_clean / bounded_theorem / A; J5: first / audited_clean / bounded_theorem / A. Majority rationale: J1: The decisive step is the SU(N_c) Fierz/completeness and dimension-count identity on an already specified 3D carrier: singlet weight 1/N_c^2 and adjoint weight (N_c^2-1)/N_c^2, giving 8/9 at N_c=3. Independent formula checks confirm the trace normalization T^0=I/sqrt(2N_c), the Fierz signs/factors, the tensor-product commutators, and the channel-count ratio. Because the audited scope explicitly excludes physical SM-color identification and the... | J2: The applyable tuple is the first audit's: the load-bearing step is a finite-dimensional SU(3) algebra/Fierz completeness calculation on an explicitly chosen 3D carrier, so class A is more precise than class C. Independent formula checks preserve the stated T_F=1/2 normalization, T^0=I/sqrt(2N_c), the Fierz signs and factors, the 1/N_c^2 singlet and (N_c^2-1)/N_c^2 adjoint weights, and the 8/9 value at N_c=3. The clean verdict is bounded becaus... | J3: The decisive step is the SU(N_c) Fierz/completeness algebra on an already specified 3D carrier: the singlet channel has dimension weight 1/N_c^2 and the adjoint channel has weight (N_c^2-1)/N_c^2=8/9 at N_c=3. Independent formula inventory checks the trace normalization, T^0 identity normalization, tensor-factor commutators, Y projector/eigenvalue arithmetic, and K_EW(kappa_EW) boundary; no runner/source mismatch blocks the bounded algebraic c... | J4: The restricted claim closes as finite-dimensional algebra: a 3D symmetric carrier supports the standard trace-normalized su(3) generators, tensor product structure gives the commutators, and SU(N) completeness gives the singlet/adjoint channel dimensions 1 and N_c^2-1, hence 8/9 at N_c=3. Formula inventory does not expose a sign, factor, or normalization defect in the load-bearing scope; T^0=I/sqrt(2N_c), the 1/(2N_c) term, and K_EW(kappa_EW)=... | J5: The applyable tuple is the first audit's: within the narrowed scope, the proof closes as finite-dimensional algebra on an already selected 3D carrier. Independent formula checks confirm the SU(N) Fierz factors, T^0=I/sqrt(2N_c) normalization, singlet/adjoin dimension fractions, projector ranks, trace of Y, and tensor-factor commutators. The physical color and EW readout bridges are explicitly excluded, so they do not make this bounded algebrai...",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second audit's clean verdict is right, but class C overstates the load-bearing step: the result is an algebraic SU(N) identity and dimension-count check on the chosen carrier, not a first-principles framework compute producing a new number beyond the supplied algebraic setup. | The second audit overclassified the load-bearing step as class C; the runner constructs and checks the finite carrier algebra, but the decisive R_conn result is a standard algebraic identity/dimension count on the selected SU(3) carrier rather than a first-principles framework-baseline computation of a new physical bridge. | Misclassified the load-bearing Fierz/channel-count step as class C; the runner instantiates matrices, but the audited decisive step is a class A algebraic completeness and dimension-count identity on a specified carrier. | The clean verdict is right, but the load-bearing class is better classified as A: the decisive step is a standard algebraic Fierz/completeness and dimension-count identity on the already chosen carrier, not a first-principles computation producing a new number from framework primitives. | The second audit's clean verdict and scope are materially right, but class C overstates the load-bearing step: the decisive step is a standard SU(3) Fierz/completeness and dimension-count identity on the chosen carrier, not a first-principles compute producing a new framework number.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:ew_current_matching_rule_open_gate_note_2026-05-03:retained_no_go->unaudited",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check downstream consumers preserve the explicit boundary: physical SM color and EW sqrt(9/8) readout remain conditional bridges, not consequences of this clean algebraic row. | Re-check downstream consumers do not promote the excluded physical-color carrier identification or EW sqrt(9/8) readout specialization into consequences of this bounded algebraic row. | Re-check downstream consumers and runner wording preserve the boundary that physical SM color and EW sqrt(9/8) readout remain separate conditional bridges. | Re-check downstream consumers do not treat the physical SM-color carrier identification or kappa_EW=0 EW readout as consequences of this bounded algebraic row. | Downstream consumers should preserve the boundary that physical SM color identification and kappa_EW=0 EW readout remain separate bridge claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / A; J2: first / audited_clean / bounded_theorem / A; J3: first / audited_clean / bounded_theorem / A; J4: first / audited_clean / bounded_theorem / A; J5: first / audited_clean / bounded_theorem / A. Majority rationale: J1: The decisive step is the SU(N_c) Fierz/completeness and dimension-count identity on an already specified 3D carrier: singlet weight 1/N_c^2 and adjoint weight (N_c^2-1)/N_c^2, giving 8/9 at N_c=3. Independent formula checks confirm the trace normalization T^0=I/sqrt(2N_c), the Fierz signs/factors, the tensor-product commutators, and the channel-count ratio. Because the audited scope explicitly excludes physical SM-color identification and the... | J2: The applyable tuple is the first audit's: the load-bearing step is a finite-dimensional SU(3) algebra/Fierz completeness calculation on an explicitly chosen 3D carrier, so class A is more precise than class C. Independent formula checks preserve the stated T_F=1/2 normalization, T^0=I/sqrt(2N_c), the Fierz signs and factors, the 1/N_c^2 singlet and (N_c^2-1)/N_c^2 adjoint weights, and the 8/9 value at N_c=3. The clean verdict is bounded becaus... | J3: The decisive step is the SU(N_c) Fierz/completeness algebra on an already specified 3D carrier: the singlet channel has dimension weight 1/N_c^2 and the adjoint channel has weight (N_c^2-1)/N_c^2=8/9 at N_c=3. Independent formula inventory checks the trace normalization, T^0 identity normalization, tensor-factor commutators, Y projector/eigenvalue arithmetic, and K_EW(kappa_EW) boundary; no runner/source mismatch blocks the bounded algebraic c... | J4: The restricted claim closes as finite-dimensional algebra: a 3D symmetric carrier supports the standard trace-normalized su(3) generators, tensor product structure gives the commutators, and SU(N) completeness gives the singlet/adjoint channel dimensions 1 and N_c^2-1, hence 8/9 at N_c=3. Formula inventory does not expose a sign, factor, or normalization defect in the load-bearing scope; T^0=I/sqrt(2N_c), the 1/(2N_c) term, and K_EW(kappa_EW)=... | J5: The applyable tuple is the first audit's: within the narrowed scope, the proof closes as finite-dimensional algebra on an already selected 3D carrier. Independent formula checks confirm the SU(N) Fierz factors, T^0=I/sqrt(2N_c) normalization, singlet/adjoin dimension fractions, projector ranks, trace of Y, and tensor-factor commutators. The physical color and EW readout bridges are explicitly excluded, so they do not make this bounded algebrai..."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/verify_cl3_sm_embedding.py",
+  "title": "Cl(3) Color Structure Theorem: SU(3)_c on the Symmetric Base + R_conn Derivation",
+  "transitive_descendants": 842,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

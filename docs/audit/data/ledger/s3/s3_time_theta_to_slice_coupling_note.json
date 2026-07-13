@@ -1,0 +1,503 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "s3_time_theta_to_slice_coupling_note",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "quark_route2_exact_time_coupling_note_2026-04-19",
+    "quark_route2_exact_readout_map_note_2026-04-19",
+    "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
+  ],
+  "direct_in_degree": 58,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/_frontier_loader.py",
+    "scripts/frontier_coarse_grained_exterior_law.py",
+    "scripts/frontier_discrete_dtn_shell_kernel.py",
+    "scripts/frontier_finite_rank_gravity_residual.py",
+    "scripts/frontier_flux_fixed_matching_theorem.py",
+    "scripts/frontier_microscopic_dirichlet_bridge_principle.py",
+    "scripts/frontier_oh_schur_boundary_action.py",
+    "scripts/frontier_one_parameter_reduced_shell_law.py",
+    "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py",
+    "scripts/frontier_quark_endpoint_readout_constraints.py",
+    "scripts/frontier_quark_route2_exact_readout_map.py",
+    "scripts/frontier_quark_route2_exact_time_coupling.py",
+    "scripts/frontier_radial_shell_matching_law.py",
+    "scripts/frontier_same_source_metric_ansatz_scan.py",
+    "scripts/frontier_sewing_shell_source.py",
+    "scripts/frontier_star_shell_projector.py",
+    "scripts/frontier_tensor_boundary_drive_two_channel.py",
+    "scripts/frontier_tensor_support_center_excess_law.py",
+    "scripts/frontier_tensor_universal_kernel.py",
+    "scripts/frontier_tensorial_einstein_regge_completion.py",
+    "scripts/frontier_universal_shell_profile.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 35.966,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0e329640ad337281279cf64f3bc39ee0f614e342ce795c8d379843c4e909ce28",
+  "note_path": "docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106936+00:00",
+      "archived_for_note_hash": "b5a10b3252c1a240fe3cb3b446a0f5367d5b370f7f378de44fe70f664afc9b8c",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-30T19:14:10.169869+00:00",
+      "archived_for_note_hash": "0f4f195c58a5a2e1c73e8273a66943a7ed48c90be9504b92849af24e275e677d",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.813412+00:00",
+      "audit_date": "2026-05-01T05:23:03.476883+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.587,
+        "transitive_descendants": 33
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note's own conclusion is conditional: P_R must be chosen, and the endpoint readout ratios are not derived. The row also has no registered runner despite referring to a new runner that demonstrates the non-uniqueness obstruction.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "Once an admissible readout map P_R is chosen, Xi_P(t; c) = (P_R c) \u2297 exp(-t Lambda_R) u_* gives an exact conditional readout-to-slice coupling family, but the unique readout map is not yet derived.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the construction is exact only after an admissible readout map P_R is supplied, and the note says that map is not uniquely derived. Why this blocks: different admissible maps produce different spacetime tensors on the same slice backbone, so the current row cannot claim a unique Theta_R -> Lambda_R coupling theorem. Repair target: derive the readout endpoint ratios or register the obstruction runner and upstream exact carrier/slice dependencies so the conditional family is mechanically auditable. Claim boundary until fixed: Route 2 has a conditional coupling family and a sharpened uniqueness obstruction, not a unique exact coupling law."
+    },
+    {
+      "archived_at": "2026-05-10T13:05:00.501620+00:00",
+      "archived_for_note_hash": "8be82f562c0841a14b02682830e2a99a4db66f17ac4b981f274e80635f7b0d85",
+      "audit_date": "2026-05-05T06:22:48.202035+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.555,
+        "runner_hash": null,
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-s3_time_theta_to_slice_c-235",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The construction is conditional on an admissible P_R and on exact carrier/slice inputs that are asserted but not derived in the restricted packet. The missing step is an exact derivation of the readout map, especially the stated endpoint triple.",
+      "claim_scope": "Audited only the note's conditional claim that a chosen admissible readout map induces an exact readout-to-slice tensor family, while uniqueness remains blocked by unresolved readout exactness.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-05T06:22:48.202035+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Once an admissible readout map P_R is chosen, the branch supports Xi_P(t; c) = (P_R c) \u2297 V_R(t) for every restricted carrier column c.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade derivation or runner for the admissible readout map endpoint triple and cite retained-grade inputs for K_R, Lambda_R, and V_R.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "No cited retained-grade authorities or runner are provided, so the asserted exact carrier, Lambda_R, seed law, and admissible readout class cannot be independently established from this packet. The displayed Xi_P formula is a definition of a conditional family once P_R and V_R are available, not a first-principles derivation of the readout-to-slice law. The note itself explicitly says the readout map is unresolved and that this blocks a unique exact coupling theorem."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.084185+00:00",
+      "audit_date": "2026-05-26T20:10:59.848803+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "On the restricted Route-2 carrier class, an admissible readout map P_R gives the exact family Xi_P(t;c) = (P_R c) tensor exp(-t Lambda_R)u_*, and the unresolved E-channel readout entry induces a non-unique exact time-coupling obstruction.",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "Scoped finite-bank no-go: over the explicit CURRENT_TYPED_EDGES inventory, the retained Route-2 readout scopes, the SU(3) adjoint-fraction scalar F_adj=8/9 rather than a physical connected-trace selector, and granted T-side candidates, no typed path derives gamma_T(center)/gamma_E(center)=-R_conn; adjoining that bridge gives beta_E/alpha_E=21/4 by endpoint algebra."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "bounded_theorem",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained_bounded",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
+        ],
+        "load_bearing_score": 10.937,
+        "runner_hash": null,
+        "transitive_descendants": 692
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-s3-time-theta-to-slice-coupling-C75Ktt-2026-05-26-pass2",
+      "auditor_confidence": null,
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes as an open gate: the retained_bounded time-coupling authority supplies Lambda_R, V_R(t), and the conditional Xi_P family, while the retained_no_go readout and source-domain bridge authorities leave the endpoint triple and bypass route unresolved. No primary runner is needed because the load-bearing step is algebraic composition over retained one-hop dependencies, not a new compute claim.",
+      "claim_scope": "On the restricted Route-2 s3-time arm, retained Route-2 time/readout authorities give the exact conditional family Xi_P(t ; c) = (P_R c) tensor exp(-t Lambda_R)u_* for any admissible P_R, while a unique exact Theta_R -> Lambda_R coupling remains open because the endpoint triple is not derived upstream.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-26T20:10:59.848803+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T20:06:55.826151+00:00",
+          "auditor": "codex-gpt-5.5-fresh-s3-time-theta-to-slice-coupling-C75Ktt-2026-05-26-pass1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Records the exact conditional Route-2 s3-time coupling family Xi_P(t;c)=(P_R c) tensor exp(-t Lambda_R)u_* from retained Route-2 time/readout authorities, while leaving the unique exact Theta_R -> Lambda_R coupling theorem open because the upstream readout endpoint triple remains under retained no-go boundaries.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-26T20:10:59.848612+00:00",
+          "auditor": "codex-gpt-5.5-fresh-s3-time-theta-to-slice-coupling-C75Ktt-2026-05-26-pass2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the restricted Route-2 s3-time arm, retained Route-2 time/readout authorities give the exact conditional family Xi_P(t ; c) = (P_R c) tensor exp(-t Lambda_R)u_* for any admissible P_R, while a unique exact Theta_R -> Lambda_R coupling remains open because the endpoint triple is not derived upstream.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:quark_route2_source_domain_bridge_no_go_note_2026-04-28:retained_no_go->unaudited",
+      "load_bearing_step": "Conditional on the cited upstream authorities, the note records the exact conditional family Xi_P(t ; c) = (P_R c) tensor V_R(t) and the explicit absence of any retained-grade derivation of the readout-map endpoint triple, hence no unique exact Theta_R -> Lambda_R coupling theorem on this arm.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "This is clean only as an open_gate: it records an exact conditional coupling family from retained Route-2 authorities and preserves the missing endpoint triple as the blocker to uniqueness. It does not promote a unique exact coupling theorem, endpoint triple derivation, physical connected-trace selector, quark masses, CKM/Yukawa data, or untyped color endpoint identification. The inherited no-go content is bounded to the current restricted Route-2/readout bank and the provided current operational dependency metadata, not stale source-note status prose."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:38.977889+00:00",
+      "audit_date": "2026-06-13T23:10:36.582208+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "On the restricted Route-2 carrier class, an admissible readout map P_R gives the exact family Xi_P(t;c) = (P_R c) tensor exp(-t Lambda_R)u_*, and the unresolved E-channel readout entry induces a non-unique exact time-coupling obstruction.",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "Bounded current-bank no-go: the named Route-2/SU(3) authority bank does not already type a bridge from the SU(3) adjoint fraction 8/9 to the Route-2 center endpoint ratio c_TE = -8/9; if that bridge is added, exact endpoint algebra gives rho_E = 21/4."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "bounded_theorem",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained_bounded",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
+        ],
+        "load_bearing_score": 15.306,
+        "runner_hash": null,
+        "transitive_descendants": 1265
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260613T231036Z-s3_time_theta_to_slice_coupling_",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 4/5 ratified the first tuple (audited_clean, open_gate, class A). Vote breakdown: J1: first / audited_clean / open_gate / A; J2: first / audited_clean / open_gate / A; J3: second / audited_conditional / open_gate / A; J4: first / audited_clean / open_gate / A; J5: first / audited_clean / open_gate / A. Majority rationale: J1: The source note does not claim the unique Theta_R -> Lambda_R theorem; it claims an open-gate status: Xi_P(t;c)=(P_R c) tensor V_R(t) is exact once P_R is specified, while uniqueness is blocked by the retained readout-map no-go. The displayed algebra checks independently: beta_T/alpha_T=-1 gives q_T=5/6, beta_E/alpha_E=21/4 gives q_E=15/8, and with s_TE=-2 the center ratio is -8/9; P(rho_E) also leaves E-shell fixed while changing E-center by... | J2: The audited claim is the open-gate statement itself: for a specified admissible P_R, Xi_P is an algebraic tensor-product construction over the cited readout/carrier and slice-semigroup authorities, while the unresolved endpoint triple prevents uniqueness. The displayed ratio algebra is internally consistent: P(rho_E) fixes E-shell, sends E-center to 1+rho_E/6, and rho_E=21/4 gives q_E=15/8 and c_TE=-8/9 under the granted T-side ratios. The mis... | J3: The displayed algebra checks internally: specifying P_R makes Xi_P(t;c)=(P_R c)\u2297V_R(t) a class-A construction, and the rho_E algebra gives the stated E-center ambiguity. But the row explicitly depends on an unresolved readout endpoint/bridge and even states that the unique theorem is not closed, so the applicable audit verdict is conditional rather than clean under the restricted-packet rubric. | J4: The scoped claim is an open-gate/status claim, not a claimed closure of the unique Theta_R->Lambda_R theorem. The conditional family follows by algebraic composition of the supplied readout map with the supplied slice semigroup, and the displayed endpoint arithmetic independently checks: P(rho_E) fixes E-shell while changing E-center by 1+rho_E/6, with rho_E=21/4 giving q_E=15/8 and c_TE=-8/9 under the granted T-side values. The missing endpoi... | J5: The audited claim is an open-gate statement, not the stronger unique coupling theorem. Its load-bearing step is algebraic: for specified admissible P_R, Xi_P is the tensor product of the readout factor and the retained slice semigroup, while the retained readout-map no-go supplies non-uniqueness of P_R. The displayed endpoint arithmetic checks independently: beta_T/alpha_T=-1 gives q_T=5/6, beta_E/alpha_E=21/4 gives q_E=15/8, and with alpha_T/...",
+      "claim_scope": "Conditional Route-2 readout-to-slice family for specified admissible P_R and inherited no-go obstruction to uniqueness from the unresolved readout endpoint triple.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-13T23:10:36.582208+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-13T23:02:24.989939+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-230020-86717cda77-s3_time_theta_to_slice_coupl",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional Route-2 readout-to-slice family Xi_P(t;c)=(P_R c)\u2297exp(-t Lambda_R)u_* and inherited obstruction to a unique Theta_R->Lambda_R law from the unresolved readout endpoint triple.",
+          "claim_type": "open_gate",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-13T23:05:13.403646+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-230304-cadc2dcd03-s3_time_theta_to_slice_coupl",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the open-gate status that Route-2 has an exact conditional readout-to-slice family for specified P_R, but no unique exact Theta_R -> Lambda_R coupling without the missing readout endpoint triple.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-06-13T23:10:36.582208+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260613T231036Z-s3_time_theta_to_slice_coupling_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional Route-2 readout-to-slice family for specified admissible P_R and inherited no-go obstruction to uniqueness from the unresolved readout endpoint triple.",
+          "claim_type": "open_gate",
+          "first_auditor_error": "none material | none material | none material | none material",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 4/5 ratified the first tuple (audited_clean, open_gate, class A). Vote breakdown: J1: first / audited_clean / open_gate / A; J2: first / audited_clean / open_gate / A; J3: second / audited_conditional / open_gate / A; J4: first / audited_clean / open_gate / A; J5: first / audited_clean / open_gate / A. Majority rationale: J1: The source note does not claim the unique Theta_R -> Lambda_R theorem; it claims an open-gate status: Xi_P(t;c)=(P_R c) tensor V_R(t) is exact once P_R is specified, while uniqueness is blocked by the retained readout-map no-go. The displayed algebra checks independently: beta_T/alpha_T=-1 gives q_T=5/6, beta_E/alpha_E=21/4 gives q_E=15/8, and with s_TE=-2 the center ratio is -8/9; P(rho_E) also leaves E-shell fixed while changing E-center by... | J2: The audited claim is the open-gate statement itself: for a specified admissible P_R, Xi_P is an algebraic tensor-product construction over the cited readout/carrier and slice-semigroup authorities, while the unresolved endpoint triple prevents uniqueness. The displayed ratio algebra is internally consistent: P(rho_E) fixes E-shell, sends E-center to 1+rho_E/6, and rho_E=21/4 gives q_E=15/8 and c_TE=-8/9 under the granted T-side ratios. The mis... | J3: The displayed algebra checks internally: specifying P_R makes Xi_P(t;c)=(P_R c)\u2297V_R(t) a class-A construction, and the rho_E algebra gives the stated E-center ambiguity. But the row explicitly depends on an unresolved readout endpoint/bridge and even states that the unique theorem is not closed, so the applicable audit verdict is conditional rather than clean under the restricted-packet rubric. | J4: The scoped claim is an open-gate/status claim, not a claimed closure of the unique Theta_R->Lambda_R theorem. The conditional family follows by algebraic composition of the supplied readout map with the supplied slice semigroup, and the displayed endpoint arithmetic independently checks: P(rho_E) fixes E-shell while changing E-center by 1+rho_E/6, with rho_E=21/4 giving q_E=15/8 and c_TE=-8/9 under the granted T-side values. The missing endpoi... | J5: The audited claim is an open-gate statement, not the stronger unique coupling theorem. Its load-bearing step is algebraic: for specified admissible P_R, Xi_P is the tensor product of the readout factor and the retained slice semigroup, while the retained readout-map no-go supplies non-uniqueness of P_R. The displayed endpoint arithmetic checks independently: beta_T/alpha_T=-1 gives q_T=5/6, beta_E/alpha_E=21/4 gives q_E=15/8, and with alpha_T/...",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second audit treated the explicitly unresolved endpoint triple as a failure of the scoped open-gate claim, rather than as the very obstruction the note accurately records; it also listed retained no-go authorities as open dependencies. | It treated the unclaimed unique Theta_R->Lambda_R theorem as the chain that had to close. For this open_gate row, the absence of that theorem is part of the audited conclusion, so it should not force audited_conditional. | It treated the deliberately unclosed stronger unique coupling theorem as the audited chain, rather than auditing the stated open-gate claim that records the conditional family and inherited obstruction. | The second audit treated the missing endpoint theorem as a failure of the audited open-gate claim, even though that missing theorem is exactly the obstruction the note cleanly records. It also listed retained/no-go dependencies as open dependencies despite the restricted packet marking the one-hop authorities as retained-grade effective inputs.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:quark_route2_exact_time_coupling_note_2026-04-19:retained_bounded->unaudited",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit only if the upstream readout endpoint triple or source-domain bridge receives a new retained derivation or a contrary retained no-go update. | No approved primitive is load-bearing here; re-audit if the upstream readout-map endpoint triple beta_E/alpha_E=21/4 is later derived or rejected. | Re-audit if the upstream readout endpoint triple beta_E/alpha_E=21/4 or an equivalent typed bridge is later retained, since that would change the open-gate status. | Re-audit only if a later retained upstream theorem derives the readout endpoint triple or changes the retained status of the cited readout/no-go authorities.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 4/5 ratified the first tuple (audited_clean, open_gate, class A). Vote breakdown: J1: first / audited_clean / open_gate / A; J2: first / audited_clean / open_gate / A; J3: second / audited_conditional / open_gate / A; J4: first / audited_clean / open_gate / A; J5: first / audited_clean / open_gate / A. Majority rationale: J1: The source note does not claim the unique Theta_R -> Lambda_R theorem; it claims an open-gate status: Xi_P(t;c)=(P_R c) tensor V_R(t) is exact once P_R is specified, while uniqueness is blocked by the retained readout-map no-go. The displayed algebra checks independently: beta_T/alpha_T=-1 gives q_T=5/6, beta_E/alpha_E=21/4 gives q_E=15/8, and with s_TE=-2 the center ratio is -8/9; P(rho_E) also leaves E-shell fixed while changing E-center by... | J2: The audited claim is the open-gate statement itself: for a specified admissible P_R, Xi_P is an algebraic tensor-product construction over the cited readout/carrier and slice-semigroup authorities, while the unresolved endpoint triple prevents uniqueness. The displayed ratio algebra is internally consistent: P(rho_E) fixes E-shell, sends E-center to 1+rho_E/6, and rho_E=21/4 gives q_E=15/8 and c_TE=-8/9 under the granted T-side ratios. The mis... | J3: The displayed algebra checks internally: specifying P_R makes Xi_P(t;c)=(P_R c)\u2297V_R(t) a class-A construction, and the rho_E algebra gives the stated E-center ambiguity. But the row explicitly depends on an unresolved readout endpoint/bridge and even states that the unique theorem is not closed, so the applicable audit verdict is conditional rather than clean under the restricted-packet rubric. | J4: The scoped claim is an open-gate/status claim, not a claimed closure of the unique Theta_R->Lambda_R theorem. The conditional family follows by algebraic composition of the supplied readout map with the supplied slice semigroup, and the displayed endpoint arithmetic independently checks: P(rho_E) fixes E-shell while changing E-center by 1+rho_E/6, with rho_E=21/4 giving q_E=15/8 and c_TE=-8/9 under the granted T-side values. The missing endpoi... | J5: The audited claim is an open-gate statement, not the stronger unique coupling theorem. Its load-bearing step is algebraic: for specified admissible P_R, Xi_P is the tensor product of the readout factor and the retained slice semigroup, while the retained readout-map no-go supplies non-uniqueness of P_R. The displayed endpoint arithmetic checks independently: beta_T/alpha_T=-1 gives q_T=5/6, beta_E/alpha_E=21/4 gives q_E=15/8, and with alpha_T/..."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.479349+00:00",
+      "audit_date": "2026-06-15T20:30:03.523537+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "The audited claim is the restricted Route-2 result that an exact conditional family Xi_P(t;c) exists for any supplied admissible P_R, and that the retained readout-map non-uniqueness induces a current-carrier time-coupling obstruction.",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "Bounded current-bank no-go over the supplied Route-2/readout/R_conn authority packet and finite typed-edge inventory: the packet does not derive the typed bridge `R_conn -> gamma_T(center)/gamma_E(center) = -R_conn`, while that bridge would algebraically force `beta_E/alpha_E = 21/4`."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "positive_theorem",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19",
+          "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
+        ],
+        "load_bearing_score": 15.776,
+        "runner_hash": null,
+        "transitive_descendants": 876
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260615T203003Z-s3_time_theta_to_slice_coupling_",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, open_gate, class A). Vote breakdown: J1: first / audited_clean / open_gate / A; J2: first / audited_clean / open_gate / A; J3: first / audited_clean / open_gate / A; J4: first / audited_clean / open_gate / A; J5: first / audited_clean / open_gate / A. Majority rationale: J1: The source note does not claim the unique Theta_R -> Lambda_R theorem closes; it claims the conditional Xi_P(t ; c) = (P_R c) tensor V_R(t) family closes once P_R is specified and that uniqueness remains blocked by the retained readout-map no-go. The displayed endpoint algebra checks independently: beta_T/alpha_T = -1 gives q_T = 5/6, beta_E/alpha_E = 21/4 gives q_E = 15/8, and (-2)(5/6)/(15/8) = -8/9. The open obstruction is the audited conte... | J2: The source note's audited claim is an open-gate status claim, not closure of the unique coupling theorem. The displayed endpoint algebra checks independently: beta_T/alpha_T = -1 gives q_T = 5/6, beta_E/alpha_E = 21/4 gives q_E = 15/8, and (-2)(5/6)/(15/8) = -8/9; Xi_P is the algebraic tensor composition of supplied P_R with the retained slice factor V_R(t). The retained readout no-go supports the stated absence of uniqueness, so the missing e... | J3: The audited claim is not the missing unique Theta_R -> Lambda_R theorem; it is the open-gate statement that Xi_P(t ; c) = (P_R c) tensor V_R(t) closes algebraically for any specified admissible P_R while uniqueness remains blocked by the retained readout-map no-go. The displayed endpoint algebra checks independently: beta_T/alpha_T = -1 gives q_T = 5/6, alpha_T/alpha_E = -2 gives s_TE = -2, and beta_E/alpha_E = 21/4 gives q_E = 15/8 and c_TE =... | J4: The audited claim is not that the unique Theta_R -> Lambda_R theorem closes; it is that the conditional family closes algebraically once P_R is specified and that uniqueness is explicitly obstructed by the cited retained readout-map no-go. The displayed ratio arithmetic is consistent: beta_T/alpha_T=-1 gives q_T=5/6, beta_E/alpha_E=21/4 gives q_E=15/8, and (-2)(5/6)/(15/8)=-8/9. The missing endpoint triple is the open-gate conclusion and next... | J5: The applicable audited claim is the open-gate status statement, not closure of the missing unique Theta_R -> Lambda_R theorem. The conditional family Xi_P(t ; c) = (P_R c) tensor V_R(t) follows algebraically from the cited slice backbone and readout class once P_R is specified, and the endpoint algebra checks independently: -1 gives q_T=5/6, 21/4 gives q_E=15/8, and (-2)(5/6)/(15/8)=-8/9. The cited no-go authorities are used to localize non-un...",
+      "claim_scope": "Audited the scoped open-gate claim that the Route-2 s3-time arm has an exact conditional readout-to-slice family from the cited time/readout authorities, but no unique exact Theta_R -> Lambda_R theorem until the readout endpoint triple is derived.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-15T20:30:03.523537+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T20:23:42.382358+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-202126-e840599a94-s3_time_theta_to_slice_coupl",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the scoped open-gate claim that the Route-2 s3-time arm has an exact conditional readout-to-slice family from the cited time/readout authorities, but no unique exact Theta_R -> Lambda_R theorem until the readout endpoint triple is derived.",
+          "claim_type": "open_gate",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-15T20:27:22.292787+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-202424-35214c0dab-s3_time_theta_to_slice_coupl",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional Route-2 s3-time readout-to-slice family and the inherited non-closure of a unique Theta_R -> Lambda_R law absent the readout endpoint triple.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-06-15T20:30:03.523537+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260615T203003Z-s3_time_theta_to_slice_coupling_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the scoped open-gate claim that the Route-2 s3-time arm has an exact conditional readout-to-slice family from the cited time/readout authorities, but no unique exact Theta_R -> Lambda_R theorem until the readout endpoint triple is derived.",
+          "claim_type": "open_gate",
+          "first_auditor_error": "none material | none material | none material | none material | none material",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, open_gate, class A). Vote breakdown: J1: first / audited_clean / open_gate / A; J2: first / audited_clean / open_gate / A; J3: first / audited_clean / open_gate / A; J4: first / audited_clean / open_gate / A; J5: first / audited_clean / open_gate / A. Majority rationale: J1: The source note does not claim the unique Theta_R -> Lambda_R theorem closes; it claims the conditional Xi_P(t ; c) = (P_R c) tensor V_R(t) family closes once P_R is specified and that uniqueness remains blocked by the retained readout-map no-go. The displayed endpoint algebra checks independently: beta_T/alpha_T = -1 gives q_T = 5/6, beta_E/alpha_E = 21/4 gives q_E = 15/8, and (-2)(5/6)/(15/8) = -8/9. The open obstruction is the audited conte... | J2: The source note's audited claim is an open-gate status claim, not closure of the unique coupling theorem. The displayed endpoint algebra checks independently: beta_T/alpha_T = -1 gives q_T = 5/6, beta_E/alpha_E = 21/4 gives q_E = 15/8, and (-2)(5/6)/(15/8) = -8/9; Xi_P is the algebraic tensor composition of supplied P_R with the retained slice factor V_R(t). The retained readout no-go supports the stated absence of uniqueness, so the missing e... | J3: The audited claim is not the missing unique Theta_R -> Lambda_R theorem; it is the open-gate statement that Xi_P(t ; c) = (P_R c) tensor V_R(t) closes algebraically for any specified admissible P_R while uniqueness remains blocked by the retained readout-map no-go. The displayed endpoint algebra checks independently: beta_T/alpha_T = -1 gives q_T = 5/6, alpha_T/alpha_E = -2 gives s_TE = -2, and beta_E/alpha_E = 21/4 gives q_E = 15/8 and c_TE =... | J4: The audited claim is not that the unique Theta_R -> Lambda_R theorem closes; it is that the conditional family closes algebraically once P_R is specified and that uniqueness is explicitly obstructed by the cited retained readout-map no-go. The displayed ratio arithmetic is consistent: beta_T/alpha_T=-1 gives q_T=5/6, beta_E/alpha_E=21/4 gives q_E=15/8, and (-2)(5/6)/(15/8)=-8/9. The missing endpoint triple is the open-gate conclusion and next... | J5: The applicable audited claim is the open-gate status statement, not closure of the missing unique Theta_R -> Lambda_R theorem. The conditional family Xi_P(t ; c) = (P_R c) tensor V_R(t) follows algebraically from the cited slice backbone and readout class once P_R is specified, and the endpoint algebra checks independently: -1 gives q_T=5/6, 21/4 gives q_E=15/8, and (-2)(5/6)/(15/8)=-8/9. The cited no-go authorities are used to localize non-un...",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second audit judged non-closure of the unique coupling theorem as a failure of the row, but that non-closure is exactly the scoped open-gate conclusion. It also treated the retained readout-map no-go as an open dependency rather than as the cited authority supporting the inherited obstruction. | It treated the deliberately unclosed unique Theta_R -> Lambda_R theorem as the claim under audit, rather than the scoped open-gate claim that records the conditional family plus inherited obstruction. | The second audit treated the underived endpoint triple as blocking the scoped open-gate claim, rather than recognizing that the note explicitly claims only the conditional family plus inherited non-closure of the unique theorem. | The second audit treated failure of the unique coupling theorem as a chain failure for this row, but the source note explicitly scopes itself as an open_gate that records that non-closure. It also lists the retained readout-map no-go as an open dependency rather than as the retained authority supporting the obstruction. | The second audit treated non-closure of the unique coupling theorem as failure of the audited chain, but that non-closure is the explicit open-gate conclusion. It also treated the readout-map no-go as an open dependency even though the restricted packet presents it as retained_no_go support for the obstruction.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:quark_route2_source_domain_bridge_no_go_note_2026-04-28:retained_no_go->unaudited",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if an upstream retained theorem derives the readout-map endpoint triple and the row is revised to claim unique Theta_R -> Lambda_R closure. | Re-audit if an upstream retained derivation supplies the readout endpoint triple; no runner was supplied for this row. | Re-audit if an upstream retained theorem derives the readout-map endpoint triple and this row is revised to claim unique Theta_R -> Lambda_R closure. | Re-audit if an upstream retained theorem derives the readout-map endpoint triple or if the row is rewritten to claim unique Theta_R -> Lambda_R closure. | Re-audit if an upstream retained theorem derives the readout endpoint triple or if this row is broadened from open-gate status to a claimed unique Theta_R -> Lambda_R coupling theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, open_gate, class A). Vote breakdown: J1: first / audited_clean / open_gate / A; J2: first / audited_clean / open_gate / A; J3: first / audited_clean / open_gate / A; J4: first / audited_clean / open_gate / A; J5: first / audited_clean / open_gate / A. Majority rationale: J1: The source note does not claim the unique Theta_R -> Lambda_R theorem closes; it claims the conditional Xi_P(t ; c) = (P_R c) tensor V_R(t) family closes once P_R is specified and that uniqueness remains blocked by the retained readout-map no-go. The displayed endpoint algebra checks independently: beta_T/alpha_T = -1 gives q_T = 5/6, beta_E/alpha_E = 21/4 gives q_E = 15/8, and (-2)(5/6)/(15/8) = -8/9. The open obstruction is the audited conte... | J2: The source note's audited claim is an open-gate status claim, not closure of the unique coupling theorem. The displayed endpoint algebra checks independently: beta_T/alpha_T = -1 gives q_T = 5/6, beta_E/alpha_E = 21/4 gives q_E = 15/8, and (-2)(5/6)/(15/8) = -8/9; Xi_P is the algebraic tensor composition of supplied P_R with the retained slice factor V_R(t). The retained readout no-go supports the stated absence of uniqueness, so the missing e... | J3: The audited claim is not the missing unique Theta_R -> Lambda_R theorem; it is the open-gate statement that Xi_P(t ; c) = (P_R c) tensor V_R(t) closes algebraically for any specified admissible P_R while uniqueness remains blocked by the retained readout-map no-go. The displayed endpoint algebra checks independently: beta_T/alpha_T = -1 gives q_T = 5/6, alpha_T/alpha_E = -2 gives s_TE = -2, and beta_E/alpha_E = 21/4 gives q_E = 15/8 and c_TE =... | J4: The audited claim is not that the unique Theta_R -> Lambda_R theorem closes; it is that the conditional family closes algebraically once P_R is specified and that uniqueness is explicitly obstructed by the cited retained readout-map no-go. The displayed ratio arithmetic is consistent: beta_T/alpha_T=-1 gives q_T=5/6, beta_E/alpha_E=21/4 gives q_E=15/8, and (-2)(5/6)/(15/8)=-8/9. The missing endpoint triple is the open-gate conclusion and next... | J5: The applicable audited claim is the open-gate status statement, not closure of the missing unique Theta_R -> Lambda_R theorem. The conditional family Xi_P(t ; c) = (P_R c) tensor V_R(t) follows algebraically from the cited slice backbone and readout class once P_R is specified, and the endpoint algebra checks independently: -1 gives q_T=5/6, 21/4 gives q_E=15/8, and (-2)(5/6)/(15/8)=-8/9. The cited no-go authorities are used to localize non-un..."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_s3_time_theta_to_slice_coupling.py",
+  "title": "Route 2 Readout to Slice Coupling",
+  "transitive_descendants": 124,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

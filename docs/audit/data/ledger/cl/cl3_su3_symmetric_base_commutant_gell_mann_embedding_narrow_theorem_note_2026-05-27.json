@@ -1,0 +1,336 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_color_automorphism_theorem",
+    "cl3_taste_generation_theorem"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.992,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b7888b21af2b54d02074e6da701c13603dfea1fc8626a84a3f33ef6640c1ccfb",
+  "note_path": "docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T21:30:53.127260+00:00",
+      "audit_date": "2026-06-12T23:09:14.150956+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the 8D taste carrier, its tensor-factor commutation with the defined weak-fiber and block-scalar Y operators, and the SU(3) channel-count fraction R_conn=8/9; no physical SM-color or EW-readout bridge is audited.",
+          "cl3_taste_generation_theorem": "Audited only the abstract finite representation-theory statement on C^8: S3 decomposition, hw=1 A1+E/Z3 orbit, and restricted Y/T3 spectra, with no carrier-realization or physical SM-generation identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "cl3_taste_generation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "cl3_taste_generation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "cl3_taste_generation_theorem"
+        ],
+        "load_bearing_score": 9.085,
+        "runner_hash": "5be56bb7c77c16595f240b843aa691c2896d4f7bf547c7898e9c11e26ee88de9",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-230708-330a176995-cl3_su3_symmetric_base_commu",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The core block-embedding and commutant argument is a valid algebraic identity over the stated carrier. The source is not clean as written because it also displays incorrect normalization/formula statements: full Tr_8[T^a_8D T^b_8D] equals delta_ab, not (1/2)delta_ab, and 2/i Tr([lambda^a,lambda^b]lambda^c) using full Gell-Mann matrices gives 8 f^{abc}, not f^{abc}.",
+      "claim_scope": "Algebraic embedding of the standard Gell-Mann generators as the symmetric-base block diag(lambda^a/2,0) tensored with I_2, with su(3) closure and commutation with the fiber SU(2), excluding physical SM-color identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T23:09:14.150956+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Because M^a_4 is unitary-conjugate to diag(lambda^a/2,0) and T^a_8D=M^a_4 tensor I_2, the Lie brackets reduce to the standard Gell-Mann block while [T^a_8D,Jf_i]=[A tensor I,I tensor B]=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: correct the source formulas to distinguish single-block T_F=1/2 from full Tr_8[T^a_8D T^b_8D]=delta_ab, and replace the C3 structure-constant extraction with the lambda/2 formula or equivalently (1/(4i)) Tr([lambda^a,lambda^b] lambda^c).",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 109,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 109
+      },
+      "verdict_rationale": "The runner source performs real symbolic/numerical algebra rather than merely printing constants, and its completed cache supports the corrected block embedding, full 8D trace, Lie closure, Jacobi identity, and fiber-SU(2) commutation checks. The cited physical-color and physical-generation bridges are explicitly out of scope and are not needed for this algebraic bounded theorem. However, the restricted source packet contains source-runner drift in displayed load-bearing normalization and structure-constant extraction formulas, so audited_clean is blocked until those formulas are corrected in the note."
+    },
+    {
+      "archived_at": "2026-06-17T10:29:50.033638+00:00",
+      "archived_for_note_hash": "a171a0db603476006e3791a73d86454ce3278e771cdb64bf8e3e50d9944bca2d",
+      "audit_date": "2026-06-15T21:55:30.238614+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "cl3_taste_generation_theorem": "Abstract C^8 = (C^2)^{otimes 3} tensor-position S3 representation, its hw=1 Z3 orbit, and the restricted spectra of the explicitly defined Y and T3 operators, with no carrier or physical-family identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "cl3_taste_generation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "cl3_taste_generation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "cl3_taste_generation_theorem"
+        ],
+        "load_bearing_score": 12.281,
+        "runner_hash": "5be56bb7c77c16595f240b843aa691c2896d4f7bf547c7898e9c11e26ee88de9",
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260615-215259-1f9b8353a6-cl3_su3_symmetric_base_commu",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The intended embedding and commutant proof are exact algebra, but the source as written contains displayed normalization defects. In particular the opening full-8D trace formula and the C3 structure-constant extraction formula do not match the defined operators and standard Gell-Mann normalization.",
+      "claim_scope": "Bounded algebraic audit of the explicit symmetric-base Gell-Mann su(3) embedding in C^8 and its commutation with the fiber SU(2), with no physical SU(3)_c identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T21:55:30.238614+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The operators are defined as T^a_8D = U_base^dag diag(lambda^a/2,0) U_base tensor I_2, so the su(3) bracket is inherited from the 3D Gell-Mann block and [T^a_8D,Jf_i]=0 follows from [A tensor I, I tensor B]=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Correct the two normalization formulas, then re-audit the same bounded algebraic embedding packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 109,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 109
+      },
+      "verdict_rationale": "Issue: the opening claim states Tr[T^a_8D T^b_8D] = (1/2) delta_ab, but T^a_8D = M^a_4 tensor I_2 gives Tr_8 = 2 Tr_4(M^a_4 M^b_4) = delta_ab; C3 also states f = (2/i) Tr([lambda^a,lambda^b] lambda^c), which is 8 times the standard f for unhalved Gell-Mann matrices. Why this blocks: these are displayed quantitative identities in the audited packet, and strict formula inventory does not permit a clean verdict when the source and runner use different normalizations. Repair target: replace the headline trace with the single-block formula Tr_4(M^a_4 M^b_4) = (1/2) delta_ab or the full trace Tr_8 = delta_ab, and define f using lambda/2 generators or f = (1/(4i)) Tr([lambda^a,lambda^b] lambda^c). Claim boundary until fixed: the local embedding and tensor-product commutant proof are supported, but the note is not clean as written."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.051036+00:00",
+      "audit_date": "2026-06-18T04:48:30.288253+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "cl3_taste_generation_theorem": "Abstract C^8 = (C^2)^{otimes 3} tensor-position S3 representation, its hw=1 Z3 orbit, and the restricted spectra of the explicitly defined Y and T3 operators, with no carrier or physical-family identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "cl3_taste_generation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "cl3_taste_generation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "cl3_taste_generation_theorem"
+        ],
+        "load_bearing_score": 9.085,
+        "runner_hash": "dba9dfe2d2d71e7282a2888ff10be95fd04e38479c362f220b34f3f0d74a7e92",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated algebraic scope, the construction closes by unitary block embedding and [A tensor I, I tensor B]=0. The cited retained-bounded authorities supply only the abstract carrier and base/fiber convention; the open physical SM color bridge is explicitly outside the audited claim.",
+      "claim_scope": "Exact algebraic Gell-Mann su(3) embedding on the abstract chiral cube C^8=C^4_base tensor C^2_fiber under the b3-fiber convention, including block/full trace normalization, Lie closure, Jacobi, and commutation with fiber SU(2), excluding physical SM color identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T04:48:30.288253+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_taste_generation_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "The operators T^a_{8D}=M_{3,sym}(lambda^a/2) tensor I_2, with M_{3,sym} acting as lambda^a/2 on the 3D symmetric base block and zero on the antisymmetric block, reduce normalization, Lie closure, and fiber-SU(2) commutation to block and tensor-product identities.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if a later source revision expands scope to identify the embedded algebra with physical SM color SU(3)_c; that bridge is not audited here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 110,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 110
+      },
+      "verdict_rationale": "The runner source genuinely constructs the Pauli, Gell-Mann, U_base, M4, and T8 matrices and checks exact symbolic identities plus finite numerical sweeps; it is not just printing constants or importing a contested comparator. The normalization repair is internally consistent: the 4D base trace gives (1/2)delta_ab and the 8D trace gives delta_ab from the fiber identity trace. No PDG value, fitted selector, or physical color bridge is used in the load-bearing algebra."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.446036+00:00",
+      "audit_date": "2026-07-01T12:21:54+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "cl3_taste_generation_theorem": "Abstract finite-dimensional representation theorem for C^8=(C^2)^{otimes 3} under tensor-position S3, including the hw=1 Z3 orbit and the spectra of the explicitly defined Y/T3 restrictions, with no carrier or physical-family identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "cl3_taste_generation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "cl3_taste_generation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "cl3_taste_generation_theorem"
+        ],
+        "load_bearing_score": 9.144,
+        "runner_hash": "dba9dfe2d2d71e7282a2888ff10be95fd04e38479c362f220b34f3f0d74a7e92",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T122154Z-708522f8-cl3_su3_symmetric_base",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated algebraic scope, the result follows from the retained-bounded carrier/base-fiber inputs plus finite-dimensional matrix algebra. The physical color bridge is explicitly outside the audited scope.",
+      "claim_scope": "Exact algebraic embedding of the canonical Gell-Mann generators as the compact symmetric-block su(3) subalgebra inside the commutant of the fiber SU(2) action on the chosen abstract C^8 base-fiber carrier, with single-block and 8D trace normalizations; no physical SU(3)_c identification audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T12:21:54+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_taste_generation_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "The construction T^a_8D = M_3_sym(lambda^a/2) tensor I_2, with M_3_sym(X)=U_base^dagger diag(X,0) U_base, makes the Gell-Mann commutators and the fiber-commutant identity reduce to block-diagonal matrix algebra and [A tensor I, I tensor B]=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the scope to compact Hermitian su(3) generators with the physicists' bracket convention, not a physical SU(3)_c or full complex sl(3,C) identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 110,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 110
+      },
+      "verdict_rationale": "The displayed normalization factors, structure-constant convention, Jacobi closure, and commutant identification are algebraically consistent: Tr_4 gives 1/2 delta_ab and the fiber trace doubles this to Tr_8 = delta_ab. The runner source constructs the Pauli, Gell-Mann, block-embedded, and tensor-product matrices and checks the stated identities rather than only printing fixed pass lines. The one-hop authorities in the restricted packet are retained-grade for the bounded carrier and base-fiber inputs, and no external comparator, fitted selector, or physical-color readout bridge is imported."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.228289+00:00",
+      "audit_date": "2026-07-02T00:56:40.548587+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "cl3_taste_generation_theorem": "Abstract representation-theory theorem for the admitted C^8=(C^2)^{otimes 3}: S3 decomposition, hw=1 Z3 orbit, and restricted Y/T3 spectra, with no carrier or physical-family identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "cl3_taste_generation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "cl3_taste_generation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "cl3_taste_generation_theorem"
+        ],
+        "load_bearing_score": 9.144,
+        "runner_hash": "dba9dfe2d2d71e7282a2888ff10be95fd04e38479c362f220b34f3f0d74a7e92",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T005640Z-31f6bb3c-cl3_su3_symmetric_base_c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped result follows from the provided retained-bounded carrier/base-fiber inputs plus standard finite-dimensional matrix algebra. The physical SU(3)_c bridge is explicitly outside the claim boundary, so no missing bridge is needed for this bounded algebraic theorem.",
+      "claim_scope": "Audited the explicit algebraic Gell-Mann embedding on the selected abstract C^8 = C^4_base tensor C^2_fiber carrier, including base/full trace normalization, Lie closure, Jacobi identity, and commutation with the fiber SU(2); no physical SM color identification was audited or claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T00:56:40.548587+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_taste_generation_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "With T^a_8D = M_{3,sym}(lambda^a/2) tensor I_2 and Jf_i = I_4 tensor sigma_i/2, the standard Gell-Mann block identities and [A tensor I, I tensor B] = 0 give a real symmetric-block su(3) subalgebra inside End(C^4_base) tensor I_2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 110,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 110
+      },
+      "verdict_rationale": "The trace factors check independently: the 3D symmetric block has Tr[(lambda^a/2)(lambda^b/2)] = delta_ab/2, while tensoring with I_2 doubles the full 8D trace to delta_ab. The structure-constant normalization f^{abc} = (2/i)Tr([t^a,t^b]t^c) is consistent with [t^a,t^b] = i f^{abc}t^c, and the commutant statement follows because the Pauli generators act irreducibly on the fiber, leaving only scalar fiber operators. The runner source performs actual symbolic/numerical matrix checks rather than merely printing constants; the hard-coded known f samples are sanity checks, not the load-bearing derivation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py",
+  "title": "Cl(3) SU(3) Symmetric-Base Commutant Gell-Mann Embedding Narrow Theorem",
+  "transitive_descendants": 44,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

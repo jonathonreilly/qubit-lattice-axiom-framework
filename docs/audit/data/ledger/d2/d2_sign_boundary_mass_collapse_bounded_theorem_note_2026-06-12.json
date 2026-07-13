@@ -1,0 +1,78 @@
+{
+  "audit_date": "2026-06-14T02:26:00.768235+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12": "Finite sampled-grid statement for the free staggered square-lattice model: m\u2208{0.2,0.5}, T\u2208{0.2,0.4}, \u03bc_ch\u2208{0.0,0.5,1.0,1.5,2.0}, rational fluxes q\u2208{16,24,32}, exact Harper spectra, and Gauss-Legendre quadrature; no continuum, unsampled-interval, or continuum-QFT claim.",
+      "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12": "Sampled finite-q sign-boundary roots at q=24 for (m,T)=(0.2,0.2),(0.5,0.2),(0.2,0.4), with quadrature doubling gates, q=32 size probes, fixed ordering checks, and strict between-landmarks inequalities; no continuum or landmark-identification claim."
+    },
+    "dep_claim_type": {
+      "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12": "bounded_theorem",
+      "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12": "retained_bounded",
+      "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12": "retained_bounded"
+    },
+    "deps": [
+      "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12",
+      "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12"
+    ],
+    "load_bearing_score": 4.587,
+    "runner_hash": "716cea9f1eaf3aead386ee6e2a0287ab420df80f9436f1388543471160cf72c9",
+    "transitive_descendants": 16
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260614-022404-9a85a98de5-d2_sign_boundary_mass_collap",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The runner constructs the Harper matrices, spectra, grand potentials, chi values, sign brackets, bisection roots, eps values, and spread directly rather than importing the contested numbers. Independent arithmetic from the reported roots verifies eps=sqrt(mu*^2-m^2), mean_eps=1.681175930933, relative_spread=0.0144923716, and the m=0 anchor relative deviation, while the upstream open landmark/interpretive questions are outside this scoped claim.",
+  "claim_id": "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12",
+  "claim_scope": "Sampled finite-lattice d=2 staggered square-lattice sign-boundary collapse at q=24, GL=160 for T=0.2 and m in {0.2,0.35,0.5,0.8}, with m=0, T-direction, quadrature, endpoint-recompute, and q=32 spot controls; no continuum or interpretive epsilon-curve claim.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-06-14T02:26:00.768235+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12",
+    "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": "Bisection-located boundaries at T=0.2 across m in {0.2, 0.35, 0.5, 0.8} give eps*_m = sqrt(mu*^2 - m^2) with relative spread 1.45% < 2%, with the monotone residual m-trend separately disclosed.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "99abe2bc2b94662672a5c47d60fdf879970b4961a051bea46d4b98f1cd7c087f",
+  "note_path": "docs/D2_SIGN_BOUNDARY_MASS_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": "Second auditor may re-check the negative-mu branch convention against the upstream positive-mu examples; the audited squared epsilon relation is sign-insensitive.",
+  "open_dependency_paths": [],
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 92,
+    "D": 0,
+    "total_pass": 92
+  },
+  "runner_path": "scripts/frontier_d2_sign_boundary_mass_collapse_2026_06_12.py",
+  "title": "The d=2 Sign Boundary Shows a Bounded Mass Collapse: \u03bc*(m,T)\u00b2 = m\u00b2 + \u03b5*(T)\u00b2 Within 2% Across the Sampled Masses, With a Small Systematic Monotone m-Trend Disclosed (Bounded)",
+  "transitive_descendants": 2,
+  "verdict_rationale": "The load-bearing step is a first-principles finite numerical computation in the runner, not a definition, renaming, external comparator, or numerical match to an imported calibrated value. The runner source contains no hard-coded expected collapse values and no helper imports; it computes the spectra and gates the brackets, spread, monotone trend, quadrature doubling, endpoint recomputation, and q=32 spot probe. Both cited authorities are retained_bounded, and the claim stays within sampled bounded scope rather than using their named open identifications."
+}

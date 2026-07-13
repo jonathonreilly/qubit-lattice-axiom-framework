@@ -1,0 +1,112 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem (narrow algebraic bridge)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "pmns_oriented_cycle_channel_value_law_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/pmns_lower_level_utils.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9f91f3c7313c68ca721e8e0ffc77fa2ad9d3173cefccd7e004c150ff22c3d39c",
+  "note_path": "docs/PMNS_SOLE_AXIOM_FREE_POINT_IDENTITY_BLOCK_NARROW_THEOREM_NOTE_2026-05-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:31.928105+00:00",
+      "audit_date": "2026-05-16T13:58:40.203741+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "pmns_oriented_cycle_channel_value_law_note": "For a canonical 3x3 active block A and the projected forward-cycle basis P_i C = E12,E23,E31, the forward-cycle coefficients are diag(A C^dagger); the cached runner checks the stated projected cycle/projector identities and coefficient reconstruction."
+        },
+        "dep_claim_type": {
+          "pmns_oriented_cycle_channel_value_law_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "pmns_oriented_cycle_channel_value_law_note": "retained"
+        },
+        "deps": [
+          "pmns_oriented_cycle_channel_value_law_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b63147e8751d3d859577802a0b71d30c74093046e81cff103a1bd307b82285a9",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260516-135819-20260516T135819Z-b9388aad-pmns_sole_axiom_free_poi-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated active-operator construction and the retained oriented-cycle coefficient law, the identity block and vanishing coefficients follow by direct matrix algebra. The proof does not attempt to derive the active-operator construction itself from the sole axiom.",
+      "claim_scope": "Audited only the finite-dimensional algebraic bridge that the defined active operator equals I_3 at x=(1,1,1), y=(0,0,0), and therefore diag(A_act C^dagger) and sigma vanish.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-16T13:58:40.203741+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "pmns_oriented_cycle_channel_value_law_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:pmns_oriented_cycle_channel_value_law_note:retained->unaudited",
+      "load_bearing_step": "Substituting x = (1,1,1) and y = (0,0,0) into A_act(x,y,delta) makes the deformation term vanish, so A_act = I_3 for all delta.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the active_operator helper implementation is considered part of the restricted packet, since its imported source was not included, but the theorem itself follows from the construction as explicitly stated in the note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing step is a valid class A algebraic substitution in the supplied construction, and the cited coefficient law is marked retained. However, the audit packet contains no first-principles derivation and no external comparator checks; it reduces to one retained parent law plus standard finite-dimensional matrix algebra. Under the tie-breaking rule, a zero-D purely algebraic bridge of this kind is classified as audited_decoration rather than audited_clean."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_pmns_sole_axiom_free_point_identity_block_2026-05-16.py",
+  "title": "PMNS Sole-Axiom Free-Point Identity-Block \u2014 Narrow Bridge Theorem",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

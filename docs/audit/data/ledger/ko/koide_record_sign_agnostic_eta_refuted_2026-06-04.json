@@ -1,0 +1,237 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_record_sign_agnostic_eta_refuted_2026-06-04",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate (readout-route diagnosis)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "key_terminology",
+    "minimal_axioms",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c7511d09597d6b738edefd38d57059c4b6d3d393316aa71a158cac830731bdd5",
+  "note_path": "docs/KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:30:36.779201+00:00",
+      "archived_for_note_hash": "1422be05a811a55d93b941e1f6c09359620a415a03a5f41ade479d0136d99ca0",
+      "audit_date": "2026-06-05T23:52:17.484933+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "key_terminology",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d36a6bacf2b17b0d482cce81ddd408fecb486e8f36917696ad2c2287504b51c4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-235156-20764bdbb7-koide_record_sign_agnostic_e",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The stated diagnostic facts follow from elementary finite-spectrum algebra and the retained narrow Koide algebra identity only as a boundary reference. The note does not claim a physical readout derivation, so no missing bridge is needed for its stated open-gate scope.",
+      "claim_scope": "Audited the narrow route diagnosis that four tested scalar/sign readouts are additive or sign-erasing as stated, eta is too coarse for Q, and the charged-lepton square-root comparator is sign-homogeneous, without adopting a Koide readout rule or deriving Q = 2/3 physically.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-05T23:52:17.484933+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Record additivity alone does not distinguish the tested additive sign-sensitive and sign-blind functionals, and the eta sign count is insufficient to reconstruct the signed Koide denominator.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the PDG comparator remains non-load-bearing and that the open-gate scope is not later cited as a no-go against all signed readout routes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source computes the advertised finite-dimensional checks rather than merely printing constants: direct-sum additivity for four scalar functionals, sign erasure under squaring, eta counterexamples with different Q, and the r=1/2 algebraic map to 2/3. The PDG-mass comparator check is external, but it is explicitly scoped as a comparator-only sign-homogeneity observation and not used to derive the framework claim. The cited minimal axiom is an accepted premise, and the retained Koide algebra note is used only to bound the route rather than to import an open physical identification."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.502132+00:00",
+      "audit_date": "2026-06-18T13:31:58.721523+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "key_terminology",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "685db840f0c451c1ace8b31d068e808a6859f6b7b6956168162201e3f9c1b1df",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-koide_record_sign_agnostic_eta_refuted_2026-06-04-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The direct-sum additivity, sign-erasure, eta counterexample, and r-to-Q algebra are elementary finite algebra checks within the stated scope. The PDG charged-lepton comparator is explicitly non-load-bearing and only confirms signed and unsigned square-root readouts coincide on positive observed inputs.",
+      "claim_scope": "Narrow open-gate diagnosis that the tested sign-blind and eta-only Koide readout shortcuts are insufficient, while future framework-native signed-readout routes remain open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T13:31:58.721523+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Record additivity alone does not distinguish the tested additive sign-sensitive and sign-blind functionals, and the eta count is not enough to reconstruct the signed Koide denominator.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that log-absolute-determinant additivity is understood on the nonzero-spectrum or extended-real domain if later prose broadens the scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 5,
+        "C": 0,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The note is scoped as an open_gate route diagnosis and does not claim a new readout rule, a physical Koide derivation, or a universal no-go against signed readouts. Its load-bearing facts close by elementary algebra and finite counterexample, with the accepted Record premise used only for the additivity boundary. The runner source computes the advertised checks rather than merely printing pass lines; the one external PDG comparator is marked and used as non-load-bearing sanity only."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.101025+00:00",
+      "audit_date": "2026-07-09T10:22:57.519454+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "key_terminology",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "685db840f0c451c1ace8b31d068e808a6859f6b7b6956168162201e3f9c1b1df",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-context-audit-subagent-2026-07-09",
+      "auditor_confidence": null,
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": "The scoped open gate closes as elementary algebra plus a concrete eta counterexample: tested additive readouts remain admissible, squaring erases a single sign, and equal eta can yield different Q denominators without adopting any readout rule.",
+      "claim_scope": "Open-gate diagnosis that Record additivity does not select among the tested additive readouts, sign-blind squaring loses sign data, eta alone does not fix the Koide denominator, and the PDG square-root comparator is only non-load-bearing sanity context.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-09T10:22:57.519454+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Record additivity alone does not distinguish the tested additive sign-sensitive and sign-blind functionals, and the eta count is not enough to reconstruct the signed Koide denominator.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": "A checks: tested_functionals_add_over_direct_sum, squaring_erases_single_sign, eta_count_does_not_fix_q, r_half_maps_to_q_two_thirds; D non-load-bearing comparator: charged_lepton_comparator_sign_homogeneous; scope guard text checks: 5; B/C checks: none.",
+      "verdict_rationale": "The scoped open-gate claim closes as elementary algebra and a concrete eta counterexample: the runner checks additivity on tested direct sums, sign erasure under squaring, and same-eta/different-Q spectra. The note explicitly refuses the broader no-go/readout theorem, treats the PDG comparator as non-load-bearing, and keeps future framework-native signed readout routes open. No readout functional, physical Koide derivation, or all-future-route exclusion is being claimed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py",
+  "title": "Koide Record Sign-Agnostic Eta Route Diagnosis",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

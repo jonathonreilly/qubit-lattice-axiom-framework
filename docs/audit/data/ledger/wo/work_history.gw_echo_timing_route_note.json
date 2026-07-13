@@ -1,0 +1,103 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "work_history.gw_echo_timing_route_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gw_echo_null_result_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "302765540e7ae0daa4557e291840e30519a5e758eefdc192efd495fd0ce2a97a",
+  "note_path": "docs/work_history/GW_ECHO_TIMING_ROUTE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T12:03:40.209853+00:00",
+      "audit_date": "2026-05-01T06:56:23.841458+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "gw_echo_null_result_note": "unaudited"
+        },
+        "deps": [
+          "gw_echo_null_result_note"
+        ],
+        "load_bearing_score": 1.5,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The registered runner reproduces the naive timing-family arithmetic, but the one-hop null-result note says that timing alone is not the accepted observable prediction because amplitude suppression makes detectable echoes effectively zero. The positive echo-prediction reading therefore does not close from the current dependency surface.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_from_path",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gw_echo_null_result_note:bounded->unaudited",
+      "load_bearing_step": "Prediction: t_echo = 67.66 ms, f_echo = 14.8 Hz for the GW150914 remnant, while the note is marked as historical route work superseded by the current null-result companion.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GW_ECHO_NULL_RESULT_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 20,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "Issue: the runner verifies the historical round-trip timing formula, not the current observable echo claim. Why this blocks: the direct dependency states that the accepted framework reading is no detectable echoes and that the old 67.66 ms timing surface is superseded by amplitude-suppression analysis. Repair target: keep this row explicitly historical or add a separate audited derivation showing nonzero reflection/amplitude survives the null-result barrier. Claim boundary until fixed: the note supports the existence of an old timing-family calculation, not a current positive GW150914 echo prediction."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gw_echo_derived.py",
+  "title": "GW150914 Echo Timing Route Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

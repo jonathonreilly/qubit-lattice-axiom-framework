@@ -1,0 +1,437 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_graph_first_cycle_frame_support_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graph_first_selector_derivation_note",
+    "graph_first_su3_integration_note",
+    "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_graph_first_selector_derivation.py",
+    "scripts/frontier_graph_first_su3_integration.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.064,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6f979bceffa51c01c5d9f8e1d7a689bdbf39e1a208d45015884fe2f7dae483b7",
+  "note_path": "docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T15:35:10.813158+00:00",
+      "audit_date": "2026-05-01T03:08:30.539519+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.248,
+        "transitive_descendants": 37
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:2026-05-01-pmns_graph_first_cycle_frame_support_note",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the frame algebra, but the row declares no dependencies while importing the graph-first selector and SU(3)-integration machinery that supply the selected-axis split.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "Once one axis is selected, graph-first SU(3) integration on that axis canonically fixes the fiber/base split and the ordered oriented-cycle frame E12, E23, E31.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "scripts/frontier_graph_first_selector_derivation.py",
+        "scripts/frontier_graph_first_su3_integration.py",
+        "scripts/frontier_pmns_graph_first_cycle_frame_support.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: scripts/frontier_pmns_graph_first_cycle_frame_support.py passes 18 checks, but the claim is not self-contained: it imports the graph-first selector and graph-first SU(3) integration as upstream machinery while the ledger row has deps=[]. Why this blocks: the ordered frame E12,E23,E31 follows once those inputs and the selected-axis split are granted, but this note does not itself derive or register those authorities, and the runner emits unclassified PASS lines. Repair target: register the graph-first selector and SU(3)-integration notes as dependencies or inline their retained constructions, and classify runner PASS lines for selector, SU(3) integration, residual swap, and frame checks. Claim boundary until fixed: support evidence that the oriented-cycle frame is fixed conditional on the graph-first selector/integration inputs; not an independently closed value-selection theorem."
+    },
+    {
+      "archived_at": "2026-05-18T00:21:11.042614+00:00",
+      "archived_for_note_hash": "0b49999402202bb3f1dc86bc7344632de4b5825c4faf6fd1bfb098b3be7d2c25",
+      "audit_date": "2026-05-05T05:39:06.468763+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.555,
+        "runner_hash": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-pmns_graph_first_cycle_f-162",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner hard-codes the forward cycle matrix and matrix units, and imports the selector and SU(3) basis machinery from unavailable modules. The missing step is a derivation inside the packet that graph-first SU(3) integration uniquely produces this cycle/frame rather than defining or assuming it.",
+      "claim_scope": "Audited whether the provided note and runner establish, from the restricted packet alone, that graph-first axis selection and SU(3) integration canonically fix the oriented-cycle frame E12,E23,E31 without selecting coefficients.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T05:39:06.468763+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Once one axis is selected, the graph-first SU(3) integration on that axis canonically fixes the selected-axis fiber/base split and residual swap, and the diagonal projectors transported by the canonical forward cycle give the ordered frame E12, E23, E31.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the selector and SU(3) integration source/authority plus a bridge proof that they uniquely determine the forward cycle frame rather than assuming the cycle matrix.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The algebraic checks E11 C = E12, E22 C = E23, E33 C = E31 are valid once C and the matrix units are already fixed, but the canonical graph-first origin of C and the selected-axis SU(3) integration are not derived in the restricted packet. The runner also relies on imported modules not provided, so the claimed selector minima and graph-basis construction cannot be audited as first-principles compute here. This makes the result conditional on missing graph-first selector/integration definitions and bridge theorems, not a closed positive theorem from the supplied inputs."
+    },
+    {
+      "archived_at": "2026-05-19T11:19:03.093953+00:00",
+      "archived_for_note_hash": "71770e2b8d8944c7028f993b3282b9ffc4490c21b4092161ac36113a8bd36415",
+      "audit_date": "2026-05-18T01:58:46.494843+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 12.265,
+        "runner_hash": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
+        "transitive_descendants": 869
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-015819-921435c6-pmns_graph_first_cycle_f-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source note's conclusion is only a bounded support theorem because both cited authorities are retained_bounded and the SU(3) authority explicitly preserves bounded/open identifications outside the structural graph-first surface. The packet also omits source for imported helper modules used by the runner, so the runner cannot be verified as computing its claimed upstream checks.",
+      "claim_scope": "Audited that the cited retained-bounded graph-first selector and SU(3) integration notes support a bounded structural frame-fixing claim for the oriented-cycle basis, not coefficient selection.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T01:58:46.494843+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Once one axis is selected, the graph-first SU(3) integration on that axis canonically fixes the selected-axis fiber/base split and residual swap, and forward transport of diagonal projectors gives the ordered frame E12, E23, E31.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue include the transitive helper runner sources for scripts/frontier_graph_first_selector_derivation.py and scripts/frontier_graph_first_su3_integration.py, then re-audit whether the bounded support theorem should remain conditional or be promoted only within its bounded scope.",
+      "open_dependency_paths": [
+        "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
+        "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The note's internal move is algebraic frame transport over the cited selector and SU(3) integration inputs, and it correctly disclaims coefficient/value selection. However, the claim depends on retained_bounded upstream structural authorities rather than an unbounded retained theorem, so retained status does not propagate to a fully clean positive theorem. In addition, the primary runner imports frontier_graph_first_selector_derivation and frontier_graph_first_su3_integration, but the packet reports no helper imports and provides no helper source, making the runner artifact incomplete for source-level verification."
+    },
+    {
+      "archived_at": "2026-05-22T15:26:25.978159+00:00",
+      "audit_date": "2026-05-19T21:49:16.415550+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 12.451,
+        "runner_hash": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
+        "transitive_descendants": 989
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260519T214237Z-7e8580f6-pmns_graph_first_cycle_frame_sup-panel-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention.",
+      "claim_scope": "Audited whether the provided graph-first selector and SU(3) integration inputs canonically fix the ordered oriented-cycle frame E12,E23,E31 strongly enough to support later coefficient laws.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-19T21:49:16.415550+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-19T14:31:26.114903+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-pmns_graph_first_cycle_f-012",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded support claim that the retained graph-first selector and retained graph-first SU(3) integration fix an ordered oriented-cycle frame, without selecting cycle coefficients.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-19T15:23:34.636586+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-pmns_graph_first_cycle_f-004",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited whether the provided graph-first selector and SU(3) integration inputs canonically fix the ordered oriented-cycle frame E12,E23,E31 strongly enough to support later coefficient laws.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-19T21:49:16.415550+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519T214237Z-7e8580f6-pmns_graph_first_cycle_frame_sup-panel-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited whether the provided graph-first selector and SU(3) integration inputs canonically fix the ordered oriented-cycle frame E12,E23,E31 strongly enough to support later coefficient laws.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "J1: Issued audited_clean while treating the hard-coded forward-cycle transport and residual 3x3 action as derived canonical consequences of the cited graph-first authorities.; J2: Treated the hard-coded CYCLE/P23 oriented-cycle frame and residual action as derived from the retained graph-first selector/SU3 inputs, even though the runner and cited authority do not prove that bridge.; J3: It granted audited_clean even though the load-bearing oriented-cycle order is asserted/hard-coded rather than derived from the retained selector and SU(3) integration inputs in the restricted packet.; J4: It treated the hard-coded forward cycle/oriented transport order as derived from the retained graph-first inputs, granting audited_clean despite an unclosed load-bearing premise.; J5: It treated the hard-coded CYCLE/Eij/P23 frame check as a clean derivation of canonical uniqueness from the graph-first route, instead of recognizing the unstated forward-orientation/order assumption.",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_claim_type_changed:graph_first_selector_derivation_note:bounded_theorem->positive_theorem",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention."
+    },
+    {
+      "archived_at": "2026-05-24T22:48:09.366410+00:00",
+      "archived_for_note_hash": "8e9fe8741046888a6579a7673d64f99b6f83e632c6f0387d6d053ccb7fa1db58",
+      "audit_date": "2026-05-22T16:23:10.074316+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 12.544,
+        "runner_hash": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
+        "transitive_descendants": 1055
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T162153Z-e45995e0-pmns_graph_first_cycle_f-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited authorities close the axis selector and selected-axis SU(3) commutant structure, but they do not derive the PMNS forward-cycle operator or its canonical identification with the ordered frame E12, E23, E31. The missing step is a bridge theorem from the graph-first SU(3) data to the hard-coded cycle transport/order.",
+      "claim_scope": "Audited whether the cited graph-first selector and SU(3) integration notes close the claimed canonical PMNS oriented-cycle frame E12, E23, E31 as support for a future value law.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T16:23:10.074316+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Graph-first SU(3) integration canonically fixes the selected-axis fiber/base split so that diagonal projectors transported by the canonical forward cycle give the unique ordered oriented-cycle frame E12, E23, E31.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained theorem deriving the PMNS forward-cycle operator and residual-swap action on E12,E23,E31 from the graph-first selected-axis SU(3) construction, then re-audit with full helper sources included.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The runner verifies exact matrix identities once E12, E23, E31, CYCLE, and P23 are already supplied, so its successful output is algebraic support over chosen matrices rather than a derivation of their canonical graph-first origin. The upstream notes establish the selector minima and selected-axis SU(3) integration, but the restricted packet does not close the additional PMNS cycle-frame bridge. Thus the support theorem is conditional on an unstated derivation of the forward-cycle carrier and ordering."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.864874+00:00",
+      "audit_date": "2026-05-25T10:47:12.467992+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": "Exact finite-dimensional algebra on V_1 showing that the chosen forward 3-cycle and residual P_23 action induce the stated cycle-channel and antiunitary residual-swap identities."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24"
+        ],
+        "load_bearing_score": 11.096,
+        "runner_hash": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
+        "transitive_descendants": 386
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T104507Z-880230ac-pmns_graph_first_cycle_f-02",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The selector minima and selected-axis fiber/base split come from retained authorities, and the narrow bridge supplies the missing S3-restriction derivation of CYCLE and P23/R-anti on V1. Given the forward oriented-cycle convention, the Eii CYCLE identities and residual action are elementary matrix-unit algebra.",
+      "claim_scope": "Audited the bounded support claim that, on the graph-first hw=1 route with the retained selector/SU3 inputs and retained_bounded forward-cycle bridge, the forward oriented cycle-channel basis (E12,E23,E31) and residual antiunitary swap action are algebraically fixed enough to state later coefficient laws; no coefficient or orientation-selection law was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T10:47:12.467992+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-25T10:44:40.450638+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T104324Z-880230ac-pmns_graph_first_cycle_f-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded algebraic support that, given the retained graph-first selector, SU(3) integration, and retained forward-cycle/residual-swap bridge on V1, the oriented cycle frame can be fixed as E12,E23,E31 for stating future coefficient laws; no coefficient values are selected.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-25T10:47:12.467992+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T104507Z-880230ac-pmns_graph_first_cycle_f-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded support claim that, on the graph-first hw=1 route with the retained selector/SU3 inputs and retained_bounded forward-cycle bridge, the forward oriented cycle-channel basis (E12,E23,E31) and residual antiunitary swap action are algebraically fixed enough to state later coefficient laws; no coefficient or orientation-selection law was audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The diagonal projectors transported by the canonical forward cycle give the unique ordered oriented-cycle frame E12, E23, E31 via E11 C = E12, E22 C = E23, E33 C = E31.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that \"canonical\" is read in the bounded oriented-frame sense and not as a derivation selecting the forward orientation over the reverse cycle.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "All one-hop cited authorities in the packet are retained-grade, and the load-bearing frame step is an exact finite-dimensional algebraic closure over those inputs. The primary runner hard-codes CYCLE and P23 rather than deriving them, so it is only an algebraic consistency check; closure comes from the retained_bounded bridge authority, not from treating the runner as first-principles compute. The source correctly remains bounded: it supports a future value law but does not select cycle coefficients."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
+  "title": "PMNS Graph-First Cycle Frame Support",
+  "transitive_descendants": 756,
+  "verdict_rationale": null
+}

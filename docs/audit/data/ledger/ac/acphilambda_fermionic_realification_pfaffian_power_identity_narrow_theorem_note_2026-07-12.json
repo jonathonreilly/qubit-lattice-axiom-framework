@@ -1,0 +1,133 @@
+{
+  "audit_date": "2026-07-12",
+  "audit_invocation_history": [
+    "ac5f6a120712f1a9b3c4d5e6f708192a"
+  ],
+  "audit_invocation_id": "ac5f6a120712f1a9b3c4d5e6f708192a",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04": "For every finite complex matrix K, the displayed realification has determinant |det_C(K)|^2 and the displayed ordered holomorphic Berezin Gaussian equals det_C(K); no physical carrier or occupancy-rule identification is included."
+    },
+    "dep_claim_type": {
+      "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04": "retained"
+    },
+    "deps": [
+      "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
+    ],
+    "load_bearing_score": 1.5,
+    "runner_hash": "f43fd5d123ba7d3a19c366db69f9bb3d551c82586da2e82c2e2d07e9785b6ca5",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-gpt56sol-fresh-pfaffian-20260712-rf1",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The block-Pfaffian expansion, Berezin top-form sign, and congruence/Jacobian factors give determinant power one for the supplied single sector; direct-sum multiplicativity together with the retained realification identity gives the modulus square for the supplied conjugate pair.",
+  "claim_id": "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12",
+  "claim_scope": "For a supplied finite complex matrix K, ordered independent Grassmann variables, and the stated Berezin orientation, the audited theorem covers the block-Pfaffian determinant identity, coordinate-congruence invariance of the single-sector Gaussian value, the conjugate-sector direct-sum modulus square, and equality with the ordinary realification determinant.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": "2026-07-12",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 5.5,
+  "load_bearing_step": "Pf(A_K)=(-1)^(n(n-1)/2) det_C(K), while congruence of A_K and the inverse Berezin Jacobian preserve the oriented Gaussian value under invertible coordinate changes.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "retained_no_go",
+  "max_descendant_status_rank": 100,
+  "note_hash": "7610a933c31f3c4f6d6a8b7903e6fa464030f96e9e4acfe7d0db3e73056839ca",
+  "note_path": "docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md",
+  "notes_for_re_audit_if_any": "A later audit may extend the independent finite-rank sign check beyond the generic ranks exercised by the runner; the general permutation proof already covers arbitrary n.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-12T17:13:27.963271+00:00",
+      "audit_date": "2026-07-12T05:24:17.137512+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04": "For arbitrary finite complex matrices, the realification determinant is the squared modulus of the complex determinant and the explicitly ordered left-Berezin Gaussian is the first complex determinant power; no physical carrier or occupancy rule is selected."
+        },
+        "dep_claim_type": {
+          "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04": "retained"
+        },
+        "deps": [
+          "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f43fd5d123ba7d3a19c366db69f9bb3d551c82586da2e82c2e2d07e9785b6ca5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-pfaffian-power-retry-20260712",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independent wedge/permutation derivation fixes the block-Pfaffian and negative-exponent Berezin signs, and the retained one-hop dependency supplies the realification determinant identity. Congruence covariance, the inverse Berezin Jacobian, even block degree, and polynomial continuation cover coordinate changes, direct sums, and singular matrices without an extra premise.",
+      "claim_scope": "For every finite complex matrix K, the explicitly ordered single-sector Grassmann Gaussian has determinant power one under invertible coordinate changes, while the concatenated independent conjugate-sector Pfaffian product equals the ordinary realification determinant |det_C(K)|^2, including singular K; no physical carrier, Majorana reality condition, occupancy rule, or charged-lepton readout is derived.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-12T05:24:17.137512+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04:retained->unaudited",
+      "load_bearing_step": "Pf(A_K)=(-1)^(n(n-1)/2) det_C(K), and under Psi=M Xi the congruence factor det(M) is cancelled by the inverse Berezin Jacobian, so a coordinate change preserves determinant power one whereas an independently adjoined conjugate block gives |det_C(K)|^2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 29,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "A direct perfect-matching/wedge calculation gives Pf(A_K)=(-1)^(n(n-1)/2)det(K), while the negative exponential contributes (-1)^n and the stated measure contributes (-1)^(n(n+1)/2), leaving det(K). For the concatenated 2n-variable sectors, the even block degree creates no grouped-orientation exchange sign and the two block-Pfaffian signs square to +1; S R(K) S^(-1)=diag(K,conjugate(K)) then gives the identical realification scalar. These are polynomial identities, so singular K is included; the residual risk is confined to physical carrier/readout choices that the theorem expressly excludes."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 32,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 32
+  },
+  "runner_path": "scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py",
+  "title": "Fermionic Realification and Pfaffian Determinant Power",
+  "transitive_descendants": 1,
+  "verdict_rationale": "All load-bearing formulas close as exact finite-dimensional algebra, including signs and measure orientation, for singular as well as invertible K where applicable. Manual permutation and top-form derivations independently reproduce the runner, whose SHA-pinned cache reports 32 algebraic checks. Physical carrier and charged-lepton applications remain separate from this finite theorem domain."
+}

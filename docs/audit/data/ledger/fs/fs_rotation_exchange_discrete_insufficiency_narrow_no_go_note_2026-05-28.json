@@ -1,0 +1,399 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.322,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b8e5896e1cf60f20b4e8d38e1c64e8f0e603b371b9b471608f86b34c71c9aee8",
+  "note_path": "docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.069161+00:00",
+      "audit_date": "2026-05-29T22:55:01.867430+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "A1/A2 qubits on Z^3 plus the tested ungraded operator-algebra, per-site dimension, and finite local-ordering facts do not force Grassmann/CAR statistics over the hard-core-boson reading."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "fb8cccd762904bd0996a31c8aa29a7fb9f99a3e08e832f6ad4ceef2dd6b1b094",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260529-225320-d02e6759-fs_rotation_exchange_dis",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited axiom premise supplies the qubit tensor-product substrate and the retained parent no-go supplies the broader statistics-agnostic context. The finite algebra closes exactly: U_2pi lifts are scalar, P is non-scalar, hard-core-boson and JW generators span the same M_4(C), and no retained continuous-configuration-space or graded-locality bridge is supplied.",
+      "claim_scope": "Audited only the narrow claim that, on the A1/A2 one-qubit tensor algebra over the bare Z^3 substrate and granting U_2pi=-I_2, the rotation-exchange route does not force CAR over the hard-core-boson reading; it does not audit or assert absolute impossibility of fermionic statistics.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-29T22:55:01.867430+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "The on-site 2pi rotation lifts to the same scalar -I_4 on either site and generates only scalars, while two-site exchange is the non-scalar swap P, so the on-site sign cannot supply the cross-site CAR exchange sign without an extra continuous homotopy or graded-locality input.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use preserves the narrow rotation-exchange-route scope and does not promote this to an absolute FS impossibility claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The runner source performs exact SymPy matrix computations rather than printing constants or importing a contested premise, and the provided cache reports PASS=30 FAIL=0. The only upstream authorities are a retained no-go and an accepted axiom premise, so there is no dependency downgrade. The no-go discipline gate is satisfied at the narrow scope: the note enumerates alternative routes, collapses the wall to the absent exchange-rotation/graded-locality bridge, and explicitly leaves graph-braid and graded-locality closures open."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.530646+00:00",
+      "audit_date": "2026-06-05T18:31:52.123913+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited the scoped no-go that the Lattice/Quantum qubit-on-Z^3 baseline plus finite ungraded operator-algebra, per-site dimension, and checked JW-ordering locality facts do not force Grassmann/CAR statistics."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 4.67,
+        "runner_hash": "fb8cccd762904bd0996a31c8aa29a7fb9f99a3e08e832f6ad4ceef2dd6b1b094",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-6752de904c-fs_rotation_exchange_discret",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated route-only scope, the finite tensor-product counterexample closes: the on-site sign is a scalar and cannot algebraically supply exchange or graded cross-site relations. The packet leaves future graph-braid or graded-locality routes open, but those are explicitly outside the audited claim.",
+      "claim_scope": "Route-only no-go: on the qubit local algebra over the Z^3 substrate, granting the on-site spinor 2pi=-1 sign does not derive cross-site CAR via the rotation-exchange route; graded locality or a lattice-native exchange bridge remains extra structure.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T18:31:52.123913+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "The two-site lifts of the on-site U_2pi are both the scalar -I_4, so the algebra generated by on-site 2pi rotations is scalars only and cannot contain the non-scalar exchange P; a hard-core-boson frame satisfies the same on-site premises while its disjoint ladders commute.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should preserve the route-only scope and not promote this into an absolute no-go against all possible lattice-native FS constructions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The runner source genuinely instantiates Pauli matrices, tensor products, the swap, hard-core-boson ladders, and JW-dressed ladders, then computes exact matrix identities and algebra dimensions; it does not merely print PASS or import a contested premise. The cited parent is retained_no_go, and the minimal-axiom authority is an accepted framework premise under the rubric carve-out. No external comparator, tuned numerical scale, or hidden helper is used. The clean verdict is scoped to pruning this rotation-exchange route, not to an absolute impossibility of fermionic statistics on the lattice."
+    },
+    {
+      "archived_at": "2026-06-10T20:50:10.816083+00:00",
+      "audit_date": "2026-06-05T21:47:34.713301+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the scoped no-go that the Lattice/Quantum qubit-on-Z^3 baseline plus finite tensor-product ungraded algebra, dimension, and finite local-ordering checks do not derive Grassmann/CAR statistics as forced rather than compatible."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 4.67,
+        "runner_hash": "fb8cccd762904bd0996a31c8aa29a7fb9f99a3e08e832f6ad4ceef2dd6b1b094",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-ec9a192c2f-fs_rotation_exchange_discret",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli/tensor-product identities close directly: exp(2\u03c0i\u03c33/2)=-I2, both two-site lifts are -I4, while the swap P has symmetric/antisymmetric eigenvalues and is non-scalar. The retained parent supplies the broader statistics-agnostic wall, and the accepted Lattice/Quantum axiom premise supplies only the discrete site set and one-qubit local algebra, not graded locality or a continuous configuration-space homotopy.",
+      "claim_scope": "Audited the narrow claim that, on the one-qubit M2(C) local algebra over the Z^3 substrate, a granted on-site spinor U_2pi=-I sign does not force CAR via the rotation-exchange route without an additional continuous/discrete exchange bridge or graded-locality input.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T21:47:34.713301+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+      "load_bearing_step": "The unital *-algebra generated by U_2pi\u2297I and I\u2297U_2pi is scalars only while the exchange swap P is non-scalar, so the on-site 2\u03c0 sign cannot generate or encode the two-site exchange sign.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream use preserves the narrowed scope: this is a clean no-go for the rotation-exchange route, not an absolute no-go for FS on the discrete substrate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The runner source performs exact symbolic matrix algebra rather than printing constants, and the decisive identities also check manually from the Pauli matrices and tensor swap. No PDG, fitted value, tuned scale, or external numerical comparator is imported. The no-go discipline gate is satisfied for the scoped route-pruning claim: it leaves graph-braid/discrete-homotopy and graded-locality paths explicitly open and does not assert absolute impossibility of fermionic statistics."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.476883+00:00",
+      "audit_date": "2026-06-10T21:15:52.861326+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.644,
+        "runner_hash": "fb8cccd762904bd0996a31c8aa29a7fb9f99a3e08e832f6ad4ceef2dd6b1b094",
+        "transitive_descendants": 24
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-8b516923ff-fs_rotation_exchange_discret",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite matrix identities close: exp(2pi i sigma_3/2)=-I_2, its two-site lifts are scalar -I_4, while the swap P is non-scalar with symmetric/antisymmetric eigenvalue split. The accepted minimal axiom packet supplies only the discrete Z^3 site set, not the continuous configuration-space pi_1 bridge or a graded-locality premise.",
+      "claim_scope": "Audited the narrow no-go that the on-site spinor 2pi=-1 sign does not force CAR over hard-core-boson statistics via the rotation-exchange route on the one-qubit operator algebra over the Z^3 substrate.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-10T21:15:52.861326+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The on-site 2pi rotation lifts to the same scalar -I_4 on either tensor factor, so the algebra generated by those rotations is scalars only and cannot produce the non-scalar two-site swap P; the continuum Finkelstein-Rubinstein bridge needed to identify exchange with rotation is not supplied by the bare Z^3 site set.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the Finkelstein-Rubinstein discussion remains route-context only and is not later cited as an absolute lattice spin-statistics no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The runner source genuinely computes the exact finite-dimensional algebraic facts with Sympy matrices rather than printing constants or importing the contested conclusion, and an independent manual check confirms the signs, scalar algebra dimension, swap spectrum, cross-site commutator/CAR distinction, and M_4(C) closure claims. The only non-retained upstream is the minimal-axiom authority, which is explicitly flagged as an accepted axiom premise, so the carve-out applies. The no-go is scoped to pruning the rotation-exchange route and explicitly leaves graph-braid/discrete-homotopy and graded-locality paths open, so it is not an overbroad absolute impossibility claim."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.399422+00:00",
+      "audit_date": "2026-07-02T03:48:12.762978+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited the scoped no-go that the accepted Lattice/Qubit baseline plus standard finite tensor-product linear algebra, ungraded operator-algebra dimensions, and finite JW ordering checks do not force Grassmann/CAR statistics; they establish compatibility via JW while leaving the hard-core-boson qubit frame on equal ungraded-algebra footing."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 7.144,
+        "runner_hash": "fb8cccd762904bd0996a31c8aa29a7fb9f99a3e08e832f6ad4ceef2dd6b1b094",
+        "transitive_descendants": 24
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T034812Z-b65548a6-fs_rotation_exchange_dis",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited minimal axiom premise supplies the one-site M_2(C) algebra on a discrete Z^3 substrate, and the retained parent no-go supplies the broader statistics-agnostic baseline. The runner and source close the finite algebraic discriminator: on-site 2pi rotations generate only scalars, the swap P is outside that algebra, and no cited retained input supplies continuous exchange homotopy or graded locality.",
+      "claim_scope": "Audited the narrow no-go that, even granting the on-site spinor U_2pi=-I sign, the one-qubit M_2(C) lattice baseline does not force CAR over hard-core-boson statistics via the rotation-exchange route.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T03:48:12.762978+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The algebra generated by U_2pi\u2297I and I\u2297U_2pi is scalars only, while the exchange operator P is non-scalar, so the on-site 2pi sign cannot supply a two-site exchange sign without an extra continuous or graded-locality bridge.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream citations preserve the narrow scope: rotation-exchange insufficiency, not absolute FS foreclosure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The runner source genuinely computes the exact Pauli/tensor-product identities, swap spectrum, commutators, CAR checks, and generated-algebra dimensions; it is not a print-only or hard-coded comparator runner. The no-go discipline gate is satisfied for the scoped claim: the note enumerates six attempted routes, collapses them to the single missing exchange-bridge/graded-locality wall, and explicitly preserves graph-braid and parity-graded future closure paths. The clean verdict applies only to the narrow rotation-exchange insufficiency claim, not to absolute impossibility of fermionic statistics on the lattice."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.364070+00:00",
+      "audit_date": "2026-07-09T05:56:35.278452+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the narrowed no-go that the Lattice/Qubit baseline plus the tested ungraded operator-algebra, per-site dimension, and finite ordering-locality facts do not force Grassmann/CAR statistics over the hard-core-boson qubit frame."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        ],
+        "load_bearing_score": 5.322,
+        "runner_hash": "fb8cccd762904bd0996a31c8aa29a7fb9f99a3e08e832f6ad4ceef2dd6b1b094",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The no-go is route-scoped and follows from exact finite tensor-product algebra plus the parent retained no-go boundary: hard-core boson and JW frames share M_4(C), and the discriminator is the cross-site graded relation, not the on-site 2pi sign. The note explicitly leaves lattice-native graph-braid and graded-locality routes open.",
+      "claim_scope": "Narrow no-go that, on the one-qubit Z^3 substrate, the on-site spinor 2pi=-1 sign alone does not force CAR via the rotation-exchange route; the missing bridge is either continuous exchange pi_1 data or a retained graded-locality/fermion-parity input.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-09T05:56:35.278452+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The on-site 2pi rotations lift to the same scalar -I_4 on two sites and generate only scalars, while the exchange operator P is non-scalar and separates symmetric from antisymmetric sectors; therefore the on-site sign cannot supply the two-site exchange/CAR sign without an extra bridge.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "Clean as a retained no-go within the stated route scope. The runner exactly verifies that U_2pi tensor I and I tensor U_2pi are the same scalar -I_4, that their generated algebra is one-dimensional, that swap P is non-scalar, and that hard-core-boson and Jordan-Wigner frames differ only in the cross-site relation while spanning the same M_4(C). Residual risk is explicitly outside the claim: a future lattice-native exchange homotopy or retained graded-locality principle could still supply fermionic statistics."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py",
+  "title": "FS Rotation-Exchange Discrete-Insufficiency Narrow No-Go",
+  "transitive_descendants": 9,
+  "verdict_rationale": null
+}

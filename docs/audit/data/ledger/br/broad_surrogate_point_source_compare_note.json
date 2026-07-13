@@ -1,0 +1,261 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "broad_surrogate_point_source_compare_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ordered_lattice_packet_reidentification_note",
+    "ordered_lattice_quasi_persistent_relaunch_note",
+    "ordered_lattice_quasi_persistent_relaunch_2d_note",
+    "quasi_persistent_relaunch_probe_note"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/two_body_momentum_harness.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.285,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c7f2469700e5666617881982a935a3c86f449f96c8ebbfc2d1509917c20bc4d6",
+  "note_path": "docs/BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.367671+00:00",
+      "archived_for_note_hash": "cac5c708a8775bae01cd230f6429f5e20224291a7fd44db6768ffc2461dcd11f",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T03:48:09.220926+00:00",
+      "archived_for_note_hash": "6cd32bbf21c45c4df25ed323bc91e6b091f0139dbb52b1d7c1b814702fc96dc6",
+      "audit_date": "2026-04-26",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite broad-vs-point comparison itself replays cleanly, but the source note is explicitly a bounded interpretive diagnostic resting on unregistered ordered-lattice and quasi-persistent relaunch controls, not a standalone retained theorem or persistent-mass claim.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note's load-bearing diagnostic claim is that, on the retained h=0.5, W=8, L=12 ordered-lattice family, the broad surrogate and equivalent-centroid point source give effectively identical probe-packet responses, with max TV distance 0.000051.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [
+        "docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md",
+        "docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md",
+        "docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md",
+        "docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md",
+        "scripts/broad_surrogate_point_source_compare.py_not_registered_as_runner_path"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the runner cleanly verifies the five-probe broad-source versus point-source diagnostic, but the source row is only a bounded interpretive diagnostic on an upstream proposed/bounded ordered-lattice surrogate lane and has no registered dependencies for those carrier and relaunch controls. Why this blocks: a hostile physicist can accept max TV distance 0.000051 for the scripted probes without accepting a retained persistent-mass, inertial-response, or geometry-generic theorem, because the source itself says it compares two source representations rather than producing a self-maintaining object. Repair target: either demote/register this row as bounded support, or register the ordered-lattice packet reidentification and quasi-persistent relaunch notes as dependencies and state an explicit retained proposition with threshold, scale, probe-grid, and upstream carrier statuses. Claim boundary until fixed: it is safe to claim that the live runner reproduces the finite h=0.5, W=8, L=12 diagnostic in which the broad surrogate and centroid point source have max TV distance 5.1e-5 over probes z=0, +/-1, +/-2; it is not safe to retain more than that diagnostic."
+    },
+    {
+      "archived_at": "2026-05-01T12:12:53.451604+00:00",
+      "audit_date": "2026-04-30T15:13:45.220222+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet, so the conclusion cannot be ratified from the source note alone.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "Broad Surrogate Point Source Compare Note: bounded interpretive diagnostic comparing broad-source and point-source representations on the upstream 3D ordered-lattice surrogate lane; not a tier-ratifiable persistent-mass, inertial-response, or geometry-generic theorem.",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "unregistered_or_missing_primary_runner_or_frozen_log"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.234511+00:00",
+      "audit_date": "2026-05-01T19:45:32.313422+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.0,
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-01-d522",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner reproduces the max TV distance and response-match numbers, but it emits no classified PASS lines and the source interpretation depends on upstream carrier/relaunch surrogate controls that are not all audit-clean. The diagnostic is supported; the stronger persistent-mass, inertial-response, or geometry-generic readings are explicitly not closed.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "deps_changed:dep_added:ordered_lattice_packet_reidentification_note,ordered_lattice_quasi_persistent_relaunch_2d_note,ordered_lattice_quasi_persistent_relaunch_note",
+      "load_bearing_step": "On the tested retained 3D ordered-lattice family, the broad surrogate and equivalent point-source fields produce effectively identical downstream test-packet responses, but this is only an interpretive source-representation diagnostic.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the scripted five-probe broad-source versus point-source comparison is current and matches the source note, but the output is unclassified and the row remains an interpretive diagnostic over an upstream surrogate lane rather than a self-contained theorem. Why this blocks: a clean audit would need explicit classified checks and clean registration of the carrier/relaunch controls behind the broad surrogate; otherwise a reader can accept the TV=0.000051 diagnostic without accepting any tier-ratifiable persistent-mass or geometry-generic conclusion. Repair target: add classified PASS lines for broad/point response equivalence and the diagnostic-only boundary, and audit the upstream relaunch probe used to define the broad surrogate. Claim boundary until fixed: a bounded soft-point-source diagnostic on the tested 3D family, not a clean inertial-response theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.277060+00:00",
+      "audit_date": "2026-05-22T23:53:07.556206+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "ordered_lattice_packet_reidentification_note": "Bounded numerical control that a Gaussian packet on the fixed 3D ordered lattice h=0.5, W=8, L=12 remains shape-identifiable under the tested valley-linear and spent-delay weak-field propagations.",
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "A bounded numerical replay of the six-row metric table for one fixed 2D ordered-lattice harness and one fixed Gaussian/top-k packet recipe.",
+          "ordered_lattice_quasi_persistent_relaunch_note": "A bounded numerical control on the fixed 3D ordered-lattice harness h=0.5, W=8, L=12 for the point and compact5 seeds using top-5 reidentification and relaunch.",
+          "quasi_persistent_relaunch_probe_note": "Bounded numerical replay/control: the provided runner computes one-segment compression-and-relaunch metrics for the fixed 3D ordered-lattice valley-linear family at h=0.5, W=8, L=6, with no persistent-mass or family-generic conclusion."
+        },
+        "dep_claim_type": {
+          "ordered_lattice_packet_reidentification_note": "bounded_theorem",
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "bounded_theorem",
+          "ordered_lattice_quasi_persistent_relaunch_note": "bounded_theorem",
+          "quasi_persistent_relaunch_probe_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ordered_lattice_packet_reidentification_note": "retained_bounded",
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "retained_bounded",
+          "ordered_lattice_quasi_persistent_relaunch_note": "retained_bounded",
+          "quasi_persistent_relaunch_probe_note": "retained_bounded"
+        },
+        "deps": [
+          "ordered_lattice_packet_reidentification_note",
+          "ordered_lattice_quasi_persistent_relaunch_2d_note",
+          "ordered_lattice_quasi_persistent_relaunch_note",
+          "quasi_persistent_relaunch_probe_note"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": "03bb308a413418fedc1686e363f9e6e2531241ef5f697a46080a6176727a62ca",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T235116Z-8e6afbd0-broad_surrogate_point_so-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner constructs the lattice, broad detector profile, profile-sourced field, centroid-matched point field, and five probe responses directly, and the completed output matches the note's frozen metrics. Closure is only for the finite broad-source versus point-source diagnostic, not for persistent mass, inertial response, or geometry-generic equivalence.",
+      "claim_scope": "Fixed h=0.5, W=8, L=12 3D ordered-lattice valley-linear diagnostic comparing the runner-defined broad surrogate source against an equivalent-strength point source for probes z=0, \u00b11, \u00b12.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T23:53:07.556206+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:ordered_lattice_packet_reidentification_note:retained_bounded->unaudited",
+      "load_bearing_step": "Across the tested probe packets z = 0, \u00b11, \u00b12, the broad-source and centroid-matched point-source responses have max TV distance 0.000051 with matching best-shift and width summaries.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the fixed-family five-probe diagnostic scope and do not cite this as persistent-mass or geometry-generic closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source performs an actual lattice propagation computation rather than printing constants or importing the contested result from another note. The helper source defines the lattice and propagation operators used on the load-bearing path, and no hard-coded expected TV value or external comparator is used. The cited authorities are retained_bounded, and the audited conclusion stays within the explicitly bounded finite diagnostic. The clean verdict does not promote the result to a persistent-mass, inertial-response, or family-generic theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/broad_surrogate_point_source_compare.py",
+  "title": "Broad Surrogate Point Source Compare Note",
+  "transitive_descendants": 38,
+  "verdict_rationale": null
+}

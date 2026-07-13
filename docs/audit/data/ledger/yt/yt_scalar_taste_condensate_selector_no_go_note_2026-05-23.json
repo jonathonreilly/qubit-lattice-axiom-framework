@@ -1,0 +1,1294 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_color_projection_correction_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b10ebfa90ea9088ae6be5f5df977dbfdee49383ecfb80056c7fb1fc783d00807",
+  "note_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:34.916243+00:00",
+      "audit_date": "2026-05-23T20:40:27.154854+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_color_projection_correction_note": "Packet-level no-go that the cited SU(3) Fierz/channel-count authority plus color-blind scaling do not derive the Yukawa-side selector kappa_Y = 0 or an unconditional sqrt(8/9) Y_T correction."
+        },
+        "dep_claim_type": {
+          "yt_color_projection_correction_note": "no_go"
+        },
+        "dep_effective_status": {
+          "yt_color_projection_correction_note": "retained_no_go"
+        },
+        "deps": [
+          "yt_color_projection_correction_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a477724d3be73b85bbe34e61386adbade775f2f4575cc26fc6944f2dcea51f23",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T203428Z-5fc34046-yt_scalar_taste_condensa-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from SU(N) color-singlet invariance, trace algebra, and the retained kappa-family target in the cited color-projection correction. The note keeps alternative matching theorems and nonstandard scalar insertions out of scope rather than claiming a global impossibility theorem.",
+      "claim_scope": "The audited claim is the narrow no-go that the standard one-Higgs, color-singlet scalar/taste-condensate insertion cannot derive the connected-trace selector kappa_Y = 0 by the direct color-projection route.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-23T20:40:27.154854+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "A nonzero color-singlet one-Higgs Yukawa insertion has color matrix proportional to I_color, whose Hilbert-Schmidt singlet weight is 1, while kappa_Y = 0 under the direct projection diagnostic would require a nonzero traceless color insertion.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Runner's SU(N) uniqueness helper is schematic rather than a full symbolic proof, but the note's Schur/torus-plus-permutation argument is standard algebra and sufficient for the narrow no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 23,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The load-bearing step is ordinary finite-dimensional color algebra, not a definition, numerical fit, or external comparator. The cited upstream authority is retained_no_go and supplies the conditional kappa_Y family that this note targets; the current note does not import the open kappa_Y selector as a premise. The restricted packet satisfies the no-go gate: it enumerates six routes, collapses independent walls, scans hidden assumptions, matches the cited residual, narrows rhetoric, leaves partial closure paths open, gives a steelman, and uses same-packet cross-cycle evidence."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:25.657104+00:00",
+      "audit_date": "2026-07-12T03:36:12.590902+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_color_projection_correction_note": "Packet-level no-go that the cited SU(3) Fierz/channel-count fractions plus color-blind scaling do not derive the Yukawa-side selector kappa_Y = 0 or an unconditional sqrt(8/9) correction."
+        },
+        "dep_claim_type": {
+          "yt_color_projection_correction_note": "no_go"
+        },
+        "dep_effective_status": {
+          "yt_color_projection_correction_note": "retained_no_go"
+        },
+        "deps": [
+          "yt_color_projection_correction_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "a477724d3be73b85bbe34e61386adbade775f2f4575cc26fc6944f2dcea51f23",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00364-yt_scalar_taste_condensate_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The route-specific contradiction follows from finite-dimensional SU(N) invariance and trace algebra together with the retained conditional kappa_Y family. Alternative matching and direct-observable routes remain outside the audited negative scope.",
+      "claim_scope": "The standard one-Higgs, color-singlet scalar/taste-condensate insertion cannot derive kappa_Y = 0 through the direct Hilbert-Schmidt color-projection route; no global no-go for other matching rules or BSM scalars was audited.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-12T03:36:12.590902+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid",
+      "load_bearing_step": "SU(N) invariance forces a one-Higgs color-singlet Yukawa insertion to be M_color = c I_color, which cannot be both nonzero and traceless, whereas the direct projection route to kappa_Y = 0 requires a nonzero traceless insertion.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The packet applies SU(N) invariance to the insertion and evaluates its Hilbert-Schmidt singlet weight.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The insertion is proportional to `I_color`, so the runner computes singlet weight `1`, not `0`.",
+            "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Project the physical one-Higgs color-singlet insertion directly into singlet and adjoint color channels.",
+            "outcome": "The insertion is proportional to I_color and has singlet weight 1, so this route yields kappa_Y = 1 rather than 0.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "direct_projection"
+          },
+          {
+            "attempt": "The packet differentiates the shifted color-singlet source and compares its color matrix with the unshifted insertion.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The subtraction changes a c-number source value, not the color matrix in `bar q_a q^a`",
+            "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Subtract the scalar expectation value and interpret the connected fluctuation as a traceless color insertion.",
+            "outcome": "The c-number shift leaves the source derivative proportional to I_color, so it does not produce the required traceless insertion.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "vev_subtraction"
+          },
+          {
+            "attempt": "The packet evaluates a nonzero traceless generator under the same projection.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This can give singlet weight `0`, but it is no longer the one-Higgs color-singlet top-Yukawa operator attacked here.",
+            "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace the color-singlet Higgs insertion with a nonzero color-adjoint scalar insertion.",
+            "outcome": "It gives singlet weight 0 but exits the one-Higgs color-singlet operator class, so it is not a counterexample to the scoped no-go.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "adjoint_scalar"
+          },
+          {
+            "attempt": "The packet separates taste structure from the color matrix acted on by the Hilbert-Schmidt projection.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Taste structure alone does not change the color insertion; a separate matching theorem would be needed and is not present in this route.",
+            "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use taste-sector structure to select kappa_Y = 0 while retaining a color-singlet Higgs insertion.",
+            "outcome": "Taste structure does not alter the identity color insertion; a separate matching theorem would be required, so it does not rescue the direct projection route.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "taste_selector"
+          },
+          {
+            "attempt": "The packet checks whether such a theorem is supplied by the scoped route and explicitly separates it from direct projection.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This is explicitly left open; it would be a different theorem, not a rescue of the direct scalar/taste-condensate projection route.",
+            "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Define or derive kappa_Y using a retained matching theorem other than the color-insertion singlet weight.",
+            "outcome": "No such theorem is present; if one is later derived it will be a different positive route, not a rescue of the audited direct projection mechanism.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "alternate_matching"
+          },
+          {
+            "attempt": "The packet identifies this as a distinct observable route and checks it against the stated claim boundary.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This is outside the scalar/taste selector route and remains an open positive path, so it is not claimed closed by this no-go.",
+            "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Bypass the scalar/taste color projection and determine the top Yukawa through a direct top-correlator observable.",
+            "outcome": "It remains a positive route outside the scalar/taste selector mechanism and therefore does not contradict the scoped no-go.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "direct_correlator"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "W1: One-Higgs color-singlet invariance forces M_color = c I_color.",
+            "W2: The diagnostic kappa_Y = 0 projection requires a nonzero traceless color insertion.",
+            "W3: VEV/connected subtraction does not alter the color insertion."
+          ],
+          "evidence_locator": "W1 and W2 together form the contradiction for the direct route",
+          "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "W1: One-Higgs color-singlet invariance forces M_color = c I_color.",
+              "left_closes_right": false,
+              "right": "W2: The diagnostic kappa_Y = 0 projection requires a nonzero traceless color insertion.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "W1: One-Higgs color-singlet invariance forces M_color = c I_color.",
+              "left_closes_right": false,
+              "right": "W3: VEV/connected subtraction does not alter the color insertion.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "W2: The diagnostic kappa_Y = 0 projection requires a nonzero traceless color insertion.",
+              "left_closes_right": false,
+              "right": "W3: VEV/connected subtraction does not alter the color insertion.",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "W1: One-Higgs color-singlet invariance forces M_color = c I_color.",
+            "W2: The diagnostic kappa_Y = 0 projection requires a nonzero traceless color insertion.",
+            "W3: VEV/connected subtraction does not alter the color insertion."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "### N3 - Hidden-wall scan",
+          "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "\"Standard one-Higgs\" is the explicit route boundary, not an unlabelled import.",
+              "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+              "phrase": "standard one-Higgs"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "\"Framework-native\" and \"physical\" are used only to identify the intended top-Yukawa route",
+              "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+              "phrase": "framework-native and physical"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "\"Connected fluctuation\" is promoted into the explicit W3 guard above.",
+              "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+              "phrase": "connected fluctuation",
+              "promoted_wall": "W3: VEV/connected subtraction does not alter the color insertion."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The phrases standard one-Higgs, framework-native, physical, current repaired Y_T color packet, and connected fluctuation were checked against the source boundary and supplied premise surfaces.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "No other prior no-go is used as a witness.",
+          "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+          "none_found_reason": "",
+          "scan_scope": "The retained color-projection correction was compared with the residual attacked by the scalar/taste route-specific no-go.",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "Whether the standard one-Higgs scalar/taste-condensate insertion supplies kappa_Y = 0 by direct projection.",
+              "evidence_locator": "Yes; this note tests the named follow-up route.",
+              "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+              "match": true,
+              "route_id": "direct_projection",
+              "witness_id": "yt_color_selector_gap",
+              "witness_residual": "The old direct jump from the conditional color-projection family to kappa_Y = 0."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "### N5 - Rhetoric audit",
+          "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+          "none_found_reason": "",
+          "scan_scope": "All cannot-derive, no-go, physical, framework-native, lattice-wide, and global-impossibility language in the source was checked against the mechanisms actually tested.",
+          "statements": [
+            {
+              "evidence_locator": "scalar/taste-condensate one-Higgs route -> no derivation of kappa_Y = 0.",
+              "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+              "phrase": "scalar/taste-condensate one-Higgs route -> no derivation of kappa_Y = 0.",
+              "tested_resolutions": [
+                "direct identity-color projection",
+                "connected/VEV subtraction",
+                "color-adjoint replacement as an out-of-scope carrier",
+                "taste-only selection",
+                "alternative matching as a distinct route",
+                "direct correlator as a distinct observable"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "This is not a global impossibility theorem for every imaginable BSM scalar.",
+              "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+              "phrase": "This is not a global impossibility theorem for every imaginable BSM scalar.",
+              "tested_resolutions": [
+                "route-specific one-Higgs color-singlet obstruction only"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no mass ratio, coupling, selector, readout bridge, or color-insertion change.",
+              "evidence_locator": "carries no dimensionless DYNAMICAL content (no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or fit)",
+              "evidence_path": "audit-packet://partial-closure-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms explicitly withhold downstream context selection, source/action, and physical-observable bridges and therefore do not select kappa_Y.",
+              "evidence_locator": "It still supplies no context-selection rule, formation rule",
+              "evidence_path": "audit-packet://partial-closure-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies neither a state-contingent selector nor a matching rule for the color insertion.",
+              "evidence_locator": "Supplies the slot, never the content: no state, state-selection rule",
+              "evidence_path": "audit-packet://partial-closure-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference carries no dimensionless selector or readout content.",
+              "evidence_locator": "Units conversion only: carries no dimensionless content and does not assert a/l_P=1.",
+              "evidence_path": "audit-packet://partial-closure-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns charged-lepton K/CPT orbit-counting grain, not the Y_T one-Higgs color insertion or its singlet weight.",
+              "evidence_locator": "AC occupancy statistical grain",
+              "evidence_path": "audit-packet://partial-closure-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns charged-lepton eta-angle readout and supplies no Y_T color matching theorem.",
+              "evidence_locator": "AC R-eta h-class/h-unit readout",
+              "evidence_path": "audit-packet://partial-closure-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns the strong-CP determinant readout and does not change the color matrix of the one-Higgs Yukawa vertex.",
+              "evidence_locator": "theta quark-determinant cross-sector readout",
+              "evidence_path": "audit-packet://partial-closure-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied foundation registry, approved primitives, open-obligation candidates, and definition/scope possibilities in the orchestrator partial-closure index were checked for a selector or bridge that changes the one-Higgs identity color insertion.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "After full lattice renormalization, a Ward or matching theorem might map the connected scalar/taste response to a traceless color channel even though the bare one-Higgs vertex is color singlet.",
+          "evidence_locator": "after full lattice renormalization, a Ward or matching theorem might map the connected scalar response to the traceless color channel",
+          "evidence_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+          "resolution": "Such a theorem would be a legitimate future positive route, but none is supplied in the restricted packet; it therefore does not invalidate the narrower claim about the direct color-insertion projection.",
+          "resolved": true,
+          "route_id": "alternate_matching"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23:previous_audit:0",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Earlier audit of the same route-specific identity-versus-traceless obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "yt_color_projection_correction_note:previous_audit:0",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Earlier conditional physical R_conn bridge left the Yukawa selector open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "yt_color_projection_correction_note:previous_audit:1",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Earlier audit rejected identifying the group-theory fraction with physical scalar normalization without a matching theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "yt_color_projection_correction_note:previous_audit:2",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Earlier audit found the physical Yukawa projection was hard-coded rather than derived.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "yt_color_projection_correction_note:previous_audit:3",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Earlier packet-level no-go separated exact channel algebra from the missing kappa_Y selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "yt_color_projection_correction_note:previous_audit:4",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Earlier packet-level no-go used the kappa_Y=0 and kappa_Y=1 independence witness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "yt_color_projection_correction_note:previous_audit:5",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Earlier no-go preserved scalar/taste matching as a separate future route.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Unrelated charged-lepton counting selector obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Unrelated charged-lepton eta readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Unrelated strong-CP determinant readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "General inherited no-go inventory with no Y_T scalar-color selector result.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Finite gravity sweep versus full Newton closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Coupling-runner boundary unrelated to the Y_T color insertion.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Atomic and temporal-axis audit boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Broad inherited lane no-go inventory without this selector mechanism.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Formal electroweak coupling identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Beta-six coefficient and comparator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Lensing observable and tuned-beta route exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Carrier swap-isotypic obstruction unrelated to color-singlet Yukawa projection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Charged-lepton Ward and generation-selector route inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Spatial-dimension upper-bound boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Emergent-Lorentz claim-scope guard.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Metric reconstruction authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Finite radial orientation scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Local Wilson normalization versus full environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Flavor tracial-route narrowing with other carriers left open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Analytic-vector proof-route rejection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Plaquette-environment computation route boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Temporal-generator and staggered-sign isotropy no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Gravity dispersion versus physical Fermat bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Weak-field gravity scope exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Absolute-scale and Clifford-carrier route no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "U(1) normalization and species-identification ambiguity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Cross-lane campaign demotions and reopen rules.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Atomic scale, threshold, and unit-map no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Prior R_conn-to-physical-readout gaps in quark-mass routes echo the need for a typed physical selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Finite checks versus uniform asymptotic theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Signed-adjoint versus nonnegative scalar-potential observable obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Centered surrogate versus literal lensing geometry.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Static-source readout and hierarchy selector remain open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Temporal source/readout scope exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Empty local ledger with no applicable selector result.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Planning priority versus theorem-grade selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Update tick versus physical time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Neutrino mass-matrix and selector-route exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Neutrino Ward and cosmological-scale boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Finite Newtonian replay versus universal theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Frozen-log and finite-basin scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Coupling authority and physical-versus-bare selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Finite packet-memory versus decoherence and gravity bridges.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Finite differential-equation scan versus all-degree theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Clifford carrier-selection obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Rank-four projector and Hodge-dual carrier ambiguity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Plaquette bootstrap and mean-field route boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Character identity-evaluation diagnostic correction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Supplied packet data do not become selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Strong-CP and charged-lepton registrability bridge inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Temporal-axis and finite-range locality obstructions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "A finite source basis is not yet the physical Y_T response basis, echoing the need for a physical readout bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Spin-statistics source-boundary exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Minimal-surface kinetic selector non-forcing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "SU(3) quotient-encoder computation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Documentation synchronization rather than theorem no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "One finite slot does not establish a full family card.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Record axioms do not supply determinant-channel readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Gauge action/readout selection remains distinct from finite carrier facts.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Theta positive-gate inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Theta phase-insertion selector no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Theta defect-closure selector no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Charged-lepton determinant-power horn selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Record axioms do not supply K/CPT orbit occupancy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Record formation does not select an eta readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Artifact-visibility gap rather than a no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Record-only readout scaling countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Hard-coded finite table matching versus structural law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "Finite lattice rows versus universal continuum claims.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "mechanism": "A physical Y_T readout identity cannot be supplied by definition or renaming.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23": {
+              "accepted_premise_type": null,
+              "content_sha256": "18ae24c0bbdd658ece1f77ecefafd7e40d758399af4dab9ebfcc6f7cd1dd52ad",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "yt_color_projection_correction_note:previous_audit:0",
+                "yt_color_projection_correction_note:previous_audit:1",
+                "yt_color_projection_correction_note:previous_audit:2",
+                "yt_color_projection_correction_note:previous_audit:3",
+                "yt_color_projection_correction_note:previous_audit:4",
+                "yt_color_projection_correction_note:previous_audit:5",
+                "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23:previous_audit:0"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\""
+              ]
+            },
+            "audit-packet://partial-closure-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23": {
+              "accepted_premise_type": null,
+              "content_sha256": "aa3ce642bb3381dd6abe7cd89bfecdf152e6d63a8ef76eca7c3aa509671497df",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "AC R-eta h-class/h-unit readout",
+                "AC occupancy statistical grain",
+                "It still supplies no context-selection rule, formation rule",
+                "Supplies the slot, never the content: no state, state-selection rule",
+                "Units conversion only: carries no dimensionless content and does not assert a/l_P=1.",
+                "carries no dimensionless DYNAMICAL content (no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or fit)",
+                "theta quark-determinant cross-sector readout"
+              ]
+            },
+            "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "b10ebfa90ea9088ae6be5f5df977dbfdee49383ecfb80056c7fb1fc783d00807",
+              "effective_status": null,
+              "path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "\"Connected fluctuation\" is promoted into the explicit W3 guard above.",
+                "\"Framework-native\" and \"physical\" are used only to identify the intended top-Yukawa route",
+                "\"Standard one-Higgs\" is the explicit route boundary, not an unlabelled import.",
+                "### N3 - Hidden-wall scan",
+                "### N5 - Rhetoric audit",
+                "No other prior no-go is used as a witness.",
+                "Taste structure alone does not change the color insertion; a separate matching theorem would be needed and is not present in this route.",
+                "The insertion is proportional to `I_color`, so the runner computes singlet weight `1`, not `0`.",
+                "The subtraction changes a c-number source value, not the color matrix in `bar q_a q^a`",
+                "This can give singlet weight `0`, but it is no longer the one-Higgs color-singlet top-Yukawa operator attacked here.",
+                "This is explicitly left open; it would be a different theorem, not a rescue of the direct scalar/taste-condensate projection route.",
+                "This is not a global impossibility theorem for every imaginable BSM scalar.",
+                "This is outside the scalar/taste selector route and remains an open positive path, so it is not claimed closed by this no-go.",
+                "W1 and W2 together form the contradiction for the direct route",
+                "Yes; this note tests the named follow-up route.",
+                "after full lattice renormalization, a Ward or matching theorem might map the connected scalar response to the traceless color channel",
+                "scalar/taste-condensate one-Higgs route -> no derivation of kappa_Y = 0."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The load-bearing result is an exact algebraic obstruction: a nonzero SU(N)-invariant fundamental-color insertion is proportional to the identity and therefore is not traceless. The retained upstream authority supplies the conditional selector family without importing kappa_Y = 0, and the source confines its conclusion to the direct one-Higgs scalar/taste projection route. The runner computes the projection consequences and source guards; although its Schur-lemma helper is schematic, the note contains the complete elementary argument needed for the algebraic closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_scalar_taste_condensate_selector_no_go.py",
+  "title": "Y_T Scalar/Taste-Condensate Selector No-Go",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

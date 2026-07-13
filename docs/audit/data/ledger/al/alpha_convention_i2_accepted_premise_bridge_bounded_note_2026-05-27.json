@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
+    "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.996,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2da666c54ee7bfbb8cc440e66d0b3e721a96b5d18eef2a0f404c6636cad608ef",
+  "note_path": "docs/ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.460665+00:00",
+      "audit_date": "2026-05-28T05:10:56.352991+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24": "For abstract positive scalars \u03b1_bare and u_0 with \u03b1_LM and \u03b1_s(v) defined by one and two powers of u_0 respectively, the geometric-mean, log-mean, and equal-ratio identities hold.",
+          "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26": "Conditional accepted-premise bridge: under explicit P1 that the tree-level H_unit residue exhausts the same-projected 1PI coefficient, plus retained Rep-B F_Htt=1/sqrt(6), exact coefficient algebra derives g_bare^2=1 and positive-branch g_bare=1. This does not prove P1, promote the parent status, identify the Standard Model top-Yukawa, or assert regulator/continuum/phenomenology claims."
+        },
+        "dep_claim_type": {
+          "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24": "positive_theorem",
+          "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24": "retained",
+          "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26": "retained_bounded"
+        },
+        "deps": [
+          "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
+          "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "61db43e24166aec0c6a018757c31d74d4c990227740f81d6c68a286eca4d7452",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "godel-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-alpha-convention-i2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded claim closes from the restricted packet: both direct dependencies are retained-grade, and the remaining step is exact algebra under explicitly admitted P1. The scope does not derive P1 or promote downstream/parent claims.",
+      "claim_scope": "Conditional accepted-premise bridge: given P1 alpha := g_bare^2/(4 pi), retained-bounded g_bare = 1, and the retained alpha_LM identity, exact substitution yields alpha = alpha_bare = 1/(4 pi) and composes with alpha_LM^2 = alpha_bare * alpha_s(v). It does not derive P1, promote P1 to Tier-A, or promote the parent bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T05:10:56.352991+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Substitute g_bare = 1 into P1 alpha = g_bare^2/(4 pi), and substitute alpha_bare = g_bare^2/(4 pi) into alpha_LM^2 = alpha_bare * alpha_s(v).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if later text uses this row as a derivation of P1, treats P1 as a Tier-A admitted derivation target, or uses it to promote the parent alpha_bare bridge beyond bounded status.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 61,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 61
+      },
+      "verdict_rationale": "The runner encodes P1 as a supplied convention premise and checks conditional substitution algebra; it does not claim to derive P1 from framework primitives. Fresh-context independent algebra checked alpha(1)-1/(4pi)=0, (alpha_bare/u0)^2 - alpha_bare*(alpha_bare/u0^2)=0, alpha_LM^2/alpha_s - alpha_bare=0, and after P1 substitution the ratio becomes g_bare^2/(4pi). A rescaled convention differs by g_bare^2*(k-1)/(4pi), so P1 fixes k=1 only within the admitted convention. The source boundary keeps the theorem bounded: P1 remains admitted, not Tier-A-derived, and the parent bridge is not promoted."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/alpha_convention_i2_accepted_premise_runner.py",
+  "title": "\u03b1 := g_bare\u00b2/(4\u03c0) Convention I2 Accepted-Premise Bridge",
+  "transitive_descendants": 721,
+  "verdict_rationale": null
+}

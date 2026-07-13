@@ -1,0 +1,132 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "ckm_classical_number_theory_integer_characterization_theorem_note_2026-04-25",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
+    "ckm_multi_projection_bernoulli_family_theorem_note_2026-04-25"
+  ],
+  "direct_in_degree": 9,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.115,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c428f07cb66c3a5d44c7bd63a8d81e8abff89b57fb4a3041b0405595eff9493f",
+  "note_path": "docs/CKM_CLASSICAL_NUMBER_THEORY_INTEGER_CHARACTERIZATION_THEOREM_NOTE_2026-04-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.367816+00:00",
+      "archived_for_note_hash": "c8cc809dd324f7034f22011eb2b2ea9a8a072946045138bda883aeb302fbeb8a",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-11T11:12:40.090831+00:00",
+      "archived_for_note_hash": "ed9f98e626586877b1736eafa7a508ceda3f333f93d7eeeb17a65cf106d35778",
+      "audit_date": "2026-05-05T23:48:26.842858+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "ckm_magnitudes_structural_counts_theorem_note_2026-04-25": "audited_conditional",
+          "ckm_multi_projection_bernoulli_family_theorem_note_2026-04-25": "audited_conditional"
+        },
+        "deps": [
+          "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
+          "ckm_multi_projection_bernoulli_family_theorem_note_2026-04-25"
+        ],
+        "load_bearing_score": 13.326,
+        "runner_hash": "d48d3c21f63497e106e23421bf8e93066a9fcdec5b68a5161b0978f736d75644",
+        "transitive_descendants": 320
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-ckm_classical_number_the-088",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic identities close over the supplied triple, but the restricted packet does not provide a retained-grade independent closure of the triple itself because the primary count authority is audited_conditional and another cited authority is unaudited.",
+      "claim_scope": "Audited the claimed classical arithmetic characterizations and five uniqueness routes for the already-supplied integer triple (N_pair, N_color, N_quark) = (2, 3, 6).",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-05T23:48:26.842858+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substituting the retained CKM counts N_pair = 2, N_color = 3, and N_quark = 6 into standard number-theory identities gives the perfect-number, triangular, Lie-dimensional, Mersenne, and uniqueness-route statements.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: re-audit after the structural-counts authority is retained-grade and remove or retain-grade the unaudited Bernoulli cross-reference if it remains a cited authority.",
+      "open_dependency_paths": [
+        "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
+        "docs/CKM_MULTI_PROJECTION_BERNOULLI_FAMILY_THEOREM_NOTE_2026-04-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The runner performs exact integer and Fraction arithmetic and verifies only class-A consequences of the supplied integers. On its own terms, the number-theory packaging is correct and contains no external comparator check. However, the conclusion depends on cited upstream authorities that are not retained-grade in the restricted packet, so the audit cannot promote the result to clean despite the arithmetic closing over the assumed triple."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_ckm_classical_number_theory_integer_characterization.py",
+  "title": "Classical Number-Theory Characterization of the Retained CKM Structural Integers `(N_pair, N_color, N_quark) = (2, 3, 6)`",
+  "transitive_descendants": 48,
+  "verdict_rationale": null
+}

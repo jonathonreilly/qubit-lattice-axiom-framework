@@ -142,7 +142,6 @@ before commit:
 
 ```bash
 git checkout origin/main -- docs/audit/data/ \
-                            docs/audit/AUDIT_LEDGER.md \
                             docs/audit/AUDIT_QUEUE.md \
                             docs/audit/MISSING_DERIVATION_PROMPTS.md \
                             'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \

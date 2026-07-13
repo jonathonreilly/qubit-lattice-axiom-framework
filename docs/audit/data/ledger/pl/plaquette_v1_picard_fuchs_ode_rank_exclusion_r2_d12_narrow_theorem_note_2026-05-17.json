@@ -1,0 +1,261 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "46540e817e0bff4fd122a1d19eee9487bbcc8644e813974fabce5d50e12c1f0b",
+  "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-08T14:28:31.733509+00:00",
+      "audit_date": "2026-05-24T18:09:09.545610+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Finite-window exact-arithmetic certificate packet at Taylor depth 40 for the V=1 SU(3) single-plaquette Picard-Fuchs candidate operator, excluding all-order minimal-annihilator claims."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9fbc1ea53a6d5e2b3dfc249b18b0777dc835d1fb70e6aa6bbf50fc1a3f9ebc40",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T180848Z-4f71e255-plaquette_v1_picard_fuch-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The included runner source genuinely constructs the Bessel-determinant Taylor series with Fraction arithmetic, builds the stated matching matrices, and computes exact ranks rather than printing constants. The only load-bearing upstream is retained_bounded and the conclusion is limited to the finite rank checks actually computed.",
+      "claim_scope": "Exact-rational finite-window rank exclusion for the V=1 SU(3) single-plaquette matching system at (r=2, d=12), with ORDER=48 primary check, ORDER=52 stability check, and neighbouring (r=2, d=10),(r=2, d=11) reconfirmation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T18:09:09.545610+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+      "load_bearing_step": "The runner builds the Bessel-determinant Taylor coefficients exactly as rationals and exact Fraction Gaussian elimination returns rank 39 for the 44 x 39 matching matrix at (r=2, d=12), with the ORDER=52 cross-check also rank 39.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the matrix row indexing convention against the stated formula, but the implemented formula appears consistent with coefficient extraction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner output matches the note and the source code verifies the load-bearing arithmetic path: exact Bessel-series construction, exact matching matrix assembly, and exact Gaussian elimination over rationals. No forbidden external comparator, fitted value, or contested imported premise is used. The scope is narrow and bounded, avoiding the parent all-order minimality issue."
+    },
+    {
+      "archived_at": "2026-06-08T18:21:45.006612+00:00",
+      "archived_for_note_hash": "8a6305ccd9c16575570e90fdda697b09668819b737da7d5ddcc65d2c6c1e9aec",
+      "audit_date": "2026-06-08T16:10:08.480781+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Bounded exact-arithmetic finite-window certificate for the displayed V=1 SU(3) Bessel-determinant Taylor series: Taylor annihilation through beta^36, recurrence consistency for N in [2,39], lower-order exclusion only for {1}x{0..12} union {2}x{0..11}, uniqueness at (r=3,d=2), and higher-degree consistency for r=3,d=2..6."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9fbc1ea53a6d5e2b3dfc249b18b0777dc835d1fb70e6aa6bbf50fc1a3f9ebc40",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-160534-df6a7a99b6-plaquette_v1_picard_fuchs_od",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied runner source actually constructs the Bars Taylor coefficients and matching matrices over exact rationals rather than printing constants, and the cited parent authority is retained_bounded. An independent modular-rank check over a good prime reproduced full column rank for the ORDER=48 and ORDER=52 matrices, so the bounded finite-rank conclusion follows.",
+      "claim_scope": "Bounded exact-rational finite-window rank exclusion for the V=1 SU(3) single-plaquette matching system at (r=2, d=12), with ORDER=48 full-rank check, ORDER=52 stability check, and neighboring (r=2, d=10,11) reconfirmation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T16:10:08.480781+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "With exact rational Taylor coefficients from the Bars Bessel-determinant identity, the ORDER=48 matching matrix at (r=2, d=12) has rank 39, equal to the 39 unknowns, and the ORDER=52 recomputation has the same full rank.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the Bars-series finite k cutoff and ORDER/row-count convention; no repair required.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The load-bearing content is finite algebra over the accepted Bars Bessel-determinant input: coefficient construction, equation-count bookkeeping, and exact rank of explicitly defined rational matrices. The runner has no helper imports and does not hard-code the contested rank; it computes the matrix ranks, and the cached output reports PASS=15, FAIL=0. I independently checked the displayed low-order coefficients and verified full column rank modulo 1000003 for the relevant matrices, which is a certificate of nonzero rational minors. The note stays within its bounded scope and does not claim all-order minimality or degree ranges beyond the stated finite window."
+    },
+    {
+      "archived_at": "2026-06-09T08:58:05.575684+00:00",
+      "archived_for_note_hash": "525e3190877148688152d1a174f4c8c866b2470b1b90ce1ebc3d7fbac1c7243e",
+      "audit_date": "2026-06-08T21:08:09.136444+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Bounded exact finite-window certificate for the V=1 SU(3) single-plaquette Picard-Fuchs candidate at Taylor depth 40, excluding all-order minimal-annihilator claims and the skipped (r=2,d=12) cell."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "9fbc1ea53a6d5e2b3dfc249b18b0777dc835d1fb70e6aa6bbf50fc1a3f9ebc40",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-210320-ec45812c7f-plaquette_v1_picard_fuchs_od",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The rank-exclusion computation closes from the supplied Bars Bessel-determinant setup and retained_bounded parent packet; an independent finite-field recomputation confirms full rank for the stated matrices. The source has a non-load-bearing arithmetic drift in the ORDER=52 cap display: the formula gives min(47, 48), not min(47, 47), though the resulting cap is still 47.",
+      "claim_scope": "Bounded finite-window exact-rational rank exclusion for the V=1 SU(3) Bessel-determinant Taylor matching system at (r=2, d=12), with ORDER=52 stability and neighboring d=10,11 reconfirmation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T21:08:09.136444+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By the runner certificate [R12], the exact-rational rank of the 44 x 39 matching matrix at (r=2, d=12), ORDER=48 is 39 = num_unknowns, hence kernel_dim = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: correct the ORDER=52 cap arithmetic from min(47,47) to min(47,48), then rerun the same restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner source genuinely computes exact Bessel-determinant Taylor coefficients and exact ranks rather than printing constants, and the cached PASS output matches the code path. A separate modular exact-rank check gives rank 39 at (r=2,d=12) for ORDER=48 and ORDER=52, and rank full for d=10,11 at ORDER=48. However, the strict formula inventory finds the displayed ORDER=52 cap arithmetic is wrong as written: 52 - 2 - 2 = 48, so the cap line should read min(47, 48) = 47. The theorem's bounded scope is otherwise narrow and does not overclaim all-order minimality or d > 12 exclusion."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.834620+00:00",
+      "audit_date": "2026-06-09T13:53:27.610959+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Bounded exact finite-window certificate for the V=1 SU(3) single-plaquette Picard-Fuchs candidate at Taylor depth 40, excluding all-order minimal-annihilator claims and the skipped (r=2,d=12) cell."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "9fbc1ea53a6d5e2b3dfc249b18b0777dc835d1fb70e6aa6bbf50fc1a3f9ebc40",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-135143-bc9cab0bc2-plaquette_v1_picard_fuchs_od",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supplies the Bessel-determinant coefficient construction, the matching-matrix formula, runner source, and completed exact-rational output. An independent determinant-permutation coefficient extraction and Gauss-Jordan rank check reproduces a0=1, a2=1/36, a4=1/2592, a10=23/145118822400, rank 39 at ORDER=48 and ORDER=52, and the d=10,11 ranks.",
+      "claim_scope": "Finite exact-rational rank exclusion for the V=1 SU(3) Bessel-determinant matching system at (r=2, d=12), with ORDER=48 primary rank check, ORDER=52 stability check, and neighbouring d=10,11 reconfirmation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T13:53:27.610959+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "At ORDER=48 the exact-rational matching matrix for (r=2, d=12) has rank 39 equal to the 39 unknowns, and the ORDER=52 recomputation again has rank 39.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "No primitive premise is used; a second auditor should mainly re-check the finite-scope boundary and the independent rank arithmetic.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The load-bearing claim is a finite linear-algebra statement over exact rationals, not an all-order minimal-annihilator claim. The runner source genuinely computes the Bessel-determinant Taylor coefficients and matching-matrix ranks rather than printing constants or importing the contested conclusion. The only cited upstream authority is retained_bounded, and the note explicitly excludes the open all-order bridge from scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py",
+  "title": "Plaquette V=1 Picard-Fuchs ODE Rank-Exclusion (r=2, d=12) Narrow Theorem",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

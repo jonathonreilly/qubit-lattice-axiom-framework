@@ -1,0 +1,127 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+    "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+    "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+    "anomaly_forces_time_theorem",
+    "cl3_color_automorphism_theorem",
+    "graph_first_su3_integration_note",
+    "native_gauge_closure_note",
+    "three_generation_observable_theorem_note",
+    "staggered_dirac_realization_gate_note_2026-05-03",
+    "observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10",
+    "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16",
+    "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.209,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2be2127f377f6f7eb12769832be80500bf89e4f003d938cd936f837cd36316e4",
+  "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_FRAMEWORK_INTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-18T00:45:21.740151+00:00",
+      "archived_for_note_hash": "cd37bd9edd01c30363ddb1dd3423512136caa308d434895ea9b6b5e9c5578d3a",
+      "audit_date": "2026-05-17T14:57:12.230451+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded."
+        },
+        "dep_claim_type": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "2c80bfa85de23dddddfe0d972a77663e46a86fcdce8446f972e12fcc1591b527",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-145647-bc2044d8-observable_principle_p1_-010",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The determinant algebra and F_p counterexample checks close, but the catalog-wide negative depends on summaries and ledger/string checks for many context-only notes whose full contents are not provided as retained authorities in the restricted packet. The missing step is a retained-grade theorem or complete packet evidence showing the listed catalog is exhaustive and that each retained candidate is orthogonal to scalar-functional admissibility.",
+      "claim_scope": "Audited whether the supplied Route C note establishes that the listed framework-internal candidates do not independently exclude the non-additive determinant-ratio family F_p[J]=r(J)^p without importing block-additivity/P1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T14:57:12.230451+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Across the audited candidates, none independently excludes F_p[J] = r(J)^p for p != 1 without re-importing block-additivity (A) from the admissibility class (X2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full retained-catalog candidate notes or a retained-grade catalog-exhaustiveness theorem, then re-audit whether each candidate is genuinely silent on scalar-functional additivity.",
+      "open_dependency_paths": [
+        "docs/OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+        "docs/ANOMALY_FORCES_TIME_THEOREM.md",
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/OBSERVABLE_GENERATOR_ADDITIVITY_FROM_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-05-10.md",
+        "docs/OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner performs real algebraic checks for multiplicativity, non-additivity samples, log additivity, and determinant factorization, and those support the local counterexample structure. However, the claimed Route C conclusion also relies on live ledger status checks and content assessments of multiple context-only candidate notes not included in full in the restricted packet. Because the negative catalog claim is only as strong as that missing catalog-exhaustiveness/content evidence, the chain does not close as audited_clean from the supplied one-hop authority alone."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py",
+  "title": "Observable-Principle P1 Bridge \u2014 Framework-Internal Narrow Bounded Note",
+  "transitive_descendants": 36,
+  "verdict_rationale": null
+}

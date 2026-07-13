@@ -1,0 +1,114 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "52b318d976d0f1e11eabce7f3e877c8509991627eaca579fafced71344c733e3",
+  "note_path": "docs/READING_NOTE_CLAIMS_ARE_AXIOM_TEXT_THEOREMS_BOUNDED_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T22:04:32.817576+00:00",
+      "audit_date": "2026-07-09T10:56:46.308713+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "0bf932b90f835006a98047d75af9163e140db40496199b68d5e020bf816f60b7",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-context-audit-subagent-reading-note-2026-07-09",
+      "auditor_confidence": null,
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": "The four T1-T4 conclusions follow from current Minimal Axioms text plus ordinary definitional/logical consequences, without using audit-policy or procedural status prose as proof content.",
+      "claim_scope": "Four named reading-note contents are bounded axiom-text consequences of docs/MINIMAL_AXIOMS_2026-06-29.md; historical retirement/status policy was not audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T10:56:46.308713+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "The quoted Minimal Axioms sentences define records as admissible locks, require at most one record per site, define states as configurations of records, set I(empty)=0, and distinguish supplied condition textually.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only the standard mathematical convention used in T3 that the empty collection is a configuration of records; no open dependency found.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "fail": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The four T1-T4 conclusions follow from current Minimal Axioms text plus ordinary definitional/logical consequences, not from audit-policy or procedural status prose. The runner checks exact text needles and finite definitional consequences; it is not a physics derivation, but that matches the bounded axiom-text theorem scope. The claim does not add axiom content or import an external bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_reading_note_derivations_2026_07_02.py",
+  "title": "Four Policy Reading-Note Claims Are Axiom-Text Theorems",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

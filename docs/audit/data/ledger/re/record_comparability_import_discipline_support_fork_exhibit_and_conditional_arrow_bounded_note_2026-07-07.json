@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem - genre label means scope-pinned per the",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "meta",
+  "max_descendant_status_rank": 25,
+  "note_hash": "ce37ba34b093896ec16eb096c9802ae49439bd9d2d80858524e73d5cd786e89d",
+  "note_path": "docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:32.267944+00:00",
+      "audit_date": "2026-07-07T15:24:27.694930+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "4275cb30e2a8ae7bcfe9d4d5f32b87c81dd9934eaa3bf6fbbd4537c1da83e3c1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-record-comparability-2026-07-07",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "minimal_axioms is an accepted axiom-premise node. The finite fork, collapsed-stock, finite-union, and dependency-chain checks close at the stated conditional scope; no formation rule, rate, metric, global order, or dynamics is claimed.",
+      "claim_scope": "Conditional bounded Record-comparability result: treating co-realized alternative-family and formation-successor furniture as unregistered load-bearing structure under the Qualification, the same-site fork exhibit is barred; then overlap agreement and finite one-realized-configuration follow, while chain ordering requires a supplied acyclic nearest-neighbor dependency relation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T15:24:27.694930+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Under the Qualification's admission discipline, Model B's co-realized alternative-family furniture and formation-successor relation are unregistered load-bearing structure; without those imports, the same construction is one stock of formed records and violates per-site uniqueness.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second pass should re-check the countermodel-furniture-as-premise judgment; no repair blocker identified at the scoped bounded level.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 82
+      },
+      "verdict_rationale": "The note quotes the only direct authority, and the load-bearing import discipline is a correct application at the scoped bounded level: a same-site fork passes only by introducing a co-realized alternative family and a formation-successor relation, neither registered or named in the accepted axiom premise. Independently enumerating a two-site/two-possibility toy domain verifies that pairwise overlap agreement is equivalent to conflict-free finite union and that the collapsed fork violates per-site uniqueness; graph closure checks confirm A3 only after acyclicity is supplied. The N1-N8 gate is satisfied at the narrowed wall set: audit-owned countermodel-furniture judgment plus supplied acyclic relation; residual risk is only semantic over the countermodel-furniture judgment, so downstream use must keep the bounded conditions."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py",
+  "title": "Record Comparability: Import-Discipline Support, Fork Exhibit, And Conditional Arrow Substrate",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

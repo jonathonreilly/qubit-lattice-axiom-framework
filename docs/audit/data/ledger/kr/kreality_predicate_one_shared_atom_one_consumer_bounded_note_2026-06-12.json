@@ -1,0 +1,125 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "kreality_predicate_one_shared_atom_one_consumer_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+    "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+    "strong_cp_theta_zero_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "bb857bb236a212be3cf99416b9913a304b07f89ca1b3e7507c96a9e1e28b57db",
+  "note_path": "docs/KREALITY_PREDICATE_ONE_SHARED_ATOM_ONE_CONSUMER_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:30.188719+00:00",
+      "audit_date": "2026-07-10T04:20:10.424713+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "Audited the bounded algebraic claim that K-real C3-invariant einselection selects the 2-sector partition but does not derive r=1/2, leaving K-reality and block-counting/equal-power as explicit residual inputs.",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "bounded_theorem",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "retained_bounded",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "eefe6e8acac7180d3dc62e97686615de9302f52225b0bae5af8c071b934d5fca",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00077-kreality_predicate_one_share",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within this bounded two-chain scope, the supplied algebra and cited notes establish that K-reality selects the Koide two-sector partition while the theta-side determinant-character algebra uses different premises. This does not establish K-reality itself or an unconditional physical theta readout bridge.",
+      "claim_scope": "A dependency/content audit on the supplied Hermitian C3-circulant surface and the two cited consumer chains, without deriving or adopting K-reality or closing the physical theta readout identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:20:10.424713+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_einselection_2sector_modulo_kreality_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "Among the two named chains, the theta-side registrability argument does not consume the coupling K-reality predicate, whereas Koide partition selection consumes it through the singlet/doublet degeneracy of a K-real C3-invariant coupling.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: retain or explicitly owner-adopt the generation-monitoring K-reality premise and retain the physical strong-CP mass-readout identification before seeking a non-conditional verdict.",
+      "open_dependency_paths": [
+        "docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md",
+        "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 14,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The runner genuinely constructs the C3 matrices and verifies the K-even/K-odd decomposition, determinant formula, and singlet/doublet partition; it is not merely printing expected results. Its novel consumer-count conclusion is nevertheless a cross-note dependency verification, and the cited authorities explicitly leave K-reality supplied rather than derived and the physical mass-readout identification open. The result is therefore sound only as the stated bounded conditional dependency claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_kreality_one_shared_atom_one_consumer_2026_06_12.py",
+  "title": "K-reality predicate is one shared atom, with one surviving consumer",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

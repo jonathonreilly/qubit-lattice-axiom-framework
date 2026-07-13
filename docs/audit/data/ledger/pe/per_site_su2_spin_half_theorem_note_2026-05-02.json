@@ -1,0 +1,603 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 12,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.669,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "cbc3b65d854de30136ea77b06438b730a737ef372fee5455aba3b9e7df6c704d",
+  "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:08:24.496674+00:00",
+      "audit_date": "2026-05-22T13:00:41.803352+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "167bf97ecb99806bc2524798e9d6b589e828f8cb0b41707319bc7f75fac43dc3",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T130020Z-34ddc3b9-per_site_su2_spin_half_t-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Pauli-matrix su(2) computation closes algebraically, but the restricted cited authority no longer proves that the physical per-site Hilbert is exactly the canonical Pauli C\u00b2 module. Its U4 per-site Hilbert bridge is explicitly out of scope and moved to another note not included in the packet.",
+      "claim_scope": "Given a per-site Hilbert identified with the canonical Pauli Cl(3) irrep, S_i=\u03c3_i/2 satisfies the su(2) relations, has Casimir 3/4, and is the irreducible j=1/2 module.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T13:00:41.803352+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "By the cited per-site uniqueness theorem (U2), H_x \u2245 C\u00b2 with \u03b3_i \u21a6 \u03c3_i, so all subsequent statements are computations in this Pauli basis.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: include the retained-grade staggered-Dirac/Grassmann or other bridge theorem that identifies the physical per-site Hilbert with a single 2-dim canonical Cl(3) chirality module, then re-audit the per-site scope.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner genuinely checks Pauli algebra, Casimir, spectrum, and scalar commutant, but it assumes the contested per-site dimension/canonical Pauli identification by setting dim=2 and hard-coding the Pauli matrices. The one-hop authority is retained_bounded for abstract physical-Cl(3)-only U1-U3, yet it explicitly states that the physical per-site Hilbert dimension/realization bridge U4 was moved out of scope. Therefore the audited packet proves only the conditional Pauli-irrep spin-1/2 statement, not the full per-site framework claim."
+    },
+    {
+      "archived_at": "2026-05-29T00:46:44.390689+00:00",
+      "audit_date": "2026-05-22T22:41:41.701965+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "167bf97ecb99806bc2524798e9d6b589e828f8cb0b41707319bc7f75fac43dc3",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T224120Z-adef2375-per_site_su2_spin_half_t-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic su(2), Casimir, spectrum, and commutant checks close directly in the Pauli representation. The previously missing physical-Hilbert bridge is supplied in the allowed targeted context by A1/R1's explicit k=1 qubit-per-site selection, so H_x = C\u00b2 is no longer open for this audit scope.",
+      "claim_scope": "Given the k=1 qubit-per-site reading H_x = C\u00b2 and the retained Pauli/Cl(3) per-site representation, the per-site generators S_i = \u03c3_i/2 form the unique spin-1/2 su(2) irrep on each site.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T22:41:41.701965+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_type_changed:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:bounded_theorem->positive_theorem",
+      "load_bearing_step": "With S_i = \u03c3_i / 2, the Pauli matrices satisfy [S_i, S_j] = i \u03b5_{ijk} S_k and S\u00b2 = (3/4)I, so the irreducible 2-dimensional per-site module has j = 1/2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should confirm that the allowed targeted k=1/R1 context is treated as admissible load-bearing framework authority for this re-audit scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner genuinely instantiates Pauli matrices and computes the commutators, Casimir, S_z spectrum, and scalar commutant rather than merely printing constants. The cited Cl(3) authority is retained_bounded for the Pauli/chirality representation content, and the allowed k=1 qubit-per-site context supplies the physical per-site Hilbert identification. With that targeted premise admitted, the note is an algebraic closure over retained-grade inputs, not a numerical match or definition substitution."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:27.459501+00:00",
+      "archived_for_note_hash": "d0d7638afb212531bbc0474d17b5822785fc916e59783c593954542fc87d8d33",
+      "audit_date": "2026-05-29T06:11:05.440157+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 4.585,
+        "runner_hash": "167bf97ecb99806bc2524798e9d6b589e828f8cb0b41707319bc7f75fac43dc3",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Pauli su(2), Casimir, spectrum, and scalar-commutant computations are correct, but the only cited dependency is audited only as abstract Cl(3) representation classification and explicitly excludes physical per-site Hilbert-space identification and chirality selection.",
+      "claim_scope": "The note attempts to prove that each physical per-site Hilbert space carries only the j=1/2 su(2) spin irrep by applying S_i=sigma_i/2 to the Pauli C^2 module.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T06:11:05.440157+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By the cited per-site uniqueness theorem, H_x is identified with C^2 carrying gamma_i -> sigma_i, then S_i=sigma_i/2 is treated as the physical per-site su(2) spin action.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply or cite retained authority tying the current qubit-at-every-site axiom surface to the physical one-copy H_x=C^2 Pauli module and to the spin-generator/chirality convention S_i=sigma_i/2.",
+      "open_dependency_paths": [
+        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29 excludes the physical per-site Hilbert-space identification and chirality selection needed by this note"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "runner_status": "ok",
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the proof imports the physical per-site Hilbert identification H_x=C^2 and a specific Pauli/chirality spin-generator action from a dependency whose audited scope excludes that bridge. Why this blocks: the runner verifies the Pauli module calculation, but it does not establish that the physical site has exactly that one module/chirality or that S_i=sigma_i/2 is the physical spin action rather than an abstract su(2) action on a chosen Pauli irrep. Repair target: add a retained direct authority from the current qubit-per-site axiom surface, or a bridge theorem, that supplies the physical one-qubit H_x=C^2 module and the permitted spin-generator/chirality convention used here. Claim boundary until fixed: conditional on a physical per-site Pauli module with the stated spin-generator convention, the module is irreducible with Casimir 3/4 and j=1/2; the unrestricted per-site matter-content exclusion is not yet audited."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.080288+00:00",
+      "audit_date": "2026-06-03T00:43:52.054928+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 18.57,
+        "runner_hash": "d9a1b678e2d3a50ff1c08caf620ff5598ce6695f4e9fde2c6d9ce2a127b0581a",
+        "transitive_descendants": 759
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-004153-aecdff19-per_site_su2_spin_half_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Axiom 1 supplies the local M_2(C) qubit algebra, and the retained Pauli-irrep authority plus standard finite-dimensional su(2) representation facts close the algebraic commutator, Casimir, spectrum, commutant, and uniqueness steps. The only non-retained upstream is explicitly flagged as an axiom premise, so the accepted-premise carve-out applies.",
+      "claim_scope": "On a single Axiom 1 qubit site with an oriented Pauli triple satisfying relation (1), S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module; no physical spin-statistics, matter-sector, or multi-site claim is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-03T00:43:52.054928+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-30T23:54:17.795941+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-235255-1de3e5ee-per_site_su2_spin_half_t",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On a single Axiom 1 qubit site, for an oriented Pauli triple satisfying the stated Pauli commutation and anticommutation relations, S_i = sigma_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-03T00:43:52.054928+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260603-004153-aecdff19-per_site_su2_spin_half_t",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On a single Axiom 1 qubit site with an oriented Pauli triple satisfying relation (1), S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module; no physical spin-statistics, matter-sector, or multi-site claim is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "With S_i := sigma_i/2 and the displayed Pauli relations, the note computes [S_i,S_j]=i epsilon_ijk S_k, S^2=(3/4)I, the S_3 spectrum, and the scalar commutant inside M_2(C).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that \"Pauli generating triple\" is read with the displayed oriented commutator convention in relation (1); an orientation-reversed triple would flip the commutator sign.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The proof is finite-dimensional algebra over the provided Pauli relations and standard su(2) module facts, not a definition substitution or external numerical comparison. The runner source actually instantiates Pauli matrices and checks the Cl(3) relations, su(2) commutators, Casimir, S_z spectrum, scalar commutant, and dimension-label consistency; its source-firewall check is textual rather than load-bearing physics. No fitted value, PDG comparator, open bridge, or physical-spin overclaim is imported within the audited scope."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.542621+00:00",
+      "audit_date": "2026-06-05T17:13:56.534329+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.926,
+        "runner_hash": "d9a1b678e2d3a50ff1c08caf620ff5598ce6695f4e9fde2c6d9ce2a127b0581a",
+        "transitive_descendants": 42
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-171333-ea31ffb2cb-per_site_su2_spin_half_theor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli commutator and anticommutator relations algebraically imply the su(2) brackets, Casimir, S_3 spectrum, and scalar commutant. The only non-retained upstream is the minimal axiom memo, explicitly flagged as an accepted axiom premise, so it does not force a conditional downgrade.",
+      "claim_scope": "On one accepted Quantum-axiom qubit site A_x ~= M_2(C), the Pauli action S_i = \u03c3_i/2 realizes the irreducible two-dimensional complex su(2) module with Casimir 3/4 and j = 1/2, without identifying it with all physical spin sectors.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:13:56.534329+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "With S_i = \u03c3_i/2 and \u03c3_i^2 = I, the Pauli relations give [S_i,S_j] = i \u03b5_ijk S_k and S^2 = \u03a3_i S_i^2 = (3/4)I, while the scalar commutant gives irreducibility.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the packet/path mismatch between the source note's MINIMAL_AXIOMS_2026-05-20 citation and the provided superseding MINIMAL_AXIOMS_2026-06-04 authority, though the Quantum axiom content needed here is preserved.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The proof is a direct algebraic computation inside M_2(C) using the admitted Pauli spin-action convention and standard finite-dimensional su(2) representation facts. Independent checking confirms the factors and signs: [\u03c3_i/2,\u03c3_j/2] = i \u03b5_ijk \u03c3_k/2, each S_i^2 = I/4, hence S^2 = 3I/4, and S_3 has eigenvalues \u00b11/2. The commutant of the Pauli-generated full matrix algebra is exactly C I, giving irreducibility, and the two-dimensional irreducible su(2) module is uniquely the j = 1/2 module. The runner source performs actual matrix computations and source-firewall checks rather than merely printing constants."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.509602+00:00",
+      "audit_date": "2026-06-05T21:09:58.150713+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.055,
+        "runner_hash": "d9a1b678e2d3a50ff1c08caf620ff5598ce6695f4e9fde2c6d9ce2a127b0581a",
+        "transitive_descendants": 46
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-210809-52202043d3-per_site_su2_spin_half_theor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted axiom premise supplies the one-site algebra M_2(C), and the retained Pauli/Cl(3) authority plus the stated Pauli relations supply the algebraic input. The su(2) commutator, Casimir, S_3 spectrum, scalar commutant, and uniqueness claim then follow by standard finite-dimensional algebra without a physical spin-statistics bridge.",
+      "claim_scope": "On one accepted Quantum/Axiom-1 qubit site with an oriented Pauli triple satisfying the stated relations, the local action S_i = \u03c3_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:09:58.150713+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "With S_i = \u03c3_i/2, the Pauli relations give [S_i,S_j] = i \u03b5_ijk S_k and S^2 = \u03a3_i \u03c3_i^2/4 = (3/4)I; since the S_i generate M_2(C), the commutant is scalar and the two-dimensional irreducible module has j = 1/2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that the audited scope remains the oriented Pauli relation (1), not an arbitrary sign-reversed Clifford triple.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The non-retained-looking minimal-axioms authority is explicitly flagged as an accepted axiom premise, so it does not trigger a dependency downgrade. Independent formula checks confirm the factors and signs: the 1/2 normalization gives [S_i,S_j] = i \u03b5_ijk S_k, \u03c3_i^2 = I gives S^2 = 3I/4, and j(j+1)=3/4 gives j=1/2. The runner source performs actual matrix and commutant computations rather than merely printing constants, and no external comparator, tuned scale, or physical-spin overclaim is load-bearing."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.886553+00:00",
+      "audit_date": "2026-07-01T07:10:08.889312+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 14.055,
+        "runner_hash": "d9a1b678e2d3a50ff1c08caf620ff5598ce6695f4e9fde2c6d9ce2a127b0581a",
+        "transitive_descendants": 187
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T071008Z-b53e2af2-per_site_su2_spin_half_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Qubit axiom supplies the one-site M_2(C) algebra as an accepted premise, and the retained Pauli/Cl(3) theorem plus admitted standard su(2) representation facts supply the remaining representation-theory inputs. The conclusion is a direct algebraic closure inside M_2(C), with physical spin-statistics and multi-site carrier claims kept out of scope.",
+      "claim_scope": "For a single accepted Qubit/Axiom-1 site with local algebra M_2(C) and an oriented Pauli triple used as S_i=\u03c3_i/2, the local action is the irreducible two-dimensional complex j=1/2 su(2) module.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:10:08.889312+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Using the Pauli relations, S_i=\u03c3_i/2 obey [S_i,S_j]=i \u03b5_ijk S_k, have S^2=(3/4)I, and because the S_i generate M_2(C), the commutant is only scalars.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the oriented commutator convention excludes the reversed Cl(3) chirality from the phrase any Pauli generating triple; within the displayed relation (1), the result is clean.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Independent algebra confirms the commutator normalization, Casimir factor 3/4, S_3 spectrum, and scalar commutant. The runner source performs actual matrix products, eigenvalue checks, and an SVD commutant computation rather than merely printing pass constants; its source-firewall check is consistent with the scoped claim. The only non-retained upstream is the registered minimal-axiom premise, which falls under the accepted-premise carve-out, and the retained Cl(3) authority is used within its algebraic scope."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.495515+00:00",
+      "audit_date": "2026-07-01T23:32:51.644503+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 14.055,
+        "runner_hash": "d9a1b678e2d3a50ff1c08caf620ff5598ce6695f4e9fde2c6d9ce2a127b0581a",
+        "transitive_descendants": 187
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T233251Z-c83aa5d4-per_site_su2_spin_half_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Qubit axiom supplies the one-site M_2(C) algebra, and the displayed Pauli relations plus standard finite-dimensional su(2) representation theory give the commutators, Casimir, spectrum, scalar commutant, irreducibility, and j=1/2 label. No extra physical-spin, statistics, dynamics, or multi-site bridge is used.",
+      "claim_scope": "On one Axiom-Qubit site with an oriented Pauli triple satisfying the displayed Pauli relations, the local action S_i = sigma_i/2 is the irreducible two-dimensional j=1/2 complex su(2) module; no physical spin-statistics or multi-site sector identification is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T23:32:51.644503+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "With S_i = sigma_i/2, the Pauli relations give [S_i,S_j] = i epsilon_ijk S_k and S^2 = 3/4 I; because the S_i generate M_2(C), their commutant is only scalar matrices, so the two-dimensional action is the irreducible j=1/2 su(2) module.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the scope tied to Pauli triples satisfying the displayed oriented relations; the audit does not cover arbitrary unoriented Cl(3) triples as the same su(2) action.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing work is exact algebra over the accepted Qubit premise, the Pauli relations, and standard su(2) module facts. Independently checking the factors gives (1/4)(2i epsilon_ijk sigma_k) = i epsilon_ijk S_k and three involutions contribute 3/4 I to the Casimir; the generated full M_2(C) algebra has scalar commutant. The runner source actually constructs Pauli matrices and checks these identities, with no empirical comparator, tuned input, or hidden physical identification."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.600932+00:00",
+      "audit_date": "2026-07-10T16:57:24.756113+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 19.087,
+        "runner_hash": "d9a1b678e2d3a50ff1c08caf620ff5598ce6695f4e9fde2c6d9ce2a127b0581a",
+        "transitive_descendants": 543
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00001-per_site_su2_spin_half_theor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Qubit premise supplies the one-site M_2(C) algebra, and the stated Pauli relations directly imply the commutators, Casimir, spectrum, and scalar commutant. Standard finite-dimensional su(2) representation theory then fixes the unique two-dimensional irrep label j = 1/2.",
+      "claim_scope": "For an oriented Pauli triple satisfying equation (1) on the accepted one-site algebra M_2(C), S_i = \u03c3_i/2 realizes the unique irreducible two-dimensional complex j = 1/2 su(2) module; no physical-spin, spin-statistics, or larger-block identification is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:57:24.756113+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-05T00:00:00-04:00",
+          "auditor": "codex-gpt-5.5-audit-wave-20260705-row1-gibbs-019f32ee",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the Axiom/Qubit one-site algebra M_2(C), the local Pauli action S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module, without identifying physical spin for all matter sectors.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T16:57:24.756113+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00001-per_site_su2_spin_half_theor",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For an oriented Pauli triple satisfying equation (1) on the accepted one-site algebra M_2(C), S_i = \u03c3_i/2 realizes the unique irreducible two-dimensional complex j = 1/2 su(2) module; no physical-spin, spin-statistics, or larger-block identification is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "From the Pauli relations and S_i = \u03c3_i/2, the action obeys su(2) with Casimir (3/4)I, while generation of M_2(C) makes its commutant scalar and therefore the two-dimensional action irreducible and uniquely j = 1/2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The result is a genuine algebraic closure from the accepted one-site qubit algebra, the explicitly assumed oriented Pauli relations, and standard representation theory; neither an open physical identification nor a fitted or observed input is used. The retained Clifford authority is compatible with the local Pauli realization and introduces no unresolved dependency. The runner actually multiplies the canonical matrices, computes spectra and the Casimir, and solves the commutant constraints, although these checks corroborate class-(A) identities rather than constitute an independent numerical prediction."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/per_site_su2_spin_half_check.py",
+  "title": "Per-Site Pauli Action Carries the Unique j = 1/2 su(2) Module",
+  "transitive_descendants": 813,
+  "verdict_rationale": null
+}

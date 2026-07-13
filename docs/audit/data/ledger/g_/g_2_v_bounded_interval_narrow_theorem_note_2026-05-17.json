@@ -1,0 +1,593 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18",
+    "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+    "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
+    "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+    "native_gauge_closure_note",
+    "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2210a03d953ca94f07b0de4d83091dd9cabb4dfabc20ce1bf3e25caa84c56266",
+  "note_path": "docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-19T11:19:03.090360+00:00",
+      "archived_for_note_hash": "39ac325e9242abbb4dd344d96114ccb0aa886cbee2304b953e071f53db800a4f",
+      "audit_date": "2026-05-17T15:33:04.999629+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "Standalone algebraic identities over abstract positive reals alpha_bare and u_0: the vertex-power/link-power identities, geometric-mean identity, constant-ratio chain, u_0=1 boundary, unique positive inverse map, and abstract P^(1/4) substitution; no plaquette value, gauge group, beta normalization, g_bare gate, running bridge, or numerical alpha_s prediction is audited.",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "Given the admitted Wilson canonical-normalization convention g_bare = 1 and the retained graph-first SU(3) surface with N_c = 3, the Wilson coefficient is \u03b2 = 6 and the Cl(3)-to-lattice curvature normalization has no multiplicative rescaling factor at g_bare = 1.",
+          "native_gauge_closure_note": "Bounded native gauge-closure note: exact cubic Cl(3)/SU(2), retained graph-first SU(3) structural closure, and a selected-axis traceless abelian eigenvalue pattern only.",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "Exact symbolic substitution theorem for the SU(2)_L one-loop beta coefficient only: given the cited retained/retained_bounded inputs for native SU(2)_L, structural SU(3)_c color count N_color=3, LH Weyl-doublet count N_W=(N_color+1)N_gen, N_gen=3, one complex Higgs doublet with two complex components, plus the named external Peskin-Schroeder SU(N) one-loop beta formula, the closed form b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6=(22N_pair-2(N_color+1)N_gen-1)/6 and the framework value b_2=19/6 follow by exact Rational algebra. This does not derive the upstream gauge/count/Higgs inputs, does not derive the textbook beta formula, and does not claim alpha_2 running, thresholds, PDG comparison, or any broader electroweak closure.",
+          "yt_ew_color_projection_theorem": "Audited only the bounded EW normalization family K_EW(kappa_EW)=1/(8/9+kappa_EW/9) at N_c=3, using retained F_adj=8/9 and an explicit free readout coefficient kappa_EW; kappa_EW=0 was not audited as derived."
+        },
+        "dep_claim_type": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "bounded_theorem",
+          "native_gauge_closure_note": "bounded_theorem",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "yt_ew_color_projection_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "yt_ew_color_projection_theorem": "retained_bounded"
+        },
+        "deps": [
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+          "native_gauge_closure_note",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a1c030f9024835a455b1771b52306de02be5279726d226d37040a08a4d266fdf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-153105-a5e2dcef-g_2_v_bounded_interval_n-018",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The substitution, monotonicity, and numerical endpoints close once the six named inputs are granted. The retained-grade chain does not close because the SU(2) u_0 interval, the scale log L=38.44, and the 1-loop running bridge are admitted external inputs rather than derived in the restricted packet.",
+      "claim_scope": "Conditional algebraic bounded interval for g_2(v=246 GeV) from u_0(SU(2))\u2208[0.96,0.98], b_2=19/6, g_2\u00b2|_lattice=1/4, \u03b1^tadpole=\u03b1^bare/u_0\u00b2, and L=38.44 under the stated 1-loop running bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T15:33:04.999629+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substitute 1/\u03b1_2^tadpole|_lattice = 16\u03c0u_0\u00b2 into the 1-loop running equation 1/\u03b1_2(v)=1/\u03b1_2(M_Pl)-(b_2/(2\u03c0))L and invert to g_2(v)=sqrt(4\u03c0/(16\u03c0u_0\u00b2-(b_2/(2\u03c0))L)), with monotonicity reversing the u_0 endpoints.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained row deriving or ratifying the SU(2) u_0 interval and the scale-log/RGE bridge; also correct the non-load-bearing S10/S11 exact forms to match the runner's u_lo numerator 110592\u03c0\u00b2 and u_hi numerator 115248\u03c0\u00b2.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: the downstream algebra is correct, but the numerical bounded interval relies on X1 u_0(SU(2))\u2208[0.96,0.98], X6 L=38.44, and the imported 1-loop running bridge rather than retained derivations in the packet. Why this blocks: under the rubric, explicit admitted bridge/scale/numerical premises keep the result conditional even when the substitution itself is exact. Repair target: add retained theorem support deriving or ratifying the SU(2) u_0 interval, the scale-log normalization, and the RGE bridge as applicable. Claim boundary until fixed: valid algebraic bounded interval conditional on X1-X6, not a fully retained framework derivation of g_2(v)."
+    },
+    {
+      "archived_at": "2026-05-22T15:30:26.209109+00:00",
+      "audit_date": "2026-05-19T15:10:06.710727+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "Standalone algebraic identities over abstract positive reals alpha_bare and u_0: the vertex-power/link-power identities, geometric-mean identity, constant-ratio chain, u_0=1 boundary, unique positive inverse map, and abstract P^(1/4) substitution; no plaquette value, gauge group, beta normalization, g_bare gate, running bridge, or numerical alpha_s prediction is audited.",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "Given the admitted Wilson canonical-normalization convention g_bare = 1 and the retained graph-first SU(3) surface with N_c = 3, the Wilson coefficient is \u03b2 = 6 and the Cl(3)-to-lattice curvature normalization has no multiplicative rescaling factor at g_bare = 1.",
+          "native_gauge_closure_note": "Bounded native gauge-closure note: exact cubic Cl(3)/SU(2), retained graph-first SU(3) structural closure, and a selected-axis traceless abelian eigenvalue pattern only.",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "Exact symbolic substitution theorem for the SU(2)_L one-loop beta coefficient only: given the cited retained/retained_bounded inputs for native SU(2)_L, structural SU(3)_c color count N_color=3, LH Weyl-doublet count N_W=(N_color+1)N_gen, N_gen=3, one complex Higgs doublet with two complex components, plus the named external Peskin-Schroeder SU(N) one-loop beta formula, the closed form b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6=(22N_pair-2(N_color+1)N_gen-1)/6 and the framework value b_2=19/6 follow by exact Rational algebra. This does not derive the upstream gauge/count/Higgs inputs, does not derive the textbook beta formula, and does not claim alpha_2 running, thresholds, PDG comparison, or any broader electroweak closure.",
+          "yt_ew_color_projection_theorem": "Audited only the bounded EW normalization family K_EW(kappa_EW)=1/(8/9+kappa_EW/9) at N_c=3, using retained F_adj=8/9 and an explicit free readout coefficient kappa_EW; kappa_EW=0 was not audited as derived."
+        },
+        "dep_claim_type": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "bounded_theorem",
+          "native_gauge_closure_note": "bounded_theorem",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "yt_ew_color_projection_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "yt_ew_color_projection_theorem": "retained_bounded"
+        },
+        "deps": [
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+          "native_gauge_closure_note",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a1c030f9024835a455b1771b52306de02be5279726d226d37040a08a4d266fdf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-g_2_v_bounded_interval_n-058",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from the stated inputs to the interval closes. The unrestricted scientific chain remains conditional because the u_0(SU(2)) interval, the scale ratio L = 38.44, and the 1-loop running bridge are admitted external premises rather than derived inside the restricted packet.",
+      "claim_scope": "Audited the conditional algebraic substitution that maps the admitted u_0(SU(2)) interval [0.96, 0.98], b_2 = 19/6, lattice anchor g_2^2 = 1/4, tadpole identity, and L = 38.44 into the stated bounded interval for g_2(v).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-19T15:10:06.710727+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g_bare_canonical_convention_narrow_theorem_note_2026-05-02:retained_bounded->unaudited",
+      "load_bearing_step": "Substituting 1/alpha_2^tadpole|_lattice = 16 pi u_0^2 and L = ln(M_Pl/v) into the 1-loop running equation gives 1/alpha_2(v) = 16 pi u_0^2 - (b_2/(2 pi)) L, hence g_2(v) = sqrt(4 pi / (16 pi u_0^2 - (b_2/(2 pi)) L)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or independently retain the SU(2) u_0 interval and the precision-controlled scale-ratio/running bridge, then re-audit the same algebraic interval step.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The runner source performs real sympy algebra and exact rational endpoint evaluation rather than merely printing constants, and its results match the note after the S10/S11 repair. However, the theorem explicitly depends on named external admissions for u_0(SU(2)) in [0.96, 0.98] and L = 38.44, plus an admitted standard 1-loop RGE bridge. Under the rubric, retained status does not propagate through those open/imported premises even though the conditional substitution itself is correct."
+    },
+    {
+      "archived_at": "2026-06-11T13:12:46.868125+00:00",
+      "audit_date": "2026-05-27T04:52:31.065461+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "Standalone algebraic identities over abstract positive reals alpha_bare and u_0: the vertex-power/link-power identities, geometric-mean identity, constant-ratio chain, u_0=1 boundary, unique positive inverse map, and abstract P^(1/4) substitution; no plaquette value, gauge group, beta normalization, g_bare gate, running bridge, or numerical alpha_s prediction is audited.",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "Given admitted Wilson canonical-normalization g_bare = 1, the standard Wilson \u03b2 relation/field-strength rescaling, and retained graph-first SU(3) giving N_c = 3, \u03b2 = 6 and F^lattice = \u03a9^Cl(3) within the stated lattice expansion.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "The audited scope is the algebraic substitution from the five stated inputs X0-X4 to the SU(2)_L one-loop coefficient closed form, its 19/6 framework value, and the listed sector decomposition and corollaries.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration",
+          "native_gauge_closure_note": "positive_theorem",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+          "native_gauge_closure_note": "retained",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+          "native_gauge_closure_note",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a1c030f9024835a455b1771b52306de02be5279726d226d37040a08a4d266fdf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped result is an algebraic bounded implication over explicit hypotheses. The direct ledger dependencies are retained-grade or decoration-under-retained, and the remaining non-framework inputs are explicitly scoped as named admissions rather than claimed derivations. The runner recomputes the symbolic formula, monotonicity, endpoint reversal, and decimal interval with PASS=18 FAIL=0.",
+      "claim_scope": "Bounded algebraic implication only: given the literature input u_0(SU(2)) in [0.96, 0.98], the named scale ratio L = ln(M_Pl/v) = 38.44, the standard one-loop SU(2) running equation, and the retained/retained_bounded lattice-anchor, beta-coefficient, native-SU(2), Wilson-normalization, and tadpole vertex-power inputs, exact substitution plus monotonicity gives g_2(v = 246 GeV) in [0.659392836186702, 0.682834304553707]. No derivation of u_0, L, the one-loop RGE, a PDG comparator, or a point prediction is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T04:52:31.065461+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "Equations (R1)-(R3) substitute the explicit inputs into 1/alpha_2(v) = 16*pi*u_0^2 - (b_2/(2*pi))*L and then invert to g_2(v), while (M1)/(S7) proves the endpoint reversal because d/du_0[1/alpha_2(v)] = 32*pi*u_0 > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "runner_result": "runner_sha256=a1c030f9024835a455b1771b52306de02be5279726d226d37040a08a4d266fdf; exit_code=0; PASS=18 FAIL=0; exact-symbolic g_2(v) interval [0.659392836186702, 0.682834304553707]; the single D-style PASS is context-only PDG-bracketing hygiene and is not load-bearing on the bounded implication.",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "No-go/admission gate: this row does not assert a no-go or wall closure; it states a bounded implication with explicit admissions. The admission set is u_0(SU(2)) in [0.96,0.98], L=38.44, and the standard one-loop SU(2) running equation; treating those as hypotheses, not derived outputs, avoids hidden-wall inflation. The load-bearing algebra then closes: the denominator is 16*pi*u_0^2 - (b_2/(2*pi))*L, monotonicity maps u_hi to the lower g_2 endpoint and u_lo to the upper endpoint, and the exact runner reproduces the displayed interval. Residual risk is bounded-scope only: deriving u_0, the scale ratio, or the one-loop RGE from framework primitives would require separate retained rows, and this audit does not promote a point value or PDG match."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:05.346117+00:00",
+      "archived_for_note_hash": "ed1bbb2e3a29c5cc79134fdb6b957d2bf3f79c655afda1056fa33a12ca3595a5",
+      "audit_date": "2026-06-11T15:25:02.600056+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "The abstract R^+ algebraic identities T1-T6 relating alpha_bare, u_0, alpha_LM, alpha_s(v), and the optional positive substitution u_0=P^(1/4), with no physical plaquette, normalization, gauge-group, running, or numerical target import.",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "Given admitted Wilson canonical-normalization g_bare = 1, the standard Wilson \u03b2 relation/field-strength rescaling, and retained graph-first SU(3) giving N_c = 3, \u03b2 = 6 and F^lattice = \u03a9^Cl(3) within the stated lattice expansion.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "The audited scope is the algebraic substitution from the five stated inputs X0-X4 to the SU(2)_L one-loop coefficient closed form, its 19/6 framework value, and the listed sector decomposition and corollaries.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration",
+          "native_gauge_closure_note": "positive_theorem",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+          "native_gauge_closure_note": "retained",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+          "native_gauge_closure_note",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "a1c030f9024835a455b1771b52306de02be5279726d226d37040a08a4d266fdf",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-152213-5af2b826d9-g_2_v_bounded_interval_narro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra and endpoint arithmetic close once the six inputs are assumed. The restricted packet does not close those inputs from cited authorities: the provided YT_EW_COLOR_PROJECTION_THEOREM authority is a kappa-family no-go and does not supply the load-bearing g_2^2|_lattice = 1/(d+1) = 1/4 anchor, while the u_0 interval, L=38.44, and the 1-loop running bridge remain explicit admissions.",
+      "claim_scope": "Conditional algebraic derivation of the g_2(v=246 GeV) interval from the assumed u_0 interval [0.96,0.98], b_2=19/6, lattice anchor 1/alpha_bare=16*pi, tadpole vertex-power identity, one-loop running equation, and L=38.44.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T15:25:02.600056+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substituting 1/alpha_2^tadpole|_lattice = 16*pi*u_0^2 and L = ln(M_Pl/v) into the 1-loop running equation gives 1/alpha_2(v) = 16*pi*u_0^2 - (b_2/(2*pi))*L, then inversion gives the displayed g_2(v) interval with reversed endpoints.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide or cite a retained authority that actually supplies g_2^2|_lattice = 1/(d+1) = 1/4 for SU(2), and separately register the admitted RGE/u_0/L premises if the row is intended to remain bounded rather than fully derived.",
+      "open_dependency_paths": [
+        "docs/YT_EW_COLOR_PROJECTION_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Independent arithmetic confirms the substitution, monotonic endpoint reversal, exact S10/S11 forms, displayed interval endpoints, width, midpoint, u_0=1 counterfactual, and the stated L-sensitivity scale. The runner source genuinely performs symbolic algebra for the conditional computation, but it also includes one non-load-bearing PDG comparator check. The retained-authority chain is incomplete because the cited YT_EW_COLOR_PROJECTION_THEOREM packet does not provide the lattice coupling anchor used in R1, and several other inputs are explicit external admissions rather than closed retained derivations."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.750129+00:00",
+      "audit_date": "2026-06-13T02:08:55.484327+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "The abstract R^+ algebraic identities T1-T6 relating alpha_bare, u_0, alpha_LM, alpha_s(v), and the optional positive substitution u_0=P^(1/4), with no physical plaquette, normalization, gauge-group, running, or numerical target import.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "Conditional algebraic anchor: given the Wilson convention, the QFT fine-structure convention, the assumed retained_bounded input g_2^2|_lattice = 1/(d+1) at d=3, and SU(2) Wilson N=2, the note derives alpha_2|_lattice = 1/(16 pi), reciprocal 16 pi, beta_W = 16, and stated algebraic corollaries.",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "The audited scope is the algebraic substitution from the five stated inputs X0-X4 to the SU(2)_L one-loop coefficient closed form, its 19/6 framework value, and the listed sector decomposition and corollaries."
+        },
+        "dep_claim_type": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "bounded_theorem",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "retained",
+          "native_gauge_closure_note": "retained",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "retained_bounded",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "79ea39d0b4ca559e7bf1bd1680491d7be39cec0332e694fba0f89a88e4f1cdf3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-020541-c4fa5f1f13-g_2_v_bounded_interval_narro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic substitution, endpoint reversal, positivity of the denominator, and displayed decimal endpoints check out independently of the runner. Closure is only over the declared retained inputs plus the named external admissions, not a derivation of those admissions.",
+      "claim_scope": "Conditional algebraic bounded interval for g_2(v=246 GeV) from u_0 in [0.96,0.98], b_2=19/6, 1/alpha_2^bare=16*pi, alpha_tadpole=alpha_bare/u_0^2, L=38.44, and the admitted one-loop RGE.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T02:08:55.484327+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "Substitute the lattice/tadpole boundary value 1/alpha_2(M_Pl) = 16*pi*u_0^2 into the admitted one-loop RGE to get 1/alpha_2(v) = 16*pi*u_0^2 - (b_2/(2*pi))*L, then invert to g_2(v) = sqrt(4*pi/(16*pi*u_0^2 - (b_2/(2*pi))*L)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained or Tier-A-admitted bridge rows for the u_0 interval, the scale-ratio/lattice-to-M_Pl running boundary, and the one-loop RGE before seeking clean status; also recheck the non-load-bearing X1 prose that cites 0.988 outside [0.96,0.98].",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The runner source performs genuine symbolic and numeric checks rather than merely printing constants, and an independent calculation reproduces g_lo = 0.659392836186702 and g_hi = 0.682834304553707. The load-bearing step is class A algebra over supplied inputs. However, the result imports X1, X6, and X7 as explicit named external admissions, and the restricted packet does not close those inputs as retained framework derivations. Therefore the bounded implication is valid conditionally but is not eligible for audited_clean under the supplied rubric."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:39.811900+00:00",
+      "archived_for_note_hash": "b98717119b93fcd3766f544d1da46cb03f50e1a9d22bf060b4436afc76b50a99",
+      "audit_date": "2026-06-14T03:01:18.036990+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "The abstract R^+ algebraic identities T1-T6 relating alpha_bare, u_0, alpha_LM, alpha_s(v), and the optional positive substitution u_0=P^(1/4), with no physical plaquette, normalization, gauge-group, running, or numerical target import.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "Conditional algebraic anchor: given the Wilson beta convention, the fine-structure convention, the assumed SU(2)_L lattice coupling g_2^2 = 1/4 at d = 3, and SU(2) dimension N = 2, the note derives alpha_2|_lattice = 1/(16 pi), 1/alpha_2|_lattice = 16 pi, and beta_W|_lattice = 16.",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "The audited scope is the algebraic substitution from the five stated inputs X0-X4 to the SU(2)_L one-loop coefficient closed form, its 19/6 framework value, and the listed sector decomposition and corollaries."
+        },
+        "dep_claim_type": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "bounded_theorem",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "retained",
+          "native_gauge_closure_note": "retained",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "retained_bounded",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "79ea39d0b4ca559e7bf1bd1680491d7be39cec0332e694fba0f89a88e4f1cdf3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-025741-0dc11c5f21-g_2_v_bounded_interval_narro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic substitution and endpoint arithmetic close on their stated assumptions, and independent numeric checks reproduce the displayed interval and sensitivity estimates. The retained-grade chain does not close unconditionally because X1, X6, and X7 remain unretired named external admissions rather than derived or registered retained inputs in the restricted packet.",
+      "claim_scope": "Conditional algebraic bounded-interval evaluation of g_2(v=246 GeV) from the admitted u_0 interval, retained b_2, retained SU(2) lattice-alpha anchor, retained tadpole identity, and admitted one-loop RGE/log input.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T03:01:18.036990+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substitute 1/alpha_2^tadpole = 16*pi*u_0^2 into the admitted one-loop RGE to obtain 1/alpha_2(v) = 16*pi*u_0^2 - (b_2/(2*pi))*L, then invert to g_2(v) and use monotonicity in u_0 for the endpoint reversal.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained or Tier-A admitted bridge rows for X1 u_0(SU(2)), X6 ln(M_Pl/v), and X7 the one-loop RGE form, or explicitly register them as accepted bounded-tier admissions before re-auditing for clean bounded retention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure over the stated inputs; the runner computes the symbolic expressions rather than merely printing constants, and the displayed S10/S11 endpoint forms, interval width, midpoint, no-improvement counterfactual, and L-sensitivity check out independently. The four markdown-linked authorities are retained-grade or retained_bounded in the packet. However, the theorem still imports the u_0 literature interval, the scale-log value, and the one-loop RGE form as named external admissions, so the audit can ratify only the conditional implication, not a closed retained derivation of g_2(v)."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:04.978947+00:00",
+      "archived_for_note_hash": "ccf8e09ddbc6b8dd3b0a1545eb467a7860f9edc240c07d5894d86c47e2198ee0",
+      "audit_date": "2026-06-16T02:39:42.134330+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "The abstract R^+ algebraic identities T1-T6 relating alpha_bare, u_0, alpha_LM, alpha_s(v), and the optional positive substitution u_0=P^(1/4), with no physical plaquette, normalization, gauge-group, running, or numerical target import.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "Conditional algebraic anchor: given the Wilson beta convention, the fine-structure convention, the assumed SU(2)_L lattice coupling g_2^2 = 1/4 at d = 3, and SU(2) dimension N = 2, the note derives alpha_2|_lattice = 1/(16 pi), 1/alpha_2|_lattice = 16 pi, and beta_W|_lattice = 16.",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "The audited scope is the algebraic substitution from the five stated inputs X0-X4 to the SU(2)_L one-loop coefficient closed form, its 19/6 framework value, and the listed sector decomposition and corollaries.",
+          "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15": "Algebraic/calculus bridge proving the inverse-alpha one-loop propagation law and the rounded Planck-to-hierarchy-candidate scale log from the cited beta coefficient, alpha convention, scale primitive, and hierarchy candidate map."
+        },
+        "dep_claim_type": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "bounded_theorem",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "retained",
+          "native_gauge_closure_note": "retained",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "retained_bounded",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15": "retained_bounded"
+        },
+        "deps": [
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+          "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "2219639b46a7852feb93ae0843c409f3f858539b415561dbbee86074bbb847e1",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-023522-38c93a2997-g_2_v_bounded_interval_narro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The substitution algebra, monotonic endpoint reversal, and decimal endpoints check out independently. The full chain does not close from retained-grade inputs because the u_0(SU(2)) interval is a row-local literature admission/open residual, not derived or registered as an approved primitive in the restricted packet.",
+      "claim_scope": "Audited the algebraic bounded-interval readout for g_2(v_cand) from u_0 in [0.96,0.98], b_2=19/6, 1/alpha_2^bare=16*pi, the tadpole identity, and the retained_bounded scale/RGE bridge with L=38.44.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T02:39:42.134330+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substituting the lattice anchor and tadpole identity into the bridged one-loop law gives 1/alpha_2(v)=16*pi*u_0^2-(b_2/(2*pi))*L, hence g_2(v)=sqrt(4*pi/(16*pi*u_0^2-(b_2/(2*pi))*L)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or audit a retained/Tier-A SU(2) u_0(SU(2)) interval/value authority, and reconcile the admitted [0.96,0.98] interval with the source note's own 0.988 weak-coupling readout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "Issue: the load-bearing formula is exact algebra, but X1 u_0(SU(2)) in [0.96,0.98] is an explicit literature import with no retained/Tier-A authority in this packet; the source prose also cites a 0.988 weak-coupling readout outside the stated upper endpoint. Why this blocks: the numerical interval is sensitive to u_0 and cannot be retained as framework-closed from the one-hop retained authorities alone. Repair target: add or audit a direct retained/Tier-A u_0(SU(2)) bounded authority, or a framework-native nonperturbative/Monte-Carlo bridge; claim boundary until fixed: the displayed g_2 interval is a correct conditional algebraic readout given X1 and the retained bridge inputs."
+    },
+    {
+      "archived_at": "2026-06-19T10:11:54.587509+00:00",
+      "archived_for_note_hash": "650baafb08016fc0d41ffa79597c1a3f555d593cd073cb683a945ca8508f5d05",
+      "audit_date": "2026-06-18T12:33:08.041067+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "The abstract R^+ algebraic identities T1-T6 relating alpha_bare, u_0, alpha_LM, alpha_s(v), and the optional positive substitution u_0=P^(1/4), with no physical plaquette, normalization, gauge-group, running, or numerical target import.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "Conditional algebraic anchor: given the Wilson beta convention, the fine-structure convention, the assumed SU(2)_L lattice coupling g_2^2 = 1/4 at d = 3, and SU(2) dimension N = 2, the note derives alpha_2|_lattice = 1/(16 pi), 1/alpha_2|_lattice = 16 pi, and beta_W|_lattice = 16.",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "Algebraic substitution of retained/bounded count inputs and the named Peskin-Schroeder beta-formula admission to derive the SU(2)_L b_2 closed form, its 19/6 framework value, sector decomposition, and listed algebraic corollaries.",
+          "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15": "Algebraic bridge deriving the one-loop inverse-alpha propagation formula and the rounded Planck-to-hierarchy-candidate scale log from cited retained-grade inputs and the approved scale-reference primitive."
+        },
+        "dep_claim_type": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "bounded_theorem",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "retained",
+          "native_gauge_closure_note": "retained",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": "retained_bounded",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15": "retained_bounded"
+        },
+        "deps": [
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+          "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+          "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "6ab1633d73c0372a14e8843fd54ea11a5a6592efbe7e75189195357b69e8b006",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-g_2_v_bounded_interval_narrow_theorem_note_2026-05-17-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The substitution, monotonicity, and endpoint arithmetic close once the row-local X1 u_0 interval is accepted. The retained-grade chain still depends on that explicit literature admission, so the result is conditional rather than unbounded clean.",
+      "claim_scope": "Algebraic bounded-interval evaluation of g_2(v_cand) from the admitted u_0(SU(2)) interval [0.96,0.98], retained b_2=19/6, retained lattice-alpha/tadpole inputs, and the retained_bounded scale/RGE bridge with L=38.44.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T12:33:08.041067+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substituting the tadpole-improved lattice boundary into the bridged one-loop inverse-alpha law gives 1/alpha_2(v)=16*pi*u_0^2-(b_2/(2*pi))*L, hence g_2(v)=sqrt(4*pi/(16*pi*u_0^2-(b_2/(2*pi))*L)) with reversed endpoints by monotonicity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained framework-native SU(2) u_0(SU(2)) interval/value authority or an approved admission-retirement theorem, then re-audit the same algebraic interval closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "Issue: the class-A algebra and exact-rational runner reproduce the stated interval and endpoint reversal. Why this blocks a clean verdict: the interval still depends on the row-local literature admission u_0(SU(2)) in [0.96,0.98], which is not derived or supplied by a retained authority in the restricted packet. Repair target: add a retained SU(2) u_0 interval/value theorem or approved admission-retirement authority. Claim boundary until fixed: the conditional bounded interval follows from X1-X7, but X1 remains imported."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py",
+  "title": "g_2(v) Bounded Interval Narrow Theorem (Native SU(2) u0 Interval)",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

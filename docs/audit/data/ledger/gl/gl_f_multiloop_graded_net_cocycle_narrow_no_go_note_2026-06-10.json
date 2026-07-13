@@ -1,0 +1,232 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go (route-pruning, with an exact classification theorem as",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
+    "minimal_axioms",
+    "fermion_parity_z2_grading_theorem_note_2026-05-02",
+    "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10",
+    "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+    "ring_monodromy_does_not_force_car_note_2026-06-04",
+    "car_from_positivity_neutrality_note_2026-06-02",
+    "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "84d7a39ebf6622d88ebaa49c5810b24cd0e44d2f32bf1b652f720e59d78ec2ee",
+  "note_path": "docs/GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.957803+00:00",
+      "audit_date": "2026-06-13T02:22:21.347742+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "car_from_positivity_neutrality_note_2026-06-02": "Route-local audit of whether the finite transfer-operator positivity, Stone readout, and tested two-slice reflected Gram witness force CAR over the hard-core-boson frame in the finite qubit hopping models.",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "The finite positive-N Pauli tensor-product identity that F=\u2297_x \u03c3_3^{(x)} is Hermitian unitary, involutive, has \u00b11 parity eigenspaces of dimension 2^{N-1}, anticommutes with one-site ladder operators, and commutes with number operators and \u03c3_+^{(x)}\u03c3_-^{(y)} bilinears.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28": "Audited the narrow no-go that the on-site spinor 2pi=-1 sign does not force CAR over hard-core-boson statistics via the rotation-exchange route on the one-qubit operator algebra over the Z^3 substrate.",
+          "minimal_axioms": null,
+          "ring_monodromy_does_not_force_car_note_2026-06-04": "On the explicit finite one-qubit-per-site periodic ring, RP/emergent-time T-positivity of T=exp(-tau H), parity-sector positivity, parity conservation, ordinary locality checks, flux twists, and the tested monodromy/single-valuedness consistency do not reject the HCB ring or force the CAR/graded ring algebra; selecting CAR requires the graded boundary condition/FS premise as an input.",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame.",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "Finite tensor-product audit of the conditional discriminator: retained dimension, ungraded-algebra, parity-grading, and hopping-surface predicates are frame-blind; the defined GL(F) predicate selects Grassmann/CAR within the explicit three-candidate list; removing GL(F) restores the retained no-go tie."
+        },
+        "dep_claim_type": {
+          "car_from_positivity_neutrality_note_2026-06-02": "no_go",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28": "no_go",
+          "minimal_axioms": "meta",
+          "ring_monodromy_does_not_force_car_note_2026-06-04": "no_go",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "car_from_positivity_neutrality_note_2026-06-02": "retained_no_go",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28": "retained_no_go",
+          "minimal_axioms": "meta",
+          "ring_monodromy_does_not_force_car_note_2026-06-04": "retained_no_go",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "car_from_positivity_neutrality_note_2026-06-02",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
+          "minimal_axioms",
+          "ring_monodromy_does_not_force_car_note_2026-06-04",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "9bd4be74c417728395212f68f19f380c79a641d2fe7b1aa3a4212e7e6d30fba9",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-a238c3c2b9-gl_f_multiloop_graded_net_co",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Klein-string algebra gives realizability iff eps is symmetric: necessity follows from nonzero psi_x psi_y and double application of R3, while sufficiency follows by explicit mask construction. For symmetric eps, the inversion-set sign gives exchange-groupoid path independence, and the lattice-loop/framing checks supply no selector, so eps == +1 is a valid countermodel to GL(F) forcing.",
+      "claim_scope": "On finite Z^3 qubit blocks with the retained F grading and R1-R4 site-field surface, multi-loop graded-net cocycle consistency does not force GL(F), because the hard-core eps == +1 assignment is jointly realizable and loop-consistent alongside CAR.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-13T02:22:21.347742+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The decisive step is that the assignments passing the multi-loop cocycle conditions are exactly the symmetric exchange-sign assignments, and that set contains the commuting assignment eps == +1.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the non-load-bearing uniformity wording; the clean no-go rests on eps == +1 passing the route, not on reducing all symmetric eps to only two uniform characters.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 13,
+        "C": 14,
+        "D": 9,
+        "total_pass": 44
+      },
+      "verdict_rationale": "The cited dependencies are retained-grade or the accepted minimal-axiom premise, and no Tier-A admission, registered primitive, external comparator, fitted scale, or hidden FS premise is imported. The runner source performs actual finite tensor-product, sign-calculus, S4 Cayley-graph, and GF(2) rank computations rather than printing constants, and the load-bearing classification also checks by direct algebra. The N1-N8 no-go discipline passes for the route-scoped claim: the result closes the multi-loop cocycle route only, while Tier-A admission, emergent-continuum migration, and future principles outside this route remain open."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.487725+00:00",
+      "audit_date": "2026-06-21T17:10:30.582249+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "car_from_positivity_neutrality_note_2026-06-02": "Route-local audit of whether the finite transfer-operator positivity, Stone readout, and tested two-slice reflected Gram witness force CAR over the hard-core-boson frame in the finite qubit hopping models.",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "The finite positive-N Pauli tensor-product identity that F=\u2297_x \u03c3_3^{(x)} is Hermitian unitary, involutive, has \u00b11 parity eigenspaces of dimension 2^{N-1}, anticommutes with one-site ladder operators, and commutes with number operators and \u03c3_+^{(x)}\u03c3_-^{(y)} bilinears.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28": "Audited the narrow no-go that the on-site spinor 2pi=-1 sign does not force CAR over hard-core-boson statistics via the rotation-exchange route on the one-qubit operator algebra over the Z^3 substrate.",
+          "minimal_axioms": null,
+          "ring_monodromy_does_not_force_car_note_2026-06-04": "On the explicit finite one-qubit-per-site periodic ring, RP/emergent-time T-positivity of T=exp(-tau H), parity-sector positivity, parity conservation, ordinary locality checks, flux twists, and the tested monodromy/single-valuedness consistency do not reject the HCB ring or force the CAR/graded ring algebra; selecting CAR requires the graded boundary condition/FS premise as an input.",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "Audited only the scoped no-go that the minimal qubit-on-Z^3 baseline plus ungraded operator-algebra, per-site dimension, and finite total-order JW-locality checks do not force Grassmann/fermionic statistics over the hard-core-boson frame.",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "On the explicit {free boson, hard-core boson, Grassmann/CAR} substep-1 candidate list, retained dim/algebra/grading/hopping predicates are frame-blind, while the explicitly assumed cross-site GL(F) predicate selects Grassmann/CAR conditionally; removing GL(F) restores the retained no-go tie."
+        },
+        "dep_claim_type": {
+          "car_from_positivity_neutrality_note_2026-06-02": "no_go",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28": "no_go",
+          "minimal_axioms": "meta",
+          "ring_monodromy_does_not_force_car_note_2026-06-04": "no_go",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "car_from_positivity_neutrality_note_2026-06-02": "retained_no_go",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": "retained",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28": "retained_no_go",
+          "minimal_axioms": "meta",
+          "ring_monodromy_does_not_force_car_note_2026-06-04": "retained_no_go",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "car_from_positivity_neutrality_note_2026-06-02",
+          "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
+          "minimal_axioms",
+          "ring_monodromy_does_not_force_car_note_2026-06-04",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+          "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "9bd4be74c417728395212f68f19f380c79a641d2fe7b1aa3a4212e7e6d30fba9",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof and runner establish realizability implies symmetry, explicitly realize all symmetric assignments, and certify loop consistency for symmetric assignments; eps==+1 is therefore a concrete passing countermodel to GL(F) forcing. The cited dependencies are retained-grade or accepted axiom premises, and no FS/GL(F) selector is imported.",
+      "claim_scope": "On finite Z^3 qubit blocks with the retained F grading and R1-R4 on-site data, multi-loop graded-net cocycle consistency does not force GL(F); it admits the hard-core eps==+1 frame as well as CAR.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-21T17:10:30.582249+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:car_from_positivity_neutrality_note_2026-06-02:retained_no_go->unaudited",
+      "load_bearing_step": "The set of exchange-sign assignments satisfying the multi-loop cocycle consistency conditions is exactly the symmetric set, which contains the commuting eps==+1 assignment alongside eps==-1.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should recheck the formal mapping from MC3/MC4 wording to the implemented lattice-loop and framing certificates, but this does not block the finite countermodel no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 13,
+        "C": 14,
+        "D": 9,
+        "total_pass": 44
+      },
+      "verdict_rationale": "The primary runner is not a print-only artifact: it performs dense Pauli-tensor checks, exhaustive Klein-string enumeration, S4 Cayley edge consistency, GF(2) cycle-rank computations, signed-state loop transport, multi-loop positivity batteries, and falsification checks. The load-bearing no-go follows because a jointly realized commuting assignment passes the stated consistency suite, while the algebraic Lemma 1/2 reduction prevents larger exchange-groupoid loops from adding a selector. The no-go discipline gate is satisfied in the source packet with multiple attempted routes, a collapsed single wall, explicit boundaries, and a steelman. The declared finite-block and route-pruning scope avoids claiming that GL(F) is false or that future non-loop principles are excluded."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gl_f_multiloop_cocycle_check_2026_06_10.py",
+  "title": "GL(F) via Multi-Loop Graded-Net Cocycle Consistency \u2014 the Route Closes as a No-Go (Narrow)",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

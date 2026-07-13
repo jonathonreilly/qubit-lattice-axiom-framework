@@ -1,0 +1,163 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (an explicit-constant convergence floor) + a named open window",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a3ccbe7c33820f5d167edf03683618eb61ca24570e0fc95f87b879c78e779d92",
+  "note_path": "docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.398394+00:00",
+      "audit_date": "2026-06-11T15:44:41.093075+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "Finite fixed-lattice one-plaquette SU(2) and compact U(1) Wilson diagnostics at the tested beta values, plus the local sigma and leading-loop algebra, with no continuum or physical SU(3) gap claim."
+        },
+        "dep_claim_type": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "1c1be9a59cb278bce7656a4d0ffd481ad6aeaf36b0e5e3fc59dff9840714ed11",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-154038-b9792fbbc3-su3_bulk_criticality_premise",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner computes rather than imports the SU(3) plaquette bound inputs, enumerates the Z^4 plaquette adjacency constants, and solves the analytic \u03b7_bound threshold. The standard KP criterion then supplies analyticity and exponential clustering below the threshold, so the bounded floor claim closes within its stated scope.",
+      "claim_scope": "Audited the explicit sufficient strong-coupling/KP analyticity floor \u03b20=0.00470 for pure-gauge SU(3) fundamental-Wilson theory on the fixed Z^4 plaquette graph, excluding a second-order bulk critical point only on (0,\u03b20].",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T15:44:41.093075+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "The KP bound (\u0394+1)\u03a3_{n\u22651} C_anim^{n-1}(\u03b7e)^n\u22641 with \u0394=20 and C_anim=e(\u0394+1) gives \u03b7\u22641/((\u0394+1)e(1+e)), and the analytic \u03b7_bound reaches this at \u03b20=0.00470, excluding bulk criticality on (0,\u03b20].",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the quantitative polymer-tail mass normalization and the source phrase about exact-quadrature \u03b7; the audited floor itself uses the analytic \u03b7_bound.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Independent checks of the displayed constants give \u0394=20, \u03b7crit=1/(21e(1+e))\u22480.004711, \u03b20\u2248ln(1+\u03b7crit)=0.00470, and \u03b20/6\u22480.078%. The runner source is not a print-only certificate: it enumerates the plaquette graph, evaluates the SU(3) class-function calibration, and uses the analytic Hoeffding/Jensen \u03b7_bound for the floor. The supplied upstream authority is retained_bounded, which is retained-grade for this bounded theorem, and the note leaves the remaining (\u03b20,6] interval open rather than consuming it as closed evidence."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:33.353747+00:00",
+      "audit_date": "2026-07-10T15:58:43.529483+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "Finite positivity of the explicitly defined SU(2) and compact U(1) one-plaquette integrals at beta=6, together with sampled factor inequalities and the resulting toy loop identity; no framework-native area-law, mass-gap, or continuum theorem was audited."
+        },
+        "dep_claim_type": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1c1be9a59cb278bce7656a4d0ffd481ad6aeaf36b0e5e3fc59dff9840714ed11",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00020-su3_bulk_criticality_premise",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the graph counts, convergence-threshold arithmetic, and \u03b2\u2080, but it does not establish the proof-grade bridge from the Wilson integral to the claimed polymer activities and correlation-decay estimate. It also substitutes a finite Weyl-grid check for an analytic proof of the continuum character range.",
+      "claim_scope": "The explicit sufficient interval 0 < \u03b2 \u2264 0.0047 for analyticity, exponential clustering, and exclusion of bulk criticality in four-dimensional pure SU(3) fundamental-Wilson lattice gauge theory.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:58:43.529483+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "The asserted polymer bound |z(X)| \u2264 \u03b7^{|X|}, combined with the displayed Koteck\u00fd\u2013Preiss sum, is claimed to imply analyticity and exponential clustering throughout 0 < \u03b2 \u2264 \u03b2\u2080.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a self-contained lemma proving the SU(3) character range and explicitly mapping the Wilson expansion, polymer incompatibility relation, complex-\u03b2 convergence, thermodynamic analyticity, and correlation-distance tail bound to the stated constants, then re-run the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The numerical and combinatorial calculations are internally consistent and genuinely generate the stated conservative threshold. However, decisive consequences are asserted in the runner using literal true-valued checks, while the restricted packet does not supply a rigorous polymer-factorization/KP-to-thermodynamic-analyticity-and-clustering bridge or justify the quoted mass-rate bound. The continuum SU(3) character extremum is likewise sampled rather than proven, so the advertised rigorous bounded theorem remains conditional on missing bridge lemmas."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.py",
+  "title": "A Rigorous Analyticity Floor for the SU(3) Bulk-Criticality Premise: Explicit \u03b2\u2080 With Enumerated Constants",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

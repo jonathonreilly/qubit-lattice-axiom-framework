@@ -1,0 +1,249 @@
+{
+  "audit_date": "2026-07-10T03:19:43.094692+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+    },
+    "dep_claim_type": {
+      "graph_first_selector_derivation_note": "positive_theorem",
+      "graph_first_su3_integration_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "graph_first_selector_derivation_note": "retained",
+      "graph_first_su3_integration_note": "retained"
+    },
+    "deps": [
+      "graph_first_selector_derivation_note",
+      "graph_first_su3_integration_note"
+    ],
+    "load_bearing_score": 3.822,
+    "runner_hash": "548370ce19d723635eb4681d0d156290cbef2e78bbc8e4eec732bec64d4364bf",
+    "transitive_descendants": 9
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00010-lhcm_matter_assignment_su3_b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The retained integration authority supplies the 3\u22951 decomposition and embedded su(3) action; standard representation theory and tensor-product distributivity then establish (B1)\u2013(B3). The selector authority fixes the construction's canonical scope but adds no independent load-bearing representation-theoretic step.",
+  "claim_id": "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17",
+  "claim_scope": "The algebraic SU(2)\u00d7SU(3) decomposition of the selected-axis LH-doublet sector into dimensions 6 and 2, conditional only on the retained graph-first commutant construction.",
+  "claim_type": "decoration",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-07-10T03:19:43.094692+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": "graph_first_su3_integration_note",
+  "deps": [
+    "graph_first_su3_integration_note",
+    "graph_first_selector_derivation_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "decoration_under_graph_first_su3_integration_note",
+  "effective_status_reason": "decoration_parent_retained",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
+  "load_bearing_score": 3.822,
+  "load_bearing_step": "Given the retained 3\u22951 block split and embedded su(3) action on the 3-dimensional block, standard SU(3) representation theory yields the fundamental 3 (up to conjugation) on Sym\u00b2, the trivial representation on Anti\u00b2, and hence (2,3)\u2295(2,1).",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d0524985b97709b02a24a639aa44757c4cc4f0f0d0b7faa5e985bbc30cf176f3",
+  "note_path": "docs/LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": "A second auditor should distinguish the sound conclusion from two non-load-bearing proof embellishments: gl(3)\u2295gl(1) has more than one central abelian direction, and the runner's stated commutant-dimension counterfactual is not needed to establish the nontrivial 3-dimensional action.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:26:25.975599+00:00",
+      "audit_date": "2026-05-17T18:47:57.444947+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5c9117959715a14b271a66e7fbc901e24e42b6f317f39930ec0169a538fa0c45",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260517-184523-41cdea85-lhcm_matter_assignment_s-015",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The structural decomposition follows from the cited retained 3+1 split, the gl(3) \u2295 gl(1) commutant with compact semisimple su(3), and standard finite-dimensional SU(3) representation facts. No SM species labels, hypercharge normalization, external comparator, or staggered-Dirac realization quantity is needed for this bounded algebraic statement.",
+      "claim_scope": "Algebraic SU(3) block-content corollary on the retained graph-first selected-axis LH-doublet sector: Sym\u00b2 is a 3 or 3-bar block, Anti\u00b2 is a singlet, and tensoring the weak doublet gives dimensions 6 and 2.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-17T18:47:57.444947+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "graph_first_su3_integration_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02:retained_bounded->unaudited",
+      "load_bearing_step": "Given the retained 3+1 Sym\u00b2/Anti\u00b2 split and gl(3) \u2295 gl(1) commutant, standard SU(3) representation theory gives Sym\u00b2 as a non-trivial 3-dimensional irrep, Anti\u00b2 as trivial, hence C\u00b2 \u2297 (Sym\u00b2 \u2295 Anti\u00b2) = (2,3) \u2295 (2,1).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Box as a corollary of graph_first_su3_integration_note unless a future revision makes an independent load-bearing role for the ratio theorem explicit; also re-check that B1 is grounded directly in I2's embedded Gell-Mann action rather than the weaker commutant-dimension sentence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 99,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 99
+      },
+      "verdict_rationale": "All substantive checks are class-A exact algebraic identities or standard representation facts, and the runner source does not import external numerical comparators or hard-code a contested physical value. The one-hop authorities in the packet are marked retained_bounded, so there is no open dependency blocking the structural block statement. Under the decoration policy, however, the result is a direct corollary of the graph_first_su3_integration_note's 3 \u2295 1 split and gl(3) \u2295 gl(1) commutant, with the selector and ratio inputs serving canonicity/count-consistency roles rather than supplying an independent new closure."
+    },
+    {
+      "archived_at": "2026-05-24T22:11:55.162471+00:00",
+      "archived_for_note_hash": "daac56dcbcc5d761e2777f62ad47f570fd28a42ed01021c319dc547cec3c2386",
+      "audit_date": "2026-05-22T17:21:48.524503+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5c9117959715a14b271a66e7fbc901e24e42b6f317f39930ec0169a538fa0c45",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T172125Z-88bf0801-lhcm_matter_assignment_s-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic implication B1-B3 closes conditionally from I1-I2 plus standard representation theory, but the packet marks the cited LH-doublet ratio authority as decoration_under_graph_first_su3_integration_note rather than retained-grade. The retained-grade dependency premise asserted by the source note is therefore not satisfied in the restricted packet.",
+      "claim_scope": "Audited the structural SU(3)-block representation implication B1-B3 on the LH-doublet sector from the provided one-hop graph-first selected-axis authorities and standard finite-dimensional representation theory.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T17:21:48.524503+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the retained Sym\u00b2/Anti\u00b2 split and gl(3) \u2295 gl(1) commutant, SU(3) acts as the non-trivial 3-dimensional irrep on Sym\u00b2 and trivially on the 1-dimensional Anti\u00b2 block, so C\u00b2 \u2297 (Sym\u00b2 \u2295 Anti\u00b2) = (2,3) \u2295 (2,1).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: re-audit or replace the LH-doublet traceless abelian ratio dependency with a retained-grade authority, or rescope this theorem so I3/C2 is non-load-bearing.",
+      "open_dependency_paths": [
+        "docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 99,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 99
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class A algebraic representation-theory closure, and the runner source performs exact symbolic checks rather than merely printing constants. However, one cited load-bearing authority, docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md, is supplied with effective_status decoration_under_graph_first_su3_integration_note and claim_type decoration, not retained, retained_no_go, or retained_bounded. Under the rubric, retained status cannot propagate through that non-retained cited dependency even though the narrow block algebra itself is sound conditional on the inputs."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.940212+00:00",
+      "audit_date": "2026-05-25T12:22:44.182899+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5c9117959715a14b271a66e7fbc901e24e42b6f317f39930ec0169a538fa0c45",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T122203Z-25417eb1-lhcm_matter_assignment_s-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained integration note supplies the 3+1 tau split and gl(3) \u2295 gl(1) commutant with su(3) on the 3-block, while the selector note supplies canonical axis selection. Standard finite-dimensional SU(3) representation facts and tensor-product distributivity then yield B1-B3 without importing SM labels or hypercharge normalization.",
+      "claim_scope": "Algebraic block-representation implication from the retained graph-first SU(3) integration and selector inputs: the LH-doublet sector decomposes as (2,3) \u2295 (2,1) with dimensions 6 and 2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T12:22:44.182899+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:5c911795->548370ce",
+      "load_bearing_step": "Given the retained Sym\u00b2/Anti\u00b2 split and gl(3) \u2295 gl(1) commutant with compact semisimple su(3), Sym\u00b2 is a non-trivial 3-dimensional SU(3) irrep, Anti\u00b2 is trivial, and C\u00b2 \u2297 (Sym\u00b2 \u2295 Anti\u00b2) = (2,3) \u2295 (2,1).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the note's non-load-bearing treatment of the ratio note stays out of the citation graph; it is not needed for the audited B1-B3 closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 99,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 99
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade cited inputs, not a numerical match, external comparator, or renaming. The runner source performs exact symbolic checks of the tau eigenspaces, Gell-Mann su(3) algebra, small su(3) irrep dimensions, one-dimensional triviality, and tensor-product ranks; these support class A rather than class C. The ratio note is used only as a consistency check and is not needed for B1-B3."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 99,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 99
+  },
+  "runner_path": "scripts/audit_companion_lhcm_matter_assignment_su3_block_representation_exact_2026_05_17.py",
+  "title": "LHCM Matter-Assignment SU(3) Block-Representation Narrow Theorem (Retained-Only Substrate)",
+  "transitive_descendants": 9,
+  "verdict_rationale": "The result is a correct class-(A) algebraic unpacking of the single retained graph-first SU(3) integration theorem using standard mathematics, with no external-comparator checks. The exact-symbolic runner supports the block ranks, standard Gell-Mann representation, irrep dimensions, and tensor-product multiplicities, but it does not constitute an independent class-(C) derivation. Under the single-parent algebraic-decoration rule, this is decoration-grade rather than a new bounded theorem."
+}

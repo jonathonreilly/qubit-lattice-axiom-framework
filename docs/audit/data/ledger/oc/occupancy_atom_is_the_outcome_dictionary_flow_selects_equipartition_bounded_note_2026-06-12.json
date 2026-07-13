@@ -1,0 +1,186 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+    "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ecddf48f5db2cc7dac2001f3ed05b3d171fcf01cb362fe7ba8c309c76743ec27",
+  "note_path": "docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.509009+00:00",
+      "audit_date": "2026-06-14T03:53:56.094960+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "Audited only the bounded theorem for the supplied two-sector records/L\u00fcders map: derivation of r -> 2r^2, its finite fixed-point stability, and the S2 versus S3 entropy comparator maxima.",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "Audited only the bounded algebraic claim that r=1/2 is stable for the explicitly supplied two-sector map g(r)=sqrt(r/2), with HS 2-sector equipartition and endpoint checks as stated; no physical-arrow selection was audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "ba7576f8bca4c2b4a29db05508f0bd9e15896c2d4e45dae024f3d3479f32ecfe",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-035118-8e881a090f-occupancy_atom_is_the_outcom",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The ratio update x'=(p_d^2/Z)/(p_s^2/Z)=x^2, the monotone-coordinate conjugation, the fixed-point sets, and the rho-map arithmetic all check algebraically. The closure is bounded to the supplied dictionaries and labels; it does not derive a physical dictionary choice, weighting rule, or occupancy-cell selection.",
+      "claim_scope": "On the supplied two-outcome surface with agreement conditioning p_i -> p_i^2/Z and the stipulated dictionaries x=2r and x=r, the invariant outcome-space fixed point is x=1, read as r=1/2 or r=1 after a dictionary is supplied.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T03:53:56.094960+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "For a monotone dictionary x = phi(r), the conjugated flow has fixed equation phi(r)=phi(r)^2, so the invariant interior fixed point is x=phi(r)=1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should preserve the supplied-surface scope and re-check that no physical dictionary-selection claim is being imported.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure on the supplied finite two-outcome surface. Independent checks confirm the fixed-point equations, the component and slot readings, det(lambda K) exponent bookkeeping, and rho=(pi/g)/Z_d with r=1/(2rho). The cited non-axiom authorities are retained_bounded and the minimal-axiom authority is an accepted axiom premise; their open physical-identification language is not used beyond the bounded supplied-surface scope. This is clean only as a bounded theorem, not as a physical resolution of the occupancy binary."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.522498+00:00",
+      "audit_date": "2026-07-08T22:05:34.166225+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "Audited only the bounded theorem for the supplied two-sector records/L\u00fcders map: derivation of r -> 2r^2, its finite fixed-point stability, and the S2 versus S3 entropy comparator maxima.",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "Audited only the bounded algebraic claim that r=1/2 is stable for the explicitly supplied two-sector map g(r)=sqrt(r/2), with HS 2-sector equipartition and endpoint checks as stated; no physical-arrow selection was audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.7,
+        "runner_hash": "ba7576f8bca4c2b4a29db05508f0bd9e15896c2d4e45dae024f3d3479f32ecfe",
+        "transitive_descendants": 12
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-20260708",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra over explicitly supplied dictionaries closes, but the broader same-binary wording across Record/K-CPT outcome, kernel bookkeeping, Fock weights, and rho-map labels is not closed by the wired direct authorities in the current packet.",
+      "claim_scope": "Bounded algebra showing that, on the supplied two-outcome dictionaries x=2r and x=r, agreement-conditioned squaring selects outcome equipartition x=1 while the r-coordinate reading remains dictionary-dependent.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-08T22:05:34.166225+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:flavor_r_half_is_the_records_flow_separatrix_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "The fixed-point equation is phi(r)=phi(r)^2, so the outcome-space interior fixed point is phi(r*)=1; dictionary choices then read x=1 as r=1/2 or r=1.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire retained direct authorities for the supplied K/CPT readout-context outcome, kernel exponent, Fock weight, and rho-map dictionary labels, or split/narrow the row to the exact supplied-dictionary algebra; also repair the runner's stale git-status self-check before re-audit.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-05.md",
+        "context-only rho-map / wave companion authorities named but not linked as direct dependencies"
+      ],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "Issue: the note proves the supplied x-space fixed-point algebra, but its broader 'same binary' and Record/K-CPT outcome language uses supplied kernel/weight/rho-map labels and an old minimal-axioms quote that are not wired as retained direct authorities in the current dependency packet; the current runner also reports PASS=21 FAIL=1 because of a stale git-status self-check. Why this blocks: the audit can retain the finite dictionary algebra only after the physical/bookkeeping label authorities are direct and current, or after the claim is narrowed to purely stipulated algebra. Repair target: wire retained authorities for the supplied K/CPT readout context, kernel exponent, Fock weight, and rho-map dictionaries and repair the runner self-check/cache, or split a narrower supplied-dictionary algebra row. Claim boundary until fixed: exact algebra over stipulated x=2r and x=r dictionaries selecting x=1, with no dictionary, occupancy cell, or physical readout selected."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_occupancy_atom_outcome_dictionary_2026_06_12.py",
+  "title": "Occupancy Atom Is the Outcome Dictionary; the Conditioned Flow Selects Outcome Equipartition Invariantly",
+  "transitive_descendants": 11,
+  "verdict_rationale": null
+}

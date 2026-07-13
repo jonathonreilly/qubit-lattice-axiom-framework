@@ -1,0 +1,1889 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "post_record_measure_weight_normalization_subdivision_2026-06-06"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
+    "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d5ce7a14ca15a56969b3d8325670ee439388816633f156ce1b55443e64868d65",
+  "note_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:12.415162+00:00",
+      "archived_for_note_hash": "e9ec29ae275f0b3fc008c5783af6051186a32503054649d8689207ecf118e135",
+      "audit_date": "2026-06-06T19:40:27.016311+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "53607c332deebc2c438380a573b33800a71f7db1f6767eb1f9c2dd0734e670d6",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-193827-2bbd9601a2-post_record_selector_tangent",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The independent arithmetic checks close for the supplied toy data: (1,3) normalizes to (1/4,3/4), the 2x2 metric has positive leading minor and determinant, the stated quadratic value is 9/2, and (1,15) normalizes to (1/16,15/16). The chain does not close as written because the packet/runner reports 7 current selector_tangent_readout_weight rows against the note and hard-coded expected count of 6, and the actual selector/readout/metric authority remains supplied rather than derived.",
+      "claim_scope": "A supplied finite selector/tangent/readout weight prototype and its claimed coverage of the selector_tangent_readout_weight row bucket, with selector authority and physical measure left open.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-06T19:40:27.016311+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Supplying a finite tangent/readout carrier, a positive tangent metric or Hessian, nonnegative readout weights, and exact normalization/quadratic checks yields a finite readout/tangent weight certificate.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py in the packet and refresh the note/runner expected selector_tangent_readout_weight row count from 6 to the current 7, or narrow the coverage claim to a named six-row subset.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 23,
+        "C": 0,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The finite supplied-weight arithmetic is exact, but it is an algebraic check over supplied carrier/metric/readout inputs rather than a Record-derived selector, readout primitive, metric, Born law, or physical measure. The completed runner exits nonzero because the current selector_tangent_readout_weight bucket has 7 rows while the note and runner expect 6. The runner also dynamically imports scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py for the row bucket, but that helper source is not included in the restricted packet despite being load-bearing for the failed coverage check."
+    },
+    {
+      "archived_at": "2026-06-07T08:44:03.594783+00:00",
+      "archived_for_note_hash": "e5c072eadc9cfcda1ee76e764b44d6674b60b15647abe2ef607b382d5209d32c",
+      "audit_date": "2026-06-07T01:12:36.707065+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "74aa475d9f932c56c67046ca54c11afb87667c4e89a46eef302952fb320c037e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-011008-3523d24ec1-post_record_selector_tangent",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed finite arithmetic closes for the supplied examples: 1:3 normalizes to 1/4 and 3/4, 1:15 normalizes to 1/16 and 15/16, the metric has leading minor 3 and determinant 5, and the stated quadratic value is 9/2. The restricted packet does not derive the supplied carrier, metric/Hessian, readout/projection weights, projection map, or selector rule from Record or any retained authority.",
+      "claim_scope": "Finite supplied selector/tangent/readout weight semantics: exact normalization of supplied readout and projection weights, SPD/quadratic checks for a supplied tangent metric or Hessian, and claimed coverage of seven selector_tangent_readout_weight rows, without deriving selector, readout, metric, or physical-measure authority.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-07T01:12:36.707065+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Supplied finite tangent/readout carrier plus supplied positive tangent metric or Hessian and supplied nonnegative readout weights, with exact normalization and quadratic checks, yields a finite readout/tangent weight certificate.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade derivation of the selector/tangent/readout carrier, positive metric or Hessian, projection/readout normalization, and selector rule from accepted premises; include the full measure-subdivision helper source if row coverage remains load-bearing.",
+      "open_dependency_paths": [
+        "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 29,
+        "C": 0,
+        "D": 0,
+        "total_pass": 48
+      },
+      "verdict_rationale": "The independent formula inventory agrees with the runner's finite algebraic checks: the normalizations, SPD determinant test, and quadratic evaluation are exact over the supplied rational inputs. These are class-A checks over supplied objects, not a first-principles class-C construction from the framework baseline. The note explicitly imports a supplied tangent/readout carrier, metric or Hessian, readout/projection weights, and selector context, while also stating that selector authority, Born law, physical measure, and Record-derived readout remain open. The row-bucket coverage also depends on the measure-subdivision support path, so the packet supports conditional supplied-weight semantics rather than an audited-clean positive theorem."
+    },
+    {
+      "archived_at": "2026-06-08T12:37:21.051215+00:00",
+      "archived_for_note_hash": "c8d9acec0ad8aee3defbca2623a574d6760193199ec6d380f105e58350a256ce",
+      "audit_date": "2026-06-07T18:54:30.607675+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "Audited the read-only 45-row measure_weight_normalization subdivision and the finite supplied-weight normalization certificate, with no derivation of a prior, source measure, Born law, production dynamics, or selected dial."
+        },
+        "dep_claim_type": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "retained"
+        },
+        "deps": [
+          "post_record_measure_weight_normalization_subdivision_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "74aa475d9f932c56c67046ca54c11afb87667c4e89a46eef302952fb320c037e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-185150-482058564b-post_record_selector_tangent",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite arithmetic checks close under the supplied weights and supplied symmetric metric example, but the packet supplies rather than derives the carrier, readout weights, and tangent metric/Hessian. The missing step is a retained bridge theorem deriving or accepting the selector/tangent/readout structure from Record or another accepted premise.",
+      "claim_scope": "Finite supplied selector/tangent/readout weight prototype for exact normalization and SPD/quadratic checks over the 7 selector_tangent_readout_weight rows, without deriving selector authority.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-07T18:54:30.607675+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "supplied finite tangent/readout carrier + supplied positive tangent metric or Hessian + supplied nonnegative readout weights + exact normalization and quadratic check => finite readout/tangent weight certificate",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge deriving or explicitly accepting the selector/tangent/readout carrier, readout weights, and positive tangent metric/Hessian, or keep the row scoped as supplied-support only.",
+      "open_dependency_paths": [
+        "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 30,
+        "C": 0,
+        "D": 0,
+        "total_pass": 48
+      },
+      "verdict_rationale": "The independent formula inventory checks out: 15+7+10+7+6=45, weights (1,3) normalize to (1/4,3/4), weights (1,15) normalize to (1/16,15/16), the displayed metric has determinant 5>0, and q(1,1/2)=9/2. The runner performs anchor checks, finite Fraction arithmetic, row extraction, and hard-coded firewall flags; it contains no first-principles class C derivation. The claim is therefore valid only as supplied finite certificate semantics, not as an unconditional derivation of readout, tangent metric, selector authority, Born law, or physical measure."
+    },
+    {
+      "archived_at": "2026-06-08T18:21:45.491749+00:00",
+      "archived_for_note_hash": "aaf9d902be08eb13adbf13a31f6dcc18a5811f32f4ca964ee66d84c58db47b47",
+      "audit_date": "2026-06-08T16:13:37.442939+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "Audited the read-only 45-row measure_weight_normalization subdivision and the finite supplied-weight normalization certificate, with no derivation of a prior, source measure, Born law, production dynamics, or selected dial."
+        },
+        "dep_claim_type": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "retained"
+        },
+        "deps": [
+          "post_record_measure_weight_normalization_subdivision_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "07b7d0a68ce7ce42efde8c0b114a558e3ea44dd841d4cef8a4ff09c364d92449",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-161041-a829cd353b-post_record_selector_tangent",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite normalization and SPD/quadratic identities close over the supplied numerical packet. The chain does not close to retained selector/tangent/readout authority because no retained bridge derives or accepts the carrier, readout weights/map, and tangent metric/Hessian.",
+      "claim_scope": "Supplied finite readout/tangent weight certificate semantics for the selector_tangent_readout_weight lane, including finite normalization, SPD/quadratic checks, and 7-row bookkeeping, excluding selector authority, Record-derived readout/metric, physical measure, Born law, and dynamics.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-08T16:13:37.442939+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "supplied finite tangent/readout carrier + supplied positive tangent metric or Hessian + supplied nonnegative readout weights + exact normalization and quadratic check => finite readout/tangent weight certificate",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained bridge deriving or explicitly accepting the finite selector/tangent/readout carrier, readout weights/readout map, and positive tangent metric/Hessian for the 7 rows.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 33,
+        "C": 0,
+        "D": 0,
+        "total_pass": 51
+      },
+      "verdict_rationale": "The displayed quantitative checks are internally consistent: weights {1,3} normalize to {1/4,3/4}, the metric [[3,1],[1,2]] is SPD with determinant 5, the quadratic check gives 9/2, and projection weights {1,15} normalize to {1/16,15/16}. The load-bearing step is class A finite arithmetic, not a class C derivation from the framework baseline. Because the carrier, readout weights/readout map, and positive tangent metric/Hessian remain explicitly supplied rather than derived from Record or supplied by a relevant approved primitive, the result remains supplied-support only."
+    },
+    {
+      "archived_at": "2026-06-09T08:58:08.005499+00:00",
+      "archived_for_note_hash": "bd827d05d2c695a9fc305789ef1d85288efc75a5da6560c1960585b3825307e3",
+      "audit_date": "2026-06-08T21:11:43.919907+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "Audited the read-only 45-row measure_weight_normalization subdivision and the finite supplied-weight normalization certificate, with no derivation of a prior, source measure, Born law, production dynamics, or selected dial."
+        },
+        "dep_claim_type": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "retained"
+        },
+        "deps": [
+          "post_record_measure_weight_normalization_subdivision_2026-06-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "d4c523f1631eac79f9677faef3222eca1724c66983bad0f203eb5dfe1527f646",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-210843-80cf2e25c3-post_record_selector_tangent",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite arithmetic closes only relative to supplied packet data: 1:3 and 1:15 normalize as claimed, the 2x2 metric has determinant 5 and positive leading minor, and the stated quadratic value is 9/2. The missing step is a retained or approved bridge deriving or accepting the carrier, readout map, readout weights, and positive tangent metric/Hessian; the completed runner also reports 8 current selector/tangent/readout rows, not the note's 7.",
+      "claim_scope": "Supplied-support finite selector/tangent/readout certificate for normalized supplied weights and a supplied positive 2x2 tangent metric/Hessian, plus the note's claimed 7-row bucket coverage, with no selector authority.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-08T21:11:43.919907+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "supplied finite tangent/readout carrier + supplied positive tangent metric or Hessian + supplied nonnegative readout weights + exact normalization and quadratic check => finite readout/tangent weight certificate",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py as a helper source and refresh the selector_tangent_readout_weight row-count claim/expectation from 7 to the current 8; a later clean audit would still need a retained bridge or approved primitive for the supplied carrier, readout map, weights, and metric/Hessian.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 37,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The load-bearing checks are exact finite algebra on supplied inputs, not first-principles computation from the framework baseline. The source note explicitly says the carrier, readout weights/readout map, metric, and Hessian are supplied finite packet data and are not accepted framework primitives; the primitive registry text in the packet lists only the unrelated scale-reference primitive. The completed runner has one substantive failure: the current selector_tangent_readout_weight row count is 8 while the note and runner expectation say 7. The helper-source packet also omits the dynamically imported measure subdivision runner, so the row-enumeration path is not fully source-verifiable inside the restricted packet."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:32.588357+00:00",
+      "archived_for_note_hash": "0768b0e31deacdc0a7186fcb1a698e51ee98e18bf7337d2f254f7ff985b7765a",
+      "audit_date": "2026-06-09T13:56:06.991088+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "Read-only subdivision of the current 45 measure_weight_normalization rows into the five stated lanes, plus the finite algebraic normalization certificate for supplied weights; no prior, physical weight rule, selector, Born law, or dynamics is derived."
+        },
+        "dep_claim_type": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "retained"
+        },
+        "deps": [
+          "post_record_measure_weight_normalization_subdivision_2026-06-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "ed59a70f5eb48df3687ec708c9e4522d8eef39d2fac7344db9726f3e3c5c169c",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260609-135400-3f9c2600cd-post_record_selector_tangent",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite arithmetic checks close for the supplied packet, but the restricted packet does not derive or accepted-premise-register the carrier, readout weights/readout map, positive tangent metric/Hessian, or selector bridge. Those missing structures are required before the packet could become selector/tangent/readout authority.",
+      "claim_scope": "Audited only the supplied finite selector/tangent/readout weight prototype: exact normalization of supplied nonnegative readout/projection weights, an SPD 2x2 supplied tangent metric, exact quadratic norm arithmetic, and bookkeeping that the selector_tangent_readout_weight lane currently has 8 rows.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-09T13:56:06.991088+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Supplied finite tangent/readout carrier plus supplied positive tangent metric or Hessian plus supplied nonnegative readout weights and exact normalization/quadratic checks imply a finite readout/tangent weight certificate.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained bridge deriving or explicitly accepting the selector/tangent/readout carrier, readout weights/readout map, and positive tangent metric/Hessian; otherwise keep this row scoped as supplied-support only.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 38,
+        "C": 0,
+        "D": 0,
+        "total_pass": 56
+      },
+      "verdict_rationale": "The runner performs real finite Fraction arithmetic for normalization, SPD, and quadratic checks, and an independent check confirms the displayed ratios 1/4, 3/4, 1/16, 15/16 and quadratic value 9/2. The runner and helpers also hard-code supplied weights, the supplied metric, expected row counts, and regex ledger bucketing; they do not derive the readout carrier, readout map, metric/Hessian, selector, Born law, or physical measure from retained framework primitives. The cited retained authority supports finite normalization semantics and row subdivision, but it explicitly leaves selector/tangent/readout bridges supplied rather than closed."
+    },
+    {
+      "archived_at": "2026-06-19T10:12:04.363885+00:00",
+      "archived_for_note_hash": "9ceef259139ae4dbd5b10e9fb96b1c0e9494f3d98fbcfd09c0d71175794b8a11",
+      "audit_date": "2026-06-18T14:18:03.269914+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": null
+        },
+        "dep_claim_type": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "meta"
+        },
+        "dep_effective_status": {
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "meta"
+        },
+        "deps": [
+          "post_record_measure_weight_normalization_subdivision_2026-06-06"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "02ce4bcce08cd981f00e93c11e45e63eae76886149be675f7ea43ef1da0f5694",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-post_record_selector_tangent_readout_weight_prototype_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra closes only under the supplied packet assumptions, but the full chain from Record or retained cited inputs to those supplied structures does not. Missing step: a retained derivation or explicit approved acceptance of the carrier, readout weights/map, and positive metric/Hessian.",
+      "claim_scope": "Given supplied finite selector/tangent/readout carrier data, supplied nonnegative readout weights, and a supplied positive tangent metric/Hessian, the packet checks exact finite normalization and quadratic positivity while leaving selector/readout authority open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T14:18:03.269914+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "supplied finite tangent/readout carrier + supplied positive tangent metric or Hessian + supplied nonnegative readout weights + exact normalization and quadratic check => finite readout/tangent weight certificate",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge or approved primitive explicitly deriving or accepting the selector/tangent/readout carrier, readout map/weights, and positive tangent metric/Hessian; otherwise keep the row scoped as supplied-support open_gate.",
+      "open_dependency_paths": [
+        "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 49,
+        "C": 0,
+        "D": 0,
+        "total_pass": 56
+      },
+      "verdict_rationale": "Issue: the runner verifies exact finite normalization, SPD, and quadratic checks only after the carrier, readout weights/map, and tangent metric/Hessian are supplied. Why this blocks: neither the source note nor the cited conditional/meta subdivision derives or approves those structures from Record, and no listed primitive covers selector/readout/metric/weight authority. Repair target: a retained bridge theorem or approved primitive accepting those structures within scope. Claim boundary until fixed: the packet is a supplied finite weight certificate and row-bookkeeping support, not selector/tangent/readout authority or a Record-derived positive theorem."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.512375+00:00",
+      "audit_date": "2026-06-19T23:18:23.012462+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "post_record_measure_weight_normalization_subdivision_2026-06-06"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "c80bb67ce5f2d6895e6ba2b859cd2ffe2bb0e761ba7d17d00737339c4ff358c6",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-post_record_selector_tangent_readout_weight_prototype_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact normalization, SPD, and quadratic checks close for the finite packet instantiated in the runner. The chain does not close as framework authority because no cited retained theorem supplies the carrier, readout weights/map, tangent metric, or Hessian from Record.",
+      "claim_scope": "Supplied finite selector/tangent/readout arithmetic diagnostic and row-indexing check; no Record-derived selector, readout, tangent metric, Hessian, or weighting authority.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-19T23:18:23.012462+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "A supplied finite tangent/readout carrier with supplied positive tangent metric or Hessian and supplied nonnegative readout weights passes exact normalization and quadratic checks, yielding finite readout/tangent weight arithmetic only inside that supplied packet.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge deriving or explicitly accepting the finite selector/tangent/readout carrier, readout weights/map, and positive tangent metric/Hessian, then rerun the audit.",
+      "open_dependency_paths": [
+        "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 56,
+        "C": 0,
+        "D": 0,
+        "total_pass": 81
+      },
+      "verdict_rationale": "Issue: The finite arithmetic checks close only after the carrier, readout weights/map, and positive tangent metric/Hessian are supplied. Why this blocks: The Record axiom explicitly supplies none of those structures, and the measure/weight subdivision authority is itself conditional/meta rather than retained-grade theorem authority. Repair target: Provide a retained bridge deriving or explicitly accepting the selector/tangent/readout carrier, weights, and positive metric/Hessian. Claim boundary until fixed: the packet is a valid supplied finite arithmetic diagnostic, not selector/tangent/readout authority or a bounded theorem from Record."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.741257+00:00",
+      "audit_date": "2026-07-10T02:37:43.757755+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "post_record_measure_weight_normalization_subdivision_2026-06-06"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "56624ee7dcb19d3f8f6b7b23446bbf7f808183ab9d9c67a0e9ef17086c68939f",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-post_record_selector_tan-091",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite arithmetic closes for the supplied example, but the restricted packet does not derive or accept as framework primitives the carrier, readout weights/map, or positive metric/Hessian. A retained bridge supplying those structures is missing.",
+      "claim_scope": "Exact normalization and 2\u00d72 positive-definite quadratic/readout-weight arithmetic for one explicitly supplied finite packet, excluding derivation of selector, readout, tangent, or physical-measure authority.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T02:37:43.757755+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "A supplied finite carrier, positive tangent metric or Hessian, and nonnegative readout weights permit exact normalization and quadratic-form checks within that supplied packet.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge deriving or explicitly accepting the finite carrier, readout weights/map, and positive tangent metric/Hessian, then reconcile the runner's stale row-count and source-anchor assertions and rerun.",
+      "open_dependency_paths": [
+        "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 72,
+        "C": 0,
+        "D": 0,
+        "total_pass": 79
+      },
+      "verdict_rationale": "The runner performs class-A exact arithmetic on hard-coded supplied data rather than deriving that data from the framework axioms. The measure/weight subdivision is conditional meta support, and the note explicitly leaves the carrier, weights/readout, and metric/Hessian supplied. The completed runner also exits 1 with 79 passes and 2 failures, including a live count of 20 rows against a hard-coded expectation of 17, confirming stale diagnostic assertions even though row counts are not theorem premises."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:14.880175+00:00",
+      "audit_date": "2026-07-12T10:40:41.672650+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "post_record_measure_weight_normalization_subdivision_2026-06-06": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "post_record_measure_weight_normalization_subdivision_2026-06-06"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "56624ee7dcb19d3f8f6b7b23446bbf7f808183ab9d9c67a0e9ef17086c68939f",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00290-post_record_selector_tangent",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite arithmetic closes over the hard-coded supplied packet, but no cited retained bridge derives or accepts its carrier, readout map, weights, or tangent metric/Hessian. The completed runner also reports 22 live rows against its hard-coded expectation of 17 and exits with two failures.",
+      "claim_scope": "Exact finite normalization and 2x2 positive-definite quadratic/readout-weight arithmetic for one supplied packet; neither selector authority nor current row-bucket coverage is established.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-12T10:40:41.672650+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:c9cba4bc4057",
+      "load_bearing_step": "Given a supplied finite tangent/readout carrier, supplied positive tangent metric or Hessian, and supplied nonnegative readout weights, exact normalization and quadratic checks certify finite readout/tangent arithmetic inside that packet.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Compared the claimed structures with the current accepted Record axiom and its explicit downstream exclusions.",
+            "disposition": "CLOSED",
+            "evidence_locator": "context selection, measurement basis selection, Born weights, probability",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Attempt to obtain the selector, weighting, readout context, and tangent structure directly from Record.",
+            "outcome": "Record supplies fixed additive record readout but explicitly leaves context selection, weighting, probability, tangent metrics, and Hessians downstream.",
+            "prior_witness_id": "record_nonsupply",
+            "route_class": "symmetry_or_representation",
+            "route_id": "record_axiom_selector"
+          },
+          {
+            "attempt": "Compared the desired selection with the realized-state primitive's pointwise-only boundary.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It does not supply a state, state-selection rule, averaging over alternatives, measure, weighting",
+            "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Use the supplied realized-state reference to select the readout packet or its weights.",
+            "outcome": "The primitive supplies a reference slot but no state content, measure, weighting, probability, normalization, or state-selection rule.",
+            "prior_witness_id": "realized_state_nonsupply",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "realized_state_selector"
+          },
+          {
+            "attempt": "The runner normalizes the supplied pairs (1,3) and (1,15), checks unit sum, and rejects negative weights.",
+            "disposition": "CLOSED",
+            "evidence_locator": "def normalize(weights: dict[str, Fraction])",
+            "evidence_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Promote exact normalization of supplied nonnegative weights to physical weighting or selector authority.",
+            "outcome": "The algebra closes, but it neither derives the weights nor selects their physical carrier or interpretation.",
+            "route_class": "normalization_or_units",
+            "route_id": "finite_normalization"
+          },
+          {
+            "attempt": "The runner evaluates a hard-coded rational 2x2 matrix and its quadratic form.",
+            "disposition": "CLOSED",
+            "evidence_locator": "def is_spd_2x2(metric:",
+            "evidence_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the SPD determinant and quadratic calculation to derive a physical tangent metric or Hessian.",
+            "outcome": "It proves positivity of that supplied matrix only; it does not construct the metric or Hessian from framework data.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "finite_metric"
+          },
+          {
+            "attempt": "The runner imports the subdivision helpers, enumerates live rows, and compares their count with EXPECTED_ROWS.",
+            "disposition": "CLOSED",
+            "evidence_locator": "selector/tangent row count is current snapshot",
+            "evidence_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat the live regex-defined row bucket as validation of the scientific selector/tangent/readout bridge.",
+            "outcome": "The bookkeeping is not scientific authority and the completed run reports 22 rows against the expected 17.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "ledger_bucket_authority"
+          },
+          {
+            "attempt": "The restricted authority and premise registries were checked for such a bridge.",
+            "disposition": "OPEN",
+            "evidence_locator": "They are supplied finite packet data.",
+            "evidence_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct a retained theorem deriving or explicitly accepting the carrier, readout map and weights, and positive tangent metric/Hessian.",
+            "outcome": "No supplied retained authority closes this bridge; it remains the concrete open route.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "retained_bridge"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "missing retained selector/tangent/readout carrier-and-authority bridge"
+          ],
+          "evidence_locator": "They are supplied finite packet data.",
+          "evidence_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "missing retained selector/tangent/readout carrier-and-authority bridge"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "not selector/tangent/readout authority",
+          "evidence_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "They are supplied finite packet data.",
+              "evidence_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+              "phrase": "They are supplied finite packet data.",
+              "promoted_wall": "missing retained selector/tangent/readout carrier-and-authority bridge"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "finite readout/tangent weight arithmetic inside that supplied packet",
+              "evidence_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+              "phrase": "finite readout/tangent weight arithmetic inside that supplied packet"
+            }
+          ],
+          "scan_scope": "The source status, Result, Meaning, Boundaries, runner constants, helper classifiers, and accepted-premise registry were checked for hidden carrier, selector, weighting, readout, metric, Hessian, normalization, and probability inputs.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "scan_scope": "The two accepted-premise witnesses used to close prior-ruled N1 routes were compared directly with the packet's missing selector, weighting, readout-context, and state-selection residuals.",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "The supplied packet lacks Record-derived selector/readout/tangent authority.",
+              "evidence_locator": "probability, dynamics, readout contexts, and physical observable bridges remain downstream",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "match": true,
+              "route_id": "record_axiom_selector",
+              "witness_id": "record_nonsupply",
+              "witness_residual": "Record leaves context selection, weighting, probability, measurement, tangent metrics, and Hessians downstream."
+            },
+            {
+              "claim_residual": "A realized-state reference cannot choose this packet or its weights.",
+              "evidence_locator": "This is pointwise evaluation, not a state-selection rule.",
+              "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "match": true,
+              "route_id": "realized_state_selector",
+              "witness_id": "realized_state_nonsupply",
+              "witness_residual": "The realized-state primitive supplies no state-selection rule, measure, weighting, probability, or normalization."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "It does not supply authority for those rows",
+          "evidence_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+          "scan_scope": "All negative and non-authority language in the source note was checked against the finite supplied-packet resolution actually tested.",
+          "statements": [
+            {
+              "evidence_locator": "not selector/tangent/readout authority",
+              "evidence_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+              "phrase": "not selector/tangent/readout authority",
+              "tested_resolutions": [
+                "one supplied finite carrier with hard-coded rational weights and a 2x2 rational metric"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "It cannot certify that the readout is the selected physical selector",
+              "evidence_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+              "phrase": "It cannot certify that the readout is the selected physical selector",
+              "tested_resolutions": [
+                "the exact finite normalization, SPD determinant, and quadratic checks implemented by the runner"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes only the space-time kinetic-form ratio and explicitly supplies no selector or readout bridge.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The current axioms supply fixed additive record readout but explicitly exclude context selection, weighting, probability, tangent metrics, and Hessians.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "It permits pointwise evaluation at a supplied realized state but provides no state content, selection, measure, weighting, or probability.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "It is a dimensionful units conversion carrying no selector, readout, weighting, or dimensionless tangent content.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This is a charged-lepton K/CPT occupancy-counting obligation, not a retained generic selector/tangent/readout bridge.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This is an unresolved charged-lepton R-eta readout obligation and is not retained authority for the generic supplied packet.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This remains an open cross-sector determinant-readout obligation and cannot serve as a retained generic bridge.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The complete supplied partial-closure index was checked across axioms, approved primitives, open obligations, conventions, and scope reframes.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The note has narrowed itself to supplied finite arithmetic, so exact Fraction normalization, SPD, and quadratic checks could be accepted without demanding a derivation of physical selector authority.",
+          "evidence_locator": "supplied finite tangent/readout carrier",
+          "evidence_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+          "resolution": "That steelman succeeds for the narrow algebraic diagnostic but not for chain closure: the rubric still makes an explicit unretained carrier/readout/metric import conditional, and the separate live row-coverage assertion fails its completed runner check.",
+          "resolved": true,
+          "route_id": "finite_normalization"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:0",
+              "evidence_locator": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Prior audit found exact supplied arithmetic but missing authority and stale row coverage.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:1",
+              "evidence_locator": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Prior audit classified the exact checks as supplied-input algebra rather than a framework construction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:2",
+              "evidence_locator": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Prior audit found class-A supplied arithmetic and no first-principles selector derivation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:3",
+              "evidence_locator": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Prior audit preserved supplied-support semantics while withholding selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:4",
+              "evidence_locator": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Prior audit found supplied inputs outside the primitive registry and a stale row count.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:5",
+              "evidence_locator": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Prior audit distinguished finite hard-coded arithmetic from physical carrier and readout derivation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:6",
+              "evidence_locator": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:6",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Prior audit named the same missing retained bridge for carrier, weights, and metric/Hessian.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:7",
+              "evidence_locator": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:7",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Prior audit found Record non-supply and a conditional/meta upstream authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:8",
+              "evidence_locator": "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:8",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Prior audit found exact class-A arithmetic and a completed stale-count failure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:0",
+              "evidence_locator": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Upstream history found stale exact row-count claims despite valid supplied normalization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:1",
+              "evidence_locator": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Upstream history identified helper and ledger inputs as cross-note bookkeeping.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:2",
+              "evidence_locator": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Historical clean result concerned an older narrowed subdivision snapshot and does not supply selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:3",
+              "evidence_locator": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Historical clean result concerned finite normalization and a then-current diagnostic split.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:4",
+              "evidence_locator": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Upstream history again separated supplied normalization from physical measure and selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:5",
+              "evidence_locator": "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Upstream history required splitting the meta diagnostic from any theorem claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Charged-lepton occupancy-counting obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Charged-lepton h-class/h-unit readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Theta-sector determinant-channel readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Unrelated foundational and charged-lepton route inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Finite gravity sweep versus full Newton closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Generic warning that finite support does not close its physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "External textbook and axis-selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Broad historical route inventory across unrelated lanes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Electroweak coupling-normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Gauge beta-coefficient and Monte Carlo boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Lensing observable and tuned-beta boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Carrier-orbit antisymmetric-operator boundary in another lane.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Charged-lepton selector-route inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Spatial-dimension selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Emergent metric and finite-runner scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Replay-only and wider-basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Local Wilson versus full-environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Flavor tracial-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Analytic-vector and audit-retag boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Gauge-character environment construction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Gauge isotropy and staggered-sign boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Gravity Fermat-bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Weak-gravity sign and scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Absolute-scale and Clifford-carrier boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Hypercharge normalization and species-readout ambiguity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Cross-lane historical obstruction inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Atomic scale, coupling, and threshold boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Quark mass and source/readout selector boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Finite checks versus lattice asymptotics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Detector-centroid observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Finite-path surrogate geometry failure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Static-source readout and hierarchy-value boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Per-record readout and physical-rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Empty matter-cone no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Planning-priority versus theorem selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Update tick versus physical time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Neutrino mass and PMNS selector inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Neutrino absolute-scale and cross-lane boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Finite Newtonian replay scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Frozen-log versus live-recompute boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Coupling authority and register-not-read boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Finite packet behavior versus physical decoherence and gravity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Finite-grid differential-equation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Clifford carrier-selection and representation mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Rank-four carrier-selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Gauge bootstrap and imported-equation boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "One-plaquette diagnostic and endpoint-positivity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Exact echo: supplied packet data are not primitives and finite SPD/normalization arithmetic is not selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Strong-CP and AC registrability/readout boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Single-clock locality and axis-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Exact echo: a finite tangent theorem does not establish physical source or Y_T readout semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Spin-statistics forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Minimal-surface kinetic-law nonselection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "SU(3) quotient-encoder scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Documentation/source synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Single-slot finite result versus full family-card scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Record text does not supply determinant-channel readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Record and admissibility do not supply gauge-sector readout or action.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Theta-sector carrier and readout gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Axioms supply no action, measure, weighting, or context bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Record readout does not manufacture a missing physical carrier law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Determinant algebra does not select the physical readout horn.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Current axioms do not supply K/CPT occupancy or determinant-power selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Record formation does not select a readout assignment, weight, rate, or metric.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Artifact-visibility gap rather than a scientific obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Record additivity leaves an unregistered supplied-context readout scale free.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Hard-coded table matching cannot establish a structural selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "Finite raw-row packet versus continuum and universal-law scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "mechanism": "A physical readout map cannot be established by definition and downstream consistency checks.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "missing retained selector/tangent/readout carrier-and-authority bridge"
+        ],
+        "demotion": "stretch-attempt-with-honest-residual",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06": {
+              "accepted_premise_type": null,
+              "content_sha256": "c41d4077e9df7839691e888a8650ca9b633abbb6f2b21173e0b6a6e7e99e43b3",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:0",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:1",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:2",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:3",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:4",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:5",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:0",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:1",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:2",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:3",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:4",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:5",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:6",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:7",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:8"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:0",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:1",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:2",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:3",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:4",
+                "post_record_measure_weight_normalization_subdivision_2026-06-06:previous_audit:5",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:0",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:1",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:2",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:3",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:4",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:5",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:6",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:7",
+                "post_record_selector_tangent_readout_weight_prototype_2026-06-06:previous_audit:8"
+              ]
+            },
+            "audit-packet://partial-closure-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06": {
+              "accepted_premise_type": null,
+              "content_sha256": "f8e154f250fdbedb978b8c05181e04fe9f9b7c67cf258c03428f6d4bc356d2aa",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
+                "context selection, measurement basis selection, Born weights, probability",
+                "probability, dynamics, readout contexts, and physical observable bridges remain downstream"
+              ]
+            },
+            "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "d5ce7a14ca15a56969b3d8325670ee439388816633f156ce1b55443e64868d65",
+              "effective_status": null,
+              "path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "It cannot certify that the readout is the selected physical selector",
+                "It does not supply authority for those rows",
+                "They are supplied finite packet data.",
+                "finite readout/tangent weight arithmetic inside that supplied packet",
+                "not selector/tangent/readout authority",
+                "supplied finite tangent/readout carrier"
+              ]
+            },
+            "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+              "effective_status": null,
+              "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "It does not supply a state, state-selection rule, averaging over alternatives, measure, weighting",
+                "This is pointwise evaluation, not a state-selection rule."
+              ]
+            },
+            "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "56624ee7dcb19d3f8f6b7b23446bbf7f808183ab9d9c67a0e9ef17086c68939f",
+              "effective_status": null,
+              "path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "def is_spd_2x2(metric:",
+                "def normalize(weights: dict[str, Fraction])",
+                "selector/tangent row count is current snapshot"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: the retained_bridge route remains OPEN because no restricted-packet authority derives or accepts the carrier, readout map and weights, and positive tangent metric/Hessian."
+        ],
+        "narrowed_claim_scope": "Exact finite normalization and 2x2 positive-definite quadratic/readout-weight arithmetic for one supplied packet; neither selector authority nor current row-bucket coverage is established.",
+        "next_route": {
+          "reason_untested": "The packet contains no theorem constructing or explicitly accepting the carrier, readout map and weights, and positive metric/Hessian from accepted or retained inputs.",
+          "route_id": "retained_bridge"
+        },
+        "prior_claim_scope": "Supplied finite selector/tangent/readout arithmetic diagnostic and row-indexing check; no Record-derived selector, readout, tangent metric, Hessian, or weighting authority.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained selector/tangent/readout bridge for the carrier, readout map and weights, and positive metric/Hessian; then refresh EXPECTED_ROWS and the source snapshot from the live ledger before re-audit.",
+      "open_dependency_paths": [
+        "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 54,
+        "C": 0,
+        "D": 0,
+        "total_pass": 79
+      },
+      "verdict_rationale": "Issue: the runner verifies exact arithmetic only after the carrier, readout weights/map, and tangent metric/Hessian are supplied, and its live row count disagrees with its expected snapshot. Why this blocks: neither the accepted axioms nor the conditional/meta subdivision authority supplies selector/readout/tangent authority, while the completed mismatch prevents validation of the claimed bucket coverage. Repair target: add a retained bridge deriving or explicitly accepting the packet structures and update the diagnostic count assertions against the live ledger. Claim boundary until fixed: the exact finite arithmetic is valid supplied-support, not a framework-derived selector/readout/tangent theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
+  "title": "Post-Record Selector/Tangent Readout Weight Prototype",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

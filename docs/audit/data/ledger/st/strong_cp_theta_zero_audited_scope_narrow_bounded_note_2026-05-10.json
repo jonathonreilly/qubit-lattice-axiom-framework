@@ -1,0 +1,115 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "strong_cp_theta_zero_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.966,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1ef81ad23f8d80a4390e0bdf1ee85ccf2b225010edcc3ef31f22ff1259214795",
+  "note_path": "docs/STRONG_CP_THETA_ZERO_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:40.178627+00:00",
+      "audit_date": "2026-05-27T04:02:01.770493+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "ccdff72e07c79e685e162b708e3ebfe9aadb137490f8836134b30b4babaa55f1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source has one retained-bounded parent, reuses the parent runner, and does not add an independent observable, comparator, bridge theorem, or runner result; it is useful scope bookkeeping but not a separate retained theorem.",
+      "claim_scope": "Scope-narrowing restatement of the retained-bounded strong_cp_theta_zero_note selected-surface theta_eff=0 claim; it reuses the parent runner and adds no independent physical content beyond the parent row.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-27T04:02:01.770493+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "strong_cp_theta_zero_note",
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:strong_cp_theta_zero_note:retained_bounded->unaudited",
+      "load_bearing_step": "The note isolates which frontier_strong_cp_theta_zero.py checks are internal consistency checks on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface, citing strong_cp_theta_zero_note as its sole parent.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "If this note is rewritten to add an independent operator-basis or mass-orientation theorem rather than scope bookkeeping, re-audit against the new source hash.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 49,
+        "D": 0,
+        "assert_count": 2,
+        "runner_result": "same runner/cache as strong_cp_theta_zero_note; runner_sha256=ccdff72e07c79e685e162b708e3ebfe9aadb137490f8836134b30b4babaa55f1",
+        "runner_status": "ok"
+      },
+      "verdict_rationale": "Issue: the row is advertised as a bounded theorem, but its load-bearing content is a restatement of the already audited strong_cp_theta_zero_note selected-surface scope and runner results. Why this blocks: keeping it as a separate retained theorem would duplicate the parent claim surface without independent physics. Repair target: cite the parent retained-bounded row for theta_eff=0 selected-surface closure; use this note only as boxed scope documentation. Claim boundary until fixed: decoration under strong_cp_theta_zero_note."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_strong_cp_theta_zero.py",
+  "title": "Strong CP / \u03b8 = 0 Audited-Scope Narrowing Bounded Note",
+  "transitive_descendants": 706,
+  "verdict_rationale": null
+}

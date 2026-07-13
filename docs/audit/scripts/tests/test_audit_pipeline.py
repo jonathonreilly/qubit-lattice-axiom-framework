@@ -8789,6 +8789,73 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
         self.assertIn("-r1-p1", str(first["isolated"]))
         self.assertIn("-r2-p1", str(second["isolated"]))
 
+    def test_conditional_rows_wait_for_repair_across_runs(self):
+        """A re-queued audited_conditional row is not re-targeted until its
+        sources changed after the archived verdict or a recorded dependency's
+        effective status moved (theta i5, 2026-07-12: an unchanged agreed-
+        conditional row burned two fresh seats one run later)."""
+        m = _import("orchestrate_audit_batch")
+        base = {
+            **self._row(),
+            "note_path": "docs/SPIN.md",
+            "previous_audits": [{
+                "audit_status": "audited_conditional",
+                "archived_at": "2026-07-12T10:00:00+00:00",
+                "audit_state_snapshot": {
+                    "dep_effective_status": {"helper": "open_gate"},
+                },
+            }],
+        }
+        effective = {"spin_row": "open_gate", "helper": "open_gate"}
+        with mock.patch.object(
+            m, "last_source_change", return_value="2026-07-12T09:00:00+00:00"
+        ):
+            # Unchanged sources + unchanged dep statuses: wait for repair.
+            self.assertTrue(
+                m.awaiting_repair_since_conditional(dict(base), effective)
+            )
+            # A dependency moved (e.g. demanded authority went retained):
+            # re-audit is warranted.
+            self.assertFalse(
+                m.awaiting_repair_since_conditional(
+                    dict(base), {**effective, "helper": "retained"}
+                )
+            )
+            # A clean archive never blocks.
+            clean = {
+                **base,
+                "previous_audits": [{
+                    "audit_status": "audited_clean",
+                    "archived_at": "2026-07-12T10:00:00+00:00",
+                }],
+            }
+            self.assertFalse(
+                m.awaiting_repair_since_conditional(clean, effective)
+            )
+        with mock.patch.object(
+            m, "last_source_change", return_value="2026-07-12T11:00:00+00:00"
+        ):
+            # Sources repaired after the verdict: re-audit is warranted.
+            self.assertFalse(
+                m.awaiting_repair_since_conditional(dict(base), effective)
+            )
+        # Integration: compute_targets reports the wait instead of targeting.
+        with mock.patch.object(
+            m, "last_source_change", return_value="2026-07-12T09:00:00+00:00"
+        ), mock.patch.object(m, "source_requires_forensic", return_value=False):
+            targets, skipped = m.compute_targets(
+                {"spin_row"},
+                {
+                    "spin_row": dict(base),
+                    "helper": {
+                        "claim_id": "helper",
+                        "effective_status": "open_gate",
+                    },
+                },
+            )
+        self.assertEqual(targets, [])
+        self.assertTrue(any("awaiting repair" in line for line in skipped))
+
     def test_existing_workdir_refused_with_actionable_message(self):
         m = _import("orchestrate_audit_batch")
         workdir = self.root / "wd3"

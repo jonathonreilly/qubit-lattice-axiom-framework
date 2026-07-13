@@ -32,16 +32,16 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3754 |
-| Applied audit verdicts | 446 |
+| Applied audit verdicts | 445 |
 | Retained-grade rows, including boxed decorations | 395 |
 | Retained positive theorems | 76 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 304 |
 | Boxed decorations under retained parents | 15 |
 | Open gates | 2 |
-| Unaudited rows | 2954 |
+| Unaudited rows | 2955 |
 | Retained-pending-chain rows | 2 |
-| Audited conditional rows | 25 |
+| Audited conditional rows | 24 |
 | Audited renaming rows | 14 |
 | Audited numerical-match rows | 5 |
 | Citation cycles detected | 63 |
@@ -54,11 +54,11 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Metric | Value |
 |---|---:|
 | Total pending rows | 2985 |
-| Ready rows | 614 |
+| Ready rows | 613 |
 | Cycle-break targets | 93 |
-| Critical pending | 723 |
+| Critical pending | 724 |
 | High pending | 330 |
-| Medium pending | 763 |
+| Medium pending | 762 |
 | Leaf pending | 1169 |
 
 Next ready rows by queue order:
@@ -101,18 +101,18 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3949 |
-| Critical nodes | 808 |
+| Critical nodes | 809 |
 | High nodes | 383 |
-| Medium nodes | 983 |
+| Medium nodes | 982 |
 | Leaf nodes | 1775 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1993 descendants; score 232.461
+- `minimal_axioms` - critical; 1994 descendants; score 232.962
 - `graph_first_su3_integration_note` - critical; 1646 descendants; score 64.686
 - `three_generation_observable_theorem_note` - critical; 1253 descendants; score 62.292
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 197 descendants; score 61.629
 - `observable_principle_from_axiom_note` - critical; 1097 descendants; score 61.601
 - `plaquette_self_consistency_note` - critical; 1230 descendants; score 50.266
 - `minimal_axioms_2026-05-03` - critical; 1130 descendants; score 45.143
-- `key_terminology` - critical; 1248 descendants; score 44.287
+- `key_terminology` - critical; 1249 descendants; score 44.288

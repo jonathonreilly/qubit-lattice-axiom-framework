@@ -204,10 +204,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
-          "effective_status": "audited_conditional"
-        },
-        {
           "claim_id": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
           "effective_status": "unaudited"
         },
@@ -228,10 +224,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "record_formation_to_kraus_isometry_bridge_2026-06-06",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
           "effective_status": "unaudited"
         },
@@ -245,13 +237,13 @@
         }
       ],
       "certified": false,
-      "closure_size": 21,
+      "closure_size": 19,
       "lane": "rule_universality_grain",
       "root": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
       "roots": [
         "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11"
       ],
-      "uncertified_count": 20
+      "uncertified_count": 18
     },
     {
       "blocking": [
@@ -2955,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "76652d2e619fd9990ef93b85d287a38f2a1e5bf9",
+  "repo_head": "906a15c841c8ff0965231551f3999679d484527c",
   "schema": "lane_certification_v2"
 }

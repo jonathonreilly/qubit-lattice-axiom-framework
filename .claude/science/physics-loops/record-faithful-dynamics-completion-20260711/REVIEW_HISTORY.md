@@ -1037,3 +1037,37 @@ same-norm Hessian as open. Runner/cache are `PASS=14 FAIL=0`; audit validation
 seeds one `bounded_theorem` / `unaudited` row with exactly five dependencies;
 strict lint has zero errors and generated outputs are stripped. PR #5342 is
 open. No axiom-update stop is triggered.
+
+## One-horizon Haar--Berezin Hoeffding lineage-cluster review
+
+PASS WITH BOUNDED CLAIMS after the factor grammar, tag semantics, and marked-
+reuse proofs were made explicit. On the current independent hidden Haar and
+onsite Gaussian coordinates, the canonical multi-index Hoeffding atoms obey
+the finite-horizon algebra estimate with `r_*=1+sqrt(2)` and
+`C_*=3+2sqrt(2)`. Decorating each residual factor by its atom subset and
+running the hard-core logarithm without merging lineages gives an exact
+evaluation identity back to the original complete residual cluster system.
+
+Physics/import review checked the actual Wilson, determinant, and Schur factor
+grammar. Determinant loops in `det D_II` use nonskeleton interior links, while
+Schur paths carry two skeleton boundary links. The repeated-coordinate Haar
+identity and an explicit length-four path show why syntactic support is not a
+genuine tag: the path reduces to coarse `V` with an empty current Haar atom.
+The SU(3) epsilon singlet and the nonmultiplicativity of centered projections
+likewise prevent any tag-survival shortcut. The future rule must retain the
+full coefficient, substitute the next skeleton, and re-atomize.
+
+Code/math review independently reconstructed the atom bound, evaluation map,
+finite decorated logarithm, all conservative activities, and marked-lineage
+constants. At the witness, `K_tag=9.96701305855e-7<c`,
+`A_att=7.34284716321e-4`, and `B_tag=1.11743219758e-4`; the safe old Cauchy
+row does not yield an invariant ball. Governance/no-go review passes the full
+N1--N8 packet, including the attempted direct-survival and genuine-syntactic-
+tag routes and the exact residual-match check.
+
+Runner/cache: `PASS=13 FAIL=0`. Audit validation seeds one `bounded_theorem` /
+`unaudited` row with exactly four dependencies; the full pipeline and strict
+lint have zero errors and generated outputs are stripped. PR #5343 is open.
+The next target is a two-level evaluation-commuting re-atomization cocycle,
+then correlated-covariance locality and attachment. No axiom-update stop is
+triggered.

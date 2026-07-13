@@ -167,27 +167,36 @@ row as `no_go`, or whenever your rationale would name walls, admissions,
 obstructions, "does not lift," "no route exists," "no retained primitive
 supplies this," or "requires a new axiom." A `false` value scopes only the
 orchestrated forensic evidence plumbing — it NEVER waives the gate when your
-own output names walls: in that case you MUST still include the structured
-`no_go_discipline` object (development tier: N1-N8 as structured judgments
-with quoted evidence), or the apply gate will reject your verdict outright.
-The restricted-input rule still applies: do not search the wider repository.
-For N8, judge only the source note, runner/helper sources, one-hop authorities,
-and premise registries supplied here. Missing cross-cycle evidence is a
-checklist failure, not permission to browse.
+own output names walls. For an `audited_clean` verdict (or any verdict on a
+`claim_type: no_go` row, or in a forensic run) you MUST include the
+structured `no_go_discipline` object (development tier: N1-N8 as structured
+judgments with quoted evidence), or the apply gate will reject your verdict
+outright. For a non-clean verdict on a non-no-go row in the development
+tier, the structured object is optional — state the same wall-naming
+judgment in your rationale prose; a supplied object is still validated in
+full. Non-clean verdicts re-enter the repair queue and foreclose nothing,
+which is why only claim-cementing clean verdicts carry the mandatory packet
+there. The restricted-input rule still applies: do not search the wider
+repository. For N8, judge only the source note, runner/helper sources,
+one-hop authorities, and premise registries supplied here. Missing
+cross-cycle evidence is a checklist failure, not permission to browse.
 
 Packet evidence requirements are tier-scoped (owner-approved 2026-07-12),
-but auditor judgment is not. Every triggered row must answer N1-N8, and every
-incoming audit must declare `negative_assertion_classes`; a non-empty
-declaration requires the packet, while an empty declaration never bypasses a
-mechanical source or output trigger.
+but auditor judgment is not. Every triggered row must answer N1-N8 at least
+in rationale prose, and every incoming audit must declare
+`negative_assertion_classes`; a non-empty declaration requires the packet on
+the same clean-verdict/no-go/forensic terms as the output trigger, while an
+empty declaration never bypasses a mechanical source or output trigger.
 
 - **Development tier:** for everything except `claim_type: no_go` rows,
   source paths matching the no-go-name trigger, and
   `AUDIT_FORENSIC_MODE=1` certification runs, supply N1-N8 as complete
-  structured judgment with quoted evidence paths and locators. Structural
-  validation does not authenticate manifest containment, require live stdout,
-  require exhaustive N6/N8 index coverage, or require transport and snapshot
-  plumbing.
+  structured judgment with quoted evidence paths and locators when the packet
+  is required above or you voluntarily include it. For a non-clean verdict
+  where the packet is optional and omitted, record the judgment in rationale
+  prose. Structural validation of any supplied packet does not authenticate
+  manifest containment, require live stdout, require exhaustive N6/N8 index
+  coverage, or require transport and snapshot plumbing.
 - **Forensic tier:** the manifest-containment, live-stdout, complete-index,
   transport, and snapshot requirements below are mandatory. The no-go-name
   trigger includes no-go, obstruction, firewall, negative-boundary,
@@ -361,7 +370,7 @@ Return a single JSON object with exactly these fields. No other prose.
   },
   "verdict": "<one of audited_clean, audited_renaming, audited_conditional, audited_decoration, audited_numerical_match, audited_failed>",
   "verdict_rationale": "<two to four sentences>",
-  "negative_assertion_classes": ["<REQUIRED, possibly empty. After reading the full note, list every no-go-discipline policy class the artifact ASSERTS: no_go_result, stretch_attempt_negative, bounded_with_named_walls, derived_no_go_boundary, conditional_wall_rationale. This is your semantic judgment and is independent of any mechanical trigger; honest coverage routing (this note does not derive X - the parent row carries it) is not an assertion and declares nothing. Any non-empty declaration requires the full no_go_discipline packet.>"],
+  "negative_assertion_classes": ["<REQUIRED, possibly empty. After reading the full note, list every no-go-discipline policy class the artifact ASSERTS: no_go_result, stretch_attempt_negative, bounded_with_named_walls, derived_no_go_boundary, conditional_wall_rationale. This is your semantic judgment and is independent of any mechanical trigger; honest coverage routing (this note does not derive X - the parent row carries it) is not an assertion and declares nothing. A non-empty declaration requires the full no_go_discipline packet for an audited_clean verdict, any verdict on a no_go row, and forensic runs; on a development-tier non-clean verdict the declaration stands with the rationale prose.>"],
   "decoration_parent_claim_id": "<claim_id of the upstream parent if verdict = audited_decoration, else null>",
   "open_dependency_paths": ["<note path of any cited authority that is itself support / open / conditional>"],
   "auditor_confidence": "<low | medium | high>",
@@ -370,7 +379,8 @@ Return a single JSON object with exactly these fields. No other prose.
 }
 ```
 
-Use `null` only when the gate is not required. Otherwise replace it with:
+Use `null` when the structured packet is not required and you do not choose to
+supply it. Otherwise replace it with:
 
 ```json
 {

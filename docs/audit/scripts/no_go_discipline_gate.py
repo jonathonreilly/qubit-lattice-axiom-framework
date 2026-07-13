@@ -2717,6 +2717,25 @@ def output_requires_no_go_discipline(audit: dict[str, Any]) -> bool:
     )
 
 
+def packet_requirement_binds(
+    audit: dict[str, Any], *, source_required: bool = False
+) -> bool:
+    """Whether a triggered structured-packet demand binds this verdict.
+
+    No-go artifacts (source-required rows, no_go claim-type judgments) and
+    forensic-tier runs carry the mandatory packet for every verdict. In the
+    development tier, the wall-naming output/declaration trigger binds only
+    claim-cementing `audited_clean` verdicts: non-clean verdicts are the
+    repair queue — they foreclose nothing and re-enter fresh audit — so the
+    wall-naming judgment stays in the verdict prose there, and a supplied
+    packet is still validated structurally.
+    """
+    if source_required or audit.get("claim_type") == "no_go" or forensic_mode():
+        return True
+    verdict = audit.get("verdict") or audit.get("audit_status")
+    return verdict == "audited_clean"
+
+
 def _text(value: Any) -> bool:
     return isinstance(value, str) and bool(value.strip())
 
@@ -4021,7 +4040,7 @@ def validate_no_go_discipline(
         source_required
         or output_requires_no_go_discipline(audit)
         or declared_requires
-    )
+    ) and packet_requirement_binds(audit, source_required=source_required)
     packet = audit.get("no_go_discipline")
     if not required:
         if packet is None:

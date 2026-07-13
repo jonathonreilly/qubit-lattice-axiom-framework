@@ -2669,7 +2669,7 @@
       "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,

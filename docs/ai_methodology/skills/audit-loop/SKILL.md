@@ -77,15 +77,19 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   scope (owner-approved 2026-07-12):** the gate is always applied as auditor
   JUDGMENT, but the heavyweight evidence plumbing is tier-scoped -- see
   "Two-Tier Assurance" below. Every incoming audit still declares
-  `negative_assertion_classes`; a non-empty declaration requires N1-N8, and
-  an empty declaration never bypasses the mechanical source/output triggers.
+  `negative_assertion_classes`; a non-empty declaration requires the
+  structured N1-N8 packet on the same terms as the output trigger (clean
+  verdicts, no-go rows, forensic runs), and an empty declaration never
+  bypasses the mechanical source/output triggers.
   Forensic packets (manifest-backed containment, live runner-stdout citation,
   complete index dispositions) are mandatory for `claim_type: no_go` rows,
   source paths matching the no-go-name trigger (including obstruction,
   firewall, negative-boundary, no-uniform-sign, and stretch-attempt names),
   and `AUDIT_FORENSIC_MODE=1` certification runs. Development-tier rows supply
-  the N1-N8 packet as structured judgment with quoted evidence, validated
-  structurally. Negative-claim overclaims foreclose investigation paths
+  the N1-N8 packet as structured judgment with quoted evidence when the packet
+  is required or voluntarily included; otherwise non-clean verdicts record the
+  judgment in rationale prose. Any supplied packet is validated structurally.
+  Negative-claim overclaims foreclose investigation paths
   permanently and require the same scrutiny as positive-claim overclaims. If
   any N1-N8 check fails on the source note, choose the more conservative
   non-clean verdict whose `verdict_rationale` reflects the honest narrower
@@ -156,10 +160,16 @@ packet.
   runner, premise hashes) and survive unrelated repository growth.
   Independent cross-family re-derivation at xhigh and two-pass
   cross-confirmation on critical rows are unchanged and remain the heart of
-  the audit. When walls are named, answer N1-N8 as structured judgments with
-  quoted evidence; the packet is validated structurally (no
-  manifest-containment scans, no live-stdout precondition, no full-universe
-  dispositions, no transport envelope).
+  the audit. When walls are named, answer N1-N8 in the structured packet when
+  it is required or voluntarily included, and otherwise in rationale prose.
+  A supplied packet is validated structurally (no manifest-containment scans,
+  no live-stdout precondition, no full-universe dispositions, no transport
+  envelope). The structured packet is MANDATORY
+  for `audited_clean` verdicts that name walls (and always on no-go rows);
+  for non-clean verdicts on non-no-go rows it is optional — state the
+  wall-naming judgment in `verdict_rationale` prose instead, since those
+  verdicts re-enter the repair queue and foreclose nothing. A supplied
+  packet is validated in full either way.
 - **Forensic tier.** Mandatory for `claim_type: no_go` rows and source paths
   matching the no-go-name trigger (including obstruction, firewall,
   negative-boundary, no-uniform-sign, and stretch-attempt names); forced

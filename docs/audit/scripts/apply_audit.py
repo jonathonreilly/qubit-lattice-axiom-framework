@@ -226,6 +226,8 @@ def cross_summary_no_go_error(
         source_required
         or no_go_discipline_gate.output_requires_no_go_discipline(summary)
         or bool(summary.get("negative_assertion_classes"))
+    ) and no_go_discipline_gate.packet_requirement_binds(
+        summary, source_required=source_required
     )
     if packet is None:
         return (

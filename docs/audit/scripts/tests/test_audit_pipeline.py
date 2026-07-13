@@ -7868,6 +7868,10 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
+            "include the complete `affected_wall` text verbatim inside that candidate's `disposition`",
+            template_flat,
+        )
+        self.assertIn(
             "Copy the complete authenticated tuple",
             template_flat,
         )
@@ -9781,6 +9785,20 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertIn("copy indexed_basis exactly", n6_basis_prompt)
         self.assertIn("complete text verbatim", n6_basis_prompt)
         self.assertNotIn("candidate 1", n6_basis_prompt)
+        n6_wall_error = (
+            "N6 candidate 1.disposition must name its affected_wall secret_wall"
+        )
+        n6_wall_code = m.fresh_schema_retry_code(n6_wall_error)
+        self.assertEqual(
+            n6_wall_code, "N6_AFFECTED_WALL_VERBATIM_MISMATCH"
+        )
+        n6_wall_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET", n6_wall_code, 1,
+        )
+        self.assertIn("copy affected_wall exactly", n6_wall_prompt)
+        self.assertIn("complete text verbatim inside its disposition", n6_wall_prompt)
+        self.assertNotIn("candidate 1", n6_wall_prompt)
+        self.assertNotIn("secret_wall", n6_wall_prompt)
 
     def test_failed_locator_repair_preserves_fresh_schema_eligibility(self):
         m = _import_codex_audit_runner()

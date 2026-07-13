@@ -1717,6 +1717,11 @@ def fresh_schema_retry_code(validation_error: str) -> str:
         and ".closure_mechanism must use its indexed_basis" in validation_error
     ):
         return "N6_INDEXED_BASIS_VERBATIM_MISMATCH"
+    if (
+        validation_error.startswith("N6 candidate ")
+        and ".disposition must name its affected_wall" in validation_error
+    ):
+        return "N6_AFFECTED_WALL_VERBATIM_MISMATCH"
     return "AUDIT_SCHEMA_REJECT"
 
 
@@ -1808,6 +1813,12 @@ def render_fresh_schema_retry_prompt(
             "record and include that complete text verbatim inside the same "
             "candidate's closure_mechanism before the explanation of how it could "
             "affect the named wall. Do not paraphrase or shorten indexed_basis.\n"
+        ),
+        "N6_AFFECTED_WALL_VERBATIM_MISMATCH": (
+            "Static N6 invariant: copy affected_wall exactly from the same "
+            "candidate and include that complete text verbatim inside its "
+            "disposition before explaining why the candidate does or does not "
+            "close the wall. Do not paraphrase or shorten affected_wall.\n"
         ),
     }.get(validation_code, "")
     return (

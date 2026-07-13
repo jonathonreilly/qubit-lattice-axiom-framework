@@ -503,7 +503,7 @@ supply it. Otherwise replace it with:
         "closure_mechanism": "<include indexed_basis verbatim, then use 40+ normalized characters to explain how the candidate could close that wall>",
         "could_close_wall": false,
         "addressed": true,
-        "disposition": "<why the candidate does or does not close the scoped wall>",
+        "disposition": "<include affected_wall verbatim, then explain why the candidate does or does not close it>",
         "evidence_path": "<manifest path>",
         "evidence_locator": "<actual locator>"
       }
@@ -654,8 +654,10 @@ place any of them on the `N5_rhetoric_audit` section object itself.
 For every N6 candidate, copy `indexed_basis` exactly from its orchestrator
 candidate record and include that complete `indexed_basis` text verbatim
 inside `closure_mechanism` before explaining how the candidate could affect
-the named wall. A paraphrase or merely related explanation does not satisfy
-the authenticated-basis binding.
+the named wall. Also include the complete `affected_wall` text verbatim inside
+that candidate's `disposition` before explaining why the wall does or does not
+close. A paraphrase or merely related explanation does not satisfy either
+authenticated binding.
 
 For each N5 statement, `resolution_classes_checked` must equal the five canonical classes exactly,
 and `tested_resolutions` must contain exactly five entries: one and only one

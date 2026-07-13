@@ -12903,3 +12903,46 @@ class BackfillCrossSeatRationalesTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class BatchOrchestratorHashDriftPreflightTest(unittest.TestCase):
+    """A row whose ledger note_hash lags the note file is skipped at
+    targeting time (grain wave 2, 2026-07-13: two seats audited a repaired
+    note and their applies were refused by the drift gate)."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp = Path(self._tmp.name)
+
+    def test_drifted_row_skips_with_remedy_message(self):
+        m = _import("orchestrate_audit_batch")
+        import hashlib as _hashlib
+        note = self.tmp / "docs" / "NOTE.md"
+        note.parent.mkdir(parents=True)
+        note.write_text("repaired body\n", encoding="utf-8")
+        current = _hashlib.sha256(
+            note.read_text(encoding="utf-8").encode("utf-8")
+        ).hexdigest()
+        row = {
+            "claim_id": "drift_row",
+            "claim_type": "bounded_theorem",
+            "audit_status": "unaudited",
+            "effective_status": "open_gate",
+            "criticality": None,
+            "deps": [],
+            "note_path": "docs/NOTE.md",
+            "note_hash": "0" * 64,
+        }
+        with mock.patch.object(m, "REPO_ROOT", self.tmp), mock.patch.object(
+            m, "source_requires_forensic", return_value=False
+        ):
+            targets, skipped = m.compute_targets({"drift_row"}, {"drift_row": row})
+            self.assertEqual(targets, [])
+            self.assertTrue(
+                any("note_hash lags the note file" in line for line in skipped)
+            )
+            # Aligned hash targets normally.
+            row["note_hash"] = current
+            targets, skipped = m.compute_targets({"drift_row"}, {"drift_row": row})
+            self.assertEqual([r["claim_id"] for r in targets], ["drift_row"])

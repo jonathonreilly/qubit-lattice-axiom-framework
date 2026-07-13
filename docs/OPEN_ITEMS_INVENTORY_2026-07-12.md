@@ -138,6 +138,72 @@ crisper.
 - Untracked scratch in the main checkout and old lane worktrees
   (deletable once their PRs land); the worktree list has grown to ~40.
 
+## What the inventory reduces to (added 2026-07-12, same day)
+
+Read together, the twenty-five entries above are not twenty-five
+questions. They reduce to two questions, one open pull request, and
+bookkeeping dust.
+
+**1. The formation question (the physics).** The axioms deliberately
+supply no formation content, and nearly every physics-shaped entry is one
+of its four faces:
+
+- **The weight face.** The slot sentence's one surviving bit
+  (per-possibility vs per-coordinate weighting), the r = 1/2 program's
+  formation weight `w` on its two-cell menu, and the generation-dial
+  dichotomy are the same choice-type — and in the Koide instance the same
+  bit exactly: the lawful set w in {1/3, 1/2} maps through
+  r = (1-w)/2w to r in {1, 1/2}, the per-coordinate endpoint
+  r = 1 already shown registration-incompatible. The named selection
+  theorem is the block that would decide it.
+- **The time face.** The lapse promotion (local time-rate from convention
+  to variable), the registered global time convention, and the parked
+  Evolution axiom candidate are the same absence — a time variable the
+  axioms do not supply. Note the parked candidate's own shape (no
+  weights, no production) means it addresses only this face, not the
+  others.
+- **The rate face.** The rate-law primitive option; the deposition
+  campaign already measured the rate's shape (the power law above the
+  registration floor) and that mobility forces sparsity.
+- **The observability face.** The record-reading convention is the
+  assumed answer to the local-observability open gate (named as
+  unsupplied by every Record wording, including the landed one), and the
+  registration arc has now measured its consequences: the bar at
+  theta* = 0.50, full redundancy depth at weak noise, and the noise
+  boundary where copy independence dies. The reading is no longer a bare
+  convention; it has an empirical silhouette.
+
+Also faces of the same question: the composition/bridge-selection
+trichotomy and the rates-to-weights bridge. What is notable is the
+direction of progress: the formation rule is being pinned from within —
+measured bar location, measured rate law, forced sparsity, a discrete
+lawful weight set with one endpoint excluded. The faces are converging on
+one object, and the entries above are the per-lane shadows of it.
+
+**2. The reset-propagation question (the process).** One policy face —
+does pre-reset owner approval carry across an axiom reset? — covers both
+primitive-provenance entries and the landing-order choice, and one
+mechanical face — re-bind pre-reset surfaces to the landed authority —
+covers the invalidation-pipeline gap, the flips and walls blocks, the
+status-pin drift family, and the Class-B reversion execution. The
+reconciliation campaign is already the engine for the mechanical face.
+
+**3. Conditional inheritance.** PR #5060 as it stands: self-contained,
+verified on the live ledger, the single biggest lever on the blocked
+audit mass.
+
+**Residue.** Comparator bookkeeping that retires by named successor
+campaigns (the theta-bridge, the gauge-native substrate) or stays
+harmlessly declared (presentation conventions, `g_bare = 1`), the
+optional moduli comparator, and housekeeping.
+
+The reduction's one actionable observation, stated without proposing
+anything: the program currently carries the formation question as five
+scattered fragments — a convention here, a parked axiom there, a
+selection theorem, a rate law, a halted lane — and the season's
+measurements have quietly turned those fragments into constraints on a
+single object.
+
 ## Resolved look-alikes (dedupe guard — do not re-ask)
 
 - **Record comparability / the arrow's missing piece** — settled by audit

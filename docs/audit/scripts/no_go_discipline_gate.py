@@ -41,7 +41,9 @@ ROUTE_CLASS_MARKERS = {
     "symmetry_or_representation": re.compile(r"\b(?:symmetr|invarian|represent|commut|character|irrep|group)\w*\b", re.I),
     "alternate_carrier_or_sector": re.compile(r"\b(?:alternate\s+)?(?:carrier|sector|module|space|irrep)\b", re.I),
     "boundary_or_initial_condition": re.compile(r"\b(?:boundary|initial|background|state|pointwise)\w*\b", re.I),
-    "normalization_or_units": re.compile(r"\b(?:normaliz|units?|scale|dimensionful)\w*\b", re.I),
+    "normalization_or_units": re.compile(
+        r"(?:\b(?:normaliz|units?|scale|dimensionful)\w*\b|\bW_unit\b)", re.I
+    ),
     "dynamical_or_effective_action": re.compile(r"\b(?:dynamic|effective|action|evolution|equivariant\s+family)\w*\b", re.I),
     "lattice_scale_or_limit": re.compile(r"\b(?:lattice|continuum|limit|finite[- ]size|asymptotic|approximate)\w*\b", re.I),
     "numerical_or_finite_case": re.compile(r"\b(?:numeric|finite|sample|scan|compute)\w*\b", re.I),
@@ -3602,8 +3604,17 @@ def _validate_n5(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             resolution_entry = manifest[statement["resolution_evidence_path"]]
             if "runner_stdout" not in set(resolution_entry.get("roles") or []):
                 return f"N5 statement {index} resolution tests must cite current-cycle execution evidence"
+            resolution_text = str(resolution_entry.get("text") or "")
+            verified_resolutions = {
+                str(candidate)
+                for candidate in resolution_entry.get("verified_values") or []
+                if _text(candidate)
+            }
             for resolution in statement["tested_resolutions"]:
-                if not _entry_contains(resolution_entry, resolution):
+                if (
+                    resolution not in resolution_text
+                    and resolution not in verified_resolutions
+                ):
                     return f"N5 statement {index} tested resolution is not evidenced at resolution_evidence_path"
         if not isinstance(statement.get("occurrence_count"), int) or statement["occurrence_count"] <= 0:
             return f"N5 statement {index}.occurrence_count must be a positive integer"

@@ -1541,6 +1541,59 @@ AUTHENTICATED_OCCURRENCE_FIELDS = (
 )
 
 
+def bind_authenticated_casefold_evidence_paths(
+    blob: dict,
+    evidence_manifest: dict[str, dict] | None,
+) -> list[dict[str, object]]:
+    """Canonicalize N1-N8 evidence-path casing drift after a unique match.
+
+    Evidence paths are orchestrator-owned packet metadata. The auditor owns all
+    cited content and scientific judgment. Restrict traversal to
+    ``no_go_discipline`` and replace an out-of-manifest ``evidence_path`` when
+    its casefold matches exactly one authenticated manifest path. Exact,
+    unrelated, ambiguous, and non-string paths remain untouched and fail
+    closed in the validator.
+    """
+    if evidence_manifest is None:
+        return []
+    packet = blob.get("no_go_discipline")
+    if not isinstance(packet, dict):
+        return []
+    paths_by_casefold: dict[str, list[str]] = {}
+    for path in evidence_manifest:
+        if isinstance(path, str) and path:
+            paths_by_casefold.setdefault(path.casefold(), []).append(path)
+    changes: list[dict[str, object]] = []
+
+    def visit(value: object, location: str) -> None:
+        if isinstance(value, dict):
+            current = value.get("evidence_path")
+            if (
+                isinstance(current, str)
+                and current
+                and current not in evidence_manifest
+            ):
+                matches = paths_by_casefold.get(current.casefold(), [])
+                if len(matches) == 1:
+                    canonical = matches[0]
+                    changes.append({
+                        "location": location,
+                        "field": "evidence_path",
+                        "from": current,
+                        "to": canonical,
+                    })
+                    value["evidence_path"] = canonical
+            for key, item in value.items():
+                if key != "evidence_path":
+                    visit(item, f"{location}.{key}")
+        elif isinstance(value, list):
+            for index, item in enumerate(value, 1):
+                visit(item, f"{location}[{index}]")
+
+    visit(packet, "no_go_discipline")
+    return changes
+
+
 def bind_authenticated_occurrence_metadata(
     blob: dict,
     evidence_manifest: dict[str, dict] | None,
@@ -2564,6 +2617,16 @@ def main() -> int:
                     }) + "\n")
                 continue
 
+            casefold_path_bindings = bind_authenticated_casefold_evidence_paths(
+                blob, exact_evidence_manifest
+            )
+            if casefold_path_bindings:
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "authenticated_casefold_evidence_paths_bound",
+                        "bindings": casefold_path_bindings,
+                    }) + "\n")
             occurrence_bindings = bind_authenticated_occurrence_metadata(
                 blob, exact_evidence_manifest
             )
@@ -2665,6 +2728,22 @@ def main() -> int:
                                 "reply": (repair_reply or "")[:2000],
                             }) + "\n")
                         continue
+                    repair_casefold_path_bindings = (
+                        bind_authenticated_casefold_evidence_paths(
+                            repair_blob, exact_evidence_manifest
+                        )
+                    )
+                    if repair_casefold_path_bindings:
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": (
+                                    "validation_repair_authenticated_casefold_"
+                                    "evidence_paths_bound"
+                                ),
+                                "attempt": repair_attempt,
+                                "bindings": repair_casefold_path_bindings,
+                            }) + "\n")
                     repair_bindings = bind_authenticated_occurrence_metadata(
                         repair_blob, exact_evidence_manifest
                     )
@@ -2778,6 +2857,22 @@ def main() -> int:
                     if schema_blob is None:
                         err = "fresh schema retry reply not valid JSON"
                         continue
+                    schema_casefold_path_bindings = (
+                        bind_authenticated_casefold_evidence_paths(
+                            schema_blob, exact_evidence_manifest
+                        )
+                    )
+                    if schema_casefold_path_bindings:
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": (
+                                    "fresh_schema_retry_authenticated_casefold_"
+                                    "evidence_paths_bound"
+                                ),
+                                "attempt": schema_attempt,
+                                "bindings": schema_casefold_path_bindings,
+                            }) + "\n")
                     schema_bindings = bind_authenticated_occurrence_metadata(
                         schema_blob, exact_evidence_manifest
                     )

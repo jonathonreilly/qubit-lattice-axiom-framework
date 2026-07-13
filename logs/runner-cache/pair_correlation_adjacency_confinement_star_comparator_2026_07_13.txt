@@ -1,0 +1,31 @@
+[PASS] T1: SWAP is an involution (SWAP^2 = I)
+[PASS] T1: SWAP is symmetric (self-transpose)
+[PASS] T1: P_sym idempotent
+[PASS] T1: P_anti idempotent
+[PASS] T1: P_sym, P_anti orthogonal and complete
+[PASS] T1: Sym block has rank 3 (triplet)
+[PASS] T1: Anti block has rank 1 (singlet)
+[PASS] T2 [EXACT, conditional on supplied S_i=sigma_i/2]: S_A.S_B = (1/2)SWAP - (1/4)I
+[PASS] T2 [EXACT]: S_A.S_B eigenvalue = -3/4 on the singlet (Anti block)
+[PASS] T2 [EXACT]: S_A.S_B eigenvalue = +1/4 on symmetric triplet vector T0
+[PASS] T2 [EXACT]: S_A.S_B eigenvalue = +1/4 on symmetric triplet vector Tsym
+[PASS] T2 [EXACT]: S_A.S_B eigenvalue = +1/4 on symmetric triplet vector T1
+[PASS] T2 [EXACT]: total Casimir S^2 = 0 on singlet (spin-0)
+[PASS] T2 [EXACT]: total Casimir S^2 = 2 on symmetric triplet (spin-1)
+[PASS] T3 [EXACT]: <S_z^A> = 0 on the singlet (rotationally invariant)
+[PASS] T3 [EXACT]: singlet connected correlator <S_A.S_B> - <S_A>.<S_B> = -3/4 (nonzero, maximal)
+[PASS] T4 [EXACT]: connected correlator = 0 for every product state (49 tested) -- structural decoherence with separation
+[PASS] T4 control (non-vacuous): the entangled singlet is NOT a product state (its connected correlator is nonzero)
+[PASS] T5 [EXACT]: additive readout 2-record connected cumulant I(A|_|B)-I(A)-I(B) = 0 on all 6 disjoint families (named readout is correlation-blind)
+[PASS] T5 control (non-vacuous): a non-additive functional (I^2) has a nonzero 2-record cumulant -> a joint (non-additive) correlator is the extension target
+[PASS] T6 [EXACT]: connected correlator nonzero (-3/4) ONLY at adjacency, 0 at every larger Z^3 separation -- structural decoherence-with-separation profile
+        distance profile (L1, correlator): d1->-3/4, d1->-3/4, d2->0, d3->0, d2->0, d4->0
+[PASS] Text audit: Admissibility nearest-neighbor sentence present in axiom memo
+[PASS] Text audit: Record additive-scalar-readout sentence present in axiom memo
+[PASS] Text audit: arena note supplies the Sym^2 + Anti^2 exchange split
+[PASS] Text audit: arena note flags the spin-axis identification as downstream (not axiom)
+[PASS] AST self-scan: no network/subprocess/os imports
+[PASS] AST self-scan: no write-mode open() calls
+[PASS] AST self-scan: no Path write_text/write_bytes calls
+TOTAL: 28 PASS / 0 FAIL
+DECLARATION: bounded structural result. The bonded-pair arena supplies a correlated (singlet) two-site substrate; readable pair correlation is confined to nearest-neighbor adjacency (product off-adjacency -> decoherence with separation); and the NAMED additive scalar readout has identically zero two-record connected part. No dynamics, Born weight, record-formation rate, spin-axis identification, strangeness, hyperon, or the STAR (18+/-4)% magnitude is derived or claimed; STAR is a named external comparator only. Audit status is set solely by the independent audit lane.

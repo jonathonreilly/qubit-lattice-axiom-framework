@@ -266,8 +266,10 @@ def render_audit_lane_field_vocabulary(data: dict) -> str:
     lines.append("### No-Go Discipline packet fields")
     lines.append("")
     lines.append(
-        "`no_go_discipline.status` records the mandatory structured N1-N8 "
-        "stress-test outcome for negative boundaries. Exactly one of:"
+        "`no_go_discipline.status` records the outcome carried by a structured "
+        "N1-N8 packet. The packet is mandatory for clean negative boundaries, "
+        "no-go rows, and forensic runs; it is optional for development-tier "
+        "non-clean verdicts and fully validated when supplied. Exactly one of:"
     )
     lines.append("")
     for name, entry in tf["no_go_discipline_status"]["values"].items():
@@ -292,9 +294,11 @@ def render_audit_lane_field_vocabulary(data: dict) -> str:
     lines.append(
         "`negative_assertion_classes` is the mandatory auditor declaration on "
         "every incoming audit: the policy assertion classes the artifact makes, "
-        "judged semantically from the full note (empty list when none). Any "
-        "non-empty declaration requires the N1-N8 packet; an empty declaration "
-        "never bypasses the mechanical trigger. Allowed classes:"
+        "judged semantically from the full note (empty list when none). A "
+        "non-empty declaration requires the N1-N8 packet for clean verdicts, "
+        "no-go rows, and forensic runs; on a development-tier non-clean verdict "
+        "it remains recorded in rationale prose. An empty declaration never "
+        "bypasses the mechanical trigger. Allowed classes:"
     )
     lines.append("")
     for name, entry in tf["negative_assertion_classes"]["values"].items():

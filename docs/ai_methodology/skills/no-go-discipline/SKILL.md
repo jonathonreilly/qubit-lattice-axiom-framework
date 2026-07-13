@@ -42,7 +42,10 @@ Skills that must invoke this gate before approving negative-claim output:
 - `audit-loop` — before issuing `audited_clean` for a `claim_type: no_go`
   row, or any verdict whose rationale names walls (independent audit
   authority; this gate prevents the audit lane from inheriting the
-  source-note's overclaim);
+  source-note's overclaim). The structured packet is mandatory for clean
+  wall-naming verdicts, all no-go-row verdicts, and forensic runs; a
+  development-tier non-clean verdict may record the N1-N8 judgment in its
+  rationale prose without the optional packet;
 - any future skill that produces negative-claim output.
 
 ## The N1-N8 checklist
@@ -51,6 +54,9 @@ Each item must be answered IN WRITING in the cycle's `CLAIM_STATUS_CERTIFICATE.m
 (or in a dedicated `NO_GO_DISCIPLINE_CHECKLIST.md`) before the negative claim
 can ship. The checklist must be visible in the PR body or review verdict so
 the audit lane and reviewers can see exactly what was tested.
+For a development-tier non-clean audit verdict, the verdict rationale is the
+accepted written record and the structured checklist is optional; this
+repair-queue result does not ship negative authority.
 
 ### N1 — Alternative route enumeration
 

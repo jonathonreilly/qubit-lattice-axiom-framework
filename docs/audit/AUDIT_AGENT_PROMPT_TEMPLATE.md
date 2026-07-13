@@ -188,13 +188,13 @@ in rationale prose, and every incoming audit must declare
 the same clean-verdict/no-go/forensic terms as the output trigger, while an
 empty declaration never bypasses a mechanical source or output trigger.
 
-- **Development tier:** for everything except `claim_type: no_go` rows,
-  source paths matching the no-go-name trigger, and
-  `AUDIT_FORENSIC_MODE=1` certification runs, supply N1-N8 as complete
-  structured judgment with quoted evidence paths and locators. Structural
-  validation does not authenticate manifest containment, require live stdout,
-  require exhaustive N6/N8 index coverage, or require transport and snapshot
-  plumbing.
+- **Development tier:** for an `audited_clean` verdict on a wall-naming
+  positive/bounded row, supply N1-N8 as complete structured judgment with
+  quoted evidence paths and locators. For a non-clean verdict on such a row,
+  record the same judgment in rationale prose; a structured packet is optional.
+  Any development-tier packet that is supplied receives structural validation,
+  without authenticated manifest containment, a live-stdout precondition,
+  exhaustive N6/N8 index coverage, or transport and snapshot plumbing.
 - **Forensic tier:** the manifest-containment, live-stdout, complete-index,
   transport, and snapshot requirements below are mandatory. The no-go-name
   trigger includes no-go, obstruction, firewall, negative-boundary,
@@ -377,7 +377,9 @@ Return a single JSON object with exactly these fields. No other prose.
 }
 ```
 
-Use `null` only when the gate is not required. Otherwise replace it with:
+Use `null` when the gate is not triggered, or when a development-tier
+non-clean verdict omits the optional structured packet. Otherwise replace it
+with:
 
 ```json
 {

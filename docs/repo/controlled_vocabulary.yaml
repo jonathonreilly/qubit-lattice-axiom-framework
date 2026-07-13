@@ -168,7 +168,7 @@ term_families:
         definition: "None of the above fits; the note must state why."
 
   no_go_discipline_status:
-    description: "Outcome of the mandatory structured N1-N8 stress test for negative boundaries."
+    description: "Outcome carried by a structured N1-N8 packet. The packet is mandatory for clean negative boundaries, no-go rows, and forensic runs; it is optional for development-tier non-clean verdicts and fully validated when supplied."
     authority: docs/ai_methodology/skills/no-go-discipline/SKILL.md
     scope_tag: audit_physics_process
     values:
@@ -200,7 +200,7 @@ term_families:
         definition: "A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative."
 
   negative_assertion_classes:
-    description: "Mandatory auditor declaration on every incoming audit: the no-go-discipline policy classes the artifact asserts, judged semantically from the full note. Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger."
+    description: "Mandatory auditor declaration on every incoming audit: the no-go-discipline policy classes the artifact asserts, judged semantically from the full note. A non-empty declaration requires the N1-N8 packet for clean verdicts, no-go rows, and forensic runs; on a development-tier non-clean verdict it remains recorded in rationale prose. An empty declaration never bypasses the mechanical trigger."
     authority: docs/ai_methodology/skills/no-go-discipline/SKILL.md
     scope_tag: audit_physics_process
     values:

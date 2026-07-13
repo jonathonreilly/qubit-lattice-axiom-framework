@@ -387,12 +387,15 @@ The lane runs two assurance tiers:
   runner, and premise hashes) and survive unrelated repository growth. Every
   audit still requires independent cross-family re-derivation at xhigh and
   the two-pass cross-confirmation flow on critical rows. Wall-naming
-  positive/bounded rows apply the No-Go Discipline as auditor judgment, and
-  any supplied N1-N8 packet is validated structurally (no manifest-backed
-  containment, live-stdout, or full-universe disposition plumbing).
-- **Forensic tier.** Mandatory for `claim_type: no_go` rows (foreclosure is
-  permanent) and for freeze/certification runs (`AUDIT_FORENSIC_MODE=1`),
-  which force the full heavyweight regime lane-wide against a pinned commit:
+  positive/bounded rows apply the No-Go Discipline as auditor judgment. The
+  structured packet is mandatory for clean wall-naming verdicts and optional
+  for non-clean verdicts; any supplied packet is validated structurally (no
+  manifest-backed containment, live-stdout, or full-universe disposition
+  plumbing).
+- **Forensic tier.** Mandatory for `claim_type: no_go` rows and source paths
+  matching the no-go-name trigger (foreclosure is permanent), and for
+  freeze/certification runs (`AUDIT_FORENSIC_MODE=1`), which force the full
+  heavyweight regime lane-wide against a pinned commit:
   authenticated evidence transport, verbatim-contained route evidence, live
   runner-stdout citation, and complete index dispositions with authenticated
   omitted-tail summaries.

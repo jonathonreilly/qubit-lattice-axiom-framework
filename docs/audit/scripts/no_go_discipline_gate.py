@@ -69,8 +69,9 @@ HONESTY_MARKERS = {"ATTEMPTED", "RULED OUT BY PRIOR"}
 # negative_assertion_classes). Every incoming audit must declare which classes
 # the artifact ASSERTS (empty list when none). The declaration is the
 # auditor's semantic judgment after reading the full note; the regex
-# trigger below is only a mechanical floor. Either surface requires the
-# N1-N8 packet.
+# trigger below is only a mechanical floor. Either surface triggers the
+# discipline, while packet_requirement_binds() decides whether this verdict
+# must carry the structured N1-N8 packet.
 POLICY_NEGATIVE_CLASSES = {
     "no_go_result",
     "stretch_attempt_negative",

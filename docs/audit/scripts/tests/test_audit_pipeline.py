@@ -4566,7 +4566,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
 
     def test_negative_assertion_declaration_contract(self):
         """The auditor's semantic declaration is mandatory on incoming
-        audits and requires the packet independently of the regex floor."""
+        audits and, for a clean verdict, requires the packet independently of
+        the regex floor."""
         m = _import("no_go_discipline_gate")
         base = {
             "claim_type": "bounded_theorem",
@@ -4585,8 +4586,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             require_declaration=True,
         )
         self.assertIn("unknown classes", error or "")
-        # A declared class requires the packet even when the regex floor
-        # does not fire.
+        # On a clean verdict, a declared class requires the packet even when
+        # the regex floor does not fire.
         error = m.validate_no_go_discipline(
             {**base, "negative_assertion_classes": ["derived_no_go_boundary"]},
             require_declaration=True,

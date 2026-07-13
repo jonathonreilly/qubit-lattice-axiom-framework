@@ -85,12 +85,14 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   complete index dispositions) are mandatory for `claim_type: no_go` rows,
   source paths matching the no-go-name trigger (including obstruction,
   firewall, negative-boundary, no-uniform-sign, and stretch-attempt names),
-  and `AUDIT_FORENSIC_MODE=1` certification runs. Development-tier rows supply
-  the N1-N8 packet as structured judgment with quoted evidence, validated
-  structurally. Negative-claim overclaims foreclose investigation paths
-  permanently and require the same scrutiny as positive-claim overclaims. If
-  any N1-N8 check fails on the source note, choose the more conservative
-  non-clean verdict whose `verdict_rationale` reflects the honest narrower
+  and `AUDIT_FORENSIC_MODE=1` certification runs. A development-tier packet is
+  mandatory for a clean wall-naming verdict and optional for a non-clean
+  verdict; whenever supplied, it carries structured N1-N8 judgment with quoted
+  evidence and is validated structurally. Negative-claim overclaims foreclose
+  investigation paths permanently and require the same scrutiny as
+  positive-claim overclaims. If any N1-N8 check fails on the source note,
+  choose the more conservative non-clean verdict whose `verdict_rationale`
+  reflects the honest narrower
   claim scope; do not record `audited_clean`, and do not transcribe the source
   note's inflated wall list into the ledger.
 - **Vocabulary is auto-corrected, not adjudicated.** The repo's process vocabulary is canonical in [`docs/repo/controlled_vocabulary.yaml`](../../../repo/controlled_vocabulary.yaml) (design in [`VOCABULARY_HYGIENE_DESIGN.md`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)). Before writing an audit verdict, run `scripts/vocab_lint.py --fix` on the source note under audit. Routine local drift that has a non-link-aware rewrite rule, such as legacy aliases and deprecated wording, is rewritten mechanically; link-aware filename suffix migrations and F-letter finding-label migrations are reported but deferred to Cleanup-2 tooling. This is a normal commit step, never a science verdict. Record what was rewritten in the ledger row's `prose_corrections` field and set `prose_status: auto_corrected`. When `vocab_lint --fix` changed the source note, include a `pre_audit_prose_fix` envelope on the audit blob carrying `{old_hash, new_hash, prose_status, prose_corrections}` so `apply_audit.py` atomically refreshes `note_hash` before the hash-drift check. If `vocab_lint` cannot mechanically rewrite a violation (genuinely new term, link-aware rename pending, or F-letter migration pending), set `prose_status: needs_human_vocab_decision` — but **do not** translate this into a non-clean `audit_status`. Physics and prose are separate verdicts. A clean derivation with vocabulary drift lands as `(audit_status: audited_clean, prose_status: auto_corrected)`; a clean derivation that introduces a genuinely new term lands as `(audit_status: audited_clean, prose_status: needs_human_vocab_decision)`. Never assign `audited_renaming` or `audited_conditional` on prose grounds alone.
@@ -158,15 +160,14 @@ packet.
   runner, premise hashes) and survive unrelated repository growth.
   Independent cross-family re-derivation at xhigh and two-pass
   cross-confirmation on critical rows are unchanged and remain the heart of
-  the audit. When walls are named, answer N1-N8 as structured judgments with
-  quoted evidence; the packet is validated structurally (no
-  manifest-containment scans, no live-stdout precondition, no full-universe
-  dispositions, no transport envelope). The structured packet is MANDATORY
-  for `audited_clean` verdicts that name walls (and always on no-go rows);
-  for non-clean verdicts on non-no-go rows it is optional — state the
-  wall-naming judgment in `verdict_rationale` prose instead, since those
-  verdicts re-enter the repair queue and foreclose nothing. A supplied
-  packet is validated in full either way.
+  the audit. The structured packet is MANDATORY for `audited_clean` verdicts
+  that name walls (and always on no-go rows); record N1-N8 as structured
+  judgments with quoted evidence. For non-clean verdicts on non-no-go rows it
+  is optional — state the wall-naming judgment in `verdict_rationale` prose
+  instead, since those verdicts re-enter the repair queue and foreclose
+  nothing. A supplied development-tier packet is validated structurally in
+  full either way (no manifest-containment scans, no live-stdout precondition,
+  no full-universe dispositions, no transport envelope).
 - **Forensic tier.** Mandatory for `claim_type: no_go` rows and source paths
   matching the no-go-name trigger (including obstruction, firewall,
   negative-boundary, no-uniform-sign, and stretch-attempt names); forced

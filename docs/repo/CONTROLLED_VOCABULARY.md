@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=c03e7bd6a1e5cd35db4beaf6570ea5bd4989a38ca7001e2d877f82da3fa6e3bc -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=6e0412607f7373a64768148c64a23ccaa6f29461e21549af4cfcfad154983c41 -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
@@ -410,7 +410,7 @@ After the class, the auditor names the cheapest next repair action.
 
 ### No-Go Discipline packet fields
 
-`no_go_discipline.status` records the mandatory structured N1-N8 stress-test outcome for negative boundaries. Exactly one of:
+`no_go_discipline.status` records the outcome carried by a structured N1-N8 packet. The packet is mandatory for clean negative boundaries, no-go rows, and forensic runs; it is optional for development-tier non-clean verdicts and fully validated when supplied. Exactly one of:
 
 - `PASS` — Every required N1-N8 record closes with no unresolved item; eligible to support a clean negative verdict.
 - `FAIL` — At least one required stress test remains open, incomplete, or mismatched; forbids audited_clean and requires an explicit demotion.
@@ -426,7 +426,7 @@ Packetless legacy negative authority is invalidated with the controlled reason:
 
 - `no_go_discipline_packet_missing` — A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative.
 
-`negative_assertion_classes` is the mandatory auditor declaration on every incoming audit: the policy assertion classes the artifact makes, judged semantically from the full note (empty list when none). Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger. Allowed classes:
+`negative_assertion_classes` is the mandatory auditor declaration on every incoming audit: the policy assertion classes the artifact makes, judged semantically from the full note (empty list when none). A non-empty declaration requires the N1-N8 packet for clean verdicts, no-go rows, and forensic runs; on a development-tier non-clean verdict it remains recorded in rationale prose. An empty declaration never bypasses the mechanical trigger. Allowed classes:
 
 - `no_go_result` — Asserts a no_go outcome: structurally closed, no route exists, no retained primitive supplies the target.
 - `stretch_attempt_negative` — Asserts a stretch-attempt negative outcome: the attempted route does not close.

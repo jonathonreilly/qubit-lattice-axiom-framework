@@ -1129,3 +1129,32 @@ PR #5347 is open.
 The next target is the combined-reference split plus residual-colored
 resummation and Haar provenance, followed by migration to the extracted
 future center. No axiom-update stop is triggered.
+
+## Combined-reference split and fixed-U colored-response review
+
+PASS WITH BOUNDED CLAIMS after four load-bearing repairs. The abstract
+residual activity is now defined on the same weighted support/overlap universe
+as the tagged Gaussian reference row. The proof freezes `D` at the total row,
+derives `a_0<=KD` and the prior marked envelope `A_att<=H(DK)`, preserves red
+colors before subtracting the all-reference series, and only then applies
+`H'(t)=2/(1-t)^3`. The denominator logarithm selected from `z=0` is an
+explicit KP admissibility condition.
+
+The exact combined split and total-covariance law require neither positivity
+nor a false interchange of Haar and correlated Gaussian atoms. Physics review
+separates the original `A=m1+M_II` reference bonds from the physical
+determinant body, restricts scalar determinant/Wilson red factors to the future
+joint outer-Haar arm, and leaves only mapped fermionic boundary/Schur factors
+as fixed-`U` candidates. Future `S^(2)` is not imported.
+
+Independent high-precision recomputation matches `K_G^tag`, `K_I`, `K_S`,
+`K_R`, `D`, `tau`, `A_corr`, and the arithmetic `q`. Random finite-difference
+and `a_0` envelope stress tests pass. Runner/cache are `PASS=11 FAIL=0`;
+audit validation seeds one `bounded_theorem` / `unaudited` row with exactly
+four dependencies; strict lint has zero errors and generated outputs are
+stripped. PR #5349 is open.
+
+No globally normalized combined response, actual red-factor instantiation,
+generic source embedding, Haar provenance theorem for `g`, future-center
+migration, strong return, Hessian, invariant ball, probability/time law, or
+continuum result is claimed. No axiom-update stop is triggered.

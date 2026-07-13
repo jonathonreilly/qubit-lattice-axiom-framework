@@ -1307,3 +1307,33 @@ generated audit/status outputs are stripped. PR #5363 is open on Block42.
 It is mergeable with the independent audit workflow running. The next theorem
 target is the exact tree-span/source-incidence bridge and then the full
 correlated-`S_next` grammar. No axiom-update stop is triggered.
+
+## Actual-hidden site-block marked-response review
+
+PASS WITH BOUNDED CLAIMS after three independent final reviews. The first
+draft incorrectly centered with the full formal future-coordinate product.
+Code/math review supplied the decisive counterexample: an external `F(W)` can
+be formally centered while physical hidden integration leaves it unchanged,
+so the mark-alone term would survive. The repaired theorem integrates only
+the actual `B`, nonskeleton, and `I_1` Gaussian variables; `W,K_1` remain
+external, and the runner verifies `E_hid F(W)=F(W),Q_hid F(W)=0`.
+
+The exact one-cell runner partition is `56` nonskeleton links + `4` skeleton
+`B` + `15` eliminated-site Gaussian coordinates, with `4 W` and one retained
+slot external. Intermediate-site ownership places `B` in either half-carrier.
+The final geometry proof uses floor/floor and ceil/ceil `l1` contractions and
+a one-edge mixed floor/ceil allowance, so `diam X_2(Y)<=ell(Y)+1` is paid
+without silently spending two endpoint edges.
+
+Governance required the `m=10^44` row to remain only a failure of an inherited
+upper-majorant certificate. Physics/import confirmed the mixed Haar--Berezin
+product proof at fixed external data and the ordinary-output boundary. No
+future re-Hoeffding return, correlated `S_next` step, generic ball, taste, or
+continuum claim remains.
+
+Runner/cache are `PASS=17 FAIL=0`; all five dependency runners, pycompile,
+diff hygiene, full audit pipeline, and strict lint pass. Generated audit/status
+outputs are stripped. PR #5364 is open on Block43. The next target is the full
+correlated-`S_next` grammar and projected quadratic/Weyl gap update. It is
+mergeable with the independent audit workflow running. No axiom-update stop
+is triggered.

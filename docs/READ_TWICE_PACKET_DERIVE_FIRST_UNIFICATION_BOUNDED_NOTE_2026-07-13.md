@@ -19,8 +19,8 @@ protocol demands for "a record must be written twice."
 - **Read-side target:** the modulus-squared readout weight — show that,
   conditional on named packet content, the statistical weight of a
   recorded outcome is the sesquilinear (conjugate-paired) form, with the
-  discrete `r in {1, 1/2}` readout dichotomy as the falsifiable
-  discriminator.
+  discrete `r in {1, 1/2}` readout dichotomy as the two-point fork (its
+  empirical identification is carried by the r-program lane, not here).
 - **Write-side target:** the formation-interface objects that the read-side
   derivation consumes — a record's birth structure as two disjoint,
   independently outcome-tied registers — stated as a packet whose own
@@ -42,11 +42,14 @@ packets of the same shape. Neither packet is registered by this note.
            (site, admissible possibility, fresh register) triple.
            [extension - underivable; see P2]
 (R-FORM-b) Independence: a formation event comprises two write events on
-           DISJOINT register regions, each register's conditional content
-           tied to the site outcome and, given that outcome, to nothing
-           else. The outcome decomposition is the site's admissible menu,
-           supplied upstream by the Admissibility axiom - the packet
-           chooses no basis. [physical clause, part 1]
+           DISJOINT register regions, BOTH copying the SAME outcome
+           decomposition - the site's admissible menu, supplied upstream by
+           the Admissibility axiom - each register's conditional content
+           tied to that outcome and, given it, to nothing else. The
+           shared-decomposition requirement is named clause content (two
+           individually admissible writes need not copy the same
+           decomposition; this clause makes them). [physical clause,
+           part 1]
 (R-FORM-c) Counting: realized records count per admissible possibility,
            never per coordinate, dimension, or presentation.
            [physical clause, part 2 - where any weight content hides]
@@ -85,7 +88,7 @@ classification and the FRAME-EXT reduction. Verdicts:
 | R-FORM-d | **Provable obligations — discharged.** | Runner blocks B6–B8: at the two-register level, each register is a distinct site carrying at most one record; branchwise permanence holds in the sense of the write-class note's repeat-channel stability; readout is invariant under register-basis unitaries (content-determined); the two witness records are pairwise disjoint and their readouts add with `I(empty)=0`. |
 | R-READ-a | **Reduces to R-FORM-a.** | Given R-FORM, the only read events the target needs are readouts of the two formation registers. No separate read-event ontology is required. |
 | R-READ-b | **Forced, conditional on R-FORM: the discriminator is "distinct sites," and it is not chosen but inherited** — the two reads are reads of the two formation witnesses. | "Distinct ticks" is eliminated on the current surface: with permanence and content-determined readout, a second read at a later tick reads the same content by a two-line corollary and can add nothing. "K-conjugate contexts" is not selected as an input; the conjugate structure appears in the OUTPUT of R-READ-c's derivation (the sesquilinear form), which is where it belongs. |
-| R-READ-c | **Not an independent assumption. It reduces, verbatim, to the already-named FRAME-EXT premise plus Gleason's theorem (a textbook import at composite dimension >= 3) — with R-FORM supplying, as physically realized structure, the composite domain that FRAME-EXT's clause (4) otherwise has to supply by hand.** | See the theorem below. The remaining open crux is exactly the already-named FINITE-ADDITIVITY-TO-FRAME gap, narrowed as stated there — no new gap and no new premise are introduced by "read twice." |
+| R-READ-c | **Adds no content of its own, but does NOT fully reduce to existing names. After the blind panel (below), its honest decomposition is: FRAME-EXT (already named) + Gleason (textbook import, dimension >= 3) + one further premise the panel forced into the open — PREP-FRAME: the density operator that Gleason yields is the prepared record-bearing state. Without PREP-FRAME, nothing identifies the frame state with the preparation, and the modulus-squared target does not follow.** | See the theorem and panel record below. R-FORM supplies a dimension >= 3 physical carrier for FRAME-EXT's clause (4) — the carrier only; the extension over all orthogonal decompositions (the FINITE-ADDITIVITY-TO-FRAME gap) and the state identification (PREP-FRAME) remain supplied. "Read twice" introduces no gap and closes none; it double-names these. |
 | R-READ-d | **Provable obligations — discharged** (same runner blocks as R-FORM-d; the paired readout consumes register content only). |
 
 ### The unification theorem (conditional, exact on the minimal representative)
@@ -116,21 +119,26 @@ input in the pointer span with coefficients `c_0, c_1`:
    registers discriminate the outcome exactly and are conditionally
    independent given it (R-FORM-b is realizable, and its content is exactly
    the classified write class applied twice);
-2. the **coincidence functional** — the weight of joint agreement of the two
-   registers on outcome `i` — equals `c_i^* c_i = |c_i|^2`, the diagonal of
-   a sesquilinear form: the R-READ-c pairing appears as the agreement
-   functional of the two formation witnesses, not as a postulate;
+2. the **coincidence identity**: the agreement projector's evaluation in
+   the standard state pairing equals `c_i^* c_i = |c_i|^2`. The panel
+   record is adopted verbatim into the claim: this evaluation already uses
+   the Hilbert-space pairing, so it is a CONSISTENCY IDENTITY, not a
+   derivation of the weight. Its honest content is a relocation: IF readout
+   weights are frame-functional (FRAME-EXT + Gleason + PREP-FRAME), THEN
+   the weight of a recorded outcome coincides exactly with the two-witness
+   agreement functional — weights are witness-agreement statistics, with
+   the sesquilinear shape carried by the frame theorem, not by the second
+   witness;
 3. this functional is content-determined (invariant under register-basis
-   unitaries), nonnegative, and normalized, and the composite carrier that
-   FRAME-EXT's clause (4) must otherwise supply by hand —
-   `M_2 tensor M_2 = M_4` with its projection lattice — is here realized
-   physically by the formation event. Precisely: given FRAME-EXT's
-   extension clauses on that realized carrier, Gleason's theorem
-   (dimension 4 >= 3, textbook import) forces the density form, and the
-   coincidence functional is exactly the density-form diagonal the
-   extension must match on the realized menu. The realized menu alone does
-   NOT supply Gleason's domain — the extension to all orthogonal
-   decompositions remains FRAME-EXT content; that is the surviving gap;
+   unitaries), nonnegative, and normalized, and the formation event
+   realizes a dimension >= 3 composite CARRIER (`M_2 tensor M_2 = M_4`).
+   The panel wording is adopted: what is realized is the carrier and one
+   pointer context with its coarse-grainings — NOT the projection lattice,
+   whose entangled and counterfactual decompositions FRAME-EXT still
+   supplies by hand, and NOT the frame state, which PREP-FRAME supplies.
+   Given all of FRAME-EXT + Gleason + PREP-FRAME, the density form follows
+   and its diagonal matches the coincidence identity of part 2. The
+   FINITE-ADDITIVITY-TO-FRAME gap is narrowed only in this carrier sense;
 4. the single-register control fails: on one register alone (`M_2`), the
    known dimension-2 loophole frame function `f(P_n) = (1 + n_z^3)/2` is
    nonnegative, normalized, and additive on every orthogonal `M_2` pair yet
@@ -144,18 +152,19 @@ All four parts are verified exactly (rational/Gaussian-rational arithmetic)
 by the runner. Gleason's theorem itself is consumed as a textbook import at
 declared scope (dimension >= 3), not re-proven.
 
-**What this does and does not close.** Given R-FORM, the entire surviving
-content of "a record must be read twice" is: *the readout weight is the
-agreement functional of the two formation registers*, and that functional's
-sesquilinear form follows on the realized composite domain from FRAME-EXT's
-remaining clauses plus Gleason. The FINITE-ADDITIVITY-TO-FRAME gap is not
-closed: Gleason's uniqueness needs frame additivity over all orthogonal
-decompositions of the composite lattice, while realized formation events
-supply additivity on realized menus. The gap is **narrowed** in one honest
-respect: FRAME-EXT's clause (4) — ownership of the composite domain — no
-longer needs to be supplied by hand, because the two-register formation
-event realizes that domain physically. The non-contextuality core of the
-gap (menus never realized) stands and remains the named crux.
+**What this does and does not close.** Given R-FORM, "a record must be
+read twice" adds no ontology and no discriminator of its own; its pairing
+clause decomposes into FRAME-EXT + Gleason + PREP-FRAME, all named, none
+closed here. The local-undo results are access-relative: the runner's
+witnesses show restricted (single-register-side) reversal fails while the
+global two-write map remains reversible on its image — redundancy buys
+robustness against local reversal, and STRICT permanence remains what the
+Record axiom supplies by fiat, underived. The
+FINITE-ADDITIVITY-TO-FRAME gap is narrowed only in the carrier sense of
+part 3. The strongest control this note does not contain, recorded from
+the panel for the successor: randomized two-record tomography over
+phase-sensitive (entangled) contexts with frequencies defined
+independently of the proposed pairing.
 
 ## P3 — placement (prepared, not executed)
 
@@ -166,12 +175,14 @@ performed by this note.
 - **R-FORM** is the only packet with registrable content: clauses (a)–(c),
   with (d) carried as proven obligations. Prepared registration text, for
   whenever the owner takes it up, is the packet block in P1 verbatim.
-- **R-READ requires no registration.** After P2, its ontology reduces to
-  R-FORM's, its discriminator is inherited, its pairing is conditional
-  theorem content (FRAME-EXT + Gleason on the realized composite), and its
-  compatibility clauses are proven. Registering "read twice" separately
-  would mint a second name for existing content — the exact double-naming
-  the FRAME-EXT reduction removed for the color premises.
+- **R-READ adds no registrable content of its own.** After P2 and the
+  panel, its ontology reduces to R-FORM's, its discriminator is inherited,
+  its compatibility clauses are proven, and its pairing decomposes into
+  FRAME-EXT (already named) + Gleason (import) + PREP-FRAME (named here,
+  panel-forced, and registrable only as part of the read-side target's
+  premise set — not as "read twice"). Registering the slogan separately
+  would double-name this decomposition — the exact pattern the FRAME-EXT
+  reduction removed for the color premises.
 - **Family resemblance, decided separately:** the pending per-plaquette
   P-LINK-AVAIL four-clause registration belongs to the same
   certification-by-redundancy genre. Per the handoff's do-not, no coupling:
@@ -217,9 +228,22 @@ performed by this note.
 
 ## Panel
 
-Framework-blind physicist panel (three lenses) run on the packet and
-theorem before this PR; verdicts and repairs recorded in
-`REVIEW_HISTORY.md` in the campaign pack.
+Framework-blind physicist panel (three lenses: physics-soundness,
+hidden-assumption, falsifiability/scope) run BEFORE this PR on the packet
+and the pre-repair theorem. All three seats returned UNSOUND against the
+pre-repair derivation claims, with convergent findings: (i) the
+coincidence evaluation already uses the Hilbert-space pairing — circular
+as a weight derivation; (ii) Gleason's density form does not identify the
+frame state with the preparation (PREP-FRAME forced into the open);
+(iii) the realized composite is a carrier, not the projection-lattice
+domain; (iv) R-FORM-b implicitly assumed both writes copy the same
+decomposition; (v) permanence claims must stay access-relative;
+(vi) "requires no registration" and "falsifiable discriminator" were
+overclaims. Every finding is adopted: this note's claims are the
+post-repair versions, and the underlying algebra (fan-out, identity,
+controls) — which all three seats assessed as valid — is what the runner
+verifies. Full verdicts and the repair map: `REVIEW_HISTORY.md` in the
+campaign pack.
 
 ## Runner verification map
 
@@ -231,5 +255,5 @@ theorem before this PR; verdicts and repairs recorded in
 | B4 | Single-register loophole: `f(P_n) = (1+n_z^3)/2` is additive/nonnegative/normalized on `M_2` yet not density-form (explicit non-linearity witness) | exact |
 | B5 | Composite domain: the realized menu lives in `M_4` (dim 4 >= 3); the coincidence functional is density-form there by direct construction | exact |
 | B6 | Counting arithmetic: `r = (1-w)/2w` maps `{1/3, 1/2}` to `{1, 1/2}` | exact |
-| B7 | Negative controls: no-write (no discrimination); one-write-only (adjoint reversal succeeds — single register revocable); corrupted second witness (conditional dependence appears and the paired weight deviates) | exact |
+| B7 | Negative controls: no-write (no discrimination); one-write-only (adjoint reversal succeeds — single register revocable; two writes defeat the exhibited local undo attempts); corrupted witnesses (overlapping content rays stay isometric but exit the exact-discrimination class, and the agreement functional deviates on the corrupted outcome) | exact |
 | B8 | Compatibility obligations: disjoint records' readouts add, `I(empty) = 0`, one record per register site, branchwise repeat stability | exact |

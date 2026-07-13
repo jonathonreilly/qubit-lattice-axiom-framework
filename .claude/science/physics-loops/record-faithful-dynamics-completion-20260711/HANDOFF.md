@@ -1181,7 +1181,10 @@ lint has zero errors and generated outputs are stripped.
 Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5369 is
 open on Block44. The next target is the scalar-product-reference outer-Haar
-closure at the verified `m=10^64` reserve witness: factor onsite `Q_I` and
-hopping relative to `G_(mu')`, use the full all-length log determinant, split
-its hidden-empty/centered atoms correctly, and pay a fresh site-block
-atomization plus eta migration. No axiom-update stop is triggered.
+closure at the verified `m=10^64` reserve witness. It must start from the
+Block42 residual, actual `P_0`, shortest center, and separately owned tail
+arms; the old Block44 fixed-product output is not a physical `Q` input. Use a
+scalar `G_(mu')`, the full all-length determinant, and one completed joint
+integration with the Block44 support map. Only after deriving that joint
+ordinary output may the next actual quadratic be projected and atomized. No
+axiom-update stop is triggered.

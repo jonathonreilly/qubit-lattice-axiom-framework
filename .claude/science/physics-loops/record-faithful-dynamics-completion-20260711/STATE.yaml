@@ -299,12 +299,16 @@ block44_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block45_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5369
 next_exact_action: >-
   Build the one-horizon scalar-product-reference outer-Haar closure at the
-  verified m=10^64 reserve witness. Write A_3=mu'I+Q_I(W)+R_II(W), factor
-  Q_I and R_II relative to scalar onsite G_mu', localize the full all-length
-  log det(I+(Q_I+R_II)/mu') rather than an even-only series, own Q_K and both
-  Schur-tail arms once, and pay fresh site-block Hoeffding plus eta migration.
-  Target a full joint marked response and landed theta>0.400001. Preserve the
-  separate all-horizon/fixed-norm obstruction; only after the one-horizon
+  verified m=10^64 reserve witness. Start from the Block42 decorated residual,
+  actual P_0, external shortest center, and both separately owned Schur-tail
+  arms; do not feed the old Block44 fixed-product output forward as physical
+  Q. Relative to scalar onsite G_mu', factor the actual P_0 quadratic and
+  shortest hopping, localize the full all-length log determinant, split its
+  hidden-empty/centered atoms, and run one completed joint hidden integration
+  using the Block44 68/support map. Derive the ordinary output row there, then
+  project and atomize its actual quadratic output, pay eta migration, and
+  target landed theta>0.400001 with a full marked response. Preserve the
+  separate all-horizon/fixed-norm obstruction; only after this one-horizon
   factor return closes, begin the generic two-mark Hessian/invariant-ball
   campaign.
 stop_condition: >-

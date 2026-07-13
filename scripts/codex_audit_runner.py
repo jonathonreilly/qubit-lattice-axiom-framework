@@ -1699,6 +1699,8 @@ def fresh_schema_retry_code(validation_error: str) -> str:
         and "is not supported by its evidenced" in validation_error
     ):
         return "N1_ROUTE_CLASS_MARKER_MISMATCH"
+    if validation_error.startswith("N4 witness "):
+        return "N4_WITNESS_SCHEMA_MISMATCH"
     return "AUDIT_SCHEMA_REJECT"
 
 
@@ -1766,6 +1768,17 @@ def render_fresh_schema_retry_prompt(
             "including its canonical class prefix and body, byte-for-byte as a "
             "contiguous line from the cited live current-cycle runner_stdout. "
             "Do not summarize, shorten, or paraphrase those five lines.\n"
+        ),
+        "N4_WITNESS_SCHEMA_MISMATCH": (
+            "Static N4 invariant: when no N1 route is RULED OUT BY PRIOR, emit "
+            "witnesses as an empty list with a substantive none_found_reason; "
+            "never fabricate a placeholder witness. Otherwise every witness "
+            "must include witness_residual_id and claim_residual_id as stable "
+            "residual:<id> strings, plus separate authority evidence_path and "
+            "evidence_locator fields and separate source claim_evidence_path and "
+            "claim_evidence_locator fields. The witness surface must have the "
+            "authority role and the claim surface must have the source role. Copy "
+            "each residual text and ID verbatim from its own cited packet surface.\n"
         ),
     }.get(validation_code, "")
     return (

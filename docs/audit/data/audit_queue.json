@@ -2848,7 +2848,7 @@
       "claim_id": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,

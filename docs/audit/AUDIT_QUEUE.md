@@ -1,12 +1,12 @@
 # Audit Queue
 
 **Total pending:** 2985
-**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 614
+**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 613
 
 By criticality:
-- `critical`: 723
+- `critical`: 724
 - `high`: 330
-- `medium`: 763
+- `medium`: 762
 - `leaf`: 1169
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
@@ -15,8 +15,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 1728 | 25.76 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_complexification_exclusion_stress_2026_07_13.py` |
-| 2 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | non_terminal_conditional | critical | 1718 | 18.25 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py` |
+| 1 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 1729 | 25.76 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_complexification_exclusion_stress_2026_07_13.py` |
+| 2 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | non_terminal_conditional | critical | 1719 | 18.25 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py` |
 | 3 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | unaudited | critical | 1600 | 19.14 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/fermion_parity_z2_grading_check.py` |
 | 4 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | unaudited | critical | 1448 | 20.00 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_z2_hw1_mass_matrix_parametrization.py` |
 | 5 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | positive_theorem | audit_in_progress | critical | 1443 | 14.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_mass_matrix_no_go.py` |

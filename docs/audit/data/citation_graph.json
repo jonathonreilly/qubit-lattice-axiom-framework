@@ -31285,6 +31285,18 @@
       "to": "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16"
     },
     {
+      "from": "persistent_record_as_kraus_operator_note_2026-05-20",
+      "to": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11"
+    },
+    {
+      "from": "persistent_record_as_kraus_operator_note_2026-05-20",
+      "to": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
+    },
+    {
+      "from": "persistent_record_as_kraus_operator_note_2026-05-20",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
       "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
     },
@@ -37457,10 +37469,6 @@
       "to": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
     },
     {
-      "from": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
-      "to": "persistent_record_as_kraus_operator_note_2026-05-20"
-    },
-    {
       "from": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
       "to": "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04"
     },
@@ -37915,10 +37923,6 @@
     {
       "from": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
       "to": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
-    },
-    {
-      "from": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
-      "to": "record_formation_to_kraus_isometry_bridge_2026-06-06"
     },
     {
       "from": "redundancy_not_forced_by_pnd_locality_no_go_note_2026-06-08",
@@ -59062,7 +59066,7 @@
         "kinetic_isotropy_primitive"
       ],
       "helper_runner_paths": [],
-      "note_hash": "008d8fb971213b7bd530971af226e47af1dd885a0a23eb23d1bae0bf91ee12b7",
+      "note_hash": "51ad681cd4bf13a6bbdd7ac1cfbf9692c80dbca8ab74293e99d81da3c1bb6195",
       "path": "docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py",
       "title": "Record Additivity Does Not Fix the R-eta Unit Calibration"
@@ -66853,7 +66857,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "ffed188686a54c5e3cabbc3e45b0b2503b1141ceff75a39fd4bbb3b789a547a1",
+      "note_hash": "a5f68afab06223578edfb84fc6b77cba70c83816bf4e51282114cac30cd2785b",
       "path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py",
       "title": "Cl(3) Complexification Split Narrow Theorem"
@@ -100963,9 +100967,13 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+        "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+        "minimal_axioms"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "6d0b40ea89a1f9f0232e9147eedb62fe8709aa2cbe16e06cf3c974126db3fb57",
+      "note_hash": "9b6e75544198750dc76594af28a9ec81f1cc721dbcff8d8bd9d3c959f49439d7",
       "path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
       "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
       "title": "Finite Record Isometry to Kraus Instrument Algebra"
@@ -111510,11 +111518,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-        "persistent_record_as_kraus_operator_note_2026-05-20"
+        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5228a07eb9692aaff9467ac4d43ebcb435af4e1c2fdfe28cc98c6e55699d6a29",
+      "note_hash": "871872d01eccf53bf71bfd288ef30344ef1954aa434e239b19c563c03edc26a5",
       "path": "docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md",
       "runner_path": "scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py",
       "title": "Record Formation Controlled-Copy Write-Isometry Theorem"
@@ -112128,11 +112135,10 @@
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
         "minimal_axioms",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
-        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-        "record_formation_to_kraus_isometry_bridge_2026-06-06"
+        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "55a2621cb6ab9ebd11a1d3cd956eb31ab141ae2c43f167348ea575e3333bc296",
+      "note_hash": "e49e632036f6abcbe898f26a4672410e5efcee9a1444405537e88069b1f2fac4",
       "path": "docs/RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md",
       "runner_path": "scripts/record_write_admissible_one_step_class_controlled_copy_2026_07_11.py",
       "title": "Admissible One-Step Record-Write Class: Controlled-Copy Narrow Theorem"
@@ -129032,7 +129038,6 @@
     "persistent_object_readout_taper_note",
     "persistent_object_top3_multistage_probe_note_2026-04-16",
     "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16",
-    "persistent_record_as_kraus_operator_note_2026-05-20",
     "persistent_record_matched_compare_note",
     "persistent_record_overlap_kernel_note",
     "persistent_record_refinement_note",
@@ -129444,10 +129449,10 @@
       "open_gate": 212,
       "positive_theorem": 662
     },
-    "edge_count": 14540,
+    "edge_count": 14541,
     "leaf_count": 1330,
     "node_count": 3949,
-    "root_count": 1114,
+    "root_count": 1113,
     "runners_with_path": 3563
   }
 }

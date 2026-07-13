@@ -22,12 +22,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 304 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 2 |
-| unaudited | 2954 |
+| unaudited | 2955 |
 | audit_in_progress | 3 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -42,12 +42,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 382 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 3 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3305 |
+| `unaudited` | 3306 |
 
 | claim_type | count |
 |---|---:|
@@ -60,9 +60,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 799 |
+| `critical` | 800 |
 | `high` | 378 |
-| `medium` | 935 |
+| `medium` | 934 |
 | `leaf` | 1642 |
 
 - **Retained pending chain closure:** 2
@@ -81,14 +81,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1993 | 232.46 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1994 | 232.96 | `unaudited` | meta |
 | 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1646 | 64.69 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1253 | 62.29 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 197 | 61.63 | `unaudited` | unaudited |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1097 | 61.60 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1230 | 50.27 | `unaudited` | unaudited |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1130 | 45.14 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1248 | 44.29 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1249 | 44.29 | `unaudited` | meta |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 706 | 40.47 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1019 | 39.99 | `unaudited` | unaudited |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1354 | 39.90 | `unaudited` | unaudited |
@@ -512,7 +512,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_generation_weight_dial_shape_forced_value_unfixed_qualification_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
-| `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4380,21 +4379,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome.
 - **rationale:** The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome.
 - **auditor confidence:** high
-
-### `persistent_record_as_kraus_operator_note_2026-05-20`
-
-- **Note:** [`PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`](../../docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-judicial-1-20260713-9d04bd0c`  (codex-gpt-5.6; independence=judicial_review)
-- **load-bearing step:** None  _(class `A`)_
-- **chain closes:** False — Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The algebraic implication is exact and the runner genuinely corroborates it, but the packet explicitly identifies normalized W as an external premise and assumes record-basis orthogonality. Under the rubric's explicit-premise and normalization rule, those inputs are not closed by the restricted packet, so the valid bounded theorem remains audited_conditional despite its correct class-A derivation.
-[panel breakdown] [{"auditor": "codex-judicial-1-20260713-9d04bd0c", "judge": 1, "rationale": "The algebraic implication is exact and the runner genuinely corroborates it, but the packet explicitly identifies normalized W as an external premise and assumes record-basis orthogonality. Under the rubric's explicit-premise and normalization rule, those inputs are not closed by the restricted packet, so the valid bounded theorem remains audited_conditional despite its correct class-A derivation.", "tuple": ["second", "audited_conditional", "bounded_theorem", "For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.", "A", []]}, {"auditor": "codex-judicial-2-20260713-ef141277", "judge": 2, "rationale": "The algebraic implication is exact and the runner genuinely corroborates it, but the rubric explicitly assigns audited_conditional when a claim imports an explicit normalization or bridge premise not closed by the restricted packet. Here the normalized linear isometry W and orthonormal record basis are supplied hypotheses, while their persistent-record construction is expressly split off.", "tuple": ["second", "audited_conditional", "bounded_theorem", "For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.", "A", []]}, {"auditor": "codex-judicial-3-20260713-22f289c4", "judge": 3, "rationale": "The packet\u2019s algebraic implication is exact and the runner substantiates it, so class A and bounded_theorem are correct. The rubric nevertheless assigns audited_conditional when a claim imports an explicit premise or normalization supplied rather than established by the restricted packet; here normalized W and orthonormal record labels are supplied hypotheses.", "tuple": ["second", "audited_conditional", "bounded_theorem", "For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.", "A", []]}, {"auditor": "codex-judicial-4-20260713-9528fd93", "judge": 4, "rationale": "The algebraic implication is exact, and the runner corroborates it. However, the rubric assigns audited_conditional when an explicit normalization or bridge premise is imported without closure in the restricted packet; here normalized W and record-basis orthogonality are supplied hypotheses rather than retained-grade inputs.", "tuple": ["second", "audited_conditional", "bounded_theorem", "For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.", "A", []]}, {"auditor": "codex-judicial-5-20260713-1be2366e", "judge": 5, "rationale": "The restricted packet proves the finite algebra exactly once normalized W and the orthonormal record basis are granted. It also identifies W as an external premise, and the rubric assigns audited_conditional when an explicit premise or normalization is not closed by the packet; the runner verifies the implication on a finite example but supplies no derivation of that premise. Class A is therefore correct, while the claimed input chain remains conditional.", "tuple": ["second", "audited_conditional", "bounded_theorem", "For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.", "A", []]}]
-- **rationale:** Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The algebraic implication is exact and the runner genuinely corroborates it, but the packet explicitly identifies normalized W as an external premise and assumes record-basis orthogonality. Under the rubric's explicit-premise and normalization rule, those inputs are not closed by the restricted packet, so the valid bounded theorem remains audited_conditional despite its correct class-A derivation.
-[panel breakdown] [{"auditor": "codex-judicial-1-20260713-9d04bd0c", "judge": 1, "rationale": "The algebraic implication is exact and the runner genuinely corroborates it, but the packet explicitly identifies normalized W as an external premise and assumes record-basis orthogonality. Under the rubric's explicit-premise and normalization rule, those inputs are not closed by the restricted packet, so the valid bounded theorem remains audited_conditional despite its correct class-A derivation.", "tuple": ["second", "audited_conditional", "bounded_theorem", "For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.", "A", []]}, {"auditor": "codex-judicial-2-20260713-ef141277", "judge": 2, "rationale": "The algebraic implication is exact and the runner genuinely corroborates it, but the rubric explicitly assigns audited_conditional when a claim imports an explicit normalization or bridge premise not closed by the restricted packet. Here the normalized linear isometry W and orthonormal record basis are supplied hypotheses, while their persistent-record construction is expressly split off.", "tuple": ["second", "audited_conditional", "bounded_theorem", "For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.", "A", []]}, {"auditor": "codex-judicial-3-20260713-22f289c4", "judge": 3, "rationale": "The packet\u2019s algebraic implication is exact and the runner substantiates it, so class A and bounded_theorem are correct. The rubric nevertheless assigns audited_conditional when a claim imports an explicit premise or normalization supplied rather than established by the restricted packet; here normalized W and orthonormal record labels are supplied hypotheses.", "tuple": ["second", "audited_conditional", "bounded_theorem", "For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.", "A", []]}, {"auditor": "codex-judicial-4-20260713-9528fd93", "judge": 4, "rationale": "The algebraic implication is exact, and the runner corroborates it. However, the rubric assigns audited_conditional when an explicit normalization or bridge premise is imported without closure in the restricted packet; here normalized W and record-basis orthogonality are supplied hypotheses rather than retained-grade inputs.", "tuple": ["second", "audited_conditional", "bounded_theorem", "For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.", "A", []]}, {"auditor": "codex-judicial-5-20260713-1be2366e", "judge": 5, "rationale": "The restricted packet proves the finite algebra exactly once normalized W and the orthonormal record basis are granted. It also identifies W as an external premise, and the rubric assigns audited_conditional when an explicit premise or normalization is not closed by the packet; the runner verifies the implication on a finite example but supplies no derivation of that premise. Class A is therefore correct, while the claimed input chain remains conditional.", "tuple": ["second", "audited_conditional", "bounded_theorem", "For finite-dimensional H_sys and a finite orthonormal record basis, an assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states.", "A", []]}]
-- **auditor confidence:** judicial
 
 ### `persistent_record_matched_compare_note`
 

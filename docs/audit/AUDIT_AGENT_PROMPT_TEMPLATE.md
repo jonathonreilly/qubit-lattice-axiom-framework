@@ -569,6 +569,13 @@ literal marker accepted for its `route_class`:
 - `topology_or_global_structure`: topology, global, bundle, homotopy, cohomology;
 - `dependency_or_registry_reclassification`: dependency, registry, reclassification, premise, authority.
 
+At least one of `mechanism`, `attempt`, or `outcome` itself must contain that
+literal class marker. If a live check label lacks the marker, use a nearby
+marker-bearing live section header as one of the three fields when that header
+genuinely names the same route. Do not duplicate `mechanism` into `attempt` or
+`outcome` unless the live stdout itself supplies the same text for those
+distinct semantic roles.
+
 When the gate is `FAIL`, list only the genuinely evidenced routes; fewer than
 five is valid and records the N1 failure. Do not fabricate extra routes merely
 to reach five.
@@ -615,6 +622,11 @@ its hit as `hidden_admission` with the matching N2 wall or as
 
 For every N3 hit and N5 statement, copy `phrase` byte-for-byte from the
 corresponding `full_phrase_groups[].phrase` value in the evidence manifest.
+Copy the complete authenticated tuple—`phrase`, `occurrence_group_id`,
+`occurrence_count`, `occurrence_locator_sha256`, and `evidence_locator`—from
+one and the same `full_phrase_groups[]` record. Never reuse a group id or
+locator digest under a different phrase, even when both occur on the same
+path.
 Never paraphrase a phrase, join two phrases with punctuation or a slash, or
 collapse distinct phrases into one object. For example, `boundary` and
 `primitive` require separate objects even when one source sentence contains

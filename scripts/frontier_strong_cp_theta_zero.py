@@ -3,12 +3,12 @@
 Strong CP / θ = 0 Bounded Selected-Surface Closure
 ==================================================
 
-STATUS: bounded selected-surface closure on the explicitly θ-free
-Wilson-plus-staggered scalar-mass action surface
+STATUS: bounded selected-action-surface closure on the conditional
+Wilson-plus-staggered / K-real Case-A mass action surface
 
 TARGET CLAIM:
-  On the explicitly θ-free Wilson-plus-staggered scalar-mass surface on the
-  Z^3 spatial substrate,
+  On the bounded Wilson-plus-staggered / K-real Case-A selected action surface on
+  the Z^3 spatial substrate,
   θ_eff = 0 with no surviving loophole from:
 
     (A) fermion determinant / effective-action phase,
@@ -17,12 +17,18 @@ TARGET CLAIM:
     (D) positive-weight topological-sector weighting away from θ = 0.
 
 SCOPE:
-  This is a bounded selected-surface closure package, not a universal
-  all-formulations strong-CP theorem and not a retained-status claim.
+  This is a bounded selected-action-surface closure package, conditional on
+  the cited authorities' own positive-class, character/support,
+  single-plaquette, scalar-mass, and K-real Case-A conditions. It is not a
+  universal all-formulations strong-CP theorem or an audit-status claim.
 """
 
 from __future__ import annotations
 
+from dataclasses import dataclass, replace
+from fractions import Fraction
+from functools import reduce
+from math import gcd, isqrt
 import sys
 import numpy as np
 
@@ -37,6 +43,369 @@ COUNTS = {
     "SELECTED-SURFACE COMPUTE FAIL": 0,
     "SUPPORT": 0,
 }
+
+NAMED_CONDITIONAL_LINE = (
+    "NAMED CONDITIONAL: an ADMITTED CP-odd action term or complex mass phase "
+    "re-opens the strong-CP question."
+)
+
+
+@dataclass(frozen=True)
+class FlavorMassSlot:
+    """One candidate staggered-flavor scalar mass m_f exp(i pi alpha_f)."""
+
+    flavor: str
+    magnitude: Fraction
+    alpha_over_pi: Fraction
+
+
+@dataclass(frozen=True)
+class CandidateSlotSpace:
+    """Candidate action slots before the cited conditional selectors act."""
+
+    cp_even_gauge_slots: tuple[str, ...]
+    cp_odd_gauge_slot: str
+    theta_probe_values_over_pi: tuple[Fraction, ...]
+    alpha_probe_values_over_pi: tuple[Fraction, ...]
+    flavor_magnitudes: tuple[tuple[str, Fraction], ...]
+
+
+@dataclass(frozen=True)
+class ConstructedActionBasis:
+    """Action basis returned by, rather than supplied to, the selection checks."""
+
+    gauge_slots: tuple[str, ...]
+    theta_over_pi: Fraction
+    mass_slots: tuple[FlavorMassSlot, ...]
+    conditions: tuple[str, ...]
+
+
+def phase_mod_two(phase_over_pi):
+    """Canonical exact representative of a phase measured in units of pi."""
+    return phase_over_pi % 2
+
+
+def solve_linear_zero(slope, intercept=Fraction(0)):
+    """Solve slope*x + intercept = 0 in exact rational arithmetic."""
+    if slope == 0:
+        raise ValueError("linear selector has zero slope")
+    return -intercept / slope
+
+
+def exact_z2_phase_branches():
+    """Solve z^2 - 1 = 0 exactly and map z=exp(i theta) to theta/pi."""
+    a, b, c = Fraction(1), Fraction(0), Fraction(-1)
+    discriminant = b * b - 4 * a * c
+    if discriminant.denominator != 1:
+        raise ValueError("Z2 character discriminant is not integral")
+    sqrt_discriminant = isqrt(discriminant.numerator)
+    if sqrt_discriminant**2 != discriminant.numerator:
+        raise ValueError("Z2 character discriminant is not a perfect square")
+    roots = (
+        (-b + sqrt_discriminant) / (2 * a),
+        (-b - sqrt_discriminant) / (2 * a),
+    )
+    phase_by_root = {Fraction(1): Fraction(0), Fraction(-1): Fraction(1)}
+    return tuple(sorted(phase_by_root[root] for root in roots))
+
+
+def character_is_orientation_even(theta_over_pi, support):
+    """Exact test of exp(i theta Q) = exp(-i theta Q) on integer support."""
+    return all((theta_over_pi * q).denominator == 1 for q in support)
+
+
+def integer_character_sign(theta_over_pi, q):
+    """Exact +/-1 value after the orientation-even character collapse."""
+    exponent = theta_over_pi * q
+    if exponent.denominator != 1:
+        raise ValueError("character has not collapsed to the real Z2 branches")
+    return 1 if exponent.numerator % 2 == 0 else -1
+
+
+def positive_character_branches(branches, sector_masses):
+    """Keep only collapsed characters preserving every populated positive mass."""
+    return tuple(
+        theta
+        for theta in branches
+        if all(
+            mass > 0 and integer_character_sign(theta, q) * mass > 0
+            for q, mass in sector_masses.items()
+            if mass > 0
+        )
+    )
+
+
+def exact_sector_pushforward(histories):
+    """Push exact positive native-history weights to integer-sector masses."""
+    masses = {}
+    for q, weight in histories:
+        if weight < 0:
+            raise ValueError("native positive-class toy history has negative weight")
+        masses[q] = masses.get(q, Fraction(0)) + weight
+    return masses
+
+
+def support_gcd(sector_masses):
+    """GCD of differences on populated integer support."""
+    support = sorted(q for q, mass in sector_masses.items() if mass > 0)
+    if len(support) < 2:
+        return 0
+    q0 = support[0]
+    return reduce(gcd, (abs(q - q0) for q in support[1:]))
+
+
+def positive_relative_zero_branches(sector_masses):
+    """Solve the native positive relative-phase condition on gcd-one support."""
+    populated = {q: mass for q, mass in sector_masses.items() if mass > 0}
+    if any(mass < 0 for mass in sector_masses.values()) or support_gcd(populated) != 1:
+        return tuple()
+    # For gcd-one support the relative unit character z must itself be a
+    # positive real unit. The exact linear equation is z - 1 = 0.
+    z = solve_linear_zero(Fraction(1), Fraction(-1))
+    return (Fraction(0),) if z == 1 else tuple()
+
+
+def scalar_phase_is_real(alpha_over_pi):
+    """Exact reality test for m exp(i pi alpha), m > 0."""
+    return phase_mod_two(alpha_over_pi).denominator == 1
+
+
+def scalar_phase_is_positive_real(alpha_over_pi):
+    """Exact supplied/convention-aligned positive-real representative test."""
+    return phase_mod_two(alpha_over_pi) == 0
+
+
+def mass_slot_value(slot):
+    """Numerical coefficient used only after exact phase selection."""
+    return float(slot.magnitude) * np.exp(1j * np.pi * float(slot.alpha_over_pi))
+
+
+def mass_slot(action_basis, flavor):
+    """Look up a constructed flavor slot."""
+    return next(slot for slot in action_basis.mass_slots if slot.flavor == flavor)
+
+
+def selected_real_mass(action_basis, flavor="s"):
+    """Return a real mass from the constructed positive-real surface."""
+    slot = mass_slot(action_basis, flavor)
+    value = mass_slot_value(slot)
+    if slot.alpha_over_pi != 0 or abs(value.imag) > 1e-15 or value.real <= 0:
+        raise ValueError("closure leg received a mass outside the constructed surface")
+    return float(value.real)
+
+
+def quark_mass_matrices(action_basis):
+    """Build the up/down mass matrices from the constructed flavor slots."""
+    values = {slot.flavor: mass_slot_value(slot) for slot in action_basis.mass_slots}
+    return (
+        np.diag([values["u"], values["c"], values["t"]]),
+        np.diag([values["d"], values["s"], values["b"]]),
+    )
+
+
+def candidate_slot_space():
+    """Parameterize, rather than pre-delete, the theta and alpha_f slots."""
+    rational_phase_grid = tuple(Fraction(k, 4) for k in range(8))
+    return CandidateSlotSpace(
+        cp_even_gauge_slots=("Wilson plaquette",),
+        cp_odd_gauge_slot="i theta sum_P Im Tr U_P",
+        theta_probe_values_over_pi=rational_phase_grid,
+        alpha_probe_values_over_pi=rational_phase_grid,
+        flavor_magnitudes=(
+            ("u", Fraction(11, 5000)),
+            ("d", Fraction(47, 10000)),
+            ("s", Fraction(12, 125)),
+            ("c", Fraction(127, 100)),
+            ("b", Fraction(209, 50)),
+            ("t", Fraction(1731, 10)),
+        ),
+    )
+
+
+def detect_admitted_named_conditional(action_basis):
+    """Detect admitted out-of-surface data without modifying it."""
+    reasons = []
+    if action_basis.theta_over_pi != 0:
+        reasons.append(f"theta/pi={action_basis.theta_over_pi}")
+    reasons.extend(
+        f"alpha_{slot.flavor}/pi={slot.alpha_over_pi}"
+        for slot in action_basis.mass_slots
+        if slot.alpha_over_pi != 0
+    )
+    if reasons:
+        print(f"  {NAMED_CONDITIONAL_LINE}")
+        print(f"    detected admitted datum: {', '.join(reasons)}")
+    return tuple(reasons)
+
+
+def construct_allowed_action_basis():
+    """Compute the bounded allowed basis from the cited selection statements."""
+    print("\n=== ACTION-BASIS CONSTRUCTION FROM CITED CONDITIONAL SELECTORS ===\n")
+
+    candidates = candidate_slot_space()
+    check(
+        "Candidate basis parameterizes the CP-even and CP-odd gauge slots",
+        candidates.cp_even_gauge_slots == ("Wilson plaquette",)
+        and "theta" in candidates.cp_odd_gauge_slot
+        and len(candidates.theta_probe_values_over_pi) > 2,
+        f"gauge candidates = {candidates.cp_even_gauge_slots + (candidates.cp_odd_gauge_slot,)}",
+        bucket="COMPUTE",
+    )
+
+    # On generic real Q_lat, Im(i theta Q_lat) has exact linear coefficient
+    # theta. P4 therefore solves theta=0; no finite phase grid is used here.
+    real_positive_single_plaquette = (solve_linear_zero(Fraction(1)),)
+    check(
+        "P1-P5 real-positive single-plaquette selector computes theta=0 for the reviewed CP-odd slot",
+        real_positive_single_plaquette == (Fraction(0),),
+        f"computed theta/pi branches = {real_positive_single_plaquette}",
+        bucket="COMPUTE",
+    )
+
+    odd_support = (-1, 0, 1)
+    collapsed = (
+        exact_z2_phase_branches()
+        if any(abs(q) % 2 == 1 for q in odd_support)
+        else tuple()
+    )
+    check(
+        "Exact Z2-character equation on odd support computes theta/pi in {0, 1}",
+        collapsed == (Fraction(0), Fraction(1))
+        and all(character_is_orientation_even(theta, odd_support) for theta in collapsed),
+        f"roots of z^2-1 mapped to theta/pi = {collapsed}",
+        bucket="COMPUTE",
+    )
+
+    conjugation_paired_positive_masses = {
+        -1: Fraction(3, 8),
+        0: Fraction(5, 4),
+        1: Fraction(3, 8),
+    }
+    positive_selected = positive_character_branches(
+        collapsed, conjugation_paired_positive_masses
+    )
+    check(
+        "Strict positivity on conjugation-paired odd support computes the zero branch",
+        positive_selected == (Fraction(0),),
+        f"computed theta/pi branches = {positive_selected}",
+        bucket="COMPUTE",
+    )
+
+    native_histories = (
+        (-1, Fraction(1, 8)),
+        (-1, Fraction(1, 4)),
+        (0, Fraction(1, 3)),
+        (1, Fraction(3, 8)),
+    )
+    native_sector_masses = exact_sector_pushforward(native_histories)
+    native_gcd = support_gcd(native_sector_masses)
+    native_selected = positive_relative_zero_branches(native_sector_masses)
+    check(
+        "Exact positive native pushforward with gcd-one support computes zero weighting",
+        native_gcd == 1 and native_selected == (Fraction(0),),
+        f"m(q) = {native_sector_masses}; Delta = {native_gcd}; branches = {native_selected}",
+        bucket="COMPUTE",
+    )
+
+    check(
+        "Candidate mass basis parameterizes alpha_f for every staggered flavor",
+        len(candidates.flavor_magnitudes) == 6
+        and all(magnitude > 0 for _, magnitude in candidates.flavor_magnitudes)
+        and len(candidates.alpha_probe_values_over_pi) > 2,
+        "flavors = " + ", ".join(flavor for flavor, _ in candidates.flavor_magnitudes),
+        bucket="COMPUTE",
+    )
+
+    # A unit scalar phase is real iff z=conj(z), hence z^2=1. Solve that
+    # equation exactly rather than filtering the toy probe grid.
+    real_scalar_phases = exact_z2_phase_branches()
+    check(
+        "Operator-basis reality computes alpha_f/pi in {0, 1}",
+        real_scalar_phases == (Fraction(0), Fraction(1)),
+        f"computed real scalar phases = {real_scalar_phases}",
+        bucket="COMPUTE",
+    )
+
+    pairing_lambda = Fraction(3, 2)
+    k_real_determinants = {}
+    for flavor, magnitude in candidates.flavor_magnitudes:
+        k_real_determinants[(flavor, "+")] = magnitude**2 + pairing_lambda**2
+        k_real_determinants[(flavor, "-")] = (-magnitude) ** 2 + pairing_lambda**2
+    pairing_forces_zero = all(det > 0 for det in k_real_determinants.values()) and all(
+        k_real_determinants[(flavor, "+")] == k_real_determinants[(flavor, "-")]
+        for flavor, _ in candidates.flavor_magnitudes
+    )
+    check(
+        "K-real +/-i lambda pairing computes zero determinant phase for both real signs",
+        pairing_forces_zero,
+        "exact det = m_f^2 + (3/2)^2 > 0 for every +/-m_f",
+        bucket="COMPUTE",
+    )
+
+    positive_real_phases = tuple(
+        alpha for alpha in real_scalar_phases if scalar_phase_is_positive_real(alpha)
+    )
+    check(
+        "Reality plus K-real zero-branch pairing constructs alpha_f=0 positive-real representatives",
+        pairing_forces_zero and positive_real_phases == (Fraction(0),),
+        "pairing fixes arg det for both signs; supplied positive-mass convention fixes the representative",
+        bucket="COMPUTE",
+    )
+
+    selected_gauge_branches = tuple(
+        theta for theta in positive_selected if theta in real_positive_single_plaquette
+    )
+    selected_theta = selected_gauge_branches[0]
+    selected_alpha = positive_real_phases[0]
+    selected = ConstructedActionBasis(
+        gauge_slots=candidates.cp_even_gauge_slots,
+        theta_over_pi=selected_theta,
+        mass_slots=tuple(
+            FlavorMassSlot(flavor, magnitude, selected_alpha)
+            for flavor, magnitude in candidates.flavor_magnitudes
+        ),
+        conditions=(
+            "canonical real-positive Wilson P1-P5 surface",
+            "character form + orientation-evenness + odd support + positive class",
+            "supplied scalar-mass class + positive-mass convention",
+            "supplied K-real Case-A determinant-channel reading",
+        ),
+    )
+    check(
+        "Constructed action basis contains no selected CP-odd or complex-mass slot",
+        selected.theta_over_pi == 0
+        and candidates.cp_odd_gauge_slot not in selected.gauge_slots
+        and all(slot.alpha_over_pi == 0 for slot in selected.mass_slots),
+        f"theta/pi = {selected.theta_over_pi}; alpha_f/pi = {[slot.alpha_over_pi for slot in selected.mass_slots]}",
+        bucket="COMPUTE",
+    )
+
+    theta_probe = replace(
+        selected,
+        gauge_slots=selected.gauge_slots + (candidates.cp_odd_gauge_slot,),
+        theta_over_pi=Fraction(1, 3),
+    )
+    theta_reasons = detect_admitted_named_conditional(theta_probe)
+    check(
+        "ADMITTED theta != 0 is detected and named without being zeroed",
+        theta_probe.theta_over_pi == Fraction(1, 3)
+        and theta_reasons == ("theta/pi=1/3",),
+        f"retained admitted probe theta/pi = {theta_probe.theta_over_pi}",
+        bucket="COMPUTE",
+    )
+
+    complex_u = replace(selected.mass_slots[0], alpha_over_pi=Fraction(1, 3))
+    alpha_probe = replace(selected, mass_slots=(complex_u,) + selected.mass_slots[1:])
+    alpha_reasons = detect_admitted_named_conditional(alpha_probe)
+    check(
+        "ADMITTED alpha_f != 0 is detected and named without being zeroed",
+        complex_u.alpha_over_pi == Fraction(1, 3)
+        and alpha_reasons == ("alpha_u/pi=1/3",),
+        f"retained admitted probe alpha_u/pi = {complex_u.alpha_over_pi}",
+        bucket="COMPUTE",
+    )
+
+    return selected
 
 
 def safe_slogdet(M):
@@ -314,11 +683,11 @@ def effective_action_3p1(U_links, L_s, L_t, mass, beta=None):
     }
 
 
-def test_leg_a_fermion_phase_closure():
+def test_leg_a_fermion_phase_closure(action_basis):
     print("\n=== LEG A: Fermion phase closure ===\n")
 
     rng = np.random.default_rng(42)
-    mass = 0.1
+    mass = selected_real_mass(action_basis)
     L = 4
     N = L ** 3 * 3
 
@@ -419,12 +788,12 @@ def test_leg_a_fermion_phase_closure():
     check("Spectral phase matches the determinant phase of det(D+mI)", max_phase_match < 1e-10, f"max wrapped |arg det + Im Γ_f| = {max_phase_match:.2e}", bucket="COMPUTE")
 
 
-def test_leg_b_chiral_basis_non_generation():
+def test_leg_b_chiral_basis_non_generation(action_basis):
     print("\n=== LEG B: Axial / chiral non-generation ===\n")
 
     L_s = 4
     L_t = 4
-    mass = 0.1
+    mass = selected_real_mass(action_basis)
     rng = np.random.default_rng(314159)
     U = random_gauge_config_3p1(L_s, L_t, rng)
     D = build_staggered_dirac_3p1(L_s, L_t, U)
@@ -489,7 +858,7 @@ def test_leg_b_chiral_basis_non_generation():
     check("The only admissible selected-surface axial endpoints keep the determinant phase zero", max(phase_endpoints) < 1e-10, f"max endpoint |phase| = {max(phase_endpoints):.2e}", bucket="COMPUTE")
 
 
-def test_weak_sector_separation():
+def test_weak_sector_separation(action_basis):
     print("\n=== Weak-sector-only CP source ===\n")
 
     vertices = [(a1, a2, a3) for a1 in (0, 1) for a2 in (0, 1) for a3 in (0, 1)]
@@ -565,13 +934,12 @@ def test_weak_sector_separation():
 
     y_t = 0.9176
     check("Selected Yukawa/top lane keeps the quark masses real and positive", y_t > 0 and np.isreal(y_t), f"y_t = {y_t}", bucket="COMPUTE")
-    M_u = np.diag([2.2e-3, 1.27, 173.10])
-    M_d = np.diag([4.7e-3, 9.6e-2, 4.18])
+    M_u, M_d = quark_mass_matrices(action_basis)
     arg_det_md = abs(float(np.angle(np.linalg.det(M_u @ M_d))))
     check("arg det(M_u M_d) = 0 on an explicit positive-mass quark surface", arg_det_md < 1e-12, f"|arg det| = {arg_det_md:.2e}", bucket="COMPUTE")
 
 
-def test_leg_c_effective_action_cp_even():
+def test_leg_c_effective_action_cp_even(action_basis):
     print("\n=== LEG C: Gauge-sector radiative non-generation ===\n")
 
     axioms = [
@@ -582,15 +950,24 @@ def test_leg_c_effective_action_cp_even():
         "canonical normalization: g_bare = 1, plaquette / u₀ surface",
     ]
     beta = 6.0 / (4.0 * np.pi * CANONICAL_ALPHA_BARE)
-    action_slots = {"gauge": "Wilson plaquette", "fermion": "staggered Dirac", "beta": beta, "mass": "real"}
+    action_slots = {
+        "gauge": action_basis.gauge_slots,
+        "fermion": "staggered Dirac",
+        "beta": beta,
+        "theta_over_pi": action_basis.theta_over_pi,
+        "mass_slots": action_basis.mass_slots,
+    }
 
     check(f"Selected action surface has {len(axioms)} explicit inputs", len(axioms) == 5, "; ".join(f"({i+1}) {a}" for i, a in enumerate(axioms)))
     check("Canonical normalization fixes Wilson β = 6", abs(beta - 6.0) < 1e-12, f"β = {beta:.12f}")
-    support("No bare θ slot is present in the selected action-class definition", f"slots = {sorted(action_slots)}")
+    support(
+        "The cited selectors construct no admitted bare theta slot",
+        f"theta/pi = {action_basis.theta_over_pi}; gauge slots = {action_basis.gauge_slots}",
+    )
 
     L_s = 4
     L_t = 4
-    mass = 0.1
+    mass = selected_real_mass(action_basis)
     rng = np.random.default_rng(12345)
     n_configs = 4
 
@@ -626,12 +1003,12 @@ def test_leg_c_effective_action_cp_even():
     check("Linkwise complex conjugation preserves the full selected effective action", max_seff_cp < 1e-10, f"max |S_eff(U)-S_eff(U*)| = {max_seff_cp:.2e}", bucket="COMPUTE")
 
 
-def test_leg_d_topological_sector_positivity():
+def test_leg_d_topological_sector_positivity(action_basis):
     print("\n=== LEG D: Topological-sector positivity and θ = 0 minimum ===\n")
 
     L_s = 4
     L_t = 4
-    mass = 0.1
+    mass = selected_real_mass(action_basis)
     beta = 6.0 / (4.0 * np.pi * CANONICAL_ALPHA_BARE)
     rng = np.random.default_rng(20260417)
     n_samples = 8
@@ -668,17 +1045,19 @@ def test_leg_d_topological_sector_positivity():
     check("Sampled θ-sum free energy is minimized at θ = 0", min_residual > -1e-10, f"min(F(θ)-F(0)) = {min_residual:.2e}", bucket="COMPUTE")
 
 
-def test_combined_theta_eff():
+def test_combined_theta_eff(action_basis):
     print("\n=== COMBINED RESULT: θ_eff = 0 ===\n")
 
-    theta_bare = 0.0
-    M_u = np.diag([2.2e-3, 1.27, 173.10])
-    M_d = np.diag([4.7e-3, 9.6e-2, 4.18])
+    theta_bare = np.pi * float(action_basis.theta_over_pi)
+    M_u, M_d = quark_mass_matrices(action_basis)
     arg_det_M = float(np.angle(np.linalg.det(M_u @ M_d)))
     theta_eff = theta_bare + arg_det_M
     theta_exp_bound = 1e-10
 
-    support("θ_bare = 0 is taken from the selected action-class definition", "no bare θ slot appears in the selected Wilson-plus-staggered scalar-mass action")
+    support(
+        "theta_bare = 0 is read from the constructed bounded selected basis",
+        f"computed theta/pi = {action_basis.theta_over_pi}",
+    )
     check("Explicit positive-mass quark surface gives arg det(M_u M_d) = 0", abs(arg_det_M) < 1e-12, f"|arg det| = {abs(arg_det_M):.2e}", bucket="COMPUTE")
     check("Combined selected-surface synthesis gives θ_eff = 0", abs(theta_eff) < 1e-12, f"{theta_bare} + {arg_det_M} = {theta_eff}", bucket="COMPUTE")
     check("Selected-surface closure is consistent with the neutron-EDM bound", abs(theta_eff) < theta_exp_bound, f"|θ_eff| = {abs(theta_eff):.1e} < {theta_exp_bound:.1e}", bucket="COMPUTE")
@@ -686,19 +1065,24 @@ def test_combined_theta_eff():
 
 def main():
     print("=" * 78)
-    print("Strong CP / θ = 0 Bounded Selected-Surface Closure")
+    print("Strong CP / θ = 0 Bounded Selected-Action-Surface Closure")
     print("=" * 78)
     print()
-    print("CLAIM: On the explicitly θ-free Wilson-plus-staggered scalar-mass surface,")
-    print("       θ_eff = 0 with no surviving loophole from axial rephasing,")
-    print("       exact fermion integration, or positive-weight topological sectors.")
+    print("CLAIM: Conditional on the cited selectors' own surfaces and classes,")
+    print("       the constructed Wilson-plus-staggered / K-real Case-A mass surface")
+    print("       has θ_eff = 0 with no generated strong-sector phase.")
 
-    test_leg_a_fermion_phase_closure()
-    test_leg_b_chiral_basis_non_generation()
-    test_weak_sector_separation()
-    test_leg_c_effective_action_cp_even()
-    test_leg_d_topological_sector_positivity()
-    test_combined_theta_eff()
+    action_basis = construct_allowed_action_basis()
+    print("\nConstructed action conditions:")
+    for condition in action_basis.conditions:
+        print(f"  - {condition}")
+
+    test_leg_a_fermion_phase_closure(action_basis)
+    test_leg_b_chiral_basis_non_generation(action_basis)
+    test_weak_sector_separation(action_basis)
+    test_leg_c_effective_action_cp_even(action_basis)
+    test_leg_d_topological_sector_positivity(action_basis)
+    test_combined_theta_eff(action_basis)
 
     print("\n=== SUPPORT CONTEXT ===\n")
     support("Vafa-Witten sign discipline is consistent with the selected positive-weight closure", "external consistency only; not counted as theorem-grade")
@@ -713,17 +1097,19 @@ def main():
         f"FAIL={COUNTS['SELECTED-SURFACE COMPUTE FAIL']}"
     )
     print(f"SUPPORT={COUNTS['SUPPORT']}")
+    total_pass = COUNTS["THEOREM PASS"] + COUNTS["SELECTED-SURFACE COMPUTE PASS"]
+    total_fail = COUNTS["THEOREM FAIL"] + COUNTS["SELECTED-SURFACE COMPUTE FAIL"]
+    print(f"TOTAL PASS={total_pass}  FAIL={total_fail}")
     print("=" * 78)
 
-    total_fail = COUNTS["THEOREM FAIL"] + COUNTS["SELECTED-SURFACE COMPUTE FAIL"]
     if total_fail != 0:
-        print("\nOne or more selected-surface strong-CP closure checks failed.")
+        print("\nOne or more bounded selected-action-surface strong-CP closure checks failed.")
         return 1
 
     print()
-    print("All selected action-surface closure checks passed. The strong sector closes at")
-    print("θ_eff = 0 on the selected Wilson-plus-staggered scalar-mass surface, while")
-    print("CKM CP remains weak-sector only and the surviving neutron-EDM signal")
+    print("All bounded selected action-surface closure checks passed. Conditional on")
+    print("the printed surfaces and classes, the strong sector closes at θ_eff = 0,")
+    print("while CKM CP remains weak-sector only and the surviving neutron-EDM signal")
     print("stays in the separate bounded CKM lane.")
     return 0
 

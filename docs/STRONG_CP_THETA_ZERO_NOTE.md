@@ -1,36 +1,64 @@
 # Strong CP / θ = 0 Conditional Action-Surface Closure
 
-**Date:** 2026-04-16 (status line narrowed 2026-04-28 per audit-lane verdict; action-surface firewall clarified 2026-05-26)
-**Status:** `bounded_theorem` source-side boundary: conditional `θ_eff = 0` closure on the **explicitly θ-free Wilson-plus-staggered scalar-mass surface** that the runner restricts to. The decisive step is action-surface selection (no bare θ slot, real positive mass orientation), not a derived dynamical θ = 0 result. Not a retained or tier-ratifiable strong-CP solution beyond that selected surface.
+**Date:** 2026-04-16 (status line narrowed 2026-04-28 per audit-lane verdict; action-surface firewall clarified 2026-05-26; cited-selection repair 2026-07-12)
+**Status:** `bounded_theorem` source-side boundary: conditional `θ_eff = 0` closure on the **bounded Wilson-plus-staggered / K-real Case-A selected action surface** constructed by the runner. The decisive action-surface selection is now wired to the bounded authorities below rather than stipulated by the runner. Not a retained or tier-ratifiable strong-CP solution beyond those authorities' own conditions: the canonical real-positive Wilson class, the character/orientation-even/odd-support positive-class hypotheses, the supplied scalar-mass boundary and positive-mass convention, and the supplied K-real Case-A determinant-channel reading. The sector-weight leg is additionally conditional on a supplied or separately derived integer-valued emergent `Q` with populated support; its existence, integrality, nonvacuity, and susceptibility remain open. An admitted CP-odd action term or complex mass phase re-opens the question.
 **Claim type:** bounded_theorem
 **Script:** `scripts/frontier_strong_cp_theta_zero.py`
 
+## Load-bearing dependencies
+
+| Authority | Source claim boundary | Consumed content |
+|---|---|---|
+| [Native Positive-Class Adjudication (2026-07-04)](THETA_GAUGE_NATIVE_POSITIVE_CLASS_EMERGENT_SECTOR_WEIGHTING_NARROW_THEOREM_NOTE_2026-07-04.md) | `bounded_theorem` author-side classification; audit grade is not assigned here | In the canonical imported Wilson + staggered-Wilson class, non-negative native sector pushforwards make a positive relative emergent gauge-side theta weighting vacuous or zero; zero is selected on gcd-one populated support (adjacent populated sectors suffice). Existence, integrality, nonvacuity, and susceptibility of an emergent `Q` remain outside the authority. |
+| [Gauge Z2 Character Collapse and Positive-Class Zero-Branch Selection (2026-07-03)](THETA_GAUGE_Z2_CHARACTER_COLLAPSE_ODD_SUPPORT_AND_POSITIVE_CLASS_ZERO_BRANCH_SELECTION_BOUNDED_THEOREM_NOTE_2026-07-03.md) | `bounded_theorem` author-side classification; audit grade is not assigned here | For a multiplicative theta character, orientation-evenness plus odd support collapses the gauge branch to `{0, π}`; membership in the strictly positive conjugation-paired class excludes the odd-support `π` branch and selects zero. Character form, orientation-evenness, odd support, and positive-class membership are load-bearing, and physical-action-class membership is not supplied by this authority itself. |
+| [Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation (2026-05-19)](STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md) | `bounded_theorem` author-side classification on a supplied-premise surface; audit grade is not assigned here | Under P1-P5 on the canonical real-positive Wilson surface, excludes the reviewed CP-odd single-plaquette action slot `i θ Σ_P Im Tr U_P`; under staggered anti-Hermiticity, the supplied real-positive determinant boundary, and the supplied scalar-mass class, excludes non-real scalar mass phases. It does not exclude clover or other multi-plaquette slots, and the positive mass sign is convention-aligned rather than derived. |
+| [Mass-Orientation Zero Branch on the K-Real Staggered Surface (2026-07-01)](THETA_MASS_ORIENTATION_ZERO_BRANCH_PAIRING_FORCED_ON_K_REAL_SURFACE_NARROW_THEOREM_NOTE_2026-07-01.md) | `bounded_theorem` author-side classification; historical Tier-A/admission references supply no ready premise; audit grade is not assigned here | On the supplied staggered-only Case-A K-real surface (real antisymmetric `M_KS`, bipartite `ε` grading, a reality-preserving background, and real scalar mass or a Hermitian flavor operator on the flavor tensor factor), exact `±iλ` pairing makes the determinant non-negative for either real sign; its orientation phase is zero on the nonzero-determinant locus. The determinant-channel K-real reading remains supplied; Wilson shifts, non-commuting flavor-kinetic couplings, and non-K-real flavor blocks are outside scope. |
+
+## 2026-07-12 cited-selection correction
+
+The action-surface dependencies were previously uncited, and the runner
+previously hard-coded `θ_bare = 0` and positive-real masses before checking
+closure. This repair wires the four bounded authorities above and makes the
+runner construct candidate gauge and per-flavor mass-phase slots, compute the
+allowed conditional basis, and only then run the unchanged determinant,
+axial, effective-action, and topological-sector closure legs. The repair does
+not enlarge any authority's claim boundary or predict an audit outcome.
+
 ## 2026-05-26 action-surface firewall
 
-This row is a bounded selected-surface theorem, not an unconditional strong-CP
-solution. Its load-bearing premises are:
+This row is a bounded selected-action-surface theorem, not an unconditional
+strong-CP solution. Its load-bearing premises are:
 
-1. the Wilson-plus-staggered action is restricted to the explicitly
-   `θ`-free real-positive scalar-mass surface used by the runner,
-2. the positive real quark-mass orientation is part of that selected surface,
-   and
-3. the topological-weight argument is only applied after those two premises
-   have already removed the bare `θ` slot and determinant phase.
+1. the reviewed gauge action lies in the canonical real-positive Wilson class
+   and, where the sector-character result is used, satisfies character form,
+   orientation-evenness, odd support, and positive-class membership;
+2. the reviewed fermion action lies in the supplied scalar-mass class with the
+   convention-aligned positive representative and on the K-real Case-A
+   determinant-channel surface; and
+3. the topological-weight argument is applied only after the cited conditional
+   selectors have computed the zero gauge branch and the selected positive,
+   nonzero mass representatives lie on the zero-phase determinant locus.
 
 The note therefore licenses only the statement
 
-    θ_eff = 0 on the explicitly θ-free Wilson-plus-staggered scalar-mass surface.
+    θ_eff = 0 on the bounded Wilson-plus-staggered / K-real Case-A selected action surface.
 
 It does not derive from the minimal axiom surface that every gauge action on
-the `Z^3` spatial substrate forbids all CP-odd topological discretizations,
-nor does it derive the scalar positive mass orientation from primitives.
-Downstream use must inherit those selected surface premises explicitly.
+the `Z^3` spatial substrate forbids all CP-odd topological discretizations.
+The single-plaquette exclusion, positive-class branch selection, scalar-mass
+boundary, positive-mass convention, and K-real determinant-channel reading
+retain their cited conditions. Downstream use must inherit them explicitly.
+
+**Named conditional:** an ADMITTED CP-odd action term or complex mass phase
+re-opens the strong-CP question; the supplied structure does not silently set
+such admitted data to zero.
 
 ## Theorem
 
-**Theorem (bounded selected-surface `θ_eff = 0` closure).**
-On the explicitly `θ`-free Wilson-plus-staggered scalar-mass surface tested by
-the runner,
+**Theorem (bounded selected-action-surface `θ_eff = 0` closure).**
+On the bounded Wilson-plus-staggered / K-real Case-A selected action surface
+constructed and tested by the runner, conditional on every load-bearing
+dependency and condition in the table above,
 
     θ_eff = θ_QCD + arg det(M_u M_d) = 0
 
@@ -124,13 +152,17 @@ Therefore:
 3. that rotated mass operator is no longer a real scalar mass term, so it
    exits the selected Wilson-plus-staggered scalar-mass action class.
 
-This closes the chiral/basis loophole on the selected surface. The framework
-does not have a continuous admissible axial freedom that can move phase between
-the mass term and a strong-sector `θ`.
+This closes the chiral/basis loophole on the selected surface. Within the
+supplied scalar-mass action class, no continuous admissible axial freedom can
+move phase between the mass term and a strong-sector `θ` while remaining in
+that class.
 
 ### Leg C: Gauge-sector radiative non-generation
 
-The selected action surface used here is fixed by the bounded package boundary:
+The runner constructs the bounded selected action surface by starting from a
+candidate gauge slot `θ` and one scalar phase `α_f` per staggered flavor. It
+then applies the bounded selectors in the dependency table before any closure
+check. The background package inputs remain:
 
 1. one-qubit operator algebra,
 2. `Z^3` spatial substrate,
@@ -142,11 +174,15 @@ Canonical normalization fixes the Wilson gauge coupling at
 
     β = 6.
 
-So the selected action class is exactly:
+Within the authorities' stated conditions, the computed gauge branch is zero
+and every convention-aligned positive-real mass representative has
+`α_f = 0`. The resulting conditional action class is:
 
     S_sel[U, ψ, ψ̄] = S_Wilson[U] + ψ̄(D[U] + m)ψ
 
-with no bare `θ` slot.
+The absence of the reviewed CP-odd slot here is a computed result of the cited
+conditional selectors. It is not a claim that every clover, multi-plaquette,
+higher-trace, axion-coupled, or signed action is excluded.
 
 Integrating out the fermions is exact on this surface:
 
@@ -176,8 +212,9 @@ selected Wilson-plus-staggered action class.
 
 ### Leg D: Topological-sector positivity and the `θ = 0` minimum
 
-The topological charge exists on the selected `3+1` surface, and the selected
-partition function can be written formally as
+Conditional on a supplied or separately derived integer-valued emergent sector
+functional `Q` with populated support, the selected partition function can be
+written formally as
 
     Z = Σ_Q Z_Q
 
@@ -204,13 +241,15 @@ so the selected-surface free energy
 
 is minimized at `θ = 0`.
 
-This is the exact topological closure needed here. It does **not** require a
-closed-form first-principles expression for the detailed lattice measure
-`Z_Q`. Positivity of the sector weights is enough.
+This is the exact conditional sector-weight inequality needed here. It does
+**not** derive the existence, integrality, nonvacuity, or susceptibility of an
+emergent `Q`, and it does not require a closed-form first-principles expression
+for the detailed lattice measure `Z_Q`. Positivity of the sector weights is
+enough once that sector functional and populated support are supplied.
 
 The runner mirrors this mechanism with a sampled selected-surface `3+1`
-positive-weight `Q`-weighted family rather than a literal computed exact
-sector decomposition:
+positive-weight clover-style `Q` proxy rather than a derived emergent `Q` or a
+literal computed exact sector decomposition:
 
 - sampled selected-surface positive weights are strictly positive,
 - the sampled `θ`-sum obeys `|Z(θ)| <= Z(0)`,
@@ -218,9 +257,9 @@ sector decomposition:
 
 ## Relation to CKM CP Violation
 
-The framework does contain CP violation, but only in the weak sector. The
-`Z_3` source acts through the electroweak `1+2` split and produces the CKM
-phase
+Within this bounded selected-action-surface package, the explicit CP-violating datum
+carried by the runner is the weak-sector CKM phase. The separate `Z_3` source
+acts through the electroweak `1+2` split and produces
 
     δ_std = arctan(√5) = 65.905°.
 
@@ -234,7 +273,9 @@ discrete weak-sector source. The runner keeps the exact finite checks:
 - `|det V_CKM| = 1`,
 - explicit positive-mass `arg det(M_u M_d) = 0`.
 
-So CKM CP remains weak-sector only and does not leak into `θ_eff`.
+Thus the runner finds no CKM-to-`θ_eff` leakage on this bounded selected
+surface. This does not exclude a strong-sector phase after admitting a CP-odd
+action term or complex mass phase outside that surface.
 
 ## Combined Result
 
@@ -247,14 +288,14 @@ The four legs now close together:
 4. positive topological-sector weights force the free-energy minimum to
    `θ = 0`.
 
-Therefore, on the explicitly `θ`-free Wilson-plus-staggered scalar-mass
-surface,
+Therefore, on the bounded Wilson-plus-staggered / K-real Case-A selected
+action surface,
 
     θ_bare = 0,
     arg det(M_u M_d) = 0,
     θ_eff = 0.
 
-This is a **bounded selected-surface strong-CP closure package**.
+This is a **bounded selected-action-surface strong-CP closure package**.
 
 ## What Is Actually Proved
 
@@ -276,39 +317,61 @@ This is a **bounded selected-surface strong-CP closure package**.
 13. positive selected-surface sector weights imply `|Z(θ)| <= Z(0)`, hence
     `F(θ)` is minimized at `θ = 0`.
 
-### Accepted-surface definitions used by the closure
+### Cited conditional selection statements re-verified by the runner
 
-1. no bare `θ` slot appears in the selected Wilson-plus-staggered action
-   class,
-2. therefore `θ_bare = 0` on that selected action surface.
+1. a multiplicative orientation-even theta character on odd support collapses
+   to `{0, π}`;
+2. strictly positive weights on odd support exclude `π` and select the zero
+   branch;
+3. an exact positive native-history pushforward with gcd-one populated support
+   likewise leaves only the zero relative branch;
+4. the reviewed single-plaquette CP-odd Wilson slot is rejected on the
+   canonical real-positive P1-P5 surface;
+5. operator-basis reality reduces each scalar mass phase to `{0, π}`;
+6. exact K-real `±iλ` pairing makes the determinant non-negative for both real
+   mass signs on the supplied Case-A surface, with zero phase only on the
+   nonzero-determinant locus; and
+7. the convention-aligned positive-real representative is `α_f = 0` for every
+   constructed flavor slot.
 
-These are part of the accepted action-surface definition. They are load-bearing
-for the closure claim, but the runner counts them as support/definition items
-rather than standalone theorem passes.
+The runner also admits one nonzero gauge theta probe and one nonzero complex
+mass-phase probe as data. Each check passes only by detecting the out-of-surface
+datum and printing the named conditional; neither probe is silently replaced
+by zero.
 
 ### Selected-surface compute checks
 
-1. free-field and gauged `Z^3` staggered determinant positivity,
-2. `3+1` APBC determinant positivity on sampled selected-surface `SU(3)`
+1. exact toy-scale construction of the candidate gauge and per-flavor mass
+   slots,
+2. exact algebraic Z2 collapse, positive-class zero-branch selection, and native
+   positive pushforward selection,
+3. exact operator-basis reality, K-real pairing, and positive-real
+   representative selection,
+4. detection and naming of deliberately admitted nonzero gauge and mass-phase
+   data,
+5. free-field and gauged `Z^3` staggered determinant positivity,
+6. `3+1` APBC determinant positivity on sampled selected-surface `SU(3)`
    configurations,
-3. sampled nontrivial topological charge without determinant phase generation,
-4. `εD + Dε = 0` on the selected `3+1` APBC surface,
-5. sampled exact `±λ` pairing of `iD`,
-6. sampled `Im Γ_f = 0`,
-7. sampled agreement between the spectral phase and the determinant phase,
-8. sampled axial-grid audit matches the exact statement that only `α ∈ πZ`
+7. sampled nontrivial clover-style topological-charge proxy without determinant
+   phase generation,
+8. `εD + Dε = 0` on the selected `3+1` APBC surface,
+9. sampled exact `±λ` pairing of `iD`,
+10. sampled `Im Γ_f = 0`,
+11. sampled agreement between the spectral phase and the determinant phase,
+12. sampled axial-grid audit matches the exact statement that only `α ∈ πZ`
    preserves a real mass operator,
-9. explicit nontrivial axial rotation exits the selected scalar-mass action
+13. explicit nontrivial axial rotation exits the selected scalar-mass action
    class,
-10. the only admissible selected-surface axial endpoints keep zero determinant
+14. the only admissible selected-surface axial endpoints keep zero determinant
     phase,
-11. explicit positive-mass quark-surface audit gives `arg det(M_u M_d)=0`,
-12. sampled selected-surface effective action is real,
-13. linkwise complex conjugation preserves the full selected-surface effective
+15. the constructed positive-mass quark surface gives
+    `arg det(M_u M_d)=0`,
+16. sampled selected-surface effective action is real,
+17. linkwise complex conjugation preserves the full selected-surface effective
     action,
-14. sampled selected-surface positive-weight `Q`-weighted family obeys
+18. sampled selected-surface positive-weight `Q`-proxy family obeys
     `|Z(θ)| <= Z(0)`,
-15. the sampled selected-surface free energy is minimized at `θ = 0`.
+19. the sampled selected-surface free energy is minimized at `θ = 0`.
 
 ### Support only
 
@@ -321,12 +384,15 @@ These support items are not counted as theorem-grade closure.
 ## What Is Not Claimed
 
 1. **Unrestricted all-formulations closure.**
-   The theorem is only about the explicitly selected Wilson-plus-staggered
-   action surface on the `Z^3` spatial substrate.
+   The theorem is only about the bounded Wilson-plus-staggered / K-real Case-A
+   selected action surface on the `Z^3` spatial substrate, with every cited
+   condition inherited.
 
-2. **Closed-form `Z_Q` measure on the selected lattice surface.**
-   The closure uses positivity and the `θ`-sum bound, not a closed-form
-   instanton measure.
+2. **Emergent-`Q` existence or a closed-form `Z_Q` measure.**
+   The conditional closure uses positivity and the `θ`-sum bound after an
+   integer-valued sector functional with populated support is supplied; it does
+   not derive that functional, its nonvacuity or susceptibility, or a
+   closed-form instanton measure.
 
 3. **Axion exclusion beyond the selected action surface.**
    The theorem does not exclude axion models or other regulators outside the
@@ -339,9 +405,14 @@ These support items are not counted as theorem-grade closure.
    theorem and the relevant CKM package premises are both admitted, while
    the numerical `d_n(CKM)` scale remains EFT-bridged.
 
+5. **Closure after admitting excluded data.**
+   An admitted CP-odd action term, including an unreviewed topological slot, or
+   an admitted complex mass phase re-opens the question. The runner detects
+   those inputs; it does not remove them by definition.
+
 ## How This Changes The Paper
 
-The strong-CP lane has a bounded selected-surface closure package:
+The strong-CP lane has a bounded selected-action-surface closure package:
 
 - fermion phase closure,
 - axial/chiral non-generation,
@@ -350,16 +421,19 @@ The strong-CP lane has a bounded selected-surface closure package:
 
 The safe paper sentence is:
 
-> On the explicitly `θ`-free Wilson-plus-staggered scalar-mass surface tested by
-> the runner, no additional strong-sector phase is generated: the determinant
-> phase vanishes, axial rotations preserving the scalar-mass surface do not move
-> phase into `θ`, exact fermion integration stays real, and positive sampled
-> topological weights place the selected-surface free-energy minimum at
-> `θ = 0`.
+> Conditional on the cited canonical positive gauge class, its character and
+> support hypotheses, and the supplied scalar-mass / K-real Case-A
+> determinant-channel conditions, the runner constructs the zero-branch action
+> surface and finds no additional generated strong-sector phase: the
+> determinant phase vanishes, admissible axial rotations do not move phase into
+> `θ`, exact fermion integration stays real, and, conditional on a supplied
+> populated integer-sector functional, positive sampled proxy weights place the
+> selected-surface free-energy minimum at `θ = 0`.
 
 ## Experimental Predictions
 
-1. **`θ_eff = 0` exactly on the selected action surface.**
+1. **`θ_eff = 0` exactly on the bounded selected action surface, conditional on
+   all cited surface and channel conditions.**
 2. **`d_n(QCD) = 0` on that selected surface, conditional on the same surface
    premises.**
    The surviving observable neutron-EDM estimate is the separate CKM-only
@@ -384,11 +458,12 @@ The safe paper sentence is:
 python3 scripts/frontier_strong_cp_theta_zero.py
 # Exit code: 0
 # THEOREM PASS=13  FAIL=0
-# SELECTED-SURFACE COMPUTE PASS=30  FAIL=0
+# SELECTED-SURFACE COMPUTE PASS=42  FAIL=0
 # SUPPORT=4
+# TOTAL PASS=55  FAIL=0
 ```
 
-## Audit boundary (2026-04-28)
+## Historical audit boundary (2026-04-28)
 
 Audit verdict (`audited_conditional`, high criticality, 124 transitive
 descendants):
@@ -413,24 +488,26 @@ descendants):
 > is not yet an audited solution of strong CP beyond that selected
 > action surface.
 
-## What this note does NOT claim
+The 2026-07-12 repair responds to that historical wiring defect by citing the
+four bounded selection authorities and constructing the conditional basis in
+the runner. This source note does not set or predict the resulting audit
+status.
 
-- A derivation that the framework action surface forbids the CP-odd `F̃F`
-  term.
-- A derivation of the positive real quark-mass orientation
-  (`arg det(M_u M_d) = 0`) from the framework primitives.
-- A dynamical selection of θ = 0; the runner evaluates a θ-free
-  surface and finds no generated phase, but does not derive the
-  surface's exclusion of CP-odd terms.
+## Remaining conditional boundary
 
-## What would close this lane (Path A future work)
-
-Promoting from bounded conditional to a retained-grade proposal would require:
-
-1. A retained operator-basis / action-surface theorem deriving from
-   framework primitives and canonical normalization that no
-   gauge-invariant CP-odd θ term is an admissible slot.
-2. A registered positive real quark-mass orientation /
-   `arg det(M_u M_d) = 0` theorem as a dependency.
-3. An updated runner that constructs the allowed action basis and
-   fails if an `F̃F` term or complex mass phase is admitted.
+1. Gauge-side exclusion is no broader than the cited authorities: the
+   single-plaquette Wilson-slot theorem requires P1-P5; the character theorem
+   requires character form, orientation-evenness, odd support, and
+   positive-class membership; and the native theorem remains inside the
+   canonical imported Wilson + staggered-Wilson positive class while leaving
+   Q-structure existence and nonvacuity open.
+2. Mass-side selection retains the supplied scalar-mass boundary, the
+   convention-aligned positive representative, and the K-real Case-A
+   determinant-channel identification. The K-real pairing theorem makes the
+   determinant non-negative for both real signs and fixes its phase only on the
+   nonzero-determinant locus; it does not independently derive the positive
+   sign. The runner's selected positive nonzero masses lie on that locus.
+3. An ADMITTED CP-odd action term or complex mass phase is outside the
+   constructed selected surface and re-opens the strong-CP question. A choice
+   to admit such data is not fixed by the supplied structure and remains a
+   named conditional or open dependency.

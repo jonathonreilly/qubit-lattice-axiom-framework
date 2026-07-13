@@ -1314,6 +1314,7 @@ def run_codex(prompt: str, isolated_dir: Path, timeout_sec: int,
 # alongside any verdict-write to keep main internally consistent.
 AUDIT_DATA_FILES = [
     "docs/audit/AUDIT_LEDGER.md",
+    "docs/audit/AUDIT_DISPATCH_QUEUE.md",
     "docs/audit/AUDIT_QUEUE.md",
     "docs/audit/data",
     "docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md",
@@ -1533,6 +1534,78 @@ def validate_verdict(
     return None
 
 
+AUTHENTICATED_OCCURRENCE_FIELDS = (
+    "occurrence_group_id",
+    "occurrence_count",
+    "occurrence_locator_sha256",
+)
+
+
+def bind_authenticated_occurrence_metadata(
+    blob: dict,
+    evidence_manifest: dict[str, dict] | None,
+) -> list[dict[str, object]]:
+    """Bind orchestrator-owned N3/N5 occurrence metadata after a unique match.
+
+    The auditor owns classification, rationale, tested resolutions, walls, and
+    verdict content. The orchestrator owns the occurrence IDs/counts/digests.
+    Bind those three metadata fields only when the auditor's exact
+    (evidence_path, phrase, evidence_locator) selects one authenticated
+    full_phrase_groups record. Zero or multiple matches remain untouched and
+    fail closed in the ordinary validator.
+    """
+    if evidence_manifest is None:
+        return []
+    packet = blob.get("no_go_discipline")
+    if not isinstance(packet, dict):
+        return []
+    changes: list[dict[str, object]] = []
+    for section_name, collection_name in (
+        ("N3_hidden_wall_scan", "hits"),
+        ("N5_rhetoric_audit", "statements"),
+    ):
+        section = packet.get(section_name)
+        if not isinstance(section, dict):
+            continue
+        items = section.get(collection_name)
+        if not isinstance(items, list):
+            continue
+        for index, item in enumerate(items, 1):
+            if not isinstance(item, dict):
+                continue
+            path = item.get("evidence_path")
+            phrase = item.get("phrase")
+            locator = item.get("evidence_locator")
+            if not all(isinstance(value, str) and value for value in (path, phrase, locator)):
+                continue
+            entry = evidence_manifest.get(path)
+            if not isinstance(entry, dict):
+                continue
+            matches = [
+                group
+                for group in entry.get("full_phrase_groups") or []
+                if isinstance(group, dict)
+                and group.get("phrase") == phrase
+                and group.get("evidence_locator") == locator
+            ]
+            if len(matches) != 1:
+                continue
+            group = matches[0]
+            for field in AUTHENTICATED_OCCURRENCE_FIELDS:
+                expected = group.get(field)
+                if expected is None or item.get(field) == expected:
+                    continue
+                changes.append({
+                    "section": section_name,
+                    "index": index,
+                    "field": field,
+                    "from": item.get(field),
+                    "to": expected,
+                })
+                item[field] = expected
+    return changes
+
+
 def compute_required_reason(reply: str | None) -> str | None:
     """Accept only the exact one-line COMPUTE_REQUIRED escape protocol."""
     if not reply:
@@ -1596,6 +1669,20 @@ def fresh_schema_retry_eligible(validation_error: str | None) -> bool:
 
 def fresh_schema_retry_code(validation_error: str) -> str:
     """Reduce validator text to a conclusion-free control-plane code."""
+    if (
+        validation_error.startswith("N3 hit ")
+        and "occurrence_" in validation_error
+    ) or validation_error.startswith(
+        "N3.hits must exactly disposition orchestrator phrase scan"
+    ):
+        return "N3_AUTHENTICATED_GROUP_TUPLE_MISMATCH"
+    if (
+        validation_error.startswith("N5 statement ")
+        and "occurrence_" in validation_error
+    ) or validation_error.startswith(
+        "N5.statements must exactly disposition orchestrator rhetoric scan"
+    ):
+        return "N5_AUTHENTICATED_GROUP_TUPLE_MISMATCH"
     if validation_error.startswith("N3 retained_authority hit "):
         return "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH"
     if validation_error.startswith("transport-bounded N8"):
@@ -1656,7 +1743,23 @@ def render_fresh_schema_retry_prompt(
         ),
         "N1_ROUTE_CLASS_MARKER_MISMATCH": (
             "Static N1 invariant: the joined mechanism, attempt, and outcome must "
-            "contain a documented literal marker for the selected route_class.\n"
+            "contain a documented literal marker for the selected route_class. "
+            "At least one of those fields must itself copy the marker. When a "
+            "check label lacks it, use an evidenced marker-bearing live section "
+            "header that genuinely names the same route; do not duplicate fields "
+            "unless stdout supplies the same text for distinct semantic roles.\n"
+        ),
+        "N3_AUTHENTICATED_GROUP_TUPLE_MISMATCH": (
+            "Static N3 invariant: copy phrase, occurrence_group_id, "
+            "occurrence_count, occurrence_locator_sha256, and evidence_locator "
+            "from one same full_phrase_groups record. Never cross-label a group "
+            "id, count, digest, or locator under another phrase.\n"
+        ),
+        "N5_AUTHENTICATED_GROUP_TUPLE_MISMATCH": (
+            "Static N5 invariant: copy phrase, occurrence_group_id, "
+            "occurrence_count, occurrence_locator_sha256, and evidence_locator "
+            "from one same full_phrase_groups record. Never cross-label a group "
+            "id, count, digest, or locator under another phrase.\n"
         ),
         "N5_TESTED_RESOLUTION_VERBATIM_MISMATCH": (
             "Static N5 invariant: copy every complete tested_resolutions entry, "
@@ -1707,7 +1810,10 @@ def validation_repair_preservation_error(
             return {
                 key: without_locator_fields(item)
                 for key, item in value.items()
-                if key not in VALIDATION_REPAIR_LOCATOR_FIELDS
+                if key not in (
+                    VALIDATION_REPAIR_LOCATOR_FIELDS
+                    | set(AUTHENTICATED_OCCURRENCE_FIELDS)
+                )
             }
         if isinstance(value, list):
             return [without_locator_fields(item) for item in value]
@@ -2317,6 +2423,17 @@ def main() -> int:
                     }) + "\n")
                 continue
 
+            occurrence_bindings = bind_authenticated_occurrence_metadata(
+                blob, exact_evidence_manifest
+            )
+            if occurrence_bindings:
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "authenticated_occurrence_metadata_bound",
+                        "bindings": occurrence_bindings,
+                    }) + "\n")
+
             note_path = row.get("note_path") or full_led_row.get("note_path") or ""
             note_body = read_note_body(note_path) or ""
             source_requires_no_go = (
@@ -2397,6 +2514,20 @@ def main() -> int:
                                 "reply": (repair_reply or "")[:2000],
                             }) + "\n")
                         continue
+                    repair_bindings = bind_authenticated_occurrence_metadata(
+                        repair_blob, exact_evidence_manifest
+                    )
+                    if repair_bindings:
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": (
+                                    "validation_repair_authenticated_"
+                                    "occurrence_metadata_bound"
+                                ),
+                                "attempt": repair_attempt,
+                                "bindings": repair_bindings,
+                            }) + "\n")
                     preservation_error = validation_repair_preservation_error(
                         initial_rejected_blob, repair_blob
                     )
@@ -2480,6 +2611,20 @@ def main() -> int:
                     if schema_blob is None:
                         err = "fresh schema retry reply not valid JSON"
                         continue
+                    schema_bindings = bind_authenticated_occurrence_metadata(
+                        schema_blob, exact_evidence_manifest
+                    )
+                    if schema_bindings:
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": (
+                                    "fresh_schema_retry_authenticated_"
+                                    "occurrence_metadata_bound"
+                                ),
+                                "attempt": schema_attempt,
+                                "bindings": schema_bindings,
+                            }) + "\n")
                     schema_error = validate_verdict(
                         schema_blob,
                         cid,

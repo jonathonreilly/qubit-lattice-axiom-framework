@@ -13424,10 +13424,6 @@ class N5AdministrativeNegationExclusionTest(unittest.TestCase):
         )
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class BatchOrchestratorRetargetFlagTest(unittest.TestCase):
     """--retarget-conditionals bypasses the repair-wait guard for explicitly
     named claims only (gate/template calibrations are invisible to the
@@ -13464,3 +13460,7 @@ class BatchOrchestratorRetargetFlagTest(unittest.TestCase):
                 retarget=frozenset({"other_row"}),
             )
             self.assertEqual(targets, [])
+
+
+if __name__ == "__main__":
+    unittest.main()

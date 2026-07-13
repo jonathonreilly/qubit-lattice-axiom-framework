@@ -448,10 +448,14 @@ supply it. Otherwise replace it with:
         "witness_id": "<unique id referenced by a prior-ruled N1 route>",
         "route_id": "<matching N1 route_id>",
         "witness_residual": "<residual in cited witness>",
+        "witness_residual_id": "<stable residual:<id> string present in the cited authority>",
         "claim_residual": "<residual asserted here>",
+        "claim_residual_id": "<stable residual:<id> string present in the audited source>",
         "match": true,
-        "evidence_path": "<manifest path>",
-        "evidence_locator": "<actual locator>"
+        "evidence_path": "<manifest authority path containing witness_residual and witness_residual_id>",
+        "evidence_locator": "<actual authority locator>",
+        "claim_evidence_path": "<manifest source path containing claim_residual and claim_residual_id>",
+        "claim_evidence_locator": "<actual source locator>"
       }
     ],
     "none_found_reason": "<required when witnesses is empty; forbidden as a substitute for prior-route evidence>",
@@ -610,6 +614,15 @@ axiom/approved-primitive vocabulary is explicit accepted premise content and
 is separately guarded by premise-purity checks; it is not a hidden admission
 inside the audited claim. The authenticated manifest remains available for N1,
 N2, N4, N6, and N7 authority checks.
+
+For N4, emit `witnesses: []` with a substantive `none_found_reason` when no
+N1 route is marked `RULED OUT BY PRIOR`; do not create a placeholder witness.
+When such a route exists, every witness object must include both stable
+`residual:<id>` fields and both evidence surfaces. Copy `witness_residual_id`
+from the cited authority and `claim_residual_id` from the audited source; each
+ID and residual text must occur verbatim at its own cited path. The authority
+goes in `evidence_path`, while the audited source goes in
+`claim_evidence_path`.
 
 For an N3 hit, `retained_authority` classifies the provenance of the hit's
 whole `evidence_path`, not the semantics of a word such as `axiom` inside that

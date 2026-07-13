@@ -11695,6 +11695,26 @@ class SanitizeLegacyAuditArtifactsTest(unittest.TestCase):
             "cl3_complexification_split_narrow_theorem_note_2026-05-10",
         )
 
+    def test_lifecycle_state_unknown_survives_the_exact_status_map(self):
+        # The no-go discipline gate requires lifecycle_state in
+        # {active, retired, unknown}; the legacy map must not rewrite that
+        # enum's "unknown" while it still rewrites legacy status values.
+        m = _import("sanitize_legacy_audit_artifacts")
+        snapshot = {
+            "audit_status": "unknown",
+            "cross_cycle_candidates": [
+                {
+                    "candidate": "similar_negative_boundary:example_note",
+                    "lifecycle_state": "unknown",
+                }
+            ],
+        }
+        out = m.sanitize_obj(snapshot)
+        self.assertEqual(
+            out["cross_cycle_candidates"][0]["lifecycle_state"], "unknown"
+        )
+        self.assertEqual(out["audit_status"], "unaudited")
+
 
 if __name__ == "__main__":
     unittest.main()

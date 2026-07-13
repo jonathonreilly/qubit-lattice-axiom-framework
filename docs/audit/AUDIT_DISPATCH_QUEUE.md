@@ -2,10 +2,10 @@
 
 This queue is generated from machine-readable dispatcher manifests. It is a target-selection surface only: dispatcher manifests must not be passed to auditors as evidence.
 
-**Live entries:** 10
-**Ready entries:** 1
+**Live entries:** 9
+**Ready entries:** 0
 **Resolved (post-manifest re-audit) entries:** 4
-**Resolved/invalid entries:** 54
+**Resolved/invalid entries:** 55
 **Retired entries:** 19
 
 Source sidecars:
@@ -27,16 +27,15 @@ Source sidecars:
 
 | # | ready | group | claim_id | current | source note | audit question | ready_blocker |
 |---:|:---:|---|---|---|---|---|---|
-| 1 | Y | `lorentz_selected_action_scope_fresh_context` | `lorentz_violation_derived_note` | bounded_theorem / unaudited / unaudited | `docs/LORENTZ_VIOLATION_DERIVED_NOTE.md` | Fresh-context re-audit: does the bounded dimension-6 cubic-anisotropy result remain valid only under an explicitly selected Planck-spaced cubic finite-difference kinetic operator, with scale reference granting units conversion and kinetic isotropy granting only c_t = c_s, rather than as zero-input four-axiom Lorentz authority? |  |
-| 2 |  | `anomaly_forces_time_bridge_fresh_context` | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem / unaudited / unaudited | `docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md` | Fresh-context re-audit target: under the current dependency-edge repair and premise manifest, does the anomaly-forces-time ABJ bridge validate as a bounded_theorem over explicit premises P-ABJ, P-HY, P-COMP, and P-REC without crediting native_gauge_closure for hypercharge, abelian values, or matter completion? | blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:unaudited,hypercharge_identification_note:unaudited,abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18:unaudited,abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18:unaudited,clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10:unaudited,no_per_site_chirality_theorem_note_2026-05-02:unaudited,staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07:unaudited |
-| 3 |  | `s3_mass_matrix_scope_fresh_context` | `s3_mass_matrix_no_go_note` | open_gate / unaudited / unaudited | `docs/S3_MASS_MATRIX_NO_GO_NOTE.md` | Fresh-context re-audit: does the current S_3 mass-matrix no-go source justify retained_no_go authority under N1-N8 when its physical hw=1 generation-carrier identification and taste-cube reuse have no direct dependency edges, or must authority narrow to the abstract A_1 direct-sum E commutant lemma? | blocked_by_dependency:s3_mass_matrix_conditional_degeneracy_note_2026-07-11:audit_in_progress |
-| 4 |  | `r1_substep1_chain` | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem / unaudited / unaudited | `docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md` | Under the ratified k=1 qubit-per-site clause now on the canonical axiom surface, does the U4 closure row qualify as audited_decoration under cl3_complexification_split (as the prior audit verdict explicitly named), or does it require a different category? | blocked_by_dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:unaudited |
-| 5 |  | `universal_gr_picurv_parent_reaudit` | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem / unaudited / unaudited | `docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md` | Fresh-context review target: does UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md supply the route-exhaustion gate requested for UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes? | blocked_by_dependency:observable_principle_from_axiom_note:unaudited,s3_anomaly_spacetime_lift_note:unaudited,universal_gr_tensor_variational_candidate_note:unaudited,universal_gr_tensor_quotient_uniqueness_note:unaudited |
-| 6 |  | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? | blocked_by_dependency:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:unaudited,lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:unaudited |
-| 7 |  | `r1_substep1_chain` | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem / unaudited / unaudited | `docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md` | With the k=1 qubit-per-site clause ratified on the axiom surface, does the substep-1 U4 conditional sub-claim (k=1 implies dim_C H_x = 2) close under the qubit-per-site reading, or does another blocker remain? | blocked_by_dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:unaudited |
-| 8 |  | `r1_substep1_chain` | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited | `docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md` | With the k=1 qubit-per-site clause ratified on the axiom surface and the substep-1 dependency chain routed through the retained cl3_complexification_split parent, does the Jordan-Wigner substep-1 bridge close under the qubit-per-site reading, or does another blocker remain? | blocked_by_dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:unaudited |
-| 9 |  | `anomaly_forces_time_parent_after_bridge` | `anomaly_forces_time_theorem` | bounded_theorem / unaudited / unaudited | `docs/ANOMALY_FORCES_TIME_THEOREM.md` | Fresh-context audit target after the bridge resolves: does ANOMALY_FORCES_TIME_THEOREM.md close only the d_t odd/parity result under its explicit bridge and retained dependencies, while leaving the d_t = 1 single-generator cap to the emergent-dynamics open gate? | blocked_by_live_group:anomaly_forces_time_bridge_fresh_context |
-| 10 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? | blocked_by_live_group:lsp_projective_direct_luders |
+| 1 |  | `anomaly_forces_time_bridge_fresh_context` | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem / unaudited / unaudited | `docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md` | Fresh-context re-audit target: under the current dependency-edge repair and premise manifest, does the anomaly-forces-time ABJ bridge validate as a bounded_theorem over explicit premises P-ABJ, P-HY, P-COMP, and P-REC without crediting native_gauge_closure for hypercharge, abelian values, or matter completion? | blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:unaudited,hypercharge_identification_note:unaudited,abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18:unaudited,abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18:unaudited,clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10:unaudited,no_per_site_chirality_theorem_note_2026-05-02:unaudited,staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07:unaudited |
+| 2 |  | `s3_mass_matrix_scope_fresh_context` | `s3_mass_matrix_no_go_note` | open_gate / unaudited / unaudited | `docs/S3_MASS_MATRIX_NO_GO_NOTE.md` | Fresh-context re-audit: does the current S_3 mass-matrix no-go source justify retained_no_go authority under N1-N8 when its physical hw=1 generation-carrier identification and taste-cube reuse have no direct dependency edges, or must authority narrow to the abstract A_1 direct-sum E commutant lemma? | blocked_by_dependency:s3_mass_matrix_conditional_degeneracy_note_2026-07-11:audit_in_progress |
+| 3 |  | `r1_substep1_chain` | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem / unaudited / unaudited | `docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md` | Under the ratified k=1 qubit-per-site clause now on the canonical axiom surface, does the U4 closure row qualify as audited_decoration under cl3_complexification_split (as the prior audit verdict explicitly named), or does it require a different category? | blocked_by_dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:unaudited |
+| 4 |  | `universal_gr_picurv_parent_reaudit` | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem / unaudited / unaudited | `docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md` | Fresh-context review target: does UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md supply the route-exhaustion gate requested for UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes? | blocked_by_dependency:observable_principle_from_axiom_note:unaudited,s3_anomaly_spacetime_lift_note:unaudited,universal_gr_tensor_variational_candidate_note:unaudited,universal_gr_tensor_quotient_uniqueness_note:unaudited |
+| 5 |  | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? | blocked_by_dependency:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:unaudited,lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:unaudited |
+| 6 |  | `r1_substep1_chain` | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem / unaudited / unaudited | `docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md` | With the k=1 qubit-per-site clause ratified on the axiom surface, does the substep-1 U4 conditional sub-claim (k=1 implies dim_C H_x = 2) close under the qubit-per-site reading, or does another blocker remain? | blocked_by_dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:unaudited |
+| 7 |  | `r1_substep1_chain` | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited | `docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md` | With the k=1 qubit-per-site clause ratified on the axiom surface and the substep-1 dependency chain routed through the retained cl3_complexification_split parent, does the Jordan-Wigner substep-1 bridge close under the qubit-per-site reading, or does another blocker remain? | blocked_by_dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:unaudited |
+| 8 |  | `anomaly_forces_time_parent_after_bridge` | `anomaly_forces_time_theorem` | bounded_theorem / unaudited / unaudited | `docs/ANOMALY_FORCES_TIME_THEOREM.md` | Fresh-context audit target after the bridge resolves: does ANOMALY_FORCES_TIME_THEOREM.md close only the d_t odd/parity result under its explicit bridge and retained dependencies, while leaving the d_t = 1 single-generator cap to the emergent-dynamics open gate? | blocked_by_live_group:anomaly_forces_time_bridge_fresh_context |
+| 9 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? | blocked_by_live_group:lsp_projective_direct_luders |
 
 ## Resolved By Post-Manifest Re-Audit
 
@@ -74,39 +73,40 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 19 | resolved_or_superseded | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem / audited_clean / retained |
 | 20 | resolved_or_superseded | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem / unaudited / unaudited |
 | 21 | resolved_or_superseded | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem / audited_conditional / audited_conditional |
-| 22 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem / unaudited / unaudited |
-| 23 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
-| 24 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
-| 25 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
-| 26 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |
-| 27 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
-| 28 | resolved_or_superseded | `cl3_color_automorphism_theorem` | bounded_theorem / unaudited / unaudited |
-| 29 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | positive_theorem / unaudited / unaudited |
-| 30 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem / unaudited / unaudited |
-| 31 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
-| 32 | resolved_or_superseded | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
-| 33 | resolved_or_superseded | `action_normalization_note` | no_go / unaudited / unaudited |
-| 34 | resolved_or_superseded | `packet_memory_note` | bounded_theorem / unaudited / unaudited |
-| 35 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
-| 36 | resolved_or_superseded | `weak_coupling_sign_sensitivity_note_2026-04-11` | open_gate / unaudited / unaudited |
-| 37 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
-| 38 | invalid_missing_claim_id | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | None / None / None |
-| 39 | invalid_missing_claim_id | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | None / None / None |
-| 40 | invalid_missing_claim_id | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | None / None / None |
-| 41 | resolved_or_superseded | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
-| 42 | resolved_or_superseded | `linear_response_second_order_kubo_note` | bounded_theorem / unaudited / unaudited |
-| 43 | resolved_or_superseded | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
-| 44 | resolved_or_superseded | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
-| 45 | resolved_or_superseded | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
-| 46 | resolved_or_superseded | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
-| 47 | resolved_or_superseded | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
-| 48 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem / unaudited / unaudited |
-| 49 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
-| 50 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
-| 51 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
-| 52 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
-| 53 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
-| 54 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 22 | resolved_or_superseded | `lorentz_violation_derived_note` | bounded_theorem / audited_conditional / audited_conditional |
+| 23 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem / unaudited / unaudited |
+| 24 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
+| 25 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
+| 26 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
+| 27 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |
+| 28 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
+| 29 | resolved_or_superseded | `cl3_color_automorphism_theorem` | bounded_theorem / unaudited / unaudited |
+| 30 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | positive_theorem / unaudited / unaudited |
+| 31 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem / unaudited / unaudited |
+| 32 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
+| 33 | resolved_or_superseded | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
+| 34 | resolved_or_superseded | `action_normalization_note` | no_go / unaudited / unaudited |
+| 35 | resolved_or_superseded | `packet_memory_note` | bounded_theorem / unaudited / unaudited |
+| 36 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
+| 37 | resolved_or_superseded | `weak_coupling_sign_sensitivity_note_2026-04-11` | open_gate / unaudited / unaudited |
+| 38 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
+| 39 | invalid_missing_claim_id | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | None / None / None |
+| 40 | invalid_missing_claim_id | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | None / None / None |
+| 41 | invalid_missing_claim_id | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | None / None / None |
+| 42 | resolved_or_superseded | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
+| 43 | resolved_or_superseded | `linear_response_second_order_kubo_note` | bounded_theorem / unaudited / unaudited |
+| 44 | resolved_or_superseded | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
+| 45 | resolved_or_superseded | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
+| 46 | resolved_or_superseded | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
+| 47 | resolved_or_superseded | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go / unaudited / unaudited |
+| 48 | resolved_or_superseded | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
+| 49 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem / unaudited / unaudited |
+| 50 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 51 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
+| 52 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
+| 53 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 54 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 55 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
 
 ## Retired Dispatch Targets
 

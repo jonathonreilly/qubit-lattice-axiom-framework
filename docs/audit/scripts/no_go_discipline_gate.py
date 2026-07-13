@@ -933,6 +933,30 @@ def _canonical_runner_path(repo_root: Path, raw: str | None) -> str:
     return str(raw)
 
 
+def _repo_local_helper_runner_path(
+    repo_root: Path,
+    raw: str | None,
+) -> str | None:
+    helper = _canonical_runner_path(repo_root, raw)
+    relative = Path(helper)
+    if (
+        relative.is_absolute()
+        or not relative.parts
+        or relative.parts[0] != "scripts"
+        or ".." in relative.parts
+    ):
+        return None
+    try:
+        root = repo_root.resolve()
+        resolved = (root / relative).resolve()
+        resolved.relative_to(root)
+    except (OSError, ValueError):
+        return None
+    if not resolved.is_file():
+        return None
+    return helper
+
+
 def premise_type_for_id(repo_root: Path, claim_id: str) -> str | None:
     axioms = _load_json(repo_root, AXIOM_REGISTRY)
     if claim_id in set(axioms.get("canonical_ids") or []):
@@ -1209,6 +1233,18 @@ def partial_closure_index_path(claim_id: str) -> str:
 
 def runner_stdout_evidence_path(claim_id: str) -> str:
     return f"audit-packet://runner-stdout/{claim_id}"
+
+
+def independent_runner_stdout_evidence_path(
+    claim_id: str,
+    runner_path: str,
+) -> str:
+    canonical_path = str(runner_path).replace("\\", "/")
+    path_digest = hashlib.sha256(canonical_path.encode("utf-8")).hexdigest()[:16]
+    return (
+        f"audit-packet://runner-stdout-independent/{claim_id}/"
+        f"{Path(canonical_path).stem}-{path_digest}"
+    )
 
 
 def blind_reaudit_control_path(claim_id: str) -> str:
@@ -1809,7 +1845,9 @@ def build_evidence_manifest(
         text=_read_text(root, runner_path),
     )
     for helper_raw in row.get("helper_runner_paths") or []:
-        helper = _canonical_runner_path(root, helper_raw)
+        helper = _repo_local_helper_runner_path(root, helper_raw)
+        if helper is None:
+            continue
         _add_evidence(
             manifest,
             path=helper,
@@ -2787,7 +2825,7 @@ def forensic_mode() -> bool:
     }
 
 
-def source_requires_no_go_discipline(
+def source_is_no_go_artifact(
     note_path: str | None,
     note_body: str | None,
     claim_type_hint: str | None,
@@ -2806,6 +2844,17 @@ def source_requires_no_go_discipline(
         # Filename-level no-go authority is always forensic.  A source may
         # explain that an older reading was withdrawn, but that prose cannot
         # silently downgrade the assurance tier of the no-go-named artifact.
+        return True
+    return False
+
+
+def source_requires_no_go_discipline(
+    note_path: str | None,
+    note_body: str | None,
+    claim_type_hint: str | None,
+) -> bool:
+    body = note_body or ""
+    if source_is_no_go_artifact(note_path, body, claim_type_hint):
         return True
     # Wall-naming positive/bounded rows carry the mandatory heavy packet only
     # in the forensic tier; in the development tier the auditor still applies

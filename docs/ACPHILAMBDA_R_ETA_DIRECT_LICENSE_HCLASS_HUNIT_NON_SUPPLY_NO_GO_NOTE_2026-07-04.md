@@ -111,16 +111,19 @@ Historical decision text identifies provenance only and is not used as proof.
 | Dimensionful scale reference | ATTEMPTED | The [scale-reference primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md) supplies units conversion and no dimensionless phase, selector, or readout bridge; `beta` is dimensionless, runner Part D. |
 | Kinetic-form isotropy | ATTEMPTED | The [kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) supplies `c_t=c_s` and no phase, selector, or readout bridge; the family is unchanged, runner Part D. |
 | Exact fixed-locus value | ATTEMPTED | Granting the nonzero value `h=2/9` leaves both `beta=1` and `beta=2`; runner Part A checks the singleton and cycle values separately. |
+| Coordinate-convention steelman | ATTEMPTED | N7 convention mechanism: same-observable common-unit rescaling. N7 convention attempt: multiply `h` and `abs(delta_beta)` by the same positive unit factor. N7 convention outcome: `beta=abs(delta_beta)/h` remains invariant and the `W_unit` readout bridge is not selected. Runner Part E verifies the symbolic identity and finite exact examples. |
 
-The runner checks all seven routes. Their authority boundary is the current
+The runner checks all eight routes. Their authority boundary is the current
 minimal axiom memo, the approved primitive boundary notes, and the explicit
 family above; no prior negative row is used as a witness.
 
 ### N2 — wall independence
 
-The scoped claim carries one wall: `W_unit`, the coefficient `beta=1` in
-`|delta|=beta h`. The h-class face of AC(ii) is an explicit hypothesis, not a
-second unresolved wall in this theorem. The three-record relation
+The scoped claim carries one physical wall: `W_unit`, the coefficient `beta=1`
+in `|delta|=beta h`. Its single structured audit-packet wall label is `readout
+bridge`; `W_unit` is the charged-lepton lane alias for that same missing
+relative normalization. The h-class face of AC(ii) is an explicit hypothesis,
+not a second unresolved wall in this theorem. The three-record relation
 `Phi=3|delta|` is an additive consequence of the same coefficient, not an
 independent normalization wall. No pairwise wall table is needed after this
 collapse.
@@ -178,11 +181,28 @@ a new primitive.
 ### N7 — steelman
 
 The strongest objection is that radians make the identity coefficient a
-coordinate statement rather than new physics. That objection succeeds if the
-fixed-locus scalar and the physical eta angle are first proved to be the same
-observable in the same coordinate. The current axioms name neither object and
-contain no such identity. Thus the objection identifies a same-observable path
-while leaving the present derivational non-entailment intact.
+coordinate statement rather than new physics. Put the fixed-locus-density
+readout and eta-angle readout in a common coordinate with positive unit scale
+`u`:
+
+```text
+H_u(R) = u h N(R),
+Phi_u(R) = u beta h N(R).
+```
+
+For every nonempty finite record collection, their same-coordinate ratio is
+`Phi_u/H_u = beta`, independent of `u`. A common change from radians to any
+other angle unit therefore preserves the distinction between `beta=1` and
+`beta=2`; it cannot turn the countermodel into the target. The objection would
+succeed after a separate same-observable identity `Phi=H` is proved, because
+that identity forces `beta=1`. Such a theorem is a possible future physical
+supplier, not a coordinate convention and not part of the scoped axiom-only
+inference. Runner Part E executes this steelman directly. The independent
+accepted-authority boundary is the [scale-reference primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md):
+"This is a units conversion, not a physics axiom. It carries zero dimensionless
+content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge,
+or empirical fit is supplied by it." Thus an accepted unit conversion does not
+select the `readout bridge` wall.
 
 ### N8 — cross-cycle echo
 
@@ -208,4 +228,4 @@ Run:
 python3 scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
 ```
 
-Expected result: `PASS=47`, `FAIL=0`.
+Expected result: `PASS=55`, `FAIL=0`.

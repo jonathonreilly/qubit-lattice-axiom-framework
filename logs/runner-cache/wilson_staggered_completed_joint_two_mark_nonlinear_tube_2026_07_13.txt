@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.py
+runner_sha256: a307028939990331310588b77c8c7c8deccd23a587de224ccc5438e32a83130b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+PASS fiber_constant_raw_hessian_blocks_vanish: Cov(raw,raw)=-2.220e-16, Cov(raw,Fo)=0.000e+00, Cov_Phi(Fo,Go)=0.463437555205, direct E0 pair=0.600000000000
+PASS fiber_constant_raw_factor_cancels_from_normalized_response: E_(Phi+Lf)[Fo]=-0.066632874822069=E_Phi[Fo]=-0.066632874822069; only Ho enters K_delta
+PASS mixed_second_derivative_has_no_extra_factor_two: d_s d_t[-log Z]=-0.463437551789, -Cov(Fo,Go)=-0.463437555205; Taylor diagonal alone carries 1/2
+PASS conservative_two_mark_two_side_envelope: one-side truncated=1.686625063248440, layer distribution=1.686625063248440, 1+H=(1-t)^-2=1.686625063248440, two-side safe product=(1-t)^-4=2.844704103977804
+PASS independent_high_precision_tube_recomputation: Decimal n=111, K_delta=0.0010009809898348720421557539930583115630762005807014602285146744603597482514483, tau=0.040920026969536875799005002348005218989181342071338370714132470950420668195581631, M=88.821698004805115497378231872770746763712474241779695426882098556017386521050894, lhs=0.00098538290509857336091293817538282199457656159810129079976969836633378865860477381, margin=0.00001461709490142663908706182461717800542343840189870920023030163366621134139522619
+PASS uniform_strong_ball_pair_hessian_bound: delta=0.001000<r_src=0.009949854790553, K_delta=1.000980989834872e-03<c, D=40.879924179466485@n=111, tau_delta=0.040920026969537, M_delta=88.821698004805114
+PASS one_horizon_nonlinear_residual_source_output_tube: B=3.613463806021123e-05, q=0.904837418035960, delta=0.001000, B+qdelta+(M/2)delta^2=9.853829050985733e-04<delta, margin=1.461709490142675e-05
+PASS separate_center_ledger_gap_eta_and_residual_atom_membership: complete center/output charge=delta+tube+B=2.021517543158784e-03, epsilon_Q=2.262440843396182e-04, gap/m=0.999773755915660, sigma_eta=6.788090441796472e-04, theta_atom=0.426574016916734, expm1(delta)=1.000500166708342e-03<c
+PASS hidden_condition_phrase_scan: pre-N3 note plus pre-scan runner counts={'we assume': 0, 'by construction': 0, 'as is standard': 0, 'the framework provides': 0, 'bridge context': 0, 'background': 1, 'naturally': 0, 'obviously': 0, 'standard qft': 0, 'registered': 0, 'canonical': 0}; sole background hit is the declared finite-sector import
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_JOINT_PRODUCT_REFERENCE_DETERMINANT_COUNTERTERM_OUTER_HAAR_COLORED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_SCALAR_PRODUCT_REFERENCE_COMPLETED_JOINT_OUTER_HAAR_ACTUAL_OUTPUT_ATOM_RETURN_BOUNDED_THEOREM_NOTE_2026-07-13.md', 'WILSON_STAGGERED_SPLIT_DERIVATIVE_AND_UNLOCALIZED_CAUCHY_CERTIFICATE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=11 FAIL=0
+
+----- stderr -----
+

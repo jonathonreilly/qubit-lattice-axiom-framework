@@ -657,6 +657,7 @@ HARD_APPLY_BLOCKER_PREFIXES = (
     "judicial review requires first_audit and second_audit summaries",
     "first_audit cannot be upgraded",
     "second_audit cannot be upgraded",
+    "third_audit cannot be upgraded",
     "judicial third auditor must differ",
     "trusted evidence manifest",
     "No-Go Discipline apply requires trusted orchestrator evidence transport",
@@ -1007,6 +1008,11 @@ def load_prior_panels(
             )
         if record.get("schema") != "judicial_panel_record_v1":
             return {}, f"prior panel {path} has an invalid schema"
+        invocation_id = record.get("invocation_id")
+        if not isinstance(invocation_id, str) or re.fullmatch(
+            r"[0-9a-f]{32}", invocation_id
+        ) is None:
+            return {}, f"prior panel {path} has an invalid invocation_id"
         panel_no = record.get("panel")
         if not isinstance(panel_no, int) or isinstance(panel_no, bool) or panel_no < 1:
             return {}, f"prior panel {path} has an invalid panel number"

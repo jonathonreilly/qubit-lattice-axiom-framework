@@ -42,6 +42,11 @@ AUDITOR_FAMILY = "codex-gpt-5.6"
 REASONING = "xhigh"
 RETAINED = {"retained", "retained_bounded", "retained_no_go", "meta"}
 AUDITABLE_TYPES = {"positive_theorem", "bounded_theorem", "open_gate"}
+SUCCESS_RESULTS = {
+    "audited_clean", "audited_renaming", "audited_conditional",
+    "audited_decoration", "audited_numerical_match", "audited_failed",
+    "compute_required",
+}
 MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
 PACKET_COMPLETION_POLL_SECONDS = 15
@@ -896,7 +901,8 @@ def apply_serialized(
             # Bank the single validated seat instead of discarding it. The
             # apply contract natively supports this: a lone clean seat lands
             # as audit_in_progress/awaiting_second and the next run resumes
-            # with only the missing peer (passes_for_row -> [2]). Discarding
+            # with only the missing peer (passes_for_row -> [2]); a lone
+            # non-clean seat lands in the governed repair queue. Discarding
             # validated xhigh work forced whole-pair reruns (grain wave 4,
             # 2026-07-13: seat 1 validated end-to-end and was thrown away
             # because seat 2 failed packet schema). The failed peer's
@@ -908,7 +914,7 @@ def apply_serialized(
                 "result": "critical_peer_pending",
                 "detail": (
                     f"validated seats={sorted(available)}; banking them and "
-                    "awaiting the peer seat in a later run"
+                    "preserving the incomplete pair signal"
                 ),
             })
 
@@ -1115,12 +1121,7 @@ def main() -> int:
             encoding="utf-8",
         )
         print(f"report: {workdir / 'report.jsonl'}")
-    success_results = {
-        "audited_clean", "audited_renaming", "audited_conditional",
-        "audited_decoration", "audited_numerical_match", "audited_failed",
-        "compute_required",
-    }
-    blocked = any(item.get("result") not in success_results for item in report)
+    blocked = any(item.get("result") not in SUCCESS_RESULTS for item in report)
     return 1 if blocked else 0
 
 

@@ -505,7 +505,7 @@ supply it. Otherwise replace it with:
         "addressed": true,
         "disposition": "<include affected_wall verbatim, then explain why the candidate does or does not close it>",
         "evidence_path": "<manifest path>",
-        "evidence_locator": "<actual locator>"
+        "evidence_locator": "<copy candidate_id verbatim; it is the stable locator in the serialized partial-closure index>"
       }
     ],
     "none_found_reason": "<required when candidates is empty>",
@@ -656,8 +656,11 @@ candidate record and include that complete `indexed_basis` text verbatim
 inside `closure_mechanism` before explaining how the candidate could affect
 the named wall. Also include the complete `affected_wall` text verbatim inside
 that candidate's `disposition` before explaining why the wall does or does not
-close. A paraphrase or merely related explanation does not satisfy either
-authenticated binding.
+close. Set `evidence_path` to the orchestrator partial-closure-index path and
+set `evidence_locator` to that candidate's complete `candidate_id` verbatim;
+the candidate id is the stable unique locator in the serialized index, whereas
+a quote-bearing `indexed_basis` prefix may be JSON-escaped there. A paraphrase
+or merely related explanation does not satisfy either authenticated binding.
 
 For each N5 statement, `resolution_classes_checked` must equal the five canonical classes exactly,
 and `tested_resolutions` must contain exactly five entries: one and only one

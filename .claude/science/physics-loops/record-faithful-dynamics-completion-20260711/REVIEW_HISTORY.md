@@ -1222,3 +1222,32 @@ declared joint source domain. Generic source embedding, coarse-shadow/future
 atoms, strong return, future-center migration, Hessian, invariant ball,
 time/probability law, and continuum remain open. No axiom-update stop is
 triggered.
+
+## Extracted S2 actual-range reference review
+
+PASS WITH BOUNDED CLAIMS after the future-center ledger was rebuilt rather
+than copied from the original anti-Hermitian staggered block. The exact
+`S^(2)` hopping is positive Hermitian/Laplacian-like. Its determinant bond has
+the minus ratio `[1-(k/mu)^2]^3`, its new counterterm/restore cancels before
+Gaussian evaluation, and the old determinant/gauge effects remain inside the
+recentered residual exactly once.
+
+Code/math review independently reconstructed the `G_m`--`G_mu` atom
+transition, decorated `Delta_2` row, residual exponentiation, strict witness,
+full Schur gap, and shortest-center recursion. Physics/import review required
+the exact identity `mI+Gamma_40=S^(2)+P_1`, current-fiber splitting before
+local/raw extraction, formal lineage roots through evaluated atom fusion, and
+an explicit center-only boundary on the bare Gaussian identity. Governance
+review required and then passed the authoritative N1--N8 packet, including
+the campaign-local no-go ledger and positive axiom-stop trigger.
+
+Runner/cache are `PASS=13 FAIL=0`; the audit pipeline seeds one
+`bounded_theorem` / `unaudited` row with exactly four dependencies, classifies
+the runner as dominant first-principles compute, and strict lint has zero
+errors. PR #5358 is open.
+
+The theorem is one actual-bare-range strong-to-weak step with a persistent
+base-center gap. Generic perturbations, perturbative gap persistence,
+third-horizon atoms, same-domain return, Hessian, invariant ball, taste,
+continuum, time, and probability remain open. No axiom-update stop is
+triggered.

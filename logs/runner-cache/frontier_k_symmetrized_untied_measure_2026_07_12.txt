@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_k_symmetrized_untied_measure_2026_07_12.py
+runner_sha256: 6f3913ad4e69470a7619be72525dd03d49692e21f74520fef8fd83f8e56f6ff5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 20.77
+status: ok
+----- stdout -----
+============================================================================
+K-symmetrized untied measure -- records-only reconstruction
+mu_sym = (mu_W + mu_{W^dag})/2; same registrable spanning set
+============================================================================
+[PASS] (01) reused records-only Grassmann/Berezin engine: exact single-slice partition equals det K to the first power at a dense rational-complex point
+[PASS] (02) reused theta/two-slice engine reproduces the inherited exact toy OS Gram
+[PASS] (03) T1 reflection identity at both required exact untied probes: Z(W^dag)=conj Z(W), G_raw(W^dag)=G_raw(W)^dag entrywise, and direct integration of the half-sum equals the arithmetic orbit average  [P1: Zsym=(442243/1000000+0i); P2: Zsym=(118339871223181/85766121000000+0i)]
+[PASS] (04) T1 exact consequence: theta preserves mu_sym and its raw records-only Gram is Hermitian; at both required probes Z_sym=Re Z_W is nonzero, so the normalized Gram is exactly Hermitian too
+[PASS] (05) normalization guard: Z_sym=Re Z_W is not automatically nonzero.  At W=(3/8+5i/8)I, Z_W=(15i/32)^3=-3375i/32768 is nonzero and purely imaginary, hence Z_sym=0 exactly; the raw symmetrized form remains Hermitian but no normalized Gram exists on this locus
+
+--- T2: exact signature and bounded domain structure ---
+[PASS] (06) required exact untied probe P1: the normalized K-symmetrized 5x5 Gram is POSITIVE DEFINITE -- all 31 principal minors are exact positive rationals (no threshold)  [smallest exact minor (0, 1, 2, 3, 4)=(2481178078125000000000000000/16916278917990800432294819443+0i); float context min-eig=0.0347416]
+[PASS] (07) required exact untied probe P2: the normalized K-symmetrized 5x5 Gram is POSITIVE DEFINITE -- all 31 principal minors are exact positive rationals (no threshold)  [smallest exact minor (0, 1, 2, 3, 4)=(41608903136082324823895797257801559519543346362471875000000000000000/23208948333223840320190645259090098573336248968791134439568823789159901+0i); float context min-eig=0.00738361]
+[PASS] (08) exact failure certificates on both signs/regions: W=iI and W=2P1 have nonzero Z_sym and exactly Hermitian normalized Grams, but each has a strictly negative rational principal minor; 2P1 has Z_sym>0, so failure is not an artifact of a negative normalization  [iI: Zsym=(-27/64+0i), minor(1,)=(-44/3+0i); 2P1: Zsym=(6467077/1000000+0i), minor(2, 3)=(-7095906000000/41823084923929+0i)]
+[PASS] (09) the exact T2 topology is MIXED-DOMAIN: strict PD at P1 and P2 and a strict negative minor at iI and 2P1 imply, by continuity away from Z_sym=0, nonempty open PD neighborhoods and nonempty open indefinite neighborhoods.  Thus symmetrization restores positivity on a domain, not universally
+[PASS] (10) records-only controls are inherited exactly at declared grade: mu_sym equals the tied weight on the tie; on the all-real branch its P-even record Gram equals the original Gram, positive inside the known strip and indefinite at the supplied outside point  [tie: PSD=True; real-inside: PSD=True; real-outside: PSD=False]
+[PASS] (11) labeled float-only six-real-dimensional coverage (eigenvalue sign, no threshold) sees the open PD core/tubes and failures as the box widens; this is domain evidence only, not a claimed analytic global boundary  [R=1/10: {'PD': 24, 'INDEF': 0, 'Z0': 0}, min-eig-range=[0.6985358701664226, 0.9997904979901552]; R=1/5: {'PD': 19, 'INDEF': 5, 'Z0': 0}, min-eig-range=[-1096.873178876457, 0.8942639014127854]; R=1/2: {'PD': 8, 'INDEF': 15, 'Z0': 1}, min-eig-range=[-377.667558380446, 0.6084816960975453]; R=3: {'PD': 0, 'INDEF': 48, 'Z0': 0}, min-eig-range=[-50.70872374489649, -0.0025409319670724366]]
+RESIDUAL (declared-open): the complete six-real-dimensional semialgebraic boundary of the PSD domain is NOT classified here.  Exact strict certificates establish open PD and indefinite regions; floats only map bounded coverage and are never promoted to a threshold or a global genericity theorem.
+
+--- T3: law/ensemble and licensing analysis ---
+[PASS] (12) mu_sym is one exact finite Grassmann weight but is NON-GAUSSIAN: its constant and bilinear coefficients force K_eff=(K_W+K_Wdag)/2, yet exp(chibar K_eff chi) first disagrees with the half-sum at Grassmann degree four.  Hence there is no single bilinear/3-mode local Gaussian rule producing this weight at P1  [first mismatch degree=4, mismatch masks=723]
+[PASS] (13) law versus ensemble, exact distinction: for supplied (W,K), the orbit-average prescription returns exactly one fixed raw integrand (so it satisfies the Qualification's extensional one-answer clause) and is a finite Berezin weight/linear functional.  It is formally a half-sum of two component weights, but after normalization at P1 the component coefficients are conjugate NONREAL numbers alpha,beta with alpha+beta=1 -- not a positive probabilistic mixture of two normalized laws  [alpha=(1/2+128413/442243i), beta=(1/2-128413/442243i)]
+[PASS] (14) K-orbit use is exact and explicit: mu_sym(W)=mu_sym(Wdag), it reduces to mu_W on the tie, and it differs from mu_W at generic P1.  Thus the construction is arrow-free once K is supplied, but it CONSUMES K to alter the unregistered weight; that physical licensing is not settled by the algebra
+RESIDUAL (declared-open): K-ORBIT-AVERAGE LAW/MEASURE LICENSING (first-class): pro -- supplied readout-context K canonically fixes the orbit and removes any arrow or representative choice; contra -- applying that downstream context to the Berezin weight promotes K into the dynamics/measure and can be read as pre-inserting the structure sought.  No authority cited by this note resolves the choice, so neither side is adopted.
+[PASS] (15) time-homogeneity does not extend automatically: a quenched global orbit choice gives (x^N+y^N)/2, whereas an annealed per-step orbit average gives ((x+y)/2)^N; already at N=2, x=2, y=3 they are exactly 13/2 and 25/4.  The present half-sum is global over the supplied two-slice history and lands neither many-slice rule
+RESIDUAL (declared-open): the many-slice transfer rule is OPEN: quenched means one W/Wdag orbit representative fixed for a whole history before averaging histories; annealed means re-averaging orbit representatives per step/link and summing 2^N assignments.  Neither extension is supplied or licensed.
+
+--- T4: doubled-space realization and fork arithmetic ---
+[PASS] (16) the doubled one-slice carrier D=W direct-sum Wdag is conjugation-closed by construction in both relevant senses: J D=Ddag J for the copy-swap fundamental symmetry J, with J^2=I and signature (3,3); and the natural antiunitary K_D=S o conjugation obeys S conjugate(D) S=D and K_D^2=1 (S includes generation inversion P).  Its K-fixed real form is invariant.  Distinctly, the linear positive J=+1 half is NOT invariant: (I-P+)DP+ is nonzero at P1
+[PASS] (17) the ordinary doubled Gaussian does NOT reproduce mu_sym correlators even on the natural K-paired additive lift (the registrable basis is P-even, so this is the half-sum across copies): its partition is Z_D=Z_W Z_Wdag=|Z_W|^2 and spectator factors reweight every lifted correlator.  At exact P1 its normalized 5x5 form differs from the mu_sym form entrywise.  A direct-sum/superselection trace with an exclusive sector would reproduce the half-sum, but that one-hot sector structure is additional and is not the six-mode Gaussian  [first difference (0, 1)=(1523664567517428/4626542220828959+0i); mismatched entries=24]
+[PASS] (18) DOUBLED-CARRIER COUNTING: W direct-sum Wdag doubles BOTH the singlet and doublet carriers (real dimensions 2->4 and 4->8).  The honest uniform doubled equations 6 a^2=2 eps, 12 b^2=2 eps preserve the count-once comparator b^2/a^2=1/2; they do NOT produce the count-twice comparator 1.  Obtaining the latter needs 12 b^2=4 eps (or an asymmetric singlet quotient), an extra grain/equipartition rule
+RESIDUAL (declared-open): no physical r value is derived or adopted.  The equations in check 18 only compare the two already-landed fork cells.  Uniform direct-sum doubling pays a factor-two carrier overhead and a (3,3) Krein form.  The antiunitary K-fixed real form halves singlet and doublet uniformly; the linear positive J half is not transfer-invariant.  A different counting quotient would be new formation/equipartition content.
+[PASS] (19) escape-table update relative to the records-only and quasi-Hermitian theorems is complete: the new arrow-free orbit average is algebraically live only on a PD domain, with licensing and many-slice transfer open; ordinary doubling does not realize its correlators; positive-metric closure, Krein, A2, and alternating-measure dispositions remain correctly separated
+RESIDUAL (declared-open): the per-cell equipartition/dial and formation-weight residues are untouched; no r endpoint, premise, probability rule, local transfer, or many-slice history law is adopted.  The exact construction is bounded to the two-slice C3 circulant and the registrable spanning set.
+
+T2 SIGNATURE VERDICT FIRST: PSD ON A NONEMPTY OPEN DOMAIN, INDEFINITE ON ANOTHER NONEMPTY OPEN DOMAIN (MIXED-DOMAIN BOUNDED THEOREM).  Both required exact complex untied probes are PD; iI and 2P1 have exact negative principal minors; no global six-dimensional boundary claimed.
+T1: theta exchanges mu_W and mu_Wdag, so mu_sym and its raw Gram are exactly reflection-invariant/Hermitian; normalization exists only where Z_sym=Re Z_W is nonzero.
+T3: the prescription is one fixed non-Gaussian Berezin weight and a formal orbit ensemble, but its K-to-measure licensing and annealed-versus-quenched many-slice law remain first-class open residuals.
+T4: W direct-sum Wdag is a (3,3)-signature conjugation-closed carrier, but its K-paired Gaussian gives product rather than sum correlators; the natural K-real form is closed while the linear positive J half is not.
+DOUBLED-CARRIER COUNTING RESULT: uniform doubling doubles singlet and doublet alike, preserves the count-once fork comparator, and does not reinstall count-twice without an extra asymmetric grain rule.
+CHECK COUNT: PASS=19 FAIL=0
+PROPOSED CLAIM_SCOPE: bounded_theorem -- two-slice C3 circulant, registrable 5-element spanning set, exact mixed signature, with K-orbit-average licensing and many-slice transfer explicitly open.
+HOSTILE-AUDIT UNCERTAINTIES: full PSD-domain boundary; whether supplied readout K may act on the weight; law-versus-ensemble physical status; annealed/quenched extension; exclusive-sector transfer realization; equipartition/formation grain.
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

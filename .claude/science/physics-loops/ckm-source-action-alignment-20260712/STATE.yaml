@@ -7,7 +7,9 @@ cycle_count: 1
 branch: physics-loop/ckm-source-action-alignment-block03-20260712
 base_branch: physics-loop/ckm-composite-typed-bridge-block02-20260712
 base_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5272
-status: ready_to_publish
+status: pr_open
+source_commit: 7d6a1f65e
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5321
 claim_type: bounded_theorem
 actual_current_surface_status: exact support/boundary theorem
 trace_class: negative_route_pruning

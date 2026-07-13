@@ -3833,7 +3833,7 @@
       "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,

@@ -1,0 +1,9 @@
+PASS deep_fiber_margin: q0=2alpha=0.748784292630
+PASS first_response_sign: DR=0.071692756243, E[F]=0.071692756236
+PASS mixed_hessian_sign: D2R=-0.226540453063, -Cov=-0.226540467154
+PASS quarter_oscillation_covariance_convention: Var=1.0, (1/4)delta^2=1.0
+PASS weighted_resolvent_geometric_sum: 1/(1-q_lambda)=3.448275862069
+PASS positive_exponential_hessian_rate: lambda_H=0.080000, bound_at_40=1.405593240633e-01
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS direct_dependency: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=8 FAIL=0

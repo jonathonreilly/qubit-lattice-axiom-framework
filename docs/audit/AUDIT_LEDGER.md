@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 304 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 2 |
-| unaudited | 2953 |
-| audit_in_progress | 6 |
+| unaudited | 2954 |
+| audit_in_progress | 5 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
@@ -40,14 +40,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
+| `audit_in_progress` | 5 |
 | `audited_clean` | 382 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3304 |
+| `unaudited` | 3305 |
 
 | claim_type | count |
 |---|---:|
@@ -113,7 +113,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
-| `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `cpt_exact_note` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |

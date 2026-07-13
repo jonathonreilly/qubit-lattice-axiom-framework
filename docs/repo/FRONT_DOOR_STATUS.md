@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 304 |
 | Boxed decorations under retained parents | 15 |
 | Open gates | 2 |
-| Unaudited rows | 2953 |
+| Unaudited rows | 2954 |
 | Retained-pending-chain rows | 2 |
 | Audited conditional rows | 24 |
 | Audited renaming rows | 14 |
@@ -63,7 +63,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`cl3_complexification_split_narrow_theorem_note_2026-05-10`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
+- [`cl3_complexification_split_narrow_theorem_note_2026-05-10`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; non_terminal_conditional
 - [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`z2_hw1_mass_matrix_parametrization_note`](../../docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) - critical; unaudited

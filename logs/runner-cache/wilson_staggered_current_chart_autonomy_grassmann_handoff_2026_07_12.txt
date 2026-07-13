@@ -1,0 +1,9 @@
+PASS straight_dyadic_support_semigroup: axes=4, H_2_after_H_4=H_8
+PASS straight_support_size_diameter: q=4, coarse=(size=5,diam=4), lifted=(size=17,diam=16), general_size_cap=65
+PASS origin_cell_saturation_reflection_failure: theta(Sat({0}))=[-1, 0], Sat(theta({0}))=[0, 1]
+PASS current_weak_to_strong_unbounded_family: all_hidden=True, unique=True, |T_L|=|X_L|=4L; center_average=3.701e-17; L=1:ratio=2.740121e+00; L=2:ratio=7.508262e+00; L=4:ratio=5.637400e+01; L=8:ratio=3.178027e+03; L=16:ratio=1.009986e+07; L=32:ratio=1.020071e+14
+PASS gaussian_berezin_eta_norm_handoff: expectations=[1.0, 0.0001, 1e-08, 1e-12], pair_ratios=[1.0, 1e+16, 9.999999999999999e+31, 9.999999999999997e+47], one_site=1.0e+48, fifteen_site=1e720
+PASS one_index_martingale_algebra_boundary: a_h=1/9; J=2:C_alg>=0.444444; J=4:C_alg>=1.77778; J=8:C_alg>=28.4444; J=12:C_alg>=455.111
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=8 FAIL=0

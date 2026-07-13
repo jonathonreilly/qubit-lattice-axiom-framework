@@ -32,16 +32,16 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3753 |
-| Applied audit verdicts | 441 |
+| Applied audit verdicts | 442 |
 | Retained-grade rows, including boxed decorations | 395 |
 | Retained positive theorems | 76 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 304 |
 | Boxed decorations under retained parents | 15 |
 | Open gates | 2 |
-| Unaudited rows | 2957 |
+| Unaudited rows | 2956 |
 | Retained-pending-chain rows | 1 |
-| Audited conditional rows | 22 |
+| Audited conditional rows | 23 |
 | Audited renaming rows | 14 |
 | Audited numerical-match rows | 5 |
 | Citation cycles detected | 63 |
@@ -81,13 +81,14 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 258 |
+| critical | `unaudited` | 257 |
 | high | `unaudited` | 174 |
 | medium | `unaudited` | 126 |
 | ? | `unresolved` | 5 |
 | high | `audited_conditional` | 3 |
 | critical | `audit_in_progress` | 2 |
 | medium | `audited_conditional` | 2 |
+| critical | `audited_conditional` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | high | `audited_numerical_match` | 1 |
 

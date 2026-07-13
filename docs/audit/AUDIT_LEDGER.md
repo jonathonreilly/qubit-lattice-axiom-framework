@@ -22,12 +22,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 304 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2957 |
+| unaudited | 2956 |
 | audit_in_progress | 4 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -42,12 +42,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 382 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3308 |
+| `unaudited` | 3307 |
 
 | claim_type | count |
 |---|---:|
@@ -505,6 +505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `area_law_primitive_car_edge_identification_theorem_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bridge_gap_hk_cube_perron_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1417,6 +1418,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Parseval in the stated normalization gives sum_j z_j^2 = 3(a^2 + 2|c|^2), hence Q = 1/3 + 2r/3, while the S3 action on c folds phi to an unordered-triple invariant.  _(class `A`)_
 - **chain closes:** True — Root-of-unity orthogonality and real conjugacy close the result directly, and an independent exact Q(omega) calculation confirms every displayed identity. Positivity supplies a > 0 and in fact restricts the coordinate to 0 <= r < 1, while the theorem asserts the weaker r >= 0 and leaves its value unselected.
 - **rationale:** Direct expansion in Q(omega), using omega^2 + omega + 1 = 0, independently reproduces the inverse transform, the 6|c|^2 variance identity, Parseval, and Q = 1/3 + 2r/3. The S3 action phi -> +/-phi + 2pi k/3 proves folded-phase invariance and unordered reconstruction, including the c = 0 limit. The scope starts from a supplied positive triple; physical functional construction and empirical comparison are explicitly outside scope, and r remains unselected.
+- **auditor confidence:** high
+
+### `charged_lepton_two_higgs_canonical_reduction_note`
+
+- **Note:** [`CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`](../../docs/CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Conditional algebraic reduction and seven-parameter count for a supplied charged-lepton texture with two distinct effective Z_3 offsets, up to generation relabeling and field rephasings.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-batch-A-20260713-e10e4fb8`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Right-multiplying by P_a^dag makes one term diagonal and leaves a relative permutation which is always a nontrivial 3-cycle.  _(class `A`)_
+- **chain closes:** False — The matrix reduction and rank-five rephasing count close algebraically. However, the restricted packet supplies no cited authority establishing that charged-lepton effective Z_3 offsets produce the assumed monomial supports D_q P_q; the runner hard-codes those support matrices.
+- **rationale:** The runner exhausts the three distinct cyclic offset pairs and correctly verifies the rank-five rephasing action, leaving six moduli and one invariant phase. Those are genuine class-A calculations once Y_e=D_aP_a+D_bP_b is supplied. The packet nevertheless omits the load-bearing authority connecting charged-lepton effective offsets to that monomial-support ansatz, so the broader charged-lepton theorem remains conditional.
 - **auditor confidence:** high
 
 ### `chiral_3plus1d_boundary_phase_note`

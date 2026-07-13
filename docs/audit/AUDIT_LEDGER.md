@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 76 |
 | **retained_bounded** | 304 |
-| _retained_pending_chain_ | 1 |
+| _retained_pending_chain_ | 2 |
 | open_gate | 2 |
-| unaudited | 2956 |
+| unaudited | 2954 |
 | audit_in_progress | 4 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -42,17 +42,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 382 |
-| `audited_conditional` | 23 |
-| `audited_decoration` | 16 |
+| `audited_conditional` | 24 |
+| `audited_decoration` | 17 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3307 |
+| `unaudited` | 3305 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2061 |
-| `decoration` | 19 |
+| `bounded_theorem` | 2060 |
+| `decoration` | 20 |
 | `meta` | 358 |
 | `no_go` | 440 |
 | `open_gate` | 201 |
@@ -65,7 +65,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 934 |
 | `leaf` | 1642 |
 
-- **Retained pending chain closure:** 1
+- **Retained pending chain closure:** 2
 - **Citation cycles detected:** 63
 
 ### Runner classification (static heuristic)
@@ -506,6 +506,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bridge_gap_hk_cube_perron_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
+| `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -524,6 +525,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
+| `cl3_taste_generation_theorem` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `s3_taste_cube_decomposition` |
 | `cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | cross_family | codex-gpt-5.5 | A | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` |
 | `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12` | decoration | ~~audited_decoration~~ | `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | cross_family | codex-gpt-5.6 | A | `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
@@ -1523,6 +1525,33 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The assumed bridge |V_cb| = (m_s/m_b)^(5/6) is applied at alpha_s(v) = 0.103303816122 and judged by its +0.20% match to m_s(2 GeV)/m_b(m_b).  _(class `G`)_
 - **chain closes:** False — The arithmetic closes after assuming the bridge and supplied numerical inputs, but neither the bridge nor the selection of the mixed-scale comparator is derived from the restricted packet.
 - **rationale:** Issue: the runner assumes the contested five-sixths bridge by evaluating v_cb**(6/5), imports alpha_s(v) from a helper rooted in the hard-coded CANONICAL_PLAQUETTE = 0.5934, and uses mixed-scale PDG values as the close comparator. Why this blocks: it verifies algebra and a scale-dependent numerical coincidence rather than deriving the bridge or scale-selection rule from framework premises. Repair target: independently derive both the bridge and comparator-scale selection, then make the runner construct them without hard-coding the contested inputs. Claim boundary until fixed: the SU(3) identity, one-loop transport exponent, and conditional numerical decompositions are supported, but the claimed physical preference for the mixed/self-scale surface is not.
+- **auditor confidence:** high
+
+### `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The Pauli realization and central-pseudoscalar identities, together with the claimed exhaustive two-class dimension-two classification and the conditional unitary refinement.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-batch-B-20260713-55ea4c47`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The classification step Cl(3,0) tensor_R C ≅ M_2(C) ⊕ M_2(C), with each chirality summand having a unique two-dimensional irreducible module, establishes the exhaustive two-class classification.  _(class `A`)_
+- **chain closes:** False — The explicit Pauli calculations and conditional unitary-refinement argument close, but the exhaustive classification does not: the note invokes the Wedderburn decomposition without deriving it, while the runner checks only the two canonical representations and their represented idempotents.
+- **rationale:** The asserted representation-theory result is consistent with the displayed canonical examples, and the runner validates the Clifford relations, pseudoscalar identities, chirality distinction, and Hermitian-intertwiner refinement exactly. However, those finite matrix checks do not prove that the abstract complexification has no additional simple summands or irreducible modules; evaluating the central idempotents after passing to the two proposed irreps is not an algebra-level proof of the invoked decomposition. The universal dimension-two and exactly-two conclusions therefore depend on an unproved standard-classification input in the restricted packet.
+- **auditor confidence:** high
+
+### `cl3_taste_generation_theorem`
+
+- **Note:** [`CL3_TASTE_GENERATION_THEOREM.md`](../../docs/CL3_TASTE_GENERATION_THEOREM.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Abstract C^8 tensor-position S3 representation theorem, including the hw=1 Z3 orbit and restricted spectra of the explicitly defined Y and T3 operators, with no framework-carrier or physical-family identification.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:s3_taste_cube_decomposition`)
+- **auditor:** `codex-audit-batch-A-20260713-d1b3cdea`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Restricting the explicitly defined Y and T3 operators to the hw=1 subspace gives spectra {−1,+1/3,+1/3} and {−1/2,+1/2,+1/2}, while the S3 three-cycle permutes its three basis labels.  _(class `A`)_
+- **chain closes:** True — The retained parent supplies the abstract S3 decomposition and hw=1 permutation representation. The runner directly constructs the finite matrices and verifies the Z3 orbit and restricted spectra by exact algebraic checks.
+- **rationale:** All fifteen runner checks are finite-dimensional algebraic identity or spectrum checks, with no external comparator or tuned input. The principal S3 decomposition and hw=1 representation are already supplied by the single retained parent; the Z3 and operator-spectrum results are exact algebraic elaborations over that carrier and the note's operator definitions. The carrier and physical-family exclusions are scope boundaries rather than asserted no-go results.
+- **decoration parent:** `s3_taste_cube_decomposition`
 - **auditor confidence:** high
 
 ### `claude_complex_action_carryover_note`

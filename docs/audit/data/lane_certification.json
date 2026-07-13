@@ -25,7 +25,7 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "cpt_exact_note",
@@ -185,7 +185,7 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
@@ -545,7 +545,7 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
@@ -561,7 +561,7 @@
         },
         {
           "claim_id": "cl3_taste_generation_theorem",
-          "effective_status": "unaudited"
+          "effective_status": "retained_pending_chain"
         },
         {
           "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
@@ -2955,6 +2955,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "1ec27e79c80922511dc137139527fa43ee4727e6",
+  "repo_head": "0f44bc7f87d0aa205c039a60e64fc34e05574445",
   "schema": "lane_certification_v2"
 }

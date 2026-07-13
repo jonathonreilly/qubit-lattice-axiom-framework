@@ -1,5 +1,25 @@
 # PR Delivery
 
+The split constrained-fiber derivative and unlocalized-certificate boundary is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block30-projected-rescaled-contraction-20260712`
+- head: `physics-loop/record-faithful-dynamics-block31-nonfiber-derivative-invariant-ball-20260712`
+- runner: `PASS=9 FAIL=0`
+- scope: exact Banach-valued derivative/cumulant identities, a base-dependent
+  lifted/centered tangent split on the controlled finite-local-source class,
+  a nonlinear centered-kernel counterexample, a universal failure of the
+  current unlocalized Cauchy-plus-geometry certificate to reach `q<1`, and an
+  exact fixed-plaquette finite-jet raw floor below one; no actual
+  noncontraction or invariant ball
+- review: independent code/math, physics/import/Nature, and governance/no-go
+  pass after two repair iterations
+- audit compatibility: one `bounded_theorem` / `unaudited` row with exactly
+  the simultaneous joint-polymer and declared-RG-chart dependencies; full
+  pipeline and strict lint pass; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5333
+
+No merge is authorized. Independent audit remains authoritative.
+
 The declared projected/rescaled RG-chart theorem is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block29-grassmann-polymer-norm-20260712`

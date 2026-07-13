@@ -1,6 +1,43 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block31-nonfiber-derivative-invariant-ball-20260712`.
+The split-derivative/certificate-boundary runner reports `PASS=9 FAIL=0`.
+On every finite regulator, `DR_Phi[F]=E_Phi[F]` and higher derivatives are
+signed connected cumulants in the even-balanced Banach algebra. The exact
+identity `E_Phi L=I` gives complementary base-dependent projections
+`C_Phi=L E_Phi`, `Q_Phi=1-C_Phi`, with `E_Phi Q_Phi=0`. Fixed-order
+uniformity is claimed only on the simultaneous theorem's controlled
+finite-local-source class, not on the full interaction-space completion.
+
+The centered kernel is not nonlinear: for `h=+/-1`, `E_0h=0` while
+`D^2R_0[hLf,hLf]=-f^2`. Consistent composition of the simultaneous
+joint-polymer weights with the declared factor-two chart uses
+`lambda_chart=Lambda/2`. The available absolute Cauchy certificate is
+`Q_C=68 exp(Lambda/2)c/log(1+epsilon)`; even granting the unit-diameter raw
+gain leaves `68c/log(1+epsilon)>68` at every admissible point. This is a
+certificate boundary, not map noncontraction.
+
+On the fixed plaquette-character slice, every finite-rank projector leaves a
+nonzero raw direction. Its declared minimal-lift ratio is exactly
+`exp(-2lambda-4theta)<1`; representation smoothing and localized marked
+clusters remain live. Independent code/math, physics/import/Nature, and
+governance/no-go review pass after repairing full-Frechet wording, direct
+runner differentiation/support counts, N1 honesty markers, and repo-native
+science names. Audit validation seeds one `bounded_theorem` / `unaudited` row
+with exactly the simultaneous joint-polymer and declared-RG-chart
+dependencies; strict lint has zero errors and generated outputs are stripped.
+
+The next theorem must split `E_Phi=E_0+(E_Phi-E_0)`, prove a bounded local
+section for `L E_0`, retain a forced-base-activity attachment for every
+centered mark, and close explicit `B,q,M,delta` inequalities on one autonomous
+ball. No axiom-update stop is triggered.
+
+Split-derivative/certificate-boundary stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5333
+is open against the declared-RG-chart head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block30-projected-rescaled-contraction-20260712`.
 The declared-RG-chart runner reports `PASS=10 FAIL=0`. The source declares a
 factor-two support dilation, the finite-rank diameter-zero projector `P_0`,

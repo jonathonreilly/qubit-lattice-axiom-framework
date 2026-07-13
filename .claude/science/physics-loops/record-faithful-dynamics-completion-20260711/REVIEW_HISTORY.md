@@ -910,3 +910,41 @@ dependencies; strict lint has zero errors and generated status surfaces are
 stripped. PR #5330 is open. The invariant neighborhood, full non-fiber
 derivative, nonlinear contraction, taste carrier, and critical trajectory
 remain open. No axiom-update stop is triggered.
+
+## Split derivative and unlocalized Cauchy-certificate boundary review
+
+PASS WITH BOUNDED CLAIMS after two repair iterations. The exact finite-volume
+derivative is the normalized Banach-valued fiber insertion
+`DR_Phi[F]=E_Phi[F]`, with signed connected cumulants at higher order. The raw
+identity `E_Phi L=I` yields complementary base-dependent projections
+`C_Phi=L E_Phi` and `Q_Phi=1-C_Phi`; the centered tangent is killed linearly.
+The two-point witness `E_0h=0`, `E_0h^2=1` proves that this kernel is not an
+ideal or a nonlinear invariant sector.
+
+Physics/import review required the Result and Cauchy formula to remain inside
+the controlled finite-local-source class rather than claim a full anchored-
+space Frechet operator. It also narrowed the finite-jet statement to the fixed
+plaquette-character slice and declared minimal lift. Code/math review replaced
+a self-confirming finiteness check with direct dual-algebra differentiation of
+`-log Z`, and made the runner construct the coarse/fine plaquette supports,
+their `(diameter,size)=(2,4)->(4,8)` weight ratio, and an explicit finite-jet
+kernel vector. Governance/no-go review removed an unattempted N1 row and
+replaced branch-block shorthand with native scientific names.
+
+With joint-polymer parameters `Lambda,Theta`, the composed chart has
+`lambda=Lambda/2`, `theta=Theta/2`. The absolute Cauchy certificate is
+`Q_C=68 exp(Lambda/2)c/log(1+epsilon)`; even granting the weakest raw geometric
+gain gives `68c/log(1+epsilon)>68` everywhere. This is a certificate boundary,
+not a map no-go. A fixed plaquette-character mode in the kernel of any finite-
+rank projector has exact declared-lift ratio `exp(-2lambda-4theta)<1`, so the
+lower floor likewise does not forbid contraction.
+
+Runner/cache: `PASS=9 FAIL=0`. Independent symbolic differentiation confirms
+the first and mixed second derivatives and independently recomputes all three
+Cauchy rows. Full audit validation seeds one `bounded_theorem` / `unaudited`
+row with source hash `53720e65ebc870df...` and exactly the simultaneous
+joint-polymer and declared-RG-chart dependencies; strict lint has zero errors
+and generated audit/status surfaces are stripped. PR #5333 is open. The next
+target is a bounded local section plus forced-base-attachment marked-cluster
+estimate and explicit `B,q,M,delta` invariant-ball test. No axiom-update stop
+is triggered.

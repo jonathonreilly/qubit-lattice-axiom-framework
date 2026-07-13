@@ -23601,6 +23601,30 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "koide_formation_weight_conditional_selection_unique_registration_compatible_lawful_weight_bounded_theorem_note_2026-07-12",
+      "to": "koide_formation_gate_relocation_tied_measure_per_cell_weight_compatibility_bounded_theorem_note_2026-07-12"
+    },
+    {
+      "from": "koide_formation_weight_conditional_selection_unique_registration_compatible_lawful_weight_bounded_theorem_note_2026-07-12",
+      "to": "koide_formation_weight_law_expressibility_classification_bounded_theorem_note_2026-07-12"
+    },
+    {
+      "from": "koide_formation_weight_conditional_selection_unique_registration_compatible_lawful_weight_bounded_theorem_note_2026-07-12",
+      "to": "koide_equipartition_endpoint_registration_asymmetry_bounded_theorem_note_2026-07-12"
+    },
+    {
+      "from": "koide_formation_weight_conditional_selection_unique_registration_compatible_lawful_weight_bounded_theorem_note_2026-07-12",
+      "to": "records_only_os_reconstruction_untied_first_order_measure_bounded_theorem_note_2026-07-11"
+    },
+    {
+      "from": "koide_formation_weight_conditional_selection_unique_registration_compatible_lawful_weight_bounded_theorem_note_2026-07-12",
+      "to": "koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11"
+    },
+    {
+      "from": "koide_formation_weight_conditional_selection_unique_registration_compatible_lawful_weight_bounded_theorem_note_2026-07-12",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "koide_formation_weight_law_expressibility_classification_bounded_theorem_note_2026-07-12",
       "to": "koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11"
     },
@@ -90032,6 +90056,25 @@
       "runner_path": "scripts/frontier_formation_gate_relocation_2026_07_12.py",
       "title": "Formation-Gate Relocation \u2014 a Tied Two-Slice Measure Coexists with an Independent Per-Cell Formation Weight on the Registrable Quotient (Bounded Theorem)"
     },
+    "koide_formation_weight_conditional_selection_unique_registration_compatible_lawful_weight_bounded_theorem_note_2026-07-12": {
+      "claim_id": "koide_formation_weight_conditional_selection_unique_registration_compatible_lawful_weight_bounded_theorem_note_2026-07-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (conditional composition at the **inherited",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_formation_gate_relocation_tied_measure_per_cell_weight_compatibility_bounded_theorem_note_2026-07-12",
+        "koide_formation_weight_law_expressibility_classification_bounded_theorem_note_2026-07-12",
+        "koide_equipartition_endpoint_registration_asymmetry_bounded_theorem_note_2026-07-12",
+        "records_only_os_reconstruction_untied_first_order_measure_bounded_theorem_note_2026-07-11",
+        "koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c6c87a19e844cabbad7c77bf6423eebab99de7afb4a51ce394d9d10127812ff3",
+      "path": "docs/KOIDE_FORMATION_WEIGHT_CONDITIONAL_SELECTION_UNIQUE_REGISTRATION_COMPATIBLE_LAWFUL_WEIGHT_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "runner_path": "scripts/frontier_formation_weight_conditional_selection_2026_07_12.py",
+      "title": "Conditional Formation-Weight Selection \u2014 `w = 1/2` Is the Unique Lawful Registration-Compatible Weight on the Positive Branch and the Unique Lawful Weight with an Open Non-Degenerate Pinned-`Q` Sector on the Sign-Allowed Branch (Bounded Theorem)"
+    },
     "koide_formation_weight_law_expressibility_classification_bounded_theorem_note_2026-07-12": {
       "claim_id": "koide_formation_weight_law_expressibility_classification_bounded_theorem_note_2026-07-12",
       "claim_type_author_hint": "bounded_theorem",
@@ -129326,7 +129369,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1649,
+      "bounded_theorem": 1650,
       "decoration": 3,
       "meta": 335,
       "no_go": 337,
@@ -129335,7 +129378,7 @@
       "positive_theorem": 284
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2047,
+      "bounded_theorem": 2048,
       "decoration": 3,
       "meta": 335,
       "no_go": 440,
@@ -129343,10 +129386,10 @@
       "open_gate": 212,
       "positive_theorem": 662
     },
-    "edge_count": 14525,
-    "leaf_count": 1332,
-    "node_count": 3947,
+    "edge_count": 14531,
+    "leaf_count": 1333,
+    "node_count": 3948,
     "root_count": 1115,
-    "runners_with_path": 3561
+    "runners_with_path": 3562
   }
 }

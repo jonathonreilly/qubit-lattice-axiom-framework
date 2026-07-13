@@ -19608,6 +19608,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_formation_gate_relocation_2026_07_12.py"
     },
+    "koide_formation_weight_conditional_selection_unique_registration_compatible_lawful_weight_bounded_theorem_note_2026-07-12": {
+      "assert_count": 2,
+      "counts": {
+        "A": 64,
+        "B": 0,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_formation_weight_conditional_selection_2026_07_12.py"
+    },
     "koide_formation_weight_law_expressibility_classification_bounded_theorem_note_2026-07-12": {
       "assert_count": 2,
       "counts": {
@@ -61358,6 +61370,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_formation_weight_conditional_selection_2026_07_12.py": {
+      "assert_count": 2,
+      "claims": [
+        "koide_formation_weight_conditional_selection_unique_registration_compatible_lawful_weight_bounded_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 64,
+        "B": 0,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_formation_weight_expressibility_2026_07_12.py": {
       "assert_count": 2,
       "claims": [
@@ -93802,14 +93829,14 @@
   "stats": {
     "decoration_candidates": 729,
     "dominant_class_distribution": {
-      "A": 531,
+      "A": 532,
       "B": 663,
       "C": 1317,
       "D": 454,
       "none": 454
     },
-    "runners_classified": 3419,
+    "runners_classified": 3420,
     "runners_with_C": 1799,
-    "runners_with_D": 1101
+    "runners_with_D": 1102
   }
 }

@@ -93,6 +93,28 @@ def dep_ready(row: dict, effective: dict[str, str]) -> bool:
     return True
 
 
+def note_hash_drifted(row: dict) -> bool:
+    """Whether the ledger row's note_hash lags the note file on disk.
+
+    A science-fix landing changes the note before seed_audit_ledger.py
+    refreshes the row, and apply_audit refuses drifted rows AFTER the seats
+    have already run (grain wave 2, 2026-07-13: two fresh seats audited the
+    repaired note and their applies were rejected). Refusing at targeting
+    time saves the seats and tells the operator the exact remedy.
+    """
+    note_path = row.get("note_path") or ""
+    if not note_path or not (REPO_ROOT / note_path).exists():
+        return False
+    import hashlib
+
+    on_disk = hashlib.sha256(
+        (REPO_ROOT / note_path)
+        .read_text(encoding="utf-8", errors="replace")
+        .encode("utf-8")
+    ).hexdigest()
+    return on_disk != row.get("note_hash")
+
+
 def source_requires_forensic(row: dict) -> bool:
     note_path = row.get("note_path") or ""
     try:
@@ -268,6 +290,12 @@ def compute_targets(
             continue
         if not dep_ready(row, effective):
             skipped.append(f"{cid}: dependencies are not retained-grade")
+            continue
+        if note_hash_drifted(row):
+            skipped.append(
+                f"{cid}: ledger note_hash lags the note file; run "
+                "seed_audit_ledger.py + pipeline and commit before auditing"
+            )
             continue
         if audit_status == "unaudited" and awaiting_repair_since_conditional(
             row, effective, rows

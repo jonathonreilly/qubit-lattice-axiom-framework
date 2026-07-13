@@ -561,7 +561,7 @@
         },
         {
           "claim_id": "cl3_taste_generation_theorem",
-          "effective_status": "unaudited"
+          "effective_status": "retained_pending_chain"
         },
         {
           "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
@@ -2955,6 +2955,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "a818650ab3e08e7c69f456fb6660a9bac0966b95",
+  "repo_head": "0f44bc7f87d0aa205c039a60e64fc34e05574445",
   "schema": "lane_certification_v2"
 }

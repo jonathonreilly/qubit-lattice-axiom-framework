@@ -1,6 +1,35 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block28-gauge-body-source-polymer-20260712`.
+The two-layer source-polymer runner reports `PASS=14 FAIL=0`. For positive
+parameters satisfying `q<1` and `K_(theta,lambda)(c)<c`, the positive
+fermion-integrated gauge body has an absolutely convergent connected-polymer
+logarithm, a uniform complete Reinhardt source domain, all fixed-order local
+cumulants with factorial/tree-decay bounds, and a weighted connected `p=0`
+coarse interaction. Three explicit strict high-mass/small-coupling points are
+certified.
+
+Nature review found and the source repaired the cancellation edge case in
+which `A A^(-1)V` exposes a coarse-`V` factor independent of the hidden
+coordinate: every factor now carries a nonminimal syntactic footprint, and the
+runner tests exact regrouping with a dummy-supported hidden-independent
+factor. The first-layer rooted-tree recursion and final KP exclusion row are
+also explicit. Independent code/math, physics/import/Nature, governance, and
+positive-only N1--N8 reviews pass. Audit validation seeds one
+`bounded_theorem` / `unaudited` row with exactly Block27 as dependency; strict
+lint has zero errors and generated status surfaces are stripped.
+
+This closes the scalar gauge-body source/polymer rung only. The retained
+gauge--Grassmann Banach-algebra lift, simultaneous degree/path/end-point sum,
+projected/rescaled contraction, critical trajectory, and continuum limits
+remain open. No axiom-update stop is triggered.
+
+Two-layer source-polymer stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5322
+is open against the raw-action Hessian head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block27-raw-action-hessian-decay-20260712`.
 The raw-response runner reports `PASS=8 FAIL=0`. For the positive
 fermion-integrated gauge-body fiber action, `DR[F]=<F>` and

@@ -830,3 +830,33 @@ Runner/cache: `PASS=8 FAIL=0`. Audit validation seeds one `bounded_theorem` /
 `unaudited` row with source hash `0bfb6dd97b50c569...` and the sole
 constrained-fiber dependency. PR #5317 is open; no negative theorem or
 axiom-update stop is triggered.
+
+## Two-layer gauge-body source-polymer review
+
+PASS WITH BOUNDED POSITIVE CLAIMS after one repair cycle. The explicit
+criterion `q<1`, `K_(theta,lambda)(c)<c` establishes a convergent two-layer
+hard-core polymer logarithm for the positive fermion-integrated gauge body,
+with three strict high-mass/small-coupling examples. Marked scalar sources
+give one uniform complete Reinhardt domain, all fixed-order connected
+cumulants, exponential connected-tree decay, and a weighted connected coarse
+`p=0` interaction.
+
+Physics/import review found that hidden-minimal supports could miss a
+coarse-`V`-dependent factor exposed by `A A^(-1)` cancellation. The repaired
+source declares a nonminimal syntactic footprint before simplification,
+charges both coarse endpoints, and verifies exact regrouping with a
+hidden-independent dummy-supported factor. The same review required the
+first-layer rooted-tree bridge to be written out; equations (2.6)--(2.10) now
+give the finite-truncation recursion, spanning-tree domination, pinned bound,
+and final KP exclusion inequality. Code/math independently checked all
+normalizations, factorials, incidence factors, source radii, and coarse
+multiplicity. Governance/no-go review passed the bounded label, sole Block27
+dependency, primitive discipline, and positive-only N1--N8 packet.
+
+Runner/cache: `PASS=14 FAIL=0`. Full audit validation seeds one
+`bounded_theorem` / `unaudited` row with source hash `f7791b8f1d0be585...`
+and exactly the raw-action Hessian dependency; strict lint has zero errors and
+generated audit/status surfaces are stripped. PR #5322 is open. The retained
+gauge--Grassmann simultaneous norm, projection/rescaling, physical critical
+trajectory, and continuum limits remain open. No negative theorem or
+axiom-update stop is triggered.

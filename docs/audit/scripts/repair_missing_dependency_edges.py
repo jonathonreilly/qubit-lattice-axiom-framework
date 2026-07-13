@@ -295,6 +295,16 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    # PR branches may deliberately omit generated audit/status surfaces.  The
+    # full pipeline later in the workflow recreates the ledger, so a reporting-
+    # only preflight has nothing authoritative to inspect yet and must not turn
+    # that source-only policy into a CI failure.  Keep --apply strict: scheduled
+    # and manual repair runs require the generated ledger they are mutating.
+    if not args.apply and not LEDGER_PATH.exists():
+        print("repair_missing_dependency_edges: dry_run")
+        print("  skipped: generated audit ledger is absent; pipeline will recreate it")
+        return 0
+
     rows = load_rows()
     repairs = candidate_repairs(rows)
     stats = apply_repairs(rows, repairs, args.apply)

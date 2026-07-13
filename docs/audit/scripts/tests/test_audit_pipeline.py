@@ -4635,6 +4635,21 @@ class RepairMissingDependencyEdgesTest(unittest.TestCase):
 
     # --- pure-logic unit tests (no fixture needed) ---------------------------
 
+    def test_dry_run_skips_when_generated_ledger_is_absent(self):
+        m = _import("repair_missing_dependency_edges")
+        _patch_repo_root(m, self.tmp_root)
+        with mock.patch.object(sys, "argv", ["repair_missing_dependency_edges.py"]):
+            self.assertEqual(m.main(), 0)
+
+    def test_apply_remains_strict_when_generated_ledger_is_absent(self):
+        m = _import("repair_missing_dependency_edges")
+        _patch_repo_root(m, self.tmp_root)
+        with mock.patch.object(
+            sys, "argv", ["repair_missing_dependency_edges.py", "--apply"]
+        ):
+            with self.assertRaises(FileNotFoundError):
+                m.main()
+
     def test_edge_would_close_cycle_detects_back_paths(self):
         m = _import("repair_missing_dependency_edges")
         # b already points at a; wiring a -> b closes a length-2 cycle.

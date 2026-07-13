@@ -795,6 +795,34 @@ row with source hash `d55ecce2eb841fdc...` and the sole Block24 dependency;
 strict lint has zero errors. PR #5313 is open; no axiom-update stop is
 triggered.
 
+## Future-atom superstrong-to-strong coarse-shadow review
+
+PASS WITH BOUNDED CLAIMS after the factor and spatial carriers were separated.
+The future decorated factors retain their complete coefficients, current
+evaluation commutes with future projections, and the final future atoms are
+genuine canonical Hoeffding atoms rather than propagated lineage labels.
+Gaussian endpoints are included in the fine spatial carrier but are not
+independently projected into the Haar-root shadow; their incident Haar links
+and adjacency recover the actual-grammar multiplicity `68`.
+
+Code/math review independently recomputed all future row constants and the
+displayed contraction witness. Physics/import review verified the actual
+boundary incidences `(1,<=1,<=1)`, Wilson count `(4,2,0)`, determinant count
+`(r,0,0)`, exact counterterm/restore ownership, and the rule that `K1` remains
+external while only the next eliminated endpoint supplies a future Gaussian
+coordinate. Governance/no-go review passed N1--N8 and rejected any claim that
+empty atoms imply tag density, that the result already supplies the extracted
+`S^(2)` center, or that stronger-to-strong is a same-norm invariant ball.
+
+Runner/cache are `PASS=6 FAIL=0`. Audit validation seeds one
+`bounded_theorem` / `unaudited` row with exactly five dependencies; strict lint
+has zero errors and generated outputs are stripped. PR #5353 is open.
+
+The exact next route is migration of the determinant counterterm, normalized
+Gaussian identity, boundary grammar, and gap ledger to the extracted future
+`S^(2)` center. Same-norm Hessian and invariant-ball closure remain later
+campaigns. No axiom-update stop is triggered.
+
 ## Deep-fiber coarse-gauge Gibbsianness review
 
 PASS WITH BOUNDED CLAIMS. Exact constrained partition-function ratios define

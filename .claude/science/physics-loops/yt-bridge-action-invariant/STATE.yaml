@@ -1,0 +1,36 @@
+loop_slug: yt-bridge-action-invariant
+goal: "Close the missing derivation in docs/YT_BRIDGE_ACTION_INVARIANT_NOTE.md as far as the current axiom surface permits."
+target_status: best-honest-status
+mode: run
+runtime: focused_single_block
+cycle_count: 1
+block_count: 1
+active_route: generic_chain_local_convex_selector_nonselection_no_go
+hard_residual: "Derive the gauge-covariant microscopic bridge operator, physical YT observable map, and uniform finite-response kernel bound."
+files_touched:
+  - .claude/science/physics-loops/yt-bridge-action-invariant/
+  - docs/YT_BRIDGE_ACTION_INVARIANT_NOTE.md
+  - docs/YT_BRIDGE_ACTION_INVARIANT_GENERIC_SELECTOR_NONSELECTION_NO_GO_NOTE_2026-07-12.md
+  - scripts/frontier_yt_bridge_action_invariant_exact_boundary.py
+  - outputs/yt_bridge_action_invariant_exact_boundary_2026-07-12.json
+  - logs/runner-cache/frontier_yt_bridge_action_invariant_exact_boundary.txt
+open_imports:
+  - physical exact interacting bridge/source-action operator
+  - retained endpoint-response kernel and regularity bound
+no_go_routes:
+  - finite target-conditioned profile scan as derivation
+  - Schur algebra alone as operator selection
+  - locality or cubic symmetry alone as centroid selection
+trace_gate_classification: negative_route_pruning
+trace_reachability: prunes
+review_findings: pending
+review_disposition: pending
+pr_status: pending
+next_exact_action: "Run re-review, validate the audit pipeline without shipping generated outputs, then package one no-go PR."
+stop_condition: "One coherent reviewed science block is pushed and one review PR is opened, or core tooling globally fails."
+actual_current_surface_status: no-go
+target_claim_type: no_go
+claim_type_reason: "Exact route-specific coefficient counterfamily."
+conditional_surface_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

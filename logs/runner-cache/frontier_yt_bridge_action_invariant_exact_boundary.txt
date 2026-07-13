@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_bridge_action_invariant_exact_boundary.py
+runner_sha256: 2da00b99e1280e4c4c011ad93c8d3a90e5266d3adc5578fb121d133a771b4c76
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+==============================================================================
+YT BRIDGE ACTION INVARIANT — EXACT RESPONSE / NONSELECTION BOUNDARY
+==============================================================================
+[PASS (A)] affine-two-moment-identity: sum q_i(a x_i+b) = A(a c+b) identically
+[PASS (A)] quadratic-curvature-variance-identity: R - A K(c) = d A Var_q(x) exactly for K=a x+b+d x^2
+[PASS (A)] interval-variance-bound-factorization: (v-u)^2/4-(mu-u)(v-mu)=(mu-(u+v)/2)^2
+[PASS (A)] finite-endpoint-path-identity: E(z)-E(0)=integral_0^1 dE(sz)/ds ds for nonlinear E=z^2+z^3
+[PASS (A)] i2-alone-not-exact-for-nonconstant-affine-kernel: equal A=1; c=3/4 gives R=3/4, c=1 gives R=1 for K=x
+[PASS (A)] two-moments-not-exact-for-curved-kernel: both profiles have A=1 and c=7/8; K=x^2 responses are 49/64 and 25/32
+[PASS (A)] local-stable-action-counterfamily: S_kappa=sum(Delta q)^2+kappa sum(q^2), q=(0,*,*,1): kappa=0 -> q=(Fraction(0, 1), Fraction(1, 3), Fraction(2, 3), Fraction(1, 1)), A_disc=1/2, c_disc=7/9; kappa=1 -> q=(Fraction(0, 1), Fraction(1, 8), Fraction(3, 8), Fraction(1, 1)), A_disc=3/8, c_disc=31/36
+[PASS (A)] strict-convexity-kappa-0: H leading minor=4, determinant=12
+[PASS (A)] strict-convexity-kappa-1: H leading minor=6, determinant=32
+[PASS (B)] minimal-axiom-nonselection-boundary-present: current axiom memo withholds dynamics/source-action/time and keeps unfixed choices open
+[PASS (B)] approved-primitive-scope-scale_reference: approved primitive remains inside its declared narrow scope
+[PASS (B)] approved-primitive-scope-kinetic_isotropy: approved primitive remains inside its declared narrow scope
+[PASS (B)] approved-primitive-scope-realized_state: approved primitive remains inside its declared narrow scope
+[PASS (B)] source-note-claim-firewall: exact theorem, nonselection boundary, N1-N8 discipline, and claim-status firewall are present
+[PASS (B)] no-numerical-transport-stack-proof-import: runner uses exact standard-library/SymPy algebra and no numerical transport stack
+------------------------------------------------------------------------------
+CERTIFICATE: outputs/yt_bridge_action_invariant_exact_boundary_2026-07-12.json
+SUMMARY: PASS=15 FAIL=0
+
+----- stderr -----
+

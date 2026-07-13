@@ -13132,3 +13132,56 @@ class BatchOrchestratorSeatBankingTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class N5AdministrativeNegationExclusionTest(unittest.TestCase):
+    """Administrative scope negations are excluded from the authenticated N5
+    universe; substantive negative rhetoric stays (grain wave 5, 2026-07-13:
+    five of seven authenticated groups were boilerplate)."""
+
+    def test_administrative_locators_excluded_scientific_kept(self):
+        m = _import("no_go_discipline_gate")
+        cases = {
+            "This source note does not set or predict audit status.": True,
+            "architecture precedent - not a citation-graph dependency.": True,
+            "A registry action is available; this note does not execute or request it.": True,
+            "honest coverage routing is not an assertion and declares nothing.": True,
+            "lattice_wide: checked and not executed for this claim.": True,
+            "No faithful one-dimensional representation exists.": False,
+            "The scalar system cannot be satisfied.": False,
+            "The doublet weights are not equal only when a K-odd seed is admitted.": False,
+        }
+        for locator, excluded in cases.items():
+            with self.subTest(locator=locator[:40]):
+                self.assertEqual(
+                    m.n5_administrative_negation("does not", locator)
+                    or m.n5_administrative_negation("cannot", locator)
+                    or m.n5_administrative_negation("is not", locator)
+                    or m.n5_administrative_negation("are not", locator),
+                    excluded,
+                )
+        # A non-N5 phrase never matches, whatever the locator says.
+        self.assertFalse(
+            m.n5_administrative_negation(
+                "standard QFT", "does not set or predict audit status"
+            )
+        )
+
+    def test_occurrence_scan_drops_administrative_groups(self):
+        m = _import("no_go_discipline_gate")
+        text = "\n".join([
+            "The exclusion holds: no faithful representation exists and the",
+            "scalar system cannot close at dimension one.",
+            "This source note does not set or predict audit status.",
+            "`HANDLE_NOTE` is a context handle, not a citation-graph dependency.",
+        ])
+        manifest = {
+            "docs/X.md": {"roles": ["source"], "text": text},
+        }
+        occurrences = m.required_phrase_occurrences(
+            manifest, {"source"}, m.N5_SCAN_PHRASES
+        )
+        locators = list(occurrences.values())
+        self.assertTrue(any("cannot close" in loc for loc in locators))
+        self.assertFalse(any("predict audit status" in loc for loc in locators))
+        self.assertFalse(any("citation-graph" in loc for loc in locators))

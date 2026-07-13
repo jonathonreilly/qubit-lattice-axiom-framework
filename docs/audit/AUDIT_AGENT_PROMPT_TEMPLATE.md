@@ -676,6 +676,17 @@ copied byte-for-byte as one contiguous substring from the cited live
 current-cycle `runner_stdout` at `resolution_evidence_path`. Do not summarize,
 shorten, or paraphrase a runner line.
 
+The authenticated N5 group universe covers negative rhetoric about the
+claim's physics. Administrative scope negations — status-authority sentences
+("does not set or predict audit status"), context-handle framing ("not a
+citation-graph dependency"), corollary discipline ("does not execute or
+request"), declaration principle wording ("not an assertion"), and honest
+sweep lines ("checked and not executed") — are excluded from the
+orchestrator's authenticated group list by the same principle that honest
+coverage routing declares nothing. Do not add N5 statements for excluded
+administrative prose, and do not use the exclusion to skip any substantive
+negative claim.
+
 N6 must bind every indexed candidate to an exact quoted indexed basis, an N2
 wall, and a substantive closure mechanism. N7 must cite the N1 route surface
 for the steelman and either orchestrator-marked independent execution or a

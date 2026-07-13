@@ -1,0 +1,276 @@
+{
+  "lanes": [
+    {
+      "blocking": [
+        {
+          "claim_id": "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+          "effective_status": "audited_renaming"
+        },
+        {
+          "claim_id": "ac_reta_hclass_hunit_readout_derivation_obligation",
+          "effective_status": "audited_conditional"
+        },
+        {
+          "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+          "effective_status": "unaudited",
+          "reason": "root_not_retained_science"
+        },
+        {
+          "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "cpt_exact_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
+          "effective_status": "audit_in_progress"
+        },
+        {
+          "claim_id": "s3_mass_matrix_no_go_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "three_generation_observable_count_corollary_note_2026-05-03",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "three_generation_observable_theorem_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "z2_hw1_mass_matrix_parametrization_note",
+          "effective_status": "unaudited"
+        }
+      ],
+      "certified": false,
+      "closure_size": 41,
+      "lane": "charged_lepton_koide_value",
+      "root": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "roots": [
+        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
+      ],
+      "uncertified_count": 31
+    },
+    {
+      "blocking": [
+        {
+          "claim_id": "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+          "effective_status": "audited_renaming",
+          "reason": "root_not_retained_science"
+        },
+        {
+          "claim_id": "ac_reta_hclass_hunit_readout_derivation_obligation",
+          "effective_status": "audited_conditional",
+          "reason": "root_not_retained_science"
+        }
+      ],
+      "certified": false,
+      "closure_size": 2,
+      "lane": "acphilambda_retirement_basis",
+      "root": null,
+      "roots": [
+        "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+        "ac_reta_hclass_hunit_readout_derivation_obligation"
+      ],
+      "uncertified_count": 2
+    },
+    {
+      "blocking": [
+        {
+          "claim_id": "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+          "effective_status": "audited_renaming"
+        },
+        {
+          "claim_id": "ac_reta_hclass_hunit_readout_derivation_obligation",
+          "effective_status": "audited_conditional"
+        },
+        {
+          "claim_id": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
+          "effective_status": "unaudited",
+          "reason": "root_not_retained_science"
+        },
+        {
+          "claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "key_terminology",
+          "effective_status": "meta"
+        },
+        {
+          "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "record_formation_append_consistency_sweep_2026-07-04",
+          "effective_status": "meta"
+        },
+        {
+          "claim_id": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "record_formation_to_kraus_isometry_bridge_2026-06-06",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "tier_a_residual_owner_adoption_retirement_2026-07-04",
+          "effective_status": "meta"
+        },
+        {
+          "claim_id": "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
+          "effective_status": "unaudited"
+        }
+      ],
+      "certified": false,
+      "closure_size": 21,
+      "lane": "rule_universality_grain",
+      "root": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
+      "roots": [
+        "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11"
+      ],
+      "uncertified_count": 20
+    },
+    {
+      "blocking": [
+        {
+          "claim_id": "strong_cp_theta_zero_note",
+          "effective_status": "unaudited",
+          "reason": "root_not_retained_science"
+        }
+      ],
+      "certified": false,
+      "closure_size": 1,
+      "lane": "theta_retirement",
+      "root": "strong_cp_theta_zero_note",
+      "roots": [
+        "strong_cp_theta_zero_note"
+      ],
+      "uncertified_count": 1
+    }
+  ],
+  "repo_head": "7aa499b80810bd3dbe0cfff1b75c9538c8e78c22",
+  "schema": "lane_certification_v2"
+}

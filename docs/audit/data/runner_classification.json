@@ -687,7 +687,7 @@
     "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
-        "A": 17,
+        "A": 36,
         "B": 2,
         "C": 0,
         "D": 0
@@ -880,7 +880,7 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 5,
         "D": 0
       },
@@ -12768,6 +12768,30 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py"
     },
+    "g3_cross_edge_independence_is_a_formation_gate_atom_marginal_identity_from_qualification_bounded_theorem_note_2026-07-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 14,
+        "B": 2,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_cross_edge_formation_gate_2026_07_12.py"
+    },
+    "g3_outcome_factorization_from_unraveled_step_law_narrow_no_go_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 53,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_g3_outcome_factorization_unraveled_2026_07_11.py"
+    },
     "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17": {
       "assert_count": 1,
       "counts": {
@@ -15515,6 +15539,18 @@
       "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/graded_constraint_interface_consistency_2026_07_04.py"
+    },
+    "graded_constraint_menu_uniformity_contextuality_and_c3_zero_information_point_bounded_theorem_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 12,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11.py"
     },
     "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12": {
       "assert_count": 1,
@@ -19440,6 +19476,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30.py"
     },
+    "koide_equipartition_endpoint_registration_asymmetry_bounded_theorem_note_2026-07-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_equipartition_endpoint_registration_asymmetry_2026_07_12.py"
+    },
     "koide_explicit_calculations_note": {
       "assert_count": 1,
       "counts": {
@@ -19488,6 +19536,18 @@
       "dominant_class": null,
       "runner": "scripts/koide_finite_beta_weight_is_the_partition_bit_2026_06_02.py"
     },
+    "koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 31,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_koide_first_order_section_question_2026_07_11.py"
+    },
     "koide_first_order_selector_bounded_localization_certificate_2026-06-18": {
       "assert_count": 1,
       "counts": {
@@ -19535,6 +19595,30 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/audit_companion_koide_modulus_gives_r_one_chirality_is_phase_only_exact.py"
+    },
+    "koide_formation_gate_relocation_tied_measure_per_cell_weight_compatibility_bounded_theorem_note_2026-07-12": {
+      "assert_count": 2,
+      "counts": {
+        "A": 18,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_formation_gate_relocation_2026_07_12.py"
+    },
+    "koide_formation_weight_law_expressibility_classification_bounded_theorem_note_2026-07-12": {
+      "assert_count": 2,
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_formation_weight_expressibility_2026_07_12.py"
     },
     "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": {
       "assert_count": 1,
@@ -19680,6 +19764,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_koide_generation_id_cl3_grade1_bridge.py"
     },
+    "koide_generation_weight_dial_shape_forced_value_unfixed_qualification_bounded_theorem_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_koide_dial_shape_qualification_2026_07_11.py"
+    },
     "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02": {
       "assert_count": 0,
       "counts": {
@@ -19740,6 +19836,18 @@
       "dominant_class": "A",
       "runner": "scripts/koide_infogeom_foot45_native.py"
     },
+    "koide_k_symmetrized_untied_measure_records_only_reconstruction_bounded_theorem_note_2026-07-12": {
+      "assert_count": 2,
+      "counts": {
+        "A": 9,
+        "B": 0,
+        "C": 2,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_k_symmetrized_untied_measure_2026_07_12.py"
+    },
     "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08": {
       "assert_count": 0,
       "counts": {
@@ -19787,6 +19895,30 @@
       "decoration_candidate": false,
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py"
+    },
+    "koide_kappa_bookkeeping_flow_class_fixed_point_inversion_and_lane_scoping_bounded_theorem_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 27,
+        "B": 0,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_koide_kappa_flow_class_2026_07_11.py"
+    },
+    "koide_kappa_flow_class_is_the_formation_weight_in_flow_coordinates_bounded_theorem_note_2026-07-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/frontier_kappa_formation_weight_2026_07_12.py"
     },
     "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": {
       "assert_count": 1,
@@ -20007,7 +20139,7 @@
     "koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03": {
       "assert_count": 1,
       "counts": {
-        "A": 12,
+        "A": 21,
         "B": 1,
         "C": 0,
         "D": 0
@@ -20555,6 +20687,18 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_q_two_thirds_z3_character_norm_split.py"
+    },
+    "koide_quasi_hermitian_metric_operator_escape_closure_bounded_theorem_note_2026-07-12": {
+      "assert_count": 3,
+      "counts": {
+        "A": 41,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_quasi_hermitian_metric_escape_2026_07_12.py"
     },
     "koide_qubit_berry_holonomy_import_note_2026-05-30": {
       "assert_count": 0,
@@ -31704,6 +31848,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_record_p1_dependency_audit_verifier.py"
     },
+    "record_permanence_forces_fresh_site_double_registration_and_agreement_survival_bounded_theorem_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 11,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_record_permanence_double_registration_2026_07_11.py"
+    },
     "record_pointer_broadcast_circuit_interface_2026-06-05": {
       "assert_count": 1,
       "counts": {
@@ -31919,6 +32075,18 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/record_write_admissible_one_step_class_controlled_copy_2026_07_11.py"
+    },
+    "records_only_os_reconstruction_untied_first_order_measure_bounded_theorem_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 76,
+        "B": 1,
+        "C": 3,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_records_only_os_reconstruction_2026_07_11.py"
     },
     "redundancy_not_forced_by_pnd_locality_no_go_note_2026-06-08": {
       "assert_count": 1,
@@ -43231,7 +43399,7 @@
         "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04"
       ],
       "counts": {
-        "A": 17,
+        "A": 36,
         "B": 2,
         "C": 0,
         "D": 0
@@ -43412,7 +43580,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 5,
         "D": 0
       },
@@ -55859,6 +56027,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_cross_edge_formation_gate_2026_07_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "g3_cross_edge_independence_is_a_formation_gate_atom_marginal_identity_from_qualification_bounded_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 14,
+        "B": 2,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_cross_lane_dependency_map.py": {
       "assert_count": 1,
       "claims": [
@@ -60560,6 +60743,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_equipartition_endpoint_registration_asymmetry_2026_07_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_equipartition_endpoint_registration_asymmetry_bounded_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py": {
       "assert_count": 1,
       "claims": [
@@ -61145,6 +61343,36 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_formation_gate_relocation_2026_07_12.py": {
+      "assert_count": 2,
+      "claims": [
+        "koide_formation_gate_relocation_tied_measure_per_cell_weight_compatibility_bounded_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 18,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_formation_weight_expressibility_2026_07_12.py": {
+      "assert_count": 2,
+      "claims": [
+        "koide_formation_weight_law_expressibility_classification_bounded_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py": {
       "assert_count": 1,
       "claims": [
@@ -61383,6 +61611,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_g3_outcome_factorization_unraveled_2026_07_11.py": {
+      "assert_count": 1,
+      "claims": [
+        "g3_outcome_factorization_from_unraveled_step_law_narrow_no_go_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 53,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_g_bare_audit_residual_closure.py": {
@@ -62774,6 +63017,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11.py": {
+      "assert_count": 1,
+      "claims": [
+        "graded_constraint_menu_uniformity_contextuality_and_c3_zero_information_point_bounded_theorem_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 12,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_grand_canonical_flux_response_alternation_2026_06_12.py": {
@@ -65030,6 +65288,36 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_k_symmetrized_untied_measure_2026_07_12.py": {
+      "assert_count": 2,
+      "claims": [
+        "koide_k_symmetrized_untied_measure_records_only_reconstruction_bounded_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 0,
+        "C": 2,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_kappa_formation_weight_2026_07_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_kappa_flow_class_is_the_formation_weight_in_flow_coordinates_bounded_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py": {
       "assert_count": 1,
       "claims": [
@@ -65663,6 +65951,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_koide_dial_shape_qualification_2026_07_11.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_generation_weight_dial_shape_forced_value_unfixed_qualification_bounded_theorem_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_koide_dimensionless_objection_closure_review.py": {
       "assert_count": 1,
       "claims": [
@@ -65796,6 +66099,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_koide_first_order_section_question_2026_07_11.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 31,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_koide_fisher_rao_spherical_reorganization.py": {
@@ -66113,6 +66431,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_koide_kappa_flow_class_2026_07_11.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_kappa_bookkeeping_flow_class_fixed_point_inversion_and_lane_scoping_bounded_theorem_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 27,
+        "B": 0,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py": {
       "assert_count": 1,
       "claims": [
@@ -66345,7 +66678,7 @@
         "koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03"
       ],
       "counts": {
-        "A": 12,
+        "A": 21,
         "B": 1,
         "C": 0,
         "D": 0
@@ -74378,6 +74711,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_quasi_hermitian_metric_escape_2026_07_12.py": {
+      "assert_count": 3,
+      "claims": [
+        "koide_quasi_hermitian_metric_operator_escape_closure_bounded_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 41,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py": {
       "assert_count": 1,
       "claims": [
@@ -75083,6 +75431,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_record_permanence_double_registration_2026_07_11.py": {
+      "assert_count": 1,
+      "claims": [
+        "record_permanence_forces_fresh_site_double_registration_and_agreement_survival_bounded_theorem_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 11,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_record_pointer_broadcast_circuit_interface_2026_06_05.py": {
       "assert_count": 1,
       "claims": [
@@ -75306,6 +75669,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_records_only_os_reconstruction_2026_07_11.py": {
+      "assert_count": 1,
+      "claims": [
+        "records_only_os_reconstruction_untied_first_order_measure_bounded_theorem_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 76,
+        "B": 1,
+        "C": 3,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py": {
@@ -93422,16 +93800,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 723,
+    "decoration_candidates": 729,
     "dominant_class_distribution": {
-      "A": 519,
+      "A": 531,
       "B": 663,
-      "C": 1316,
+      "C": 1317,
       "D": 454,
-      "none": 453
+      "none": 454
     },
-    "runners_classified": 3405,
-    "runners_with_C": 1795,
-    "runners_with_D": 1096
+    "runners_classified": 3419,
+    "runners_with_C": 1799,
+    "runners_with_D": 1101
   }
 }

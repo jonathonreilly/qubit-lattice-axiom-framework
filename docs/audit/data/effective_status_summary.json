@@ -1,9 +1,9 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2047,
+    "bounded_theorem": 2060,
     "decoration": 19,
-    "meta": 357,
-    "no_go": 439,
+    "meta": 358,
+    "no_go": 440,
     "open_gate": 201,
     "positive_theorem": 674
   },
@@ -34,7 +34,7 @@
   "cycles_detected": 10,
   "effective_status_counts": {
     "audit_in_progress": 1,
-    "audited_conditional": 20,
+    "audited_conditional": 18,
     "audited_failed": 2,
     "audited_numerical_match": 5,
     "audited_renaming": 14,
@@ -46,12 +46,12 @@
     "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
-    "meta": 350,
+    "meta": 351,
     "open_gate": 2,
-    "retained": 77,
+    "retained": 76,
     "retained_bounded": 303,
     "retained_pending_chain": 1,
-    "unaudited": 2947
+    "unaudited": 2964
   },
   "retained_pending_chain_count": 1,
   "retained_pending_chain_examples": [

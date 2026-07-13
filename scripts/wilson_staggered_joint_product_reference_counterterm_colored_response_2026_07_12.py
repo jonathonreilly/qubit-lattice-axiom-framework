@@ -7,6 +7,8 @@ import math
 import re
 from pathlib import Path
 
+import numpy as np
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / (
@@ -102,6 +104,34 @@ def normalized_average(
 
 def main() -> None:
     checks: list[tuple[str, bool, str]] = []
+
+    matrix_mass = 7.0
+    hop = 0.5
+    identity_color = np.eye(3, dtype=np.complex128)
+    zero_color = np.zeros((3, 3), dtype=np.complex128)
+    hopping_matrix = np.block(
+        [[zero_color, hop * identity_color], [-hop * identity_color, zero_color]]
+    )
+    quadratic_matrix = matrix_mass * np.eye(6, dtype=np.complex128) + hopping_matrix
+    determinant_ratio = float(
+        np.linalg.det(quadratic_matrix).real / matrix_mass**6
+    )
+    product_bond_ratio = (1.0 + (hop / matrix_mass) ** 2) ** 3
+    hopping_eigenvalues = np.linalg.eigvals(hopping_matrix)
+    checks.append(
+        (
+            "two_site_three_color_determinant_counterterm_identity",
+            math.isclose(
+                determinant_ratio, product_bond_ratio, rel_tol=1.0e-14, abs_tol=1.0e-14
+            )
+            and max(abs(value.real) for value in hopping_eigenvalues) < 1.0e-14,
+            "det(mI+M)/m^6={:.15f}, product Gaussian bond ratio={:.15f}, max|Re eig(M)|={:.3e}".format(
+                determinant_ratio,
+                product_bond_ratio,
+                max(abs(value.real) for value in hopping_eigenvalues),
+            ),
+        )
+    )
 
     points = [(u, s) for u in (-1, 1) for s in (-1, 1)]
     product_weight = {point: 0.25 for point in points}

@@ -390,12 +390,14 @@ Run:
 python3 scripts/wilson_staggered_joint_product_reference_counterterm_colored_response_2026_07_12.py
 ```
 
-The runner checks a finite exact counterterm representation of `E_HG_A`,
-color-one cancellation and recovery of the physical integrand, the failure of
-naive outer averaging, the colored generating derivative, the strict activity
-witness, exact zero-red cancellation at fixed envelope, and the
-source/dependency contract.  The arbitrary-regulator determinant and joint
-cluster bounds are analytic statements.
+The runner checks a first-principles two-site, three-color anti-Hermitian
+hopping determinant against its product-Gaussian bond ratio, a finite exact
+counterterm representation of `E_HG_A`, color-one cancellation and recovery
+of the physical integrand, the failure of naive outer averaging, the colored
+generating derivative, the strict activity witness, exact zero-red
+cancellation at fixed envelope, and the source/dependency contract.  The
+arbitrary-regulator determinant and joint cluster bounds are analytic
+statements.
 
 ## 6. No-Go Discipline N1--N8
 

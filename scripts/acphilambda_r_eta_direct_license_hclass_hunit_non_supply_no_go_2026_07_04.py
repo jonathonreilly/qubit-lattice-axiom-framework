@@ -198,7 +198,7 @@ def main() -> int:
     )
     check(
         "N7 steelman argument: N7 convention mechanism: same-observable common-unit rescaling; "
-        "N7 convention attempt: multiply h and abs(delta_beta) by the same positive unit factor; "
+        "ATTEMPTED N7 convention attempt: multiply h and abs(delta_beta) by the same positive unit factor; "
         "N7 convention outcome: beta=abs(delta_beta)/h remains invariant and the W_unit readout bridge is not selected",
         ratio_invariant and residual_covariant,
     )
@@ -281,6 +281,7 @@ def main() -> int:
     check(
         "N7 contains the executable coordinate steelman",
         "same-observable common-unit rescaling" in note_flat
+        and "ATTEMPTED N7 convention attempt: multiply `h` and `abs(delta_beta)`" in note_flat
         and "ratio is `Phi_u/H_u = beta`" in note_flat
         and "same-observable identity" in note_flat
         and "readout bridge, or empirical fit is supplied by it" in note_flat,

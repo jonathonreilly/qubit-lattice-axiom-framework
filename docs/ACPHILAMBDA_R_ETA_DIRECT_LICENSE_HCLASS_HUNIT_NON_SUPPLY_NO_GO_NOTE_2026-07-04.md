@@ -111,7 +111,7 @@ Historical decision text identifies provenance only and is not used as proof.
 | Dimensionful scale reference | ATTEMPTED | The [scale-reference primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md) supplies units conversion and no dimensionless phase, selector, or readout bridge; `beta` is dimensionless, runner Part D. |
 | Kinetic-form isotropy | ATTEMPTED | The [kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) supplies `c_t=c_s` and no phase, selector, or readout bridge; the family is unchanged, runner Part D. |
 | Exact fixed-locus value | ATTEMPTED | Granting the nonzero value `h=2/9` leaves both `beta=1` and `beta=2`; runner Part A checks the singleton and cycle values separately, including the live `N1 numerical_or_finite_case` finite singleton point-evaluation marker. |
-| Coordinate-convention steelman | ATTEMPTED | N7 convention mechanism: same-observable common-unit rescaling. N7 convention attempt: multiply `h` and `abs(delta_beta)` by the same positive unit factor. N7 convention outcome: `beta=abs(delta_beta)/h` remains invariant and the `W_unit` readout bridge is not selected. Runner Part E verifies the symbolic identity and finite exact examples. |
+| Coordinate-convention steelman | ATTEMPTED | N7 convention mechanism: same-observable common-unit rescaling. ATTEMPTED N7 convention attempt: multiply `h` and `abs(delta_beta)` by the same positive unit factor. N7 convention outcome: `beta=abs(delta_beta)/h` remains invariant and the `W_unit` readout bridge is not selected. Runner Part E verifies the symbolic identity and finite exact examples. |
 
 The runner checks all eight routes. Their authority boundary is the current
 minimal axiom memo, the approved primitive boundary notes, and the explicit

@@ -506,7 +506,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bridge_gap_hk_cube_perron_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
-| `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1530,13 +1530,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 - **Note:** [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** The Pauli realizations, central pseudoscalar identities, and claimed classification of faithful irreducible complex Cl(3,0) representations into exactly two two-dimensional chirality classes.
+- **claim_scope:** The Pauli realization and central-pseudoscalar identities, together with the claimed exhaustive two-class dimension-two classification and the conditional unitary refinement.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-batch-A-20260713-350b5538`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The classification step Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with the two summands distinguished by omega = ±i, is the standard Wedderburn decomposition.  _(class `A`)_
-- **chain closes:** False — The runner verifies the two exhibited Pauli representations and their algebraic identities, but it does not establish the universal Wedderburn decomposition used to exclude higher-dimensional or additional inequivalent irreducible representations. That classification is asserted as standard without a self-contained derivation or cited authority in the restricted packet.
-- **rationale:** The exact runner soundly verifies anticommutation, pseudoscalar centrality and square, chirality separation for the two Pauli realizations, the finite tensor-dimension examples, and the stated unitary-refinement probes. Those finite representative checks do not prove the load-bearing universal classification Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), on which the dimension-two and exactly-two-irrep conclusions depend. The theorem is therefore mathematically plausible but not closed by the supplied derivation and evidence.
+- **auditor:** `codex-audit-batch-B-20260713-55ea4c47`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The classification step Cl(3,0) tensor_R C ≅ M_2(C) ⊕ M_2(C), with each chirality summand having a unique two-dimensional irreducible module, establishes the exhaustive two-class classification.  _(class `A`)_
+- **chain closes:** False — The explicit Pauli calculations and conditional unitary-refinement argument close, but the exhaustive classification does not: the note invokes the Wedderburn decomposition without deriving it, while the runner checks only the two canonical representations and their represented idempotents.
+- **rationale:** The asserted representation-theory result is consistent with the displayed canonical examples, and the runner validates the Clifford relations, pseudoscalar identities, chirality distinction, and Hermitian-intertwiner refinement exactly. However, those finite matrix checks do not prove that the abstract complexification has no additional simple summands or irreducible modules; evaluating the central idempotents after passing to the two proposed irreps is not an algebra-level proof of the invoked decomposition. The universal dimension-two and exactly-two conclusions therefore depend on an unproved standard-classification input in the restricted packet.
 - **auditor confidence:** high
 
 ### `claude_complex_action_carryover_note`

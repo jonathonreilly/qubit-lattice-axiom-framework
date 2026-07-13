@@ -2689,7 +2689,7 @@
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-      "claim_scope": "The Pauli realizations, central pseudoscalar identities, and claimed classification of faithful irreducible complex Cl(3,0) representations into exactly two two-dimensional chirality classes.",
+      "claim_scope": "The Pauli realization and central-pseudoscalar identities, together with the claimed exhaustive two-class dimension-two classification and the conditional unitary refinement.",
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "audited",
       "criticality": "critical",

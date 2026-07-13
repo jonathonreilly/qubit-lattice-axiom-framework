@@ -12599,3 +12599,89 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class BackfillCrossSeatRationalesTest(unittest.TestCase):
+    """The backfill completes pre-contract seat summaries ONLY from
+    envelopes bound by (claim_id, audit_invocation_id) whose recorded tuple
+    matches the summary exactly; any mismatch refuses the seat."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp = Path(self._tmp.name)
+
+    def _summary(self, invocation, verdict="audited_clean"):
+        return {
+            "verdict": verdict,
+            "claim_type": "bounded_theorem",
+            "claim_scope": "an exact identity",
+            "load_bearing_step_class": "(C)",
+            "negative_assertion_classes": [],
+            "auditor": f"codex-audit-batch-A-{invocation[:8]}",
+            "audit_invocation_id": invocation,
+        }
+
+    def _audit(self, cid, invocation, verdict="audited_clean", scope="an  exact identity"):
+        return {
+            "claim_id": cid,
+            "audit_invocation_id": invocation,
+            "verdict": verdict,
+            "claim_type": "bounded_theorem",
+            "claim_scope": scope,
+            "load_bearing_step_class": "(C)",
+            "negative_assertion_classes": [],
+            "auditor": f"codex-audit-batch-A-{invocation[:8]}",
+            "verdict_rationale": "the full recorded seat argument",
+            "notes_for_re_audit_if_any": "none needed",
+        }
+
+    def test_backfills_bound_matching_seat_and_refuses_mismatch(self):
+        m = _import("backfill_cross_seat_rationales")
+        inv_a, inv_b = "a" * 32, "b" * 32
+        row = {
+            "claim_id": "row1",
+            "cross_confirmation": {
+                "status": "disagreement",
+                "first_audit": self._summary(inv_a),
+                "second_audit": self._summary(inv_b, verdict="audited_conditional"),
+            },
+        }
+        # first seat's envelope matches (whitespace-only scope difference is
+        # tolerated); second seat's envelope disagrees on the verdict.
+        index = {
+            ("row1", inv_a): self._audit("row1", inv_a),
+            ("row1", inv_b): self._audit("row1", inv_b, verdict="audited_clean"),
+        }
+        filled, problems = m.backfill_row(row, index)
+        self.assertEqual(filled, 1)
+        first = row["cross_confirmation"]["first_audit"]
+        self.assertEqual(
+            first["verdict_rationale"], "the full recorded seat argument"
+        )
+        self.assertEqual(first["notes_for_re_audit_if_any"], "none needed")
+        second = row["cross_confirmation"]["second_audit"]
+        self.assertNotIn("verdict_rationale", second)
+        self.assertTrue(any("verdict mismatch" in p for p in problems))
+        # Idempotent: a filled seat is not touched again.
+        filled_again, _ = m.backfill_row(row, index)
+        self.assertEqual(filled_again, 0)
+
+    def test_unbound_or_empty_envelopes_never_fill(self):
+        m = _import("backfill_cross_seat_rationales")
+        inv = "c" * 32
+        row = {
+            "claim_id": "row2",
+            "cross_confirmation": {
+                "status": "disagreement",
+                "first_audit": self._summary(inv),
+                "second_audit": self._summary("d" * 32),
+            },
+        }
+        empty = self._audit("row2", inv)
+        empty["verdict_rationale"] = "   "
+        index = {("row2", inv): empty}
+        filled, problems = m.backfill_row(row, index)
+        self.assertEqual(filled, 0)
+        self.assertTrue(any("empty rationale" in p for p in problems))
+        self.assertTrue(any("no envelope bound" in p for p in problems))

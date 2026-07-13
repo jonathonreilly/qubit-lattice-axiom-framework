@@ -225,6 +225,10 @@ supplied content (whitespace normalization is allowed). A locator must contain
 at least 12 normalized characters. The manifest is an allow-list, not evidence
 by itself:
 
+Copy every `evidence_path` byte-for-byte from this manifest. Evidence paths and
+claim-id URI segments are case-sensitive; do not capitalize or otherwise
+rewrite any path component.
+
 ```json
 {{NO_GO_EVIDENCE_MANIFEST}}
 ```

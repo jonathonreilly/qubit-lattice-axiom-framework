@@ -7834,6 +7834,14 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
+            "Copy every `evidence_path` byte-for-byte from this manifest",
+            template_flat,
+        )
+        self.assertIn(
+            "claim-id URI segments are case-sensitive",
+            template_flat,
+        )
+        self.assertIn(
             "`boundary` and `primitive` require separate objects",
             template_flat,
         )
@@ -9791,6 +9799,74 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertEqual(
             statement["tested_resolutions"], before_judgment["tested_resolutions"]
         )
+
+    def test_authenticated_casefold_evidence_paths_bind_unique_manifest_path(self):
+        m = _import_codex_audit_runner()
+        partial = "audit-packet://partial-closure-index/test_non_supply_no_go"
+        cross = "audit-packet://cross-cycle-index/test_non_supply_no_go"
+        manifest = {
+            partial: {"roles": ["partial_closure_index"], "text": "partial"},
+            cross: {"roles": ["cross_cycle_index"], "text": "cross"},
+        }
+        candidate = {
+            "candidate_id": "candidate:1",
+            "affected_wall": "W_power",
+            "disposition": "W_power remains under test.",
+            "evidence_path": partial.replace(
+                "non_supply_no_go", "non_SUPPLY_NO_GO"
+            ),
+            "evidence_locator": "candidate:1",
+        }
+        echo = {
+            "candidate_id": "echo:1",
+            "disposition": "The echo is addressed for the current scope.",
+            "evidence_path": cross.replace(
+                "non_supply_no_go", "non_SUPPLY_NO_GO"
+            ),
+            "evidence_locator": "echo:1",
+        }
+        packet = {
+            "N6_partial_closure_scan": {"candidates": [candidate]},
+            "N8_cross_cycle_echo": {"echoes": [echo]},
+            "N7_steelman": {
+                "resolution_evidence_path": "DOCS/ACCEPTED.md",
+            },
+        }
+        blob = {"verdict": "audited_clean", "no_go_discipline": packet}
+        before = json.loads(json.dumps(packet))
+        changes = m.bind_authenticated_casefold_evidence_paths(blob, manifest)
+        self.assertEqual(len(changes), 2)
+        self.assertEqual(candidate["evidence_path"], partial)
+        self.assertEqual(echo["evidence_path"], cross)
+        self.assertEqual(
+            packet["N7_steelman"]["resolution_evidence_path"],
+            before["N7_steelman"]["resolution_evidence_path"],
+        )
+        self.assertEqual(candidate["candidate_id"], "candidate:1")
+        self.assertEqual(candidate["disposition"], "W_power remains under test.")
+        self.assertEqual(blob["verdict"], "audited_clean")
+
+    def test_authenticated_casefold_evidence_paths_refuse_ambiguity_and_unrelated_path(self):
+        m = _import_codex_audit_runner()
+        candidate = {"evidence_path": "DOCS/SOURCE.MD"}
+        blob = {
+            "no_go_discipline": {
+                "N6_partial_closure_scan": {"candidates": [candidate]}
+            }
+        }
+        ambiguous = {
+            "docs/Source.md": {"text": "first"},
+            "docs/source.md": {"text": "second"},
+        }
+        self.assertEqual(
+            m.bind_authenticated_casefold_evidence_paths(blob, ambiguous), []
+        )
+        self.assertEqual(candidate["evidence_path"], "DOCS/SOURCE.MD")
+        unrelated = {"docs/OTHER.md": {"text": "other"}}
+        self.assertEqual(
+            m.bind_authenticated_casefold_evidence_paths(blob, unrelated), []
+        )
+        self.assertEqual(candidate["evidence_path"], "DOCS/SOURCE.MD")
 
     def test_authenticated_occurrence_metadata_refuses_cross_label_and_ambiguity(self):
         m = _import_codex_audit_runner()

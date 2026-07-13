@@ -773,3 +773,24 @@ Runner/cache: `PASS=10 FAIL=0`. Audit validation seeds one
 and the sole positive Dobrushin uniqueness dependency; strict lint has zero
 errors and vocabulary lint has zero violations. PR #5310 is open; no
 axiom-update stop is triggered.
+
+## Constrained-fiber Dobrushin and raw action-map review
+
+PASS WITH BOUNDED CLAIMS. The exact hidden-coordinate chart has disjoint
+one-/two-link footprints, so the constrained-fiber Dobrushin row is at most
+`2 alpha`, uniformly in the coarse links. This proves uniqueness and
+exponential boundary comparison throughout `alpha(beta,m)<1/2`. The source
+also declares the joint gauge-invariant generated-action coefficient space
+while separating finite-volume Grassmann-log membership from the still-open
+volume-uniform connected-polymer bound.
+
+For every coarse-local gauge function, its fine lift factors exactly through
+fiber integration. The resulting unit directional ratio rules out strict
+contraction only for the raw full unprojected map in the common unrescaled
+coefficient norm; projected/rescaled irrelevant-sector contraction remains
+live. Independent code/math, physics/import, and governance reviewers pass
+the result, including the complete N1--N8 packet. Runner/cache:
+`PASS=9 FAIL=0`. Audit validation seeds one `bounded_theorem` / `unaudited`
+row with source hash `d55ecce2eb841fdc...` and the sole Block24 dependency;
+strict lint has zero errors. PR #5313 is open; no axiom-update stop is
+triggered.

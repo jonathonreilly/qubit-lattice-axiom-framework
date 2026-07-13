@@ -20601,6 +20601,26 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12",
+      "to": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11"
+    },
+    {
+      "from": "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12",
+      "to": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11"
+    },
+    {
+      "from": "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12",
+      "to": "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12"
+    },
+    {
+      "from": "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12",
+      "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+    },
+    {
       "from": "kcpt_orbit_count_is_the_partition_not_the_weight_holomorphic_readout_measure_neutral_narrow_theorem_note_2026-06-06",
       "to": "supertrace_index_holomorphic_route_to_koide_r_half_open_lead_note_2026-06-04"
     },
@@ -87720,6 +87740,24 @@
       "runner_path": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py",
       "title": "K/CPT Orbit Constancy And Determinant-Character Boundary Supplied-Context Bridge"
     },
+    "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12": {
+      "claim_id": "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+        "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
+        "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12",
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "19b45435fc7cbbbdb5c1474b3e7642ed7abba66eab28c6c6b088fd047a09fbcf",
+      "path": "docs/KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "runner_path": "scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py",
+      "title": "K/CPT Orbit-Constant Registered-Occupancy Weights over the Derivable Protocol Class (Bounded Theorem)"
+    },
     "kcpt_orbit_count_is_the_partition_not_the_weight_holomorphic_readout_measure_neutral_narrow_theorem_note_2026-06-06": {
       "claim_id": "kcpt_orbit_count_is_the_partition_not_the_weight_holomorphic_readout_measure_neutral_narrow_theorem_note_2026-06-06",
       "claim_type_author_hint": "positive_theorem",
@@ -129389,7 +129427,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1650,
+      "bounded_theorem": 1651,
       "decoration": 3,
       "meta": 335,
       "no_go": 337,
@@ -129398,7 +129436,7 @@
       "positive_theorem": 284
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2048,
+      "bounded_theorem": 2049,
       "decoration": 3,
       "meta": 335,
       "no_go": 440,
@@ -129406,10 +129444,10 @@
       "open_gate": 212,
       "positive_theorem": 662
     },
-    "edge_count": 14535,
-    "leaf_count": 1331,
-    "node_count": 3948,
+    "edge_count": 14540,
+    "leaf_count": 1330,
+    "node_count": 3949,
     "root_count": 1114,
-    "runners_with_path": 3562
+    "runners_with_path": 3563
   }
 }

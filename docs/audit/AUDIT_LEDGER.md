@@ -22,7 +22,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 304 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 2 |
-| unaudited | 2954 |
+| unaudited | 2955 |
 | audit_in_progress | 4 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
@@ -47,11 +47,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3305 |
+| `unaudited` | 3306 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2060 |
+| `bounded_theorem` | 2061 |
 | `decoration` | 20 |
 | `meta` | 358 |
 | `no_go` | 440 |
@@ -62,7 +62,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 799 |
 | `high` | 378 |
-| `medium` | 934 |
+| `medium` | 935 |
 | `leaf` | 1642 |
 
 - **Retained pending chain closure:** 2
@@ -70,10 +70,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3420
+- runners classified: 3421
 - runners with (C) first-principles compute hits: 1799
 - runners with (D) external comparator hits: 1103
-- decoration candidates (no C, no D): 729
+- decoration candidates (no C, no D): 730
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -81,14 +81,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1992 | 231.96 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1993 | 232.46 | `unaudited` | meta |
 | 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1646 | 64.69 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1253 | 62.29 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 197 | 61.63 | `unaudited` | unaudited |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1097 | 61.60 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1230 | 50.27 | `unaudited` | unaudited |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1130 | 45.14 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1247 | 44.28 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1248 | 44.29 | `unaudited` | meta |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 706 | 40.47 | `unaudited` | unaudited |
 | 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1019 | 39.99 | `unaudited` | unaudited |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1354 | 39.90 | `unaudited` | unaudited |

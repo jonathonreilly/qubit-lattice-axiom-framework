@@ -3,10 +3,10 @@
     "critical": 808,
     "high": 383,
     "leaf": 1775,
-    "medium": 982
+    "medium": 983
   },
   "flagship_signal_used": false,
-  "node_count": 3948,
+  "node_count": 3949,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,8 +19,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 231.961,
-      "transitive_descendants": 1992
+      "load_bearing_score": 232.461,
+      "transitive_descendants": 1993
     },
     {
       "claim_id": "graph_first_su3_integration_note",
@@ -61,8 +61,8 @@
     {
       "claim_id": "key_terminology",
       "criticality": "critical",
-      "load_bearing_score": 44.285,
-      "transitive_descendants": 1247
+      "load_bearing_score": 44.287,
+      "transitive_descendants": 1248
     },
     {
       "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",

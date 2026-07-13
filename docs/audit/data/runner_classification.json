@@ -18228,6 +18228,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py"
     },
+    "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 35,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py"
+    },
     "kcpt_orbit_count_is_the_partition_not_the_weight_holomorphic_readout_measure_neutral_narrow_theorem_note_2026-06-06": {
       "assert_count": 1,
       "counts": {
@@ -85609,6 +85621,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 35,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/kcpt_orbit_count_is_partition_not_weight_runner.py": {
       "assert_count": 1,
       "claims": [
@@ -93827,15 +93854,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 729,
+    "decoration_candidates": 730,
     "dominant_class_distribution": {
-      "A": 532,
+      "A": 533,
       "B": 663,
       "C": 1317,
       "D": 454,
       "none": 454
     },
-    "runners_classified": 3420,
+    "runners_classified": 3421,
     "runners_with_C": 1799,
     "runners_with_D": 1103
   }

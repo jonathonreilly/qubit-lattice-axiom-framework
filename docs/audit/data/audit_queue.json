@@ -3,7 +3,7 @@
     "critical": 723,
     "high": 330,
     "leaf": 1169,
-    "medium": 762
+    "medium": 763
   },
   "cycle_break_target_count": 93,
   "cycle_break_targets": [
@@ -2677,12 +2677,12 @@
       "direct_in_degree": 30,
       "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
-      "load_bearing_score": 25.755,
+      "load_bearing_score": 25.756,
       "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
-      "transitive_descendants": 1727
+      "transitive_descendants": 1728
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2704,7 +2704,7 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
-      "transitive_descendants": 1717
+      "transitive_descendants": 1718
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2804,7 +2804,7 @@
       "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -4790,6 +4790,28 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "audit_in_progress",
+      "blocker": "cross_confirmation_disagreement",
+      "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
+      "claim_scope": "For finite-dimensional H_sys and a finite orthonormal record basis, any assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states; no physical derivation of W or record orthogonality is included.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": "disagreement",
+      "deps": [],
+      "direct_in_degree": 6,
+      "effective_status": "audit_in_progress",
+      "helper_runner_paths": [],
+      "load_bearing_score": 12.504,
+      "note_path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
+      "queue_reason": "audit_in_progress",
+      "ready": true,
+      "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
+      "transitive_descendants": 725
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
@@ -4808,28 +4830,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py",
-      "transitive_descendants": 724
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "cross_confirmation_disagreement",
-      "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
-      "claim_scope": "For finite-dimensional H_sys and a finite orthonormal record basis, any assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states; no physical derivation of W or record orthogonality is included.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "disagreement",
-      "deps": [],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.502,
-      "note_path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
       "transitive_descendants": 724
     },
     {
@@ -4926,6 +4926,31 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "record_formation_append_consistency_sweep_2026-07-04",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 12,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 15.492,
+      "note_path": "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py",
+      "transitive_descendants": 719
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -4945,31 +4970,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py",
       "transitive_descendants": 719
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "record_formation_append_consistency_sweep_2026-07-04",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 12,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.49,
-      "note_path": "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py",
-      "transitive_descendants": 718
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5094,7 +5094,7 @@
       "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -6015,12 +6015,12 @@
       "direct_in_degree": 15,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.115,
+      "load_bearing_score": 14.129,
       "note_path": "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": null,
-      "transitive_descendants": 97
+      "transitive_descendants": 98
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6106,12 +6106,12 @@
       "direct_in_degree": 19,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 20.23,
+      "load_bearing_score": 20.231,
       "note_path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
-      "transitive_descendants": 1698
+      "transitive_descendants": 1699
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6346,12 +6346,12 @@
       "direct_in_degree": 15,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.851,
+      "load_bearing_score": 17.852,
       "note_path": "docs/CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_per_site_hilbert_dim_two_check.py",
-      "transitive_descendants": 1305
+      "transitive_descendants": 1306
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -10271,6 +10271,31 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 12,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 15.667,
+      "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/per_site_su2_spin_half_check.py",
+      "transitive_descendants": 812
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "dm_neutrino_two_higgs_right_gram_bridge_note_2026-04-15",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -10290,31 +10315,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_two_higgs_right_gram_bridge.py",
       "transitive_descendants": 812
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 12,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.665,
-      "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/per_site_su2_spin_half_check.py",
-      "transitive_descendants": 811
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -10390,12 +10390,12 @@
       "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.646,
+      "load_bearing_score": 14.647,
       "note_path": "docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/internal_external_su2_merger_runner.py",
-      "transitive_descendants": 800
+      "transitive_descendants": 801
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -11506,11 +11506,37 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.076,
+      "load_bearing_score": 13.077,
       "note_path": "docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_qubit_link_u2_connection_algebra_bounded_2026_06_04.py",
+      "transitive_descendants": 763
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "key_terminology",
+        "minimal_axioms",
+        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04"
+      ],
+      "direct_in_degree": 10,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.576,
+      "note_path": "docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/audit_companion_two_endpoint_gauss_law_invariance_profile_bounded_2026_06_05.py",
       "transitive_descendants": 762
     },
     {
@@ -11561,32 +11587,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/su3_casimir_fundamental_check.py",
-      "transitive_descendants": 761
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "minimal_axioms",
-        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.574,
-      "note_path": "docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_two_endpoint_gauss_law_invariance_profile_bounded_2026_06_05.py",
       "transitive_descendants": 761
     },
     {
@@ -11671,6 +11671,32 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "key_terminology",
+        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 11,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 15.07,
+      "note_path": "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py",
+      "transitive_descendants": 759
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "pmns_sector_exchange_nonforcing_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -11716,32 +11742,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_quark_cp_carrier_slot_minimality_2026_06_17.py",
       "transitive_descendants": 759
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 11,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.068,
-      "note_path": "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py",
-      "transitive_descendants": 758
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -14554,6 +14554,31 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+        "persistent_record_as_kraus_operator_note_2026-05-20"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 12.002,
+      "note_path": "docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py",
+      "transitive_descendants": 724
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -14652,31 +14677,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/g_bare_two_ward_h_unit_residue_accepted_premise_runner.py",
-      "transitive_descendants": 723
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-        "persistent_record_as_kraus_operator_note_2026-05-20"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.0,
-      "note_path": "docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py",
       "transitive_descendants": 723
     },
     {
@@ -15018,6 +15018,32 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "record_formation_to_kraus_isometry_bridge_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+        "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+        "persistent_record_as_kraus_operator_note_2026-05-20"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.494,
+      "note_path": "docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py",
+      "transitive_descendants": 720
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "hierarchy_bosonic_bilinear_selector_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -15092,32 +15118,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_g_bare_two_ward_closure.py",
-      "transitive_descendants": 719
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_formation_to_kraus_isometry_bridge_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-        "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
-        "persistent_record_as_kraus_operator_note_2026-05-20"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.492,
-      "note_path": "docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py",
       "transitive_descendants": 719
     },
     {
@@ -22952,6 +22952,30 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 10,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 11.15,
+      "note_path": "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py",
+      "transitive_descendants": 70
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -22969,30 +22993,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_dm_pmns_chamber_spectral_completeness_krawczyk_certificate_2026_05_16.py",
       "transitive_descendants": 70
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.629,
-      "note_path": "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py",
-      "transitive_descendants": 69
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -53514,6 +53514,34 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
+        "minimal_axioms",
+        "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+        "record_formation_to_kraus_isometry_bridge_2026-06-06"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/record_write_admissible_one_step_class_controlled_copy_2026_07_11.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "s3_time_observable_hessian_route_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -55092,6 +55120,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py",
       "transitive_descendants": 1
     },
     {
@@ -57819,30 +57871,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py",
       "transitive_descendants": 0
     },
     {
@@ -62050,6 +62078,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+        "tier_a_residual_owner_adoption_retirement_2026-07-04",
+        "minimal_axioms",
+        "ac_orbit_occupancy_statistical_grain_derivation_obligation"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/acphilambda_occupancy_grain_rule_class_universality_2026_07_11.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -66199,34 +66254,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
-        "minimal_axioms",
-        "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
-        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-        "record_formation_to_kraus_isometry_bridge_2026-06-06"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/record_write_admissible_one_step_class_controlled_copy_2026_07_11.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "registration_reinstates_chirality_no_go_note_2026-06-07",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -67310,33 +67337,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
-        "tier_a_residual_owner_adoption_retirement_2026-07-04",
-        "minimal_axioms",
-        "ac_orbit_occupancy_statistical_grain_derivation_obligation"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/acphilambda_occupancy_grain_rule_class_universality_2026_07_11.py",
       "transitive_descendants": 0
     },
     {
@@ -73762,6 +73762,34 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+        "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
+        "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12",
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py",
       "transitive_descendants": 0
     },
     {
@@ -86209,5 +86237,5 @@
     }
   ],
   "ready_count": 614,
-  "total_pending": 2984
+  "total_pending": 2985
 }

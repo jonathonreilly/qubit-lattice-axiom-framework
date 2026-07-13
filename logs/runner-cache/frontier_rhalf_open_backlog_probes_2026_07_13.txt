@@ -1,0 +1,75 @@
+
+[1] FORMATION RESOLUTION AND HAZARD NORMALIZATION
+PASS: uniform carrier atoms give w=1/3
+PASS: uniform quotient cells give w=1/2
+PASS: carrier resolution gives r=1
+PASS: quotient-cell resolution gives r=1/2
+PASS: equal cell hazards select w=1/2
+PASS: one-versus-two carrier hazards select w=1/3
+PASS: normalization alone does not identify a resolution
+
+[2] PROJECTIVE REGISTRATION AND BRANCH INFORMATION
+PASS: three-label controlled-copy write is an isometry
+PASS: extracted write blocks are the spectral projectors
+PASS: pointer pullback registers lambda_k^2 exactly
+PASS: lambda^2 registration is nonnegative
+PASS: real-spectrum premise is load-bearing for nonnegative squares
+PASS: lambda^2 registration erases the sign branch
+PASS: positive square-root readout returns absolute values
+PASS: signed spectrum contains a negative branch not removed by W^2
+PASS: three distinct registered masses require distinct squared labels
+PASS: projective probabilities give nonzero support to all three labels
+PASS: three distinct spectral values need not give three distinct squared values
+
+[3] LAW EQUIVALENCE AND TIME HOMOGENEITY
+PASS: transport-equivalent conditions give the same formation-weight vector
+PASS: one formation-weight law can give different marginals in changed environments
+PASS: transport-equivalent conditions give the same supplied transfer matrix
+PASS: one transfer law can give different matrices in changed environments
+PASS: equal transfer matrices need not imply equivalent conditions
+
+[4] HISTORY-INDEX FAITHFULNESS
+PASS: cyclic compactification adds exactly one seam edge
+PASS: cutting the seam recovers the linear history graph
+PASS: nested record sets are permanent along the linear history
+PASS: the cyclic seam is not a permanence-preserving history step
+
+[5] K-STAGE SUPPLY AND C_n SCOPE
+PASS: C_3 K-orbit count is exact
+PASS: C_3 carrier and cell uniformities are distinguishable
+PASS: C_4 K-orbit count is exact
+PASS: C_4 carrier and cell uniformities are distinguishable
+PASS: C_5 K-orbit count is exact
+PASS: C_5 carrier and cell uniformities are distinguishable
+PASS: C_6 K-orbit count is exact
+PASS: C_6 carrier and cell uniformities are distinguishable
+PASS: C_7 K-orbit count is exact
+PASS: C_7 carrier and cell uniformities are distinguishable
+PASS: C_8 K-orbit count is exact
+PASS: C_8 carrier and cell uniformities are distinguishable
+PASS: C_3 has one singlet and one paired K cell
+PASS: K quotient before counting gives w=1/2 on C_3
+PASS: counting supplied carrier members before quotient gives w=1/3
+
+[6] MANY-SLICE QUENCHED/ANNEALED TRANSFER
+PASS: N=2 quenched value is 13/2
+PASS: N=2 annealed value is 25/4
+PASS: quenched and annealed prescriptions differ for N=2..5
+PASS: persistence p=1 reproduces quenched histories
+PASS: persistence p=1/2 reproduces annealed histories
+PASS: intermediate persistence produces a third exact transfer law
+
+[7] CANONICAL KREIN POSITIVE-HALF LEAKAGE
+PASS: positive-half leakage has the exact W-Wdag block form
+PASS: canonical positive half is invariant when the two blocks tie
+PASS: zero leakage forces equality of every paired block entry
+PASS: the doubled transfer is J-self-adjoint
+PASS: a non-Hermitian W leaks out of the canonical positive half
+
+[8] QUADRATIC TWO-SLICE TRANSFER FACTOR A_2(W)=W^2+I/4
+PASS: W=iI/10 gives A2=6I/25
+PASS: the A2 witness is positive definite
+PASS: the same W is not Hermitian
+PASS: A2 cannot distinguish W from -W
+
+SUMMARY: RHALF OPEN BACKLOG PROBES PASS=57 FAIL=0

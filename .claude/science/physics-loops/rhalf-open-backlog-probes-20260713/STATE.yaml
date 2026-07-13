@@ -1,0 +1,29 @@
+loop: rhalf-open-backlog-probes-20260713
+target_claim_id: rhalf_formation_selector_and_open_backlog
+target_status: exact support batch and frontier discovery
+actual_current_surface_status: exact-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+audit_status_authority: independent audit lane only
+review_disposition: pass_with_bounded_claims
+pr_status: not_opened
+cycle: 1
+block: 1
+active_route: formation-event resolution plus normalized hazards
+hard_residual: derive the formation-stage event atom and relative hazard law
+branch: physics-loop/rhalf-open-backlog-probes-20260713
+base: origin/main@9b36439830
+current_result: "Eight exact probe blocks and 57 checks now cover every named open science item; no formation selector or licensing decision is claimed."
+open_imports:
+  - formation-stage event-atom licensing and hazard law
+  - spectral readout and positive-branch bridge
+  - epoch-equivalence and transfer/time law
+  - K-stage supply and history faithfulness
+files_touched:
+  - docs/R_HALF_OPEN_BACKLOG_FORMATION_LAW_PROBE_BATCH_EXACT_SUPPORT_NOTE_2026-07-13.md
+  - scripts/frontier_rhalf_open_backlog_probes_2026_07_13.py
+  - logs/runner-cache/frontier_rhalf_open_backlog_probes_2026_07_13.txt
+  - .claude/science/physics-loops/rhalf-open-backlog-probes-20260713/
+next_exact_action: "Stress-test the supplied-object/formation-event ordering with an explicit record-formation generator, then test whether its stationary hazards distinguish carrier members from K-orbit cells."
+stop_condition: "First exact multi-probe block is verified and handed off without an unconditional r=1/2 claim."

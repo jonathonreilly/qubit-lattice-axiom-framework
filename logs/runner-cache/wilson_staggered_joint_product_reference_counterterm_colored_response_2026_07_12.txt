@@ -1,0 +1,12 @@
+PASS exact_joint_counterterm_represents_combined_reference: E_0[B_G Z_A^-1]=1.000000000000000, E_H G_A[O]=2.776e-17, E_0[O B_G Z_A^-1]=6.939e-17
+PASS color_one_cancels_counterterm_and_recovers_physical_integrand: Phi(0)=6.939e-17, Phi(1)=7.627578631206e-02, physical direct=7.627578631206e-02, max|Z_A^-1 Z_A-1|=0.000e+00
+PASS outer_partition_weight_is_load_bearing: global physical=7.627578631206e-02, naive Haar average of fixed-U ratios=3.415805748922e-02, mismatch=4.212e-02
+PASS joint_colored_generating_derivative_t_0.0: numeric=2.000000000000, analytic=2/(1-t)^3=2.000000000000
+PASS joint_colored_generating_derivative_t_0.1: numeric=2.743484224660, analytic=2/(1-t)^3=2.743484224966
+PASS joint_colored_generating_derivative_t_0.3: numeric=5.830903788695, analytic=2/(1-t)^3=5.830903790087
+PASS joint_colored_generating_derivative_t_0.6: numeric=31.249999996597, analytic=2/(1-t)^3=31.250000000000
+PASS strict_original_center_joint_activity_witness: K_G=1.269376642763024e-03, K_D^-=7.489754131643805e-18, K_B=1.269376642763024e-03, K_D^+=7.489754131643805e-18, K_W=5.617316072359065e-04, K_ref=1.269376642763032e-03, K_R=1.831108249998938e-03, K_T=3.100484892761970e-03<c, D=1.868134495408053e+00, tau=5.792122780660176e-03, A_joint=6.961784176120600e-03, q_colored=7.805068324171649e-01, q_arith=0.780506832417
+PASS joint_colored_bound_vanishes_without_physical_red_row: A_joint(K_R=0 at fixed envelope)=0.0; K_R=1.831108249998938e-03<K_T=3.100484892761970e-03
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_COMBINED_HAAR_GAUSSIAN_REFERENCE_SPLIT_RESIDUAL_COLORED_INTERPOLATION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_FIXED_BACKGROUND_CORRELATED_BEREZIN_CROSS_WICK_CLUSTER_LOCALITY_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_ONE_HORIZON_HAAR_BEREZIN_HOEFFDING_LINEAGE_CLUSTER_LIFT_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=11 FAIL=0

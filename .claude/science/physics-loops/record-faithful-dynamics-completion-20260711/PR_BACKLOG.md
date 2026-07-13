@@ -724,3 +724,25 @@ prepared as the next stacked review PR:
 - delivery check: open, mergeable, independent audit workflow running
 
 No merge is authorized. Independent audit remains authoritative.
+
+The external-shortest-center, split Schur-tail, projected-quadratic Weyl, and
+conditional normalized-reference theorem is prepared as the next stacked
+review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5369
+- base: `physics-loop/record-faithful-dynamics-block44-product-coordinate-tree-span-incidence-bridge-20260712`
+- head: `physics-loop/record-faithful-dynamics-block45-correlated-snext-reference-quadratic-weyl-20260712`
+- source runner: `PASS=15 FAIL=0`
+- scope: exact shortest/length-four Schur split; hidden-empty/centered tail
+  ownership; actual `P_0` base gap; conditional Block44-sized Weyl budget;
+  normalized fixed-external reference ratio with separate `det M_3(W)`
+  ownership; no outer-Haar atomization or autonomous RG step
+- disposition: independent code/math, physics/import, governance/no-go, and
+  labeling reviews pass with bounded claims after three ownership repairs and
+  a final off-diagonal-tail repair; the full pipeline seeds one
+  `bounded_theorem` / `unaudited` row with exactly five dependencies and strict
+  lint has zero errors
+- delivery check: open; mergeability and checks are verified after the
+  campaign-state commit is pushed
+
+No merge is authorized. Independent audit remains authoritative.

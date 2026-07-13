@@ -1138,3 +1138,50 @@ The next exact target is the full correlated-`S_next` factor/reference/
 normalization grammar, including `P_0` quadratic projection and Weyl gap
 reserve, followed by a newly paid future atomization. No axiom-update stop is
 triggered.
+
+## Block 45: external shortest center, split Schur tail, and conditional Weyl reference
+
+Bipartite parity gives the exact decomposition
+
+```text
+S_next=S_next^(2)-E_(>=4),
+||E_(>=4)||<=4/[m^3(m^2+2)(m^2+4)].
+```
+
+The first omitted path has length four. Actual-hidden expectation/complement
+splits the tail into a separately reattached external residual and a
+current-red centered residual, both with their formal path carriers retained.
+Neither enters the fresh shortest-center reference.
+
+The projective coefficient `l1` norm gives coefficient-to-operator incidence
+one for the Hermitian onsite quadratic projector. At `m=10^46`, the actual
+carried `P_0` update leaves
+
+```text
+gap(S_base)/m>=0.9999999993849568.
+```
+
+The larger Block44-sized row is only a conditional Weyl budget because the
+fixed-product response omitted the correlated-center mixed clusters. Any
+completed joint row satisfying that budget would leave
+`gap(S_trial)/m>=0.929631803428252`; no physical completed output is claimed.
+
+At fixed external `W`, the normalized `G_(M_3)` ratio, boundary row, and
+determinant restore close. The product-block determinant
+`V_3(W)=det M_3(W)` is separately owned, and the runner checks
+`det(M_3)Z_3=det(A_3)`. Outer-Haar provenance/atomization remains open.
+
+Independent code/math, physics/import, and governance/no-go reviews pass with
+bounded claims after repairing the Block44 semantic bridge, product-block
+determinant, hidden-empty tail, and determinant-parity ownership. Runner/cache:
+`PASS=15 FAIL=0`. All five dependency runners pass. Audit validation seeds
+one `bounded_theorem` / `unaudited` row with exactly five dependencies; strict
+lint has zero errors and generated outputs are stripped.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5369 is
+open on Block44. The next target is the scalar-product-reference outer-Haar
+closure at the verified `m=10^64` reserve witness: factor onsite `Q_I` and
+hopping relative to `G_(mu')`, use the full all-length log determinant, split
+its hidden-empty/centered atoms correctly, and pay a fresh site-block
+atomization plus eta migration. No axiom-update stop is triggered.

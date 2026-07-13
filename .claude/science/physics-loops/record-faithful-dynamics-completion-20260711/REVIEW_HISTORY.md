@@ -1337,3 +1337,34 @@ outputs are stripped. PR #5364 is open on Block43. The next target is the full
 correlated-`S_next` grammar and projected quadratic/Weyl gap update. It is
 mergeable with the independent audit workflow running. No axiom-update stop
 is triggered.
+
+## External-shortest-center and conditional-reference review
+
+PASS WITH BOUNDED CLAIMS after three independent review lanes and two repair
+iterations. Code/math independently reconstructed the bipartite Neumann
+parity, the positive length-four tail, pointwise resolvent locality,
+coefficient-to-operator incidence one, both Weyl reserves, and the normalized
+determinant ratio. The live runner/cache are byte-exact at `PASS=15 FAIL=0`.
+
+Physics/import review blocked the first draft on three ownership errors: it
+treated Block44 as physical joint output, omitted `det M_3(W)`, and classified
+the entire Schur tail as hidden-nonempty. The repaired source demotes Block44
+to a conditional budget, owns the product-block determinant, and splits the
+tail into external-empty and centered arms. A final re-review caught that
+absorbing the empty arm would introduce off-diagonal long paths into the fresh
+reference; both tail arms now remain outside the shortest center, restoring
+the nearest-neighbor/parity determinant grammar.
+
+Governance/no-go review initially failed the authored N1--N8 packet. The final
+packet supplies six evidenced attack routes, an atomic six-condition/all-15-
+pair independence audit, file-and-line residual matching, a cited strongest
+steelman, and an explicit cross-cycle echo table. The negative boundary is
+only uncompensated simultaneous same-step reuse of the conditional full Schur
+family. Post-step and enlarged-state routes remain live. Labeling review
+passes: the result is algebraic, not a convention.
+
+All five dependency runners pass. Vocabulary lint has zero violations. The
+full audit pipeline seeds one `bounded_theorem` / `unaudited` row with exactly
+five dependencies; strict lint has zero errors, and generated audit/status
+surfaces are stripped. PR #5369 is open on Block44. No axiom-update stop is
+triggered.

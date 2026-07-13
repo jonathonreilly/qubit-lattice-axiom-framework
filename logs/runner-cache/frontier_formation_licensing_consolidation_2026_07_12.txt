@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_formation_licensing_consolidation_2026_07_12.py
+runner_sha256: f2c5417924ced216903fbad9c997bda02b2211aa8ec9b10e38d5830fcee53837
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 27.28
+status: ok
+----- stdout -----
+==============================================================================
+Formation licensing: one criterion, product closure, and orbit average
+rhalf block 19; exact finite arithmetic; no premise adoption
+==============================================================================
+[PASS] (01) SOCMLC source pins exactly four supplied-object classes and labels the criterion a classification convention, not an axiom theorem
+[PASS] (02) single-site canonical measures are derived exactly: carrier/orbit-member count (1/3,2/3), quotient/regular count (1/2,1/2)
+[PASS] (03) carrier tensor product: rank(P_i tensor P_j)=rank(P_i)rank(P_j), giving (1,2,2,4)/9 exactly
+[PASS] (04) coupling-free quotient atoms are the four ordered atom pairs; counting is the uniform product joint
+[PASS] (05) load-bearing CKS verified exactly: K fixes each menu cell setwise, so diagonal K fixes all four product orbit cells setwise
+[PASS] (06) orbit-cell member masses multiply exactly under CKS: |O_i x O_j|=|O_i||O_j| gives (1,2,2,4)/9
+[PASS] (07) diagonal-action precision guard: O_d x O_d is one supplied invariant product cell of size 4 but refines internally into two 2-cycles; no false quotient-product identity is used
+[PASS] (08) regular module: (C+C) tensor (C+C) has four basis atoms and four minimal central regular ranks (1,1,1,1), hence the uniform product
+[PASS] (09) all four SOCMLC composite classes equal the outer product of their licensed single-site marginals
+[PASS] (10) every licensed joint has identical marginals and pays the exact cross-edge atom C_ss=a-p^2=0, equivalently a=p^2
+[PASS] (11) supplied agreement datum changes the canonical object to {(s,s),(d,d)}; counting gives (1/2,0,0,1/2) exactly
+[PASS] (12) agreement counting has identical actual marginals p=1/2 but C_ss=1/4, the decisive supplied-coupling boundary
+[PASS] (13) source-grade boundary is pinned: (LE) is a named premise and the kappa scope supplies agreement-conditioned independent draws rather than deriving them
+[PASS] (14) landed records-only exact engine is reused successfully and its own stable 24-check interface remains green  [source engine exit=0]
+[PASS] (15) at the exact untied probe, dagger is idempotent and W^dagger differs from W
+[PASS] (16) the supplied readout-context involution has exactly the two-point coupling orbit {W,W^dagger} and acts on it by a swap
+[PASS] (17) the two-point swap orbit has a unique invariant probability: exact linear solve gives u=v=1/2
+[PASS] (18) canonical orbit expectation reproduces the landed mu_sym object entrywise for every Grassmann coefficient mask and is swap invariant  [coefficient masks=864]
+[PASS] (19) exact Berezin regression at the untied probe: orbit construction has Z_sym=442243/1000000 and equals the component half-sum  [Z_sym=(442243/1000000+0i)]
+[PASS] (20) Record quotation is present verbatim and is readout-side strictness
+[PASS] (21) tick witnessed-search quotation is present verbatim: site-strict and unitary-tick readings remain named conditionals
+[PASS] (22) formation-rule open-gate quotation is verbatim, and the companion note contains T1-T4 plus the single unresolved supplied-object licensing residual
+
+VERDICT: PASS — CONDITIONAL LICENSING CONSOLIDATION.  SOCMLC remains unadopted and underived.  Inside its convention grade, product closure on the coupling-free disjoint composite pays independence for every licensed joint, and the K-symmetrized weight is the same criterion's canonical orbit-expectation instance on the supplied-orbit reading.
+CONSOLIDATION MAP: one criterion = SOCMLC; three instances = single-site canonical formation measures, coupling-free composite product measures, and the supplied coupling-orbit average; discharge = selection-stack element 1, cross-edge payer (ii) and its licensed-joint independence atom, and the K-orbit-average gate on the supplied-orbit reading; non-discharge = the formation selector, H, quenched/annealed many-slice extension, Krein and A2 remainders, and (LE) itself.
+T1 BOUNDARY: no supplied coupling datum -> each of the four licensed composite measures is a product and C_ss=0; supplied agreement datum -> canonical counting on {(s,s),(d,d)} has p=1/2 and C_ss=1/4.  This prices independence to the criterion; it does not derive independence.
+CHECK COUNT: PASS=22 FAIL=0 TOTAL=22
+PROPOSED CLAIM_SCOPE: conditional on convention-grade SOCMLC, a coupling-free disjoint composite of two (LE)+(LAW) registrations, CKS at the product-orbit-cell grade, and the supplied-context coupling-orbit reading; exact product closure and orbit-expectation consolidation only.
+HOSTILE-AUDIT UNCERTAINTIES: SOCMLC has no axiom supplier; (LE)+(LAW) are named conditions; the orbit-cell proof requires CKS and full product-cell member counting (not a false diagonal quotient identity); coupling-free scope is decisive; and whether readout-context K supplies the coupling orbit at the measure stage remains unresolved.
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

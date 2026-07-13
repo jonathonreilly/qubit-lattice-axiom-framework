@@ -1,6 +1,37 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block29-grassmann-polymer-norm-20260712`.
+The retained-Grassmann joint-polymer runner reports `PASS=14 FAIL=0`. The
+retained weight's correct positive body is `det D_II`, not the full `det D`.
+A new `m>4` induced-graph hopping expansion controls that body, while the
+Schur inverse expansion gives retained-to-retained even balanced path
+activities. Their combined Banach-valued two-layer row closes whenever
+`q=(4/m)exp(L)<1` and `K_W+K_I+K_S<c`.
+
+At three strict points (`m=12,16,20`), the exact one-step joint logarithm has
+one uniform connected decomposition satisfying
+`||Gamma_c||<=68 exp(lambda/2)c+3m eta^2 exp(theta/2)`. This pays all
+endpoints, paths, colors, supports, and every balanced Grassmann degree
+simultaneously. The executable witness checks coefficient-exact
+Banach-valued regrouping and a nonzero connected quartic logarithm.
+
+Independent code/math, physics/import/Nature, and governance/no-go review
+pass after separating the three downstream N2 walls. Audit validation seeds
+one `bounded_theorem` / `unaudited` row with exactly the Schur-block,
+generated-action-space, and two-layer-KP dependencies; strict lint has zero
+errors and generated status surfaces are stripped.
+
+This is one-step joint-norm closure only. It does not supply an invariant
+rescaled neighborhood, relevant-coordinate projection, contraction, physical
+taste carrier, retained-fermion OS/CAR reconstruction, or critical continuum
+trajectory. No axiom-update stop is triggered.
+
+Retained-Grassmann joint-polymer stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5327
+is open against the gauge-body source-polymer head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block28-gauge-body-source-polymer-20260712`.
 The two-layer source-polymer runner reports `PASS=14 FAIL=0`. For positive
 parameters satisfying `q<1` and `K_(theta,lambda)(c)<c`, the positive

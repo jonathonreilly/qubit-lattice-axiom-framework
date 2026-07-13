@@ -860,3 +860,30 @@ generated audit/status surfaces are stripped. PR #5322 is open. The retained
 gauge--Grassmann simultaneous norm, projection/rescaling, physical critical
 trajectory, and continuum limits remain open. No negative theorem or
 axiom-update stop is triggered.
+
+## Simultaneous retained-Grassmann polymer-norm review
+
+PASS WITH BOUNDED POSITIVE CLAIMS. Physics/import review first isolated the
+load-bearing measure mismatch: the retained Schur weight has positive body
+`det D_II`, while the previous gauge-body theorem controls the full `det D`.
+The final source does not reweight by the uncontrolled `(det S)^(-1)`.
+Instead, a direct `m>4` induced-graph hopping expansion gives the eliminated-
+determinant path row, and the Schur inverse expansion gives jointly
+gauge-invariant retained-to-retained even balanced path factors.
+
+The `eta`-weighted coefficient norm is submultiplicative, the even sector is
+commutative, and Haar integration is contractive. The prior two-layer
+rooted-tree/KP proof therefore lifts to the Banach-valued activities. Code/math
+review independently reproduced every fixed-link, path-position, orientation,
+color, hidden-footprint, envelope, mass-term, and 68-anchor factor. The runner
+checks three strict points, exact coefficient regrouping, and a nonzero
+balanced quartic connected logarithm: `PASS=14 FAIL=0`.
+
+Nature review passes the correct-body repair, gauge covariance, balanced
+degree, local coefficient limit, and taste/CAR/OS/continuum boundaries.
+Governance review required three independent N2 walls—projected/rescaled
+invariant RG, physical taste carrier, and critical trajectory—and passed the
+repair. Audit validation seeds one `bounded_theorem` / `unaudited` row with
+source hash `ccd263928a7d0c58...` and exactly three intended dependencies;
+strict lint has zero errors and generated audit/status surfaces are stripped.
+PR #5327 is open. No negative theorem or axiom-update stop is triggered.

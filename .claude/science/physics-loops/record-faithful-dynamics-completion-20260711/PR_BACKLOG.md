@@ -1,5 +1,23 @@
 # PR Delivery
 
+The simultaneous retained gauge--Grassmann polymer-norm theorem is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block28-gauge-body-source-polymer-20260712`
+- head: `physics-loop/record-faithful-dynamics-block29-grassmann-polymer-norm-20260712`
+- runner: `PASS=14 FAIL=0`
+- scope: a direct `det D_II` positive-body hopping expansion plus Schur-path
+  Banach activities closes one uniform all-degree connected norm at three
+  explicit points; no invariant rescaled map, contraction, taste selection,
+  retained-fermion OS/CAR reconstruction, or continuum trajectory
+- review: independent code/math, physics/import/Nature, and governance/no-go
+  pass after the N2 wall-separation repair
+- audit compatibility: one `bounded_theorem` / `unaudited` row with exactly
+  the Schur-block, generated-action-space, and two-layer-KP dependencies; full
+  pipeline and strict lint pass; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5327
+
+No merge is authorized. Independent audit remains authoritative.
+
 The two-layer constrained-fiber complex-source/polymer theorem is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block27-raw-action-hessian-decay-20260712`

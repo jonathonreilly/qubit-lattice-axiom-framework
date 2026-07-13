@@ -205,7 +205,7 @@
         },
         {
           "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
@@ -2959,6 +2959,6 @@
       "uncertified_count": 673
     }
   ],
-  "repo_head": "c4890e6bdbbe8cbdbcbebea606c01b8fc3c2adb2",
+  "repo_head": "de8c53152994685b1e28f61d791b8ff4d62fd9a4",
   "schema": "lane_certification_v2"
 }

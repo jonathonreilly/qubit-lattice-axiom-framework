@@ -481,7 +481,7 @@
         },
         {
           "claim_id": "charged_lepton_two_higgs_canonical_reduction_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "charged_lepton_ue_identity_via_z3_trichotomy_note_2026-04-17",
@@ -2955,6 +2955,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "f8b9d9a1f5582412476a94157c941a67819de427",
+  "repo_head": "02850f4c0236b128dc21a9084ece3820098b2bfd",
   "schema": "lane_certification_v2"
 }

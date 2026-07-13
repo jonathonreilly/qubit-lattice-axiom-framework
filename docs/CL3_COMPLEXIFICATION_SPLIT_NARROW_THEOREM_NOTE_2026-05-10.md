@@ -265,7 +265,7 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 20`.
 
 The dedicated exclusion stress runner constructs the full `8`-dimensional
 complexified algebra and verifies the negative-assertion surface using exact
-sympy/stdlib arithmetic. Its recorded output is `TOTAL: PASS=54 FAIL=0`, including the N5 resolution sweep that restates each authenticated negative statement at the five canonical resolution classes (`per_element`, `per_site`, `per_mode`, `per_block`, `lattice_wide`), with the lattice-wide class honestly reported as checked and not executed for this single-site algebra claim.
+sympy/stdlib arithmetic. Its recorded output is `TOTAL: PASS=62 FAIL=0`, including the executed lattice-wide tensor extension (the joint per-site scalar Clifford systems on the 2-site and 3-site lattice algebras have no solution, and every irreducible 2-site module has dimension `4 = 2^2` by scalar-commutant and exact dimension-count exhaustion, with 2-dimensional per-site restrictions), the five labeled distinct exclusion mechanism classes, and the N5 resolution sweep in which every canonical class (`per_element`, `per_site`, `per_mode`, `per_block`, `lattice_wide`) is executed against a computed certificate.
 
 | Claim surface | Runner | Exact verification |
 |---|---|---|

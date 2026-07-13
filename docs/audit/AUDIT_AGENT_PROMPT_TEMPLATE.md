@@ -516,8 +516,8 @@ supply it. Otherwise replace it with:
   },
   "N7_steelman": {
     "route_id": "<the evidenced N1 route that instantiates the strongest steelman>",
-    "argument": "<strongest argument against the no-go>",
-    "resolution": "<why it succeeds or fails in the scoped packet>",
+    "argument": "<copy one complete contiguous live-execution line that contains the selected N1 route mechanism and attempt verbatim>",
+    "resolution": "<copy one complete contiguous line from the cited independent execution or retained/accepted authority; it must name an N2 wall>",
     "resolved": true,
     "evidence_path": "<live runner_stdout path containing the complete argument and matching N1 evidence>",
     "evidence_locator": "<actual locator>",
@@ -692,7 +692,12 @@ N6 must bind every indexed candidate to an exact quoted indexed basis, an N2
 wall, and a substantive closure mechanism. N7 must cite the N1 route surface
 for the steelman and either orchestrator-marked independent execution or a
 retained/accepted, byte-authenticated authority for the resolution; a merely
-different path is not independence. The resolution text must occur there. N8 must bind
+different path is not independence. Copy `N7.argument` byte-for-byte as one
+contiguous line from the selected N1 route's live execution surface; that line
+must contain the route's complete `mechanism` and `attempt` verbatim. Copy
+`N7.resolution` byte-for-byte as one contiguous line from its independent
+resolution surface, and select a line that names an evidenced N2 wall. Do not
+paraphrase either field. N8 must bind
 each mechanism to its exact indexed candidate record. Copy known retirement
 state exactly; when the indexed `lifecycle_state` is `unknown`, preserve
 `retired` as JSON `null`. Applicability is a separate current-scope decision

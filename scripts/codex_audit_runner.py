@@ -1754,6 +1754,13 @@ def fresh_schema_retry_code(validation_error: str) -> str:
         return "N5_AUTHENTICATED_GROUP_TUPLE_MISMATCH"
     if validation_error.startswith("N3 retained_authority hit "):
         return "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH"
+    if validation_error in {
+        "N7.argument is not evidenced at its N1 execution path",
+        "N7.resolution is not evidenced at resolution_evidence_path",
+        "N7.argument must name the steelmanned route mechanism",
+        "N7.argument must name the steelmanned route attempt",
+    }:
+        return "N7_EXECUTION_EVIDENCE_VERBATIM_MISMATCH"
     if validation_error.startswith("transport-bounded N8"):
         return "N8_TRANSPORT_BOUND_DISPOSITION_MISMATCH"
     if (
@@ -1861,6 +1868,15 @@ def render_fresh_schema_retry_prompt(
             "including its canonical class prefix and body, byte-for-byte as a "
             "contiguous line from the cited live current-cycle runner_stdout. "
             "Do not summarize, shorten, or paraphrase those five lines.\n"
+        ),
+        "N7_EXECUTION_EVIDENCE_VERBATIM_MISMATCH": (
+            "Static N7 invariant: copy argument byte-for-byte as one complete "
+            "contiguous live-execution line from the selected N1 route surface; "
+            "that line must contain the route mechanism and attempt verbatim. "
+            "Copy resolution byte-for-byte as one complete contiguous line from "
+            "the cited independent execution or retained/accepted authority, "
+            "and choose a line that names an evidenced N2 wall. Do not paraphrase "
+            "either field.\n"
         ),
         "N4_WITNESS_SCHEMA_MISMATCH": (
             "Static N4 invariant: when no N1 route is RULED OUT BY PRIOR, emit "

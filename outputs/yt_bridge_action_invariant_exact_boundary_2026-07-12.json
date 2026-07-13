@@ -16,8 +16,8 @@
   ],
   "hashes": {
     "minimal_axioms_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
-    "source_note_sha256": "ffdbb8695c035578c5e1c241216a28146c4821af6ed7ce865851a8b44c8cbc23",
-    "runner_sha256": "2da00b99e1280e4c4c011ad93c8d3a90e5266d3adc5578fb121d133a771b4c76",
+    "source_note_sha256": "3291f2f396422313c85aa0ee2bb0de084f9c7411f93205341d2275bb3da964ad",
+    "runner_sha256": "649f6e63e5b35a5d459e030f8f7bc60070d09993a5e886b999beb573c81384fd",
     "scale_reference_primitive_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
     "kinetic_isotropy_primitive_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
     "realized_state_primitive_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
@@ -64,6 +64,12 @@
       "check_class": "A",
       "passed": true,
       "detail": "S_kappa=sum(Delta q)^2+kappa sum(q^2), q=(0,*,*,1): kappa=0 -> q=(Fraction(0, 1), Fraction(1, 3), Fraction(2, 3), Fraction(1, 1)), A_disc=1/2, c_disc=7/9; kappa=1 -> q=(Fraction(0, 1), Fraction(1, 8), Fraction(3, 8), Fraction(1, 1)), A_disc=3/8, c_disc=31/36"
+    },
+    {
+      "name": "shared-endpoint-positive-monotone-counterfamily",
+      "check_class": "A",
+      "passed": true,
+      "detail": "both distinct minimizers share q0=0, q3=1, positivity, and strict monotonicity"
     },
     {
       "name": "strict-convexity-kappa-0",
@@ -115,7 +121,7 @@
     }
   ],
   "summary": {
-    "pass": 15,
+    "pass": 16,
     "fail": 0
   },
   "remaining_blocker": "derive the physical microscopic bridge operator, YT observable map, and a uniform finite-response kernel bound"

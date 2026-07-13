@@ -12,8 +12,12 @@ microscopic operator route remains open.
 No repo-wide audit ledger, queue, registry, status board, publication matrix,
 or canonical harness surface will be edited in this science block.
 
+Independent audit remains required before the repository may treat the new
+`no_go` claim as retained-grade authority. The original target row remains a
+bounded numerical scan and receives no authored grade change from this block.
+
 ## Exact next action
 
-Complete the hostile re-review, run validation gates, and deliver the one
-review PR. The next science action is a gauge-covariant microscopic operator
-construction with a physical observable map and uniform finite-response bound.
+After independent review integration, attempt a gauge-covariant microscopic
+operator construction with a physical observable map and uniform
+finite-response bound.

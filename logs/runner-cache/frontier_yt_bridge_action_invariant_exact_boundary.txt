@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_bridge_action_invariant_exact_boundary.py
-runner_sha256: 2da00b99e1280e4c4c011ad93c8d3a90e5266d3adc5578fb121d133a771b4c76
+runner_sha256: 649f6e63e5b35a5d459e030f8f7bc60070d09993a5e886b999beb573c81384fd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -16,6 +16,7 @@ YT BRIDGE ACTION INVARIANT — EXACT RESPONSE / NONSELECTION BOUNDARY
 [PASS (A)] i2-alone-not-exact-for-nonconstant-affine-kernel: equal A=1; c=3/4 gives R=3/4, c=1 gives R=1 for K=x
 [PASS (A)] two-moments-not-exact-for-curved-kernel: both profiles have A=1 and c=7/8; K=x^2 responses are 49/64 and 25/32
 [PASS (A)] local-stable-action-counterfamily: S_kappa=sum(Delta q)^2+kappa sum(q^2), q=(0,*,*,1): kappa=0 -> q=(Fraction(0, 1), Fraction(1, 3), Fraction(2, 3), Fraction(1, 1)), A_disc=1/2, c_disc=7/9; kappa=1 -> q=(Fraction(0, 1), Fraction(1, 8), Fraction(3, 8), Fraction(1, 1)), A_disc=3/8, c_disc=31/36
+[PASS (A)] shared-endpoint-positive-monotone-counterfamily: both distinct minimizers share q0=0, q3=1, positivity, and strict monotonicity
 [PASS (A)] strict-convexity-kappa-0: H leading minor=4, determinant=12
 [PASS (A)] strict-convexity-kappa-1: H leading minor=6, determinant=32
 [PASS (B)] minimal-axiom-nonselection-boundary-present: current axiom memo withholds dynamics/source-action/time and keeps unfixed choices open
@@ -26,7 +27,7 @@ YT BRIDGE ACTION INVARIANT — EXACT RESPONSE / NONSELECTION BOUNDARY
 [PASS (B)] no-numerical-transport-stack-proof-import: runner uses exact standard-library/SymPy algebra and no numerical transport stack
 ------------------------------------------------------------------------------
 CERTIFICATE: outputs/yt_bridge_action_invariant_exact_boundary_2026-07-12.json
-SUMMARY: PASS=15 FAIL=0
+SUMMARY: PASS=16 FAIL=0
 
 ----- stderr -----
 

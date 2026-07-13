@@ -17,7 +17,7 @@ Forbidden proof inputs:
 
 | Item | Role in claim | Current class | Source surface | Load-bearing? | Needed for target status? | Retirement path | Disposition |
 |---|---|---|---|---|---|---|---|
-| Lattice/Qubit/Admissibility/Record | Current framework premise set | zero-input structural | `docs/MINIMAL_AXIOMS_2026-06-29.md` | Yes for the nonselection theorem | Yes | Already canonical | Allowed |
+| Lattice/Qubit/Admissibility/Record | Current framework premise boundary | zero-input structural | `docs/MINIMAL_AXIOMS_2026-06-29.md` | No for the mathematical counterfamily; contextual for route scope | No | Already canonical | Allowed context |
 | Nonnegative surplus density `q` on an interval | Abstract variable in the response theorem | theorem-local definition | This block | Yes | Yes | Defined, not imported | Allowed |
 | Endpoint derivative kernel `K_(s,q)` | Abstract response datum | theorem-local hypothesis | This block | Yes only for the support lemma | No for the no-go | Derive from a retained exact interacting bridge | Explicit hypothesis |
 | Affine or `C^2` regularity of a supplied kernel | Moment-compression premise | theorem-local hypothesis | This block | Yes only for the support lemma | No for the no-go | Derive a kernel regularity bound from the exact operator | Explicit hypothesis |

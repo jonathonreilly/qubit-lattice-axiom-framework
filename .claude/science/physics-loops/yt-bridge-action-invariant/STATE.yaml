@@ -23,10 +23,10 @@ no_go_routes:
   - locality or cubic symmetry alone as centroid selection
 trace_gate_classification: negative_route_pruning
 trace_reachability: prunes
-review_findings: pending
-review_disposition: pending
+review_findings: "Iteration 1 blockers fixed by claim-ID split, Borel/Jensen domain repair, nonlinear path-kernel boundary, strengthened runner, and completed N1-N8 packet."
+review_disposition: pass
 pr_status: pending
-next_exact_action: "Run re-review, validate the audit pipeline without shipping generated outputs, then package one no-go PR."
+next_exact_action: "Open independent audit on the new no-go after review PR integration; then attempt the gauge-covariant microscopic operator route."
 stop_condition: "One coherent reviewed science block is pushed and one review PR is opened, or core tooling globally fails."
 actual_current_surface_status: no-go
 target_claim_type: no_go

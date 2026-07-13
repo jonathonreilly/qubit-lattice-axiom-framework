@@ -30,12 +30,16 @@ bare_retained_allowed: false
 
 | Route | Result | Marker |
 |---|---|---|
-| Generic chain-local convex selector | Exact `S_kappa` family changes both discrete moments | `ATTEMPTED` |
+| Chain locality | Both `S_kappa` members are nearest-neighbor local and change the moments | `ATTEMPTED` |
+| Strict convexity | Both actions have unique stable minimizers, but the minimizers differ | `ATTEMPTED` |
+| Fixed endpoints plus positivity/monotonicity | Both profiles share these properties and still differ | `ATTEMPTED` |
 | Affine linear response | Moment compression follows only after a common kernel is supplied | `ATTEMPTED` |
 | Curved kernel | Exact variance remainder survives | `ATTEMPTED` |
 | Finite nonlinear endpoint | Path-averaged kernel depends on the profile unless uniformly controlled | `ATTEMPTED` |
-| Full microscopic operator | Live route outside the generic-selector no-go | `ATTEMPTED — NOT RULED OUT` |
-| Approved primitives | Their linked source scopes supply no dynamics/source-action coefficient | `RULED OUT BY CURRENT PREMISE SCOPE` |
+| Approved primitives | Their linked source scopes supply no dynamics/source-action coefficient | `RULED OUT BY PRIOR` |
+
+The full microscopic operator is a live scope control outside N1: the no-go
+does not attempt to rule it out.
 
 ### N2 — Wall independence
 
@@ -55,6 +59,9 @@ nearest-neighbor term, free `kappa`, and the discrete moment definitions are
 all explicit theorem-local ingredients. Positive Borel measure, kernel
 regularity, and profile-dependent background are explicit support-lemma
 hypotheses. The auxiliary locality is not called physical `Z^3` locality.
+“Canonical operator” appears only as a non-load-bearing live steelman route;
+“already canonical” in the import ledger labels the current axiom memo rather
+than adding a proof premise.
 
 ### N4 — Residual matching
 
@@ -86,14 +93,21 @@ strict convexity alone are insufficient. The microscopic route remains live.
 
 ### N8 — Cross-cycle echo
 
-Similar underdetermination walls have been retired by exact operator theorems
-or reclassified as normalization conventions. Both mechanisms were tested:
-the former remains the next route, while the latter cannot select a physical
-profile or finite-response kernel.
+| Prior wall | Disposition/mechanism | Applicability here |
+|---|---|---|
+| `YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md` | source-unit counterfamily remains open; retirement needs an exact source/action theorem or direct response | directly analogous and explicitly left live |
+| `ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md` | kernel family remains underdetermined until operator content fixes it | directly analogous to the open finite-response kernel route |
+| `PMNS_ORIENTED_CYCLE_REDUCED_CHANNEL_NONSELECTION_NOTE.md` | narrow family nonselection; an added selector may close it | same narrow-family discipline used here |
+| `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` in `premise_decision_history.json` | value wall retired as a vacuous rescaling convention | inapplicable because changing profile/kernel changes endpoint response, not only naming |
+
+Every observed retirement mechanism is preserved as a live route or rejected
+for an explicit semantic mismatch.
 
 **Disposition:** `PASS` for the narrow generic-selector no-go; `FAIL` for any
 broader full-framework nonselection claim.
 
 ## Review-loop disposition
 
-Pending re-review after the first hostile-review fixes.
+`pass` — iteration 2 confirmed the separated claim IDs, measure domain,
+nonlinear-response boundary, exact counterfamily, dependency scopes, and
+route-specific N1-N8 framing after narrow fixes.

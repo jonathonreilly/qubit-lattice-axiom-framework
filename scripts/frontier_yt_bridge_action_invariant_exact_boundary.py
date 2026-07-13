@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Exact response-moment theorem and YT bridge nonselection boundary.
 
-This runner deliberately contains no observed top endpoint, fitted bridge
-profile, RG constants, or retention cut.  It checks the exact algebra behind
-the response-compression theorem and constructs a local stable-action
-counterfamily showing that locality and positivity do not select a unique
-``I_2`` or UV centroid.
+This runner contains no fitted bridge profile, transport constants, or
+retention cut. It checks the response-moment algebra and constructs an
+auxiliary chain-local, fixed-endpoint, strictly convex action counterfamily
+with different ``A_disc`` and ``c_disc``. It makes no physical ``I_2`` or
+``Z^3`` locality claim.
 """
 
 from __future__ import annotations
@@ -215,6 +215,19 @@ def action_counterfamily() -> None:
             f"kappa=0 -> q={profile_0}, A_disc={a_disc_0}, c_disc={c_disc_0}; "
             f"kappa=1 -> q={profile_1}, A_disc={a_disc_1}, c_disc={c_disc_1}"
         ),
+    )
+
+    record(
+        "shared-endpoint-positive-monotone-counterfamily",
+        "A",
+        (
+            profile_0[0] == profile_1[0] == 0
+            and profile_0[-1] == profile_1[-1] == 1
+            and all(a < b for a, b in zip(profile_0, profile_0[1:]))
+            and all(a < b for a, b in zip(profile_1, profile_1[1:]))
+            and all(q >= 0 for q in profile_0 + profile_1)
+        ),
+        "both distinct minimizers share q0=0, q3=1, positivity, and strict monotonicity",
     )
 
     # The Hessian on the two interior variables is

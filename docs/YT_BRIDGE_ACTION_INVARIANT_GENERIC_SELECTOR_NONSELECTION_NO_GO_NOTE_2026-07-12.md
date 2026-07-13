@@ -132,8 +132,9 @@ For `K in C^2(U)` with `M=sup|K''|`, Taylor expansion about `c` gives
 ```
 
 This lemma is about a supplied linear response. It does not prove that finite
-nonlinear YT endpoint differences share one profile-independent kernel. For a
-differentiable endpoint functional `E`, the exact path identity is instead
+nonlinear YT endpoint differences share one profile-independent kernel. If `E`
+is continuously Fréchet differentiable along the segment `s -> sq`, the exact
+path identity is instead
 
 ```text
 E[q]-E[0] = integral_0^1 D E[sq](q) ds.                (9)
@@ -175,15 +176,17 @@ from the full structure is impossible.
 
 | Route | Attempt | Result | Marker |
 |---|---|---|---|
-| Generic chain-local convex selector | Use locality, fixed endpoints, and strict convexity to force one profile | Equations (1)-(6) give two allowed selectors with different moments | `ATTEMPTED` |
+| Chain-locality route | Use nearest-neighbor locality to force one profile | Both members of (1) are nearest-neighbor local and give different moments | `ATTEMPTED` |
+| Strict-convexity route | Use a unique stable minimizer to force one profile independently of coefficients | Both Hessians are positive definite and each minimizer is unique, but the two unique minimizers differ | `ATTEMPTED` |
+| Endpoint/monotonicity route | Add the same fixed endpoints, positivity, and monotone rise toward the UV | Both exact profiles satisfy all three properties and still have different moments | `ATTEMPTED` |
 | Affine linear-response route | Use `I_2` and a centroid as sufficient statistics | Equation (7) closes only after a common affine kernel is supplied; it does not select that kernel | `ATTEMPTED` |
 | Curved-kernel route | Allow a smooth non-affine kernel while retaining two moments | Equation (8) leaves a variance remainder that must be bounded physically | `ATTEMPTED` |
 | Finite nonlinear endpoint route | Replace a first variation by the full endpoint difference | Equation (9) exposes a profile-dependent path-averaged kernel; uniform control remains a theorem obligation | `ATTEMPTED` |
-| Full microscopic-operator route | Derive coefficients and the observable map from the actual lattice/algebra/Admissibility structure | This route is live and lies outside the generic-selector no-go | `ATTEMPTED — NOT RULED OUT` |
-| Approved-primitive route | Ask whether a supplied primitive fixes the missing coefficient | The linked primitive notes grant scale units, kinetic-form isotropy, and pointwise realized-state evaluation only | `RULED OUT BY CURRENT PREMISE SCOPE` |
+| Approved-primitive route | Ask whether a supplied primitive fixes the missing coefficient | The linked scale-reference, kinetic-isotropy, and realized-state authorities grant units, kinetic-form isotropy, and pointwise state evaluation only | `RULED OUT BY PRIOR` |
 
-The fifth route staying live is compatible with the claim: this note prunes the
-generic-property shortcut, not the full microscopic construction.
+The full microscopic-operator route remains a live scope control outside the
+table: this note prunes the generic-property shortcut, not the full
+microscopic construction.
 
 ### N2 — Wall-independence audit
 
@@ -214,9 +217,11 @@ by generic locality and convexity is invalid.
 | `A_disc,c_disc` definitions | discrete witness diagnostics only; not continuum `I_2,c_2` |
 | positive Borel measure and kernel regularity | explicit hypotheses of the support lemma |
 | endpoint background/profile dependence | exposed explicitly by the path identity (9) |
+| “canonical operator” in the claim boundary and steelman | non-load-bearing live counter-route; the note expressly does not rule it out |
 
-Searches for “we assume,” “by construction,” “standard QFT,” “naturally,” and
-“obviously” produce no hidden premise in the proof.
+Searches for “we assume,” “by construction,” “standard QFT,” “naturally,”
+“obviously,” “background,” “registered,” and “canonical” produce no
+unclassified hidden premise in the proof.
 
 ### N4 — Residual matching
 
@@ -255,12 +260,15 @@ from the generic route. The full construction remains the next hard target.
 
 ### N8 — Cross-cycle echo
 
-Repo searches find several source/action and selector underdetermination lanes.
-Some were narrowed by exact operator theorems; others were reclassified as
-vacuous normalization conventions. Both mechanisms were considered here. A
-normalization convention cannot select the profile or finite response kernel,
-while an exact operator theorem is explicitly left live. No previously used
-retirement mechanism is foreclosed.
+| Prior wall | Current disposition | Retirement mechanism seen there | Applicability here |
+|---|---|---|---|
+| `YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md` | source-unit counterfamily remains a current derivation obligation | exact physical source/action theorem or direct response row | directly analogous; the microscopic operator/source map is left live |
+| `ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md` | explicit kernel-family underdetermination boundary remains | derive the physical kernel from additional operator content | directly analogous to the open finite-response kernel route |
+| `PMNS_ORIENTED_CYCLE_REDUCED_CHANNEL_NONSELECTION_NOTE.md` | reduced-family nonselection is narrow rather than global | add a selector outside the reduced family | same discipline: this note prunes only its stated generic family |
+| `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` as recorded in `premise_decision_history.json` | the former bare-coupling value wall was retired as a vacuous normalization convention | recognize rescaling-equivalent descriptions | not applicable: changing a bridge profile or response kernel changes the endpoint functional, not only its name |
+
+Thus every observed retirement mechanism is either explicitly preserved as a
+live next route or shown inapplicable for a stated reason.
 
 **No-Go Discipline disposition:** `PASS` for the narrow generic-selector
 route. It would be `FAIL` for a claim that the full framework cannot derive a

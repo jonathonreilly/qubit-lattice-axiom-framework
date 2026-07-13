@@ -62,7 +62,7 @@ The companion also records the exact moment algebra behind an affine linear
 response. It does not identify the auxiliary chain with the physical YT
 bridge and does not turn this numerical row into a clean physical derivation.
 
-This separation is important for the citation graph. Existing consumers cite
+This separation is important for claim identity. Existing consumers cite
 this claim ID for the historical physical `I_2` scan. The new exact no-go has a
 distinct claim ID so an eventual clean negative verdict cannot masquerade as
 the old physical invariant authority.

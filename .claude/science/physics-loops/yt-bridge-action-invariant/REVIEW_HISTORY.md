@@ -48,6 +48,25 @@ stationarity for both minimizers, exhaustively enumerated a `13 x 13` rational
 neighborhood around each, and recomputed the affine moment identity on two
 unrelated rational profiles. All checks passed.
 
-## Iteration 2
+## Iteration 2 — focused re-review
 
-Re-review pending.
+Disposition: `pass` after four narrow fixes:
+
+- strengthened the nonlinear path identity to continuous Fréchet
+  differentiability along the segment;
+- normalized the approved-primitive N1 marker to `RULED OUT BY PRIOR`;
+- replaced the generic N8 prose with named prior walls, dispositions,
+  retirement mechanisms, and applicability; and
+- narrowed the runner docstring to the auxiliary-chain `A_disc,c_disc` scope.
+
+Final reviewer summary:
+
+- Code / Runner: `PASS`
+- Physics Claim Boundary: `PASS` for exact route pruning; physical YT target
+  remains `OPEN`
+- Imports / Support: `CLEAN` for the no-go claim
+- Nature Retention: exact negative support only; no positive closure claim
+- No-Go Discipline: `PASS` for the narrow generic-selector route
+- Labeling Convention: `PASS`
+- Repo Governance / Audit Compatibility: `PASS` after generated validation
+  surfaces are removed from the branch

@@ -8879,6 +8879,20 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
             m.awaiting_repair_since_conditional(legacy_with_dep, effective)
         )
 
+        invalidated = {
+            **base,
+            "previous_audits": [{
+                **base["previous_audits"][0],
+                "invalidation_reason": "no_go_discipline_packet_invalid:deadbeef",
+            }],
+        }
+        with mock.patch.object(
+            m, "last_source_change", return_value="2026-07-12T05:59:59-04:00"
+        ):
+            self.assertFalse(
+                m.awaiting_repair_since_conditional(invalidated, effective)
+            )
+
         # A dependency may be repaired and re-ratified to the same effective
         # status.  Scope/source movement in that authority is still a repair.
         same_status_scope_repair = {

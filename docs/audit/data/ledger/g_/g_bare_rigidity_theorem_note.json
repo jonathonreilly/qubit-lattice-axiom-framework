@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -478,6 +478,70 @@
         "total_pass": 48
       },
       "verdict_rationale": "The runner and helper do not hard-code a physical coupling target; they check canonical generator embedding, trace Gram normalization, scalar-dilation failure, and finite-link logarithm reconstruction inside `SU(3)`. The source's strongest permissible conclusion is bounded and coordinate-level: `g_bare = 1` denotes the canonical finite-link generator normalization after the trace form is fixed. It does not claim a dynamical fixed point, a continuum gauge coupling, Wilson/beta normalization, a branch-global logarithm, or phenomenological coupling values. Residual risk is only scope drift in future wording, not failure of the bounded finite-link algebra presented here."
+    },
+    {
+      "archived_at": "2026-07-15T17:23:20.325902+00:00",
+      "audit_date": "2026-07-15T17:23:10.629986+00:00",
+      "audit_invocation_history": [
+        "f129aedede594dbd8ec1919bd9ff9019"
+      ],
+      "audit_invocation_id": "f129aedede594dbd8ec1919bd9ff9019",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 18.702,
+        "runner_hash": "db2d18436d13b2cce202c7b80aab4e72ae8d8a2ff6e6fb3ca42c3f4e8d1cd0e2",
+        "transitive_descendants": 1177
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-g_bare_rigidity_theorem_-019",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-link logarithm and fixed-trace-form rigidity close algebraically. Identifying that coordinate redundancy with g_bare = 1 is a notation-level renaming and does not establish the absence of a separate action- or Hamiltonian-level coupling.",
+      "claim_scope": "Bounded finite-link coordinate-rigidity: given the retained SU(3) compact subalgebra in End(V), the fixed Hilbert trace form, and a finite SU(3) link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological g value is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T17:23:10.629986+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Because the canonically normalized generator basis has no scalar-dilation freedom, the finite-link expression has no independent multiplicative bare coupling, which standard notation rewrites as g_bare = 1.",
+      "load_bearing_step_class": "F",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: Recast g_bare = 1 explicitly as a finite-link coordinate definition while retaining trace-form rigidity as the theorem; re-audit only if an independent Hamiltonian/action-normalization result is added.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 48,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 48
+      },
+      "verdict_rationale": "Issue: the exact trace-form and logarithm calculations are followed by a symbol identification equating generator-coordinate rigidity with g_bare = 1. Why this blocks: runner section 5 verifies only A_op' = g A_op, which changes the operator and link unless coefficients are redefined, so it establishes coordinate reparameterization rather than removal of a physical coupling. Repair target: present g_bare = 1 explicitly as the chosen finite-link coordinate convention, or add an independent theorem controlling the Hamiltonian/action normalization. Claim boundary until fixed: the derived negative boundary excludes scalar dilation within the fixed canonical trace form, but nothing broader."
     }
   ],
   "prose_corrections": [],

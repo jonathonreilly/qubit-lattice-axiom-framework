@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -368,6 +368,60 @@
         "total_pass": 22
       },
       "verdict_rationale": "The retained claim is a bounded algebraic interface identity, not a sole-axiom derivation of the source/transfer pack. The runner and included helper sources implement the two paths and verify the Schur-versus-response-column bridge without external comparators or fitted numerical targets. The supplied fixtures, tau classifier, and probe conventions remain hypotheses of the bounded theorem; the no-go-style boundary about deriving the pack from Cl(3) on Z^3 is out of scope and is not certified here as a clean negative theorem."
+    },
+    {
+      "archived_at": "2026-07-15T22:11:31.128236+00:00",
+      "audit_date": "2026-07-15T22:11:16.825428+00:00",
+      "audit_invocation_history": [
+        "67a0fa8f587b45d1b497998b221730eb"
+      ],
+      "audit_invocation_id": "67a0fa8f587b45d1b497998b221730eb",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.057,
+        "runner_hash": "34232b6e543efe5ae326194488051136a82963c94f0aa8d0ab238ffd6b793245",
+        "transitive_descendants": 752
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-pmns_hw1_source_transfer-072",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The build/invert identity closes wherever the stated inverses exist, and equality of the downstream outputs follows because both lanes then call the same closure on equal retained matrices. This closure remains conditional on the supplied sector fixtures, response conventions, probe weights, and tau classification.",
+      "claim_scope": "On the supplied fixture sector operators and admitted probe/tau conventions, response-column inversion reproduces the direct Schur effective blocks and hence the same retained pair and shared downstream outputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T22:11:16.825428+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Stacking the response columns gives K = (I - lam * delta)^(-1), so delta = (I - K^(-1)) / lam algebraically recovers the same effective block obtained directly by Schur complement.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "dependency_not_retained: derive and retain the sector operators, response packs, tau classifier, and probe conventions from the accepted framework premises before re-auditing any unconditional source-law or PMNS-closure promotion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "Part 4 verifies a genuine class-(A) algebraic identity, but Lane A's columns are themselves generated from the same Schur effective blocks used by Lane B, so the result is a conditional inversion check rather than a framework-first source law. All 22 passes operate on author-supplied fixtures, and the downstream comparisons reuse the same Hermitian closure. The negative boundary is evidenced only for transfer summaries by a two-block counterexample; N1-N8 do not close a broader no-go because alternative mechanisms, wall independence, five-resolution testing, the steelman, and indexed cross-cycle candidates are not exhaustively resolved."
     }
   ],
   "prose_corrections": [],

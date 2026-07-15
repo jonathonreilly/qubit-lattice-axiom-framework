@@ -1,0 +1,25 @@
+loop_slug: staggered-17card-packet-closure-20260715
+mode: run
+goal: include the canonical staggered 17-card source in the restricted audit packet
+target_status: best-honest-status
+runtime_budget: 15m
+runtime_used: approximately_18m_wall_time_including_two_full_pipeline_validations
+cycle_count: 1
+science_block: runner-packet-closure
+branch: claude/science-fix/staggered_fermion_card_2026-04-11-d4711609
+lock_mode: dedicated_worktree_repo_lock_unavailable
+active_route: static_subprocess_dependency_discovery
+hard_residual: scripts/frontier_staggered_17card.py is launched by subprocess and was omitted from helper_runner_paths
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/audit/scripts/build_citation_graph.py
+  - scripts/audit_packet_script_deps.py
+  - docs/audit/scripts/tests/test_audit_pipeline.py
+  - scripts/frontier_staggered_17card_finite_scope_repair.py
+open_imports: []
+review_disposition: pass
+pr_status: pending
+next_exact_action: submit the review-clean source repair for independent fresh-context re-audit
+stop_condition: met_source_repair_review_clean_and_queue_visibility_validated

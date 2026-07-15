@@ -116,6 +116,8 @@ def path_parts_from_ast(node: ast.AST, names: dict[str, str]) -> list[str]:
             func_name = node.func.id
         elif isinstance(node.func, ast.Attribute):
             func_name = node.func.attr
+        if func_name == "str" and node.args:
+            return path_parts_from_ast(node.args[0], names)
         if func_name in {"Path", "with_name", "joinpath"}:
             parts: list[str] = []
             for arg in node.args:
@@ -126,6 +128,17 @@ def path_parts_from_ast(node: ast.AST, names: dict[str, str]) -> list[str]:
 
 def script_stem_from_ast(node: ast.AST, names: dict[str, str]) -> str | None:
     return script_stem_from_path_parts(path_parts_from_ast(node, names))
+
+
+def script_stems_from_command_ast(node: ast.AST, names: dict[str, str]) -> set[str]:
+    """Return checked-in script targets named in a static command vector."""
+    candidates = node.elts if isinstance(node, (ast.List, ast.Tuple)) else [node]
+    stems: set[str] = set()
+    for candidate in candidates:
+        stem = script_stem_from_ast(candidate, names)
+        if stem:
+            stems.add(stem)
+    return stems
 
 
 def dynamic_loader_param_indexes(tree: ast.AST) -> dict[str, set[int]]:
@@ -163,6 +176,7 @@ def parse_script_imports(script_path: Path) -> set[str]:
       load_frontier("module_name", "X.py") dynamic loader calls
       importlib.util.spec_from_file_location("module_name", ROOT / "scripts" / "X.py")
       local loader wrappers that forward a path parameter into spec_from_file_location
+      subprocess.run([sys.executable, str(ROOT / "scripts" / "X.py")])
 
     Returns a set of script basenames (without .py) that exist in scripts/.
     Third-party libraries are excluded by the final scripts/<name>.py
@@ -216,6 +230,17 @@ def parse_script_imports(script_path: Path) -> set[str]:
                 func_name = node.func.id
             elif isinstance(node.func, ast.Attribute):
                 func_name = node.func.attr
+            if func_name in {"run", "Popen", "call", "check_call", "check_output"}:
+                command_nodes: list[ast.AST] = []
+                if node.args:
+                    command_nodes.append(node.args[0])
+                command_nodes.extend(
+                    keyword.value for keyword in node.keywords if keyword.arg == "args"
+                )
+                for command_node in command_nodes:
+                    helpers.update(
+                        script_stems_from_command_ast(command_node, script_path_names)
+                    )
             indexes: set[int] = set()
             keyword_names: set[str] = set()
             if func_name in {"spec_from_file_location", "SourceFileLoader", "load_frontier"}:

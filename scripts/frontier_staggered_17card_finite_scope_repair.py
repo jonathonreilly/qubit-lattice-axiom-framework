@@ -117,7 +117,18 @@ def check_finite_scores(output: str) -> None:
 
 def check_scope_negative_controls(output: str) -> None:
     section("Scope negative controls")
-    check("canonical runner uses prescribed external potential builder", "build_V_1d" in CANONICAL_RUNNER.read_text())
+    canonical_source = CANONICAL_RUNNER.read_text() if CANONICAL_RUNNER.is_file() else ""
+    load_bearing_markers = (
+        "def staggered_H(",
+        "def staggered_H_3d(",
+        "def evolve_cn(",
+        "def run_card(",
+        "for n3 in [9, 11, 13]",
+    )
+    check(
+        "canonical source exposes the load-bearing finite-card implementation",
+        all(marker in canonical_source for marker in load_bearing_markers),
+    )
     check("wrapper does not claim screened-Poisson derivation", "screened-Poisson bridge is derived" not in NOTE_PATH.read_text())
     check("canonical output is treated as finite runner output", "SCORE:" in output)
 

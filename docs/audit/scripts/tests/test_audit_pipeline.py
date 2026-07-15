@@ -2569,6 +2569,49 @@ class BuildCitationGraphParserTest(unittest.TestCase):
             m.REPO_ROOT = original
         self.assertEqual(helpers, {"keyword_helper"})
 
+    def test_static_subprocess_script_target_is_detected(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("canonical_runner", "VALUE = 4\n")
+            primary = self._write(
+                "primary",
+                "import subprocess\n"
+                "import sys\n"
+                "from pathlib import Path\n"
+                "ROOT = Path(__file__).resolve().parents[1]\n"
+                "CANONICAL = ROOT / 'scripts' / 'canonical_runner.py'\n"
+                "subprocess.run([sys.executable, str(CANONICAL)], check=False)\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"canonical_runner"})
+
+    def test_packet_dep_resolver_detects_static_subprocess_target(self):
+        m = _import_repo_script("audit_packet_script_deps.py")
+        original_root = m.REPO_ROOT
+        original_scripts = m.SCRIPTS_DIR
+        m.REPO_ROOT = self.tmp_root
+        m.SCRIPTS_DIR = self.scripts_dir
+        try:
+            self._write("canonical_runner", "VALUE = 5\n")
+            primary = self._write(
+                "primary",
+                "import subprocess\n"
+                "import sys\n"
+                "from pathlib import Path\n"
+                "ROOT = Path(__file__).resolve().parents[1]\n"
+                "CANONICAL = ROOT / 'scripts' / 'canonical_runner.py'\n"
+                "subprocess.run([sys.executable, str(CANONICAL)], check=False)\n",
+            )
+            helpers = m.parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original_root
+            m.SCRIPTS_DIR = original_scripts
+        self.assertEqual(helpers, {"canonical_runner"})
+
 
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):

@@ -88,6 +88,8 @@ def forward_reachability(
 
 def tested_source_sets(vertex_count: int) -> tuple[frozenset[Vertex], ...]:
     """Singleton coverage plus deterministic empty and multi-source cases."""
+    if vertex_count == 0:
+        return (frozenset(),)
     candidates = [frozenset()]
     candidates.extend(frozenset({source}) for source in range(vertex_count))
     candidates.extend(
@@ -168,12 +170,32 @@ def truth_table_output(table_mask: int, inputs: tuple[bool, ...]) -> bool:
     return bool(table_mask & (1 << input_index))
 
 
-def check_realized_difference_lemma(max_predecessors: int = 3) -> int:
-    """Exhaustively check the realized one-step lemma for Boolean local maps."""
+def check_realized_difference_lemma(
+    max_predecessors: int = 3,
+) -> tuple[int, int, tuple[int, ...]]:
+    """Check the one-step lemma and complete Boolean-function coverage."""
     cases = 0
+    output_difference_cases = 0
+    distinct_signature_counts = []
     for predecessor_count in range(max_predecessors + 1):
         input_tuples = tuple(product((False, True), repeat=predecessor_count))
+        signatures = set()
         for table_mask in range(1 << len(input_tuples)):
+            signature = tuple(
+                truth_table_output(table_mask, inputs) for inputs in input_tuples
+            )
+            reconstructed_mask = sum(
+                int(output)
+                << sum(int(bit) << index for index, bit in enumerate(inputs))
+                for inputs, output in zip(input_tuples, signature)
+            )
+            require(
+                reconstructed_mask == table_mask,
+                predecessor_count,
+                table_mask,
+                signature,
+            )
+            signatures.add(signature)
             for left_inputs in input_tuples:
                 for right_inputs in input_tuples:
                     left_output = truth_table_output(table_mask, left_inputs)
@@ -192,8 +214,90 @@ def check_realized_difference_lemma(max_predecessors: int = 3) -> int:
                         left_inputs,
                         right_inputs,
                     )
+                    output_difference_cases += int(left_output != right_output)
                     cases += 1
-    return cases
+        expected_signature_count = 1 << len(input_tuples)
+        require(
+            len(signatures) == expected_signature_count,
+            predecessor_count,
+            len(signatures),
+            expected_signature_count,
+        )
+        distinct_signature_counts.append(len(signatures))
+    return cases, output_difference_cases, tuple(distinct_signature_counts)
+
+
+def boolean_update(
+    state: tuple[bool, ...],
+    ordered_predecessors: tuple[tuple[Vertex, ...], ...],
+    table_masks: tuple[int, ...],
+) -> tuple[bool, ...]:
+    return tuple(
+        truth_table_output(
+            table_mask,
+            tuple(state[u] for u in predecessor_vertices),
+        )
+        for predecessor_vertices, table_mask in zip(
+            ordered_predecessors, table_masks
+        )
+    )
+
+
+def check_realized_history_bound(horizon: int = 3) -> tuple[int, int]:
+    """Exhaustively instantiate two small multi-tick Boolean update systems."""
+    graph_edges = (
+        ((0, 1),),
+        ((0, 0), (0, 1), (1, 1)),
+    )
+    configurations = tuple(product((False, True), repeat=2))
+    checks = 0
+    for edges in graph_edges:
+        pred = predecessors(2, edges)
+        succ = successors(2, edges)
+        ordered_pred = tuple(tuple(sorted(vertices)) for vertices in pred)
+        table_mask_ranges = tuple(
+            range(1 << (1 << len(vertices))) for vertices in ordered_pred
+        )
+        for table_masks in product(*table_mask_ranges):
+            for left_initial in configurations:
+                for right_initial in configurations:
+                    sources = frozenset(
+                        vertex
+                        for vertex, (left, right) in enumerate(
+                            zip(left_initial, right_initial)
+                        )
+                        if left != right
+                    )
+                    reachable = forward_reachability(succ, sources, horizon)
+                    left_state = left_initial
+                    right_state = right_initial
+                    for tick in range(horizon + 1):
+                        realized_differences = {
+                            vertex
+                            for vertex, (left, right) in enumerate(
+                                zip(left_state, right_state)
+                            )
+                            if left != right
+                        }
+                        require(
+                            realized_differences <= reachable[tick],
+                            edges,
+                            table_masks,
+                            left_initial,
+                            right_initial,
+                            tick,
+                            sorted(realized_differences),
+                            sorted(reachable[tick]),
+                        )
+                        checks += 1
+                        if tick < horizon:
+                            left_state = boolean_update(
+                                left_state, ordered_pred, table_masks
+                            )
+                            right_state = boolean_update(
+                                right_state, ordered_pred, table_masks
+                            )
+    return len(graph_edges), checks
 
 
 def line_case(length: int, horizon: int) -> GraphCase:
@@ -257,14 +361,25 @@ def main() -> None:
     )
 
     total_checks = 0
-    realized_cases = check_realized_difference_lemma()
+    (
+        realized_cases,
+        output_difference_cases,
+        signature_counts,
+    ) = check_realized_difference_lemma()
+    history_graphs, history_checks = check_realized_history_bound()
     print("NN topological causal-bound certificate")
     print("claim: finite graph/DAG forward reachability for source sets")
     print()
 
     print(
         "PASS realized_difference_one_step: max_predecessors=3 "
-        f"boolean_cases={realized_cases}"
+        f"boolean_cases={realized_cases} "
+        f"output_difference_cases={output_difference_cases} "
+        f"signatures={','.join(map(str, signature_counts))}"
+    )
+    print(
+        "PASS realized_history_multitick: "
+        f"graphs={history_graphs} horizon=3 assertions={history_checks}"
     )
 
     for case in cases:
@@ -281,7 +396,8 @@ def main() -> None:
     print()
     print(
         f"TOTAL PASS: {len(cases)} graph families, {total_checks} support "
-        f"assertions, {realized_cases} realized-difference cases"
+        f"assertions, {realized_cases} realized-difference cases, "
+        f"{history_checks} realized-history assertions"
     )
     print("NON-CLAIMS:")
     print("  - no emergent relativity check")

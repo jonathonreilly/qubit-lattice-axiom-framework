@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1418,6 +1418,60 @@
         "total_pass": 0
       },
       "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-15T22:27:33.161814+00:00",
+      "audit_date": "2026-07-15T22:27:23.634604+00:00",
+      "audit_invocation_history": [
+        "39d8f5fb812c481ab108e4548621f39d"
+      ],
+      "audit_invocation_id": "39d8f5fb812c481ab108e4548621f39d",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.049,
+        "runner_hash": null,
+        "transitive_descendants": 748
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-gravity_full_self_consis-075",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conditional implication follows by two-sided inversion. Deriving `L^{-1} = G_0` from the framework premises remains outside the audited claim.",
+      "claim_scope": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated two-sided inverse identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat` and hence inherits the stated NN, TI, and SA properties.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T22:27:23.634604+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "By class-A inversion of A2: `L = G_0^{-1} = H = -Delta_lat`.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained bridge theorem deriving the two-sided identity `L^{-1} = G_0` from accepted framework premises, with independently inspectable evidence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The algebra is valid provided the stipulated two-sided inverse identity A2 holds, but the restricted packet supplies no retained derivation of A2 from the accepted framework premises. No runner stdout or source is available, although the elementary inversion can be judged independently and the note correctly limits its conclusion to the stipulated hypothesis. N1: only the algebraic inversion route is established; N2: the sole material limitation is the independent status of A2; N3: the premise and axiom qualifications are explicit rather than hidden; N4: no prior-rule witness is supplied; N5: the non-NN exclusion is explicitly conditional and lacks live multiresolution evidence; N6: none of the supplied premise or index candidates derives A2; N7: the strongest steelman proves exactly the conditional inversion and nothing stronger; N8: the cross-cycle index supplies no restricted-packet derivation of A2, and this verdict retires no broader route."
     }
   ],
   "prose_corrections": [],

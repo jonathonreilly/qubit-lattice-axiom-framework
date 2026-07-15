@@ -18,7 +18,7 @@
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1309,6 +1309,60 @@
         "total_pass": 7
       },
       "verdict_rationale": "Issue: the witnesses satisfy only the finite jet and monotonicity boundary, while the note promotes them to countermodels for a stack that also includes a connected hierarchy and compact spectral measure. Why this blocks: arbitrary analytic increasing functions need not be realizable reduction laws for that stronger stack. Repair target: construct two hierarchy- and spectral-compatible Wilson-surface models with different beta_eff(6), or narrow every full-stack conclusion to finite-jet-plus-monotonicity underdetermination. Claim boundary until fixed: the explicit functions are a valid algebraic counterexample only to determination by the listed finite regularity data."
+    },
+    {
+      "archived_at": "2026-07-15T20:32:09.404661+00:00",
+      "audit_date": "2026-07-15T20:31:59.979111+00:00",
+      "audit_invocation_history": [
+        "b44ad281ea4e41dda597e30fb793a5b2"
+      ],
+      "audit_invocation_id": "b44ad281ea4e41dda597e30fb793a5b2",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.629,
+        "runner_hash": "80bcb543583d1df6f747db1328fa9c7e72fa2886517318b4ec6020db146b2a41",
+        "transitive_descendants": 791
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-gauge_vacuum_plaquette_f-051",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The witnesses establish underdetermination from the finite jet, analyticity, and monotonicity alone. They are not shown to satisfy the claimed connected-hierarchy or compact spectral-measure constraints, so they do not establish underdetermination for the full current stack.",
+      "claim_scope": "Whether the current exact plaquette stack, including the connected hierarchy and compact spectral-measure constraints, fails to determine beta_eff(6) and analytic P(6).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-15T20:31:59.979111+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Distinct real-analytic strictly increasing witness laws sharing the onset jet through order beta^5 yield different values at beta=6 and therefore different one-plaquette values.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Narrow the source conclusion from the full current exact stack to the order-beta^5 jet plus analyticity and monotonicity, or construct distinct witnesses satisfying the connected-hierarchy and spectral-measure constraints.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The polynomial witnesses correctly prove the narrower finite-jet-plus-monotonicity result. They are not demonstrated to arise from admissible connected hierarchies or compact spectral measures, so they are not countermodels to the broader current-stack claim. The N1-N8 negative-claim stress test consequently fails at N1, N4, and N7: imposing those additional constraints remains an untested attack route, while the other checks do not supply or retire the missing compatibility step."
     }
   ],
   "prose_corrections": [],

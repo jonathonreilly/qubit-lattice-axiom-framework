@@ -1301,7 +1301,7 @@
         },
         {
           "claim_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "hypercharge_gut_normalization_three_fifths_accepted_premise_bridge_bounded_note_2026-07-10",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "ba4c6dd4658bd8ba514559b2c7f8e6b24215a5a4",
+  "repo_head": "ec7e5ac256032a21f1044253923d650bf49e752e",
   "schema": "lane_certification_v2"
 }

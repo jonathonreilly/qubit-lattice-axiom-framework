@@ -957,7 +957,7 @@
         },
         {
           "claim_id": "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "ew_coupling_derivation_note",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "31ccb31629832a5f26acc03009bf6a88ab79c721",
+  "repo_head": "deab4afa10ac972f6e9bda85ca1daa26735d59d0",
   "schema": "lane_certification_v2"
 }

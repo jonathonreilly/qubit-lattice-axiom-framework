@@ -18,7 +18,7 @@
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "default_positive_theorem",
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1358,6 +1358,59 @@
         "total_pass": 6
       },
       "verdict_rationale": "Issue: the computed C^8 matrix identities close, but they do not construct the physical neutrino Dirac-Yukawa carrier or operator map. Why this blocks: the claim that this is the physically relevant second-order cascade surface depends on three explicit bridge steps absent from the restricted packet. Repair target: supply a C^16 chiral/right-handed embedding theorem, the physical Dirac-Yukawa operator chain, and its base normalization, or split the exact matrix theorem from the physical interpretation. Claim boundary until fixed: the six projected-matrix identities are exact for the selected representation, while their neutrino-physics significance remains conditional."
+    },
+    {
+      "archived_at": "2026-07-15T19:57:49.769206+00:00",
+      "audit_date": "2026-07-15T19:57:40.697250+00:00",
+      "audit_invocation_history": [
+        "14aacb8c0de84149a2935617d3c0a00c"
+      ],
+      "audit_invocation_id": "14aacb8c0de84149a2935617d3c0a00c",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.692,
+        "runner_hash": "be4f4c20588f9583f82986780ea592fb27197cfcafc1bf9c5ddae71dfffcf4f9",
+        "transitive_descendants": 826
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-dm_neutrino_cascade_geom-046",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The six fixed-basis matrix identities close algebraically. The identification of the locally stipulated Gamma_1 with the physical weak-axis neutrino-Yukawa insertion, and therefore the physical cascade interpretation, does not follow from the supplied premises.",
+      "claim_scope": "Exact C^8 projected-matrix identities for the stipulated Gamma_1 and O_0/T_1/T_2 bases, plus only a conditional second-order neutrino-cascade motivation.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-15T19:57:40.697250+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "At second order, the return operator on T_1 decomposes exactly as diag(1,0,0) through O_0 plus diag(0,1,1) through T_2, totaling I_3.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite the C^8-to-C^16 chiral/Yukawa embedding, physical operator chain, and normalization; when available, add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the row for audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the runner exactly verifies the C^8 projections for locally stipulated Gamma_1 and bases, but no restricted-packet theorem identifies this operator with the physical neutrino-Yukawa insertion. Why this blocks: the algebraic 1+2 split is clean while the physical cascade interpretation remains conditional on C^16 chirality, operator matching, and normalization. Repair target: derive the full chiral embedding, physical Dirac operator chain, and neutrino-sector normalization from accepted premises or retained authorities. Claim boundary until fixed: only the stipulated fixed-basis C^8 identity and heuristic search motivation are supported; the one-hop zero is a derived local boundary, not a global no-go."
     }
   ],
   "prose_corrections": [],

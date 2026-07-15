@@ -1,91 +1,97 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py
-runner_sha256: bf0585341bf7be0499155e2a54d47d66ec21d98b196254f68ad53a7e421d333d
+runner_sha256: 2efae010f45503a431cdd800ff13e553ff92f38f860639d6b6e976527a8da45a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 
 ========================================================================================
 A. Finite Wilson-Dirac support model
 ========================================================================================
-[PASS] A.1 L=3 Wilson-Dirac operator is Hermitian and Z3-equivariant
-       ||D-D†||=0.00e+00; ||UDU†-D||=5.06e-15
-[PASS] A.2 body-diagonal action has three retained fixed sites
+[PASS] A.1 finite D,U matrices have the stated Hermiticity and lifted-rotation relations
+       ||D-D†||=0.00e+00; ||UU†-I||=0.00e+00; ||UDU†-D||=5.06e-15; ||U^3+I||=2.45e-15
+[PASS] A.2 body-diagonal action has three fixed sites
        fixed_sites=[(0, 0, 0), (1, 1, 1), (2, 2, 2)]
-[PASS] A.3 finite Wilson eta proxy is not the exact APS value 2/9
-       |eta|/fixed_site=0.069214821267; exact APS comparator=0.222222222222
+[PASS] A.3 exact k=0 spin lift has a rank-two zeta eigenprojector
+       D(k=0)=0 for every r; rank(P_zeta)=2 and U_spin P_zeta=zeta P_zeta exactly.
+[PASS] A.4 exact L=3 momentum blocks exclude nonconstant zero modes at r=1
+       m=1: W=3/2, |s|^2=3/4, W^2-|s|^2=3/2>0
+       m=2: W=3, |s|^2=3/2, W^2-|s|^2=15/2>0
+       m=3: W=9/2, |s|^2=9/4, W^2-|s|^2=18>0
 
 ========================================================================================
-B. Zero-mode character sector is not a selected line
+B. D,U-generated algebra on the common zero-mode eigenspace
 ========================================================================================
 [PASS] B.1 Wilson zero-mode space has dimension four
        zero eigenvalues=4
-[PASS] B.2 each spin-lift Z3 character in the zero-mode space has multiplicity two
+[PASS] B.2 each spin-lift eigenvalue over the body-diagonal rotation has multiplicity two in the zero-mode space
        counts: exp(+i*pi/3)=2, exp(-i*pi/3)=2
-[PASS] B.3 a CP1 family of rank-one lines has the same Wilson zero-mode and character data
-       alpha=0.000000: ||D psi||=1.96e-15, ||U psi-zeta psi||=1.77e-15, selected_weight=1.000000
-       alpha=0.523599: ||D psi||=2.20e-15, ||U psi-zeta psi||=2.92e-15, selected_weight=0.750000
-       alpha=0.785398: ||D psi||=2.36e-15, ||U psi-zeta psi||=3.52e-15, selected_weight=0.500000
-       alpha=1.047198: ||D psi||=2.58e-15, ||U psi-zeta psi||=3.94e-15, selected_weight=0.250000
-       alpha=1.570796: ||D psi||=2.65e-15, ||U psi-zeta psi||=4.13e-15, selected_weight=0.000000
-[PASS] B.4 Wilson data select a rank-two character projector, not a canonical rank-one eigenline
-       A selected line inside the rank-two character sector is extra boundary/readout data.
+[PASS] B.3 a sampled CP1 slice has the same D zero-mode and U eigenvalue data
+       alpha=0.000000: ||D psi||=2.54e-15, ||U psi-zeta psi||=2.02e-15, selected_weight=1.000000
+       alpha=0.523599: ||D psi||=2.53e-15, ||U psi-zeta psi||=1.98e-15, selected_weight=0.750000
+       alpha=0.785398: ||D psi||=2.54e-15, ||U psi-zeta psi||=1.96e-15, selected_weight=0.500000
+       alpha=1.047198: ||D psi||=2.54e-15, ||U psi-zeta psi||=1.94e-15, selected_weight=0.250000
+       alpha=1.570796: ||D psi||=2.49e-15, ||U psi-zeta psi||=1.98e-15, selected_weight=0.000000
+[PASS] B.4 the D,U-generated joint algebra is scalar on the rank-two zeta eigenspace
+       ||D|M_zeta||=8.94e-17; ||U|M_zeta-zeta I2||=1.02e-15
 
 ========================================================================================
-C. Selected/spectator and endpoint-lift residual
+C. Basis-independence obstruction
 ========================================================================================
-[PASS] C.1 rank-two eigenline freedom gives the same selected/spectator residual
-       delta/eta_APS - 1 = 9*c/2 - sin(alpha)**2
-[PASS] C.2 closure requires choosing alpha=0 and endpoint offset c=0
-       alpha=0 selects line_0; alpha=pi/2 selects the equally retained orthogonal line.
-[PASS] C.3 eigenvector endpoint lift still carries an exact open-path offset
-       Multiplying a Wilson eigenline lift by exp(i*s*t) leaves projectors unchanged and shifts the open endpoint by s.
+[PASS] C.1 a nontrivial U(2) automorphism leaves the joint D,U data unchanged
+       beta=0.628318530718; ||D_rot||=4.82e-17; ||U_rot-zeta I2||=1.50e-15; ||[R,D]||=4.68e-15; ||[R,U]||=2.58e-15
+[PASS] C.2 distinct rank-one projectors have identical D and U eigen-data
+       ||P0-P1||=1.414213562373
+[PASS] C.3 no element of the D,U-generated joint algebra restricts to a rank-one selector
+       generator restrictions scalar=True; rank-one nonscalar norm=0.707106781187
 
 ========================================================================================
 D. Hostile-review objections
 ========================================================================================
-[PASS] D.1 finite Wilson data do not identify the selected Brannen line
-       Even if the ambient APS value is supplied externally, the selected endpoint requires a line inside a multiplicity-two character sector.
-[PASS] D.2 picking the line with selected_weight=1 is the missing theorem
-       The endpoints alpha=0 and alpha=pi/2 are both retained Wilson eigenlines with the same character.
+[PASS] D.1 eigensolver ordering cannot be used as a canonical selector
+       A nontrivial basis rotation changes the first reported line while preserving D|M_zeta and U|M_zeta.
+[PASS] D.2 Clifford volume element is a counter-route outside the D,U-generated algebra
+       ||[Gamma,D]||=0.00e+00; ||[Gamma,U]||=0.00e+00; eig(Gamma|M_zeta)=[-1.0, 1.0000000000000002]
 
 ========================================================================================
 E. Verdict
 ========================================================================================
-[PASS] E.1 lattice Wilson selected-eigenline route does not close delta
-       RESIDUAL_ENDPOINT=-theta0 + theta_end - 2/9
-[PASS] E.2 residual is rank-one selected-line choice plus endpoint lift
-       Need a retained theorem selecting a unique rank-one Wilson eigenline and fixing its endpoint lift.
+[PASS] E.1 the D,U-generated unital star algebra contains no rank-one selector on M_zeta
+       RESIDUAL_EIGENLINE=rank_two_zeta_zero_mode_sector_not_split_by_D_U_generated_algebra
+[PASS] E.2 the full Wilson/Clifford construction is explicitly outside the no-go
+       Native chirality splits M_zeta; ambient eta proxies and endpoint lifts are not claimed.
 
 ========================================================================================
 Summary
 ========================================================================================
-PASSED: 14/14
-  [PASS] A.1 L=3 Wilson-Dirac operator is Hermitian and Z3-equivariant
-  [PASS] A.2 body-diagonal action has three retained fixed sites
-  [PASS] A.3 finite Wilson eta proxy is not the exact APS value 2/9
+PASSED: 15/15
+  [PASS] A.1 finite D,U matrices have the stated Hermiticity and lifted-rotation relations
+  [PASS] A.2 body-diagonal action has three fixed sites
+  [PASS] A.3 exact k=0 spin lift has a rank-two zeta eigenprojector
+  [PASS] A.4 exact L=3 momentum blocks exclude nonconstant zero modes at r=1
   [PASS] B.1 Wilson zero-mode space has dimension four
-  [PASS] B.2 each spin-lift Z3 character in the zero-mode space has multiplicity two
-  [PASS] B.3 a CP1 family of rank-one lines has the same Wilson zero-mode and character data
-  [PASS] B.4 Wilson data select a rank-two character projector, not a canonical rank-one eigenline
-  [PASS] C.1 rank-two eigenline freedom gives the same selected/spectator residual
-  [PASS] C.2 closure requires choosing alpha=0 and endpoint offset c=0
-  [PASS] C.3 eigenvector endpoint lift still carries an exact open-path offset
-  [PASS] D.1 finite Wilson data do not identify the selected Brannen line
-  [PASS] D.2 picking the line with selected_weight=1 is the missing theorem
-  [PASS] E.1 lattice Wilson selected-eigenline route does not close delta
-  [PASS] E.2 residual is rank-one selected-line choice plus endpoint lift
+  [PASS] B.2 each spin-lift eigenvalue over the body-diagonal rotation has multiplicity two in the zero-mode space
+  [PASS] B.3 a sampled CP1 slice has the same D zero-mode and U eigenvalue data
+  [PASS] B.4 the D,U-generated joint algebra is scalar on the rank-two zeta eigenspace
+  [PASS] C.1 a nontrivial U(2) automorphism leaves the joint D,U data unchanged
+  [PASS] C.2 distinct rank-one projectors have identical D and U eigen-data
+  [PASS] C.3 no element of the D,U-generated joint algebra restricts to a rank-one selector
+  [PASS] D.1 eigensolver ordering cannot be used as a canonical selector
+  [PASS] D.2 Clifford volume element is a counter-route outside the D,U-generated algebra
+  [PASS] E.1 the D,U-generated unital star algebra contains no rank-one selector on M_zeta
+  [PASS] E.2 the full Wilson/Clifford construction is explicitly outside the no-go
 
-VERDICT: lattice Wilson selected-eigenline route does not close delta.
-KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO=TRUE
-DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_CLOSES_DELTA=FALSE
-RESIDUAL_ENDPOINT=theta_end-theta0-eta_APS
-RESIDUAL_EIGENLINE=rank_two_zero_mode_character_sector_not_canonically_split
-RESIDUAL_TRIVIALIZATION=wilson_eigenline_endpoint_lift_not_fixed
-RESIDUAL_AMBIENT=finite_Wilson_eta_proxy_not_exact_APS_value
-RESIDUAL_SCALAR=minus_spectator_channel_plus_c_over_eta_APS
+VERDICT: the D,U-generated unital star algebra contains no rank-one selector on M_zeta.
+KOIDE_DELTA_D_U_JOINT_ALGEBRA_RANK_ONE_SELECTOR_NO_GO=TRUE
+D_U_JOINT_ALGEBRA_CONTAINS_RANK_ONE_SELECTOR=FALSE
+D_U_JOINT_ALGEBRA_CLOSES_RANK_ONE_SELECTION=FALSE
+RESIDUAL_EIGENLINE=rank_two_zeta_zero_mode_sector_not_split_by_D_U_generated_algebra
+CLAIM_SCOPE=finite_periodic_L3_r1_unital_star_algebra_generated_by_D_and_U_only
+FULL_WILSON_CLIFFORD_SELECTOR_NO_GO_CLAIMED=FALSE
+AMBIENT_ETA_PROXY_USED=FALSE
+ENDPOINT_LIFT_CLAIMED=FALSE
 
 ----- stderr -----
 

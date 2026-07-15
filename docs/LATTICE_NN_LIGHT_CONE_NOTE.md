@@ -82,7 +82,7 @@ and the update is
 x_v(t + 1) = F_{v,t}((x_u(t))_{u in P_R(v)}).
 ```
 
-The indexed tuple retains predecessor labels; no argument outside `P_R(v)` is
+The indexed tuple retains predecessor labels; no arguments outside `P_R(v)` are
 available to the map. The two histories compared below use the same state
 spaces and map family. If an update uses external randomness, condition on the
 same random choice in both histories, so that the realized map `F_{v,t}` is

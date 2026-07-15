@@ -17,11 +17,11 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 253 |
+| critical | `unaudited` | 252 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 126 |
 | ? | `unresolved` | 5 |
-| critical | `audit_in_progress` | 2 |
+| critical | `audit_in_progress` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `audited_failed` | 2 |
 | high | `audited_conditional` | 2 |
@@ -193,7 +193,7 @@ publication tables phrase it.
 | critical | `planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `planck_source_unit_normalization_support_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `plaquette_self_consistency_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
+| critical | `plaquette_self_consistency_note` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `pmns_active_four_real_source_from_transport_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `pmns_c3_character_holonomy_closure_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `pmns_c3_character_mode_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

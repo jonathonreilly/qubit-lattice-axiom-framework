@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -565,6 +565,58 @@
         "total_pass": 6
       },
       "verdict_rationale": "Issue: Step 3b identifies the stable eigenvalue of the classical second-order recurrence monodromy with the one-particle coherent-state transfer kernel; the runner selects the minimum-modulus eigenvalue and verifies projector identities afterward. Why this blocks: finite-action selection of a classical solution does not itself establish the canonical fermionic Hilbert space, coherent-state kernel, or treatment of the reciprocal channel, so positivity of Gamma(K_2) is positivity of an assumed kernel. Repair target: derive the two-step coherent-state/Fock transfer operator directly from the staggered Grassmann action, including reciprocal-mode or particle-antiparticle handling, or cite a retained theorem whose hypotheses are checked. Claim boundary until fixed: the packet establishes the spectra of T_even, T_odd, and T_odd T_even and the algebraic positivity of Gamma(diag(e^{-2E})), but not that these are the physical one- and two-step transfer operators of the action."
+    },
+    {
+      "archived_at": "2026-07-15T20:29:26.372808+00:00",
+      "audit_date": "2026-07-15T20:29:16.840951+00:00",
+      "audit_invocation_history": [
+        "885cee243a3548158030fd0413e4ed1d"
+      ],
+      "audit_invocation_id": "885cee243a3548158030fd0413e4ed1d",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 22.137,
+        "runner_hash": "65ce9be50f8b1612614045773a1a7d861872ebd3b1c8d763844ec7e560890302",
+        "transitive_descendants": 795
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-axiom_first_rp_two_step_-050",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The recurrence calculation establishes positive reciprocal eigenvalues for T_odd T_even, but it does not derive that discarding the growing solution produces the coherent-state one-particle transfer kernel of the original Grassmann action. C3-C6 establish positivity only after that physical identification is imposed.",
+      "claim_scope": "Free U=1 1+1d staggered-only finite periodic L_s with real m>0: spectra of the action-derived recurrence matrices and the claimed identification of their decaying two-step channel with a positive Fock-space transfer operator.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T20:29:16.840951+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The positive-time coherent-state transfer is the stable half-line channel on P_-, so the one-particle kernel is K_2(p)=lambda_-(p)=e^{-2E(p)}.",
+      "load_bearing_step_class": "F",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the blocked coherent-state transfer operator directly from the staggered Grassmann action and prove that its complete one-particle kernel, Hilbert space, particle/hole content, and reflection map equal the selected decaying channel before rerunning C3-C6.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the runner computes the classical monodromy spectrum and then names its smaller-modulus eigenvalue the physical one-particle kernel; it never constructs the blocked coherent-state kernel by integrating the staggered Grassmann action or derives the required Hilbert-space and particle/hole reduction. Consequently, the six passing checks verify dispersion and algebraic consequences of the selected kernel, while the OS Gram is built from that same imposed positive diagonal operator and is not an independent bridge. For the bounded P1 negative assertion, the packet establishes properties only of the chosen companion matrices: N1/N7 leave alternative transfer carriers and phase-compensated constructions untested, N2-N4 provide no independent prior-witness closure, N5's finite mode/block checks do not repair the identification, and N6/N8 supply no accepted premise or applicable earlier result that does so. Repair target: derive the two-slice coherent-state transfer operator directly from the action, including its inner product, complete mode content, and reflection map; until then the safe result is the classical recurrence spectrum and conditional positivity of Gamma(lambda_-)."
     }
   ],
   "prose_corrections": [],

@@ -2425,7 +2425,7 @@
         },
         {
           "claim_id": "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "057afad21ee83c1e125afe4b1baa46ebbcb26c4d",
+  "repo_head": "5f3a384a3c986692d32b0a6004b76108d403459e",
   "schema": "lane_certification_v2"
 }

@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -110,6 +110,59 @@
         "total_pass": 15
       },
       "verdict_rationale": "The bounded declared-anchor algebra closes. The source and runner do not claim to derive the plaquette, kappa_EW=0, Ward Clebsch, RGE bridge, or observed top value, so those remain outside this retained-bounded scope."
+    },
+    {
+      "archived_at": "2026-07-15T18:59:34.959165+00:00",
+      "audit_date": "2026-07-15T18:59:19.886510+00:00",
+      "audit_invocation_history": [
+        "b1c58e0be2774fb4948a556a35afab79"
+      ],
+      "audit_invocation_id": "b1c58e0be2774fb4948a556a35afab79",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.283,
+        "runner_hash": "814a20b1826ad9b2945d1749a39ad924687885663d08976f882caf17a0327bec",
+        "transitive_descendants": 880
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-yt_declared_anchor_bound-032",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The stated identities follow algebraically from the declared inputs, and the runner computes all fifteen checks successfully. Closure is relative to those declarations and does not establish their physical derivation.",
+      "claim_scope": "Algebraic consequences of declared <P>=0.5934, N_c=3, kappa_EW=0, Ward Clebsch 1/sqrt(6), and alpha_bare=1/(4*pi), excluding derivation of those anchors, RGE evolution, and observed-value comparisons.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T18:59:19.886510+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting the declared definitions gives alpha_LM^2 = alpha_bare * alpha_s(v), K_EW(0) = 9/8, the taste weight 7/18, and y_t(M_Pl) = sqrt(4*pi*alpha_LM)/sqrt(6).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "dependency_not_retained: add direct retained-grade authorities deriving the plaquette, connected-trace specialization, and Ward-boundary normalization, then rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner correctly verifies the bounded algebra, with no first-principles framework computation or independent comparator. The plaquette value, kappa_EW specialization, Ward Clebsch, and normalization are declared inputs without cited retained-grade suppliers, so the physical chain remains conditional even though its internal algebra closes. The note honestly confines its conclusion and does not support the historical zero-import prediction. No-go discipline judgment: N1 and N7 route exclusion is inapplicable; N2 consists only of the named unde\u00adrived-input boundaries; N3 and N5 language states scope and non-claims; N4 has no prior witness; N6 supplies no closure of those inputs; and N8 echoes do not change the bounded result."
     }
   ],
   "prose_corrections": [],

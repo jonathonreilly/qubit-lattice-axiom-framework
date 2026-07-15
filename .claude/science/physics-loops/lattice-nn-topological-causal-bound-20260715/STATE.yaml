@@ -1,0 +1,20 @@
+loop_slug: lattice-nn-topological-causal-bound-20260715
+mode: run
+target: exact-support
+current_goal: harden the finite graph/DAG forward-reachability theorem for re-audit
+cycle_count: 1
+active_route: difference-set recurrence plus multi-source executable certificate
+hard_residual: null
+files_touched:
+  - docs/LATTICE_NN_LIGHT_CONE_NOTE.md
+  - scripts/lattice_nn_topological_causal_bound_check.py
+  - outputs/lattice_nn_topological_causal_bound_check_2026-07-15.txt
+open_imports: []
+no_go_routes:
+  - physical-spacetime interpretation from graph reachability alone
+trace_gate_classification: upstream_support
+review_disposition: block pending independent re-audit of changed retained-grade hashes
+pr_status: not opened; review-loop prohibits PR creation while audit compatibility is blocked
+lock_status: shared lock path unavailable; isolated dedicated worktree used
+next_exact_action: submit the changed note and runner hashes to the independent audit lane
+stop_condition: hardening delta has exact-support certification and a complete independent re-audit handoff

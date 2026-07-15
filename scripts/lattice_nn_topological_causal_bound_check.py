@@ -8,8 +8,8 @@ reachability, not a physical spacetime light cone or distance law.
 
 from __future__ import annotations
 
-from collections import defaultdict, deque
 from dataclasses import dataclass
+from itertools import product
 from typing import Iterable
 
 
@@ -24,6 +24,12 @@ class GraphCase:
     edges: tuple[Edge, ...]
     horizon: int
     include_self_edges: bool
+
+
+def require(condition: bool, *context: object) -> None:
+    """Raise on a failed certificate check even when Python uses -O."""
+    if not condition:
+        raise AssertionError(context)
 
 
 def dependency_edges(case: GraphCase) -> tuple[Edge, ...]:
@@ -65,11 +71,11 @@ def dependency_supports(
 
 
 def forward_reachability(
-    vertex_count: int, succ: list[set[Vertex]], source: Vertex, horizon: int
+    succ: list[set[Vertex]], sources: frozenset[Vertex], horizon: int
 ) -> list[set[Vertex]]:
-    reached_by_tick = [{source}]
-    frontier = {source}
-    reached = {source}
+    reached_by_tick = [set(sources)]
+    frontier = set(sources)
+    reached = set(sources)
     for _ in range(horizon):
         next_frontier = set()
         for u in frontier:
@@ -80,6 +86,21 @@ def forward_reachability(
     return reached_by_tick
 
 
+def tested_source_sets(vertex_count: int) -> tuple[frozenset[Vertex], ...]:
+    """Singleton coverage plus deterministic empty and multi-source cases."""
+    candidates = [frozenset()]
+    candidates.extend(frozenset({source}) for source in range(vertex_count))
+    candidates.extend(
+        (
+            frozenset(range(0, vertex_count, 2)),
+            frozenset(range(1, vertex_count, 2)),
+            frozenset({0, vertex_count - 1}),
+            frozenset(range(vertex_count)),
+        )
+    )
+    return tuple(dict.fromkeys(candidates))
+
+
 def check_case(case: GraphCase) -> tuple[int, int]:
     edges = dependency_edges(case)
     pred = predecessors(case.vertex_count, edges)
@@ -87,36 +108,92 @@ def check_case(case: GraphCase) -> tuple[int, int]:
     deps = dependency_supports(case.vertex_count, pred, case.horizon)
 
     checks = 0
-    for source in range(case.vertex_count):
-        reachable = forward_reachability(
-            case.vertex_count, succ, source, case.horizon
-        )
+    for sources in tested_source_sets(case.vertex_count):
+        reachable = forward_reachability(succ, sources, case.horizon)
+        previous_affected: set[Vertex] | None = None
         for tick in range(case.horizon + 1):
             affected = {
                 vertex
                 for vertex in range(case.vertex_count)
-                if source in deps[tick][vertex]
+                if deps[tick][vertex] & sources
             }
-            assert affected <= reachable[tick], (
+            require(
+                affected <= reachable[tick],
                 case.name,
-                source,
+                sorted(sources),
                 tick,
                 sorted(affected),
                 sorted(reachable[tick]),
             )
             outside = set(range(case.vertex_count)) - reachable[tick]
-            assert all(source not in deps[tick][v] for v in outside)
+            require(
+                all(not (deps[tick][v] & sources) for v in outside),
+                case.name,
+                sorted(sources),
+                tick,
+                sorted(outside),
+            )
             checks += 2
-            if case.include_self_edges:
-                assert affected == reachable[tick], (
+            if previous_affected is not None:
+                one_step_support = {
+                    vertex
+                    for source in previous_affected
+                    for vertex in succ[source]
+                }
+                require(
+                    affected == one_step_support,
                     case.name,
-                    source,
+                    sorted(sources),
+                    tick,
+                    sorted(affected),
+                    sorted(one_step_support),
+                )
+                checks += 1
+            if case.include_self_edges:
+                require(
+                    affected == reachable[tick],
+                    case.name,
+                    sorted(sources),
                     tick,
                     sorted(affected),
                     sorted(reachable[tick]),
                 )
                 checks += 1
+            previous_affected = affected
     return len(edges), checks
+
+
+def truth_table_output(table_mask: int, inputs: tuple[bool, ...]) -> bool:
+    input_index = sum(int(bit) << index for index, bit in enumerate(inputs))
+    return bool(table_mask & (1 << input_index))
+
+
+def check_realized_difference_lemma(max_predecessors: int = 3) -> int:
+    """Exhaustively check the realized one-step lemma for Boolean local maps."""
+    cases = 0
+    for predecessor_count in range(max_predecessors + 1):
+        input_tuples = tuple(product((False, True), repeat=predecessor_count))
+        for table_mask in range(1 << len(input_tuples)):
+            for left_inputs in input_tuples:
+                for right_inputs in input_tuples:
+                    left_output = truth_table_output(table_mask, left_inputs)
+                    right_output = truth_table_output(table_mask, right_inputs)
+                    differing_inputs = {
+                        index
+                        for index, (left, right) in enumerate(
+                            zip(left_inputs, right_inputs)
+                        )
+                        if left != right
+                    }
+                    require(
+                        left_output == right_output or bool(differing_inputs),
+                        predecessor_count,
+                        table_mask,
+                        left_inputs,
+                        right_inputs,
+                    )
+                    cases += 1
+    return cases
 
 
 def line_case(length: int, horizon: int) -> GraphCase:
@@ -180,9 +257,15 @@ def main() -> None:
     )
 
     total_checks = 0
+    realized_cases = check_realized_difference_lemma()
     print("NN topological causal-bound certificate")
-    print("claim: finite graph/DAG forward reachability only")
+    print("claim: finite graph/DAG forward reachability for source sets")
     print()
+
+    print(
+        "PASS realized_difference_one_step: max_predecessors=3 "
+        f"boolean_cases={realized_cases}"
+    )
 
     for case in cases:
         edge_count, checks = check_case(case)
@@ -191,11 +274,15 @@ def main() -> None:
             f"PASS {case.name}: vertices={case.vertex_count} "
             f"dependency_edges={edge_count} horizon={case.horizon} "
             f"mode={'exact' if case.include_self_edges else 'bound'} "
+            f"source_sets={len(tested_source_sets(case.vertex_count))} "
             f"assertions={checks}"
         )
 
     print()
-    print(f"TOTAL PASS: {len(cases)} graph families, {total_checks} assertions")
+    print(
+        f"TOTAL PASS: {len(cases)} graph families, {total_checks} support "
+        f"assertions, {realized_cases} realized-difference cases"
+    )
     print("NON-CLAIMS:")
     print("  - no emergent relativity check")
     print("  - no Lorentz-invariance check")

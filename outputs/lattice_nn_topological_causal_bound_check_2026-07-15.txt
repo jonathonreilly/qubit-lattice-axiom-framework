@@ -1,0 +1,17 @@
+NN topological causal-bound certificate
+claim: finite graph/DAG forward reachability for source sets
+
+PASS realized_difference_one_step: max_predecessors=3 boolean_cases=16658
+PASS undirected_nn_line: vertices=9 dependency_edges=25 horizon=5 mode=exact source_sets=14 assertions=322
+PASS undirected_nn_grid: vertices=20 dependency_edges=82 horizon=4 mode=exact source_sets=25 assertions=475
+PASS branching_dag: vertices=8 dependency_edges=9 horizon=5 mode=bound source_sets=13 assertions=221
+PASS layered_dag: vertices=12 dependency_edges=20 horizon=4 mode=bound source_sets=17 assertions=238
+
+TOTAL PASS: 4 graph families, 1256 support assertions, 16658 realized-difference cases
+NON-CLAIMS:
+  - no emergent relativity check
+  - no Lorentz-invariance check
+  - no physical-spacetime light-cone check
+  - no universal-speed-law check
+  - no causal-field distance-law check
+  - no mass-response or Newtonian falloff check

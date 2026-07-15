@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1463,6 +1463,58 @@
         "total_pass": 40
       },
       "verdict_rationale": "The even-dimensional construction and volume-element parity identity are valid, but the load-bearing exclusion of arbitrary odd-dimensional algebra elements contains a logical gap. Stress testing leaves the linear-combination route unresolved; the restricted packet supplies no independent witness, hidden premise, partial-closure candidate, rhetoric-resolution test, steelman resolution, or applicable cross-cycle result that repairs it. The note also literally overstates the result as excluding every algebra element, although the zero element anticommutes with all generators while merely failing C1."
+    },
+    {
+      "archived_at": "2026-07-15T16:36:07.199804+00:00",
+      "audit_date": "2026-07-15T16:35:57.728367+00:00",
+      "audit_invocation_history": [
+        "5244ca8db510471789e7073bcf6c2fb7"
+      ],
+      "audit_invocation_id": "5244ca8db510471789e7073bcf6c2fb7",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.417,
+        "runner_hash": "29b81e6a0bd2707fb7510e4c63017910a61539b3a7e3bf277c91251efc8548a2",
+        "transitive_descendants": 1366
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-clifford_volume_chiralit-007",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The odd-dimensional proof does not justify its passage from failure of every individual basis monomial to failure of arbitrary linear combinations. The runner repeats the same incomplete basis-element scan instead of solving the simultaneous linear constraints on general coefficients.",
+      "claim_scope": "Pure complexified Clifford-algebra claim that a square-normalized element anticommuting with every generator exists exactly for even total dimension, implying odd d_t when d_s=3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T16:35:57.728367+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For odd n, each off-center basis monomial fails to anticommute with every generator; hence the note concludes that no linear combination can do so.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Replace Step 3 with a valid proof for an arbitrary algebra element and update the runner to solve the full simultaneous coefficient kernel, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "The theorem's odd-n conclusion may be correct, but the presented inference is invalid: a linear constraint kernel can contain combinations even when it contains no individual basis vector. The runner scans only basis monomials at n=3 and n=5 and therefore does not certify the universal arbitrary-element claim. No-Go Discipline FAIL: N1 leaves the arbitrary-linear-combination algebraic route untested; N2 supplies no independent-wall analysis; N3's parent-admission and boundary language is non-load-bearing here; N4 supplies no prior residual witness; N5 lacks the required five-resolution live tests; N6's indexed candidates do not repair the proof; N7's strongest steelman is unresolved; and N8's echoes are unrelated to the missing linear-system argument."
     }
   ],
   "prose_corrections": [],

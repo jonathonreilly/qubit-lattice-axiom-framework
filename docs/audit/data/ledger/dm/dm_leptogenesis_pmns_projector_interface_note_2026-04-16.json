@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -5046,6 +5046,59 @@
         "total_pass": 35
       },
       "verdict_rationale": "The source confines its retained content to exact finite-dimensional linear algebra and explicitly excludes physical carrier, N1-column, transport, and eta claims. Its intrinsic ordered-packet statement is correctly restricted to simple spectra with ascending eigenvalue labels, while the runner genuinely tests phase freedom, row/column permutations, and a degenerate-eigenspace counterexample. No external or open authority is load-bearing for the scoped result."
+    },
+    {
+      "archived_at": "2026-07-15T22:25:32.478396+00:00",
+      "audit_date": "2026-07-15T22:25:23.155261+00:00",
+      "audit_invocation_history": [
+        "eb27d4f144294e5da3adb96028629588"
+      ],
+      "audit_invocation_id": "eb27d4f144294e5da3adb96028629588",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 18.049,
+        "runner_hash": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+        "transitive_descendants": 748
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-dm_leptogenesis_pmns_pro-074",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed linear algebra closes, including the degenerate-spectrum counterexample. The full intrinsicness claim is nevertheless not clean-certifiable because its derived negative boundary lacks the mandatory complete N1-N8 stress packet.",
+      "claim_scope": "as an intrinsic ordered pair-to-packet object it is claimed only for simple spectra with ascending-eigenvalue labels",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T22:25:23.155261+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For simple spectra with ascending eigenvalue labels, alternative diagonalizers differ only by diagonal phases, whereas degenerate eigenspace rotations can change |U_e^dagger U_nu|^2.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle adversarial evidence covering at least five distinct N1 mechanisms, the strongest alternate-observable steelman, and all five N5 resolution classes, then re-audit with complete N6 and N8 dispositions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The fixed-eigenvector algebra and simple-spectrum phase argument are valid class-A closures, and the runner genuinely performs all 35 reported checks rather than printing hard-coded conclusions. Issue: the note also asserts a derived no-go boundary; N1 has fewer than five distinct attack mechanisms, N2 leaves degenerate-rotation and unlabeled-permutation walls, N3 confirms the label convention is load-bearing, N4 provides no prior residual witness, N5 lacks live five-resolution checks, N6 and N8 are not fully dispositioned in a compliant gate, and N7 lacks an independently evidenced steelman resolution. Why this blocks: the development-tier rules forbid audited_clean for that asserted boundary without a complete passing N1-N8 packet, despite the mathematical soundness of the displayed counterexample. Claim boundary until fixed: retain the fixed-eigenvector unitarity, double-stochasticity, and phase-invariance core as clean algebra."
     }
   ],
   "prose_corrections": [],

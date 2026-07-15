@@ -969,7 +969,7 @@
         },
         {
           "claim_id": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "fermion_parity_z2_grading_theorem_note_2026-05-02",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "16c8841517e8d51c8b4a091bd211bda60f53472e",
+  "repo_head": "59d78b1e2d70e04e455790150ee394b34cb34781",
   "schema": "lane_certification_v2"
 }

@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -83,6 +83,60 @@
         "total_pass": 5
       },
       "verdict_rationale": "The runner source directly constructs C, P0, P1, H and checks the stated finite-dimensional algebra without helper imports, external comparators, or tuned numerical inputs. Independent formula inspection agrees with the displayed eigenvalue, K-oddness, block-diagonality, trace-weight, and conjugation-even identities. The residual inputs are openly named in the claim boundary, so they bound the theorem rather than being hidden closure premises."
+    },
+    {
+      "archived_at": "2026-07-15T23:21:26.197158+00:00",
+      "audit_date": "2026-07-15T23:21:15.422616+00:00",
+      "audit_invocation_history": [
+        "d23010c132ae41f084cbead5a965a4c9"
+      ],
+      "audit_invocation_id": "d23010c132ae41f084cbead5a965a4c9",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 15.524,
+        "runner_hash": "c558fc452e6788916ab0f8d625f8cecb011d5157db090b0785a37cb82bbd84f2",
+        "transitive_descendants": 735
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-flavor_einselection_2sec-084",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The matrix identities close, but the restricted packet supplies no retained bridge from observable degeneracy to physical einselection and no derivation connecting Born block weights to the asserted r parametrization or second-law attractor. The emergent-time conjugation-even premise is also referenced without its one-hop authority.",
+      "claim_scope": "The algebraic singlet/doublet partition of a K-real C3-invariant observable and the finding that the resulting pointer map does not fix r.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T23:21:15.422616+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "A C3-invariant K-real monitored Hermitian observable lies in span_R{I,C+C\u00b2}, leaving a degenerate doublet, whereas resolving \u03c9 from \u03c9\u00b2 requires the K-odd observable i(C\u2212C\u00b2).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply the cited emergent-time conjugation-parity authority and a retained theorem connecting monitored-observable degeneracy and Born block weights to the physical einselection and r parametrization, then extend the runner to compute those bridges.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner genuinely checks five elementary algebraic identities, although S1 does not itself establish the full commutant-span characterization and B2 hard-codes Q(r) without computing the physical block-weight-to-r bridge. N1 leaves multiple-coupling, dynamical-decoherence, alternate-readout, normalization, and state/boundary routes untested; N2 finds the K-reality and block-counting walls independent, N3 identifies both as explicit admissions, and N4 has no usable prior witness because no one-hop authority was supplied. N5 lacks live tests across all five resolution classes, N6 exposes relevant open occupancy/statistical-grain obligations without closing either wall, N7's strongest steelman establishes only the two eigenspaces rather than their physical exclusivity, and N8's related Koide, max-entropy, and chirality echoes do not retire these residuals. The bounded conclusion is therefore credible algebraic narrowing but remains conditional on missing physical bridge theorems."
     }
   ],
   "prose_corrections": [],

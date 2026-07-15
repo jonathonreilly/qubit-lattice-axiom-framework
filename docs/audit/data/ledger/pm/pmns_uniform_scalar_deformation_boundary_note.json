@@ -18,7 +18,7 @@
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1373,6 +1373,60 @@
         "total_pass": 22
       },
       "verdict_rationale": "The runner genuinely constructs the finite corner Hamiltonians, resolvents, scalar blocks, and classifier rejection; it is not a print-only or tuned-value runner. However, the staggered scalar Hamiltonian is an imported realization rather than an axiom-derived operator, and the physical sufficiency of the one-sided-minimal PMNS criterion is encoded in helper code rather than established by a retained-grade cited authority. The result is therefore a sound conditional boundary against the encoded uniform-scalar lane, not a standalone first-principles PMNS no-go."
+    },
+    {
+      "archived_at": "2026-07-15T22:08:20.393881+00:00",
+      "audit_date": "2026-07-15T22:08:06.474466+00:00",
+      "audit_invocation_history": [
+        "1ff2caeeda5c4f708b412a264cbb7e89"
+      ],
+      "audit_invocation_id": "1ff2caeeda5c4f708b412a264cbb7e89",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.56,
+        "runner_hash": "85a3244903d20e287a2ed493c58f249a0f6eaa2d43b789a6fa0b1e3e901e0d9f",
+        "transitive_descendants": 754
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-pmns_uniform_scalar_defo-071",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The matrix and resolvent algebra closes only after importing the encoded staggered Hamiltonian and PMNS classifier. The restricted packet contains no retained derivation of either object from the accepted framework premises.",
+      "claim_scope": "Conditional on the encoded staggered uniform-scalar Hamiltonian and encoded one-sided-minimal retained PMNS classifier, uniform scalar deformations keep the hw=1 triplets sector-scalar and are rejected by that classifier.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-15T22:08:06.474466+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For the exact staggered unit-cell Hamiltonian with a uniform parity-coupled scalar deformation, H(K,phi)^2 = -(1 + phi^2) I_8 at each hw=1 corner.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or directly cite retained theorems supplying the staggered uniform-scalar Hamiltonian and the one-sided-minimal PMNS classifier, then extend the runner with the required alternative-route and resolution checks.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "Issue: the source and runner assume the staggered uniform-scalar Hamiltonian and one-sided-minimal PMNS classifier, neither of which is derived from a cited retained authority. Why this blocks: all 22 checks verify algebra and classifier behavior only after those objects are encoded, while N1 supplies fewer than five independent attack mechanisms, N5 lacks five-resolution execution, and N7 lacks an independent steelman resolution. The remaining checks do not rescue closure: N2's two mechanisms are independent, N3 exposes the uncited canonical classifier and sector matching, N4 has no prior retained witness, and N6/N8 present no applicable retained closer. Repair target: derive or cite both encoded objects from retained inputs and add live alternative-route and resolution checks; until then, only the stated conditional finite-runner result is supported."
     }
   ],
   "prose_corrections": [],

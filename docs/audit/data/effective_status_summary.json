@@ -83,7 +83,7 @@
     "audit_in_progress": 9,
     "audited_conditional": 36,
     "audited_failed": 9,
-    "audited_numerical_match": 5,
+    "audited_numerical_match": 6,
     "audited_renaming": 15,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
@@ -98,7 +98,7 @@
     "retained": 77,
     "retained_bounded": 304,
     "retained_pending_chain": 2,
-    "unaudited": 2929
+    "unaudited": 2928
   },
   "retained_pending_chain_count": 2,
   "retained_pending_chain_examples": [

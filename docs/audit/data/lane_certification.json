@@ -2309,7 +2309,7 @@
         },
         {
           "claim_id": "source_driven_field_recovery_sweep_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_numerical_match"
         },
         {
           "claim_id": "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "d354985879a77114470283f75f2b265a50b68061",
+  "repo_head": "e58246422aadd1b74b9d6b593643ba1b779aeb4d",
   "schema": "lane_certification_v2"
 }

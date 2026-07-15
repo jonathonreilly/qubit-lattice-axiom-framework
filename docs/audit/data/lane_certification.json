@@ -1069,7 +1069,7 @@
         },
         {
           "claim_id": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "e58246422aadd1b74b9d6b593643ba1b779aeb4d",
+  "repo_head": "50c41306037579ebdfdd0556aa42f7e1540184cb",
   "schema": "lane_certification_v2"
 }

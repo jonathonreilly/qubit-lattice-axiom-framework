@@ -18,7 +18,7 @@
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -4984,6 +4984,61 @@
         "total_pass": 18
       },
       "verdict_rationale": "The load-bearing result is a genuine finite-dimensional algebraic closure rather than a definition, imported value, tuned match, or external comparison. The runner constructs the Pauli/Kronecker operators and substantively checks Clifford algebra, SU(2) closure, vector covariance, Casimir identities, trace Gram matrices, chirality compatibility, and rescaling invariance with 18 PASS and 0 FAIL. The clean verdict is confined to this explicit representation theorem and its covariance-only normalization boundary; it does not ratify a physical neutrino Yukawa coefficient, the separately mentioned bosonic normalization, or the downstream suppression law."
+    },
+    {
+      "archived_at": "2026-07-15T19:03:31.127832+00:00",
+      "audit_date": "2026-07-15T19:03:21.686092+00:00",
+      "audit_invocation_history": [
+        "967a5b528dc249398c75fd14e0729c0f"
+      ],
+      "audit_invocation_id": "967a5b528dc249398c75fd14e0729c0f",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.775,
+        "runner_hash": "3da2fa02ce2b619ebf408dbfa0d1b4f9617d9c04fd313de2acc865d5bdf4d121",
+        "transitive_descendants": 875
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-dm_neutrino_weak_vector_-034",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The explicit finite-matrix identities close, but the broader negative boundary does not: the supplied runner demonstrates homogeneous rescaling but lacks the complete N1-N8 stress test needed to cement the physical coefficient and suppression-law walls.",
+      "claim_scope": "The finite-matrix SU(2) vector identities and the claim that their homogeneity leaves the physical bridge coefficient and second-order suppression law unfixed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T19:03:21.686092+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Because the bivectors commute with the chiral projectors, [B_a,Y_b]=P_R[B_a,Gamma_b]P_L=i sum_c eps_abc Y_c, while rescaling Y_i by any scalar preserves the covariance and Casimir equations.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow this source note's auditable scope to the finite-matrix identities and the explicit rescaling counterexample, or add a dedicated live N1-N8 runner and packet for the broader coefficient and suppression-law boundary; if only downstream citing sentences are narrowed, also add a dated downstream-hygiene line to this note's own boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The explicit matrices and runner substantively compute all 18 advertised algebraic checks, so the SU(2), vector, Casimir, orthogonality, and rescaling identities close without a hard-coded contested input or external comparator. However, the artifact also asserts a derived negative boundary with separate base-normalization and second-order-suppression walls: N1 supplies only the homogeneous-rescaling mechanism, N2 does not collapse those walls, N3 finds authenticated normalization, obstruction, and sector rhetoric, and N4 has no retained prior witness. N5 lacks live per-element, per-site, per-mode, per-block, and lattice-wide resolution checks; N6 is not exhaustively dispositioned, N7 lacks an independent steelman-resolution surface, and N8 is not completely dispositioned. Thus the exact algebraic theorem is supported, but the broader wall-cementing scope remains conditional."
     }
   ],
   "prose_corrections": [],

@@ -57,7 +57,7 @@
         },
         {
           "claim_id": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
@@ -1469,7 +1469,7 @@
         },
         {
           "claim_id": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "koide_circulant_wilson_target_note_2026-04-18",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "814db4dc7e9153224f1e8b2083156cf4c433badd",
+  "repo_head": "69bd42ce0cbdd49ef79bae0d141fe7478ac50e92",
   "schema": "lane_certification_v2"
 }

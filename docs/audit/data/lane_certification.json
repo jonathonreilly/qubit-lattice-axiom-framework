@@ -2642,7 +2642,7 @@
         },
         {
           "claim_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "wave_retardation_continuum_limit_note",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "836caf6677388d3aac85a1eb2a9995652ee7ab38",
+  "repo_head": "8af297441fffefcb34c5278661c0649172356df9",
   "schema": "lane_certification_v2"
 }

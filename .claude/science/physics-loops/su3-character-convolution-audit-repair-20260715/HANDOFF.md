@@ -25,8 +25,15 @@ python3 docs/audit/scripts/audit_lint.py --strict
 The pipeline was validation-only; its generated audit and publication outputs
 were removed from the branch after confirming queue visibility.
 
+## Delivery
+
+- Remote branch: `claude/science-fix/su3_character_diagonal_convolution_equivalence_narrow_theore-d4711609`
+- Draft review PR: [#5381](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5381)
+- PR base: `main`
+- PR state at checkpoint: open and mergeable
+
 ## Exact next action
 
-Land the source note, runner, cache, and this loop checkpoint, then send
+Review and land PR #5381, then send
 `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`
 to the independent re-audit lane.

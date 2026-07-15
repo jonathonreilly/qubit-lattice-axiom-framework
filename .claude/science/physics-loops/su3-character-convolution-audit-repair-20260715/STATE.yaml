@@ -17,9 +17,12 @@ no_go_routes:
   - tautological coefficient lookup in the former T2 runner
 trace_gate: direct_blocker_closure
 review_loop_disposition: pass
+remote_branch: claude/science-fix/su3_character_diagonal_convolution_equivalence_narrow_theore-d4711609
+pull_request: 5381
+pull_request_status: open_draft
 files_touched:
   - docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md
   - scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py
   - logs/runner-cache/frontier_su3_character_diagonal_convolution_equivalence_narrow.txt
-next_exact_action: land the source repair and send the changed claim to the independent re-audit lane
+next_exact_action: review and land PR 5381, then send the changed claim to the independent re-audit lane
 stop_condition: named runner-artifact blocker closed and local review disposition is pass

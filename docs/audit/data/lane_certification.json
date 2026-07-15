@@ -1269,7 +1269,7 @@
         },
         {
           "claim_id": "higgs_mechanism_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "higgs_vacuum_explicit_systematic_note",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "e417cd87d5e35da0124760aed1b6eb661c3f9789",
+  "repo_head": "814db4dc7e9153224f1e8b2083156cf4c433badd",
   "schema": "lane_certification_v2"
 }

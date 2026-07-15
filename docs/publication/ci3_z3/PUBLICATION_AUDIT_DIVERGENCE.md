@@ -17,13 +17,13 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 247 |
+| critical | `unaudited` | 246 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 126 |
 | ? | `unresolved` | 5 |
+| critical | `audited_conditional` | 4 |
 | critical | `audited_failed` | 4 |
 | critical | `audit_in_progress` | 3 |
-| critical | `audited_conditional` | 3 |
 | high | `audited_conditional` | 2 |
 | medium | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 1 |
@@ -127,7 +127,7 @@ publication tables phrase it.
 | critical | `hierarchy_matsubara_decomposition_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `higgs_mass_derived_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
-| critical | `higgs_mechanism_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `higgs_mechanism_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | critical | `higgs_vacuum_explicit_systematic_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
 | critical | `higher_order_structural_theorems_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |

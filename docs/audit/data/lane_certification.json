@@ -1881,7 +1881,7 @@
         },
         {
           "claim_id": "oh_schur_boundary_action_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_renaming"
         },
         {
           "claim_id": "omega_lambda_derivation_note",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "8f383be07b927256174f001ac0a1a2738ddab7fa",
+  "repo_head": "f44f7ea56bb025546204ac7b6f5f3a5ecf7ce545",
   "schema": "lane_certification_v2"
 }

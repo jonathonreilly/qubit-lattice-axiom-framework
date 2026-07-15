@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py
-runner_sha256: 1ccc51fb479e89d52b2d7f4a142203a8d5bd68d823fd5a046be80891f83821a2
+runner_sha256: 59b38e79b8c9376698d24d654760190d4496b3024ee7cfa0267226fd630f3a23
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 7.94
+elapsed_sec: 8.00
 status: ok
 ----- stdout -----
 
@@ -11,13 +11,16 @@ status: ok
 Part 1 (T1): Schur orthogonality on the finite truncation B_N = B_4
 ----------------------------------------------------------------------------------------
   Using N_GRID = 80 for Weyl integration; matrix size 25 x 25
-  [PASS (A)] Schur orthogonality off-diagonal: <chi_(p,q), chi_(p',q')> = 0 for (p,q) != (p',q') on test pairs  (off-diag pairs=72, ok=72, max err=6.848e-16)
-  [PASS (A)] Schur orthogonality diagonal: <chi_(p,q), chi_(p,q)> = 1 on test weights  (diag weights=9, ok=9, max abs deviation=1.266e-14)
+  [PASS (A)] Schur orthogonality off-diagonal: <chi_(p,q), chi_(p',q')> = 0 for (p,q) != (p',q') on test pairs  (off-diag pairs=72, ok=72, max err=6.805e-16)
+  [PASS (A)] Schur orthogonality diagonal: <chi_(p,q), chi_(p,q)> = 1 on test weights  (diag weights=9, ok=9, max abs deviation=1.199e-14)
 
 ----------------------------------------------------------------------------------------
-Part 2 (T2): symbolic derivation of C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)
+Part 2 (T2): exact matrix-index contraction for character convolution
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (T2) For abstract rational positive-symmetric (rho_(p,q)): Schur-orthogonal reduction yields C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) for every (p,q) in B_N  (all 25 weights in B_4 pass exact algebraic reduction)
+  [PASS (A)] (T2) raw matrix-index contraction vanishes for every unequal irrep pair  (checked 600 off-diagonal pairs before applying rho)
+  [PASS (A)] (T2) raw (a,b,c) Schur-delta contraction equals chi_lambda(V)/d_lambda on every diagonal irrep pair  (checked all 25 representations, dimensions 1 through 125)
+  [PASS (A)] (T2) the dimension-weighted character-convolution matrix is exactly the 25 x 25 identity  (matrix assembled from raw contractions before applying rho)
+  [PASS (A)] (T2) For abstract rational positive-symmetric (rho_(p,q)): the contracted polynomial gives C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) for every (p,q) in B_N  (all 25 weights in B_4 pass exact matrix-polynomial comparison)
 
 ----------------------------------------------------------------------------------------
 Part 3 (T3): uniqueness of (rho_(p,q)) for the diagonal operator R
@@ -93,9 +96,9 @@ Narrow theorem summary
 
 
 ========================================================================================
-  TOTAL: PASS=13, FAIL=0
+  TOTAL: PASS=16, FAIL=0
 ========================================================================================
-PASS=13 FAIL=0
+PASS=16 FAIL=0
 
 ----- stderr -----
 

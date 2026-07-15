@@ -145,9 +145,35 @@ integral chi_(p,q)(V W^{-1}) chi_(p',q')(W) dW
    =  delta_{(p,q),(p',q')} chi_(p',q')(V) / d_(p,q).                      (9)
 ```
 
-This is a direct consequence of `(7)` (sum over matrix indices after
-inserting matrix-element decomposition; the only surviving term is the
-diagonal one). Substituting `(9)` into `(8)` gives
+Here is the matrix-index contraction, with no character-convolution rule
+assumed.  Write `lambda = (p,q)`, `mu = (p',q')`, and let
+`D^lambda` and `D^mu` be unitary irreducible representation matrices.  Then
+
+```text
+chi_lambda(V W^{-1})
+  = Tr[D^lambda(V) D^lambda(W)^*]
+  = sum_(a,b) D^lambda(V)_(a b) conj(D^lambda(W)_(a b)),
+
+chi_mu(W) = sum_c D^mu(W)_(c c).
+```
+
+Consequently, applying `(7)` once to the individual matrix elements gives
+
+```text
+integral chi_lambda(V W^{-1}) chi_mu(W) dW
+  = sum_(a,b,c) D^lambda(V)_(a b)
+      integral conj(D^lambda(W)_(a b)) D^mu(W)_(c c) dW
+
+  = (delta_(lambda,mu) / d_lambda)
+      sum_(a,b,c) D^lambda(V)_(a b) delta_(a,c) delta_(b,c)
+
+  = (delta_(lambda,mu) / d_lambda) sum_c D^lambda(V)_(c c)
+  = delta_(lambda,mu) chi_mu(V) / d_lambda.                                (9a)
+```
+
+In the last equality `lambda = mu` on the sole surviving branch, so
+`chi_lambda(V) = chi_mu(V)`.  Thus `(9a)` is exactly `(9)`, including its
+orientation and its factor `1/d_lambda`.  Substituting `(9)` into `(8)` gives
 
 ```text
 (C_{Z/Z_(0,0)} chi_(p',q'))(V)
@@ -276,11 +302,14 @@ verifies, on the finite `N = 4` truncation (`B_N = {(p,q): 0 <= p,q <= 4}`):
 1. Schur orthogonality `(5)` to machine precision via Weyl integration
    on the SU(3) Cartan torus: `<chi_(p,q), chi_(p',q')>_Haar
    = delta_((p,q),(p',q'))` for all sampled pairs in `B_4`.
-2. Symbolic Conclusion `(T2)`: for an abstract positive symmetric
-   rational coefficient sequence and a separately abstract Hermitian
-   diagonal `R`, the convolution operator `C_{Z/Z_(0,0)}` and the
-   diagonal operator `R` agree on each basis character by the formal
-   Schur-orthogonal reduction `(9)`.
+2. Symbolic Conclusion `(T2)`: the runner first expands
+   `chi_lambda(VW^{-1}) chi_mu(W)` into the explicit `(a,b,c)` matrix-index
+   sum in `(9a)`, contracts the Schur deltas exactly, and verifies before any
+   coefficient sequence is applied that the resulting `25 x 25`
+   dimension-weighted convolution matrix on `B_4` is the identity.  It then
+   applies an abstract positive symmetric rational sequence and checks that
+   the resulting representation-matrix polynomial is exactly
+   `rho_mu Tr D^mu(V)` for every target `mu`.
 3. Conclusion `(T3)` uniqueness: two distinct coefficient sequences
    (one positive symmetric, one with one entry perturbed) give two
    distinct diagonal operators with at least one different eigenvalue.
@@ -308,4 +337,4 @@ verifies, on the finite `N = 4` truncation (`B_N = {(p,q): 0 <= p,q <= 4}`):
 
 Expected summary:
 
-- `PASS=13 FAIL=0`
+- `PASS=16 FAIL=0`

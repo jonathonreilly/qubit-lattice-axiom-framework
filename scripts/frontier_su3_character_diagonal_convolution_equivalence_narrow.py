@@ -40,9 +40,10 @@ coefficients are inserted only as abstract positive symmetric numerical
 data, **without** identification with any physical Wilson environment.
 
 Numerical verification of Schur orthogonality uses Weyl integration on
-the SU(3) Cartan torus with a fine quadrature grid; symbolic-level
-verification of the diagonal-action identity is done by direct algebraic
-reduction (no Haar integration is needed in the abstract step).
+the SU(3) Cartan torus with a fine quadrature grid.  The diagonal-action
+identity is verified independently by expanding the translated character
+into representation matrix elements and performing the exact three-index
+Schur-delta contraction before any rho coefficients are applied.
 """
 
 from __future__ import annotations
@@ -198,34 +199,147 @@ check(
 
 
 # =============================================================================
-section("Part 2 (T2): symbolic derivation of C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)")
+section("Part 2 (T2): exact matrix-index contraction for character convolution")
 # =============================================================================
-# Symbolic reduction does NOT need to do a Haar integral: it uses the
-# identity (9) of the note:
-#   int chi_(p,q)(V W^{-1}) chi_(p',q')(W) dW = delta_((p,q),(p',q')) chi_(p',q')(V) / d_(p,q),
-# which is the standard convolution-of-characters identity (Peter-Weyl).
-# We verify the identity (9) numerically on a small subset (the structural
-# Schur orthogonality of T1 above already implies it after matrix-element
-# expansion); the diagonal action then reduces by linearity to
-#   sum_(p,q) d_(p,q) rho_(p,q) * delta_((p,q),(p',q')) chi_(p',q')(V) / d_(p,q)
-#   = rho_(p',q') chi_(p',q')(V).
-# This is a finite-sum algebraic identity that follows from T1 alone; no
-# additional integration is required.
+# For lambda=(p,q), mu=(p',q'), and unitary irrep matrices D^lambda,
+#
+#   chi_lambda(V W^-1)
+#       = sum_(a,b) D^lambda(V)_(a,b) conj(D^lambda(W)_(a,b)),
+#   chi_mu(W) = sum_c D^mu(W)_(c,c).
+#
+# Matrix-element Schur orthogonality therefore leaves the coefficient
+#
+#   delta_(lambda,mu) delta_(a,c) delta_(b,c) / d_lambda
+#
+# on D^lambda(V)_(a,b).  We build that polynomial explicitly.  Its keys are
+# matrix indices (a,b), and its values are exact rational coefficients.  The
+# early return for unequal irreps is the irrep Kronecker delta in Schur
+# orthogonality; no convolution identity is assumed.
+MatrixPolynomial = dict[tuple[int, int], Fraction]
+ConvolutionPolynomial = dict[tuple[tuple[int, int], int, int], Fraction | float]
 
-# Algebraic step: for an abstract sequence (rho_(p,q)) over B_N, define a
-# symbolic linear functional that takes a basis vector chi_(p,q) -> Z reduction
-# and computes the projection by Schur orthogonality (using only the delta
-# structure already verified in T1).
-def reduce_convolution(rho_seq: list[float], target: tuple[int, int]) -> float:
-    """Apply C_{Z/Z_(0,0)} chi_(target) using the Schur-orthogonal reduction.
 
-    By Peter-Weyl convolution of characters and Schur orthogonality (T1),
-        C_{Z/Z_(0,0)} chi_(p',q') = sum_(p,q) d_(p,q) rho_(p,q) (1/d_(p,q)) delta_(...) chi_(p',q')
-    Only the term (p, q) = (p', q') survives the Kronecker delta. Since
-    d_(p',q') * rho_(p',q') / d_(p',q') = rho_(p',q'), the surviving
-    coefficient is exactly rho_(p',q').
+def schur_matrix_element_contraction(
+    kernel: tuple[int, int], target: tuple[int, int]
+) -> MatrixPolynomial:
+    """Contract the (a,b,c) indices in int chi_kernel(VW^-1) chi_target(W)."""
+    if kernel != target:
+        return {}
+
+    d_kernel = d_su3(*kernel)
+    d_target = d_su3(*target)
+    result: MatrixPolynomial = {}
+    for a in range(d_kernel):
+        for b in range(d_kernel):
+            coefficient = Fraction(0)
+            for c in range(d_target):
+                delta_ac = int(a == c)
+                delta_bc = int(b == c)
+                coefficient += Fraction(delta_ac * delta_bc, d_kernel)
+            if coefficient:
+                result[(a, b)] = coefficient
+    return result
+
+
+# Construct the complete raw convolution table before introducing rho.
+CONTRACTIONS = {
+    (kernel, target): schur_matrix_element_contraction(kernel, target)
+    for kernel in B_N
+    for target in B_N
+}
+
+
+def expected_trace_polynomial(weight: tuple[int, int]) -> MatrixPolynomial:
+    """Coefficient polynomial for chi_weight(V)/d_weight."""
+    dimension = d_su3(*weight)
+    return {(c, c): Fraction(1, dimension) for c in range(dimension)}
+
+
+def apply_z_convolution(
+    rho_seq: list[Fraction] | list[float], target: tuple[int, int]
+) -> ConvolutionPolynomial:
+    """Build C_Z chi_target as a polynomial in all D^kernel(V)_(a,b).
+
+    This applies d_kernel*rho_kernel only after CONTRACTIONS has independently
+    encoded the raw matrix-index integral.
     """
-    return rho_seq[INDEX[target]]
+    result: ConvolutionPolynomial = {}
+    for kernel in B_N:
+        z_coefficient = d_su3(*kernel) * rho_seq[INDEX[kernel]]
+        for (a, b), contraction_coefficient in CONTRACTIONS[(kernel, target)].items():
+            key = (kernel, a, b)
+            result[key] = result.get(key, 0) + z_coefficient * contraction_coefficient
+    return {key: value for key, value in result.items() if value != 0}
+
+
+def expected_diagonal_polynomial(
+    rho_seq: list[Fraction] | list[float], target: tuple[int, int]
+) -> ConvolutionPolynomial:
+    """Build rho_target chi_target(V), solely for comparison with the integral."""
+    coefficient = rho_seq[INDEX[target]]
+    if coefficient == 0:
+        return {}
+    dimension = d_su3(*target)
+    return {(target, c, c): coefficient for c in range(dimension)}
+
+
+def polynomials_close(
+    lhs: ConvolutionPolynomial, rhs: ConvolutionPolynomial, tolerance: float = 0.0
+) -> bool:
+    keys = set(lhs) | set(rhs)
+    return all(abs(float(lhs.get(key, 0) - rhs.get(key, 0))) <= tolerance for key in keys)
+
+
+off_diagonal_contractions_ok = all(
+    CONTRACTIONS[(kernel, target)] == {}
+    for kernel in B_N
+    for target in B_N
+    if kernel != target
+)
+check(
+    "(T2) raw matrix-index contraction vanishes for every unequal irrep pair",
+    off_diagonal_contractions_ok,
+    detail=f"checked {len(B_N) * (len(B_N) - 1)} off-diagonal pairs before applying rho",
+)
+
+diagonal_contractions_ok = all(
+    CONTRACTIONS[(weight, weight)] == expected_trace_polynomial(weight)
+    for weight in B_N
+)
+check(
+    "(T2) raw (a,b,c) Schur-delta contraction equals chi_lambda(V)/d_lambda on every diagonal irrep pair",
+    diagonal_contractions_ok,
+    detail=f"checked all {len(B_N)} representations, dimensions 1 through {max(d_su3(*w) for w in B_N)}",
+)
+
+# Multiplication by the d_kernel coefficient in Z must now turn the raw
+# character-convolution table into the identity matrix.  This is checked
+# before choosing any coefficient sequence.
+dimension_weighted_convolution = np.zeros((len(B_N), len(B_N)), dtype=object)
+for kernel in B_N:
+    for target in B_N:
+        contraction = CONTRACTIONS[(kernel, target)]
+        if not contraction:
+            dimension_weighted_convolution[INDEX[kernel], INDEX[target]] = Fraction(0)
+            continue
+        expected = expected_trace_polynomial(kernel)
+        if contraction != expected:
+            dimension_weighted_convolution[INDEX[kernel], INDEX[target]] = None
+            continue
+        dimension_weighted_convolution[INDEX[kernel], INDEX[target]] = (
+            d_su3(*kernel) * contraction[(0, 0)]
+        )
+
+identity_matrix_ok = all(
+    dimension_weighted_convolution[i, j] == Fraction(int(i == j))
+    for i in range(len(B_N))
+    for j in range(len(B_N))
+)
+check(
+    "(T2) the dimension-weighted character-convolution matrix is exactly the 25 x 25 identity",
+    identity_matrix_ok,
+    detail="matrix assembled from raw contractions before applying rho",
+)
 
 
 # Construct an abstract POSITIVE SYMMETRIC rational coefficient sequence:
@@ -259,21 +373,22 @@ rho1 = make_positive_symmetric({
     (4, 4): Fraction(1, 800),
 })
 
-# Check the surviving coefficient under the Schur-orthogonal reduction equals
-# rho_(target) for every target weight.
+# Apply the abstract sequence only after the full raw contraction table has
+# been constructed and checked.  Compare exact representation-matrix
+# polynomials, not a function that returns the target coefficient.
 all_targets_ok = True
 for target in B_N:
-    surviving = reduce_convolution([float(r) for r in rho1], target)
-    expected = float(rho1[INDEX[target]])
-    if abs(surviving - expected) > 1e-15:
+    actual = apply_z_convolution(rho1, target)
+    expected = expected_diagonal_polynomial(rho1, target)
+    if actual != expected:
         all_targets_ok = False
-        print(f"    FAIL: target={target}, surviving={surviving}, expected={expected}")
+        print(f"    FAIL: target={target}, actual={actual}, expected={expected}")
 check(
     "(T2) For abstract rational positive-symmetric (rho_(p,q)): "
-    "Schur-orthogonal reduction yields C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) "
+    "the contracted polynomial gives C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) "
     "for every (p,q) in B_N",
     all_targets_ok,
-    detail=f"all {len(B_N)} weights in B_{N} pass exact algebraic reduction",
+    detail=f"all {len(B_N)} weights in B_{N} pass exact matrix-polynomial comparison",
 )
 
 
@@ -377,9 +492,9 @@ R_trivial = np.diag([float(r) for r in rho_trivial])
 # Check that C_{Z/Z_(0,0)} chi_(0,0) = 1 * chi_(0,0) and = 0 for any other (p,q).
 ok_trivial = True
 for target in B_N:
-    surviving = reduce_convolution([float(r) for r in rho_trivial], target)
-    expected = 1.0 if target == (0, 0) else 0.0
-    if abs(surviving - expected) > 1e-15:
+    actual = apply_z_convolution(rho_trivial, target)
+    expected = expected_diagonal_polynomial(rho_trivial, target)
+    if actual != expected:
         ok_trivial = False
 check(
     "concrete trivial instance: rho = (1, 0, ..., 0) gives projection onto chi_(0,0)",
@@ -443,9 +558,9 @@ check(
 # C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) on every basis weight.
 diag_action_ok = True
 for target in B_N:
-    surviving = reduce_convolution(rho_bw, target)
-    expected = rho_bw[INDEX[target]]
-    if abs(surviving - expected) > 1e-15:
+    actual = apply_z_convolution(rho_bw, target)
+    expected = expected_diagonal_polynomial(rho_bw, target)
+    if not polynomials_close(actual, expected, tolerance=1e-15):
         diag_action_ok = False
 check(
     "(T2) for the abstract numerical input: C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) for every (p,q) in B_N "

@@ -16,7 +16,7 @@
         },
         {
           "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "5d981edb1d8dcf5697b20caecde28841383db644",
+  "repo_head": "d354985879a77114470283f75f2b265a50b68061",
   "schema": "lane_certification_v2"
 }

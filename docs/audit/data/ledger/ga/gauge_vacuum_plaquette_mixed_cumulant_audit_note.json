@@ -18,7 +18,7 @@
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -126,6 +126,58 @@
         "total_pass": 6
       },
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class C). Vote breakdown: J1: second / audited_clean / positive_theorem / class C; J2: second / audited_clean / positive_theorem / class C; J3: second / audited_clean / positive_theorem / class C; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The restricted packet contains a completed runner and source code that genuinely constructs the local plaquette supports, checks exact mod-3 link-balance assignments, and performs exact rational coefficient arithmetic. The result is a positive exact formal small-beta theorem within its stated Wilson-surface domain, not a beta=6 physical closure claim. The beta=6 exclusion narrows the claim scope but does not by itself force bounded_theorem classification for the audited onset coefficient. | The restricted packet supports a clean class C finite combinatorial/Haar-normalization computation for the stated small-beta onset coefficient. The open beta=6 analytic continuation is explicitly outside the audited scope, so it should not force the scoped onset theorem into bounded_theorem. The second audit correctly separates the positive formal theorem from the still-open nonperturbative continuation. | The first and second audits agree on audited_clean and class C; the real dispute is claim_type. The audited statement is a narrow formal perturbative onset theorem, not a claim of full beta=6 analytic plaquette closure, so leaving the nonperturbative continuation open does not by itself make the scoped theorem bounded. The provided runner and source note support a first-principles finite combinatorial/Haar-normalization computation rather than a definition, renaming, comparator, or tuned numerical match. | The restricted packet contains a completed runner and source code that actually constructs local plaquette supports, tests exact mod-3 link-balance assignments, classifies the beta^4 and beta^5 residual supports, and performs exact Fraction arithmetic. The claim is not a beta=6 physical plaquette-closure claim; it is a formal small-beta onset theorem inside the stated Wilson-surface setup. That makes the second audit's positive_theorem classification more precise than the first audit's bounded_theorem label, while preserving audited_clean and class C. | The restricted packet contains a completed runner and source code that performs a finite combinatorial enumeration plus exact Fraction arithmetic, so the load-bearing step is class C rather than a definition, renaming, comparator, or tuned numerical match. The audited claim is not the beta=6 physical plaquette closure or the derivation of the Wilson surface from deeper framework gates; it is the formal onset coefficient once that surface is fixed. That scope is exact and affirmative, so positive_theorem is the better classification than bounded_theorem, with the beta=6 caveat handled in the scope rather than by demoting the theorem type."
+    },
+    {
+      "archived_at": "2026-07-15T20:38:03.762790+00:00",
+      "audit_date": "2026-07-15T20:37:54.331628+00:00",
+      "audit_invocation_history": [
+        "5ed1498e0e594cbaaadfce785b593b7b"
+      ],
+      "audit_invocation_id": "5ed1498e0e594cbaaadfce785b593b7b",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 16.624,
+        "runner_hash": "ee013ee9d87ca89cbda5fd6c7229d4d31cdb9c1eba027aeb7881f31f4d6a4fdc",
+        "transitive_descendants": 788
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-gauge_vacuum_plaquette_m-053",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The leaf lemma eliminates repeated insertions only when the distinct-support graph has a leaf, whereas the runner searches only distinct order-beta^5 supports. It never classifies repeated-plaquette multisets having leafless distinct support, and it does not verify that the cube-shell connected cumulant equals the raw shell moment after all cumulant subtractions.",
+      "claim_scope": "Exact small-beta beta^5 coefficient of P_full-P_1plaq and the induced beta_eff coefficient on the accepted Wilson 3 spatial + 1 derived-time surface.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-15T20:37:54.331628+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "After exact leaf peeling, the exhaustive order-beta^5 search leaves only four cube shells, each contributing exactly 1/18^5.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after extending the runner to enumerate all action-plaquette multisets through order five, including repeated plaquettes on leafless distinct supports, and to verify the connected-cumulant subtraction for every surviving shell.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The distinct-support enumeration is a genuine class-C finite computation, but its result does not establish the advertised full mixed-cumulant coefficient. For N1-N2, the distinct-support balance scan and tree leaf-peeling leave the separate repeated, leafless-support route untested, so their two mechanisms do not close the same residual. For N3-N5, the note's boundary and canonical language is mostly scope hygiene rather than a hidden premise, no prior residual witness is cited, and the negative vanishing statements lack live checks across the required five resolution classes. For N6-N8, the indexed premises, partial closures, and cross-cycle echoes do not repair this internal enumeration gap, while the strongest N7 steelman\u2014exhaustion after leaf peeling\u2014remains unresolved by the supplied runner."
     }
   ],
   "prose_corrections": [],

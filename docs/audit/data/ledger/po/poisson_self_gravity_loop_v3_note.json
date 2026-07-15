@@ -18,7 +18,7 @@
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -319,6 +319,62 @@
         "total_pass": 1
       },
       "verdict_rationale": "The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type."
+    },
+    {
+      "archived_at": "2026-07-15T22:02:47.315270+00:00",
+      "audit_date": "2026-07-15T22:02:33.413185+00:00",
+      "audit_invocation_history": [
+        "3b0d764a5f284e8d9f117ffb68e077d7"
+      ],
+      "audit_invocation_id": "3b0d764a5f284e8d9f117ffb68e077d7",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.568,
+        "runner_hash": "6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80",
+        "transitive_descendants": 758
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-poisson_self_gravity_loo-069",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes the reported nine-row nonzero-coupling sweep, and those sweep values agree with the note. The missing step is a theorem connecting the chosen Poisson kernel, calibrated field gain, relaxation rule, six-iteration cutoff, lattice scale, and detector observables to a family-level self-gravity exclusion.",
+      "claim_scope": "Restricted finite-harness no-promotion claim: nine nonzero-coupling rows show small matched-null shifts and miss the stated convergence tolerance, which is used to characterize the tested family as a weak control rather than a self-gravity mechanism.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T22:02:33.413185+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "At nonzero coupling, small matched-null centroid and phase-ramp shifts appear, but the loop does not converge sufficiently to establish a self-gravity mechanism.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "no_go_result",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the binding statement to the nine-row runner observation, demote the physical-signal and latent-lane language, and update the stale Born values before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue (N1-N2): the live computation attempts only one h=0.25 lattice family and two promoted observables; alternate lattice limits, effective actions, boundary conditions, convergence schemes, and readouts remain untested, while small effect size and nonconvergence are distinct walls. Why this blocks (N3-N6): no authenticated N3 hidden-admission group or N4 prior residual witness closes those routes, the stdout lacks the five required N5 resolution-scale tests, and none of the indexed axioms, approved primitives, open gates, or reframes supplies the missing gravity dynamics or observable bridge; the auxiliary Born values also disagree between note and stdout. Steelman and cross-cycle review (N7-N8): all nine tested nonzero rows do miss the stated tolerance and related self-gravity echoes support retaining that finite observation, but neither establishes a broader no-go. Repair target / Claim boundary until fixed: retain only the runner-specific nonconvergence observation, remove the physical-signal and latent-lane inference unless a bridge and broader stress test are supplied, and synchronize the Born figures with current stdout."
     }
   ],
   "prose_corrections": [],

@@ -2413,7 +2413,7 @@
         },
         {
           "claim_id": "staggered_fermion_card_2026-04-11",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "f435080885661b03b56b3e665e52237d05127c9d",
+  "repo_head": "9b8c0774f2c07e6bc17f96ee8664eb3c85fcd14c",
   "schema": "lane_certification_v2"
 }

@@ -2005,7 +2005,7 @@
         },
         {
           "claim_id": "pmns_oriented_cycle_channel_value_law_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "pmns_oriented_cycle_reduced_channel_nonselection_note",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "ccb4cc88839cc0a823fa82ec72d333c66907fb8d",
+  "repo_head": "5548ace3e86e87b4739b176d8c6465d9bd5d3f97",
   "schema": "lane_certification_v2"
 }

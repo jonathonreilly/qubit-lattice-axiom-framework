@@ -18,7 +18,7 @@
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -135,6 +135,61 @@
         "total_pass": 8
       },
       "verdict_rationale": "The claim is negative and scoped to underdetermination inside the residual source-sector environment class, not to computing canonical beta=6 Jacobi data. The runner constructs two admissible residual environments, verifies positivity/symmetry/Perron properties, and obtains distinct moments and Jacobi coefficients for the same J. This is a direct counterexample to uniqueness within the scoped class."
+    },
+    {
+      "archived_at": "2026-07-15T20:26:20.414297+00:00",
+      "audit_date": "2026-07-15T20:26:11.037312+00:00",
+      "audit_invocation_history": [
+        "2a59dfdf869b46ccafe71c62258c366f"
+      ],
+      "audit_invocation_id": "2a59dfdf869b46ccafe71c62258c366f",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.14,
+        "runner_hash": "f136ebb829b1241ae891a26b1b8061cbbdb297669d110925f303d38085c4aa5f",
+        "transitive_descendants": 797
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-gauge_vacuum_plaquette_p-049",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-box computation closes only the truncated witness. The packet does not derive that R_A and R_B are admissible residual environments of the exact beta=6 source sector or prove that the NMAX=5 truncation lifts to that exact sector.",
+      "claim_scope": "On the runner's 36-state NMAX=5 box, its two chosen positive conjugation-symmetric diagonal residual matrices produce different first two Perron moments and first Jacobi coefficients for the same truncated recurrence matrix J.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-15T20:26:11.037312+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner exhibits two explicit admissible positive residual source-sector environment operators with m_1^(A) != m_1^(B) and higher moments differing as well.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive that the two explicit residual profiles are admissible exact beta=6 source-sector environments and prove a controlled lift from NMAX=5 to the untruncated operator; also update the stale expected theorem-pass count.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the runner genuinely computes differing moments and Jacobi data, but only after choosing arbitrary residual profiles on a 36-state truncation; the note's expected THEOREM PASS=4 count is also stale against the supplied PASS=5 execution. Why this blocks: no cited authority or runner calculation establishes that these profiles are realizable residual environments of the exact untruncated beta=6 source-sector operator. Repair target: prove the exact-sector admissibility and finite-box lift of both witnesses, or explicitly narrow the theorem to the sampled box and correct the expected pass count. Claim boundary until fixed: N1 supplies only the finite numerical residual-choice route; N2 leaves independent admissibility and truncation-lift gaps; N3 finds boundary, obstruction, sector, and canonical language unsupported by a cited authority; N4 has no prior residual witness; N5 lacks live tests at all five resolutions; N6's residual-environment and tensor-transfer candidates are not supplied as authorities; N7's exact-sector steelman remains unresolved; and N8's related echoes close neither gap."
     }
   ],
   "prose_corrections": [],

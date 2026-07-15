@@ -2333,7 +2333,7 @@
         },
         {
           "claim_id": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "082f424d1ab9a7e604de71bbc0ef519844869093",
+  "repo_head": "31ccb31629832a5f26acc03009bf6a88ab79c721",
   "schema": "lane_certification_v2"
 }

@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/lattice_nn_topological_causal_bound_check.py
-runner_sha256: 3d8f3ae900c25e92aec78323a015d5da6e2fd53bced3fdf97fa5a7a0f7187bce
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.09
-status: ok
------ stdout -----
 NN topological causal-bound certificate
 claim: finite graph/DAG forward reachability for source sets
 
@@ -24,6 +16,3 @@ NON-CLAIMS:
   - no universal-speed-law check
   - no causal-field distance-law check
   - no mass-response or Newtonian falloff check
-
------ stderr -----
-

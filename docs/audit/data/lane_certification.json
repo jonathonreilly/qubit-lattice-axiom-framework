@@ -977,7 +977,7 @@
         },
         {
           "claim_id": "fermion_parity_z2_grading_theorem_note_2026-05-02",
-          "effective_status": "unaudited"
+          "effective_status": "audited_failed"
         },
         {
           "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "4b21622302f902e657548994e7cb2bc8ce89c19c",
+  "repo_head": "1d8db0fa71ea38575cbceb1fb397992d113c2105",
   "schema": "lane_certification_v2"
 }

@@ -18,7 +18,7 @@
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1393,6 +1393,60 @@
         "total_pass": 5
       },
       "verdict_rationale": "The runner genuinely constructs the finite Dirichlet lattice Green matrix and computes the endpoint arm equality, the 1/6 center excess, and the sampled delta_A1 formula rather than merely printing expected constants. The tensor portion instead defines an affine interpolant from two computed endpoints and measures agreement on a finite sample, while its observable comes from a helper chain containing chosen metric perturbations, finite-difference settings, source-family parameters, and normalization machinery not derived in this note. The safe result is therefore an exact support-side finite-lattice identity plus a bounded numerical compatibility pattern, not an exact affine tensor law."
+    },
+    {
+      "archived_at": "2026-07-15T17:54:20.321093+00:00",
+      "audit_date": "2026-07-15T17:54:05.431982+00:00",
+      "audit_invocation_history": [
+        "23daf14e7ddc48589c4373129bd97d34"
+      ],
+      "audit_invocation_id": "23daf14e7ddc48589c4373129bd97d34",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 19.577,
+        "runner_hash": "c5cbe0a90df79c0207e9882d63e6c7081d667d47a6158f84ce85622aab3c5e7d",
+        "transitive_descendants": 1079
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-tensor_support_center_ex-023",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-lattice calculations close the support identity, but the axiom-first tensor chain does not: no supplied authority derives the selected Laplacian/boundary construction or eta_floor_tf and its normalization as the exact microscopic tensor observable with derived endpoint coefficients.",
+      "claim_scope": "The exact finite-box support-side center-excess identity and bounded affine compatibility on six canonical A1 samples and two defined baselines; no exact tensor-observable, endpoint-coefficient, continuous-family, or GR closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T17:54:05.431982+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The current bright tensor coefficients are almost affine in the exact support scalar delta_A1(r)=1/[6(1+sqrt(6)r)], with the affine coefficients fixed by the e0 and s/sqrt(6) endpoints.",
+      "load_bearing_step_class": "B",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and cite the exact microscopic tensor-observable and endpoint-coefficient theorem; until then restrict downstream use to the eight finite checks and add a dated downstream-hygiene line to this note's own boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 2,
+        "C": 3,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the runner genuinely computes the finite-box center-excess identities, but the tensor relation imports tensor_metrics, an ADM perturbation ansatz, reduced_data, and hard-coded source-family definitions without a cited theorem deriving them from the supplied axioms. N1/N7 provide neither five distinct attacks nor an independent steelman; N2 leaves the tensor-observable and endpoint-coefficient walls uncollapsed; N3 exposes axiom/background/boundary language as source-side assumptions; and N4 has no prior residual witness to match. N5 does not test the negative rhetoric at all five resolutions, N6 supplies no premise candidate closing the tensor-observable bridge, and N8's indexed mechanisms are unrelated to this gravity construction. Repair target and safe boundary: derive and cite the exact microscopic tensor observable, endpoint coefficients, and finite-box operator/boundary selection, while retaining only the exact finite-box center-excess formula and reported eight-case numerical compatibility."
     }
   ],
   "prose_corrections": [],

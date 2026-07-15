@@ -749,7 +749,7 @@
         },
         {
           "claim_id": "dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "dm_neutrino_odd_mixed_bridge_extension_note_2026-04-15",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "f54d8a2ac451eea0e2d6fa1f2c89b1556bdacf5f",
+  "repo_head": "5d981edb1d8dcf5697b20caecde28841383db644",
   "schema": "lane_certification_v2"
 }

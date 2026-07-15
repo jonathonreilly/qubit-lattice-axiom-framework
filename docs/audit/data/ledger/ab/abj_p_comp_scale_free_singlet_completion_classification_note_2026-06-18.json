@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1391,6 +1391,60 @@
         "total_pass": 49
       },
       "verdict_rationale": "The runner genuinely performs the symbolic algebra and verifies the resulting charges and anomaly cancellation at several exact rational scales; it also exhibits the non-neutral counterexample. The framework-level chain remains conditional because the narrow P-COMP slot surface and n=0 are explicit premise inputs with no cited authority in the packet. For N1-N4, the alternative neutral-singlet and color-slot routes are directly tested, the two boundaries are distinct, no hidden authority supplies them, and no prior residual witness is cited. For N5-N8, the negative language is limited to those scoped counterfactuals, no supplied primitive or indexed reclassification derives the physical completion surface, the strongest steelman is the anomaly-free non-neutral family, and the cross-cycle material supplies no applicable closure."
+    },
+    {
+      "archived_at": "2026-07-15T16:49:09.106981+00:00",
+      "audit_date": "2026-07-15T16:49:00.010721+00:00",
+      "audit_invocation_history": [
+        "b4cc1523716e45ea944f1a0c481602cc"
+      ],
+      "audit_invocation_id": "b4cc1523716e45ea944f1a0c481602cc",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.907,
+        "runner_hash": "502da3a16e58ff4a86e448946ab3bec2da14829e83cb976774b4ba6409a3a3ee",
+        "transitive_descendants": 1357
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-abj_p_comp_scale_free_si-009",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The anomaly equations yield x+y=2a and z=-6a, after which the cubic identity fixes xy=-8a^2 and hence the two stated roots. Physical existence or minimality of the assumed completion surface is not derived and lies outside this scoped classification.",
+      "claim_scope": "Given the stated left-handed surface, two opposite-chirality color-triplet singlets, one charged colorless singlet, and n=0, exact cancellation of the listed anomalies forces {x,y,z,n}={4a,-2a,-6a,0} up to exchanging x and y.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T16:49:00.010721+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting x+y=2a and z=-6a into the cubic anomaly forces xy=-8a^2, so x and y are the roots of (t-4a)(t+2a)=0.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: add a current-cycle N1-N8 stress runner for the two counterfactual boundaries and re-audit while preserving the positive theorem's stated conditional scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "total_pass": 49
+      },
+      "verdict_rationale": "The exact algebraic classification is correct on the stated singlet template, and the supplied runner performs symbolic identity checks and exact rational examples without external comparators. The artifact also asserts two negative boundaries: removing n=0 destroys uniqueness, while omitting the two color-triplet slots leaves the SU(3)^3 anomaly uncancelled; it further names physical existence and minimality of that surface as the remaining P-COMP wall. Those negative assertions lack the full N1-N8 stress packet required for a clean artifact-level verdict, so the correctly scoped positive chain remains conditional at the whole-note level."
     }
   ],
   "prose_corrections": [],

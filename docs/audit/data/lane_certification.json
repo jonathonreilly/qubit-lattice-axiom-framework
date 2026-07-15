@@ -2157,7 +2157,7 @@
         },
         {
           "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "5f3a384a3c986692d32b0a6004b76108d403459e",
+  "repo_head": "b7f459b96cad655a0fc8cb49e42e0b596c8963b6",
   "schema": "lane_certification_v2"
 }

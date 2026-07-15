@@ -1,24 +1,46 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-15T17:49:36.155635+00:00",
+  "audit_invocation_history": [
+    "76c3be7b359a485298963ca3e2fb0c4f"
+  ],
+  "audit_invocation_id": "76c3be7b359a485298963ca3e2fb0c4f",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "load_bearing_score": 12.61,
+    "runner_hash": "18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99",
+    "transitive_descendants": 1104
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-real_diagonal_source_det-022",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "L1 and L2 close by finite-dimensional linear algebra. L3 additionally requires an uncited bridge showing that record readout depends only on the determinant and that disjoint record composition corresponds to block-direct-sum multiplication.",
   "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-  "claim_scope": null,
+  "claim_scope": "L1 and L2 establish finite-dimensional determinant positivity; L3 establishes c log det only conditional on a determinant-only readout and source-block-to-record bridge, with continuity and c=1 conventional.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-15T17:49:36.155635+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +48,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 12.61,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Record finite scalar additivity over disjoint records, together with continuity on the positive determinant branch, forces the readout to be W_c = c log det.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "4c2d67cf11adcbc0f9ccc4dcde75566152fe82a2580fa48e2600570f94c8a2a8",
   "note_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: add and cite a theorem establishing determinant-only readout and the source-block-to-disjoint-record correspondence, then make the runner test that bridge rather than only the logarithmic candidate.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1947,14 +1970,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 4,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 4
   },
   "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
   "title": "Real-Diagonal Source Det-Positivity + Log Readout (Self-Contained Lemma)",
   "transitive_descendants": 1104,
-  "verdict_rationale": null
+  "verdict_rationale": "The determinant-positivity arguments are correct, and the runner provides consistent finite checks of them. Record additivity alone does not place the readout on the multiplicative group of positive determinants: the runner assumes a logarithmic candidate and verifies one instance of log(xy)=log(x)+log(y), without constructing the determinant-only readout or the source-block-to-record identification. Consequently, the logarithmic readout conclusion remains conditional even though the continuous Cauchy classification is correct once that bridge is supplied."
 }

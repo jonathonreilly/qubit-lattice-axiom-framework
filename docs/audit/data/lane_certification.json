@@ -2674,7 +2674,7 @@
         },
         {
           "claim_id": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "9ae9be8f30649138a04eb8aca15e980ab1556c7d",
+  "repo_head": "d6c009f63c9bb304b421331121ef023a70f407ea",
   "schema": "lane_certification_v2"
 }

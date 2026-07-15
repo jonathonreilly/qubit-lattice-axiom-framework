@@ -20,6 +20,6 @@ files_touched:
   - scripts/frontier_staggered_17card_finite_scope_repair.py
 open_imports: []
 review_disposition: pass
-pr_status: pending
+pr_status: draft_open_5383
 next_exact_action: submit the review-clean source repair for independent fresh-context re-audit
 stop_condition: met_source_repair_review_clean_and_queue_visibility_validated

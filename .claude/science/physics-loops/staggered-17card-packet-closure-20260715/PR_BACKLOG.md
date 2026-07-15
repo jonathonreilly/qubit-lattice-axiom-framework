@@ -1,4 +1,4 @@
 # PR backlog
 
-No PR failure is recorded. Delivery remains pending until verification and
-review complete.
+No backlog. Draft PR 5383 is open:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5383.

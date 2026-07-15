@@ -26,3 +26,6 @@ authored or applied.
 
 Next exact action: run the independent fresh-context audit on
 `staggered_fermion_card_2026-04-11` after this source repair lands.
+
+Delivery: commit `109e9883ac`; draft PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5383.

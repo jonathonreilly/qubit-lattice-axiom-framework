@@ -2522,7 +2522,7 @@
         },
         {
           "claim_id": "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
-          "effective_status": "unaudited"
+          "effective_status": "audited_failed"
         },
         {
           "claim_id": "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
@@ -2943,6 +2943,6 @@
       "uncertified_count": 671
     }
   ],
-  "repo_head": "50c41306037579ebdfdd0556aa42f7e1540184cb",
+  "repo_head": "25caac5234ca7a8322b26547350f08540f854ffc",
   "schema": "lane_certification_v2"
 }

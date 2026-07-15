@@ -2321,7 +2321,7 @@
         },
         {
           "claim_id": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "staggered_3d_self_gravity_sign_note_2026-04-11",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "0995df14ca642234cd762ffff73bae14ac0e4c02",
+  "repo_head": "8f383be07b927256174f001ac0a1a2738ddab7fa",
   "schema": "lane_certification_v2"
 }

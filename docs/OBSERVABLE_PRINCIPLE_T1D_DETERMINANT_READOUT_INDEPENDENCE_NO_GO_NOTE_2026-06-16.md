@@ -67,8 +67,9 @@ A source-to-record assignment can map two disjoint source block labels to the
 same realized record label without contradicting Record, because the premise
 needed for additivity over two records has not been met. Therefore the
 blocks-to-records clause is a genuine bridge premise. It may be supplied by a
-future readout-context theorem or approved primitive, but it is not derivable
-from the present Lattice, Qubit, Admissibility, and Record axioms.
+future readout-context theorem or approved primitive, but it is not supplied by
+Record additivity or the determinant algebra used here (the paired runner tests
+this surface against the Record wording and constructs no Admissibility model).
 
 ## Boundary
 

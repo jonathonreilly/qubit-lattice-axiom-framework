@@ -20,14 +20,17 @@ HONEST RESULT.
       (random Gaussian c) gives R_delta = N in ~0/300 samples (delta=0.1). Generic PND is non-redundant.
       The range-2 monitoring being present does NOT rescue redundancy: H = 0.5(Z_S X_1 + Z_S X_2)
       + Z_S X_1 X_2 has the range-2 term present yet yields R_delta = 0.
-  (C) Therefore PND ([H, Z_S]=0, sourced cleanly from the Record axiom's DURABILITY via the Heisenberg
-      necessity leg -- redundancy-free) + Z^3-locality + leading-range do NOT force redundancy. The
+  (C) Therefore PND ([H, Z_S]=0, taken here as an explicit conditional input -- the pointer-non-demolition
+      dynamics constraint, redundancy-free; the current Record axiom states records are permanent but
+      withholds the persistence/production DYNAMICS, so it does not itself supply this commutator)
+      + Z^3-locality + leading-range do NOT force redundancy. The
       premise that does -- a pure sum of INDEPENDENT single-site monitorings (conditional independence /
-      multiplicity) -- IS local observability restated; it is a measure-zero condition, not a corollary.
+      multiplicity) -- IS local observability restated; it is rarely met under the sampled coupling
+      family, not a corollary.
 
 This CONFIRMS docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md (local
 observability is a NAMED OPEN PREMISE not supplied by {Lattice, Qubit, Admissibility, Record})
-and quantifies it (measure-zero in the PND coupling space). It also SHARPENS/CORRECTS
+and quantifies it (rarely hit under the sampled PND coupling distribution). It also SHARPENS/CORRECTS
 docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md item 1
 ("[H,Pi_S]=0 => R_delta=n"): that holds only for the single-site-SUM coupling, NOT for a general PND
 coupling -- Z_S X_1 X_2 is a pointer-non-demolition counterexample with R_delta=1.
@@ -205,9 +208,9 @@ def main() -> int:
             if R_delta(psi, [1, 2], n3, HS3) == 2:
                 hits += 1
         check(
-            f"generic PND coupling [{tlabel}]: R_delta = 2 (both single fragments reach the (1-delta) "
-            f"deficit) in only {hits}/{M} samples -> generic PND is NOT redundant. "
-            "Redundant broadcast is measure-zero, NOT the generic outcome",
+            f"sampled PND coupling [{tlabel}]: R_delta = 2 (both single fragments reach the (1-delta) "
+            f"deficit) in only {hits}/{M} samples -> a randomly sampled PND coupling is NOT redundant. "
+            "Redundant broadcast is rare under this sampled family (finite hit rate, not a measure-zero proof)",
             hits / M < 0.05,
             f"redundant in {hits}/{M} = {100*hits/M:.1f}% of generic PND couplings",
         )
@@ -238,9 +241,9 @@ def main() -> int:
     print(f"\nSCORECARD PASS={PASS} FAIL={FAIL}")
     print(
         "VERDICT (NO-GO): redundant broadcast / local observability is NOT forced by {durability/PND "
-        "(clean, redundancy-free) + Z^3-locality + leading-range}. It exists only at a measure-zero, "
-        "fine-tuned set (pure single-site-sum monitoring at the CNOT time); a generic pointer-non-"
-        "demolition coupling is non-redundant. The premise that does force it -- a pure sum of "
+        "(clean, redundancy-free) + Z^3-locality + leading-range}. Under the sampled coupling family and "
+        "times it is rare and fine-tuned (pure single-site-sum monitoring at the CNOT time); a randomly "
+        "sampled pointer-non-demolition coupling is non-redundant. The premise that does force it -- a pure sum of "
         "independent single-site monitorings (conditional independence / multiplicity) -- IS local "
         "observability restated. This CONFIRMS + QUANTIFIES the landed open-gate note: local "
         "observability is a NAMED OPEN PREMISE not supplied by the axioms. Audit lane sets the verdict."

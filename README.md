@@ -144,7 +144,8 @@ High-level state:
   formation rule, Born weights, measurement dynamics, physical persistence
   dynamics, source/action identification, or downstream selectors by itself.
 - **Ratified backbone:** the audit ledger contains retained-grade positive,
-  no-go, bounded, and boxed-decoration rows. Use
+  bounded, and boxed-decoration rows; `retained_no_go` is a supported grade
+  with zero rows at present. Use
   [`docs/repo/FRONT_DOOR_STATUS.md`](docs/repo/FRONT_DOOR_STATUS.md) for the
   current generated counts.
 - **Publication package:** manuscript and quantitative surfaces exist, but the

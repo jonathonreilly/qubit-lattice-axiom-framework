@@ -29,7 +29,12 @@ python -m pip install -r requirements-release.txt
 
 Choose the slice that matches what you are trying to check.
 
-### Manuscript-core retained backbone
+### Manuscript-core structural backbone
+
+Audit grades for the notes these runners support vary by row — several are
+currently `unaudited` after the 2026-06-29 axiom reset. The status authority is
+the audit-badged effective-status views, not this section heading; a passing
+runner validates only its implemented checks.
 
 ```bash
 python3 scripts/frontier_self_consistent_field_equation.py

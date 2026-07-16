@@ -8,7 +8,7 @@
 **Claim scope (narrow, scoped — not an absolute impossibility):** On the
 finite two-clock witness `H = C^2 tensor C^2`, the two independent
 commuting clocks `G₁ = σ_z⊗I`, `G₂ = I⊗σ_z` are exchanged by a unitary
-`S` (site swap) that preserves the Lattice placement and Qubit one-site
+`S` (site swap) that preserves the Lattice placement and Quantum one-site
 algebras. **Every `S`-invariant linear selector assigns `G₁` and `G₂` equal
 status, so it cannot prefer one named site-clock over the other. Selecting
 `G₁` rather than its `S`-conjugate `G₂` requires an `S`-breaking readout or
@@ -55,14 +55,12 @@ functional `Tr(X·P_A)` (read site A only) gives `Φ(G₁) ≠ Φ(G₂)` and
 `[P_A, S] ≠ 0` — i.e. **site-preferred clock selection requires an
 `S`-breaking observable.**
 
-**Why baseline selectors do not break `S`.** The Record axiom makes records permanent and
-determines scalar readout by record content alone, additively over finite collections of
-pairwise-disjoint records; it does not supply a site-preferred readout context. The Lattice
-and Qubit axioms supply the site set and the one-site algebra, Admissibility supplies the
-covariant local constraint, and the two clock sites are exchanged by `S`. Therefore any
-selector built from the Lattice, Qubit, Admissibility, and Record baseline that
-honors this kinematic exchange is `S`-invariant, hence (by the Lemma) cannot
-prefer one site-clock. A selector
+**Why baseline selectors do not break `S`.** The Record axiom supplies durable realized-outcome
+registration and finite additivity over supplied disjoint records; it does not supply a
+site-preferred readout context. The Lattice and Quantum axioms supply the site set and the
+one-site algebra, and the two clock sites are exchanged by `S`. Therefore any selector built
+from the Lattice, Quantum, and Record baseline that honors this kinematic exchange is
+`S`-invariant, hence (by the Lemma) cannot prefer one site-clock. A selector
 that reads one named site is a further `S`-breaking readout input, not a
 consequence of the baseline.
 

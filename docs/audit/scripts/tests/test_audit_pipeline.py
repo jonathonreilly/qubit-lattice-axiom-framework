@@ -2703,6 +2703,78 @@ class StaggeredExplicitPacketHelperTest(unittest.TestCase):
             f"helper_runner_hash_changed:{self.HELPER}:{helper_hash[:8]}->00000000",
         )
 
+    def test_packet_source_update_requeues_the_legacy_conditional_row(self):
+        seed = _import("seed_audit_ledger")
+        queue = _import("compute_audit_queue")
+        runner = _import_codex_audit_runner()
+        note_path = "docs/STAGGERED_FERMION_CARD_2026-04-11.md"
+        note_body = (PROJECT_ROOT / note_path).read_text(encoding="utf-8")
+        self.assertIn(
+            "Packet source update (2026-07-16; PR #5385)",
+            note_body,
+        )
+        current_note_hash = hashlib.sha256(note_body.encode("utf-8")).hexdigest()
+
+        shard_path = (
+            PROJECT_ROOT
+            / "docs"
+            / "audit"
+            / "data"
+            / "ledger"
+            / "st"
+            / f"{self.CLAIM_ID}.json"
+        )
+        legacy_row = json.loads(shard_path.read_text(encoding="utf-8"))
+        self.assertEqual(legacy_row["audit_status"], "audited_conditional")
+        self.assertNotIn(
+            "helper_runner_hashes",
+            legacy_row.get("audit_state_snapshot") or {},
+        )
+        self.assertNotEqual(legacy_row["note_hash"], current_note_hash)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_root = Path(tmp)
+            fixture = CleanLedgerFixture(tmp_root)
+            fixture.write_note(note_path, note_body)
+            fixture.write_graph(
+                {
+                    "nodes": {
+                        self.CLAIM_ID: {
+                            "path": note_path,
+                            "title": legacy_row["title"],
+                            "runner_path": self.PRIMARY,
+                            "helper_runner_paths": [self.HELPER],
+                            "deps": [],
+                            "note_hash": current_note_hash,
+                            "claim_type_seed_hint": "bounded_theorem",
+                            "claim_type_author_hint": "bounded_theorem",
+                            "claim_type_author_hint_raw": "bounded_theorem",
+                        }
+                    }
+                }
+            )
+            fixture.write_ledger(
+                {"schema_version": 1, "rows": {self.CLAIM_ID: legacy_row}}
+            )
+            _patch_repo_root(seed, tmp_root)
+            seeded = seed.seed()
+
+        requeued = seeded["rows"][self.CLAIM_ID]
+        self.assertEqual(seeded["stats"]["re_audit_required"], 1)
+        self.assertEqual(requeued["audit_status"], "unaudited")
+        self.assertIsNone(requeued["audit_state_snapshot"])
+        self.assertEqual(requeued["helper_runner_paths"], [self.HELPER])
+        self.assertEqual(queue.needs_audit(requeued), (True, "unaudited"))
+        self.assertEqual(
+            runner.determine_audit_role(
+                requeued,
+                "codex-gpt-5.6",
+                is_reaudit_candidate=False,
+                is_dispatch_target=False,
+            ),
+            ("first", "cross_family"),
+        )
+
 
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):

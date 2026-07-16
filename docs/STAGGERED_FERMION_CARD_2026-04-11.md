@@ -6,6 +6,9 @@
 **Primary runner:** `scripts/frontier_staggered_17card_finite_scope_repair.py`
 **Canonical runner executed by primary runner:** `scripts/frontier_staggered_17card.py`
 **Status authority:** independent audit lane only.
+**Packet source update (2026-07-16; PR #5385):** claim-scoped audit packets
+include the complete source of `scripts/frontier_staggered_17card.py` alongside
+the primary wrapper.
 
 ## Actual claim
 

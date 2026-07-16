@@ -58,9 +58,9 @@ coupling is the retained
 
 ## Theorem
 
-**(W1) Reflection split.** `S = S_+ + Θ(S_+) + S_0` with `S_-= Θ S_+` and `S_0`
-the straddling plane coupling, which is reflection-plane-symmetric
-(`Re Tr V = Re Tr V^†`).
+**(W1) Reflection split.** Directly on this note's two-slice surface,
+`S = S_+ + Θ(S_+) + S_0` with `S_-= Θ S_+` and `S_0` the straddling plane
+coupling, which is reflection-plane-symmetric (`Re Tr V = Re Tr V^†`).
 
 **(W2) Positive abelian character kernel on certified surfaces.** On the
 abelian `Z_N` and `U(1)` surfaces the plane weight expands in one-dimensional
@@ -115,7 +115,7 @@ Factor 3 packet; it is ready for independent re-audit, not a status promotion.
 
 | Authority | Status | Role |
 |---|---|---|
-| [`GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`](GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md) | retained_bounded | Wilson plaquette split and reflection-Hermitian boundary surface |
+| `GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md` | see generated audit ledger | non-load-bearing context only: analogous split on a distinct finite-periodic `SU(N_c)`, `L_t≥4`, trivial-holonomy surface; it is not authority for W1 on this two-slice abelian carrier, and its link-level plus-locality belongs to `f`, not to `F` |
 | [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md) | retained | G1–G3 abstract norm-square identity instantiated here |
 | [`GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md`](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md) | retained | straddling-plaquette → per-link plane coupling reduction |
 | [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md) | retained_bounded | fixed-background 2-step transfer positivity context (Factor 1) |
@@ -146,7 +146,6 @@ claim_type_author_hint: bounded_theorem
 runner_path: scripts/frontier_rp_gauge_half_wilson_temporal_bridge.py
 audit_authority: independent audit lane only
 declared_one_hop_deps:
-  - gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02
   - reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10
   - gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10
   - rp_p2_gauge_extension_and_realization_residual_note_2026-05-28

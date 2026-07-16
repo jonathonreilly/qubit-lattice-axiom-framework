@@ -1573,7 +1573,7 @@
         },
         {
           "claim_id": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "koide_z3_scalar_potential_support_note_2026-04-19",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "93b3d4895706ef48aa7481ad85ac40734db947fa",
+  "repo_head": "6f7cc202c9841cbd8ee23a100daaf653f74142a7",
   "schema": "lane_certification_v2"
 }

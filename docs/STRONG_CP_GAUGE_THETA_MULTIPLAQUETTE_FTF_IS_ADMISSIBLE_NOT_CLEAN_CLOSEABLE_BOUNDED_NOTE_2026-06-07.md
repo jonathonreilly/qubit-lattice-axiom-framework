@@ -28,22 +28,23 @@ clover model* `Q_{μν} ~ i a² F_{μν} + O(a^4)`:
 
 **Admissibility** (standard facts, bookkept — *not* derived here; runner (4)): the clover topological density is
 **gauge-invariant** (a trace of Wilson loops), **local** (a finite cluster), a **real-valued density** entering the
-action as the **imaginary** `iθ q(x)` term, **not excluded by the retained reflection-positivity half-square no-go**
+action as the **imaginary** `iθ q(x)` term, **not excluded by the reflection-positivity half-square no-go**
 ([`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](./STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md); note: the complex Euclidean
-`θ`-weight is *not* claimed to be full OS reflection-positive — only that the retained RP no-go does not forbid it),
+`θ`-weight is *not* claimed to be full OS reflection-positive — only that the RP no-go does not forbid it),
 and **CPT-even** (`Q` is CPT-even;
 [`STRONG_CP_GAUGE_THETA_NOT_FORCED_BY_REALITY_POSITIVITY_OR_CPT_BOUNDED_NOTE_2026-06-07.md`](./STRONG_CP_GAUGE_THETA_NOT_FORCED_BY_REALITY_POSITIVITY_OR_CPT_BOUNDED_NOTE_2026-06-07.md)).
 So **no** reality / RP-no-go / CPT / locality / gauge-invariance principle excludes the clover `F̃F`.
 
-**Conclusion** (runner (5)): only a **single-plaquette / minimality admission** removes the `F̃F` slot. The
-multi-plaquette boundary is therefore **not clean-closeable**: `θ_gauge = 0` requires that admission; it is not
-derived by restricting the action class to forbid `F̃F`.
+**Conclusion** (runner (5)): the tested **single-plaquette / minimality action-class choice** is what removes the
+`F̃F` slot; this note does not exhaust other action-selection principles, which remain open. The
+multi-plaquette boundary is therefore **not clean-closeable** on the tested class: `θ_gauge = 0` requires that
+action-class choice; it is not derived by restricting the action class to forbid `F̃F`.
 
 ## Two-sided picture for θ_gauge
 
 Together with the measure-side companion
 ([`STRONG_CP_GAUGE_THETA_NOT_FORCED_BY_REALITY_POSITIVITY_OR_CPT_BOUNDED_NOTE_2026-06-07.md`](./STRONG_CP_GAUGE_THETA_NOT_FORCED_BY_REALITY_POSITIVITY_OR_CPT_BOUNDED_NOTE_2026-06-07.md)), `θ_gauge` is
-admitted from **both** sides:
+left **open** from **both** sides:
 
 | side | statement |
 |---|---|
@@ -51,21 +52,22 @@ admitted from **both** sides:
 | **action** | the `F̃F` operator (clover) is **admissibly realizable**; no clean principle excludes it (this note) |
 
 The action *can* carry `F̃F`, and the **listed measure-side principles (reality, positivity, CPT) do not force or
-forbid it** — because the topological term is `Θ`-anti-invariant. So `θ_gauge` is a **minimality admission**,
-structurally parallel to the matter-side Koide
-`r = 1/2` (`BAE`) admission: both ride on un-derived **dynamics** (the gauge action here; the matter realization
+forbid it** — because the topological term is `Θ`-anti-invariant. So `θ_gauge` is a **minimality / action-class
+open premise**, structurally parallel to the matter-side Koide
+`r = 1/2` (`BAE`) open premise: both ride on un-derived **dynamics** (the gauge action here; the matter realization
 there) while the kinematic axioms `{Lattice, Qubit, Admissibility, Record}` fix only the structure.
 
 ## Scope — what this is and is not
 
 - **Is:** a computed demonstration (`F̃F` algebra + the clover leading-order reduction) that the `F̃F` slot is
   concretely realizable, plus a bookkeeping of its admissibility, concluding the multi-plaquette boundary is not
-  closeable by any clean framework principle.
+  closeable by the tested reality / RP-no-go / CPT / locality / gauge-invariance principles (other
+  action-selection principles remain open).
 - **Is not:** a claim that `θ_gauge ≠ 0`, or that the framework's action *does* contain `F̃F` (it is an admissible
   *option*, not a forced term); a derivation of the admissibility facts (gauge-invariance, locality, RP, CPT are
   cited/bookkept); a new axiom; a closure. The `θ = 0` selected-surface result is unaffected.
-- **Residual:** `θ_gauge = 0` reduces to the **single-plaquette / minimality admission** on the gauge action
-  (which the framework hand-adds; the action is not derived).
+- **Residual:** `θ_gauge = 0` reduces to the tested **single-plaquette / minimality action-class choice** on the
+  gauge action (which the framework hand-adds; the action is not derived).
 
 ## No-Go Discipline (N1-N8)
 

@@ -24,14 +24,22 @@ The tested routes from the axiom baseline to a CP-odd action coefficient fail:
 
 1. Record formation gives an arrow only through boundary data, not through a
    CP/T-odd dynamical term.
-2. CPT reality protects determinants into real phases; it does not supply a
-   continuous CP-odd coefficient.
+2. For the imposed K-real / Hermitian sample matrices, the determinant is real
+   (`arg det in {0, pi}`) — a property of those imposed models, not a general
+   CPT consequence (CPT does not make an arbitrary complex flavor mass matrix
+   real or remove its determinant phase). On that imposed route it does not
+   supply a continuous CP-odd coefficient.
 3. The available orientation/chirality object is a sign-only `Z_2` datum, not a
    continuous coefficient selector.
 4. Real additive readout is CP-blind as a consumer, but it does not forbid a
    real CP-odd scalar such as the Jarlskog invariant.
 5. Hermiticity, locality, gauge invariance, and the tested gauge-invariant-local
-   action form-class leave the sampled `(r, delta, theta)` coefficients free.
+   action form-class leave the sampled `(r, delta, theta)` coefficients free. The
+   tested gauge control is the fundamental SU(2) one-plaquette trace, which is
+   real by representation (`Im Tr U_P = 0` identically); it is a zero-by-symmetry
+   check, not a nonzero CP-odd positive control, so the `theta` part of this
+   no-go is scoped to that tested control and does not exhaust a genuine
+   four-dimensional CP-odd topological-density construction.
 
 This is a local no-go against those route families. It is **not** a global proof
 that no richer framework-native dynamics, minimality theorem, finite-`k`
@@ -98,10 +106,12 @@ The companion runner reproves:
 
 - record-write microdynamics is time-symmetric for the tested write generator;
 - the arrow direction is set by the initial state, not by a CP/T-odd map;
-- CPT-real sample matrices have real determinants rather than a continuous
-  CP-odd determinant phase;
-- Hermitian/C3-covariant matter matrices and gauge-invariant Wilson-loop terms
-  leave the sampled coefficients free;
+- the imposed K-real / Hermitian sample matrices have real determinants (a
+  property of those imposed models, not a general CPT result), so no continuous
+  CP-odd determinant phase arises in them;
+- Hermitian/C3-covariant matter matrices and the fundamental SU(2) one-plaquette
+  Wilson trace (real by representation) leave the sampled coefficients free — the
+  Wilson control is a zero-by-symmetry check, not a nonzero CP-odd control;
 - the orientation object is sign-only; and
 - real readout is even in the CP phase while the Jarlskog scalar is a real
   CP-odd scalar, so CP is not forbidden by real readout.
@@ -118,7 +128,8 @@ Load-bearing:
   — retained-bounded arrow-as-boundary context; the runner also reproves the
   local time-symmetry check used here.
 - `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  — human-readable Tier-A target registry.
+  — historical target registry (historical only; carries no current status
+  authority and is not a derivation input here).
 
 Context only, not promoted here:
 

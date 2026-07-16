@@ -172,25 +172,21 @@ All theorems cited above are verified present on `main`:
 - `scripts/frontier_dm_neutrino_source_surface_parity_compatible_observable_selector_theorem.py`
 - `scripts/frontier_charged_lepton_via_neutrino_hermitian.py` (exports `H(m, δ, q_+)`).
 
-## 6. Scope note on the `main`-status of the companion charged-lepton two-Higgs reduction
+## 6. Scope note on the companion supplied-texture reduction
 
 Audit trace. The scalar-selector open-imports table
 (`docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md` row I3) and the
 support package
-(`docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md`, `HSEL` row) name the
-"retained two-Higgs canonical reduction" as the provenance citation for I3.
-On direct `git ls-tree main` check, the files
-`docs/CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` and
-`scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py` are **not
-currently on `main`**; they live on this branch and on the neutrino-lane
-integration branches. The two-Higgs canonical-reduction note does establish
-that the charged-lepton minimal non-monomial lane carries 7 real physical
-quantities, but it does **not** by itself fix the numeric values `(√6/3,
-√6/3)`. The actual load-bearing provenance for those specific numbers is the
-retained parity-compatible observable-selector theorem on `main` named in §3.
-This note therefore upgrades the I3 citation from "cited as retained
-two-Higgs reduction" (imprecise) to the exact `main` chain in §3 (precise).
-The support package should be amended accordingly when I3 is closed.
+(`docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md`, `HSEL` row) historically
+named a "retained two-Higgs canonical reduction" as provenance for I3. The
+stable file now proves only an exact formal theorem for a **supplied** matrix
+texture: six positive moduli and one phase in a specified diagonal-rephasing
+quotient. It supplies no charged-lepton Yukawa carrier, Higgs multiplicity,
+physical rephasing redundancy, selected branch, or physical parameter values,
+and therefore cannot support the specific numbers `(√6/3,√6/3)`. The actual
+load-bearing provenance for those numbers remains the parity-compatible
+observable-selector theorem named in §3. The historical I3 citation must not
+be read as physical authority from the supplied-texture theorem.
 
 ## Reproduction
 

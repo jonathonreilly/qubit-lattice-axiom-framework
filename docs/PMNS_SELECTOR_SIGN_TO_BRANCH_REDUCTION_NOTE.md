@@ -35,8 +35,12 @@ So:
 After that sign choice, the remaining coefficient derivation is exactly the
 already-known branch-conditioned problem:
 
-- on `N_nu`: `7` real quantities
-- on `N_e`: `3 + 7` real quantities
+- on `N_nu`: `7` branch parameters under its separate physical hypotheses
+- on `N_e`: `3 + 7` branch parameters under its separate physical hypotheses
+
+For the charged-lepton-side `7`, the cited formal theorem proves only the
+seven-real quotient of a supplied `A+B C` texture. It does not derive the
+charged-lepton branch, physical rephasing redundancy, masses, or PMNS data.
 
 ## Atlas and package inputs
 
@@ -87,6 +91,7 @@ This note does **not** derive:
 - the sign or magnitude of `a_sel`
 - the `7` neutrino-side quantities
 - the `3 + 7` charged-lepton-side quantities
+- any physical identification of the supplied two-offset matrix quotient
 
 It is a reduction theorem only.
 

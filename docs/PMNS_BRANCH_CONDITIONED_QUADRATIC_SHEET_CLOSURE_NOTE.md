@@ -62,10 +62,14 @@ and therefore the full canonical branch coefficients are explicit.
 Generically there are exactly two positive roots on the physical branch. They
 give two distinct canonical coefficient sheets with the same `H_nu`.
 
-On the charged-lepton-side minimal branch, the same cyclic formulas hold with
-`H_e = Y_e Y_e^dag`. The additional monomial neutrino-side data on that branch
-are just the three positive Dirac mass moduli, read directly from the monomial
-neutrino singular values.
+Conditional on a separately supplied charged-lepton-side branch and a
+physical identification of its matrix, the same cyclic formulas hold with
+`H_e = Y_e Y_e^dag`. The formal reduction cited below supplies only the
+`A+B C` matrix shape and its quotient count; it does not supply that branch,
+identify `H_e` as observable, or turn quotient parameters into masses. Under
+the branch hypotheses of this note, the additional monomial neutrino-side
+data are the three positive Dirac mass moduli read from the monomial neutrino
+singular values.
 
 So once `sign(a_sel)` picks the branch, the remaining coefficient problem is
 not an unconstrained seven-parameter search. It is an explicit algebraic
@@ -138,6 +142,10 @@ cyclic quadratic reconstruction holds for the canonical charged-lepton matrix
 
 from the Hermitian data `H_e = Y_e Y_e^dag`.
 
+This paragraph is conditional on the separately supplied physical branch and
+Hermitian-data interpretation. The cited formal supplied-texture theorem does
+not derive either bridge.
+
 The extra neutrino-side information on that branch is simpler: the neutrino
 lane remains monomial, so its three positive Dirac masses are just the three
 monomial singular values.
@@ -189,6 +197,8 @@ This note does **not** derive:
 - the sign of `a_sel`
 - the branch Hermitian data `H_nu` or `H_e`
 - the residual `Z_2` sheet bit from the retained bank alone
+- the physical charged-lepton/Yukawa meaning of the supplied `A+B C` texture
+  or of its diagonal phase quotient
 
 So it does not by itself promote full positive neutrino closure. It closes the
 post-selector coefficient algebra as far as the current bank honestly allows.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_logdet_factor_4a_source_action_identification_2026_06_04.py
-runner_sha256: ac67caa5f7e37a9d4182d61fb89e9c99586ed0494e71fb729ba12a61814ed275
+runner_sha256: 7066b256dfc189e7a62d465d448d2e9ac5934848db400a16bcf3df3ec7188a76
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 Flavor - log-det generator Factor 4a: source-action identification (narrow companion)
@@ -27,9 +27,9 @@ Flavor - log-det generator Factor 4a: source-action identification (narrow compa
 [PASS] T7. Cross-surface consistency: j_x -> P_x mapping consistent on both surfaces
        signed-record per-site source is site-local; two-Higgs shift is diagonal
 [PASS] T8. Independence from Record baseline: calibration does not invoke scalar record additivity
-       uses only YT, two-Higgs, and finite linear algebra; no baseline Record input
+       uses only YT, a supplied formal matrix texture, and finite linear algebra; no baseline Record input
 [PASS] T9. Residual accounting: staggered-Dirac side of Factor 4a remains OPEN
-       4a-i (signed-record incarnation): retained_bounded (YT); 4a-ii (operator-side canonical form): retained (two-Higgs); 4a-iii (uniqueness modulo basis): bounded_theorem (THIS COMPANION); 4a (staggered-Dirac side): OPEN residual -- not addressed
+       4a-i (signed-record incarnation): retained_bounded (YT); 4a-ii (operator-side canonical form): formal supplied-texture hypothesis; 4a-iii (uniqueness modulo basis): bounded_theorem (THIS COMPANION); 4a (staggered-Dirac side): OPEN residual -- not addressed
 [PASS] T10. Sibling Factor 4b consistency: (4a-shape) is the operator form 4b's identity uses
        |M - D - diag(j)| = 3.05e-16; 4b-derivative-identity max err = 5.94e-10
 [PASS] T11. No new axioms, primitives, or admissions
@@ -44,8 +44,8 @@ Flavor - log-det generator Factor 4a: source-action identification (narrow compa
        max|off-diag| = 0.00e+00
 [PASS] T14. Coupling-direction: additive site-diagonal form differs from multiplicative form
        L1(additive, multiplicative) = 3.10e-01
-[PASS] T15. Basis-fixing inherited from retained authorities, NOT derived in this companion
-       YT basis: signed-record basis {epsilon = +-1}^n (from YT_SOURCE_ACTION_SUPPORT_PACKET); two-Higgs basis: generation basis {e_1, e_2, e_3} (from CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION)
+[PASS] T15. Basis-fixing is supplied by the inputs, NOT derived in this companion
+       YT basis: signed-record basis {epsilon = +-1}^n (from YT_SOURCE_ACTION_SUPPORT_PACKET); two-Higgs basis: supplied index basis {e_1, e_2, e_3} (formal texture theorem)
 [PASS] T16. Imaginary scalar source breaks reality of S_h on signed-record surface
        j has imag part 0.5, breaking real S_h convention
 [PASS] T17. Permutation invariance: diagonal shift class is S_n-invariant
@@ -57,7 +57,7 @@ FACTOR 4a: PARTIAL bounded support after this companion.
 
 Coverage split:
   4a-i  (signed-record incarnation)    -- retained_bounded (YT support packet)
-  4a-ii (operator-side canonical form) -- retained (two-Higgs canonical reduction)
+  4a-ii (operator-side canonical form) -- formal supplied-texture hypothesis
   4a-iii (uniqueness modulo basis)     -- bounded_theorem (THIS COMPANION)
   4a   (staggered-Dirac side)         -- OPEN residual (not addressed)
 

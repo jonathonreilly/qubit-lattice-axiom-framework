@@ -19,8 +19,8 @@ It is a curated boundary/support packet:
   Dirac Yukawa object
 - exact negative closeout of the full single-Higgs lepton PMNS route and exact
   seven-real reduction of the minimal surviving neutrino-side two-Higgs class
-- exact seven-real reduction of the minimal surviving charged-lepton-side
-  two-Higgs class
+- a self-contained seven-real formal quotient for a supplied two-offset
+  `3×3` texture, with no charged-lepton/Yukawa/Higgs identification supplied
 - exact PMNS selector reduction stack down to one real reduced amplitude
   `a_sel`, with exact current-stack zero law `a_sel,current = 0`
 - route-specific checks setting the algebraic cycle/transport mean `sigma` to
@@ -75,7 +75,8 @@ Primary package entry points:
   [LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE.md](./LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE.md)
 - exact minimal neutrino-side two-Higgs canonical reduction:
   [NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md](./NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-- exact minimal charged-lepton-side two-Higgs canonical reduction:
+- exact formal supplied-texture canonical reduction (not a physical
+  charged-lepton branch theorem):
   [CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md](./CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
 - exact PMNS native nontrivial-character current boundary and selector stack:
   [PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md](./PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md),

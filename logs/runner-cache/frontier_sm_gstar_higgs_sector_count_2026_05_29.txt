@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
-runner_sha256: 7e413009ce1167072ca1b0f9e33a4a3f799be0ab514d0a6ca1d78b929275c7da
+runner_sha256: 0277fada5f0074676db2abc6f243d2e619a2da897a4929bfa41f59284cb2f7c7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -15,7 +15,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] SU(2)_L dof = dim adj(SU(2)) * 2 = 6  (6)
   [PASS] U(1)_Y dof = 1 * 2 = 2  (2)
   [PASS] gauge bosonic subtotal = 24  (24)
-  [PASS] one complex SU(2)_L doublet -> 4 real scalar dof
+  [PASS] supplied one-complex-doublet premise -> 4 real scalar dof
   [PASS] per-generation fermionic dof = 30  (30)
   [PASS] N_fermions = 3 * 30 = 90  (90)
   [PASS] single-doublet N_bosons = 28  (28)
@@ -25,13 +25,13 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] g_* shift from a second thermalized doublet = +4 (one boson per scalar dof)  (4)
   [PASS] the shift equals the 4 added scalar dof (bosonic, weight 1)
 
-[2] flavor-sector two-Higgs = Yukawa Z_3-offset texture, ONE doublet
-  [PASS] single fixed-offset Yukawa Y = D P is monomial -> Y^dag Y diagonal  (all 3 offsets, random couplings)
-  [PASS] two-offset Yukawa Y = A + B C is generically non-monomial -> Y^dag Y non-diagonal  (the flavor escape that makes PMNS nontrivial)
-  [PASS] retained two-Higgs canonical class: 12 - 5 = 7 real physical quantities  (12 - 5 = 7 (6 moduli + 1 phase))
-  [PASS] these 7 are Yukawa-texture parameters, NOT relativistic thermalized dof  (flavor space (couplings) vs Fock space (particle content))
-  [PASS] single-Higgs Z_3 charge q_H is a right-basis relabeling -> Y Y^dag invariant  (q_H gauge-redundant for PMNS; not a second physical doublet)
-  [PASS] pseudoreality epsilon U^* = U epsilon -> tilde H determined by H (one field)  (tilde H = i tau_2 H^* is not an independent doublet)
+[2] supplied two-offset matrix texture (no field-content inference)
+  [PASS] supplied single-offset matrix Y = D P is monomial -> Y^dag Y diagonal  (all 3 offsets, random couplings)
+  [PASS] supplied two-offset matrix Y = A + B C is generically non-monomial  (finite-matrix fact only; no PMNS/CP inference)
+  [PASS] formal supplied-texture quotient: 12 - 5 = 7 real parameters  (12 - 5 = 7 (6 moduli + 1 phase))
+  [PASS] the seven quotient parameters are not physical quantities or thermalized dof  (the formal hypotheses contain no field or particle inventory)
+  [PASS] formal right-basis relabeling leaves Y Y^dag invariant  (no gauge, PMNS, or field-count conclusion is drawn)
+  [PASS] pseudoreality identity epsilon U^* = U epsilon holds exactly  (field-content interpretation remains tied to the separate one-doublet premise)
 
 [3] retained-bounded inventory premise and native bridge boundary
   [PASS] D17: H_unit (1,1) scalar singlet on Q_L has Z^2 = 6
@@ -63,7 +63,6 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] authority exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
   [INFO] prior-cycle R-HIGGS note present on this branch: True (lands via PR #2223; soft check)
   [PASS] note file exists
-  [PASS] audit ledger has SM DOF inventory retained_bounded  (claim_type=bounded_theorem effective_status=retained_bounded)
   [PASS] note records load-bearing token: '106.75'
   [PASS] note records load-bearing token: '110.75'
   [PASS] note records load-bearing token: 'bounded_theorem'
@@ -83,7 +82,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] no new-vocabulary token: 'algebraic universality'
 
 ==============================================================================
-PASS=63 FAIL=0
+PASS=62 FAIL=0
 ==============================================================================
 
 ----- stderr -----

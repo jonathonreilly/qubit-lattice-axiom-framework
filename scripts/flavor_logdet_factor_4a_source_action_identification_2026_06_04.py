@@ -5,21 +5,22 @@ docs/FLAVOR_LOGDET_FACTOR_4A_SOURCE_ACTION_IDENTIFICATION_NARROW_COMPANION_NOTE_
 
   Within the four-factor log-det generator decomposition, Factor 4a (physical
   source-action identification, additive site-diagonal shift M(j) = D + J(j))
-  has two retained finite scalar-source surfaces:
+  compares two supplied finite scalar-source surfaces:
 
     (4a-i)  Signed-record incarnation -- yt_source_action_support_packet_note_2026-05-22
             (retained_bounded). The site-diagonal local action S_h = S_0 - sum_x h_x epsilon_x
             produces the same RN family as the additive shift on Z(h).
     (4a-ii) Operator-side canonical form -- charged_lepton_two_higgs_canonical_reduction_note
-            (retained). Y_e = A + B C with diagonal A, B and forward 3-cycle C admits the
-            site-diagonal additive shift (A, B) -> (A + diag(j), B).
+            (formal supplied-texture theorem only). Y = A + B C with diagonal A, B and
+            the displayed 3-cycle C admits the site-diagonal additive shift
+            (A, B) -> (A + diag(j), B). No physical source/Yukawa meaning is imported.
 
   (4a-iii) Uniqueness modulo basis: among site-local linear scalar-source couplings, the
   diagonal projector class Q_x = P_x = e_x e_x^T is the unique common structural class.
 
   The companion is BOUNDED, NOT positive_theorem: the staggered-Dirac side of Factor 4a
   remains an open residual. This runner verifies only the cross-surface calibration
-  sub-piece on the two retained finite scalar-source surfaces.
+  sub-piece on the two supplied finite scalar-source surfaces.
 """
 
 from __future__ import annotations
@@ -286,14 +287,14 @@ def main() -> int:
     # -------------------------------------------------------------
     # The calibration argument uses:
     #  - YT support packet identity (retained_bounded, finite-support algebra)
-    #  - Two-Higgs canonical reduction theorem (retained, positive_theorem)
+    #  - Supplied-texture formal reduction theorem (exact matrix algebra only)
     #  - Finite linear algebra (rank-one site-local enumeration)
     # NONE of these is the Record baseline; we do NOT invoke I(R_1 sqcup R_2) = I(R_1) + I(R_2).
     used_record_axiom = False
     passed.append(check(
         "T8. Independence from Record baseline: calibration does not invoke scalar record additivity",
         not used_record_axiom,
-        "uses only YT, two-Higgs, and finite linear algebra; no baseline Record input",
+        "uses only YT, a supplied formal matrix texture, and finite linear algebra; no baseline Record input",
     ))
 
     # -------------------------------------------------------------
@@ -301,7 +302,7 @@ def main() -> int:
     # -------------------------------------------------------------
     factor_4a_status = {
         "4a-i (signed-record incarnation)": "retained_bounded (YT)",
-        "4a-ii (operator-side canonical form)": "retained (two-Higgs)",
+        "4a-ii (operator-side canonical form)": "formal supplied-texture hypothesis",
         "4a-iii (uniqueness modulo basis)": "bounded_theorem (THIS COMPANION)",
         "4a (staggered-Dirac side)": "OPEN residual -- not addressed",
     }
@@ -346,7 +347,7 @@ def main() -> int:
     # -------------------------------------------------------------
     cited_authorities = [
         "yt_source_action_support_packet_note_2026-05-22 (retained_bounded)",
-        "charged_lepton_two_higgs_canonical_reduction_note (retained)",
+        "charged_lepton_two_higgs_canonical_reduction_note (formal supplied-texture algebra)",
         "flavor_logdet_factor_4b_jacobi_derivative_2026-06-04 (sibling source note)",
         "flavor_logdet_generator_three_factor_provenance_2026-06-04 (roadmap)",
     ]
@@ -410,13 +411,13 @@ def main() -> int:
     ))
 
     # -------------------------------------------------------------
-    # T15. Basis-fixing inherited from retained authorities, not derived here.
+    # T15. Basis-fixing is supplied by the inputs, not derived here.
     # -------------------------------------------------------------
     yt_basis = "signed-record basis {epsilon = +-1}^n (from YT_SOURCE_ACTION_SUPPORT_PACKET)"
-    th_basis = "generation basis {e_1, e_2, e_3} (from CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION)"
+    th_basis = "supplied index basis {e_1, e_2, e_3} (formal texture theorem)"
     basis_derived_here = False
     passed.append(check(
-        "T15. Basis-fixing inherited from retained authorities, NOT derived in this companion",
+        "T15. Basis-fixing is supplied by the inputs, NOT derived in this companion",
         not basis_derived_here,
         f"YT basis: {yt_basis}; two-Higgs basis: {th_basis}",
     ))
@@ -468,7 +469,7 @@ def main() -> int:
     print()
     print("Coverage split:")
     print("  4a-i  (signed-record incarnation)    -- retained_bounded (YT support packet)")
-    print("  4a-ii (operator-side canonical form) -- retained (two-Higgs canonical reduction)")
+    print("  4a-ii (operator-side canonical form) -- formal supplied-texture hypothesis")
     print("  4a-iii (uniqueness modulo basis)     -- bounded_theorem (THIS COMPANION)")
     print("  4a   (staggered-Dirac side)         -- OPEN residual (not addressed)")
     print()

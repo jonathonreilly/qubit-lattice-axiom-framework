@@ -8,10 +8,10 @@ Question:
   invariants?
 
 Answer:
-  No. The current exact bank isolates the branches but does not select among
-  them. It contains no retained Higgs-multiplicity selector, no retained
-  shared-Higgs Z_3 universality theorem, and no exact bridge constraining the
-  canonical seven-quantity data on either minimal branch.
+  No. Under separately supplied physical branch hypotheses, the current exact
+  bank does not select among the branches. The supplied two-offset texture
+  theorem is only a formal matrix quotient and is not authority for a
+  charged-lepton branch or for seven physical quantities.
 
 Boundary:
   This is a current-atlas/package theorem only. It does not claim that such a
@@ -54,13 +54,13 @@ def main() -> int:
     print()
     print("Atlas / package inputs reused:")
     print("  - Neutrino Dirac two-Higgs canonical reduction")
-    print("  - Charged-lepton two-Higgs canonical reduction")
+    print("  - supplied two-offset 3x3 texture formal reduction")
     print("  - PMNS boundary packet")
     print("  - flavor publication controls and live gate notes")
     print()
     print("Question:")
     print("  Does the current exact bank already select the surviving minimal")
-    print("  PMNS-producing branch, or constrain its seven canonical quantities?")
+    print("  PMNS-producing branch, or derive its physical observables?")
 
     # Publication-state evolution 2026-04-17 / 2026-04-25:
     # The HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM upgraded q_H = 0
@@ -77,7 +77,10 @@ def main() -> int:
 
     atlas_lower = atlas.lower()
     has_neutrino_branch = "| Neutrino Dirac two-Higgs canonical reduction |" in atlas
-    has_charged_lepton_branch = "| Charged-lepton two-Higgs canonical reduction |" in atlas
+    has_formal_texture_row = "| Supplied two-offset `3×3` texture formal reduction |" in atlas
+    has_charged_conditional_consumer = (
+        "| PMNS branch-conditioned quadratic-sheet closure |" in atlas
+    )
     has_selector_row = (
         "higgs multiplicity selector" in atlas_lower
         or "shared-higgs z_3 universality theorem" in atlas_lower
@@ -90,10 +93,11 @@ def main() -> int:
     )
 
     print("\n" + "=" * 88)
-    print("PART 1: THE CURRENT ATLAS DOES ISOLATE THE MINIMAL BRANCHES")
+    print("PART 1: FORMAL TEXTURE AND PHYSICAL BRANCH HYPOTHESES STAY SEPARATE")
     print("=" * 88)
     check("Atlas carries the minimal neutrino-side canonical branch", has_neutrino_branch)
-    check("Atlas carries the minimal charged-lepton-side canonical branch", has_charged_lepton_branch)
+    check("Atlas carries the supplied formal texture reduction without calling it a physical branch", has_formal_texture_row)
+    check("Atlas carries a separate branch-conditioned physical consumer", has_charged_conditional_consumer)
     check("Atlas carries this note's nonselection row", has_nonselection_row)
 
     print("\n" + "=" * 88)
@@ -111,27 +115,27 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("PART 3: THE PACKAGE TREATS BRANCH SELECTION AS UNDERDETERMINED")
     print("=" * 88)
-    check("Atlas keeps both minimal branches and their nonselection theorem co-listed",
-          has_neutrino_branch and has_charged_lepton_branch and has_nonselection_row)
+    check("Atlas keeps the physical branch consumer separate from the formal theorem",
+          has_charged_conditional_consumer and has_formal_texture_row and has_nonselection_row)
 
     print()
     print("  So the current exact bank has reached the honest endpoint:")
-    print("    - minimal PMNS-producing branches are isolated,")
-    print("    - their canonical sizes are known,")
+    print("    - a charged-lepton physical branch is a separate supplied hypothesis,")
+    print("    - the formal texture quotient has no physical identification,")
     print("    - but no exact selector or invariant-deriving bridge exists yet.")
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
     print("  Exact current-atlas answer:")
-    print("    - the minimal neutrino-side and charged-lepton-side branches are isolated")
-    print("    - the current atlas/package does not select among them")
-    print("    - the current exact bank does not yet derive their seven canonical quantities")
+    print("    - the neutrino-side branch and a conditional charged-lepton consumer are recorded")
+    print("    - the current atlas/package does not select among physical branch hypotheses")
+    print("    - seven formal quotient coordinates are not seven physical quantities")
     print()
     print("  So the remaining finish-line work is not more branch hunting.")
     print("  It is either:")
     print("    - derive a selector theorem, or")
-    print("    - derive the seven canonical quantities on a chosen branch.")
+    print("    - supply and derive physical observables on a chosen branch.")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

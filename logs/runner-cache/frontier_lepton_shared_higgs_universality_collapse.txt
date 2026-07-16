@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lepton_shared_higgs_universality_collapse.py
-runner_sha256: 9d4760ae0c7177ff00162fd0d6cecd20219f4843fbf2a425377deba31005a744
+runner_sha256: f7c715f7fed0532417bd4cfe7f76050740e62ce47f56b0e97a7d1baff30b91c8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -13,7 +13,8 @@ LEPTON PMNS BRANCHES: SHARED-HIGGS UNIVERSALITY COLLAPSE
 Atlas / axiom inputs reused:
   - Lepton single-Higgs PMNS triviality theorem
   - Neutrino Dirac two-Higgs escape theorem
-  - Charged-lepton two-Higgs canonical reduction theorem
+  - supplied two-offset 3x3 texture formal reduction
+    (the shared-Higgs/Yukawa identification is a separate hypothesis here)
 
 Question:
   If the same effective Higgs-offset set contributes to both lepton

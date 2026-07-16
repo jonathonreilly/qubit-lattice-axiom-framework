@@ -3,19 +3,11 @@
 **Date:** 2026-04-17
 **Status:** support - critical-review verification layer on top of the prior P1 citation note
 (`docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`).
-**Verdict (up front, Abstract §0):** the cited-literature upward revision of P1 from
-the packaged `1.92%` nominal to `~5.77%` is **structurally honest but semantically
-partial**. The packaged `1.92%` was never a framework-native lattice-to-MSbar matching
-derivation for the composite `H_unit` bilinear. Its current reproducible content in
-this row is only the conditional arithmetic
-`alpha_LM · C_F/(2 pi) = (alpha_LM/(4 pi)) · C_F · 2`; the historical
-continuum-vertex/source-action interpretation is not supplied by a current
-load-bearing authority here. The cited
-`I_S ∈ [4, 10]` is a different object — it is a genuine lattice-to-MSbar BZ matching
-coefficient for the staggered scalar density on the Wilson plaquette gauge action at
-`β ≃ 6`. The two are **not the same quantity** in different conventions
-(**Possibility B is rejected**), they are two different approaches to bounding the
-same NLO scale on the `y_t(M_Pl)/g_s(M_Pl)` readout.
+**Verdict (up front, Abstract §0):** this row verifies conditional arithmetic only.
+The historical `1.92%` is reproduced under the separate `I_S = 2` convention, and
+the supplied `I_S ∈ [4, 10]` bracket maps conditionally to
+`P1 ∈ [3.85%, 9.62%]`. The row does not determine whether those two inputs describe
+the same, additive, or superseding physical contribution.
 **Runner:** `scripts/frontier_yt_p1_i_s_revision_verification.py`
 **Log:** `logs/retained/yt_p1_i_s_revision_verification_2026-04-17.log`
 
@@ -26,7 +18,14 @@ same NLO scale on the `y_t(M_Pl)/g_s(M_Pl)` readout.
 > historical label for the conditional arithmetic
 > `alpha_LM · C_F/(2 pi) = (alpha_LM/(4 pi)) · C_F · 2`. This row proves that
 > arithmetic identity only. The identification `I_S = 2`, its source-action
-> meaning, and any NLO matching interpretation remain open.
+> meaning, and any NLO matching interpretation remain open. Every numerical use
+> of `alpha_LM` below is conditional arithmetic/provenance from the linked
+> unaudited certificate, not retained physical/canonical authority. The
+> same, additive, or superseding physical contribution remains open; this row
+> does not select a physical relationship between the two inputs.
+
+The historical `delta_PT` remains conditional arithmetic under the separate
+historical `I_S = 2` convention.
 
 ---
 
@@ -50,79 +49,31 @@ This note is a **verification / critical-review** layer. It does **not** modify:
   structural result `I_1 = I_S` on the retained conserved-current surface is
   unchanged by this note.
 
-What this note adds is narrower: a **deterministic check** of whether the claimed
-3x upward revision corresponds to Possibility A (revision correct and the packaged
-value is a mis-identified `I_S = 2`), Possibility B (convention-mismatch false
-alarm), or Possibility C (the packaged value and the cited `I_S` are two distinct
-NLO contributions, potentially additive or superseding). The verdict is stated
-upfront and then verified arithmetically and semantically.
+What this note adds is narrower: a deterministic arithmetic comparison between
+the historical `I_S = 2` convention and the supplied `[4, 10]` bracket. The
+arithmetic factor-three relation is verified, while source-action, NLO,
+operator-transfer, Ward-cancellation, and same/additive/superseding semantics
+remain open.
 
 ---
 
 ## Abstract (§0 Verdict)
 
-**Verdict:** Possibility A in **magnitude** (the upward revision is directionally
-correct), Possibility C in **semantics** (the packaged value and the cited `I_S`
-are **not** the same 1-loop object computed in different conventions — they are
-two different approaches to the same NLO scale). Specifically:
-
-- The packaged `delta_PT = α_LM · C_F / (2π) = 1.924%` is a **continuum vertex-
-  correction magnitude** written with canonical-surface inputs. It is a
-  historically labeled “continuum vertex-correction magnitude,” but this row
-  establishes only its conditional arithmetic form. It is not a lattice BZ
-  integration for any specific operator, and the source-action/NLO
-  interpretation is not supplied here.
-- The cited `I_S ≈ 6` (range `[4, 10]`) is a **lattice-to-MSbar BZ integral** for
-  the staggered scalar density operator on the Wilson plaquette gauge action at
-  `β ≃ 6`, with tadpole improvement. This is a distinct object; it is a real
-  quantity in the staggered lattice-QCD literature and is not reducible to the
-  continuum vertex-correction magnitude by any convention switch.
-- **Possibility B (false alarm) is rejected**: no normalization convention
-  reconciles the two numbers. The packaged `1.92%` is not "the same quantity as
-  I_S in a different normalization". It is a different quantity that happens to
-  equal `(α/(4π)) · C_F · 2` when algebraically rewritten — but the "2" is a
-  numerical artifact of the convention conversion, not a claimed operator-
-  matching BZ integral.
-- **Possibility A (revision correct) is correct in magnitude**: the actual
-  lattice-to-MSbar scalar-density matching coefficient is indeed materially
-  larger than the continuum vertex-correction magnitude — the cited `[4, 10]`
-  bracket is a faithful reading of published staggered-fermion matching
-  literature, and the resulting `P1 ∈ [3.85%, 9.62%]` range is the correct
-  size-of-NLO estimate for the composite `H_unit` scalar-bilinear matching on
-  the canonical surface.
-- **Possibility C (additive / distinct contributions) captures the semantics**:
-  the two quantities should not simply replace one another. At full NLO the
-  `y_t(M_Pl)/g_s(M_Pl)` readout picks up (i) a continuum vertex-correction
-  piece (captured heuristically by the packaged `1.92%`) and (ii) a lattice
-  scalar-density matching piece (captured by the cited `I_S`). In a complete
-  lattice-to-MSbar bridge, the lattice-side matching piece is the leading one
-  and the "continuum vertex-correction" heuristic is implicitly absorbed into
-  it. So the appropriate use is: **report the P1 budget in the lattice-matching
-  language**, at `I_S ∈ [4, 10]` central `~6`, giving `P1 ∈ [3.85%, 9.62%]`
-  central `~5.77%`. Do **not** add the `1.92%` on top; it is absorbed into the
-  lattice matching (and in any event, the two are not strictly commensurate at
-  this level of rigor).
-
-**Revised P1 contribution (central, on the framework canonical surface):**
+**Arithmetic disposition:** under the conditionally supplied
+`alpha_LM = 0.09066784`,
 
 ```
-    P1_central  ≃  5.77%       (α_LM / (4π) · C_F · I_S ;  I_S = 6)
-    P1 range    ≃  [3.85%, 9.62%]     (I_S ∈ [4, 10])
+    historical delta_PT(I_S = 2)   = 1.924%
+    conditional map at I_S = 6     = 5.772%
+    conditional map, I_S in [4,10] = [3.848%, 9.620%].
 ```
 
-with the **explicit caveat** that `I_S` is cited from staggered-QCD literature
-at `O(1)` precision, not derived framework-native. The packaged `1.92%` remains
-defensible in its stated support-only role (continuum vertex-correction
-heuristic) and should **not** be dropped from the support note; it should be
-read as a *lower-bound floor* associated with the continuum-only evaluation,
-not as the framework-specific P1.
-
-**Confidence level in the verdict: HIGH** on the semantic question (Possibility
-B is clearly rejected), **MODERATE** on the quantitative question (the cited
-`I_S ≈ 6` is an honest literature bracket but has `O(1)` citation uncertainty
-and is not framework-native). The 3x upward revision is directionally correct;
-the precise numerical value requires a framework-native BZ integration that is
-not provided in either this note or the prior citation note.
+The historical expression is conditional arithmetic under the separate
+historical `I_S = 2` convention and is not a lattice BZ result. The supplied
+bracket is external conditional provenance for a nearby lattice operator/scheme.
+The exact operator/scheme transfer remains open. The Ward-cancellation gate
+remains open. No source-action, NLO, additive, superseding, or physical-selector
+conclusion follows from the displayed arithmetic.
 
 ---
 
@@ -178,8 +129,9 @@ The packaged `delta_PT` is **not**:
   (`I_S` is a specific lattice BZ integral over staggered fermion and Wilson
   gluon propagators; the packaged `δ_PT` is not of this form).
 
-It is a continuum vertex-correction magnitude evaluated at the canonical-surface
-coupling `α_LM`, nothing more.
+It is only the displayed conditional arithmetic evaluated with the supplied
+`α_LM` number. The historical “continuum vertex-correction” wording is a label,
+not source-action or NLO authority.
 
 ### 2.3 Algebraic identity in `α/(4π)` convention
 
@@ -198,10 +150,9 @@ value. It isn't — the packaged `δ_PT` is in the form `(α / (2π)) · C_F`, a
 the numerical coincidence with `(α / (4π)) · C_F · 2` is a trivial convention
 identity that doesn't imply `δ_PT` is a BZ integration output.
 
-**Conclusion of §2:** The packaged `1.92%` is a continuum vertex-correction
-magnitude, not a lattice BZ integral. The "implicit `I_S = 2`" label in the
-citation note is a convention-conversion reading, not a property of the
-packaged derivation itself.
+**Conclusion of §2:** the packaged `1.92%` is conditional arithmetic under the
+separate historical `I_S = 2` convention, not a lattice BZ result. The
+arithmetic alone does not identify its source action or matching role.
 
 ---
 
@@ -235,126 +186,51 @@ staggered scalar density on Wilson plaquette gauge action. The cited range is:
 |---------------------------------------------|---------------------|-----------------------------------------------|
 | Un-improved Wilson + staggered scalar       | `[10, 20]`          | Kilcup–Sharpe 1987, Sharpe 1994              |
 | Tadpole-improved Wilson + 1-link staggered  | `[4, 10]`           | Bhattacharya–Sharpe 1998, BGKS 1999          |
-| Standard fundamental-Yukawa continuum       | `2` (exact)         | reference point only                          |
+| Historical arithmetic convention            | `2`                 | conditional reference point only              |
 
 The tadpole-improved bracket `I_S ∈ [4, 10]` with literature-cluster central
-`~6` is the retained citation (citation note §2.2–2.4).
+`~6` is supplied external provenance from the citation note (§2.2–2.4), not
+retained authority in this row.
 
 ### 3.3 What the cited `I_S` is NOT
 
 The cited `I_S ≈ 6` is **not**:
 
-- the "standard vertex-correction magnitude" `C_F · α / (2π)` — that is a
-  continuum quantity; the BZ integral on the lattice explicitly includes
-  lattice artifacts (Wilson plaquette gluon propagator deviation from
-  continuum `k²`, staggered taste sum, tadpole improvement factor);
 - a framework-native derivation on the `Cl(3) × Z^3` canonical action — it is
   a lattice-QCD literature value for the *closest* analogue
   (tadpole-improved staggered scalar density at `β ≃ 6`), with explicit `O(1)`
   citation uncertainty per the prior note §2.4;
+- evidence that the historical `I_S = 2` arithmetic and this supplied bracket
+  are the same, additive, or superseding physical contributions;
 - the full `Δ_R` — it is only the `C_F · I_1 = C_F · I_S` piece, with `C_A · I_2`
   and `T_F n_f · I_3` pieces still OPEN (citation note §7).
 
-### 3.4 Physical reason for `I_S ≠ 2`
+### 3.4 Transfer boundary
 
-The prior citation note §2.3 gives two structural reasons the lattice scalar-
-density matching coefficient is materially larger than the continuum
-fundamental-Yukawa value `2`:
-
-1. **Staggered taste structure.** The BZ integrand retains a nontrivial taste
-   sum over the staggered `η`-phase structure (D1–D4) that is absent from the
-   continuum fundamental-Yukawa vertex.
-2. **Wilson plaquette gluon propagator.** The lattice gluon propagator differs
-   from the continuum `k²` by `O((k a)^4)` terms, which integrate to a finite
-   `O(1)` shift in `I_S`.
-
-Both are intrinsic to the canonical staggered surface and persist under tadpole
-improvement (which reduces magnitude but does not remove the shift).
-
-**Conclusion of §3:** The cited `I_S ≈ 6` is a lattice BZ integral specific to
-the staggered scalar density on the Wilson plaquette action, not a continuum
-vertex-correction magnitude. The two quantities are structurally distinct.
+The cited operator, action, and scheme are nearby comparators, not the exact
+framework source action. The exact operator/scheme transfer remains open.
+Consequently the supplied bracket may be used only in the conditional arithmetic
+map; it cannot by itself select the governing physical correction.
 
 ---
 
-## 4. Comparison analysis: same quantity? different? additive?
+## 4. Comparison analysis: arithmetic only
 
-### 4.1 Possibility B (false alarm): rejected
+The exact normalization identity is
 
-Possibility B asserts that the packaged `δ_PT` and the cited `I_S` are the
-same physical quantity in different conventions (e.g., `α/(2π)` vs `α/(4π)`
-normalization, or different operator bases).
+```
+    α / (2π) = 2 α / (4π).
+```
 
-This is rejected by the following observations:
+Therefore the historical expression can be rewritten with a numerical factor
+`2`, while the supplied bracket maps to factors in `[4, 10]`. This proves the
+factor-three central arithmetic comparison. It does not decide whether the
+historical expression and the supplied bracket are the same physical quantity,
+different physical quantities, additive contributions, or alternative
+descriptions. That selector requires source-action and operator-matching input
+not supplied here.
 
-(a) **Different objects.** `δ_PT` is dimensionless `α · C_F / (2π)`, a
-    continuum scale. `I_S` is dimensionless `α · C_F · I_S / (4π)` where `I_S`
-    is a lattice BZ integral. The dimensionality is the same (both are
-    corrections to `ln(Z_S)`), but the *definition* is different: one is a
-    continuum vertex-correction magnitude; the other is a lattice-to-MSbar
-    BZ integration for a specific operator.
-
-(b) **No convention switch reconciles them.** `α/(2π) = 2 α/(4π)`, so the
-    trivial conversion gives `α · C_F / (2π) = (α / (4π)) · C_F · 2`. The
-    "2" on the right is a convention factor, not a BZ integral value. The
-    cited `I_S ≈ 6` is a *different* number — it is the result of an actual
-    BZ integration over lattice propagators, not a convention coefficient.
-
-(c) **Physical mechanism.** The cited `I_S` is larger than `2` for two
-    *specific* physical reasons (§3.4) that are absent in the continuum
-    vertex-correction magnitude. The two reasons are intrinsic to the lattice
-    regulator; no convention switch on the continuum side can reproduce them.
-
-Possibility B would require that `I_S = 2` *on the lattice* for the staggered
-scalar density — which is contradicted by the literature cluster at `~6`.
-Therefore Possibility B is rejected.
-
-### 4.2 Possibility A (revision correct in magnitude): confirmed directionally
-
-Possibility A asserts that the packaged `1.92%` implicitly uses `I_S = 2` and
-this is a mis-identification on the composite-H_unit surface.
-
-This is **partially** correct:
-
-- **Directionally correct**: the lattice-to-MSbar matching coefficient for the
-  staggered scalar density IS materially larger than `2` in the `α/(4π)`
-  convention, and the resulting P1 is materially larger than `1.92%`.
-  This is confirmed by the staggered-QCD literature.
-
-- **Semantically imprecise**: the packaged `1.92%` does NOT actually "assume
-  `I_S = 2`" — it is a different quantity (continuum vertex-correction
-  magnitude) that happens to equal `(α/(4π)) · C_F · 2` after convention
-  conversion. The mis-identification is not that the packaged value chose the
-  wrong `I_S`; rather, the packaged value was never a lattice `I_S`-style
-  quantity to begin with, and the later attempt to read the packaged `1.92%`
-  as `(α/(4π)) · C_F · I_S_standard` is a convention-switch re-interpretation.
-
-### 4.3 Possibility C (distinct contributions): captures the semantics
-
-Possibility C asserts that the packaged `1.92%` and the cited `I_S` are
-distinct NLO contributions, potentially additive.
-
-This is the **correct semantic framing**:
-
-- The packaged `1.92%` is a continuum vertex-correction magnitude (a heuristic
-  scale-of-NLO).
-- The cited `I_S ≈ 6` is a lattice-to-MSbar matching coefficient for the
-  staggered scalar density (a specific operator-matching BZ integral).
-
-These are NOT additive on the same ledger, because in a complete lattice-to-
-MSbar bridge, the lattice-matching piece (cited `I_S`) already includes the
-continuum-vertex-correction content as its **asymptotic limit**. The "standard
-vertex-correction formula" gives `I_S_continuum = 2` as the continuum analogue
-of the lattice BZ integral; the lattice value `I_S_lat ≈ 6` **replaces** (not
-"adds to") the continuum value on the lattice surface.
-
-**Correct accounting**: the framework-specific P1 is evaluated with the
-lattice `I_S`, not the continuum heuristic. The packaged `1.92%` was a
-*placeholder* (explicitly OPEN / support-only in its source), and the
-appropriate replacement is `P1 ∈ [3.85%, 9.62%]` central `~5.77%`. The `1.92%`
-is not added on top; it is *superseded* by the lattice value.
-
-### 4.4 One subtle caveat: the Ward-identity cancellation
+### 4.1 Ward-cancellation gate
 
 The Ward-identity theorem (Steps 3A–3E of
 `docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`) derives `y_t_bare = g_bare / √6`
@@ -374,13 +250,10 @@ This is NOT established here. Neither the prior citation note nor this
 verification note attempts a full 1-loop closure of both representations of
 the Ward identity. The honest statement is:
 
-> The cited `I_S ≈ 6` is the size of the lattice scalar-density matching
-> coefficient on Representation B. The net effect on the Ward ratio
-> `y_t(M_Pl) / g_s(M_Pl)` at 1-loop depends on whether the Representation-A
-> correction partially cancels it. This cancellation structure is not
-> established, so the cited `I_S` bracket should be read as an **upper
-> bound** on the P1 contribution from the scalar-density matching, not as
-> the net effect on the ratio.
+> The supplied `I_S` bracket enters only the conditional Representation-B
+> arithmetic map. The net effect on the Ward ratio depends on the independent
+> Representation-A correction. The Ward-cancellation gate remains open, so
+> no net P1 correction follows from this row.
 
 This is a further caveat on top of the `O(1)` citation uncertainty.
 
@@ -418,102 +291,56 @@ This is a further caveat on top of the `O(1)` citation uncertainty.
     α · C_F / (2π)  =  (α / (4π)) · C_F · 2
 ```
 
-This identity is exact; both sides evaluate to `0.01924` at the canonical surface.
+This identity is exact; both sides evaluate conditionally to `0.01924` with the
+supplied `alpha_LM` arithmetic.
 The "2" is a convention factor, not an `I_S` value in any physical sense.
 
-### 5.4 Both in the same units
+### 5.4 Scope of the numerical comparison
 
-Both `delta_PT` (packaged) and `P1(I_S)` (cited) are dimensionless corrections
-to the Yukawa/gauge ratio at 1-loop. They have the same units, so numerical
-comparison is meaningful. The ratio `P1(I_S=6) / delta_PT_packaged = 3.0` is
-structurally consistent — *if* one accepts the reading that `delta_PT` should
-be replaced by `P1(I_S)` with the lattice-specific `I_S`.
+The displayed expressions are dimensionless arithmetic. Their ratio is exactly
+`3.0` at `I_S = 6` versus the historical `I_S = 2` convention. This numerical
+comparison does not select a physical relationship between the two inputs.
 
 ---
 
-## 6. Verdict
+## 6. Arithmetic-only disposition
 
-### 6.1 Primary verdict: Possibility A (magnitude) + Possibility C (semantics)
-
-- **Possibility B is rejected**: no normalization convention reconciles the
-  packaged `1.92%` (continuum vertex-correction magnitude) with the cited
-  `I_S ≈ 6` (lattice-to-MSbar BZ matching coefficient). They are distinct
-  quantities.
-- **Possibility A captures the magnitude of the revision**: the appropriate
-  framework-specific P1 estimate on the canonical surface is indeed
-  `P1 ∈ [3.85%, 9.62%]` central `~5.77%`, materially larger than the packaged
-  `1.92%`. The revision is in the right direction.
-- **Possibility C captures the semantics**: the packaged value and the cited
-  `I_S` are distinct NLO contributions. The lattice-specific `I_S` **supersedes**
-  the continuum vertex-correction heuristic rather than adding to it. Do not
-  sum them.
-
-### 6.2 Revised P1 contribution
+Under the supplied inputs:
 
 ```
-    P1_central  ≃  5.77 %      (α_LM / (4π) · C_F · I_S ;  I_S = 6 central)
-    P1 range    ≃  [3.85%, 9.62%]     (I_S ∈ [4, 10])
+    historical delta_PT, I_S = 2  = 1.924%
+    conditional central, I_S = 6  = 5.772%
+    conditional range, I_S ∈ [4,10] = [3.848%, 9.620%].
 ```
 
-with the caveats:
-
-(a) `I_S` is cited from staggered-QCD literature at `O(1)` precision, not
-    framework-native;
-(b) the cancellation between Representations A and B of the Ward identity
-    at 1-loop is not established, so `I_S` may overcount the net effect on
-    the ratio `y_t(M_Pl) / g_s(M_Pl)` (§4.4);
-(c) the `C_A` channel (`I_2`) and `T_F n_f` channel (`I_3`) of `Δ_R` remain
-    OPEN and are not included in this estimate.
-
-### 6.3 Do the packaged `1.92%` and cited `I_S` sit on the same ledger?
-
-**No, they should not be added.** The packaged `1.92%` is a continuum vertex-
-correction magnitude; the cited `I_S · C_F · α/(4π)` is a lattice-to-MSbar
-matching coefficient that **contains** the continuum vertex-correction content
-as its continuum limit. On the lattice surface, the lattice value supersedes
-the continuum heuristic. The correct reporting is:
-
-- On the canonical lattice surface (tadpole-improved Wilson plaquette +
-  staggered): P1 ≈ `(α_LM / (4π)) · C_F · I_S_lat` with `I_S_lat` cited.
-- The packaged continuum value `1.92%` is a lower bound / sanity check only
-  (it is what the matching coefficient would be in a continuum regulator with
-  no lattice artifacts).
-
-### 6.4 Confidence level
-
-**HIGH** on the semantic verdict: the packaged value and the cited `I_S` are
-distinct quantities; Possibility B is clearly rejected; the revision is in
-the right direction.
-
-**MODERATE** on the quantitative value: `I_S ≈ 6` is an honest literature
-reading but carries `O(1)` citation uncertainty and is not framework-native.
-The range `[4, 10]` is a defensible bracket. A framework-native 1-loop BZ
-integration would be required to narrow the uncertainty below `O(1)` and to
-close the Ward-cancellation caveat (§4.4).
+The supplied bracket is external and has `O(1)` citation uncertainty. The
+historical arithmetic has no independently supplied source-action or NLO
+interpretation. Their same/additive/superseding relationship remains open.
+The Ward-cancellation gate, exact operator/scheme transfer, `C_A` channel,
+`T_F n_f` channel, and publication propagation all remain open.
 
 ---
 
 ## 7. Safe claim boundary
 
-This note claims:
+This note claims only the conditional arithmetic statements:
 
-> The cited upward revision of P1 from the packaged `1.92%` to `~5.77%` (range
-> `[3.85%, 9.62%]`) is **directionally correct in magnitude** (Possibility A)
-> and **distinct in semantics** from the packaged value (Possibility C). The
-> packaged value is a continuum vertex-correction magnitude, not a lattice BZ
-> integral. Possibility B (false-alarm convention mismatch) is rejected. The
-> revised P1 should be reported in the lattice-matching language with the
-> lattice `I_S` value; the packaged continuum value is superseded, not
-> additive, and remains defensible only as a lower-bound sanity check.
+> With conditionally supplied `alpha_LM = 0.09066784`, the separate historical
+> convention `I_S = 2` gives `1.924%`, while the supplied bracket
+> `I_S ∈ [4, 10]` maps to `[3.848%, 9.620%]` with central `5.772%`.
+> The historical value is not a lattice BZ result, and the arithmetic does not
+> select a physical relationship between the two inputs.
 
 It does **not** claim:
 
-- that the revised P1 is framework-native (the cited `I_S` is external
+- that the conditional P1 map is framework-native (the cited `I_S` is external
   literature);
 - that `I_S ≈ 6` is precise to better than `O(1)` (cited uncertainty remains);
-- that the net 1-loop correction to `y_t(M_Pl) / g_s(M_Pl)` equals the cited
-  `P1 ≈ 5.77%` (the Representation-A vs Representation-B cancellation at
-  1-loop is not established; cited `P1` may overcount);
+- that the net 1-loop correction to `y_t(M_Pl) / g_s(M_Pl)` equals the
+  conditional `5.77%` map (the Representation-A vs Representation-B
+  cancellation at 1-loop is not established);
+- that the historical and supplied inputs are the same, additive, or
+  superseding physical contributions;
 - that the master obstruction theorem or any publication-surface file should
   be modified on the basis of this verification note;
 - that the `C_A` (`I_2`) or `T_F n_f` (`I_3`) channels of `Δ_R` are closed;
@@ -526,19 +353,23 @@ It does **not** claim:
 **Retained (framework-native, unchanged by this note):**
 
 - `SU(3)` Casimirs `C_F = 4/3`, `C_A = 3`, `T_F = 1/2`.
-- Canonical surface `α_LM = 0.0907`.
 - Color-tensor decomposition `Δ_R = C_F · I_1 + C_A · I_2 + T_F n_f · I_3`.
 - Conserved-current reduction `I_1 = I_S` on the retained staggered surface.
 - Ward-identity tree-level exact identity `y_t_bare = g_bare / √6` (no NLO
   claim attached).
-- Packaged `δ_PT = α_LM · C_F / (2π) = 1.924%` (continuum vertex-correction
-  magnitude, OPEN / support-only status in its source note).
+
+**Conditional arithmetic/provenance (not retained physical/canonical authority):**
+
+- `α_LM = 0.0907` and `α_LM/(4π) = 0.00721` from the unaudited bounded
+  certificate.
+- Historical `δ_PT = α_LM · C_F / (2π) = 1.924%` under the separate
+  `I_S = 2` convention; not a lattice BZ result.
 
 **Cited (external lattice-QCD literature, with `O(1)` uncertainty):**
 
 - Tadpole-improved staggered scalar-density BZ matching coefficient
-  `I_S ∈ [4, 10]` in the `α/(4π)` convention, central `~6`.
-- The continuum fundamental-Yukawa value `I_S = 2` as a reference point.
+  `I_S ∈ [4, 10]` in the `α/(4π)` convention, central `~6`, as conditional
+  comparison provenance.
 
 **Open (not closed by this note or the prior citation note):**
 
@@ -548,7 +379,10 @@ It does **not** claim:
   ratio `y_t(M_Pl) / g_s(M_Pl)` (the cited `I_S` may overcount the net
   effect on the ratio).
 - `C_A` channel (`I_2`) and `T_F n_f` channel (`I_3`) of `Δ_R`.
-- Propagation of the revised P1 into any publication-surface table; no
+- The exact operator/scheme transfer remains open.
+- The same, additive, or superseding relationship between the historical
+  arithmetic and supplied bracket remains open.
+- Propagation of the conditional P1 map into any publication-surface table; no
   publication-surface file is modified by this note.
 
 ---
@@ -562,19 +396,16 @@ must return PASS on every check to keep this note on the retained surface.
 
 The runner verifies:
 
-- exact reproduction of the packaged `δ_PT = α_LM · C_F / (2π) = 1.924%`;
+- exact reproduction of the historical
+  `δ_PT = α_LM · C_F / (2π) = 1.924%` under `I_S = 2`;
 - convention identity `α/(2π) = 2 · α/(4π)` giving the algebraic form
   `(α/(4π)) · C_F · 2` — identifying the "2" as a convention factor, not a
   BZ integral value;
-- framework-specific P1 at `I_S ∈ {2, 4, 6, 8, 10}` in the `α/(4π)` convention;
-- convention-reconciliation check (rejection of Possibility B);
-- dimensional consistency (both quantities dimensionless corrections to
-  `ln(Z_S)`);
-- verdict determination: A (magnitude) + C (semantics), not B;
-- revised P1 central `~5.77%`, range `[3.85%, 9.62%]`;
-- no modification of the master obstruction theorem or Ward-identity theorem,
-  and no promotion of the historical `δ_PT` comparator;
-- structural preservation of the prior symbolic `I_1 = I_S` reduction.
+- conditional arithmetic at `I_S ∈ {2, 4, 6, 8, 10}`;
+- the source firewall against stale UV-bridge attribution, retained-alpha
+  wording, and unsupported semantic selectors;
+- explicit open source-action, NLO, Ward-cancellation, operator-transfer,
+  same/additive/superseding, and publication-propagation gates.
 
 ## Audit dependency repair links
 

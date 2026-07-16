@@ -1,7 +1,7 @@
 # P2 F_yt Loop-Expansion Geometric Tail Bound on the v-Matching Coefficient M
 
 **Date:** 2026-04-17
-**Status:** proposed_retained structural sub-theorem — a framework-native geometric upper bound on the loop-expansion tail of the integrated SM-RGE transport of `y_t` from `M_Pl` to `v` (`F_yt`), hence on the v-matching coefficient `M = √u_0 · F_yt · √(8/9)` that closes the P2 taste-staircase residual. Uses only proposed_retained SU(3) Casimir quantities, the proposed_retained SM light-flavor count, and the proposed_retained canonical-surface coupling `α_LM`. No literature value of the 3-loop or higher SM RGE integrated contribution is imported as a derivation input.
+**Status:** proposed_retained structural sub-theorem — a framework-native geometric upper bound on the loop-expansion tail of the integrated SM-RGE transport of `y_t` from `M_Pl` to `v` (`F_yt`), hence on the v-matching coefficient `M = √u_0 · F_yt · √(8/9)` that closes the P2 taste-staircase residual. Uses proposed_retained SU(3) Casimir quantities, the proposed_retained SM light-flavor count, and conditionally supplied `α_LM` arithmetic. No literature value of the 3-loop or higher SM RGE integrated contribution is imported as a derivation input.
 **Primary runner:** `scripts/frontier_yt_p2_f_yt_loop_geometric_bound.py`
 **Log:** `logs/retained/yt_p2_f_yt_loop_geometric_bound_2026-04-17.log`.
 
@@ -9,8 +9,9 @@
 > does not supply `alpha_LM`. The linked bounded arithmetic certificate is
 > itself unaudited on current `main`; it records the conditional calculation
 > `alpha_LM = alpha_bare/u_0`, but does not retain the physical/canonical input.
-> Legacy “retained canonical coupling” wording below must be read subject to
-> this correction.
+> Throughout this note, every numerical use of `alpha_LM = 0.0907` is therefore
+> conditional arithmetic/provenance only, not retained physical or canonical
+> authority.
 
 ---
 
@@ -26,13 +27,13 @@ introduce any new axiom or canonical-surface choice.
 
 The claim is strictly a framework-native geometric upper bound on the
 residual loop-expansion tail `Σ_{n ≥ N+1} [M_n − M_{n-1}]` at the
-retained canonical-surface anchor `α_LM = 0.0907`, expressed in terms
+conditionally supplied arithmetic anchor `α_LM = 0.0907`, expressed in terms
 of retained SU(3) Casimir quantities (`C_F`, `C_A`, `T_F`), the retained
-SM light-flavor count `n_l = 5`, and the retained canonical coupling
-`α_LM`. The `α_LM` anchor is chosen because `F_yt` is an integrated
+SM light-flavor count `n_l = 5`, and conditional `α_LM`
+arithmetic/provenance. The `α_LM` arithmetic is used because `F_yt` is an integrated
 RGE quantity whose leading loop-expansion parameter is governed by the
 UV (M_Pl-end) coupling, directly analogous to the P1 `α_LM`-anchored
-loop-expansion bound.
+loop-expansion bound; this note does not establish that physical identification.
 
 The bound's purpose is to close the cumulative retention budget of the
 P2 residual at the **loop-expansion axis** through a defensible
@@ -70,8 +71,8 @@ single coefficient
 
 where `√u_0`, `√(8/9)` are retained structural constants and `F_yt`
 is the integrated SM-RGE transport factor of the top Yukawa from
-`M_Pl` to `v`. `F_yt` admits a loop expansion in the retained
-canonical coupling
+`M_Pl` to `v`. This note conditionally parameterizes the `F_yt` loop
+expansion using the supplied `α_LM` arithmetic
 
 ```
     F_yt  =  F_yt^{(1)}  +  ΔF_yt^{(2)}  +  ΔF_yt^{(3)}  +  ...     (LE-F)
@@ -85,7 +86,7 @@ matching-coefficient loop shifts `ΔM^{(n)}` inherit the expansion
 linearly through (0.1).
 
 Writing `δM_n := M^{(n)} − M^{(n-1)}` for the `n`-loop integrated
-shift, the loop series satisfies, at the retained canonical coupling
+shift, the loop series satisfies, at the conditionally supplied arithmetic
 anchor `α_LM = 0.0907` and retained `n_l = 5`, a framework-native
 geometric tail bound
 
@@ -107,7 +108,7 @@ This is the same framework-native ratio as the P1 loop-expansion
 bound (`YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md`) — the UV
 renormalon-growth scale set by the retained one-loop QCD beta-function
 coefficient at the retained SM flavor content, evaluated at the
-retained canonical coupling.
+conditionally supplied `α_LM` arithmetic.
 
 The observed 1→2 loop integrated shift, from the retained primary-chain
 evaluations on the v-matching note, is
@@ -196,10 +197,12 @@ retained authorities are used without modification:
   bound (which controls only `n ≥ 2` shifts relative to the 1→2 loop
   observed shift).
 
-- **Canonical-surface coupling anchor.** `α_LM = 0.09066784` from the
-  tadpole-improved canonical surface (`⟨P⟩ = 0.5934`, `u_0 = ⟨P⟩^{1/4}
-  = 0.87768138`, `α_bare = 1/(4π) = 0.07957747`, `α_LM = α_bare / u_0`).
-  Enters the bound as `(α_LM / π) = 0.028860`.
+- **Conditional arithmetic anchor.** The unaudited bounded certificate records
+  `α_LM = 0.09066784` from `⟨P⟩ = 0.5934`,
+  `u_0 = ⟨P⟩^{1/4} = 0.87768138`, `α_bare = 1/(4π) = 0.07957747`, and
+  `α_LM = α_bare / u_0`. This is conditional provenance, not retained
+  physical/canonical authority, and enters the displayed bound as
+  `(α_LM / π) = 0.028860`.
 
 - **QFP insensitivity envelope (loose prior):** from
   `YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md` Parts 4a and 5:
@@ -218,8 +221,8 @@ No retained authority note on `main` is modified by this submission.
 
 **Theorem P2-F_yt-loop-tail.** On the retained `Cl(3) × Z^3` framework
 surface, let `δM_n := M^{(n)} − M^{(n-1)}` denote the `n`-loop
-integrated shift of the v-matching coefficient at the retained
-canonical-surface anchor `α_LM = 0.0907` and retained SM light-flavor
+integrated shift of the v-matching coefficient at the conditionally supplied
+arithmetic anchor `α_LM = 0.0907` and retained SM light-flavor
 count `n_l = 5`. Then:
 
 **(i) Framework-native retained ratio.** Defining
@@ -373,7 +376,7 @@ renormalon series, because:
 
 3. **P1 analog on the same UV surface.** The analog P1
    loop-expansion bound (`YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md`)
-   operates at the same retained coupling `α_LM` and the same retained
+   uses the same conditionally supplied `α_LM` arithmetic and the same retained
    `b_0` at `n_l = 5`, with the same envelope `(α_LM/π) · b_0`. Using
    a different envelope for P2 would break structural consistency
    between the two UV-matching axes of the obstruction theorem.
@@ -414,16 +417,17 @@ bound by two additional mechanisms:
   loop-independent and absorb none of the shift, so `r_obs(1→2)` on
   `M` equals `r_obs(1→2)` on `F_yt` without amplification.
 
-The retained bound `r_M = 0.22126` is therefore a conservative
+The retained bound `r_M = 0.22126`, conditional on the supplied
+`α_LM` arithmetic, is therefore a conservative
 envelope on the loop tail at `n ≥ 2`, not a saturated estimate. The
 conservative margin is the structural price of using only retained
-Casimir + flavor + canonical-coupling inputs.
+Casimir + flavor inputs together with the conditional arithmetic anchor.
 
 ### 3.4 Candidate envelope comparison
 
-Several retained combinations were evaluated. Only combinations using
-retained SU(3) Casimirs, retained `n_l`, and retained `α_LM` are
-admissible.
+Several combinations were evaluated. Only combinations using retained
+SU(3) Casimirs and retained `n_l`, together with conditionally supplied
+`α_LM` arithmetic, are considered here.
 
 | Candidate              | Value at SU(3), α_LM, n_l=5   | Envelopes r_obs(1→2) = 0.04507? |
 |------------------------|-------------------------------|---------------------------------|
@@ -464,7 +468,8 @@ retained 2-loop truncation is
                        =   |δM_2| · r_M / (1 − r_M)                 (B1')
 ```
 
-provided `r_M < 1`, which is satisfied at the canonical `α_LM` by a
+provided `r_M < 1`, which is satisfied by the conditionally supplied
+`α_LM` arithmetic with a
 large margin (`r_M = 0.221 ≪ 1`). Numerically with `|δM_2| = 0.047`:
 
 ```
@@ -536,15 +541,15 @@ Both P1 and P2 are UV-anchored axes of the obstruction theorem at
 - **P2** controls the integrated SM-RGE transport over 17 decades
   from `M_Pl` to `v`.
 
-Both are loop expansions in the canonical coupling at the UV end of
-the interval. The retained one-loop QCD beta-function coefficient
+Both are conditionally parameterized here by the supplied `α_LM` arithmetic.
+The retained one-loop QCD beta-function coefficient
 `b_0` is the natural envelope for both because:
 
 - on the P1 axis, `b_0` appears as the renormalon-growth scale of the
   single-scale matching series at `M_Pl`;
-- on the P2 axis, `b_0` appears as the renormalon-growth scale of the
-  integrated SM-RGE solution over the full interval, with the UV-end
-  coupling `α_LM` setting the magnitude of higher-loop contributions.
+- on the P2 axis, `b_0` is used as the proposed envelope scale of the
+  integrated SM-RGE solution over the full interval, with conditional
+  `α_LM` arithmetic setting the displayed numerical magnitude.
 
 Using the same retained envelope for both P1 and P2 preserves the
 structural consistency of the obstruction-theorem budget accounting.
@@ -602,8 +607,8 @@ After this note:
   `|tail(N=2)| ≤ 0.01335` on `M`, or `0.677%` on `m_t`. Replaces the
   loose 3% QFP cap at the loop-expansion axis with a structurally
   motivated bound built from retained Casimirs, retained SM flavor
-  count, and the retained canonical coupling — the same retained
-  envelope as the P1 loop-expansion axis.
+  count, and conditional `α_LM` arithmetic — the same proposed
+  envelope form as the P1 loop-expansion axis.
 
 ### 5.1 Budget rollup
 
@@ -668,8 +673,8 @@ The claim retained by this note is strictly:
 > coefficient `M = √u_0 · F_yt · √(8/9)` admits a loop expansion
 > `M = M^{(1)} + Σ_{n ≥ 2} (M^{(n)} − M^{(n-1)})` whose successive
 > shifts satisfy a framework-native geometric bound with retained
-> ratio `r_M = (α_LM / π) · b_0 = 0.22126` at the retained
-> canonical-surface anchor `α_LM = 0.0907` and retained SM light-flavor
+> ratio `r_M = (α_LM / π) · b_0 = 0.22126` at the conditionally supplied
+> arithmetic anchor `α_LM = 0.0907` and retained SM light-flavor
 > count `n_l = 5`. The observed 1→2 loop ratio
 > `r_obs(1→2) = |δM_2| / |δM_1| = 0.04507` is deeply below `r_M`,
 > with a safety margin of `r_M / r_obs ≈ 4.9`. Under the
@@ -718,14 +723,15 @@ The following claims are explicitly NOT made:
   framework-native `b_0` envelope as the P1 loop-expansion bound for
   structural consistency across the two UV-anchored axes of the
   master obstruction theorem.
-- The canonical coupling value `α_LM = 0.0907` enters as a numerical
-  anchor from `canonical_plaquette_surface.py`; no derivation result
-  of this note depends on its specific numerical value beyond the
-  tail-size estimates reported above.
+- The value `α_LM = 0.0907` enters only as conditional
+  arithmetic/provenance from the unaudited bounded certificate and
+  `canonical_plaquette_surface.py`; it is not retained physical/canonical
+  authority, and no derivation result of this note depends on its specific
+  numerical value beyond the conditional tail-size estimates reported above.
 - The bound loses structural tightness as `α_LM` increases: at
   `(α_LM/π) · b_0 ≥ 1` (i.e., `α_LM ≥ π · 3/23 ≈ 0.410`), the
-  geometric sum diverges and the bound fails. The retention anchor
-  `α_LM = 0.0907` is well below this regime.
+  geometric sum diverges and the bound fails. The conditionally supplied
+  arithmetic value `α_LM = 0.0907` is below this regime.
 
 ---
 
@@ -794,19 +800,20 @@ No publication-surface file (`CLAIMS_TABLE`, `PUBLICATION_MATRIX`,
 | SU(3) Casimirs `C_F`, `C_A`, `T_F`                        | DERIVED    |
 | SM light-flavor count `n_l = 5` on M_Pl → v               | DERIVED    |
 | `b_0 = (11 C_A − 4 T_F n_l) / 3 = 23/3` at `n_l = 5`      | DERIVED    |
-| Canonical coupling `α_LM = 0.09066784`                    | DERIVED    |
+| `α_LM = 0.09066784` arithmetic                            | CONDITIONAL ARITHMETIC / PROVENANCE (unaudited source) |
 | v-matching identity `M = √u_0 · F_yt · √(8/9)`            | DERIVED (prior v-matching note) |
 | Retained `M^{(0)}, M^{(1)}, M^{(2)}, M_obs`               | DERIVED (prior v-matching note + primary chain) |
 | Observed 1→2 loop shift `|δM_2| = 0.047`                  | DERIVED (this note, from retained M values) |
-| Retained envelope `r_M = (α_LM / π) · b_0 = 0.22126`      | DERIVED (this note; retained Casimirs + flavor + coupling) |
+| Retained envelope `r_M = (α_LM / π) · b_0 = 0.22126`      | DERIVED CONDITIONALLY (this note; retained Casimirs + flavor + supplied arithmetic) |
 | Tail residual `|tail(N=2)| = 0.01335`                     | DERIVED (this note) |
 | Fractional `m_t` bound `0.677%`                           | DERIVED (this note) |
 | Geometric-decay assumption `|δM_{n+1}| ≤ r_M · |δM_n|`    | STRUCTURAL ASSUMPTION on retention surface (motivated by `b_0`-renormalon growth) |
 
-**No new axioms. No new canonical-surface choices. No new numerical
-inputs beyond the retained 1-loop and 2-loop primary-chain `M` values
+**No new axioms. No new canonical-surface choices. The numerical
+inputs are the retained 1-loop and 2-loop primary-chain `M` values
 (which come from retained β coefficients on the retained derived
-gauge + matter content). The only new content of this note is the
+gauge + matter content) plus the explicitly conditional `α_LM`
+arithmetic/provenance. The only new content of this note is the
 application of the retained `(α_LM/π) · b_0` envelope (already used
 for P1) to the integrated F_yt / M loop expansion, yielding a
 framework-native retained tail bound at the P2 loop-expansion axis
@@ -817,7 +824,8 @@ factor of 1.4 of the packaged P2 budget.**
 
 **RETAINED** — framework-native geometric tail bound on the
 loop-expansion axis of the P2 v-matching residual retained through
-`r_M = (α_LM / π) · b_0 = 0.22126` at `α_LM = 0.0907`, `n_l = 5`,
+`r_M = (α_LM / π) · b_0 = 0.22126` at the conditionally supplied
+arithmetic value `α_LM = 0.0907` and retained `n_l = 5`,
 delivering a retained tail residual of `|tail(N=2)| = 0.01335` on `M`
 and a retained fractional-`m_t` contribution of `0.677%`, measurably
 tighter than the prior QFP insensitivity 3% envelope and within a

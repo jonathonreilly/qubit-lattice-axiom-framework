@@ -94,6 +94,18 @@ PASS_COUNT = 0
 FAIL_COUNT = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "YT_P2_F_YT_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md"
+STALE_BRIDGE_MARKERS = (
+    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+    "uv_gauge_to_yukawa_bridge)",
+)
+RETAINED_ALPHA_AUTHORITY_MARKERS = (
+    "retained canonical coupling",
+    "retained canonical-surface coupling",
+    "retained canonical-surface anchor",
+    "retained coupling `α_lm`",
+    "retained `α_lm`",
+    "retained alpha_lm",
+)
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -230,12 +242,12 @@ def part_a_retained_inputs() -> None:
         f"b_0 = {B_0}",
     )
     check(
-        "Retained alpha_LM = 0.09066784 to eight-decimal precision",
+        "Conditional alpha_LM arithmetic = 0.09066784",
         abs(float(ALPHA_LM) - 0.09066784) < 1e-8,
         f"alpha_LM = {float(ALPHA_LM)}",
     )
     check(
-        "Retained alpha_LM / pi = 0.02886 +- 0.00001",
+        "Conditional alpha_LM / pi arithmetic = 0.02886 +- 0.00001",
         abs(float(ALPHA_OVER_PI) - 0.02886047) < 1e-5,
         f"alpha_LM/pi = {float(ALPHA_OVER_PI):.8f}",
     )
@@ -761,8 +773,9 @@ def part_i_provenance() -> None:
         f"alpha_LM = {float(ALPHA_LM)}",
     )
     note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_lower = " ".join(note_text.lower().split())
     check(
-        "Source note links the unaudited bounded canonical alpha source",
+        "Source note links the unaudited conditional alpha arithmetic source",
         "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
         in note_text,
     )
@@ -773,8 +786,15 @@ def part_i_provenance() -> None:
         and "does not retain the physical/canonical input" in note_compact,
     )
     check(
-        "Source note no longer cites the UV coefficient bridge",
-        "UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE" not in note_text,
+        "Source note contains no stale UV bridge attribution",
+        not any(marker in note_lower for marker in STALE_BRIDGE_MARKERS),
+    )
+    check(
+        "Source note contains no retained-alpha authority wording",
+        not any(
+            marker in note_lower
+            for marker in RETAINED_ALPHA_AUTHORITY_MARKERS
+        ),
     )
     check(
         "Retained structural prefactor sqrt(u_0) * sqrt(8/9) from v-matching note",
@@ -789,7 +809,7 @@ def part_i_provenance() -> None:
     check(
         "Prior P2 notes (taste-staircase + v-matching) are the sole upstream sources",
         True,  # structural assertion
-        "retention lineage: taste-staircase + v-matching decomp + canonical alpha_LM",
+        "lineage: taste-staircase + v-matching decomp + conditional alpha arithmetic",
     )
 
 

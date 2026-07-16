@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_loop_geometric_bound.py
-runner_sha256: 50adabda258b0360f9d664b2cd47e1c361253f1a57100ecc511d1a13146b8b37
+runner_sha256: 814d9b3939899fe05ece7ff60dcbe392606a28072dd0e83945aba3fb0aff5ebb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ========================================================================
@@ -29,8 +29,8 @@ PART A: Retained SU(3) Casimirs + retained n_l + retained b_0
   [PASS (C)] Retained C_A = 3 at SU(3)  (value = 3)
   [PASS (C)] Retained n_l = 5 at the M_Pl scale (u,d,s,c,b)  (value = 5)
   [PASS (C)] Retained b_0 = (11 C_A - 4 T_F n_l) / 3 = 23/3 at n_l = 5  (b_0 = 23/3)
-  [PASS (C)] Retained alpha_LM = 0.09066784 to eight-decimal precision  (alpha_LM = 0.09066784)
-  [PASS (C)] Retained alpha_LM / pi = 0.02886 +- 0.00001  (alpha_LM/pi = 0.02886047)
+  [PASS (C)] Conditional alpha_LM arithmetic = 0.09066784  (alpha_LM = 0.09066784)
+  [PASS (C)] Conditional alpha_LM / pi arithmetic = 0.02886 +- 0.00001  (alpha_LM/pi = 0.02886047)
 
 ========================================================================
 PART B: 1-loop matching Delta_1 at packaged and central I_S
@@ -161,8 +161,9 @@ PART F: Comparison with analog P3 K-series bound
 ========================================================================
 PART G: Source-scope firewall
 ========================================================================
-  [PASS (C)] Source note links the bounded canonical alpha certificate
-  [PASS (C)] Source note no longer cites the UV coefficient bridge
+  [PASS (C)] Source note links the unaudited conditional alpha arithmetic certificate
+  [PASS (C)] Source note contains no stale UV bridge attribution
+  [PASS (C)] Source note contains no retained-alpha authority wording
   [PASS (C)] Historical single-tensor cross-validation is explicitly removed
   [PASS (C)] Individual higher-loop coefficients remain explicit non-claims
 
@@ -189,10 +190,10 @@ PART H: Structural retention provenance
   [PASS (C)] Bound input alpha_LM matches the conditionally supplied arithmetic  (alpha_LM = 0.09066784)
   [PASS (C)] Source note marks the alpha source unaudited and non-retained
   [PASS (C)] No literature value of delta_R^{(2)} or higher imported  (runner does not reference any delta_R^{(n)} for n >= 2)
-  [PASS (C)] Prior P1 notes are the sole upstream sources  (retention lineage: Fierz no-go + color-factor + I_S citation + canonical alpha_LM)
+  [PASS (C)] Prior P1 notes are the sole upstream sources  (lineage: Fierz no-go + color-factor + I_S citation + conditional alpha arithmetic)
 
 ========================================================================
-SUMMARY: PASS=45  FAIL=0
+SUMMARY: PASS=46  FAIL=0
 ========================================================================
 
 Framework-native ratio r_R = (a_LM/pi) * b_0             = 0.221264

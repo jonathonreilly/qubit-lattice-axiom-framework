@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_uv_yukawa_sc_exclusion_certificate_2026_06_06.py
-runner_sha256: 7f7bbf66386c370027ffaa012758cc99b03c5d5c153583ae85d8a1c73d2ebf73
+runner_sha256: b8f5728ff8ad5309770c3856a90cbf86a93df1192f4a419330bafc5e821fe4b1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.20
+elapsed_sec: 2.38
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -42,12 +42,13 @@ UV gauge-to-Yukawa: coefficient comparison + plaquette-radius diagnostic
   [PASS] source note does not claim an only-convergent expansion
   [PASS] beta=6 comparison is retained only as finite plaquette evidence
 
-[BLOCK 6] Literature Fisher-zero comparator (cross-check, never an input)
-  [PASS] framework R_SC consistent with literature Fisher-zero ~5.7 (within ~6%)  --  R_SC=5.386 vs lit 5.7 (comparator only)
-  [PASS] both estimates are below 6 without transferring the radius to another observable  --  comparison is plaquette-series evidence only
+[BLOCK 6] Literature complex-singularity comparators (never inputs)
+  [PASS] R_SC consistent with the earlier series-analysis scale ~5.7  --  R_SC=5.386 vs series scale 5.7 (comparator only)
+  [PASS] R_SC consistent with the finite-volume Fisher-zero modulus ~5.54  --  R_SC=5.386 vs |5.54+0.10i|=5.541
+  [PASS] all comparator scales are below 6 without radius transfer  --  comparison is plaquette-series evidence only
 
 ==============================================================================
-SCORECARD:  PASS = 23   FAIL = 0
+SCORECARD:  PASS = 24   FAIL = 0
 ==============================================================================
 
 ----- stderr -----

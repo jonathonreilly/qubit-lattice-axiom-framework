@@ -12,13 +12,14 @@
 > does not supply `alpha_LM`. The linked bounded arithmetic certificate is
 > itself unaudited on current `main`; it records the conditional calculation
 > `alpha_LM = alpha_bare/u_0`, but does not retain the physical/canonical input.
-> Legacy “retained canonical coupling” wording below must be read subject to
-> this correction.
+> Throughout this note, every numerical use of `alpha_LM = 0.0907` is therefore
+> conditional arithmetic/provenance only, not retained physical or canonical
+> authority.
 
 # P1 Loop-Expansion Geometric Tail Bound on the Lattice-to-MSbar Matching at M_Pl
 
 **Date:** 2026-04-17
-**Status:** proposed_retained structural sub-theorem — a framework-native geometric upper bound on the loop-expansion tail of the lattice-to-MSbar matching `Δ_R^{total}` for the Yukawa/gauge ratio at `M_Pl`, using only proposed_retained SU(3) Casimir quantities and the proposed_retained canonical coupling `α_LM`. No literature value of the 2-loop matching coefficient is imported as a derivation input.
+**Status:** proposed_retained structural sub-theorem — a framework-native geometric upper bound on the loop-expansion tail of the lattice-to-MSbar matching `Δ_R^{total}` for the Yukawa/gauge ratio at `M_Pl`, using proposed_retained SU(3) Casimir quantities and conditionally supplied `α_LM` arithmetic. No literature value of the 2-loop matching coefficient is imported as a derivation input.
 **Primary runner:** `scripts/frontier_yt_p1_loop_geometric_bound.py`
 **Log:** `logs/retained/yt_p1_loop_geometric_bound_2026-04-17.log`.
 
@@ -31,10 +32,10 @@ does not alter any publication-surface table, and does not re-derive
 any individual `δ_R^{(n)}` matching coefficient of the lattice-to-MSbar
 conversion. The claim is strictly a framework-native geometric upper
 bound on the residual loop-expansion tail
-`Σ_{n ≥ N+1} δ_R^{(n)} (α_LM/π)^n` at the retained canonical-surface
-anchor `α_LM = 0.0907`, expressed in terms of retained SU(3) Casimir
+`Σ_{n ≥ N+1} δ_R^{(n)} (α_LM/π)^n` at the conditionally supplied
+arithmetic anchor `α_LM = 0.0907`, expressed in terms of retained SU(3) Casimir
 quantities (`C_F`, `C_A`, `T_F`), the retained SM light-flavor count
-`n_l = 5`, and the retained canonical coupling `α_LM`.
+`n_l = 5`, and conditional `α_LM` arithmetic/provenance.
 
 The bound's purpose is to close the cumulative retention budget of
 the P1 **loop-expansion axis** through a defensible asymptotic
@@ -71,8 +72,8 @@ loop expansion
 
 with `δ_R^{(n)}` the n-loop matching coefficient in the `α/π`
 normalization convention. Writing `Δ_n := δ_R^{(n)} (α_LM/π)^n` for
-the n-loop term, the loop series satisfies, at the retained canonical
-coupling anchor `α_LM = 0.0907`, a framework-native geometric tail
+the n-loop term, the loop series satisfies, at the conditionally supplied
+arithmetic anchor `α_LM = 0.0907`, a framework-native geometric tail
 bound
 
 ```
@@ -155,7 +156,7 @@ retained authorities are used without modification:
   Δ_R^{(1)}  =  C_F · I_1  +  C_A · I_2  +  T_F n_f · I_3
   ```
   and (from `YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md`) the three BZ integrals `I_1`, `I_2`, `I_3` are algebraically independent.
-- **Canonical-surface coupling anchor.** `α_LM = 0.09066784` from the tadpole-improved canonical surface (`⟨P⟩ = 0.5934`, `u_0 = ⟨P⟩^{1/4} = 0.87768138`, `α_bare = 1/(4π) = 0.07957747`, `α_LM = α_bare/u_0`). Enters the bound as `(α_LM/π) = 0.028860`.
+- **Conditional arithmetic anchor.** The unaudited bounded certificate records `α_LM = 0.09066784` from `⟨P⟩ = 0.5934`, `u_0 = ⟨P⟩^{1/4} = 0.87768138`, `α_bare = 1/(4π) = 0.07957747`, and `α_LM = α_bare/u_0`. This provenance is not retained physical/canonical authority; conditionally, it enters the bound as `(α_LM/π) = 0.028860`.
 - **1-loop matching coefficient** (in `α/π` convention). The 1-loop term in (LE) evaluates to
   ```
   Δ_1  =  δ_R^{(1)} (α_LM/π)  =  (C_F/2) (α_LM/π) · I_S / I_S_standard
@@ -164,7 +165,11 @@ retained authorities are used without modification:
   ```
   Δ_1  =  (α_LM / (4π)) · C_F · I_S
   ```
-  — the standard 1-loop vertex correction with BZ integral `I_S`. Under the packaged standard-fundamental `I_S = 2` this gives `Δ_1 = α_LM C_F / (2π) = 1.924%` (the packaged P1 nominal); under the central cited `I_S = 6` (from `YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`) it gives `Δ_1 = 5.772%`.
+  — the conditional arithmetic map for a supplied `I_S`. Under the separate
+  historical convention `I_S = 2` this gives
+  `Δ_1 = α_LM C_F / (2π) = 1.924%`; under the supplied comparison value
+  `I_S = 6` it gives `Δ_1 = 5.772%`. Neither input is promoted here to an
+  operator-specific BZ result.
 
 No retained authority note on `main` is modified by this submission.
 
@@ -173,7 +178,7 @@ No retained authority note on `main` is modified by this submission.
 **Theorem P1-loop-tail.** On the retained `Cl(3) × Z^3` framework
 surface, let `Δ_n := δ_R^{(n)} (α_LM/π)^n` denote the n-loop term of
 the lattice-to-MSbar matching correction `Δ_R^{total}` at the
-retained canonical-surface anchor `α_LM = 0.0907`. Then:
+conditionally supplied arithmetic anchor `α_LM = 0.0907`. Then:
 
 **(i)** Defining the retained framework-native ratio
 
@@ -286,7 +291,8 @@ dominated by the non-Abelian tensor `C_F C_A`.
 
 A strict framework-native geometric bound `r_R` must:
 
-- use only retained framework quantities (`C_F`, `C_A`, `T_F`, `n_l`, `α_LM / π`, and retained combinations thereof);
+- use retained framework quantities (`C_F`, `C_A`, `T_F`, `n_l`) together
+  with conditional `α_LM / π` arithmetic;
 - envelope the indicative 2-loop maximum `max(r_CF, r_CA, r_lp) = 0.1732`;
 - be as tight as possible consistent with the retention surface.
 
@@ -344,7 +350,8 @@ Assuming bound (GB) holds for all `n ≥ 1`, the tail after the retained
                       =   |Δ_1| · r_R / (1 - r_R)                 (B1')
 ```
 
-provided `r_R < 1`, which is satisfied at the canonical `α_LM` by a
+provided `r_R < 1`, which is satisfied by the conditionally supplied
+`α_LM` arithmetic with a
 large margin (`r_R = 0.221 << 1`). The total matching correction is
 then
 
@@ -402,14 +409,14 @@ structural difference is:
 
 The P1 loop bound is:
 
-- **Tighter in coupling factor** by `α_LM / α_s(m_t) = 0.840`: the canonical coupling at `M_Pl` is smaller than the IR coupling at `m_t` (asymptotic freedom), so the matching series converges faster at UV.
+- **Smaller conditional coupling factor** by `α_LM / α_s(m_t) = 0.840`: if both supplied arithmetic inputs are accepted, the resulting geometric factor is smaller. This numerical comparison is not a convergence theorem.
 - **Tighter in envelope scale** by `b_0 / C_A^2 = (23/3)/9 = 23/27 = 0.852`: the retained flavor-content envelope is tighter than the pure non-Abelian `C_A^2` envelope because `n_l = 5` removes `4 T_F n_l / 3 = 10/3` units from `11 C_A / 3 = 11`.
 - **Overall tighter tail factor** by `0.2841 / 0.4474 = 0.635`: at equal `Δ_1` the P1 residual tail is about `2/3` the size of the P3 residual tail.
 
-This tightening matches expectations: the UV matching at `M_Pl`
-occurs at a scale where `α_LM` is smaller than `α_s(m_t)` and where
-flavor content contributes explicitly through `b_0`. Both effects
-reduce the loop-expansion growth rate and hence the tail.
+Conditionally on the supplied `α_LM` arithmetic, the UV-side factor is
+smaller than the supplied `α_s(m_t)` factor, while flavor content enters
+explicitly through `b_0`. The comparison changes the assumed geometric
+tail factor only; it does not establish convergence of either series.
 
 ## 5. Implication for P1 closure
 
@@ -419,7 +426,7 @@ packages P1 as a `~1.92%` residual from the 1-loop lattice-to-MSbar
 matching `Δ_R` at `M_Pl`. The P1 budget has **two independent axes**
 of retention uncertainty:
 
-1. **`I_S` axis** — the value of the 1-loop BZ integral `I_S` for the composite-`H_unit` scalar bilinear on the tadpole-improved canonical surface. Carried by `YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`, which cites `I_S ∈ [4, 10]`, central `≃ 6`, against the packaged standard-fundamental `I_S = 2`.
+1. **`I_S` axis** — the value of the 1-loop BZ integral `I_S` for the composite-`H_unit` scalar bilinear on the tadpole-improved canonical surface. Carried by `YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`, which supplies `I_S ∈ [4, 10]`, central `≃ 6`, alongside the separate historical `I_S = 2` arithmetic convention.
 2. **Loop-expansion axis** — the residual from 2-loop, 3-loop, ... matching coefficients beyond the 1-loop retained piece. This note closes this axis.
 
 These two axes are structurally **orthogonal**: the `I_S` citation
@@ -450,8 +457,8 @@ Numerically:
 
 Under the central cited `I_S ≃ 6` and the retained loop-expansion
 bound (R0), the **total** matching correction `Δ_R^{total}` is
-bounded above by `7.41%`. Under the packaged standard-fundamental
-`I_S = 2` it is bounded above by `2.47%`. The loop-expansion tail
+bounded above by `7.41%`. Under the separate historical
+`I_S = 2` arithmetic convention it is bounded above by `2.47%`. The loop-expansion tail
 contributes `22.1%` of the total in either case.
 
 **The P1 loop-expansion axis is closed by this note.** The residual
@@ -476,7 +483,7 @@ The claim retained by this note is strictly:
 > `n ≥ 1`, the tail residual after retained 1-loop truncation is
 > bounded above by `|tail(N=1)| ≤ Δ_1 · r_R / (1 - r_R) = Δ_1 · 0.2841`.
 > The total loop series is bounded by `|Δ_R^{total}| ≤ Δ_1 / (1 - r_R)
-> = Δ_1 · 1.2841`. At the packaged standard-fundamental `I_S = 2`
+> = Δ_1 · 1.2841`. At the separate historical `I_S = 2` convention
 > reference (`Δ_1 = 1.924%`) this gives `|tail(N=1)| ≤ 0.547%` and
 > `|Δ_R^{total}| ≤ 2.471%`; at the central cited `I_S = 6`
 > (`Δ_1 = 5.772%`) it gives `|tail(N=1)| ≤ 1.640%` and
@@ -491,8 +498,8 @@ The following claims are explicitly NOT made:
 - The retained bound does **not** depend on any imported literature value of
   `δ_R^{(2)}` or higher. No current authority cited by this row supplies the
   historical `~0.15%` single-tensor estimate; that cross-validation is removed.
-- The canonical coupling value `α_LM = 0.0907` enters as a numerical anchor from `canonical_plaquette_surface.py`; no derivation result of this note depends on its specific numerical value beyond the tail-size estimates reported above.
-- The bound loses structural tightness as `α_LM` increases: at `(α_LM/π) · b_0 ≥ 1` (i.e., `α_LM ≥ π · 3/23 ≈ 0.410`), the geometric sum diverges and the bound fails. The retention anchor `α_LM = 0.0907` is well below this regime.
+- The value `α_LM = 0.0907` enters only as conditional arithmetic/provenance from the unaudited bounded certificate and `canonical_plaquette_surface.py`; it is not retained physical/canonical authority, and no derivation result of this note depends on its specific numerical value beyond the conditional tail-size estimates reported above.
+- The bound loses structural tightness as `α_LM` increases: at `(α_LM/π) · b_0 ≥ 1` (i.e., `α_LM ≥ π · 3/23 ≈ 0.410`), the geometric sum diverges and the bound fails. The conditionally supplied arithmetic value `α_LM = 0.0907` is below this regime.
 - The `I_S` axis of P1 is **not** closed by this note. It is carried separately by `YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md` as a citation-and-bound layer.
 
 ## 7. Validation
@@ -536,7 +543,8 @@ No publication-surface file (`CLAIMS_TABLE`, `PUBLICATION_MATRIX`,
 
 **RETAINED** — framework-native geometric tail bound on the loop
 expansion of the P1 lattice-to-MSbar matching retained through
-`r_R = (α_LM/π) · b_0 = 0.22126` at `α_LM = 0.0907`, `n_l = 5`,
+`r_R = (α_LM/π) · b_0 = 0.22126` at the conditionally supplied
+arithmetic value `α_LM = 0.0907` and retained `n_l = 5`,
 delivering a retained tail residual of `0.547%` (at packaged `I_S = 2`)
 or `1.640%` (at central cited `I_S = 6`), and a total matching bound
 `|Δ_R^{total}| ≤ Δ_1 · 1.2841` across the cited `I_S ∈ [4, 10]` range.

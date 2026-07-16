@@ -19,12 +19,19 @@
 **Runner cache:** [`logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt`](../logs/runner-cache/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.txt)
 **Original arithmetic runner:** `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`
 
+Every numerical use of `alpha_LM` in this note is conditional
+arithmetic/provenance from the linked unaudited certificate, not retained
+physical/canonical authority. The historical `delta_PT` remains conditional
+arithmetic under the separate `I_S = 2` convention; it is not a lattice BZ
+result, and its source-action/NLO interpretation remains open.
+
 This is a conditional citation/support layer on top of the prior P1 symbolic
 decomposition. After the 2026-06-11 audit, its legacy citation claim is
 narrowed to a **conditional arithmetic lemma**: given a supplied bracket
 `I_S in [4, 10]` for the closest tadpole-improved staggered scalar-density
 analogue, the associated P1 contribution is recomputed at
-`α_LM = 0.0907` and compared to the packaged `1.92%` nominal.
+the conditionally supplied arithmetic value `α_LM = 0.0907` and compared to
+the historical `1.92%` arithmetic.
 
 The source-side repair surface for re-audit is now narrower: the supplied
 bracket is not load-bearing for a framework-native value, and the native
@@ -33,8 +40,9 @@ quadrature row
 now records the corrected full-BZ scalar value
 `I_S = 32.435`, not the old divided value `3.902`. The same correction packet
 also records that the fixed-regulator fermion channel is not a controlled
-matching constant. If that quadrature row and the canonical alpha/plaquette
-value certificate
+matching constant. If that quadrature row and the file historically labeled
+the canonical alpha/plaquette value certificate—used here only as an
+unaudited conditional arithmetic/provenance certificate—
 [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)
 have independent audit closure and retained-grade dependency closure, this row
 can be read only as the corrected diagnostic bridge
@@ -54,7 +62,7 @@ bracket as retained unless the bracket itself is separately accepted.
 The canonical numerical science lane is
 [`YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`](YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md),
 which performs a full-staggered BZ quadrature on the canonical surface and
-must be audited on its own. The canonical arithmetic constants are exposed
+must be audited on its own. The conditional arithmetic constants are exposed
 through
 [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md),
 which depends on
@@ -92,9 +100,9 @@ retained proof of that value. What the citation surface adds is narrower:
    closest lattice-QCD analogue (tadpole-improved staggered scalar density on Wilson
    plaquette action at `β ≃ 6`), with explicit source references and documented
    citation confidence;
-3. recompute the framework-specific P1 contribution at `α_LM = 0.0907` with the supplied range;
-4. compare to the packaged `delta_PT = α_LM · C_F / (2π) ≃ 1.92%` nominal (which implicitly
-   assumes the standard fundamental-Yukawa value `I_S = 2` in the `α/(4π)` convention);
+3. recompute the conditional P1 arithmetic at `α_LM = 0.0907` with the supplied range;
+4. compare to the packaged `delta_PT = α_LM · C_F / (2π) ≃ 1.92%`
+   arithmetic under the separate historical `I_S = 2` convention;
 5. mark clearly whether the P1 budget carried on the obstruction theorem is revised up, down,
    or left unchanged, and if so by how much;
 6. in the 2026-06-16 dependency-edge repair, expose the separate native-BZ row as the
@@ -104,7 +112,7 @@ retained proof of that value. What the citation surface adds is narrower:
 Read it together with:
 
 - [`YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`](YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md) (corrected BZ diagnostic row; independently audited on its own row)
-- [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) (canonical arithmetic certificate for `P`, `u_0`, `alpha_LM`, and `alpha_LM/(4pi)`)
+- [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) (unaudited conditional arithmetic certificate for `P`, `u_0`, `alpha_LM`, and `alpha_LM/(4pi)`)
 - [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) (parent plaquette reuse surface)
 - [`YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`](YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md) (retained `C_F`/`C_A`/`T_F n_f` decomposition)
 - [`YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md`](YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md) (no-algebraic-shortcut)
@@ -128,8 +136,9 @@ Brillouin-zone integral `I_S` for the composite-`H_unit` scalar bilinear:
     Δ_R|_{C_F-channel}  =  C_F · I_1  =  C_F · I_S
 ```
 
-The packaged `delta_PT = 1.92%` value currently carried on the P1 line of the master obstruction
-budget assumes the **standard fundamental-Yukawa value** `I_S = 2` in the `α/(4π)` normalization:
+The packaged `delta_PT = 1.92%` arithmetic currently carried on the P1 line of
+the master obstruction budget corresponds to the separate historical
+convention `I_S = 2` in the `α/(4π)` normalization:
 
 ```
     delta_PT_standard  =  (α_LM / (4π)) · C_F · I_S_standard
@@ -176,12 +185,12 @@ not by itself establish that acceptance.
 
 **Safe claim boundary.** The `I_S` bracket is **supplied with documented uncertainty**.
 No claim is made here that the bracket constitutes a framework-native derivation
-of `I_S` on the `Cl(3) × Z^3` action. The packaged `1.92%` remains a defensible
-standard-fundamental reference point under the `I_S = 2` assumption. A canonical
+of `I_S` on the `Cl(3) × Z^3` action. The packaged `1.92%` remains a historical
+arithmetic reference point under the separate `I_S = 2` convention. A canonical
 positive numerical result must come from a framework-native 1-loop BZ integration
 on the canonical action, such as the separate full-staggered quadrature lane.
 The 2026-06-16 dependency-edge repair records the arithmetic bridge that can
-consume that lane and the canonical alpha/plaquette certificate after
+consume that lane and the conditional alpha/plaquette arithmetic certificate after
 independent audit.
 
 ## 1. Retained foundations
@@ -214,7 +223,7 @@ This note inherits without modification the retained structure of the prior P1 s
   What remains is the single 1-loop matching integral `I_S` for the scalar bilinear
   operator on the canonical surface.
 
-- **Canonical-surface anchors** (from
+- **Conditional arithmetic anchors** (from
   `scripts/canonical_plaquette_surface.py`):
 
   ```
@@ -288,7 +297,7 @@ action at `β ≃ 6`, staggered Dirac, 1-link scalar density, tadpole-improved v
 |----------------------------------------------------|---------------------------|---------------------------|
 | Un-improved Wilson + staggered scalar density      | `[10, 20]`                | Sharpe 1994; Ishizuka–Shizawa 1994 |
 | Tadpole-improved Wilson + 1-link staggered scalar  | `[ 4, 10]`                | Bhattacharya–Sharpe 1998; Bhattacharya–Gupta–Kilcup–Sharpe 1999 |
-| Standard fundamental-Yukawa (continuum analogue)   | `2` (exact)               | reference point only |
+| Historical arithmetic convention                   | `2`                       | conditional reference point only |
 
 Representative published values on the tadpole-improved surface cluster near
 `I_S ≃ 4–8`, with a commonly quoted mid-range of `I_S ≃ 6`. Precise numerical values vary
@@ -302,8 +311,8 @@ between references by `O(1)` because of differing conventions on:
 **Bracket confidence.** This note treats the range `I_S ∈ [4, 10]` as the **conditional supplied
 bracket** for the tadpole-improved surface closest to the framework canonical surface, with
 a **central estimate** `I_S ≃ 6`. The precise per-reference number is **not** claimed; what
-is claimed is the **bracket** and the qualitative fact that the composite-`H_unit` matching
-coefficient is materially larger than the standard fundamental-Yukawa value `2`.
+is claimed is the **supplied bracket**. Its transfer to the exact composite
+`H_unit` operator/scheme remains open.
 
 A framework-native 1-loop BZ integration on the retained `Cl(3) × Z^3` canonical surface
 would be required to pin the number below `O(1)` uncertainty. That derivation is
@@ -359,12 +368,12 @@ estimate `6` is the honest summary of the literature bracket; the narrower range
 not claimed here. **Users of this bound should treat the range as the primary output, not
 any central number.**
 
-## 3. Framework-specific P1 contribution at `α_LM = 0.0907`
+## 3. Conditional P1 arithmetic at `α_LM = 0.0907`
 
 ### 3.1 Central estimate
 
-Adopting the mid-range cited value `I_S = 6` and the retained color factor `C_F = 4/3`,
-at `α_LM = 0.09066784` the framework-specific P1 contribution in the `C_F` channel is
+Adopting the mid-range cited value `I_S = 6`, the retained color factor
+`C_F = 4/3`, and the conditional `α_LM = 0.09066784` arithmetic gives
 
 ```
     P1_framework_central
@@ -389,24 +398,23 @@ Sweeping `I_S` over the supplied bracket gives
 | 8 (high-mid)     | 7.69%                | 4.00×                    |
 | 10 (high-end)    | 9.62%                | 5.00×                    |
 
-The full supplied range on the tadpole-improved staggered surface maps to
-`P1_framework ∈ [3.85%, 9.62%]`. The un-improved analogue (cited as `I_S ∈ [10, 20]`)
-would give `P1 ∈ [9.6%, 19.2%]`; tadpole improvement on the canonical surface brings this
-down to the `[3.85%, 9.62%]` bracket quoted above.
+The full supplied range maps conditionally to
+`P1_framework ∈ [3.85%, 9.62%]`. The un-improved analogue (cited as
+`I_S ∈ [10, 20]`) would map to `P1 ∈ [9.6%, 19.2%]` under the same conditional
+arithmetic.
 
 ### 3.3 Note on normalization conventions
 
 Two equivalent normalization conventions are in use:
 
-- `α/(4π)` convention: `δ = (α / (4π)) · C_F · I_S`; standard-fundamental gives `I_S = 2`;
-- `α/(2π)` convention: `δ = (α / (2π)) · C_F · (I_S / 2)`; standard-fundamental gives
-  `(I_S/2) = 1`, i.e. the "vertex correction factor" is `1`.
+- `α/(4π)` convention: `δ = (α / (4π)) · C_F · I_S`;
+- `α/(2π)` convention: `δ = (α / (2π)) · C_F · (I_S / 2)`.
 
 The framework's packaged expression
 `delta_PT = α_LM · C_F / (2π) = (α_LM / (4π)) · C_F · 2` is written most transparently in
-the `α/(4π)` convention; the `I_S = 2` assumption there is the standard fundamental-Yukawa
-value. All numerical results in this note use the `α/(4π)` convention with `I_S` as the
-BZ matching coefficient.
+the `α/(4π)` convention; `I_S = 2` is the separate historical arithmetic
+convention. All numerical results in this note are conditional maps and do not
+promote `I_S = 2` to a BZ matching coefficient.
 
 ## 4. Comparison to the packaged `1.92%` nominal
 
@@ -416,10 +424,10 @@ The packaged value
     delta_PT_packaged  =  α_LM · C_F / (2π)  ≃  1.92 %
 ```
 
-is recovered exactly under the **implicit** assumption `I_S = 2` (standard fundamental-Yukawa).
+is recovered exactly under the separate historical convention `I_S = 2`.
 
 Under the supplied bracket `I_S ∈ [4, 10]`, with central estimate
-`I_S ~= 6`, the associated framework-specific P1 contribution is
+`I_S ~= 6`, the associated conditional P1 arithmetic is
 
 ```
     P1_framework  ∈  [3.85%, 9.62%]     (supplied range)
@@ -444,13 +452,13 @@ The master obstruction theorem
 Yukawa-lane UV-to-IR systematic into three named primitives {P1, P2, P3} and lists `P1 ≃
 1.92%` as the dominant contribution, with the total `~1.95%`.
 
-Under the central supplied `I_S ≃ 6`, the framework-specific P1 contribution is
+Under the central supplied `I_S ≃ 6`, the conditional P1 arithmetic is
 `~5.77%`, roughly a factor of `3×` larger. Adopting the supplied range gives
 `P1 ∈ [3.85%, 9.62%]`. These are conditional consequences of the supplied
 bracket:
 
 1. **If the supplied bracket is accepted for the exact operator/scheme,** the
-   packaged `~1.95%` value is the standard-fundamental reference point rather
+   packaged `~1.95%` value is the historical arithmetic reference point rather
    than the bracket-centered estimate. The conditional central is then
    `~5.8%`; under the high end of the supplied range (`I_S = 10`) it reaches
    `~9.6%`.
@@ -462,7 +470,8 @@ bracket:
    `I_3` remain separate sub-gaps.
 
 **Do not modify the master obstruction theorem on the basis of this citation note.** The
-theorem's `1.92%` value remains a faithful carrier of the standard-fundamental packaging.
+theorem's `1.92%` value remains a carrier of the historical `I_S = 2`
+arithmetic only.
 The note here is a documentation / citation layer that flags an honest reassessment of the
 P1 budget line; closing it requires a framework-native BZ integration.
 
@@ -477,7 +486,7 @@ P1 budget line; closing it requires a framework-native BZ integration.
   (`YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md`).
 - Conserved-current Ward `I_V = 0 ⇒ I_1 = I_S`
   (symbolic runner 21/21 PASS).
-- Canonical-surface constants `α_LM = 0.0907`, `u_0 = 0.878`, `⟨P⟩ = 0.5934`
+- Conditional arithmetic values `α_LM = 0.0907`, `u_0 = 0.878`, `⟨P⟩ = 0.5934`
   ([`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)).
 - Historical packaged `delta_PT = α_LM · C_F / (2π) ≃ 1.92%` conditional
   arithmetic under `I_S = 2`; no source-action interpretation is claimed.
@@ -510,7 +519,7 @@ This note claims only the conditional arithmetic statement:
 > lattice-to-MSbar matching correction `Δ_R` reduces to a single BZ integral `I_S` for the
 > composite-`H_unit` scalar bilinear. Assuming the supplied comparison bracket
 > `I_S ∈ [4, 10]` in the `α/(4π)` convention, with a central estimate `≃ 6`,
-> the associated framework-specific P1 contribution at
+> the associated conditional P1 arithmetic at
 > `α_LM = 0.0907` is `P1 ∈ [3.85%, 9.62%]` with central estimate `≃ 5.77%`, a factor of
 > approximately `3×` larger than the packaged `1.92%` nominal that the master obstruction
 > budget currently carries.
@@ -526,8 +535,8 @@ It does **not** claim:
 - that the `C_A` channel (`I_2`) or `T_F n_f` channel (`I_3`) of `Δ_R` are closed. These
   remain OPEN.
 
-The packaged `1.92%` retains a defensible role as the standard-fundamental
-`I_S = 2` reference. This note preserves the conditional map from a supplied
+The packaged `1.92%` remains only the historical `I_S = 2` arithmetic
+reference. This note preserves the conditional map from a supplied
 larger bracket to the corresponding P1 arithmetic; it does not require the
 audit lane to accept that bracket as a closed framework-native input.
 
@@ -606,8 +615,8 @@ not verify the external bracket as a retained framework-native value.
 Specifically the runner verifies:
 
 - exact retention of `C_F = 4/3`, `C_A = 3`, `T_F = 1/2` from the prior color-factor note;
-- exact retention of canonical-surface `α_LM = 0.0907`, `α_LM / (4π) = 0.00721` from
-  `canonical_plaquette_surface.py`;
+- exact reproduction of conditional `α_LM = 0.0907`,
+  `α_LM / (4π) = 0.00721` arithmetic from `canonical_plaquette_surface.py`;
 - exact reproduction of the packaged `delta_PT ≃ 1.92%` under the historical
   `I_S = 2` convention (conditional arithmetic sanity check only);
 - the supplied range `I_S ∈ [4, 10]` with central `I_S ≃ 6` maps to `P1 ∈ [3.85%, 9.62%]`

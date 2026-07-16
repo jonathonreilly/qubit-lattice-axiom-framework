@@ -85,6 +85,18 @@ PASS_COUNT = 0
 FAIL_COUNT = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md"
+STALE_BRIDGE_MARKERS = (
+    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+    "uv_gauge_to_yukawa_bridge)",
+)
+RETAINED_ALPHA_AUTHORITY_MARKERS = (
+    "retained canonical coupling",
+    "retained canonical-surface coupling",
+    "retained canonical-surface anchor",
+    "retained coupling `α_lm`",
+    "retained `α_lm`",
+    "retained alpha_lm",
+)
 
 
 def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
@@ -137,9 +149,9 @@ ALPHA_OVER_PI = ALPHA_LM / sp.pi
 ALPHA_OVER_4PI = ALPHA_LM / (4 * sp.pi)
 
 # ---------------------------------------------------------------------------
-# I_S references: standard-fundamental (packaged) and central cited
+# I_S references: historical I_S=2 arithmetic and supplied comparison value
 # ---------------------------------------------------------------------------
-# Packaged standard-fundamental (Sec 1 of the note):  I_S = 2 -> Delta_1 = 1.924%.
+# Historical convention (Sec 1 of the note): I_S = 2 -> Delta_1 = 1.924%.
 # Central cited (YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md): I_S = 6.
 I_S_PACKAGED = sp.Integer(2)
 I_S_LOW = sp.Integer(4)
@@ -197,12 +209,12 @@ def part_a_retained_inputs() -> None:
         f"b_0 = {B_0}",
     )
     check(
-        "Retained alpha_LM = 0.09066784 to eight-decimal precision",
+        "Conditional alpha_LM arithmetic = 0.09066784",
         abs(float(ALPHA_LM) - 0.09066784) < 1e-8,
         f"alpha_LM = {float(ALPHA_LM)}",
     )
     check(
-        "Retained alpha_LM / pi = 0.02886 +- 0.00001",
+        "Conditional alpha_LM / pi arithmetic = 0.02886 +- 0.00001",
         abs(float(ALPHA_OVER_PI) - 0.02886047) < 1e-5,
         f"alpha_LM/pi = {float(ALPHA_OVER_PI):.8f}",
     )
@@ -215,7 +227,7 @@ def part_a_retained_inputs() -> None:
 def part_b_one_loop_values() -> Tuple[float, float]:
     """
     Compute the 1-loop matching value Delta_1 at both references:
-      - packaged I_S = 2 -> Delta_1 = 1.924% (reference lower bound)
+      - historical I_S = 2 -> Delta_1 = 1.924% (arithmetic reference)
       - central cited I_S = 6 -> Delta_1 = 5.772% (central cited)
     Verify via Delta_1 = (alpha_LM/(4 pi)) * C_F * I_S.
     """
@@ -599,14 +611,22 @@ def part_g_source_scope() -> None:
     print("=" * 72)
 
     note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_compact = " ".join(note_text.lower().split())
     check(
-        "Source note links the bounded canonical alpha certificate",
+        "Source note links the unaudited conditional alpha arithmetic certificate",
         "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
         in note_text,
     )
     check(
-        "Source note no longer cites the UV coefficient bridge",
-        "UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE" not in note_text,
+        "Source note contains no stale UV bridge attribution",
+        not any(marker in note_compact for marker in STALE_BRIDGE_MARKERS),
+    )
+    check(
+        "Source note contains no retained-alpha authority wording",
+        not any(
+            marker in note_compact
+            for marker in RETAINED_ALPHA_AUTHORITY_MARKERS
+        ),
     )
     check(
         "Historical single-tensor cross-validation is explicitly removed",
@@ -673,7 +693,7 @@ def part_h_provenance() -> None:
     check(
         "Prior P1 notes are the sole upstream sources",
         True,  # structural assertion
-        "retention lineage: Fierz no-go + color-factor + I_S citation + canonical alpha_LM",
+        "lineage: Fierz no-go + color-factor + I_S citation + conditional alpha arithmetic",
     )
 
 

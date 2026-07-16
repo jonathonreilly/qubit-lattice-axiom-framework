@@ -28,12 +28,19 @@ framework-native full-staggered-PT BZ quadrature central**
 `docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md`. See **§0
 Correction** below for the superseding-relationship statement; the body of
 this note (§1–§9) is preserved unchanged as the literature-citation-based
-assembly derivation that the full-staggered-PT central refines. The packaged
-`delta_PT = 1.92 %` and the cited I_S-based `5.77 %` are also recovered here
-as degenerate single-channel endpoints of the full three-channel assembly.
+assembly derivation that the full-staggered-PT central refines. The historical
+`delta_PT = 1.92 %` and supplied-I_S `5.77 %` map are displayed only as
+conditional single-channel arithmetic comparators.
 
 **Primary runner:** `scripts/frontier_yt_p1_delta_r_master_assembly.py`
 **Log:** `logs/retained/yt_p1_delta_r_master_assembly_2026-04-18.log`
+
+Every numerical use of `alpha_LM` in this note is conditional
+arithmetic/provenance from the linked unaudited certificate, not retained
+physical/canonical authority. The historical `delta_PT` remains conditional
+arithmetic under the separate `I_S = 2` convention; it is not a lattice BZ
+result or a bridge-derived fact, and its source-action/matching interpretation
+remains open.
 
 ---
 
@@ -102,8 +109,8 @@ the retained lane further widens to ~`±6.9 GeV` and ~`±7.94 GeV` respectively
   decomposition `Δ_R = (α_LM/(4π)) · [C_F Δ_1 + C_A Δ_2 + T_F n_f Δ_3]`; the
   literature-cited per-channel centrals `(+2, −10/3, +0.933)`; the covariance
   analysis and the ±2.32 % 1σ band on the literature-cited central; the
-  reinterpretation of `delta_PT = 1.92 %` and cited `5.77 %` as
-  single-channel approximations; the m_t-lane budget convention and sensitivity
+  conditional arithmetic comparison with historical `delta_PT = 1.92 %` and
+  the supplied-I_S `5.77 %` map; the m_t-lane budget convention and sensitivity
   factors.
 - **Superseded as canonical** by the full-staggered-PT note: the **operational
   Δ_R central value** used going forward is `−3.77 % ± 0.45 %`, not `−3.27 %
@@ -163,17 +170,16 @@ does **not** modify:
   (`docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md`), whose
   `Δ_3 ≃ +0.933` central and `[+0.667, +2.000]` range are inherited
   without modification;
-- the historical packaged `delta_PT = 1.92 %` comparator, retained only as
+- the historical packaged `delta_PT = 1.92 %` comparator, carried only as
   conditional arithmetic under `I_S = 2` and reinterpreted below as the
-  **single-channel (C_F only) approximation** to the full three-channel Δ_R.
+  **single-channel (C_F only) arithmetic comparator** to the full
+  three-channel Δ_R.
   No current authority cited here derives its source-action or continuum-vertex
   interpretation;
-- the prior cited I_S-based `5.77 %` P1 central from
+- the prior supplied-I_S `5.77 %` arithmetic map from
   `docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md`, which
-  remains defensible in its stated role as a cited C_F-channel
-  literature central — and is also reinterpreted below as a
-  **single-channel (C_F only, no external-Z_ψ cancellation
-  accounting)** approximation;
+  remains conditional in its stated role as a C_F-channel map and is
+  compared below only as **single-channel (C_F only)** arithmetic;
 - any publication-surface file. No publication table is modified by
   this note.
 
@@ -229,13 +235,12 @@ citation-and-bound channel evaluations.
   physical/canonical input.
 - **Historical packaged comparator (reinterpreted):**
   `delta_PT = α_LM · C_F / (2π) = 1.92 %` is local conditional arithmetic,
-  reinterpreted in §5.1 as the single-channel (C_F only) approximation to
-  Δ_R. Its source-action/matching interpretation remains open.
-- **Cited I_S literature (reinterpreted):**
+  compared in §5.1 with the single-channel `C_F` term at a separately
+  supplied `Δ_1 = 2`. Its source-action/matching interpretation remains open.
+- **Supplied I_S arithmetic (conditional):**
   [`docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`](YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) — cited
-  `I_S ∈ [4, 10]` bracket, reinterpreted in §5.2 as a
-  cited-literature C_F-channel central without external-Z_ψ
-  cancellation accounting.
+  `I_S ∈ [4, 10]` bracket, displayed in §5.2 only as conditional
+  C_F-channel arithmetic with no source-action interpretation.
 
 ---
 
@@ -315,8 +320,8 @@ uncertainties; (iii) the retained conserved-current
 
 | Prior estimate | Value | Reinterpretation |
 |----------------|-------|------------------|
-| Packaged `delta_PT` (UV_GAUGE_TO_YUKAWA_BRIDGE) | 1.92 % | **Single-channel C_F only** approximation; recovered as `C_F · Δ_1 · α_LM/(4π)` at the retained central `Δ_1 = 2`. |
-| Cited I_S-based (I_S_REVISION_VERIFICATION) | 5.77 % | **Single-channel C_F only** approximation without external-Z_ψ cancellation; recovered as the upper-bracket `C_F · 6 · α_LM/(4π)` with no C_A or T_F n_f channel accounting. |
+| Historical `delta_PT` conditional arithmetic (`I_S = 2`) | 1.92 % | **Single-channel C_F only** arithmetic comparator. It equals `C_F · Δ_1 · α_LM/(4π)` only if `Δ_1 = 2` is supplied separately; it is not a lattice BZ result or bridge-derived fact. |
+| Supplied I_S-based arithmetic map (I_S_REVISION_VERIFICATION) | 5.77 % | **Single-channel C_F only** conditional map at supplied `I_S = 6`, with no C_A or T_F n_f channel accounting and no source-action interpretation. |
 | **Retained three-channel (this note)** | **3.27 %** | **Full three-channel assembly** with partial cancellation between C_F + T_F n_f (positive) and C_A (negative). |
 
 **Implication for m_t(pole) (literature-cited central):** At the
@@ -353,8 +358,9 @@ the central `±0.78 GeV` from the full-PT ±0.45 % uncertainty. The observed
 - MODERATE on the magnitude (the three cited BZ integrals carry O(1)
   literature uncertainty, yielding a P1 central `3.27 % ± ~30 %` from
   compounded citation spread);
-- HIGH on the reinterpretation of the packaged `1.92 %` and cited
-  `5.77 %` as degenerate single-channel approximations.
+- HIGH only on the arithmetic identities producing the historical `1.92 %`
+  and supplied-I_S `5.77 %` comparators; their source-action or matching
+  interpretation remains open.
 
 **Safe claim boundary.** The retained central `Δ_R = −3.27 %` is
 **literature-cited**, not framework-native. Pinning to sub-percent
@@ -490,11 +496,11 @@ the sum of the C_F and T_F n_f magnitudes (3.95 %) at central, so
 the sign of Δ_R is set by the C_A channel. This remains true across
 most of the cited literature range (see §3.3).
 
-**(iii) Single-channel approximations are degenerate.** Neither the
-packaged `1.92 %` (C_F only, at `Δ_1 = 2`) nor the cited `5.77 %`
-(C_F only, at `Δ_1 = 6`; also without external-Z_ψ accounting)
-captures the three-channel structure. Both are recovered as
-degenerate endpoints of the full assembly (see §5).
+**(iii) Conditional single-channel arithmetic is incomplete.** Neither the
+historical `1.92 %` map under `I_S = 2` nor the supplied-I_S `5.77 %`
+map at `I_S = 6` captures the three-channel structure. Their numerical
+comparison with the assembly does not establish that either input is a
+lattice BZ coefficient or source-action matching result (see §5).
 
 ---
 
@@ -662,13 +668,12 @@ retention is supported.
 
 ### 4.2 Channel-by-channel physics
 
-**C_F channel (+1.92 %).** The scalar-bilinear vertex correction
-(Rep B) is positive; the gauge-vertex correction (Rep A) has a
-partial C_F piece that cancels partially against it. The residual
-`+1.92 %` after the external-Z_ψ cancellation and the MSbar scalar
-anomalous dimension `−6 C_F α/(4π)` (negative) is a small net
-positive number, reflecting the dominance of the scalar vertex over
-the gauge vertex in the `C_F` Clifford/color structure difference.
+**C_F channel (+1.92 % in the supplied assembly scenario).** This number is
+the conditional product `C_F · Δ_1 · α_LM/(4π)` after separately supplying
+`Δ_1 = 2` and the unaudited alpha arithmetic. Its numerical equality to the
+historical `delta_PT` map does not derive `I_S = 2`, a source action, a
+lattice BZ coefficient, external-leg accounting, or a continuum-vertex
+interpretation.
 
 **C_A channel (−7.22 %).** The non-Abelian gauge-vertex piece is
 positive (from `+C_A · I_v_gauge`) but subdominant to the bosonic
@@ -727,10 +732,10 @@ consistency check and supports the retained result.
 
 ## 5. Supersession of prior single-channel approximations
 
-### 5.1 Packaged `delta_PT = 1.92 %` (C_F channel only)
+### 5.1 Historical `delta_PT = 1.92 %` conditional arithmetic
 
 Using the historical conditional convention `I_S = 2` together with the
-canonical arithmetic certificate:
+unaudited conditional arithmetic certificate:
 
 ```
     packaged delta_PT  =  α_LM · C_F / (2π)
@@ -740,20 +745,14 @@ canonical arithmetic certificate:
                       ≃  1.92 %                                      (5.1)
 ```
 
-**Interpretation.** The packaged `1.92 %` is the **C_F-channel
-contribution alone** at `Δ_1 = 2` (the literature-central
-`C_F`-coefficient). It is precisely `C_F · Δ_1^{central} · α_LM/(4π)`
-and is recovered exactly by the retained three-channel assembly as
-the first of three terms. It is **not** the full Δ_R; it is a
-single-channel (C_F only) approximation that (a) omits the C_A
-channel (−7.22 %), (b) omits the T_F n_f channel (+2.02 %).
+**Interpretation.** The displayed equality is conditional arithmetic under
+the separate historical convention `I_S = 2`. Algebraically it matches the
+`C_F · Δ_1 · α_LM/(4π)` term when one separately supplies `Δ_1 = 2`, but no
+current authority cited here derives that identification from the source
+action. It is not a lattice BZ result, the full `Δ_R`, or an independently
+justified P1 central.
 
-The arithmetic correctly reproduces the `C_F`-channel term under
-`Δ_1 = 2`, but no current authority cited here derives that historical
-identification from the source action. It is not the full Δ_R or an
-independently justified P1 central.
-
-### 5.2 Cited I_S-based `5.77 %` (C_F channel only, no external-Z_ψ accounting)
+### 5.2 Supplied I_S-based `5.77 %` conditional arithmetic
 
 From `docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md`:
 
@@ -764,54 +763,27 @@ From `docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md`:
                            ≃  5.77 %                                  (5.2)
 ```
 
-**Interpretation.** The cited `5.77 %` is the **C_F-channel central
-WITHOUT external-Z_ψ cancellation**. It uses the raw cited
-`I_S ≈ 6` (which includes the external Z_ψ contribution `2 I_leg`
-that the Rep-A/Rep-B cancellation theorem has since shown cancels
-exactly on the ratio) and identifies it directly with the
-C_F-channel coefficient. In the retained framework this corresponds
-to the upper end of the Δ_1 bracket `[0, +8]`, specifically
-`Δ_1 = 6`, which is reached only in the non-retained limit where
-external-Z_ψ does NOT cancel — a limit the Rep-A/Rep-B theorem has
-explicitly ruled out.
-
-Reinterpreted in terms of the retained surface:
-
-```
-    retained Δ_1  =  I_S − 2 I_leg − 0 (for I_v_gauge=0)
-                  ≃  6 − 2·(1.5)  ≃  +3      at literature endpoints
-                  ≃  6 − 2·(2)    ≃  +2      at literature-central I_leg ≃ 2
-```
-
-The cited `5.77 %` is recovered as
-`C_F · 6 · α_LM/(4π)` — the same as using `Δ_1 = 6`, which requires
-no external-Z_ψ subtraction. The retained central uses `Δ_1 = 2`
-(after external-Z_ψ subtraction), giving the packaged `1.92 %` on
-the C_F channel alone; the cited `5.77 %` is what you get if you
-forget the external-Z_ψ cancellation.
-
-**Either way, the cited `5.77 %` remains a single-channel (C_F only)
-approximation** — it is not the full Δ_R; it omits C_A and T_F n_f
-channels.
+**Interpretation.** The displayed `5.77 %` is only the conditional map
+`(α_LM/(4π)) · C_F · I_S` at the supplied comparison value `I_S = 6`.
+This row does not derive that supplied value on the retained action and does
+not identify it with `Δ_1`, external-leg accounting, or a physical matching
+coefficient. It is a single-channel arithmetic comparator, not the full
+`Δ_R`; it omits the C_A and T_F n_f channels.
 
 ### 5.3 Three-channel retained supersession
 
-The retained Δ_R = −3.27 % supersedes both prior single-channel
-estimates on the full ratio. Its position between the packaged
-`1.92 %` (lower single-channel) and the cited `5.77 %` (upper
-single-channel) is a non-trivial outcome of the three-channel
-cancellation structure:
+The supplied three-channel assembly gives `Δ_R = −3.27 %`. Its numerical
+position between the historical `1.92 %` and supplied-I_S `5.77 %`
+comparators is arithmetic context only:
 
-- |Δ_R|^{three-channel, retained} = 3.27 % is **larger** than the
-  packaged 1.92 % (C_F only) because the C_A channel contribution
+- |Δ_R|^{three-channel, supplied} = 3.27 % is **larger** than the
+  historical 1.92 % comparator because the C_A channel contribution
   (−7.22 %) more than offsets the T_F n_f contribution (+2.02 %);
-- |Δ_R|^{three-channel, retained} = 3.27 % is **smaller** than the
-  cited 5.77 % (C_F only at I_S=6) because the retained C_F channel
-  uses Δ_1 = 2 (external Z_ψ cancels), not Δ_1 = 6.
+- |Δ_R|^{three-channel, supplied} = 3.27 % is **smaller** than the
+  supplied-I_S 5.77 % single-channel map.
 
-Both prior values are degenerate limits of the full assembly. The
-retained `3.27 %` is the correct operational P1 central on the
-ratio.
+No comparison in this section supplies a physical selector among those
+inputs or promotes the historical `1.92 %` arithmetic to a BZ result.
 
 ---
 
@@ -828,8 +800,8 @@ With the retained P1 revised to `3.27 %`, the P1 primitive is:
     P1 ∈ [~2.3 %, ~4.3 %]  (1σ citation band)                        (6.2)
 ```
 
-This is ~1.5× the packaged `1.92 %` central previously carried in
-the master obstruction, and 0.57× the cited `5.77 %` central from
+This is ~1.5× the historical conditional `1.92 %` comparator previously carried in
+the master obstruction, and 0.57× the supplied-I_S `5.77 %` arithmetic map from
 the I_S_revision_verification note. **Neither prior value is
 retained as the operational P1 central going forward on the full
 ratio.**
@@ -872,7 +844,7 @@ central is `±0.78 GeV` from the full-PT ±0.45 % uncertainty. The observed
 `m_t^{pole, PDG} = 172.69 GeV` lies 0.12 GeV above the central, well within
 both the literature-cited ±5.64 GeV lane and the canonical ±6.50 GeV lane.
 
-Relative to the prior packaged P1 = 1.92 %:
+Relative to the historical conditional `I_S = 2` arithmetic, 1.92 %:
 
 ```
     prior Δm_t  ≃  0.0192 · 172.57  ≃  ±3.31 GeV                   (prior)
@@ -969,11 +941,11 @@ It does **not** claim:
   total);
 - any modification of the Ward-identity tree-level theorem, the
   Rep-A/Rep-B cancellation sub-theorem, the three per-channel
-  BZ-computation sub-theorems, the packaged `1.92 %` support note,
+  BZ-computation sub-theorems, the historical `1.92 %` conditional comparator,
   the cited I_S citation note, or any publication-surface file;
-- that the packaged `1.92 %` or cited `5.77 %` were "wrong" (both
-  remain defensible as single-channel approximations in their
-  stated OPEN-status roles); the literature-cited three-channel value
+- that the historical `1.92 %` or supplied-I_S `5.77 %` maps were "wrong"
+  (both remain conditional single-channel arithmetic in their stated
+  OPEN-status roles); the literature-cited three-channel value
   `3.27 %` is a refinement that incorporates all three channels,
   not a correction of prior errors;
 - that the literature-cited `−3.27 %` is the canonical operational central
@@ -990,7 +962,8 @@ It does **not** claim:
 
 - `SU(3)` Casimirs `C_F = 4/3`, `C_A = 3`, `T_F = 1/2`.
 - MSbar flavor count at M_Pl: `n_f = 6`.
-- Canonical-surface anchors `α_LM = 0.09067`, `α_LM/(4π) = 0.00721`.
+- Conditional arithmetic values `α_LM = 0.09067`,
+  `α_LM/(4π) = 0.00721`.
 - Three-channel color decomposition
   `Δ_R^ratio = (α_LM/(4π)) · [C_F Δ_1 + C_A Δ_2 + T_F n_f Δ_3]`.
 - Per-channel structural formulae `Δ_1 = 2(I_v_scalar − I_v_gauge) − 6`,
@@ -1052,8 +1025,8 @@ The runner verifies:
 
 1. Retention of SU(3) Casimirs `C_F = 4/3`, `C_A = 3`, `T_F = 1/2`
    and flavor count `n_f = 6`.
-2. Retention of canonical-surface constants `α_LM = 0.09067`,
-   `α_LM/(4π) = 0.00721` (sub-permille match to
+2. Reproduction of conditional `α_LM = 0.09067`,
+   `α_LM/(4π) = 0.00721` arithmetic (sub-permille match to
    `canonical_plaquette_surface`).
 3. Retention of per-channel centrals from the three BZ-computation
    sub-theorems: `Δ_1 = 2`, `Δ_2 = −10/3`, `Δ_3 = (4/3) · 0.7`.
@@ -1068,12 +1041,11 @@ The runner verifies:
 8. Covariance-reduced 1σ band on Δ_R:
    `(−3.27 ± ~2.3) %`.
 9. Operational P1 band: `P1 = 3.27 % ± ~30 %` → `P1 ∈ [2.3 %, 4.3 %]`.
-10. Reinterpretation of packaged `1.92 %` as the single-channel
-    (C_F only, Δ_1 = 2) approximation to Δ_R; recovered as the first
-    channel of the assembly.
-11. Reinterpretation of cited `5.77 %` as the single-channel
-    (C_F only, Δ_1 = 6 without external-Z_ψ subtraction)
-    approximation to Δ_R.
+10. Historical `1.92 %` conditional arithmetic under `I_S = 2`, compared
+    numerically with the separately supplied `Δ_1 = 2` C_F channel; no
+    source-action identification.
+11. Supplied-I_S `5.77 %` conditional single-channel arithmetic at `I_S = 6`;
+    no BZ, external-leg, or matching interpretation.
 12. Consistency with the Rep-A/Rep-B cancellation sub-theorem's
     three-channel structural decomposition.
 13. Consistency with the master obstruction theorem's

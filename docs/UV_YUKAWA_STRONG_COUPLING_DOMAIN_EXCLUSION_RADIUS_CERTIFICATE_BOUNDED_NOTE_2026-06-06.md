@@ -76,15 +76,19 @@ consistent with the on-main radius evidence
 real pole `~3.375` (invalid for a complex pair), and a naive early-coefficient
 ratio `sqrt(|d_6/d_8|) ~ 8.2 > 6` *over-estimates* the radius (the real-pole
 intuition mis-applied to a complex pair). Only the complex-pair-aware estimators
-give estimates near `5.3-5.4`, consistent with the literature Fisher-zero
-`|beta_c| ~ 5.7` (Li-Meurice, arXiv:0710.5771; **comparator only, never an
-input**). This finite packet does not certify the exact convergence radius.
+give estimates near `5.3-5.4`. As separate **comparators only**, the earlier
+plaquette series analysis suggested a complex-singularity scale near `5.7`
+(Li-Meurice, hep-lat/0507034), while the finite-volume SU(3) study reported
+Fisher zeros near `5.54 +/- 0.10 i` and `5.54 +/- 0.16 i`
+(Denbleyker-Du-Meurice-Velytsky, arXiv:0710.5771). This finite packet does not
+certify the exact convergence radius.
 
 ## (C) Why the plaquette estimate is not a four-fermion selector
 
 At finite volume every lattice observable is a ratio
-`<O> = N_O(beta) / Z(beta)` of **entire** functions of `beta` (finite sums of
-`exp(-beta S)`). Common Fisher zeros are possible singularities, but a numerator
+`<O> = N_O(beta) / Z(beta)` of **entire** functions of `beta`, given by
+compact-domain integrals of `exp(-beta S)` with bounded insertions. Common
+Fisher zeros are possible singularities, but a numerator
 can cancel a zero of `Z`; the nearest uncancelled singularity and therefore the
 Taylor radius need not be identical for every observable. The runner now
 includes both sharing and cancellation controls on a minimal toy denominator.
@@ -129,8 +133,11 @@ not a closed-form proof of convergence or divergence.
 - **Cited** (derivation lives elsewhere, reused, not re-derived): the exact
   `d_5..d_11` connected coefficients from the on-main campaign runners
   `frontier_beta6_d9/d10/d11_coefficient_2026_06_04.py` and the certified-backbone
-  note; the literature Fisher-zero `|beta_c| ~ 5.7` (Li-Meurice, arXiv:0710.5771;
-  hep-lat/0507034) as a **comparator** for the radius evidence.
+  note; the earlier series-analysis scale near `5.7` (Li-Meurice,
+  hep-lat/0507034) and the finite-volume Fisher zeros near
+  `5.54 +/- 0.10 i`, `5.54 +/- 0.16 i`
+  (Denbleyker-Du-Meurice-Velytsky, arXiv:0710.5771) as separate
+  **comparators** for the radius evidence.
 
 ## Audit dependency repair links
 

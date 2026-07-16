@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_delta_2_bz.py
-runner_sha256: 4cc6a46e29982f8df5d8428bb4da2025c8fdc4989804fb15bde2c3c495e7240f
+runner_sha256: dc403d39cac035e6f4b24dda58dbf292e4e4aefb6158a27764ce5ab63994ff3f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================
@@ -34,7 +34,7 @@ Block 4: Cited I_v_gauge - conserved (Ward identity) vs local current.
   [PASS (C)] I_v_gauge = 0 for conserved point-split staggered vector current (Ward identity, exact)  (I_v_gauge^{conserved} = 0.0)
   [PASS (C)] I_v_gauge range [1, 3] for LOCAL staggered vector current (cited)  (I_v_gauge^{local} in [1.0, 3.0])
   [PASS (C)] I_v_gauge^{local, central} = 2.0 (midpoint of cited local range)  (I_v_gauge_local_central = 2.0)
-  [PASS (C)] Conserved current is the retained canonical choice (I_v_gauge = 0)  (scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py Block 4, PASS: I_V = 0)
+  [PASS (C)] Current-definition fork is explicit: conserved I_v_gauge = 0 and local-current sensitivity remains open  (no constant-True current selector)
 
 Block 5: Delta_2 at each cited scenario.
 
@@ -85,8 +85,8 @@ Block 7: Sign of the C_A channel contribution.
   [PASS (C)] C_A contribution non-positive across Delta_2 in [-5, 0] safe range  (strictly non-positive on the retained safe claim range)
 
 Block 8: Comparison C_F channel context (indicative only).
-  [PASS (C)] C_F * Delta_1^{lower=2} * alpha_LM/(4 pi) ~ +1.92 % (packaged delta_PT)  (C_F contribution (Delta_1=2) = +1.9240 %)
-  [PASS (C)] C_F * Delta_1^{upper=6} * alpha_LM/(4 pi) ~ +5.77 % (cited I_S central)  (C_F contribution (Delta_1=6) = +5.7721 %)
+  [PASS (C)] C_F * Delta_1^{lower=2} * alpha_LM/(4 pi) ~ +1.92 % (separately supplied channel scenario)  (C_F contribution (Delta_1=2) = +1.9240 %)
+  [PASS (C)] C_F * Delta_1^{upper=6} * alpha_LM/(4 pi) ~ +5.77 % (supplied-I_S arithmetic map)  (C_F contribution (Delta_1=6) = +5.7721 %)
   [PASS (C)] Net C_F + C_A at Delta_1 = 2, central Delta_2: ~ -5.3 % (negative, C_A dominates)  (net (lower Delta_1) = -5.2911 %)
   [PASS (C)] Net C_F + C_A at Delta_1 = 6, central Delta_2: ~ -1.4 % (near zero, partial cancellation)  (net (upper Delta_1) = -1.4430 %)
   [PASS (C)] C_A channel SUBTRACTS from C_F channel (partial cancellation in ratio)  (opposite-sign contributions at central => partial cancellation on the ratio)
@@ -97,15 +97,16 @@ Block 9: Structural preservation checks.
   [PASS (C)] 5/3 factor from QCD gluon self-energy color decomposition (HIGH confidence)  (11/3 C_A pure-gauge piece splits into vertex + 5/3 gluonic/ghost)
   [PASS (C)] Three-channel ratio decomposition unchanged  (Delta_R = (alpha/(4 pi)) * (C_F Delta_1 + C_A Delta_2 + T_F n_f Delta_3))
   [PASS (C)] Historical delta_PT conditional arithmetic reproduces 1.92 %  (arithmetic only under the historical I_S = 2 convention)
-  [PASS (C)] Source note no longer cites the UV coefficient bridge for delta_PT  (retired bridge attribution absent)
-  [PASS (C)] Source note links the unaudited bounded canonical alpha source
+  [PASS (C)] Source note contains no stale UV bridge attribution  (full filename and legacy shorthand absent)
+  [PASS (C)] Source note contains no retained-alpha authority wording
+  [PASS (C)] Source note links the unaudited conditional alpha arithmetic source
   [PASS (C)] Source-action and matching justification remain explicit open conditions
   [PASS (C)] Cited I_S bracket [4, 10] unchanged (C_F channel, orthogonal)  (this note addresses C_A channel only; C_F channel handled elsewhere)
   [PASS (C)] Master obstruction theorem NOT modified by this note  (authority boundary respected)
   [PASS (C)] Publication-surface files NOT modified by this note  (no net ratio correction is propagated; Delta_1 and Delta_3 excluded)
 
 ========================================================================
-SUMMARY: PASS=45  FAIL=0
+SUMMARY: PASS=46  FAIL=0
 ========================================================================
 
 RETAINED CITATION-LEVEL RESULTS:

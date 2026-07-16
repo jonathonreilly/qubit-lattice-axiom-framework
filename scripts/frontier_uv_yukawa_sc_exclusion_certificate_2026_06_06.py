@@ -242,13 +242,20 @@ def block5_scope_boundary(R22, sqrt_pert, sqrt_strong):
 
 
 def block6_literature_comparator(R22):
-    print("\n[BLOCK 6] Literature Fisher-zero comparator (cross-check, never an input)")
-    fisher_lit = 5.7  # Li-Meurice arXiv:0710.5771 SU(3) complex-beta singularity
-    check("framework R_SC consistent with literature Fisher-zero ~5.7 (within ~6%)",
-          abs(R22 - fisher_lit) / fisher_lit < 0.10,
-          f"R_SC={R22:.3f} vs lit {fisher_lit} (comparator only)")
-    check("both estimates are below 6 without transferring the radius to another observable",
-          R22 < 6 and fisher_lit < 6,
+    print("\n[BLOCK 6] Literature complex-singularity comparators (never inputs)")
+    # Li-Meurice hep-lat/0507034: plaquette series analysis suggested a
+    # singularity scale beta ~ 5.7. Denbleyker et al. arXiv:0710.5771:
+    # finite-volume SU(3) Fisher zeros near 5.54 +/- 0.10i and 5.54 +/- 0.16i.
+    series_scale = 5.7
+    fisher_modulus = abs(complex(5.54, 0.10))
+    check("R_SC consistent with the earlier series-analysis scale ~5.7",
+          abs(R22 - series_scale) / series_scale < 0.10,
+          f"R_SC={R22:.3f} vs series scale {series_scale} (comparator only)")
+    check("R_SC consistent with the finite-volume Fisher-zero modulus ~5.54",
+          abs(R22 - fisher_modulus) / fisher_modulus < 0.05,
+          f"R_SC={R22:.3f} vs |5.54+0.10i|={fisher_modulus:.3f}")
+    check("all comparator scales are below 6 without radius transfer",
+          R22 < 6 and series_scale < 6 and fisher_modulus < 6,
           "comparison is plaquette-series evidence only")
     return True
 

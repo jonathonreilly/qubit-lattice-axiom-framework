@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p2_f_yt_loop_geometric_bound.py
-runner_sha256: f7077e0e42c403684edc25572fe9f4b55b8e4beb7284da170ab230104e43fe5f
+runner_sha256: ee73b58ed2e706e8d46d33c7ae7202be01f06a5497cf3a015ab3feb9c69607cb
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.20
@@ -32,8 +32,8 @@ PART A: Retained SU(3) Casimirs + retained n_l + retained b_0
   [PASS] Retained C_A = 3 at SU(3)  (value = 3)
   [PASS] Retained n_l = 5 on M_Pl -> v interval (u,d,s,c,b)  (value = 5)
   [PASS] Retained b_0 = (11 C_A - 4 T_F n_l) / 3 = 23/3 at n_l = 5  (b_0 = 23/3)
-  [PASS] Retained alpha_LM = 0.09066784 to eight-decimal precision  (alpha_LM = 0.09066784)
-  [PASS] Retained alpha_LM / pi = 0.02886 +- 0.00001  (alpha_LM/pi = 0.02886047)
+  [PASS] Conditional alpha_LM arithmetic = 0.09066784  (alpha_LM = 0.09066784)
+  [PASS] Conditional alpha_LM / pi arithmetic = 0.02886 +- 0.00001  (alpha_LM/pi = 0.02886047)
   [PASS] Retained u_0 from canonical plaquette surface: 0.87768138  (u_0 = 0.87768138)
   [PASS] sqrt(u_0) * sqrt(8/9) = 0.8833 (tree-level M^{0})  (sqrt(u_0)*sqrt(8/9) = 0.883267)
 
@@ -220,15 +220,16 @@ PART I: Structural retention provenance
        on the same UV surface).
   [PASS] Bound input b_0 = 23/3 is a retained rational at SU(3), n_l=5  (b_0 = 23/3 verified)
   [PASS] Bound input alpha_LM matches the conditionally supplied arithmetic  (alpha_LM = 0.09066784)
-  [PASS] Source note links the unaudited bounded canonical alpha source
+  [PASS] Source note links the unaudited conditional alpha arithmetic source
   [PASS] Source note marks the alpha source unaudited and non-retained
-  [PASS] Source note no longer cites the UV coefficient bridge
+  [PASS] Source note contains no stale UV bridge attribution
+  [PASS] Source note contains no retained-alpha authority wording
   [PASS] Retained structural prefactor sqrt(u_0) * sqrt(8/9) from v-matching note  (prefactor = 0.883267)
   [PASS] No literature 3-loop or higher integrated F_yt correction imported  (runner does not reference any F_yt^{n} for n >= 3)
-  [PASS] Prior P2 notes (taste-staircase + v-matching) are the sole upstream sources  (retention lineage: taste-staircase + v-matching decomp + canonical alpha_LM)
+  [PASS] Prior P2 notes (taste-staircase + v-matching) are the sole upstream sources  (lineage: taste-staircase + v-matching decomp + conditional alpha arithmetic)
 
 ========================================================================
-SUMMARY: PASS=51  FAIL=0
+SUMMARY: PASS=52  FAIL=0
 ========================================================================
 
 Framework-native ratio  r_M = (a_LM/pi) * b_0        = 0.221264

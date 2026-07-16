@@ -12,9 +12,14 @@ Kawai–Nakayama–Seo 1981; Lepage–Mackenzie 1992). The retained central
 value is `Δ_2 ≈ −3` with range `Δ_2 ∈ [−5, 0]` under the cited
 literature uncertainty. The corresponding ratio contribution
 `C_A · Δ_2 · α_LM/(4π)` is NEGATIVE at the central, giving roughly
-`−6.5 %` on `y_t²/g_s²` at the canonical surface.
+`−6.5 %` on `y_t²/g_s²` under the conditionally supplied `alpha_LM`
+arithmetic.
 **Primary runner:** `scripts/frontier_yt_p1_delta_2_bz.py`
 **Log:** `logs/retained/yt_p1_delta_2_bz_2026-04-17.log`
+
+Every numerical use of `alpha_LM` in this note is conditional
+arithmetic/provenance from the linked unaudited certificate, not retained
+physical/canonical authority.
 
 ---
 
@@ -35,7 +40,8 @@ correction in the retained three-channel decomposition
 This note does **not** modify any authority document. It only pins
 the numerical central value and the literature-bounded range of
 `Δ_2`, and evaluates the `C_A · Δ_2 · α_LM/(4π)` contribution to the
-ratio correction at the canonical surface `α_LM = 0.09067`.
+ratio correction under the conditionally supplied arithmetic value
+`α_LM = 0.09067`.
 
 It does not modify:
 
@@ -80,7 +86,7 @@ could be contemplated.
   - [`docs/YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md`](YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md) — geometric
     tail bound on the loop-expansion axis.
 - **Historical packaged comparator (not an authority):**
-  `delta_PT = α_LM · C_F/(2π) = 1.92 %` is retained here only as conditional
+  `delta_PT = α_LM · C_F/(2π) = 1.92 %` is kept here only as conditional
   arithmetic under the historical `I_S = 2` convention. The missing
   source-action/matching justification remains open.
 - **Conditional canonical arithmetic source (unaudited):**
@@ -506,7 +512,7 @@ This note claims:
 > current (the canonical retained choice), with conservative outer
 > envelope `Δ_2 ∈ [−5, 0]` across cited literature uncertainty and
 > current-definition sensitivity. The corresponding C_A-channel
-> contribution to the ratio correction at canonical `α_LM = 0.09067`
+> contribution to the ratio correction under conditional `α_LM = 0.09067`
 > is `C_A · Δ_2 · α_LM/(4π) ≈ −7.2 %` at central, with range
 > `[−10.8 %, 0 %]`. The **sign** of the C_A contribution is
 > **negative** at central (and strictly non-positive across the
@@ -523,7 +529,7 @@ It does **NOT** claim:
   not recomputed here);
 - any modification of the master obstruction theorem, the Ward
   tree-level theorem, the Rep-A/Rep-B cancellation theorem, the
-  H_unit symbolic reduction, or the packaged `1.92 %` support
+  H_unit symbolic reduction, or the historical conditional `1.92 %` comparator
   (none of these are modified by this note);
 - propagation of any revised ratio-correction number into any
   publication-surface table (no publication-surface file is modified);
@@ -543,13 +549,18 @@ It does **NOT** claim:
 and preserved by this note):**
 
 - `SU(3)` Casimirs `C_F = 4/3`, `C_A = 3`, `T_F = 1/2`.
-- Canonical-surface anchors `α_LM = 0.09067`, `α_LM/(4π) = 0.00721`.
 - Three-channel ratio decomposition
   `Δ_R^ratio = (α_LM/(4π)) · [C_F · Δ_1 + C_A · Δ_2 + T_F n_f · Δ_3]`.
 - Structural formula `Δ_2 = I_v_gauge − (5/3) · I_SE`.
 - 5/3 factor from QCD gluon self-energy color decomposition.
 - Conserved-current reduction `I_V = 0`
   (`scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`, 21/21 PASS).
+
+**Conditional arithmetic/provenance (unaudited, not retained
+physical/canonical authority):**
+
+- `α_LM = 0.09067` and `α_LM/(4π) = 0.00721` from the linked bounded
+  certificate, conditional on its parent plaquette reuse surface.
 
 **Cited (external, with O(1) uncertainty):**
 
@@ -584,8 +595,8 @@ return PASS on every check to keep this note on the retained surface.
 The runner verifies:
 
 - exact retention of `C_F = 4/3`, `C_A = 3`, `T_F = 1/2`;
-- exact retention of canonical-surface `α_LM = 0.09067`,
-  `α_LM/(4π) = 0.00721`;
+- exact reproduction of conditional `α_LM = 0.09067`,
+  `α_LM/(4π) = 0.00721` arithmetic;
 - retained Rep-A/Rep-B formula `Δ_2 = I_v_gauge − (5/3) · I_SE`;
 - cited `I_SE^{gluonic+ghost} ∈ [1, 3]` on the tadpole-improved
   Wilson-plaquette surface;
@@ -603,5 +614,5 @@ The runner verifies:
 - retained `5/3` factor from QCD color decomposition;
 - no modification of the master obstruction theorem, the Ward
   tree-level theorem, the Rep-A/Rep-B cancellation theorem, the
-  H_unit symbolic reduction, the packaged `1.92 %` support, or the
+  H_unit symbolic reduction, the historical conditional `1.92 %` comparator, or the
   prior P1 citation/verification notes.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_delta_r_master_assembly.py
-runner_sha256: 27f4e8f4977c3d2cf69252dd29cb511a650720b63b3be554a0d2c9d09524849a
+runner_sha256: 073ee844cdcb4dc80bac15bfb07f856763f539dd8dae98bc9710703be35f2399
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 ========================================================================
@@ -26,7 +26,7 @@ Block 2: Per-channel retained centrals (from three prior BZ sub-theorems).
   [PASS (C)] Delta_3 range = [+0.667, +2.000] (retained from cited fermion-loop bracket)  (Delta_3 range = [0.6667, 2.0000])
 
 Block 3: Per-channel contributions to Delta_R at central.
-  [PASS (C)] C_F channel contribution ~ +1.924 % (packaged delta_PT recovered)  (C_F * Delta_1 * alpha/(4pi) = +1.9240 %)
+  [PASS (C)] Supplied Delta_1 = 2 C_F channel contribution ~ +1.924 %  (C_F * Delta_1 * alpha/(4pi) = +1.9240 %)
   [PASS (C)] C_A channel contribution ~ -7.215 % (gluon SE dominated)  (C_A * Delta_2 * alpha/(4pi) = -7.2151 %)
   [PASS (C)] T_F n_f channel contribution ~ +2.020 % (matter screening)  (T_F * n_f * Delta_3 * alpha/(4pi) = +2.0202 %)
   [PASS (C)] Sign of C_F channel: POSITIVE  (+1.9240 %)
@@ -53,24 +53,24 @@ Block 6: Uncertainty propagation (covariance-reduced 1sigma band).
   [PASS (C)] Covariance-reduced 1sigma band contains Delta_R_central  (Delta_R in [-5.592 %, -0.950 %])
   [PASS (C)] Covariance-reduced upper limit of Delta_R is still roughly <= 0 (not sign-flipped)  (Delta_R_1sigma_hi = -0.9501 %)
 
-Block 7: Reinterpretation of packaged 1.92 % as single-channel approximation.
-  [PASS (C)] Packaged delta_PT = alpha_LM * C_F / (2 pi) ~ 1.924 %  (packaged = +1.9240 %)
-  [PASS (C)] Packaged 1.92 % equals C_F channel at Delta_1 = 2 (recovery check)  (packaged = 1.9240 %, C_F channel = 1.9240 %)
-  [PASS (C)] Packaged 1.92 % misses C_A channel (-7.22 %) and T_F n_f (+2.02 %)  (single-channel (C_F only) approximation)
-  [PASS (C)] Retained three-channel |Delta_R| (3.27 %) > packaged single-channel (1.92 %)  (|retained| = 3.271 %, packaged = 1.924 %)
+Block 7: Historical 1.92 % conditional arithmetic comparison.
+  [PASS (C)] Historical delta_PT conditional arithmetic = alpha_LM * C_F / (2 pi) ~ 1.924 %  (packaged = +1.9240 %)
+  [PASS (C)] Historical 1.92 % arithmetic equals C_F channel only when Delta_1 = 2 is supplied separately  (packaged = 1.9240 %, C_F channel = 1.9240 %)
+  [PASS (C)] Historical 1.92 % arithmetic contains no C_A or T_F n_f channel  (the comparison is C_F-only arithmetic, not the full assembly)
+  [PASS (C)] Three-channel |Delta_R| arithmetic (3.27 %) > historical I_S=2 arithmetic (1.92 %)  (|retained| = 3.271 %, packaged = 1.924 %)
 
-Block 8: Reinterpretation of cited 5.77 % as single-channel approximation.
-  [PASS (C)] Cited 5.77 % = (alpha_LM/(4pi)) * C_F * I_S at I_S = 6  (cited = +5.7721 %)
-  [PASS (C)] Cited 5.77 % equals C_F channel at Delta_1 = 6 (upper-bracket, no Z_psi)  (cited = 5.7721 %, C_F at Delta_1=6 = 5.7721 %)
-  [PASS (C)] Cited 5.77 % misses C_A channel (-7.22 %) and T_F n_f (+2.02 %)  (single-channel (C_F only) approximation, no Z_psi cancellation)
-  [PASS (C)] Retained three-channel |Delta_R| (3.27 %) < cited single-channel (5.77 %)  (|retained| = 3.271 %, cited = 5.772 %)
-  [PASS (C)] Retained is between packaged (1.92 %) and cited (5.77 %)  (1.92 % < 3.271 % < 5.77 %)
+Block 8: Supplied-I_S 5.77 % conditional single-channel arithmetic.
+  [PASS (C)] Supplied-I_S 5.77 % = (alpha_LM/(4pi)) * C_F * I_S at I_S = 6  (cited = +5.7721 %)
+  [PASS (C)] Supplied-I_S 5.77 % equals C_F arithmetic if Delta_1 = 6 is separately imposed  (cited = 5.7721 %, C_F at Delta_1=6 = 5.7721 %)
+  [PASS (C)] Supplied-I_S 5.77 % arithmetic contains no C_A or T_F n_f channel  (single-channel comparison only; no source-action interpretation)
+  [PASS (C)] Three-channel |Delta_R| arithmetic (3.27 %) < supplied-I_S single-channel map (5.77 %)  (|retained| = 3.271 %, cited = 5.772 %)
+  [PASS (C)] Three-channel magnitude is between historical 1.92 % and supplied-I_S 5.77 % arithmetic  (1.92 % < 3.271 % < 5.77 %)
 
 Block 9: Operational P1 primitive on the retained ratio.
   [PASS (C)] P1 = |Delta_R|_central ~ 3.27 %  (P1 = 3.2709 %)
   [PASS (C)] P1 band (30 % citation uncertainty): [~2.29 %, ~4.25 %]  (P1 in [2.290 %, 4.252 %])
-  [PASS (C)] P1 band above packaged single-channel (1.92 %) even at lower end  (P1_low = 2.290 % > 1.924 %)
-  [PASS (C)] P1 band below cited single-channel (5.77 %) even at upper end  (P1_high = 4.252 % < 5.772 %)
+  [PASS (C)] P1 band arithmetic above historical I_S=2 arithmetic at lower end  (P1_low = 2.290 % > 1.924 %)
+  [PASS (C)] P1 band below supplied-I_S single-channel map (5.77 %) even at upper end  (P1_high = 4.252 % < 5.772 %)
 
 Block 10: m_t(pole) retained lane budget.
   [PASS (C)] m_t(central, retained) = 172.57 GeV (framework-native)  (m_t^central = 172.570 GeV)
@@ -99,16 +99,17 @@ Block 13: Structural preservation checks.
   [PASS (C)] Delta_2 BZ-computation sub-theorem NOT modified  (Delta_2 = -10/3 central with [-5, 0] range inherited)
   [PASS (C)] Delta_3 BZ-computation sub-theorem NOT modified  (Delta_3 = 0.933 central with [0.667, 2.000] range inherited)
   [PASS (C)] Historical delta_PT arithmetic remains a C_F-only conditional comparator  (no independent source-action interpretation is inferred)
-  [PASS (C)] Source note no longer cites the UV coefficient bridge for delta_PT  (retired bridge attribution absent)
-  [PASS (C)] Source note links the unaudited bounded canonical alpha source
+  [PASS (C)] Source note contains no stale UV bridge attribution  (full filename and legacy shorthand absent)
+  [PASS (C)] Source note contains no retained-alpha authority wording
+  [PASS (C)] Source note links the unaudited conditional alpha arithmetic source
   [PASS (C)] Source note keeps source-action interpretation open
-  [PASS (C)] Cited I_S citation note NOT modified (single-channel role preserved)  (5.77 % still defensible as C_F-only, no-Z_psi approximation)
+  [PASS (C)] Source note keeps the supplied-I_S 5.77 % map conditional  (C_F-only arithmetic comparator)
   [PASS (C)] Ward-identity tree-level theorem NOT modified  (y_t_bare^2 = g_bare^2 / 6 at tree level unchanged)
   [PASS (C)] Publication-surface files NOT modified  (no propagation to publication tables)
   [PASS (C)] Framework-native BZ quadratures of I_v_scalar, I_SE^{gg}, I_SE^{fl} remain OPEN  (literature-cited centrals used; sub-percent pinning requires framework-native quadrature)
 
 ========================================================================
-SUMMARY: PASS=71  FAIL=0
+SUMMARY: PASS=72  FAIL=0
 ========================================================================
 
 DEFINITIVE RESULT (Three-Channel Delta_R Master Assembly):
@@ -130,8 +131,8 @@ DEFINITIVE RESULT (Three-Channel Delta_R Master Assembly):
   P1 = |Delta_R|_central = 3.271 %
   P1 30% citation band:    [2.290 %, 4.252 %]
 
-  Prior packaged 1.92 % (C_F only)     : recovered as single-channel approximation
-  Prior cited   5.77 % (C_F only, no Z): recovered as single-channel approximation
+  Historical 1.92 %                    : conditional I_S=2 arithmetic only
+  Supplied-I_S 5.77 %                 : conditional single-channel comparison arithmetic
   Retained 3-channel central           : 3.271 %
 
   m_t(pole) retained lane:  172.57 GeV +/- 5.64 GeV

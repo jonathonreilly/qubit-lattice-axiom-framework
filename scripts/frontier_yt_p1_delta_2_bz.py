@@ -58,6 +58,18 @@ PASS_COUNT = 0
 FAIL_COUNT = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md"
+STALE_BRIDGE_MARKERS = (
+    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+    "uv_gauge_to_yukawa_bridge)",
+)
+RETAINED_ALPHA_AUTHORITY_MARKERS = (
+    "retained canonical coupling",
+    "retained canonical-surface coupling",
+    "retained canonical-surface anchor",
+    "retained coupling `α_lm`",
+    "retained `α_lm`",
+    "retained alpha_lm",
+)
 
 
 def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
@@ -290,12 +302,14 @@ def main() -> int:
         and I_VG_LOCAL_LOWER <= I_VG_LOCAL_CENTRAL <= I_VG_LOCAL_UPPER,
         f"I_v_gauge_local_central = {I_VG_LOCAL_CENTRAL}",
     )
-    # Conserved current is the canonical retained choice; local current is
-    # a sensitivity check.
+    note_text_current = NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "Conserved current is the retained canonical choice (I_v_gauge = 0)",
-        True,
-        "scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py Block 4, PASS: I_V = 0",
+        "Current-definition fork is explicit: conserved I_v_gauge = 0 and local-current sensitivity remains open",
+        abs(I_VG_CONSERVED) < 1e-12
+        and I_VG_LOCAL_LOWER <= I_VG_LOCAL_CENTRAL <= I_VG_LOCAL_UPPER
+        and "value of `Δ_2` tracks the chosen current definition"
+        in note_text_current,
+        "no constant-True current selector",
     )
     print()
 
@@ -443,12 +457,12 @@ def main() -> int:
     cf_contrib_lower = C_F * DELTA_1_LOWER * ALPHA_LM_OVER_4PI * 100.0
     cf_contrib_upper = C_F * DELTA_1_UPPER * ALPHA_LM_OVER_4PI * 100.0
     check(
-        "C_F * Delta_1^{lower=2} * alpha_LM/(4 pi) ~ +1.92 % (packaged delta_PT)",
+        "C_F * Delta_1^{lower=2} * alpha_LM/(4 pi) ~ +1.92 % (separately supplied channel scenario)",
         abs(cf_contrib_lower - 1.92) < 0.05,
         f"C_F contribution (Delta_1=2) = {cf_contrib_lower:+.4f} %",
     )
     check(
-        "C_F * Delta_1^{upper=6} * alpha_LM/(4 pi) ~ +5.77 % (cited I_S central)",
+        "C_F * Delta_1^{upper=6} * alpha_LM/(4 pi) ~ +5.77 % (supplied-I_S arithmetic map)",
         abs(cf_contrib_upper - 5.77) < 0.05,
         f"C_F contribution (Delta_1=6) = {cf_contrib_upper:+.4f} %",
     )
@@ -499,18 +513,26 @@ def main() -> int:
     )
     historical_delta_pt = ALPHA_LM * C_F / (2.0 * PI)
     note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_compact = " ".join(note_text.lower().split())
     check(
         "Historical delta_PT conditional arithmetic reproduces 1.92 %",
         abs(historical_delta_pt - 0.01924) < 5e-4,
         "arithmetic only under the historical I_S = 2 convention",
     )
     check(
-        "Source note no longer cites the UV coefficient bridge for delta_PT",
-        "UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE" not in note_text,
-        "retired bridge attribution absent",
+        "Source note contains no stale UV bridge attribution",
+        not any(marker in note_compact for marker in STALE_BRIDGE_MARKERS),
+        "full filename and legacy shorthand absent",
     )
     check(
-        "Source note links the unaudited bounded canonical alpha source",
+        "Source note contains no retained-alpha authority wording",
+        not any(
+            marker in note_compact
+            for marker in RETAINED_ALPHA_AUTHORITY_MARKERS
+        ),
+    )
+    check(
+        "Source note links the unaudited conditional alpha arithmetic source",
         "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
         in note_text
         and "current ledger row is unaudited" in note_text

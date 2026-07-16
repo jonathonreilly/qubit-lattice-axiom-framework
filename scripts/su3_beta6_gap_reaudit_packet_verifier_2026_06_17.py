@@ -182,11 +182,11 @@ def main() -> int:
         check(f"Wilson transfer note records {needle!r}", has(wilson, needle))
 
     rp_bridge_needles = [
-        "Wilson Plaquette Temporal-Gauge Bridge",
-        "does not set the target row's status",
-        "does **not** mean a full interacting `SU(N)` proof",
-        "bosonic half",
-        "plane-kernel positivity",
+        "finite-volume `SU(N)` Wilson temporal-gauge bridge",
+        "does not set, apply, or predict an audit outcome",
+        "does not include the fermionic generators",
+        "finite-volume, two-slice, pure-gauge Wilson plane",
+        "Positive plane kernel",
     ]
     for needle in rp_bridge_needles:
         check(f"RP bridge records {needle!r}", has(rp_bridge, needle))
@@ -217,7 +217,7 @@ def main() -> int:
             "C4_wilson_transfer_kernel_gram_PSD",
         ],
         RP_BRIDGE_RUNNER: [
-            "TOTAL: 16 PASS / 0 FAIL",
+            "TOTAL: 25 PASS / 0 FAIL",
             "integrated three-factor RP Gram PSD",
         ],
         RP_SIGN_REPAIR_RUNNER: [
@@ -232,7 +232,7 @@ def main() -> int:
         "restricted packet is non-promotional",
         has(parent, "not an audit verdict or status promotion")
         and has(floor, "does not promote, demote, or set the audit status")
-        and has(rp_bridge, "does not set the target row's status")
+        and has(rp_bridge, "does not set, apply, or predict an audit outcome")
         and has(rp_sign, "does not promote this note or change any audited claim scope"),
     )
     check(

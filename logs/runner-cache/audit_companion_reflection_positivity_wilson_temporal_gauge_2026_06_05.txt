@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
-runner_sha256: cf2dec4915afc1da9faa22fd3a7cb2086872174376b2fe0c54ef1514cc32c9cb
+runner_sha256: 90c5a959f72e4ee9f6236af0c6305fa4a803671acb75bce2388e22cd2919193c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 80.98
+elapsed_sec: 79.67
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -34,8 +34,8 @@ Part B: reflection-plane norm-square (Schwarz) factorization
   [PASS] (B1) Z_N plane-kernel character coeffs are real (Im ~ 0)  (max|Im c_q| = 2.78e-17)
   [PASS] (B2) Z_N plane-kernel character coeffs are nonnegative (norm-square form)  (min c_q = 0.092733)
   [PASS] (B3) Z_N plane kernel reconstructed from character sum exp(B_0)=sum_q c_q chi_q(U0) conj chi_q(U1)  (reconstruction err = 3.38e-16)
-  [PASS] (B4) U(1) plane-kernel coeffs c_n=I_n(beta) have positive lower bounds  (min lower bound for n in [-8,8] = 8.281833e-07)
-  [PASS] (B5) U(1) Bessel certificate has tiny positive tail intervals  (max positive tail bound for n in [-8,8] = 2.45e-97)
+  [PASS] (B4) U(1) positive-term series gives positive coefficient partial sums  (min floating partial sum for n in [-8,8] = 8.281833e-07)
+  [PASS] (B5) U(1) Bessel floating tail estimates are tiny  (max floating tail estimate for n in [-8,8] = 2.45e-97)
   [PASS] (B6) U(1) plane-kernel coeffs symmetric c_n = c_{-n}  (max|c_n - c_{-n}| = 0.00e+00)
   [PASS] (B7) SU(N) Wilson exponential-series scalar weights are nonnegative for beta_Wilson>=0  (weights=(beta_Wilson/(2N))^n/n!, N=2..8, n=0..9)
   [PASS] (B8) alpha=beta_Wilson/N character-series normalization is exact (sympy)  (orders n=0..9 after chi_F+chi_Fbar=2 Re chi_F)

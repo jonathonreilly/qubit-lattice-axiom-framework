@@ -2,10 +2,9 @@ loop_slug: gauge-transfer-positive-repair-20260716
 mode: campaign
 model_posture: "Sol xhigh"
 primary_target_claim_id: gauge_vacuum_plaquette_transfer_operator_character_recurrence_note
-active_target_claim_id: axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05
 target_status: best-honest-status
 actual_current_surface_status: candidate-retained-grade
-target_claim_type: bounded_theorem
+target_claim_type: positive_theorem
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 started_at_utc: "2026-07-16T12:16:29Z"
@@ -13,20 +12,15 @@ runtime_budget: "6h"
 target_stop_at_utc: "2026-07-16T18:16:29Z"
 checkpoint_interval: "30m"
 deep_block: "120m"
-deep_block_status: in_progress
-deep_block_started_at_utc: "2026-07-16T12:48:12Z"
-deep_block_target: "self-contained SU(N) Wilson-plane character positivity and integrated bounded-observable Gram"
-cycle_count: 4
-block_count: 2
-current_branch: physics-loop/gauge-transfer-positive-repair-block02-20260716
+cycle_count: 2
+block_count: 1
+current_branch: main
 base_ref: origin/main
-base_commit: d4576165d181867dbbadedc9b870e4337d2752ed
-rebase_status: complete
-rebase_required_before_pr: false
-lock_mode: released-after-pr-open
-lock_note: "The block-local lock covered implementation/review and was deleted before the PR checkpoint."
-active_route: "representation-ring multiplicity series plus independent finite-Gram Schur proof, multi-link kernel, and integrated features"
-hard_residual: "Replace the SU(N>=3) comparator-only boundary by an exact coefficient-sign theorem and runner gate on the finite open-slab pure-gauge carrier."
+base_commit: 49bd740942a0cf8462db3e4e83973e1305eda98d
+lock_mode: released-after-landing
+lock_note: "The block-local supervisor lock covered the repair branch and was released after review-loop landing."
+active_route: "finite-volume Peter-Weyl positivity, commuting gauge projection, exact transfer Gram factorization, and spatial-source algebra intertwiner"
+hard_residual: "Prove the displayed Wilson one-step operator is positive semidefinite and prove the marked spatial-plaquette insertion/state formula without asserting a mixed-plaquette multiplication operator or a transfer-invariant source sector."
 a_min:
   - Lattice
   - Qubit
@@ -39,54 +33,41 @@ approved_primitives_checked:
   - realized_state_primitive
 approved_primitives_load_bearing: []
 forbidden_imports:
-  - literature-only Wilson reflection-positivity theorem
-  - pointwise positivity as a substitute for positive type
-  - Peter-Weyl without coefficient signs
-  - sampled numerics as theorem evidence
-  - strict positivity of every coefficient
-  - fermion or full interacting reflection positivity
-  - multislice or continuum reconstruction
-  - fitted or observed beta=6 or g_bare data
+  - observed or fitted plaquette values
+  - beta=6 Perron or thermal data
+  - literature-only reflection-positivity theorem
+  - strict positivity of every Wilson character coefficient
+  - mixed-temporal-plaquette identification as one-slice multiplication
+  - transfer-invariance or eigenvalue preservation of the plaquette source subspace
 files_touched:
   - .claude/science/physics-loops/gauge-transfer-positive-repair-20260716/
-  - docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
-  - scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
-  - logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt
+  - docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.txt
 open_imports: []
+no_go_routes:
+  - "Pointwise-positive plus symmetric kernel is insufficient for operator positive semidefiniteness."
+  - "A mixed temporal plaquette is not automatically a one-slice multiplication insertion."
+  - "Simultaneous conjugation invariance does not make an arbitrary source compression character-diagonal."
+  - "The source-cyclic multiplication algebra need not be invariant under the full transfer operator."
 trace_class: direct_blocker_closure
 reachability_to_target: closes
 review_disposition: pass
-pr_status: open
-pr_number: 5405
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5405
-block_01:
-  pr_number: 5398
-  pr_status: merged
-  science_landing_commit: fe6586b0985956a245ba9eb93a93912373abb55d
-  independent_audit_required: true
-block_02_runner:
-  result: "25 PASS / 0 FAIL"
-  cache_status: fresh
-  runner_sha256: cf2dec4915afc1da9faa22fd3a7cb2086872174376b2fe0c54ef1514cc32c9cb
-  cache_elapsed_sec: 80.98
-independent_check:
-  method: "real Gram H_ij=ReTr(U_i U_j^dag), Schur-power exponential"
-  groups: "SU(2), SU(3), SU(4), SU(5)"
-  max_reconstruction_error: 8.882e-16
-deep_pressure:
-  - "arbitrary complex gauge-link observables with nonconstant half weights on two-link SU(2)-SU(5) restrictions"
-  - "relative spectral-feature reconstruction error at most 1.53e-15; beta=0 negative eigenvalues only roundoff-scale"
-  - "repository-wide A_+^(2) terminology audited: this theorem covers gauge-link functions only, not mixed gauge--fermion generators"
-  - "fix-only mathematics, runner-consistency, and governance rereviews passed after the scope clarification"
+pr_status: merged
+pr_number: 5398
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5398
+science_landing_commit: fe6586b0985956a245ba9eb93a93912373abb55d
+block_status: landed_pending_independent_audit
+last_checkpoint_at_utc: "2026-07-16T13:11:00Z"
+origin_main_seen_at_checkpoint: fe6586b0985956a245ba9eb93a93912373abb55d
+rebase_required_before_pr: false
 pipeline_validation:
   status: pass
   strict_lint_errors: 0
   target_generated_state: unaudited
   target_queue_ready: true
   target_queue_criticality: critical
-  target_generated_deps: []
-  target_transitive_descendants: 784
   generated_outputs_removed: true
-last_checkpoint_at_utc: "2026-07-16T14:20:12Z"
-next_exact_action: "Do not merge PR 5405. Continue the block-02 deep attack through at least 2026-07-16T14:48:12Z, then mark the 120-minute block complete, checkpoint the PR, and pivot to opportunity 3."
-stop_condition: "Runtime exhaustion, reviewed PR plus honest pivot, or documented opportunity exhaustion."
+deep_block_status: "not yet consumed; the primary residual closed and passed review before a 120m interval elapsed; use the next related block for the campaign deep block if this turn does not continue"
+next_exact_action: "The independent audit lane may re-evaluate the landed primary claim from a fresh context. If campaign execution continues separately, create physics-loop/gauge-transfer-positive-repair-block02-20260716 from current origin/main, acquire a fresh block-local lock, and ground opportunity 2: the axiom-first Wilson temporal-gauge bridge comparator repair."
+stop_condition: "Runtime exhaustion, a clean reviewed PR for the coherent repair block followed by queue pivot, or documented global opportunity/value-gate exhaustion."

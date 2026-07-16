@@ -4,9 +4,8 @@
 **Repaired:** 2026-07-16
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
-**Status:** proposed_retained
 **Status authority:** independent audit lane only. This source note does not set,
-apply, or predict an audit outcome. The labels above declare the proposed
+apply, or predict an audit outcome. The claim-type metadata above declares the
 source-side theorem boundary, not an effective repository status.
 **Primary runner:**
 [`scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py`](../scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py)
@@ -278,7 +277,7 @@ The repair was tested against several logically distinct frames.
 | representation ring | Computes the character coefficients as tensor-power multiplicities. | Exact proof; adopted. |
 | finite Gram / matrix coefficients | Proves kernel positivity directly from representation matrix entries. | Exact proof; agrees with the coefficient route. |
 | integrated feature factorization | Converts the multi-link plane kernel and half-weights into `W diag(κ) W^dagger`. | Exact proof for bounded observables. |
-| `Z_N` and `U(1)` reductions | Checks the construction against discrete Fourier and positive Bessel-series coefficients. | Exhaustive finite enumeration with floating transcendental evaluation for `Z_N`; positive-series interval certificate for `U(1)`. |
+| `Z_N` and `U(1)` reductions | Checks the construction against discrete Fourier and positive Bessel-series coefficients. | Exhaustive finite enumeration with floating transcendental evaluation for `Z_N`; exact positive-term series argument with floating partial-sum and tail estimates for `U(1)`. |
 | `SU(3)` fusion recurrence | Builds `(3 ⊕ 3bar)^tensor n` through order eight and checks `sum M dim=6^n`. | Exact runner gate. |
 | wrong-sign / wrong-reflection controls | Tests whether the sign and antilinearity are load-bearing. | Negative coupling or dropped conjugation produces a non-PSD control. |
 
@@ -309,7 +308,8 @@ The runner checks:
   plane coupling `alpha`;
 - exhaustive finite-Haar `Z_N` coefficient reconstruction and reflected Grams
   with floating evaluation of the transcendental weights;
-- positive-series interval certificates for the `U(1)` coefficients;
+- the exact positive-term series argument for the `U(1)` coefficients, with
+  floating partial-sum and tail estimates in the runner;
 - the manifest finite-carrier factorization `G=W diag(κ)W^dagger`;
 - a sampled `SU(2)` reflected Gram, labeled numerical support;
 - exact `SU(3)` fusion multiplicities, the dimension identity `6^n`, and

@@ -1,19 +1,16 @@
 # No-Go and Objection Ledger
 
-| Route or assertion | Exact boundary | Consequence |
+| Route or assertion | Exact boundary already known | Consequence for this loop |
 |---|---|---|
-| pointwise-positive class function implies PSD kernel | false in general | prove positive type by features or Schur powers |
-| Peter-Weyl expansion implies nonnegative coefficients | false generically | use the Wilson tensor-power expansion |
-| every character coefficient is strictly positive | unnecessary | claim only nonnegativity |
-| finite `SU(2)`/`SU(3)` sampling proves the theorem | false | samples remain support/controls |
-| downstream `SU(3)` note is a dependency | circular because it depends on this target | reproduce the proof here |
-| negative coupling preserves the kernel | false on the displayed restriction | theorem requires `beta>=0` |
-| temporal-gauge carrier proves global gauge fixing | separate theorem | carrier data only |
-| a periodic 1D spatial loop is a local plaquette term | false | exact runner uses `B_+=B_-=0` |
-| pure-gauge two-slice RP supplies fermion/full interacting RP | separate factors | explicitly excluded |
-| local pure-gauge `A_+^(2)` notation silently imports the mixed gauge--fermion parent algebra | false scope bridge | define the local gauge-link observable surface and exclude fermionic generators |
-| bounded-observable integration requires only `A_+^(2)` | too narrow | feature proof covers finite bounded families |
+| pointwise-positive symmetric kernel implies PSD | false in finite matrices and integral operators | prove positive type/Gram form instead |
+| recurrence-matrix symmetry proves transfer positivity | the old runner constructs only the source multiplication recurrence | construct/check the transfer ingredients |
+| arbitrary marked plaquette is one-slice multiplication | mixed temporal plaquettes cross the kernel | restrict the theorem to spatial marks and name the mixed operator separately |
+| source-cyclic algebra preserves the full transfer eigenvalue | the June pullback note records no such theorem and an exact local-packet mismatch | do not claim transfer invariance or eigenvalue preservation |
+| simultaneous conjugation invariance implies character diagonality | the source-sector factorization audit rejected this implication | keep this repair on the full gauge Hilbert space; only the multiplication algebra is intertwined |
+| Peter-Weyl expansion alone fixes coefficient signs | false for a generic positive class function | use the tensor-power multiplicity expansion specific to the Wilson exponential |
+| every coefficient is strictly positive | stronger than required and not part of the plan | prove only nonnegativity |
+| equal spatial and temporal plaquette expectations at arbitrary `L_s^3 x L_t` | no time-space axis symmetry when extents differ | prove only the spatial insertion theorem |
 
-Active constructive routes: representation-ring coefficients, real finite
-Gram plus Schur exponential, representation-matrix features, product-link
-composition, integrated feature factorization, and exact `SU(3)` recurrence.
+The primary audit and prior no-go packet leave three live routes: positive type,
+explicit Gram factorization, and a separate spatial/mixed observable split. All
+three are exercised in this block.

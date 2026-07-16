@@ -407,9 +407,9 @@ def main() -> int:
         "E.1 the D,U-generated unital star algebra contains no rank-one selector on M_zeta",
         no_go_core,
         (
-            "RESIDUAL_EIGENLINE=rank_two_zeta_zero_mode_sector_not_split_by_D_U_generated_algebra"
+            "The rank-two zeta zero-mode sector is not split by the D,U-generated algebra."
             if no_go_core
-            else "RESIDUAL_EIGENLINE=undetermined_due_to_failed_D_U_joint_algebra_checks"
+            else "No residual is certified because the core D,U joint-algebra checks failed."
         ),
     )
     record(
@@ -445,7 +445,7 @@ def main() -> int:
     print("KOIDE_DELTA_D_U_JOINT_ALGEBRA_RANK_ONE_SELECTOR_NO_GO=FALSE")
     print("D_U_JOINT_ALGEBRA_CONTAINS_RANK_ONE_SELECTOR=UNDETERMINED")
     print("D_U_JOINT_ALGEBRA_CLOSES_RANK_ONE_SELECTION=UNDETERMINED")
-    print("RESIDUAL_EIGENLINE=undetermined_due_to_failed_D_U_joint_algebra_checks")
+    print("RESIDUAL_EIGENLINE=undetermined_due_to_failed_runner_checks")
     print("CLAIM_SCOPE=finite_periodic_L3_r1_unital_star_algebra_generated_by_D_and_U_only")
     print("FULL_WILSON_CLIFFORD_SELECTOR_NO_GO_CLAIMED=FALSE")
     print("AMBIENT_ETA_PROXY_USED=FALSE")

@@ -239,8 +239,8 @@ def global_search_candidates() -> list[np.ndarray]:
         ([0.05, 0.95], [0.0]),
     ]
 
-    # The exact low/high branch representatives are already known on the current
-    # branch; include them as validation anchors, not as search shortcuts.
+    # The supplied low/high representatives are validation anchors, not search
+    # shortcuts or evidence of an exhaustive branch count.
     candidates.append(np.asarray(LOW_CHART_REF, dtype=float))
     candidates.append(np.asarray(HIGH_CHART_REF, dtype=float))
 

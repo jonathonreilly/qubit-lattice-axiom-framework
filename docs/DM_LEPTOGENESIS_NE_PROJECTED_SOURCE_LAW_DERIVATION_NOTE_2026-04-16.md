@@ -1,6 +1,6 @@
 # DM Leptogenesis `N_e` Projected-Source-Law Derivation
 
-**Claim type:** positive_theorem
+**Claim type:** bounded_theorem
 
 **Date:** 2026-04-16  
 **Script:** `scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py`  
@@ -88,7 +88,8 @@ label convention the active packet is
 
 Thus the supplied simple-spectrum, ascending-labeled `H_e` determines this
 `N_e` packet. Degenerate spectra, or relabeling without an external convention,
-are outside this claim.
+are outside this claim. The runner's displayed six-decimal reference is checked
+entrywise to within half a unit in its final displayed digit.
 
 ### 3. The supplied finite transport functional orders the columns
 
@@ -200,15 +201,10 @@ Theorem-side authorities (load-bearing one-hop deps):
 - [DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md](DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md)
   — axiom-side boundary on the `N_e` active-column problem this note
   reduces.
-- `DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md`
-  (see-also cross-reference; backticked to break cycle-0013 in the citation
-  graph. The triplet-sign theorem's own helper-import block records that
-  the present projected-source law derivation's runner supplies
-  `hermitian_linear_responses` to the sign-theorem runner; the load-bearing
-  citation direction is *triplet_sign_theorem → this_law_derivation*,
-  not vice versa.)
-  — sign orientation companion for the projected-source triplet,
-  paired with the projected-source law derived here.
+Context only (no dependency edge):
+`DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md`.
+Its runner imports `hermitian_linear_responses` from the present runner as a
+sign-orientation companion calculation.
 
 The dependency edges record the conditional finite-fixture reduction and its
 explicit remaining gap: deriving `dW_e^H` on `E_e` from the current framework

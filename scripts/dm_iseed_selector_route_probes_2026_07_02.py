@@ -332,25 +332,8 @@ def probe3_constraint_independence() -> None:
     print("PROBE 3: constraint independence of eta_{i_*}/eta_obs = 1")
     print("=" * 88)
 
-    # An explicit supplied model: the pure-seed point itself
-    # (x_seed, y_seed, delta = 0). It satisfies every OTHER premise:
-    #   - on the supplied fixed-sum seed surface: mean = xbar, ybar
-    #   - positive source columns
-    #   - a well-defined transport-favored column i_* = argmax_i eta_i
-    # but its off-seed displacement is zero, so it is not fitted to eta_obs.
-    x0 = X_SEED.copy()
-    y0 = Y_SEED.copy()
-    d0 = 0.0
-    eta0 = eta_columns(x0, y0, d0)
-    i_star0 = int(np.argmax(eta0))
-    ratio0 = float(eta0[i_star0])
-
-    on_surface0 = abs(np.mean(x0) - XBAR) < 1e-12 and abs(np.mean(y0) - YBAR) < 1e-12
-    positive0 = bool(np.all(x0 > 0) and np.all(y0 > 0))
-    ne_one0 = abs(ratio0 - 1.0) > 1e-6
-
-    # A second, off-seed supplied model gives another explicit miss, not only
-    # the seed point.
+    # An explicit off-seed supplied model satisfying every other tested
+    # premise gives a direct miss of the anchoring equality.
     x1 = soft3(0.7, -0.5, 3.0 * XBAR)
     y1 = soft3(-0.6, 0.4, 3.0 * YBAR)
     d1 = 0.4
@@ -359,17 +342,20 @@ def probe3_constraint_independence() -> None:
     ratio1 = float(eta1[i_star1])
     on_surface1 = abs(np.mean(x1) - XBAR) < 1e-12 and abs(np.mean(y1) - YBAR) < 1e-12
     positive1 = bool(np.all(x1 > 0) and np.all(y1 > 0))
+    off_seed1 = bool(
+        np.linalg.norm(x1 - X_SEED) > 1e-9
+        or np.linalg.norm(y1 - Y_SEED) > 1e-9
+        or abs(d1) > 1e-12
+    )
     ne_one1 = abs(ratio1 - 1.0) > 1e-6
 
-    passed = (on_surface0 and positive0 and ne_one0) and (on_surface1 and positive1 and ne_one1)
+    passed = on_surface1 and positive1 and off_seed1 and ne_one1
     witness = (
-        f"model A = pure seed (x_seed,y_seed,delta=0): on_surface={on_surface0}, "
-        f"positive={positive0}, i_*={i_star0}, eta_(i_*)/eta_obs={ratio0:.9f} "
-        f"(deviation from 1 = {ratio0 - 1.0:+.9f}) | "
-        f"model B = off-seed (x={fmt(x1)}, y={fmt(y1)}, delta={d1:g}): "
-        f"on_surface={on_surface1}, positive={positive1}, i_*={i_star1}, "
+        f"off-seed model (x={fmt(x1)}, y={fmt(y1)}, delta={d1:g}): "
+        f"on_surface={on_surface1}, positive={positive1}, off_seed={off_seed1}, "
+        f"i_*={i_star1}, "
         f"eta_(i_*)/eta_obs={ratio1:.9f} (deviation from 1 = {ratio1 - 1.0:+.9f}) | "
-        f"both satisfy the other premises with ratio != 1 ==> equality is an "
+        f"the other tested premises hold with ratio != 1 ==> equality is an "
         f"independent imposed constraint"
     )
     verdict(

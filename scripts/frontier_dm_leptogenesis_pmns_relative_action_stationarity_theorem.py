@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-DM leptogenesis PMNS relative-action stationarity theorem.
+DM leptogenesis PMNS relative-action identity and stationarity diagnostic.
 
 Framework convention:
   the current framework baseline is Lattice, Qubit, Admissibility, and Record.
@@ -407,7 +407,7 @@ def part4_bottom_line() -> None:
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS PMNS RELATIVE-ACTION STATIONARITY THEOREM")
+    print("DM LEPTOGENESIS PMNS RELATIVE-ACTION IDENTITY AND STATIONARITY DIAGNOSTIC")
     print("=" * 88)
     print()
     print("Framework convention:")

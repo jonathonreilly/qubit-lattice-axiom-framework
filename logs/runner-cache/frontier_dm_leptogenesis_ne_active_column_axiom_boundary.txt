@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_ne_active_column_axiom_boundary.py
-runner_sha256: 90f5cfd103ecac2141b847f688749f2798e3bd8aef2d595f57d682933fc1c5ef
+runner_sha256: 5d98b1a7d496d3ed579036c7bf60512e023f6b68ee3a14fb220bfc3ff992bb17
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.53
+elapsed_sec: 0.54
 status: ok
 ----- stdout -----
 ========================================================================================
-DM LEPTOGENESIS N_e ACTIVE-COLUMN AXIOM BOUNDARY
+DM LEPTOGENESIS N_e ACTIVE-COLUMN FOUR-SUMMARY AMBIGUITY DIAGNOSTIC
 ========================================================================================
 
 ========================================================================================
@@ -29,7 +29,7 @@ PART 2: SAME TESTED-SUMMARY N_e DATA CAN REALIZE THREE DIFFERENT COLUMNS
   [PASS] Sample C realizes the intended selected active column  (F=[0.018039 0.017327 0.018259])
   [PASS] All three samples share the same active seed averages  ((xbar,ybar)=(0.973333333333,0.410000000000))
   [PASS] All three samples share the same fixed active phase delta  (delta=0.200000000000)
-  [PASS] All three samples share the same one-sided active support pattern  (support_counts=[2, 2, 2])
+  [PASS] All three samples share the same one-sided active support count  (support_counts=[2, 2, 2])
   [PASS] All three samples share the same active branch bit  (branch_bits=[0, 0, 0])
   [PASS] But they still carry different active five-real source data  (distinct (xi_1,xi_2,eta_1,eta_2,delta))
   [PASS] Those distinct five-real source data induce different active packets  (packet distances are nonzero)

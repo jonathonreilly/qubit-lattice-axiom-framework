@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-DM leptogenesis N_e active-column axiom boundary.
+DM leptogenesis N_e active-column four-summary ambiguity diagnostic.
 
 Framework convention:
   the current framework baseline is Lattice, Qubit, Admissibility, and Record.
@@ -171,7 +171,7 @@ def part2_same_tested_summary_data_can_realize_three_different_selected_columns(
         f"delta={deltas[0]:.12f}",
     )
     check(
-        "All three samples share the same one-sided active support pattern",
+        "All three samples share the same one-sided active support count",
         support_counts == [2, 2, 2],
         f"support_counts={support_counts}",
     )
@@ -239,7 +239,7 @@ def part3_bottom_line() -> None:
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS N_e ACTIVE-COLUMN AXIOM BOUNDARY")
+    print("DM LEPTOGENESIS N_e ACTIVE-COLUMN FOUR-SUMMARY AMBIGUITY DIAGNOSTIC")
     print("=" * 88)
 
     z_grid, source_profile, washout_tail = part1_set_the_conditional_transport_fixture()

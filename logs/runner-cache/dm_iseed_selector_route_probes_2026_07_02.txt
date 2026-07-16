@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dm_iseed_selector_route_probes_2026_07_02.py
-runner_sha256: b1b37c9518ef112b773ebb3bc8bd75e3045e725c1da605f77ff73a97441be1e3
+runner_sha256: c239a2f3676cde46ab0b1529a933e0b480ce9265a2c1daf634f55adf042da81a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.58
+elapsed_sec: 6.63
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -32,7 +32,7 @@ PROBE 2: weighting-principle dependence of the I_seed argmin
 PROBE 3: constraint independence of eta_{i_*}/eta_obs = 1
 ========================================================================================
 [PASS] A model meeting all other premises has eta_(i_*)/eta_obs != 1
-       witness: model A = pure seed (x_seed,y_seed,delta=0): on_surface=True, positive=True, i_*=1, eta_(i_*)/eta_obs=0.719082664 (deviation from 1 = -0.280917336) | model B = off-seed (x=[0.940049, 0.283137, 0.466814], y=[0.166053, 0.451379, 0.302568], delta=0.4): on_surface=True, positive=True, i_*=0, eta_(i_*)/eta_obs=0.908774422 (deviation from 1 = -0.091225578) | both satisfy the other premises with ratio != 1 ==> equality is an independent imposed constraint
+       witness: off-seed model (x=[0.940049, 0.283137, 0.466814], y=[0.166053, 0.451379, 0.302568], delta=0.4): on_surface=True, positive=True, off_seed=True, i_*=0, eta_(i_*)/eta_obs=0.908774422 (deviation from 1 = -0.091225578) | the other tested premises hold with ratio != 1 ==> equality is an independent imposed constraint
 
 ========================================================================================
 TOTAL: PASS=3 FAIL=0

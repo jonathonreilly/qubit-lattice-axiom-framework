@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py
-runner_sha256: 8662518ea69926073d8ce0c6dbb51e47518bb220f864d2811085067b7f9da7e9
+runner_sha256: a5537b46370dcbd88fce884fac8c2711bec3c1d50a7d601b867fe9af2b6359c1
 timeout_sec: 1800
 exit_code: 1
-elapsed_sec: 21.49
+elapsed_sec: 21.45
 status: nonzero_exit
 ----- stdout -----
 ========================================================================================

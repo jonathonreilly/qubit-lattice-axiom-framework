@@ -9,7 +9,8 @@ Purpose:
   Test the PMNS microscopic source-response reduction on the DM lane and show
   that, on the charged-lepton-active branch N_e, the finite-fixture selected
   flavored-transport column is derivable from the charged-lepton projected
-  Hermitian source law alone.
+  Hermitian source law for the supplied simple spectrum with ascending
+  eigenvalue labels.
 """
 
 from __future__ import annotations
@@ -153,10 +154,11 @@ def part2_the_supplied_simple_spectrum_determines_the_labeled_packet(
             f"col sums={np.round(np.sum(packet, axis=0), 6)}"
         ),
     )
+    max_entry_error = float(np.max(np.abs(packet - packet_ref)))
     check(
-        "The labeled packet agrees with the six-decimal reference within its stated rounding tolerance",
-        np.linalg.norm(packet - packet_ref) < 2e-6,
-        f"err={np.linalg.norm(packet - packet_ref):.2e}",
+        "The labeled packet agrees entrywise with the six-decimal reference within half a final-digit unit",
+        max_entry_error < 0.5e-6,
+        f"max_entry_error={max_entry_error:.3e}",
     )
 
     print()

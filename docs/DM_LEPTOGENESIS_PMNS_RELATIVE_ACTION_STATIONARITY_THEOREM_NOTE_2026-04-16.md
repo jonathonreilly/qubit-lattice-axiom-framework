@@ -1,4 +1,4 @@
-# DM Leptogenesis PMNS Relative-Action Stationarity Theorem
+# DM Leptogenesis PMNS Relative-Action Identity and Stationarity Diagnostic
 
 **Status:** bounded - bounded or caveated result note
 **Date:** 2026-04-16; scope corrected 2026-07-16
@@ -282,18 +282,11 @@ The bounded result is:
 python3 scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py
 ```
 
-## Audit dependency repair links
+## Cited dependencies
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16`
-  (see-also cross-reference; backticked to break cycle-0010 in the citation
-  graph. The observable-relative-action-law note records this calculation as
-  its upstream context; the citation
-  direction is *observable_relative_action_law → this_stationarity_theorem*,
-  not vice versa.)
-- `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16`
-  (see-also; backticked to break cycle-0010)
 - [dm_leptogenesis_pmns_projector_interface_note_2026-04-16](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
 - [dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md)
 - [dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
+
+Context only (no dependency edge):
+`dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16`.

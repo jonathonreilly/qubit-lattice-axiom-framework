@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py
-runner_sha256: bfe204bf931d15e87d00ef8a0f2b0af8cff7ce8476c7c94c8537b344020db704
+runner_sha256: 777cd60d903ab09a36c3f7296d7a142e71d65541934d877fa19f5fcaf5c266d1
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 19.72
+elapsed_sec: 19.31
 status: nonzero_exit
 ----- stdout -----
 ========================================================================================
-DM LEPTOGENESIS PMNS RELATIVE-ACTION STATIONARITY THEOREM
+DM LEPTOGENESIS PMNS RELATIVE-ACTION IDENTITY AND STATIONARITY DIAGNOSTIC
 ========================================================================================
 
 Framework convention:

@@ -141,13 +141,11 @@ transport-favored-column identification). A FAIL (every tested positive
 on-surface favored-column model forcing ratio = 1) would have left the
 independence claim unsupported on the tested models.
 
-**Witness (computed):** model A = the pure seed `(x_seed, y_seed, delta = 0)` —
-on-surface, positive, `i_* = 1`, `eta_{i_*}/eta_obs = 0.719082664` (deviation
-−0.280917336). Model B = a supplied positive off-seed source
+**Witness (computed):** a supplied positive off-seed source
 `x = [0.940049, 0.283137, 0.466814]`, `y = [0.166053, 0.451379, 0.302568]`,
 `delta = 0.4` — on-surface, positive, `i_* = 0`,
-`eta_{i_*}/eta_obs = 0.908774422` (deviation −0.091225578). Both satisfy every
-other premise of the law with ratio ≠ 1.
+`eta_{i_*}/eta_obs = 0.908774422` (deviation −0.091225578). This model
+satisfies every other tested premise of the law with ratio ≠ 1.
 
 **Reading:** the equality does not follow from the other premises; it is exactly
 the "favored-column equality constraint" the gate scope names as

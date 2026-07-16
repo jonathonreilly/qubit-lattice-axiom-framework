@@ -3,8 +3,9 @@
 **Date:** 2026-04-25
 **Repair date:** 2026-07-16
 **Stable claim ID:** `area_law_native_car_semantics_tightening_note_2026-04-25`
-**Status:** conditional / bounded algebraic equivalence only; no substrate-native
-carrier or coframe-response claim
+**Type:** positive_theorem
+**Scope:** conditional algebraic equivalence only; no exterior-action descent,
+physical carrier, or coframe-response claim
 **Runner:** `scripts/frontier_area_law_native_car_semantics_tightening.py`
 
 ## Claim boundary
@@ -17,8 +18,9 @@ This note proves one finite-dimensional conditional equivalence:
 
 It does **not** derive any of the following:
 
-- invariance of `K=P_A H_cell` under the retained event-cell substrate action;
-- four Clifford generators on `P_A H_cell` induced by that substrate;
+- invariance of `K=P_A H_cell` under the supplied exterior one-form event-cell
+  action;
+- four Clifford generators on `P_A H_cell` induced by that exterior action;
 - a preferred Majorana basis, coframe, parity, normal/tangent orbital pairing,
   dispersion, or Widom carrier;
 - the area-law coefficient `1/4` from rank four or from CAR algebra alone.
@@ -68,15 +70,19 @@ Unitary rotations and changes of Majorana pairing produce many valid
 generating sets. Nothing here selects one as the substrate coframe or assigns
 the two modes to physical edge channels.
 
-## Retained-surface obstruction to the clean bridge
+## Supplied exterior-action obstruction to the clean bridge
 
-The clean-retention route was tested before narrowing this claim. The exact
+The clean substrate-descent route was tested before narrowing this claim. The
+relevant historical model is a separately supplied event-cell exterior algebra,
+not one of the four current framework axioms or three approved primitives. The
+exact
 obstruction is recorded in
 [PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](./PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)
 and independently replayed by
 `scripts/frontier_planck_primitive_clifford_substrate_descent_obstruction.py`.
 
-On the supplied event-cell surface:
+On that specified exterior one-form model, with the standard spatial `SU(2)`
+action on `W=C t + C^3`:
 
 ```text
 P_A H_cell under spatial substrate SU(2): 1 + 3,
@@ -95,10 +101,12 @@ while the generators leak out of `P_A H_cell`. Number-preserving bilinears do
 generate `M_4(C)` on the active block and can host a `Cl_4(C)` basis, but they
 do not select a metric, orientation, phase, coframe basis, or action unit.
 
-Therefore an invariant `P_A` carrier and induced `Cl_4(C)` generators are not
-derivable from the currently supplied substrate representation. A positive
-theorem needs a changed representation premise or an additional intrinsic
-active-block response law.
+Therefore this specified exterior representation/action does not supply an
+equivariant identification of `P_A H_cell` with an irreducible `Cl_4(C)`
+spinor, and its canonical odd generators do not descend to `P_A`. This exhausts
+only that exterior one-form action and those canonical odd generators. It is
+not a no-go for other substrate actions, a changed spinorial packet, an
+intrinsic `M_4(C)` active-block carrier, or an additional response/coframe law.
 
 ## Consequence for the area-law packet
 
@@ -118,19 +126,19 @@ normal channel + self-dual tangent channel
 ```
 
 and it does not imply `c_Widom=1/4`. Those statements require the separate
-edge-channel and dispersion axioms made explicit in
+edge-channel, dispersion, and Widom-applicability conditions made explicit in
 [AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md](./AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md).
 
 ## Exact open bridges
 
 One of the following would be required for a non-conditional repair:
 
-1. a retained substrate theorem giving a reducing rank-four block whose
+1. a changed substrate-action theorem giving a reducing rank-four block whose
    spatial action matches the `2+2` restriction of an irreducible
    `Cl_4(C)` module;
 2. an intrinsic active-block theorem selecting a metric-compatible Clifford
    coframe from the available `M_4(C)` bilinear algebra;
-3. a retained physical law selecting the Majorana pairing and mapping the two
+3. a physical law selecting the Majorana pairing and mapping the two
    CAR modes to the normal and tangent edge dispersions.
 
 None is currently supplied.
@@ -139,8 +147,10 @@ None is currently supplied.
 
 > Conditional on a supplied irreducible `Cl_4(C)` response on a
 > four-dimensional active block, the response is algebraically equivalent to
-> two-mode complex CAR. The retained event-cell substrate does not presently
-> derive that response or the physical edge-channel assignment.
+> two-mode complex CAR. For the specifically supplied exterior one-form
+> event-cell action, `P_A` carries `1+3`, not the spinorial `2+2`, and the
+> canonical odd generators leak from `P_A`; no claim is made about other
+> substrate actions or intrinsic active-block response laws.
 
 Unsafe wording includes any statement that the rank-four primitive packet is
 therefore natively fermionic, that the substrate forces the CAR carrier, or
@@ -154,7 +164,9 @@ Run:
 python3 scripts/frontier_area_law_native_car_semantics_tightening.py
 ```
 
-The runner checks the CAR/Clifford equivalence, parity and full-matrix
-generation, non-CAR rank-four controls, failure of the natural full-cell odd
-Clifford action to reduce to `P_A`, and source-wording firewalls. It exits
-nonzero on any failed algebraic or status-boundary check.
+The runner checks the CAR/Clifford equivalence, an explicit unitary
+intertwiner for a noncanonical irreducible representation, parity and
+full-matrix generation, non-CAR rank-four controls, the `1+3` versus `2+2`
+intertwiner obstruction, failure of the natural full-cell odd Clifford action
+to reduce to `P_A`, and source-wording firewalls. It exits nonzero on any
+failed algebraic or claim-boundary check.

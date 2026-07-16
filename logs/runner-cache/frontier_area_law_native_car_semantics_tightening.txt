@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_native_car_semantics_tightening.py
-runner_sha256: ba97d67dfa9f5c99d7b85524f6ba9eae66e327fd98e68a795f84813913965733
+runner_sha256: d1f535253b2796d3d39c5ef61cbff86f342781626a4bd9c983c9f2e06bbea93c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -12,7 +12,7 @@ AREA-LAW CONDITIONAL CLIFFORD-CAR ALGEBRAIC EQUIVALENCE
 
 Question: what follows after an irreducible Cl_4(C) or two-mode
 CAR response is supplied on C^4, and what does not follow from
-rank four or the natural full-cell substrate action?
+rank four or the specified exterior one-form action?
 
 [PASS] conditional active representation has dimension four: dim_C K=4
 [PASS] two complex CAR modes have Fock dimension four: dim F(C^2)=4
@@ -22,6 +22,9 @@ rank four or the natural full-cell substrate action?
 [PASS] Majoranas obey the Cl_4(C) relations: max Clifford error=0.00e+00
 [PASS] Majorana words generate M_4(C): complex span rank=16
 [PASS] paired Majoranas recover the supplied CAR annihilators: max recovery error=0.00e+00
+[PASS] an arbitrary irreducible Cl_4 presentation has one intertwiner line: nullity=1
+[PASS] the normalized Pauli intertwiner is unitary: unitary error=1.42e-14
+[PASS] the unitary intertwiner identifies the noncanonical representation: max intertwining error=1.27e-14
 [PASS] conditional fermion parity squares to identity: error=0.00e+00
 [PASS] conditional fermion parity has a 2+2 split: eigenvalues=[-1, -1, 1, 1]
 [PASS] Majoranas are odd under the conditional parity: max anticommutator=0.00e+00
@@ -29,24 +32,27 @@ rank four or the natural full-cell substrate action?
 [PASS] the same C^4 supports commuting two-qubit factors: commutator norm=0.00e+00
 [PASS] commuting two-qubit factors are not CAR generators: anticommutator norm=4.00e+00
 [PASS] rank four is not a CAR selector: CAR and non-CAR operator semantics coexist on C^4
+[PASS] specified exterior P_A action has 0+2 Casimir while spinor has 3/4: P_A=[0.0, 1.9999999999999996, 1.9999999999999998, 1.9999999999999998], spinor=[0.75, 0.75, 0.75, 0.75]
+[PASS] specified 1+3 to 2+2 equivariant intertwiner space is zero: rank=16, nullity=0
 [PASS] natural full-cell odd generators realize Cl_4: max error=0.00e+00
 [PASS] natural full-cell odd generators compress to zero on P_A: max ||P_A gamma_i P_A||=0.00e+00
 [PASS] natural full-cell odd generators leak out of P_A: max leakage norm=2.000000
 [PASS] source title is narrowed to conditional algebraic equivalence: AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md
-[PASS] source status forbids a substrate-native carrier claim: status firewall present
+[PASS] source scope forbids exterior-action descent laundering: scope firewall present
 [PASS] source explicitly stops before the physical channel assignment: algebra-to-physics implication denied
-[PASS] source records the exact retained-surface obstruction: intertwiner and compression controls cited
+[PASS] source records the exact supplied-action obstruction: intertwiner and compression controls cited
 [PASS] source leaves all positive bridges explicit: open-bridge inventory present
 [PASS] superseded native-promotion wording is absent: no native or uniqueness laundering
 
 ==============================================================================
-SUMMARY: PASS=24  FAIL=0
+SUMMARY: PASS=29  FAIL=0
 ==============================================================================
 
 Verdict: CONDITIONAL ALGEBRAIC EQUIVALENCE ONLY.
 A supplied irreducible Cl_4(C) response on C^4 is equivalent to
-two-mode CAR. Rank four and the natural full-cell substrate action
-do not derive that response, a physical channel assignment, or 1/4.
+two-mode CAR. Rank four and the specified exterior one-form action
+do not derive that response, a physical channel assignment, or 1/4;
+other substrate actions and intrinsic active-block laws remain open.
 
 ----- stderr -----
 

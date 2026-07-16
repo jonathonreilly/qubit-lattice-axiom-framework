@@ -1,6 +1,6 @@
 # Planck-Scale Lane Status Note
 
-**Claim type:** meta
+**Type:** meta
 
 **Date:** 2026-04-23  
 **Purpose:** canonical package note for the absolute lattice-scale posture on
@@ -10,8 +10,8 @@
 
 The accepted package already treats `Cl(3)` on `Z^3` as a **physical lattice**,
 not a disposable regulator family. The primitive Clifford-Majorana edge
-derivation was audited as `audited_renaming`, so the public surface still
-tracks the absolute lattice scale by one explicit package pin:
+source does not derive the physical carrier or its channel laws, so the public
+surface still tracks the absolute lattice scale by one explicit package pin:
 
 > `a^(-1) = M_Pl`
 
@@ -254,24 +254,24 @@ Current blocker:
   is now explicitly bounded. Exact support plus a complex-CAR interpretation
   gives `F(C^2)`, hence two modes, but the selected normal channel,
   self-dual tangent channel, and tangent-symbol ansatz are separately supplied
-  carrier axioms. Inside that full conditional packet the `1/4` coefficient is
+  carrier conditions. Widom applicability and normalization are also supplied
+  conditions. Inside that full conditional packet the `1/4` coefficient is
   exact; CAR alone does not select it.
 - [AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md](./AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)
   proves only that a supplied irreducible `Cl_4(C)` response on `C^4` is
   algebraically equivalent to supplied two-mode CAR. Rank four does not force
-  CAR, the event-cell substrate does not induce this response on `P_A`, and
-  the algebra does not select physical edge dispersions.
+  CAR, the specified exterior one-form event-cell action does not induce this
+  response on `P_A`, and the algebra does not select physical edge dispersions.
 
 2026-04-30 Target 2 update:
 
 - [PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](./PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)
-  attempted to derive the residual primitive coframe/CAR response from
-  retained `Cl(3)` bivectors plus the anomaly-forced time axis. Audit returned
-  `audited_renaming`: the active primitive `Cl_4(C)` / CAR model is explicit,
-  but the substrate-to-`P_A` forcing step is not derived.
+  records an explicit active `Cl_4(C)` / CAR model and an exact obstruction
+  for the supplied exterior one-form action, but it does not derive a physical
+  carrier or the channel/Widom packet.
 - therefore the Target 3 boundary theorem still applies and Target 2 remains
   conditional on both an active-block Clifford/CAR premise and separate
-  physical edge-channel axioms.
+  physical edge-channel, tangent-symbol, and Widom conditions.
 
 ### Target 3: one-axiom information/action bridge
 
@@ -305,22 +305,24 @@ Former blocker:
 
 - the area-law packet gives Target 3 a sharper object to derive: the
   primitive Clifford-Majorana/CAR edge-statistics principle on `P_A H_cell`;
-- deriving that principle from a one-axiom information/action bridge would
-  remove the last conditional premise from the positive Target 2 chain;
-- without such a derivation, the stripped Hilbert-only Target 3 surface
-  remains open and Target 2 should be worded as conditional on native edge
-  statistics.
+- deriving an active-block Clifford/CAR response would close only the
+  algebraic carrier step. The normal/tangent channel laws, tangent symbol,
+  Widom hypotheses/normalization, and physical carrier identification would
+  remain independent conditions;
+- without those derivations, the stripped Hilbert-only Target 3 surface
+  remains open and Target 2 must remain conditional on the full carrier packet.
 
 2026-04-30 Target 3 update:
 
 - [PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](./PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)
-  is an exact substrate-descent obstruction on the granted event-cell surface:
-  the `1+3` substrate module on `P_A` has no equivariant map to the `2+2`
+  gives an exact obstruction for the granted event-cell exterior one-form
+  action: the `1+3` module on `P_A` has no equivariant map to the `2+2`
   spatial restriction of an irreducible `Cl_4(C)` carrier, and the canonical
-  full-cell odd generators do not preserve `P_A`;
+  exterior odd generators do not preserve `P_A`. Other substrate actions and
+  intrinsic active-block response laws remain outside that no-go;
 - an internal `M_4(C)` Clifford/CAR model can still be assigned, but neither
   its coframe basis nor the normal/tangent Majorana pairing follows from the
-  retained substrate;
+  specified exterior one-form action;
 - the Hilbert-only no-go therefore remains valid, and a positive route needs a
   changed representation premise or an additional intrinsic response law.
 
@@ -340,7 +342,7 @@ Former blocker:
 - consequently the stripped Hilbert-only surface cannot close Target 3. A
   positive route must restore or derive a stronger native input, derive an
   action-unit metrology map that breaks the rescaling degeneracy, or record
-  those items as added carrier axioms.
+  those items as explicit carrier conditions.
 
 2026-04-25 conditional Target 3 Clifford/coframe bridge:
 
@@ -352,16 +354,14 @@ Former blocker:
   `{D(u),D(v)}=2<u,v>I`, the complex `Cl_4` relation on the time-locked
   primitive coframe `(t,n,tau_1,tau_2)`;
 - on `K=P_A H_cell` with `dim K=4`, this is the irreducible `Cl_4(C)` module,
-  so oriented Majorana pairing gives the two complex CAR modes required by
-  the primitive edge theorem;
+  so a supplied Majorana pairing gives two complex CAR modes;
 - non-CAR rank-four readings such as two-qubit or ququart semantics are
   excluded because they fail the metric-compatible coframe law;
-- the Target 2 carrier is therefore fixed on this conditional Clifford/CAR
-  surface:
-  `c_Widom=3/12=1/4=c_cell`;
-- together with the retained source-unit normalization support theorem, the
-  same structural carrier gives `G_Newton,lat=1` and `a/l_P=1` in the
-  package's natural phase/action units;
+- this still does not assign the normal/tangent dispersions, self-dual
+  half-zone, Gaussian/Fermi-projector carrier, or Widom normalization. Hence
+  Clifford/CAR alone does not fix the Target 2 coefficient;
+- the separately supplied source-unit normalization and gravitational-carrier
+  premises remain independent of this algebraic equivalence;
 - scope guardrail: this is not a derivation of the SI decimal value of
   `hbar`, and it does not contradict the Hilbert-only no-go. The closed
   statement is conditional structural closure under the primitive
@@ -378,20 +378,23 @@ correct package statement is:
 - it is **not** a derivation of the SI decimal value of `hbar` or a
   Hilbert-only theorem with the Clifford coframe stripped away
 - the primitive boundary count is identified with the microscopic
-  gravitational and entanglement boundary/action carrier only under the
-  Clifford-CAR bridge premise:
-  `P_A H_cell -> Cl_4(C) irreducible module -> F(C^2) -> c_Widom=c_cell=1/4`
+  gravitational and entanglement boundary/action carrier only under a coupled
+  packet, not from Clifford/CAR alone:
+  `P_A support + CAR interpretation + physical channel laws + tangent symbol
+  + Widom applicability/normalization -> c_Widom=1/4`, together with the
+  separate gravitational boundary/action-carrier premise for `c_cell=1/4`
 - the source-unit normalization support theorem resolves the bare-source
   `4 pi` mismatch on the same carrier surface and gives
   `G_Newton,lat=1`
 - the finite-boundary density extension remains the additive finite-patch
   theorem for that carrier
-- the finite-automorphism-only response route is a retained no-go, not an
+- the finite-automorphism-only response route is a scoped no-go, not an
   alternate promotion path
-- the carrier-only parent-source scalar route is a retained no-go, not an
+- the carrier-only parent-source scalar route is a scoped no-go, not an
   alternate promotion path without a separate no-hidden-character law
-- publication-facing prose must not promote the 2026-04-30 construction; audit
-  found the carrier-identification step to be `audited_renaming`
+- publication-facing prose must not promote the 2026-04-30 construction; the
+  source itself leaves carrier identification and channel laws open, while
+  audit grade remains pipeline-owned
 
 That is the canonical posture to use when wiring hierarchy, YT/Higgs,
 neutrino/DM mass ladders, gravity/cosmology companions, and compact-object

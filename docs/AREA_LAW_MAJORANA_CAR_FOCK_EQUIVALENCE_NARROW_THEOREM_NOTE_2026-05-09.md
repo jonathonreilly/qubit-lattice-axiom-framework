@@ -1,7 +1,7 @@
 # Area-Law Majorana-to-CAR-Fock Equivalence Narrow Theorem
 
 **Date:** 2026-05-09
-**Claim type:** positive_theorem
+**Type:** positive_theorem
 **Claim scope:** the standalone polynomial-algebra and representation-theory
 equivalence on a complex Hilbert space `K` of dimension four between
 (i) four Hermitian operators `gamma_1, ..., gamma_4` on `K` satisfying the
@@ -196,7 +196,7 @@ the same conditional finite-algebra equivalence and explicitly rejects
 substrate-native, preferred-basis, channel-assignment, and coefficient
 implications. This narrow theorem supplies a more detailed algebraic proof;
 neither note turns that fact into a larger physical chain without
-also consuming a substrate-to-`P_A` forcing target. The retained no-gos
+also consuming a substrate-to-`P_A` forcing target. The scoped obstruction notes
 `SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30` and
 `FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30`
 record explicit negative boundaries on that physical chain. The present

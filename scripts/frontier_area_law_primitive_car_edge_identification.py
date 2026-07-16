@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Conditional primitive-CAR edge-axiom coefficient verifier.
+"""Conditional rank-four CAR edge-condition coefficient verifier.
 
 Authority note:
     docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md
 
 This runner verifies the rank count, half-zone measure, and Widom coefficient
 inside explicitly supplied support, CAR, normal-channel, tangent-channel, and
-tangent-symbol axioms. Hostile controls show that CAR algebra alone does not
+tangent-symbol conditions, together with an explicit Widom applicability and
+normalization condition. Hostile controls show that CAR algebra alone does not
 select the channel dispersions or the half-zone fraction.
 
 Exit code: 0 on full PASS, 1 on any FAIL.
@@ -15,6 +16,7 @@ Exit code: 0 on full PASS, 1 on any FAIL.
 from __future__ import annotations
 
 import math
+import re
 import sys
 from pathlib import Path
 
@@ -89,12 +91,12 @@ def coefficient_for_modes(modes: tuple[str, ...]) -> float:
 
 def main() -> int:
     print("=" * 78)
-    print("AREA-LAW CONDITIONAL PRIMITIVE-CAR EDGE-AXIOM COEFFICIENT")
+    print("AREA-LAW CONDITIONAL RANK-FOUR CAR EDGE-CONDITION COEFFICIENT")
     print("=" * 78)
     print()
-    print("Question: after support, CAR, normal-channel, tangent-channel, and")
-    print("tangent-symbol axioms are supplied, is c_Widom=1/4, and which")
-    print("steps remain unforced by the substrate or CAR algebra?")
+    print("Question: after support, CAR, channel, tangent-symbol, and Widom")
+    print("conditions are supplied, is c_Widom=1/4, and which steps remain")
+    print("unforced by the specified exterior action or CAR algebra?")
     print()
 
     dim_cell = 2**4
@@ -304,28 +306,31 @@ def main() -> int:
     )
 
     note = NOTE.read_text(encoding="utf-8")
+    note_norm = re.sub(r"\s+", " ", note)
     check(
-        "source title is narrowed to a conditional edge-axiom coefficient theorem",
+        "source title is narrowed to a conditional edge-condition theorem",
         note.startswith(
-            "# Area-Law Conditional Primitive-CAR Edge-Axiom Coefficient Theorem Note"
+            "# Area-Law Conditional Rank-Four CAR Edge-Condition Coefficient Theorem Note"
         ),
         NOTE.name,
     )
     check(
-        "source status forbids substrate descent and channel forcing",
-        "no\nsubstrate descent, channel forcing, or global carrier-uniqueness claim" in note,
-        "status firewall present",
+        "source scope forbids exterior-action descent and channel forcing",
+        "no exterior-action descent, channel forcing, or global carrier-uniqueness claim"
+        in note,
+        "scope firewall present",
     )
     check(
         "source supplies rather than derives the physical edge channels",
-        "## Supplied primitive-CAR edge axioms" in note
-        and "**Normal-channel axiom.**" in note
-        and "**Tangent-channel axiom.**" in note,
+        "## Supplied rank-four CAR edge conditions" in note
+        and "**Normal-channel condition.**" in note
+        and "**Tangent-channel condition.**" in note,
         "channel assumptions are explicit",
     )
     check(
         "source states that CAR does not select the dispersions",
-        "CAR algebra\ndoes not derive the normal/tangent channel assignment" in note,
+        "CAR algebra does not derive the normal/tangent channel assignment"
+        in note_norm,
         "algebra-to-dispersion bridge denied",
     )
     check(
@@ -336,7 +341,7 @@ def main() -> int:
     )
     check(
         "source exposes the exact remaining bridges",
-        "## Retained-surface obstruction and open bridges" in note
+        "## Supplied exterior-action obstruction and open bridges" in note
         and "Until those gaps close, `1/4` is valid only inside" in note,
         "remaining-gap firewall present",
     )
@@ -351,6 +356,13 @@ def main() -> int:
         "nonzero real-analytic function" in note and "Haar measure zero" in note,
         "measure argument stated",
     )
+    check(
+        "source labels Widom applicability and normalization as an imported condition",
+        "**Widom applicability and normalization condition.**" in note
+        and "https://doi.org/10.1103/PhysRevLett.96.100503" in note
+        and "load-bearing standard literature input" in note,
+        "Widom provenance and normalization are explicit",
+    )
 
     print()
     print("=" * 78)
@@ -362,10 +374,11 @@ def main() -> int:
         return 1
 
     print()
-    print("Verdict: CONDITIONAL INSIDE SUPPLIED PRIMITIVE-CAR EDGE AXIOMS.")
+    print("Verdict: CONDITIONAL INSIDE SUPPLIED RANK-FOUR CAR EDGE CONDITIONS.")
     print("The supplied normal plus self-dual half-zone tangent carrier gives")
     print("c_Widom=1/4. CAR alone does not select those dispersions, and the")
-    print("retained event-cell substrate does not derive the active Cl_4/CAR block.")
+    print("specified exterior one-form action does not derive the active Cl_4/CAR")
+    print("block; other substrate actions and intrinsic response laws remain open.")
     return 0
 
 

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_primitive_parity_gate_carrier.py
-runner_sha256: cb62d038249a32b5a040bc5afde29e34401d1e65b821051c96c33e8e45032cc5
+runner_sha256: 5776fb6b518880c56e5f4eb4590d7040264f023c723878df76b1c46dee81cadc
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.35
@@ -26,7 +26,7 @@ multipocket selector needed for c_Widom = 1/4?
 [PASS] Widom coefficient is exactly 1/4: c=<N_x>/12=0.250000000000
 [PASS] entanglement coefficient matches primitive trace coefficient: 3/12 = 4/16 = 1/4
 [PASS] carrier lies outside the simple-fiber no-go class: the direct-sum edge block has average crossing count 3 > 2
-[PASS] baseline channel alone recovers the retained 1/6 value: 2/12=1/6
+[PASS] baseline channel alone recovers the scoped simple-fiber 1/6 value: 2/12=1/6
 [PASS] parity-gated channel adds exactly 1/12: one average crossing divided by 12
 
 Finite APBC crossing grids

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_planck_c1_gate_source_packet.py
-runner_sha256: 8afa0d571cec3c4a4b03ca42ee528292a94b0c778027fd22931fea9b0c8efa94
+runner_sha256: 2c5ed047da3a9120f1220aa9e59c556c4613ba15ffd9ae5e9599f8b75519a439
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -48,11 +48,11 @@ Part 2: dependency links and source fingerprints
   [PASS] scale-reference primitive is units-only and non-bounding
   [PASS] parent treats the scale primitive as units-only
   [PASS] Planck status keeps natural-unit derivation conditional
-  [PASS] Planck status records the exact substrate-descent obstruction
+  [PASS] Planck status records the exact specified-action obstruction
   [PASS] conditional packet supplies c_cell and a/l_P algebra under a premise
   [PASS] Target 3 bridge is conditional on supplied coframe response
   [PASS] CAR equivalence note rejects substrate and channel implications
-  [PASS] primitive-CAR note keeps channel axioms supplied
+  [PASS] rank-four CAR note keeps channel and Widom conditions supplied
   [PASS] phase-unit boundary records action-scale and CAR blockers
 
 ----------------------------------------------------------------------------------------
@@ -63,7 +63,7 @@ Part 3: coupled residual Planck C1 gate packet
   [PASS] action-unit obligation remains separately named
   [PASS] parent rejects algebra-to-channel collapse
   [PASS] all three residual obligations are named
-  [PASS] closed shortcut routes are inventoried
+  [PASS] scoped shortcut routes are inventoried
   [PASS] parent explicitly says it does not close the Planck lane
 
 ----------------------------------------------------------------------------------------
@@ -77,14 +77,18 @@ Part 4: finite non-promotion model
   [PASS] actual current packet does not close C1
   [PASS] coframe response alone is not enough without action units
   [PASS] coframe response alone does not close Target 2 without a channel law
-  [PASS] full modeled packet includes the Target 2 channel law
+  [PASS] Target 2 remains open without Widom conditions
+  [PASS] full modeled packet includes the Target 2 channel and Widom laws
+  [PASS] missing scale reference cannot close C1
+  [PASS] missing scale reference cannot close Target 2 in this Planck packet
+  [PASS] missing scale reference cannot close H0 through C1
   [PASS] C1 alone is not H0 closure without C2/C3
   [PASS] full C1 plus C2/C3 packet would close the modeled route
   [PASS] parent records C2/C3 as separately required
   [PASS] runner boundary forbids audit-result mutation
 
 ========================================================================================
-PASS=46 FAIL=0
+PASS=50 FAIL=0
 ========================================================================================
 
 ----- stderr -----

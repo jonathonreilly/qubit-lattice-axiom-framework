@@ -97,8 +97,7 @@ def part1_packet_metadata() -> None:
     check("parent declares this runner cache", CACHE in parent)
     check(
         "parent remains an open-gate support source packet",
-        "support gate-identification note on `main`" in parent_norm
-        and "**Claim type:** open_gate" in parent
+        "**Type:** open_gate" in parent
         and "identifies the residual active-block response, edge-channel-law, and action-unit" in parent_norm,
     )
     check(
@@ -145,7 +144,7 @@ def part2_registered_dependencies() -> None:
     check(
         "parent treats the scale primitive as units-only",
         "grants `a^{-1} = M_Pl` as a units conversion only" in parent_norm
-        and "not a Planck import, not a Tier-A admission" in parent_norm
+        and "not a Planck import or a source of bounded theorem strength" in parent_norm
         and "derived `a/l_P = 1` theorem" in parent_norm,
     )
     check(
@@ -155,7 +154,7 @@ def part2_registered_dependencies() -> None:
         and "`a^(-1) = M_Pl` remains the explicit package pin" in status,
     )
     check(
-        "Planck status records the exact substrate-descent obstruction",
+        "Planck status records the exact specified-action obstruction",
         "equivariant\nintertwiner space is zero" in status
         and "compresses to zero on `P_A`" in status,
     )
@@ -172,16 +171,17 @@ def part2_registered_dependencies() -> None:
     )
     check(
         "CAR equivalence note rejects substrate and channel implications",
-        "conditional / bounded algebraic equivalence only" in car_tightening
+        "conditional algebraic equivalence only" in car_tightening
         and "It does not imply `c_Widom=1/4`" not in car_tightening
         and "it does not imply `c_Widom=1/4`" in car_tightening
         and "None is currently supplied" in car_tightening,
     )
     check(
-        "primitive-CAR note keeps channel axioms supplied",
-        "## Supplied primitive-CAR edge axioms" in primitive_car
-        and "**Normal-channel axiom.**" in primitive_car
-        and "**Tangent-channel axiom.**" in primitive_car
+        "rank-four CAR note keeps channel and Widom conditions supplied",
+        "## Supplied rank-four CAR edge conditions" in primitive_car
+        and "**Normal-channel condition.**" in primitive_car
+        and "**Tangent-channel condition.**" in primitive_car
+        and "**Widom applicability and normalization condition.**" in primitive_car
         and "CAR algebra does not derive the normal/tangent channel assignment" in primitive_car_norm,
     )
     check(
@@ -224,7 +224,7 @@ def part3_gate_packet_inventory() -> None:
         and "**Action-unit metrology**" in parent,
     )
     check(
-        "closed shortcut routes are inventoried",
+        "scoped shortcut routes are inventoried",
         all(marker in parent for marker in CLOSED_ROUTE_MARKERS),
     )
     check(
@@ -236,19 +236,29 @@ def part3_gate_packet_inventory() -> None:
 @dataclass(frozen=True)
 class PlanckGatePacket:
     scale_reference_declared: bool
-    coframe_response_retained: bool
-    edge_channel_law_retained: bool
-    natural_action_units_retained: bool
-    history_ratio_or_direct_l_retained: bool
+    coframe_response_supplied: bool
+    edge_channel_law_supplied: bool
+    widom_conditions_supplied: bool
+    natural_action_units_supplied: bool
+    history_ratio_or_direct_l_supplied: bool
 
     def c1_scale_route_closed(self) -> bool:
-        return self.coframe_response_retained and self.natural_action_units_retained
+        return (
+            self.scale_reference_declared
+            and self.coframe_response_supplied
+            and self.natural_action_units_supplied
+        )
 
     def target2_carrier_closed(self) -> bool:
-        return self.coframe_response_retained and self.edge_channel_law_retained
+        return (
+            self.scale_reference_declared
+            and self.coframe_response_supplied
+            and self.edge_channel_law_supplied
+            and self.widom_conditions_supplied
+        )
 
     def h0_closed_through_c1(self) -> bool:
-        return self.c1_scale_route_closed() and self.history_ratio_or_direct_l_retained
+        return self.c1_scale_route_closed() and self.history_ratio_or_direct_l_supplied
 
 
 def part4_non_promotion_model() -> None:
@@ -258,38 +268,59 @@ def part4_non_promotion_model() -> None:
 
     current = PlanckGatePacket(
         scale_reference_declared=True,
-        coframe_response_retained=False,
-        edge_channel_law_retained=False,
-        natural_action_units_retained=False,
-        history_ratio_or_direct_l_retained=False,
+        coframe_response_supplied=False,
+        edge_channel_law_supplied=False,
+        widom_conditions_supplied=False,
+        natural_action_units_supplied=False,
+        history_ratio_or_direct_l_supplied=False,
     )
     scale_only = PlanckGatePacket(
         scale_reference_declared=True,
-        coframe_response_retained=False,
-        edge_channel_law_retained=False,
-        natural_action_units_retained=False,
-        history_ratio_or_direct_l_retained=False,
+        coframe_response_supplied=False,
+        edge_channel_law_supplied=False,
+        widom_conditions_supplied=False,
+        natural_action_units_supplied=False,
+        history_ratio_or_direct_l_supplied=False,
     )
     coframe_only = PlanckGatePacket(
         scale_reference_declared=True,
-        coframe_response_retained=True,
-        edge_channel_law_retained=False,
-        natural_action_units_retained=False,
-        history_ratio_or_direct_l_retained=False,
+        coframe_response_supplied=True,
+        edge_channel_law_supplied=False,
+        widom_conditions_supplied=False,
+        natural_action_units_supplied=False,
+        history_ratio_or_direct_l_supplied=False,
     )
     c1_only = PlanckGatePacket(
         scale_reference_declared=True,
-        coframe_response_retained=True,
-        edge_channel_law_retained=False,
-        natural_action_units_retained=True,
-        history_ratio_or_direct_l_retained=False,
+        coframe_response_supplied=True,
+        edge_channel_law_supplied=False,
+        widom_conditions_supplied=False,
+        natural_action_units_supplied=True,
+        history_ratio_or_direct_l_supplied=False,
+    )
+    missing_scale = PlanckGatePacket(
+        scale_reference_declared=False,
+        coframe_response_supplied=True,
+        edge_channel_law_supplied=True,
+        widom_conditions_supplied=True,
+        natural_action_units_supplied=True,
+        history_ratio_or_direct_l_supplied=True,
+    )
+    missing_widom = PlanckGatePacket(
+        scale_reference_declared=True,
+        coframe_response_supplied=True,
+        edge_channel_law_supplied=True,
+        widom_conditions_supplied=False,
+        natural_action_units_supplied=True,
+        history_ratio_or_direct_l_supplied=True,
     )
     full_lane5 = PlanckGatePacket(
         scale_reference_declared=True,
-        coframe_response_retained=True,
-        edge_channel_law_retained=True,
-        natural_action_units_retained=True,
-        history_ratio_or_direct_l_retained=True,
+        coframe_response_supplied=True,
+        edge_channel_law_supplied=True,
+        widom_conditions_supplied=True,
+        natural_action_units_supplied=True,
+        history_ratio_or_direct_l_supplied=True,
     )
 
     print("  rule: the scale-reference primitive is units-only")
@@ -301,7 +332,11 @@ def part4_non_promotion_model() -> None:
     check("actual current packet does not close C1", not current.c1_scale_route_closed())
     check("coframe response alone is not enough without action units", not coframe_only.c1_scale_route_closed())
     check("coframe response alone does not close Target 2 without a channel law", not coframe_only.target2_carrier_closed())
-    check("full modeled packet includes the Target 2 channel law", full_lane5.target2_carrier_closed())
+    check("Target 2 remains open without Widom conditions", not missing_widom.target2_carrier_closed())
+    check("full modeled packet includes the Target 2 channel and Widom laws", full_lane5.target2_carrier_closed())
+    check("missing scale reference cannot close C1", not missing_scale.c1_scale_route_closed())
+    check("missing scale reference cannot close Target 2 in this Planck packet", not missing_scale.target2_carrier_closed())
+    check("missing scale reference cannot close H0 through C1", not missing_scale.h0_closed_through_c1())
     check("C1 alone is not H0 closure without C2/C3", c1_only.c1_scale_route_closed() and not c1_only.h0_closed_through_c1())
     check("full C1 plus C2/C3 packet would close the modeled route", full_lane5.h0_closed_through_c1())
     check(

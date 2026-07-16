@@ -178,7 +178,7 @@ plan reduces to:
 - Cycle 3 (`A2` no-go): `HUBBLE_LANE5_C1_A2_ACTION_UNIT_NO_GO_NOTE_2026-04-28.md`.
 - Primitive parity-gate carrier theorem (the `A4` anchor; load-bearing one-hop authority for Section 2(i)):
   [`AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`](AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md).
-- Conditional `Cl_4(C)` / CAR equivalence (intrinsic 4-dim action only):
+- Native CAR semantics tightening (intrinsic 4-dim Cl_4(C) action):
   `AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md`.
 - Target 3 phase-unit / edge-statistics boundary:
   `PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md`.

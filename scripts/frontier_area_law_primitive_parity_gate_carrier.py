@@ -273,7 +273,7 @@ def main() -> int:
         "the direct-sum edge block has average crossing count 3 > 2",
     )
     check(
-        "baseline channel alone recovers the retained 1/6 value",
+        "baseline channel alone recovers the scoped simple-fiber 1/6 value",
         math.isclose(widom_from_average_crossings(2.0), 1.0 / 6.0, abs_tol=1.0e-15),
         "2/12=1/6",
     )

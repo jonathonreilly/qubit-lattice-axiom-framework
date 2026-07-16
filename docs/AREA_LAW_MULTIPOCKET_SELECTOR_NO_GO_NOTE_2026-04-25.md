@@ -150,11 +150,9 @@ identifies the exact additional carrier premise that the no-go said was
 missing.
 
 [AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md](./AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-gives a bounded conditional example: exact rank-four support plus a complex-CAR
-interpretation gives two modes, while separately supplied normal and
-self-dual-tangent channel axioms give `1/4`. The result is unique only among
-the four explicitly enumerated crossing patterns, not over all two-mode CAR
-Hamiltonians, and it does not derive the selector from the substrate.
+sharpens the premise: in the minimal local complex-CAR edge class supported
+exactly on the rank-four primitive packet, the normal-plus-self-dual-tangent
+carrier is the unique minimal two-mode option that gives `1/4`.
 
 ## Package wording
 

@@ -1,289 +1,111 @@
-# Area-Law Coefficient Gap Audit
+# Area-Law Coefficient-Gap Conditional Synthesis
 
 **Date:** 2026-04-25
-**Status:** source-packet support for Planck Target 2 re-audit; historical
-audited-conditional boundary preserved, but the independent audit lane remains
-authoritative.
+**Repair date:** 2026-07-16
+**Type:** positive_theorem
+**Scope:** conditional source synthesis; no physical carrier identification,
+substrate-wide no-go, or audit disposition
+**Primary runner:** `scripts/frontier_area_law_coefficient_gap_source_packet.py`
+**Primary cache:** `logs/runner-cache/frontier_area_law_coefficient_gap_source_packet.txt`
 
-Primary runner: `scripts/frontier_area_law_coefficient_gap_source_packet.py`
+## Statement
 
-Primary cache: `logs/runner-cache/frontier_area_law_coefficient_gap_source_packet.txt`
+The area-law packet contains three distinct coefficient statements:
 
-The runner checks the source-level authority packet for this synthesis: the
-action-side primitive `1/4` input, the simple-fiber Widom `1/6` no-go, the
-conditional primitive parity-gate positive carrier, and the exact remaining
-rank-four support, CAR, and physical channel premises. It does not assign an
-audit verdict or retained status.
+1. The separately supplied event-cell trace is
 
-## Cited authorities (one-hop deps)
+   ```text
+   c_cell=Tr((I_16/16)P_A)=4/16=1/4.
+   ```
 
-This note synthesizes the coefficient-gap status across a fixed set of live
-authorities. Citations are made explicit per cluster:
+2. In the scoped straight-cut simple-fiber free-fermion class, an average of
+   at most two Fermi-surface crossings gives
 
-### Action-side `c_cell = 1/4` chain
+   ```text
+   c_Widom<=2/12=1/6.
+   ```
 
-- [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
-  — `audited_conditional`. Derives the action-side primitive coefficient
-  `c_cell = Tr((I_16/16) P_A) = 4/16 = 1/4` from first-order coframe locality
-  and unit primitive response normalization (both cited there, derived from
-  link-local first variation).
-- [`PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md`](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md)
-  — `audited_conditional`. Extends `c_cell = 1/4` additively to finite
-  boundary patches and records the conditional carrier-share matching
-  `n · c_cell = A/(4 G_Newton,lat)` at `G_Newton,lat = 1`.
+3. Under the full rank-four CAR edge-condition packet, the supplied normal
+   channel contributes two crossings and the supplied self-dual tangent
+   channel is active on half of transverse momentum space, so
 
-### Entanglement-side carrier no-go and conditional positive carrier
+   ```text
+   <N_x>=2+2*(1/2)=3,
+   c_Widom=<N_x>/12=1/4.
+   ```
 
-- [`AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md`](AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md)
-  — `audited_conditional`. The simple-fiber-class Widom no-go bounding any
-  carrier in that class by `c_Widom <= 1/6 < 1/4`.
-- [`AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`](AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md)
-  — `audited_conditional`. The conditional positive carrier reaching
-  `c_Widom = 1/4` via average crossing count exactly 3, conditional on the
-  carrier-identification premise (CIP).
-- [`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-  — support / conditional. Computes the coefficient inside explicit
-  rank-four support, complex-CAR, normal-channel, tangent-channel, and
-  tangent-symbol axioms; it does not reduce or derive (CIP) from CAR alone.
+The equality in item 3 is conditional. Complex CAR fixes the algebraic
+two-mode count after the CAR interpretation is supplied; it does not select
+the normal/tangent channel laws, half-zone symbol, Gaussian/Fermi-projector
+carrier, flat-cut geometry, or Widom normalization.
 
-### Bounded entropy companions
+## Authority and premise provenance
 
-- [`BH_ENTROPY_DERIVED_NOTE.md`](BH_ENTROPY_DERIVED_NOTE.md) — `audited_conditional`.
-- [`BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`](BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md) — `audited_conditional`.
-- [`BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md`](BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md) — `audited_conditional`.
-- [`HOLOGRAPHIC_PROBE_NOTE_2026-04-11.md`](HOLOGRAPHIC_PROBE_NOTE_2026-04-11.md) — `retained_bounded`.
+- [PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
+  supplies the conditional event-cell trace `c_cell=1/4`.
+- [PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md)
+  records its conditional additive boundary extension.
+- [AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md](AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md)
+  states the scoped simple-fiber Widom bound. It is not a universal carrier
+  no-go.
+- [AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md](AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md)
+  gives the conditional half-zone construction.
+- [AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
+  separates exact support, CAR interpretation, channel laws, tangent symbol,
+  and Widom applicability/normalization as explicit conditions.
+- [AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md](AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)
+  proves only the abstract irreducible `Cl_4(C)`/two-mode-CAR equivalence.
 
-These are the live audit-ledger statuses at the time of this rigorization.
-The synthesis below makes the coefficient-gap structure explicit on this
-authority chain rather than asserting the no-go and positive carrier as
-implicit; status remains `audited_conditional` because the load-bearing
-carrier-identification premise (CIP) is not derived from the minimal axiom
-surface alone.
+The event-cell factorization, `P_A`, its exterior one-form action, the CAR
+interpretation, the physical channel laws, and the Widom literature theorem
+are not supplied by the four framework axioms or by the approved
+scale-reference, kinetic-isotropy, and realized-state primitives. They remain
+explicit premises on the relevant conditional branches.
 
-## Purpose
+## Exact obstruction scope
 
-This note audits the gap between the exact primitive-cell coefficient
-
-```text
-c_cell = Tr((I_16 / 16) P_A) = 4 / 16 = 1/4
-```
-
-in the conditional Planck packet and the entanglement carriers already tested
-on the `Cl(3)/Z^3` surface. The outcome is negative for the current
-free-fermion carrier, but not closed for every conceivable carrier.
-
-## Carriers already tried
-
-1. **2D half-filled NN free fermion, straight cut.**
-   The retained no-go
-   [BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md](./BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md)
-   identifies the actual asymptotic coefficient as the Widom-Gioev-Klich
-   coefficient
-   `c_Widom = 1/6`, not `1/4`. The earlier `~0.24` value at `L <= 32`
-   is a finite-size artifact; the `L <= 96` probe drifts toward `1/6`.
-
-2. **3D half-filled NN cubic free fermion, straight cut.**
-   The same no-go records `c_Widom(3D) ~ 0.105` for the cubic
-   half-filled Fermi surface. This is also not `1/4`.
-
-3. **Finite-L RT bond-dimension comparison.**
-   [BH_ENTROPY_DERIVED_NOTE.md](./BH_ENTROPY_DERIVED_NOTE.md) remains a
-   bounded companion: its finite lattice ratio is useful as a comparison
-   diagnostic, but the correct asymptotic form is
-   `r(L) = c_inf + a / log L + ...`, with `c_inf = 1/6` on the retained
-   carrier.
-
-4. **Dirac-sea boundary-law probes.**
-   [HOLOGRAPHIC_PROBE_NOTE_2026-04-11.md](./HOLOGRAPHIC_PROBE_NOTE_2026-04-11.md)
-   and
-   [BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md](./BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md)
-   support a bounded boundary-law preference on a staggered 2D periodic
-   lattice. The recorded slopes (`0.211399` free, `0.186053` with
-   self-gravity in the probe note) are model coefficients, not
-   Bekenstein-Hawking coefficients, and the review queue correctly says not
-   to overread them as holography.
-
-5. **Historical transfer / multi-source diagnostics.**
-   `frontier_entanglement_area_law.py` and
-   `frontier_multi_source_entropy.py` are source-to-cut transfer diagnostics,
-   not canonical many-body entanglement carriers. They do not identify a
-   primitive `1/4` entropy coefficient.
-
-The retained tree has not yet probed a genuine NNN/multi-pocket Fermi surface,
-an interacting Hubbard descendant, a topological edge sector, a Schur-block
-horizon sector from the DM lane, or a plaquette-first horizon sector as an
-exact entropy carrier.
-
-## Meaning of the Planck `1/4`
-
-The Planck packet's `1/4` is a source-free primitive counting-trace statement
-on the time-locked event cell
+For the specifically supplied exterior one-form event-cell representation and
+its standard spatial `SU(2)` action, `P_A H_cell` carries `1+3`, whereas an
+irreducible complex `Cl_4` spinor restricts as `2+2`. The equivariant
+intertwiner space is zero. The canonical exterior odd Clifford generators also
+map `P_A` into other exterior degrees and satisfy
 
 ```text
-H_cell ~= C^2_t otimes C^2_x otimes C^2_y otimes C^2_z ~= C^16.
+P_A gamma_i P_A=0.
 ```
 
-With `P_A` the four-dimensional Hamming-weight-one event packet,
-`rank(P_A)=4`, so
+This exhausts that representation/action and those canonical odd generators
+only. It does not exclude other substrate actions, changed spinorial packets,
+intrinsic `M_4(C)` active-block carriers, graph-first assignments, or an added
+physical response/coframe law.
+
+## Remaining bridge
+
+The coefficient match requires a physical identification of the rank-four
+block with the supplied Gaussian two-orbital edge carrier, including its
+normal/tangent dispersions, self-dual half-zone, cut/species normalization, and
+the hypotheses of the Widom--Gioev--Klich theorem. Neither rank four nor CAR
+algebra derives that packet.
+
+Accordingly, the source packet supports only the implication
 
 ```text
-Tr((I_16/16) P_A) = 1/4.
+explicit support + CAR interpretation + channel laws + tangent symbol
++ Widom applicability/normalization
+    -> c_Widom=1/4.
 ```
 
-[PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md](./PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md)
-then proves that, if this primitive count is accepted as the microscopic
-gravitational area/action carrier, locality and additivity extend it uniquely
-to finite boundary patches. This is not yet an entanglement theorem. To make it
-one, a carrier must show either:
+It does not identify the conditional entanglement coefficient with a
+gravitational boundary/action carrier from the framework foundation.
 
-- a Widom leading-log coefficient exactly `1/4` on the same primitive boundary
-  count; or
-- a gapped/horizon area law whose entropy per primitive face is derived as the
-  same `Tr((I_16/16)P_A)`, not imposed after the fact.
+## Verification
 
-## Available but unclosed carrier routes
+Run:
 
-- **NN arbitrary filling:** analytically available and not numerically
-  exhausted in the retained runner. However, for the usual one-band NN surface,
-  each transverse momentum fiber has at most one occupied interval, so the
-  broader no-go in
-  [AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md](./AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md)
-  bounds the coefficient by `1/6`.
-- **NNN or other finite-range hoppings:** potentially evade the simple-fiber
-  bound only by producing multi-pocket or multi-interval Fermi fibers. No
-  retained physical principle currently selects an exact pocket geometry with
-  the required projected multiplicity.
-- **Schur blocks from the DM lane:** available as algebraic block carriers,
-  but direct sums of simple-fiber Slater determinants remain bounded by `1/6`
-  under the same boundary-rank normalization. A nontrivial Schur-block entropy
-  law would need an additional horizon-sector axiom.
-- **Interacting Hubbard / Fermi-liquid descendants:** physically motivated,
-  but the leading `L^{d-1} log L` coefficient is still controlled by Fermi
-  surface geometry in the Fermi-liquid regime. Interactions do not by
-  themselves turn a simple-fiber projected multiplicity into the value needed
-  for `1/4`.
-- **Gapped/topological horizon sectors:** avoid the free-fermion logarithm and
-  are the cleanest positive direction in principle. The obstruction is that
-  mass-gap area-law theorems give existence or bounds, not the exact
-  ultraviolet area coefficient. Topological entanglement entropy is a universal
-  subleading constant, not the leading area coefficient.
-- **Plaquette-first sector:** plausible as a gravitational/action bridge, but
-  not yet formulated as an entropy carrier whose primitive face count is
-  provably the same `16`-state event-cell count.
-
-## Minimal Widom geometry that could hit `1/4`
-
-For a straight cut with normal `e_x`, the Widom coefficient is
-
-```text
-c_Widom = I_x / (12 (2*pi)^(d-1)),
-I_x = integral_{partial Gamma} |n_x . n_k| dS_k.
+```bash
+python3 scripts/frontier_area_law_coefficient_gap_source_packet.py
 ```
 
-To obtain `c_Widom = 1/4`, one needs
-
-```text
-I_x = 3 (2*pi)^(d-1).
-```
-
-By the coarea/fiber-count identity, `I_x` is the transverse integral of the
-number of Fermi-surface crossings along each `k_x` fiber. A simple one-interval
-Fermi sea has at most two crossings per fiber and therefore
-
-```text
-I_x <= 2 (2*pi)^(d-1),   c_Widom <= 1/6.
-```
-
-Thus a Widom route to `1/4` requires multi-interval fibers, pocket multiplicity,
-or a boundary-rank normalization different from the primitive count. That is a
-real residual axiom, not a numerical tuning problem.
-
-## Audit conclusion
-
-The question is not implicitly closed by the existing single-carrier no-go, but
-the available positive routes are not theorem-ready. The clean retained result
-is a broader Widom-class no-go for simple-fiber free-fermion and
-Schur/direct-sum descendants. A future positive Target 2 route must add a
-physical axiom selecting
-either:
-
-1. a non-engineered multi-pocket/multi-interval Fermi carrier with projected
-   crossing multiplicity exactly `3`; or
-2. a gapped horizon/edge carrier deriving the leading area coefficient from the
-   same `16`-state primitive boundary count.
-
-The second route is more compatible with the Planck packet, but it still needs a
-new carrier-identification theorem rather than another bounded area-law probe.
-
-## Post-audit update
-
-[AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md](./AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md)
-implements the first route conditionally. It supplies the missing
-multi-pocket measure by the self-dual half-zone of the primitive transverse
-nearest-neighbor Laplacian, so the average crossing count is exactly `3` and
-the Widom coefficient is exactly `1/4`. This resolves the coefficient problem
-if the rank-four primitive boundary block is accepted as that two-orbital
-Laplacian-gated edge carrier. Otherwise, the broader no-go packet remains the
-retained status.
-
-[AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md](./AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-now separates the premises rather than reducing them to CAR alone. Exact
-support plus the complex-CAR interpretation gives `F(C^2)`, but the normal
-channel, self-dual tangent channel, and tangent-symbol ansatz are separately
-supplied carrier axioms. Inside that full conditional packet the coefficient
-is exactly `1/4`; no substrate or CAR-only channel forcing is claimed.
-
-[AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md](./AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)
-proves only the conditional finite-algebra equivalence between a supplied
-irreducible `Cl_4(C)` response on `C^4` and supplied two-mode CAR. The retained
-event-cell substrate does not derive that response, and the algebraic
-equivalence does not assign physical edge dispersions.
-
-## Authority-chain provenance
-
-The coefficient-gap structure on the live authority chain is now:
-
-| Side          | Coefficient    | Authority                                                                                       | Status              |
-| ------------- | -------------- | ----------------------------------------------------------------------------------------------- | ------------------- |
-| Action        | `c_cell = 1/4` | [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md) | audited_conditional |
-| Action (ext.) | `n · c_cell = A/(4 G_N)` | [`PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM`](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md) | audited_conditional |
-| Entangle. (-)  | `c_Widom <= 1/6` (simple-fiber class) | [`AREA_LAW_QUARTER_BROADER_NO_GO_NOTE`](AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md) | audited_conditional |
-| Entangle. (+) | `c_Widom = 1/4` (CIP)             | [`AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM`](AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md) | audited_conditional |
-| Bridge        | `c_Widom=1/4` inside supplied CAR + channel axioms | [`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM`](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md) | support/conditional |
-
-The synthesis is therefore structurally the same as before, but the
-load-bearing components are no longer implicit. The action-side `1/4` is
-imported, with conditional surface, from the cited primitive-coframe theorem;
-the boundary extension is imported from its boundary-density extension; the
-positive entanglement-side `1/4` carrier is imported from the cited
-parity-gate carrier theorem; and the open premise is named verbatim:
-
-```text
-(CIP)  P_A H_cell ≅ F(C^2), with one orbital realising the simple-fiber
-       normal channel and the other active exactly on the self-dual primitive
-       low-transverse-Laplacian sheet Δ_perp < 1.
-```
-
-The audit verdict on this row reads, verbatim: "the note's conclusion depends
-on the statement that the existing free-fermion / Dirac-sea diagnostics do
-not derive the Planck `1/4` coefficient, while the post-audit positive route
-closes only if the rank-four primitive boundary block is accepted as a
-two-orbital CAR / Laplacian-gated edge carrier." The two halves of that
-statement are now made explicit as imports, not assertions, and they trace to
-the named live authorities tabulated above.
-
-## What this source packet is NOT
-
-This rigorization does **not**:
-
-- derive the action-side `c_cell = 1/4` here; that derivation lives in the
-  cited primitive-coframe theorem and is imported with its conditional
-  surface.
-- derive (CIP) from the minimal axiom surface alone. (CIP) remains the explicit named open
-  premise inherited from the cited parity-gate carrier theorem and reduced
-  one step deeper by the cited CAR edge-identification theorem.
-- close any of the cited audit_conditional rows. This synthesis inherits the
-  conditional surface of every cited authority and remains
-  `audited_conditional` itself.
-- promote audit status. The audit ledger is not modified; the status
-  descriptor alignment matches the live audit ledger entry.
+The runner checks the arithmetic, source boundaries, direct authority links,
+and fresh component-runner caches. It exits nonzero on any failed check and
+does not write audit data or assign an audit disposition.

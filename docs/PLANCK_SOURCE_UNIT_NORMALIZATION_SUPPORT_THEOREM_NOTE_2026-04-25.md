@@ -1,8 +1,9 @@
 # Planck Source-Unit Normalization Support Theorem
 
 **Date:** 2026-04-25
-**Status:** proposed_retained support theorem on the conditional Planck packet;
-not a standalone minimal-stack closure of `a^(-1) = M_Pl`
+**Type:** positive_theorem
+**Scope:** conditional source-unit support theorem; not a standalone
+four-axiom closure of `a^(-1) = M_Pl`
 **Runner:**
 `scripts/frontier_planck_source_unit_normalization_support_theorem.py`
 
@@ -10,17 +11,17 @@ not a standalone minimal-stack closure of `a^(-1) = M_Pl`
 
 This note imports the primitive boundary/Wald carrier `c_cell = 1/4` and
 its identification `c_cell = 1/(4 G_lambda)` as load-bearing premises.
-The carrier itself is not derived in this note; it is imported from the
-conditional Planck packet's primitive-cell theorem chain:
+The carrier itself is not derived in this note. The event-cell trace is
+imported from its direct conditional authority:
 
-- [`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-  — conditional coefficient theorem inside supplied exact-support, CAR,
-  normal-channel, tangent-channel, and tangent-symbol axioms; it does not
-  derive that carrier from the primitive boundary block.
+- [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
+  — conditional source of `c_cell=Tr((I_16/16)P_A)=1/4`. It does not derive
+  the gravitational boundary/action identification from the four framework
+  axioms.
 - `AREA_LAW_COEFFICIENT_GAP_NOTE.md` (context recording only, backticked
   to avoid length-3 cycle — this note imports `c_cell = 1/4` from the
-  primitive-coframe carrier theorem and its boundary-density extension,
-  not from the coefficient-gap synthesis note; citation graph direction
+  primitive-coframe carrier theorem, not from the coefficient-gap synthesis
+  note; citation graph direction
   is *downstream synthesis → this support theorem*) — synthesises
   `c_cell = Tr((I_16/16) P_A) = 4/16 = 1/4` across the conditional Planck
   packet authority chain.

@@ -1,11 +1,8 @@
 # Lane 5 Planck `(C1)` Gate Audit: Metric-Compatible Clifford/CAR Coframe Response And Action-Unit Self-Consistency
 
 **Date:** 2026-04-26
-**Status:** support gate-identification note on `main`.
-**Claim type:** open_gate
-**Status authority:** independent audit lane only; effective status is
-pipeline-derived.
-**Claim scope:** identifies the residual active-block response,
+**Type:** open_gate
+**Scope:** identifies the residual active-block response,
 edge-channel-law, and action-unit self-consistency packet for the older `(C1)`
 scale route. This note does not
 derive or promote the scale route, does not treat the scale-reference
@@ -47,7 +44,7 @@ Current scale-reference boundary:
 
 - [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
   grants `a^{-1} = M_Pl` as a units conversion only. It is not a Planck
-  import, not a Tier-A admission, and not a bounded-status source.
+  import or a source of bounded theorem strength.
 - This note does not treat that primitive as a derived `a/l_P = 1`
   theorem. The remaining gate here is the dimensionless coframe/CAR
   response and action-unit self-consistency route.
@@ -82,7 +79,8 @@ update), the older conditional source packet says:
   `rank(P_A) = 4`) is the irreducible `Cl_4(C) ~= M_4(C)` module,
   equivalently two complex CAR modes. This supplies only the algebraic
   carrier premise. Target 2 additionally requires the normal and
-  self-dual-tangent channel axioms before obtaining
+  self-dual-tangent channel conditions, tangent symbol, and Widom
+  applicability/normalization before obtaining
   `c_Widom = 3/12 = 1/4 = c_cell`;
   conditionally, the wider packet also gives:
   - `G_Newton,lat = 1` and `a/l_P = 1` on the source-unit surface (Target 1
@@ -99,21 +97,23 @@ algebra does not supply.
 The residual premises on which the Planck-lane targets hinge are:
 
 > **A compatible Clifford/CAR response on the rank-four block
-> `P_A H_cell ⊆ H_cell`, a retained law assigning its two modes to the
+> `P_A H_cell ⊆ H_cell`, a supplied law assigning its two modes to the
 > physical normal and self-dual-tangent edge channels, and action-unit
 > metrology.**
 
 Equivalently: an **additional active-block response premise** fixing
 `P_A H_cell` to an irreducible `Cl_4(C) ~= M_4(C)` module rather than
-non-CAR rank-four semantics, followed by separate edge-channel axioms.
+non-CAR rank-four semantics, followed by separate edge-channel and Widom
+conditions.
 
 Per the 2026-04-25 area-law tightening note
 (`AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md`):
 
 > A supplied irreducible `Cl_4(C)` response on `C^4` is equivalent to
-> two-mode CAR. Rank four and the supplied event-cell substrate do not
-> derive that response, and CAR algebra does not assign the physical
-> normal/tangent edge channels.
+> two-mode CAR. Rank four and the specified exterior one-form event-cell
+> action do not derive that response, and CAR algebra does not assign the
+> physical normal/tangent edge channels. Other substrate actions and
+> intrinsic active-block laws remain open.
 
 And per the Target 3 boundary note
 (`PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md`):
@@ -125,11 +125,11 @@ And per the Target 3 boundary note
 
 So three related residual obligations remain:
 
-- (G1a) **Active-block response**: derive (or independently axiomatize) a
+- (G1a) **Active-block response**: derive or separately supply a
   compatible Clifford/CAR response on `P_A H_cell`.
-- (G1b) **Physical channel law**: derive (or independently axiomatize) the
+- (G1b) **Physical channel law**: derive or separately supply the
   normal and self-dual-tangent edge dispersions and their assignment to the
-  two modes.
+  two modes, together with the tangent symbol and Widom conditions.
 - (G2) **Action-unit metrology**: break the `(S, kappa)` rescaling
   degeneracy that the Hilbert-only stack leaves intact, pinning an
   absolute dimensional action quantum.
@@ -144,7 +144,7 @@ single premise.
 
 If future work derives the compatible Clifford/CAR response, physical
 edge-channel law, and action-unit self-consistency from the current framework
-baseline (with no added carrier axiom), the chain of consequences to audit
+baseline (with no added carrier conditions), the chain of consequences to audit
 would be:
 
 1. The conditional Clifford phase bridge moves from conditional support to
@@ -152,13 +152,14 @@ would be:
 2. Target 1 (gravity/action unit-map uniqueness): closed via standard
    area/action normalization on the carrier surface.
 3. Target 2 (horizon-entropy carrier with exact `1/4`): would close only after
-   deriving both the active-block response and the supplied channel axioms
+   deriving the active-block response, physical channel/tangent-symbol laws,
+   and the stated Widom applicability/normalization conditions
    used by the
    primitive parity-gate carrier theorem
    (`AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`)
    and primitive-CAR edge identification
    (`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`).
-4. Target 3 (one-axiom information/action bridge): closed via the
+4. Target 3 (historical information/action bridge): closed via the
    conditional Clifford phase bridge theorem.
 5. The `a/l_P = 1` self-consistency algebra becomes an audit-ready
    dimensionless closure candidate. The already registered
@@ -178,8 +179,8 @@ This is exactly the `(C1)` half of the Lane 5 closure-pathway corollary.
 
 The gate-resolving derivation must:
 
-- be a derivation from the current framework baseline plus the named
-  retained machinery it explicitly invokes (`Cl(3)` on `Z^3`, finite
+- be a derivation from the current framework baseline plus any separately
+  supplied model machinery it explicitly invokes (`Cl(3)` on `Z^3`, finite
   local Grassmann/staggered-Dirac dynamics, `g_bare = 1` plus accepted
   plaquette / `u_0` surface and minimal APBC hierarchy block);
 - force the metric-compatible Clifford coframe response on
@@ -199,7 +200,7 @@ The gate-resolving derivation must:
   - simple-fiber Widom entropy carrier
     (`AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md`:
     `c_Widom <= 1/6`, not `1/4`);
-  - multipocket selector-axiom approach
+  - multipocket selector-condition approach
     (`AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md`:
     requires an added pocket-measure or sector-weight selector);
   - primitive-edge-entropy direct relabeling
@@ -208,11 +209,11 @@ The gate-resolving derivation must:
     (`AREA_LAW_ALGEBRAIC_SPECTRUM_ENTROPY_NO_GO_NOTE_2026-04-25.md`:
     Baker's theorem rules out algebraic-spectrum entropies).
 
-Every shortcut to the gate has been closed. The gate-resolving
-derivation must come from a **structurally new framework feature** of
-the current framework stack itself — specifically, an argument that the
-local Clifford algebra `Cl(3)` plus the staggered-Dirac dynamics on `Z^3` already
-entail a Clifford-Majorana edge response on the rank-four boundary block.
+Every listed shortcut is blocked only in its stated class. The exact
+exterior-action obstruction does not exclude a changed substrate action,
+intrinsic `M_4(C)` active-block response, or additional physical response law.
+A positive route must therefore supply and justify such extra structure rather
+than promote the abstract Clifford/CAR algebra alone.
 
 ## 5. Symmetry with Cycle 4 `(C2)` gate
 
@@ -278,7 +279,7 @@ closure.
 - `AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`,
   `AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`
   — the conditional positive Target 2 coefficient packet under explicit
-  channel axioms.
+  channel and Widom conditions.
 - `PLANCK_FINITE_RESPONSE_NO_GO_NOTE_2026-04-24.md`,
   `PLANCK_PARENT_SOURCE_HIDDEN_CHARACTER_NO_GO_NOTE_2026-04-24.md`,
   `AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md`,
@@ -304,9 +305,10 @@ independent re-audit. It does not derive the metric-compatible
 Clifford/CAR coframe response, derive the scale-reference primitive,
 retain `R_Lambda` numerically, close `(C1)`, or apply an audit verdict.
 
-## Audit dependency repair links
+## Dependency links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This graph-bookkeeping section records the direct source links consumed by the
+gate inventory. It does not add premise weight to those sources.
 
 - [planck_scale_lane_status_note_2026-04-23](PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md)
 - [scale_reference_primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md)

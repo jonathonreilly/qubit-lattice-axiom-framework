@@ -4,10 +4,12 @@
 Authority note:
     docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md
 
-The stable historical path is retained, but this runner verifies only the
+The stable historical path is preserved, but this runner verifies only the
 conditional finite-algebra equivalence. It also executes hostile controls
-showing that rank four is not a CAR selector and that the natural full-cell
-odd Clifford action does not reduce to the Hamming-weight-one block.
+showing that rank four is not a CAR selector, that the specified exterior
+one-form spatial action has no equivariant spinor intertwiner, and that the
+natural full-cell odd Clifford action does not reduce to the
+Hamming-weight-one block.
 
 Exit code: 0 on full PASS, 1 on any FAIL.
 """
@@ -82,6 +84,27 @@ def complex_span_rank(matrices: list[np.ndarray], tol: float = 1.0e-10) -> int:
     return int(np.linalg.matrix_rank(columns, tol=tol))
 
 
+def deterministic_unitary(dim: int) -> np.ndarray:
+    rng = np.random.default_rng(5428)
+    raw = rng.normal(size=(dim, dim)) + 1j * rng.normal(size=(dim, dim))
+    q, r = np.linalg.qr(raw)
+    phases = np.diag(r)
+    return q @ np.diag(np.conj(phases / np.abs(phases)))
+
+
+def intertwiner_operator(
+    source: list[np.ndarray], target: list[np.ndarray]
+) -> np.ndarray:
+    dim = source[0].shape[0]
+    ident = np.eye(dim, dtype=complex)
+    return np.vstack(
+        [
+            np.kron(source_matrix.T, ident) - np.kron(ident, target_matrix)
+            for source_matrix, target_matrix in zip(source, target)
+        ]
+    )
+
+
 def main() -> int:
     print("=" * 78)
     print("AREA-LAW CONDITIONAL CLIFFORD-CAR ALGEBRAIC EQUIVALENCE")
@@ -89,7 +112,7 @@ def main() -> int:
     print()
     print("Question: what follows after an irreducible Cl_4(C) or two-mode")
     print("CAR response is supplied on C^4, and what does not follow from")
-    print("rank four or the natural full-cell substrate action?")
+    print("rank four or the specified exterior one-form action?")
     print()
 
     active_dim = 4
@@ -175,6 +198,45 @@ def main() -> int:
         f"max recovery error={recovery_error:.2e}",
     )
 
+    change_of_basis = deterministic_unitary(active_dim)
+    rotated_gammas = [
+        change_of_basis.conj().T @ gamma @ change_of_basis for gamma in gammas
+    ]
+    pauli_operator = intertwiner_operator(rotated_gammas, gammas)
+    _, singular_values, vh = np.linalg.svd(pauli_operator)
+    pauli_nullity = int(np.count_nonzero(singular_values < 1.0e-10))
+    raw_intertwiner = vh.conj().T[:, -1].reshape(
+        (active_dim, active_dim), order="F"
+    )
+    normalization = np.sqrt(
+        np.trace(raw_intertwiner.conj().T @ raw_intertwiner).real / active_dim
+    )
+    unitary_intertwiner = raw_intertwiner / normalization
+    unitary_error = np.linalg.norm(
+        unitary_intertwiner.conj().T @ unitary_intertwiner - ident
+    )
+    intertwining_error = max(
+        np.linalg.norm(
+            unitary_intertwiner @ source - target @ unitary_intertwiner
+        )
+        for source, target in zip(rotated_gammas, gammas)
+    )
+    check(
+        "an arbitrary irreducible Cl_4 presentation has one intertwiner line",
+        pauli_nullity == 1,
+        f"nullity={pauli_nullity}",
+    )
+    check(
+        "the normalized Pauli intertwiner is unitary",
+        unitary_error < 1.0e-11,
+        f"unitary error={unitary_error:.2e}",
+    )
+    check(
+        "the unitary intertwiner identifies the noncanonical representation",
+        intertwining_error < 1.0e-11,
+        f"max intertwining error={intertwining_error:.2e}",
+    )
+
     n0 = c0.conj().T @ c0
     n1 = c1.conj().T @ c1
     parity = (ident - 2.0 * n0) @ (ident - 2.0 * n1)
@@ -232,6 +294,60 @@ def main() -> int:
         "CAR and non-CAR operator semantics coexist on C^4",
     )
 
+    inv_sqrt_two = 1.0 / np.sqrt(2.0)
+    spin_one = [
+        np.array(
+            [
+                [0.0, inv_sqrt_two, 0.0],
+                [inv_sqrt_two, 0.0, inv_sqrt_two],
+                [0.0, inv_sqrt_two, 0.0],
+            ],
+            dtype=complex,
+        ),
+        np.array(
+            [
+                [0.0, -1j * inv_sqrt_two, 0.0],
+                [1j * inv_sqrt_two, 0.0, -1j * inv_sqrt_two],
+                [0.0, 1j * inv_sqrt_two, 0.0],
+            ],
+            dtype=complex,
+        ),
+        np.diag([1.0, 0.0, -1.0]).astype(complex),
+    ]
+    substrate_generators = []
+    for generator in spin_one:
+        lifted = np.zeros((4, 4), dtype=complex)
+        lifted[1:, 1:] = generator
+        substrate_generators.append(lifted)
+    spinor_generators = [np.kron(I2, sigma / 2.0) for sigma in (X, Y, Z)]
+    substrate_casimir = sum(
+        generator @ generator for generator in substrate_generators
+    )
+    spinor_casimir = sum(generator @ generator for generator in spinor_generators)
+    substrate_spectrum = np.sort(np.linalg.eigvalsh(substrate_casimir).real)
+    spinor_spectrum = np.sort(np.linalg.eigvalsh(spinor_casimir).real)
+    equivariance_operator = np.vstack(
+        [
+            np.kron(np.eye(4), spinor_generator)
+            - np.kron(substrate_generator.T, np.eye(4))
+            for spinor_generator, substrate_generator in zip(
+                spinor_generators, substrate_generators
+            )
+        ]
+    )
+    equivariance_rank = int(np.linalg.matrix_rank(equivariance_operator, tol=1e-10))
+    check(
+        "specified exterior P_A action has 0+2 Casimir while spinor has 3/4",
+        np.allclose(substrate_spectrum, [0.0, 2.0, 2.0, 2.0])
+        and np.allclose(spinor_spectrum, [0.75, 0.75, 0.75, 0.75]),
+        f"P_A={substrate_spectrum.tolist()}, spinor={spinor_spectrum.tolist()}",
+    )
+    check(
+        "specified 1+3 to 2+2 equivariant intertwiner space is zero",
+        equivariance_rank == 16,
+        f"rank={equivariance_rank}, nullity={16-equivariance_rank}",
+    )
+
     full_annihilators = [jw_annihilator(mode, 4) for mode in range(4)]
     full_gammas = [c + c.conj().T for c in full_annihilators]
     ident16 = np.eye(16, dtype=complex)
@@ -271,9 +387,10 @@ def main() -> int:
         NOTE.name,
     )
     check(
-        "source status forbids a substrate-native carrier claim",
-        "no substrate-native\ncarrier or coframe-response claim" in note,
-        "status firewall present",
+        "source scope forbids exterior-action descent laundering",
+        "no exterior-action descent,\nphysical carrier, or coframe-response claim"
+        in note,
+        "scope firewall present",
     )
     check(
         "source explicitly stops before the physical channel assignment",
@@ -282,7 +399,7 @@ def main() -> int:
         "algebra-to-physics implication denied",
     )
     check(
-        "source records the exact retained-surface obstruction",
+        "source records the exact supplied-action obstruction",
         "simultaneous equivariant intertwiner space has dimension zero" in note
         and "P_A gamma_i P_A = 0" in note,
         "intertwiner and compression controls cited",
@@ -312,8 +429,9 @@ def main() -> int:
     print()
     print("Verdict: CONDITIONAL ALGEBRAIC EQUIVALENCE ONLY.")
     print("A supplied irreducible Cl_4(C) response on C^4 is equivalent to")
-    print("two-mode CAR. Rank four and the natural full-cell substrate action")
-    print("do not derive that response, a physical channel assignment, or 1/4.")
+    print("two-mode CAR. Rank four and the specified exterior one-form action")
+    print("do not derive that response, a physical channel assignment, or 1/4;")
+    print("other substrate actions and intrinsic active-block laws remain open.")
     return 0
 
 

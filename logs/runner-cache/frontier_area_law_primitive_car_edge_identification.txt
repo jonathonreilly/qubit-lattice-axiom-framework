@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_primitive_car_edge_identification.py
-runner_sha256: 9a1de2cd1af8c329dcd7e59ca2ff75872e466d4f176b295d47ab0a00919be05e
+runner_sha256: 4981e419c9c644f3e51ff436b7439344c18308d6df8b2f308fea1915def68411
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
-AREA-LAW CONDITIONAL PRIMITIVE-CAR EDGE-AXIOM COEFFICIENT
+AREA-LAW CONDITIONAL RANK-FOUR CAR EDGE-CONDITION COEFFICIENT
 ==============================================================================
 
-Question: after support, CAR, normal-channel, tangent-channel, and
-tangent-symbol axioms are supplied, is c_Widom=1/4, and which
-steps remain unforced by the substrate or CAR algebra?
+Question: after support, CAR, channel, tangent-symbol, and Widom
+conditions are supplied, is c_Widom=1/4, and which steps remain
+unforced by the specified exterior action or CAR algebra?
 
 [PASS] primitive event cell has dimension 16: H_cell=(C^2)^(otimes 4)
 [PASS] supplied Hamming-weight-one support has rank four: rank(P_A)=4
@@ -51,23 +51,25 @@ steps remain unforced by the substrate or CAR algebra?
 [PASS] conditional Widom coefficient equals the separate primitive trace: 3/12=4/16
 [PASS] CAR algebra alone does not pin the active transverse fraction: same two-mode count admits different supplied selector fractions
 [PASS] enumerated-pattern result is not a global uniqueness theorem: continuous selector family lies outside the four named patterns
-[PASS] source title is narrowed to a conditional edge-axiom coefficient theorem: AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md
-[PASS] source status forbids substrate descent and channel forcing: status firewall present
+[PASS] source title is narrowed to a conditional edge-condition theorem: AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md
+[PASS] source scope forbids exterior-action descent and channel forcing: scope firewall present
 [PASS] source supplies rather than derives the physical edge channels: channel assumptions are explicit
 [PASS] source states that CAR does not select the dispersions: algebra-to-dispersion bridge denied
 [PASS] source limits uniqueness to the enumerated patterns and ansatz: uniqueness scope bounded
 [PASS] source exposes the exact remaining bridges: remaining-gap firewall present
 [PASS] superseded primitive-block forcing wording is absent: no substrate or uniqueness laundering
 [PASS] source records the analytic zero-set measure premise: measure argument stated
+[PASS] source labels Widom applicability and normalization as an imported condition: Widom provenance and normalization are explicit
 
 ==============================================================================
-SUMMARY: PASS=45  FAIL=0
+SUMMARY: PASS=46  FAIL=0
 ==============================================================================
 
-Verdict: CONDITIONAL INSIDE SUPPLIED PRIMITIVE-CAR EDGE AXIOMS.
+Verdict: CONDITIONAL INSIDE SUPPLIED RANK-FOUR CAR EDGE CONDITIONS.
 The supplied normal plus self-dual half-zone tangent carrier gives
 c_Widom=1/4. CAR alone does not select those dispersions, and the
-retained event-cell substrate does not derive the active Cl_4/CAR block.
+specified exterior one-form action does not derive the active Cl_4/CAR
+block; other substrate actions and intrinsic response laws remain open.
 
 ----- stderr -----
 

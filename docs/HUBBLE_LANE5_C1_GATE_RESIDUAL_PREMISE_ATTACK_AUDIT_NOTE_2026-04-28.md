@@ -20,11 +20,11 @@ attack frame, see the per-claim notes referenced from the
 Branch-local **attack-audit** note on
 `frontier/hubble-c1-absolute-scale-gate-20260428`. Cycle 1 of the
 (C1) gate loop. Builds on the 2026-04-26 `(C1)` gate audit which
-isolated a coupled residual packet: (G1a) compatible active-block
-Clifford/CAR response on `P_A H_cell`, (G1b) physical normal/tangent
-edge-channel law, and (G2) action-unit metrology. This audit enumerates
-surviving research-level attack candidates on that packet on the current
-`A_min` framework surface and identifies
+isolated the single residual premise (metric-compatible primitive
+Clifford/CAR coframe response on `P_A H_cell`, decomposing as
+coupled (G1 edge-statistics principle + G2 action-unit metrology)).
+This audit enumerates surviving research-level attack candidates
+on (G1+G2) on the current `A_min` framework surface and identifies
 which would be single-cycle attemptable vs. research-level distant.
 
 **Lane:** 5 — Hubble constant `H_0` derivation

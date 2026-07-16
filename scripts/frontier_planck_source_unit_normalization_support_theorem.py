@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Audit the Planck source-unit normalization support theorem."""
+"""Verify the conditional Planck source-unit normalization algebra."""
 
 from __future__ import annotations
 
 from dataclasses import dataclass
 import math
 import sys
+from pathlib import Path
 
 
 TOL = 1e-14
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md"
 
 
 @dataclass(frozen=True)
@@ -38,7 +41,7 @@ def main() -> int:
 
     record(
         checks,
-        "retained Green-kernel coefficient is 1/(4*pi)",
+        "baseline Green-kernel coefficient is 1/(4*pi)",
         close(g_kernel, 1.0 / (4.0 * math.pi)),
         f"G_kernel={g_kernel:.15f}",
     )
@@ -81,7 +84,7 @@ def main() -> int:
     ]
     record(
         checks,
-        "primitive area carrier uniquely fixes lambda=1",
+        "supplied c_cell and Wald relation conditionally fix lambda=1",
         close(lambda_selected, 1.0) and lambda_matches == [1],
         "trial area coefficients="
         + ", ".join(f"{value:.12f}" for value in trial_area_coeffs),
@@ -187,7 +190,7 @@ def main() -> int:
     l_planck_over_a = math.sqrt(g_phys_over_a2)
     record(
         checks,
-        "physical unit map closes a/l_P=1",
+        "conditional physical unit map yields a/l_P=1",
         close(g_phys_over_a2, 1.0) and close(l_planck_over_a, 1.0),
         "G_phys=a^2*G_Newton,lat=a^2, so l_P=a",
     )
@@ -206,18 +209,35 @@ def main() -> int:
         "inputs are G_kernel=1/(4*pi), c_cell=4/16, lambda=4*c_cell",
     )
 
+    note = NOTE.read_text(encoding="utf-8")
+    record(
+        checks,
+        "source imports c_cell from the direct coframe authority",
+        "PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`]("
+        in note
+        and "AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md"
+        not in note,
+        "no CAR-to-gravitational-carrier dependency",
+    )
+    record(
+        checks,
+        "source keeps the Wald/gravitational carrier identification explicit",
+        "carrier-side identification `c_cell = 1/(4 G_lambda)`" in note
+        and "is not\nderived from physical `Cl(3)`" in note,
+        "conditional gravitational bridge",
+    )
+
     print()
     passed = sum(1 for check in checks if check.passed)
     total = len(checks)
     print(f"Summary: {passed}/{total} checks passed.")
     if passed == total:
         print(
-            "Verdict: positive support-theorem closure on the stated carrier "
-            "premise. The Target 3 Clifford bridge supplies a sufficient "
-            "coframe-response route for that premise. The retained 1/(4*pi) is the bare "
-            "Green-kernel coefficient; the physical source scale is fixed by "
-            "c_cell=lambda/4, hence lambda=1 and q_bare=4*pi*M_phys. Therefore "
-            "G_Newton,lat=1, c_cell=1/(4G), EH=c_cell/(4*pi), and a/l_P=1."
+            "Verdict: conditional source-unit algebra on the explicitly supplied "
+            "c_cell and Wald/Gauss carrier premises. Clifford/CAR does not supply "
+            "those physical identifications. Given them, c_cell=lambda/4 fixes "
+            "lambda=1 and q_bare=4*pi*M_phys, so G_Newton,lat=1, "
+            "c_cell=1/(4G), EH=c_cell/(4*pi), and a/l_P=1."
         )
         return 0
 

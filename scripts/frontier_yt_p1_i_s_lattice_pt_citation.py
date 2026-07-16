@@ -11,16 +11,16 @@ Cl(3)/Z^3 action. It verifies:
 
   1. retained color tensor C_F = 4/3 from the prior P1 color-factor
      retention note (SU(3) Casimir D7 + S1);
-  2. retained canonical-surface constants alpha_LM = 0.0907,
+  2. conditional canonical-surface arithmetic alpha_LM = 0.0907,
      alpha_LM / (4 pi) = 0.00721 from `canonical_plaquette_surface.py`;
-  3. exact reproduction of the packaged delta_PT = alpha_LM * C_F / (2 pi)
-     = 1.92% under the implicit standard-fundamental assumption I_S = 2;
+  3. exact reproduction of the historical conditional arithmetic
+     delta_PT = alpha_LM * C_F / (2 pi) = 1.92% when I_S = 2 is supplied;
   4. supplied comparison bracket I_S in [4, 10] with central I_S ~ 6 for
      the tadpole-improved Wilson-plaquette + 1-link staggered scalar
      density at beta ~ 6 (Sharpe 1994; Bhattacharya-Sharpe 1998;
      Bhattacharya-Gupta-Kilcup-Sharpe 1999; Kilcup-Sharpe 1987;
      Ishizuka-Shizawa 1994);
-  5. framework-specific P1 contribution at alpha_LM = 0.0907 under the
+  5. conditional P1 arithmetic at alpha_LM = 0.0907 under the
      supplied bracket:
         P1 = (alpha_LM / (4 pi)) * C_F * I_S
         I_S = 4   -> P1 = 3.85%
@@ -36,12 +36,13 @@ Cl(3)/Z^3 action. It verifies:
 
 Authority
 ---------
-Retained foundations (not modified by this runner):
+Structural foundations and conditional arithmetic sources:
   - docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md (C_F/C_A/T_F n_f)
   - docs/YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md
   - scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py (I_1 = I_S reduction)
   - docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md (Z_V^conserved = 1)
-  - docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md (packaged 1.92%)
+  - docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md
+    (unaudited conditional alpha_LM arithmetic only)
   - scripts/canonical_plaquette_surface.py
 
 Master obstruction theorem (NOT modified by this runner):
@@ -73,7 +74,7 @@ import sys
 from pathlib import Path
 from typing import Dict, Tuple
 
-# Retained canonical-surface constants (not modified here).
+# Conditional canonical-surface arithmetic (not promoted here).
 from canonical_plaquette_surface import (
     CANONICAL_ALPHA_BARE,
     CANONICAL_ALPHA_LM,
@@ -90,6 +91,18 @@ PASS_COUNT = 0
 FAIL_COUNT = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md"
+STALE_BRIDGE_MARKERS = (
+    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+    "uv_gauge_to_yukawa_bridge)",
+)
+RETAINED_ALPHA_AUTHORITY_MARKERS = (
+    "retained canonical coupling",
+    "retained canonical-surface coupling",
+    "retained canonical-surface anchor",
+    "retained coupling `α_lm`",
+    "retained `α_lm`",
+    "retained alpha_lm",
+)
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -116,6 +129,7 @@ def part_0_status_boundary() -> None:
     print("=" * 72)
 
     note = read_note()
+    note_compact = " ".join(note.split())
     check("source note exists", NOTE_PATH.exists(), str(NOTE_PATH.relative_to(ROOT)))
     check("claim type is bounded_theorem", "**Claim type:** bounded_theorem" in note)
     check(
@@ -125,8 +139,27 @@ def part_0_status_boundary() -> None:
     check("conditional citation/support boundary is present", "conditional citation/support layer" in note)
     check("conditional arithmetic lemma boundary is present", "conditional arithmetic lemma" in note)
     check(
+        "canonical alpha source is explicitly unaudited conditional arithmetic",
+        "That certificate is unaudited on current `main`" in note_compact
+        and "not retained authority for the physical/canonical input" in note_compact,
+    )
+    note_lower = note_compact.lower()
+    check(
+        "source note contains no stale UV bridge attribution",
+        not any(marker in note_lower for marker in STALE_BRIDGE_MARKERS),
+    )
+    check(
+        "source note contains no retained-alpha authority wording",
+        not any(
+            marker in note_lower
+            for marker in RETAINED_ALPHA_AUTHORITY_MARKERS
+        ),
+    )
+    check(
         "bracket is not asserted audit-closed",
-        "not assert that the bracket is framework-native or audit-closed" in note,
+        "no audit should treat the" in note
+        and "bracket as retained unless the bracket itself is separately accepted" in note
+        and "external bracket as a retained framework-native value" in note,
     )
     check("old proposed_retained status is absent", "proposed_retained" not in note)
     check("PR-local source proposal marker is absent", "source-note proposal only" not in note)
@@ -150,10 +183,10 @@ ALPHA_LM = CANONICAL_ALPHA_LM
 ALPHA_LM_OVER_4PI = ALPHA_LM / (4.0 * PI)
 ALPHA_LM_OVER_2PI = ALPHA_LM / (2.0 * PI)
 
-# Packaged P1 nominal (from UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md).
+# Historical conditional I_S = 2 arithmetic; no bridge authority is used.
 DELTA_PT_PACKAGED = ALPHA_LM * C_F / (2.0 * PI)
 
-# Standard-fundamental-Yukawa value of I_S in the (alpha/(4 pi)) convention.
+# Historical I_S=2 arithmetic convention.
 # The packaged delta_PT = alpha_LM * C_F / (2 pi)
 #                       = (alpha_LM / (4 pi)) * C_F * I_S
 # implies I_S_standard = 2 exactly.
@@ -181,7 +214,7 @@ I_S_UNIMPROVED_HIGH = 20.0
 # ---------------------------------------------------------------------------
 
 def p1_contribution(i_s: float) -> float:
-    """Framework-specific P1 contribution in the alpha/(4 pi) convention:
+    """Conditional P1 arithmetic in the alpha/(4 pi) convention:
 
         P1 = (alpha_LM / (4 pi)) * C_F * I_S
     """
@@ -226,12 +259,12 @@ def part_a_retained_color_tensor() -> None:
 
 
 # ---------------------------------------------------------------------------
-# PART B: Retained canonical-surface constants
+# PART B: Conditional canonical-surface arithmetic
 # ---------------------------------------------------------------------------
 
 def part_b_canonical_surface() -> None:
     print("\n" + "=" * 72)
-    print("PART B: Retained canonical-surface constants")
+    print("PART B: Conditional canonical-surface arithmetic")
     print("=" * 72)
 
     print(f"\n  <P>                         = {CANONICAL_PLAQUETTE:.6f}")
@@ -242,7 +275,7 @@ def part_b_canonical_surface() -> None:
     print(f"  alpha_LM / (2 pi)           = {ALPHA_LM_OVER_2PI:.10f}")
 
     check(
-        "alpha_LM matches canonical-surface retention",
+        "alpha_LM arithmetic matches alpha_bare/u_0",
         abs(ALPHA_LM - ALPHA_BARE / U_0) < 1e-12,
         f"alpha_LM = {ALPHA_LM:.10f}",
     )
@@ -257,7 +290,7 @@ def part_b_canonical_surface() -> None:
         f"alpha_LM/(4 pi) = {ALPHA_LM_OVER_4PI:.10f}",
     )
     check(
-        "<P> = 0.5934 and u_0 = <P>^(1/4) ~ 0.8777 retained",
+        "<P> = 0.5934 and u_0 = <P>^(1/4) ~ 0.8777 arithmetic",
         abs(CANONICAL_PLAQUETTE - 0.5934) < 1e-6
         and abs(U_0 - 0.87768138) < 1e-6,
         f"<P>={CANONICAL_PLAQUETTE:.4f}, u_0={U_0:.6f}",
@@ -265,12 +298,12 @@ def part_b_canonical_surface() -> None:
 
 
 # ---------------------------------------------------------------------------
-# PART C: Packaged delta_PT = 1.92% under standard-fundamental I_S = 2
+# PART C: Packaged delta_PT = 1.92% under historical I_S = 2
 # ---------------------------------------------------------------------------
 
 def part_c_packaged_delta_pt() -> None:
     print("\n" + "=" * 72)
-    print("PART C: Packaged delta_PT under standard-fundamental I_S = 2")
+    print("PART C: Packaged delta_PT under historical I_S = 2")
     print("=" * 72)
 
     # delta_PT = (alpha_LM / (4 pi)) * C_F * I_S_standard
@@ -279,7 +312,7 @@ def part_c_packaged_delta_pt() -> None:
     delta_pt_2pi = ALPHA_LM_OVER_2PI * C_F
 
     print(
-        f"\n  I_S_standard (standard fundamental)      = {I_S_STANDARD:.1f}"
+        f"\n  I_S_historical arithmetic convention     = {I_S_STANDARD:.1f}"
     )
     print(
         f"  delta_PT (alpha/(4 pi) convention)        = "
@@ -352,12 +385,12 @@ def part_d_cited_range() -> None:
         f"{arithmetic_mid:.2f}, low = {I_S_CITED_LOW}",
     )
     check(
-        "Central estimate is strictly above the standard-fundamental value 2",
+        "Supplied central value is arithmetically above historical I_S=2",
         I_S_CITED_CENTRAL > I_S_STANDARD,
         f"central = {I_S_CITED_CENTRAL} > standard = {I_S_STANDARD}",
     )
     check(
-        "Supplied bracket sits materially ABOVE the standard-fundamental I_S = 2",
+        "Supplied bracket is arithmetically above historical I_S = 2",
         I_S_CITED_LOW >= 2.0 * 2.0,
         f"I_S_CITED_LOW = {I_S_CITED_LOW} vs 2 * I_S_standard = 4.0",
     )
@@ -375,12 +408,12 @@ def part_d_cited_range() -> None:
 
 
 # ---------------------------------------------------------------------------
-# PART E: Framework-specific P1 contribution at alpha_LM = 0.0907
+# PART E: Conditional P1 arithmetic at alpha_LM = 0.0907
 # ---------------------------------------------------------------------------
 
 def part_e_framework_p1() -> Dict[str, float]:
     print("\n" + "=" * 72)
-    print("PART E: Framework-specific P1 contribution at alpha_LM = 0.0907")
+    print("PART E: Conditional P1 arithmetic at alpha_LM = 0.0907")
     print("=" * 72)
 
     values: Dict[str, float] = {}
@@ -490,12 +523,12 @@ def part_f_revision_factor(p1_values: Dict[str, float]) -> None:
         f"P1 ratio = {ratio_high:.10f}",
     )
     check(
-        "Central revision factor is approximately 3.0x (upward)",
+        "Conditional central arithmetic factor is approximately 3.0x",
         abs(ratio_central - 3.0) < 0.01,
         f"central ratio = {ratio_central:.4f}x",
     )
     check(
-        "Revision is monotone upward: all three P1 values > packaged 1.92%",
+        "Conditional mapped values are all above historical 1.92% arithmetic",
         p1_values["low"] > DELTA_PT_PACKAGED
         and p1_values["central"] > DELTA_PT_PACKAGED
         and p1_values["high"] > DELTA_PT_PACKAGED,
@@ -589,7 +622,7 @@ def main() -> int:
     print("\nSupplied I_S value (central conditional estimate):")
     print(f"  I_S  =  {I_S_CITED_CENTRAL:.2f}   (range [{I_S_CITED_LOW}, "
           f"{I_S_CITED_HIGH}], alpha/(4 pi) convention)")
-    print("\nFramework-specific P1 contribution at alpha_LM = 0.0907:")
+    print("\nConditional P1 arithmetic at alpha_LM = 0.0907:")
     print(f"  P1_central  =  "
           f"{p1_values['central'] * 100:.3f} %   (central estimate)")
     print(f"  P1 range    =  "
@@ -597,7 +630,7 @@ def main() -> int:
           f"{p1_values['high'] * 100:.3f}%]")
     print("\nComparison to packaged delta_PT = 1.92%:")
     print(f"  packaged    =  {DELTA_PT_PACKAGED * 100:.4f} %  "
-          f"(I_S_standard = 2 implicit)")
+          f"(historical I_S = 2 convention)")
     print(f"  revision    =  "
           f"{p1_values['central'] / DELTA_PT_PACKAGED:.2f}x upward "
           f"under central supplied I_S")

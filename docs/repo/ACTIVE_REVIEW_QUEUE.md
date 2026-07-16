@@ -27,16 +27,6 @@ them.
 
 Current science/open-lane follow-ups:
 
-- `2026-07-16-uv-gauge-yukawa-direct-consumer-scope-drift`
-  Scope: the seven unaudited direct consumers of
-  `UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`.
-  Finding: several consumers still cite that bridge for retired
-  governing-expansion selection, canonical-surface `alpha_LM`, or historical
-  `delta_PT`/NLO prose that the bridge no longer contains. PR #5414 does not
-  change the public `C_strong = 1/N_c^2` convention, so synchronized claim-note
-  hash churn is not justified in that narrow projector repair; the stale
-  citations remain unaudited and must not inherit authority from it.
-  Disposition: `fix on main`.
 - `2026-07-16-su3-wigner-downstream-status-prose-drift`
   Scope:
   `SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md`
@@ -227,6 +217,16 @@ Record each new finding as one bullet:
   optional link to a longer packet in work history
 
 ## Queue History
+
+- `2026-07-16-uv-gauge-yukawa-direct-consumer-scope-drift`
+  Repaired all seven unaudited direct consumers. The UV radius note now
+  consumes only the exact `C_pert = 1/(2 N_c)` versus public
+  `C_strong = 1/N_c^2` comparison and leaves expansion selection/convergence
+  open. The six YT consumers no longer use the bridge for canonical
+  `alpha_LM`, historical `delta_PT`/NLO, source-action, or plaquette authority;
+  conditional canonical arithmetic is linked to its currently unaudited bounded
+  source, and unsupported selector/transport inputs are explicit open
+  conditions. Changed source rows remain subject to independent re-audit.
 
 - `2026-06-12-pr3511-theta-retirement-gate`
   PR #3511 preserved a review of the former admission-era theta treatment.

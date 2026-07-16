@@ -8,14 +8,14 @@ STRUCTURAL RETENTION of a framework-native geometric upper bound on
 the residual loop-expansion tail of the integrated SM-RGE transport
 factor F_yt from M_Pl to v, and hence on the v-matching coefficient
 M = sqrt(u_0) * F_yt * sqrt(8/9) of the P2 obstruction residual, at
-the retained canonical-surface anchor alpha_LM = 0.0907 and retained
+the conditionally supplied arithmetic anchor alpha_LM = 0.0907 and retained
 SM light-flavor count n_l = 5. The runner does NOT derive any
 individual 3-loop or higher integrated F_yt value. It verifies:
 
   1. the retained SU(3) Casimirs (C_F = 4/3, T_F = 1/2, C_A = 3), the
      retained SM light-flavor count n_l = 5 on M_Pl -> v, and the
      retained derived quantity b_0 = (11 C_A - 4 T_F n_l) / 3 = 23/3;
-  2. the retained canonical coupling alpha_LM = 0.09066784 and
+  2. the conditionally supplied arithmetic alpha_LM = 0.09066784 and
      (alpha_LM / pi) = 0.02886;
   3. the retained integrated-M values from the v-matching note and
      primary chain: M^{0} = sqrt(u_0) * sqrt(8/9) = 0.8831, M^{1} =
@@ -41,7 +41,7 @@ individual 3-loop or higher integrated F_yt value. It verifies:
  14. retention-tightening table at truncation N = 2, 3, 4;
  15. candidate envelope comparison (retained quantities only);
  16. structural retention provenance: bound derived from retained
-     SU(3) Casimirs, retained n_l = 5, retained alpha_LM, and the
+     SU(3) Casimirs, retained n_l = 5, conditionally supplied alpha_LM, and the
      retained two-loop primary-chain M values only. No literature
      value of the 3-loop or higher SM RGE integrated contribution
      enters as a derivation input.
@@ -55,8 +55,8 @@ v-matching decomposition retained from
   - docs/YT_P2_V_MATCHING_THEOREM_NOTE_2026-04-17.md
 Taste-staircase transport retained from
   - docs/YT_P2_TASTE_STAIRCASE_TRANSPORT_NOTE_2026-04-17.md
-Canonical-surface alpha_LM retained from
-  - docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md
+Conditional alpha_LM arithmetic recorded by
+  - docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md
   - scripts/canonical_plaquette_surface.py
 Prior 3% QFP envelope (the loose bound this note tightens):
   - docs/YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md
@@ -80,6 +80,7 @@ Self-contained: sympy + stdlib only.
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 from typing import Tuple
 
 import sympy as sp
@@ -91,6 +92,20 @@ import sympy as sp
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "YT_P2_F_YT_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md"
+STALE_BRIDGE_MARKERS = (
+    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+    "uv_gauge_to_yukawa_bridge)",
+)
+RETAINED_ALPHA_AUTHORITY_MARKERS = (
+    "retained canonical coupling",
+    "retained canonical-surface coupling",
+    "retained canonical-surface anchor",
+    "retained coupling `α_lm`",
+    "retained `α_lm`",
+    "retained alpha_lm",
+)
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -132,7 +147,7 @@ B_0 = (11 * C_A - 4 * T_F * N_L) / 3
 assert B_0 == sp.Rational(23, 3), f"b_0 mismatch: {B_0}"
 
 # ---------------------------------------------------------------------------
-# Retained canonical-surface coupling
+# Conditional canonical-surface arithmetic
 # ---------------------------------------------------------------------------
 # alpha_LM = alpha_bare / u_0 = 0.09066784 from the tadpole-improved
 # canonical surface (<P> = 0.5934, u_0 = <P>^(1/4) = 0.87768138,
@@ -143,7 +158,7 @@ ALPHA_OVER_PI = ALPHA_LM / sp.pi
 # ---------------------------------------------------------------------------
 # Retained structural constants from the v-matching note
 # ---------------------------------------------------------------------------
-# u_0 = <P>^{1/4} = 0.87768138 (retained canonical surface).
+# u_0 = <P>^{1/4} = 0.87768138 (conditional canonical arithmetic).
 # sqrt(u_0) = 0.93685 (CMT endpoint ratio).
 # sqrt(8/9) = 0.94281 (color-projection factor on y_t).
 U_0 = sp.Float("0.87768138", 15)
@@ -183,7 +198,7 @@ def part_a_retained_inputs() -> None:
     """
     Verify the retained SU(3) Casimirs, the retained SM light-flavor
     count n_l = 5, the retained one-loop QCD beta-function coefficient
-    b_0 = 23/3, and the retained canonical coupling alpha_LM.
+    b_0 = 23/3, and the conditionally supplied alpha_LM arithmetic.
     """
     print("\n" + "=" * 72)
     print("PART A: Retained SU(3) Casimirs + retained n_l + retained b_0")
@@ -227,12 +242,12 @@ def part_a_retained_inputs() -> None:
         f"b_0 = {B_0}",
     )
     check(
-        "Retained alpha_LM = 0.09066784 to eight-decimal precision",
+        "Conditional alpha_LM arithmetic = 0.09066784",
         abs(float(ALPHA_LM) - 0.09066784) < 1e-8,
         f"alpha_LM = {float(ALPHA_LM)}",
     )
     check(
-        "Retained alpha_LM / pi = 0.02886 +- 0.00001",
+        "Conditional alpha_LM / pi arithmetic = 0.02886 +- 0.00001",
         abs(float(ALPHA_OVER_PI) - 0.02886047) < 1e-5,
         f"alpha_LM/pi = {float(ALPHA_OVER_PI):.8f}",
     )
@@ -450,7 +465,7 @@ def part_d_framework_native_bound(r_obs: float) -> float:
         f"r_M = {r_M:.4f} < (a_LM/pi)*C_A^2 = {float(ALPHA_OVER_PI * C_A ** 2):.4f}",
     )
     check(
-        "r_M derived from retained SU(3) Casimirs + retained n_l + retained alpha_LM only",
+        "r_M derived from retained SU(3) Casimirs + retained n_l + conditional alpha_LM",
         True,  # structural assertion
         "structural retention provenance verified",
     )
@@ -718,7 +733,7 @@ def part_i_provenance() -> None:
     """
     Final structural check: the bound uses only retained framework
     quantities (SU(3) Casimirs C_F, C_A, T_F; retained SM n_l = 5;
-    retained canonical alpha_LM; retained primary-chain M^{1}, M^{2}).
+    conditionally supplied alpha_LM; retained primary-chain M^{1}, M^{2}).
     No literature value of the 3-loop or higher integrated SM RGE
     correction to F_yt enters as a derivation input.
     """
@@ -730,7 +745,7 @@ def part_i_provenance() -> None:
     print("    - SU(3) Casimirs C_F, T_F, C_A    (from YT_EW_COLOR_PROJECTION_THEOREM.md D7)")
     print("    - retained n_l = 5 on M_Pl -> v   (from SM branch of complete-prediction-chain)")
     print("    - derived b_0 = 23/3              (exact rational at SU(3), n_l=5)")
-    print("    - alpha_LM = 0.09066784           (from canonical_plaquette_surface.py via UV bridge note)")
+    print("    - alpha_LM = 0.09066784           (from bounded canonical arithmetic certificate)")
     print("    - retained M^{1} = 1.926         (from v-matching note Eq. 3.2)")
     print("    - retained M^{2} = 1.9730         (from primary chain, 2-loop SM RGE)")
     print("    - retained M_obs = 1.9734         (taste-staircase target)")
@@ -739,7 +754,7 @@ def part_i_provenance() -> None:
     print("    - any literature value of the 3-loop or higher integrated F_yt correction")
     print("    - any non-retained empirical parameter")
     print("    - any external numerical input beyond the SU(3) Casimir algebra,")
-    print("      the retained SM light-flavor count, the retained alpha_LM, and")
+    print("      the retained SM light-flavor count, conditional alpha_LM arithmetic, and")
     print("      the retained primary-chain M values.")
     print("\n  Structural assumption (retention surface):")
     print("    - geometric decay |delta_M_{n+1}| <= r_M * |delta_M_n| for all n >= 2")
@@ -753,9 +768,33 @@ def part_i_provenance() -> None:
         "b_0 = 23/3 verified",
     )
     check(
-        "Bound input alpha_LM retained from canonical plaquette surface",
+        "Bound input alpha_LM matches the conditionally supplied arithmetic",
         abs(float(ALPHA_LM) - 0.09066784) < 1e-8,
         f"alpha_LM = {float(ALPHA_LM)}",
+    )
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_lower = " ".join(note_text.lower().split())
+    check(
+        "Source note links the unaudited conditional alpha arithmetic source",
+        "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
+        in note_text,
+    )
+    note_compact = " ".join(note_text.split())
+    check(
+        "Source note marks the alpha source unaudited and non-retained",
+        "itself unaudited on current `main`" in note_compact
+        and "does not retain the physical/canonical input" in note_compact,
+    )
+    check(
+        "Source note contains no stale UV bridge attribution",
+        not any(marker in note_lower for marker in STALE_BRIDGE_MARKERS),
+    )
+    check(
+        "Source note contains no retained-alpha authority wording",
+        not any(
+            marker in note_lower
+            for marker in RETAINED_ALPHA_AUTHORITY_MARKERS
+        ),
     )
     check(
         "Retained structural prefactor sqrt(u_0) * sqrt(8/9) from v-matching note",
@@ -770,7 +809,7 @@ def part_i_provenance() -> None:
     check(
         "Prior P2 notes (taste-staircase + v-matching) are the sole upstream sources",
         True,  # structural assertion
-        "retention lineage: taste-staircase + v-matching decomp + canonical alpha_LM",
+        "lineage: taste-staircase + v-matching decomp + conditional alpha arithmetic",
     )
 
 
@@ -817,8 +856,8 @@ def main() -> int:
     print(f"  Packaged P2 budget                                 = 0.50%")
     print(f"  Retained / packaged                                = {frac_m_t/0.005:.2f}x")
     print(f"")
-    print(f"(Bound depends only on retained SU(3) Casimirs, retained n_l = 5,")
-    print(f" retained alpha_LM, and retained primary-chain M^(1), M^(2) values;")
+    print(f"(Bound depends on retained SU(3) Casimirs, retained n_l = 5,")
+    print(f" conditional alpha_LM arithmetic, and retained primary-chain M^(1), M^(2) values;")
     print(f" no literature 3-loop or higher integrated F_yt correction imported.)")
 
     return 0 if FAIL_COUNT == 0 else 1

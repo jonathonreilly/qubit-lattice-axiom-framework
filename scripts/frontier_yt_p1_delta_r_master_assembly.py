@@ -23,7 +23,7 @@ staggered-Dirac surface, with per-channel retained centrals
 This runner verifies:
 
   (i)   retention of all structural inputs (SU(3) Casimirs, n_f, canonical
-        surface constants, per-channel formulae from the parent theorems);
+        surface arithmetic, per-channel formulae from the parent theorems);
   (ii)  per-channel contributions to Delta_R at central:
           C_F * Delta_1 * alpha/(4pi)     ~= +1.924 %
           C_A * Delta_2 * alpha/(4pi)     ~= -7.215 %
@@ -32,8 +32,8 @@ This runner verifies:
   (iv)  sign: NEGATIVE at central; consistent with MSbar y_t/g_s running;
   (v)   uncertainty propagation: uncorrelated worst-case envelope and
         covariance-reduced band;
-  (vi)  reinterpretation of packaged 1.92 % and cited 5.77 % as
-        single-channel (C_F only) approximations;
+  (vi)  conditional arithmetic comparison with historical 1.92 % and
+        supplied-I_S 5.77 % single-channel maps;
   (vii) operational P1 = 3.27 % with ~30 % citation band;
   (viii) m_t(pole) retained lane budget: 172.57 GeV +/- 5.7 GeV; consistent
          with observed m_t(PDG) = 172.69 GeV;
@@ -51,7 +51,7 @@ Retained foundations used by this runner (not modified here):
     (Delta_2 central = -10/3, range [-5, 0])
   - docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md
     (Delta_3 central = (4/3) * 0.7, range [+0.667, +2.000])
-  - scripts/canonical_plaquette_surface.py
+  - scripts/canonical_plaquette_surface.py (conditional canonical arithmetic)
 
 Authority note (this runner):
   docs/YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md
@@ -63,6 +63,7 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 from typing import List, Tuple
 
 from canonical_plaquette_surface import (
@@ -79,6 +80,20 @@ from canonical_plaquette_surface import (
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md"
+STALE_BRIDGE_MARKERS = (
+    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+    "uv_gauge_to_yukawa_bridge)",
+)
+RETAINED_ALPHA_AUTHORITY_MARKERS = (
+    "retained canonical coupling",
+    "retained canonical-surface coupling",
+    "retained canonical-surface anchor",
+    "retained coupling `α_lm`",
+    "retained `α_lm`",
+    "retained alpha_lm",
+)
 
 
 def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
@@ -96,7 +111,7 @@ def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
 
 
 # ---------------------------------------------------------------------------
-# Retained constants (framework-native, from upstream theorems)
+# Retained structural constants plus conditional canonical arithmetic
 # ---------------------------------------------------------------------------
 
 PI = math.pi
@@ -111,11 +126,12 @@ U_0 = CANONICAL_U0
 ALPHA_LM = CANONICAL_ALPHA_LM
 ALPHA_LM_OVER_4PI = ALPHA_LM / (4.0 * PI)
 
-# Packaged PT delta (from UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)
-# delta_PT = alpha_LM * C_F / (2 pi) = (alpha_LM/(4pi)) * C_F * 2
+# Historical packaged comparator, conditional on I_S = 2:
+# delta_PT = alpha_LM * C_F / (2 pi) = (alpha_LM/(4pi)) * C_F * 2.
+# No source-action or continuum-vertex authority is assigned here.
 PACKAGED_DELTA_PT = ALPHA_LM_OVER_4PI * C_F * 2.0
 
-# Cited I_S-based C_F-channel single-channel central (5.77 %)
+# Supplied I_S-based C_F-channel conditional arithmetic map (5.77 %)
 # = (alpha_LM/(4pi)) * C_F * I_S with I_S ~ 6
 CITED_IS_CF_SINGLE_CHANNEL = ALPHA_LM_OVER_4PI * C_F * 6.0
 
@@ -257,7 +273,7 @@ def main() -> int:
     c_TFnf_central = contrib_TFnf(DELTA_3_CENTRAL)
 
     check(
-        "C_F channel contribution ~ +1.924 % (packaged delta_PT recovered)",
+        "Supplied Delta_1 = 2 C_F channel contribution ~ +1.924 %",
         abs(c_CF_central - 0.01924) < 1e-4,
         f"C_F * Delta_1 * alpha/(4pi) = {c_CF_central * 100:+.4f} %",
     )
@@ -408,59 +424,59 @@ def main() -> int:
     print()
 
     # -----------------------------------------------------------------------
-    # Block 7: Reinterpretation of packaged 1.92 % (C_F single channel)
+    # Block 7: Historical 1.92 % conditional arithmetic comparison
     # -----------------------------------------------------------------------
-    print("Block 7: Reinterpretation of packaged 1.92 % as single-channel approximation.")
+    print("Block 7: Historical 1.92 % conditional arithmetic comparison.")
 
     check(
-        "Packaged delta_PT = alpha_LM * C_F / (2 pi) ~ 1.924 %",
+        "Historical delta_PT conditional arithmetic = alpha_LM * C_F / (2 pi) ~ 1.924 %",
         abs(PACKAGED_DELTA_PT - 0.01924) < 1e-4,
         f"packaged = {PACKAGED_DELTA_PT * 100:+.4f} %",
     )
     check(
-        "Packaged 1.92 % equals C_F channel at Delta_1 = 2 (recovery check)",
+        "Historical 1.92 % arithmetic equals C_F channel only when Delta_1 = 2 is supplied separately",
         abs(PACKAGED_DELTA_PT - c_CF_central) < 1e-12,
         f"packaged = {PACKAGED_DELTA_PT * 100:.4f} %, C_F channel = {c_CF_central * 100:.4f} %",
     )
     check(
-        "Packaged 1.92 % misses C_A channel (-7.22 %) and T_F n_f (+2.02 %)",
-        True,
-        "single-channel (C_F only) approximation",
+        "Historical 1.92 % arithmetic contains no C_A or T_F n_f channel",
+        abs(c_CA_central) > 1e-12 and abs(c_TFnf_central) > 1e-12,
+        "the comparison is C_F-only arithmetic, not the full assembly",
     )
     check(
-        "Retained three-channel |Delta_R| (3.27 %) > packaged single-channel (1.92 %)",
+        "Three-channel |Delta_R| arithmetic (3.27 %) > historical I_S=2 arithmetic (1.92 %)",
         abs(d_R_central) > PACKAGED_DELTA_PT,
         f"|retained| = {abs(d_R_central) * 100:.3f} %, packaged = {PACKAGED_DELTA_PT * 100:.3f} %",
     )
     print()
 
     # -----------------------------------------------------------------------
-    # Block 8: Reinterpretation of cited 5.77 % (C_F single channel, no Z_psi cancel)
+    # Block 8: Supplied-I_S 5.77 % conditional arithmetic comparison
     # -----------------------------------------------------------------------
-    print("Block 8: Reinterpretation of cited 5.77 % as single-channel approximation.")
+    print("Block 8: Supplied-I_S 5.77 % conditional single-channel arithmetic.")
 
     check(
-        "Cited 5.77 % = (alpha_LM/(4pi)) * C_F * I_S at I_S = 6",
+        "Supplied-I_S 5.77 % = (alpha_LM/(4pi)) * C_F * I_S at I_S = 6",
         abs(CITED_IS_CF_SINGLE_CHANNEL - 0.0577) < 5e-4,
         f"cited = {CITED_IS_CF_SINGLE_CHANNEL * 100:+.4f} %",
     )
     check(
-        "Cited 5.77 % equals C_F channel at Delta_1 = 6 (upper-bracket, no Z_psi)",
+        "Supplied-I_S 5.77 % equals C_F arithmetic if Delta_1 = 6 is separately imposed",
         abs(CITED_IS_CF_SINGLE_CHANNEL - contrib_CF(6.0)) < 1e-12,
         f"cited = {CITED_IS_CF_SINGLE_CHANNEL * 100:.4f} %, C_F at Delta_1=6 = {contrib_CF(6.0) * 100:.4f} %",
     )
     check(
-        "Cited 5.77 % misses C_A channel (-7.22 %) and T_F n_f (+2.02 %)",
-        True,
-        "single-channel (C_F only) approximation, no Z_psi cancellation",
+        "Supplied-I_S 5.77 % arithmetic contains no C_A or T_F n_f channel",
+        abs(c_CA_central) > 1e-12 and abs(c_TFnf_central) > 1e-12,
+        "single-channel comparison only; no source-action interpretation",
     )
     check(
-        "Retained three-channel |Delta_R| (3.27 %) < cited single-channel (5.77 %)",
+        "Three-channel |Delta_R| arithmetic (3.27 %) < supplied-I_S single-channel map (5.77 %)",
         abs(d_R_central) < CITED_IS_CF_SINGLE_CHANNEL,
         f"|retained| = {abs(d_R_central) * 100:.3f} %, cited = {CITED_IS_CF_SINGLE_CHANNEL * 100:.3f} %",
     )
     check(
-        "Retained is between packaged (1.92 %) and cited (5.77 %)",
+        "Three-channel magnitude is between historical 1.92 % and supplied-I_S 5.77 % arithmetic",
         PACKAGED_DELTA_PT < abs(d_R_central) < CITED_IS_CF_SINGLE_CHANNEL,
         f"1.92 % < {abs(d_R_central) * 100:.3f} % < 5.77 %",
     )
@@ -486,12 +502,12 @@ def main() -> int:
         f"P1 in [{P1_band_lo * 100:.3f} %, {P1_band_hi * 100:.3f} %]",
     )
     check(
-        "P1 band above packaged single-channel (1.92 %) even at lower end",
+        "P1 band arithmetic above historical I_S=2 arithmetic at lower end",
         P1_band_lo > PACKAGED_DELTA_PT,
         f"P1_low = {P1_band_lo * 100:.3f} % > {PACKAGED_DELTA_PT * 100:.3f} %",
     )
     check(
-        "P1 band below cited single-channel (5.77 %) even at upper end",
+        "P1 band below supplied-I_S single-channel map (5.77 %) even at upper end",
         P1_band_hi < CITED_IS_CF_SINGLE_CHANNEL,
         f"P1_high = {P1_band_hi * 100:.3f} % < {CITED_IS_CF_SINGLE_CHANNEL * 100:.3f} %",
     )
@@ -636,15 +652,41 @@ def main() -> int:
         True,
         "Delta_3 = 0.933 central with [0.667, 2.000] range inherited",
     )
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_compact = " ".join(note_text.lower().split())
     check(
-        "Packaged delta_PT support note NOT modified (single-channel role preserved)",
-        True,
-        "1.92 % still defensible as C_F-only approximation",
+        "Historical delta_PT arithmetic remains a C_F-only conditional comparator",
+        abs(PACKAGED_DELTA_PT - ALPHA_LM * C_F / (2.0 * PI)) < 1e-15,
+        "no independent source-action interpretation is inferred",
     )
     check(
-        "Cited I_S citation note NOT modified (single-channel role preserved)",
-        True,
-        "5.77 % still defensible as C_F-only, no-Z_psi approximation",
+        "Source note contains no stale UV bridge attribution",
+        not any(marker in note_compact for marker in STALE_BRIDGE_MARKERS),
+        "full filename and legacy shorthand absent",
+    )
+    check(
+        "Source note contains no retained-alpha authority wording",
+        not any(
+            marker in note_compact
+            for marker in RETAINED_ALPHA_AUTHORITY_MARKERS
+        ),
+    )
+    check(
+        "Source note links the unaudited conditional alpha arithmetic source",
+        "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
+        in note_text
+        and "current ledger row is unaudited" in note_text
+        and "not retained physical/canonical" in note_text,
+    )
+    check(
+        "Source note keeps source-action interpretation open",
+        "source-action/matching interpretation remains open" in note_text,
+    )
+    check(
+        "Source note keeps the supplied-I_S 5.77 % map conditional",
+        "supplied-I_S `5.77 %` arithmetic map" in note_text
+        and "no source-action interpretation" in note_text,
+        "C_F-only arithmetic comparator",
     )
     check(
         "Ward-identity tree-level theorem NOT modified",
@@ -689,8 +731,8 @@ def main() -> int:
     print(f"  P1 = |Delta_R|_central = {P1 * 100:.3f} %")
     print(f"  P1 30% citation band:    [{P1_band_lo * 100:.3f} %, {P1_band_hi * 100:.3f} %]")
     print()
-    print(f"  Prior packaged 1.92 % (C_F only)     : recovered as single-channel approximation")
-    print(f"  Prior cited   5.77 % (C_F only, no Z): recovered as single-channel approximation")
+    print("  Historical 1.92 %                    : conditional I_S=2 arithmetic only")
+    print("  Supplied-I_S 5.77 %                 : conditional single-channel comparison arithmetic")
     print(f"  Retained 3-channel central           : {P1 * 100:.3f} %")
     print()
     print(f"  m_t(pole) retained lane:  {MT_CENTRAL:.2f} GeV +/- {delta_mt_retained:.2f} GeV")

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_i_s_lattice_pt_citation.py
-runner_sha256: a16a2fec6c2dabb271c7f9f8e00b4005348b375c17490144bc054d5ae3301798
+runner_sha256: 37c62b2478e6c2a014012059689df92f387cf50fe6a0f8053cfd155bca2e2733
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================
@@ -20,6 +20,9 @@ PART 0: Source-note status boundary
   [PASS] type is conditional / arithmetic support
   [PASS] conditional citation/support boundary is present
   [PASS] conditional arithmetic lemma boundary is present
+  [PASS] canonical alpha source is explicitly unaudited conditional arithmetic
+  [PASS] source note contains no stale UV bridge attribution
+  [PASS] source note contains no retained-alpha authority wording
   [PASS] bracket is not asserted audit-closed
   [PASS] old proposed_retained status is absent
   [PASS] PR-local source proposal marker is absent
@@ -40,7 +43,7 @@ PART A: Retained color tensor C_F at SU(3)
   [PASS] Color-tensor retention preserved from prior P1 color-factor note  (Delta_R = C_F * I_1 + C_A * I_2 + T_F n_f * I_3 (unchanged))
 
 ========================================================================
-PART B: Retained canonical-surface constants
+PART B: Conditional canonical-surface arithmetic
 ========================================================================
 
   <P>                         = 0.593400
@@ -49,16 +52,16 @@ PART B: Retained canonical-surface constants
   alpha_LM = alpha_bare / u_0 = 0.0906678360
   alpha_LM / (4 pi)           = 0.0072151171
   alpha_LM / (2 pi)           = 0.0144302343
-  [PASS] alpha_LM matches canonical-surface retention  (alpha_LM = 0.0906678360)
+  [PASS] alpha_LM arithmetic matches alpha_bare/u_0  (alpha_LM = 0.0906678360)
   [PASS] alpha_LM close to the expected 0.0907 (canonical-surface anchor)  (alpha_LM = 0.0906678360)
   [PASS] alpha_LM / (4 pi) matches 0.00721 to 5 decimals  (alpha_LM/(4 pi) = 0.0072151171)
-  [PASS] <P> = 0.5934 and u_0 = <P>^(1/4) ~ 0.8777 retained  (<P>=0.5934, u_0=0.877681)
+  [PASS] <P> = 0.5934 and u_0 = <P>^(1/4) ~ 0.8777 arithmetic  (<P>=0.5934, u_0=0.877681)
 
 ========================================================================
-PART C: Packaged delta_PT under standard-fundamental I_S = 2
+PART C: Packaged delta_PT under historical I_S = 2
 ========================================================================
 
-  I_S_standard (standard fundamental)      = 2.0
+  I_S_historical arithmetic convention     = 2.0
   delta_PT (alpha/(4 pi) convention)        = 0.019240 = 1.9240 %
   delta_PT (alpha/(2 pi) convention)        = 0.019240 = 1.9240 %
   packaged DELTA_PT_PACKAGED                = 0.019240 = 1.9240 %
@@ -82,13 +85,13 @@ PART D: Supplied I_S range for composite-H_unit on the canonical surface
    I_S_UNIMPROVED in [10.0, 20.0] -- documented but not used.)
   [PASS] Supplied range is ordered LOW <= CENTRAL <= HIGH  (4.0 <= 6.0 <= 10.0)
   [PASS] Central estimate sits inside the bracket and on the low-mid side  (central = 6.0, arithmetic midpoint = 7.00, low = 4.0)
-  [PASS] Central estimate is strictly above the standard-fundamental value 2  (central = 6.0 > standard = 2.0)
-  [PASS] Supplied bracket sits materially ABOVE the standard-fundamental I_S = 2  (I_S_CITED_LOW = 4.0 vs 2 * I_S_standard = 4.0)
+  [PASS] Supplied central value is arithmetically above historical I_S=2  (central = 6.0 > standard = 2.0)
+  [PASS] Supplied bracket is arithmetically above historical I_S = 2  (I_S_CITED_LOW = 4.0 vs 2 * I_S_standard = 4.0)
   [PASS] Tadpole-improved bracket is BELOW un-improved analogue  (TI_high = 10.0 vs unimpr_low = 10.0)
   [PASS] Supplied-bracket confidence is recorded as a range, not a single number  (range width = 6.0)
 
 ========================================================================
-PART E: Framework-specific P1 contribution at alpha_LM = 0.0907
+PART E: Conditional P1 arithmetic at alpha_LM = 0.0907
 ========================================================================
 
   P1(I_S) = (alpha_LM / (4 pi)) * C_F * I_S = 0.007215 * 1.333333 * I_S
@@ -119,8 +122,8 @@ PART F: Revision factor vs packaged 1.92% nominal
   [PASS] Central revision factor matches I_S ratio (3.00x) exactly  (P1 ratio = 3.0000000000, I_S ratio = 3.0000000000)
   [PASS] Low-end revision factor matches I_S ratio (2.00x)  (P1 ratio = 2.0000000000)
   [PASS] High-end revision factor matches I_S ratio (5.00x)  (P1 ratio = 5.0000000000)
-  [PASS] Central revision factor is approximately 3.0x (upward)  (central ratio = 3.0000x)
-  [PASS] Revision is monotone upward: all three P1 values > packaged 1.92%  (packaged = 0.019240)
+  [PASS] Conditional central arithmetic factor is approximately 3.0x  (central ratio = 3.0000x)
+  [PASS] Conditional mapped values are all above historical 1.92% arithmetic  (packaged = 0.019240)
 
 ========================================================================
 PART G: Scope boundary (master obstruction theorem not modified)
@@ -141,18 +144,18 @@ PART G: Scope boundary (master obstruction theorem not modified)
   [PASS] Supplied I_S value explicitly NOT framework-native  (framework-native BZ integration remains the next retention level)
 
 ========================================================================
-SUMMARY: PASS=43  FAIL=0
+SUMMARY: PASS=46  FAIL=0
 ========================================================================
 
 Supplied I_S value (central conditional estimate):
   I_S  =  6.00   (range [4.0, 10.0], alpha/(4 pi) convention)
 
-Framework-specific P1 contribution at alpha_LM = 0.0907:
+Conditional P1 arithmetic at alpha_LM = 0.0907:
   P1_central  =  5.772 %   (central estimate)
   P1 range    =  [3.848%, 9.620%]
 
 Comparison to packaged delta_PT = 1.92%:
-  packaged    =  1.9240 %  (I_S_standard = 2 implicit)
+  packaged    =  1.9240 %  (historical I_S = 2 convention)
   revision    =  3.00x upward under central supplied I_S
 
 Conditional direction: UPWARD if the supplied range is accepted

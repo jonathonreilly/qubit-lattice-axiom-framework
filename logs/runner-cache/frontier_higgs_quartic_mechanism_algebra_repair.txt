@@ -1,60 +1,57 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_higgs_quartic_mechanism_algebra_repair.py
-runner_sha256: 7054a710106983f4b27c42c1f6b2248d37ee11b34961bdb77a1f982f740b38bd
+runner_sha256: 66bc10389595297004bc0b980f8cecb9877e937e29aa1eb51896f1e791630086
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
-Higgs formal quartic mechanism algebra repair
+Radial quartic global-minimum lemma
 
 ========================================================================================
-Source-note boundary
+Exact radial-polynomial identities
 ========================================================================================
-  [PASS] note contains required boundary: 'bounded-support formal scalar-potential algebra'
-  [PASS] note contains required boundary: 'That formal quartic-potential mechanism is the entire repaired theorem.'
-  [PASS] note contains required boundary: 'This repair does not supply that missing physical bridge.'
-  [PASS] note contains required boundary: 'The physical bridge from this formal quartic-potential algebra to a framework-native Higgs mechanism remains a separate open science problem.'
-  [PASS] note avoids overclaim phrase: 'Higgs mechanism is derived from the framework'
-  [PASS] note avoids overclaim phrase: 'Coleman-Weinberg effective potential is derived from the framework'
-  [PASS] note avoids overclaim phrase: 'physical Higgs mass is predicted'
-  [PASS] note avoids overclaim phrase: 'lambda(M_Pl) is derived'
-  [PASS] note avoids overclaim phrase: 'bare-parameter substrate is derived'
+  [PASS] definition equals r^2(2 m2 + lambda r^2)/4
+  [PASS] first derivative is r(m2 + lambda r^2)
+  [PASS] second derivative is m2 + 3 lambda r^2
+  [PASS] quartic leading coefficient is positive
 
 ========================================================================================
-Symbolic quartic algebra
+Case m2 >= 0, including m2 = 0
 ========================================================================================
-  [PASS] stationary derivative factorizes as r(-mu2 + lambda r^2)
-  [PASS] broken radius solves stationarity
-  [PASS] broken minimum value is -mu2^2/(4 lambda) (-mu2**2/(4*lambda))
-  [PASS] radial curvature at broken radius is 2 mu2 (2*mu2)
-  [PASS] curvature equals 2 lambda v^2
-  [PASS] unbroken potential has zero value at origin
-  [PASS] unbroken potential derivative vanishes at origin
-  [PASS] unbroken curvature at origin is m2
+  [PASS] V is nonnegative for x=r^2 >= 0
+  [PASS] V is strictly positive whenever x=r^2 > 0
+  [PASS] V(0)=0
+  [PASS] the only equality point on r>=0 is r=0
+  [PASS] m2=0 gives V=lambda r^4/4
+  [PASS] m2=0 is still strict away from r=0
+  [PASS] m2=0 minimum is degenerate with V''(0)=0
 
 ========================================================================================
-Numeric global-minimum samples
+Case m2 < 0
 ========================================================================================
-  [PASS] lambda=1, m2=-0.25: minimum near broken radius (grid_min=0.500 expected=0.500)
-  [PASS] lambda=1, m2=-0.25: broken value below origin (Vmin=-0.015625)
-  [PASS] lambda=0.75, m2=-1.5: minimum near broken radius (grid_min=1.410 expected=1.414)
-  [PASS] lambda=0.75, m2=-1.5: broken value below origin (Vmin=-0.749973)
-  [PASS] lambda=2, m2=-3: minimum near broken radius (grid_min=1.220 expected=1.225)
-  [PASS] lambda=2, m2=-3: broken value below origin (Vmin=-1.124933)
-  [PASS] lambda=0.5, m2=0: minimum at origin (grid_min=0.000)
-  [PASS] lambda=0.5, m2=0: minimum value equals origin (Vmin=0.000000)
-  [PASS] lambda=1.5, m2=0.4: minimum at origin (grid_min=0.000)
-  [PASS] lambda=1.5, m2=0.4: minimum value equals origin (Vmin=0.000000)
+  [PASS] v^2=-m2/lambda is positive
+  [PASS] v is strictly positive
+  [PASS] V(r)-V(v)=lambda(r^2-v^2)^2/4
+  [PASS] the square certificate is nonnegative
+  [PASS] r^2=v^2 has exactly the roots -v and v
+  [PASS] the radial domain retains exactly r=v
+  [PASS] equality in the square certificate is unique on r>=0
+  [PASS] V(v)=-m2^2/(4 lambda) (-mu2**2/(4*lambda))
+  [PASS] V(0)-V(v) is strictly positive
+  [PASS] V''(v)=-2m2 (2*mu2)
+  [PASS] V''(v)=2 lambda v^2
+  [PASS] V''(v)>0
 
 ========================================================================================
-Negative controls
+Exhaustiveness and scope
 ========================================================================================
-  [PASS] lambda < 0 sample is unbounded along larger radius (V(10)=-1300.000)
-  [PASS] m2 > 0 sample has no nonzero broken minimum (argmin=0.000)
+  [PASS] m2<0 and m2>=0 partition the real line
+  [PASS] the two m2 cases do not overlap
+  [PASS] the theorem certificate contains only formal conclusions
 
 ========================================================================================
-TOTAL: PASS=29 FAIL=0
+TOTAL: PASS=26 FAIL=0
 ========================================================================================
 
 ----- stderr -----

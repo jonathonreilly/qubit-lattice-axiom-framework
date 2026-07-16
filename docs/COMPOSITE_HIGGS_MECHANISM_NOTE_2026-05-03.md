@@ -591,8 +591,9 @@ verifies (PASS=N/0, exact rational arithmetic + Z3 phase covariance):
 - [`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
   — EW Fierz channel decomposition (8/9 adjoint vs 1/9 singlet at
   N_c = 3).
-- [`HIGGS_MECHANISM_NOTE.md`](HIGGS_MECHANISM_NOTE.md) — parent row
-  for the EWSB Higgs identification lane that cycle 07/08/20 sharpen.
+- `HIGGS_MECHANISM_NOTE.md` — exact formal
+  radial-quartic global-minimum lemma only; it supplies no EWSB, Higgs
+  identification, scalar-carrier, or mass bridge for this stretch attempt.
 - [`NEUTRINO_MAJORANA_NATIVE_GAUSSIAN_NO_GO_NOTE.md`](NEUTRINO_MAJORANA_NATIVE_GAUSSIAN_NO_GO_NOTE.md)
   — companion no-go: framework's current native surface gives zero
   condensate (relevant to cycle 08 O1 / NO3).

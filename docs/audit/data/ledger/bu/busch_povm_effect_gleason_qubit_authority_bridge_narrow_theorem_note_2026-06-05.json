@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -5145,6 +5145,70 @@
         "total_pass": 40
       },
       "verdict_rationale": "Issue: step (C) asserts the well-defined unique linear extension without proving choice independence, while the runner assumes trace form when constructing every m. Why this blocks: those checks verify representative members of the claimed class but cannot establish that every functional satisfying M1\u2013M3 belongs to it. Repair target: supply an exact positive-cone/group-completion proof or formal certificate establishing the universal extension without assuming trace form; claim boundary until fixed: the trace-generated examples and explicit trine counterexample are verified, not the universal representation theorem. For the derived negative boundary, N1 exercises only projective-frame and POVM/trine mechanisms; N2 has one stated wall; N3 exposes no additional premise beyond the stated hypotheses; N4 matches the dimension-two projective residual; N5 lacks five-resolution live evidence; N6 identifies POVM additivity as the partial-closure mechanism; N7 resolves the regularity steelman with the continuous non-affine counterexample; and N8 supplies no demonstrated relevant cross-cycle closure, so the negative-discipline packet is not PASS."
+    },
+    {
+      "archived_at": "2026-07-16T01:45:55.967576+00:00",
+      "audit_date": "2026-07-16T01:45:45.996095+00:00",
+      "audit_invocation_history": [
+        "d1e948e847c34eef8badbeb8e0461a10"
+      ],
+      "audit_invocation_id": "d1e948e847c34eef8badbeb8e0461a10",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 12.49,
+        "runner_hash": "829ff335ed0dd026003c6c6f1f99fcd86150de74b576c1e9e89b81cea1ed1449",
+        "transitive_descendants": 718
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-busch_povm_effect_gleaso-101",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note does not prove that its shift-and-scale definition of F is independent of the chosen shift and scale or that it is additive on all Hermitian matrices. The runner cannot fill this gap because it constructs every tested m in trace form from a preselected \u03c3_true.",
+      "claim_scope": "For the accepted one-qubit carrier M_2(C), the restricted packet was audited for whether the stated M1\u2013M3 hypotheses force a unique density-matrix representation m(E)=Tr(\u03c3E).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-16T01:45:45.996095+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Partial additivity and boundedness define a unique real-linear extension F on Herm(M_2), which finite-dimensional Riesz representation then writes uniquely as F(H)=Tr(\u03c3H).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a rigorous positive-cone extension lemma proving scale independence, decomposition independence, additivity, and real linearity on Herm(M_2), then rerun the audit; the existing trace-generated numerical tests may remain as consistency checks.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "Steps A and B correctly derive partial additivity and real homogeneity, and steps D and E would close once a real-linear extension exists. However, step C asserts rather than proves the required well-defined cone-extension lemma, while the runner tests only functionals created as m(E)=Tr(\u03c3_true E), so its 40 passes are consistency checks that already assume the contested representation class. The bounded qubit theorem therefore remains conditional on an explicit proof of that extension lemma."
     }
   ],
   "prose_corrections": [],

@@ -21,7 +21,7 @@ from frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_ro
 from frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17 import (
     evaluation_matrix,
 )
-from frontier_gauge_vacuum_plaquette_spatial_environment_character_measure import (
+from frontier_gauge_vacuum_plaquette_local_environment_factorization import (
     BETA,
     build_recurrence_matrix,
     conjugation_swap_matrix,

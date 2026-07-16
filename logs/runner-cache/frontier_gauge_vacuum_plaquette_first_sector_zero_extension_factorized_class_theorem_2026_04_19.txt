@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py
-runner_sha256: ccc782d9f83de4c3c09fb28edcd966754e82c87bf8ab221636a04e2e36245656
+runner_sha256: 077b4f80988248130f77df56443dc4ab352e6aadf74bbf60245788337b5c8d68
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 7.14
+elapsed_sec: 7.30
 status: ok
 ----- stdout -----
 ================================================================================================================

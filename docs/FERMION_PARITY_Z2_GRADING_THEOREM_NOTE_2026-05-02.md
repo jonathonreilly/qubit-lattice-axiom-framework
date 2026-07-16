@@ -14,9 +14,10 @@ Single-site ladder operators `a_x`, `a_x^dagger` are
 `Z_2`-odd (`{F, a_x} = 0`); bilinears `a_x^dagger a_y` and the
 number operators `n_hat_x` are `Z_2`-even (`[F, a_x^dagger a_y] = 0`).
 For time-independent dynamics, `[H_dyn, F] = 0` is necessary and sufficient
-for occupation-parity conservation. Total-number conservation is a stronger
-sufficient condition: `[H_dyn, Q_hat_total] = 0` implies `[H_dyn, F] = 0`,
-but the converse is false in general.
+for occupation-parity conservation. Total-number conservation is sufficient:
+`[H_dyn, Q_hat_total] = 0` implies `[H_dyn, F] = 0`. For `N >= 2` it is
+strictly stronger in general; for `N = 1`, `F = I - 2 Q_hat_total`, so the two
+commutation conditions are equivalent.
 This algebraic grading is independent of the lattice-Noether current row and
 does not by itself prove a physical fermion-statistics selector or
 superselection rule.
@@ -34,22 +35,21 @@ audit pipeline after independent review.
 None. This row is an algebraic finite-Fock-space grading theorem.
 
 The separate lattice-Noether row can supply a dynamical conservation theorem
-for the corresponding charge/current on its admitted carrier. That is not
+for the corresponding charge/current on its specified carrier. That is not
 load-bearing for the parity algebra proved here.
 
-## Admitted-context inputs
+## Mathematical/definitional inputs
 
 - **Spectral functional calculus.** For any Hermitian operator A on a
   finite-dim Hilbert, exp(i α A) is a well-defined unitary operator with
   spectrum {exp(i α λ) : λ ∈ Spec(A)}. Standard finite-dim spectral
   theorem.
 - **Single-mode occupation-ladder construction on per-site Pauli C².** a =
-  σ_+, a^† = σ_-, n = a^† a = (I - σ_3)/2. (Same as R7 Block 03.)
-  Definitional.
+  σ_+, a^† = σ_-, n = a^† a = (I - σ_3)/2. Definitional.
 - **Tensor product Fock space.** Standard construction.
 
 All three are pure mathematical / definitional facts; no physical
-fermion-statistics convention or superselection premise is admitted.
+fermion-statistics convention or superselection premise is used.
 
 ## Statement
 
@@ -109,9 +109,10 @@ instead supplies total-number conservation, then
     [H_dyn, Q_hat_total] = 0  implies  [H_dyn, F] = 0.                       (5)
 ```
 
-The converse implication is false: parity-preserving dynamics may change
-`Q_hat_total` by an even integer. This branch does not use the lattice-Noether
-row to supply either dynamical premise.
+For `N >= 2`, the converse implication is false: parity-preserving dynamics may
+change `Q_hat_total` by an even integer. For `N = 1`, the two commutation
+conditions are equivalent. This branch does not use the lattice-Noether row to
+supply either dynamical premise.
 
 ## Proof
 
@@ -211,7 +212,10 @@ If a separate dynamics theorem supplies `[H_dyn, Q_hat_total] = 0`, then
 `F = exp(i pi Q_hat_total)`. Therefore
 `[H_dyn, Q_hat_total] = 0` implies `[H_dyn, F] = 0`.
 
-The reverse implication does not hold. For `N >= 2`, define
+For `N = 1`, `F = I - 2 Q_hat_total`, and therefore
+`[H_dyn, F] = -2 [H_dyn, Q_hat_total]`; the two commutation conditions are
+equivalent. The reverse implication fails in general once `N >= 2`. For any
+such `N`, define
 
 ```text
     H_pair := a_1^dagger a_2^dagger + a_2 a_1 .                            (7)
@@ -227,12 +231,12 @@ of any supplied dynamics or carrier identification. ∎
 
 ## Hypothesis set used
 
-- Spectral functional calculus (mathematical, admitted-context).
+- Spectral functional calculus (mathematical).
 - Single-mode occupation-ladder construction (definitional).
 - Tensor product Fock space (definitional).
 
 No fitted parameters. No observed values. No physical fermion-statistics or
-superselection convention admitted.
+superselection convention used.
 
 ## Corollaries
 
@@ -246,10 +250,11 @@ Hamiltonian preserves occupation parity if and only if `[F, H] = 0`. A
 Hamiltonian built from `Z_2`-even local terms passes this test. Single ladder
 terms `a_x` or `a_x^dagger` alone are `Z_2`-odd and fail it.
 
-C3. **Number conservation is stronger than parity conservation.**
-`[H, Q_hat_total] = 0` guarantees `[H, F] = 0`, but pair terms such as
-`a_1^dagger a_2^dagger + a_2 a_1` preserve `F` while changing
-`Q_hat_total` by two.
+C3. **Number conservation versus parity conservation.**
+`[H, Q_hat_total] = 0` always guarantees `[H, F] = 0`. For `N >= 2`, pair
+terms such as `a_1^dagger a_2^dagger + a_2 a_1` preserve `F` while changing
+`Q_hat_total` by two, so number conservation is strictly stronger in general.
+For `N = 1`, the two commutation conditions are equivalent.
 
 C4. **Relation to a Bose/Fermi grading.** If a separate retained physical
 statistics rule identifies this algebraic `Z_2` grading with fermion parity,
@@ -278,14 +283,15 @@ the finite occupation/Fock space. The runner exhibits hermiticity,
 involution F² = I, spectrum {+1, -1}, dimension balance 2^{N-1}, the
 σ_3-product formula F = tensor_x σ_{3, x}, and the Z_2-odd / Z_2-even action
 on ladder operators / bilinears, the sufficient implication from total-number
-conservation, the exact parity-conservation criterion, and a counterexample to
-the converse implication — all at machine precision.
+conservation, the exact parity-conservation criterion, the `N = 1` exception,
+and an `N >= 2` counterexample to the converse implication — all at machine
+precision.
 
 ```yaml
 claim_type_author_hint: positive_theorem
-claim_scope: "For finite N >= 1, F = (-1)^Q_hat_total is a Hermitian unitary involution; H = H_even direct_sum H_odd is a balanced Z_2 grading; ladder operators are Z_2-odd and bilinears Z_2-even; for time-independent dynamics [H_dyn,F] = 0 is necessary and sufficient for parity conservation, while [H_dyn,Q_hat_total] = 0 is sufficient but not necessary; no physical fermion-statistics selector or superselection rule is proved."
+claim_scope: "For finite N >= 1, F = (-1)^Q_hat_total is a Hermitian unitary involution; H = H_even direct_sum H_odd is a balanced Z_2 grading; ladder operators are Z_2-odd and bilinears Z_2-even; for time-independent dynamics [H_dyn,F] = 0 is necessary and sufficient for parity conservation, while [H_dyn,Q_hat_total] = 0 is sufficient and, for N >= 2, not necessary in general (the two conditions are equivalent at N = 1); no physical fermion-statistics selector or superselection rule is proved."
 upstream_dependencies: []
-admitted_context_inputs:
+mathematical_definitional_inputs:
   - spectral functional calculus (basic finite-dim spectral theorem)
   - single-mode occupation-ladder construction (definitional)
   - tensor product Fock space (definitional)

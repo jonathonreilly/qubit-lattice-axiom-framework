@@ -10,14 +10,15 @@ acting on the framework's N-site Fock space H = ⊗_{x=1}^N C².
 Then:
   (P1) (-1)^Q̂ is unitary and Hermitian (its own inverse): ((-1)^Q̂)² = I
   (P2) [H_dyn, F] = 0 is necessary and sufficient for parity conservation;
-       [H_dyn, Q̂] = 0 is a sufficient, but not necessary, stronger condition
+       [H_dyn, Q̂] = 0 is sufficient and, for N >= 2, not necessary in
+       general; at N = 1 the two commutation conditions are equivalent
   (P3) Spec((-1)^Q̂) = {+1, -1}
   (P4) Z_2 grading: H = H_even ⊕ H_odd with dim H_even = dim H_odd = 2^{N-1}
   (P5) Local ladder operator a_x is Z_2-odd: (-1)^Q̂ a_x (-1)^Q̂ = -a_x
   (P6) Local bilinear a_x^† a_y is Z_2-even: invariant under (-1)^Q̂
 
-This is the framework's algebraic occupation-parity grading: Z_2-even
-operators (bilinears, currents, energy density) preserve parity sectors.
+This is the framework's algebraic occupation-parity grading: the proved
+Z_2-even bilinears and number operators preserve parity sectors.
 
 Tests:
   (T1) (-1)^Q̂ is Hermitian
@@ -28,7 +29,7 @@ Tests:
   (T6) Z_2-odd action on a_x: {(-1)^Q̂, a_x} = 0
   (T7) Z_2-even action on bilinears: [(-1)^Q̂, a_x^† a_y] = 0
   (T8) [H_dyn, Q̂] = 0 implies [H_dyn, F] = 0 on a number-conserving H
-  (T9) converse negative control: a pair Hamiltonian commutes with F, not Q̂
+  (T9) N = 1 equivalence and N >= 2 negative-converse pair control
   (T10) [H_dyn, F] = 0 iff the parity-mixing blocks (and dF/dt) vanish
 """
 from __future__ import annotations
@@ -206,8 +207,15 @@ def main() -> None:
 
     # ----- Test 9: parity conservation does not imply number conservation -----
     print("-" * 72)
-    print("TEST 9: converse is false (pair dynamics preserves F but not Q̂)")
+    print("TEST 9: N = 1 equivalence; N >= 2 converse counterexample")
     print("-" * 72)
+    H_one = a_op + a_dag
+    one_q_comm = H_one @ n_local - n_local @ H_one
+    one_f_comm = H_one @ sigma_3 - sigma_3 @ H_one
+    one_affine_dev = np.linalg.norm(sigma_3 - (I2 - 2.0 * n_local))
+    one_comm_relation_dev = np.linalg.norm(one_f_comm + 2.0 * one_q_comm)
+    print(f"  N = 1 ||F - (I - 2 Q̂)|| = {one_affine_dev:.3e}")
+    print(f"  N = 1 ||[H, F] + 2[H, Q̂]|| = {one_comm_relation_dev:.3e}")
     H_pair = a_dag_at[0] @ a_dag_at[1] + a_at[1] @ a_at[0]
     pair_f_comm = np.linalg.norm(H_pair @ F - F @ H_pair)
     pair_q_comm = np.linalg.norm(H_pair @ Q_total - Q_total @ H_pair)
@@ -216,7 +224,9 @@ def main() -> None:
     print(f"  ||[H_pair, F]|| = {pair_f_comm:.3e}")
     print(f"  ||[H_pair, Q̂]|| = {pair_q_comm:.3e}  (nonzero)")
     t9_ok = (
-        pair_herm_dev < 1e-12
+        one_affine_dev < 1e-12
+        and one_comm_relation_dev < 1e-12
+        and pair_herm_dev < 1e-12
         and pair_f_comm < 1e-12
         and pair_q_comm > 1e-10
     )
@@ -269,7 +279,7 @@ def main() -> None:
     print(f"  Test 6 (ladder operator is Z_2-odd: {{F, a_x}} = 0): {'PASS' if t6_ok else 'FAIL'}")
     print(f"  Test 7 (bilinear a_x^† a_y is Z_2-even):           {'PASS' if t7_ok else 'FAIL'}")
     print(f"  Test 8 (number conservation implies parity):         {'PASS' if t8_ok else 'FAIL'}")
-    print(f"  Test 9 (parity does not imply number conservation):  {'PASS' if t9_ok else 'FAIL'}")
+    print(f"  Test 9 (N=1 equivalence; N>=2 converse false):        {'PASS' if t9_ok else 'FAIL'}")
     print(f"  Test 10 ([H, F] iff no parity-mixing blocks):         {'PASS' if t10_ok else 'FAIL'}")
     all_ok = all([
         t1_ok,

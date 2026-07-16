@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/fermion_parity_z2_grading_check.py
-runner_sha256: 5f79a73cde6ff6d3be87ce88598566eb6284a094c815aedacd829b6fc5d30027
+runner_sha256: 5b43fff97465a6c163c3bb8c303aeed7367550c3202579d6b8a803d73543756f
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -66,8 +66,10 @@ TEST 8: [H_dyn, Q̂] = 0 implies [H_dyn, F] = 0
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 9: converse is false (pair dynamics preserves F but not Q̂)
+TEST 9: N = 1 equivalence; N >= 2 converse counterexample
 ------------------------------------------------------------------------
+  N = 1 ||F - (I - 2 Q̂)|| = 0.000e+00
+  N = 1 ||[H, F] + 2[H, Q̂]|| = 0.000e+00
   ||H_pair - H_pair†|| = 0.000e+00
   ||[H_pair, F]|| = 0.000e+00
   ||[H_pair, Q̂]|| = 5.657e+00  (nonzero)
@@ -92,7 +94,7 @@ TEST 10: [H_dyn, F] = 0 iff parity-mixing blocks vanish
   Test 6 (ladder operator is Z_2-odd: {F, a_x} = 0): PASS
   Test 7 (bilinear a_x^† a_y is Z_2-even):           PASS
   Test 8 (number conservation implies parity):         PASS
-  Test 9 (parity does not imply number conservation):  PASS
+  Test 9 (N=1 equivalence; N>=2 converse false):        PASS
   Test 10 ([H, F] iff no parity-mixing blocks):         PASS
   OVERALL: PASS
 

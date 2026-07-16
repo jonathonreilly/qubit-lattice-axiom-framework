@@ -14,11 +14,11 @@ checkpoint_interval: "30m"
 deep_block: "120m"
 cycle_count: 2
 block_count: 1
-current_branch: physics-loop/gauge-transfer-positive-repair-block01-20260716
+current_branch: main
 base_ref: origin/main
 base_commit: 49bd740942a0cf8462db3e4e83973e1305eda98d
-lock_mode: branch-local-supervisor
-lock_note: "Global automation lock path returned permission denied; custom worktree-local lock acquired."
+lock_mode: released-after-landing
+lock_note: "The block-local supervisor lock covered the repair branch and was released after review-loop landing."
 active_route: "finite-volume Peter-Weyl positivity, commuting gauge projection, exact transfer Gram factorization, and spatial-source algebra intertwiner"
 hard_residual: "Prove the displayed Wilson one-step operator is positive semidefinite and prove the marked spatial-plaquette insertion/state formula without asserting a mixed-plaquette multiplication operator or a transfer-invariant source sector."
 a_min:
@@ -53,19 +53,21 @@ no_go_routes:
 trace_class: direct_blocker_closure
 reachability_to_target: closes
 review_disposition: pass
-pr_status: open
+pr_status: merged
 pr_number: 5398
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5398
-block_status: review_pr_open
-last_checkpoint_at_utc: "2026-07-16T13:02:12Z"
-origin_main_seen_at_checkpoint: 49bd740942a0cf8462db3e4e83973e1305eda98d
+science_landing_commit: fe6586b0985956a245ba9eb93a93912373abb55d
+block_status: landed_pending_independent_audit
+last_checkpoint_at_utc: "2026-07-16T13:11:00Z"
+origin_main_seen_at_checkpoint: fe6586b0985956a245ba9eb93a93912373abb55d
 rebase_required_before_pr: false
 pipeline_validation:
   status: pass
   strict_lint_errors: 0
   target_generated_state: unaudited
-  target_queue_rank: 34
+  target_queue_ready: true
+  target_queue_criticality: critical
   generated_outputs_removed: true
 deep_block_status: "not yet consumed; the primary residual closed and passed review before a 120m interval elapsed; use the next related block for the campaign deep block if this turn does not continue"
-next_exact_action: "Do not merge PR 5398. If campaign execution continues, create physics-loop/gauge-transfer-positive-repair-block02-20260716 from current origin/main, acquire a fresh block-local lock, and ground opportunity 2: the axiom-first Wilson temporal-gauge bridge comparator repair."
+next_exact_action: "The independent audit lane may re-evaluate the landed primary claim from a fresh context. If campaign execution continues separately, create physics-loop/gauge-transfer-positive-repair-block02-20260716 from current origin/main, acquire a fresh block-local lock, and ground opportunity 2: the axiom-first Wilson temporal-gauge bridge comparator repair."
 stop_condition: "Runtime exhaustion, a clean reviewed PR for the coherent repair block followed by queue pivot, or documented global opportunity/value-gate exhaustion."

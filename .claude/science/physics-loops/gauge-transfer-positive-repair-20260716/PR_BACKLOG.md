@@ -3,16 +3,16 @@
 ## Block 01
 
 [PR 5398](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5398)
-is open from
-`physics-loop/gauge-transfer-positive-repair-block01-20260716` to `main`.
+landed on `main` at science commit `fe6586b098...`. The PR is merged and its
+remote source branch is removed after the landing checkpoint.
 
 Title:
 
 `[physics-loop] gauge transfer positive repair block 01`
 
 Local disposition: `pass`. Branch-local claim status:
-`candidate-retained-grade`. Independent audit remains required. Do not merge
-from this campaign worker.
+`candidate-retained-grade`. Independent audit remains required; the
+review-loop landing does not grant audit-ratified status.
 
 Intended branch:
 

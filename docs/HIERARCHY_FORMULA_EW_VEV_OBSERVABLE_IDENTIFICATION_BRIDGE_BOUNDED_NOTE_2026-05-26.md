@@ -17,17 +17,17 @@ audit lane.
 ## 1. Claim
 
 Given:
-- the retained EW Higgs gauge-mass diagonalization theorem (one-doublet,
+- the cited EW Higgs gauge-mass diagonalization source statement (one-doublet,
   `Y_H = 1/2`, neutral vacuum) supplying the unique gauge-mass dictionary
   `M_W = g v / 2`, `M_Z = sqrt(g^2 + g_Y^2) v / 2`, `ρ_tree = 1`,
   `e = g sin θ_W = g_Y cos θ_W`;
-- the retained dimensional fourth-root compression theorem fixing
+- the cited dimensional fourth-root compression source statement fixing
   `α = 1/d` uniquely at `d = 4` for any simple-power extraction to
   mass dimension one;
 - the Riemann-Dirichlet source theorem under independent re-audit,
   which proves that the two displayed ratios equal `7/8` while the
   separate alignment residual vanishes uniquely at integer `d = 4`;
-- the retained `α_LM` geometric-mean identity
+- the cited `α_LM` geometric-mean identity
   `α_LM^2 = α_bare · α_s(v)`;
 - the supplied explicit context inputs C1-C4 below;
 
@@ -38,11 +38,11 @@ v_hierarchy  :=  M_Pl × (7/8)^(1/4) × α_LM^16
 ```
 
 is consistently **assigned** to the EW Higgs vacuum expectation value
-parameter `v` of the retained EW gauge-mass diagonalization theorem on the
+parameter `v` of the cited EW gauge-mass diagonalization source on the
 canonical surface.
 
 This is a **bounded** consistency/identification bridge. It does **not**
-derive the physical observable identification from the retained framework
+derive the physical observable identification from the cited framework sources
 alone, promote the four hierarchy-formula primitives P1-P4 (per
 `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10`) to retained, and it
 does **not** promote the package-level `v = 246.28 GeV` numerical match
@@ -59,14 +59,14 @@ conditional inputs so that the bridge's scope is auditable.
   framework UV scale with the Planck mass `M_Pl = 1.2209 × 10^19 GeV`
   (non-reduced) via Wald-Noether matching. The algebraic skeleton
   `S_Wald(c, A) = A · c ⇔ S_BH(G, A) = A/(4G) ⇔ c = 1/(4G)` is
-  retained as
+  stated in
   [`BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md);
   the metric-compatible coframe response and gravitational boundary
   density bridge premises are open. C1 is the **scale-setting** input
   to the dimension-one bridge.
 - **C2 (= hierarchy P2) — Wick-rotated Z³ → Z⁴ taste count.** The
   framework's spatial substrate is `Z^3`; the `16 = 2^4` species count
-  requires `d = 4` Brillouin-zone enumeration. Six retained substep
+  requires `d = 4` Brillouin-zone enumeration. Six cited substep
   theorems exist, including
   [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md);
   the staggered-Dirac realization gate
@@ -75,7 +75,7 @@ conditional inputs so that the bridge's scope is auditable.
   **exponent** input.
 - **C3 (= hierarchy P3) — `u_0^16 → α_LM^16` substitution.** Algebraic
   identity `α_LM^16 = α_bare^16 / u_0^16` carries the bare-coupling
-  prefactor `α_bare^16 = (1/4π)^16 ≈ 2.59 × 10^(-18)`. The retained
+  prefactor `α_bare^16 = (1/4π)^16 ≈ 2.59 × 10^(-18)`. The cited
   `α_LM` geometric-mean identity supplies the algebra; the
   regulator-dependence no-go
   [`HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md)
@@ -97,7 +97,7 @@ conditional inputs so that the bridge's scope is auditable.
 
 Under C1-C4, the bridge verifies the observable-identification step as
 an internally consistent assignment: `v_hierarchy` has mass dimension one
-and may be read as the EW Higgs VEV parameter `v` in the retained
+and may be read as the EW Higgs VEV parameter `v` in the cited
 gauge-mass dictionary. This bridge does not derive a Higgs doublet gauge
 representation for the hierarchy output.
 
@@ -105,13 +105,13 @@ representation for the hierarchy output.
 
 | Step | Statement | Load-bearing input | Lattice-action input? |
 |---|---|---|---|
-| (B1) | Among integer `d ≥ 1`, the unique simple-power extraction `f^α` to mass dimension one is `α = 1/d`; uniquely at `d = 4`, this is `α = 1/4` | Retained dimensional fourth-root compression theorem | no |
+| (B1) | Among integer `d ≥ 1`, the unique simple-power extraction `f^α` to mass dimension one is `α = 1/d`; uniquely at `d = 4`, this is `α = 1/4` | Cited dimensional fourth-root compression source statement; audit-owned status | no |
 | (B2) | `R_lat(d-1) = η(d)/ζ(d)` iff the separate residual `A(d) = 2^(d-2)-d` vanishes; this occurs only at integer `d = 4`, where the two ratios equal `7/8` and `A(4)=0` | Riemann-Dirichlet source theorem pending independent re-audit | no |
 | (B3) | On the explicitly supplied `d = 4` surface, composing (B1) + (B2) gives the dimensionless factor `(7/8)^(1/4)` | (B1) + (B2), conditional on the source theorem's future audit status | no |
-| (B4) | The retained `α_LM` geometric-mean identity `α_LM^2 = α_bare · α_s(v)` exhibits `α_LM` as a single dimensionless positive scalar | Retained `α_LM` geometric-mean identity theorem | no |
+| (B4) | The cited `α_LM` geometric-mean identity `α_LM^2 = α_bare · α_s(v)` exhibits `α_LM` as a single dimensionless positive scalar | Cited `α_LM` geometric-mean identity source | no |
 | (B5) | Under C1, `[M_Pl] = 1` in mass units; under (B3) and (B4), `[(7/8)^(1/4)] = [α_LM^16] = 0`; therefore `[v_hierarchy] = 1` | C1 + (B3) + (B4) | no |
-| (B6) | The retained EW gauge-mass diagonalization theorem fixes the dimension-one EW Higgs VEV `v` as the unique scalar VEV carrying the `(T_3 = -1/2, Y = +1/2)` gauge transformation of a single `SU(2)_L` Higgs doublet, with `M_W = g v / 2` and `ρ_tree = 1` | Retained EW gauge-mass diagonalization theorem | no |
-| (B7) | Under C4, the framework's mean-field readout selects a scalar (additive, phase-blind) observable; under C2 + C3, the canonical-surface evaluation of `v_hierarchy` is dimension-one; therefore the dimension-one scalar output is consistently assigned to the EW VEV parameter `v` of (B6). The Higgs gauge representation is supplied by the retained EW dictionary, not derived by this bridge | (B5) + (B6) + C2 + C3 + C4 | no |
+| (B6) | The cited EW gauge-mass diagonalization source fixes the dimension-one EW Higgs VEV `v` as the unique scalar VEV carrying the `(T_3 = -1/2, Y = +1/2)` gauge transformation of a single `SU(2)_L` Higgs doublet, with `M_W = g v / 2` and `ρ_tree = 1` | Cited EW gauge-mass diagonalization source; audit-owned status | no |
+| (B7) | Under C4, the framework's mean-field readout selects a scalar (additive, phase-blind) observable; under C2 + C3, the canonical-surface evaluation of `v_hierarchy` is dimension-one; therefore the dimension-one scalar output is consistently assigned to the EW VEV parameter `v` of (B6). The Higgs gauge representation is supplied by the cited EW dictionary, not derived by this bridge | (B5) + (B6) + C2 + C3 + C4 | no |
 
 The bridge does not cite the Wilson plaquette action, staggered phases,
 Brillouin-zone labels, link unitaries, lattice scale `u_0`, a Monte
@@ -148,10 +148,10 @@ primitives remain explicit context inputs:
 
 | Primitive | Bridge slot | Open work |
 |---|---|---|
-| P1 (M_Pl import) | C1 | Wald-Noether algebraic skeleton retained; metric-compatible coframe response + gravitational boundary density bridge premises unaudited/conditional |
-| P2 (Wick `Z^3 → Z^4`) | C2 | Six retained substep theorems; staggered-Dirac realization gate remains a non-chain-satisfying conditional input |
+| P1 (M_Pl import) | C1 | Cited Wald-Noether algebraic skeleton; metric-compatible coframe response + gravitational boundary density bridge conditions remain open |
+| P2 (Wick `Z^3 → Z^4`) | C2 | Six cited substep theorems; staggered-Dirac realization gate remains a non-chain-satisfying conditional input |
 | P3 (`u_0^16 → α_LM^16`) | C3 | Regulator-dependence no-go row records the substrate-regulator boundary; bare-coupling `(4π)^(-16)` prefactor is continuum Fourier-measure inheritance, not Cl(3) derived |
-| P4 (observable identification, **this bridge**) | bounded_theorem here | The retained EW diagonalization + retained dimensional compression + Riemann-Dirichlet source theorem pending re-audit + retained `α_LM` identity make the assignment internally consistent GIVEN C1-C4 |
+| P4 (observable identification, **this bridge**) | bounded_theorem here | The cited EW diagonalization + cited dimensional compression + Riemann-Dirichlet source theorem pending re-audit + cited `α_LM` identity make the assignment internally consistent GIVEN C1-C4; each source keeps its audit-owned status |
 
 ### 5.1 Curve-fit defense (honest framing of the 0.0255 % match)
 
@@ -165,22 +165,22 @@ to land at `v_obs`:
    theorems) targets non-reduced `M_Pl` via `S_BH = A/(4G)`. C1 closure
    is the single-knob resolution.
 2. **`α_LM`-not-`α_bare`/`α_s(v)`.** Among the three couplings related
-   by the retained geometric-mean identity, only `α_LM` lands the
+   by the cited geometric-mean identity, only `α_LM` lands the
    integer-16 with a small dimensionless prefactor. At canonical
    `<P>`, substituting `α_bare^16` gives `v_pred ≈ 30.5 GeV` (factor
    `0.124`); substituting `α_s(v)^16` gives `v_pred ≈ 1987 GeV`
    (factor `8.07`). This is the C3 selection.
 3. **Outer `1/4`-not-`1/16`.** Using `(7/8)^(1/16)` instead of
    `(7/8)^(1/4)` shifts `v_pred` by `+2.56%` (within fit-band). The
-   `1/4` is forced at the dimensional-fourth-root compression theorem
-   (retained) given `d = 4`; the `L_t = 4` selector that fixes `d = 4`
+   `1/4` follows from the cited dimensional-fourth-root compression
+   source given `d = 4`; the `L_t = 4` selector that fixes `d = 4`
    in the physical readout is `unaudited`
    (`hierarchy_bosonic_bilinear_selector_note`).
 
 The continuous fit on `N` (with all other factors at canonical values)
 gives `N = 16.0001` — essentially exact integer landing under the
 `(7/8)^(1/4)` prefactor. **Without** the prefactor, `v_pred` at integer
-`N = 16` is `≈ 254.64 GeV` — overshoot `+3.42%`. The retained
+`N = 16` is `≈ 254.64 GeV` — overshoot `+3.42%`. The displayed
 `(7/8)^(1/4) ≈ 0.9672` (specifically `0.967168`, so `1 - 0.9672 ≈ 3.28%`
 downward absorption) absorbs this `3.42%` overshoot multiplicatively:
 `1 / 1.0342 ≈ 0.9669`, matching `(7/8)^(1/4)` to within `0.03%`.
@@ -240,7 +240,7 @@ promoted by it. Their present audit status is inherited from their own rows
 and from the independent audit lane.
 
 - [`BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained algebraic skeleton used inside C1; the physical `M_Pl`
+  — cited algebraic skeleton used inside C1; the physical `M_Pl`
   scale-setting bridge remains an explicit context input here.
 - [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md)
   and [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
@@ -266,7 +266,8 @@ and from the independent audit lane.
   supplies C4 scalar-additivity / phase-blind scalar-generator
   condition as historical provenance, not as a chain-satisfying class.
 - `BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`
-  (retained) — algebraic skeleton for C1 (M_Pl import via Wald-Noether).
+  — cited algebraic skeleton for C1 (M_Pl import via Wald-Noether);
+  audit-owned status is not asserted here.
 - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` — historical
   Tier-A registry provenance only; this bridge does **not** extend it.
 

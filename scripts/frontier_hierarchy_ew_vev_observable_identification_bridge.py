@@ -14,8 +14,8 @@ the dimension-one hierarchy-formula output
 
   v_hierarchy := M_Pl * (7/8)^(1/4) * alpha_LM^16
 
-is consistently assigned to the EW Higgs VEV parameter `v` of the retained
-EW gauge-mass diagonalization theorem on the canonical surface.
+is consistently assigned to the EW Higgs VEV parameter `v` of the cited
+EW gauge-mass diagonalization source statement on the canonical surface.
 
 This runner verifies the bridge's algebraic and dimensional content at
 exact-rational and high-precision-decimal levels. It does not derive a
@@ -75,10 +75,10 @@ def check(name: str, predicate: Callable[[], bool], detail: str = "") -> None:
 
 
 # ----------------------------------------------------------------------
-# Section 1: Dimensional fourth-root compression theorem (retained dep)
+# Section 1: Dimensional fourth-root compression source statement
 # alpha = 1/d uniquely at d=4 for mass-dimension-1 output
 # ----------------------------------------------------------------------
-print("Section 1: Dimensional fourth-root compression (retained dependency)")
+print("Section 1: Dimensional fourth-root compression (cited source)")
 
 def s1_alpha_one_over_d() -> bool:
     # If [f] = d and [C_M] = 0, then [C_M * f^alpha] = d*alpha = 1
@@ -195,10 +195,10 @@ check("(B4) alpha_LM/alpha_bare = alpha_s(v)/alpha_LM = 1/u_0",
 
 
 # ----------------------------------------------------------------------
-# Section 4: EW gauge-mass diagonalization (retained dep)
+# Section 4: EW gauge-mass diagonalization source statement
 # Tree-level: M_W = g*v/2, M_Z = sqrt(g^2 + g_Y^2)*v/2, rho_tree = 1
 # ----------------------------------------------------------------------
-print("\nSection 4: EW gauge-mass diagonalization (retained dependency)")
+print("\nSection 4: EW gauge-mass diagonalization (cited source)")
 
 def s4_W_mass_formula() -> bool:
     g, v = sp.symbols("g v", positive=True)
@@ -318,7 +318,7 @@ check("(illustrative) u_0 = <P>^(1/4) ≈ 0.877681", s6_u0_value,
 check("(illustrative) alpha_LM ≈ 0.0906684", s6_alpha_LM_value,
       "alpha_bare/(u_0) at canonical")
 check("(illustrative) (7/8)^(1/4) ≈ 0.967168", s6_prefactor_value,
-      "retained dimensional compression at d=4")
+      "cited dimensional compression at d=4")
 check("(illustrative) v_hierarchy ≈ 246.2828 GeV", s6_v_pred_value,
       "canonical-surface arithmetic")
 check("(illustrative) deviation from v_obs ≈ +0.0255%", s6_deviation_value,
@@ -405,7 +405,7 @@ def s7_outer_exponent_knob() -> bool:
 
 check("(§5.1) continuous N fit ≈ 16.0001 under (7/8)^(1/4) prefactor",
       s7_continuous_N_fit,
-      "integer landing within 0.01% under retained prefactor")
+      "integer landing within 0.01% under the displayed prefactor")
 check("(§5.1) overshoot at integer N=16, no prefactor: ≈ +3.42%",
       s7_overshoot_no_prefactor,
       "v_pred / v_obs - 1 at no-prefactor canonical")

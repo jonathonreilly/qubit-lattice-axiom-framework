@@ -19,12 +19,12 @@ independent audit lane.
 ## 1. Claim scope
 
 > **Theorem (Conditional `L_t = 4` physical-selection proof-walk).**
-> Given (i) the retained algebraic inputs and the runner-rederived
+> Given (i) the cited algebraic source statements and the runner-rederived
 > Klein-four orbit calculation on the staggered-Dirac APBC temporal circle
 > ([`HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md`](HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md),
-> retained;
+> cited without importing its audit status;
 > [`HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md`](HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md),
-> retained_bounded), and (ii) three explicitly named conditional inputs
+> likewise cited without importing its audit status), and (ii) three explicitly named conditional inputs
 > (the staggered-Dirac realization gate, scalar-additivity premise,
 > and CPT phase-blindness premise), the algebraic `L_t = 4`
 > selector on the staggered block IS the physical EWSB temporal
@@ -49,14 +49,14 @@ This note walks the existing chain step-by-step and isolates the
 named conditional inputs, without adding new content beyond making the
 conditional shape explicit.
 
-## 2. Background — what the retained authorities already establish
+## 2. Background — cited source statements and runner-rederived content
 
 The hierarchy authorities cited above collectively establish the
 following four algebraic facts on the exact minimal hierarchy
 block (`L_s = 2`, staggered Dirac on APBC temporal circle):
 
 1. **Exact Matsubara closed form** ([`HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md`](HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md),
-   retained):
+   cited without importing its audit status):
 
    ```text
    |det(D + m)|  =  Π_ω  [m² + u_0² (3 + sin²ω)]⁴,
@@ -82,7 +82,7 @@ block (`L_s = 2`, staggered Dirac on APBC temporal circle):
 
 4. **Spatial-BC and `u_0`-scaling closure**
    ([`HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md`](HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md),
-   retained_bounded): on the minimal `L_s = 2` block, spatial APBC
+   cited without importing its audit status): on the minimal `L_s = 2` block, spatial APBC
    is selected by the existence of a finite intensive 3+1 order-
    parameter limit, and the linear `1/u_0` tadpole scaling is the
    exact local statement.
@@ -206,7 +206,8 @@ lives must itself be the physical EW substrate.
 > from the physical Cl(3) local algebra plus Z^3 spatial substrate,
 > (ii) scalar-additivity P1 on independent subsystems forcing
 > `log|det|` as the physical scalar generator, and (iii) CPT-even
-> phase blindness on the staggered block being retained from a CPT
+> phase blindness on the staggered block being supplied by a
+> chain-satisfying CPT
 > primitive, the chain (a) → (b) → (c) → (d) in §3 closes and the
 > physical EWSB temporal block is `L_t = 4`.
 
@@ -223,7 +224,7 @@ catalogue is:
 
 | Step | Statement | Algebra source | Conditional-input wall? |
 |---|---|---|---|
-| (a) | Klein-four orbit on APBC phases, unique resolved at L_t=4 | retained Matsubara + Klein-four orbit source + retained_bounded spatial BC | none (algebraic) |
+| (a) | Klein-four orbit on APBC phases, unique resolved at L_t=4 | cited Matsubara source + Klein-four orbit source + cited spatial-BC source | none (algebraic) |
 | (b) | EWSB order param = local bosonic CPT-even bilinear = `log\|det\|` curvature | bosonic-bilinear selector + observable principle | scalar-additivity input |
 | (c) | Physical EWSB curvature is Klein-four invariant | CPT-even phase blindness on staggered D | CPT phase-blindness input |
 | (d) | Therefore physical EWSB temporal block = L_t = 4 | (a) ∧ (b) ∧ (c); staggered block IS physical substrate | staggered-Dirac realization gate |
@@ -260,7 +261,7 @@ inputs.
 ## 8. What this bounded theorem supports
 
 - An **explicit catalogue** of the three conditional-input walls between
-  the retained algebraic L_t = 4 result and the physical EWSB
+  the runner-rederived algebraic L_t = 4 result and the physical EWSB
   temporal-block claim used by the v formula
   `v = M_Pl × α_LM^16 × (7/8)^(1/4)`.
 - A **conditional load-bearing statement** that downstream rows
@@ -328,12 +329,12 @@ Target PASS = 7, FAIL = 0.
 
 ## 11. Cross-references
 
-### Algebraic upstream (retained / retained-bounded)
+### Algebraic source statements (audit-owned status)
 - [`HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md`](HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md)
-  — retained (positive_theorem); exact Matsubara determinant
+  — cited source for the exact Matsubara determinant
   closed form on `L_s = 2`.
 - [`HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md`](HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md)
-  — retained_bounded; finite intensive 3+1 limit forces spatial
+  — cited source stating that a finite intensive 3+1 limit forces spatial
   APBC at `L_s = 2`.
 
 ### Arithmetic context only
@@ -380,7 +381,7 @@ Target PASS = 7, FAIL = 0.
 ## 12. Audit boundary
 
 This note is a conditional proof-walk. It walks the existing four-
-step bridge chain from the retained algebraic L_t = 4 result on the
+step bridge chain from the runner-rederived algebraic L_t = 4 result on the
 staggered block to the physical EWSB temporal block, isolates the
 three disclosed conditional inputs, and states the
 conditional closure. It does not retire any of the three walls. It

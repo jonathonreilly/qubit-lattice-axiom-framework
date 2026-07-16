@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py
-runner_sha256: 1d839125eaefe8a8f01d03da3508f2e8726bc6e30292df5845800849b7113875
+runner_sha256: 15c8bcec36ffb72d2d75f01016a30abf48a8bcf4555c1d4bf46eb66be46f76b4
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.24
 status: ok
 ----- stdout -----
-Section 1: Dimensional fourth-root compression (retained dependency)
+Section 1: Dimensional fourth-root compression (cited source)
   PASS: (B1) alpha = 1/d solves [C_M * f^alpha] = 1 given [f] = d
   PASS: (B1) at d=4, alpha = 1/4 uniquely among positive integers
 
@@ -21,7 +21,7 @@ Section 3: alpha_LM geometric-mean identity (retained dependency)
   PASS: (B4) log alpha_LM = (log alpha_bare + log alpha_s(v))/2
   PASS: (B4) alpha_LM/alpha_bare = alpha_s(v)/alpha_LM = 1/u_0
 
-Section 4: EW gauge-mass diagonalization (retained dependency)
+Section 4: EW gauge-mass diagonalization (cited source)
   PASS: (B6) M_W = g v / 2 from |D_mu H|^2 at <H>
   PASS: (B6) M_Z = sqrt(g^2 + g_Y^2) v / 2
   PASS: (B6) rho_tree = M_W^2 / (M_Z^2 cos^2(theta_W)) = 1

@@ -130,8 +130,10 @@ review-loop landing only.
   band or above a ready row from a blocked one. Inside a band, both streams
   retain transitive-descendant reach → load-bearing score as sub-keys;
   lane-first on exact ties; blocked (`ready: false`) rows are excluded from
-  both streams before the merge. The interleave ratio within bands is an
-  owner-changeable config constant.
+  both streams before the merge; the lane is merged against the NON-LANE
+  COMPLEMENT of the pending queue, with an asserted one-output-per-claim-id
+  de-duplication and a no-duplicate end-to-end test. The interleave ratio
+  within bands is an owner-changeable config constant.
 - Cutover evidence: ≥5 nightly shadow reports; owner inspects lane
   composition, membership churn, displacement, and starvation (any critical
   topological row deferred beyond a stated bound under simulation).
@@ -188,9 +190,23 @@ scattered today:
   review effort, while fail-closed parking on an invisible channel would
   silently strand a stale authority. The matrix is regression-tested per
   version and per missing-field case.
-- **Snapshot projection, defined:** the fingerprint always reads the LATEST
-  APPLICABLE ARCHIVED verdict snapshot (`previous_audits[-1]`, matching the
-  existing guard's projection), never a live mid-edit snapshot.
+- **Snapshot projection, defined BY LIFECYCLE STATE.** A live
+  `audited_conditional` or non-archived `audited_failed` row carries its
+  verdict-time snapshot at the row's top-level `audit_state_snapshot`
+  (written by `apply_audit.py` at verdict application; archives appear only
+  later, on source/hash drift or invalidation) — for these rows the
+  fingerprint reads the LIVE top-level snapshot. The latest applicable
+  archived snapshot (`previous_audits[-1]`) is read only for the different
+  population the existing orchestrator guard already serves: rows whose
+  conditional verdict has been archived and reset to `unaudited`. This is
+  what makes the migration guarantee real: the "next verdict stamps a
+  complete v1 snapshot" writes to exactly the location the fingerprint reads
+  for a live row. Round-trip tests required: live legacy → live v1 →
+  parked; live v1 → invalidated/archived → explicitly targetable;
+  live-vs-archived selection per lifecycle state; v1-invalid fail-loud.
+  (Measured on the 54-row live set: all 54 carry a top-level snapshot;
+  five have no archive at all — an archive-only projection would misread or
+  skip them.)
 - All canonical targeting streams (dispatcher sidecars, invalidation
   reasons, no-go index-growth targets, `--retarget-conditionals`) union into
   dispatch-liveness ahead of the fingerprint; the fingerprint can only park,
@@ -245,9 +261,11 @@ scattered today:
   domain. Generated surfaces (front door, inventory, queue cycle-break side
   list, effective-status summary) each state their domain explicitly; the
   front door reports both labeled counts. The pipeline gains the invariant:
-  same-domain results agree across all consumers by NORMALIZED CYCLE
-  SIGNATURE (sorted canonical node lists), not by count alone (mismatch
-  fails the run).
+  same-domain results agree across all consumers by canonical DIRECTED
+  cycle signature (rotation-normalized node sequence, direction preserved —
+  reversal is not treated as equivalent), not by count alone (mismatch
+  fails the run). Shadow switch evidence includes signature diffs and
+  primary-break-target diffs, not counts alone.
   The DFS-archaeology disclosure (not a canonical simple-cycle enumeration)
   is carried on every surface that reports a count.
 - The inventory additionally reports strongly-connected-component membership

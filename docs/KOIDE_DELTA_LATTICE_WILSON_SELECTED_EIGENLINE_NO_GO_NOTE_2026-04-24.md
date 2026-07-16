@@ -188,9 +188,9 @@ This joint-algebra no-go would fail if either of the following were exhibited:
 - a demonstration that the `zeta` common eigenspace is actually
   one-dimensional for the stated finite periodic `L = 3`, `r = 1` matrices.
 
-The native chirality split does not falsify the scoped statement: it falsifies
-the broader statement that the full Wilson/Clifford construction has no
-selector, which is why that broader statement is not made here.
+The displayed Clifford-volume split does not falsify the scoped statement: it
+falsifies the broader statement that the full Wilson/Clifford construction has
+no selector, which is why that broader statement is not made here.
 
 ## Verification
 

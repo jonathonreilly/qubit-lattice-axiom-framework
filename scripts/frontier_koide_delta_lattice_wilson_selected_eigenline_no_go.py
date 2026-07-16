@@ -14,9 +14,10 @@ Result:
   D|M_zeta = 0 and U|M_zeta = zeta I_2, so every element of A_DU restricts to
   a scalar and none is a rank-one projector on M_zeta.
 
-  This is not a no-go for the full Wilson/Clifford construction.  Its native
-  chirality Gamma=-i gamma_1 gamma_2 gamma_3 commutes with D and U and splits
-  M_zeta.  The runner also makes no ambient eta-proxy or endpoint-lift claim.
+  This is not a no-go for the full Wilson/Clifford construction.  The displayed
+  Clifford volume element Gamma=-i gamma_1 gamma_2 gamma_3 commutes with D and
+  U and splits M_zeta.  The runner also makes no ambient eta-proxy or
+  endpoint-lift claim.
 
 No mass data, fitted Koide value, or selected endpoint target is used.
 """
@@ -410,7 +411,7 @@ def main() -> int:
     record(
         "E.2 the full Wilson/Clifford construction is explicitly outside the no-go",
         no_go_core and gamma_split_ok,
-        "Native chirality splits M_zeta; ambient eta proxies and endpoint lifts are not claimed.",
+        "The displayed Clifford volume element splits M_zeta; ambient eta proxies and endpoint lifts are not claimed.",
     )
 
     print()
@@ -438,9 +439,9 @@ def main() -> int:
 
     print("VERDICT: D,U-generated unital-star-algebra check has FAILs.")
     print("KOIDE_DELTA_D_U_JOINT_ALGEBRA_RANK_ONE_SELECTOR_NO_GO=FALSE")
-    print("D_U_JOINT_ALGEBRA_CONTAINS_RANK_ONE_SELECTOR=FALSE")
-    print("D_U_JOINT_ALGEBRA_CLOSES_RANK_ONE_SELECTION=FALSE")
-    print("RESIDUAL_EIGENLINE=rank_two_zeta_zero_mode_sector_not_split_by_D_U_generated_algebra")
+    print("D_U_JOINT_ALGEBRA_CONTAINS_RANK_ONE_SELECTOR=UNDETERMINED")
+    print("D_U_JOINT_ALGEBRA_CLOSES_RANK_ONE_SELECTION=UNDETERMINED")
+    print("RESIDUAL_EIGENLINE=undetermined_due_to_failed_D_U_joint_algebra_checks")
     print("CLAIM_SCOPE=finite_periodic_L3_r1_unital_star_algebra_generated_by_D_and_U_only")
     print("FULL_WILSON_CLIFFORD_SELECTOR_NO_GO_CLAIMED=FALSE")
     print("AMBIENT_ETA_PROXY_USED=FALSE")

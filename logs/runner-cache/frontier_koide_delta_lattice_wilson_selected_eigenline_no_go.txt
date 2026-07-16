@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py
-runner_sha256: 2efae010f45503a431cdd800ff13e553ff92f38f860639d6b6e976527a8da45a
+runner_sha256: 4a565b9cf129160b1622d8f1e749452416a9f5cc39d499e66991fd70113e7f61
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 
@@ -61,7 +61,7 @@ E. Verdict
 [PASS] E.1 the D,U-generated unital star algebra contains no rank-one selector on M_zeta
        RESIDUAL_EIGENLINE=rank_two_zeta_zero_mode_sector_not_split_by_D_U_generated_algebra
 [PASS] E.2 the full Wilson/Clifford construction is explicitly outside the no-go
-       Native chirality splits M_zeta; ambient eta proxies and endpoint lifts are not claimed.
+       The displayed Clifford volume element splits M_zeta; ambient eta proxies and endpoint lifts are not claimed.
 
 ========================================================================================
 Summary

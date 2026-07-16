@@ -164,6 +164,28 @@ def main() -> int:
     print("  Scope is finite enumeration support only.")
     print("  The paired source note excludes theta and downstream closure claims.")
 
+    section("Upstream license-derivation wiring (2026-07-12)")
+    note = (docs / "PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md").read_text(encoding="utf-8")
+    upstream_name = "PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md"
+    upstream_path = docs / upstream_name
+    check(
+        "source note wires the upstream license derivation (markdown link)",
+        f"[{upstream_name}]({upstream_name})" in note,
+    )
+    upstream = upstream_path.read_text(encoding="utf-8") if upstream_path.is_file() else ""
+    check(
+        "upstream derivation note exists and registers (P-FUND-1TICK)",
+        upstream_path.is_file() and "(P-FUND-1TICK)" in upstream,
+    )
+    check(
+        "source note carries the dated 2026-07-12 wiring Repair Note",
+        "2026-07-12 license-derivation wiring" in note,
+    )
+    check(
+        "source note keeps the license conditional (packet open on the accepted surface)",
+        "the packet remains open on the accepted surface" in note,
+    )
+
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("=" * 88)

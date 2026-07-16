@@ -1,0 +1,98 @@
+===== runner cache v1 =====
+runner: scripts/per_plaquette_license_one_tick_reachability_derivation_2026_07_12.py
+runner_sha256: 8cf86a76ad6060072e154a1ddb33c0264e93f89b10800548bf5b7b61a063dd38
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+========================================================================================
+ONE-TICK REACHABILITY DERIVATION OF THE UNIT-NEIGHBORHOOD LINK LICENSE
+========================================================================================
+R4 OUTCOME: named open condition (not a registered premise node)
+DECISIVE: The accepted sources supply spatial locality and a joint carrier, but no update law confines each fundamental multi-link term's carrier to that link's C_1 set.
+
+----------------------------------------------------------------------------------------
+BLOCK A — Lemma A: explicit-R one-tick identity
+----------------------------------------------------------------------------------------
+  [PASS] explicit R contains exactly self plus NN edges in the bounded window  --  |V|=343 |R|=2107
+  [PASS] Lemma A at base=(-1, -1, -1), orientation=(1, 0, 0)  --  |C_1(link)|=12
+  [PASS] Lemma A at base=(-1, -1, -1), orientation=(0, 1, 0)  --  |C_1(link)|=12
+  [PASS] Lemma A at base=(-1, -1, -1), orientation=(0, 0, 1)  --  |C_1(link)|=12
+  [PASS] Lemma A at base=(0, 0, 0), orientation=(1, 0, 0)  --  |C_1(link)|=12
+  [PASS] Lemma A at base=(0, 0, 0), orientation=(0, 1, 0)  --  |C_1(link)|=12
+  [PASS] Lemma A at base=(0, 0, 0), orientation=(0, 0, 1)  --  |C_1(link)|=12
+  [PASS] Lemma A at base=(1, 1, 1), orientation=(1, 0, 0)  --  |C_1(link)|=12
+  [PASS] Lemma A at base=(1, 1, 1), orientation=(0, 1, 0)  --  |C_1(link)|=12
+  [PASS] Lemma A at base=(1, 1, 1), orientation=(0, 0, 1)  --  |C_1(link)|=12
+  [PASS] union-additivity spot check 1  --  |S|=0
+  [PASS] union-additivity spot check 2  --  |S|=1
+  [PASS] union-additivity spot check 3  --  |S|=2
+  [PASS] union-additivity spot check 4  --  |S|=3
+  [PASS] union-additivity spot check 5  --  |S|=4
+
+----------------------------------------------------------------------------------------
+BLOCK B — loop consequences under the derived form
+----------------------------------------------------------------------------------------
+  [PASS] rooted length-4 count  --  found=24
+  [PASS] all rooted length-4 loops are plaquettes
+  [PASS] all length-4 loops pass the derived C_1 mutual-support form  --  pass=24/24
+  [PASS] length-4 derived and literal predicates agree loop-by-loop
+  [PASS] rooted length-6 count  --  found=264
+  [PASS] all length-6 loops fail the derived C_1 mutual-support form  --  pass=0/264
+  [PASS] length-6 derived and literal predicates agree loop-by-loop
+  [PASS] combined derived/literal pass-fail vectors are identical  --  vector_length=288
+  CONSEQUENCE_COUNTS: length4=24/24 length6=0/264
+
+----------------------------------------------------------------------------------------
+BLOCK C — narrowly scoped covariant-lift route pruning
+----------------------------------------------------------------------------------------
+  [PASS] proper cubic rotation group has order 24
+  [PASS] undirected reference-link stabilizer has order 8  --  preserve=4 swap=4
+  [PASS] all stabilizer elements preserve C_1({0,e1})
+  [PASS] stabilizer orbits are endpoints, axial, and transverse  --  sizes=[2, 2, 8]
+  [PASS] endpoint-plus-transverse domain is a strict covariant subdomain  --  smaller=10 full=12
+  [PASS] strict transverse-only lift passes all plaquettes under mutual containment  --  pass=24/24
+  [PASS] minimal-nonempty covariant-lift selector is falsified  --  full C_1 is not selected uniquely by plaquette passage
+  [PASS] transverse-only length-6 behavior is reported  --  pass=0/264
+  BLOCK_C_WITNESS: group=8 orbits=endpoints:2,axial:2,transverse:8 domain=10/12 plaquettes=24/24 length6=0/264
+
+----------------------------------------------------------------------------------------
+BLOCK D — R-locality falsifier
+----------------------------------------------------------------------------------------
+  [PASS] tiny path R is exactly self plus embedded nearest-neighbor edges  --  |V|=5 |R|=13
+  [PASS] C_1-bounded OR updates respect one-tick confinement exhaustively  --  configuration_pairs=1024
+  [PASS] C_1-bounded parity updates respect one-tick confinement exhaustively  --  configuration_pairs=1024
+  [PASS] C_1-bounded majority updates respect one-tick confinement exhaustively  --  configuration_pairs=1024
+  [PASS] counterexample dependency is at graph radius 2 and outside target's R inputs
+  [PASS] C_1-bounded comparison pair stays inside C_1(source)  --  differences=[(-2, 0, 0), (-1, 0, 0)]
+  [PASS] radius-2 availability changes at the forbidden target after one tick  --  differences=[(-2, 0, 0), (-1, 0, 0), (0, 0, 0)]
+  [PASS] radius-2 dependency violates one-tick difference confinement  --  C_1(source)=[(-2, 0, 0), (-1, 0, 0)]
+  COUNTEREXAMPLE: source=(-2, 0, 0) target=(0, 0, 0) distance=2 C_1(source)=[(-2, 0, 0), (-1, 0, 0)] bad_differences=[(-2, 0, 0), (-1, 0, 0), (0, 0, 0)]
+
+----------------------------------------------------------------------------------------
+BLOCK E — note-surface pins
+----------------------------------------------------------------------------------------
+  [PASS] paired theorem note exists  --  docs/PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md
+  [PASS] note is dated 2026-07-12
+  [PASS] note claim type is bounded_theorem
+  [PASS] conditional status line names the packet
+  [PASS] Lemma A, Lemma B, and Corollary C tags are pinned
+  [PASS] named P-FUND-1TICK packet is fenced verbatim
+  [PASS] all required boundary pins are present
+  [PASS] authorized dependencies and context-only surfaces are pinned
+  [PASS] parent context is not a markdown dependency link
+  [PASS] R4 nonclosure and decisive residual are explicit
+  [PASS] yaml tail supplies bounded-theorem author hint and one-line scope
+  [PASS] note avoids bare retained/promoted status vocabulary
+
+========================================================================================
+SHORT STDOUT SUMMARY
+R4 closure outcome: named open condition (not a registered premise node)
+Decisive sentence: The accepted sources supply spatial locality and a joint carrier, but no update law confines each fundamental multi-link term's carrier to that link's C_1 set.
+Block C witness counts: group=8, orbits=2/2/8, domain=10/12, plaquettes=24/24, length6=0/264
+TOTAL: PASS=51 FAIL=0
+========================================================================================
+
+----- stderr -----
+

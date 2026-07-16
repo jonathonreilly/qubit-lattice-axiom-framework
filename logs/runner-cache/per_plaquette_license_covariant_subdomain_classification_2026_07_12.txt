@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/per_plaquette_license_covariant_subdomain_classification_2026_07_12.py
+runner_sha256: 0ca4adaec367f1c5fd0639c3d3b8e5fdb35c37fb23745db65cdd0bd1812f62b6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.32
+status: ok
+----- stdout -----
+========================================================================================
+COVARIANT ONE-STEP LINK-SUBDOMAIN COMPLETENESS CLASSIFICATION
+========================================================================================
+
+----------------------------------------------------------------------------------------
+BLOCK A — explicit undirected-link stabilizer and orbit decomposition
+----------------------------------------------------------------------------------------
+  [PASS] proper cubic rotation group has order 24
+  [PASS] G_l has order 8 = four axial rotations times endpoint swap  --  preserve=4 swap=4
+  [PASS] G_l is closed under composition  --  64 products checked
+  [PASS] every G_l element fixes {0,e1} as an undirected set
+  [PASS] C_1({0,e1}) has size 12
+  [PASS] the stated endpoint, axial, and transverse sets partition C_1  --  sizes=2/2/8
+  [PASS] the full orbit decomposition is exactly E, A, T with sizes 2/2/8  --  sizes=[2, 2, 8]
+  [PASS] the 10 non-endpoint points decompose into exactly A and T  --  orbit_count=2
+
+----------------------------------------------------------------------------------------
+BLOCK B — exhaustive invariant-subset lattice
+----------------------------------------------------------------------------------------
+  [PASS] all 2^10 endpoint-containing subsets were tested  --  tested=1024
+  [PASS] exactly four subsets are G_l-invariant  --  invariant=4
+  [PASS] the invariant-subset lattice is exactly E, E union A, E union T, C_1  --  sizes=[2, 4, 10, 12]
+  [PASS] the four domains are closed under union and intersection
+  INVARIANT_SUBSETS: tested=1024 invariant=4 sizes=[2, 4, 10, 12]
+
+----------------------------------------------------------------------------------------
+BLOCK C — computed length-4/length-6/length-8 classification table
+----------------------------------------------------------------------------------------
+  [PASS] all five domain builders are undirected-link definitions
+  [PASS] all five domain builders are translation/proper-rotation covariant  --  comparisons=130
+  [PASS] rooted length-4 count  --  found=24
+  [PASS] all rooted length-4 loops are plaquettes
+  [PASS] rooted length-6 count  --  found=264
+  [PASS] rooted length-8 count  --  found=3312
+  [PASS] the complete five-row classification matches the computed theorem table  --  {'E': (2, 0, 0, 0, True), 'E+A': (4, 0, 0, 0, True), 'E+T': (10, 24, 0, 0, True), 'C_1': (12, 24, 0, 0, True), 'radius-2': (38, 24, 264, 96, False)}
+  [PASS] domains missing T give the constant-empty family
+  [PASS] domains containing T give the constant 24/0/0 family
+  [PASS] radius-2 admits the entire enumerated length-6 class
+  [PASS] one-tick domains reject the entire enumerated length-8 class
+  [PASS] radius-2 admits only a strict length-8 subclass (96 of 3312)  --  radius-2 length-8 pass=96
+  COMPUTED_CLASSIFICATION_TABLE:
+  domain       size   length-4   length-6   length-8    one-tick-subset-C_1
+  E (endpoints)    2     0/24       0/264       0/3312    yes
+  E union A       4     0/24       0/264       0/3312    yes
+  E union T      10    24/24       0/264       0/3312    yes
+  C_1            12    24/24       0/264       0/3312    yes
+  radius-2       38    24/24     264/264      96/3312    NO
+
+----------------------------------------------------------------------------------------
+BLOCK D — one-tick column and named radius-2 witness
+----------------------------------------------------------------------------------------
+  [PASS] the four lattice domains are subsets of C_1
+  [PASS] radius-2 is not a subset of C_1  --  radius2=38 C_1=12
+  [PASS] radius-2 size is 25 + 25 - 12 = 38  --  balls=25/25 intersection=12
+  [PASS] -2e1 is a named radius-2 point outside C_1  --  witness=(-2, 0, 0)
+  [PASS] the witness is the block-01 radius-2 source/target violation class  --  source=(-2,0,0) target=(0,0,0)
+  ONE_TICK_WITNESS: point=(-2, 0, 0) in_radius2=True in_C_1=False block01_target=(0, 0, 0)
+
+----------------------------------------------------------------------------------------
+BLOCK E — paired-note surface pins
+----------------------------------------------------------------------------------------
+  [PASS] paired classification note exists  --  docs/PER_PLAQUETTE_LICENSE_COVARIANT_SUBDOMAIN_CLASSIFICATION_NOTE_2026-07-12.md
+  [PASS] note is dated 2026-07-12
+  [PASS] note claim type is bounded_theorem
+  [PASS] note has the exact finite-classification status
+  [PASS] canonical status-authority firewall is present
+  [PASS] completeness theorem tag and exhaustive count are pinned
+  [PASS] classification table contains every computed cell
+  [PASS] enumerated-domain interval theorem tag is pinned
+  [PASS] all required boundary pins are present
+  [PASS] radius-2 witness and block-01 falsifier class are named
+  [PASS] authorized dependencies and backticked parent context are pinned
+  [PASS] the parent context is not a markdown dependency edge
+  [PASS] yaml tail supplies bounded-theorem author hint and one-line scope
+
+========================================================================================
+SHORT STDOUT SUMMARY
+E union A row: size=4 length4=0/24 length6=0/264
+radius-2 domain size: 38
+TOTAL: PASS=42 FAIL=0
+========================================================================================
+
+----- stderr -----
+

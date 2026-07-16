@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_per_plaquette_from_adjacency_license_2026_06_09.py
-runner_sha256: c5847d71019999ab6abe33984aad71e53045132201d942a88a80ad55cded9bf4
+runner_sha256: 4066a2e8b663621e74adacc781b77f984b9fd0a7e2bc02f6392b395791ec7684
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -37,8 +37,16 @@ Scope guard
   Scope is finite enumeration support only.
   The paired source note excludes theta and downstream closure claims.
 
+----------------------------------------------------------------------------------------
+Upstream license-derivation wiring (2026-07-12)
+----------------------------------------------------------------------------------------
+  [PASS] source note wires the upstream license derivation (markdown link)
+  [PASS] upstream derivation note exists and registers (P-FUND-1TICK)
+  [PASS] source note carries the dated 2026-07-12 wiring Repair Note
+  [PASS] source note keeps the license conditional (packet open on the accepted surface)
+
 ========================================================================================
-SUMMARY: PASS=9 FAIL=0
+SUMMARY: PASS=13 FAIL=0
 ========================================================================================
 
 ----- stderr -----

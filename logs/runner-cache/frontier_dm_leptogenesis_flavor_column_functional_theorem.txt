@@ -1,64 +1,87 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py
-runner_sha256: 6e0f03f36a7d0c6db0a0c6e5d15389bc2c140a42f373963713475f9e36c7af22
+runner_sha256: 9ab0f928b3b62393fa282c7e83e741123a2c9a0667d13cdb7b346f5c4d760d9f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.35
+elapsed_sec: 1.61
 status: ok
 ----- stdout -----
 ========================================================================================
-DM LEPTOGENESIS FLAVOR-COLUMN FUNCTIONAL THEOREM
+DM LEPTOGENESIS CONDITIONAL FLAVOR-COLUMN FUNCTIONAL IDENTITY
 ========================================================================================
 
 ========================================================================================
-PART 1: SINGLE-SOURCE FLAVORED TRANSPORT IS AN EXACT COLUMN FUNCTIONAL
+PART 0: SOURCE-SCOPE AND DIRECT-CONSUMER FIREWALL
 ========================================================================================
-  [C] PASS: The exact flavored asymmetry for one source equals the sum of three one-variable channel functionals  ((Δ_a,Δ_b)=(2.75e-09,3.23e-09))
-  [C] PASS: So the transport-relevant PMNS column is selected by a scalar functional of its entries, not by a new transport ansatz  (F_K(P) = Σ_alpha Psi_K(P_alpha))
-  [C] PASS: The exact functional depends only on the exact one-flavor source profile and washout tail  (source_min=7.225e-14, tail_max=55.648577)
-
-  direct functional check on canonical near-closing column: 0.025313835316 vs 0.025313838064
-  direct functional check on democratic column:            0.017734139120 vs 0.017734142347
+  [B] PASS: source note carries required scope phrase: supplied-premise integrating-factor identity
+  [B] PASS: source note carries required scope phrase: It does not derive a leptogenesis transport model from the framework.
+  [B] PASS: source note carries required scope phrase: This is a finite supplied-packet ordering.
+  [B] PASS: source note carries required scope phrase: No global uniqueness claim is made on `[0,1]`
+  [B] PASS: source note carries required scope phrase: physical leptogenesis closure
+  [B] PASS: source note carries required scope phrase: missing_bridge_theorem
+  [B] PASS: source note carries required scope phrase: scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py
+  [B] PASS: source note excludes overclaim phrase: unique interior maximum
+  [B] PASS: source note excludes overclaim phrase: selects the middle column exactly
+  [B] PASS: source note excludes overclaim phrase: transport selector: closed
+  [B] PASS: source note excludes overclaim phrase: This closes the flavored-column selection problem
+  [B] PASS: source note excludes overclaim phrase: near-closing DM flavored-transport read is now pinned
+  [B] PASS: runner excludes physical yield/readout import: ETA_OBS
+  [B] PASS: runner excludes physical yield/readout import: C_SPH
+  [B] PASS: runner excludes physical yield/readout import: D_THERMAL_EXACT
+  [B] PASS: runner excludes physical yield/readout import: S_OVER_NGAMMA_EXACT
+  [B] PASS: ledger-declared direct consumers exclude laundering phrase: the exact one-source flavored selector
+  [B] PASS: ledger-declared direct consumers exclude laundering phrase: the flavored transport selector is exact
+  [B] PASS: ledger-declared direct consumers exclude laundering phrase: the exact DM transport selector
+  [B] PASS: ledger-declared direct consumers exclude laundering phrase: retained authority supplying the transport-favored flavor column
+  [B] PASS: ledger-declared direct consumers exclude laundering phrase: retained-grade generated supplier of `i_*`
+  [B] PASS: ledger-declared direct consumers exclude laundering phrase: fixed by the exact transport extremal class
+  [B] PASS: ledger-declared direct consumers exclude laundering phrase: fixed by the exact transport-extremal
 
 ========================================================================================
-PART 2: THE CHANNEL KERNEL HAS A UNIQUE SMALL-LEAKAGE OPTIMUM
+PART 1: CONDITIONAL INTEGRATING-FACTOR IDENTITY
 ========================================================================================
-  [C] PASS: The one-channel flavored kernel Psi_K(q) has a unique interior maximizer on [0,1]  (q_star=0.035000)
-  [C] PASS: The exact current branch prefers small but nonzero flavor leakage rather than a perfectly democratic or perfectly single-flavor split  (Psi(0.04)=0.010965)
-  [C] PASS: This explains why a near-diagonal PMNS column with two small leakage entries can beat a more extreme almost-basis-vector column  (q_star=0.035000)
-
-  unique channel optimum q_star = 0.035000
-  Psi(q_star) = 0.011014791185
+  [A] PASS: finite functional agrees with the closed-form constant-profile solution  (max_error=1.087e-09)
+  [A] PASS: finite functional agrees with an independent ODE solve for a non-constant profile  (max_error=8.013e-10)
+  [A] PASS: invalid negative projector weight is rejected
+  [A] PASS: invalid non-monotone integration grid is rejected
+  [A] PASS: invalid non-finite column is rejected
 
 ========================================================================================
-PART 3: THE CANONICAL N_e ACTIVE BLOCK SELECTS THE MIDDLE COLUMN
+PART 2: SUPPLIED FINITE KERNEL CROSS-RECOMPUTATION
 ========================================================================================
-  [C] PASS: The exact column functional reproduces the direct transport ordering on the canonical N_e packet  ((argmax_direct,argmax_func)=(1,1))
-  [C] PASS: On the canonical N_e active block, the transport-relevant column is exactly the middle column  (func_vals=[0.02099667 0.02531384 0.02355134])
-  [D] PASS: That exact middle-column selection is the same near-closing column previously seen in the pair-interface diagnostic  (eta/eta_obs=0.989512597197)
+  [B] PASS: primary gradient kernel agrees with a different-grid ODE-source recomputation  (max_error=8.808e-09, samples=12)
+  [B] PASS: finite functional agrees with the independent direct flavored ODE solve  (max_error=3.283e-09, samples=12)
+  [B] PASS: the supplied fixture has increasing z, non-negative primary source weights, and decreasing tail  (source_min=7.224e-14, tail_range=[0.000e+00,55.648577])
 
-  canonical N_e active packet:
+  This cross-check is conditional on the helper's supplied equations, profiles, constants, and boundary data.
+
+========================================================================================
+PART 3: LOCAL STATIONARY-POINT ISOLATION; GLOBAL UNIQUENESS OPEN
+========================================================================================
+  [A] PASS: analytic derivative changes sign inside the stated finite-kernel bracket  (Psi_h'(0.03549)=2.208e-05, Psi_h'(0.03550)=-3.486e-05)
+  [A] PASS: second-derivative terms are non-positive and their sum is negative throughout that bracket  (q_root=0.035493877260, q_hi*T_max=1.975524, Psi_h''(q_root)=-5.694537)
+  [A] PASS: the locally isolated finite-kernel point exceeds the democratic and pure-flavor samples  (Psi_h(root)=0.011015495596, Psi_h(1/3)=0.005911380769, Psi_h(1)=0.004829546210)
+
+  No check in this runner asserts that this is the only stationary point on [0,1] or for a continuum profile.
+
+========================================================================================
+PART 4: SUPPLIED CANONICAL PACKET FINITE ORDERING
+========================================================================================
+  [B] PASS: the supplied eigensystem packet is column-stochastic and non-negative  (min_entry=9.443e-03, max_column_sum_error=4.441e-16)
+  [B] PASS: functional and direct ODE computations agree on all three supplied packet columns  (max_error=2.748e-09)
+  [B] PASS: both finite computations order the supplied packet with middle column first  (argmax_direct=1, argmax_functional=1, functional_gap=1.762497e-03)
+  [A] PASS: column relabeling only relabels the finite functional values  (permutation=[2, 0, 1])
+
+  supplied canonical N_e packet:
 [[0.915868 0.071267 0.012865]
  [0.074689 0.900307 0.025004]
  [0.009443 0.028427 0.962131]]
-  direct columnwise transport factors = [0.02099667 0.02531384 0.02355134]
-  exact functional column values      = [0.02099667 0.02531384 0.02355134]
-  direct columnwise eta/eta_obs       = [0.8207555  0.9895126  0.92061701]
+  direct finite transport factors = [0.020997 0.025314 0.023551]
+  finite functional values        = [0.020997 0.025314 0.023551]
+  No physical yield conversion or canonical-packet derivation is claimed here.
 
 ========================================================================================
-PART 4: BOTTOM LINE
-========================================================================================
-  [C] PASS: The DM flavored-column problem is now reduced from a transport ODE search to an exact scalar functional on active PMNS columns  (F_K(P) = Σ_alpha Psi_K(P_alpha))
-  [C] PASS: On the canonical charged-lepton-active sample, that exact functional selects the near-closing middle column  (best column index = 1)
-  [C] PASS: So the remaining open science is no longer which column transport wants; it is the PMNS-side law for the active source that generates that column  (derive the active five-real source or an equivalent active-column law)
-
-  Transport-facing read:
-    - one-source flavored transport is an exact column functional
-    - the canonical N_e active packet already contains the right near-closing column
-    - the open problem is now only the PMNS-side value law for that active column/source
-
-========================================================================================
-SUMMARY: classified_pass=12 fail=0
+SUMMARY: classified_pass=38 fail=0
 ========================================================================================
 
 ----- stderr -----

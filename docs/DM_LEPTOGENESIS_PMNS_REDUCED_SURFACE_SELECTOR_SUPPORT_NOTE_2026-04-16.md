@@ -48,7 +48,7 @@ the refreshed branch. The support result is:
 
 - three stationary closure branches on the reduced surface
 - one branch is the lowest-action branch in the current reduced-surface search
-- the lower branch closes the favored column exactly
+- the lower branch meets the supplied finite-kernel equality numerically
 - the lower branch is separated from the next branch by a finite action gap
 
 The lower-action branch is the same exact branch already seen in the earlier
@@ -58,7 +58,7 @@ selector theorem:
 - `y = (0.208063, 0.464382, 0.247555)`
 - `delta ~ 0`
 - `S_rel = 0.240906701390`
-- `eta / eta_obs = 1`
+- the helper-stack equality ratio is numerically `1`
 
 The second stationary branch is:
 
@@ -89,12 +89,16 @@ local polishing. So the safe live statement is:
 - the low branch remains separated by a finite action gap
 - this materially strengthens the PMNS-assisted route
 - it is not yet promoted here as a theorem-grade global selector certificate
+- every favored-column and equality statement remains conditional on the
+  supplied transport equations, profiles, finite quadrature, packet
+  construction, and physical readout factors; this note derives none of those
+  inputs
 
 ## Upstream authorities
 
 The runner imports four PMNS-side modules; each has a framework wrapper note:
 
-- [DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md) — flavor-column functional theorem (`func` module).
+- [DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md) — conditional finite flavor-column functional identity (`func` module); no transport provenance or physical-readout authority is inherited.
 - [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md) — active-projector reduction (`act` module).
 - [DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md) — observable-relative action law (`rel` module).
 - [DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md) — projector interface supplying `canonical_h`.

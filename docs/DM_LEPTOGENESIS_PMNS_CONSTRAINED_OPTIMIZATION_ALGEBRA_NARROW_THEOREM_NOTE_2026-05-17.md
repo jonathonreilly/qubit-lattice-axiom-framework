@@ -44,9 +44,9 @@ algebraic core of the parent
 row. The broad parent additionally adopts the explicit information-cost
 functional `I_seed = D_KL(x || x_seed) + D_KL(y || y_seed) + (1 - cos delta)`
 as a post-axiom selector definition imported from information geometry,
-and the explicit transport-favored column index `i_*` from the retained
+and the explicit finite-fixture column index `i_*` from the conditional
 [`DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
-authority. This narrow theorem isolates only the abstract
+input. This narrow theorem isolates only the abstract
 calculus content of "constrained-minimum existence and stationarity
 characterization under admitted strict convexity and admitted constraint
 regularity", which is a pure standalone math identity reviewable
@@ -182,8 +182,8 @@ Omega    :=  open subset on which I_seed is strictly convex; in
 J        :=  I_seed
 C(z)     :=  eta_{i_*}(z) / eta_obs  -  1
 F        :=  { z in Omega : C(z) = 0 }    (parent: closure manifold)
-i_*      :=  transport-favored column from the retained
-             dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16
+i_*      :=  column index returned by the supplied finite transport fixture
+             in dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16
 z_0      :=  feasible point exhibited by the parent runner
 ```
 
@@ -220,10 +220,10 @@ Then `(P)` is exactly "choose the one minimizing `I_seed`", and
   narrow theorem does not re-derive these.
 - Does **not** derive the existence or boundedness of `F`. That is
   admitted via `(H3)` and is exhibited by the parent runner.
-- Does **not** identify `i_*`. The transport-favored column is the
-  output of the retained
+- Does **not** identify `i_*`. The column index is the conditional output of
+  the supplied finite transport fixture in
   `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`,
-  not re-derived here.
+  not re-derived or physically interpreted here.
 - Does **not** supply or constrain the numerical readout `(x_*, y_*, delta_*)`
   or the multiplier `lambda_*`. Those are downstream numerical
   consequences and not part of the standalone calculus identity.
@@ -245,9 +245,10 @@ framing" section:
 
 1. The explicit information-cost selector `I_seed` as a post-axiom
    adopted definition imported from information geometry.
-2. The flavor-column-functional theorem
+2. The conditional flavor-column functional identity
    (`dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`,
-   generated retained-grade), supplying `i_*`.
+   conditional on supplied transport equations, profiles, and packet),
+   supplying the finite-fixture index `i_*`.
 3. The analytic-stationary-classification theorem
    (`dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16`,
    generated retained-grade), which already proves the KKT structure for the
@@ -274,10 +275,10 @@ theorem does not promote, restate, or attempt to discharge that hole.
   closure surface)`; currently non-retained in the generated audit
   ledger at the date of this note.
 - [`DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
-  — retained authority supplying the transport-favored flavor column
-  index `i_*` used to define the constraint `C(z)` in the abstract
-  identification; generated as retained-grade in the audit ledger at
-  the date of this note.
+  — conditional supplied-fixture input for the column index `i_*` used to
+  define the constraint `C(z)` in the abstract identification; the present
+  calculus theorem does not inherit transport provenance, packet canonicity,
+  or physical readout authority from that input.
 - [`DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md)
   — retained sibling authority that already exhibits the KKT structure
   for the same exact seed surface and the same constraint
@@ -337,7 +338,7 @@ The runner closes with PASS=N FAIL=0 at exact sympy precision.
   (parent broad row; currently non-retained in the generated audit
   ledger; bundles items 1-6; this narrow theorem isolates only item 6).
 - `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`
-  (retained-grade generated supplier of `i_*`).
+  (conditional supplied-fixture source of `i_*`; no status inheritance).
 - `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16`
   (retained sibling KKT theorem with framework-internal `S_rel`
   selector; generated retained-grade).

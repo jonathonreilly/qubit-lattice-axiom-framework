@@ -20,7 +20,7 @@ five-real source. That was true if one only used:
 - branch/orientation,
 - seed averages,
 - support pattern,
-- and the exact transport selector.
+- and the supplied finite transport functional.
 
 But the PMNS microscopic source-response theorem is stronger than that.
 
@@ -45,11 +45,12 @@ projected Hermitian source law alone:
 
 `dW_e^H`.
 
-The logic is exact:
+The reduction is algorithmic conditional on the supplied transport fixture:
 
 1. `dW_e^H` reconstructs the active charged-lepton Hermitian block `H_e`
 2. on `N_e`, the PMNS packet is exactly `|U_e|^2^T`
-3. the exact DM transport selector `F_K` acts on the three packet columns
+3. the supplied finite DM transport functional `F_K` acts on the three packet
+   columns
 4. therefore the selected flavored transport column is algorithmic once
    `dW_e^H` is known
 
@@ -82,18 +83,19 @@ Therefore the active packet is exactly
 
 So `H_e` alone determines the `N_e` packet.
 
-### 3. The exact transport selector determines the column
+### 3. The supplied finite transport functional orders the columns
 
-The DM branch already has the exact one-source flavored selector
+Given the supplied one-source flavored equation, profiles, and finite
+quadrature, the branch uses
 
 `F_K(P) = Σ_alpha Psi_K(P_alpha)`.
 
-Applying this to the three columns of the `N_e` packet selects the relevant
-column exactly.
+Applying this to the three columns of the supplied `N_e` packet orders those
+three finite columns.
 
-On the canonical `N_e` sample, this reproduces the same near-closing value:
-
-`eta/eta_obs = 0.989512597197`.
+On the canonical `N_e` sample, the middle column is first under both the finite
+functional and the helper's direct ODE computation. This is not a derivation of
+a physical yield or readout map.
 
 ## Consequence
 
@@ -111,7 +113,7 @@ because once `dW_e^H` is known:
 
 - `H_e` is known
 - the `N_e` packet is known
-- the transport-relevant column is known
+- the finite-fixture transport ordering is known
 
 So the remaining PMNS contribution to the DM flavored-repair route is smaller
 and more source-response-native than the earlier five-real formulation.
@@ -129,8 +131,8 @@ Hermitian source law.
 
 This note does **not** yet evaluate `dW_e^H` from `Cl(3)` on `Z^3`.
 
-It proves only that once `dW_e^H` is available, the selected `N_e` transport
-column and the near-closing DM flavored value are both downstream algorithmic.
+It proves only that once `dW_e^H` and the supplied transport fixture are
+available, the finite `N_e` column ordering is downstream algorithmic.
 
 So the live remaining gap is now:
 
@@ -150,7 +152,7 @@ python3 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py
 
 The load-bearing traceability requirement for this theorem is to link
 the repo-native authorities for `dW_e^H` from `Cl(3)` on `Z^3`, the
-`H_e -> N_e packet` bridge, and the exact transport selector. The
+`H_e -> N_e packet` bridge, and the supplied finite transport functional. The
 runner imports the load-bearing ingredients from named theorem-side
 modules, each backed by a dedicated repo-native theorem note. The
 corresponding markdown links are registered as one-hop dependency
@@ -161,8 +163,8 @@ Runner-side carriers:
 - `scripts/dm_leptogenesis_exact_common.py` — supplies `exact_package`
   and the source-side normalisation used by the runner.
 - `scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py`
-  — supplies the transport-relevant flavored column functional and the
-  `F_K` action on packet columns.
+  — supplies the conditional finite flavored-column functional and its
+  `F_K` action on supplied packet columns.
 - `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py`
   — supplies the PMNS-projector interface used by §2 to convert
   `H_e` into the `N_e` packet `|U_PMNS|^2 = |U_e|^2^T`.
@@ -173,8 +175,10 @@ Theorem-side authorities (load-bearing one-hop deps):
   — supplies the source-side `exact_package` with `gamma`, `E1`, `E2`,
   used as the source-oriented input to the projected-source law.
 - [DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
-  — supplies the exact transport selector `F_K` referenced in §"Bottom
-  line" item 3 and §"Exact reduction" §3.
+  — supplies the conditional integrating-factor identity and finite transport
+  functional referenced in §"Bottom line" item 3 and §"Exact reduction" §3;
+  it does not derive the transport equations, profiles, packet, or physical
+  readout.
 - [DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
   — supplies the PMNS-projector interface used to bridge from `H_e`
   to the `N_e` packet (§"Exact reduction" §2).

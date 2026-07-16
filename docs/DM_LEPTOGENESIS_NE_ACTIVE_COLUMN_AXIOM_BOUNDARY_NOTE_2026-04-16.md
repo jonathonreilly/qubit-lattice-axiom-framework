@@ -8,11 +8,12 @@
 
 ## Status
 
-Exact sole-axiom boundary theorem for the remaining PMNS-assisted flavored DM
-transport gap on the refreshed branch.
+Finite counterexample boundary for the remaining PMNS-assisted flavored DM
+transport gap, conditional on the supplied transport equations, profiles, and
+finite column functional used by the refreshed branch.
 
-This note answers the strongest remaining hope after the projector-interface,
-active-block localization, and exact transport-selector theorems:
+This note answers the strongest remaining hope after the projector interface,
+active-block localization, and supplied finite transport-functional identity:
 
 maybe the current native PMNS laws still fail to fix the full active
 five-real source, but perhaps they at least force the selected transport column
@@ -29,7 +30,7 @@ already determined by the currently native PMNS data coming from `Cl(3)` on
 Equivalently: after importing
 
 - one-sided active-block localization,
-- the exact flavored transport selector,
+- the supplied finite flavored transport functional,
 - the active seed pair,
 - the active branch/support data,
 
@@ -54,7 +55,7 @@ but carry different active five-real source data
 and those different sources induce:
 
 - different active projector packets,
-- different exact transport functional values,
+- different values of the supplied finite transport functional,
 - and different selected active columns.
 
 In fact the same current-native `N_e` data class can realize selected column
@@ -63,20 +64,22 @@ In fact the same current-native `N_e` data class can realize selected column
 So the selected `N_e` transport column is **not** fixed by the currently native
 PMNS laws from `Cl(3)` on `Z^3`.
 
-## Exact selector already closed
+## Supplied selector used by the counterexample
 
 The negative result is not coming from transport ambiguity.
 
-The DM branch already has the exact one-source flavored selector
+Conditional on the supplied one-source flavored transport equation and its
+computed profiles, the branch uses
 
 `F_K(P) = Σ_alpha Psi_K(P_alpha)`.
 
-So once an active column `P` is supplied, the transport read is algorithmic.
+So once an active column `P` and that transport fixture are supplied, the
+finite transport read is algorithmic.
 
 The question here is strictly upstream: does the sole-axiom PMNS lane already
 force the relevant active column on `N_e`?
 
-This note proves it does not.
+For that supplied finite fixture, the explicit samples show it does not.
 
 ## Explicit counterexample family
 
@@ -102,11 +105,11 @@ source.
 
 This sharpens the sole-axiom DM/PMNS boundary one more step.
 
-What is already exact:
+What is available on the stated conditional surface:
 
 - one-sided PMNS projectors localize to the active block,
-- the flavored transport selector is exact,
-- the canonical `N_e` near-closing middle-column sample is known,
+- the flavored transport functional follows from the supplied equations,
+- the canonical `N_e` middle-column ordering is known on one finite sample,
 - the seed pair and branch/support data are native.
 
 What is still not fixed:
@@ -120,15 +123,17 @@ produces the selected active column from it.
 
 ## Honest endpoint
 
-The honest sole-axiom endpoint on this lane is now:
+The honest endpoint on this lane is now:
 
-- transport selector: closed
+- transport functional: conditional on supplied equations, profiles, and
+  boundary data
 - active-block localization: closed
 - selected `N_e` column: **not** closed from the current PMNS native laws
 
 Therefore the refreshed DM branch does **not** yet gain full flavored transport
-repair from the PMNS lane alone. It gains the correct carrier and selector, but
-not the final PMNS-side value law.
+repair from the PMNS lane alone. It gains a finite conditional carrier/selector
+diagnostic, but neither an axiom-native transport bridge nor the final
+PMNS-side value law.
 
 ## Command
 

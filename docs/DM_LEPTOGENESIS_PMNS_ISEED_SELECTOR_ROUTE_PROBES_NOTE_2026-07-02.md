@@ -14,7 +14,8 @@ the four-axiom baseline.
 Three refutation-shaped, machine-checked probes locate **where** the non-baseline
 content of the adopted minimum-information source selector lives, using the gate
 note's own objects (its exact fixed native seed surface, its exact `I_seed`
-functional, and its exact transport map — imported, not re-implemented):
+functional, and its supplied finite transport map — imported, not
+re-implemented):
 
 1. **P1 (state-contingency of the favored column):** the transport-favored column
    `i_* = argmax_i eta_i` is not fixed by the axiom surface alone — two
@@ -39,8 +40,8 @@ The gate note
 [DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
 (non-retained; ledger `effective_status: audited_conditional` in the generated
 audit ledger at the date of this note) states a two-step selection law: (1)
-determine the transport-favored flavor column `i_*` from the exact
-transport-extremal class; (2) among positive off-seed sources on the fixed
+determine the finite-fixture flavor column `i_*` from the supplied transport
+map; (2) among positive off-seed sources on the fixed
 native seed surface satisfying `eta_{i_*}/eta_obs = 1`, minimize
 `I_seed = D_KL(x||x_seed) + D_KL(y||y_seed) + (1 - cos delta)`.
 
@@ -213,7 +214,9 @@ the exact seed from the P2 bank so both reported minima are strictly positive.
   — exact package constants (`epsilon_1`, `k_decay_exact`, thermal/sphaleron
   factors) used by the transport map.
 - [DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
-  — `flavored_column_functional` and the flavored transport kernel.
+  — `flavored_column_functional` and the finite flavored transport kernel,
+  conditional on supplied equations, profiles, boundary data, and packet; the
+  probes do not inherit a physical yield or canonical-packet derivation.
 - [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md)
   — `active_packet_from_h` (active-sector packet from the effective h).
 - [DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)

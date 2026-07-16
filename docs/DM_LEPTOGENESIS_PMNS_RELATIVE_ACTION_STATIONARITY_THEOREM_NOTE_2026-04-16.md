@@ -37,8 +37,8 @@ More sharply:
 - the exact observable principle already gives the scalar generator
   `W = log|det(D+J)| - log|det D|`
 - the fixed native `N_e` seed pair is already derived
-- the favored closure column is already fixed on the current branch
-- exact closure is reached by minimizing
+- the favored finite-fixture column is supplied by the current transport map
+- the helper-stack equality constraint is imposed while minimizing
 
 `S_rel(H_e || H_seed) = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3`
 
@@ -55,7 +55,7 @@ So constrained minimization of `S_rel` is not an imported information
 principle. It is the native effective-action selector attached to the exact
 observable grammar.
 
-On the fixed `N_e` seed surface and the already-derived favored closure column,
+On the fixed `N_e` seed surface and the supplied finite-fixture column,
 sampled constrained solves expose more than one stationary branch, but only one
 branch is the unique lowest-action closure branch among all sampled feasible
 starts. That branch is a strict local minimum under sampled near-exact
@@ -96,9 +96,9 @@ generator.
 On the refreshed DM branch:
 
 1. the fixed native charged seed surface is exact
-2. the favored closure column on that surface is fixed by the exact transport
-   extremal class
-3. the flavored closure condition is exact:
+2. the favored column on that surface is returned by the supplied finite
+   transport functional
+3. the helper-stack flavored equality constraint is:
 
 `eta_{i_*}(H_e) / eta_obs = 1`
 
@@ -137,6 +137,11 @@ computation is visible inside the restricted packet without requiring
 external resolution of the helper import. They are reproduced for
 visibility only; the load-bearing implementation lives in the helper
 module file path above.
+
+The imported flavored-column module supplies only a conditional finite
+transport functional. It does not derive the transport equation, profiles,
+canonical packet, or physical yield/readout map, and this stationarity note
+does not inherit those missing bridges.
 
 Provenance: copied verbatim from
 `scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py`
@@ -267,7 +272,8 @@ The stationary source is the same observable-relative-action closure source:
 - `y_stat = (0.208063, 0.464383, 0.247554)`
 - `delta_stat ~ 0`
 
-and it gives exact closure on the favored column:
+and it gives the imposed helper-stack equality on the favored finite-fixture
+column:
 
 - `eta / eta_obs = (1.0, 0.75917896, 0.48458840)`
 
@@ -287,7 +293,7 @@ The current branch now has:
 
 - exact scalar observable generator from `Cl(3)` on `Z^3`
 - exact seed-relative effective action on the charged block
-- exact closure surface
+- supplied finite-kernel equality surface
 - constrained effective-action selector on that surface
 
 So the selector principle is no longer a free import. The exact law is:
@@ -305,8 +311,8 @@ This note does **not** claim:
 
 The current theorem is:
 
-- exact at the effective-action reduction level
-- branch-exact at the closure equation level
+- exact at the positive-cone effective-action identity level
+- finite-fixture numerical at the supplied equality-constraint level
 - uniqueness of the lowest-action branch / local-minimum verified directly on
   the current closure patch
 

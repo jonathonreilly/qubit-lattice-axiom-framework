@@ -25,7 +25,7 @@ The framework now supports all of the following:
 | Buttazzo-style calibrated-fit dependence is required | NO |
 
 Dependency correction (2026-07-16):
-[`HIGGS_MECHANISM_NOTE.md`](./HIGGS_MECHANISM_NOTE.md) is only the exact
+`HIGGS_MECHANISM_NOTE.md` is only the exact
 radial-quartic global-minimum lemma for formal `lambda > 0` and real `m2`.
 It supplies none of the physical Higgs, condensate, Coleman-Weinberg,
 boundary-condition, hierarchy, or mass statements in this note. Those
@@ -138,7 +138,7 @@ It is “Higgs is conditionally closed at 3-loop on the accepted YT route.”
 
 ### Supporting Higgs surfaces
 
-- [HIGGS_MECHANISM_NOTE.md](./HIGGS_MECHANISM_NOTE.md)
+- `HIGGS_MECHANISM_NOTE.md`
   exact formal radial-polynomial algebra only; not mechanism-level or mass
   support
 - `HIGGS_FROM_LATTICE_NOTE.md`

@@ -1,42 +1,26 @@
 # Claim-Status Certificate
 
+## Active block 02
+
 ```yaml
 actual_current_surface_status: candidate-retained-grade
-target_claim_type: positive_theorem
+target_claim_type: bounded_theorem
 trace_class: direct_blocker_closure
 reachability_to_target: closes
-conditional_surface_status: null
-hypothetical_axiom_status: null
-admitted_observation_status: null
-claim_type_reason: "The artifact is a self-contained finite-volume operator theorem with no fitted, observed, or literature input; local review-loop passed, while independent audit ratification remains required."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
+review_loop_disposition: pass
 ```
 
-## Dependency and import gate
+The proposed theorem is self-contained on the finite open-slab pure-gauge
+surface. The coefficient proof has no open import, and the independent
+finite-Gram route confirms positive type without literature. All three
+review-loop lanes passed after narrow fixes.
 
-- Load-bearing in-repo dependencies: none planned.
-- Approved primitives: checked; none load-bearing.
-- Observed or fitted values: none.
-- Literature values/theorems: none load-bearing.
-- Open physical selector or source/action bridge: none inside the stated finite
-  Wilson theorem.
-- Open downstream data: `beta=6` Perron/thermal data, explicitly outside scope.
+This is not an audit verdict. The target ledger remains under independent
+audit authority; only that pipeline may assign an effective retained status.
 
-## Claim-type gate
+## Landed block 01
 
-| Requirement | Current state |
-|---|---|
-| intended claim type named | `positive_theorem` |
-| open imports absent | yes |
-| observed/fitted/literature values absent | yes |
-| dependency classes retained or self-contained | self-contained target |
-| runner checks dependency classes and load-bearing bridge | implemented; `6` exact theorem checks and `10` support/falsifier checks |
-| direct blocker closure | yes |
-| review-loop disposition `pass` | yes; all three lanes passed after narrow fixes |
-| independent audit requirement stated | yes |
-
-The local review-loop disposition is `pass`, so the branch-local artifact is
-classified `candidate-retained-grade`. This is not an audit verdict:
-independent audit remains the only authority for any effective retained
-status.
+Block 01 landed through PR 5398 at `fe6586b098...`. Its local disposition was
+`pass` and its source remains pending independent audit.

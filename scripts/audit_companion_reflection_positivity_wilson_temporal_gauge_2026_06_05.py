@@ -13,23 +13,24 @@ observables on the positive-time half.
 
 Setup (explicit small lattice, link/time reflection):
 
-  * Two time slices t in {0, 1}; periodic spatial direction with
-    L_s spatial links per slice; temporal gauge U_0 = 1.
+  * One open temporal slab with boundary slices t in {0, 1}; no periodic
+    temporal identification; one periodic spatial direction with L_s links
+    per slice; temporal-gauge data U_0 = 1.
   * Time reflection theta across the plane between t=0 and t=1 swaps the
     two slices:  theta(c0, c1) = (c1, c0), where c1 are the positive-half
     (t=1) links and c0 the reflected (t=0) links.
   * Wilson action uses S_W = -beta * sum_p Re Tr U_p (up to the
     irrelevant additive constant).  Its Boltzmann exponent splits as
     B = B_+ + B_- + B_0:
-        B_+ : beta times the spatial Wilson loop on the t=1 slice;
-        B_- : the same loop on the t=0 slice (reflected half) = Theta B_+;
+        B_+ = B_- = 0 on this exact 1+1-dimensional carrier, because there
+              are no purely spatial plaquettes;
         B_0 : beta times the straddling temporal plaquette term.  Equivalently
               the plane action is S_W,0 = -B_0 and exp(-S_W,0)=exp(B_0).
   * Reflected (Osterwalder-Schrader) inner product on positive-half
     observables F:  Theta(F)(U) = conj( F(theta U) ), and
         G_ij = < Theta(F_i) . F_j >  (ordinary expectation).
 
-Checks (all reproved here; literature is comparator only):
+Checks (all reproved here; no literature theorem is a derivation input):
 
   Part A  B_- = Theta B_+ (reflection symmetry) and B_0 reflection-plane
           invariance, exactly, on Z_N and U(1).
@@ -37,9 +38,10 @@ Checks (all reproved here; literature is comparator only):
           factor exp(B_0) is, per straddling link, a character sum with
           REAL NONNEGATIVE coefficients (Z_N: discrete Fourier; U(1):
           modified-Bessel coefficients certified by the positive-term
-          power series), hence a positive (Gram) kernel.  This is the
-          "norm-square" hypothesis of the gauge-half note instantiated on
-          the Wilson plane.
+          power series; SU(N): direct representation-ring expansion in
+          tensor powers of the fundamental plus antifundamental), hence a
+          positive (Gram) kernel.  This is the "norm-square" hypothesis of
+          the gauge-half note instantiated on the Wilson plane.
   Part C  Integrated three-factor RP Gram is PSD for A_+^(2) observables:
           G_ij = (1/Z) sum_cfg exp(B) conj(F_i(theta cfg)) F_j(cfg) over
           a basis of plaquette / two-link observables on the positive
@@ -56,13 +58,12 @@ Checks (all reproved here; literature is comparator only):
           Gram for a degree<=2 SU(2) observable basis is PSD within MC
           error, evidence that the link-reflection structure carries to
           non-abelian groups.
-
-Literature comparator (NOT a derivation input): Osterwalder & Seiler,
-"Gauge Field Theories on a Lattice", Ann. Phys. 110 (1978) 440 (link
-reflection positivity for the Wilson action); Montvay & Munster,
-"Quantum Fields on a Lattice" (CUP 1994), Sec. 3.4 (transfer matrix /
-reflection positivity). These are named as the standard RP comparator
-only; every positivity statement above is reproved here.
+  Part F  SU(3) exact representation-ring gate and deterministic plane-
+          kernel checks: the multiplicities in (3 plus 3bar)^tensor n are
+          nonnegative integers, obey the exact dimension identity 6^n,
+          and yield nonnegative truncated character coefficients.  A
+          sampled SU(3) Wilson plane kernel is PSD for positive coupling
+          and a negative-coupling control is not PSD.
 
 Companion role: not a new claim row, not a status promotion; provides
 audit-friendly evidence. No PDG / fitted / measured / lattice-MC / beta=6
@@ -74,6 +75,7 @@ from __future__ import annotations
 import itertools
 import math
 import sys
+from collections import defaultdict
 
 import numpy as np
 
@@ -121,14 +123,12 @@ def zn_rp_setup(N: int, beta: float, Ls: int = 2):
     Z_N Wilson plaquette RP problem on the two-slice lattice."""
 
     def S_plus(links_t):
-        # Spatial Wilson loop on a single slice: closed periodic loop of the
-        # Ls spatial links.  For Ls = 2 this is Re Tr of the product of the
-        # two spatial links (the smallest gauge-invariant loop on the
-        # periodic spatial circle).  Real and a function of one slice only.
-        prod = 1.0 + 0j
-        for k in range(Ls):
-            prod *= zn_element(links_t[k], N)
-        return beta * np.real(prod)
+        # Exact 1+1-dimensional Wilson carrier: a spatial slice contains links
+        # but no purely spatial plaquettes, so the within-slice Wilson exponent
+        # vanishes.  Keeping this function explicit exercises the reflected
+        # half-weight interface without inserting a nonlocal Polyakov loop.
+        del links_t
+        return 0.0
 
     def S0(c0, c1):
         # Straddling temporal plaquettes in temporal gauge:
@@ -193,7 +193,8 @@ def u1_rp_gram(beta: float, Ls: int = 2, K: int = 24):
     phis = np.linspace(0.0, 2 * np.pi, K, endpoint=False)
 
     def S_plus(links_t):
-        return beta * np.cos(sum(links_t))  # closed spatial loop angle
+        del links_t
+        return 0.0  # no purely spatial plaquette in the exact 1+1D carrier
 
     def S0(c0, c1):
         return beta * sum(np.cos(c0[k] - c1[k]) for k in range(Ls))
@@ -270,6 +271,87 @@ def u1_plane_kernel_bessel_coeffs(beta: float, nmax: int = 8, terms: int = 36):
 
 
 # ---------------------------------------------------------------------------
+# SU(3) representation-ring primitives
+# ---------------------------------------------------------------------------
+def su3_irrep_dim(p: int, q: int) -> int:
+    """Dimension of the SU(3) irrep with Dynkin label (p,q)."""
+    return (p + 1) * (q + 1) * (p + q + 2) // 2
+
+
+def su3_tensor_fundamental(p: int, q: int):
+    """Irreps in (p,q) tensor (1,0), with unit Littlewood-Richardson weight."""
+    out = [(p + 1, q)]
+    if p > 0:
+        out.append((p - 1, q + 1))
+    if q > 0:
+        out.append((p, q - 1))
+    return out
+
+
+def su3_tensor_antifundamental(p: int, q: int):
+    """Irreps in (p,q) tensor (0,1), with unit Littlewood-Richardson weight."""
+    out = [(p, q + 1)]
+    if q > 0:
+        out.append((p + 1, q - 1))
+    if p > 0:
+        out.append((p - 1, q))
+    return out
+
+
+def su3_fund_plus_antifund_powers(max_order: int):
+    """Multiplicity tables for (3 direct-sum 3bar)^tensor n, 0 <= n <= max_order."""
+    tables = [{(0, 0): 1}]
+    for _ in range(max_order):
+        nxt = defaultdict(int)
+        for (p, q), multiplicity in tables[-1].items():
+            for irrep in su3_tensor_fundamental(p, q):
+                nxt[irrep] += multiplicity
+            for irrep in su3_tensor_antifundamental(p, q):
+                nxt[irrep] += multiplicity
+        tables.append(dict(nxt))
+    return tables
+
+
+def su3_truncated_character_coefficients(alpha: float, max_order: int):
+    """Partial multiplicity series for exp[(alpha/2)(chi_3 + chi_3bar)]."""
+    coeffs = defaultdict(float)
+    for n, table in enumerate(su3_fund_plus_antifund_powers(max_order)):
+        scalar = (alpha / 2.0) ** n / math.factorial(n)
+        for irrep, multiplicity in table.items():
+            coeffs[irrep] += scalar * multiplicity
+    return dict(coeffs)
+
+
+def rand_su3(n: int, rng: np.random.Generator) -> np.ndarray:
+    """Haar-random SU(3) matrices by complex QR followed by determinant removal."""
+    out = np.zeros((n, 3, 3), dtype=complex)
+    for i in range(n):
+        z = rng.standard_normal((3, 3)) + 1j * rng.standard_normal((3, 3))
+        q, r = np.linalg.qr(z)
+        phases = np.diag(r)
+        phases = phases / np.abs(phases)
+        q = q @ np.diag(np.conj(phases))
+        q = q / (np.linalg.det(q) ** (1.0 / 3.0))
+        out[i] = q
+    return out
+
+
+def su3_plane_kernel_sample(alpha: float, n: int = 40, seed: int = 17):
+    """Deterministic finite restriction of exp(alpha Re Tr(U V^dag))."""
+    U = rand_su3(n, np.random.default_rng(seed))
+    K = np.array(
+        [
+            [
+                np.exp(alpha * np.real(np.trace(Ui @ Uj.conj().T)))
+                for Uj in U
+            ]
+            for Ui in U
+        ]
+    )
+    return np.linalg.eigvalsh((K + K.conj().T) / 2.0)
+
+
+# ---------------------------------------------------------------------------
 # SU(2) Haar primitives (numeric sample)
 # ---------------------------------------------------------------------------
 def rand_su2(n: int, rng: np.random.Generator) -> np.ndarray:
@@ -312,8 +394,9 @@ def su2_rp_gram_mc(beta: float, n_mc: int, seed: int = 0):
     Zsum = 0.0
     for _ in range(n_mc):
         U00, U10, U01, U11 = rand_su2(4, rng)
-        Sp1 = beta * retr(U01 @ U11)
-        Sp0 = beta * retr(U00 @ U10)
+        # Exact 1+1-dimensional carrier: no purely spatial plaquettes.
+        Sp1 = 0.0
+        Sp0 = 0.0
         S0 = beta * (retr(U01 @ U00.conj().T) + retr(U11 @ U10.conj().T))
         w = np.exp(Sp1 + Sp0 + S0)
         Fpos = obs(U01, U11)  # positive half (t=1)
@@ -334,7 +417,8 @@ def main() -> int:
     print("AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05")
     print("Reprove: B_-=Theta B_+, plane norm-square factorization, integrated")
     print("three-factor RP Gram PSD for A_+^(2) observables")
-    print("(Z_N exact, U(1) Bessel-certified + quadrature cross-check, SU(2) numeric).")
+    print("(Z_N exact, U(1) Bessel-certified, SU(N) representation-ring route,")
+    print(" SU(2)/SU(3) deterministic or Monte Carlo cross-checks).")
     print("=" * 88)
 
     # -------------------------------------------------------------------
@@ -347,16 +431,15 @@ def main() -> int:
         b = symbols("beta", positive=True)
         a0, a1 = symbols("a0 a1", real=True)  # t=0 link angles
         c0_, c1_ = symbols("c0 c1", real=True)  # t=1 link angles
-        # U(1) closed spatial loop angle: B_+ = beta cos(theta_0 + theta_1)
-        Splus_t1 = b * cos(c0_ + c1_)
-        Splus_t0 = b * cos(a0 + a1)
-        # Theta acts by t -> 1-t: it maps the t=1 loop to the t=0 loop with the
-        # SAME functional form. B_-(a0,a1) must equal (Theta B_+)(a0,a1):
+        # The exact 1+1-dimensional carrier has no purely spatial plaquettes,
+        # so B_+=B_-=0 and the reflected-half identity is exact.
+        Splus_t1 = sympy.Integer(0)
+        Splus_t0 = sympy.Integer(0)
         ThetaSplus = Splus_t1.subs({c0_: a0, c1_: a1})
         check(
-            "reflect-split.1 B_- = Theta B_+  (same functional form on reflected slice, sympy)",
+            "reflect-split.1 B_- = Theta B_+ = 0 on the exact 1+1D Wilson carrier (sympy)",
             simplify(ThetaSplus - Splus_t0) == 0,
-            detail="Theta maps the positive-half spatial loop to the negative half identically",
+            detail="no purely spatial plaquettes occur in one spatial dimension",
         )
         # B_0 straddling term, single link: beta cos(theta0 - theta1), invariant
         # under the reflection-plane swap theta0 <-> theta1.
@@ -456,6 +539,22 @@ def main() -> int:
         "(B6) U(1) plane-kernel coeffs symmetric c_n = c_{-n}",
         sym_cn == 0.0,
         detail=f"max|c_n - c_{{-n}}| = {sym_cn:.2e}",
+    )
+
+    # (B7) Standard SU(N) Wilson normalization has alpha=beta/N >= 0 and
+    # exp(alpha Re chi_F) = sum_n (alpha/2)^n/n! chi_(F plus Fbar)^tensor n.
+    # The runner checks the scalar half of the analytic certificate; the exact
+    # SU(3) representation-ring multiplicities are checked in Part F.
+    scalar_weights = [
+        (beta_w / (2.0 * N_w)) ** n / math.factorial(n)
+        for N_w in range(2, 9)
+        for beta_w in [0.0, 0.3, 1.0, 2.5]
+        for n in range(10)
+    ]
+    check(
+        "(B7) SU(N) Wilson exponential-series scalar weights are nonnegative for beta>=0",
+        min(scalar_weights) >= 0.0,
+        detail="weights=(beta/(2N))^n/n!, N=2..8, n=0..9",
     )
 
     # -------------------------------------------------------------------
@@ -577,7 +676,68 @@ def main() -> int:
     )
     print(f"     SU(2) eigenvalues: {np.round(ev_su2, 5)}")
     print("     (numeric sample only; finite exact statements above are Z_N,")
-    print("      with U(1) plane positivity certified by Bessel positive series)")
+    print("      with U(1) and SU(N) plane positivity certified analytically)")
+
+    # -------------------------------------------------------------------
+    section("Part F: SU(3) representation-ring certificate and kernel controls")
+    # -------------------------------------------------------------------
+    tables = su3_fund_plus_antifund_powers(max_order=8)
+    mult_ok = all(
+        isinstance(multiplicity, int) and multiplicity >= 0
+        for table in tables
+        for multiplicity in table.values()
+    )
+    check(
+        "(F1) (3 plus 3bar)^tensor n multiplicities are nonnegative integers",
+        mult_ok,
+        detail="exact SU(3) fusion recurrence through n=8",
+    )
+
+    dimension_rows = [
+        sum(multiplicity * su3_irrep_dim(*irrep) for irrep, multiplicity in table.items())
+        for table in tables
+    ]
+    dimension_ok = all(total == 6 ** n for n, total in enumerate(dimension_rows))
+    check(
+        "(F2) SU(3) tensor-power dimensions satisfy sum M_(p,q),n dim(p,q) = 6^n",
+        dimension_ok,
+        detail=f"n=0..8 totals={dimension_rows}",
+    )
+
+    expected_order_two = {
+        (2, 0): 1,
+        (0, 1): 1,
+        (0, 0): 2,
+        (1, 1): 2,
+        (0, 2): 1,
+        (1, 0): 1,
+    }
+    check(
+        "(F3) order-two SU(3) representation-ring decomposition is exact",
+        tables[2] == expected_order_two,
+        detail="(3+3bar)^2 = 6 + 3bar + 2(1+8) + 6bar + 3",
+    )
+
+    coeffs = su3_truncated_character_coefficients(alpha=1.4, max_order=8)
+    check(
+        "(F4) truncated SU(3) Wilson character coefficients are nonnegative",
+        min(coeffs.values()) >= 0.0,
+        detail=f"{len(coeffs)} irreps through tensor order 8; min={min(coeffs.values()):.3e}",
+    )
+
+    ev_su3 = su3_plane_kernel_sample(alpha=0.7)
+    check(
+        "(F5) sampled SU(3) Wilson plane-kernel restriction is positive definite",
+        ev_su3.min() > 0.0,
+        detail=f"40-point deterministic restriction min_eig={ev_su3.min():+.6e}",
+    )
+
+    ev_wrong_sign = su3_plane_kernel_sample(alpha=-0.1)
+    check(
+        "(F6) control: alpha=-0.1 is non-PSD on this deterministic SU(3) restriction",
+        ev_wrong_sign.min() < -1e-3,
+        detail=f"same restriction min_eig={ev_wrong_sign.min():+.6e}",
+    )
 
     # -------------------------------------------------------------------
     section("Summary")
@@ -585,12 +745,13 @@ def main() -> int:
     print("  Reproved from primitives:")
     print("   A  reflection symmetry  B_- = Theta B_+  and B_0 plane invariance")
     print("   B  plane Boltzmann weight = positive (norm-square) character kernel")
-    print("      (Z_N: nonneg DFT coeffs; U(1): I_n(beta) >= 0 by positive series)")
+    print("      (Z_N: DFT; U(1): Bessel series; SU(N): representation ring)")
     print("   C  integrated three-factor reflected Gram PSD for A_+^(2) observables")
     print("      (Z_N exact finite-Haar; U(1) quadrature cross-check; wrong reflection control)")
     print("   D  manifest G = W diag(kappa) W^dag with kappa >= 0 (OS Gram = A^dag A)")
     print("   E  SU(2) numeric sample PSD (link-reflection structure carries over)")
-    print("  Literature (Osterwalder-Seiler 1978; Montvay-Munster 1994): comparator only.")
+    print("   F  SU(3) exact tensor multiplicities and deterministic kernel controls")
+    print("  No literature theorem is used as a derivation input.")
 
     print()
     print("=" * 88)

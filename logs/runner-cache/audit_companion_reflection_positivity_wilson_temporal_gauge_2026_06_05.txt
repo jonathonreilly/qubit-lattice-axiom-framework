@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
-runner_sha256: e577d695e122c88f8fc6ef8cccae52110cae196c2a76a181af3a40366642e1d0
-timeout_sec: 240
+runner_sha256: 7a621de2eb8c703dea44bd42845a8aa30fabf0213500828c63baee32bd1c2fdc
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 95.90
+elapsed_sec: 82.11
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,13 +11,14 @@ Audit companion for the Wilson-plaquette temporal-gauge RP bridge
 AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05
 Reprove: B_-=Theta B_+, plane norm-square factorization, integrated
 three-factor RP Gram PSD for A_+^(2) observables
-(Z_N exact, U(1) Bessel-certified + quadrature cross-check, SU(2) numeric).
+(Z_N exact, U(1) Bessel-certified, SU(N) representation-ring route,
+ SU(2)/SU(3) deterministic or Monte Carlo cross-checks).
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
 Part A: reflection symmetry  B_- = Theta B_+  and B_0 plane invariance
 ----------------------------------------------------------------------------------------
-  [PASS] reflect-split.1 B_- = Theta B_+  (same functional form on reflected slice, sympy)  (Theta maps the positive-half spatial loop to the negative half identically)
+  [PASS] reflect-split.1 B_- = Theta B_+ = 0 on the exact 1+1D Wilson carrier (sympy)  (no purely spatial plaquettes occur in one spatial dimension)
   [PASS] reflect-plane.1 B_0 invariant under reflection-plane swap c0<->c1 (sympy)  (Re Tr[U(0) U(1)^dag] is symmetric in the two slices)
   [PASS] reflect-plane.2 Z_N: B_0(c0,c1) = B_0(c1,c0) for all configs (reflection-plane invariance)  (N=4, L_s=2)
 
@@ -30,42 +31,53 @@ Part B: reflection-plane norm-square (Schwarz) factorization
   [PASS] (B4) U(1) plane-kernel coeffs c_n=I_n(beta) have positive lower bounds  (min lower bound for n in [-8,8] = 8.281833e-07)
   [PASS] (B5) U(1) Bessel certificate has tiny positive tail intervals  (max positive tail bound for n in [-8,8] = 2.45e-97)
   [PASS] (B6) U(1) plane-kernel coeffs symmetric c_n = c_{-n}  (max|c_n - c_{-n}| = 0.00e+00)
+  [PASS] (B7) SU(N) Wilson exponential-series scalar weights are nonnegative for beta>=0  (weights=(beta/(2N))^n/n!, N=2..8, n=0..9)
 
 ----------------------------------------------------------------------------------------
 Part C: integrated three-factor RP Gram PSD for A_+^(2) observables
 ----------------------------------------------------------------------------------------
-     Z_2, beta=0.3: basis=9, min_eig=-2.061064e-16, herm_err=6.2e-33, PSD=True
-     Z_2, beta=1.0: basis=9, min_eig=-2.938354e-16, herm_err=1.3e-32, PSD=True
-     Z_2, beta=2.5: basis=9, min_eig=-4.842310e-16, herm_err=2.8e-33, PSD=True
-     Z_3, beta=0.3: basis=9, min_eig=+1.790633e-02, herm_err=2.1e-16, PSD=True
-     Z_3, beta=1.0: basis=9, min_eig=+5.298851e-02, herm_err=2.3e-16, PSD=True
-     Z_3, beta=2.5: basis=9, min_eig=+1.571530e-03, herm_err=2.2e-16, PSD=True
-     Z_4, beta=0.3: basis=9, min_eig=+2.021915e-02, herm_err=4.2e-17, PSD=True
-     Z_4, beta=1.0: basis=9, min_eig=+7.449966e-02, herm_err=1.3e-16, PSD=True
-     Z_4, beta=2.5: basis=9, min_eig=+8.578173e-03, herm_err=1.1e-16, PSD=True
-     Z_5, beta=0.3: basis=9, min_eig=+1.965077e-02, herm_err=4.2e-16, PSD=True
-     Z_5, beta=1.0: basis=9, min_eig=+5.971461e-02, herm_err=4.1e-16, PSD=True
-     Z_5, beta=2.5: basis=9, min_eig=+1.310389e-02, herm_err=3.7e-16, PSD=True
-  [PASS] (C1) Z_N reflected Gram is Hermitian PSD across N in {2,3,4,5}, beta in {0.3,1,2.5}  (worst min_eig = -4.842310e-16)
-  [PASS] (C2) control: dropping Theta's conjugation gives a NON-PSD form (correct OS reflection is load-bearing)  (min_eig (wrong reflection) = -0.4823)
-     U(1), beta=0.5: min_eig=+4.253364e-02, herm_err=3.2e-15, PSD=True
-     U(1), beta=1.5: min_eig=+3.047166e-02, herm_err=1.7e-14, PSD=True
+     Z_2, beta=0.3: basis=9, min_eig=-1.000449e-16, herm_err=2.5e-17, PSD=True
+     Z_2, beta=1.0: basis=9, min_eig=-2.460604e-16, herm_err=4.7e-17, PSD=True
+     Z_2, beta=2.5: basis=9, min_eig=-5.706384e-16, herm_err=9.4e-17, PSD=True
+     Z_3, beta=0.3: basis=9, min_eig=+2.536578e-02, herm_err=8.1e-17, PSD=True
+     Z_3, beta=1.0: basis=9, min_eig=+2.885384e-01, herm_err=1.5e-16, PSD=True
+     Z_3, beta=2.5: basis=9, min_eig=+8.697730e-01, herm_err=5.8e-17, PSD=True
+     Z_4, beta=0.3: basis=9, min_eig=+2.216675e-02, herm_err=7.9e-17, PSD=True
+     Z_4, beta=1.0: basis=9, min_eig=+2.135523e-01, herm_err=5.1e-17, PSD=True
+     Z_4, beta=2.5: basis=9, min_eig=+7.195851e-01, herm_err=7.1e-17, PSD=True
+     Z_5, beta=0.3: basis=9, min_eig=+2.201009e-02, herm_err=9.6e-16, PSD=True
+     Z_5, beta=1.0: basis=9, min_eig=+2.010423e-01, herm_err=7.0e-16, PSD=True
+     Z_5, beta=2.5: basis=9, min_eig=+6.290306e-01, herm_err=1.4e-16, PSD=True
+  [PASS] (C1) Z_N reflected Gram is Hermitian PSD across N in {2,3,4,5}, beta in {0.3,1,2.5}  (worst min_eig = -5.706384e-16)
+  [PASS] (C2) control: dropping Theta's conjugation gives a NON-PSD form (correct OS reflection is load-bearing)  (min_eig (wrong reflection) = -0.2913)
+     U(1), beta=0.5: min_eig=+5.880606e-02, herm_err=2.6e-16, PSD=True
+     U(1), beta=1.5: min_eig=+3.553748e-01, herm_err=4.6e-16, PSD=True
   [PASS] (C3) U(1) reflected Gram quadrature cross-check is Hermitian PSD
 
 ----------------------------------------------------------------------------------------
 Part D: manifest factorization G = W diag(kappa) W^dag, kappa >= 0
 ----------------------------------------------------------------------------------------
   [PASS] (D1) plane-kernel matrix spectrum kappa >= 0 (positive Gram kernel)  (min kappa = 0.137589)
-  [PASS] (D2) G = W diag(kappa) W^dag exactly (manifest Osterwalder-Seiler Gram = A^dag A)  (||G - W diag(kappa) W^dag|| = 1.71e-13)
-  [PASS] (D3) integrated three-factor Gram is PSD (eigenvalues >= 0)  (min_eig = +2.145619e+01)
+  [PASS] (D2) G = W diag(kappa) W^dag exactly (manifest Osterwalder-Seiler Gram = A^dag A)  (||G - W diag(kappa) W^dag|| = 1.42e-13)
+  [PASS] (D3) integrated three-factor Gram is PSD (eigenvalues >= 0)  (min_eig = +2.594098e+01)
 
 ----------------------------------------------------------------------------------------
 Part E: SU(2) numeric sample (Haar Monte Carlo)
 ----------------------------------------------------------------------------------------
-  [PASS] (E1) SU(2) link-reflection Gram is PSD within MC error (min_eig > -MC noise)  (min_eig = +0.03228, herm/MC-noise = 0.0108)
-     SU(2) eigenvalues: [0.03228 0.08143 0.17551 0.24293 0.92343 1.95127]
+  [PASS] (E1) SU(2) link-reflection Gram is PSD within MC error (min_eig > -MC noise)  (min_eig = +0.08134, herm/MC-noise = 0.0072)
+     SU(2) eigenvalues: [0.08134 0.18961 0.21888 0.43915 0.56473 1.00004]
      (numeric sample only; finite exact statements above are Z_N,
-      with U(1) plane positivity certified by Bessel positive series)
+      with U(1) and SU(N) plane positivity certified analytically)
+
+----------------------------------------------------------------------------------------
+Part F: SU(3) representation-ring certificate and kernel controls
+----------------------------------------------------------------------------------------
+  [PASS] (F1) (3 plus 3bar)^tensor n multiplicities are nonnegative integers  (exact SU(3) fusion recurrence through n=8)
+  [PASS] (F2) SU(3) tensor-power dimensions satisfy sum M_(p,q),n dim(p,q) = 6^n  (n=0..8 totals=[1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616])
+  [PASS] (F3) order-two SU(3) representation-ring decomposition is exact  ((3+3bar)^2 = 6 + 3bar + 2(1+8) + 6bar + 3)
+  [PASS] (F4) truncated SU(3) Wilson character coefficients are nonnegative  (45 irreps through tensor order 8; min=1.430e-06)
+  [PASS] (F5) sampled SU(3) Wilson plane-kernel restriction is positive definite  (40-point deterministic restriction min_eig=+2.373202e+00)
+  [PASS] (F6) control: alpha=-0.1 is non-PSD on this deterministic SU(3) restriction  (same restriction min_eig=-1.402883e+00)
 
 ----------------------------------------------------------------------------------------
 Summary
@@ -73,15 +85,16 @@ Summary
   Reproved from primitives:
    A  reflection symmetry  B_- = Theta B_+  and B_0 plane invariance
    B  plane Boltzmann weight = positive (norm-square) character kernel
-      (Z_N: nonneg DFT coeffs; U(1): I_n(beta) >= 0 by positive series)
+      (Z_N: DFT; U(1): Bessel series; SU(N): representation ring)
    C  integrated three-factor reflected Gram PSD for A_+^(2) observables
       (Z_N exact finite-Haar; U(1) quadrature cross-check; wrong reflection control)
    D  manifest G = W diag(kappa) W^dag with kappa >= 0 (OS Gram = A^dag A)
    E  SU(2) numeric sample PSD (link-reflection structure carries over)
-  Literature (Osterwalder-Seiler 1978; Montvay-Munster 1994): comparator only.
+   F  SU(3) exact tensor multiplicities and deterministic kernel controls
+  No literature theorem is used as a derivation input.
 
 ========================================================================================
-TOTAL: 16 PASS / 0 FAIL
+TOTAL: 23 PASS / 0 FAIL
 ========================================================================================
 
 ----- stderr -----

@@ -3,8 +3,9 @@
 
 This runner is not an audit verdict. It packages the source-side evidence for
 the Cycle 5 gate note by checking that the parent note exposes its dependency
-anchors, names the residual active-block response, physical edge-channel law,
-and action-unit packet, and preserves the non-promotion boundary: the
+anchors, names the residual active-block response, physical edge-channel/Widom
+law, gravitational boundary/action identification, and action-unit packet,
+and preserves the non-promotion boundary: the
 scale-reference primitive is units-only, and no C1 closure, retained R_Lambda
 numerics, or H0 closure are claimed on the actual current surface.
 """
@@ -98,7 +99,7 @@ def part1_packet_metadata() -> None:
     check(
         "parent remains an open-gate support source packet",
         "**Type:** open_gate" in parent
-        and "identifies the residual active-block response, edge-channel-law, and action-unit" in parent_norm,
+        and "identifies the residual active-block response, edge-channel/Widom, gravitational boundary/action, and action-unit" in parent_norm,
     )
     check(
         "source-packet boundary says it is not a theorem",
@@ -148,9 +149,11 @@ def part2_registered_dependencies() -> None:
         and "derived `a/l_P = 1` theorem" in parent_norm,
     )
     check(
-        "Planck status keeps natural-unit derivation conditional",
+        "Planck status keeps source-unit/gravitational premises separate from Clifford/CAR",
         "natural-unit structural derivation `G_Newton,lat=1`, `a/l_P=1`" in status
-        and "conditional on the primitive Clifford-Majorana edge carrier premise" in status
+        and "conditional on the separately supplied primitive coefficient" in status
+        and "gravitational/Wald identification" in status
+        and "not a consequence of the Clifford/CAR bridge" in status
         and "`a^(-1) = M_Pl` remains the explicit package pin" in status,
     )
     check(
@@ -203,13 +206,18 @@ def part3_gate_packet_inventory() -> None:
     )
     check(
         "source-packet boundary describes the coupled inventory consistently",
-        "coupled response/channel/Widom/action-unit inventory" in parent_norm
+        "coupled response/channel/Widom/gravitational-carrier/action-unit inventory" in parent_norm
         and "single-gate inventory" not in parent_norm,
     )
     check(
-        "packet includes active-block response and physical channel law",
+        "packet includes active-block response and physical channel/Widom law",
         "**Active-block response**" in parent
         and "**Physical channel law**" in parent,
+    )
+    check(
+        "gravitational-carrier obligation remains separately named",
+        "(G1c)" in parent
+        and "**Gravitational boundary/action identification**" in parent,
     )
     check(
         "action-unit obligation remains separately named",
@@ -218,13 +226,14 @@ def part3_gate_packet_inventory() -> None:
     )
     check(
         "parent rejects algebra-to-channel collapse",
-        "coframe response gives the CAR algebra but not (G1b)" in parent_norm
+        "coframe response gives the CAR algebra but not (G1b) or (G1c)" in parent_norm
         and "Target 2 additionally needs the edge-channel law" in parent_norm,
     )
     check(
-        "all three residual obligations are named",
+        "all four residual obligations are named",
         "(G1a)" in parent
         and "(G1b)" in parent
+        and "(G1c)" in parent
         and "(G2)" in parent
         and "**Action-unit metrology**" in parent,
     )
@@ -244,6 +253,7 @@ class PlanckGatePacket:
     coframe_response_supplied: bool
     edge_channel_law_supplied: bool
     widom_conditions_supplied: bool
+    gravitational_carrier_supplied: bool
     natural_action_units_supplied: bool
     history_ratio_or_direct_l_supplied: bool
 
@@ -251,6 +261,9 @@ class PlanckGatePacket:
         return (
             self.scale_reference_declared
             and self.coframe_response_supplied
+            and self.edge_channel_law_supplied
+            and self.widom_conditions_supplied
+            and self.gravitational_carrier_supplied
             and self.natural_action_units_supplied
         )
 
@@ -276,6 +289,7 @@ def part4_non_promotion_model() -> None:
         coframe_response_supplied=False,
         edge_channel_law_supplied=False,
         widom_conditions_supplied=False,
+        gravitational_carrier_supplied=False,
         natural_action_units_supplied=False,
         history_ratio_or_direct_l_supplied=False,
     )
@@ -284,6 +298,7 @@ def part4_non_promotion_model() -> None:
         coframe_response_supplied=False,
         edge_channel_law_supplied=False,
         widom_conditions_supplied=False,
+        gravitational_carrier_supplied=False,
         natural_action_units_supplied=False,
         history_ratio_or_direct_l_supplied=False,
     )
@@ -292,14 +307,16 @@ def part4_non_promotion_model() -> None:
         coframe_response_supplied=True,
         edge_channel_law_supplied=False,
         widom_conditions_supplied=False,
+        gravitational_carrier_supplied=False,
         natural_action_units_supplied=False,
         history_ratio_or_direct_l_supplied=False,
     )
     c1_only = PlanckGatePacket(
         scale_reference_declared=True,
         coframe_response_supplied=True,
-        edge_channel_law_supplied=False,
-        widom_conditions_supplied=False,
+        edge_channel_law_supplied=True,
+        widom_conditions_supplied=True,
+        gravitational_carrier_supplied=True,
         natural_action_units_supplied=True,
         history_ratio_or_direct_l_supplied=False,
     )
@@ -308,6 +325,7 @@ def part4_non_promotion_model() -> None:
         coframe_response_supplied=True,
         edge_channel_law_supplied=True,
         widom_conditions_supplied=True,
+        gravitational_carrier_supplied=True,
         natural_action_units_supplied=True,
         history_ratio_or_direct_l_supplied=True,
     )
@@ -316,6 +334,16 @@ def part4_non_promotion_model() -> None:
         coframe_response_supplied=True,
         edge_channel_law_supplied=True,
         widom_conditions_supplied=False,
+        gravitational_carrier_supplied=True,
+        natural_action_units_supplied=True,
+        history_ratio_or_direct_l_supplied=True,
+    )
+    missing_gravity = PlanckGatePacket(
+        scale_reference_declared=True,
+        coframe_response_supplied=True,
+        edge_channel_law_supplied=True,
+        widom_conditions_supplied=True,
+        gravitational_carrier_supplied=False,
         natural_action_units_supplied=True,
         history_ratio_or_direct_l_supplied=True,
     )
@@ -324,12 +352,13 @@ def part4_non_promotion_model() -> None:
         coframe_response_supplied=True,
         edge_channel_law_supplied=True,
         widom_conditions_supplied=True,
+        gravitational_carrier_supplied=True,
         natural_action_units_supplied=True,
         history_ratio_or_direct_l_supplied=True,
     )
 
     print("  rule: the scale-reference primitive is units-only")
-    print("  rule: C1 closes only with coframe response and natural action units")
+    print("  rule: C1 closes only with response, channel/Widom, gravitational carrier, and action units")
     print("  rule: H0 still needs C2 or C3 after C1 closes")
 
     check("actual current packet declares the units primitive", current.scale_reference_declared)
@@ -338,6 +367,12 @@ def part4_non_promotion_model() -> None:
     check("coframe response alone is not enough without action units", not coframe_only.c1_scale_route_closed())
     check("coframe response alone does not close Target 2 without a channel law", not coframe_only.target2_carrier_closed())
     check("Target 2 remains open without Widom conditions", not missing_widom.target2_carrier_closed())
+    check("C1 remains open without channel/Widom conditions", not missing_widom.c1_scale_route_closed())
+    check(
+        "C1 remains open without the gravitational carrier even when coefficient conditions hold",
+        not missing_gravity.c1_scale_route_closed()
+        and missing_gravity.target2_carrier_closed(),
+    )
     check("full modeled packet includes the Target 2 channel and Widom laws", full_lane5.target2_carrier_closed())
     check("missing scale reference cannot close C1", not missing_scale.c1_scale_route_closed())
     check("missing scale reference cannot close Target 2 in this Planck packet", not missing_scale.target2_carrier_closed())

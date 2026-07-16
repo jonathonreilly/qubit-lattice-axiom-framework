@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_primitive_parity_gate_carrier.py
-runner_sha256: 5776fb6b518880c56e5f4eb4590d7040264f023c723878df76b1c46dee81cadc
+runner_sha256: 961505fa076928373b37240eb451d1679674be04583307916dbd90d37436851c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -70,7 +70,7 @@ Finite cylinder entropy check
 SUMMARY: PASS=40  FAIL=0
 ==============================================================================
 
-Verdict: the primitive residual Z_2 parity-gate carrier has
+Result: the primitive residual Z_2 parity-gate carrier has
 multipocket Widom coefficient exactly 1/4 under the full supplied
 carrier-identification premise. A Clifford/CAR response alone does
 not assign the normal and self-dual-tangent edge dispersions.

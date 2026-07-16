@@ -226,9 +226,9 @@ def main() -> int:
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 78)
     if FAIL_COUNT:
-        print("Verdict: FAIL; the conditional source packet is inconsistent.")
+        print("Result: FAIL; the conditional source packet is inconsistent.")
         return 1
-    print("Verdict: bounded conditional source packet.")
+    print("Result: bounded conditional source packet.")
     print("The arithmetic and source links are checkable, while physical carrier,")
     print("channel, Widom, and representation premises remain explicit.")
     return 0

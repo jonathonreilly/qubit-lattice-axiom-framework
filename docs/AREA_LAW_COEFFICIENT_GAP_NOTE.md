@@ -1,7 +1,6 @@
 # Area-Law Coefficient-Gap Conditional Synthesis
 
 **Date:** 2026-04-25
-**Repair date:** 2026-07-16
 **Type:** positive_theorem
 **Scope:** conditional source synthesis; no physical carrier identification,
 substrate-wide no-go, or audit disposition

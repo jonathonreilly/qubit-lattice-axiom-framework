@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_planck_source_unit_normalization_support_theorem.py
-runner_sha256: 8381b817e2b504422b78d0dd4ef55658684212b71e00129adc5f85e5716e1631
+runner_sha256: 6c7a9a2daa2a13c6fcb790bc816ef8cd857dcaff5e4868d081586bc0c28516a3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 [PASS] baseline Green-kernel coefficient is 1/(4*pi): G_kernel=0.079577471545948
@@ -13,7 +13,7 @@ status: ok
 [PASS] normalized Gauss charge equals the physical monopole mass: q_bare=4*pi*M_phys gives phi~1.000000000000/r; normalized_charge=1.000000000000
 [PASS] unit monopole readout uniquely fixes sigma=4*pi: trial monopoles=0.079577471546, 0.500000000000, 1.000000000000, 2.000000000000
 [PASS] physical lattice Newton coefficient is one after lambda selection: lambda=1.000000000000; G_Newton,lat=1/lambda=1.000000000000
-[PASS] same source unit gives the physical two-body product law: F_coeff=15.000000000000; G*M1*M2=15.000000000000; F(r=7)=0.306122448980
+[PASS] same source unit gives the conditional two-body product arithmetic: F_coeff=15.000000000000; G*M1*M2=15.000000000000; F(r=7)=0.306122448980
 [PASS] bare-source mislabel gives the legacy 2*sqrt(pi) mismatch: bare a/l_P=3.544907701811; normalized a/l_P=1.000000000000
 [PASS] primitive carrier matches the Planck-area coefficient: 1/(4*G_Newton,lat)=0.250000000000; c_cell=0.250000000000
 [PASS] EH prefactor is c_cell/(4*pi), not c_cell: EH=0.019894367886487; c_cell/(4*pi)=0.019894367886487
@@ -22,12 +22,13 @@ status: ok
 [PASS] no measured constants enter the closure arithmetic: inputs are G_kernel=1/(4*pi), c_cell=4/16, lambda=4*c_cell
 [PASS] source imports c_cell from the direct coframe authority: no CAR-to-gravitational-carrier dependency
 [PASS] source links the narrow Wald-Newton algebra without laundering the physical bridge: abstract 4Gc=1 authority and supplied physical identification remain separate
+[PASS] source bounds Green-kernel provenance to mathematical response algebra: kernel identity is cited; no physical Poisson equation is promoted
 [PASS] source keeps the Wald/gravitational carrier identification explicit: conditional gravitational bridge
 [PASS] source does not promote Clifford/CAR into the gravitational carrier: algebra-to-carrier shortcut rejected
 [PASS] source does not identify the Widom coefficient with the cell trace: source-unit algebra remains separate from the edge-channel law
 
-Summary: 19/19 checks passed.
-Verdict: conditional source-unit algebra on the explicitly supplied c_cell and Wald/Gauss carrier premises. Clifford/CAR does not supply those physical identifications. Given them, c_cell=lambda/4 fixes lambda=1 and q_bare=4*pi*M_phys, so G_Newton,lat=1, c_cell=1/(4G), EH=c_cell/(4*pi), and a/l_P=1.
+Summary: 20/20 checks passed.
+Result: conditional source-unit algebra on the explicitly supplied c_cell and Wald/Gauss carrier premises. Clifford/CAR does not supply those physical identifications. Given them, c_cell=lambda/4 fixes lambda=1 and q_bare=4*pi*M_phys, so G_Newton,lat=1, c_cell=1/(4G), EH=c_cell/(4*pi), and a/l_P=1.
 
 ----- stderr -----
 

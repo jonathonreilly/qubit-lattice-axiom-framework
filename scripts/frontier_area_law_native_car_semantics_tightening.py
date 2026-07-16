@@ -423,11 +423,11 @@ def main() -> int:
     print("=" * 78)
     if FAIL_COUNT:
         print()
-        print("Verdict: FAIL; the conditional algebra or claim boundary is broken.")
+        print("Result: FAIL; the conditional algebra or claim boundary is broken.")
         return 1
 
     print()
-    print("Verdict: CONDITIONAL ALGEBRAIC EQUIVALENCE ONLY.")
+    print("Result: CONDITIONAL ALGEBRAIC EQUIVALENCE ONLY.")
     print("A supplied irreducible Cl_4(C) response on C^4 is equivalent to")
     print("two-mode CAR. Rank four and the specified exterior one-form action")
     print("do not derive that response, a physical channel assignment, or 1/4;")

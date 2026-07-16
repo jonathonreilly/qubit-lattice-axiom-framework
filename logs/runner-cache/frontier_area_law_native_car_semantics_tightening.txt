@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_native_car_semantics_tightening.py
-runner_sha256: d1f535253b2796d3d39c5ef61cbff86f342781626a4bd9c983c9f2e06bbea93c
+runner_sha256: 3d921309a7e0dc6cd18970876d6793268d8a2374dfbb378381211a21194bd528
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -48,7 +48,7 @@ rank four or the specified exterior one-form action?
 SUMMARY: PASS=29  FAIL=0
 ==============================================================================
 
-Verdict: CONDITIONAL ALGEBRAIC EQUIVALENCE ONLY.
+Result: CONDITIONAL ALGEBRAIC EQUIVALENCE ONLY.
 A supplied irreducible Cl_4(C) response on C^4 is equivalent to
 two-mode CAR. Rank four and the specified exterior one-form action
 do not derive that response, a physical channel assignment, or 1/4;

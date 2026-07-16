@@ -409,7 +409,7 @@ def main() -> int:
         return 1
 
     print()
-    print("Verdict: the primitive residual Z_2 parity-gate carrier has")
+    print("Result: the primitive residual Z_2 parity-gate carrier has")
     print("multipocket Widom coefficient exactly 1/4 under the full supplied")
     print("carrier-identification premise. A Clifford/CAR response alone does")
     print("not assign the normal and self-dual-tangent edge dispersions.")

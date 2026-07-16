@@ -370,11 +370,11 @@ def main() -> int:
     print("=" * 78)
     if FAIL_COUNT:
         print()
-        print("Verdict: FAIL; the conditional coefficient or claim boundary is broken.")
+        print("Result: FAIL; the conditional coefficient or claim boundary is broken.")
         return 1
 
     print()
-    print("Verdict: CONDITIONAL INSIDE SUPPLIED RANK-FOUR CAR EDGE CONDITIONS.")
+    print("Result: CONDITIONAL INSIDE SUPPLIED RANK-FOUR CAR EDGE CONDITIONS.")
     print("The supplied normal plus self-dual half-zone tangent carrier gives")
     print("c_Widom=1/4. CAR alone does not select those dispersions, and the")
     print("specified exterior one-form action does not derive the active Cl_4/CAR")

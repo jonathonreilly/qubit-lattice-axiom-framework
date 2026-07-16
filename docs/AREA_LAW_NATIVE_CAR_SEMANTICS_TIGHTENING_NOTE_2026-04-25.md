@@ -1,7 +1,6 @@
 # Area-Law Conditional Clifford–CAR Algebraic Equivalence Note
 
 **Date:** 2026-04-25
-**Repair date:** 2026-07-16
 **Stable claim ID:** `area_law_native_car_semantics_tightening_note_2026-04-25`
 **Type:** positive_theorem
 **Scope:** conditional algebraic equivalence only; no exterior-action descent,

@@ -78,9 +78,14 @@ def part1_repo_gate_state() -> None:
 
     check(
         "status note states the two-gate dependency map",
-        ("Lane 5 " + "clos" + "ure requires retaining premises from BOTH") in status
-        and "(C1) absolute-scale axiom" in status
-        and "(C2) cosmic-history-ratio retirement" in status,
+        ("Lane 5 " + "clos" + "ure requires resolving BOTH") in status
+        and "(C1) absolute-scale route" in status
+        and "(C2) cosmic-history-ratio retirement" in status
+        and "coupled active-block response" in status
+        and "physical channel/Widom" in status
+        and "gravitational boundary/action" in status
+        and "action-unit metrology" in status
+        and "No single conditional unifies" in status,
     )
     check(
         "necessity no-go states no single class is sufficient",
@@ -203,8 +208,13 @@ def part5_gate_inventory_specifics() -> None:
 
     open_number_flat = " ".join(open_number.split())
     c3_flat = " ".join(c3.split())
+    c1_flat = " ".join(c1.split())
     c1_open = (
-        "metric-compatible Clifford/CAR coframe response" in c1
+        "coupled open packet, not a single premise" in c1_flat
+        and "**Active-block response**" in c1
+        and "**Physical channel law**" in c1
+        and "**Gravitational boundary/action identification**" in c1
+        and "**Action-unit metrology**" in c1
         and "P_A H_cell" in c1
         and ("does NOT " + "clo" + "se the Planck lane") in c1
     )
@@ -223,7 +233,7 @@ def part5_gate_inventory_specifics() -> None:
     )
 
     check(
-        "C1 gate is the Clifford/CAR coframe response",
+        "C1 gate is the coupled response/channel/Widom/gravity/metrology packet",
         c1_open,
     )
     check(

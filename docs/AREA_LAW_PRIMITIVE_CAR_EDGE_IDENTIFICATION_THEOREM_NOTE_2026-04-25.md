@@ -1,7 +1,6 @@
 # Area-Law Conditional Rank-Four CAR Edge-Condition Coefficient Theorem Note
 
 **Date:** 2026-04-25
-**Repair date:** 2026-07-16
 **Stable claim ID:** `area_law_primitive_car_edge_identification_theorem_note_2026-04-25`
 **Type:** positive_theorem
 **Scope:** conditional support inside supplied rank-four CAR edge conditions;

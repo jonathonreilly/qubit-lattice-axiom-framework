@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_primitive_car_edge_identification.py
-runner_sha256: 4981e419c9c644f3e51ff436b7439344c18308d6df8b2f308fea1915def68411
+runner_sha256: 211716f7a81fb4d536c6172b5b64e5aa01aa1a84e2908b69856fff42a3477a5e
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.09
@@ -65,7 +65,7 @@ unforced by the specified exterior action or CAR algebra?
 SUMMARY: PASS=46  FAIL=0
 ==============================================================================
 
-Verdict: CONDITIONAL INSIDE SUPPLIED RANK-FOUR CAR EDGE CONDITIONS.
+Result: CONDITIONAL INSIDE SUPPLIED RANK-FOUR CAR EDGE CONDITIONS.
 The supplied normal plus self-dual half-zone tangent carrier gives
 c_Widom=1/4. CAR alone does not select those dispersions, and the
 specified exterior one-form action does not derive the active Cl_4/CAR

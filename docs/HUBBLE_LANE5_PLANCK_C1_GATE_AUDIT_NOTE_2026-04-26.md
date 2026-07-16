@@ -1,10 +1,10 @@
-# Lane 5 Planck `(C1)` Gate Audit: Metric-Compatible Clifford/CAR Coframe Response And Action-Unit Self-Consistency
+# Lane 5 Planck `(C1)` Gate Audit: Coupled Response, Channel, Gravitational-Carrier, And Action-Unit Packet
 
 **Date:** 2026-04-26
 **Type:** open_gate
-**Scope:** identifies the residual active-block response,
-edge-channel-law, and action-unit self-consistency packet for the older `(C1)`
-scale route. This note does not
+**Scope:** identifies the residual active-block response, edge-channel/Widom,
+gravitational boundary/action, and action-unit self-consistency packet for the
+older `(C1)` scale route. This note does not
 derive or promote the scale route, does not treat the scale-reference
 primitive as a Planck import or bounded-status source, and does not apply an
 audit verdict.
@@ -31,7 +31,8 @@ status note `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` (and the
 extensive work narrowing the dimensionless self-consistency route to a
 **coupled load-bearing premise packet**: a compatible active-block
 Clifford/CAR response on `P_A H_cell`, a physical normal/tangent edge-channel
-law, and the action-unit metrology boundary. This note makes that packet explicit
+law with its Widom conditions, a gravitational boundary/action identification,
+and the action-unit metrology boundary. This note makes that packet explicit
 in the Lane 5 closure-pathway taxonomy and connects it to the Lane 5
 sub-route 5B.
 
@@ -46,18 +47,17 @@ Current scale-reference boundary:
   grants `a^{-1} = M_Pl` as a units conversion only. It is not a Planck
   import or a source of bounded theorem strength.
 - This note does not treat that primitive as a derived `a/l_P = 1`
-  theorem. The remaining gate here is the dimensionless coframe/CAR
-  response and action-unit self-consistency route.
+  theorem. The remaining gate here is the coupled response, channel/Widom,
+  gravitational-carrier, and action-unit self-consistency route.
 
 Per `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` (with the 2026-04-25
 update), the older conditional source packet says:
 
-- **Conditional theorem** (current `main`-compatible posture):
-  the `a / l_P = 1` self-consistency algebra is a **conditional
-  structural theorem** on the **metric-compatible Clifford/CAR
-  coframe-response surface** with natural phase/action units. This is
-  support for the open gate, not a derivation of the scale-reference
-  primitive.
+- **Conditional algebra:** the `a / l_P = 1` self-consistency algebra consumes
+  the separately supplied primitive coefficient, gravitational/Wald
+  identification, formal source response, and action-unit convention. It is
+  not a consequence of the Clifford/CAR bridge and is not a derivation of the
+  scale-reference primitive.
 - The conditional packet
   (`PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md`) derives:
   - exact primitive coefficient `c_cell = Tr((I_16/16) P_A) = 1/4`;
@@ -68,7 +68,7 @@ update), the older conditional source packet says:
     `c_cell/a^2 = 1/(4 l_P^2)`, hence `a/l_P = 1`.
 - The 2026-04-25 source-unit normalization support theorem
   (`PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md`)
-  separates `G_kernel = 1/(4 pi)` (retained bare Green coefficient)
+  separates `G_kernel = 1/(4 pi)` (the cited graph-Green coefficient)
   from `G_Newton,lat = 1` (conditional physical Newton coefficient on
   the carrier surface).
 - The 2026-04-25 conditional Clifford phase bridge theorem
@@ -77,16 +77,14 @@ update), the older conditional source packet says:
   metric-compatible Clifford coframe response, then it polarizes to the
   complex `Cl_4` relations on `P_A H_cell`, which (since
   `rank(P_A) = 4`) is the irreducible `Cl_4(C) ~= M_4(C)` module,
-  equivalently two complex CAR modes. This supplies only the algebraic
-  carrier premise. Target 2 additionally requires the normal and
+  equivalently two complex CAR modes. This supplies only (G1a), the algebraic
+  response premise. Target 2 additionally requires (G1b), the normal and
   self-dual-tangent channel conditions, tangent symbol, and Widom
   applicability/normalization before obtaining
-  `c_Widom = 3/12 = 1/4 = c_cell`;
-  conditionally, the wider packet also gives:
-  - `G_Newton,lat = 1` and `a/l_P = 1` on the source-unit surface (Target 1
-    closure under the bridge);
-  - structural action-phase unit on the same surface (Target 3
-    closure under the bridge).
+  `c_Widom = 3/12 = 1/4`. Separately, Target 1 consumes `c_cell`, (G1c),
+  and the conditional source-unit algebra; an absolute action statement also
+  needs (G2). The Clifford bridge can supply a dimensionless structural phase
+  convention for Target 3, but it does not supply (G1b), (G1c), or (G2).
 
 Thus the Planck-lane targets share a coupled conditional packet, not one
 algebraic premise. Target 2 additionally needs the edge-channel law that CAR
@@ -98,13 +96,15 @@ The residual premises on which the Planck-lane targets hinge are:
 
 > **A compatible Clifford/CAR response on the rank-four block
 > `P_A H_cell ⊆ H_cell`, a supplied law assigning its two modes to the
-> physical normal and self-dual-tangent edge channels, and action-unit
-> metrology.**
+> physical normal and self-dual-tangent edge channels with the stated Widom
+> conditions, a supplied gravitational boundary/action identification, and
+> action-unit metrology.**
 
-Equivalently: an **additional active-block response premise** fixing
-`P_A H_cell` to an irreducible `Cl_4(C) ~= M_4(C)` module rather than
-non-CAR rank-four semantics, followed by separate edge-channel and Widom
-conditions.
+In expanded form, the packet comprises an **additional active-block response
+premise** fixing `P_A H_cell` to an irreducible `Cl_4(C) ~= M_4(C)` module
+rather than non-CAR rank-four semantics, separate edge-channel and Widom
+conditions, a separate gravitational/Wald identification, and separate
+action-unit metrology.
 
 Per the 2026-04-25 area-law tightening note
 (`AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md`):
@@ -123,29 +123,32 @@ And per the Target 3 boundary note
 > only on `S/kappa` and are invariant under
 > `(S,kappa) -> (lambda S, lambda kappa)`.
 
-So three related residual obligations remain:
+So four separate residual obligations remain:
 
 - (G1a) **Active-block response**: derive or separately supply a
   compatible Clifford/CAR response on `P_A H_cell`.
 - (G1b) **Physical channel law**: derive or separately supply the
   normal and self-dual-tangent edge dispersions and their assignment to the
   two modes, together with the tangent symbol and Widom conditions.
+- (G1c) **Gravitational boundary/action identification**: derive or separately
+  supply the premise identifying the primitive boundary coefficient with the
+  gravitational/Wald carrier used by the source-unit algebra.
 - (G2) **Action-unit metrology**: break the `(S, kappa)` rescaling
   degeneracy that the Hilbert-only stack leaves intact, pinning an
   absolute dimensional action quantum.
 
 The current bridges do not prove these obligations equivalent. A supplied
-coframe response gives the CAR algebra but not (G1b); the Target 2 coefficient
-requires (G1a) and (G1b), while the natural-unit scale route additionally
-requires (G2). The residual object is therefore a coupled open packet, not a
-single premise.
+coframe response gives the CAR algebra but not (G1b) or (G1c); the Target 2
+coefficient requires (G1a) and (G1b), while the natural-unit scale route also
+requires the gravitational identification (G1c) and action metrology (G2).
+The residual object is therefore a coupled open packet, not a single premise.
 
 ## 3. What resolving this gate would deliver
 
 If future work derives the compatible Clifford/CAR response, physical
-edge-channel law, and action-unit self-consistency from the current framework
-baseline (with no added carrier conditions), the chain of consequences to audit
-would be:
+edge-channel law, gravitational boundary/action identification, and action-unit
+self-consistency from the current framework baseline (with every added carrier
+condition named), the chain of consequences to audit would be:
 
 1. The conditional Clifford phase bridge moves from conditional support to
    an audit-ready structural theorem candidate.
@@ -159,16 +162,18 @@ would be:
    (`AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`)
    and primitive-CAR edge identification
    (`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`).
-4. Target 3 (historical information/action bridge): closed via the
+4. The gravitational/Wald interpretation additionally requires (G1c); the
+   coefficient arithmetic alone does not supply it.
+5. Target 3 (historical information/action bridge): closed via the
    conditional Clifford phase bridge theorem.
-5. The `a/l_P = 1` self-consistency algebra becomes an audit-ready
+6. The `a/l_P = 1` self-consistency algebra becomes an audit-ready
    dimensionless closure candidate. The already registered
    scale-reference primitive still supplies only the units conversion
    `a^{-1} = M_Pl`.
-6. The older `R_Lambda = c / H_inf` scale route would become ready for a
+7. The older `R_Lambda = c / H_inf` scale route would become ready for a
    separate audit pass against the Hubble-lane closure taxonomy. This
    note itself supplies no numerical `R_Lambda` or `H_inf` closure.
-7. Per the cosmic-history-ratio necessity no-go (Cycle 3), absolute
+8. Per the cosmic-history-ratio necessity no-go (Cycle 3), absolute
    `R_Lambda` (hence `H_inf`) supplies the `(C1)` route premise.
    Combined with `(C2)` from Cycle 4 (eta retirement gate), this would
    make a future `H_0` closure candidate.
@@ -186,6 +191,8 @@ The gate-resolving derivation must:
 - force the metric-compatible Clifford coframe response on
   `P_A H_cell`, distinguishing it from non-CAR rank-four semantics
   (two-qubit, ququart);
+- derive or separately identify the gravitational boundary/action carrier;
+  neither the Clifford algebra nor the Widom coefficient supplies this leg;
 - pin natural phase/action units that break the `(S, kappa)` rescaling
   degeneracy of the Hilbert-only surface;
 - not re-open routes already closed by prior no-gos. Specifically the
@@ -221,16 +228,15 @@ The two Lane 5 gates are remarkably symmetric:
 
 | | `(C2)` gate (Cycle 4) | `(C1)` gate (Cycle 5) |
 |---|---|---|
-| **Object** | right-sensitive 2-real `Z_3` doublet-block point-selection law | metric-compatible Clifford/CAR coframe response |
+| **Object** | right-sensitive 2-real `Z_3` doublet-block point-selection law | coupled response, channel/Widom, gravitational-carrier, and action-metrology packet |
 | **Domain** | `dW_e^H = Schur_{E_e}(D_-)` (charged-lepton response) | `P_A H_cell ⊆ H_cell` (rank-four boundary block) |
-| **What it pins** | `(delta, q_+)` in the moving `Z_3` doublet block | the irreducible `Cl_4(C) ~= M_4(C)` module rather than non-CAR ququart/two-qubit semantics |
+| **What it pins** | `(delta, q_+)` in the moving `Z_3` doublet block | no single object; every independent `(C1)` obligation must be resolved |
 | **Resulting closure** | retired `eta` from cosmology cascade | dimensionless `a/l_P = 1` self-consistency candidate, with `a^{-1} = M_Pl` supplied only by the scale-reference primitive |
 | **Structural target** | sub-lane 5A (cosmic-history-ratio retirement) | sub-lane 5B (scale route) |
 
-Both gates are **microscopic point/edge-selection laws on a
-algebraic block**, both are residual after extensive no-go work has
-closed adjacent routes, and both are necessary (per Cycle 3) for Lane 5
-closure.
+The `(C2)` gate is a microscopic point-selection law on an algebraic block.
+The `(C1)` gate is the coupled four-leg packet above, not one edge-selection
+law. Both route classes remain necessary (per Cycle 3) for Lane 5 closure.
 
 ## 6. What this audit does and does not do
 
@@ -239,7 +245,8 @@ closure.
 - Identifies the **coupled residual structural premises** for the `(C1)`
   half of the Lane 5 closure-pathway corollary.
 - Names the packet explicitly: compatible Clifford/CAR response on
-  `P_A H_cell`, a physical normal/tangent edge-channel law, and natural
+  `P_A H_cell`, a physical normal/tangent edge-channel law with its Widom
+  conditions, a gravitational boundary/action identification, and natural
   phase/action units.
 - Connects the gate to the three Planck-lane targets (gravity/action
   unit-map uniqueness, horizon-entropy carrier, information/action bridge)
@@ -300,7 +307,8 @@ gate on the `(C1)` side, completing the symmetric pair with Cycle 4's
 `(C2)` gate audit.
 
 The attached source-packet runner makes the dependency anchors,
-coupled response/channel/Widom/action-unit inventory, and non-promotion
+coupled response/channel/Widom/gravitational-carrier/action-unit inventory,
+and non-promotion
 boundary replayable for independent re-audit. It does not derive the
 metric-compatible Clifford/CAR coframe response, derive the scale-reference primitive,
 retain `R_Lambda` numerically, close `(C1)`, or apply an audit verdict.

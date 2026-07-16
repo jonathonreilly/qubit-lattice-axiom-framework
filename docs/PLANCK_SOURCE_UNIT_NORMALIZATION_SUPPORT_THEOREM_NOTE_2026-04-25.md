@@ -23,6 +23,11 @@ imported from its direct conditional authority:
   — direct authority only for the abstract algebraic equivalence
   `c=1/(4G) <=> 4Gc=1`. It does not identify `c` with `c_cell`, identify `G`
   physically, or supply the gravitational boundary/action bridge.
+- [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+  — direct mathematical authority for the nearest-neighbor `Z^3`
+  graph-Laplacian Green-kernel identity and its `1/(4 pi r)` asymptotic
+  normalization. Those facts are cited inputs here, not consequences of an
+  unlisted axiom or primitive.
 - `AREA_LAW_COEFFICIENT_GAP_NOTE.md` (context recording only, backticked
   to avoid length-3 cycle — this note imports `c_cell = 1/4` from the
   primitive-coframe carrier theorem, not from the coefficient-gap synthesis
@@ -40,7 +45,13 @@ standalone minimal-stack closure of `a^(-1) = M_Pl`; the source-unit
 normalization clarifies the bare/Newton mass-unit accounting once the carrier
 and its Wald reading are accepted.
 
-## Verdict
+The Green-kernel source explicitly does not derive a physical Poisson equation
+of motion. This note uses `phi=q_bare K` first as a formal scalar response.
+Interpreting that response as gravitational, and (only for the two-body check)
+supplying `F=-M_test grad(phi)`, are parts of the named row-local physical
+response/carrier packet; neither follows from the graph-Green identity.
+
+## Conditional Result
 
 The prior obstruction was real:
 
@@ -59,7 +70,7 @@ a/l_P = 2 sqrt(pi),
 not `1`.
 
 The clean support result is to separate the bare source coefficient from the
-physical Gauss/Newton source unit. The retained lattice theorem remains
+physical Gauss/Newton source unit. The cited graph-Green kernel result is
 
 ```text
 (-Delta) K = delta_0,
@@ -119,7 +130,7 @@ a/l_P = 1,
 a^(-1) = M_Pl.
 ```
 
-This does not erase the retained Green theorem. It corrects which quantity is
+This does not alter the cited Green-kernel result. It corrects which quantity is
 called the physical Newton constant on the conditional Planck carrier surface.
 It sharpens the existing conditional-completion packet; it does not remove the
 remaining minimal-stack blocker that the primitive boundary count still has to
@@ -129,19 +140,20 @@ be accepted or derived as the gravitational boundary/action carrier.
 
 | Item | Role | Status |
 |---|---|---|
-| `Cl(3)` on `Z^3` | substrate and lattice dimension | retained package substrate |
-| `(-Delta) K = delta_0` | native bare-source Poisson equation | retained |
-| `K(r) -> 1/(4 pi r)` | Green-kernel asymptotic | retained theorem |
-| Gauss/asymptotic monopole readout | exterior scalar source charge `C` | axiom-native field readout from the same divergence-form Poisson law |
+| `Cl(3)` on `Z^3` | substrate and lattice dimension | supplied historical model context; not a new axiom or primitive |
+| `(-Delta) K = delta_0` | nearest-neighbor graph-Green kernel identity | cited mathematical input from the linked Green-kernel source; not a physical equation of motion |
+| `K(r) -> 1/(4 pi r)` | Green-kernel asymptotic | cited result for the stated graph-Laplacian convention |
+| `phi = q_bare K` | formal scalar source response | linearity of the cited kernel; supplied as a mathematical response model, not a physical Poisson equation |
+| Gauss/asymptotic monopole readout | exterior scalar source coefficient `C` | derived real-analysis readout for that formal response; not a four-axiom primitive or physical field law |
 | `M_lambda = lambda C` | possible source-unit family | derived from exterior observability and additivity |
 | `c_cell = 1/4` | primitive boundary/Wald area carrier | supplied conditional carrier premise from the cited coframe source |
 | `lambda = 1` | physical source-unit scale | derived by matching `c_cell = 1/(4G_lambda)` |
-| `q_bare = 4 pi M_phys` | source-unit conversion | derived theorem |
+| `q_bare = 4 pi M_phys` | source-unit conversion | derived conditional result |
 | `G_Newton,lat = 1` | physical lattice Newton coefficient | derived from `lambda = 1` |
 | `l_P^2 = G_phys` | conventional Planck target in `hbar=c=1` units | external target definition, not derived |
 | SI values of `l_P`, `M_Pl`, `G` | decimal unit realization | not imported |
 
-The only external input is the conventional target definition
+The only external physical target input is the conventional target definition
 `l_P^2 = G_phys`. No measured value of `G`, `l_P`, `M_Pl`, or `hbar` is used.
 This theorem is therefore a support theorem for the existing conditional
 Planck packet, not a replacement for the current package pin.
@@ -163,13 +175,15 @@ theorem.
 
 ## Lemma 1: Green Kernel Is a Bare-Source Statement
 
-Let the native lattice field equation be
+Let `K` be the cited nearest-neighbor graph-Green kernel and define the formal
+scalar source response
 
 ```text
-(-Delta) phi = q_bare delta_0.
+phi = q_bare K,
+(-Delta) K = delta_0.
 ```
 
-Linearity and the Green theorem give
+Kernel linearity then gives
 
 ```text
 phi(r) -> q_bare K(r)
@@ -323,16 +337,17 @@ Therefore
 G_Newton,lat = 1.
 ```
 
-Equivalently, the native bare-source equation can be rewritten in physical
+Conditionally interpreting the formal scalar response as the supplied
+gravitational response, its graph-Green identity can be rewritten in physical
 mass units as
 
 ```text
 (-Delta) phi = 4 pi rho_phys,
 ```
 
-which is the standard Poisson normalization with `G_Newton,lat = 1`. That
-rewrite is an output of the exterior-charge plus primitive-carrier theorem,
-not an imported starting convention.
+which has the standard Poisson normalization with `G_Newton,lat = 1`. This is
+a conditional rewrite under the named physical response/carrier premise, not
+a derivation of a physical field equation from the Green-kernel source.
 
 ## Lemma 5: Source Conversion Is Unique After `lambda = 1`
 
@@ -351,10 +366,12 @@ sigma/(4 pi) = 1,
 sigma = 4 pi.
 ```
 
-## Lemma 6: The Product Law Uses the Same Physical Mass Unit
+## Lemma 6: Conditional Product-Law Check Under A Supplied Test Response
 
-The source conversion must also be used on the test-mass side. In physical
-mass units, a source `M_2` has bare strength
+For this check only, separately supply the test-body response
+`F=-M_test grad(phi)`. The graph-Green source does not derive that physical
+law. The source conversion must then also be used on the test-mass side. In
+physical mass units, a source `M_2` has bare strength
 
 ```text
 q_2,bare = 4 pi M_2,
@@ -374,7 +391,7 @@ F_12 = -M_1 grad(phi_2)
      -> M_1 M_2 / r^2.
 ```
 
-Thus the two-body force law in lattice units is
+Thus the conditional two-body force law in lattice units is
 
 ```text
 F_12 = G_Newton,lat M_1 M_2 / r^2,
@@ -462,12 +479,13 @@ a^(-1) = M_Pl.
 
 The result is a unit-normalization closure, not an SI decimal prediction.
 
-## Axiom-Native Content
+## Conditional Source Packet
 
-The proof uses only:
+The conditional algebra uses:
 
-- the retained lattice Green theorem and its `4 pi` angular normalization;
-- the native divergence/Gauss readout of source strength, normalized by
+- the cited graph-Green kernel identity and its `4 pi` angular normalization;
+- the formal divergence/Gauss readout of the supplied scalar response,
+  normalized by
   exterior monopole observability and additivity up to an explicit scale
   `lambda`;
 - the primitive event-cell count `c_cell = 1/4`;
@@ -481,8 +499,9 @@ It does not use:
 - a hidden rescaling of the lattice spacing or source mass;
 - a claim that finite primitive counting derives `pi`.
 
-The finite primitive carrier supplies `1/4`. The continuum Green/Gauss theorem
-supplies the already-retained `4 pi` angular normalization. The new theorem is
+The finite primitive carrier supplies `1/4`. The cited graph-Green asymptotic
+and its real-analysis flux calculation supply the `4 pi` angular normalization.
+The conditional result is
 that the exterior monopole family `M_lambda = lambda C` has its remaining
 scale fixed by the primitive boundary/Wald carrier: `c_cell = lambda/4`, so
 `lambda = 1`.
@@ -551,9 +570,10 @@ Run:
 python3 scripts/frontier_planck_source_unit_normalization_support_theorem.py
 ```
 
-The runner checks the retained kernel coefficient, the explicit `lambda`
+The runner checks the cited kernel coefficient, the explicit `lambda`
 source-scale family, the primitive-carrier selection `lambda = 1`, the Gauss
 source conversion, the uniqueness of the `4 pi` source unit, the physical
-two-body product law, the old bare-source failure mode, the boundary/Wald
+two-body product arithmetic under the supplied test-response premise, the old
+bare-source failure mode, the boundary/Wald
 coefficient, the Einstein-Hilbert prefactor relation, and the final
 `a/l_P = 1` map.

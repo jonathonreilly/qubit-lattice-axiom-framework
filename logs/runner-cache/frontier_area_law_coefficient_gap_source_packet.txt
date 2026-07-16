@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_coefficient_gap_source_packet.py
-runner_sha256: 66bc7e4ea5034e19a2f06ab802501cf0e90596663263da7456f42ead6b999c92
+runner_sha256: 7259efe4de549d7d781820a35b38cf7d9fc954ab5a451ce128d1dce2726788be
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -46,7 +46,7 @@ AREA-LAW COEFFICIENT-GAP CONDITIONAL SOURCE PACKET
 [PASS] logs/runner-cache/frontier_area_law_primitive_parity_gate_carrier.txt exists: logs/runner-cache/frontier_area_law_primitive_parity_gate_carrier.txt
 [PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py cache names the same runner: scripts/frontier_area_law_primitive_parity_gate_carrier.py
 [PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py cache records success: status=ok exit=0
-[PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py cache SHA is fresh: cache=5776fb6b518880c56e5f4eb4590d7040264f023c723878df76b1c46dee81cadc
+[PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py cache SHA is fresh: cache=961505fa076928373b37240eb451d1679674be04583307916dbd90d37436851c
 [PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py cache summary matches: PASS=40 FAIL=0
 [PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py cache preserves its claim boundary: under the full supplied
 carrier-identification premise
@@ -54,21 +54,21 @@ carrier-identification premise
 [PASS] logs/runner-cache/frontier_area_law_primitive_car_edge_identification.txt exists: logs/runner-cache/frontier_area_law_primitive_car_edge_identification.txt
 [PASS] scripts/frontier_area_law_primitive_car_edge_identification.py cache names the same runner: scripts/frontier_area_law_primitive_car_edge_identification.py
 [PASS] scripts/frontier_area_law_primitive_car_edge_identification.py cache records success: status=ok exit=0
-[PASS] scripts/frontier_area_law_primitive_car_edge_identification.py cache SHA is fresh: cache=4981e419c9c644f3e51ff436b7439344c18308d6df8b2f308fea1915def68411
+[PASS] scripts/frontier_area_law_primitive_car_edge_identification.py cache SHA is fresh: cache=211716f7a81fb4d536c6172b5b64e5aa01aa1a84e2908b69856fff42a3477a5e
 [PASS] scripts/frontier_area_law_primitive_car_edge_identification.py cache summary matches: PASS=46 FAIL=0
 [PASS] scripts/frontier_area_law_primitive_car_edge_identification.py cache preserves its claim boundary: CONDITIONAL INSIDE SUPPLIED RANK-FOUR CAR EDGE CONDITIONS
 [PASS] scripts/frontier_area_law_native_car_semantics_tightening.py exists: scripts/frontier_area_law_native_car_semantics_tightening.py
 [PASS] logs/runner-cache/frontier_area_law_native_car_semantics_tightening.txt exists: logs/runner-cache/frontier_area_law_native_car_semantics_tightening.txt
 [PASS] scripts/frontier_area_law_native_car_semantics_tightening.py cache names the same runner: scripts/frontier_area_law_native_car_semantics_tightening.py
 [PASS] scripts/frontier_area_law_native_car_semantics_tightening.py cache records success: status=ok exit=0
-[PASS] scripts/frontier_area_law_native_car_semantics_tightening.py cache SHA is fresh: cache=d1f535253b2796d3d39c5ef61cbff86f342781626a4bd9c983c9f2e06bbea93c
+[PASS] scripts/frontier_area_law_native_car_semantics_tightening.py cache SHA is fresh: cache=3d921309a7e0dc6cd18970876d6793268d8a2374dfbb378381211a21194bd528
 [PASS] scripts/frontier_area_law_native_car_semantics_tightening.py cache summary matches: PASS=29 FAIL=0
 [PASS] scripts/frontier_area_law_native_car_semantics_tightening.py cache preserves its claim boundary: CONDITIONAL ALGEBRAIC EQUIVALENCE ONLY
 
 ==============================================================================
 SUMMARY: PASS=53 FAIL=0
 ==============================================================================
-Verdict: bounded conditional source packet.
+Result: bounded conditional source packet.
 The arithmetic and source links are checkable, while physical carrier,
 channel, Widom, and representation premises remain explicit.
 

@@ -8,10 +8,11 @@
 
 ## 1. Current package stance
 
-The accepted package already treats `Cl(3)` on `Z^3` as a **physical lattice**,
-not a disposable regulator family. The primitive Clifford-Majorana edge
-source does not derive the physical carrier or its channel laws, so the public
-surface still tracks the absolute lattice scale by one explicit package pin:
+The package uses historical `Cl(3)` on `Z^3` as supplied physical-lattice
+model context, not as a fifth axiom or approved primitive. The primitive
+Clifford-Majorana edge source does not derive the physical carrier or its
+channel laws, so the public surface still tracks the absolute lattice scale by
+one explicit package pin:
 
 > `a^(-1) = M_Pl`
 
@@ -19,19 +20,20 @@ This is the cleanest honest package statement for the current tree.
 
 That fallback pin means:
 
-- the physical-lattice reading is accepted on the package boundary;
+- the historical physical-lattice model is a supplied package condition;
 - the absolute lattice spacing is still carried by one explicit Planck scale
   pin;
-- the 2026-04-30 construction verifies the candidate Clifford-Majorana
-  carrier algebra, but audit did not ratify it as a derivation of the missing
-  edge-statistics premise.
+- the 2026-04-30 construction verifies candidate Clifford-Majorana carrier
+  algebra but leaves the substrate forcing and edge-channel laws open.
 
 So the current lane status is:
 
-- **physical lattice:** accepted package posture
+- **physical lattice:** supplied historical model context
 - **absolute scale `a^(-1) = M_Pl`:** fallback package pin remains active
 - **natural-unit structural derivation `G_Newton,lat=1`, `a/l_P=1`:**
-  conditional on the primitive Clifford-Majorana edge carrier premise
+  conditional on the separately supplied primitive coefficient,
+  gravitational/Wald identification, formal source response, and action-unit
+  convention; not a consequence of the Clifford/CAR bridge
 
 The 2026-04-24 Planck conditional packet sharpened this posture. It is retained
 in
@@ -53,7 +55,7 @@ in
   `c_cell/a^2 = 1/(4 l_P^2)`, hence `a/l_P = 1`;
 - explicit finite-only, parent-source, and SI-unit blockers.
 - the 2026-04-25 source-unit normalization support theorem sharpens the same
-  packet by separating the retained bare Green coefficient
+  packet by separating the cited graph-Green coefficient
   `G_kernel = 1/(4 pi)` from the conditional physical Newton coefficient
   `G_Newton,lat = 1` on the carrier surface, resolving the old
   `a/l_P = 2 sqrt(pi)` bare-source mismatch without promoting the minimal
@@ -70,8 +72,8 @@ in
 This improves the derivation program, but it does not make the older minimal
 finite stack alone derive the SI Planck length. The public package pin remains
 the correct manuscript fallback because the 2026-04-30 primitive
-Clifford-Majorana edge derivation was not audit-ratified as part of the
-accepted Planck package.
+Clifford-Majorana edge source leaves its forcing and physical-response steps
+open.
 
 The 2026-04-30 update is
 [PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](./PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md).
@@ -364,17 +366,17 @@ Former blocker:
   premises remain independent of this algebraic equivalence;
 - scope guardrail: this is not a derivation of the SI decimal value of
   `hbar`, and it does not contradict the Hilbert-only no-go. The closed
-  statement is conditional structural closure under the primitive
-  metric-compatible coframe response.
+  statement is conditional structural algebra under the separately named
+  response, carrier, and metrology conditions.
 
 ## 6. Package rule on `main`
 
-After audit of the 2026-04-30 primitive Clifford-Majorana edge derivation, the
-correct package statement is:
+The current source-side package statement is:
 
-- `a^(-1) = M_Pl` remains the explicit package pin; `a/l_P=1` in natural
-  phase/action units remains conditional on the primitive Clifford-Majorana
-  edge-statistics carrier
+- `a^(-1) = M_Pl` remains the explicit package pin; `a/l_P=1` remains
+  conditional on the primitive coefficient, gravitational/Wald
+  identification, formal source response, and action-unit convention, not on
+  Clifford/CAR alone
 - it is **not** a derivation of the SI decimal value of `hbar` or a
   Hilbert-only theorem with the Clifford coframe stripped away
 - the primitive boundary count is identified with the microscopic

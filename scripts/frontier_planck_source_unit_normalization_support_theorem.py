@@ -140,7 +140,7 @@ def main() -> int:
     force_at_r = physical_force_coeff / (r * r)
     record(
         checks,
-        "same source unit gives the physical two-body product law",
+        "same source unit gives the conditional two-body product arithmetic",
         close(source2_monopole, m2)
         and close(physical_force_coeff, newton_force_coeff),
         (
@@ -231,6 +231,25 @@ def main() -> int:
     )
     record(
         checks,
+        "source bounds Green-kernel provenance to mathematical response algebra",
+        "LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`]("
+        in note
+        and "cited mathematical input from the linked Green-kernel source" in note
+        and "not a physical equation of motion" in note
+        and "supplied as a mathematical response model" in note
+        and "The Green-kernel source explicitly does not derive a physical Poisson equation" in note
+        and "supplying `F=-M_test grad(phi)`" in note
+        and "not a four-axiom primitive" in note
+        and "retained Green theorem" not in note
+        and "retained package substrate" not in note
+        and "axiom-native field readout" not in note
+        and "native lattice field equation" not in note
+        and "Axiom-Native Content" not in note
+        and "native divergence/Gauss" not in note,
+        "kernel identity is cited; no physical Poisson equation is promoted",
+    )
+    record(
+        checks,
         "source keeps the Wald/gravitational carrier identification explicit",
         "named row-local gravitational boundary/action premise" in note
         and "Neither step is derived from\nphysical `Cl(3)`" in note,
@@ -260,7 +279,7 @@ def main() -> int:
     print(f"Summary: {passed}/{total} checks passed.")
     if passed == total:
         print(
-            "Verdict: conditional source-unit algebra on the explicitly supplied "
+            "Result: conditional source-unit algebra on the explicitly supplied "
             "c_cell and Wald/Gauss carrier premises. Clifford/CAR does not supply "
             "those physical identifications. Given them, c_cell=lambda/4 fixes "
             "lambda=1 and q_bare=4*pi*M_phys, so G_Newton,lat=1, "
@@ -268,7 +287,7 @@ def main() -> int:
         )
         return 0
 
-    print("Verdict: source-unit normalization support theorem failed an internal gate.")
+    print("Result: source-unit normalization support theorem failed an internal gate.")
     return 1
 
 

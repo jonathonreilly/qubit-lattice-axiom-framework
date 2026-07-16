@@ -36,7 +36,8 @@ the scope below.
   for `J = (chi_(1,0) + chi_(0,1))/6` and the six-neighbor
   dominant-weight recurrence.
 - [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-  for the half-slice factorization surface.
+  for the conditional `M D M` algebra; the exact and saddle diagonals in this
+  note are supplied by its own Wilson-coefficient constructions.
 - [GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md](GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md)
   for the repo-internal Wilson Bessel-determinant coefficient convention.
 

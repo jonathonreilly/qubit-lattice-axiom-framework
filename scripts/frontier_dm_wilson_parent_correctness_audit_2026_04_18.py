@@ -118,11 +118,11 @@ def main() -> int:
         "explicit transfer-state identification at `beta = 6` still open" in transfer,
     )
     check(
-        "The source-sector factorization note and script explicitly use a generic witness rather than the Wilson D_6 data",
-        "generic positive-diagonal witness" in factor
-        and "not an explicit Wilson `D_6` evaluation" in factor
-        and "generic positive conjugation-symmetric diagonal witness" in factor_script
-        and "does not evaluate the Wilson\nresidual diagonal D_6" in factor_script,
+        "The source-sector note and script restrict the theorem to supplied diagonal D and retract Wilson-derived diagonality",
+        "conditional theorem for a supplied `D_beta`" in factor
+        and "does not derive a\nWilson residual operator" in factor
+        and "does not derive a Wilson residual D_beta" in factor_script
+        and "positive self-adjoint swap symmetry alone does not imply character" in factor_script,
     )
     check(
         "The Perron/Jacobi note says even the sharpened factorized class still does not force unique framework-point data",

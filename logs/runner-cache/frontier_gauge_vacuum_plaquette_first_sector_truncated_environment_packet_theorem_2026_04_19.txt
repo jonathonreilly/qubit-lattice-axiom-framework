@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py
-runner_sha256: be0c45ea64c220caae8b0be5f1304044334a628ce7dd5d2f971576e647185342
-timeout_sec: 300
+runner_sha256: a17dfc33a2e0729bef5b14bae9c19484291759833cb4008225471bd9e0e42a6c
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 8.98
+elapsed_sec: 7.03
 status: ok
 ----- stdout -----
 ================================================================================================================
@@ -21,24 +21,23 @@ Question:
   reconstructed sample triple                 = [0.135165279562, 0.374012880009, 0.543843858544]
   reconstruction gap                          = 1.665335e-16
 
-  [PASS] The factorization and character-measure notes already fix the canonical environment description as an overall scale z_(0,0)^env together with normalized coefficients rho_(p,q)(6)
+  [PASS] The source notes allow this vector only as a supplied diagonal packet and keep the Wilson compression identification open
   [PASS] The completion note already fixes one explicit retained first-sector coefficient vector v_min for the completed triple Z_min
   [PASS] Normalizing by the retained trivial-channel coefficient defines one exact truncated environment packet rho_ret with rho_(0,0)=1  (rho_ret=[1.0, 0.2671395653, 0.2671395653, 0.0])
   [PASS] That truncated packet is conjugation-symmetric on the retained first-symmetric sector  (|rho_(1,0)-rho_(0,1)|=0.000e+00)
   [PASS] The retained three-sample triple reconstructs exactly from the pair (z00_min, rho_ret)  (||z_recon-Z_min||=1.665e-16)
-  [PASS] So the remaining framework-point seam is not existence of a retained diagonal/environment packet itself, but extension of this truncated packet to the full beta=6 environment data  (z00_min=0.349607)
+  [PASS] The finite packet exists, while physical Wilson identification and full-weight extension both remain open  (z00_min=0.349607)
 
 ================================================================================================================
 RESULT
 ================================================================================================================
-  Exact refinement:
+  Conditional finite-packet refinement:
     - the completed first-sector triple already determines one explicit
-      retained diagonal/environment packet on the first-symmetric sector
+      supplied diagonal coefficient packet on the first-symmetric sector
     - namely one overall scale z00_min together with one normalized
-      conjugation-symmetric retained coefficient packet rho_ret
-    - therefore the remaining open object is the extension / realization
-      of this retained packet inside the full beta=6 framework-point
-      environment packet, not retained diagonal-packet existence
+      conjugation-symmetric coefficient packet rho_ret
+    - Wilson residual diagonality/identification and full-weight extension
+      remain open; this runner proves neither
 
 PASS=6 FAIL=0
 

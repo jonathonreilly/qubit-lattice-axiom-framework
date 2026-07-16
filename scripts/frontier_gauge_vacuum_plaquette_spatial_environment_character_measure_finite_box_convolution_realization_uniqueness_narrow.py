@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Narrow finite-box inverse Peter-Weyl convolution-realization uniqueness
-runner for the plaquette spatial-environment character-measure note.
+runner for a supplied positive character-diagonal operator.
 
 Verifies the standalone finite-truncation algebraic identity stated in
 
@@ -27,10 +27,9 @@ on the finite weight box B = {(p, q) : 0 <= p, q <= 4}. Specifically:
        function is distinct from the original and the eigenvalue recovery
        recovers exactly the perturbed eigenvalues, not the original;
 
-  (M4) joint uniqueness at finite-box scope: the constructed pair
-       (R_beta^env|_B, Z_beta^env|_B / z_00) is the unique pair
-       satisfying both block 17's stripping-uniqueness and (M3)'s
-       inverse Peter-Weyl uniqueness;
+  (M4) conditional uniqueness at finite-box scope: once diagonal R|_B is
+       supplied, the normalized finite character polynomial realizing it
+       by convolution is unique;
 
   (M5) witness-source consistency: instantiating rho := rho(6) from the
        bounded companion gives a Z_(6)^env|_B that equals the canonical
@@ -41,6 +40,8 @@ on the finite weight box B = {(p, q) : 0 <= p, q <= 4}. Specifically:
        character-coefficient inversion.
 
 This runner does NOT:
+- derive character diagonality for a stripped Wilson residual,
+- identify a supplied diagonal R|_B with the physical multi-link environment,
 - compute an all-weight closed-form Z_beta^env(W) outside B,
 - close the unmarked spatial Wilson tensor-transfer / Perron problem,
 - close analytic P(6),
@@ -283,12 +284,10 @@ def main() -> int:
         f"{inverse_recovery_returns_original:.3e}",
     )
 
-    # ---- M4: joint uniqueness at finite-box scope
+    # ---- M4: conditional uniqueness at finite-box scope
     # Construct the pair (R, Z|_B / z_00) and verify that perturbing either
-    # side breaks the (E') equality. (Block 17's stripping-uniqueness is
-    # exterior context; here we verify the inverse-side uniqueness piece
-    # explicitly by demonstrating that the unique pair satisfies (E') and
-    # any perturbation breaks it.)
+    # side breaks the (E') equality.  R is an explicit diagonal input here;
+    # no property of a physical stripped Wilson operator is inferred.
     norm_Z_constructed = norm_Z
     R_constructed = R
     # Recover R from norm_Z_constructed via eigenvalue extraction
@@ -298,7 +297,7 @@ def main() -> int:
     R_recovered = np.diag(eigs_from_norm_Z)
     forward_recovery_err = float(np.linalg.norm(R_constructed - R_recovered, ord=2))
     check(
-        "(M4) joint uniqueness: R recovered from norm_Z matches R_constructed",
+        "(M4) conditional uniqueness: supplied R recovered from norm_Z matches R_constructed",
         forward_recovery_err < 1e-12,
         f"||R - R_recovered||_2 = {forward_recovery_err:.3e}",
     )
@@ -313,7 +312,7 @@ def main() -> int:
     )
     pair_break_err = float(np.linalg.norm(R_constructed - R_perturbed, ord=2))
     check(
-        "(M4) perturbing norm_Z breaks the (E') equality (uniqueness reverse direction)",
+        "(M4) perturbing norm_Z breaks equality with the supplied R",
         pair_break_err > 0.0,
         f"||R - R_perturbed||_2 = {pair_break_err:.3e}",
     )
@@ -336,7 +335,7 @@ def main() -> int:
             canonical_wilson_match_err, float(abs(Z_coeffs[i] - canonical))
         )
     check(
-        "(M5) Z|_B equals canonical Wilson boundary class function truncation",
+        "(M5) supplied single-link Wilson packet reproduces its own finite character polynomial",
         canonical_wilson_match_err < 1e-12,
         f"|Z_coeff - c_(p,q)(6)| max = {canonical_wilson_match_err:.3e}",
     )

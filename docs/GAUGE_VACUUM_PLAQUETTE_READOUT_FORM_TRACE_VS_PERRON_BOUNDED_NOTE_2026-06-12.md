@@ -18,8 +18,8 @@ set or predict an audit outcome.
 ## One-Hop Authorities
 
 - [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-  for the source operator `J`, the half-slice multiplier, and the source-sector
-  factorization.
+  for the finite source recurrence `J` and the conditional matrix-element
+  formula when a positive character-diagonal middle operator is supplied.
 - [GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md](GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md)
   for the landed source-sector transfer split and the `rho=1` / `rho=delta`
   Perron anchors.
@@ -34,30 +34,25 @@ fitted selector is used.
 
 ## Insertion Form
 
-The source-sector factorization note fixes the marked operator:
+The source-sector factorization note fixes the finite recurrence used for the
+marked operator:
 
 > `J = (chi_(1,0) + chi_(0,1)) / 6`
 
-and identifies it as acting on the marked-plaquette class-function sector. The
-same note gives the factorized transfer:
+and gives the following formula only conditionally on a supplied diagonal
+middle operator:
 
 > `T_src(6) = exp(3 J) D_6 exp(3 J)`
 
-The half-slice clause is the load-bearing source of the insertion placement:
-
-> "the marked spatial plaquette enters the Wilson kernel with half weight on the incoming slice and half weight on the outgoing slice"
-
-and therefore
-
-> `M_(beta/2) = exp[(beta / 2) J]`
-
 The landed Perron-solve note supplies the source transfer actually used by the
-reference solves:
+reference solves, including its explicitly chosen half-slice multiplier:
 
 > `T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)`
 
 with the pieces named as `exp(3J)`, `D_6^loc`, and the input diagonal
-`rho_(p,q)(6)` inside `C_(Z_6^env)`.
+`rho_(p,q)(6)` inside `C_(Z_6^env)`. Those are supplied finite reference
+inputs here; this note does not derive their identification with the stripped
+physical Wilson residual.
 
 For a periodic derived-time cycle of `L_t` source-sector steps, the
 repo-convention readout is the raw `J`-density at one slice:

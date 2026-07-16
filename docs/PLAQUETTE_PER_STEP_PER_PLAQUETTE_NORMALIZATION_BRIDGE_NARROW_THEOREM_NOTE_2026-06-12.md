@@ -172,7 +172,9 @@ half weight on the incoming slice and half weight on the outgoing slice:
 and gives
 
 ```text
-T_src(beta) = exp[(beta / 2) J] D_beta exp[(beta / 2) J].
+T_beta = exp[(beta / 2) J] D_beta exp[(beta / 2) J]
+
+only conditionally for an explicitly supplied character-diagonal `D_beta`.
 ```
 
 For the finite source-sector machinery, the beta-dependent finite packet is

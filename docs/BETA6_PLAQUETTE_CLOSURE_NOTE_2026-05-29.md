@@ -68,7 +68,7 @@ that prior synthesis notes recorded with older statuses have since moved**
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | retained_bounded | SINGLE-LINK normalized Wilson coefficients rho_{p,q}(6) on box 0<=p,q<=4 by two independent integrators (agree 4e-15). NOT the multi-link environment coefficients. |
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | retained_bounded | Derives the 1/4 exponent in u_0=<P>^(1/4) from the four-link loop count; does NOT derive <P>. |
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | retained | alpha_s(v)=alpha_bare/u_0^2 (n_link=2); consumes a <P> value, does not produce one. |
-| `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | retained_bounded | T_src(6)=exp((beta/2)J) D_beta exp((beta/2)J) with D_beta central/diagonal. |
+| `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | retained_bounded (historical 2026-05-29 read-off) | Conditional finite-dimensional identity `T_beta=exp((beta/2)J) D_beta exp((beta/2)J)` for an explicitly supplied positive character-diagonal `D_beta`; it does not derive the stripped Wilson residual or its diagonality. |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | retained | Temporal-gauge linkwise factorization; four-marked-link compression D_beta^loc chi=a^4 chi. (Proven in temporal gauge only — see Section 5, Route 4.) |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | retained | Diagonal central operator R chi=rho chi EQUALS normalized convolution C_{Z/Z00} on the finite character basis. |
 | `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | retained_bounded | Bounded finite NMAX=4, MODE_MAX=80, beta=6 packet (positivity/self-adjointness/conjugation-symmetry). Does NOT close the full beta=6 solve. |
@@ -93,19 +93,19 @@ that prior synthesis notes recorded with older statuses have since moved**
 
 The single un-derived analytic step is uniformly identified across the lane:
 
-> **Open object:** the boundary character measure / class-sector amplitude
-> vector of the unmarked 3D spatial Wilson environment at beta=6 —
-> equivalently `rho_{p,q}^env(6)` (the eigenvalue sequence of the residual
-> environment convolution), equivalently the Perron eigenvector of the
-> positive transfer operator `T_src(6)` on the source-cyclic SU(3)
-> class-function subspace, equivalently the exact class-sector matrix
-> elements of the one-slab Wilson/Haar bulk kernel `K_6^env` and the
-> full-slice rim lift `B_6(W)`.
+> **Open objects:** the boundary character data of the unmarked 3D spatial
+> Wilson environment at beta=6 and the operator-compression theorem relating
+> those static data to the algebraically stripped two-slice source residual.
+> They may not be treated as one diagonal residual-convolution sequence until
+> that stronger bridge is proved. The exact class-sector matrix elements of
+> the one-slab Wilson/Haar bulk kernel `K_6^env` and the full-slice rim lift
+> `B_6(W)` remain part of that open construction.
 
-Producing this vector analytically yields `P(6)` (target 0.5934), `beta_eff(6)`,
-`u_0`, and the whole alpha_s chain. Everything upstream of this single
-evaluation is retained; only the analytic evaluation of the multi-link
-spatial-environment Perron data remains open.
+Producing the static vector is not by itself enough to yield `P(6)`: the
+operator-compression/diagonality bridge must also be closed before those data
+can be inserted into the conditional supplied-`D` formula. The analytic
+multi-link environment evaluation and that operator identification both
+remain open.
 
 The reduction of the seam **to** this evaluation is now itself only a
 **purely formal linear-algebra lemma**, not a physical reduction (Section 2):
@@ -226,7 +226,7 @@ read-off.
     "genuinely 3D-geometric." (Scope clarification 2026-05-04: this does NOT
     rule out 0-parameter derivations — but the L_s=2 Schur 0-parameter case
     gives 0.4291, demonstrating 0-parameter does not imply correct.)
-15. **Re-derive P(6) / beta_eff(6) from the existing factorized source-sector
+15. **Re-derive P(6) / beta_eff(6) from the existing conditional source-sector
     transfer / Perron-Jacobi stack**
     (`gauge_vacuum_plaquette_perron_jacobi_underdetermination_note`,
     retained_no_go; `gauge_vacuum_plaquette_framework_point_underdetermination_note`,
@@ -390,10 +390,12 @@ supplied.
 
 **Spatial-environment data plus analytic-class control.** Exact connected
 coefficients are now available through `d_9`, so the old "no data beyond `d_5`"
-obstruction is retired. The remaining obstruction has two parts. First, the
-source-sector value still needs the unmarked 3D spatial-environment Perron data
-`rho_{p,q}(6)`, whose direct exact contraction is the treewidth-29 object.
-Second, resumming the connected series into a beta=6 value would require an
+obstruction is retired. The remaining obstruction has three parts. First, the
+static unmarked 3D spatial-environment data need the treewidth-29 contraction.
+Second, those data must be identified with the algebraically stripped
+two-slice residual by an operator-compression theorem; character diagonality
+cannot be imported from simultaneous conjugation alone. Third, resumming the
+connected series into a beta=6 value would require an
 analytic-class theorem strong enough to justify the continuation; the exact
 `d_5..d_9` evidence currently breaks the simplest single-ratio and
 single-complex-pair stories instead of supporting them. A genuine closure would

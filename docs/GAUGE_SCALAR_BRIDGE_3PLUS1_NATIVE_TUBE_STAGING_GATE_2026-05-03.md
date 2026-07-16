@@ -37,8 +37,10 @@ need not equal or dominate any tube member.
 This gate uses only framework-internal or already named support inputs:
 
 - [`GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md):
-  source-sector factorization
-  `T_src(6) = exp(3J) D_6^loc C_(Z_6^env) exp(3J)`.
+  conditional source-sector matrix formula for a supplied diagonal middle
+  operator. The staged physical form
+  `T_src(6) = exp(3J) D_6^loc C_(Z_6^env) exp(3J)` additionally requires the
+  still-open operator-compression/convolution identification.
 - [`GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md):
   reference solves for `rho = delta` and `rho = 1`, plus the obstruction
   that the Wilson coefficients and SU(3) intertwiners alone do not

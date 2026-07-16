@@ -25,7 +25,7 @@ point beta=6,
 is the most-cited open quantitative gate in the framework (it feeds
 `u_0 = <P>^(1/4)`, then `alpha_s`, then the v / y_t / m_t / m_H chain). The
 attack-surface frontier map
-[`BETA6_PLAQUETTE_CLOSURE_ATTACK_SURFACE_FRONTIER_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_ATTACK_SURFACE_FRONTIER_NOTE_2026-05-29.md)
+[`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md)
 ranked the **one** non-ruled-out (long-shot) analytic route as **d-log-Pade
 resummation of the connected-shell series** `Delta(beta) = P_full - P_1plaq`,
 and isolated its single uncertified premise (Section 4b, obstruction iii):
@@ -487,13 +487,13 @@ Runner `python3 scripts/frontier_beta6_delta_analytic_class_2026_05_30.py`
 ## 10. Key files / cross-references
 
 - [`scripts/frontier_beta6_delta_analytic_class_2026_05_30.py`](../scripts/frontier_beta6_delta_analytic_class_2026_05_30.py) (this note's verification runner)
-- [`BETA6_PLAQUETTE_CLOSURE_ATTACK_SURFACE_FRONTIER_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_ATTACK_SURFACE_FRONTIER_NOTE_2026-05-29.md) (the 20-route ruled-out ledger; obstruction iii; `rho_{p,q}(6)` lane-killer)
+- [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md) (the route ledger; obstruction iii; `rho_{p,q}(6)` lane-killer)
 - [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md) (exact `d_7`; tadpole falsified; two-engine)
 - [`BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) (exact `d_6`; GF(3) cube-shell certificate)
 - `BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md` (d-log-Pade complex-pair proxy; activation thresholds)
 - [`GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md) (entire `Z_L`; `P_L = Z'/Z`; bijection/monotonicity)
 - [`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md) (`Z_L = Tr[T^Lt]`; six-neighbour recurrence)
-- [`GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) (`T_src(6) = exp(3J) D_6 exp(3J)`; `kappa_{p,q}(6)`)
+- [`GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) (conditional `T_6 = exp(3J) D_6 exp(3J)` for supplied diagonal `D_6`; no Wilson `kappa_{p,q}(6)` derivation)
 - [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md) (`d_5 = 4/18^5`; four cube shells)
 - [`PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md) (Bars Bessel-determinant closed form; indicial roots `{0,-3,-4}`)
 - [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) (`<P>_{V=1}(6) = 0.422531739650`)

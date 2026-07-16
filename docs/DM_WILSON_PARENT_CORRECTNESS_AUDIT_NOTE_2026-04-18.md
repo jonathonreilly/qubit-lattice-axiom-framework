@@ -77,13 +77,14 @@ From
 From
 [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md):
 
-- the exact factorized class
+- the exact conditional supplied-operator class
 
   `T_src(6) = exp(3 J) D_6 exp(3 J)`
 
-  is known structurally,
-- but the linked runner is only a generic positive-diagonal witness and is not
-  an explicit Wilson `D_6` evaluation.
+  is known algebraically when a positive character-diagonal `D_6` is supplied,
+- but neither the note nor its runner derives character diagonality for the
+  stripped Wilson residual; the runner includes an explicit positive
+  swap-symmetric off-diagonal counterexample.
 
 From
 [GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md):
@@ -153,8 +154,8 @@ Assume:
 
 1. the exact gauge-side transfer-operator realization on the plaquette lane;
 2. the exact strong-CP retained partition formula;
-3. the exact source-sector factorization and Perron/Jacobi underdetermination
-   results;
+3. the exact conditional supplied-`D` source-sector formula and the
+   Perron/Jacobi underdetermination results;
 4. the exact structured model realization note for the DM branch;
 5. the exact current-bank boundary note excluding an existing
    Wilson-to-`dW_e^H` descendant theorem.

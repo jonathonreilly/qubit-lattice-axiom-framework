@@ -1,7 +1,9 @@
 # Gauge-Vacuum Plaquette Perron/Jacobi Underdetermination
 
 **Date:** 2026-04-17
-**Status:** support - exact obstruction theorem inside the factorized source-sector transfer class; explicit `beta = 6` Perron / Jacobi data are still not forced
+**Status:** support - exact obstruction theorem inside a supplied-diagonal
+factorized source-sector class; physical Wilson compression and explicit
+`beta = 6` Perron / Jacobi data are still not forced
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py`
 
 ## Question
@@ -20,8 +22,9 @@ The live stack now closes:
 - the exact transfer-operator / character-recurrence realization,
 - the exact Perron-state reduction,
 - the conjugation-symmetry reduction of the Perron state,
-- and the exact source-sector matrix-element factorization law
-  `T_src(6) = exp(3 J) D_6 exp(3 J)`.
+- and the conditional source-sector matrix-element law
+  `T_src(6) = exp(3 J) D_6 exp(3 J)` after a positive
+  character-diagonal `D_6` is supplied.
 
 But those facts do **not** yet determine the explicit `beta = 6` Perron moments
 or Jacobi coefficients.
@@ -50,9 +53,8 @@ character-recurrence theorem.
 Let `S` be the exact conjugation-symmetry involution `(p,q) <-> (q,p)` on the
 dominant-weight basis.
 
-From the exact source-sector matrix-element factorization theorem already on
-`main`, every admissible `beta = 6` source-sector transfer operator has the
-form
+From the conditional source-sector matrix-element factorization theorem,
+every member of the supplied-diagonal `beta = 6` model class has the form
 
 `T_src(6) = M D_6 M`,
 
@@ -72,7 +74,7 @@ normalized mixed-kernel part is already explicit:
 
 `D_6^loc chi_(p,q) = a_(p,q)(6)^4 chi_(p,q)`.
 
-So the current open class is more honestly written as
+So the conditional class studied by this obstruction is
 
 `T = M D_6^loc R M`,
 
@@ -82,7 +84,7 @@ with:
 - `R > 0`,
 - `S R = R S`.
 
-Every such `T` satisfies the same structural boundary now closed on `main`:
+Every such supplied-class `T` satisfies the same structural boundary:
 
 - positivity-improving,
 - one simple strictly positive Perron state,

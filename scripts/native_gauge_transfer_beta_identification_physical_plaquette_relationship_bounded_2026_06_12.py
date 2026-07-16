@@ -173,9 +173,11 @@ def main() -> int:
         in tensor,
     )
     check(
-        "source-sector note distinguishes factorization from residual environment data",
-        "`T_src(beta) = exp[(beta / 2) J] D_beta exp[(beta / 2) J]`" in source_factor
-        and "identify the residual source-sector environment data" in source_factor,
+        "source-sector note makes the matrix formula conditional and keeps Wilson residual diagonality open",
+        "conditional theorem for a supplied `D_beta`" in source_factor
+        and "does not derive a" in source_factor
+        and "Wilson residual operator" in source_factor
+        and "central convolution" in source_factor,
     )
     check(
         "plaquette note states the finite Wilson action and average plaquette object",

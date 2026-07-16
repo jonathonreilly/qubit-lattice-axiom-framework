@@ -1,196 +1,272 @@
-# Gauge-Vacuum Plaquette Source-Sector Matrix-Element Factorization Theorem
+# Gauge-Vacuum Plaquette Conditional Source-Sector Matrix-Element Factorization Theorem
 
-**Date:** 2026-04-17
-**Status:** exact source-sector factorization theorem on the finite Wilson `3 spatial + 1 derived-time` source surface; the exact factorized operator class at `beta = 6` is explicit, and the mixed-kernel part is now known to localize to the exact marked-link factor after trivial-channel normalization; the linked script is a generic positive-diagonal witness, not an explicit Wilson `D_6` evaluation
+**Date:** 2026-04-17; conditional-scope repair 2026-07-16
+**Claim type:** positive_theorem
+**Claim scope:** exact finite-dimensional linear algebra on a stated truncated
+`SU(3)` character basis, conditional on a supplied positive
+character-diagonal operator `D_beta`; no identification of `D_beta` with the
+stripped Wilson residual is claimed.
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit verdict or effective status.
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py`
+**Runner cache:** `logs/runner-cache/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.txt`
 
 ## Question
 
-Can the previously open `beta = 6` source-sector transfer generator / matrix
-elements be written in an exact factorized form on the accepted Wilson `3+1`
-source surface?
+What factorization and matrix-element statements follow exactly on a finite
+`SU(3)` character-basis truncation once the middle operator is explicitly
+supplied as positive, character-diagonal, and conjugation-symmetric?
 
 ## Answer
 
-Yes, at the factorized source-sector level.
+Fix a finite character box, the self-adjoint source recurrence `J`, and
 
-Let `J` be the exact plaquette source operator already closed on `main`,
+`M_beta := exp[(beta / 2) J]`.
 
-`J = (chi_(1,0) + chi_(0,1)) / 6`,
+Supply an operator `D_beta` by its character-basis action
 
-acting on the marked-plaquette class-function sector.
+`D_beta chi_(p,q) = kappa_(p,q)(beta) chi_(p,q)`,
 
-Then the exact `beta = 6` source-sector transfer operator has the factorized
-form
-
-`T_src(6) = exp(3 J) D_6 exp(3 J)`,
-
-where:
-
-- `exp(3 J)` is the exact half-slice spatial plaquette multiplier on the marked
-  plaquette,
-- `D_6` is the exact positive self-adjoint diagonal operator of the compressed
-  residual source-sector kernel after the two marked half-slice multipliers are
-  stripped, in the `SU(3)` character basis:
-  `D_6 chi_(p,q) = kappa_(p,q)(6) chi_(p,q)`.
-
-So the factorized source-sector matrix law is now explicit:
-
-`(T_src(6))_(lambda,mu)
- = sum_nu (exp(3 J))_(lambda,nu) kappa_nu(6) (exp(3 J))_(nu,mu)`.
-
-This closes the previously open exact factorized source-sector matrix-law step.
-
-What remains open is narrower:
-
-> identify the residual source-sector environment data beyond the normalized
-> mixed-kernel local factor `a_(p,q)(6)^4`,
-> and therefore the exact Perron state of the now-explicit factorized
-> source-sector operator.
-
-## Setup
-
-From the exact transfer-operator / character-recurrence theorem already on
-`main`:
-
-- the finite Wilson partition function factors as one exact positive
-  self-adjoint one-clock transfer operator,
-- the local marked plaquette source is exactly the class function
-  `X = (chi_(1,0) + chi_(0,1)) / 6`,
-- multiplication by `X` closes exactly on the `SU(3)` dominant-weight graph.
-
-From the exact Perron-state reduction theorem already on `main`:
-
-- the large-derived-time state on every finite Wilson `3+1` source surface
-  reduces exactly to the Perron state of that transfer operator.
-
-So the only missing constructive object was the source-sector matrix-element
-law for the transfer operator itself.
-
-## Theorem 1: exact half-slice marked-plaquette multiplier
-
-On one time step, the marked spatial plaquette enters the Wilson kernel with
-half weight on the incoming slice and half weight on the outgoing slice:
-
-`exp[(beta / 6) Re Tr W] = exp[(beta / 2) X(W)]`.
-
-Since `J` is exactly multiplication by `X`, the marked half-slice factor on the
-source sector is exactly
-
-`M_(beta/2) = exp[(beta / 2) J]`.
-
-At the framework point `beta = 6`,
-
-`M_3 = exp(3 J)`.
-
-## Theorem 2: exact residual source-sector compression is central and diagonal in characters
-
-Strip off the two exact marked half-slice multipliers from the one-clock Wilson
-kernel and compress the remaining source-sector part to the marked-plaquette
-class-function sector. Call the resulting operator `C_beta`.
-
-Because the remaining Wilson source-sector weight is real, positive, and invariant
-under simultaneous conjugation of the marked plaquette holonomies, `C_beta` is:
-
-- positive,
-- self-adjoint,
-- central on the marked-plaquette class-function sector.
-
-By the Peter-Weyl / character decomposition of central operators on class
-functions, `C_beta` is diagonal in the irreducible character basis:
-
-`C_beta chi_(p,q) = kappa_(p,q)(beta) chi_(p,q)`,
-
-with real nonnegative coefficients `kappa_(p,q)(beta)`.
-
-Conjugation symmetry gives
+where every `kappa_(p,q)(beta)` is real and nonnegative and
 
 `kappa_(p,q)(beta) = kappa_(q,p)(beta)`.
 
-## Corollary 1: exact source-sector matrix elements
+Define
 
-Combining the exact marked half-slice multipliers and the exact diagonal
-residual source-sector compression,
+`T_beta := M_beta D_beta M_beta`.
 
-`T_src(beta) = exp[(beta / 2) J] D_beta exp[(beta / 2) J]`,
+Then `T_beta` is positive semidefinite, self-adjoint, and invariant under the
+character-conjugation swap. Its matrix elements are exactly
 
-where `D_beta chi_(p,q) = kappa_(p,q)(beta) chi_(p,q)`.
+`(T_beta)_(lambda,mu)
+ = sum_nu (M_beta)_(lambda,nu) kappa_nu(beta) (M_beta)_(nu,mu)`.
 
-Therefore at `beta = 6`,
+This is a conditional theorem for a supplied `D_beta`. It does not derive a
+Wilson residual operator, prove that a stripped Wilson compression is
+character-diagonal, or compute any physical `kappa_(p,q)(beta)`.
 
-`T_src(6) = exp(3 J) D_6 exp(3 J)`,
+## Finite character truncation
 
-and in the dominant-weight character basis,
+Fix `N >= 0` and let
 
-`(T_src(6))_(lambda,mu)
- = sum_nu (exp(3 J))_(lambda,nu) kappa_nu(6) (exp(3 J))_(nu,mu)`.
+`B_N := {(p,q) : 0 <= p,q <= N}`,
 
-So the exact source-sector transfer matrix elements are explicit once the
-diagonal coefficient sequence `kappa_(p,q)(6)` is fixed.
+`H_N := span{chi_(p,q) : (p,q) in B_N}`,
 
-## Corollary 2: exact remaining constructive datum
+with the irreducible characters taken as an orthonormal basis. Let `P_N` be
+orthogonal projection onto `H_N`. Define the compressed source recurrence by
 
-The remaining plaquette operator problem is no longer:
+`J_N := P_N [(chi_(1,0) + chi_(0,1))/6] P_N`.
 
-- an arbitrary positive transfer generator on the source sector,
-- an arbitrary positive Perron/Jacobi realization,
-- or a generic abstract source-sector matrix element problem.
+Equivalently, its action is the six-neighbour recurrence
 
-It is now exactly:
+`J_N chi_(p,q) = (1/6) P_N [
+    chi_(p+1,q) + chi_(p-1,q+1) + chi_(p,q-1)
+  + chi_(p,q+1) + chi_(p+1,q-1) + chi_(p-1,q)]`,
 
-- the positive diagonal coefficient sequence `kappa_(p,q)(6)`,
-- or equivalently the Perron state of `exp(3 J) D_6 exp(3 J)`.
+where terms with a negative label or outside `B_N` are omitted. The finite
+recurrence graph is undirected, so `J_N` is real self-adjoint.
 
-The new local/environment factorization theorem on `main` sharpens that one
-step further:
+Let `S_N` be the conjugation swap
 
-- the normalized mixed-kernel part is already exactly the local four-link
-  Wilson factor `a_(p,q)(6)^4`;
-- so the remaining open object is residual source-sector environment data
-  beyond that normalized mixed-kernel local factor, not hidden mixed-kernel
-  coefficient freedom.
+`S_N chi_(p,q) := chi_(q,p)`.
 
-That is the sharply reduced constructive target.
+The recurrence is invariant under `(p,q) <-> (q,p)`, hence
+`S_N J_N = J_N S_N`. For real `beta`, define
+
+`M_beta := exp[(beta/2) J_N]`.
+
+Functional calculus then gives, exactly:
+
+- `M_beta` is self-adjoint;
+- `M_beta` is strictly positive and invertible;
+- `S_N M_beta = M_beta S_N`.
+
+No floating-point exponentiation is needed for these conclusions.
+
+## Supplied diagonal hypothesis
+
+The theorem assumes, rather than derives, a real coefficient family
+
+`kappa_(p,q)(beta) >= 0`,
+
+`kappa_(p,q)(beta) = kappa_(q,p)(beta)`.
+
+Define
+
+`D_beta := sum_((p,q) in B_N)
+              kappa_(p,q)(beta) |chi_(p,q)><chi_(p,q)|`.
+
+Thus character diagonality, positivity, and swap symmetry are explicit input
+hypotheses. Zeros are allowed, so `D_beta` and `T_beta` may be semidefinite.
+No normalization such as `kappa_(0,0)=1` is required by this theorem.
+
+## Theorem
+
+Under the finite-truncation and supplied-`D_beta` hypotheses above, define
+
+`T_beta := M_beta D_beta M_beta`.
+
+Then the following statements hold.
+
+### 1. Exact matrix-element sum
+
+For `lambda,mu in B_N`, insert the character-basis resolution of the identity:
+
+`(T_beta)_(lambda,mu)
+ = <chi_lambda, M_beta D_beta M_beta chi_mu>`
+
+`= sum_(nu in B_N)
+   (M_beta)_(lambda,nu) kappa_nu(beta) (M_beta)_(nu,mu)`.
+
+This is an exact finite sum and is simply the matrix law for the explicitly
+supplied diagonal operator.
+
+### 2. Positivity and self-adjointness
+
+For every `v in H_N`,
+
+`<v,T_beta v>
+ = <M_beta v,D_beta M_beta v>
+ = sum_nu kappa_nu(beta) |(M_beta v)_nu|^2 >= 0`.
+
+Also
+
+`T_beta^* = M_beta^* D_beta^* M_beta^* = T_beta`.
+
+Equivalently, with
+
+`B_beta := D_beta^(1/2) M_beta`,
+
+one has the exact Gram factorization
+
+`T_beta = B_beta^* B_beta`.
+
+### 3. Conjugation symmetry
+
+Because both `M_beta` and `D_beta` commute with `S_N`,
+
+`S_N T_beta = T_beta S_N`.
+
+### 4. Rank, kernel, and spectral bounds
+
+Since `M_beta` is invertible,
+
+`rank(T_beta) = rank(D_beta)`,
+
+`ker(T_beta) = M_beta^(-1) ker(D_beta)`.
+
+Write `m_-` and `m_+` for the smallest and largest eigenvalues of `M_beta`,
+and `d_-` and `d_+` for the smallest and largest supplied coefficients.
+Then
+
+`d_- m_-^2 <= lambda_min(T_beta)`
+
+and
+
+`lambda_max(T_beta) <= d_+ m_+^2`.
+
+In particular, `T_beta` is positive definite exactly when every supplied
+coefficient is strictly positive; supplied zeros give the corresponding
+semidefinite nullity through the invertible congruence.
+
+## The `beta = 6` specialization
+
+For `beta=6`, and only after a diagonal operator `D_6` has been supplied,
+
+`M_6 = exp(3J_N)`,
+
+`T_6 = exp(3J_N) D_6 exp(3J_N)`,
+
+with
+
+`(T_6)_(lambda,mu)
+ = sum_nu (exp(3J_N))_(lambda,nu)
+          kappa_nu(6)
+          (exp(3J_N))_(nu,mu)`.
+
+This specialization does not identify `D_6` with a Wilson residual and does
+not turn a generic coefficient sequence into Wilson data.
+
+## Retracted Wilson inference and the missing stronger condition
+
+An earlier version inferred that a stripped Wilson residual compression was a
+central convolution operator, hence character-diagonal, from reality,
+positivity, self-adjointness, and simultaneous-conjugation invariance. That
+inference is retracted.
+
+Those properties do not force character diagonality. On `H_N` with `N>=1`,
+let
+
+`v := chi_(0,0) + chi_(1,1)`,
+
+`C := I + |v><v|`.
+
+Then `C` is strictly positive and self-adjoint, and it commutes with `S_N`
+because `S_N v=v`. But
+
+`<chi_(0,0), C chi_(1,1)> = 1`,
+
+so `C` mixes characters and is not diagonal. Replacing `C` by `diag(C)` loses
+the cross terms in `M_beta C M_beta`; a `kappa`-only formula is therefore not
+valid for a general positive swap-symmetric operator.
+
+The representation-theoretic condition that would justify character
+diagonality is stronger: for example, derive an actual kernel
+
+`K(U,V) = k(U V^(-1))`
+
+with `k` a central class function, or prove the equivalent full regular-action
+commutation needed for central convolution. Then Schur/Peter-Weyl theory gives
+character eigenvectors. Simultaneous conjugation alone only commutes with the
+conjugation action; it does not provide this translation/convolution
+structure.
+
+For the Wilson application, the remaining wall is therefore an explicit
+calculation or theorem showing that the algebraically stripped, compressed
+two-slice Wilson residual has this stronger structure, or a direct calculation
+of its character-basis matrix showing that every off-diagonal entry vanishes.
+Current-main static spatial-environment coefficient calculations do not by
+themselves identify that static convolution with the stripped two-slice
+operator.
+
+## Exact theorem versus runner witnesses
+
+The proof above is exact finite-dimensional linear algebra. The runner keeps
+that proof boundary visible:
+
+- a small `N=1` case uses `Fraction`-only rational matrices with an explicitly
+  supplied invertible rational `M`, including an exact Gram identity and the
+  hostile mixing operator `C`;
+- multiple larger boxes use deterministic floating-point matrix exponentials
+  only as finite witnesses;
+- the floating residuals and eigenspectra are not described as exact proofs;
+- the tested supplied sequences include irregular positive rational data,
+  algebraic data, same-total-weight asymmetry compatible with conjugation,
+  and zero/semidefinite cases;
+- a guarded diagonal helper accepts supplied diagonal `D` and rejects the
+  hostile off-diagonal `C`.
 
 ## What this closes
 
-- exact `beta = 6` half-slice multiplier on the marked plaquette:
-  `exp(3 J)`
-- exact source-sector factorization of the Wilson transfer operator
-- exact source-sector matrix-element formula at `beta = 6`
-- exact narrowing of the remaining constructive datum to one positive diagonal
-  character-coefficient sequence `kappa_(p,q)(6)`
+- the exact finite-dimensional matrix-element formula for a supplied positive
+  character-diagonal `D_beta`;
+- exact positivity, self-adjointness, conjugation symmetry, rank/kernel, and
+  spectral consequences of that supplied-operator theorem;
+- the conditional `beta=6` specialization for a supplied `D_6`.
 
-## What this does not close
+## What remains open
 
-- explicit residual source-sector environment data beyond the normalized
-  mixed-kernel local factor
-- explicit `beta = 6` Perron moments or Jacobi coefficients
-- analytic closure of canonical `P(6)`
-- repo-wide repinning of the canonical plaquette
+- derivation of the actual stripped Wilson residual as a central convolution
+  or direct proof of its character diagonality;
+- proof that stripping/compression preserves any additional positivity or
+  operator structure needed in the physical Wilson construction;
+- physical `kappa_(p,q)(6)` data;
+- a `beta=6` Wilson Perron state, plaquette value, or repo-wide numerical
+  repinning.
 
-## Script boundary
-
-The theorem above is structural and exact. The linked runner is only a finite
-algebraic witness:
-
-- it audits a truncated dominant-weight box with `NMAX = 5`,
-- it uses the exact source recurrence `J` and the exact half-slice factor
-  `exp(3 J)`,
-- but it does **not** compute the Wilson residual diagonal `D_6`,
-- instead it injects one explicit generic positive conjugation-symmetric
-  diagonal witness sequence `kappa_(p,q)`,
-- and then verifies the factorized matrix law for that witness operator.
-
-So the script supports the exact factorization theorem, but it is not itself a
-numerical evaluation of the Wilson `beta = 6` source-sector diagonal data.
-
-## Commands run
+## Command
 
 ```bash
 python3 scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py
 ```
-
-Expected summary:
-
-- `THEOREM PASS=4 SUPPORT=3 FAIL=0`

@@ -173,9 +173,10 @@ actual mixed-kernel compression bridge.
 - [gauge_vacuum_plaquette_transfer_operator_character_recurrence_note](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md)
   supplies the finite source recurrence `J` used in the packet runner.
 - [gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-  supplies the bounded source-sector factorization context and marked
-  half-slice multiplier. This note does not import a stronger actual
-  mixed-kernel compression theorem from that parent.
+  supplies only the conditional source-sector matrix algebra and finite
+  recurrence context for a separately supplied `M` and diagonal `D`. It does
+  not derive a Wilson residual, a half-slice placement, or an actual
+  mixed-kernel compression theorem.
 
 The open bridge named by the earlier review history remains open at full
 theorem scope: prove, or runner-certify, the actual temporal-gauge

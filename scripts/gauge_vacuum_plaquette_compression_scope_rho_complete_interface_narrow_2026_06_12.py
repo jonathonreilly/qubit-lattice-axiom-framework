@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finite checks for the rho-complete compression-scope theorem.
+"""Finite checks for the supplied-rho conditional interface theorem.
 
 The runner stays inside repo-internal finite packets:
 
@@ -7,10 +7,10 @@ The runner stays inside repo-internal finite packets:
 * source readout NMAX=7 and MODE_MAX=200;
 * existing source Perron machinery with rho supplied as input.
 
-It checks that the marked source-sector readout is a function of the diagonal
-rho interface alone.  The off-diagonal perturbation constructed below is a
-finite non-central environment-operator direction with zero diagonal, so every
-rho_(p,q) coefficient is fixed by construction.
+It checks readouts after rho has explicitly been supplied as a diagonal input.
+The off-diagonal perturbation is a hostile control: a diag-only helper erases
+that direction, so unchanged projected output is evidence of information loss,
+not a proof that a physical Wilson residual is character-diagonal.
 """
 
 from __future__ import annotations
@@ -186,7 +186,7 @@ def main() -> int:
         f"P_triv={anchors['P_triv']:.15f}, P_packet={p_packet:.15f}, P_loc={anchors['P_loc']:.15f}",
     )
 
-    section("Part 4: non-central perturbation with fixed rho")
+    section("Part 4: hostile control for a lossy diag-only interface")
     env_central = np.diag(rho_packet)
     f_idx = tensor_index[FUND]
     adj_idx = tensor_index[ADJOINT]
@@ -217,16 +217,20 @@ def main() -> int:
         and np.count_nonzero(np.diag(perturb)) == 0,
     )
     check(
-        "off-diagonal perturbation leaves every tensor rho coefficient fixed",
+        "diag-only extraction leaves every tensor rho coefficient fixed",
         np.array_equal(rho_from_central, rho_from_perturbed),
     )
     check(
-        "embedded source rho vector is bitwise unchanged",
+        "the raw environment operators are nevertheless different",
+        not np.array_equal(env_central, env_perturbed),
+    )
+    check(
+        "the embedded rho vector is unchanged only after the lossy diagonal projection",
         np.array_equal(rho_packet_source, rho_perturbed_source),
     )
     check(
-        "marked source readout is exactly unchanged after the rho interface",
-        p_packet == p_perturbed,
+        "unchanged projected readout demonstrates helper information loss rather than raw-operator completeness",
+        p_packet == p_perturbed and not np.array_equal(env_central, env_perturbed),
         f"base={p_packet:.17g}, perturbed={p_perturbed:.17g}",
     )
 
@@ -256,9 +260,10 @@ def main() -> int:
         and branch_local_ref_prefix not in text,
     )
     check(
-        "note names the theorem lane and its outside-scope observables",
+        "note names the conditional diagonal lane and its outside-scope observables",
         "source-sector readouts of the factorized marked plaquette kernel" in " ".join(text.split())
-        and "observables outside the marked source-sector kernel" in " ".join(text.split()),
+        and "observables outside the marked source-sector kernel" in " ".join(text.split())
+        and "does not prove that the physical stripped Wilson" in " ".join(text.split()),
     )
 
     print()

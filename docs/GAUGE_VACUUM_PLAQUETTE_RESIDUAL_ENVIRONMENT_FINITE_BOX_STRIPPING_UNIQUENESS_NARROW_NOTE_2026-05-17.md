@@ -19,14 +19,12 @@ R_beta^env|_B = (D_beta^loc|_B)^{-1} exp[-(beta/2) J|_B] K_beta^src|_B exp[-(bet
 
 because both `exp[(beta/2) J|_B]` and `D_beta^loc|_B` are strictly positive
 operators on the finite-dimensional character-basis truncation `H_B`.
-Consequently, there is no admissibility freedom in `R_beta^env|_B` beyond
-what `(S)` already fixes — the parent note's "stripped residual factor" is
-not merely a named object but the *unique* algebraic solution of `(D)`
-restricted to `B`. The narrow note further checks that the unique stripped
-residual, when computed via `(S)` directly from the explicit one-step
-Wilson source-sector kernel restricted to `B`, agrees with the
-finite-box bounded companion's coefficient values `rho_(p,q)(6)` from the
-canonical single-link Wilson character integral, to machine precision.
+Consequently, once `(D)` is supplied there is no algebraic freedom in
+`R_beta^env|_B` beyond what `(S)` fixes. This uniqueness does not imply that
+the stripped operator is character-diagonal or a central convolution. The
+narrow note also performs an explicitly circular round trip: it constructs
+`K_beta^src|_B` from a supplied diagonal coefficient packet and recovers that
+same packet through `(S)`.
 **Scoped inputs** (named, not load-bearing on this note's finite-box
 algebraic correctness, but relevant to its physical reading):
 - the source-sector decomposition `(D)` is taken as the **starting form**
@@ -56,9 +54,9 @@ pipeline after independent review.
 
 The parent residual-environment identification theorem
 (`gauge_vacuum_plaquette_residual_environment_identification_theorem_note`)
-proves the *structural class* of `R_beta^env` (positive, self-adjoint,
-central, diagonal in the character basis, conjugation-symmetric) and
-exhibits the decomposition `(D)`. Iter b7 (PR #1217) and the bounded
+names the decomposition `(D)`. It does not establish that the stripped
+operator is central or diagonal in the character basis. Iter b7 (PR #1217)
+and the bounded
 companion `...FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE` replaced the
 prior hand-picked witness in the runner with computed canonical single-link
 Wilson character coefficients on the finite box. Neither prior step proves
@@ -66,11 +64,9 @@ the *uniqueness* of the stripped finite-box residual factor as the unique
 algebraic solution of `(D)`.
 
 The auditor's `audited_conditional` verdict for the parent note identified
-the load-bearing step as identification by renaming. If the decomposition
-`(D)` admitted more than one positive diagonal central conjugation-symmetric
-finite-box solution for `R_beta^env|_B`, the parent's "the remaining factor
-is `R_beta^env`" would be ill-posed even at finite-box scope, because the
-"identification" would not be a function of the kernel data.
+the load-bearing step as identification by renaming. The algebra below
+addresses only uniqueness of the stripped operator after `(D)` is supplied;
+it does not address its operator class.
 
 The narrow uniqueness theorem closes that specific renaming defect at
 finite-box scope:
@@ -86,11 +82,11 @@ finite-box scope:
   Wilson character integral, to machine precision (consistency
   cross-check; explicitly circular round-trip).
 
-These together upgrade the parent's class-F renaming, *within finite-box
-scope*, from "the residual factor is named `R_beta^env`" to "the residual
-factor is *the unique* algebraic stripping of `(D)`, and equals the
-canonical Wilson single-link boundary character measure to machine
-precision on `B`".
+These establish a narrower conclusion: the residual factor is the unique
+algebraic stripping of the supplied form `(D)`. The round trip with canonical
+single-link coefficients verifies implementation consistency only; it does
+not identify the physical multi-link Wilson residual with that diagonal
+packet.
 
 ## Statement
 
@@ -143,8 +139,8 @@ R_beta^env|_B = (D_beta^loc|_B)^{-1} exp[-(beta/2) J|_B] K_beta^src|_B exp[-(bet
 ```
 
 Equation `(S)` is a function from `(K_beta^src|_B, D_beta^loc|_B, J|_B,
-beta)` to a unique operator on `H_B`. No second positive diagonal central
-conjugation-symmetric solution exists on `H_B`: any operator `R'` on `H_B`
+beta)` to a unique operator on `H_B`. No second operator solution exists on
+`H_B`: any operator `R'` on `H_B`
 satisfying `(D|_B)` with the same `K_beta^src|_B, D_beta^loc|_B, J|_B,
 beta` must equal `R_beta^env|_B` by left-multiplying both sides of `(D|_B)`
 by `(D_beta^loc|_B)^{-1} exp[-(beta/2) J|_B]` and right-multiplying both
@@ -156,10 +152,9 @@ the bounded companion's runner-computed `rho_(p,q)(6) = c_(p,q)(6) /
 (d_(p,q) c_(0,0)(6))` coefficients on `B` for the residual factor. Compute
 `R_6^env|_B` from `(S)` by direct inversion. The result agrees with the
 input `rho_(p,q)(6)` diagonal sequence on the finite box `B` to machine
-precision. This is a consistency cross-check: the unique stripped finite-
-box residual factor *is* the diagonal operator with canonical Wilson
-single-link boundary character coefficients on `B`, not merely a
-diagonal operator named `R_6^env`.
+precision. This is only a consistency cross-check because the diagonal packet
+was used to construct `K_6^src|_B`; it does not derive the physical stripped
+Wilson operator or its character diagonality.
 
 ## Proof
 
@@ -213,20 +208,17 @@ Wilson single-link boundary character coefficients on `B`. ∎
 - (U1)-(U2): finite-box invertibility of the half-slice multiplier and the
   local Wilson factor on the character truncation.
 - (U3): the *unique* finite-box residual factor as the algebraic solution
-  of `(S)`. No admissibility freedom within the positive diagonal central
-  conjugation-symmetric class beyond `(S)`.
+  of `(S)`, without any conclusion that this operator is central or diagonal.
 - (U5): finite-box consistency cross-check (explicitly circular round-trip)
-  that the unique stripped residual factor equals the canonical Wilson
-  single-link boundary character coefficient sequence to machine precision.
+  that recovers the supplied canonical single-link coefficient sequence to
+  machine precision.
 
 ## What this does NOT claim
 
 - Does **not** claim structural-class transport from `K_beta^src|_B` to the
-  unique stripped residual. The scope of this narrow note is the (U1)-(U3)
-  uniqueness statement plus the (U5) explicitly circular round-trip check;
-  transport of the parent's structural class (positive, self-adjoint,
-  central, diagonal, conjugation-symmetric) is left to the parent note
-  and any future companion.
+  unique stripped residual. In particular, positivity, self-adjointness, swap
+  symmetry, central convolution, and character diagonality require separate
+  hypotheses or a direct Wilson-kernel calculation.
 - Does **not** claim the all-weight equality of the stripped residual with
   the compressed unmarked spatial Wilson environment outside the finite
   box `B` (the parent's explicit open gate).
@@ -249,21 +241,14 @@ Wilson single-link boundary character coefficients on `B`. ∎
 ## Relation to the parent residual-environment identification note
 
 `GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md`
-proves structural class (positive, self-adjoint, central, diagonal,
-conjugation-symmetric) of the stripped factor `R_beta^env` and the
-source-sector decomposition `(D)`. The auditor's `audited_conditional`
-verdict identified the load-bearing step as renaming: the parent shows the
-stripped factor *has* the structural class but does not prove it is the
-*unique* object fitting `(D)` even within finite-box scope.
+supplies the source-sector decomposition `(D)` as context. Neither that
+pointer nor this note proves the stripped factor is a central convolution or
+character-diagonal.
 
-This narrow note closes that specific defect at finite-box scope:
-on `B`, `R_beta^env|_B` is *the unique* algebraic stripping of `(D)`, and
-the cross-check (U5) shows it equals the canonical Wilson single-link
-boundary character coefficient sequence to machine precision. The all-
-weight identification remains the parent's open gate; this note does not
-promote the parent to retained-grade, only sharpens the finite-box
-"renaming" to "uniquely-determined named object plus a numerical
-cross-check".
+This narrow note proves only that, on `B`, `R_beta^env|_B` is the unique
+algebraic stripping of the supplied `(D)`. The cross-check (U5) recovers an
+input diagonal packet. The physical operator-compression and
+central-convolution identification remain open.
 
 ## Cited dependencies
 

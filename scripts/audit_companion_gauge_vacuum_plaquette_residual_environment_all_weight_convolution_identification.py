@@ -1,85 +1,22 @@
 #!/usr/bin/env python3
-"""Exact-symbolic audit-companion runner for the narrow theorem note
-`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md`.
+"""Exact symbolic checks for supplied diagonal quotient/convolution algebra.
 
-The parent narrow note's load-bearing content is the all-weight structural
-identification, on the marked-plaquette SU(3) class-function sector, of the
-residual source-sector operator
+The runner assumes two explicit character-diagonal coefficient families,
 
-  R_beta^env := D_beta^loc^{-1} * (exp[-(beta/2) J] T_src(beta) exp[-(beta/2) J])
-             := D_beta^loc^{-1} * D_beta,
-  R_beta^env chi_(p,q) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) chi_(p,q),  (D1)
+    D chi_(p,q) = kappa_(p,q) chi_(p,q),
+    D_loc chi_(p,q) = a_(p,q)^4 chi_(p,q),
 
-with the unnormalized central formal action
+with kappa nonnegative and a strictly positive.  It checks exactly that
+R=D_loc^{-1}D has eigenvalues kappa/a^4 and that the same supplied sequence
+has the finite-window formal central-convolution packaging given by Schur
+orthogonality.
 
-  (1 / lambda_env(beta)) C_(Z_beta^env)
-
-by the boundary Peter-Weyl coefficient sequence
-
-  Z_beta^env(W) := sum_(p,q) d_(p,q) z_(p,q)^env(beta) chi_(p,q)(W),
-  z_(p,q)^env(beta) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) * lambda_env(beta).  (D2)
-
-Three structural retained authorities and one retained-bounded Wilson
-coefficient source supply the inputs (I1), (I2), (I3), (I4):
-
-  (I1) gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note
-       (retained_bounded / audited_clean): T_src(beta) = exp[(beta/2) J] D_beta
-       exp[(beta/2) J] with D_beta chi_(p,q) = kappa_(p,q)(beta) chi_(p,q).
-
-  (I2) gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10
-       (retained / audited_clean): D_beta^loc chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q)
-       with a_(p,q)(beta) sourced from the one-link Wilson coefficient formula;
-       non-marked spatial links contribute the identity on the marked source
-       sector after normalization.
-
-  (I3) su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10
-       (retained / audited_clean): for an abstract positive conjugation-symmetric
-       coefficient sequence (rho_(p,q)) with rho_(0,0) = 1, the diagonal operator
-       R[rho] equals the normalized convolution operator C_{Z/Z_(0,0)} by the
-       associated central class function Z(W) = sum d_(p,q) rho_(p,q) chi_(p,q)(W).
-       By linearity, the same character-basis dictionary gives the unnormalized
-       eigenvalue formula C_Z chi_(p,q) = z_(p,q) chi_(p,q). This runner consumes
-       only that unnormalized identity; it does not assume rho_(0,0)=1 for
-       R_beta^env.
-
-  (I4) wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30
-       (effective_status retained_bounded): the Wilson one-link coefficient
-       expansion has nonnegative tensor-product multiplicities. This runner
-       checks the source repair's constructive highest-weight occurrence
-       certificate m_(p,q)^(p+q) >= 1, which upgrades the needed premise to
-       a_(p,q)(beta)>0 at all weights for beta>0.
-
-This Pattern A narrow runner verifies symbolically (sympy `simplify` to 0):
-
-  (a) source repair checks: the Wilson retained-bounded authority is linked,
-      a_(p,q)(beta)>0 for beta>0 is sourced by an all-weight occurrence
-      certificate, and Z_beta^env is explicitly formal per-weight rather than
-      an actual all-weight class-function claim;
-  (b) (T1) structural diagonality, self-adjointness, positivity, and
-      conjugation symmetry of R_beta^env under (I1)+(I2)+(I4);
-  (c) (T2) Peter-Weyl formal sequence expansion of Z_beta^env with the
-      coefficients of (D2), including the distinction between lambda_env and
-      the actual trivial coefficient z_(0,0)^env = lambda_env*kappa_(0,0);
-  (d) (T3) eigenvalue equality kappa_(p,q) / a_(p,q)^4 = z_(p,q)^env /
-      lambda_env at every weight in a finite representative truncation;
-  (e) (T4) uniqueness: two distinct eigenvalue sequences yield distinct
-      operators;
-  (f) algebraic compatibility R_beta^env = D_beta^loc^{-1} * D_beta;
-  (g) counterfactual probes: D^loc strip and swap symmetry are both
-      load-bearing;
-  (h) finite-truncation numerical sanity at one independent abstract
-      positive symmetric coefficient sequence.
-
-Companion role: not a new claim row, not a new source note, no status
-promotion. Provides audit-friendly evidence that the parent's
-load-bearing class-(A) algebraic identification holds at exact symbolic
-precision under the cited authorities (I1)+(I2)+(I3)+(I4). The
-cited retained authorities themselves are imported from upstream retained
-authorities and are not re-derived here.
+This runner does not derive D from a Wilson kernel, does not prove that a
+stripped Wilson compression is character-diagonal, and does not identify the
+formal sequence with an independently constructed physical environment.
 """
 
 from __future__ import annotations
-import json
 import math
 from pathlib import Path
 import sys
@@ -99,13 +36,10 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md"
 RESIDUAL_PARENT_PATH = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md"
 CHAR_MEASURE_PARENT_PATH = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md"
-LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 WILSON_NOTE_PATH = ROOT / "docs" / "WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md"
 WILSON_RUNNER_PATH = ROOT / "scripts" / "wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py"
-WILSON_CLAIM_ID = "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
 SELF_RUNNER = "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py"
 SELF_CACHE = "logs/runner-cache/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.txt"
-SELF_NOTE = "GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -125,11 +59,6 @@ def section(title: str) -> None:
     print("-" * 88)
     print(title)
     print("-" * 88)
-
-
-def ledger_row(claim_id: str) -> dict:
-    data = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
-    return data.get("rows", {}).get(claim_id, {})
 
 
 def tensor_fundamental_counts(counts: dict[tuple[int, int], int]) -> dict[tuple[int, int], int]:
@@ -208,13 +137,13 @@ def main() -> int:
     print("=" * 88)
 
     # -------------------------------------------------------------------
-    section("Part 0a: 2026-06-07 source repair checks")
+    section("Part 0a: supplied-input scope and source checks")
     # -------------------------------------------------------------------
 
     note_text = NOTE_PATH.read_text(encoding="utf-8")
     residual_parent_text = RESIDUAL_PARENT_PATH.read_text(encoding="utf-8")
     char_measure_parent_text = CHAR_MEASURE_PARENT_PATH.read_text(encoding="utf-8")
-    wilson_row = ledger_row(WILSON_CLAIM_ID)
+    wilson_note_text = WILSON_NOTE_PATH.read_text(encoding="utf-8")
 
     check(
         "I4 source files are present",
@@ -228,47 +157,40 @@ def main() -> int:
         detail="audit-runner extraction can discover the restricted packet without following markdown link targets",
     )
     check(
-        "parent finite-packet notes cite this all-weight formal bridge as structural support only",
-        SELF_NOTE in residual_parent_text
-        and SELF_NOTE in char_measure_parent_text
-        and "formal diagonal-convolution" in residual_parent_text
-        and "formal diagonal-convolution" in char_measure_parent_text
-        and "does not compute" in residual_parent_text
-        and "does not compute" in char_measure_parent_text
-        and "full unmarked spatial Wilson integral" in residual_parent_text
-        and "actual\n  beta=6 unmarked spatial Wilson environment coefficients" in char_measure_parent_text,
-        detail="parent rows split formal convolution support from the still-open physical coefficient bridge",
+        "parent finite-packet notes keep the physical compression theorem open",
+        "does **not** claim that the stripped residual source-sector operator" in residual_parent_text
+        and "open operator-compression gate" in char_measure_parent_text,
+        detail="the formal supplied-sequence theorem is not promoted to a Wilson identification",
     )
     check(
-        "I4 ledger authority has retained_bounded effective status",
-        wilson_row.get("effective_status") == "retained_bounded",
-        detail=f"audit_status={wilson_row.get('audit_status')} effective_status={wilson_row.get('effective_status')}",
+        "I4 source states the bounded one-link coefficient-positivity theorem",
+        "c_lambda(beta) >= 0" in wilson_note_text
+        and "gauge kernel alone" in wilson_note_text,
+        detail="no generated audit ledger status is consumed",
     )
     check(
-        "target note cites the I4 Wilson coefficient source",
-        "WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md" in note_text
-        and WILSON_CLAIM_ID in note_text,
-        detail="one-hop source edge to retained-bounded Wilson coefficient positivity",
+        "target note cites the Wilson one-link positivity source for the supplied local coefficient example",
+        "WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md" in note_text,
+        detail="the source is not used to derive D_beta",
     )
     check(
-        "target note states the constructive all-weight occurrence lemma",
-        "m_(p,q)^(p+q) >= 1" in note_text
-        and "c_(p,q)(beta) > 0" in note_text
-        and "a_(p,q)(beta)>0" in note_text,
-        detail="strict Wilson coefficient nonvanishing for beta>0 is source-visible",
+        "target note states the strict supplied local-coefficient hypothesis",
+        "a_(p,q)(beta) > 0" in note_text
+        and "conditional on `D_beta` itself being" in note_text,
+        detail="local nonvanishing does not imply residual diagonality",
     )
     check(
-        "target note narrows Z_beta^env to a formal per-weight central sequence",
-        "formal per-weight central" in note_text
-        and "finite-window Schur" in note_text
-        and "formal diagonal action" in note_text,
+        "target note narrows Z to compatible finite-window formal convolution packaging",
+        "formal convolution packaging" in note_text
+        and "On every finite weight window" in note_text
+        and "No convergence of an" in note_text,
         detail="no hidden all-weight class-function object is required",
     )
     check(
-        "target note excludes actual all-weight class-function and L2 closure claims",
-        "not an actual L^2 class-function claim" in note_text
-        and "not a convergence claim" in note_text
-        and "not a full Hilbert-space operator-closure claim" in note_text,
+        "target note excludes Wilson identification, all-weight convergence, and full-Hilbert-space equality",
+        "does not derive the stripped Wilson residual" in note_text
+        and "No convergence of an" in note_text
+        and "no full-Hilbert-space operator equality" in note_text,
         detail="formal sequence boundary is explicit",
     )
 
@@ -697,16 +619,17 @@ def main() -> int:
     # -------------------------------------------------------------------
     section("Summary")
     # -------------------------------------------------------------------
-    print("  Verified at exact sympy precision under cited (I1)+(I2)+(I3)+(I4):")
-    print("    Source repair: I4 strict Wilson nonvanishing plus formal Z_beta^env boundary")
-    print("    (T1) Structural diagonality, self-adjointness, positivity, swap symmetry of R_beta^env")
-    print("    (T2) Peter-Weyl formal sequence expansion of Z_beta^env with (D2) coefficients")
+    print("  Verified at exact sympy precision for supplied diagonal inputs:")
+    print("    Local strict nonvanishing plus finite-window formal Z packaging")
+    print("    (T1) Diagonality, self-adjointness, positivity, swap symmetry of supplied quotient R")
+    print("    (T2) Peter-Weyl formal sequence expansion of Z with supplied coefficients")
     print("    (T3) eigenvalue equality kappa/a^4 = z^env/lambda_env at every weight (operator-level)")
     print("    (T3b) actual-trivial normalization gives R/kappa_(0,0), not R, unless kappa_(0,0)=1")
     print("    (T4) uniqueness: distinct eigenvalue sequences yield distinct operators")
-    print("    Algebraic compatibility R_beta^env = D_beta^loc^{-1} * D_beta")
+    print("    Algebraic compatibility R = D_beta^loc^{-1} * D_beta")
     print("    Counterfactuals: D^loc strip + swap symmetry are both load-bearing")
     print("    Finite-truncation numerical sanity at one independent abstract sample")
+    print("    No Wilson residual diagonality or physical environment identification is tested")
 
     print()
     print("=" * 88)

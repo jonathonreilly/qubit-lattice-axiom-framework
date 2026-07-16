@@ -1,18 +1,9 @@
 #!/usr/bin/env python3
-"""
-Exact truncated diagonal/environment packet determined by the completed
-first-sector plaquette triple.
+"""Finite supplied diagonal coefficient packet from the completed triple.
 
-This refines the factorized-class boundary:
-
-  1. the rank-one transfer witness does not by itself solve the canonical
-     Wilson factorized-class realization problem;
-  2. but the completed first-sector triple already determines one exact
-     truncated diagonal/environment packet on the retained first-symmetric
-     sector;
-  3. so the remaining seam is extension of that retained packet to the full
-     beta=6 framework-point environment packet, not existence of a retained
-     diagonal packet itself.
+The normalization/reconstruction algebra is exact for the supplied vector.
+The decimal packet is a finite numerical witness and is not identified with
+the physical stripped Wilson residual.
 """
 
 from __future__ import annotations
@@ -89,10 +80,11 @@ def main() -> int:
     print()
 
     check(
-        "The factorization and character-measure notes already fix the canonical environment description as an overall scale z_(0,0)^env together with normalized coefficients rho_(p,q)(6)",
-        "positive diagonal coefficient sequence" in factor_note
-        and "normalized central boundary-character packet" in measure_note
-        and "rho_(p,q)(6)" in measure_note,
+        "The source notes allow this vector only as a supplied diagonal packet and keep the Wilson compression identification open",
+        "Supplied diagonal hypothesis" in factor_note
+        and "does not derive a" in factor_note
+        and "Wilson residual operator" in factor_note
+        and "open operator-compression gate" in measure_note,
     )
     check(
         "The completion note already fixes one explicit retained first-sector coefficient vector v_min for the completed triple Z_min",
@@ -114,7 +106,7 @@ def main() -> int:
         f"||z_recon-Z_min||={recon_gap:.3e}",
     )
     check(
-        "So the remaining framework-point seam is not existence of a retained diagonal/environment packet itself, but extension of this truncated packet to the full beta=6 environment data",
+        "The finite packet exists, while physical Wilson identification and full-weight extension both remain open",
         recon_gap < 1.0e-12 and e_three.shape == (3, 4),
         f"z00_min={z00_min:.6f}",
     )
@@ -122,14 +114,13 @@ def main() -> int:
     print("\n" + "=" * 112)
     print("RESULT")
     print("=" * 112)
-    print("  Exact refinement:")
+    print("  Conditional finite-packet refinement:")
     print("    - the completed first-sector triple already determines one explicit")
-    print("      retained diagonal/environment packet on the first-symmetric sector")
+    print("      supplied diagonal coefficient packet on the first-symmetric sector")
     print("    - namely one overall scale z00_min together with one normalized")
-    print("      conjugation-symmetric retained coefficient packet rho_ret")
-    print("    - therefore the remaining open object is the extension / realization")
-    print("      of this retained packet inside the full beta=6 framework-point")
-    print("      environment packet, not retained diagonal-packet existence")
+    print("      conjugation-symmetric coefficient packet rho_ret")
+    print("    - Wilson residual diagonality/identification and full-weight extension")
+    print("      remain open; this runner proves neither")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

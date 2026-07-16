@@ -30,7 +30,8 @@ are restated only inside the scope below.
   for the source character `J = (chi_(1,0)+chi_(0,1))/6` and exact
   six-neighbor dominant-weight recurrence.
 - [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-  for the half-slice factorization surface.
+  for the conditional `M D M` algebra; this note independently supplies its
+  Wilson-coefficient diagonal packet.
 - [WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md](WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)
   for repo-internal Wilson SU(3) coefficient-positivity support.
 

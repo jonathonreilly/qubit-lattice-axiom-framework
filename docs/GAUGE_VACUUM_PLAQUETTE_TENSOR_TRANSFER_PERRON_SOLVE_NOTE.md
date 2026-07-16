@@ -23,8 +23,8 @@ canonical `P(6) = 0.5934`.
 
 ## Question
 
-Within the finite bounded packet audited here, the residual `beta = 6`
-reference problem is represented by the source-sector operator
+Within the finite bounded packet audited here, the `beta = 6` reference
+problem is defined by the supplied source-sector operator
 
 `T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)`
 
@@ -34,16 +34,16 @@ with three explicitly separated pieces:
   `J = (chi_(1,0) + chi_(0,1)) / 6`,
 - the explicit local Wilson marked-link factor
   `D_6^loc chi_(p,q) = a_(p,q)(6)^4 chi_(p,q)`,
-- the residual spatial-environment convolution
+- the supplied diagonal reference factor
   `C_(Z_6^env) chi_(p,q) = rho_(p,q)(6) chi_(p,q)`.
 
 For the bounded reference solves, the first two are explicitly computable from
 `c_lambda(6)` (Bessel
 determinant mode sum) and `SU(3)` intertwiners alone. The third is the
-input diagonal `rho`. In the physical target problem, that third factor would
-be the boundary character measure of the unmarked 3D spatial Wilson
-environment with marked-plaquette boundary holonomy held fixed, but this note
-does not compute or identify that physical measure.
+input diagonal `rho`. Identifying that third factor with the compression of
+the physical unmarked 3D spatial Wilson environment requires a separate
+convolution/regular-translation theorem or direct Wilson-kernel calculation;
+this note neither computes nor proves that identification.
 
 Two questions:
 
@@ -504,14 +504,14 @@ The explicit local Wilson marked-link factor `D_6^loc` (eigenvalues
 distinct: `max|D_loc - P_(0,0)| = 0.0319`. They produce different
 Perron values: `|P_loc - P_triv| = 0.0299`.
 
-The residual environment operator `C_(Z_6^env)` is not a renaming of
-`D_6^loc`. The local/environment factorization theorem cleanly
-isolates `D_6^loc` as the trivial-channel-normalized mixed-kernel
-local factor (finite one-link Wilson convolution to the fourth power),
-while `C_(Z_6^env)` is the residual unmarked spatial environment
-convolution after that local factor has already been stripped off. The
-two operators play structurally different roles and produce different
-Perron data when toggled.
+The supplied reference operator `C_(Z_6^env)` is not a renaming of
+`D_6^loc`. The local/environment factorization theorem cleanly isolates
+`D_6^loc` as the trivial-channel-normalized mixed-kernel local factor (finite
+one-link Wilson convolution to the fourth power), while this reference solve
+defines `C_(Z_6^env)` from a separately supplied diagonal `rho`. The two
+operators play structurally different roles and produce different Perron data
+when toggled. Their product is a conditional reference model; the physical
+stripped-Wilson compression and its character diagonality remain open.
 
 ### Truncation tail bounded, not extrapolated
 

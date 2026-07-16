@@ -26,7 +26,9 @@ One-hop authorities:
   anchors, the normalization `J = (chi_(1,0) + chi_(0,1))/6`, and the
   `M_beta = exp((beta/2)J)` scaling.
 - [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-  for the exact half-slice multiplier statement on the source sector.
+  for the conditional finite-dimensional `M D M` matrix-element algebra when
+  `M` and a positive character-diagonal `D` are supplied. It does not derive
+  the physical Wilson residual or the reference-solve half-slice placement.
 - [GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md](GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md)
   for the finite `rho^tw` construction and zero-extension convention.
 - [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md)

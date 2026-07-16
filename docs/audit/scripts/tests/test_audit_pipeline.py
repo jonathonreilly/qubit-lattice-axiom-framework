@@ -2710,7 +2710,7 @@ class StaggeredExplicitPacketHelperTest(unittest.TestCase):
         note_path = "docs/STAGGERED_FERMION_CARD_2026-04-11.md"
         note_body = (PROJECT_ROOT / note_path).read_text(encoding="utf-8")
         self.assertIn(
-            "Packet source update (2026-07-16; PR #5385)",
+            "Packet source update (2026-07-15; PR #5385)",
             note_body,
         )
         current_note_hash = hashlib.sha256(note_body.encode("utf-8")).hexdigest()

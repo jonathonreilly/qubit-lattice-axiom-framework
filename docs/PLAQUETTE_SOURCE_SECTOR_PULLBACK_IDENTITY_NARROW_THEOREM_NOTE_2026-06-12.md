@@ -9,7 +9,7 @@
 
 ## One-Hop Authorities
 
-- [GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md) for the full one-clock Wilson transfer, the marked plaquette class-function source `J`, and the source-cyclic class-function subspace.
+- [GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md) for the full one-clock Wilson transfer, the gauge-space spatial plaquette multiplier `A_p`, and the exact isometric intertwiner `A_p I_p = I_p J`; that note explicitly does not assert transfer invariance of `Range(I_p)`.
 - [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) for the marked source-sector factorization `T_src(beta) = exp[(beta/2) J] D_beta exp[(beta/2) J]`.
 - [GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md) for the finite local four-link packet `D_beta^loc chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q)`.
 - [GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md) for the bounded residual-environment slot after `D_beta^loc` is stripped.
@@ -28,7 +28,11 @@ The current authorities do not license
 lambda_0(T_src) = lambda_0(T_full restricted to the marked source-cyclic sector).
 ```
 
-The character-recurrence note places the marked observable on the `source-cyclic class-function subspace`, while the full transfer operator acts on the gauge-invariant spatial Hilbert space. The same note says the marked source has an induced transfer state there; it does not state that compressing to the source-cyclic algebra preserves the full transfer eigenvalue.
+The character-recurrence note places the marked observable `A_p` on the full
+gauge-invariant spatial Hilbert space and relates its local multiplication
+rule to `J` only through the isometry `I_p`. It explicitly does not state that
+`Range(I_p)` is transfer invariant or that any one-plaquette compression
+preserves the full transfer eigenvalue.
 
 The factorization note sharpens the source side. It says `J` acts on the marked-plaquette class-function sector and records the Perron-state reduction language as:
 
@@ -177,7 +181,7 @@ It does not assert that every future physical residual-environment pullback is i
 
 | route | attempted repair | result for this bounded claim | marker |
 |---|---|---|---|
-| Full restricted-sector equality | Treat `T_src` as the full transfer restricted to the marked source-cyclic sector. | The one-hop notes supply an induced source-cyclic state and a source compression, not eigenvalue preservation. | ATTEMPTED |
+| Full restricted-sector equality | Treat `T_src` as the full transfer restricted to the marked source-cyclic sector. | The one-hop transfer note supplies only `A_p I_p = I_p J` and explicitly does not supply transfer invariance or eigenvalue preservation for `Range(I_p)`. | ATTEMPTED |
 | Full-transfer normalization import | Apply `(1/(6 L_s^3)) d_beta log lambda_0` directly to `lambda_src`. | The normalization bridge applies to the full one-step transfer eigenvalue; the marked compression has no licensed `6 L_s^3` full-step census. | ATTEMPTED |
 | Raw dressed local packet | Identify `P_full` with `H_mark + H_Dloc` for `rho=1`. | Exact series gives mismatch `1/944784 beta^5`. | ATTEMPTED |
 | `H_Dloc = Delta` all orders | Use the local four-link derivative as the entire connected correction. | It matches through `beta^8` but misses `d_9` by `-13/49589822592`. | ATTEMPTED |

@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
 """
-Independent witnesses for the finite-volume Wilson transfer positivity repair.
+Independent witnesses for the finite Wilson transfer/source theorem.
 
-The proof in the companion note is analytic. This runner checks its distinct
-algebraic components: SU(3) representation-ring multiplicities and recurrence,
-sampled Wilson positive-type Gram matrices, and an exhaustive finite
-nonabelian transfer model including marked and repeated spatial sources.
+The companion note contains the exact SU(N) proof.  This runner keeps the
+exact SU(3) character recurrence visible and builds a separate finite-group
+one-plaquette lattice witness with:
+
+* a genuine gauge-invariant positive transfer kernel;
+* trace/path-sum identities;
+* spatial multiplication insertions;
+* mixed two-slice source kernels and their Schur-power derivatives; and
+* hostile controls for the old pointwise-positivity argument, source grammar,
+  plaquette word, slice placement, half-weight, and Haar normalization.
+
+The S3 carrier and all floating evaluations below are SUPPORT for the exact
+SU(N) proof, not replacements for it.
 """
 
 from __future__ import annotations
@@ -13,7 +22,7 @@ from __future__ import annotations
 import cmath
 import math
 from collections import defaultdict
-from itertools import product
+from itertools import permutations, product
 
 import numpy as np
 
@@ -28,9 +37,10 @@ GRAM_SIZE = 18
 GRAM_BETA = 1.7
 S3_MIXED_COUPLING = 0.61
 S3_SPATIAL_COUPLING = 0.37
-S3_SOURCE = -0.29
-S3_LT = 2
-TOL = 2.0e-11
+S3_SPATIAL_SOURCE = -0.29
+S3_MIXED_SOURCE = 0.23
+S3_LT = 3
+TOL = 3.0e-11
 
 TORUS_SAMPLES = [
     (0.37, -0.91),
@@ -40,7 +50,7 @@ TORUS_SAMPLES = [
 ]
 
 
-def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
+def check(name: str, condition: bool, detail: str = "", bucket: str = "SUPPORT") -> None:
     global THEOREM_PASS, SUPPORT_PASS, FAIL
     status = "PASS" if condition else "FAIL"
     if condition:
@@ -56,7 +66,7 @@ def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM")
 
 
 # ---------------------------------------------------------------------------
-# SU(3) representation-ring and character checks
+# Exact SU(3) representation-ring and recurrence data
 # ---------------------------------------------------------------------------
 
 
@@ -85,14 +95,16 @@ def antifundamental_neighbors(weight: tuple[int, int]) -> list[tuple[int, int]]:
     return out
 
 
+def recurrence_neighbors(weight: tuple[int, int]) -> list[tuple[int, int]]:
+    return fundamental_neighbors(weight) + antifundamental_neighbors(weight)
+
+
 def tensor_multiplicities(nmax: int) -> list[dict[tuple[int, int], int]]:
     levels: list[dict[tuple[int, int], int]] = [{(0, 0): 1}]
     for _ in range(nmax):
         next_level: defaultdict[tuple[int, int], int] = defaultdict(int)
         for weight, multiplicity in levels[-1].items():
-            for target in fundamental_neighbors(weight):
-                next_level[target] += multiplicity
-            for target in antifundamental_neighbors(weight):
+            for target in recurrence_neighbors(weight):
                 next_level[target] += multiplicity
         levels.append(dict(next_level))
     return levels
@@ -134,10 +146,6 @@ def su3_character(p: int, q: int, z: np.ndarray) -> complex:
     return np.linalg.det(numerator) / np.linalg.det(denominator)
 
 
-def recurrence_neighbors(weight: tuple[int, int]) -> list[tuple[int, int]]:
-    return fundamental_neighbors(weight) + antifundamental_neighbors(weight)
-
-
 def recurrence_matrix(nmax: int) -> np.ndarray:
     weights = list(product(range(nmax + 1), repeat=2))
     index = {weight: i for i, weight in enumerate(weights)}
@@ -160,9 +168,13 @@ def recurrence_errors() -> tuple[float, float, float]:
         source = (chi_3 + chi_3bar) / 6.0
         for p, q in product(range(4), repeat=2):
             chi = su3_character(p, q, z)
-            rhs_3 = sum(su3_character(a, b, z) for a, b in fundamental_neighbors((p, q)))
+            rhs_3 = sum(
+                su3_character(a, b, z)
+                for a, b in fundamental_neighbors((p, q))
+            )
             rhs_3bar = sum(
-                su3_character(a, b, z) for a, b in antifundamental_neighbors((p, q))
+                su3_character(a, b, z)
+                for a, b in antifundamental_neighbors((p, q))
             )
             fundamental_error = max(fundamental_error, abs(chi_3 * chi - rhs_3))
             antifundamental_error = max(
@@ -193,13 +205,13 @@ def wilson_gram(samples: list[np.ndarray], beta: float) -> np.ndarray:
     gram = np.zeros((size, size), dtype=float)
     for i, left in enumerate(samples):
         for j, right in enumerate(samples):
-            group_difference = left @ right.conj().T
-            gram[i, j] = math.exp(beta * float(np.trace(group_difference).real) / 3.0)
+            difference = left @ right.conj().T
+            gram[i, j] = math.exp(beta * float(np.trace(difference).real) / 3.0)
     return gram
 
 
 # ---------------------------------------------------------------------------
-# Exhaustive finite nonabelian transfer model on S3
+# Exact finite S3 one-plaquette spatial carrier
 # ---------------------------------------------------------------------------
 
 
@@ -228,161 +240,333 @@ def standard_character(permutation: Permutation) -> int:
     return sum(permutation[i] == i for i in range(3)) - 1
 
 
-S3: list[Permutation] = list(product(range(3), repeat=3))
-S3 = [permutation for permutation in S3 if len(set(permutation)) == 3]
+def normalized_standard_character(permutation: Permutation) -> float:
+    return standard_character(permutation) / 2.0
+
+
+S3: list[Permutation] = list(permutations(range(3)))
 S3_INDEX = {permutation: i for i, permutation in enumerate(S3)}
 S3_ORDER = len(S3)
 
-
-def s3_weight(permutation: Permutation) -> float:
-    return math.exp(S3_MIXED_COUPLING * standard_character(permutation))
-
-
-def s3_convolution_matrix() -> np.ndarray:
-    matrix = np.zeros((S3_ORDER, S3_ORDER), dtype=float)
-    for i, left in enumerate(S3):
-        for j, right in enumerate(S3):
-            difference = permutation_compose(left, permutation_inverse(right))
-            matrix[i, j] = s3_weight(difference) / S3_ORDER
-    return matrix
+# Square vertices 0,1,2,3 and positively stored edges
+# e0: 0->1, e1: 1->2, e2: 3->2, e3: 0->3.
+SQUARE_EDGES = [(0, 1), (1, 2), (3, 2), (0, 3)]
+S3_CONFIGURATIONS = list(product(S3, repeat=4))
+S3_CONFIG_COUNT = len(S3_CONFIGURATIONS)
 
 
-def s3_gauge_projector() -> np.ndarray:
-    projector = np.zeros((S3_ORDER, S3_ORDER), dtype=float)
-    for i, configuration in enumerate(S3):
-        for gauge_element in S3:
-            transformed = permutation_compose(
-                permutation_compose(gauge_element, configuration),
-                permutation_inverse(gauge_element),
-            )
-            projector[i, S3_INDEX[transformed]] += 1.0 / S3_ORDER
-    return projector
-
-
-def s3_half_weight() -> np.ndarray:
-    diagonal = [
-        math.exp(S3_SPATIAL_COUPLING * standard_character(configuration) / 2.0)
-        for configuration in S3
-    ]
-    return np.diag(diagonal)
-
-
-def s3_source_half_weight() -> np.ndarray:
-    diagonal = [
-        math.exp(S3_SOURCE * standard_character(configuration) / 2.0)
-        for configuration in S3
-    ]
-    return np.diag(diagonal)
-
-
-def s3_q_kernel(left: Permutation, right: Permutation) -> float:
-    total = 0.0
-    for gauge_element in S3:
-        gauged_right = permutation_compose(
-            permutation_compose(
-                permutation_inverse(gauge_element), right
-            ),
-            gauge_element,
-        )
-        difference = permutation_compose(left, permutation_inverse(gauged_right))
-        total += s3_weight(difference)
-    return total / S3_ORDER
-
-
-def explicit_s3_path_sums() -> tuple[float, float, float]:
-    partition = 0.0
-    marked = 0.0
-    repeated = 0.0
-    normalization = float(S3_ORDER ** (2 * S3_LT))
-    for configurations in product(S3, repeat=S3_LT):
-        for gauges in product(S3, repeat=S3_LT):
-            path_weight = 1.0
-            for time in range(S3_LT):
-                current = configurations[time]
-                following = configurations[(time + 1) % S3_LT]
-                gauge_element = gauges[time]
-                gauged_current = permutation_compose(
-                    permutation_compose(
-                        permutation_inverse(gauge_element), current
-                    ),
-                    gauge_element,
-                )
-                difference = permutation_compose(
-                    following, permutation_inverse(gauged_current)
-                )
-                spatial_weight = math.exp(
-                    S3_SPATIAL_COUPLING * standard_character(current)
-                )
-                path_weight *= spatial_weight * s3_weight(difference)
-            partition += path_weight
-            marked += path_weight * standard_character(configurations[0])
-            repeated += path_weight * math.exp(
-                S3_SOURCE
-                * sum(standard_character(configuration) for configuration in configurations)
-            )
-    return (
-        partition / normalization,
-        marked / normalization,
-        repeated / normalization,
+def plaquette_holonomy(configuration: tuple[Permutation, ...]) -> Permutation:
+    return permutation_compose(
+        permutation_compose(configuration[0], configuration[1]),
+        permutation_compose(
+            permutation_inverse(configuration[2]),
+            permutation_inverse(configuration[3]),
+        ),
     )
 
 
-def s3_plaquette_pullback_gram() -> np.ndarray:
-    characters = [
+def wrong_plaquette_word(configuration: tuple[Permutation, ...]) -> Permutation:
+    return permutation_compose(
+        permutation_compose(configuration[0], configuration[1]),
+        permutation_compose(configuration[2], configuration[3]),
+    )
+
+
+def gauge_transform_configuration(
+    configuration: tuple[Permutation, ...],
+    gauge: tuple[Permutation, ...],
+) -> tuple[Permutation, ...]:
+    return tuple(
+        permutation_compose(
+            permutation_compose(gauge[source], link),
+            permutation_inverse(gauge[target]),
+        )
+        for link, (source, target) in zip(configuration, SQUARE_EDGES)
+    )
+
+
+def s3_class_characters() -> list:
+    return [
         lambda permutation: 1,
         permutation_sign,
         standard_character,
     ]
-    gram = np.zeros((3, 3), dtype=float)
-    normalization = float(S3_ORDER**4)
-    for links in product(S3, repeat=4):
-        holonomy = permutation_compose(
-            permutation_compose(links[0], links[1]),
-            permutation_compose(
-                permutation_inverse(links[2]),
-                permutation_inverse(links[3]),
-            ),
-        )
-        values = np.array([character(holonomy) for character in characters], dtype=float)
-        gram += np.outer(values, values) / normalization
-    return gram
+
+
+def plaquette_pullback_basis() -> np.ndarray:
+    characters = s3_class_characters()
+    return np.array(
+        [
+            [character(plaquette_holonomy(configuration)) for character in characters]
+            for configuration in S3_CONFIGURATIONS
+        ],
+        dtype=float,
+    ) / math.sqrt(S3_CONFIG_COUNT)
+
+
+def group_class_basis() -> np.ndarray:
+    characters = s3_class_characters()
+    return np.array(
+        [[character(group_element) for character in characters] for group_element in S3],
+        dtype=float,
+    ) / math.sqrt(S3_ORDER)
+
+
+def one_link_kernel(coupling: float, derivative_order: int = 0) -> np.ndarray:
+    matrix = np.zeros((S3_ORDER, S3_ORDER), dtype=float)
+    for i, left in enumerate(S3):
+        for j, right in enumerate(S3):
+            difference = permutation_compose(left, permutation_inverse(right))
+            source = normalized_standard_character(difference)
+            matrix[i, j] = (
+                source**derivative_order
+                * math.exp(coupling * source)
+                / S3_ORDER
+            )
+    return matrix
+
+
+def apply_link_product(
+    link_operators: list[np.ndarray], vectors: np.ndarray
+) -> np.ndarray:
+    tensor = vectors.reshape(S3_ORDER, S3_ORDER, S3_ORDER, S3_ORDER, -1)
+    for axis, operator in enumerate(link_operators):
+        tensor = np.tensordot(operator, tensor, axes=(1, axis))
+        tensor = np.moveaxis(tensor, 0, axis)
+    return tensor.reshape(S3_CONFIG_COUNT, -1)
+
+
+def reduced_link_product(
+    pullback: np.ndarray, link_operators: list[np.ndarray]
+) -> np.ndarray:
+    return pullback.T @ apply_link_product(link_operators, pullback)
+
+
+def reduced_multiplication(
+    pullback: np.ndarray, values: np.ndarray
+) -> np.ndarray:
+    return pullback.T @ (values[:, None] * pullback)
+
+
+def square_transfer_objects(
+    mixed_coupling: float,
+    spatial_coupling: float,
+    marked_derivative_order: int | None = None,
+    marked_coupling: float | None = None,
+) -> dict[str, np.ndarray]:
+    if marked_derivative_order is not None and marked_coupling is not None:
+        raise ValueError("choose a marked derivative or a marked coupling, not both")
+    pullback = plaquette_pullback_basis()
+    base_link = one_link_kernel(mixed_coupling)
+    link_operators = [base_link] * 4
+    if marked_derivative_order is not None:
+        link_operators = [
+            one_link_kernel(mixed_coupling, marked_derivative_order),
+            base_link,
+            base_link,
+            base_link,
+        ]
+    if marked_coupling is not None:
+        link_operators = [
+            one_link_kernel(marked_coupling),
+            base_link,
+            base_link,
+            base_link,
+        ]
+    q_operator = reduced_link_product(pullback, link_operators)
+    half_values = np.array(
+        [
+            math.exp(
+                spatial_coupling
+                * normalized_standard_character(plaquette_holonomy(configuration))
+                / 2.0
+            )
+            for configuration in S3_CONFIGURATIONS
+        ],
+        dtype=float,
+    )
+    half_weight = reduced_multiplication(pullback, half_values)
+    transfer = half_weight @ q_operator @ half_weight
+    return {
+        "pullback": pullback,
+        "q": q_operator,
+        "half": half_weight,
+        "transfer": transfer,
+    }
+
+
+def group_multiplication_operator(function) -> np.ndarray:
+    basis = group_class_basis()
+    values = np.array([function(group_element) for group_element in S3], dtype=float)
+    return basis.T @ (values[:, None] * basis)
+
+
+def group_value_matrix(reduced_operator: np.ndarray) -> np.ndarray:
+    basis = group_class_basis()
+    return basis @ reduced_operator @ basis.T
+
+
+def explicit_path_sum(
+    step_matrices: list[np.ndarray],
+    site_weight=None,
+) -> float:
+    total = 0.0
+    length = len(step_matrices)
+    for states in product(range(S3_ORDER), repeat=length):
+        weight = 1.0
+        for time, matrix in enumerate(step_matrices):
+            current = states[time]
+            following = states[(time + 1) % length]
+            weight *= matrix[following, current]
+        if site_weight is not None:
+            weight *= site_weight(states)
+        total += weight
+    return total
+
+
+def temporal_kernel_from_gauge_sum(
+    later: tuple[Permutation, ...],
+    earlier: tuple[Permutation, ...],
+    coupling: float,
+) -> float:
+    total = 0.0
+    for temporal_links in product(S3, repeat=4):
+        weight = 1.0
+        for later_link, earlier_link, (source, target) in zip(
+            later, earlier, SQUARE_EDGES
+        ):
+            mixed_holonomy = permutation_compose(
+                permutation_compose(later_link, temporal_links[target]),
+                permutation_compose(
+                    permutation_inverse(earlier_link),
+                    permutation_inverse(temporal_links[source]),
+                ),
+            )
+            weight *= math.exp(
+                coupling * normalized_standard_character(mixed_holonomy)
+            )
+        total += weight
+    return total / (S3_ORDER**4)
+
+
+def projected_convolution_kernel(
+    later: tuple[Permutation, ...],
+    earlier: tuple[Permutation, ...],
+    coupling: float,
+) -> float:
+    total = 0.0
+    for gauge in product(S3, repeat=4):
+        gauged_earlier = gauge_transform_configuration(earlier, gauge)
+        weight = 1.0
+        for later_link, earlier_link in zip(later, gauged_earlier):
+            difference = permutation_compose(
+                later_link, permutation_inverse(earlier_link)
+            )
+            weight *= math.exp(
+                coupling * normalized_standard_character(difference)
+            )
+        total += weight
+    return total / (S3_ORDER**4)
+
+
+def multiplication_fit_residual(
+    transfer_group: np.ndarray,
+    insertion_group: np.ndarray,
+    placement: str,
+) -> tuple[float, float]:
+    rows = []
+    values = []
+    for i in range(S3_ORDER):
+        for j in range(S3_ORDER):
+            row = np.zeros(S3_ORDER, dtype=float)
+            if placement == "left":
+                row[i] += transfer_group[i, j]
+            elif placement == "right":
+                row[j] += transfer_group[i, j]
+            elif placement == "symmetric":
+                row[i] += transfer_group[i, j] / 2.0
+                row[j] += transfer_group[i, j] / 2.0
+            else:
+                raise ValueError(f"unknown multiplication placement: {placement}")
+            rows.append(row)
+            values.append(insertion_group[i, j])
+    design = np.array(rows, dtype=float)
+    target = np.array(values, dtype=float)
+    coefficients, _, _, _ = np.linalg.lstsq(design, target, rcond=None)
+    residual = design @ coefficients - target
+    return float(np.max(np.abs(residual))), float(np.linalg.norm(residual))
+
+
+def orientation_gauge_errors() -> tuple[float, float]:
+    correct_error = 0.0
+    wrong_error = 0.0
+    identity = S3[0]
+    for configuration in S3_CONFIGURATIONS:
+        correct_value = normalized_standard_character(plaquette_holonomy(configuration))
+        wrong_value = normalized_standard_character(wrong_plaquette_word(configuration))
+        for vertex in range(4):
+            for group_element in S3[1:]:
+                gauge = [identity] * 4
+                gauge[vertex] = group_element
+                transformed = gauge_transform_configuration(configuration, tuple(gauge))
+                correct_error = max(
+                    correct_error,
+                    abs(
+                        normalized_standard_character(plaquette_holonomy(transformed))
+                        - correct_value
+                    ),
+                )
+                wrong_error = max(
+                    wrong_error,
+                    abs(
+                        normalized_standard_character(wrong_plaquette_word(transformed))
+                        - wrong_value
+                    ),
+                )
+    return correct_error, wrong_error
 
 
 def main() -> int:
+    # Exact SU(3) identities and finite positive-type support.
     levels = tensor_multiplicities(NMAX_TENSOR)
     dimension_sums = [
-        sum(multiplicity * su3_dimension(weight) for weight, multiplicity in level.items())
+        sum(
+            multiplicity * su3_dimension(weight)
+            for weight, multiplicity in level.items()
+        )
         for level in levels
     ]
     coefficients = truncated_wilson_coefficients(levels, GRAM_BETA)
     coefficient_minimum = min(coefficients.values())
-
     fundamental_error, antifundamental_error, combined_error = recurrence_errors()
     recurrence = recurrence_matrix(RECURRENCE_BOX)
     recurrence_symmetry_error = float(np.max(np.abs(recurrence - recurrence.T)))
     recurrence_eigenvalues = np.linalg.eigvalsh(recurrence)
-
     su3_samples = haar_su3_samples(GRAM_SIZE)
-    positive_gram = wilson_gram(su3_samples, GRAM_BETA)
-    negative_beta_gram = wilson_gram(su3_samples, -GRAM_BETA)
-    positive_gram_minimum = float(np.linalg.eigvalsh(positive_gram).min())
-    negative_beta_minimum = float(np.linalg.eigvalsh(negative_beta_gram).min())
+    positive_gram_minimum = float(
+        np.linalg.eigvalsh(wilson_gram(su3_samples, GRAM_BETA)).min()
+    )
 
-    convolution = s3_convolution_matrix()
-    projector = s3_gauge_projector()
-    half_weight = s3_half_weight()
-    q_operator = convolution @ projector
-    transfer = half_weight @ q_operator @ half_weight
-    source_half_weight = s3_source_half_weight()
-    sourced_transfer = source_half_weight @ transfer @ source_half_weight
+    # Genuine finite one-plaquette gauge carrier.
+    square = square_transfer_objects(
+        S3_MIXED_COUPLING, S3_SPATIAL_COUPLING
+    )
+    pullback = square["pullback"]
+    q_operator = square["q"]
+    half_weight = square["half"]
+    transfer = square["transfer"]
+    group_basis = group_class_basis()
+    transfer_group = group_value_matrix(transfer)
+    plaquette_operator = group_multiplication_operator(
+        normalized_standard_character
+    )
 
-    convolution_minimum = float(np.linalg.eigvalsh(convolution).min())
-    projector_error = float(np.max(np.abs(projector @ projector - projector)))
-    commutator_error = float(np.max(np.abs(convolution @ projector - projector @ convolution)))
+    pullback_error = float(np.max(np.abs(pullback.T @ pullback - np.eye(3))))
+    group_basis_error = float(
+        np.max(np.abs(group_basis.T @ group_basis - np.eye(3)))
+    )
     q_minimum = float(np.linalg.eigvalsh(q_operator).min())
     transfer_minimum = float(np.linalg.eigvalsh(transfer).min())
-    sourced_transfer_minimum = float(np.linalg.eigvalsh(sourced_transfer).min())
-
     q_eigenvalues, q_eigenvectors = np.linalg.eigh(q_operator)
     q_square_root = (
         q_eigenvectors
@@ -390,67 +574,260 @@ def main() -> int:
         @ q_eigenvectors.T
     )
     gram_factor = q_square_root @ half_weight
-    factorization_error = float(np.max(np.abs(transfer - gram_factor.T @ gram_factor)))
+    factorization_error = float(
+        np.max(np.abs(transfer - gram_factor.T @ gram_factor))
+    )
 
-    q_kernel_error = 0.0
+    selected_pairs = [
+        (S3_CONFIGURATIONS[0], S3_CONFIGURATIONS[17]),
+        (S3_CONFIGURATIONS[103], S3_CONFIGURATIONS[411]),
+        (S3_CONFIGURATIONS[777], S3_CONFIGURATIONS[1211]),
+    ]
+    temporal_kernel_error = max(
+        abs(
+            temporal_kernel_from_gauge_sum(later, earlier, S3_MIXED_COUPLING)
+            - projected_convolution_kernel(later, earlier, S3_MIXED_COUPLING)
+        )
+        for later, earlier in selected_pairs
+    )
+
+    trace_value = float(np.trace(np.linalg.matrix_power(transfer, S3_LT)))
+    trace_path = explicit_path_sum([transfer_group] * S3_LT)
+    marked_value = float(
+        np.trace(np.linalg.matrix_power(transfer, S3_LT) @ plaquette_operator)
+    )
+    marked_path = explicit_path_sum(
+        [transfer_group] * S3_LT,
+        site_weight=lambda states: normalized_standard_character(S3[states[0]]),
+    )
+
+    spatial_source_half = group_multiplication_operator(
+        lambda group_element: math.exp(
+            S3_SPATIAL_SOURCE
+            * normalized_standard_character(group_element)
+            / 2.0
+        )
+    )
+    spatial_sourced_transfer = (
+        spatial_source_half @ transfer @ spatial_source_half
+    )
+    spatial_repeated_value = float(
+        np.trace(np.linalg.matrix_power(spatial_sourced_transfer, S3_LT))
+    )
+    spatial_repeated_path = explicit_path_sum(
+        [transfer_group] * S3_LT,
+        site_weight=lambda states: math.exp(
+            S3_SPATIAL_SOURCE
+            * sum(normalized_standard_character(S3[state]) for state in states)
+        ),
+    )
+    spatial_single_source = group_multiplication_operator(
+        lambda group_element: math.exp(
+            S3_SPATIAL_SOURCE * normalized_standard_character(group_element)
+        )
+    )
+    spatial_single_value = float(
+        np.trace(
+            np.linalg.matrix_power(transfer, S3_LT)
+            @ spatial_single_source
+        )
+    )
+    spatial_single_path = explicit_path_sum(
+        [transfer_group] * S3_LT,
+        site_weight=lambda states: math.exp(
+            S3_SPATIAL_SOURCE
+            * normalized_standard_character(S3[states[0]])
+        ),
+    )
+    wrong_slice_placement_value = spatial_repeated_value
+
+    # Mixed two-slice source and Schur-power derivatives.
+    mixed_square = square_transfer_objects(
+        S3_MIXED_COUPLING,
+        S3_SPATIAL_COUPLING,
+        marked_coupling=S3_MIXED_COUPLING + S3_MIXED_SOURCE,
+    )
+    mixed_transfer = mixed_square["transfer"]
+    mixed_transfer_group = group_value_matrix(mixed_transfer)
+    mixed_source_minimum = float(np.linalg.eigvalsh(mixed_transfer).min())
+    mixed_single_value = float(
+        np.trace(
+            np.linalg.matrix_power(transfer, S3_LT - 1)
+            @ mixed_transfer
+        )
+    )
+    mixed_single_path = explicit_path_sum(
+        [mixed_transfer_group] + [transfer_group] * (S3_LT - 1)
+    )
+    mixed_repeated_value = float(
+        np.trace(np.linalg.matrix_power(mixed_transfer, S3_LT))
+    )
+    mixed_repeated_path = explicit_path_sum(
+        [mixed_transfer_group] * S3_LT
+    )
+
+    derivative_operators = []
+    derivative_minima = []
+    schur_errors = []
+    source_gram = np.zeros((S3_ORDER, S3_ORDER), dtype=float)
     for i, left in enumerate(S3):
         for j, right in enumerate(S3):
-            q_kernel_error = max(
-                q_kernel_error,
-                abs(S3_ORDER * q_operator[i, j] - s3_q_kernel(left, right)),
+            source_gram[i, j] = normalized_standard_character(
+                permutation_compose(left, permutation_inverse(right))
             )
-
-    partition_trace = float(np.trace(np.linalg.matrix_power(transfer, S3_LT)))
-    source_operator = np.diag([standard_character(configuration) for configuration in S3])
-    marked_trace = float(
-        np.trace(np.linalg.matrix_power(transfer, S3_LT) @ source_operator)
+    source_gram_minimum = float(np.linalg.eigvalsh(source_gram).min())
+    exponential_gram = np.exp(S3_MIXED_COUPLING * source_gram) / S3_ORDER
+    for order in range(5):
+        direct = one_link_kernel(S3_MIXED_COUPLING, order)
+        schur = (
+            np.power(source_gram, order)
+            * exponential_gram
+        )
+        schur_errors.append(float(np.max(np.abs(direct - schur))))
+        derivative_minima.append(float(np.linalg.eigvalsh(direct).min()))
+        derivative_operators.append(
+            square_transfer_objects(
+                S3_MIXED_COUPLING,
+                S3_SPATIAL_COUPLING,
+                marked_derivative_order=order,
+            )["transfer"]
+        )
+    derivative_transfer_minima = [
+        float(np.linalg.eigvalsh(operator).min())
+        for operator in derivative_operators
+    ]
+    mixed_derivative = derivative_operators[1]
+    mixed_derivative_group = group_value_matrix(mixed_derivative)
+    mixed_marked_value = float(
+        np.trace(
+            np.linalg.matrix_power(transfer, S3_LT - 1)
+            @ mixed_derivative
+        )
     )
-    repeated_trace = float(
-        np.trace(np.linalg.matrix_power(sourced_transfer, S3_LT))
+    mixed_marked_path = explicit_path_sum(
+        [mixed_derivative_group] + [transfer_group] * (S3_LT - 1)
     )
-    partition_path, marked_path, repeated_path = explicit_s3_path_sums()
+    finite_difference = (
+        float(
+            np.trace(
+                np.linalg.matrix_power(transfer, S3_LT - 1)
+                @ square_transfer_objects(
+                    S3_MIXED_COUPLING,
+                    S3_SPATIAL_COUPLING,
+                    marked_coupling=S3_MIXED_COUPLING + 1.0e-5,
+                )["transfer"]
+            )
+        )
+        - float(
+            np.trace(
+                np.linalg.matrix_power(transfer, S3_LT - 1)
+                @ square_transfer_objects(
+                    S3_MIXED_COUPLING,
+                    S3_SPATIAL_COUPLING,
+                    marked_coupling=S3_MIXED_COUPLING - 1.0e-5,
+                )["transfer"]
+            )
+        )
+    ) / (2.0e-5)
+    mixed_symmetric_fit_max, mixed_symmetric_fit_norm = multiplication_fit_residual(
+        transfer_group, mixed_derivative_group, "symmetric"
+    )
+    mixed_left_fit_max, mixed_left_fit_norm = multiplication_fit_residual(
+        transfer_group, mixed_derivative_group, "left"
+    )
+    mixed_right_fit_max, mixed_right_fit_norm = multiplication_fit_residual(
+        transfer_group, mixed_derivative_group, "right"
+    )
+    spatial_derivative = (
+        plaquette_operator @ transfer + transfer @ plaquette_operator
+    ) / 2.0
+    spatial_fit_max, spatial_fit_norm = multiplication_fit_residual(
+        transfer_group, group_value_matrix(spatial_derivative), "symmetric"
+    )
 
-    pullback_gram = s3_plaquette_pullback_gram()
-    pullback_error = float(np.max(np.abs(pullback_gram - np.eye(3))))
-
+    # Hostile controls.
     pointwise_counterexample = np.array([[1.0, 2.0], [2.0, 1.0]])
-    counterexample_minimum = float(np.linalg.eigvalsh(pointwise_counterexample).min())
-
-    print("=" * 78)
-    print("GAUGE-VACUUM POSITIVE TRANSFER / CHARACTER-RECURRENCE REPAIR")
-    print("=" * 78)
-    print()
-    print("SU(3) representation-ring witnesses")
-    print(f"  tensor levels checked                 = 0..{NMAX_TENSOR}")
-    print(f"  dimension sums                        = {dimension_sums}")
-    print(f"  expected dimensions                   = {[6**n for n in range(NMAX_TENSOR + 1)]}")
-    print(f"  minimum truncated coefficient         = {coefficient_minimum:.6e}")
-    print(f"  sampled Wilson Gram minimum eigenvalue= {positive_gram_minimum:.6e}")
-    print(f"  negative-beta Gram minimum eigenvalue = {negative_beta_minimum:.6e}")
-    print()
-    print("SU(3) marked-plaquette recurrence witnesses")
-    print(f"  chi_(1,0) recurrence error            = {fundamental_error:.3e}")
-    print(f"  chi_(0,1) recurrence error            = {antifundamental_error:.3e}")
-    print(f"  combined source recurrence error      = {combined_error:.3e}")
-    print(f"  compressed recurrence symmetry error  = {recurrence_symmetry_error:.3e}")
-    print(
-        "  compressed recurrence spectrum        = "
-        f"[{recurrence_eigenvalues.min():.6f}, {recurrence_eigenvalues.max():.6f}]"
+    counterexample_minimum = float(
+        np.linalg.eigvalsh(pointwise_counterexample).min()
     )
+    correct_orientation_error, wrong_orientation_error = orientation_gauge_errors()
+
+    full_spatial_values = np.array(
+        [
+            math.exp(
+                S3_SPATIAL_COUPLING
+                * normalized_standard_character(plaquette_holonomy(configuration))
+            )
+            for configuration in S3_CONFIGURATIONS
+        ],
+        dtype=float,
+    )
+    wrong_half_weight = reduced_multiplication(pullback, full_spatial_values)
+    wrong_half_transfer = wrong_half_weight @ q_operator @ wrong_half_weight
+    wrong_half_trace = float(
+        np.trace(np.linalg.matrix_power(wrong_half_transfer, S3_LT))
+    )
+    wrong_haar_trace = float(
+        np.trace(np.linalg.matrix_power((S3_ORDER**4) * transfer, S3_LT))
+    )
+
+    negative_effective_square = square_transfer_objects(
+        S3_MIXED_COUPLING,
+        S3_SPATIAL_COUPLING,
+        marked_coupling=-0.39,
+    )
+    negative_effective_minimum = float(
+        np.linalg.eigvalsh(negative_effective_square["transfer"]).min()
+    )
+
+    print("=" * 88)
+    print("GAUGE-VACUUM WILSON TRANSFER / SPATIAL-MIXED SOURCE REPAIR")
+    print("=" * 88)
     print()
-    print("Exhaustive S3 transfer-factorization witness")
-    print(f"  convolution minimum eigenvalue        = {convolution_minimum:.6e}")
-    print(f"  gauge-projector idempotence error      = {projector_error:.3e}")
-    print(f"  convolution/projector commutator      = {commutator_error:.3e}")
-    print(f"  Q minimum eigenvalue                  = {q_minimum:.6e}")
-    print(f"  transfer minimum eigenvalue           = {transfer_minimum:.6e}")
-    print(f"  sourced transfer minimum eigenvalue   = {sourced_transfer_minimum:.6e}")
-    print(f"  transfer Gram-factorization error     = {factorization_error:.3e}")
-    print(f"  projected mixed-kernel error          = {q_kernel_error:.3e}")
-    print(f"  transfer trace / path sum             = {partition_trace:.12f} / {partition_path:.12f}")
-    print(f"  marked trace / path sum               = {marked_trace:.12f} / {marked_path:.12f}")
-    print(f"  repeated source trace / path sum      = {repeated_trace:.12f} / {repeated_path:.12f}")
-    print(f"  four-link pullback isometry error      = {pullback_error:.3e}")
+    print("Exact SU(3) character data")
+    print(f"  tensor levels checked                    = 0..{NMAX_TENSOR}")
+    print(f"  dimension sums                           = {dimension_sums}")
+    print(f"  minimum truncated coefficient            = {coefficient_minimum:.6e}")
+    print(f"  recurrence errors (3,3bar,real)          = "
+          f"{fundamental_error:.3e}, {antifundamental_error:.3e}, {combined_error:.3e}")
+    print(f"  recurrence symmetry error                = {recurrence_symmetry_error:.3e}")
+    print(f"  recurrence compressed spectrum           = "
+          f"[{recurrence_eigenvalues.min():.6f}, {recurrence_eigenvalues.max():.6f}]")
+    print(f"  sampled SU(3) Wilson Gram min eigenvalue = {positive_gram_minimum:.6e}")
+    print()
+    print("Finite S3 one-plaquette gauge carrier (SUPPORT)")
+    print(f"  link configurations                      = {S3_CONFIG_COUNT}")
+    print(f"  physical class-function dimension        = {pullback.shape[1]}")
+    print(f"  pullback/group basis errors              = {pullback_error:.3e}, {group_basis_error:.3e}")
+    print(f"  Q / T minimum eigenvalues                = {q_minimum:.6e}, {transfer_minimum:.6e}")
+    print(f"  transfer Gram-factorization error        = {factorization_error:.3e}")
+    print(f"  temporal-link/projected-kernel error     = {temporal_kernel_error:.3e}")
+    print(f"  trace / path sum                         = {trace_value:.12f} / {trace_path:.12f}")
+    print(f"  spatial mark / path sum                  = {marked_value:.12f} / {marked_path:.12f}")
+    print(f"  selected spatial source / path sum       = {spatial_single_value:.12f} / {spatial_single_path:.12f}")
+    print(f"  repeated spatial source / path sum       = {spatial_repeated_value:.12f} / {spatial_repeated_path:.12f}")
+    print()
+    print("Mixed two-slice source (SUPPORT)")
+    print(f"  sourced transfer minimum eigenvalue      = {mixed_source_minimum:.6e}")
+    print(f"  selected mixed source / path sum         = {mixed_single_value:.12f} / {mixed_single_path:.12f}")
+    print(f"  repeated mixed source / path sum         = {mixed_repeated_value:.12f} / {mixed_repeated_path:.12f}")
+    print(f"  H Gram minimum eigenvalue                = {source_gram_minimum:.6e}")
+    print(f"  Schur derivative kernel minima m=0..4   = {[round(x, 12) for x in derivative_minima]}")
+    print(f"  sourced derivative T minima m=0..4      = {[round(x, 12) for x in derivative_transfer_minima]}")
+    print(f"  mixed marked trace / path sum            = {mixed_marked_value:.12f} / {mixed_marked_path:.12f}")
+    print(f"  mixed derivative / finite difference     = {mixed_marked_value:.12f} / {finite_difference:.12f}")
+    print(f"  spatial multiplication-fit residual      = {spatial_fit_max:.3e} (norm {spatial_fit_norm:.3e})")
+    print(f"  mixed symmetric-fit residual             = {mixed_symmetric_fit_max:.3e} (norm {mixed_symmetric_fit_norm:.3e})")
+    print(f"  mixed left/right-fit residuals           = {mixed_left_fit_max:.3e}, {mixed_right_fit_max:.3e}")
+    print()
+    print("Hostile controls")
+    print(f"  pointwise-positive symmetric min eig      = {counterexample_minimum:.6e}")
+    print(f"  correct/wrong plaquette gauge errors      = {correct_orientation_error:.3e}, {wrong_orientation_error:.3e}")
+    print(f"  selected-vs-repeated slice mismatch       = {abs(spatial_single_value-wrong_slice_placement_value):.6e}")
+    print(f"  selected-vs-repeated mixed mismatch       = {abs(mixed_single_value-mixed_repeated_value):.6e}")
+    print(f"  correct/wrong half-weight trace mismatch  = {abs(trace_value-wrong_half_trace):.6e}")
+    print(f"  correct/wrong Haar trace mismatch         = {abs(trace_value-wrong_haar_trace):.6e}")
+    print(f"  negative effective-coupling min eig       = {negative_effective_minimum:.6e}")
     print()
 
     check(
@@ -473,12 +850,6 @@ def main() -> int:
         detail=f"minimum checked partial coefficient = {coefficient_minimum:.6e}",
     )
     check(
-        "sampled SU(3) Wilson positive-type Gram matrices are positive semidefinite",
-        positive_gram_minimum >= -TOL,
-        detail=f"minimum eigenvalue = {positive_gram_minimum:.6e}",
-        bucket="SUPPORT",
-    )
-    check(
         "multiplication by chi_(1,0) obeys the exact SU(3) recurrence",
         fundamental_error < 1.0e-10,
         detail=f"maximum error = {fundamental_error:.3e}",
@@ -496,58 +867,138 @@ def main() -> int:
             f"symmetry error = {recurrence_symmetry_error:.3e}"
         ),
     )
-    check(
-        "finite nonabelian character-exponential convolution is positive and commutes with gauge projection",
-        convolution_minimum >= -TOL and commutator_error < TOL and projector_error < TOL,
-        detail=(
-            f"lambda_min(C)={convolution_minimum:.3e}, "
-            f"||[C,P]||_max={commutator_error:.3e}"
-        ),
-        bucket="SUPPORT",
-    )
-    check(
-        "finite-model gauge-projected Q and half-weight transfer are positive",
-        q_minimum >= -TOL and transfer_minimum >= -TOL,
-        detail=f"lambda_min(Q)={q_minimum:.3e}, lambda_min(T)={transfer_minimum:.3e}",
-        bucket="SUPPORT",
-    )
-    check(
-        "the finite-model transfer equals its explicit Gram factorization",
-        factorization_error < TOL,
-        detail=f"maximum entry error = {factorization_error:.3e}",
-        bucket="SUPPORT",
-    )
-    check(
-        "the finite-model periodic transfer trace equals the exhaustive path sum",
-        abs(partition_trace - partition_path) < TOL and q_kernel_error < TOL,
-        detail=(
-            f"|trace-path|={abs(partition_trace-partition_path):.3e}, "
-            f"kernel error={q_kernel_error:.3e}"
-        ),
-        bucket="SUPPORT",
-    )
-    check(
-        "finite-model marked and repeated sources match path sums and preserve positivity",
-        abs(marked_trace - marked_path) < TOL
-        and abs(repeated_trace - repeated_path) < TOL
-        and sourced_transfer_minimum >= -TOL,
-        detail=(
-            f"marked error={abs(marked_trace-marked_path):.3e}, "
-            f"repeated error={abs(repeated_trace-repeated_path):.3e}"
-        ),
-        bucket="SUPPORT",
-    )
 
     check(
-        "negative beta is detected outside the nonnegative-coefficient theorem",
-        negative_beta_minimum < -1.0e-6,
-        detail=f"sampled minimum eigenvalue = {negative_beta_minimum:.6e}",
+        "sampled SU(3) Wilson positive-type Gram matrices are positive semidefinite",
+        positive_gram_minimum >= -TOL,
+        detail=f"minimum eigenvalue = {positive_gram_minimum:.6e}",
+        bucket="SUPPORT",
+    )
+    check(
+        "the finite square pullback is an isometry onto the three class functions",
+        pullback_error < TOL and group_basis_error < TOL,
+        detail=f"errors={pullback_error:.3e}, {group_basis_error:.3e}",
+        bucket="SUPPORT",
+    )
+    check(
+        "the finite gauge-projected transfer is positive and has the explicit Gram factorization",
+        q_minimum >= -TOL
+        and transfer_minimum >= -TOL
+        and factorization_error < TOL,
+        detail=(
+            f"lambda_min(Q)={q_minimum:.3e}, "
+            f"lambda_min(T)={transfer_minimum:.3e}, "
+            f"factor error={factorization_error:.3e}"
+        ),
+        bucket="SUPPORT",
+    )
+    check(
+        "projected convolution equals temporal-link integration on selected square configurations",
+        temporal_kernel_error < TOL,
+        detail=f"maximum selected-pair error = {temporal_kernel_error:.3e}",
+        bucket="SUPPORT",
+    )
+    check(
+        "finite transfer trace and marked spatial insertion equal explicit path sums",
+        abs(trace_value - trace_path) < TOL
+        and abs(marked_value - marked_path) < TOL,
+        detail=(
+            f"trace error={abs(trace_value-trace_path):.3e}, "
+            f"mark error={abs(marked_value-marked_path):.3e}"
+        ),
+        bucket="SUPPORT",
+    )
+    check(
+        "selected and repeated spatial sources obey their distinct insertion formulas",
+        abs(spatial_single_value - spatial_single_path) < TOL
+        and abs(spatial_repeated_value - spatial_repeated_path) < TOL,
+        detail=(
+            f"selected error={abs(spatial_single_value-spatial_single_path):.3e}, "
+            f"repeated error={abs(spatial_repeated_value-spatial_repeated_path):.3e}"
+        ),
+        bucket="SUPPORT",
+    )
+    check(
+        "selected and repeated mixed sources match their distinct two-slice path sums",
+        mixed_source_minimum >= -TOL
+        and abs(mixed_single_value - mixed_single_path) < TOL
+        and abs(mixed_repeated_value - mixed_repeated_path) < TOL
+        and abs(mixed_single_value - mixed_repeated_value) > 1.0e-5,
+        detail=(
+            f"lambda_min={mixed_source_minimum:.3e}, "
+            f"selected error={abs(mixed_single_value-mixed_single_path):.3e}, "
+            f"repeated error={abs(mixed_repeated_value-mixed_repeated_path):.3e}"
+        ),
+        bucket="SUPPORT",
+    )
+    check(
+        "mixed source derivatives have H^(circle m) circle exp(gamma H) Schur-power form",
+        source_gram_minimum >= -TOL
+        and max(schur_errors) < TOL
+        and min(derivative_minima) >= -TOL
+        and min(derivative_transfer_minima) >= -TOL,
+        detail=(
+            f"lambda_min(H)={source_gram_minimum:.3e}, "
+            f"max form error={max(schur_errors):.3e}"
+        ),
+        bucket="SUPPORT",
+    )
+    check(
+        "the marked mixed insertion matches its path sum and source derivative",
+        abs(mixed_marked_value - mixed_marked_path) < TOL
+        and abs(mixed_marked_value - finite_difference) < 2.0e-9,
+        detail=(
+            f"path error={abs(mixed_marked_value-mixed_marked_path):.3e}, "
+            f"finite-difference error={abs(mixed_marked_value-finite_difference):.3e}"
+        ),
+        bucket="SUPPORT",
+    )
+    check(
+        "a mixed two-slice source cannot be silently replaced by one-slice multiplication",
+        spatial_fit_max < TOL
+        and mixed_symmetric_fit_max > 1.0e-5
+        and mixed_left_fit_max > 1.0e-5
+        and mixed_right_fit_max > 1.0e-5,
+        detail=(
+            f"spatial fit={spatial_fit_max:.3e}, "
+            f"mixed sym/left/right="
+            f"{mixed_symmetric_fit_max:.3e}/"
+            f"{mixed_left_fit_max:.3e}/"
+            f"{mixed_right_fit_max:.3e}"
+        ),
         bucket="SUPPORT",
     )
     check(
         "pointwise positive symmetry alone does not imply quadratic-form positivity",
         np.all(pointwise_counterexample > 0.0) and counterexample_minimum < 0.0,
         detail=f"counterexample minimum eigenvalue = {counterexample_minimum:.1f}",
+        bucket="SUPPORT",
+    )
+    check(
+        "the wrong plaquette word fails gauge invariance while the oriented word passes",
+        correct_orientation_error < TOL and wrong_orientation_error > 0.1,
+        detail=(
+            f"correct error={correct_orientation_error:.3e}, "
+            f"wrong error={wrong_orientation_error:.3e}"
+        ),
+        bucket="SUPPORT",
+    )
+    check(
+        "wrong slice placement, half weighting, or Haar normalization changes the path sum",
+        abs(spatial_single_value - wrong_slice_placement_value) > 1.0e-5
+        and abs(trace_value - wrong_half_trace) > 1.0e-5
+        and abs(trace_value - wrong_haar_trace) > 1.0,
+        detail=(
+            f"slice={abs(spatial_single_value-wrong_slice_placement_value):.3e}, "
+            f"half={abs(trace_value-wrong_half_trace):.3e}, "
+            f"Haar={abs(trace_value-wrong_haar_trace):.3e}"
+        ),
+        bucket="SUPPORT",
+    )
+    check(
+        "negative effective mixed coupling is detected outside the source-positivity domain",
+        negative_effective_minimum < -1.0e-6,
+        detail=f"minimum eigenvalue = {negative_effective_minimum:.6e}",
         bucket="SUPPORT",
     )
     check(
@@ -560,17 +1011,11 @@ def main() -> int:
         ),
         bucket="SUPPORT",
     )
-    check(
-        "the four-link plaquette pullback preserves class-character inner products",
-        pullback_error < TOL,
-        detail=f"maximum Gram error = {pullback_error:.3e}",
-        bucket="SUPPORT",
-    )
 
     print()
-    print("=" * 78)
+    print("=" * 88)
     print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")
-    print("=" * 78)
+    print("=" * 88)
     return 0 if FAIL == 0 else 1
 
 

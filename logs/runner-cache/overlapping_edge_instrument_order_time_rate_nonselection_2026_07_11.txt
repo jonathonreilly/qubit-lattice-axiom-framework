@@ -1,0 +1,50 @@
+PASS L01A: edge A is a complete five-outcome CPTP instrument
+PASS L02A: edge A no-record effect is q I
+PASS L01B: edge B is a complete five-outcome CPTP instrument
+PASS L02B: edge B no-record effect is q I
+PASS L03: overlapping SWAP no-record branches have commutator rank four
+PASS O01: A-then-B layered schedule is CPTP
+PASS O02: B-then-A layered schedule is CPTP
+PASS O03: A-then-B layered output has the exact witness diagonal
+PASS O04: B-then-A layered output has the exact witness diagonal
+PASS O05: overlapping layered schedules define distinct channels
+PASS O06: each first-nonempty schedule has nine terminal Kraus operators
+PASS O07: A-priority first-nonempty stopping instrument is CPTP
+PASS O08: B-priority first-nonempty stopping instrument is CPTP
+PASS O09: A-priority stopping output has the exact witness diagonal
+PASS O10: B-priority stopping output has the exact witness diagonal
+PASS O11: first-nonempty priority changes the terminal channel
+PASS O12: A-priority terminal stage weights normalize exactly
+PASS O13: B-priority terminal stage weights normalize exactly
+PASS O14: A-then-B double-empty branch ends at |001>
+PASS O15: B-then-A double-empty branch ends at |010>
+PASS K01: disjoint-edge layered schedules commute on an exact coherent control
+PASS K01U: disjoint-edge layered schedules are equal as channels on the full matrix-unit basis
+PASS K02: identity no-record mutation removes the overlapping order ambiguity on the coherent fixture
+PASS K02U: identity no-record overlapping schedules are equal as channels on the full matrix-unit basis
+PASS K03: first-event priority remains order-sensitive with identity no-record branches
+PASS K04: a diagonal identity-control state can hide the priority difference
+PASS K05: pure computational projective edge instruments commute at q=0 on the coherent fixture
+PASS K05U: q=0 computational projective edge schedules are equal as channels on the full matrix-unit basis
+PASS K06: the equal randomized/symmetrized schedule is another CPTP composition rule
+PASS K07: symmetrization is the exact channel average
+PASS K08: symmetrization resolves the raw order choice by adding new process content
+PASS K09: a Kraus-weight mutation is rejected by edge-instrument normalization
+PASS T01: clock rescaling preserves the same event order
+PASS T02: the same two-layer order has different rates under two clocks
+PASS T03: the same no-record probability fixes lambda times delta-t, not lambda
+PASS T04: one per-attempt kernel admits distinct physical rates
+PASS C01: each cubic layer contains the expected half-volume matching
+PASS C02: every cubic layer is vertex-conflict-free
+PASS C03: the six matchings partition all nearest-neighbor edges
+PASS C04: the exact proper-cubic rotation list has 24 elements
+PASS C05: translations and proper cubic rotations permute the six-layer family
+PASS C06: one matching has the full six-layer symmetry orbit, so no layer is privileged
+PASS S01: source note exists
+PASS S02: source contains boundary marker: does not identify terminal labels as framework Records
+PASS S03: source contains boundary marker: does not select a physical clock or rate
+PASS S04: source contains boundary marker: does not classify all overlapping instruments
+PASS S05: source contains boundary marker: does not establish that the axioms require amendment
+BOUNDARY: the finite edge Kraus rule, overlapping-support schedules, first-nonempty stopping, and clock maps are explicit conditional inputs.
+BOUNDARY: separate edge normalization and identical edge rules do not select overlap composition or order; event order does not select metric time or rate.
+TOTAL: PASS=47 FAIL=0

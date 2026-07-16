@@ -665,8 +665,8 @@ class PublicationEffectiveStatusRenderTest(unittest.TestCase):
             f"{m.DERIVED_UNSAFE}[audit:unaudited] |\n"
         )
         rendered = m.demote_nonretained_table_rows(body)
-        self.assertIn("`unratified-source-label`", rendered)
-        self.assertIn("[unratified-source-label result](X.md)", rendered)
+        self.assertIn("`(unratified-source-label)`", rendered)
+        self.assertIn("[(unratified-source-label) result](X.md)", rendered)
         self.assertNotIn("`retained`", rendered)
 
 

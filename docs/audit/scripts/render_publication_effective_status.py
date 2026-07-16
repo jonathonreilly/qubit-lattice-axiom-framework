@@ -100,6 +100,9 @@ FOUNDATIONAL_ROW_ALLOWLIST = {
     ("RESULTS_INDEX.md", "Framework / claim surface"): {"minimal_axioms"},
 }
 PROTECTED_INLINE_RE = re.compile(r"(\[[^\]]+\]\([^)]+\)|\[audit:[^\]]+\])")
+# Parenthesized so the redaction reads as a deliberate editorial token in both
+# label cells and running prose, and stays safe inside markdown link labels.
+REDACTION_TOKEN = "(unratified-source-label)"
 SOURCE_STATUS_WORD_RE = re.compile(
     r"\b(?:retained(?:_bounded|_no_go|_pending_chain)?|promoted|"
     r"audited_(?:clean|conditional|renaming|decoration|failed|numerical_match)|"
@@ -118,14 +121,14 @@ def _neutralize_source_status_words(line: str) -> str:
     parts = PROTECTED_INLINE_RE.split(line)
     for index, part in enumerate(parts):
         if index % 2 == 0:
-            parts[index] = SOURCE_STATUS_WORD_RE.sub("unratified-source-label", part)
+            parts[index] = SOURCE_STATUS_WORD_RE.sub(REDACTION_TOKEN, part)
             continue
         if part.startswith("[audit:"):
             continue
         link = re.fullmatch(r"\[([^\]]+)\]\(([^)]+)\)", part)
         if link:
             label = SOURCE_STATUS_WORD_RE.sub(
-                "unratified-source-label", link.group(1)
+                REDACTION_TOKEN, link.group(1)
             )
             parts[index] = f"[{label}]({link.group(2)})"
     return "".join(parts)
@@ -401,6 +404,10 @@ def render_table(source_name: str, output_name: str, scope_label: str,
         f"**Retained-grade values:** `retained`, `retained_bounded`, `retained_no_go`. "
         f"Anything else means the audit lane has NOT confirmed the claim, regardless of "
         f"the author-side status text in the row.\n\n"
+        f"**Redaction legend:** in rows citing any non-retained authority, author-side "
+        f"status words are replaced by the token `(unratified-source-label)` so no "
+        f"unratified row can be read or scraped as retained prose; the `[audit:...]` "
+        f"badge on each row carries the ledger-derived status.\n\n"
         f"---\n\n"
     )
 

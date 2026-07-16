@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Bounded beta = 6 single-link Wilson boundary character coefficients
-rho_(p,q)(6), computed two independent ways and cross-checked to machine
-precision on a finite SU(3) irrep box.
+rho_(p,q)(6), computed by two distinct evaluation methods with an observed
+float64 roundoff-scale discrepancy on a finite SU(3) irrep box.
 
 Supplies bounded rho_(p,q)(6) data for the gap shared by:
 
@@ -398,9 +398,13 @@ def main() -> int:
     # ------------------------------------------------------------------
     check(
         "Method A (Bessel-determinant) and Method B (Weyl integration on the Cartan torus) "
-        "compute c_(p,q)(6) to machine precision on the finite 0 <= p,q <= 4 box",
+        "produce normalized rho_(p,q)(6) values that agree within the 1e-10 acceptance "
+        "tolerance on the finite 0 <= p,q <= 4 box",
         cross_abs < 1.0e-10 and cross_rel < 1.0e-10,
-        detail=f"max abs={cross_abs:.3e}, max rel={cross_rel:.3e}; two independent integrators agree",
+        detail=(
+            f"max abs={cross_abs:.3e}, max rel={cross_rel:.3e}; two distinct evaluation "
+            "methods agree, with a float64 roundoff-scale discrepancy in this disclosed run"
+        ),
     )
     check(
         "the boundary character coefficients rho_(p,q)(6) satisfy rho_(0,0)(6) = 1 exactly "

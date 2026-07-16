@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py
-runner_sha256: 259124f691938ca3106d35f979bd587322f5cb5fcfca18672b5aac1e8e795ec4
+runner_sha256: bfdf556657218223514049e8a5b46fe7173f31187e153132eebecf9608cfb63e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.68
+elapsed_sec: 4.88
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -54,8 +54,8 @@ Resulting factorized transfer witness (with computed rho_env)
 
   Z(beta=6) = c_(0,0)(6)                = 3.441440354988
 
-  [PASS] [THEOREM] Method A (Bessel-determinant) and Method B (Weyl integration on the Cartan torus) compute c_(p,q)(6) to machine precision on the finite 0 <= p,q <= 4 box
-         max abs=4.136e-15, max rel=8.205e-14; two independent integrators agree
+  [PASS] [THEOREM] Method A (Bessel-determinant) and Method B (Weyl integration on the Cartan torus) produce normalized rho_(p,q)(6) values that agree within the 1e-10 acceptance tolerance on the finite 0 <= p,q <= 4 box
+         max abs=4.136e-15, max rel=8.205e-14; two distinct evaluation methods agree, with a float64 roundoff-scale discrepancy in this disclosed run
   [PASS] [THEOREM] the boundary character coefficients rho_(p,q)(6) satisfy rho_(0,0)(6) = 1 exactly (normalized Wilson character measure)
          |rho_(0,0)(6) - 1| = 0.000e+00
   [PASS] [THEOREM] rho_(p,q)(6) is conjugation-symmetric: rho_(p,q)(6) = rho_(q,p)(6) on the finite marked-plaquette class-function box

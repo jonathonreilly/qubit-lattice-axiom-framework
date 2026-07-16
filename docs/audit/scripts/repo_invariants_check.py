@@ -29,7 +29,9 @@ Invariants measured (tracked state only)
   ledger.rows_with_missing_note_path  informational count (vs tracked set)
   ledger.shard_parse_errors    unreadable or schema-invalid shards
   premises.ids                 registered axiom/primitive premise node ids
+  premises.file_sha256 / premises.tracked      registry digest + tracked flag
   obligations.ids              open derivation-obligation ids
+  obligations.file_sha256 / obligations.tracked  registry digest + tracked flag
   docs.md_count                tracked markdown files directly under docs/
   docs.duplicate_basenames     tracked basename collisions across docs/**
   authority_links.violations   markdown links on authority surfaces whose
@@ -76,6 +78,11 @@ AUTHORITY_SURFACES = (
 RETAINED_GRADE_PREFIXES = ("decoration_under_",)
 RETAINED_GRADE_EXACT = {"retained", "retained_bounded", "retained_no_go"}
 
+# The controlled effective-status enum is owned by audit_lint; reuse it so the
+# two tools cannot drift (BUG-17).
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from audit_lint import ALLOWED_EFFECTIVE_STATUSES  # noqa: E402
+
 _MISSING = object()
 
 
@@ -113,8 +120,15 @@ def mask_code(text: str) -> str:
             out_lines.append("")
     masked = "\n".join(out_lines)
 
-    # backtick-run code spans on the fence-masked text
-    runs = [(m.start(), len(m.group(0))) for m in re.finditer(r"`+", masked)]
+    # backtick-run code spans on the fence-masked text; a backslash-escaped
+    # backtick is a literal, so it shortens (or removes) its run (BUG-11)
+    runs = []
+    for m in re.finditer(r"`+", masked):
+        start, length = m.start(), len(m.group(0))
+        if not _unescaped(masked, start):
+            start, length = start + 1, length - 1
+        if length > 0:
+            runs.append((start, length))
     spans = []
     i = 0
     while i < len(runs):
@@ -188,27 +202,33 @@ def _finish_after_dest(text: str, pos: int, dest: str):
         while pos < n and text[pos] in " \t\n":
             pos += 1
     if pos < n and text[pos] == ")":
-        dest = re.sub(r"\\(.)", r"\1", dest)
+        # CommonMark backslash escapes apply to ASCII punctuation only; a
+        # backslash before anything else (e.g. C:\Users) is literal (BUG-12).
+        dest = re.sub(r"\\([!-/:-@\[-`{-~])", r"\1", dest)
         return dest, pos + 1
     return None
 
 
 def classify_target(dest: str) -> str:
-    """Classify a raw link destination: 'skip' (external URL / mailto /
-    scheme-relative / not path-shaped), 'absolute' (machine-local absolute
+    """Classify a raw link destination: 'skip' (external URI, mailto,
+    scheme-relative, or a prose artifact), 'absolute' (machine-local absolute
     path incl. file: scheme and drive letters), or 'relative'."""
     if dest.startswith("//"):
         return "skip"  # protocol-relative URL, not a filesystem path
     lower = dest.lower()
     if lower.startswith("file:"):
         return "absolute"
-    if "://" in dest or lower.startswith("mailto:"):
-        return "skip"
     if dest.startswith("/") or re.match(r"[A-Za-z]:[/\\]", dest):
-        return "absolute"
+        return "absolute"  # single-letter drive checked before URI schemes
+    if re.match(r"[A-Za-z][A-Za-z0-9+.-]+:", dest):
+        return "skip"  # any other URI scheme (https, mailto, doi, ...)
     stripped = dest.split("#", 1)[0].split("?", 1)[0]
-    last = stripped.rstrip("/").rsplit("/", 1)[-1]
-    if "/" not in stripped and "." not in last:
+    if not stripped:
+        return "skip"  # pure fragment/query
+    # Prose-artifact heuristic: repo paths (with or without an extension —
+    # LICENSE is a valid reader path) do not contain commas; expressions like
+    # "(h,h)" outside code spans do.
+    if "," in stripped:
         return "skip"
     return "relative"
 
@@ -287,18 +307,24 @@ def collect_ledger(tracked: list) -> dict:
             parse_errors.append(f"{shard}: shard is not a JSON object")
             continue
         claim_id = row.get("claim_id")
+        stem = os.path.splitext(os.path.basename(shard))[0]
         if not isinstance(claim_id, str) or not claim_id:
-            fallback = os.path.splitext(os.path.basename(shard))[0]
-            parse_errors.append(f"{shard}: missing/non-string claim_id (filename stem {fallback!r})")
-            claim_id = fallback
+            parse_errors.append(f"{shard}: missing/non-string claim_id (filename stem {stem!r})")
+            claim_id = stem
+        elif claim_id != stem:
+            # Canonical shard identity (ledger_io): claim_id must match the
+            # shard filename stem (BUG-17).
+            parse_errors.append(f"{shard}: claim_id {claim_id!r} != filename stem {stem!r}")
         claim_ids.append(claim_id)
         status = row.get("effective_status")
         if status is None:
             histogram["MISSING"] += 1
-        elif isinstance(status, str):
+        elif isinstance(status, str) and (
+            status in ALLOWED_EFFECTIVE_STATUSES or status.startswith("decoration_under_")
+        ):
             histogram[status] += 1
         else:
-            parse_errors.append(f"{shard}: non-string effective_status")
+            parse_errors.append(f"{shard}: effective_status {status!r} not in controlled set")
             histogram["SCHEMA_INVALID"] += 1
         note_path = row.get("note_path")
         if isinstance(note_path, str) and note_path and note_path not in tracked_set:
@@ -385,6 +411,7 @@ def collect_authority_links(tracked: list) -> dict:
     surface_files = _authority_surface_files(tracked)
     candidates = {}  # repo-relative target -> set of source files
     absolutes = {}  # machine-local absolute target -> set of source files
+    outsiders = {}  # ../-escaping target -> set of source files
     for rel in surface_files:
         with open(os.path.join(REPO_ROOT, rel), "r", encoding="utf-8", errors="replace") as fh:
             text = fh.read()
@@ -402,7 +429,9 @@ def collect_authority_links(tracked: list) -> dict:
             if not cleaned:
                 continue
             resolved = posixpath.normpath(posixpath.join(posixpath.dirname(rel), cleaned))
-            if resolved.startswith(".."):
+            if resolved == ".." or resolved.startswith("../"):
+                # Cannot resolve inside a fresh clone: report, never skip.
+                outsiders.setdefault(target, set()).add(rel)
                 continue
             candidates.setdefault(resolved, set()).add(rel)
 
@@ -410,17 +439,18 @@ def collect_authority_links(tracked: list) -> dict:
     violations = [
         {"target": target, "reason": "absolute-path", "sources": sorted(sources)}
         for target, sources in sorted(absolutes.items())
+    ] + [
+        {"target": target, "reason": "outside-repository", "sources": sorted(sources)}
+        for target, sources in sorted(outsiders.items())
     ]
     for rel in sorted(candidates):
         is_dir_link = rel.rstrip("/") in tracked_dirs
         if rel in tracked_set or is_dir_link:
             continue
-        if rel in ignored:
-            reason = "gitignored"
-        elif os.path.exists(os.path.join(REPO_ROOT, rel)):
-            reason = "untracked"
-        else:
-            reason = "missing"
+        # Reasons derive from git metadata ONLY (tracked set + ignore rules),
+        # so two worktrees at the same commit always produce identical
+        # snapshots regardless of untracked scratch files (BUG-16).
+        reason = "gitignored" if rel in ignored else "not-tracked"
         violations.append(
             {"target": rel, "reason": reason, "sources": sorted(candidates[rel])}
         )
@@ -456,9 +486,15 @@ def _diff_json(a, b, path=()):
                 a.get(key, _MISSING), b.get(key, _MISSING), path + (str(key),)
             )
         return
-    if a is _MISSING and b is _MISSING:
+    if isinstance(a, list) and isinstance(b, list):
+        for i in range(max(len(a), len(b))):
+            yield from _diff_json(
+                a[i] if i < len(a) else _MISSING,
+                b[i] if i < len(b) else _MISSING,
+                path + (str(i),),
+            )
         return
-    if type(a) is type(b) and isinstance(a, (dict, list)) and _json_equal(a, b):
+    if a is _MISSING and b is _MISSING:
         return
     if not isinstance(a, (dict, list)) and not isinstance(b, (dict, list)):
         if a is not _MISSING and b is not _MISSING and _json_equal(a, b):
@@ -549,14 +585,21 @@ def main() -> int:
 
     if args.snapshot is not None:
         if args.snapshot != "-":
+            # Snapshots are scratch artifacts: refuse ANY destination inside
+            # the repository (kills every alias/traversal overwrite class:
+            # symlinks, case folds, unicode normalization, ..-prefixed
+            # basenames), and refuse multi-linked existing files anywhere (a
+            # hard link outside the repo can alias a tracked inode).
             resolved = os.path.realpath(os.path.abspath(args.snapshot))
-            requested = os.path.relpath(resolved, os.path.realpath(REPO_ROOT))
-            requested = requested.replace(os.sep, "/")
-            if not requested.startswith(".."):
-                tracked_fold = {t.casefold() for t in _git_tracked_files()}
-                if requested.casefold() in tracked_fold:
-                    print(f"refusing to overwrite tracked repository path: {requested}")
-                    return 2
+            repo_real = os.path.realpath(REPO_ROOT)
+            if os.path.commonpath([resolved, repo_real]) == repo_real:
+                print("refusing to write a snapshot inside the repository; "
+                      "use a scratch directory or '-' for stdout")
+                return 2
+            if os.path.exists(resolved) and os.stat(resolved).st_nlink > 1:
+                print("refusing to overwrite a multi-linked file (possible "
+                      "hard-link alias of a repository path)")
+                return 2
         snapshot = build_snapshot()
         text = json.dumps(snapshot, indent=1, sort_keys=True)
         if args.snapshot == "-":

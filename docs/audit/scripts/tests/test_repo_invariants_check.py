@@ -129,9 +129,26 @@ class AuthorityLinksTrackedSetTest(unittest.TestCase):
         self.assertEqual(
             reasons,
             {
-                "docs/PRESENT_UNTRACKED.md": "untracked",
-                "docs/MISSING.md": "missing",
+                "docs/PRESENT_UNTRACKED.md": "not-tracked",
+                "docs/MISSING.md": "not-tracked",
             },
+        )
+
+    def test_reason_is_stable_under_untracked_scratch_files(self):
+        # BUG-16: an untracked file appearing on disk must not change the
+        # serialized violation reason between two worktrees at one commit.
+        tracked = ["README.md", "docs/TRACKED.md", "docs/repo/KEEP.md"]
+        before = ric.collect_authority_links(tracked)["violations"]
+        (Path(ric.REPO_ROOT) / "docs" / "MISSING.md").write_text("late")
+        after = ric.collect_authority_links(tracked)["violations"]
+        self.assertEqual(before, after)
+
+    def test_outside_repository_link_is_reported(self):
+        (Path(ric.REPO_ROOT) / "README.md").write_text("[out](../OUTSIDE.md)")
+        result = ric.collect_authority_links(["README.md"])
+        self.assertEqual(
+            [(v["target"], v["reason"]) for v in result["violations"]],
+            [("../OUTSIDE.md", "outside-repository")],
         )
 
 
@@ -301,33 +318,127 @@ class DiffRoundTwoProbes(unittest.TestCase):
 
 
 class SnapshotOutputAliasGuardTest(unittest.TestCase):
-    def test_symlink_alias_to_tracked_file_refused(self):
+    """Any destination inside the repository is refused (symlinks, case
+    folds, unicode normalization, and ..-prefixed basenames are all inside
+    after realpath); multi-linked existing files are refused anywhere."""
+
+    def _run_snapshot(self, root: Path, req: str) -> int:
+        old, argv = ric.REPO_ROOT, sys.argv
+        ric.REPO_ROOT = str(root)
+        sys.argv = ["ric", "--snapshot", req]
+        try:
+            out = io.StringIO()
+            with redirect_stdout(out):
+                return ric.main()
+        finally:
+            ric.REPO_ROOT, sys.argv = old, argv
+
+    def test_all_in_repo_destinations_refused(self):
         with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
+            root = Path(os.path.realpath(tmp))
             subprocess.run(["git", "init", "-q", str(root)], check=True)
             victim = root / "Tracked.JSON"
             victim.write_text("precious")
-            subprocess.run(["git", "-C", str(root), "add", "Tracked.JSON"], check=True)
+            dotdot = root / "..victim.json"
+            dotdot.write_text("precious2")
+            subprocess.run(
+                ["git", "-C", str(root), "add", "Tracked.JSON", "..victim.json"],
+                check=True,
+            )
             link = root / "alias.json"
             link.symlink_to(victim)
+            for req in (
+                str(link),
+                str(root / "tracked.json"),
+                str(root / "..victim.json"),
+                str(root / "brand_new.json"),
+            ):
+                self.assertEqual(self._run_snapshot(root, req), 2, req)
+            self.assertEqual(victim.read_text(), "precious")
+            self.assertEqual(dotdot.read_text(), "precious2")
+
+    def test_hard_link_alias_outside_repo_refused(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(os.path.realpath(tmp)) / "repo"
+            outside = Path(os.path.realpath(tmp)) / "outside"
+            root.mkdir(); outside.mkdir()
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            victim = root / "tracked.json"
+            victim.write_text("precious")
+            subprocess.run(["git", "-C", str(root), "add", "tracked.json"], check=True)
+            hard = outside / "hard.json"
+            os.link(victim, hard)
+            self.assertEqual(self._run_snapshot(root, str(hard)), 2)
+            self.assertEqual(victim.read_text(), "precious")
+
+    def test_outside_scratch_destination_allowed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(os.path.realpath(tmp)) / "repo"
+            root.mkdir()
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            dest = Path(os.path.realpath(tmp)) / "snap.json"
+            code = self._run_snapshot(root, str(dest))
+            self.assertEqual(code, 0)
+            self.assertTrue(dest.exists())
+
+
+
+
+class RoundThreeScannerProbes(unittest.TestCase):
+    def test_escaped_backticks_do_not_open_code_spans(self):
+        text = "\\` [bad](MISSING.md) \\`"
+        self.assertEqual(ric.scan_markdown_link_targets(text), ["MISSING.md"])
+
+    def test_windows_path_preserved_and_absolute(self):
+        targets = ric.scan_markdown_link_targets("[x](C:\\Users\\me\\X.md)")
+        self.assertEqual(targets, ["C:\\Users\\me\\X.md"])
+        self.assertEqual(ric.classify_target(targets[0]), "absolute")
+
+    def test_uri_schemes_and_extensionless(self):
+        self.assertEqual(ric.classify_target("doi:10.1000/xyz"), "skip")
+        self.assertEqual(ric.classify_target("LICENSE"), "relative")
+        self.assertEqual(ric.classify_target("file:///tmp/L.md"), "absolute")
+
+
+class RoundThreeLedgerProbes(unittest.TestCase):
+    def test_claim_id_filename_identity_and_status_enum(self):
+        with tempfile.TemporaryDirectory() as tmp:
             old = ric.REPO_ROOT
-            ric.REPO_ROOT = str(root)
-            argv = sys.argv
+            ric.REPO_ROOT = tmp
             try:
-                for req in (str(link), str(root / "tracked.json")):
-                    sys.argv = ["ric", "--snapshot", req]
-                    out = io.StringIO()
-                    with redirect_stdout(out):
-                        code = ric.main()
-                    if "tracked.json" in req and not (root / "TRACKED.json").exists() \
-                            and not os.path.exists(str(root / "tracked.json")):
-                        pass  # case-alias probe only binds on case-insensitive fs
-                    if os.path.realpath(req) == os.path.realpath(str(victim)):
-                        self.assertEqual(code, 2, req)
-                        self.assertEqual(victim.read_text(), "precious")
+                d = Path(tmp) / ric.LEDGER_PREFIX / "aa"
+                d.mkdir(parents=True)
+                (d / "alpha.json").write_text(json.dumps(
+                    {"claim_id": "beta", "effective_status": "unaudited"}))
+                (d / "typo.json").write_text(json.dumps(
+                    {"claim_id": "typo", "effective_status": "retianed"}))
+                result = ric.collect_ledger([
+                    ric.LEDGER_PREFIX + "aa/alpha.json",
+                    ric.LEDGER_PREFIX + "aa/typo.json",
+                ])
+                errors = " ".join(result["shard_parse_errors"])
+                self.assertIn("!= filename stem", errors)
+                self.assertIn("not in controlled set", errors)
+                self.assertEqual(
+                    result["effective_status_histogram"].get("SCHEMA_INVALID"), 1
+                )
+                self.assertEqual(result["retained_grade_total"], 0)
             finally:
                 ric.REPO_ROOT = old
-                sys.argv = argv
+
+
+class RoundThreeDiffProbes(DiffSensitivityTest):
+    def test_bool_vs_one_inside_array(self):
+        code, _ = self._diff({"a": [True]}, {"a": [1]})
+        self.assertEqual(code, 1)
+
+    def test_nested_dict_inside_array(self):
+        code, _ = self._diff({"a": [{"b": True}]}, {"a": [{"b": 1}]})
+        self.assertEqual(code, 1)
+
+    def test_array_leaf_path_is_allowable(self):
+        code, _ = self._diff({"a": [{}]}, {"a": [{"b": 1}]}, allow="a.0.b")
+        self.assertEqual(code, 0)
 
 
 if __name__ == "__main__":

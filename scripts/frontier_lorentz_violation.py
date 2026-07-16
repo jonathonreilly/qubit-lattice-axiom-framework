@@ -6,8 +6,10 @@ finite-difference spatial kinetic symbol on a cubic lattice. It does not derive
 that action, the lattice spacing, a relativistic carrier, CPT, or an SME-sector
 identification from the four axioms. Its phenomenology tables are historical
 scale illustrations, not validated experimental exclusions or framework
-predictions. The robust checks are the Taylor coefficients and normalized
-cubic-harmonic identity for the selected symbol.
+predictions. The robust checks are the full-`O_h` signed-permutation action,
+Taylor coefficients, and normalized cubic-harmonic identity for the selected
+symbol. The full-group certificate and cubic-harmonic identity are independent
+load-bearing exit gates.
 
 The key result: the lattice correction to the dispersion relation is
 
@@ -41,6 +43,7 @@ PStack experiment: lorentz-violation-sme
 
 from __future__ import annotations
 
+import itertools
 import math
 import sys
 import time
@@ -66,6 +69,206 @@ M_ELECTRON_GEV = 0.000511
 M_PROTON_GEV = 0.938
 M_NEUTRON_GEV = 0.940
 M_NEUTRINO_GEV = 1e-10       # upper bound, ~0.1 eV
+
+
+# ============================================================
+# Section 0: full cubic-group action certificate
+# ============================================================
+
+def full_o_h_signed_permutations() -> tuple[np.ndarray, ...]:
+    """Return the full 48-element signed-permutation representation of O_h.
+
+    Each matrix has exactly one nonzero entry, equal to +/-1, in every row
+    and column.  The 3! coordinate permutations and 2^3 independent row
+    signs therefore give all 48 orthogonal integer matrices, including both
+    determinant +1 (proper) and determinant -1 (improper) elements.
+    """
+    elements: list[np.ndarray] = []
+    for permutation in itertools.permutations(range(3)):
+        for signs in itertools.product((-1, 1), repeat=3):
+            matrix = np.zeros((3, 3), dtype=np.int64)
+            for row, column in enumerate(permutation):
+                matrix[row, column] = signs[row]
+            elements.append(matrix)
+    return tuple(elements)
+
+
+def _integer_matrix_key(matrix: np.ndarray) -> tuple[int, ...]:
+    """Hashable row-major key for an integer 3x3 matrix."""
+    return tuple(int(entry) for entry in matrix.reshape(-1))
+
+
+def _integer_det3(matrix: np.ndarray) -> int:
+    """Exact determinant formula for a 3x3 integer matrix."""
+    a, b, c = (int(x) for x in matrix[0])
+    d, e, f = (int(x) for x in matrix[1])
+    g, h, i = (int(x) for x in matrix[2])
+    return a * (e * i - f * h) - b * (d * i - f * g) + c * (d * h - e * g)
+
+
+def nearest_neighbor_cubic_symbol(momentum: np.ndarray, a: float) -> float:
+    """Supplied nearest-neighbor cubic kinetic symbol without the mass term."""
+    momentum = np.asarray(momentum, dtype=float)
+    return float(np.sum((4.0 / a**2) * np.sin(momentum * a / 2.0) ** 2))
+
+
+def quartic_direction_symbol(direction: np.ndarray) -> float:
+    """Return sum_i n_i^4 after normalizing a nonzero direction vector."""
+    direction = np.asarray(direction, dtype=float)
+    norm = float(np.linalg.norm(direction))
+    if norm == 0.0:
+        raise ValueError("direction must be nonzero")
+    unit = direction / norm
+    return float(np.sum(unit**4))
+
+
+def verify_full_o_h_action() -> bool:
+    """Certify the full finite O_h action and its exact invariants.
+
+    The group checks use exact integer arithmetic.  The action checks apply
+    every one of the 48 matrices to deterministic hostile samples, including
+    momenta near Brillouin-zone faces and generic unequal components.  A
+    fixed rotation through pi/7 outside O_h supplies the negative control:
+    it preserves the Euclidean norm but changes the finite-a kinetic symbol.
+    """
+    print(f"\n{'=' * 78}")
+    print("0. FULL O_h SIGNED-PERMUTATION ACTION CERTIFICATE")
+    print(f"{'=' * 78}\n")
+
+    n_pass = 0
+    n_fail = 0
+
+    def _check(name: str, condition: bool, detail: str) -> None:
+        nonlocal n_pass, n_fail
+        tag = "PASS" if condition else "FAIL"
+        if condition:
+            n_pass += 1
+        else:
+            n_fail += 1
+        print(f"  [{tag}] {name}")
+        print(f"         {detail}")
+
+    group = full_o_h_signed_permutations()
+    keys = {_integer_matrix_key(matrix) for matrix in group}
+    identity = np.eye(3, dtype=np.int64)
+    identity_key = _integer_matrix_key(identity)
+    determinants = [_integer_det3(matrix) for matrix in group]
+
+    _check(
+        "O_h construction has 48 distinct signed-permutation matrices",
+        len(group) == 48 and len(keys) == 48,
+        f"constructed={len(group)}, distinct={len(keys)} = 3!*2^3",
+    )
+    _check(
+        "Every O_h element is an orthogonal 3x3 integer matrix",
+        all(
+            set(int(x) for x in matrix.reshape(-1)) <= {-1, 0, 1}
+            and np.array_equal(matrix.T @ matrix, identity)
+            for matrix in group
+        ),
+        "R^T R = I exactly and entries lie in {-1,0,1} for all 48 elements",
+    )
+    _check(
+        "O_h contains 24 proper and 24 improper elements",
+        determinants.count(1) == 24 and determinants.count(-1) == 24,
+        f"det=+1: {determinants.count(1)}, det=-1: {determinants.count(-1)}",
+    )
+    _check(
+        "Identity and inverses are present",
+        identity_key in keys
+        and all(
+            _integer_matrix_key(matrix.T) in keys
+            and np.array_equal(matrix @ matrix.T, identity)
+            for matrix in group
+        ),
+        "I is present and R^{-1}=R^T belongs to the set for every element",
+    )
+    closure_ok = all(
+        _integer_matrix_key(left @ right) in keys
+        for left in group
+        for right in group
+    )
+    _check(
+        "The 48-element set is closed under multiplication",
+        closure_ok,
+        "all 48^2 = 2304 products remain in the constructed set",
+    )
+
+    a_hostile = 0.731
+    momentum_samples = (
+        np.array([0.0, 0.0, 0.0]),
+        np.array([math.pi * (1.0 - 2.0**-20),
+                  -math.pi * (1.0 - 2.0**-18), 0.25]) / a_hostile,
+        np.array([0.127, -1.937, 2.619]) / a_hostile,
+        np.array([math.sqrt(2.0), -math.sqrt(3.0), math.pi / 5.0]) / a_hostile,
+        np.array([-2.91, 1.0e-11, 1.73]) / a_hostile,
+    )
+    kinetic_residual = max(
+        abs(
+            nearest_neighbor_cubic_symbol(matrix @ momentum, a_hostile)
+            - nearest_neighbor_cubic_symbol(momentum, a_hostile)
+        )
+        for matrix in group
+        for momentum in momentum_samples
+    )
+    _check(
+        "The supplied nearest-neighbor cubic kinetic symbol is O_h-invariant",
+        kinetic_residual < 1.0e-12,
+        f"max residual={kinetic_residual:.3e} over 48 x {len(momentum_samples)} "
+        "deterministic hostile momentum actions",
+    )
+
+    direction_samples = (
+        np.array([1.0, 0.0, 0.0]),
+        np.array([1.0, 1.0, 1.0]),
+        np.array([1.0, 2.0, 3.0]),
+        np.array([math.sqrt(2.0), -math.pi, math.e]),
+        np.array([1.0e-12, 1.0, -1.5]),
+    )
+    quartic_residual = max(
+        abs(
+            quartic_direction_symbol(matrix @ direction)
+            - quartic_direction_symbol(direction)
+        )
+        for matrix in group
+        for direction in direction_samples
+    )
+    _check(
+        "sum_i n_i^4 is O_h-invariant",
+        quartic_residual < 1.0e-14,
+        f"max residual={quartic_residual:.3e} over 48 x {len(direction_samples)} "
+        "deterministic hostile direction actions",
+    )
+
+    angle = math.pi / 7.0
+    generic_rotation = np.array([
+        [math.cos(angle), -math.sin(angle), 0.0],
+        [math.sin(angle), math.cos(angle), 0.0],
+        [0.0, 0.0, 1.0],
+    ])
+    outside_distance = min(
+        float(np.linalg.norm(generic_rotation - matrix)) for matrix in group
+    )
+    generic_momentum = np.array([2.3, 0.4, -1.1]) / a_hostile
+    generic_delta = abs(
+        nearest_neighbor_cubic_symbol(generic_rotation @ generic_momentum, a_hostile)
+        - nearest_neighbor_cubic_symbol(generic_momentum, a_hostile)
+    )
+    generic_is_rotation = (
+        np.allclose(generic_rotation.T @ generic_rotation, np.eye(3), atol=1.0e-14)
+        and abs(float(np.linalg.det(generic_rotation)) - 1.0) < 1.0e-14
+    )
+    _check(
+        "A generic proper rotation outside O_h changes the finite-a symbol",
+        generic_is_rotation and outside_distance > 1.0e-6 and generic_delta > 1.0e-3,
+        f"R_z(pi/7): distance to O_h={outside_distance:.3e}, "
+        f"|K(Rp)-K(p)|={generic_delta:.6f}",
+    )
+
+    verdict = "PASS" if n_fail == 0 else "FAIL"
+    print(f"\n  FULL O_h ACTION CERTIFICATE: {verdict} "
+          f"({n_pass}/{n_pass + n_fail} checks)")
+    return n_fail == 0
 
 
 # ============================================================
@@ -117,12 +320,12 @@ def continuum_dispersion(p: np.ndarray, m: float) -> np.ndarray:
 
 
 def lorentz_violation_coefficient(a: float) -> float:
-    """The coefficient of the p_i^4 Lorentz-violating term.
+    """The coefficient of the p_i^4 finite-a anisotropy term.
 
     Expanding sin^2(p_i a/2) = (p_i a/2)^2 - (p_i a/2)^4/3 + ...
     gives (4/a^2) sin^2(p_i a/2) = p_i^2 - a^2 p_i^4/12 + ...
 
-    The LV correction to E^2 is:
+    The fixed-action correction to E^2 is:
         delta(E^2) = -(a^2/12) sum_i p_i^4
 
     Returns the coefficient a^2/12.
@@ -131,7 +334,7 @@ def lorentz_violation_coefficient(a: float) -> float:
 
 
 def sixth_order_coefficient(a: float) -> float:
-    """The coefficient of the p_i^6 term (next Lorentz-violating order).
+    """The coefficient of the p_i^6 term (next fixed-action order).
 
     sin^2(x) = x^2 - x^4/3 + 2x^6/45 - ...
     (4/a^2) sin^2(pa/2) = p^2 - a^2 p^4/12 + a^4 p^6/360 + ...
@@ -146,7 +349,7 @@ def sixth_order_coefficient(a: float) -> float:
 # ============================================================
 
 def compute_sme_coefficients(a_meters: float) -> dict:
-    """Map the lattice dispersion correction onto SME coefficients.
+    """Package formal coefficient-basis labels without an SME matching claim.
 
     The Standard Model Extension (Kostelecky, 2004) parameterizes
     Lorentz violation in terms of tensor coefficients that modify
@@ -169,7 +372,7 @@ def compute_sme_coefficients(a_meters: float) -> dict:
     - The isotropic part (j=0) gives: k^(6)_{00} ~ -(a^2/12)(3/5)
     - The anisotropic part (j=4) gives: k^(6)_{40} ~ -(a^2/12)(4*sqrt(pi)/15) etc.
 
-    For comparison with experiment:
+    For this unmatched scale illustration only:
     - The coefficients have dimension [length]^2 = [energy]^{-2}
     - Convert a from meters to natural units: a_nat = a * (GeV / (hbar c))
 
@@ -322,7 +525,7 @@ EXPERIMENTAL_BOUNDS = {
 # ============================================================
 
 def staggered_taste_breaking(a_nat: float) -> dict:
-    """Compute taste-breaking Lorentz violation from staggered fermions.
+    """Compute an imported taste-breaking finite-a illustration.
 
     Staggered fermions on a cubic lattice have 2^d = 8 (in 3D) or 16 (in 4D)
     degenerate species (tastes). The taste symmetry is broken by
@@ -332,7 +535,7 @@ def staggered_taste_breaking(a_nat: float) -> dict:
         delta_S = a^2 * sum_{mu<nu} (psi_bar gamma_mu x xi_nu psi)^2
 
     where xi_nu are taste matrices. These introduce ADDITIONAL dimension-6
-    Lorentz-violating operators beyond the naive lattice dispersion.
+    finite-a operators beyond the naive lattice dispersion.
 
     The taste-dependent dispersion becomes:
         E^2_taste = m^2 + p^2 - (a^2/12) sum_i p_i^4
@@ -346,8 +549,8 @@ def staggered_taste_breaking(a_nat: float) -> dict:
     it can be comparable or larger.
 
     In the continuum limit a -> 0, both contributions vanish as a^2.
-    But at finite a, the taste-breaking can double the effective
-    Lorentz violation for some taste channels.
+    But at finite a, the taste-breaking can double this illustrative
+    correction for some taste channels.
 
     Args:
         a_nat: lattice spacing in natural units (1/GeV)
@@ -355,7 +558,7 @@ def staggered_taste_breaking(a_nat: float) -> dict:
     Returns:
         Dictionary of taste-breaking coefficients
     """
-    # Naive lattice LV coefficient
+    # Naive lattice finite-a coefficient
     naive_c4 = a_nat**2 / 12.0
 
     # Taste-breaking correction factors (from lattice QCD studies)
@@ -386,7 +589,7 @@ def staggered_taste_breaking(a_nat: float) -> dict:
 
     results = {}
     for taste, factor in taste_factors.items():
-        # Total LV for this taste: naive + taste-breaking
+        # Total illustrative finite-a coefficient: naive + taste-breaking
         total_c4 = naive_c4 * (1.0 + factor)
         results[taste] = {
             "naive_c4": naive_c4,
@@ -657,6 +860,8 @@ def run_experiment():
     print("Conditional SME-style scale parameterization")
     print("=" * 78)
 
+    oh_action_ok = verify_full_o_h_action()
+
     # ── Section 1: Lattice dispersion relation ────────────────────
     print(f"\n{'=' * 78}")
     print("1. LATTICE DISPERSION RELATION")
@@ -679,7 +884,7 @@ def run_experiment():
   Therefore:
     E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + (a^4/360) sum_i p_i^6 - ...
                        ^^^^^^^^^^^^^^^^^^^^^^^^
-                       LORENTZ-VIOLATING TERM
+                       FINITE-a CUBIC-ANISOTROPY TERM
 
   The p_i^4 term is spatially anisotropic with cubic symmetry O_h.
   Its coefficient is a^2/12 for this supplied kinetic symbol. This runner
@@ -721,7 +926,7 @@ def run_experiment():
     print(f"{'=' * 78}")
 
     print("""
-  The Lorentz-violating correction decomposes in NORMALIZED real spherical
+  The fixed-action finite-a correction decomposes in NORMALIZED real spherical
   harmonics Y_lm (scipy.special.sph_harm / sympy.Ynm convention):
 
     sum_i p_i^4 = p^4 * [3/5 + (4*sqrt(pi)/15) * K_4(theta, phi)]
@@ -800,13 +1005,14 @@ def run_experiment():
 
     print("""
   Staggered fermions on a cubic lattice have 2^d degenerate tastes.
-  Taste symmetry is broken at O(a^2), introducing ADDITIONAL Lorentz
-  violation beyond the naive lattice dispersion.
+  Taste symmetry is broken at O(a^2), introducing an ADDITIONAL imported
+  finite-a illustration beyond the naive lattice dispersion.
 
-  The taste-dependent LV has the form:
+  The taste-dependent correction has the form:
     delta(E^2)_taste = a^2 * C_taste * p^4
 
-  where C_taste depends on the taste representation. The total LV
+  where C_taste depends on the taste representation. The total illustrative
+  finite-a coefficient
   for each taste is:
     (a^2/12)(1 + C_taste) * sum_i p_i^4
 
@@ -903,7 +1109,7 @@ def run_experiment():
     energies = [1e-3, 1e-1, 1.0, 10.0, 100.0, 1e3, 1e4, 1e7, 1e10]
 
     print(f"\n  Lattice: a = l_Planck = {L_PLANCK:.4e} m")
-    print(f"  Leading LV coefficient: a^2/12 = {c4_pred:.4e} GeV^-2\n")
+    print(f"  Leading finite-a coefficient: a^2/12 = {c4_pred:.4e} GeV^-2\n")
 
     print(f"  {'E (GeV)':<12} {'(E/E_Pl)^2':<14} {'axis |delta E^2/E^2|':<24} "
           f"{'axis |delta v_g|':<18}")
@@ -978,7 +1184,7 @@ def run_experiment():
      - Historical scale comparison only; no experimental verdict
 
   5. Staggered fermion taste-breaking:
-     - Enhances LV by factor 2-4 depending on taste channel
+     - Changes the imported finite-a illustration by factor 2-4 by taste channel
      - Imported illustration; no physical flavor identification established
      - No experimental comparison is made without a sector response map
 
@@ -988,20 +1194,23 @@ def run_experiment():
      - Shared by models with the same cubic symmetry; not unique
 
   BOTTOM LINE:
-    This runner validates the selected symbol's Taylor expansion and cubic
-    harmonic identity. It does not promote the calculation to a four-axiom,
-    CPT, SME-matching, or experimental-consistency result.
+    This runner validates the selected symbol's O_h action, Taylor expansion,
+    and cubic-harmonic identity. It does not establish physical Lorentz
+    violation or promote the calculation to a four-axiom, framework-native
+    selection, CPT, SME-matching, or experimental-consistency result.
 """)
 
     elapsed = time.time() - t0
     print(f"  Elapsed: {elapsed:.1f} s")
     print(f"\n{'=' * 78}")
     print("EXPERIMENT COMPLETE")
+    print(f"  Full O_h action certificate: "
+          f"{'PASS' if oh_action_ok else 'FAIL'}")
     print(f"  Cubic-harmonic identity check: "
           f"{'PASS' if identity_ok else 'FAIL'}")
     print(f"{'=' * 78}")
 
-    return identity_ok
+    return oh_action_ok and identity_ok
 
 
 if __name__ == "__main__":

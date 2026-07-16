@@ -1329,7 +1329,7 @@
         },
         {
           "claim_id": "koide_a1_loop_final_status_2026-04-22",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "koide_a1_physical_bridge_attempt_2026-04-22",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "b5c22d7ab331a047afb81be87656131b908e3199",
+  "repo_head": "c60dbe2e6ebb2001a225b4c32ef41f04b4d849a9",
   "schema": "lane_certification_v2"
 }

@@ -106,7 +106,11 @@ same witness, so none is a one-step domain.
 For each rooted loop, the tested license requires the full loop support to be
 contained in the transported domain of every constituent link. The loop
 generator uses the block-01/parent convention: root at the origin, no
-immediate backtracking, and no repeated undirected edge. The last column is
+immediate backtracking, no repeated undirected edge, and no repeated vertex
+before the final return to the root (the rooted-simple convention). This last
+vertex-uniqueness clause is vacuous at lengths 4 and 6 but load-bearing at
+length 8, where it selects the 3312 rooted simple loops out of the 4272
+edge-simple closed walks. The last column is
 the per-domain one-tick / `R`-locality upper-bound test `D subseteq C_1`; it
 does not separately assert that an update law has been established as
 `R`-local.
@@ -147,21 +151,21 @@ omit the transverse orbit lie in `[E,E∪A]` and give the constant-empty family.
 Equivalently,
 
 ```text
-E, E∪A       -> 0/24 and 0/264;
-E∪T, C_1     -> 24/24 and 0/264.
+E, E∪A       -> 0/24, 0/264, and 0/3312;
+E∪T, C_1     -> 24/24, 0/264, and 0/3312.
 ```
 
 The radius-2 domain is covariant but lies outside the one-step interval; it
-gives `24/24` and `264/264`.
+gives `24/24`, `264/264`, and `96/3312`.
 
 ### Proof
 
 Completeness leaves exactly the four one-step rows in the table. The two rows
-containing `T` have the identical computed vector `(24,0)`, while the two rows
-missing `T` have `(0,0)`. This exhausts the lattice, so the statement is a
+containing `T` have the identical computed vector `(24,0,0)`, while the two rows
+missing `T` have `(0,0,0)`. This exhausts the lattice, so the statement is a
 theorem on the enumerated domains rather than an extrapolation from selected
 examples. The independently computed radius-2 row fails the one-tick
-containment test and has vector `(24,264)`.
+containment test and has vector `(24,264,96)`.
 
 The classification therefore isolates exactly what these finite enumerations
 can and cannot distinguish. In particular, they cannot select `C_1` over its
@@ -178,7 +182,7 @@ not the enumeration outcomes, pins the full `C_1` bound.
 - This does **not** prove that the fundamental action is per-plaquette and
   makes no per-plaquette-action claim.
 - The table checks domain containment in `C_1`; it does not derive the
-  block-01 `(P-FUND-1TICK)` premise or enlarge the finite-graph theorem into a
+  block-01 `(P-FUND-1TICK)` condition or enlarge the finite-graph theorem into a
   physical-spacetime statement.
 - `theta_bare` is untouched.
 - This block does not amend an axiom or approved primitive.

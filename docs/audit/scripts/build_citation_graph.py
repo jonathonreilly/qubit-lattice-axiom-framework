@@ -116,6 +116,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "teleportation_acceptance_suite_note": [
         "scripts/frontier_teleportation_acceptance_suite.py",
     ],
+    # This claim's finite-scope wrapper executes the canonical 17-card through
+    # subprocess. Keep that exceptional packet edge claim-scoped: arbitrary
+    # subprocess targets are intentionally not treated as helper imports.
+    "staggered_fermion_card_2026-04-11": [
+        "scripts/frontier_staggered_17card.py",
+    ],
 }
 
 

@@ -2588,6 +2588,122 @@ class BuildCitationGraphParserTest(unittest.TestCase):
         self.assertEqual(helpers, {"keyword_helper"})
 
 
+class StaggeredExplicitPacketHelperTest(unittest.TestCase):
+    CLAIM_ID = "staggered_fermion_card_2026-04-11"
+    PRIMARY = "scripts/frontier_staggered_17card_finite_scope_repair.py"
+    HELPER = "scripts/frontier_staggered_17card.py"
+
+    def test_both_consumers_return_only_the_claim_scoped_canonical_helper(self):
+        citation_graph = _import("build_citation_graph")
+        packet_deps = _import_repo_script("audit_packet_script_deps.py")
+        expected = [self.HELPER]
+
+        self.assertEqual(
+            citation_graph.helper_runner_paths_for_claim(
+                self.CLAIM_ID, self.PRIMARY
+            ),
+            expected,
+        )
+        self.assertEqual(
+            packet_deps.helper_runner_paths_for_claim(
+                self.CLAIM_ID, Path(self.PRIMARY).stem
+            ),
+            expected,
+        )
+
+        # The same subprocess wrapper must not expose its child for any other
+        # claim; the registration is an exact claim exception, not discovery.
+        control_claim = f"{self.CLAIM_ID}-unregistered-control"
+        self.assertEqual(
+            citation_graph.helper_runner_paths_for_claim(
+                control_claim, self.PRIMARY
+            ),
+            [],
+        )
+        self.assertEqual(
+            packet_deps.helper_runner_paths_for_claim(
+                control_claim, Path(self.PRIMARY).stem
+            ),
+            [],
+        )
+
+    def test_citation_graph_row_contains_the_canonical_helper(self):
+        citation_graph = _import("build_citation_graph")
+        note = PROJECT_ROOT / "docs" / "STAGGERED_FERMION_CARD_2026-04-11.md"
+        with mock.patch.object(citation_graph, "discover_notes", return_value=[note]):
+            graph = citation_graph.build_graph()
+
+        row = graph["nodes"][self.CLAIM_ID]
+        self.assertEqual(row["runner_path"], self.PRIMARY)
+        self.assertEqual(row["helper_runner_paths"], [self.HELPER])
+
+    def test_restricted_packet_embeds_the_full_exact_canonical_source(self):
+        runner = _import_codex_audit_runner()
+        row = {
+            "claim_id": self.CLAIM_ID,
+            "note_path": "docs/STAGGERED_FERMION_CARD_2026-04-11.md",
+            "runner_path": self.PRIMARY,
+            "helper_runner_paths": [self.HELPER],
+            "deps": [],
+            "claim_type": "bounded_theorem",
+        }
+        manifest: dict[str, dict] = {}
+        prompt = runner.render_prompt(
+            row,
+            {self.CLAIM_ID: row},
+            "{{HELPER_RUNNER_SOURCES}}",
+            runner_timeout_sec=1,
+            skip_runner_stdout=True,
+            evidence_manifest_out=manifest,
+        )
+
+        canonical_source = (PROJECT_ROOT / self.HELPER).read_text(encoding="utf-8")
+        begin = f"=== BEGIN HELPER RUNNER: {self.HELPER} ===\n"
+        cache = f"=== BEGIN HELPER RUNNER CACHE: {self.HELPER} ==="
+        rendered_source = prompt.split(begin, 1)[1].split(cache, 1)[0]
+        self.assertEqual(rendered_source, canonical_source + "\n")
+        self.assertNotIn("... [truncated; helper is", prompt)
+        self.assertIn("helper", manifest[self.HELPER]["roles"])
+        self.assertIn(canonical_source, manifest[self.HELPER]["text"])
+
+    def test_registered_helper_remains_hash_bound_for_invalidation(self):
+        apply_audit = _import("apply_audit")
+        invalidation = _import("invalidate_stale_audits")
+        row = {
+            "claim_id": self.CLAIM_ID,
+            "note_path": "docs/STAGGERED_FERMION_CARD_2026-04-11.md",
+            "runner_path": self.PRIMARY,
+            "helper_runner_paths": [self.HELPER],
+            "deps": [],
+            "claim_type": "bounded_theorem",
+            "criticality": "critical",
+            "audit_status": "audited_conditional",
+            "negative_assertion_classes": [],
+        }
+        snapshot = apply_audit.snapshot_audit_state(row, {self.CLAIM_ID: row})
+        helper_hash = hashlib.sha256(
+            (PROJECT_ROOT / self.HELPER).read_bytes()
+        ).hexdigest()
+        self.assertEqual(snapshot["helper_runner_hashes"], {self.HELPER: helper_hash})
+
+        audited_row = {**row, "audit_state_snapshot": snapshot}
+        self.assertIsNone(invalidation.detect_invalidation(audited_row, {}))
+
+        runner_hash = snapshot["runner_hash"]
+        with mock.patch.object(
+            invalidation.rc,
+            "runner_sha256",
+            side_effect=lambda path: (
+                "0" * 64 if path == self.HELPER else runner_hash
+            ),
+        ):
+            reason = invalidation.detect_invalidation(audited_row, {})
+        self.assertEqual(
+            reason,
+            f"helper_runner_hash_changed:{self.HELPER}:{helper_hash[:8]}->00000000",
+        )
+
+
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()

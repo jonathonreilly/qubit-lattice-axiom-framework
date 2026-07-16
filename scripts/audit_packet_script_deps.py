@@ -51,6 +51,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/frontier_atomic_helium_jastrow_companion.py",
         "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
     ],
+    # This claim's finite-scope wrapper executes the canonical 17-card through
+    # subprocess. Keep that exceptional packet edge claim-scoped: arbitrary
+    # subprocess targets are intentionally not treated as helper imports.
+    "staggered_fermion_card_2026-04-11": [
+        "scripts/frontier_staggered_17card.py",
+    ],
 }
 
 

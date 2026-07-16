@@ -29,42 +29,43 @@
 #  14. render_audit_ledger.py        -> writes AUDIT_LEDGER.md
 #  15. render_publication_effective_status.py
 #                                      -> writes audit-derived publication views
-#  16. render_front_door_status.py    -> writes docs/repo/FRONT_DOOR_STATUS.md
-#  17. repo_invariants_check.py       -> authority-surface link guard (hard gate)
+#  16. compute_dispatch_shadow.py     -> shadow lane + tracked churn state (no dispatch effect)
+#  17. render_front_door_status.py    -> writes docs/repo/FRONT_DOOR_STATUS.md
+#  18. repo_invariants_check.py       -> authority-surface link guard (hard gate)
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 cd "${REPO_ROOT}"
 
-echo "==> 0-ledger/17 ledger_io.py --materialize (sharded ledger -> monolith read cache)"
+echo "==> 0-ledger/18 ledger_io.py --materialize (sharded ledger -> monolith read cache)"
 python3 docs/audit/scripts/ledger_io.py --materialize
 
-echo "==> 0/17 check_axiom_premise_clean.py (guard: axiom/primitive premise docs stay pure)"
+echo "==> 0/18 check_axiom_premise_clean.py (guard: axiom/primitive premise docs stay pure)"
 python3 docs/audit/scripts/check_axiom_premise_clean.py
 
-echo "==> 0a/17 audit_model_family_normalization_guard.py (guard: model/family provenance stays compatible)"
+echo "==> 0a/18 audit_model_family_normalization_guard.py (guard: model/family provenance stays compatible)"
 python3 scripts/audit_model_family_normalization_guard.py
 
-echo "==> 1/17 build_citation_graph.py"
+echo "==> 1/18 build_citation_graph.py"
 python3 docs/audit/scripts/build_citation_graph.py
 
-echo "==> 2/17 seed_audit_ledger.py"
+echo "==> 2/18 seed_audit_ledger.py"
 python3 docs/audit/scripts/seed_audit_ledger.py
 
-echo "==> 3/17 sanitize_legacy_audit_artifacts.py"
+echo "==> 3/18 sanitize_legacy_audit_artifacts.py"
 python3 docs/audit/scripts/sanitize_legacy_audit_artifacts.py
 
-echo "==> 4/17 classify_runner_passes.py"
+echo "==> 4/18 classify_runner_passes.py"
 python3 docs/audit/scripts/classify_runner_passes.py
 
-echo "==> 5/17 compute_load_bearing.py"
+echo "==> 5/18 compute_load_bearing.py"
 python3 docs/audit/scripts/compute_load_bearing.py
 
-echo "==> 6/17 compute_effective_status.py"
+echo "==> 6/18 compute_effective_status.py"
 python3 docs/audit/scripts/compute_effective_status.py
 
-echo "==> 7/17 invalidate_stale_audits.py + restore loop"
+echo "==> 7/18 invalidate_stale_audits.py + restore loop"
 # Invalidation and restoration run to a JOINT fixed point. Restoration can
 # expose masked dependency verdicts when a chain recovers (a dep whose
 # effective status showed unaudited can re-expose a lower-ranked terminal
@@ -89,7 +90,7 @@ PY
   if [[ "${invalidated}" == "0" && "${restored}" == "0" ]]; then
     break
   fi
-  echo "==> 7.${attempt}/17 compute_effective_status.py post-invalidation/restore (${invalidated} invalidated, ${restored} restored)"
+  echo "==> 7.${attempt}/18 compute_effective_status.py post-invalidation/restore (${invalidated} invalidated, ${restored} restored)"
   python3 docs/audit/scripts/compute_effective_status.py
 done
 
@@ -98,37 +99,40 @@ if [[ "${invalidated}" != "0" || "${restored}" != "0" ]]; then
   exit 1
 fi
 
-echo "==> 7b/17 compute_lane_certification.py post-invalidation fixed point"
+echo "==> 7b/18 compute_lane_certification.py post-invalidation fixed point"
 python3 docs/audit/scripts/compute_lane_certification.py
 
-echo "==> 8/17 build_cycle_inventory.py"
+echo "==> 8/18 build_cycle_inventory.py"
 python3 docs/audit/scripts/build_cycle_inventory.py
 
-echo "==> 9/17 compute_audit_queue.py"
+echo "==> 9/18 compute_audit_queue.py"
 python3 docs/audit/scripts/compute_audit_queue.py
 
-echo "==> 10/17 compute_reaudit_candidates.py"
+echo "==> 10/18 compute_reaudit_candidates.py"
 python3 docs/audit/scripts/compute_reaudit_candidates.py
 
-echo "==> 11/17 compute_audit_dispatch_queue.py"
+echo "==> 11/18 compute_audit_dispatch_queue.py"
 python3 docs/audit/scripts/compute_audit_dispatch_queue.py
 
-echo "==> 12/17 compute_auditor_reliability.py"
+echo "==> 12/18 compute_auditor_reliability.py"
 python3 docs/audit/scripts/compute_auditor_reliability.py
 
-echo "==> 13/17 audit_lint.py"
+echo "==> 13/18 audit_lint.py"
 python3 docs/audit/scripts/audit_lint.py
 
-echo "==> 14/17 render_audit_ledger.py"
+echo "==> 14/18 render_audit_ledger.py"
 python3 docs/audit/scripts/render_audit_ledger.py
 
-echo "==> 15/17 render_publication_effective_status.py"
+echo "==> 15/18 render_publication_effective_status.py"
 python3 docs/audit/scripts/render_publication_effective_status.py
 
-echo "==> 16/17 render_front_door_status.py"
+echo "==> 16/18 compute_dispatch_shadow.py (shadow lane + churn state; no dispatch effect)"
+python3 docs/audit/scripts/compute_dispatch_shadow.py
+
+echo "==> 17/18 render_front_door_status.py"
 python3 docs/audit/scripts/render_front_door_status.py
 
-echo "==> 17/17 repo_invariants_check.py (authority-link guard)"
+echo "==> 18/18 repo_invariants_check.py (authority-link guard)"
 python3 docs/audit/scripts/repo_invariants_check.py --check --enforce-links
 
 echo

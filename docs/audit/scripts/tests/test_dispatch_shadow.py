@@ -16,6 +16,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
 import compute_audit_queue as caq  # noqa: E402
+import compute_dispatch_shadow as cds  # noqa: E402
 
 
 def _row(status="audited_conditional", snapshot=None, previous=None):
@@ -78,92 +79,85 @@ class LiveWouldParkTest(unittest.TestCase):
 
 
 class PublicationLaneTest(unittest.TestCase):
-    def _with_paths(self, gap, manifest):
-        tmp = tempfile.TemporaryDirectory()
-        base = Path(tmp.name)
-        old = (caq.PUBLICATION_GAP_PATH, caq.LANE_MANIFEST_PATH)
-        caq.PUBLICATION_GAP_PATH = base / "gap.json"
-        caq.LANE_MANIFEST_PATH = base / "manifest.json"
-        if gap is not None:
-            caq.PUBLICATION_GAP_PATH.write_text(json.dumps(gap))
-        if manifest is not None:
-            caq.LANE_MANIFEST_PATH.write_text(json.dumps(manifest))
-        self.addCleanup(lambda: (setattr(caq, "PUBLICATION_GAP_PATH", old[0]),
-                                 setattr(caq, "LANE_MANIFEST_PATH", old[1]),
-                                 tmp.cleanup()))
+    def _queue(self):
+        return {
+            "queue": [
+                {"claim_id": "cited_row", "criticality": "critical", "ready": True,
+                 "transitive_descendants": 5, "load_bearing_score": 2.0},
+                {"claim_id": "uncited_row", "criticality": "critical", "ready": True,
+                 "transitive_descendants": 9, "load_bearing_score": 3.0},
+                {"claim_id": "break_target", "criticality": "high", "ready": False,
+                 "transitive_descendants": 1, "load_bearing_score": 1.0,
+                 "would_park": False},
+                {"claim_id": "pending_row", "criticality": "leaf", "ready": True,
+                 "transitive_descendants": 0, "load_bearing_score": 0.1},
+            ],
+            # REAL producer schema: cycle_break_targets() emits primary_break_target.
+            "cycle_break_targets": [
+                {"primary_break_target": "break_target", "cycle_length": 2}
+            ],
+        }
 
-    def _pending(self):
-        return [
-            {"claim_id": "cited_row", "criticality": "critical", "ready": True,
-             "transitive_descendants": 5, "load_bearing_score": 2.0},
-            {"claim_id": "uncited_row", "criticality": "critical", "ready": True,
-             "transitive_descendants": 9, "load_bearing_score": 3.0},
-            {"claim_id": "break_target", "criticality": "high", "ready": False,
-             "transitive_descendants": 1, "load_bearing_score": 1.0,
-             "would_park": False},
-        ]
+    def _gap(self, ids=("cited_row", "pending_row")):
+        return {"entries": [{"claim_id": cid} for cid in ids]}
 
-    def _targets(self):
-        # REAL producer schema: cycle_break_targets() emits primary_break_target.
-        return [{"primary_break_target": "break_target", "cycle_length": 2}]
-
-    def _manifest(self, admitted):
+    def _manifest(self, admitted, pending=()):
         return {"schema_version": 1, "frozen_commit": "abc",
-                "admitted": admitted, "pending": []}
+                "admitted": list(admitted), "pending": list(pending)}
 
-    def test_lane_contains_only_admitted_candidates_in_pending_order(self):
-        self._with_paths(
-            gap={"entries": [{"claim_id": "cited_row"}]},
-            manifest=self._manifest(["cited_row"]),
-        )
-        lane = caq.build_publication_lane(self._pending(), self._targets())
+    def test_lane_contains_only_admitted_candidates_in_queue_order(self):
+        lane = cds.build_lane(self._queue(), self._gap(),
+                              self._manifest(["cited_row"]))
         self.assertEqual([e["claim_id"] for e in lane["lane"]], ["cited_row"])
-        self.assertEqual(lane["pending_admission"], ["break_target"])
         self.assertEqual(lane["manifest_state"], "ok")
+        self.assertIn("break_target", lane["unmanifested_candidates"])
+        self.assertIn("pending_row", lane["unmanifested_candidates"])
         self.assertTrue(lane["shadow_only"])
 
     def test_admitted_break_target_enters_lane_via_real_schema(self):
-        self._with_paths(
-            gap={"entries": [{"claim_id": "cited_row"}]},
-            manifest=self._manifest(["cited_row", "break_target"]),
-        )
-        lane = caq.build_publication_lane(self._pending(), self._targets())
+        lane = cds.build_lane(self._queue(), self._gap(),
+                              self._manifest(["cited_row", "break_target"]))
         self.assertEqual([e["claim_id"] for e in lane["lane"]],
                          ["cited_row", "break_target"])
         self.assertTrue(lane["lane"][1]["is_primary_cycle_break_target"])
-        self.assertEqual(lane["pending_admission"], [])
+
+    def test_manifest_pending_entries_reported_not_laned(self):
+        lane = cds.build_lane(
+            self._queue(), self._gap(),
+            self._manifest(["cited_row"],
+                           pending=[{"claim_id": "pending_row",
+                                     "first_report_date": "2026-07-16"}]))
+        self.assertEqual([e["claim_id"] for e in lane["lane"]], ["cited_row"])
+        self.assertEqual(lane["manifest_pending"][0]["claim_id"], "pending_row")
+        self.assertNotIn("pending_row", lane["unmanifested_candidates"])
 
     def test_missing_manifest_yields_empty_lane_with_state(self):
-        self._with_paths(gap={"entries": [{"claim_id": "cited_row"}]}, manifest=None)
-        lane = caq.build_publication_lane(self._pending(), self._targets())
+        lane = cds.build_lane(self._queue(), self._gap(), None)
         self.assertEqual(lane["lane_size"], 0)
         self.assertEqual(lane["manifest_state"], "manifest_missing_or_unreadable")
-        self.assertIn("cited_row", lane["pending_admission"])
 
     def test_malformed_manifest_rejected(self):
-        self._with_paths(
-            gap={"entries": [{"claim_id": "cited_row"}]},
-            manifest={"schema_version": 1, "frozen_commit": "abc",
-                      "admitted": ["cited_row"],
-                      "pending": [{"claim_id": "x"}]},  # missing first_report_date
-        )
-        lane = caq.build_publication_lane(self._pending(), self._targets())
+        lane = cds.build_lane(
+            self._queue(), self._gap(),
+            {"schema_version": 1, "frozen_commit": "abc",
+             "admitted": ["cited_row"],
+             "pending": [{"claim_id": "x"}]})  # missing first_report_date
         self.assertEqual(lane["lane_size"], 0)
         self.assertEqual(lane["manifest_state"], "manifest_pending_entry_malformed")
 
-    def test_missing_gap_yields_no_gap_candidates_flagged(self):
-        self._with_paths(gap=None, manifest=self._manifest(["break_target"]))
-        lane = caq.build_publication_lane(self._pending(), self._targets())
+    def test_missing_gap_flagged_and_targets_only(self):
+        lane = cds.build_lane(self._queue(), None,
+                              self._manifest(["break_target"]))
         self.assertFalse(lane["gap_available"])
         self.assertEqual([e["claim_id"] for e in lane["lane"]], ["break_target"])
 
-    def test_admitted_absent_from_candidates_reported(self):
-        self._with_paths(
-            gap={"entries": [{"claim_id": "cited_row"}]},
-            manifest=self._manifest(["cited_row", "ghost_row"]),
-        )
-        lane = caq.build_publication_lane(self._pending(), self._targets())
-        self.assertEqual(lane["admitted_absent_from_candidates"], ["ghost_row"])
+    def test_admitted_absent_measured_against_lane_candidates(self):
+        # ghost_row is admitted but neither cited nor a target; cited-but-not-
+        # pending ids are also absent from LANE candidates by construction.
+        lane = cds.build_lane(self._queue(), self._gap(),
+                              self._manifest(["cited_row", "ghost_row"]))
+        self.assertEqual(lane["admitted_absent_from_lane_candidates"],
+                         ["ghost_row"])
 
 
 class GoldenQueueInvarianceTest(unittest.TestCase):
@@ -175,15 +169,26 @@ class GoldenQueueInvarianceTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             base = Path(tmp)
             rows = {
+                # cond_parked and plain_high compete in the SAME
+                # (criticality, ready) band: a shadow-derived sort term would
+                # reorder them (parked row has HIGHER descendants, so the
+                # documented key puts it FIRST; any would_park-aware term
+                # would flip that).
+                "cond_parked": {"audit_status": "audited_conditional",
+                                "criticality": "high", "deps": [],
+                                "transitive_descendants": 4,
+                                "load_bearing_score": 0.5,
+                                "note_path": "docs/B.md",
+                                "audit_state_snapshot": {
+                                    "dep_effective_status": {}}},
+                "plain_high": {"audit_status": "unaudited",
+                               "criticality": "high", "deps": [],
+                               "transitive_descendants": 2,
+                               "load_bearing_score": 0.9,
+                               "note_path": "docs/D.md"},
                 "crit_ready": {"audit_status": "unaudited", "criticality": "critical",
                                "deps": [], "transitive_descendants": 3,
                                "load_bearing_score": 1.0, "note_path": "docs/A.md"},
-                "cond_live": {"audit_status": "audited_conditional",
-                              "criticality": "high", "deps": ["crit_ready"],
-                              "transitive_descendants": 1, "load_bearing_score": 0.5,
-                              "note_path": "docs/B.md",
-                              "audit_state_snapshot": {
-                                  "dep_effective_status": {"crit_ready": "unaudited"}}},
                 "leaf_row": {"audit_status": "unaudited", "criticality": "leaf",
                              "deps": [], "transitive_descendants": 0,
                              "load_bearing_score": 0.1, "note_path": "docs/C.md"},
@@ -196,9 +201,6 @@ class GoldenQueueInvarianceTest(unittest.TestCase):
                 LEDGER_PATH=base / "audit_ledger.json",
                 QUEUE_JSON=base / "audit_queue.json",
                 QUEUE_MD=base / "AUDIT_QUEUE.md",
-                PUBLICATION_GAP_PATH=base / "gap.json",
-                LANE_MANIFEST_PATH=base / "manifest.json",
-                LANE_JSON=base / "lane.json",
             )
             with mock.patch.multiple(caq, **patches), \
                     mock.patch.object(caq, "REPO_ROOT", base), \
@@ -218,10 +220,15 @@ class GoldenQueueInvarianceTest(unittest.TestCase):
             )
             self.assertEqual([e["claim_id"] for e in expected_order],
                              [g[0] for g in got])
+            # literal same-band expectation: any shadow-derived sort term
+            # between readiness and descendants would flip these two.
+            self.assertEqual(
+                [g[0] for g in got],
+                ["crit_ready", "cond_parked", "plain_high", "leaf_row"],
+            )
             self.assertEqual({g[0] for g in got}, set(rows))
-            cond = next(e for e in queue["queue"] if e["claim_id"] == "cond_live")
+            cond = next(e for e in queue["queue"] if e["claim_id"] == "cond_parked")
             self.assertIn("would_park", cond)
-            self.assertTrue((base / "lane.json").exists())
 
 
 if __name__ == "__main__":

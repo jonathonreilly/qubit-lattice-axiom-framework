@@ -34,9 +34,7 @@ LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 CYCLE_INVENTORY_PATH = DATA_DIR / "cycle_inventory.json"
 QUEUE_JSON = DATA_DIR / "audit_queue.json"
 QUEUE_MD = REPO_ROOT / "docs" / "audit" / "AUDIT_QUEUE.md"
-PUBLICATION_GAP_PATH = DATA_DIR / "publication_gap.json"
-LANE_MANIFEST_PATH = DATA_DIR / "publication_lane_manifest.json"
-LANE_JSON = DATA_DIR / "audit_publication_lane.json"
+
 
 CRITICALITY_RANK = {"critical": 3, "high": 2, "medium": 1, "leaf": 0}
 
@@ -184,96 +182,6 @@ def _live_conditional_would_park(row: dict, rows: dict[str, dict]) -> tuple[bool
     return True, "no_recorded_blocker_movement"
 
 
-def _load_json_or_none(path: Path):
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
-
-
-def _validate_manifest(manifest) -> tuple[bool, str]:
-    """Schema validation for the tracked lane manifest. Invalid or missing
-    manifest -> lane is empty (nothing is eligible without the tracked
-    authority)."""
-    if not isinstance(manifest, dict):
-        return False, "manifest_missing_or_unreadable"
-    if manifest.get("schema_version") != 1:
-        return False, "manifest_schema_version_unsupported"
-    if not isinstance(manifest.get("frozen_commit"), str) or not manifest["frozen_commit"]:
-        return False, "manifest_frozen_commit_missing"
-    if not isinstance(manifest.get("admitted"), list) or not all(
-        isinstance(x, str) for x in manifest["admitted"]
-    ):
-        return False, "manifest_admitted_malformed"
-    pending = manifest.get("pending")
-    if not isinstance(pending, list):
-        return False, "manifest_pending_malformed"
-    for item in pending:
-        if not (isinstance(item, dict) and isinstance(item.get("claim_id"), str)
-                and isinstance(item.get("first_report_date"), str)):
-            return False, "manifest_pending_entry_malformed"
-    return True, "ok"
-
-
-def build_publication_lane(pending: list[dict], cycle_targets: list[dict]) -> dict:
-    """Shadow-only publication lane (dispatch-retarget design note,
-    2026-07-16). Candidates = pending ∩ (publication gap ∪ primary
-    cycle-break targets); the LANE itself contains only candidates ADMITTED
-    by the tracked manifest (the manifest is the eligibility authority —
-    unadmitted candidates appear only in the pending_admission report
-    bucket, never in the lane). Ordered by the FULL main-queue key. The gap
-    file is produced later in the same pipeline pass (renderer runs after
-    the queue), so candidates consume the PREVIOUS pass's gap — a one-pass
-    lag, labeled here. Generated, gitignored, affects no dispatch decision."""
-    gap = _load_json_or_none(PUBLICATION_GAP_PATH)
-    manifest = _load_json_or_none(LANE_MANIFEST_PATH)
-    manifest_ok, manifest_state = _validate_manifest(manifest)
-    gap_ids = {e["claim_id"] for e in (gap or {}).get("entries", []) if e.get("claim_id")}
-    # cycle_break_targets() emits the id as primary_break_target.
-    target_ids = {
-        t["primary_break_target"]
-        for t in cycle_targets
-        if t.get("primary_break_target")
-    }
-    candidate_ids = gap_ids | target_ids
-    admitted = set(manifest.get("admitted", [])) if manifest_ok else set()
-
-    def _entry(e):
-        return {
-            "claim_id": e["claim_id"],
-            "criticality": e["criticality"],
-            "ready": e["ready"],
-            "transitive_descendants": e["transitive_descendants"],
-            "load_bearing_score": e["load_bearing_score"],
-            "in_publication_gap": e["claim_id"] in gap_ids,
-            "is_primary_cycle_break_target": e["claim_id"] in target_ids,
-            "would_park": e.get("would_park"),
-        }
-
-    lane = [
-        _entry(e) for e in pending
-        if e["claim_id"] in candidate_ids and e["claim_id"] in admitted
-    ]
-    pending_admission = sorted(
-        e["claim_id"] for e in pending
-        if e["claim_id"] in candidate_ids and e["claim_id"] not in admitted
-    )
-    # pending is already sorted by the full main-queue key; lane inherits it.
-    return {
-        "schema_version": 1,
-        "shadow_only": True,
-        "gap_source_lag": "previous pipeline pass (renderer runs after queue)",
-        "gap_available": gap is not None,
-        "manifest_state": manifest_state,
-        "manifest_frozen_commit": (manifest or {}).get("frozen_commit")
-        if isinstance(manifest, dict) else None,
-        "lane_size": len(lane),
-        "pending_admission": pending_admission,
-        "admitted_absent_from_candidates": sorted(admitted - candidate_ids),
-        "lane": lane,
-    }
-
-
 def main() -> int:
     ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
@@ -334,9 +242,6 @@ def main() -> int:
 
     cycle_targets = cycle_break_targets(rows)
 
-    lane_shadow = build_publication_lane(pending, cycle_targets)
-    LANE_JSON.write_text(json.dumps(lane_shadow, indent=1, sort_keys=True) + "\n")
-
     queue = {
         "total_pending": len(pending),
         "ready_count": sum(1 for e in pending if e["ready"]),
@@ -349,7 +254,7 @@ def main() -> int:
             if e.get("would_park") is False
             and e.get("would_park_reason") == "fail_open_no_snapshot_dep_map"
         ),
-        "shadow_publication_lane_size": lane_shadow["lane_size"],
+
         "by_criticality": {
             c: sum(1 for e in pending if e["criticality"] == c)
             for c in ("critical", "high", "medium", "leaf")

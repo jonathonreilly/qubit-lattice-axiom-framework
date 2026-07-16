@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py
-runner_sha256: 0ee53fe12f46b5c9bad71e0a27ea403d1235c8965376490ef2098101d9af752a
+runner_sha256: ba38de46d25f49f8abe92a16c8b69c43472b63562e4a6dfca506852158f207db
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 19.35
+elapsed_sec: 20.27
 status: ok
 ----- stdout -----
 HOSTILE CONTROLS AND INDEPENDENT CHECKS
@@ -45,27 +45,41 @@ Geometry: original structured mirror, including two-layer-back bypass edges
   N=25 npl= 8 r=2.5 g=1.50 j=0.00              6.097e-16   6.097e-16  1.556e-02  1.556e-02  0.1895  0.9456   -1.3093   6
   N=40 npl=20 r=4.5 g=1.00 j=0.00              3.282e-16   3.282e-16  1.553e-01  1.553e-01  0.1073  0.9940   -0.5458   6
   N=40 npl=20 r=4.5 g=1.50 j=0.00              2.025e-16   2.025e-16  6.685e-02  6.685e-02  0.3697  0.7855   +1.9704   6
-  N=25 npl= 8 r=2.5 g=1.25 j=0.15              3.220e-16   5.241e-16  9.266e-02  9.266e-02  0.1540  0.9492   +1.6049   6
-  N=25 npl= 8 r=2.5 g=1.25 j=0.30              5.070e-16   1.054e-15  8.947e-02  8.947e-02  0.1274  0.9593   +2.7074   6
-  N=40 npl=12 r=3.0 g=1.25 j=0.15              3.169e-16   8.420e-16  1.193e-01  1.193e-01  0.1738  0.9634   +2.4770   6
-  N=40 npl=12 r=3.0 g=1.25 j=0.30              4.838e-16   1.766e-15  3.950e-02  3.950e-02  0.2054  0.9717   +4.2639   6
-  N=40 npl=20 r=4.5 g=1.25 j=0.15              3.372e-16   5.729e-16  8.869e-02  8.869e-02  0.1786  0.9338   +3.9574   6
-  N=40 npl=20 r=4.5 g=1.25 j=0.30              4.936e-16   1.419e-15  6.108e-02  6.108e-02  0.1395  0.9593   +5.5055   6
-  N=30 npl=16 r=3.5 g=1.25 j=0.15              2.708e-16   5.602e-16  8.882e-02  8.882e-02  0.2412  0.9456   +3.0749   6
-  N=30 npl=16 r=3.5 g=1.25 j=0.30              2.582e-16   5.029e-16  2.953e-01  2.953e-01  0.1619  0.9656   +4.2808   6
-  N=25 npl=20 r=4.5 g=1.50 j=0.30              5.963e-16   1.817e-15  2.629e-01  2.629e-01  0.3452  0.9034   +4.7174   6
+  N=25 npl= 8 r=2.5 g=1.25 j=0.15              3.255e-16   5.241e-16  9.266e-02  9.266e-02  0.1640  0.9465   +1.6123   6
+  N=25 npl= 8 r=2.5 g=1.25 j=0.30              5.237e-16   1.054e-15  8.952e-02  8.952e-02  0.1513  0.9510   +2.7210   6
+  N=40 npl=12 r=3.0 g=1.25 j=0.15              2.597e-16   8.420e-16  1.193e-01  1.193e-01  0.1892  0.9623   +2.4421   6
+  N=40 npl=12 r=3.0 g=1.25 j=0.30              5.985e-16   1.766e-15  3.914e-02  3.914e-02  0.1972  0.9722   +4.1972   6
+  N=40 npl=20 r=4.5 g=1.25 j=0.15              3.261e-16   5.729e-16  8.912e-02  8.912e-02  0.2203  0.9329   +3.8963   6
+  N=40 npl=20 r=4.5 g=1.25 j=0.30              4.969e-16   1.419e-15  6.200e-02  6.200e-02  0.1757  0.9628   +5.3292   6
+  N=30 npl=16 r=3.5 g=1.25 j=0.15              2.320e-16   5.602e-16  8.876e-02  8.876e-02  0.2559  0.9452   +3.0078   6
+  N=30 npl=16 r=3.5 g=1.25 j=0.30              2.750e-16   5.029e-16  2.953e-01  2.953e-01  0.1546  0.9671   +4.2277   6
+  N=25 npl=20 r=4.5 g=1.50 j=0.30              7.367e-16   1.817e-15  2.632e-01  2.632e-01  0.4528  0.8874   +4.6120   6
   N=40 npl= 8 r=2.5 g=1.00 j=0.15              2.655e-16   4.978e-16  5.021e-02  5.021e-02  0.1453  0.9665   +2.0837   6
+
+APERTURE FALLBACK DISCLOSURE
+  rule: preserve every originally valid upper/lower/middle choice; only an empty middle
+        selects the deterministic nearest +y/-y pair, removes that pair from the
+        outer apertures, and changes no node, position, or graph edge.
+  N=25 npl= 8 r=2.5 g=1.25 j=0.30, seed=38: original counts=(8, 8, 0), final counts=(7, 7, 2), middle y-center=(+2.389710, -2.389710)
+  N=40 npl=12 r=3.0 g=1.25 j=0.30, seed=38: original counts=(12, 12, 0), final counts=(11, 11, 2), middle y-center=(+2.190528, -2.190528)
+  N=40 npl=20 r=4.5 g=1.25 j=0.30, seed=38: original counts=(20, 20, 0), final counts=(19, 19, 2), middle y-center=(+2.190528, -2.190528)
+  N=30 npl=16 r=3.5 g=1.25 j=0.30, seed=38: original counts=(16, 16, 0), final counts=(15, 15, 2), middle y-center=(+2.436350, -2.436350)
+  N=25 npl=20 r=4.5 g=1.50 j=0.30, seed=38: original counts=(20, 20, 0), final counts=(19, 19, 2), middle y-center=(+2.514710, -2.514710)
+  [PASS] fallback inventory is exactly the registered five rows: actual=5, expected=5
+  [PASS] every originally valid aperture choice is preserved: non-fallback selections equal the original threshold selections
+  [PASS] fallback remains disjoint, sign-ordered, and graph-preserving: middle uses one node per sign; helper hard-fails overlap/sign drift
+  [PASS] fallback selection is deterministic: all five fallback measurements reproduce exactly
 
 AGGREGATE
   valid executions: 192/192
   maximum corrected |I3|/P: 1.816615e-15 at N=25 npl=20 r=4.5 g=1.50 j=0.30, seed=17
   maximum |legacy/P - P(empty)/P|: 1.776357e-15
-  dtv range over 192 executions: [+3.354922e-02, +7.311804e-01]
+  dtv range over 192 executions: [+3.354922e-02, +7.400326e-01]
   pur_cl range over 192 executions: [+7.141848e-01, +9.997359e-01]
   s_norm range over 192 executions: [+8.930359e-04, +8.629478e-01]
   gravity range over 192 executions: [-2.734334e+00, +7.563472e+00]
   grav_k0 range over 192 executions: [+0.000000e+00, +0.000000e+00]
-  configurations meeting the scan's finite ancillary screen (mean pur_cl<0.95 and mean gravity>0): 11/32
+  configurations meeting the author-defined finite diagnostic screen (mean pur_cl<0.95 and mean gravity>0): 11/32
 
 PASS: all 32 configurations produced ok=6 and the corrected eight-term
       residual stayed below the explicit 1e-14 numerical threshold.

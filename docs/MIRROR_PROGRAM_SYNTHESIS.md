@@ -118,11 +118,13 @@ random chokepoint baseline on the same linear propagator.
   Born=1.08e-15 — strongest retained row in the exact 2D chain.
   Mass/distance follow-up remains weak, so no clean gravity law is promoted.
 
-**Structured mirror growth** (main, geometry result; Born depends on harness):
-the grown structured geometry still gives strong decoherence and gravity on
-the LN-based growth lane, but the canonical linear joint validator does not
-stay Born-clean on the same family. The clean 8e-17 Born claim is therefore
-not retained as a synthesis headline for the grown lane.
+**Structured mirror growth** (main, geometry result; bounded linear slice):
+the corrected eight-term registered fixed-graph linear slice cancels at finite
+precision on all `32 x 6` executions. The older canonical-linear negative used
+a detectorwise seven-term statistic and is historical, not corrected Born
+evidence. The layer-normalized growth lane and broader architecture questions
+remain separate; no grown-lane synthesis headline follows from the finite
+slice.
 
 ### Architecture comparison
 
@@ -132,7 +134,7 @@ not retained as a synthesis headline for the grown lane.
 | Imposed modular gap | perfect | 3-7 | 5-10% | ~0.15 | no |
 | Z₂ mirror (imposed) | perfect | 4-7 | 20-40% | 0.48-0.77 | no |
 | exact 2D mirror | perfect | 2-4 | 30-44% | 0.35-0.76 | no |
-| Z₂ mirror (grown) | harness-sensitive | **21.1** | **14-19%** | (not yet measured) | **yes** |
+| Z₂ mirror (grown) | finite corrected linear slice | **21.1** | **14-19%** | (not yet measured) | **yes** |
 
 ## How we got here
 
@@ -154,10 +156,10 @@ with N on mirror DAGs (unique property).
 ### Phase 4: Audit and unification
 Born audit confirmed the exact mirror generators are Born-clean with the
 linear propagator. MI audit committed as reproducible script; the new exact
-2D validation adds a second artifact-backed mirror MI chain. The structured
-growth lane remains physically interesting, but the canonical linear joint
-validator is not Born-clean, so the grown-lane Born claim is left as
-harness-sensitive rather than synthesis-grade.
+2D validation adds a second artifact-backed mirror MI chain. For structured
+growth, the corrected eight-term registered fixed-graph linear slice cancels
+at finite precision, while the layer-normalized and broader grown-lane
+questions remain open and outside that bounded result.
 
 ## Z₂ breaking robustness
 

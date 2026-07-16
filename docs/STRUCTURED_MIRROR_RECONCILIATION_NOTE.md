@@ -1,70 +1,70 @@
 # Structured Mirror Reconciliation Note
 
 **Date:** 2026-04-03  
-**Status:** bounded - bounded or caveated result note
-**Primary runner:** `scripts/structured_mirror_reconciliation.py`
+**Status:** support / historical pre-correction comparison only
+**Current corrected authority:** [`STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md`](STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md)
+**Historical runner:** [`scripts/structured_mirror_reconciliation.py`](../scripts/structured_mirror_reconciliation.py)
 
 
-This note freezes the comparison between the committed canonical structured
-mirror validator and the newer quick linear Born claims.
+This note preserves a pre-correction harness comparison. Its quoted numbers
+use a defective detectorwise seven-term statistic: they omit `-P(empty)` and
+sum the absolute residual separately at each detector. They are not the
+corrected detector-probability Sorkin statistic and do not support a current
+Born-clean or not-Born-clean conclusion.
 
 ## Question
 
-Is the structured-mirror geometry itself Born-clean under a linear
-propagator, or was the clean Born number coming from a different slit /
-field / harness choice?
+Why did pre-correction structured-mirror runners report different legacy
+seven-term values under different slit and field choices?
 
 ## Canonical evidence on `main`
 
-The committed joint validator for the structured-growth family is:
+The former joint-validator source is not present in the current tree. Its
+saved output remains available as a historical record:
 
-[`scripts/structured_mirror_joint_validation.py`](/Users/jonreilly/Projects/Physics/scripts/structured_mirror_joint_validation.py)
-with saved output:
+[`logs/2026-04-03-structured-mirror-joint-validation.txt`](../logs/2026-04-03-structured-mirror-joint-validation.txt)
 
-[`logs/2026-04-03-structured-mirror-joint-validation.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-structured-mirror-joint-validation.txt)
+That historical validator reported these detectorwise seven-term values:
 
-That validator reports a linear structured-growth lane that is physically
-interesting but not Born-clean:
-
-| N | `pur_cl` | gravity | Born `|I3|/P` |
+| N | `pur_cl` | gravity | legacy detectorwise seven-term ratio |
 |---|---:|---:|---:|
 | 25 | `0.833±0.013` | `+3.863±0.225` | `2.51e-01±9.56e-02` |
 | 30 | `0.878±0.015` | `+4.904±0.282` | `1.71e-01±2.69e-02` |
 | 40 | `0.932±0.009` | `+6.620±0.181` | `1.71e-01±2.47e-02` |
 
-So the canonical structured-growth validator is **not** Born-clean.
+Those values are retained only as historical harness diagnostics. Because the
+statistic omits `-P(empty)`, they do not determine the corrected Born result.
 
 ## What the reconciliation script tests
 
 The new dedicated comparison script is:
 
-[`scripts/structured_mirror_reconciliation.py`](/Users/jonreilly/Projects/Physics/scripts/structured_mirror_reconciliation.py)
+[`scripts/structured_mirror_reconciliation.py`](../scripts/structured_mirror_reconciliation.py)
 
-It compares four harnesses on the same structured-growth geometry:
+It historically compared four harnesses on the same structured-growth
+geometry using the same defective detectorwise seven-term aggregation:
 
 1. canonical threshold slits + physical mass field
 2. threshold slits + flat field
 3. audit-style top-K slit selection + flat field
 4. audit-style top-K slit selection + physical mass field
 
-## Reconciliation
+## Historical comparison
 
-The discrepancy is **not** a geometry bug. It is a harness discrepancy:
+The pre-correction values were harness-sensitive:
 
 - the structured-growth geometry itself is physically interesting and retains
   positive gravity plus nontrivial decoherence
-- but the Born value is highly sensitive to how the barrier apertures are
-  selected and whether the physical field is present
-- the canonical validator remains O(1e-1), not machine-clean
-- the audit-style top-K slit selection can make the Born number look much
-  better or much worse, so it is not a substitute for the canonical harness
+- the legacy detectorwise seven-term value changes with the aperture and field
+  choices
+- that sensitivity is not evidence about the corrected eight-term statistic
 
-## Safe conclusion
+## Current safe conclusion
 
-- Structured mirror growth is a real geometry result.
-- It is **not** yet Born-clean on the retained canonical linear validator.
-- The earlier `8e-17` claim is not synthesis-safe for the structured-growth
-  lane as currently retained in `main`.
-- The review-safe Born-clean growth-family result remains the exact 2D mirror
-  lane, not the structured-growth lane.
-
+- This note and its runner are historical support artifacts only.
+- The old structured-growth Born-negative conclusion is withdrawn.
+- The corrected result is limited to the exact `32 x 6` fixed-graph strictly
+  linear slice documented in
+  [`STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md`](STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md).
+- That finite result does not automatically settle the layer-normalized lane,
+  the full historical grid, or successor-architecture questions.

@@ -32,10 +32,22 @@ NOTE_PATH = (
 )
 
 STATUS_PIN_RE = re.compile(
-    r"\b(?:retained(?:_[a-z]+)?|unaudited|audited_[a-z_]+|"
-    r"audit_in_progress|"
-    r"(?:effective|intrinsic|audit)_status)\b",
+    r"\b(?:retained(?:_[a-z]+)*|unaudited|audited_[a-z_]+|"
+    r"audit_in_progress|open_gate|decoration_under_[a-z0-9_-]+)\b|"
+    r"\b(?:effective|intrinsic|audit)[ _-]+status\b\s*(?::|=|\bis\b)",
     re.IGNORECASE,
+)
+STATUS_PIN_MUTATION_PROBES = (
+    "Blocks 1-3 retained packet",
+    "effective_status: retained_bounded",
+    "audit-status = audited_clean",
+    "effective-status: open_gate",
+    "effective status is retained_pending_chain",
+    "intrinsic status: meta",
+)
+STATUS_PIN_ALLOWED_CONTROLS = (
+    "This consumer does not inherit audit status from Blocks 1-3.",
+    "The open-gate row remains context only.",
 )
 REQUIRED_STATUS_BOUNDARIES = (
     "Current dependency status is pipeline-derived.",
@@ -101,6 +113,14 @@ def check_note_status_firewall() -> None:
         "consumer note contains no authored audit-status pins",
         not pinned,
         ", ".join(pinned),
+    )
+    check(
+        "status-pin matcher rejects hostile mutations without banning boundary prose",
+        all(STATUS_PIN_RE.search(probe) for probe in STATUS_PIN_MUTATION_PROBES)
+        and all(
+            not STATUS_PIN_RE.search(control)
+            for control in STATUS_PIN_ALLOWED_CONTROLS
+        ),
     )
     check(
         "consumer note requires pipeline-derived current status",

@@ -301,7 +301,7 @@ Expected summary:
 
 ```text
 SUMMARY: THEOREM PASS=5 FAIL=0
-PROSE FIREWALL: PASS=4 FAIL=0
+PROSE FIREWALL: PASS=5 FAIL=0
 ```
 
 ## Audit dependency repair links

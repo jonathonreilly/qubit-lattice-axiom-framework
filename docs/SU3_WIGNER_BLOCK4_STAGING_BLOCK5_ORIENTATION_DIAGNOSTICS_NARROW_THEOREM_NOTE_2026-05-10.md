@@ -94,11 +94,13 @@ worst_intermediate_size         ~  2 GB (complex128).                    (5)
 
 ### Block 5 orientation diagnostics core (claims 6-7)
 
-**Conclusion (6) (all-forward L_s = 2 PBC plaquette enumeration).** The
-all-forward `+d1 +d2 +d1 +d2` plaquette traversal at `L_s = 2` PBC
-yields 12 unique unordered plaquettes, 24 unique directed links, each
-link incident to exactly 2 plaquettes, and an index identification graph
-on `48` nodes with `48` edges and `8` connected components.
+**Conclusion (6) (all-forward L_s = 2 PBC plaquette enumeration).** On the
+runner's fixed representative-site scheme (second plane coordinate fixed to
+zero, with the first plane and orthogonal coordinates varied), the all-forward
+`+d1 +d2 +d1 +d2` plaquette traversal at `L_s = 2` PBC yields 12 unique
+unordered plaquettes, 24 unique directed links, each link incident to exactly
+2 plaquettes, and an index identification graph on `48` nodes with `48` edges
+and `8` connected components.
 ```text
 unique unordered plaquettes  =  12,
 unique directed links         =  24,
@@ -107,9 +109,10 @@ index graph                   =  (48 nodes, 48 edges, 8 components).     (6)
 ```
 
 **Conclusion (7) (standard Wilson `+d1+d2-d1-d2` orientation diagnostics
-at L_s = 2 PBC).** The standard Wilson `+d1+d2-d1-d2` plaquette
-traversal at `L_s = 2` PBC yields 12 unique unordered plaquettes and
-20 unique directed links (NOT 24), with link multiplicities
+at L_s = 2 PBC).** On the same fixed representative-site scheme, the standard
+Wilson `+d1+d2-d1-d2` plaquette traversal at `L_s = 2` PBC yields 12 unique
+unordered plaquettes and 20 unique directed links (NOT 24), with link
+multiplicities
 `{1: 4, 2: 8, 3: 4, 4: 4}`, 24 forward leg occurrences, and 24 backward
 leg occurrences. (This is a structural-degeneracy diagnostic on the
 standard Wilson convention at `L_s = 2` PBC; it is purely a finite
@@ -161,18 +164,22 @@ establishes each claim by direct enumeration:
 
 - `(6)`: the runner enumerates the all-forward `+d1+d2+d1+d2`
   traversal across the three plane choices `(0, 1)`, `(0, 2)`,
-  `(1, 2)` for each starting site on the L_s = 2 PBC cube,
-  deduplicating by directed-link set, and counts plaquettes, links,
-  link multiplicities, and the union-find connected components of the
-  signed index identification graph.
+  `(1, 2)` on a fixed representative set with the second plane
+  coordinate equal to zero and the first plane / orthogonal coordinates
+  varied. It then deduplicates by directed-link set and counts
+  plaquettes, links, link multiplicities, and the union-find connected
+  components of the signed index identification graph. Enumerating all
+  starts and applying the same link-set deduplication gives the same
+  all-forward result.
 
 - `(7)`: the runner enumerates the standard Wilson `+d1+d2-d1-d2`
-  traversal across the same plane / site choices, deduplicates by
-  directed-link set, and counts plaquettes, links, link
-  multiplicities, and oriented-leg counts. Because each of the 12
-  unique unordered plaquettes contains 2 forward and 2 backward leg
-  signs, the leg counts `(24, 24)` are immediate consequences of the
-  enumeration.
+  traversal across that same fixed representative set, deduplicates by
+  directed-link set, and counts plaquettes, links, link multiplicities,
+  and oriented-leg counts. This is a representative-scheme degeneracy
+  diagnostic, not a claim about an all-start enumeration. Because each
+  of the 12 representative plaquettes contains 2 forward and 2 backward
+  leg signs, the leg counts `(24, 24)` are immediate consequences of
+  the enumeration.
 
 The runner is geometry-only: no character coefficients, no Casimir
 diagonalization, no Perron solve, no P-value, no bridge-target
@@ -265,11 +272,11 @@ lines:
 
 ```bash
 python3 scripts/frontier_su3_wigner_block4_block5_narrow_split.py
-# SUMMARY: PASS=12 FAIL=0
+# SUMMARY: PASS=13 FAIL=0
 
 python3 scripts/frontier_su3_wigner_l3_cube_partition.py
 # SUMMARY: THEOREM PASS=5 FAIL=0
-# PROSE FIREWALL: PASS=4 FAIL=0
+# PROSE FIREWALL: PASS=5 FAIL=0
 
 python3 scripts/frontier_su3_wigner_block5_orientation_diagnostics_narrow.py
 # SUMMARY: PASS=11 FAIL=0

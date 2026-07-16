@@ -1,0 +1,328 @@
+loop_slug: record-faithful-dynamics-completion-20260711
+mode: campaign
+date_started: 2026-07-11
+target: best-honest-status
+runtime_budget: not_supplied
+current_goal: >-
+  Determine whether one record-faithful local process principle can jointly
+  supply the physical evolution object, bare time ordering, record-formation
+  weights, and an admissibility-to-carrier selector without importing the
+  staggered/Dirac answer or sector-specific Standard Model and gravity laws.
+branch: physics-loop/record-faithful-dynamics-block47-two-mark-covariance-nonlinear-tube-20260713
+base_commit_at_start: 9d1636f05f
+cycle_count: 47
+block_count: 47
+active_route: wilson_staggered_completed_joint_two_mark_covariance_nonlinear_source_output_tube
+hard_residual: >-
+  Can the four-axiom record surface canonically determine a faithful local
+  record-forming instrument whose coherent no-record block is sufficiently
+  constrained to exclude the observationally disconnected SWAP--Laplacian
+  completion and select the Clifford-vector carrier?
+produced_claim_id: wilson_staggered_completed_joint_two_mark_covariance_nonlinear_source_output_tube_bounded_theorem_note_2026-07-13
+actual_current_surface_status: bounded-support
+conditional_surface_status: >-
+  On the actual completed m=10^64 graph, the exact normalized-response Hessian
+  is minus covariance; fiber-constant raw blocks vanish and a conservative
+  centered two-root envelope gives M_delta=88.82169800480513 uniformly on the
+  restricted radius-0.001 strong source ball. The nonlinear residual tube
+  closes at 0.0009853829050985733<0.001, while a separately overcharged center
+  ledger retains theta_atom=0.4265740169167342>0.400001. This is a one-horizon
+  strong-source to weak-residual Banach-bundle theorem, not a same-domain
+  invariant ball. Return embedding, moving-center/reference transport,
+  scale-indexed all-horizon control, generic sources, taste, and continuum
+  remain open.
+admitted_observation_status: none
+claim_type_reason: >-
+  The source proves the exact Hessian split, raw-factor cancellation, a
+  conservative ordered two-root injection, a uniform activity/Hessian bound,
+  a positive nonlinear residual-tube margin, and a disjointly charged
+  center/gap/eta/atom ledger on the restricted source class. The authoritative
+  N1--N8 packet restricts NG47 to non-implication of same-domain or
+  second-horizon reuse. Scale-indexed bundles, lineage sections,
+  center/reference transport, generic-source embedding, taste, and continuum
+  routes remain live.
+hypothetical_axiom_status: null
+proposal_allowed: false
+proposal_allowed_reason: >-
+  The campaign is classifying the missing process content before proposing any
+  axiom or primitive.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - .claude/science/physics-loops/record-faithful-dynamics-completion-20260711/
+  - docs/RECORD_FAITHFUL_CUBIC_NEIGHBOR_RESPONSE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/record_faithful_cubic_neighbor_response_2026_07_11.py
+  - logs/runner-cache/record_faithful_cubic_neighbor_response_2026_07_11.txt
+  - docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/record_observable_quotient_and_rank_one_formation_outcome_operation_2026_07_11.py
+  - logs/runner-cache/record_observable_quotient_and_rank_one_formation_outcome_operation_2026_07_11.txt
+  - docs/MINIMAL_RECORD_INSTRUMENT_DILATION_SCALAR_EXCHANGE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/minimal_record_instrument_dilation_scalar_exchange_nonselection_2026_07_11.py
+  - logs/runner-cache/minimal_record_instrument_dilation_scalar_exchange_nonselection_2026_07_11.txt
+  - docs/COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/covariant_effect_map_nonselection_repeat_certainty_collapse_2026_07_11.py
+  - logs/runner-cache/covariant_effect_map_nonselection_repeat_certainty_collapse_2026_07_11.txt
+  - docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/autonomous_intermittent_record_instrument_calibration_nonselection_2026_07_11.py
+  - logs/runner-cache/autonomous_intermittent_record_instrument_calibration_nonselection_2026_07_11.txt
+  - docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/overlapping_edge_instrument_order_time_rate_nonselection_2026_07_11.py
+  - logs/runner-cache/overlapping_edge_instrument_order_time_rate_nonselection_2026_07_11.txt
+  - docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11.py
+  - logs/runner-cache/scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11.txt
+  - docs/CUBIC_MATCHING_PRODUCT_QUBIT_QCA_SCHEDULE_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/cubic_matching_product_qubit_qca_schedule_orbit_2026_07_11.py
+  - logs/runner-cache/cubic_matching_product_qubit_qca_schedule_orbit_2026_07_11.txt
+  - docs/SYMMETRIC_TWO_QUBIT_CLIFFORD_CUBIC_MATCHING_QCA_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/symmetric_two_qubit_clifford_cubic_matching_qca_classification_2026_07_11.py
+  - logs/runner-cache/symmetric_two_qubit_clifford_cubic_matching_qca_classification_2026_07_11.txt
+  - docs/PAIRWISE_COMMUTING_ENDPOINT_SYMMETRIC_EDGE_HAMILTONIAN_CLASSIFICATION_AND_STRICT_QCA_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/common_edge_hamiltonian_overlap_commutation_classification_2026_07_12.py
+  - logs/runner-cache/common_edge_hamiltonian_overlap_commutation_classification_2026_07_12.txt
+  - docs/ONSITE_CHARGE_CONSERVING_ENDPOINT_SYMMETRIC_COMMON_HAMILTONIAN_STRICT_QCA_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/onsite_charge_conserving_common_hamiltonian_strict_qca_dichotomy_2026_07_12.py
+  - logs/runner-cache/onsite_charge_conserving_common_hamiltonian_strict_qca_dichotomy_2026_07_12.txt
+  - docs/TWO_BAND_BDG_STRICT_TIME_FLAT_SPECTRUM_AND_CUBIC_SCALAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/two_band_bdg_strict_time_flat_spectrum_2026_07_12.py
+  - logs/runner-cache/two_band_bdg_strict_time_flat_spectrum_2026_07_12.txt
+  - docs/FREE_STAGGERED_3PLUS1_SAME_OBJECT_TRANSFER_GAUSSIAN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/free_staggered_3plus1_same_object_transfer_gaussian_continuum_2026_07_12.py
+  - logs/runner-cache/free_staggered_3plus1_same_object_transfer_gaussian_continuum_2026_07_12.txt
+  - docs/FREE_STAGGERED_3PLUS1_REFLECTED_GRAM_CAR_FOCK_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/free_staggered_3plus1_reflected_gram_car_fock_representation_2026_07_12.py
+  - logs/runner-cache/free_staggered_3plus1_reflected_gram_car_fock_representation_2026_07_12.txt
+  - docs/PERIODIC_STAGGERED_OS_CIRCLE_FAILURE_TWISTED_ANTIPERIODIC_FREE_REPAIR_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/periodic_staggered_os_circle_failure_twisted_antiperiodic_free_repair_2026_07_12.py
+  - logs/runner-cache/periodic_staggered_os_circle_failure_twisted_antiperiodic_free_repair_2026_07_12.txt
+  - docs/TWO_SEAM_FOREST_GAUGE_POLYAKOV_HOLONOMY_PRESERVATION_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/two_seam_forest_gauge_polyakov_holonomy_2026_07_12.py
+  - logs/runner-cache/two_seam_forest_gauge_polyakov_holonomy_2026_07_12.txt
+  - docs/COUPLED_PERIODIC_TWO_SEAM_SU3_WILSON_STAGGERED_REFLECTED_GRAM_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/coupled_periodic_two_seam_su3_wilson_staggered_reflected_gram_2026_07_12.py
+  - logs/runner-cache/coupled_periodic_two_seam_su3_wilson_staggered_reflected_gram_2026_07_12.txt
+  - docs/COUPLED_OS_INTERIOR_DESCENT_SUBSEQUENTIAL_INFINITE_TIME_TRANSFER_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/coupled_os_interior_descent_subsequential_infinite_time_transfer_2026_07_12.py
+  - logs/runner-cache/coupled_os_interior_descent_subsequential_infinite_time_transfer_2026_07_12.txt
+  - docs/MASSIVE_STAGGERED_LOGDET_HOLDER_RUELLE_INFINITE_TIME_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/massive_staggered_logdet_holder_ruelle_uniqueness_2026_07_12.py
+  - logs/runner-cache/massive_staggered_logdet_holder_ruelle_uniqueness_2026_07_12.txt
+  - docs/MASSIVE_WILSON_STAGGERED_SPATIAL_DLR_ACCUMULATION_OS_TRANSFER_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/massive_wilson_staggered_spatial_dlr_accumulation_os_transfer_2026_07_12.py
+  - logs/runner-cache/massive_wilson_staggered_spatial_dlr_accumulation_os_transfer_2026_07_12.txt
+  - docs/MASSIVE_WILSON_STAGGERED_DOBRUSHIN_SPATIAL_UNIQUENESS_WEDGE_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/massive_wilson_staggered_dobrushin_spatial_uniqueness_wedge_2026_07_12.py
+  - logs/runner-cache/massive_wilson_staggered_dobrushin_spatial_uniqueness_wedge_2026_07_12.txt
+  - docs/COMPACT_DOBRUSHIN_SUBWEDGE_SEPARATED_POINT_ULTRALOCAL_CONTINUUM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/compact_dobrushin_subwedge_ultralocal_continuum_boundary_2026_07_12.py
+  - logs/runner-cache/compact_dobrushin_subwedge_ultralocal_continuum_boundary_2026_07_12.txt
+  - docs/WILSON_STAGGERED_DOBRUSHIN_CERTIFICATE_BOUNDARY_CRITICAL_SCALING_NO_GO_2026-07-12.md
+  - scripts/wilson_staggered_dobrushin_certificate_boundary_critical_scaling_no_go_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_dobrushin_certificate_boundary_critical_scaling_no_go_2026_07_12.txt
+  - docs/MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/massive_wilson_staggered_factor_two_gauge_block_schur_os_semigroup_2026_07_12.py
+  - logs/runner-cache/massive_wilson_staggered_factor_two_gauge_block_schur_os_semigroup_2026_07_12.txt
+  - docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.txt
+  - docs/WILSON_STAGGERED_DEEP_FIBER_COARSE_GAUGE_GIBBSIANNESS_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_deep_fiber_coarse_gauge_gibbsianness_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_deep_fiber_coarse_gauge_gibbsianness_2026_07_12.txt
+  - docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_raw_constrained_action_hessian_decay_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_raw_constrained_action_hessian_decay_2026_07_12.txt
+  - docs/WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_constrained_fiber_two_layer_kp_source_polymer_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_constrained_fiber_two_layer_kp_source_polymer_2026_07_12.txt
+  - docs/WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm_2026_07_12.txt
+  - docs/WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_declared_rg_chart_raw_lift_geometric_contraction_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_declared_rg_chart_raw_lift_geometric_contraction_2026_07_12.txt
+  - docs/WILSON_STAGGERED_SPLIT_DERIVATIVE_AND_UNLOCALIZED_CAUCHY_CERTIFICATE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_split_derivative_cauchy_certificate_boundary_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_split_derivative_cauchy_certificate_boundary_2026_07_12.txt
+  - docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction_2026_07_12.txt
+  - docs/WILSON_STAGGERED_CURRENT_CHART_AUTONOMY_AND_NEXT_SCALE_GRASSMANN_HANDOFF_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_current_chart_autonomy_grassmann_handoff_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_current_chart_autonomy_grassmann_handoff_2026_07_12.txt
+  - docs/WILSON_STAGGERED_GAUSSIAN_ADAPTED_BEREZIN_HANDOFF_AND_SHORTEST_QUADRATIC_CENTER_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_gaussian_adapted_berezin_quadratic_center_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_gaussian_adapted_berezin_quadratic_center_2026_07_12.txt
+  - docs/WILSON_STAGGERED_ONE_HORIZON_HAAR_BEREZIN_HOEFFDING_LINEAGE_CLUSTER_LIFT_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_one_horizon_hoeffding_lineage_cluster_lift_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_one_horizon_hoeffding_lineage_cluster_lift_2026_07_12.txt
+  - docs/WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_two_horizon_skeleton_pullback_reatomization_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_two_horizon_skeleton_pullback_reatomization_2026_07_12.txt
+  - docs/WILSON_STAGGERED_FIXED_BACKGROUND_CORRELATED_BEREZIN_CROSS_WICK_CLUSTER_LOCALITY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_fixed_background_correlated_berezin_cross_wick_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_fixed_background_correlated_berezin_cross_wick_2026_07_12.txt
+  - docs/WILSON_STAGGERED_COMBINED_HAAR_GAUSSIAN_REFERENCE_SPLIT_RESIDUAL_COLORED_INTERPOLATION_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_combined_reference_split_residual_interpolation_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_combined_reference_split_residual_interpolation_2026_07_12.txt
+  - docs/WILSON_STAGGERED_JOINT_PRODUCT_REFERENCE_DETERMINANT_COUNTERTERM_OUTER_HAAR_COLORED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_joint_product_reference_counterterm_colored_response_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_joint_product_reference_counterterm_colored_response_2026_07_12.txt
+  - docs/WILSON_STAGGERED_JOINT_BOUNDARY_CANONICAL_FUTURE_ATOM_SUPERSTRONG_STRONG_COARSE_SHADOW_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_joint_boundary_future_atom_superstrong_coarse_shadow_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_joint_boundary_future_atom_superstrong_coarse_shadow_2026_07_12.txt
+  - docs/WILSON_STAGGERED_EXTRACTED_S2_FUTURE_CENTER_PRODUCT_REFERENCE_COUNTERTERM_PERSISTENT_GAP_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_future_s2_center_reference_ledger_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_future_s2_center_reference_ledger_2026_07_12.txt
+  - docs/WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_enhanced_moment_generated_base_decorated_factor_return_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_enhanced_moment_generated_base_decorated_factor_return_2026_07_12.txt
+  - docs/WILSON_STAGGERED_BLOCK_SATURATED_PRODUCT_REFERENCE_SPLIT_HANDOFF_SCALAR_NEXT_ACTIVITY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_block_saturated_split_handoff_scalar_activity_boundary_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_block_saturated_split_handoff_scalar_activity_boundary_2026_07_12.txt
+  - docs/WILSON_STAGGERED_SITE_BLOCK_SYNTACTIC_SUPPORT_TREE_SPAN_MARKED_RESPONSE_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_site_block_syntactic_support_tree_span_marked_response_return_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_site_block_syntactic_support_tree_span_marked_response_return_2026_07_12.txt
+  - docs/WILSON_STAGGERED_EXTERNAL_SHORTEST_SCHUR_CENTER_HAAR_TAIL_PROJECTED_QUADRATIC_WEYL_CONDITIONAL_REFERENCE_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_external_shortest_center_tail_quadratic_weyl_reference_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_external_shortest_center_tail_quadratic_weyl_reference_2026_07_12.txt
+  - docs/WILSON_STAGGERED_SCALAR_PRODUCT_REFERENCE_COMPLETED_JOINT_OUTER_HAAR_ACTUAL_OUTPUT_ATOM_RETURN_BOUNDED_THEOREM_NOTE_2026-07-13.md
+  - scripts/wilson_staggered_scalar_product_reference_completed_joint_atom_return_2026_07_13.py
+  - logs/runner-cache/wilson_staggered_scalar_product_reference_completed_joint_atom_return_2026_07_13.txt
+  - docs/WILSON_STAGGERED_COMPLETED_JOINT_TWO_MARK_COVARIANCE_NONLINEAR_SOURCE_OUTPUT_TUBE_BOUNDED_THEOREM_NOTE_2026-07-13.md
+  - scripts/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.py
+  - logs/runner-cache/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.txt
+open_imports:
+  - fundamental process object: Hamiltonian, strict tick, or record instrument
+  - faithful law-to-record influence principle
+  - local instrument composition/normalization rule
+  - availability-to-coherent-carrier bridge
+  - time-rate and continuum scaling control
+  - probability-form derivation or admission
+no_go_routes:
+  - symmetry and locality alone admit the SWAP--Laplacian completion
+  - strict local unitary ticks alone leave factorized linear-drift and eta-twisted curved candidates without selecting the realized 3D protocol
+  - direct preservation of every rank-one permanent record freezes the same carrier and also forbids unitary record formation
+  - minimal outcome-forgotten-channel rank plus full normalization does not remove an outcome-label-sensitive I-SWAP no-record branch on the supplied one-excitation sector
+  - positivity, effect/POVM additivity and normalization, noncontextuality, and unitary covariance do not identify E_P with P
+  - auxiliary locked-register absorption, same-map reuse, scalar no-record effect, and supplied-menu family equivariance do not imply blank-sector cross-label exclusion
+  - separate normalization of identical overlapping-edge instruments does not select composition semantics, layer order, or first-nonempty priority on the supplied finite tensor carriers
+  - a supplied discrete event order does not select a metric clock or physical rate
+  - a finite-range translation-invariant one-mode scalar Gaussian/CAR tick with full proper-cubic covariance transports no support
+  - zero total determinant winding does not imply no transport for multicomponent ticks
+  - no fixed six-layer iSWAP matching product is invariant under every unit translation at even side at least six or on the supplied quasi-local lattice
+  - matching-product order dependence does not forbid an invariant coherent automorphism because CZ closes the same grammar
+  - endpoint-symmetric Clifford gates do not select a unique schedule class: 48 give one product, 48 give eight, and 96 give 720
+  - local overlap commutation is not necessary for global matching-layer schedule independence because 12 gates close only after full layer assembly
+  - pairwise-overlap-commuting endpoint-symmetric common edge Hamiltonians are single-axis Ising families and cannot transport their conserved common-axis configuration
+  - nonzero exchange in the onsite-charge-conserving one-qubit class has infinite support at every nonzero time and no isolated strict-QCA point
+  - all noncommuting common Hamiltonians have tails is falsified by the 16-mode spinorial/projective cubic flat-involution escape on the even/quadratic algebra
+  - a dispersive 2x2 finite-Laurent Hermitian generator cannot have an isolated nonzero strict-QCA exponential time; strict once iff flat spectrum iff strict for all times
+  - scalar one-mode proper-cubic nearest-neighbor BdG pairing is killed, but lower-symmetry and multicomponent flat-band escapes remain live
+  - matching a covariance pole location and stable transfer eigenspace does not by itself fix the pole residue, equal-time CAR metric, or coherent-state correlator representation
+  - a controlled free staggered scalar spectral limit does not select the physical carrier, statistics, one taste, the interacting SM, or dynamical geometry
+  - the positive-time unbarred OS quotient does not by itself derive the original-field equal-time CAR anticommutator or reciprocal barred/contact all-field functional
+  - exact vacuum/infinite-time reflected Grams acquire boundary or thermal-image corrections on finite open chains or temporal circles
+  - periodic fermion wrap plus one uniform reflection phase is non-PSD at the second circle seam even in the free temporal reduction
+  - global temporal gauge on a periodic gauge circle silently restricts to trivial Polyakov holonomy
+  - one literal identity-link forest invariant under both adjacent reflections and containing all four crossing layers closes to the entire temporal cycle, is not a forest, and forces trivial Polyakov holonomy
+  - positivity of the original and adjacent correlation forms alone does not imply OS-null descent or contraction; exact 2x2 countermodels require a coupled domination or generalized-spectrum theorem
+  - strict seam positivity and two-plane reflected-form positivity do not imply contraction on every finite thermal core; the exact L_t=6 Z3 analogue has B2(n2,n2)/B0(n2,n2)=29/25 while its natural first-boundary core contracts
+  - temporal subsequence nonuniqueness is not an irreducible interacting wall at fixed finite spatial volume: the exact massive log-determinant contraction makes the blocked gauge-history potential Holder and Bowen/Ruelle unique for every fixed m>0
+  - spatial thermodynamic existence is not blocked by the open beta-six plaquette-value hierarchy: site-anchored Q summability and compact-link DLR extraction give accumulation states for every beta>=0 and m>0, while phase uniqueness remains separate
+  - failure of the explicit Dobrushin inequality is not evidence of phase coexistence: it is a sufficient small-beta, large-m criterion, while block-Dobrushin, polymer, chessboard, and RG routes remain live outside it
+  - compact containment in the strict Dobrushin wedge cannot yield a propagating continuum with covered nonzero separated correlations, but this does not close contact, boundary-tuned, block/polymer/RG, weak-coupling/light-mass, charged-sector, or alternative-action continuum routes
+  - equality of a one-link Dobrushin majorant does not identify criticality: the exact SU(3) Wilson oscillation moves the valid boundary, and even saturation of the sharper upper bound has no converse
+  - exact factor-two gauge pushforward and fixed-background Schur locality do not close on the finite Wilson-staggered action family or supply an action-space RG contraction; taste-faithful and enlarged-polymer routes remain live
+  - exact raw fiber integration cannot strictly contract its full unprojected action space in the common unrescaled coefficient norm because coarse-local lifted coordinates pass with unit ratio; relevant-coordinate projection, rescaling, and scale-weighted irrelevant norms remain live
+  - coarse-gauge Gibbsianness does not by itself provide a uniform translation-adapted anchored interaction norm or the all-order source cumulants needed for the retained gauge--Grassmann action; complete-analyticity, cluster, and constructive RG routes remain live
+  - a scalar gauge-body source/polymer theorem does not by itself place the retained Grassmann coefficients in one simultaneous all-degree Banach norm or supply a projected/rescaled RG contraction
+  - one-step simultaneous gauge--Grassmann norm membership does not by itself define an invariant factor-two rescaled neighborhood or remove the exact raw relevant directions
+  - geometric suppression of every extended raw lifted mode does not control the non-fiber derivative or prove invariance/nonlinear contraction of one joint ball
+  - the exact base-dependent conditional-centering split kills the centered tangent only at first order; its kernel is not an ideal, and the current unlocalized Cauchy-plus-geometry certificate remains above 68 even though localized forced-attachment and spectral-smoothing routes remain live
+  - a strict one-step strong-to-weak derivative contraction does not by itself return the coarse action to the same strong split norm or control a running center and nonlinear invariant ball
+  - the full certified weak completion has no support-only embedding into the present next-step strong norm, and the present ultra-small eta makes the next Gaussian Berezin conditioning enormous; this does not rule out actual-range provenance, running Gaussian centers, or multi-index Haar--Berezin norms
+  - Gaussian adaptation and shortest-quadratic extraction repair the fixed-gap tensor norm and current bare residual constants, but do not by themselves supply correlated-reference forced attachment, full actual-range tag membership, or a persistent running gap
+  - the one-horizon decorated Hoeffding lift exactly evaluates to the current residual cluster system, but current Haar tags can disappear after integration or next-skeleton substitution; formal lineage therefore cannot be propagated as physical multiscale support without re-atomization
+  - exact two-level re-atomization produces genuine future atoms in the weak output norm, but tag fusion leaves extended empty future atoms and does not restore the missing strong spatial weights
+  - fixed-background correlated Berezin locality does not commute pointwise normalization through Haar averaging or place U->G_A(U)O in the required Haar provenance norm; the original A=m1+M_II supplier is not yet the extracted future center
+  - the exact combined split and fixed-U O(K_R) colored response do not control the outer Haar partition factor, canonically embed g(U)=G_A(U)O, instantiate the actual strong-domain red factors, or migrate to the future center
+  - the joint determinant-counterterm expansion closes the original-center outer response on its declared graph domain, but its same-support weak output is not yet a canonical future-atom coarse shadow or the next strong domain
+  - canonical future atoms and the strong coarse shadow do not by themselves identify the extracted S^(2) product reference, prove persistence of its gap and determinant counterterm ledger, or return the full next action to the same strong domain
+  - the exact S^(2)-centered actual-bare-range response lands only at weak spatial weights; its scalar form mismatch does not foreclose site-dependent or taste-faithful transformations, and its certified domain mismatch does not foreclose enhanced actual-orbit decay or multiscale norms
+  - one enhanced generated-base decorated factor return does not supply an all-horizon running-center induction, generic perturbation embedding, a same-norm two-mark estimate, or an invariant ball
+  - the actual-range block-saturated linear section does not identify routed-carrier diameter incidence with hidden tree-span/source incidence, and the unchanged scalar surcharge/halving ledger cannot furnish all-horizon contraction; root-anchor lineage, scale-indexed norms, and full correlated-center grammar remain live
+  - the actual-hidden site-block bridge and Lambda=0.1 marked response do not by identity supply a future-atom Lambda=0.5 input or correlated-S_next step; fresh atom payment, scale-indexed/lineage return, and full center ownership remain live
+  - the same current-hidden-dependent full Schur family cannot be inserted simultaneously and directly as an external input in the same integration step; the shortest subcenter may be external, the hidden-empty tail is separately reattached, and the centered tail remains current-residual-owned, while post-step and enlarged-state routes remain live
+  - the displayed fixed-m unchanged scalar-product-reference surcharge/halving certificate has no positive fixed point, exhausts every finite spatial reserve, and misses the next marked-response and factor-return certificates; scale-indexed, lineage, varying-m, sharper-carrier, and alternate-block routes remain live
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_current_chart_autonomy_handoff_pass_gaussian_berezin_quadratic_center_pass_one_horizon_lineage_cluster_lift_pass_two_horizon_reatomization_intertwining_pass_fixed_background_correlated_berezin_locality_pass_combined_reference_fixed_u_colored_response_pass_joint_outer_haar_actual_red_response_pass_future_atom_strong_coarse_shadow_pass_s2_actual_range_reference_ledger_pass_enhanced_generated_base_decorated_factor_return_pass_block_saturated_split_handoff_pass_site_block_marked_response_pass_external_shortest_tail_quadratic_conditional_reference_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open_marked_attachment_strong_weak_contraction_open_current_chart_autonomy_handoff_open_gaussian_berezin_quadratic_center_open_one_horizon_lineage_cluster_lift_open_two_horizon_reatomization_intertwining_open_fixed_background_correlated_berezin_locality_open_combined_reference_fixed_u_colored_response_open_joint_outer_haar_actual_red_response_open_future_atom_strong_coarse_shadow_open_s2_actual_range_reference_ledger_open_enhanced_generated_base_decorated_factor_return_open_block_saturated_split_handoff_open_site_block_marked_response_open_external_shortest_tail_quadratic_conditional_reference_open
+block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
+block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
+block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
+block04_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5202
+block05_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5205
+block06_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5207
+block07_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5210
+block08_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5212
+block09_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5215
+block10_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5237
+block11_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5250
+block12_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5258
+block13_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5262
+block14_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5264
+block15_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5270
+block16_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5278
+block17_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5286
+block18_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5290
+block19_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5294
+block20_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5297
+block21_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5301
+block22_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5303
+block23_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5305
+block24_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5310
+block25_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5313
+block26_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5315
+block27_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5317
+block28_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5322
+block29_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5327
+block30_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5330
+block31_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5333
+block32_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5338
+block33_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5340
+block34_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5342
+block35_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5343
+block36_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5344
+block37_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5347
+block38_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5349
+block39_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5350
+block40_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5353
+block41_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5358
+block42_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5360
+block43_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5363
+block44_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5364
+block45_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5369
+block46_original_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5370
+block46_original_pr_status: audit_passed_then_auto_closed_on_parent_force_push
+block46_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5374
+block46_review_disposition: pass_with_bounded_claims
+block46_pr_status: open_mergeable_audit_workflow_rerun_after_preflight_repair
+block47_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5375
+block47_review_disposition: pass_with_bounded_claims
+block47_pr_status: open_mergeable_audit_workflow_rerun_after_parent_rebase
+next_exact_action: >-
+  Build the first explicit target-to-next-source return theorem. Start from
+  the Block47 weak atom output and the Block40--44 lineage, coarse-shadow,
+  re-Hoeffding, and running-center machinery. Define one next-horizon source
+  chart and a transport section that owns the moving scalar/quadratic center,
+  reference determinant, and centered residual separately. Prove either a
+  finite return constant that closes the radius-0.001 tube on a second actual
+  horizon or an exact named failure with every scale-indexed/lineage route
+  still tested. Do not call this all-horizon until graph/center/atom lineage
+  estimates are uniform in the horizon index.
+stop_condition: >-
+  Stop and discuss an axiom update only if an exact result proves that the
+  required bridge cannot be derived and an additional approved axiom or
+  primitive is necessary. Conditional theorems and underdetermination results
+  do not trigger this condition while live derivation routes remain.

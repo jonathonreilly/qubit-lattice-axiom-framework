@@ -1,77 +1,94 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py
-runner_sha256: 4e280a53e064f49a17bf8a331cfdb7f2ddd18821818791084a15044106a239f2
+runner_sha256: 2cb2765371c2a5ea74e2aad0246a3b0c7daf3acdbd2b48c4aaafab988c94bc99
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
-========================================================================================
+================================================================================================
 GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE
-Goal: all-weight Wilson coefficient positivity + formal convolution bridge
-========================================================================================
+Exact Pieri recurrence through level 16; certified coordinate box B_8
+================================================================================================
 
-----------------------------------------------------------------------------------------
-Part 1: strict positivity witness for every sampled dominant weight
-----------------------------------------------------------------------------------------
-[PASS] finite Cartan-component witness for weight (0,0) :: n=p+q=0, beta=1 lower monomial=1
-[PASS] finite Cartan-component witness for weight (1,0) :: n=p+q=1, beta=1 lower monomial=1/6
-[PASS] finite Cartan-component witness for weight (0,1) :: n=p+q=1, beta=1 lower monomial=1/6
-[PASS] finite Cartan-component witness for weight (1,1) :: n=p+q=2, beta=1 lower monomial=1/72
-[PASS] finite Cartan-component witness for weight (2,0) :: n=p+q=2, beta=1 lower monomial=1/72
-[PASS] finite Cartan-component witness for weight (0,2) :: n=p+q=2, beta=1 lower monomial=1/72
-[PASS] finite Cartan-component witness for weight (2,1) :: n=p+q=3, beta=1 lower monomial=1/1296
-[PASS] finite Cartan-component witness for weight (1,2) :: n=p+q=3, beta=1 lower monomial=1/1296
-[PASS] finite Cartan-component witness for weight (3,3) :: n=p+q=6, beta=1 lower monomial=1/33592320
-[PASS] finite Cartan-component witness for weight (5,2) :: n=p+q=7, beta=1 lower monomial=1/1410877440
-[PASS] finite Cartan-component witness for weight (2,5) :: n=p+q=7, beta=1 lower monomial=1/1410877440
-[PASS] finite Cartan-component witness for weight (8,0) :: n=p+q=8, beta=1 lower monomial=1/67722117120
-[PASS] finite Cartan-component witness for weight (0,8) :: n=p+q=8, beta=1 lower monomial=1/67722117120
+------------------------------------------------------------------------------------------------
+Part 1: exact SU(3) Pieri identities and full-support tensor recurrence
+------------------------------------------------------------------------------------------------
+[PASS] fundamental Pieri branches conserve dimension locally :: checked all weights in coordinate box B_16
+[PASS] antifundamental Pieri branches conserve dimension locally :: checked all weights in coordinate box B_16
+[PASS] fundamental and antifundamental Pieri rules are exchanged by conjugation :: (p,q) <-> (q,p)
+[PASS] global tensor-power dimension conservation sum m_lambda(n)d_lambda = 6^n :: all levels n=0..16
+[PASS] all computed tensor-product multiplicities are non-negative integers :: 968 exact table entries
+[PASS] full reachable support obeys p+q <= n with no artificial box truncation :: largest table has 153 weights
 
-----------------------------------------------------------------------------------------
-Part 2: positivity of normalized Wilson eigenvalues a_(p,q)
-----------------------------------------------------------------------------------------
-[PASS] a_(0,0)(beta) strict-positive lower witness :: d=1, lower a(beta=1)>=1
-[PASS] a_(1,0)(beta) strict-positive lower witness :: d=3, lower a(beta=1)>=1/18
-[PASS] a_(0,1)(beta) strict-positive lower witness :: d=3, lower a(beta=1)>=1/18
-[PASS] a_(1,1)(beta) strict-positive lower witness :: d=8, lower a(beta=1)>=1/576
-[PASS] a_(4,2)(beta) strict-positive lower witness :: d=60, lower a(beta=1)>=1/2015539200
-[PASS] a_(2,4)(beta) strict-positive lower witness :: d=60, lower a(beta=1)>=1/2015539200
-[PASS] a_(6,6)(beta) strict-positive lower witness :: d=343, lower a(beta=1)>=1/357640002075937996800
+------------------------------------------------------------------------------------------------
+Part 2: computed all-weight occurrence certificate on B_8
+------------------------------------------------------------------------------------------------
+[PASS] every declared B_8 weight is found by scanning computed multiplicity tables :: found=81 expected=81
+[PASS] computed first-occurrence levels equal p+q throughout B_8 :: level is read from the recurrence, not assigned by a witness helper
+[PASS] computed minimal-level multiplicity equals binomial(p+q,p) throughout B_8 :: stronger finite certificate than the analytic >=1 occurrence
+[PASS] multiplicity tables are conjugation-symmetric at every level :: n=0..16
+[PASS] computed positive Wilson-series term for weight (0, 0) :: first n=0, multiplicity=1, beta=1 term=1
+[PASS] computed positive Wilson-series term for weight (1, 0) :: first n=1, multiplicity=1, beta=1 term=1/6
+[PASS] computed positive Wilson-series term for weight (0, 1) :: first n=1, multiplicity=1, beta=1 term=1/6
+[PASS] computed positive Wilson-series term for weight (1, 1) :: first n=2, multiplicity=2, beta=1 term=1/36
+[PASS] computed positive Wilson-series term for weight (2, 1) :: first n=3, multiplicity=3, beta=1 term=1/432
+[PASS] computed positive Wilson-series term for weight (1, 2) :: first n=3, multiplicity=3, beta=1 term=1/432
+[PASS] computed positive Wilson-series term for weight (3, 3) :: first n=6, multiplicity=20, beta=1 term=1/1679616
+[PASS] computed positive Wilson-series term for weight (5, 2) :: first n=7, multiplicity=21, beta=1 term=1/67184640
+[PASS] computed positive Wilson-series term for weight (2, 5) :: first n=7, multiplicity=21, beta=1 term=1/67184640
+[PASS] computed positive Wilson-series term for weight (8, 0) :: first n=8, multiplicity=1, beta=1 term=1/67722117120
+[PASS] computed positive Wilson-series term for weight (0, 8) :: first n=8, multiplicity=1, beta=1 term=1/67722117120
+[PASS] computed positive Wilson-series term for weight (8, 8) :: first n=16, multiplicity=12870, beta=1 term=1/4586285147214997094400
 
-----------------------------------------------------------------------------------------
-Part 3: beta=0 boundary is not overclaimed
-----------------------------------------------------------------------------------------
-[PASS] nontrivial weight (1,0) has no strict-positive beta=0 witness :: strict positivity is claimed for beta > 0 only
-[PASS] nontrivial weight (0,1) has no strict-positive beta=0 witness :: strict positivity is claimed for beta > 0 only
-[PASS] nontrivial weight (1,1) has no strict-positive beta=0 witness :: strict positivity is claimed for beta > 0 only
-[PASS] nontrivial weight (3,2) has no strict-positive beta=0 witness :: strict positivity is claimed for beta > 0 only
-[PASS] trivial weight has beta=0 coefficient from n=0 term :: c_(0,0)(0)=1 boundary remains positive
+------------------------------------------------------------------------------------------------
+Part 3: beta=0 boundary and normalized eigenvalue signs
+------------------------------------------------------------------------------------------------
+[PASS] beta=0 has c_(0,0)=1 and zero coefficient for every nontrivial B_8 weight :: only the n=0 tensor power contributes
+[PASS] computed numerator, irrep dimension, and c_00 have the signs required for a_lambda>0 :: (0, 0):positive c term=1, d=1, c00>0 from n=0; (1, 0):positive c term=1/6, d=3, c00>0 from n=0; (0, 1):positive c term=1/6, d=3, c00>0 from n=0; (1, 1):positive c term=1/36, d=8, c00>0 from n=0; (4, 2):positive c term=1/2239488, d=60, c00>0 from n=0; (2, 4):positive c term=1/2239488, d=60, c00>0 from n=0; (6, 6):positive c term=1/1128443962982400, d=343, c00>0 from n=0
 
-----------------------------------------------------------------------------------------
-Part 4: formal all-weight diagonal convolution on finite tests
-----------------------------------------------------------------------------------------
-[PASS] formal C_Z action is coefficientwise diagonal on a finite-character test vector :: 16 basis weights checked exactly
-[PASS] formal C_Z chi_(p,q) = z_(p,q) chi_(p,q) on every sampled basis vector :: finite-support test algebra; no L2 closure asserted
-[PASS] formal distribution does not require conjugation symmetry unless the theorem asks for it :: arbitrary all-weight sequences are legal formal data
-[PASS] conjugation-symmetric formal data remain symmetric weight by weight :: matches the downstream residual-environment symmetry case
+------------------------------------------------------------------------------------------------
+Part 4: hostile controls for the tensor-product certificate
+------------------------------------------------------------------------------------------------
+[PASS] hostile control rejects deletion of a fundamental Pieri branch :: mutant violates exact dimension conservation
+[PASS] hostile control rejects replacing 3bar Pieri by a second 3 Pieri rule :: dimension alone is insufficient; conjugation and first occurrence catch it
+[PASS] hostile control rejects hard-coded unit multiplicity at the predicted level :: for example m_(1,1)(2)=2 and m_(2,1)(3)=3
 
-----------------------------------------------------------------------------------------
-Part 5: source-note and downstream-marker checks
-----------------------------------------------------------------------------------------
-[PASS] bridge note marker present: strictly positive Peter-Weyl character coefficient
-[PASS] bridge note marker present: Sym^p(3) tensor Sym^q(3bar)
-[PASS] bridge note marker present: define the formal central
-[PASS] bridge note marker present: bounded-operator closure without a separate decay
-[PASS] bridge note marker present: No new framework axiom is introduced
-[PASS] downstream plaquette note marker present: Gauge Wilson SU(3) all-weight positive-coefficient formal bridge
-[PASS] downstream plaquette note marker present: formal central character distribution
-[PASS] downstream plaquette note marker present: strict all-weight positivity/nonzero input
-[PASS] downstream plaquette note marker present: not an `L^2` class function
+------------------------------------------------------------------------------------------------
+Part 5: exact matrix-index Schur contraction before coefficients
+------------------------------------------------------------------------------------------------
+[PASS] raw Schur contraction vanishes for every unequal finite-packet irrep pair :: 240 pairs
+[PASS] raw same-irrep contraction is Tr D^lambda(V)/d_lambda :: all 16 weights in B_3
+[PASS] d_lambda in Z cancels the Schur 1/d_mu only on lambda=mu :: checked before choosing any z sequence
+[PASS] finite Haar convolution gives z_mu chi_mu as a full matrix polynomial :: arbitrary nonsymmetric rational sequence on B_3
+[PASS] finite convolution action stabilizes when the kernel packet is enlarged :: support size=4, enlarged packet size=16
 
-========================================================================================
-TOTAL: PASS=38 FAIL=0
-========================================================================================
+------------------------------------------------------------------------------------------------
+Part 6: hostile controls for convolution normalization
+------------------------------------------------------------------------------------------------
+[PASS] hostile control rejects omission of the Schur 1/d_mu factor :: mutant produces Tr D instead of Tr D/3
+[PASS] hostile control rejects omission of d_lambda from the central polynomial :: mutant leaves an uncancelled 1/d_lambda
+[PASS] hostile control rejects returning only z_mu without chi_mu(V) :: correct fundamental output has all three diagonal trace entries
+[PASS] hostile control rejects the dual-irrep pairing caused by an inverse/conjugation mutation :: mutant swaps fundamental and antifundamental instead of acting diagonally
+
+------------------------------------------------------------------------------------------------
+Part 7: source-scope checks
+------------------------------------------------------------------------------------------------
+[PASS] source-note marker present: v_(p,q)
+[PASS] source-note marker present: e_1^(tensor p) tensor (e^3)^(tensor q)
+[PASS] source-note marker present: The Weierstrass M-test
+[PASS] source-note marker present: m_(p,q)(n)/n!
+[PASS] source-note marker present: Matrix-element Schur orthogonality then contracts all indices
+[PASS] source-note marker present: The right side is unchanged when `F` is enlarged.
+[PASS] source-note marker present: No strict all-weight positivity is claimed at `beta=0`.
+[PASS] source-note marker present: The second statement is algebraic-dual/finite-test-vector only.
+[PASS] source-note marker present: assert an all-weight `L^2` class function
+[PASS] source-note marker present: The current-main direct source consumers were inspected.
+[PASS] source-note marker present: its downstream prose is not an executable premise
+
+================================================================================================
+TOTAL: PASS=47 FAIL=0
+================================================================================================
 
 ----- stderr -----
 

@@ -92,10 +92,9 @@ Primary artifacts:
 
 - [`docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md`](STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md)
 
-The older
-[`STRUCTURED_MIRROR_RECONCILIATION_NOTE.md`](STRUCTURED_MIRROR_RECONCILIATION_NOTE.md)
-is retained only as a pre-correction harness-comparison record. Its
-detectorwise seven-term values are not current Born evidence.
+The older `docs/STRUCTURED_MIRROR_RECONCILIATION_NOTE.md` is kept only as
+a pre-correction harness-comparison record. Its detectorwise seven-term values
+are not current Born evidence and are not a load-bearing dependency here.
 
 So structured mirror is currently:
 

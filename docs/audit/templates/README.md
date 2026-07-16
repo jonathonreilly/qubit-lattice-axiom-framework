@@ -13,6 +13,10 @@ their personal access token works) must run:
 
 ```bash
 mkdir -p .github/workflows
+# The template is kept byte-identical to the intended live workflow. Before
+# overwriting an EXISTING .github/workflows/audit.yml, diff first — if the
+# live file is newer than the template, update the template instead:
+diff docs/audit/templates/audit_workflow.yml .github/workflows/audit.yml || true
 cp docs/audit/templates/audit_workflow.yml .github/workflows/audit.yml
 git add .github/workflows/audit.yml
 git commit -m "audit: install audit-lane CI workflow"

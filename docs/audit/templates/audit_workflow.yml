@@ -1,35 +1,25 @@
 name: audit-lane
 
-# Run the mechanical audit pipeline on PRs that touch audit-relevant files,
-# plus a nightly cron pass on main. Public repo, free Actions minutes, but
-# we tighten triggers anyway because the repo has very high commit volume
-# (hundreds of pushes/day) and noisy workflow history is its own cost.
+# Run the mechanical audit pipeline nightly on main, with a manual trigger for
+# urgent refreshes. Pull requests are reviewed and landed through the
+# repo-native review-loop, which already runs the pipeline and strict lint in a
+# clean current-main worktree and strips generated audit outputs before landing.
 #
 # Drift-catching coverage:
-#   - PRs: advisory warning surface only (no auto-commit, no red failure)
 #   - main: caught within 24 hours by the nightly cron (auto-commits refresh)
 #   - manual: workflow_dispatch for urgent ad-hoc runs
 #
 # We deliberately do NOT trigger on every push to main, because:
 #   (a) the auto-commit-back-to-main creates a feedback loop concern, and
 #   (b) at hundreds of pushes/day the run count would be UI-noise excessive.
-# The nightly cron keeps main refreshed. Review-loop is the pre-merge gate:
+# The nightly cron keeps main refreshed. Review-loop is the landing gate:
 # it must inspect the PR, rebase/salvage against moving main, regenerate the
 # pipeline, and verify caches before landing.
 #
 # This workflow does NOT perform audits. Audit verdicts are minted only by
-# Current best Codex GPT model at maximum reasoning (or another independent
-# auditor) via apply_audit.py.
+# the configured independent auditor via apply_audit.py.
 
 on:
-  pull_request:
-    paths:
-      - 'docs/**/*.md'
-      - 'docs/audit/scripts/**'
-      - 'scripts/**/*.py'
-      - 'scripts/**/*.sh'
-      - 'docs/audit/templates/audit_workflow.yml'
-      - '.github/workflows/audit.yml'
   schedule:
     - cron: "0 6 * * *"   # nightly 06:00 UTC pass on main
   workflow_dispatch:        # manual ad-hoc
@@ -38,10 +28,8 @@ permissions:
   contents: write          # required for auto-commit on cron runs
 
 concurrency:
-  # PR runs of the same branch supersede each other (only run latest);
-  # cron runs use a different group so they never get cancelled by PRs.
   group: audit-lane-${{ github.event_name }}-${{ github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  cancel-in-progress: false
 
 jobs:
   audit_pipeline:
@@ -67,104 +55,72 @@ jobs:
           # floors for local convenience only).
           pip install -r requirements-release.txt
 
-      - name: Report runner cache freshness (PR only, advisory)
-        if: github.event_name == 'pull_request'
+      - name: Repair missing dependency edges
+        run: python3 docs/audit/scripts/repair_missing_dependency_edges.py --apply
+
+      - name: Report main-branch cache drift (warning only)
         run: |
-          # Every runner under scripts/ must have a SHA-pinned cache at
-          # logs/runner-cache/<stem>.txt whose header sha matches the
-          # current runner. The audit lane consumes this cache; stale
-          # caches mean the auditor sees outdated evidence.
-          base="origin/${{ github.base_ref }}"
-          git fetch --no-tags origin "+${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}"
-          if ! python3 scripts/precompute_audit_runners.py --pr-diff "$base" --check-only; then
-            echo
-            echo "::warning::Runner cache is stale for one or more runners changed in this PR."
-            echo "::warning::This is advisory because main moves continuously; review-loop must regenerate caches before landing."
-            echo "::warning::Local repair command:"
-            echo "::warning::  python3 scripts/precompute_audit_runners.py --pr-diff $base"
-            {
-              echo "### Runner Cache Advisory"
-              echo
-              echo "One or more runner caches changed in this PR are stale."
-              echo
-              echo "This PR check is advisory only because audit/review work keeps \`main\` moving. The landing reviewer must regenerate caches from current \`main\` before pushing."
-              echo
-              echo "\`\`\`bash"
-              echo "python3 scripts/precompute_audit_runners.py --pr-diff $base"
-              echo "\`\`\`"
-            } >> "$GITHUB_STEP_SUMMARY"
+          # Full-ledger freshness check on main. Emits a warning if
+          # drift exists; the cron's refresh step below will fix it.
+          if ! python3 scripts/precompute_audit_runners.py --all --check-only; then
+            echo "::warning::Pre-existing cache drift on main; the nightly refresh below should clear it."
           fi
 
       - name: Run audit pipeline
         run: bash docs/audit/scripts/run_pipeline.sh
 
-      - name: Report pipeline diff (PR only, advisory)
-        if: github.event_name == 'pull_request'
-        run: |
-          git status --short docs/audit docs/publication/ci3_z3
-          if [[ -n "$(git status --porcelain docs/audit docs/publication/ci3_z3)" ]]; then
-            echo
-            echo "::warning::Audit-data files changed during pipeline run on this PR."
-            echo "::warning::This can be a real missing-regeneration issue, or normal drift"
-            echo "::warning::from main moving while the PR stays open."
-            echo "::warning::Review-loop must rerun the pipeline from current main before landing."
-            git diff --stat docs/audit docs/publication/ci3_z3 || true
-            {
-              echo "### Audit Pipeline Diff Advisory"
-              echo
-              echo "The audit pipeline produced generated-file diffs on this PR."
-              echo
-              echo "This PR check is advisory only. Open PRs may sit while \`main\` moves; review-loop is responsible for applying source-only deltas to current \`main\`, rerunning the pipeline, and landing only if the regenerated audit data is clean."
-              echo
-              echo "\`\`\`bash"
-              echo "bash docs/audit/scripts/run_pipeline.sh"
-              echo "python3 docs/audit/scripts/generate_conditional_prompts.py"
-              echo "\`\`\`"
-            } >> "$GITHUB_STEP_SUMMARY"
-          fi
+      - name: Regenerate conditional-prompt snapshot
+        # MISSING_DERIVATION_PROMPTS.md is the static snapshot the
+        # science-fix-loop reads. Without this refresh it drifts from the
+        # live ledger, causing wasted attempts on rows that have already
+        # been re-audited.
+        run: python3 docs/audit/scripts/generate_conditional_prompts.py
 
-      - name: Commit refreshed ledger / queue (cron only)
-        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+      - name: Commit refreshed ledger / queue
         run: |
           set -e
-          if [[ -z "$(git status --porcelain docs/audit docs/publication/ci3_z3)" ]]; then
-            echo "No audit-data changes; nothing to commit."
-            exit 0
-          fi
           git config user.name  "audit-bot"
           git config user.email "audit-bot@users.noreply.github.com"
-          git add \
-            docs/audit/AUDIT_QUEUE.md \
-            docs/audit/data/ \
-            docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md \
-            docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md \
-            docs/publication/ci3_z3/PUBLICATION_MATRIX_EFFECTIVE_STATUS.md \
-            docs/publication/ci3_z3/FULL_CLAIM_LEDGER_EFFECTIVE_STATUS.md \
-            docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md \
-            docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md \
-            docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md \
-            docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md \
-            docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md \
-            2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "No audit-data changes after staging; nothing to commit."
-            exit 0
-          fi
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            msg="audit: nightly pipeline refresh (automated) [skip ci]"
+            msg="audit: nightly repair and pipeline refresh (automated) [skip ci]"
           else
-            msg="audit: workflow_dispatch pipeline refresh (automated) [skip ci]"
+            msg="audit: workflow_dispatch repair and pipeline refresh (automated) [skip ci]"
           fi
-          git commit -m "$msg"
-          # Race-condition safety: main may have moved while pipeline ran;
-          # rebase + retry once before giving up.
+
+          commit_if_needed() {
+            if [[ -z "$(git status --porcelain docs)" ]]; then
+              echo "No audit-data changes; nothing to commit."
+              return 1
+            fi
+            git add docs
+            if git diff --cached --quiet; then
+              echo "No audit-data changes after staging; nothing to commit."
+              return 1
+            fi
+            git commit -m "$msg"
+          }
+
+          commit_if_needed || exit 0
+
+          # Race-condition safety: main may have moved while the audit
+          # pipeline generated docs. Generated JSON/Markdown is not safe to
+          # rebase through conflicts, so refresh from the latest origin/main
+          # and rerun the deterministic repair/pipeline before retrying.
           for attempt in 1 2 3; do
             if git push; then
-              break
+              exit 0
             fi
-            echo "Push attempt $attempt failed; refetching and rebasing..."
+            if [[ "$attempt" == "3" ]]; then
+              echo "Push failed after $attempt attempts; aborting auto-commit."
+              exit 1
+            fi
+            echo "Push attempt $attempt failed; regenerating from latest origin/main..."
             git fetch origin main
-            git rebase origin/main || { echo "Rebase failed; aborting auto-commit"; exit 1; }
+            git reset --hard origin/main
+            python3 docs/audit/scripts/repair_missing_dependency_edges.py --apply
+            bash docs/audit/scripts/run_pipeline.sh
+            python3 docs/audit/scripts/generate_conditional_prompts.py
+            commit_if_needed || exit 0
           done
 
       - name: Upload audit queue artifact
